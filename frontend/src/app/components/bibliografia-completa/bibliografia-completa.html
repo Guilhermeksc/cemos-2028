@@ -1,0 +1,118 @@
+<div class="bibliografia-completa-container">
+  <!-- Navigation Tabs -->
+  <div class="tabs-navigation">
+    <button 
+      class="tab-button" 
+      [class.active]="activeTab === 'livro'"
+      (click)="setActiveTab('livro')">
+      <i class="tab-icon">📚</i>
+      Livro
+    </button>
+    <button 
+      class="tab-button" 
+      [class.active]="activeTab === 'video'"
+      (click)="setActiveTab('video')">
+      <i class="tab-icon">🎥</i>
+      Vídeo
+    </button>
+    <button 
+      class="tab-button" 
+      [class.active]="activeTab === 'podcastPerguntas'"
+      (click)="setActiveTab('podcastPerguntas')">
+      <i class="tab-icon">🎧</i>
+      Podcast/Perguntas
+    </button>
+  </div>
+
+  <!-- Tab Contents -->
+  <div class="tab-content">
+    
+    <!-- Aba Livro - Estrutura original: só conteúdo -->
+    <div class="tab-pane livro-tab" *ngIf="activeTab === 'livro'" [attr.data-tab]="'livro'">
+      <div class="livro-content-area">
+        <!-- Loading indicator -->
+        <div class="loading-indicator" *ngIf="isLoading">
+          <p>Carregando conteúdo...</p>
+        </div>
+        <!-- Conteúdo HTML renderizado dos arquivos .md -->
+        <div 
+          class="content-html markdown-content" 
+          *ngIf="selectedHtmlContent && !isLoading"
+          [innerHTML]="selectedHtmlContent">
+        </div>
+        <!-- Placeholder quando nenhum conteúdo está selecionado -->
+        <div class="content-placeholder" *ngIf="!selectedHtmlContent && !isLoading">
+          <p>Selecione um capítulo no menu à esquerda para ver o conteúdo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba Vídeo - Dinâmica baseada no item selecionado -->
+    <div class="tab-pane" *ngIf="activeTab === 'video'" [attr.data-tab]="'video'">
+      <div class="video-content">
+        <!-- Player de vídeo customizado -->
+        <div class="video-player-container" *ngIf="currentVideo">
+          <div class="video-info">
+            <h3>{{ currentVideo.titulo }}</h3>
+            <p *ngIf="currentVideo.descricao">{{ currentVideo.descricao }}</p>
+          </div>
+
+          <div class="video-player-wrapper">
+            <video 
+              #videoPlayer
+              class="video-player"
+              [src]="currentVideo.videoPath"
+              (loadedmetadata)="onLoadedMetadata()"
+              (timeupdate)="onTimeUpdate()"
+              (play)="isPlaying = true"
+              (pause)="isPlaying = false"
+              preload="metadata">
+              Seu navegador não suporta o elemento video.
+            </video>
+
+            <!-- Controles customizados -->
+            <div class="video-controls">
+              <button 
+                class="play-pause-btn" 
+                (click)="playPause()">
+                <span *ngIf="!isPlaying">▶️</span>
+                <span *ngIf="isPlaying">⏸️</span>
+              </button>
+
+              <div class="time-info">
+                <span class="current-time">{{ formatTime(currentTime) }}</span>
+                <span class="separator">/</span>
+                <span class="duration">{{ formatTime(duration) }}</span>
+              </div>
+
+              <!-- ÚNICA BARRA DE PROGRESSO -->
+              <input 
+                type="range" 
+                class="progress-slider"
+                min="0" 
+                [max]="duration" 
+                [value]="currentTime"
+                (input)="seek($event)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Mensagem quando não há vídeo -->
+        <div *ngIf="!currentVideo" class="empty-state">
+          <p>Nenhum vídeo disponível para este capítulo.</p>
+          <small>Caminho esperado: {{ data?.video?.basePath }}/{{ selectedMenuItem?.id }}.mp4</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba Podcast/Perguntas - Dinâmica baseada no item selecionado -->
+    <div class="tab-pane" *ngIf="activeTab === 'podcastPerguntas'" [attr.data-tab]="'podcastPerguntas'">
+      <div class="podcast-perguntas-content">
+        <div class="selected-chapter-info" *ngIf="selectedMenuItem">
+          <h3>Conteúdo para: {{ selectedMenuItem.title }}</h3>
+        </div>
+            <p>{{ selectedMenuItem?.description }}</p>
+          </div>
+        </div>
+
+    </div>

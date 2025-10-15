@@ -1,0 +1,16 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    #drawer
+    [mode]="drawerMode()"
+    [opened]="drawerMode() === 'side'"
+    fixedInViewport
+  >
+    <app-side-menu (itemClicked)="closeDrawerIfMobile()"></app-side-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </mat-sidenav-content>
+</mat-sidenav-container>

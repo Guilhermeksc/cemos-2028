@@ -1,0 +1,53 @@
+// Background principal do side-menu
+:host {
+  background-color: var(--dracula-black) !important;
+  display: block;
+  height: 100%;
+}
+
+// Classes customizadas para hover que sobrescrevem o Angular Material
+.nav-section-header {
+  transition: all 0.2s ease-in-out !important;
+  
+  &:hover {
+    background-color: rgba(189, 147, 249, 0.15) !important;
+    color: var(--dracula-purple) !important;
+  }
+}
+
+// Alinhamento específico dos subníveis
+.nav-subsection-header {
+  padding-left: 0.5rem !important; // pl-2 = 8px = 0.5rem
+}
+
+.nav-item-simple,
+.nav-item-object {
+  padding-left: 1rem !important; // pl-4 = 16px = 1rem
+  
+  // Remove margens do espaço reservado e ícone para alinhamento
+  > div:first-child {
+    margin-right: 0.40rem !important; // mr-0.5 = 2px = 0.125rem
+  }
+  
+}
+
+.nav-subsection-header,
+.nav-item-simple,
+.nav-item-object {
+  transition: all 0.2s ease-in-out !important;
+  
+  &:hover {
+    background-color: rgba(139, 233, 253, 0.12) !important;
+    color: var(--dracula-cyan) !important;
+  }
+}
+
+.nav-subitem {
+  transition: all 0.2s ease-in-out !important;
+  background-color: rgba(255, 184, 108, 0.15) !important;
+  
+  &:hover {
+    background-color: rgba(255, 184, 108, 0.15) !important;
+    color: var(--dracula-orange) !important;
+  }
+}

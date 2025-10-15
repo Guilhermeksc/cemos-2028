@@ -49,7 +49,9 @@ services:
 
 
   nginx:
-    image: cemos-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     container_name: cemos2028_nginx
     restart: unless-stopped
     ports:

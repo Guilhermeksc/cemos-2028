@@ -3,8 +3,7 @@ from .models import (
     BibliografiaModel, 
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
-    PerguntaCorrelacaoModel,
-    PerguntasModel
+    PerguntaCorrelacaoModel
 )
 
 
@@ -15,13 +14,18 @@ class BibliografiaSerializer(serializers.ModelSerializer):
         model = BibliografiaModel
         fields = [
             'id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao',
-            'created_at', 'updated_at', 'perguntas_count'
+            'perguntas_count'
         ]
-        read_only_fields = ['created_at', 'updated_at']
+        read_only_fields = ['id']
     
     def get_perguntas_count(self, obj):
         """Retorna o número total de perguntas desta bibliografia"""
-        return obj.perguntas.count()
+        from .models import PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
+        count = 0
+        count += PerguntaMultiplaModel.objects.filter(bibliografia=obj).count()
+        count += PerguntaVFModel.objects.filter(bibliografia=obj).count()
+        count += PerguntaCorrelacaoModel.objects.filter(bibliografia=obj).count()
+        return count
 
 
 class PerguntaMultiplaSerializer(serializers.ModelSerializer):
@@ -32,12 +36,12 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaMultiplaModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'resposta_correta_display', 'justificativa_resposta_certa',
-            'tipo', 'tipo_display', 'created_at', 'updated_at'
+            'tipo', 'tipo_display'
         ]
-        read_only_fields = ['created_at', 'updated_at', 'tipo']
+        read_only_fields = ['tipo']
     
     def validate_resposta_correta(self, value):
         """Valida se a resposta correta está entre as opções válidas"""
@@ -54,11 +58,11 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaVFModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'afirmacao', 'resposta_correta', 'resposta_correta_display',
-            'justificativa_resposta_certa', 'tipo', 'tipo_display', 'created_at', 'updated_at'
+            'justificativa_resposta_certa', 'tipo', 'tipo_display'
         ]
-        read_only_fields = ['created_at', 'updated_at', 'tipo']
+        read_only_fields = ['tipo']
     
     def get_resposta_correta_display(self, obj):
         """Retorna 'Verdadeiro' ou 'Falso' ao invés de True/False"""
@@ -72,11 +76,11 @@ class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta',
-            'justificativa_resposta_certa', 'tipo', 'tipo_display', 'created_at', 'updated_at'
+            'justificativa_resposta_certa', 'tipo', 'tipo_display'
         ]
-        read_only_fields = ['created_at', 'updated_at', 'tipo']
+        read_only_fields = ['tipo']
     
     def validate_coluna_a(self, value):
         """Valida se coluna_a é uma lista"""
@@ -108,23 +112,23 @@ class PerguntaResumoSerializer(serializers.Serializer):
     tipo_display = serializers.CharField()
     bibliografia_titulo = serializers.CharField()
     pergunta = serializers.CharField()
+    paginas = serializers.CharField()
     caiu_em_prova = serializers.BooleanField()
     ano_prova = serializers.IntegerField()
-    created_at = serializers.DateTimeField()
 
 
 # Serializers para criação/edição
 class BibliografiaCreateUpdateSerializer(BibliografiaSerializer):
     """Serializer específico para criação e edição de bibliografia"""
     class Meta(BibliografiaSerializer.Meta):
-        fields = ['titulo', 'autor', 'materia', 'ano_publicacao', 'descricao']
+        fields = ['id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao']
 
 
 class PerguntaMultiplaCreateUpdateSerializer(PerguntaMultiplaSerializer):
     """Serializer específico para criação e edição de pergunta múltipla escolha"""
     class Meta(PerguntaMultiplaSerializer.Meta):
         fields = [
-            'bibliografia', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'justificativa_resposta_certa'
         ]
@@ -134,7 +138,7 @@ class PerguntaVFCreateUpdateSerializer(PerguntaVFSerializer):
     """Serializer específico para criação e edição de pergunta V/F"""
     class Meta(PerguntaVFSerializer.Meta):
         fields = [
-            'bibliografia', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'afirmacao', 'resposta_correta', 'justificativa_resposta_certa'
         ]
 
@@ -143,6 +147,6 @@ class PerguntaCorrelacaoCreateUpdateSerializer(PerguntaCorrelacaoSerializer):
     """Serializer específico para criação e edição de pergunta de correlação"""
     class Meta(PerguntaCorrelacaoSerializer.Meta):
         fields = [
-            'bibliografia', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
         ]

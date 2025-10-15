@@ -1,0 +1,29 @@
+<div class="conceitos-page">
+  <!-- Loading state -->
+  <div class="loading-state" *ngIf="loading">
+    <div class="spinner"></div>
+    <p>Carregando conceitos...</p>
+  </div>
+
+  <!-- Error state -->
+  <div class="error-state" *ngIf="error && !loading">
+    <div class="error-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="15" y1="9" x2="9" y2="15"></line>
+        <line x1="9" y1="9" x2="15" y2="15"></line>
+      </svg>
+    </div>
+    <p class="error-message">{{ error }}</p>
+    <button class="retry-button" (click)="loadConceitos()">Tentar novamente</button>
+  </div>
+
+  <!-- Conceitos table -->
+  <app-conceitos-table 
+    *ngIf="!loading && !error"
+    [conceitos]="conceitos"
+    [title]="'Conceitos'"
+    [showBibliografia]="true"
+    [emptyMessage]="'Nenhum conceito encontrado. Adicione conceitos para visualizá-los aqui.'">
+  </app-conceitos-table>
+</div>

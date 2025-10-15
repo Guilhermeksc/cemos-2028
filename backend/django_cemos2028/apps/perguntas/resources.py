@@ -5,16 +5,15 @@ from .models import (
     BibliografiaModel, 
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
-    PerguntaCorrelacaoModel,
-    PerguntasModel
+    PerguntaCorrelacaoModel
 )
 
 
 class BibliografiaResource(resources.ModelResource):
     class Meta:
         model = BibliografiaModel
-        fields = ('id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao', 'created_at', 'updated_at')
-        export_order = ('id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao', 'created_at', 'updated_at')
+        fields = ('id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao')
+        export_order = ('id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao')
         import_id_fields = ('id',)
         skip_unchanged = True
         report_skipped = True
@@ -35,16 +34,14 @@ class PerguntaMultiplaResource(resources.ModelResource):
     class Meta:
         model = PerguntaMultiplaModel
         fields = (
-            'id', 'bibliografia', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'id', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
-            'resposta_correta', 'justificativa_resposta_certa', 'tipo',
-            'created_at', 'updated_at'
+            'resposta_correta', 'justificativa_resposta_certa', 'tipo'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'alternativa_a', 'alternativa_b',
-            'alternativa_c', 'alternativa_d', 'resposta_correta',
-            'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa',
-            'tipo', 'created_at', 'updated_at'
+            'alternativa_c', 'alternativa_d', 'resposta_correta', 'paginas',
+            'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa', 'tipo'
         )
         import_id_fields = ('id',)
         skip_unchanged = True
@@ -71,14 +68,12 @@ class PerguntaVFResource(resources.ModelResource):
     class Meta:
         model = PerguntaVFModel
         fields = (
-            'id', 'bibliografia', 'caiu_em_prova', 'ano_prova', 'pergunta',
-            'afirmacao', 'resposta_correta', 'justificativa_resposta_certa',
-            'tipo', 'created_at', 'updated_at'
+            'id', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'afirmacao', 'resposta_correta', 'justificativa_resposta_certa', 'tipo'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'afirmacao', 'resposta_correta',
-            'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa',
-            'tipo', 'created_at', 'updated_at'
+            'paginas', 'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa', 'tipo'
         )
         import_id_fields = ('id',)
         skip_unchanged = True
@@ -115,14 +110,14 @@ class PerguntaCorrelacaoResource(resources.ModelResource):
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = (
-            'id', 'bibliografia', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'id', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta',
-            'justificativa_resposta_certa', 'tipo', 'created_at', 'updated_at'
+            'justificativa_resposta_certa', 'tipo'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'coluna_a', 'coluna_b',
-            'resposta_correta', 'caiu_em_prova', 'ano_prova',
-            'justificativa_resposta_certa', 'tipo', 'created_at', 'updated_at'
+            'resposta_correta', 'paginas', 'caiu_em_prova', 'ano_prova',
+            'justificativa_resposta_certa', 'tipo'
         )
         import_id_fields = ('id',)
         skip_unchanged = True

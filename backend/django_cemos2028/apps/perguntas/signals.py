@@ -110,15 +110,16 @@ def load_fixtures_perguntas(sender, **kwargs):
     try:
         with transaction.atomic():
             # 1. Bibliografias
-            df = load_fixture('bibliografias.xlsx', ['titulo', 'autor', 'materia', 'ano_publicacao', 'descricao'])
+            df = load_fixture('bibliografias.xlsx', ['id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao'])
             if df is not None:
                 logger.info("📄 Processando bibliografias...")
                 for idx, row in df.iterrows():
-                    if _require_fields(row, ['titulo'], 'bibliografias', idx, ['titulo', 'autor', 'materia', 'descricao']):
+                    if _require_fields(row, ['id', 'titulo'], 'bibliografias', idx, ['titulo', 'autor', 'materia', 'descricao']):
                         obj, created = BibliografiaModel.objects.update_or_create(
-                            titulo=_as_clean_str(row['titulo']),
-                            autor=_as_clean_str(row.get('autor')),
+                            id=_as_int(row['id']),
                             defaults={
+                                'titulo': _as_clean_str(row['titulo']),
+                                'autor': _as_clean_str(row.get('autor')),
                                 'materia': _as_clean_str(row.get('materia')),
                                 'ano_publicacao': _as_int(row.get('ano_publicacao')),
                                 'descricao': _as_clean_str(row.get('descricao'))
@@ -129,7 +130,7 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 2. Perguntas Múltipla Escolha
             df = load_fixture('perguntas_multipla.xlsx', [
-                'bibliografia_titulo', 'pergunta', 'alternativa_a', 'alternativa_b', 
+                'bibliografia_titulo', 'paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 
                 'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa'
             ])
             if df is not None:
@@ -139,7 +140,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                     if _require_fields(row, ['bibliografia_titulo', 'pergunta', 'alternativa_a', 'alternativa_b', 
                                            'alternativa_c', 'alternativa_d', 'resposta_correta'], 
                                      'perguntas_multipla', idx, 
-                                     ['bibliografia_titulo', 'pergunta', 'alternativa_a', 'alternativa_b', 
+                                     ['bibliografia_titulo', 'paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 
                                       'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa']):
                         
                         try:
@@ -149,6 +150,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 bibliografia=bibliografia,
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
+                                    'paginas': _as_clean_str(row.get('paginas')),
                                     'alternativa_a': _as_clean_str(row['alternativa_a']),
                                     'alternativa_b': _as_clean_str(row['alternativa_b']),
                                     'alternativa_c': _as_clean_str(row['alternativa_c']),
@@ -171,7 +173,7 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 3. Perguntas Verdadeiro/Falso
             df = load_fixture('perguntas_vf.xlsx', [
-                'bibliografia_titulo', 'pergunta', 'afirmacao', 'resposta_correta', 'justificativa_resposta_certa'
+                'bibliografia_titulo', 'paginas', 'pergunta', 'afirmacao', 'resposta_correta', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas verdadeiro/falso...")
@@ -179,7 +181,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 for idx, row in df.iterrows():
                     if _require_fields(row, ['bibliografia_titulo', 'pergunta', 'afirmacao'], 
                                      'perguntas_vf', idx, 
-                                     ['bibliografia_titulo', 'pergunta', 'afirmacao', 'justificativa_resposta_certa']):
+                                     ['bibliografia_titulo', 'paginas', 'pergunta', 'afirmacao', 'justificativa_resposta_certa']):
                         
                         try:
                             bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
@@ -192,6 +194,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 bibliografia=bibliografia,
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
+                                    'paginas': _as_clean_str(row.get('paginas')),
                                     'afirmacao': _as_clean_str(row['afirmacao']),
                                     'resposta_correta': resposta_bool,
                                     'justificativa_resposta_certa': _as_clean_str(row.get('justificativa_resposta_certa', '')),
@@ -211,7 +214,7 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 4. Perguntas de Correlação
             df = load_fixture('perguntas_correlacao.xlsx', [
-                'bibliografia_titulo', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
+                'bibliografia_titulo', 'paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas de correlação...")
@@ -219,7 +222,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 for idx, row in df.iterrows():
                     if _require_fields(row, ['bibliografia_titulo', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta'], 
                                      'perguntas_correlacao', idx, 
-                                     ['bibliografia_titulo', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa']):
+                                     ['bibliografia_titulo', 'paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa']):
                         
                         try:
                             bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
@@ -244,6 +247,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 bibliografia=bibliografia,
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
+                                    'paginas': _as_clean_str(row.get('paginas')),
                                     'coluna_a': coluna_a,
                                     'coluna_b': coluna_b,
                                     'resposta_correta': resposta_correta,

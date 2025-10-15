@@ -1,0 +1,705 @@
+// Variáveis do tema Dracula
+:root {
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+  --dracula-lighter: rgba(248, 248, 242, 0.9);
+  --dracula-darker: #21222c;
+}
+
+.bibliografia-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+  box-sizing: border-box;
+  transition: grid-template-columns 0.3s ease;
+  gap: 0;
+
+  &.sidebar-collapsed {
+    grid-template-columns: 40px 1fr;
+  }
+}
+
+.bibliografia-sidebar {
+  background: rgba(40, 42, 54, 0.5);
+  border: 1px solid rgba(189, 147, 249, 0.1);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  min-width: 0; /* Permite que o elemento se encolha */
+
+  &.collapsed {
+    overflow: hidden;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    width: 40px !important;
+  }
+}
+
+.bibliografia-content {
+  background: rgba(40, 42, 54, 0.3);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  min-width: 0; /* Permite que o elemento se encolha */
+}
+
+.content-area {
+  height: 100%;
+}
+
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: var(--dracula-foreground);
+  font-style: italic;
+}
+
+.content-html {
+  color: var(--dracula-foreground);
+  line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  // Estilos para elementos Markdown com efeitos especiais
+  h1 {
+    background: linear-gradient(135deg, #bd93f9, #ff79c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    position: relative;
+    
+  }
+
+  h2 {
+    background: linear-gradient(135deg, #8be9fd, #50fa7b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 2rem 0 1.2rem 0;
+    padding: 0.8rem 1.5rem;
+    border-left: 5px solid var(--dracula-cyan);
+    background-color: rgba(139, 233, 253, 0.1);
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(139, 233, 253, 0.2);
+    
+    &::before {
+      content: '▶';
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--dracula-cyan);
+      font-size: 1.2rem;
+      background: var(--dracula-background);
+      padding: 0.2rem;
+      border-radius: 50%;
+    }
+  }
+
+  h3 {
+    background: linear-gradient(135deg, #50fa7b, #f1fa8c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.4rem;
+    font-weight: 650;
+    margin: 1.5rem 0 1rem 0;
+    padding: 0.6rem 1rem;
+    border-left: 4px solid var(--dracula-green);
+    border-top: 1px solid rgba(80, 250, 123, 0.3);
+    border-bottom: 1px solid rgba(80, 250, 123, 0.3);
+    background-color: rgba(80, 250, 123, 0.08);
+    border-radius: 5px;
+    position: relative;
+    
+    &::after {
+      content: '●';
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--dracula-green);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+  }
+
+  h4 {
+    color: var(--dracula-yellow);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.2rem 0 0.8rem 0;
+    padding: 0.4rem 0.8rem;
+    border-left: 3px solid var(--dracula-yellow);
+    background: linear-gradient(90deg, rgba(241, 250, 140, 0.15) 0%, transparent 100%);
+    border-radius: 3px;
+    text-shadow: 0 0 10px rgba(241, 250, 140, 0.3);
+    
+    &::before {
+      content: '◆';
+      margin-right: 0.5rem;
+      color: var(--dracula-yellow);
+    }
+  }
+
+  h5 {
+    color: var(--dracula-pink);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.6rem 0;
+    padding: 0.3rem 0.6rem;
+    border-left: 2px solid var(--dracula-pink);
+    background: rgba(255, 121, 198, 0.1);
+    border-radius: 2px;
+    
+    &::before {
+      content: '◇';
+      margin-right: 0.4rem;
+      color: var(--dracula-pink);
+    }
+  }
+
+  p {
+    margin-bottom: 1.4rem;
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    
+
+  }
+
+  strong {
+    background: linear-gradient(135deg, #ffb86c, #ff79c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    background-color: rgba(255, 184, 108, 0.15);
+    box-shadow: 0 2px 8px rgba(255, 184, 108, 0.2);
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255, 184, 108, 0.2), rgba(255, 121, 198, 0.2));
+      border-radius: 4px;
+      z-index: -1;
+    }
+  }
+
+  em {
+    color: var(--dracula-pink);
+    font-style: italic;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgba(255, 121, 198, 0.3);
+    position: relative;
+    
+    &::before, &::after {
+      content: '"';
+      color: rgba(255, 121, 198, 0.6);
+      font-size: 1.2em;
+    }
+  }
+
+  ul, ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+
+    li {
+      margin-bottom: 0.8rem;
+      line-height: 1.7;
+      position: relative;
+      
+      &::marker {
+        color: var(--dracula-purple);
+        font-weight: 700;
+      }
+      
+      &:hover {
+        color: rgba(248, 248, 242, 1);
+        transform: translateX(5px);
+        transition: all 0.3s ease;
+      }
+    }
+    
+    // Estilo personalizado para listas não ordenadas
+    &ul li {
+      &::before {
+        content: '▸';
+        color: var(--dracula-cyan);
+        font-weight: 700;
+        position: absolute;
+        left: -1.5rem;
+        top: 0;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  blockquote {
+    border-left: 6px solid var(--dracula-purple);
+    background: linear-gradient(135deg, rgba(189, 147, 249, 0.15), rgba(139, 233, 253, 0.1));
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    font-style: italic;
+    color: var(--dracula-lighter);
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(189, 147, 249, 0.2);
+
+    &::before {
+      content: '"';
+      font-size: 4rem;
+      color: rgba(189, 147, 249, 0.3);
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    p {
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+    }
+  }
+
+  code {
+    background: rgba(139, 233, 253, 0.1);
+    color: var(--dracula-cyan);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+  }
+
+  pre {
+    background: var(--dracula-darker);
+    color: var(--dracula-foreground);
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1rem 0;
+
+    code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--dracula-purple), var(--dracula-cyan), var(--dracula-purple), transparent);
+    margin: 3rem 0;
+    border-radius: 2px;
+    position: relative;
+    
+    &::before {
+      content: '◈';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--dracula-background);
+      color: var(--dracula-purple);
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(189, 147, 249, 0.5);
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    th, td {
+      border: 1px solid rgba(68, 71, 90, 0.5);
+      padding: 1rem;
+      text-align: left;
+      transition: background-color 0.3s ease;
+    }
+
+    th {
+      background: linear-gradient(135deg, rgba(189, 147, 249, 0.2), rgba(139, 233, 253, 0.2));
+      color: var(--dracula-purple);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    tr:hover td {
+      background: rgba(189, 147, 249, 0.1);
+    }
+  }
+
+  a {
+    color: var(--dracula-cyan);
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--dracula-cyan), var(--dracula-pink));
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--dracula-pink);
+      background: rgba(139, 233, 253, 0.1);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(139, 233, 253, 0.3);
+      
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+  
+  // Suporte para elementos HTML inline no markdown
+  span[style*="color"] {
+    display: inline-block;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  div[style*="background"] {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 20px rgba(139, 233, 253, 0.3);
+    }
+  }
+  
+  // Força aplicação de estilos inline (sobrescreve encapsulamento Angular)
+  ::ng-deep span[style*="color: #bd93f9"] {
+    color: #bd93f9 !important;
+    text-shadow: 0 0 10px rgba(189, 147, 249, 0.5) !important;
+    font-weight: 700 !important;
+  }
+  
+  ::ng-deep span[style*="color: #8be9fd"] {
+    color: #8be9fd !important;
+    text-shadow: 0 0 10px rgba(139, 233, 253, 0.5) !important;
+    font-weight: 700 !important;
+  }
+  
+  ::ng-deep span[style*="color: #ffb86c"] {
+    color: #ffb86c !important;
+    text-shadow: 0 0 10px rgba(255, 184, 108, 0.5) !important;
+    font-weight: 700 !important;
+  }
+  
+  ::ng-deep span[style*="color: #ff79c6"] {
+    color: #ff79c6 !important;
+    text-shadow: 0 0 10px rgba(255, 121, 198, 0.5) !important;
+    font-weight: 700 !important;
+  }
+  
+  ::ng-deep div[style*="background: linear-gradient"] {
+    background: linear-gradient(135deg, rgba(189, 147, 249, 0.1), rgba(139, 233, 253, 0.1)) !important;
+    border-left: 4px solid #8be9fd !important;
+    border-radius: 5px !important;
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+    box-shadow: 0 4px 15px rgba(139, 233, 253, 0.2) !important;
+    
+    strong {
+      color: #8be9fd !important;
+      font-weight: 700 !important;
+    }
+  }
+  
+  ::ng-deep blockquote[style*="background"] {
+    background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)) !important;
+    border-left: 5px solid #ff79c6 !important;
+    border-radius: 8px !important;
+    padding: 1.5rem !important;
+    margin: 2rem 0 !important;
+    box-shadow: 0 4px 20px rgba(255, 121, 198, 0.2) !important;
+    
+    em {
+      color: #ff79c6 !important;
+      font-style: italic !important;
+      font-weight: 500 !important;
+    }
+    
+    span {
+      color: #ff79c6 !important;
+      font-size: 1.5em !important;
+    }
+  }
+  
+  // Estilo para spans com background
+  ::ng-deep span[style*="background: rgba"] {
+    background: rgba(255, 184, 108, 0.2) !important;
+    color: #ffb86c !important;
+    padding: 0.3rem 0.6rem !important;
+    border-radius: 5px !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 10px rgba(255, 184, 108, 0.5) !important;
+    box-shadow: 0 2px 8px rgba(255, 184, 108, 0.3) !important;
+  }
+  
+  // Destacar textos com cores específicas do Dracula
+  .text-purple { color: #bd93f9 !important; }
+  .text-cyan { color: #8be9fd !important; }
+  .text-green { color: #50fa7b !important; }
+  .text-yellow { color: #f1fa8c !important; }
+  .text-orange { color: #ffb86c !important; }
+  .text-pink { color: #ff79c6 !important; }
+  .text-red { color: #ff5555 !important; }
+  
+  // Backgrounds com cores do Dracula
+  .bg-purple { background: rgba(189, 147, 249, 0.2) !important; }
+  .bg-cyan { background: rgba(139, 233, 253, 0.2) !important; }
+  .bg-green { background: rgba(80, 250, 123, 0.2) !important; }
+  .bg-yellow { background: rgba(241, 250, 140, 0.2) !important; }
+  .bg-orange { background: rgba(255, 184, 108, 0.2) !important; }
+  .bg-pink { background: rgba(255, 121, 198, 0.2) !important; }
+  
+  // Caixas de destaque especiais
+  .highlight-box {
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    border-left: 5px solid var(--dracula-purple);
+    background: linear-gradient(135deg, rgba(189, 147, 249, 0.1), rgba(139, 233, 253, 0.05));
+    box-shadow: 0 4px 20px rgba(189, 147, 249, 0.2);
+    position: relative;
+    
+    &::before {
+      content: '💎';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: var(--dracula-background);
+      padding: 0.5rem;
+      border-radius: 50%;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .info-box {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border-left: 4px solid var(--dracula-cyan);
+    background: rgba(139, 233, 253, 0.1);
+    
+    &::before {
+      content: 'ℹ️';
+      margin-right: 0.5rem;
+    }
+  }
+  
+  .warning-box {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border-left: 4px solid var(--dracula-orange);
+    background: rgba(255, 184, 108, 0.1);
+    
+    &::before {
+      content: '⚠️';
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.content-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dracula-foreground);
+}
+
+.content-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  
+  p {
+    color: var(--dracula-comment);
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}
+
+// Responsividade
+@media (max-width: 1200px) {
+  .bibliografia-layout {
+    grid-template-columns: 350px 1fr;
+    gap: 1rem;
+
+    &.sidebar-collapsed {
+      grid-template-columns: 40px 1fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bibliografia-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    height: auto;
+    min-height: 100vh;
+
+    &.sidebar-collapsed {
+      grid-template-columns: 1fr;
+      grid-template-rows: 36px 1fr;
+    }
+  }
+
+  .bibliografia-sidebar {
+    max-height: none;
+    order: 1;
+
+    &.collapsed {
+      height: 36px;
+      max-height: 36px;
+    }
+  }
+
+  .bibliografia-content {
+    max-height: none;
+    min-height: 60vh;
+    order: 2;
+  }
+
+  .content-area {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bibliografia-layout {
+    padding: 0.5rem;
+
+    &.sidebar-collapsed {
+      grid-template-rows: 34px 1fr;
+    }
+  }
+
+  .bibliografia-sidebar {
+    padding: 0.75rem;
+
+    &.collapsed {
+      height: 34px;
+      max-height: 34px;
+      padding: 0;
+    }
+  }
+
+  .content-area {
+    padding: 1rem;
+  }
+
+  .content-placeholder p {
+    font-size: 1rem;
+  }
+}
+
+// Animações CSS
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(189, 147, 249, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(189, 147, 249, 0.8), 0 0 30px rgba(255, 121, 198, 0.4);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Adicionar animação de entrada para títulos
+.content-html {
+  h1, h2, h3, h4, h5 {
+    animation: slideIn 0.6s ease-out;
+  }
+  
+  h1 {
+    animation-delay: 0.1s;
+  }
+  
+  h2 {
+    animation-delay: 0.2s;
+  }
+  
+  h3 {
+    animation-delay: 0.3s;
+  }
+}

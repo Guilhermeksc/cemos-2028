@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'django_cemos2028.apps.core.usuarios',
     # App1 - Gestão
     'django_cemos2028.apps.perguntas',
+    # App2 - Informações
+    'django_cemos2028.apps.informacoes',
 ]
 
 MIDDLEWARE = [

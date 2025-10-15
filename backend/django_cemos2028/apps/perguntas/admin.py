@@ -3,22 +3,20 @@ from .models import (
     BibliografiaModel, 
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
-    PerguntaCorrelacaoModel,
-    PerguntasModel
+    PerguntaCorrelacaoModel
 )
 
 
 @admin.register(BibliografiaModel)
 class BibliografiaAdmin(admin.ModelAdmin):
-    list_display = ['titulo', 'autor', 'materia', 'ano_publicacao', 'created_at']
-    list_filter = ['materia', 'ano_publicacao', 'created_at']
+    list_display = ['id', 'titulo', 'autor', 'materia', 'ano_publicacao']
+    list_filter = ['materia', 'ano_publicacao']
     search_fields = ['titulo', 'autor', 'materia', 'descricao']
-    ordering = ['-created_at']
-    date_hierarchy = 'created_at'
+    ordering = ['id']
     
     fieldsets = (
         ('Informações Básicas', {
-            'fields': ('titulo', 'autor', 'materia', 'ano_publicacao')
+            'fields': ('id', 'titulo', 'autor', 'materia', 'ano_publicacao')
         }),
         ('Descrição', {
             'fields': ('descricao',),
@@ -29,15 +27,14 @@ class BibliografiaAdmin(admin.ModelAdmin):
 
 @admin.register(PerguntaMultiplaModel)
 class PerguntaMultiplaAdmin(admin.ModelAdmin):
-    list_display = ['__str__', 'bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta', 'created_at']
-    list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia', 'created_at']
+    list_display = ['__str__', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
+    list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering = ['-created_at']
-    date_hierarchy = 'created_at'
+    ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
-            'fields': ('bibliografia', 'pergunta', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'pergunta', 'paginas', 'caiu_em_prova', 'ano_prova')
         }),
         ('Alternativas', {
             'fields': ('alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta')
@@ -53,15 +50,14 @@ class PerguntaMultiplaAdmin(admin.ModelAdmin):
 
 @admin.register(PerguntaVFModel)
 class PerguntaVFAdmin(admin.ModelAdmin):
-    list_display = ['__str__', 'bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta', 'created_at']
-    list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia', 'created_at']
+    list_display = ['__str__', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
+    list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia']
     search_fields = ['pergunta', 'afirmacao', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering = ['-created_at']
-    date_hierarchy = 'created_at'
+    ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
-            'fields': ('bibliografia', 'pergunta', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'pergunta', 'paginas', 'caiu_em_prova', 'ano_prova')
         }),
         ('Afirmação e Resposta', {
             'fields': ('afirmacao', 'resposta_correta')
@@ -77,15 +73,14 @@ class PerguntaVFAdmin(admin.ModelAdmin):
 
 @admin.register(PerguntaCorrelacaoModel)
 class PerguntaCorrelacaoAdmin(admin.ModelAdmin):
-    list_display = ['__str__', 'bibliografia', 'caiu_em_prova', 'ano_prova', 'created_at']
-    list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'created_at']
+    list_display = ['__str__', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova']
+    list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering = ['-created_at']
-    date_hierarchy = 'created_at'
+    ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
-            'fields': ('bibliografia', 'pergunta', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'pergunta', 'paginas', 'caiu_em_prova', 'ano_prova')
         }),
         ('Correlação', {
             'fields': ('coluna_a', 'coluna_b', 'resposta_correta'),

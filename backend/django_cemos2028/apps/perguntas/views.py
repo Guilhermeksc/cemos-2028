@@ -29,8 +29,8 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['ano_publicacao', 'autor', 'materia']
     search_fields = ['titulo', 'autor', 'materia', 'descricao']
-    ordering_fields = ['titulo', 'autor', 'materia', 'ano_publicacao', 'created_at']
-    ordering = ['-created_at']
+    ordering_fields = ['id', 'titulo', 'autor', 'materia', 'ano_publicacao']
+    ordering = ['id']
     
     def get_serializer_class(self):
         if self.action in ['create', 'update', 'partial_update']:
@@ -52,9 +52,9 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
                 'tipo_display': pergunta.get_tipo_display(),
                 'bibliografia_titulo': pergunta.bibliografia.titulo,
                 'pergunta': pergunta.pergunta,
+                'paginas': pergunta.paginas,
                 'caiu_em_prova': pergunta.caiu_em_prova,
-                'ano_prova': pergunta.ano_prova,
-                'created_at': pergunta.created_at
+                'ano_prova': pergunta.ano_prova
             })
         
         # Buscar perguntas V/F
@@ -66,9 +66,9 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
                 'tipo_display': pergunta.get_tipo_display(),
                 'bibliografia_titulo': pergunta.bibliografia.titulo,
                 'pergunta': pergunta.pergunta,
+                'paginas': pergunta.paginas,
                 'caiu_em_prova': pergunta.caiu_em_prova,
-                'ano_prova': pergunta.ano_prova,
-                'created_at': pergunta.created_at
+                'ano_prova': pergunta.ano_prova
             })
         
         # Buscar perguntas de correlação
@@ -80,13 +80,13 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
                 'tipo_display': pergunta.get_tipo_display(),
                 'bibliografia_titulo': pergunta.bibliografia.titulo,
                 'pergunta': pergunta.pergunta,
+                'paginas': pergunta.paginas,
                 'caiu_em_prova': pergunta.caiu_em_prova,
-                'ano_prova': pergunta.ano_prova,
-                'created_at': pergunta.created_at
+                'ano_prova': pergunta.ano_prova
             })
         
-        # Ordenar por data de criação
-        perguntas.sort(key=lambda x: x['created_at'], reverse=True)
+        # Ordenar por ID
+        perguntas.sort(key=lambda x: x['id'])
         
         serializer = PerguntaResumoSerializer(perguntas, many=True)
         return Response(serializer.data)
@@ -99,8 +99,8 @@ class PerguntaMultiplaViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'created_at']
-    ordering = ['-created_at']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova']
+    ordering = ['id']
     
     def get_serializer_class(self):
         if self.action in ['create', 'update', 'partial_update']:
@@ -115,8 +115,8 @@ class PerguntaVFViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
     search_fields = ['pergunta', 'afirmacao', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'created_at']
-    ordering = ['-created_at']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova']
+    ordering = ['id']
     
     def get_serializer_class(self):
         if self.action in ['create', 'update', 'partial_update']:
@@ -131,8 +131,8 @@ class PerguntaCorrelacaoViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'created_at']
-    ordering = ['-created_at']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova']
+    ordering = ['id']
     
     def get_serializer_class(self):
         if self.action in ['create', 'update', 'partial_update']:

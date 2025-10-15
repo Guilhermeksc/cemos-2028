@@ -3,6 +3,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class BibliografiaModel(models.Model):
+    id = models.IntegerField(primary_key=True, unique=True, verbose_name="ID")
     titulo = models.CharField(max_length=255, verbose_name="Título")
     autor = models.CharField(max_length=255, blank=True, null=True, verbose_name="Autor")
     materia = models.CharField(max_length=100, blank=True, null=True, verbose_name="Matéria")
@@ -14,13 +15,10 @@ class BibliografiaModel(models.Model):
     )
     descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
     
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    
     class Meta:
         verbose_name = "Bibliografia"
         verbose_name_plural = "Bibliografias"
-        ordering = ['-created_at']
+        ordering = ['id']
     
     def __str__(self):
         parts = [self.titulo]
@@ -44,8 +42,9 @@ class PerguntasBaseModel(models.Model):
         BibliografiaModel, 
         on_delete=models.CASCADE, 
         verbose_name="Bibliografia",
-        related_name="perguntas"
+        related_name="+"
     )
+    paginas = models.CharField(max_length=100, blank=True, null=True, verbose_name="Páginas")
     caiu_em_prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
     ano_prova = models.IntegerField(
         blank=True, 
@@ -57,12 +56,9 @@ class PerguntasBaseModel(models.Model):
     justificativa_resposta_certa = models.TextField(verbose_name="Justificativa da Resposta Correta")
     tipo = models.CharField(max_length=20, choices=TIPO_CHOICES, verbose_name="Tipo de Pergunta")
     
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    
     class Meta:
         abstract = True
-        ordering = ['-created_at']
+        ordering = ['id']
     
     def __str__(self):
         return f"{self.bibliografia.titulo} - {self.get_tipo_display()}"
@@ -89,7 +85,7 @@ class PerguntaMultiplaModel(PerguntasBaseModel):
     class Meta:
         verbose_name = "Pergunta Múltipla Escolha"
         verbose_name_plural = "Perguntas Múltipla Escolha"
-        ordering = ['-created_at']
+        ordering = ['id']
     
     def save(self, *args, **kwargs):
         self.tipo = 'multipla'
@@ -103,7 +99,7 @@ class PerguntaVFModel(PerguntasBaseModel):
     class Meta:
         verbose_name = "Pergunta Verdadeiro ou Falso"
         verbose_name_plural = "Perguntas Verdadeiro ou Falso"
-        ordering = ['-created_at']
+        ordering = ['id']
     
     def save(self, *args, **kwargs):
         self.tipo = 'vf'
@@ -127,7 +123,7 @@ class PerguntaCorrelacaoModel(PerguntasBaseModel):
     class Meta:
         verbose_name = "Pergunta de Correlação"
         verbose_name_plural = "Perguntas de Correlação"
-        ordering = ['-created_at']
+        ordering = ['id']
     
     def save(self, *args, **kwargs):
         self.tipo = 'correlacao'

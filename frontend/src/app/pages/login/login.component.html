@@ -1,0 +1,28 @@
+<div class="flex items-center justify-center min-h-screen bg-dracula-background relative p-8 box-border">
+  <!-- Gradient overlays usando absolute positioning -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-dracula-purple/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-dracula-cyan/10 rounded-full blur-3xl"></div>
+  
+  <div class="w-full max-w-md relative z-10">
+    <mat-card class="p-10 rounded-3xl bg-dracula-current shadow-2xl backdrop-blur-md border border-dracula-purple/20" appearance="outlined">
+      <mat-card-content>
+        <div class="flex items-baseline gap-1.5 font-montserrat text-dracula-purple">
+          <span class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider">CEMOS</span>
+          <span class="text-2xl md:text-3xl lg:text-4xl font-medium text-dracula-cyan">2028</span>
+        </div>
+        <p class="mt-4 text-base text-dracula-comment">Curso de Estado-Maior para Oficiais Superiores</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button 
+          mat-raised-button 
+          color="primary" 
+          class="w-full mt-8 flex items-center justify-center gap-2 text-base py-3.5" 
+          (click)="navigateToHome()"
+        >
+          Entrar
+          <mat-icon fontIcon="arrow_forward" class="text-xl"></mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
