@@ -1,0 +1,134 @@
+from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
+
+
+class BibliografiaModel(models.Model):
+    titulo = models.CharField(max_length=255, verbose_name="Título")
+    autor = models.CharField(max_length=255, blank=True, null=True, verbose_name="Autor")
+    materia = models.CharField(max_length=100, blank=True, null=True, verbose_name="Matéria")
+    ano_publicacao = models.IntegerField(
+        blank=True, 
+        null=True, 
+        verbose_name="Ano de Publicação",
+        validators=[MinValueValidator(1900), MaxValueValidator(2100)]
+    )
+    descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        verbose_name = "Bibliografia"
+        verbose_name_plural = "Bibliografias"
+        ordering = ['-created_at']
+    
+    def __str__(self):
+        parts = [self.titulo]
+        if self.autor:
+            parts.append(f"- {self.autor}")
+        if self.materia:
+            parts.append(f"({self.materia})")
+        if self.ano_publicacao:
+            parts.append(f"[{self.ano_publicacao}]")
+        return " ".join(parts)
+
+
+class PerguntasBaseModel(models.Model):
+    TIPO_CHOICES = [
+        ('multipla', 'Múltipla Escolha'),
+        ('vf', 'Verdadeiro ou Falso'),
+        ('correlacao', 'Correlação'),
+    ]
+    
+    bibliografia = models.ForeignKey(
+        BibliografiaModel, 
+        on_delete=models.CASCADE, 
+        verbose_name="Bibliografia",
+        related_name="perguntas"
+    )
+    caiu_em_prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
+    ano_prova = models.IntegerField(
+        blank=True, 
+        null=True, 
+        verbose_name="Ano da Prova",
+        validators=[MinValueValidator(2000), MaxValueValidator(2100)]
+    )
+    pergunta = models.TextField(verbose_name="Pergunta")
+    justificativa_resposta_certa = models.TextField(verbose_name="Justificativa da Resposta Correta")
+    tipo = models.CharField(max_length=20, choices=TIPO_CHOICES, verbose_name="Tipo de Pergunta")
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        abstract = True
+        ordering = ['-created_at']
+    
+    def __str__(self):
+        return f"{self.bibliografia.titulo} - {self.get_tipo_display()}"
+
+
+class PerguntaMultiplaModel(PerguntasBaseModel):
+    RESPOSTA_CHOICES = [
+        ('a', 'Alternativa A'),
+        ('b', 'Alternativa B'),
+        ('c', 'Alternativa C'),
+        ('d', 'Alternativa D'),
+    ]
+    
+    alternativa_a = models.CharField(max_length=255, verbose_name="Alternativa A")
+    alternativa_b = models.CharField(max_length=255, verbose_name="Alternativa B")
+    alternativa_c = models.CharField(max_length=255, verbose_name="Alternativa C")
+    alternativa_d = models.CharField(max_length=255, verbose_name="Alternativa D")
+    resposta_correta = models.CharField(
+        max_length=1, 
+        choices=RESPOSTA_CHOICES, 
+        verbose_name="Resposta Correta"
+    )
+    
+    class Meta:
+        verbose_name = "Pergunta Múltipla Escolha"
+        verbose_name_plural = "Perguntas Múltipla Escolha"
+        ordering = ['-created_at']
+    
+    def save(self, *args, **kwargs):
+        self.tipo = 'multipla'
+        super().save(*args, **kwargs)
+
+
+class PerguntaVFModel(PerguntasBaseModel):
+    afirmacao = models.TextField(verbose_name="Afirmação")
+    resposta_correta = models.BooleanField(verbose_name="Resposta Correta (Verdadeiro/Falso)")
+    
+    class Meta:
+        verbose_name = "Pergunta Verdadeiro ou Falso"
+        verbose_name_plural = "Perguntas Verdadeiro ou Falso"
+        ordering = ['-created_at']
+    
+    def save(self, *args, **kwargs):
+        self.tipo = 'vf'
+        super().save(*args, **kwargs)
+
+
+class PerguntaCorrelacaoModel(PerguntasBaseModel):
+    coluna_a = models.JSONField(
+        verbose_name="Coluna A (Lista de itens)",
+        help_text="Lista de itens da coluna A em formato JSON. Ex: ['Item 1', 'Item 2', 'Item 3']"
+    )
+    coluna_b = models.JSONField(
+        verbose_name="Coluna B (Lista de itens)",
+        help_text="Lista de itens da coluna B em formato JSON. Ex: ['Item A', 'Item B', 'Item C']"
+    )
+    resposta_correta = models.JSONField(
+        verbose_name="Resposta Correta (Pares corretos)",
+        help_text="Pares corretos em formato JSON. Ex: {'0': '1', '1': '0', '2': '2'}"
+    )
+    
+    class Meta:
+        verbose_name = "Pergunta de Correlação"
+        verbose_name_plural = "Perguntas de Correlação"
+        ordering = ['-created_at']
+    
+    def save(self, *args, **kwargs):
+        self.tipo = 'correlacao'
+        super().save(*args, **kwargs)

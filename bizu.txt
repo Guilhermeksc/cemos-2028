@@ -1,0 +1,8 @@
+https://github.com/Guilhermeksc/360_novo/blob/mainnovo/src/modules/dispensa_eletronica/models.py
+
+
+docker compose up -d --build
+
+docker compose exec backend python manage.py makemigrations
+docker compose exec backend python manage.py migrate
+docker compose exec backend python manage.py check
