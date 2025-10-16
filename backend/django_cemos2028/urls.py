@@ -12,7 +12,7 @@ urlpatterns = [
     path('api/health/', health_check, name='health_check'),
 
     # Autenticação JWT
-    path('api/auth/', include('django_cemos2028.apps.core.autenticacao.urls')),
+    path('api/auth/', include('django_cemos2028.apps.core.auth.urls')),
 
     # App de Perguntas
     path('api/perguntas/', include('django_cemos2028.apps.perguntas.urls')),

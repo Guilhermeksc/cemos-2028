@@ -13,7 +13,7 @@ class BibliografiaSerializer(serializers.ModelSerializer):
     class Meta:
         model = BibliografiaModel
         fields = [
-            'id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao',
+            'id', 'titulo', 'autor', 'materia', 'descricao',
             'perguntas_count'
         ]
         read_only_fields = ['id']
@@ -121,7 +121,7 @@ class PerguntaResumoSerializer(serializers.Serializer):
 class BibliografiaCreateUpdateSerializer(BibliografiaSerializer):
     """Serializer específico para criação e edição de bibliografia"""
     class Meta(BibliografiaSerializer.Meta):
-        fields = ['id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao']
+        fields = ['id', 'titulo', 'autor', 'materia', 'descricao']
 
 
 class PerguntaMultiplaCreateUpdateSerializer(PerguntaMultiplaSerializer):

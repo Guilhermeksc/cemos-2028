@@ -306,6 +306,22 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           ).then((m) => m.App6GeopoliticaRelacoesInternacionaisPerguntas)
       },
       {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () =>
+          import(
+            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-conceitos/app6-geopolitica-relacoes-internacionais-conceitos'
+          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisConceitos)
+      },
+      {
+        title: 'Pensadores',
+        path: 'pensadores',
+        loadComponent: () =>
+          import(
+            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-pensadores/app6-geopolitica-relacoes-internacionais-pensadores'
+          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisPensadores)
+      },
+      {
         title: 'Resumo',
         path: 'resumo',
         loadComponent: () =>

@@ -16,8 +16,6 @@ import { BibliografiaCompletaData } from '../../../../interfaces/bibliografia-co
     BibliografiaCompleta
   ],
   templateUrl: './principios-ri.html',
-  styleUrl: '../../../../../styles/bibliografia.scss',
-  encapsulation: ViewEncapsulation.None
 })
 
 export class PrincipiosRi implements OnInit {

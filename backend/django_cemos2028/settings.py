@@ -25,8 +25,14 @@ SECRET_KEY = 'django-insecure--z9v8t1cl*!tyk@x_9kv#b-z--7$_l$8v8&(a73!_nonui6$8w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*", "localhost", "127.0.0.1"]
-DEBUG = True
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "0.0.0.0",
+    "195.200.1.112",
+    "cemos2028.site",
+    "www.cemos2028.site",
+]
 
 # Application definition
 
@@ -41,12 +47,11 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'corsheaders',
     'import_export',
-    # Core apps
-    'django_cemos2028.apps.core.autenticacao',
-    'django_cemos2028.apps.core.usuarios',
-    # App1 - Gestão
+    # Core
+    'django_cemos2028.apps.core.auth',
+    'django_cemos2028.apps.core.users',
+    # Módulos
     'django_cemos2028.apps.perguntas',
-    # App2 - Informações
     'django_cemos2028.apps.informacoes',
 ]
 
@@ -63,9 +68,21 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4200",         # Ambiente Angular local
+    "http://127.0.0.1:4200",
+    "http://195.200.1.112",          # IP direto
+    "http://cemos2028.site",         # Domínio sem HTTPS
+    "https://cemos2028.site",        # Domínio com HTTPS
+]
+
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:8088",
-    "http://127.0.0.1:8088",
+    "http://localhost:4200",
+    "http://127.0.0.1:4200",
+    "http://195.200.1.112",
+    "https://195.200.1.112",
+    "http://cemos2028.site",
+    "https://cemos2028.site",
 ]
 
 ROOT_URLCONF = 'django_cemos2028.urls'
@@ -87,13 +104,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_cemos2028.wsgi.application'
 
+AUTH_USER_MODEL = "users.Usuario"
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    )
+        'rest_framework.permissions.AllowAny',
+        # Para produção, usar: 'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 100
 }
 
 from datetime import timedelta
@@ -121,7 +143,6 @@ DATABASES = {
 }
 
 
-AUTH_USER_MODEL = "usuarios.Usuario"
 
 
 # Password validation
@@ -157,9 +178,8 @@ USE_TZ = True
 
 
 # Arquivos estáticos
-STATIC_URL = "/static/"
-STATIC_ROOT = "/app/static"
-
+STATIC_URL = '/static/'
+STATIC_ROOT = '/app/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

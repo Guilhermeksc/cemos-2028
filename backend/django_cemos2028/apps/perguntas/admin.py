@@ -9,14 +9,14 @@ from .models import (
 
 @admin.register(BibliografiaModel)
 class BibliografiaAdmin(admin.ModelAdmin):
-    list_display = ['id', 'titulo', 'autor', 'materia', 'ano_publicacao']
-    list_filter = ['materia', 'ano_publicacao']
+    list_display = ['id', 'titulo', 'autor', 'materia']
+    list_filter = ['materia']
     search_fields = ['titulo', 'autor', 'materia', 'descricao']
     ordering = ['id']
     
     fieldsets = (
         ('Informações Básicas', {
-            'fields': ('id', 'titulo', 'autor', 'materia', 'ano_publicacao')
+            'fields': ('id', 'titulo', 'autor', 'materia')
         }),
         ('Descrição', {
             'fields': ('descricao',),

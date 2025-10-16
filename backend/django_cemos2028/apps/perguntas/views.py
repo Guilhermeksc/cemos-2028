@@ -27,9 +27,9 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
     queryset = BibliografiaModel.objects.all()
     serializer_class = BibliografiaSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['ano_publicacao', 'autor', 'materia']
+    filterset_fields = ['autor', 'materia']
     search_fields = ['titulo', 'autor', 'materia', 'descricao']
-    ordering_fields = ['id', 'titulo', 'autor', 'materia', 'ano_publicacao']
+    ordering_fields = ['id', 'titulo', 'autor', 'materia']
     ordering = ['id']
     
     def get_serializer_class(self):

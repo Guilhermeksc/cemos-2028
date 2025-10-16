@@ -5,7 +5,6 @@ export interface Bibliografia {
   titulo: string;
   autor?: string;
   materia?: string;
-  ano_publicacao?: number;
   descricao?: string;
   perguntas_count?: number;
 }
@@ -15,7 +14,6 @@ export interface BibliografiaCreateUpdate {
   titulo: string;
   autor?: string;
   materia?: string;
-  ano_publicacao?: number;
   descricao?: string;
 }
 
@@ -115,7 +113,6 @@ export type Pergunta = PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
 // Interfaces para filtros e consultas
 export interface BibliografiaFilters {
   search?: string;
-  ano_publicacao?: number;
   autor?: string;
   materia?: string;
   ordering?: string;

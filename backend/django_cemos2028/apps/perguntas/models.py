@@ -7,12 +7,6 @@ class BibliografiaModel(models.Model):
     titulo = models.CharField(max_length=255, verbose_name="Título")
     autor = models.CharField(max_length=255, blank=True, null=True, verbose_name="Autor")
     materia = models.CharField(max_length=100, blank=True, null=True, verbose_name="Matéria")
-    ano_publicacao = models.IntegerField(
-        blank=True, 
-        null=True, 
-        verbose_name="Ano de Publicação",
-        validators=[MinValueValidator(1900), MaxValueValidator(2100)]
-    )
     descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
     
     class Meta:
@@ -26,8 +20,6 @@ class BibliografiaModel(models.Model):
             parts.append(f"- {self.autor}")
         if self.materia:
             parts.append(f"({self.materia})")
-        if self.ano_publicacao:
-            parts.append(f"[{self.ano_publicacao}]")
         return " ".join(parts)
 
 

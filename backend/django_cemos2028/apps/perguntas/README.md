@@ -8,7 +8,6 @@
 bibliografia = BibliografiaModel.objects.create(
     titulo="Manual de Licitações e Contratos",
     autor="João Silva",
-    ano_publicacao=2023,
     descricao="Manual completo sobre licitações públicas"
 )
 ```
@@ -106,7 +105,6 @@ pergunta_correlacao = PerguntaCorrelacaoModel.objects.create(
 
 ### Bibliografias
 - `?search=termo` - Busca por título, autor ou descrição
-- `?ano_publicacao=2023` - Filtrar por ano
 - `?autor=João Silva` - Filtrar por autor
 - `?ordering=-created_at` - Ordenar por data de criação (decrescente)
 

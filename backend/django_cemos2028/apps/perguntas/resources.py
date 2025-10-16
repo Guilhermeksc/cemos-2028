@@ -12,8 +12,8 @@ from .models import (
 class BibliografiaResource(resources.ModelResource):
     class Meta:
         model = BibliografiaModel
-        fields = ('id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao')
-        export_order = ('id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao')
+        fields = ('id', 'titulo', 'autor', 'materia', 'descricao')
+        export_order = ('id', 'titulo', 'autor', 'materia', 'descricao')
         import_id_fields = ('id',)
         skip_unchanged = True
         report_skipped = True

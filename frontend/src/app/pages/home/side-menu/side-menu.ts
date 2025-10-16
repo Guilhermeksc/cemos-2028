@@ -2,8 +2,10 @@ import { NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Output, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { AuthService } from '../../../services/auth.service';
 
 interface MenuItem {
   title: string;
@@ -32,7 +34,8 @@ interface SubSubMenuItem {
     NgFor,
     NgIf,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   templateUrl: './side-menu.html',
   styleUrl: './side-menu.scss',
@@ -58,7 +61,7 @@ export class SideMenu {
   // Rastrear o item ativo atual
   currentActivePath = signal<string>('');
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   readonly menuItems = signal<MenuItem[]>([
     { 
@@ -139,6 +142,8 @@ export class SideMenu {
         },
         'Mídia',
         'Perguntas',
+        'Conceitos',
+        'Pensadores',
         {
           title: 'Resumo',
           children: [
@@ -420,6 +425,12 @@ export class SideMenu {
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
+            case 'Conceitos':
+              pathParts.push('conceitos');
+              break;
+            case 'Pensadores':
+              pathParts.push('pensadores');
+              break;  
             case 'Resumo':
               pathParts.push('resumo');
               break;
@@ -542,6 +553,12 @@ export class SideMenu {
         case 'Perguntas':
           pathParts.push('perguntas');
           break;
+        case 'Conceitos':
+          pathParts.push('conceitos');
+          break;
+        case 'Pensadores':
+          pathParts.push('pensadores');
+          break;
         case 'Resumo':
           pathParts.push('resumo');
           break;
@@ -599,5 +616,13 @@ export class SideMenu {
       default:
         return '';
     }
+  }
+
+  /**
+   * Realiza logout do usuário e redireciona para a página de login
+   */
+  logout(): void {
+    this.authService.logout();
+    this.router.navigate(['/login']);
   }
 }

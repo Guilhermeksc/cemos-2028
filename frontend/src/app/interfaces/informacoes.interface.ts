@@ -6,6 +6,7 @@ export interface Presidentes {
   bibliografia_titulo?: string;
   periodo_presidencial: string;
   presidente: string;
+  pais: string;
   conflitos_principais?: string;
   imagem_caminho?: string;
 }
@@ -14,6 +15,7 @@ export interface PresidentesCreateUpdate {
   bibliografia: number;
   periodo_presidencial: string;
   presidente: string;
+  pais: string;
   conflitos_principais?: string;
   imagem_caminho?: string;
 }
@@ -99,6 +101,7 @@ export interface InformacoesFilters {
 
 export interface PresidentesFilters extends InformacoesFilters {
   periodo_presidencial?: string;
+  pais?: string;
 }
 
 export interface FilosofosFilters extends InformacoesFilters {

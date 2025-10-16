@@ -1,15 +1,15 @@
-<div class="conceitos-table-container">
+<div class="w-full bg-white rounded-lg shadow-sm overflow-hidden">
   <!-- Título do componente -->
-  <div class="table-header">
-    <h3 class="table-title">{{ title }}</h3>
-    <span class="items-count" *ngIf="conceitos.length > 0">
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-6 bg-gradient-to-br from-blue-600 to-purple-600 text-white border-b border-gray-200">
+    <h3 class="m-0 text-xl font-semibold text-white">{{ title }}</h3>
+    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm font-medium mt-3 sm:mt-0 self-end sm:self-auto" *ngIf="conceitos.length > 0">
       {{ conceitos.length }} {{ conceitos.length === 1 ? 'conceito' : 'conceitos' }}
     </span>
   </div>
 
   <!-- Mensagem quando não há conceitos -->
-  <div class="empty-state" *ngIf="conceitos.length === 0">
-    <div class="empty-icon">
+  <div class="text-center py-12 px-6 text-gray-500" *ngIf="conceitos.length === 0">
+    <div class="mb-4 text-gray-300">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
         <polyline points="14,2 14,8 20,8"></polyline>
@@ -18,31 +18,31 @@
         <polyline points="10,9 9,9 8,9"></polyline>
       </svg>
     </div>
-    <p class="empty-message">{{ emptyMessage }}</p>
+    <p class="text-base m-0">{{ emptyMessage }}</p>
   </div>
 
   <!-- Tabela de conceitos -->
-  <div class="table-responsive" *ngIf="conceitos.length > 0">
-    <table class="conceitos-table">
+  <div class="overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100" *ngIf="conceitos.length > 0">
+    <table class="w-full border-collapse text-sm">
       <thead>
-        <tr>
-          <th class="col-titulo">Título</th>
-          <th class="col-descricao">Descrição</th>
-          <th class="col-bibliografia" *ngIf="showBibliografia">Bibliografia</th>
-          <th class="col-prova">Prova</th>
+        <tr class="bg-gray-50">
+          <th class="py-3 px-4 text-left font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[200px] w-1/4">Título</th>
+          <th class="py-3 px-4 text-left font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[300px] w-[45%]">Descrição</th>
+          <th class="py-3 px-4 text-left font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[180px] w-1/5 md:table-cell hidden" *ngIf="showBibliografia">Bibliografia</th>
+          <th class="py-3 px-4 text-center font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[120px] w-[10%] md:table-cell hidden">Prova</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let conceito of conceitos; trackBy: trackByConceito" class="conceito-row">
+        <tr *ngFor="let conceito of conceitos; trackBy: trackByConceito" class="transition-colors duration-200 border-b border-gray-100 hover:bg-gray-50 last:border-b-0 animate-[fadeIn_0.3s_ease-out]">
           <!-- Título -->
-          <td class="titulo-cell">
-            <div class="titulo-content">
-              <strong class="titulo-text">{{ conceito.titulo }}</strong>
-              <!-- Alerta inline para mobile -->
-              <div class="prova-badge mobile-only" 
-                   *ngIf="conceito.caiu_em_prova" 
-                   [class.with-year]="conceito.ano_prova">
-                <svg class="prova-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <td class="p-4 align-top">
+            <div class="flex flex-col gap-2">
+              <strong class="text-gray-800 font-semibold leading-relaxed">{{ conceito.titulo }}</strong>
+              <!-- Badge inline para mobile -->
+              <div class="inline-flex items-center gap-1.5 px-3 py-1.5 text-white rounded-md text-xs font-semibold shadow-sm md:hidden" 
+                   *ngIf="conceito.caiu_em_prova"
+                   [class]="conceito.ano_prova ? 'bg-gradient-to-r from-red-500 to-red-600' : 'bg-gradient-to-r from-yellow-400 to-yellow-500'">
+                <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
                 <span>{{ getCaiuEmProvaText(conceito) }}</span>
@@ -51,43 +51,43 @@
           </td>
 
           <!-- Descrição -->
-          <td class="descricao-cell">
-            <div class="descricao-content" *ngIf="hasDescricao(conceito)">
-              <p class="descricao-text">{{ getTruncatedDescricao(conceito.descricao!, 200) }}</p>
+          <td class="p-4 align-top">
+            <div *ngIf="hasDescricao(conceito)">
+              <p class="text-gray-600 leading-relaxed m-0">{{ getTruncatedDescricao(conceito.descricao!, 200) }}</p>
             </div>
-            <div class="no-descricao" *ngIf="!hasDescricao(conceito)">
-              <span class="text-muted">Sem descrição</span>
+            <div *ngIf="!hasDescricao(conceito)">
+              <span class="text-gray-400 italic">Sem descrição</span>
             </div>
           </td>
 
           <!-- Bibliografia -->
-          <td class="bibliografia-cell" *ngIf="showBibliografia">
-            <div class="bibliografia-content">
-              <span class="bibliografia-text" *ngIf="conceito.bibliografia_titulo">
+          <td class="p-4 align-top md:table-cell hidden" *ngIf="showBibliografia">
+            <div>
+              <span class="text-indigo-600 font-medium" *ngIf="conceito.bibliografia_titulo">
                 {{ conceito.bibliografia_titulo }}
               </span>
-              <span class="bibliografia-id" *ngIf="!conceito.bibliografia_titulo">
+              <span class="text-gray-500 text-xs" *ngIf="!conceito.bibliografia_titulo">
                 Bibliografia #{{ conceito.bibliografia }}
               </span>
             </div>
           </td>
 
           <!-- Status da Prova -->
-          <td class="prova-cell">
-            <div class="prova-content">
+          <td class="p-4 align-top text-center md:table-cell hidden">
+            <div class="flex justify-center">
               <!-- Caiu em prova -->
-              <div class="prova-badge desktop-only" 
-                   *ngIf="conceito.caiu_em_prova" 
-                   [class.with-year]="conceito.ano_prova">
-                <svg class="prova-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <div class="inline-flex items-center gap-1.5 px-3 py-1.5 text-white rounded-md text-xs font-semibold shadow-sm" 
+                   *ngIf="conceito.caiu_em_prova"
+                   [class]="conceito.ano_prova ? 'bg-gradient-to-r from-red-500 to-red-600' : 'bg-gradient-to-r from-yellow-400 to-yellow-500'">
+                <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
                 <span>{{ getCaiuEmProvaText(conceito) }}</span>
               </div>
               
               <!-- Não caiu em prova -->
-              <div class="no-prova" *ngIf="!conceito.caiu_em_prova">
-                <span class="text-muted">-</span>
+              <div *ngIf="!conceito.caiu_em_prova">
+                <span class="text-gray-400">-</span>
               </div>
             </div>
           </td>

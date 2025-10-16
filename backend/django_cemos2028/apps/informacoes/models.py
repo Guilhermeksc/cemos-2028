@@ -11,6 +11,7 @@ class PresidentesModel(models.Model):
     )
     periodo_presidencial = models.CharField(max_length=255, verbose_name="Período Presidencial")
     presidente = models.CharField(max_length=255, verbose_name="Presidente")
+    pais = models.CharField(max_length=100, verbose_name="País")
     conflitos_principais = models.TextField(blank=True, null=True, verbose_name="Conflito(s) Principal(is)")
     imagem_caminho = models.CharField(
         max_length=300,
@@ -75,6 +76,8 @@ class ConceitosModel(models.Model):
         related_name="+"
     )
     titulo = models.CharField(max_length=255, verbose_name="Título")
+    palavra_chave = models.CharField(max_length=255, blank=True, null=True, verbose_name="Palavra-chave")
+    assunto = models.CharField(max_length=255, blank=True, null=True, verbose_name="Assunto")
     descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
     caiu_em_prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
     ano_prova = models.IntegerField(blank=True, null=True, verbose_name="Ano da Prova")

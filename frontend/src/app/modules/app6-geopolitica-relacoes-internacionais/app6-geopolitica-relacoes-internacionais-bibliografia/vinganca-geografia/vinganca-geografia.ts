@@ -16,7 +16,7 @@ import { BibliografiaCompletaData } from '../../../../interfaces/bibliografia-co
     BibliografiaCompleta
   ],
   templateUrl: './vinganca-geografia.html',
-  styleUrl: '../../../../../styles/bibliografia.scss',
+  styleUrl: './vinganca-geografia.scss',
   encapsulation: ViewEncapsulation.None
 })
 

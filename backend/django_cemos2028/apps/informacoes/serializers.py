@@ -16,7 +16,7 @@ class PresidentesSerializer(serializers.ModelSerializer):
         model = PresidentesModel
         fields = [
             'id', 'bibliografia', 'bibliografia_titulo', 'periodo_presidencial', 
-            'presidente', 'conflitos_principais', 'imagem_caminho'
+            'presidente', 'pais', 'conflitos_principais', 'imagem_caminho'
         ]
 
 
@@ -48,7 +48,7 @@ class ConceitosSerializer(serializers.ModelSerializer):
     class Meta:
         model = ConceitosModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'titulo', 
+            'id', 'bibliografia', 'bibliografia_titulo', 'titulo', 'palavra_chave', 'assunto',
             'descricao', 'caiu_em_prova', 'ano_prova'
         ]
 
@@ -69,7 +69,7 @@ class HiperlinksSerializer(serializers.ModelSerializer):
 class PresidentesCreateUpdateSerializer(PresidentesSerializer):
     """Serializer específico para criação e edição de presidentes"""
     class Meta(PresidentesSerializer.Meta):
-        fields = ['bibliografia', 'periodo_presidencial', 'presidente', 'conflitos_principais', 'imagem_caminho']
+        fields = ['bibliografia', 'periodo_presidencial', 'presidente', 'pais', 'conflitos_principais', 'imagem_caminho']
 
 
 class FilosofosCreateUpdateSerializer(FilosofosSerializer):
@@ -87,7 +87,7 @@ class CronologiaCreateUpdateSerializer(CronologiaSerializer):
 class ConceitosCreateUpdateSerializer(ConceitosSerializer):
     """Serializer específico para criação e edição de conceitos"""
     class Meta(ConceitosSerializer.Meta):
-        fields = ['bibliografia', 'titulo', 'descricao', 'caiu_em_prova', 'ano_prova']
+        fields = ['bibliografia', 'titulo', 'palavra_chave', 'assunto', 'descricao', 'caiu_em_prova', 'ano_prova']
 
 
 class HiperlinksCreateUpdateSerializer(HiperlinksSerializer):

@@ -10,14 +10,14 @@ from .models import (
 
 @admin.register(PresidentesModel)
 class PresidentesAdmin(admin.ModelAdmin):
-    list_display = ['presidente', 'periodo_presidencial', 'bibliografia']
-    list_filter = ['bibliografia']
-    search_fields = ['presidente', 'periodo_presidencial', 'conflitos_principais']
+    list_display = ['presidente', 'pais', 'periodo_presidencial', 'bibliografia']
+    list_filter = ['bibliografia', 'pais']
+    search_fields = ['presidente', 'pais', 'periodo_presidencial', 'conflitos_principais']
     ordering = ['id']
     
     fieldsets = (
         ('Informações Básicas', {
-            'fields': ('bibliografia', 'presidente', 'periodo_presidencial')
+            'fields': ('bibliografia', 'presidente', 'pais', 'periodo_presidencial')
         }),
         ('Conflitos', {
             'fields': ('conflitos_principais',),
@@ -72,14 +72,18 @@ class CronologiaAdmin(admin.ModelAdmin):
 
 @admin.register(ConceitosModel)
 class ConceitosAdmin(admin.ModelAdmin):
-    list_display = ['titulo', 'bibliografia', 'caiu_em_prova', 'ano_prova']
-    list_filter = ['bibliografia', 'caiu_em_prova', 'ano_prova']
-    search_fields = ['titulo', 'descricao']
+    list_display = ['titulo', 'palavra_chave', 'assunto', 'bibliografia', 'caiu_em_prova', 'ano_prova']
+    list_filter = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'palavra_chave', 'assunto']
+    search_fields = ['titulo', 'palavra_chave', 'assunto', 'descricao']
     ordering = ['id']
     
     fieldsets = (
         ('Informações Básicas', {
-            'fields': ('bibliografia', 'titulo', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'titulo', 'palavra_chave', 'assunto')
+        }),
+        ('Prova', {
+            'fields': ('caiu_em_prova', 'ano_prova'),
+            'classes': ('collapse',)
         }),
         ('Descrição', {
             'fields': ('descricao',),

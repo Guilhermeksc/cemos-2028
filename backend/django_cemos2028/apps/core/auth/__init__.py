@@ -1,0 +1,1 @@
+default_app_config = 'django_cemos2028.apps.core.auth.apps.AuthConfig'

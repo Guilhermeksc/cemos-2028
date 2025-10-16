@@ -16,7 +16,7 @@ import { BibliografiaCompletaData } from '../../../../interfaces/bibliografia-co
     BibliografiaCompleta
   ],
   templateUrl: './breve-historia.html',
-  styleUrl: '../../../../../styles/bibliografia.scss',
+  styleUrl: './breve-historia.scss',
   encapsulation: ViewEncapsulation.None
 })
 export class BreveHistoria implements OnInit {

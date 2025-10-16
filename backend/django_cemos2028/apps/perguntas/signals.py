@@ -110,7 +110,7 @@ def load_fixtures_perguntas(sender, **kwargs):
     try:
         with transaction.atomic():
             # 1. Bibliografias
-            df = load_fixture('bibliografias.xlsx', ['id', 'titulo', 'autor', 'materia', 'ano_publicacao', 'descricao'])
+            df = load_fixture('bibliografias.xlsx', ['id', 'titulo', 'autor', 'materia', 'descricao'])
             if df is not None:
                 logger.info("📄 Processando bibliografias...")
                 for idx, row in df.iterrows():
@@ -121,7 +121,6 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 'titulo': _as_clean_str(row['titulo']),
                                 'autor': _as_clean_str(row.get('autor')),
                                 'materia': _as_clean_str(row.get('materia')),
-                                'ano_publicacao': _as_int(row.get('ano_publicacao')),
                                 'descricao': _as_clean_str(row.get('descricao'))
                             }
                         )
@@ -266,7 +265,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 
                 logger.info(f"📊 Total de perguntas de correlação carregadas: {loaded_count}")
 
-        logger.info("✅ Fixtures carregadas com sucesso!")
+        logger.info("✅ Fixtures do app Perguntas carregadas com sucesso!")
         
     except Exception as e:
         logger.error(f"❌ Erro ao carregar fixtures: {e}")

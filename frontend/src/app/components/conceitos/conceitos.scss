@@ -1,87 +1,241 @@
-// Conceitos Page Styles
+// Colors
+$primary-blue: #2563eb;
+$primary-blue-hover: #1d4ed8;
+$primary-blue-light: #eff6ff;
+$gray-50: #f9fafb;
+$gray-100: #f3f4f6;
+$gray-200: #e5e7eb;
+$gray-300: #d1d5db;
+$gray-500: #6b7280;
+$gray-600: #4b5563;
+$gray-700: #374151;
+$gray-800: #1f2937;
+$gray-900: #111827;
+$red-500: #ef4444;
+$blue-300: #93c5fd;
 
-.conceitos-page {
-  padding: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.conceitos-container {
+  width: 100%;
+}
 
-  // Loading state
-  .loading-state {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
-    text-align: center;
-
-    .spinner {
-      width: 40px;
-      height: 40px;
-      border: 3px solid #f3f4f6;
-      border-top: 3px solid #667eea;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      color: #6b7280;
-      margin: 0;
-    }
+.page-title {
+  margin-bottom: 1.5rem;
+  
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $gray-900;
+    margin: 0;
   }
+}
 
-  // Error state
-  .error-state {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
-    text-align: center;
-
-    .error-icon {
-      color: #ef4444;
-      margin-bottom: 1rem;
-    }
-
-    .error-message {
-      color: #6b7280;
-      margin: 0 0 1.5rem 0;
+// Loading state styles
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+  
+  .spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid $gray-300;
+    border-top: 3px solid $primary-blue;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  .loading-text {
+    color: $gray-600;
+    margin: 0;
+    font-size: 0.875rem;
+    
+    @media (min-width: 640px) {
       font-size: 1rem;
     }
+  }
+}
 
-    .retry-button {
-      background: #667eea;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      font-size: 0.875rem;
+// Error state styles
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  
+  .error-icon {
+    color: $red-500;
+    margin-bottom: 1rem;
+  }
+  
+  .error-message {
+    color: $gray-600;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    max-width: 28rem;
+    
+    @media (min-width: 640px) {
+      font-size: 1rem;
+    }
+  }
+  
+  .retry-button {
+    background-color: $primary-blue;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    
+    &:hover {
+      background-color: $primary-blue-hover;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($blue-300, 0.5);
+    }
+    
+    @media (min-width: 640px) {
+      width: auto;
+    }
+  }
+}
+
+// Content container
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+// Tabs styles
+.tabs-container {
+  width: 100%;
+}
+
+.tabs-border {
+  border-bottom: 1px solid $gray-200;
+}
+
+.tabs-nav {
+  margin-bottom: -1px;
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  
+  .tab-button {
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: all 0.2s ease-in-out;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $gray-500;
+    
+    &:hover {
+      color: $gray-700;
+      border-bottom-color: $gray-300;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba($primary-blue, 0.5);
+      border-radius: 0.375rem;
+    }
+    
+    &.active {
+      border-bottom-color: $primary-blue;
+      color: $primary-blue;
+      background-color: $primary-blue-light;
+    }
+    
+    .tab-count {
+      margin-left: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
       font-weight: 500;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
+      background-color: $gray-100;
+      color: $gray-800;
+    }
+  }
+}
 
-      &:hover {
-        background: #5a67d8;
+// Bibliografia info styles
+.bibliografia-info {
+  background-color: $gray-50;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  
+  .bibliografia-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    
+    .bibliografia-icon {
+      flex-shrink: 0;
+      
+      .icon {
+        height: 1.25rem;
+        width: 1.25rem;
+        color: $primary-blue;
+        margin-top: 0.125rem;
       }
-
-      &:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+    }
+    
+    .bibliografia-details {
+      flex: 1;
+      min-width: 0;
+      
+      .bibliografia-title {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $gray-900;
+        margin: 0 0 0.25rem 0;
+      }
+      
+      .bibliografia-meta {
+        margin-top: 0.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.875rem;
+        color: $gray-500;
+      }
+      
+      .bibliografia-description {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        color: $gray-600;
       }
     }
   }
 }
 
-// Animação do spinner
+// Animations
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-// Responsividade
-@media (max-width: 768px) {
-  .conceitos-page {
-    padding: 0.5rem;
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

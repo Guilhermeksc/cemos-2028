@@ -10,7 +10,6 @@ Colunas obrigatórias:
 - `titulo` (string): Título da bibliografia
 - `autor` (string, opcional): Autor da bibliografia
 - `materia` (string, opcional): Matéria da bibliografia
-- `ano_publicacao` (int, opcional): Ano de publicação
 - `descricao` (string, opcional): Descrição da bibliografia
 
 ### 2. perguntas_multipla.xlsx
@@ -60,7 +59,7 @@ Colunas opcionais:
 
 ### Bibliografia
 ```
-titulo | autor | materia | ano_publicacao | descricao
+titulo | autor | materia | descricao
 Direito Constitucional | José Silva | Direito | 2020 | Livro sobre direito constitucional
 ```
 

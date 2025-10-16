@@ -78,7 +78,6 @@ export class PerguntasComponent implements OnInit {
     const novaBibliografia: BibliografiaCreateUpdate = {
       titulo: 'Manual de Licitações 2024',
       autor: 'João Silva',
-      ano_publicacao: 2024,
       descricao: 'Manual atualizado com as novas regras de licitação'
     };
 
@@ -303,7 +302,6 @@ export class PerguntasComponent implements OnInit {
     <div *ngFor="let bib of bibliografias" class="bibliografia-item">
       <h4>{{ bib.titulo }}</h4>
       <p>Autor: {{ bib.autor || 'Não informado' }}</p>
-      <p>Ano: {{ bib.ano_publicacao || 'Não informado' }}</p>
       <p>Total de perguntas: {{ bib.perguntas_count || 0 }}</p>
       
       <button (click)="updateBibliografia(bib.id)">Editar</button>

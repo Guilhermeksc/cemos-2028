@@ -1,8 +1,13 @@
-<div class="conceitos-page">
+<div class="conceitos-container">
+  <!-- Page Title -->
+  <div *ngIf="title" class="page-title">
+    <h2>{{ title }}</h2>
+  </div>
+
   <!-- Loading state -->
   <div class="loading-state" *ngIf="loading">
     <div class="spinner"></div>
-    <p>Carregando conceitos...</p>
+    <p class="loading-text">Carregando conceitos...</p>
   </div>
 
   <!-- Error state -->
@@ -15,15 +20,64 @@
       </svg>
     </div>
     <p class="error-message">{{ error }}</p>
-    <button class="retry-button" (click)="loadConceitos()">Tentar novamente</button>
+    <button 
+      class="retry-button" 
+      (click)="loadConceitos()">
+      Tentar novamente
+    </button>
   </div>
 
-  <!-- Conceitos table -->
-  <app-conceitos-table 
-    *ngIf="!loading && !error"
-    [conceitos]="conceitos"
-    [title]="'Conceitos'"
-    [showBibliografia]="true"
-    [emptyMessage]="'Nenhum conceito encontrado. Adicione conceitos para visualizá-los aqui.'">
-  </app-conceitos-table>
+  <!-- Content with tabs -->
+  <div *ngIf="!loading && !error" class="content-container">
+    <!-- Bibliografia Tabs -->
+    <div class="tabs-container" *ngIf="bibliografias.length > 1">
+      <div class="tabs-border">
+        <nav class="tabs-nav" aria-label="Tabs">
+          <button
+            *ngFor="let bibliografia of bibliografias; trackBy: trackByBibliografia"
+            (click)="selectBibliografia(bibliografia.id)"
+            [class.active]="selectedBibliografiaId === bibliografia.id"
+            class="tab-button">
+            {{ bibliografia.titulo }}
+            <span class="tab-count">
+              {{ getConceptCountByBibliografia(bibliografia.id) }}
+            </span>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Selected Bibliografia Info -->
+    <div *ngIf="selectedBibliografia && bibliografias.length > 1" class="bibliografia-info">
+      <div class="bibliografia-content">
+        <div class="bibliografia-icon">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+        </div>
+        <div class="bibliografia-details">
+          <h3 class="bibliografia-title">{{ selectedBibliografia.titulo }}</h3>
+          <div class="bibliografia-meta">
+            <span *ngIf="selectedBibliografia.autor">
+              <strong>Autor:</strong> {{ selectedBibliografia.autor }}
+            </span>
+            <span *ngIf="selectedBibliografia.materia">
+              <strong>Matéria:</strong> {{ selectedBibliografia.materia }}
+            </span>
+          </div>
+          <p *ngIf="selectedBibliografia.descricao" class="bibliografia-description">
+            {{ selectedBibliografia.descricao }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conceitos table -->
+    <app-conceitos-table 
+      [conceitos]="filteredConceitos"
+      [title]="bibliografias.length <= 1 ? 'Conceitos' : 'Conceitos da Bibliografia'"
+      [showBibliografia]="bibliografias.length <= 1"
+      [emptyMessage]="getEmptyMessage()">
+    </app-conceitos-table>
+  </div>
 </div>

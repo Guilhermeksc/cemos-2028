@@ -20,8 +20,8 @@ class PresidentesResource(resources.ModelResource):
 
     class Meta:
         model = PresidentesModel
-        fields = ('id', 'bibliografia', 'periodo_presidencial', 'presidente', 'conflitos_principais', 'imagem_caminho')
-        export_order = ('id', 'bibliografia', 'presidente', 'periodo_presidencial', 'conflitos_principais', 'imagem_caminho')
+        fields = ('id', 'bibliografia', 'periodo_presidencial', 'presidente', 'pais', 'conflitos_principais', 'imagem_caminho')
+        export_order = ('id', 'bibliografia', 'presidente', 'pais', 'periodo_presidencial', 'conflitos_principais', 'imagem_caminho')
         import_id_fields = ('id',)
         skip_unchanged = True
         report_skipped = True
@@ -73,8 +73,8 @@ class ConceitosResource(resources.ModelResource):
 
     class Meta:
         model = ConceitosModel
-        fields = ('id', 'bibliografia', 'titulo', 'descricao', 'caiu_em_prova', 'ano_prova')
-        export_order = ('id', 'bibliografia', 'titulo', 'descricao', 'caiu_em_prova', 'ano_prova')
+        fields = ('id', 'bibliografia', 'titulo', 'palavra_chave', 'assunto', 'descricao', 'caiu_em_prova', 'ano_prova')
+        export_order = ('id', 'bibliografia', 'titulo', 'palavra_chave', 'assunto', 'descricao', 'caiu_em_prova', 'ano_prova')
         import_id_fields = ('id',)
         skip_unchanged = True
         report_skipped = True

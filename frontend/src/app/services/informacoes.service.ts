@@ -32,7 +32,7 @@ interface ApiResponse<T> {
   providedIn: 'root'
 })
 export class InformacoesService {
-  private apiUrl = `${environment.apiUrl}/informacoes`;
+  private apiUrl = `${environment.apiUrl}/informacoes/api`;
 
   constructor(private http: HttpClient) {}
 
@@ -46,6 +46,7 @@ export class InformacoesService {
     if (filters) {
       if (filters.bibliografia) params = params.set('bibliografia', filters.bibliografia.toString());
       if (filters.periodo_presidencial) params = params.set('periodo_presidencial', filters.periodo_presidencial);
+      if (filters.pais) params = params.set('pais', filters.pais);
       if (filters.search) params = params.set('search', filters.search);
       if (filters.ordering) params = params.set('ordering', filters.ordering);
     }

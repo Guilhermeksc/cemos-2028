@@ -10,13 +10,12 @@ import { BibliografiaCompletaData } from '../../../../interfaces/bibliografia-co
 @Component({
   selector: 'app-geopolitica-modernidade',
   imports: [
-    CommonModule,
     SubMenu,
     HttpClientModule,
     BibliografiaCompleta
   ],
   templateUrl: './geopolitica-modernidade.html',
-  styleUrl: '../../../../../styles/bibliografia.scss',
+  styleUrl: './geopolitica-modernidade.scss',
   encapsulation: ViewEncapsulation.None
 })
 
