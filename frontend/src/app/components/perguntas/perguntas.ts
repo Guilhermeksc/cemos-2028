@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, inject } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PerguntasService } from '../../services/perguntas.service';
@@ -50,12 +50,10 @@ interface SimuladoResult {
 })
 export class Perguntas implements OnInit, OnDestroy {
   @Input() bibliografiaIds: number[] = [];
-  @Input() showBibliografiaSelector: boolean = true;
-  @Input() autoStartSimulado: boolean = true; // Mudado para true por padrão
-  @Output() simuladoFinished = new EventEmitter<SimuladoResult>();
   @Output() simuladoStarted = new EventEmitter<void>();
 
   private perguntasService = inject(PerguntasService);
+  private cdr = inject(ChangeDetectorRef);
   private destroy$ = new Subject<void>();
 
   // Estados do componente - simplificado
@@ -63,7 +61,7 @@ export class Perguntas implements OnInit, OnDestroy {
   selectedBibliografias: number[] = [];
   isLoading = false;
   isLoadingQuestions = false;
-  questionsLoaded = false; // Novo estado para controlar se questões foram carregadas
+  questionsLoaded = false;
 
   // Configuração do simulado
   simuladoConfig: SimuladoConfig = {
@@ -190,20 +188,7 @@ export class Perguntas implements OnInit, OnDestroy {
       });
   }
 
-  onBibliografiaChange(bibliografiaId: number, isSelected: boolean) {
-    if (isSelected) {
-      if (!this.selectedBibliografias.includes(bibliografiaId)) {
-        this.selectedBibliografias.push(bibliografiaId);
-      }
-    } else {
-      this.selectedBibliografias = this.selectedBibliografias.filter(id => id !== bibliografiaId);
-    }
-    this.simuladoConfig.bibliografias = [...this.selectedBibliografias];
-  }
 
-  isBibliografiaSelected(bibliografiaId: number): boolean {
-    return this.selectedBibliografias.includes(bibliografiaId);
-  }
 
   // Novo método para responder uma questão específica
   answerQuestion(questionId: number, answer: any) {
@@ -232,7 +217,15 @@ export class Perguntas implements OnInit, OnDestroy {
   // Método para questões de correlação
   updateCorrelacaoAnswer(questionId: number, itemNumber: number, selectedLetter: string) {
     const question = this.simuladoQuestions.find(q => q.id === questionId);
-    if (!question) return;
+    if (!question) {
+      console.error('❌ Questão não encontrada:', questionId);
+      return;
+    }
+
+    if (question.tipo !== 'correlacao') {
+      console.error('❌ Questão não é do tipo correlação:', question.tipo);
+      return;
+    }
 
     if (!question.userAnswer) {
       question.userAnswer = {};
@@ -244,20 +237,106 @@ export class Perguntas implements OnInit, OnDestroy {
       delete question.userAnswer[itemNumber.toString()];
     }
 
-    // Verificar se todas as correlações foram respondidas
+    const correlacaoData = question.data as PerguntaCorrelacao;
+    const totalItems = correlacaoData?.coluna_a?.length || 0;
+
+    console.log('🔄 Correlação atualizada:', {
+      questionId,
+      itemNumber,
+      selectedLetter,
+      currentAnswer: question.userAnswer,
+      totalItems,
+      keysPresent: Object.keys(question.userAnswer),
+      isComplete: this.isCorrelacaoComplete(question),
+      questionData: correlacaoData
+    });
+
+    // Forçar detecção de mudanças no Angular
+    this.cdr.markForCheck();
+  }
+
+  // Verificar se correlação está completa
+  isCorrelacaoComplete(question: SimuladoQuestion): boolean {
+    if (question.tipo !== 'correlacao') return false;
+    if (!question.userAnswer) return false;
+
     const correlacaoData = question.data as PerguntaCorrelacao;
     const totalItems = correlacaoData.coluna_a.length;
-    const answeredItems = Object.keys(question.userAnswer).length;
-
-    if (answeredItems === totalItems) {
-      question.isCorrect = this.checkAnswer(question, question.userAnswer);
-      
-      this.questionResults[questionId] = {
-        answered: true,
-        isCorrect: question.isCorrect,
-        showResult: true
-      };
+    
+    // Verificar se todos os itens de 1 até totalItems têm resposta válida
+    let allAnswered = true;
+    
+    for (let i = 1; i <= totalItems; i++) {
+      const answer = question.userAnswer[i.toString()];
+      if (!answer || answer === '') {
+        allAnswered = false;
+        break;
+      }
     }
+
+    return allAnswered;
+  }
+
+  // Submeter resposta de correlação
+  submitCorrelacaoAnswer(questionId: number, answer: any) {
+    const question = this.simuladoQuestions.find(q => q.id === questionId);
+    if (!question) return;
+
+    console.log('📝 Respondendo questão de correlação:', { questionId, answer });
+
+    question.isCorrect = this.checkAnswer(question, answer);
+    
+    this.questionResults[questionId] = {
+      answered: true,
+      isCorrect: question.isCorrect,
+      showResult: true
+    };
+
+    console.log('✅ Resposta de correlação processada:', {
+      questionId,
+      answer,
+      isCorrect: question.isCorrect
+    });
+  }
+
+  // Contar quantos itens faltam ser respondidos na correlação
+  getCorrelacaoMissingCount(question: SimuladoQuestion): number {
+    if (question.tipo !== 'correlacao') return 0;
+    if (!question.userAnswer) {
+      const correlacaoData = question.data as PerguntaCorrelacao;
+      return correlacaoData.coluna_a.length;
+    }
+
+    const correlacaoData = question.data as PerguntaCorrelacao;
+    const totalItems = correlacaoData.coluna_a.length;
+    let missingCount = 0;
+    const missing: number[] = [];
+    const present: number[] = [];
+    
+    for (let i = 1; i <= totalItems; i++) {
+      const answer = question.userAnswer[i.toString()];
+      if (!answer || answer === '') {
+        missingCount++;
+        missing.push(i);
+      } else {
+        present.push(i);
+      }
+    }
+    
+    // Debug log para entender o problema
+    if (missingCount > 0) {
+      console.log('📊 Debug correlação:', {
+        questionId: question.id,
+        totalItems,
+        present,
+        missing,
+        userAnswer: question.userAnswer,
+        userAnswerKeys: Object.keys(question.userAnswer),
+        userAnswerType: typeof question.userAnswer
+      });
+    }
+    
+    return missingCount;
   }
 
   private checkAnswer(question: SimuladoQuestion, answer: any): boolean {
@@ -272,7 +351,26 @@ export class Perguntas implements OnInit, OnDestroy {
       
       case 'correlacao':
         const correlacao = question.data as PerguntaCorrelacao;
-        return JSON.stringify(correlacao.resposta_correta) === JSON.stringify(answer);
+        
+        // Converter resposta do usuário (formato: {1: 'A', 2: 'B', 3: 'C'})
+        // para formato do backend (formato: {0: '0', 1: '1', 2: '2'})
+        const userAnswerConverted: { [key: string]: string } = {};
+        
+        for (let key in answer) {
+          const itemIndex = (parseInt(key) - 1).toString(); // Converter 1,2,3 para 0,1,2
+          const letterValue = answer[key]; // 'A', 'B', 'C'
+          const letterIndex = letterValue.charCodeAt(0) - 65; // Converter A,B,C para 0,1,2
+          userAnswerConverted[itemIndex] = letterIndex.toString();
+        }
+        
+        console.log('🔍 Verificando resposta de correlação:', {
+          respostaUsuario: answer,
+          respostaConvertida: userAnswerConverted,
+          respostaCorreta: correlacao.resposta_correta,
+          isCorrect: JSON.stringify(correlacao.resposta_correta) === JSON.stringify(userAnswerConverted)
+        });
+        
+        return JSON.stringify(correlacao.resposta_correta) === JSON.stringify(userAnswerConverted);
       
       default:
         return false;
@@ -280,10 +378,6 @@ export class Perguntas implements OnInit, OnDestroy {
   }
 
   // Métodos utilitários simplificados
-  getQuestionResult(questionId: number) {
-    return this.questionResults[questionId] || { answered: false, isCorrect: false, showResult: false };
-  }
-
   isQuestionAnswered(questionId: number): boolean {
     return this.questionResults[questionId]?.answered || false;
   }
@@ -560,10 +654,6 @@ export class Perguntas implements OnInit, OnDestroy {
     return String.fromCharCode(code);
   }
 
-  getQuestionData<T>(question: SimuladoQuestion): T {
-    return question.data as T;
-  }
-
   // Métodos específicos para tipos de pergunta
   getVFData(question: SimuladoQuestion): PerguntaVF {
     return question.data as PerguntaVF;
@@ -580,5 +670,36 @@ export class Perguntas implements OnInit, OnDestroy {
   // Helper para any quando necessário
   getAnyData(question: SimuladoQuestion): any {
     return question.data as any;
+  }
+
+  // Obter texto da alternativa para múltipla escolha
+  getAlternativaText(question: SimuladoQuestion, letra: string): string {
+    const multipla = question.data as PerguntaMultipla;
+    const alternativasMap: { [key: string]: string } = {
+      'a': multipla.alternativa_a,
+      'b': multipla.alternativa_b,
+      'c': multipla.alternativa_c,
+      'd': multipla.alternativa_d
+    };
+    return alternativasMap[letra.toLowerCase()] || '';
+  }
+
+  // Obter chaves da correlação ordenadas (converter 0,1,2 para 1,2,3)
+  getCorrelacaoKeys(question: SimuladoQuestion): string[] {
+    const correlacao = question.data as PerguntaCorrelacao;
+    const keys = Object.keys(correlacao.resposta_correta);
+    // Ordenar numericamente e converter (0,1,2 -> 1,2,3)
+    return keys.sort((a, b) => parseInt(a) - parseInt(b))
+               .map(key => (parseInt(key) + 1).toString());
+  }
+
+  // Obter letra da correlação correta (converter índice numérico para letra)
+  getCorrelacaoCorrectLetter(question: SimuladoQuestion, displayKey: string): string {
+    const correlacao = question.data as PerguntaCorrelacao;
+    // Converter chave de exibição (1,2,3) para chave do backend (0,1,2)
+    const backendKey = (parseInt(displayKey) - 1).toString();
+    const numericValue = correlacao.resposta_correta[backendKey];
+    // Converter valor numérico (0,1,2) para letra (A,B,C)
+    return String.fromCharCode(65 + parseInt(numericValue));
   }
 }

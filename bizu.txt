@@ -1,32 +1,11 @@
 https://github.com/Guilhermeksc/360_novo/blob/mainnovo/src/modules/dispensa_eletronica/models.py
 
-
-docker compose up -d --build
-
-docker compose exec backend python manage.py makemigrations
-docker compose exec backend python manage.py migrate
-docker compose exec backend python manage.py check
-
-
-crie um component para modulo de perguntas app-perguntas frontend\src\app\components\perguntas\perguntas.ts
-
-analise a interface das perguntas 
-frontend\src\app\interfaces\perguntas.interface.ts
-
-e o service
-frontend\src\app\services\perguntas.service.ts
-
-a ideia é que esse component seja reutilizável em outros components
-
-deverá criar um simularo de prova com 10 questões, seguindo a seguinte lógica
-
-
-5 perguntas de PerguntaVF
-4 perguntas de PerguntaMultipla
-1 perguntas de PerguntaCorrelacao
-
-observe que deverão ser perguntas aleatórias do banco
-
-as perguntas devem ser selecionadas com base no parametro bibliografia de PerguntaBase 
-
-poderá ser possível selecionar mais de um parametro bibliografia de PerguntaBase  para gerar as questões
+✅ CONCLUÍDO - Layout simplificado implementado:
+- Prova carregada automaticamente ao iniciar
+- Todas as questões na mesma página (sem anterior/próximo)
+- Botão "Responder" em cada questão com feedback dinâmico
+- Permite alterar resposta após submissão (botão muda para "Atualizar Resposta")
+- Justificativa mostra resposta correta formatada:
+  * V/F: mostra "VERDADEIRO" ou "FALSO"
+  * Múltipla escolha: mostra letra e texto da alternativa
+  * Correlação: mostra todas as correlações corretas (1=A, 2=B, etc.)

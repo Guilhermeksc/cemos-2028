@@ -92,7 +92,6 @@
                   [name]="'vf-' + question.id"
                   [value]="true"
                   [checked]="question.userAnswer === true"
-                  [disabled]="isQuestionAnswered(question.id)"
                   (change)="question.userAnswer = true"
                 />
                 <span>Verdadeiro</span>
@@ -103,7 +102,6 @@
                   [name]="'vf-' + question.id"
                   [value]="false"
                   [checked]="question.userAnswer === false"
-                  [disabled]="isQuestionAnswered(question.id)"
                   (change)="question.userAnswer = false"
                 />
                 <span>Falso</span>
@@ -111,12 +109,11 @@
             </div>
 
             <button 
-              *ngIf="!isQuestionAnswered(question.id)"
               class="btn btn-primary responder-btn"
               [disabled]="question.userAnswer === undefined"
               (click)="answerQuestion(question.id, question.userAnswer)"
             >
-              📝 Responder
+              {{ isQuestionAnswered(question.id) ? '🔄 Atualizar Resposta' : '📝 Responder' }}
             </button>
           </div>
 
@@ -129,7 +126,6 @@
                   [name]="'multipla-' + question.id"
                   value="a"
                   [checked]="question.userAnswer === 'a'"
-                  [disabled]="isQuestionAnswered(question.id)"
                   (change)="question.userAnswer = 'a'"
                 />
                 <span class="alternativa-letter">A)</span>
@@ -141,7 +137,6 @@
                   [name]="'multipla-' + question.id"
                   value="b"
                   [checked]="question.userAnswer === 'b'"
-                  [disabled]="isQuestionAnswered(question.id)"
                   (change)="question.userAnswer = 'b'"
                 />
                 <span class="alternativa-letter">B)</span>
@@ -153,7 +148,6 @@
                   [name]="'multipla-' + question.id"
                   value="c"
                   [checked]="question.userAnswer === 'c'"
-                  [disabled]="isQuestionAnswered(question.id)"
                   (change)="question.userAnswer = 'c'"
                 />
                 <span class="alternativa-letter">C)</span>
@@ -165,7 +159,6 @@
                   [name]="'multipla-' + question.id"
                   value="d"
                   [checked]="question.userAnswer === 'd'"
-                  [disabled]="isQuestionAnswered(question.id)"
                   (change)="question.userAnswer = 'd'"
                 />
                 <span class="alternativa-letter">D)</span>
@@ -174,12 +167,11 @@
             </div>
 
             <button 
-              *ngIf="!isQuestionAnswered(question.id)"
               class="btn btn-primary responder-btn"
               [disabled]="question.userAnswer === undefined"
               (click)="answerQuestion(question.id, question.userAnswer)"
             >
-              📝 Responder
+              {{ isQuestionAnswered(question.id) ? '� Atualizar Resposta' : '�📝 Responder' }}
             </button>
           </div>
 
@@ -209,30 +201,88 @@
 
             <div class="correlacao-mapping">
               <h6>Sua correlação:</h6>
-              <div *ngFor="let itemA of getCorrelacaoData(question).coluna_a; let i = index" class="mapping-row">
-                <span class="mapping-label">{{ i + 1 }} = </span>
-                <select 
-                  [value]="question.userAnswer?.[i + 1] || ''"
-                  (change)="updateCorrelacaoAnswer(question.id, i + 1, $any($event.target).value)"
-                  [disabled]="isQuestionAnswered(question.id)"
-                  class="mapping-select"
-                >
-                  <option value="">Selecione...</option>
-                  <option 
+              <div *ngFor="let itemA of getCorrelacaoData(question).coluna_a; let i = index" 
+                   class="mapping-row-radio"
+                   [class.answered]="question.userAnswer?.[i + 1]">
+                <div class="mapping-item-label">
+                  <span class="mapping-label-number">{{ i + 1 }}</span>
+                  <span class="mapping-item-text">{{ itemA }}</span>
+                  <span class="mapping-status-badge" *ngIf="!question.userAnswer?.[i + 1]">
+                    ⏳ Selecione uma opção
+                  </span>
+                  <span class="mapping-status-badge answered" *ngIf="question.userAnswer?.[i + 1]">
+                    ✅ {{ question.userAnswer[i + 1] }}
+                  </span>
+                </div>
+                <div class="mapping-options">
+                  <label 
                     *ngFor="let itemB of getCorrelacaoData(question).coluna_b; let j = index" 
-                    [value]="getStringFromCharCode(65 + j)"
+                    class="mapping-radio-option"
+                    [class.selected]="question.userAnswer?.[i + 1] === getStringFromCharCode(65 + j)"
                   >
-                    {{ getStringFromCharCode(65 + j) }}
-                  </option>
-                </select>
+                    <input 
+                      type="radio"
+                      [name]="'correlacao-' + question.id + '-' + (i + 1)"
+                      [value]="getStringFromCharCode(65 + j)"
+                      [checked]="question.userAnswer?.[i + 1] === getStringFromCharCode(65 + j)"
+                      (change)="updateCorrelacaoAnswer(question.id, i + 1, getStringFromCharCode(65 + j))"
+                    />
+                    <span class="mapping-radio-label">{{ getStringFromCharCode(65 + j) }}</span>
+                  </label>
+                </div>
               </div>
             </div>
+
+            <div class="correlacao-help" *ngIf="!isCorrelacaoComplete(question)">
+              <span class="help-icon">ℹ️</span>
+              <span class="help-text">
+                Selecione uma opção para cada item acima para habilitar o botão de responder.
+                Faltam <strong>{{ getCorrelacaoMissingCount(question) }}</strong> 
+                {{ getCorrelacaoMissingCount(question) === 1 ? 'item' : 'itens' }}.
+              </span>
+            </div>
+
+            <button 
+              class="btn btn-primary responder-btn"
+              [disabled]="!isCorrelacaoComplete(question)"
+              (click)="submitCorrelacaoAnswer(question.id, question.userAnswer)"
+              [title]="!isCorrelacaoComplete(question) ? 'Complete todas as correlações para responder' : ''"
+            >
+              {{ isQuestionAnswered(question.id) ? '🔄 Atualizar Resposta' : '📝 Responder' }}
+            </button>
           </div>
 
           <!-- Justificativa (aparece após responder) -->
           <div *ngIf="isQuestionAnswered(question.id)" class="justificativa">
-            <h5>💡 Justificativa:</h5>
-            <p>{{ getAnyData(question).justificativa_resposta_certa }}</p>
+            <div>
+              <h5>✅ Resposta Correta:</h5>
+              
+              <!-- Resposta V/F -->
+              <p *ngIf="question.tipo === 'vf'">
+                <strong>{{ getVFData(question).resposta_correta ? 'VERDADEIRO' : 'FALSO' }}</strong>
+              </p>
+              
+              <!-- Resposta Múltipla -->
+              <p *ngIf="question.tipo === 'multipla'">
+                <strong>Alternativa {{ getMultiplaData(question).resposta_correta.toUpperCase() }})</strong>
+                {{ getAlternativaText(question, getMultiplaData(question).resposta_correta) }}
+              </p>
+              
+              <!-- Resposta Correlação -->
+              <div *ngIf="question.tipo === 'correlacao'">
+                <strong>Correlação correta:</strong>
+                <div class="correlacao-resposta">
+                  <div *ngFor="let key of getCorrelacaoKeys(question)" class="correlacao-item-resposta">
+                    <span>{{ key }} = {{ getCorrelacaoCorrectLetter(question, key) }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="justificativa-texto">
+              <h5>💡 Justificativa:</h5>
+              <p>{{ getAnyData(question).justificativa_resposta_certa }}</p>
+            </div>
           </div>
         </div>
       </div>
