@@ -70,7 +70,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",         # Ambiente Angular local
+    "http://localhost:8088",         # Ambiente Angular local alternativo
     "http://127.0.0.1:4200",
+    "http://127.0.0.1:8088",
     "http://195.200.1.112",          # IP direto
     "http://cemos2028.site",         # Domínio sem HTTPS
     "https://cemos2028.site",        # Domínio com HTTPS
@@ -78,7 +80,9 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
+    "http://localhost:8088",
     "http://127.0.0.1:4200",
+    "http://127.0.0.1:8088",
     "http://195.200.1.112",
     "https://195.200.1.112",
     "http://cemos2028.site",

@@ -1,0 +1,57 @@
+<!-- Pergunta Verdadeiro/Falso -->
+<div class="vf-question">
+  <div class="afirmacao">
+    <p><strong>Afirmação:</strong> {{ questionData.afirmacao }}</p>
+  </div>
+  
+  <div class="vf-options">
+    <label class="vf-option">
+      <input 
+        type="radio"
+        name="vf-{{ questionId }}"
+        [value]="true"
+        [(ngModel)]="userAnswer"
+        [disabled]="isAnswered"
+      />
+      <span>Verdadeiro</span>
+    </label>
+    <label class="vf-option">
+      <input 
+        type="radio"
+        name="vf-{{ questionId }}"
+        [value]="false"
+        [(ngModel)]="userAnswer"
+        [disabled]="isAnswered"
+      />
+      <span>Falso</span>
+    </label>
+  </div>
+
+  <button 
+    class="btn btn-primary responder-btn"
+    [disabled]="userAnswer === undefined"
+    (click)="onSubmit($event)"
+  >
+    {{ isAnswered ? '🔄 Atualizar Resposta' : '📝 Responder' }}
+  </button>
+
+  <!-- Justificativa (aparece após responder) -->
+  <div *ngIf="isAnswered" class="justificativa">
+    <div>
+      <h5>✅ Resposta Correta:</h5>
+      <p class="resposta-destaque">
+        <strong>{{ getCorrectAnswer() ? 'Verdadeiro' : 'Falso' }}</strong>
+      </p>
+    </div>
+    
+    <div class="justificativa-texto">
+      <h5>💡 Justificativa:</h5>
+      <p>{{ questionData.justificativa_resposta_certa }}</p>
+    </div>
+  </div>
+  
+  <!-- Debug Info -->
+  <div style="background: #fee2e2; padding: 10px; margin-top: 10px; font-size: 12px; border: 1px solid #ef4444;">
+    <strong>DEBUG V/F:</strong> isAnswered={{ isAnswered }}, isCorrect={{ isCorrect }}, questionId={{ questionId }}, userAnswer={{ userAnswer }}
+  </div>
+</div>

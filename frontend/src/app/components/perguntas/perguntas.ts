@@ -14,6 +14,9 @@ import {
 } from '../../interfaces/perguntas.interface';
 import { Subject, forkJoin, Observable } from 'rxjs';
 import { takeUntil, map } from 'rxjs/operators';
+import { PerguntaVF as PerguntaVFComponent } from './pergunta-v-f/pergunta-v-f';
+import { PerguntaMultipla as PerguntaMultiplaComponent } from './pergunta-multipla/pergunta-multipla';
+import { PerguntaCorrelacao as PerguntaCorrelacaoComponent } from './pergunta-correlacao/pergunta-correlacao';
 
 interface SimuladoQuestion {
   id: number;
@@ -24,6 +27,7 @@ interface SimuladoQuestion {
   data: PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
   userAnswer?: any;
   isCorrect?: boolean;
+  uniqueKey?: string; // Chave única: tipo-id (ex: "vf-1", "multipla-2")
 }
 
 interface SimuladoConfig {
@@ -33,18 +37,16 @@ interface SimuladoConfig {
   questoesCorrelacao: number;
 }
 
-interface SimuladoResult {
-  totalQuestoes: number;
-  acertos: number;
-  erros: number;
-  percentual: number;
-  questoes: SimuladoQuestion[];
-}
-
 @Component({
   selector: 'app-perguntas',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule, 
+    FormsModule, 
+    PerguntaVFComponent, 
+    PerguntaMultiplaComponent, 
+    PerguntaCorrelacaoComponent
+  ],
   templateUrl: './perguntas.html',
   styleUrl: './perguntas.scss'
 })
@@ -71,11 +73,11 @@ export class Perguntas implements OnInit, OnDestroy {
     questoesCorrelacao: 1
   };
 
-  // Questões do simulado - agora todas visíveis
+  // Questões do simulado
   simuladoQuestions: SimuladoQuestion[] = [];
 
-  // Resultados individuais por questão
-  questionResults: { [questionId: number]: { answered: boolean, isCorrect: boolean, showResult: boolean } } = {};
+  // Resultados individuais por questão (usando uniqueKey)
+  questionResults: { [uniqueKey: string]: { answered: boolean, isCorrect: boolean, showResult: boolean } } = {};
 
   ngOnInit() {
     console.log('🚀 Componente Perguntas inicializado - Modo Simplificado');
@@ -102,6 +104,13 @@ export class Perguntas implements OnInit, OnDestroy {
   gerarNovaProva() {
     console.log('🔄 Gerando nova prova...');
     
+    // Garantir que as bibliografias estão configuradas
+    if (this.simuladoConfig.bibliografias.length === 0 && this.bibliografiaIds.length > 0) {
+      this.simuladoConfig.bibliografias = [...this.bibliografiaIds];
+    }
+    
+    console.log('📚 Bibliografias configuradas para a prova:', this.simuladoConfig.bibliografias);
+    
     this.isLoadingQuestions = true;
     this.questionsLoaded = false;
     this.simuladoQuestions = [];
@@ -114,17 +123,31 @@ export class Perguntas implements OnInit, OnDestroy {
           console.log('✅ Nova prova carregada:', questions.length, 'questões');
           
           this.simuladoQuestions = this.shuffleArray(questions);
+          
+          console.log('🔀 Questões após shuffle:', {
+            total: this.simuladoQuestions.length,
+            tipos: this.simuladoQuestions.map(q => ({
+              id: q.id,
+              tipo: q.tipo,
+              tipo_original: (q.data as any)?.tipo
+            }))
+          });
+          
           this.questionsLoaded = true;
           this.isLoadingQuestions = false;
           
-          // Inicializar resultados das questões
+          // Inicializar resultados das questões usando uniqueKey
           this.simuladoQuestions.forEach(q => {
-            this.questionResults[q.id] = {
-              answered: false,
-              isCorrect: false,
-              showResult: false
-            };
+            if (q.uniqueKey) {
+              this.questionResults[q.uniqueKey] = {
+                answered: false,
+                isCorrect: false,
+                showResult: false
+              };
+            }
           });
+          
+          console.log('🔑 Chaves únicas inicializadas:', Object.keys(this.questionResults));
           
           this.simuladoStarted.emit();
         },
@@ -188,20 +211,48 @@ export class Perguntas implements OnInit, OnDestroy {
       });
   }
 
+  // Método unificado para processar respostas dos componentes filhos
+  onAnswerSubmitted(event: { questionId: number, answer: any }) {
+    const { questionId, answer } = event;
+    
+    console.log('📝 Resposta recebida:', { questionId, answer });
 
+    // IMPORTANTE: Buscar pela uniqueKey, não pelo ID!
+    // Como os componentes filhos ainda enviam questionId, precisamos encontrar
+    // a questão correta comparando AMBOS: id E tipo da resposta
+    const question = this.simuladoQuestions.find(q => {
+      if (q.id !== questionId) return false;
+      
+      // Verificar o tipo de resposta para distinguir entre questões com mesmo ID
+      if (typeof answer === 'boolean') {
+        return q.tipo === 'vf';
+      } else if (typeof answer === 'string') {
+        return q.tipo === 'multipla';
+      } else if (typeof answer === 'object' && answer !== null) {
+        return q.tipo === 'correlacao';
+      }
+      
+      return false;
+    });
 
-  // Novo método para responder uma questão específica
-  answerQuestion(questionId: number, answer: any) {
-    const question = this.simuladoQuestions.find(q => q.id === questionId);
-    if (!question) return;
-
-    console.log('📝 Respondendo questão:', { questionId, answer });
+    if (!question || !question.uniqueKey) {
+      console.error('❌ Questão não encontrada ou sem uniqueKey:', { 
+        questionId, 
+        answerType: typeof answer,
+        questoesDisponiveis: this.simuladoQuestions.map(q => ({
+          id: q.id,
+          tipo: q.tipo,
+          uniqueKey: q.uniqueKey
+        }))
+      });
+      return;
+    }
 
     question.userAnswer = answer;
     question.isCorrect = this.checkAnswer(question, answer);
     
-    // Atualizar resultado da questão
-    this.questionResults[questionId] = {
+    // Atualizar resultado da questão usando uniqueKey
+    this.questionResults[question.uniqueKey] = {
       answered: true,
       isCorrect: question.isCorrect,
       showResult: true
@@ -209,134 +260,15 @@ export class Perguntas implements OnInit, OnDestroy {
 
     console.log('✅ Resposta processada:', {
       questionId,
-      answer,
-      isCorrect: question.isCorrect
-    });
-  }
-
-  // Método para questões de correlação
-  updateCorrelacaoAnswer(questionId: number, itemNumber: number, selectedLetter: string) {
-    const question = this.simuladoQuestions.find(q => q.id === questionId);
-    if (!question) {
-      console.error('❌ Questão não encontrada:', questionId);
-      return;
-    }
-
-    if (question.tipo !== 'correlacao') {
-      console.error('❌ Questão não é do tipo correlação:', question.tipo);
-      return;
-    }
-
-    if (!question.userAnswer) {
-      question.userAnswer = {};
-    }
-
-    if (selectedLetter) {
-      question.userAnswer[itemNumber.toString()] = selectedLetter;
-    } else {
-      delete question.userAnswer[itemNumber.toString()];
-    }
-
-    const correlacaoData = question.data as PerguntaCorrelacao;
-    const totalItems = correlacaoData?.coluna_a?.length || 0;
-
-    console.log('🔄 Correlação atualizada:', {
-      questionId,
-      itemNumber,
-      selectedLetter,
-      currentAnswer: question.userAnswer,
-      totalItems,
-      keysPresent: Object.keys(question.userAnswer),
-      isComplete: this.isCorrelacaoComplete(question),
-      questionData: correlacaoData
-    });
-
-    // Forçar detecção de mudanças no Angular
-    this.cdr.markForCheck();
-  }
-
-  // Verificar se correlação está completa
-  isCorrelacaoComplete(question: SimuladoQuestion): boolean {
-    if (question.tipo !== 'correlacao') return false;
-    if (!question.userAnswer) return false;
-
-    const correlacaoData = question.data as PerguntaCorrelacao;
-    const totalItems = correlacaoData.coluna_a.length;
-    
-    // Verificar se todos os itens de 1 até totalItems têm resposta válida
-    let allAnswered = true;
-    
-    for (let i = 1; i <= totalItems; i++) {
-      const answer = question.userAnswer[i.toString()];
-      if (!answer || answer === '') {
-        allAnswered = false;
-        break;
-      }
-    }
-
-    return allAnswered;
-  }
-
-  // Submeter resposta de correlação
-  submitCorrelacaoAnswer(questionId: number, answer: any) {
-    const question = this.simuladoQuestions.find(q => q.id === questionId);
-    if (!question) return;
-
-    console.log('📝 Respondendo questão de correlação:', { questionId, answer });
-
-    question.isCorrect = this.checkAnswer(question, answer);
-    
-    this.questionResults[questionId] = {
-      answered: true,
+      uniqueKey: question.uniqueKey,
+      tipo: question.tipo,
       isCorrect: question.isCorrect,
-      showResult: true
-    };
-
-    console.log('✅ Resposta de correlação processada:', {
-      questionId,
-      answer,
-      isCorrect: question.isCorrect
+      totalRespondidas: Object.values(this.questionResults).filter(r => r.answered).length,
+      questionResults_ESTADO: this.questionResults
     });
-  }
 
-  // Contar quantos itens faltam ser respondidos na correlação
-  getCorrelacaoMissingCount(question: SimuladoQuestion): number {
-    if (question.tipo !== 'correlacao') return 0;
-    if (!question.userAnswer) {
-      const correlacaoData = question.data as PerguntaCorrelacao;
-      return correlacaoData.coluna_a.length;
-    }
-
-    const correlacaoData = question.data as PerguntaCorrelacao;
-    const totalItems = correlacaoData.coluna_a.length;
-    let missingCount = 0;
-    const missing: number[] = [];
-    const present: number[] = [];
-    
-    for (let i = 1; i <= totalItems; i++) {
-      const answer = question.userAnswer[i.toString()];
-      if (!answer || answer === '') {
-        missingCount++;
-        missing.push(i);
-      } else {
-        present.push(i);
-      }
-    }
-    
-    // Debug log para entender o problema
-    if (missingCount > 0) {
-      console.log('📊 Debug correlação:', {
-        questionId: question.id,
-        totalItems,
-        present,
-        missing,
-        userAnswer: question.userAnswer,
-        userAnswerKeys: Object.keys(question.userAnswer),
-        userAnswerType: typeof question.userAnswer
-      });
-    }
-    
-    return missingCount;
+    // Forçar detecção de mudanças
+    this.cdr.detectChanges();
   }
 
   private checkAnswer(question: SimuladoQuestion, answer: any): boolean {
@@ -378,12 +310,12 @@ export class Perguntas implements OnInit, OnDestroy {
   }
 
   // Métodos utilitários simplificados
-  isQuestionAnswered(questionId: number): boolean {
-    return this.questionResults[questionId]?.answered || false;
+  isQuestionAnswered(uniqueKey: string): boolean {
+    return this.questionResults[uniqueKey]?.answered || false;
   }
 
-  getQuestionAnswerStatus(questionId: number): 'not-answered' | 'correct' | 'incorrect' {
-    const result = this.questionResults[questionId];
+  getQuestionAnswerStatus(uniqueKey: string): 'not-answered' | 'correct' | 'incorrect' {
+    const result = this.questionResults[uniqueKey];
     if (!result?.answered) return 'not-answered';
     return result.isCorrect ? 'correct' : 'incorrect';
   }
@@ -402,9 +334,106 @@ export class Perguntas implements OnInit, OnDestroy {
     return answered > 0 ? (correct / answered) * 100 : 0;
   }
 
+  // DEPRECATED - Manter apenas para compatibilidade temporária
+  // TODO: Remover após migração completa
+  private isCorrelacaoComplete(question: SimuladoQuestion): boolean {
+    console.log('🔍 isCorrelacaoComplete VERIFICANDO:', {
+      questionId: question.id,
+      tipo: question.tipo
+    });
+
+    if (question.tipo !== 'correlacao') {
+      console.warn('⚠️ isCorrelacaoComplete chamado para questão não-correlação:', {
+        questionId: question.id,
+        tipo: question.tipo
+      });
+      return false;
+    }
+
+    if (!question.userAnswer) {
+      console.log('📭 userAnswer vazio/undefined');
+      return false;
+    }
+
+    const correlacaoData = question.data as PerguntaCorrelacao;
+    const totalItems = correlacaoData.coluna_a.length;
+    
+    console.log('📊 Verificando completude:', {
+      totalItems,
+      userAnswer: question.userAnswer,
+      userAnswerKeys: Object.keys(question.userAnswer)
+    });
+
+    // Verificar se todos os itens de 1 até totalItems têm resposta válida
+    let allAnswered = true;
+    
+    for (let i = 1; i <= totalItems; i++) {
+      const answer = question.userAnswer[i.toString()];
+      console.log(`  Item ${i}:`, {
+        chave: i.toString(),
+        resposta: answer,
+        valido: answer && answer !== ''
+      });
+      
+      if (!answer || answer === '') {
+        allAnswered = false;
+        console.log(`  ❌ Item ${i} não respondido`);
+        break;
+      }
+    }
+
+    console.log('✅ Resultado isCorrelacaoComplete:', allAnswered);
+    return allAnswered;
+  }
+
+  // DEPRECATED - Contar quantos itens faltam ser respondidos na correlação
+  // TODO: Remover após migração completa
+  getCorrelacaoMissingCount(question: SimuladoQuestion): number {
+    if (question.tipo !== 'correlacao') return 0;
+    if (!question.userAnswer) {
+      const correlacaoData = question.data as PerguntaCorrelacao;
+      return correlacaoData.coluna_a.length;
+    }
+
+    const correlacaoData = question.data as PerguntaCorrelacao;
+    const totalItems = correlacaoData.coluna_a.length;
+    let missingCount = 0;
+    const missing: number[] = [];
+    const present: number[] = [];
+    
+    for (let i = 1; i <= totalItems; i++) {
+      const answer = question.userAnswer[i.toString()];
+      if (!answer || answer === '') {
+        missingCount++;
+        missing.push(i);
+      } else {
+        present.push(i);
+      }
+    }
+    
+    // Debug log para entender o problema
+    if (missingCount > 0) {
+      console.log('📊 Debug correlação:', {
+        questionId: question.id,
+        totalItems,
+        present,
+        missing,
+        userAnswer: question.userAnswer,
+        userAnswerKeys: Object.keys(question.userAnswer),
+        userAnswerType: typeof question.userAnswer
+      });
+    }
+    
+    return missingCount;
+  }
+
   private loadRandomQuestions(): Observable<SimuladoQuestion[]> {
     const filters = {
-      page_size: 100
+      page_size: 100,
+      // Adicionar filtro de bibliografia se houver bibliografias selecionadas
+      ...(this.simuladoConfig.bibliografias.length > 0 && {
+        bibliografia: this.simuladoConfig.bibliografias[0] // API do Django aceita apenas uma bibliografia por vez
+      })
     };
 
     console.log('📚 Buscando questões com filtros:', filters);
@@ -465,9 +494,23 @@ export class Perguntas implements OnInit, OnDestroy {
         const questions: SimuladoQuestion[] = [];
 
         // Filtrar questões por bibliografia
-        const multiplasFiltradas = multiplas.results.filter(q => 
-          this.simuladoConfig.bibliografias.includes(q.bibliografia)
-        );
+        console.log('🎯 Configuração de filtro:', {
+          bibliografias_solicitadas: this.simuladoConfig.bibliografias,
+          tipo_array: Array.isArray(this.simuladoConfig.bibliografias),
+          exemplo_questao_multipla: multiplas.results[0] ? {
+            id: multiplas.results[0].id,
+            bibliografia: multiplas.results[0].bibliografia,
+            tipo_bibliografia: typeof multiplas.results[0].bibliografia
+          } : 'sem questões'
+        });
+        
+        const multiplasFiltradas = multiplas.results.filter(q => {
+          const includes = this.simuladoConfig.bibliografias.includes(q.bibliografia);
+          if (!includes && multiplas.results.indexOf(q) < 3) {
+            console.log(`❌ Questão ${q.id} REJEITADA - bibliografia ${q.bibliografia} não está em`, this.simuladoConfig.bibliografias);
+          }
+          return includes;
+        });
         const vfsFiltradas = vfs.results.filter(q => 
           this.simuladoConfig.bibliografias.includes(q.bibliografia)
         );
@@ -583,35 +626,66 @@ export class Perguntas implements OnInit, OnDestroy {
 
         // Converter para SimuladoQuestion
         selectedVFs.forEach(q => {
-          questions.push({
+          const simuladoQ: SimuladoQuestion = {
             id: q.id,
             tipo: 'vf',
             pergunta: q.pergunta,
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
-            data: q
+            data: q,
+            uniqueKey: `vf-${q.id}`
+          };
+          questions.push(simuladoQ);
+          
+          console.log('➕ Questão V/F adicionada:', {
+            id: simuladoQ.id,
+            uniqueKey: simuladoQ.uniqueKey,
+            tipo: simuladoQ.tipo,
+            tipo_verificacao: simuladoQ.tipo === 'vf'
           });
         });
 
         selectedMultiplas.forEach(q => {
-          questions.push({
+          const simuladoQ: SimuladoQuestion = {
             id: q.id,
             tipo: 'multipla',
             pergunta: q.pergunta,
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
-            data: q
+            data: q,
+            uniqueKey: `multipla-${q.id}`
+          };
+          questions.push(simuladoQ);
+          
+          console.log('➕ Questão Múltipla adicionada:', {
+            id: simuladoQ.id,
+            uniqueKey: simuladoQ.uniqueKey,
+            tipo: simuladoQ.tipo,
+            tipo_verificacao: simuladoQ.tipo === 'multipla'
           });
         });
 
         selectedCorrelacoes.forEach(q => {
-          questions.push({
+          const simuladoQ: SimuladoQuestion = {
             id: q.id,
             tipo: 'correlacao',
             pergunta: q.pergunta,
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
-            data: q
+            data: q,
+            uniqueKey: `correlacao-${q.id}`
+          };
+          questions.push(simuladoQ);
+          
+          console.log('➕ Questão de correlação adicionada:', {
+            id: simuladoQ.id,
+            tipo: simuladoQ.tipo,
+            tipo_verificacao: simuladoQ.tipo === 'correlacao',
+            data_tipo: q.tipo,
+            pergunta_preview: simuladoQ.pergunta.substring(0, 30) + '...',
+            coluna_a_length: q.coluna_a?.length,
+            coluna_b_length: q.coluna_b?.length,
+            resposta_correta: q.resposta_correta
           });
         });
 
@@ -625,8 +699,11 @@ export class Perguntas implements OnInit, OnDestroy {
           questoes_detalhadas: questions.map(q => ({
             id: q.id,
             tipo: q.tipo,
+            tipo_check: typeof q.tipo,
             bibliografia: q.bibliografia_titulo,
-            pergunta_preview: q.pergunta.substring(0, 50) + '...'
+            pergunta_preview: q.pergunta.substring(0, 50) + '...',
+            tem_data: !!q.data,
+            data_tipo: (q.data as any)?.tipo
           }))
         });
 
@@ -649,12 +726,7 @@ export class Perguntas implements OnInit, OnDestroy {
     return shuffled;
   }
 
-  // Métodos utilitários para o template
-  getStringFromCharCode(code: number): string {
-    return String.fromCharCode(code);
-  }
-
-  // Métodos específicos para tipos de pergunta
+  // Métodos específicos para tipos de pergunta (usados pelo template)
   getVFData(question: SimuladoQuestion): PerguntaVF {
     return question.data as PerguntaVF;
   }
@@ -664,42 +736,13 @@ export class Perguntas implements OnInit, OnDestroy {
   }
 
   getCorrelacaoData(question: SimuladoQuestion): PerguntaCorrelacao {
+    if (question.tipo !== 'correlacao') {
+      console.warn('⚠️ getCorrelacaoData chamado para questão não-correlação:', question.tipo);
+      // Retornar um objeto vazio que não vai quebrar o template
+      return { coluna_a: [], coluna_b: [], resposta_correta: {} } as any;
+    }
     return question.data as PerguntaCorrelacao;
   }
-
-  // Helper para any quando necessário
-  getAnyData(question: SimuladoQuestion): any {
-    return question.data as any;
-  }
-
-  // Obter texto da alternativa para múltipla escolha
-  getAlternativaText(question: SimuladoQuestion, letra: string): string {
-    const multipla = question.data as PerguntaMultipla;
-    const alternativasMap: { [key: string]: string } = {
-      'a': multipla.alternativa_a,
-      'b': multipla.alternativa_b,
-      'c': multipla.alternativa_c,
-      'd': multipla.alternativa_d
-    };
-    return alternativasMap[letra.toLowerCase()] || '';
-  }
-
-  // Obter chaves da correlação ordenadas (converter 0,1,2 para 1,2,3)
-  getCorrelacaoKeys(question: SimuladoQuestion): string[] {
-    const correlacao = question.data as PerguntaCorrelacao;
-    const keys = Object.keys(correlacao.resposta_correta);
-    // Ordenar numericamente e converter (0,1,2 -> 1,2,3)
-    return keys.sort((a, b) => parseInt(a) - parseInt(b))
-               .map(key => (parseInt(key) + 1).toString());
-  }
-
-  // Obter letra da correlação correta (converter índice numérico para letra)
-  getCorrelacaoCorrectLetter(question: SimuladoQuestion, displayKey: string): string {
-    const correlacao = question.data as PerguntaCorrelacao;
-    // Converter chave de exibição (1,2,3) para chave do backend (0,1,2)
-    const backendKey = (parseInt(displayKey) - 1).toString();
-    const numericValue = correlacao.resposta_correta[backendKey];
-    // Converter valor numérico (0,1,2) para letra (A,B,C)
-    return String.fromCharCode(65 + parseInt(numericValue));
-  }
 }
+
+
