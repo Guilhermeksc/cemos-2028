@@ -51,21 +51,19 @@ interface SimuladoResult {
 export class Perguntas implements OnInit, OnDestroy {
   @Input() bibliografiaIds: number[] = [];
   @Input() showBibliografiaSelector: boolean = true;
-  @Input() autoStartSimulado: boolean = false;
+  @Input() autoStartSimulado: boolean = true; // Mudado para true por padrão
   @Output() simuladoFinished = new EventEmitter<SimuladoResult>();
   @Output() simuladoStarted = new EventEmitter<void>();
 
   private perguntasService = inject(PerguntasService);
   private destroy$ = new Subject<void>();
 
-  // Estados do componente
+  // Estados do componente - simplificado
   bibliografias: Bibliografia[] = [];
   selectedBibliografias: number[] = [];
   isLoading = false;
   isLoadingQuestions = false;
-  isSimuladoActive = false;
-  isSimuladoComplete = false;
-  currentQuestionIndex = 0;
+  questionsLoaded = false; // Novo estado para controlar se questões foram carregadas
 
   // Configuração do simulado
   simuladoConfig: SimuladoConfig = {
@@ -75,29 +73,69 @@ export class Perguntas implements OnInit, OnDestroy {
     questoesCorrelacao: 1
   };
 
-  // Questões do simulado
+  // Questões do simulado - agora todas visíveis
   simuladoQuestions: SimuladoQuestion[] = [];
-  currentQuestion: SimuladoQuestion | null = null;
 
-  // Resultados
-  simuladoResult: SimuladoResult | null = null;
+  // Resultados individuais por questão
+  questionResults: { [questionId: number]: { answered: boolean, isCorrect: boolean, showResult: boolean } } = {};
 
   ngOnInit() {
+    console.log('🚀 Componente Perguntas inicializado - Modo Simplificado');
+    
     this.loadBibliografias();
     
     if (this.bibliografiaIds.length > 0) {
       this.selectedBibliografias = [...this.bibliografiaIds];
       this.simuladoConfig.bibliografias = [...this.bibliografiaIds];
       
-      if (this.autoStartSimulado) {
-        this.startSimulado();
-      }
+      console.log('📋 Auto-carregando prova...');
+      // Aguardar um pouco para garantir que as bibliografias foram carregadas
+      setTimeout(() => {
+        this.gerarNovaProva();
+      }, 1000);
     }
   }
 
   ngOnDestroy() {
     this.destroy$.next();
     this.destroy$.complete();
+  }
+
+  gerarNovaProva() {
+    console.log('🔄 Gerando nova prova...');
+    
+    this.isLoadingQuestions = true;
+    this.questionsLoaded = false;
+    this.simuladoQuestions = [];
+    this.questionResults = {};
+
+    this.loadRandomQuestions()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (questions) => {
+          console.log('✅ Nova prova carregada:', questions.length, 'questões');
+          
+          this.simuladoQuestions = this.shuffleArray(questions);
+          this.questionsLoaded = true;
+          this.isLoadingQuestions = false;
+          
+          // Inicializar resultados das questões
+          this.simuladoQuestions.forEach(q => {
+            this.questionResults[q.id] = {
+              answered: false,
+              isCorrect: false,
+              showResult: false
+            };
+          });
+          
+          this.simuladoStarted.emit();
+        },
+        error: (error) => {
+          console.error('❌ Erro ao carregar nova prova:', error);
+          this.isLoadingQuestions = false;
+          this.questionsLoaded = false;
+        }
+      });
   }
 
   private loadBibliografias() {
@@ -167,77 +205,125 @@ export class Perguntas implements OnInit, OnDestroy {
     return this.selectedBibliografias.includes(bibliografiaId);
   }
 
-  canStartSimulado(): boolean {
-    return this.simuladoConfig.bibliografias.length > 0 && !this.isLoadingQuestions;
+  // Novo método para responder uma questão específica
+  answerQuestion(questionId: number, answer: any) {
+    const question = this.simuladoQuestions.find(q => q.id === questionId);
+    if (!question) return;
+
+    console.log('📝 Respondendo questão:', { questionId, answer });
+
+    question.userAnswer = answer;
+    question.isCorrect = this.checkAnswer(question, answer);
+    
+    // Atualizar resultado da questão
+    this.questionResults[questionId] = {
+      answered: true,
+      isCorrect: question.isCorrect,
+      showResult: true
+    };
+
+    console.log('✅ Resposta processada:', {
+      questionId,
+      answer,
+      isCorrect: question.isCorrect
+    });
   }
 
-  startSimulado() {
-    if (!this.canStartSimulado()) return;
+  // Método para questões de correlação
+  updateCorrelacaoAnswer(questionId: number, itemNumber: number, selectedLetter: string) {
+    const question = this.simuladoQuestions.find(q => q.id === questionId);
+    if (!question) return;
 
-    console.log('🎯 Iniciando simulado com configuração:', {
-      bibliografias: this.simuladoConfig.bibliografias,
-      questoesVF: this.simuladoConfig.questoesVF,
-      questoesMultipla: this.simuladoConfig.questoesMultipla,
-      questoesCorrelacao: this.simuladoConfig.questoesCorrelacao,
-      totalQuestoes: this.simuladoConfig.questoesVF + this.simuladoConfig.questoesMultipla + this.simuladoConfig.questoesCorrelacao
-    });
+    if (!question.userAnswer) {
+      question.userAnswer = {};
+    }
 
-    this.isLoadingQuestions = true;
-    this.isSimuladoActive = true;
-    this.isSimuladoComplete = false;
-    this.currentQuestionIndex = 0;
-    this.simuladoResult = null;
+    if (selectedLetter) {
+      question.userAnswer[itemNumber.toString()] = selectedLetter;
+    } else {
+      delete question.userAnswer[itemNumber.toString()];
+    }
 
-    this.loadRandomQuestions()
-      .pipe(takeUntil(this.destroy$))
-      .subscribe({
-        next: (questions) => {
-          console.log('✅ Questões carregadas com sucesso:', {
-            totalQuestoes: questions.length,
-            questoesPorTipo: {
-              vf: questions.filter(q => q.tipo === 'vf').length,
-              multipla: questions.filter(q => q.tipo === 'multipla').length,
-              correlacao: questions.filter(q => q.tipo === 'correlacao').length
-            },
-            questoes: questions.map(q => ({
-              id: q.id,
-              tipo: q.tipo,
-              bibliografia_titulo: q.bibliografia_titulo
-            }))
-          });
+    // Verificar se todas as correlações foram respondidas
+    const correlacaoData = question.data as PerguntaCorrelacao;
+    const totalItems = correlacaoData.coluna_a.length;
+    const answeredItems = Object.keys(question.userAnswer).length;
 
-          this.simuladoQuestions = this.shuffleArray(questions);
-          this.currentQuestion = this.simuladoQuestions[0] || null;
-          this.isLoadingQuestions = false;
-          this.simuladoStarted.emit();
-        },
-        error: (error) => {
-          console.error('❌ Erro ao carregar questões:', error);
-          this.isLoadingQuestions = false;
-          this.isSimuladoActive = false;
-        }
-      });
+    if (answeredItems === totalItems) {
+      question.isCorrect = this.checkAnswer(question, question.userAnswer);
+      
+      this.questionResults[questionId] = {
+        answered: true,
+        isCorrect: question.isCorrect,
+        showResult: true
+      };
+    }
+  }
+
+  private checkAnswer(question: SimuladoQuestion, answer: any): boolean {
+    switch (question.tipo) {
+      case 'multipla':
+        const multipla = question.data as PerguntaMultipla;
+        return multipla.resposta_correta === answer;
+      
+      case 'vf':
+        const vf = question.data as PerguntaVF;
+        return vf.resposta_correta === answer;
+      
+      case 'correlacao':
+        const correlacao = question.data as PerguntaCorrelacao;
+        return JSON.stringify(correlacao.resposta_correta) === JSON.stringify(answer);
+      
+      default:
+        return false;
+    }
+  }
+
+  // Métodos utilitários simplificados
+  getQuestionResult(questionId: number) {
+    return this.questionResults[questionId] || { answered: false, isCorrect: false, showResult: false };
+  }
+
+  isQuestionAnswered(questionId: number): boolean {
+    return this.questionResults[questionId]?.answered || false;
+  }
+
+  getQuestionAnswerStatus(questionId: number): 'not-answered' | 'correct' | 'incorrect' {
+    const result = this.questionResults[questionId];
+    if (!result?.answered) return 'not-answered';
+    return result.isCorrect ? 'correct' : 'incorrect';
+  }
+
+  getTotalAnsweredQuestions(): number {
+    return Object.values(this.questionResults).filter(r => r.answered).length;
+  }
+
+  getTotalCorrectAnswers(): number {
+    return Object.values(this.questionResults).filter(r => r.answered && r.isCorrect).length;
+  }
+
+  getScorePercentage(): number {
+    const answered = this.getTotalAnsweredQuestions();
+    const correct = this.getTotalCorrectAnswers();
+    return answered > 0 ? (correct / answered) * 100 : 0;
   }
 
   private loadRandomQuestions(): Observable<SimuladoQuestion[]> {
     const filters = {
-      bibliografia__in: this.simuladoConfig.bibliografias.join(','),
       page_size: 100
     };
 
     console.log('📚 Buscando questões com filtros:', filters);
+    console.log('🎯 Bibliografias selecionadas:', this.simuladoConfig.bibliografias);
 
     const multiplaFilters: PerguntaMultiplaFilters = { 
-      ...filters, 
-      bibliografia: undefined 
+      ...filters
     };
     const vfFilters: PerguntaVFFilters = { 
-      ...filters, 
-      bibliografia: undefined 
+      ...filters
     };
     const correlacaoFilters: PerguntaFilters = { 
-      ...filters, 
-      bibliografia: undefined 
+      ...filters
     };
 
     return forkJoin({
@@ -349,17 +435,34 @@ export class Perguntas implements OnInit, OnDestroy {
 
         console.log('⚠️ Verificação de disponibilidade de questões:', verificacao);
 
-        // Alertar sobre questões insuficientes
+        // Verificar se há questões insuficientes e emitir warnings específicos
+        const questoesInsuficientes: string[] = [];
         Object.entries(verificacao).forEach(([tipo, info]) => {
           if (!info.suficientes) {
             console.warn(`⚠️ ATENÇÃO: Questões ${tipo} insuficientes!`, {
               tipo,
               solicitadas: info.solicitadas,
               disponiveis: info.disponiveis,
-              diferenca: info.solicitadas - info.disponiveis
+              diferenca: info.solicitadas - info.disponiveis,
+              bibliografia_ids: this.simuladoConfig.bibliografias
             });
+            questoesInsuficientes.push(`${tipo}: ${info.disponiveis}/${info.solicitadas}`);
           }
         });
+
+        // Se não há questões suficientes, dar um aviso mas continuar com as disponíveis
+        if (questoesInsuficientes.length > 0) {
+          console.warn('🚨 SIMULADO COM QUESTÕES REDUZIDAS:', {
+            problema: 'Não há questões suficientes para a configuração solicitada',
+            bibliografias_consultadas: this.simuladoConfig.bibliografias,
+            questoes_insuficientes: questoesInsuficientes,
+            acoes_recomendadas: [
+              'Verificar se a bibliografia ID existe no backend',
+              'Verificar se há questões cadastradas para esta bibliografia',
+              'Considerar reduzir o número de questões solicitadas'
+            ]
+          });
+        }
 
         // Selecionar questões aleatórias
         const selectedVFs = this.getRandomItems(vfsFiltradas, this.simuladoConfig.questoesVF);
@@ -450,125 +553,6 @@ export class Perguntas implements OnInit, OnDestroy {
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
-  }
-
-  answerQuestion(answer: any) {
-    if (!this.currentQuestion) return;
-
-    this.currentQuestion.userAnswer = answer;
-    this.currentQuestion.isCorrect = this.checkAnswer(this.currentQuestion, answer);
-  }
-
-  updateCorrelacaoAnswer(itemNumber: number, selectedLetter: string) {
-    if (!this.currentQuestion) return;
-
-    if (!this.currentQuestion.userAnswer) {
-      this.currentQuestion.userAnswer = {};
-    }
-
-    if (selectedLetter) {
-      this.currentQuestion.userAnswer[itemNumber.toString()] = selectedLetter;
-    } else {
-      delete this.currentQuestion.userAnswer[itemNumber.toString()];
-    }
-
-    this.currentQuestion.isCorrect = this.checkAnswer(this.currentQuestion, this.currentQuestion.userAnswer);
-  }
-
-  private checkAnswer(question: SimuladoQuestion, answer: any): boolean {
-    switch (question.tipo) {
-      case 'multipla':
-        const multipla = question.data as PerguntaMultipla;
-        return multipla.resposta_correta === answer;
-      
-      case 'vf':
-        const vf = question.data as PerguntaVF;
-        return vf.resposta_correta === answer;
-      
-      case 'correlacao':
-        const correlacao = question.data as PerguntaCorrelacao;
-        return JSON.stringify(correlacao.resposta_correta) === JSON.stringify(answer);
-      
-      default:
-        return false;
-    }
-  }
-
-  nextQuestion() {
-    if (this.currentQuestionIndex < this.simuladoQuestions.length - 1) {
-      this.currentQuestionIndex++;
-      this.currentQuestion = this.simuladoQuestions[this.currentQuestionIndex];
-    } else {
-      this.finishSimulado();
-    }
-  }
-
-  previousQuestion() {
-    if (this.currentQuestionIndex > 0) {
-      this.currentQuestionIndex--;
-      this.currentQuestion = this.simuladoQuestions[this.currentQuestionIndex];
-    }
-  }
-
-  goToQuestion(index: number) {
-    if (index >= 0 && index < this.simuladoQuestions.length) {
-      this.currentQuestionIndex = index;
-      this.currentQuestion = this.simuladoQuestions[index];
-    }
-  }
-
-  finishSimulado() {
-    const acertos = this.simuladoQuestions.filter(q => q.isCorrect).length;
-    const totalQuestoes = this.simuladoQuestions.length;
-    const erros = totalQuestoes - acertos;
-    const percentual = totalQuestoes > 0 ? (acertos / totalQuestoes) * 100 : 0;
-
-    this.simuladoResult = {
-      totalQuestoes,
-      acertos,
-      erros,
-      percentual,
-      questoes: this.simuladoQuestions
-    };
-
-    this.isSimuladoComplete = true;
-    this.simuladoFinished.emit(this.simuladoResult);
-  }
-
-  restartSimulado() {
-    this.isSimuladoActive = false;
-    this.isSimuladoComplete = false;
-    this.simuladoQuestions = [];
-    this.currentQuestion = null;
-    this.currentQuestionIndex = 0;
-    this.simuladoResult = null;
-  }
-
-  // Getters para o template
-  get totalQuestions(): number {
-    return this.simuladoQuestions.length;
-  }
-
-  get currentQuestionNumber(): number {
-    return this.currentQuestionIndex + 1;
-  }
-
-  get isLastQuestion(): boolean {
-    return this.currentQuestionIndex === this.simuladoQuestions.length - 1;
-  }
-
-  get isFirstQuestion(): boolean {
-    return this.currentQuestionIndex === 0;
-  }
-
-  get hasAnsweredCurrentQuestion(): boolean {
-    return this.currentQuestion?.userAnswer !== undefined;
-  }
-
-  getQuestionStatus(index: number): 'answered' | 'current' | 'pending' {
-    if (index === this.currentQuestionIndex) return 'current';
-    if (this.simuladoQuestions[index]?.userAnswer !== undefined) return 'answered';
-    return 'pending';
   }
 
   // Métodos utilitários para o template
