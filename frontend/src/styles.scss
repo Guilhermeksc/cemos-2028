@@ -13,3 +13,38 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// Sobrescrever estilos do Angular Material para o side-menu
+mat-sidenav {
+  background-color: #f7f8fa !important;
+  border-right: 1px solid #e1e1e1 !important;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1) !important;
+  width: 280px !important;
+  max-width: 280px !important;
+  min-width: 280px !important;
+  overflow-x: hidden !important;
+}
+
+app-side-menu {
+  background-color: #f7f8fa !important;
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+.mat-drawer-inner-container {
+  background-color: #f7f8fa !important;
+  border-right: 1px solid #e1e1e1 !important;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1) !important;
+  width: 280px !important;
+  overflow-x: hidden !important;
+}
+
+.mat-sidenav {
+  background-color: #f7f8fa !important;
+  border-right: 1px solid #e1e1e1 !important;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1) !important;
+  width: 280px !important;
+  overflow-x: hidden !important;
+}

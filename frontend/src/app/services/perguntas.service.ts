@@ -6,16 +6,12 @@ import { map, tap } from 'rxjs/operators';
 import { environment } from '../environments/environment';
 import {
   Bibliografia,
-  BibliografiaCreateUpdate,
   BibliografiaFilters,
   PerguntaMultipla,
-  PerguntaMultiplaCreateUpdate,
   PerguntaMultiplaFilters,
   PerguntaVF,
-  PerguntaVFCreateUpdate,
   PerguntaVFFilters,
   PerguntaCorrelacao,
-  PerguntaCorrelacaoCreateUpdate,
   PerguntaFilters,
   PerguntaResumo,
   PaginatedResponse,
@@ -84,36 +80,6 @@ export class PerguntasService {
   }
 
   /**
-   * Cria uma nova bibliografia
-   */
-  createBibliografia(bibliografia: BibliografiaCreateUpdate): Observable<Bibliografia> {
-    return this.http.post<Bibliografia>(`${this.apiUrl}/bibliografias/`, bibliografia)
-      .pipe(
-        tap(() => this.refreshBibliografias())
-      );
-  }
-
-  /**
-   * Atualiza uma bibliografia existente
-   */
-  updateBibliografia(id: number, bibliografia: Partial<BibliografiaCreateUpdate>): Observable<Bibliografia> {
-    return this.http.patch<Bibliografia>(`${this.apiUrl}/bibliografias/${id}/`, bibliografia)
-      .pipe(
-        tap(() => this.refreshBibliografias())
-      );
-  }
-
-  /**
-   * Remove uma bibliografia
-   */
-  deleteBibliografia(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/bibliografias/${id}/`)
-      .pipe(
-        tap(() => this.refreshBibliografias())
-      );
-  }
-
-  /**
    * Busca todas as perguntas de uma bibliografia específica
    */
   getPerguntasByBibliografia(id: number): Observable<PerguntaResumo[]> {
@@ -150,27 +116,6 @@ export class PerguntasService {
     return this.http.get<PerguntaMultipla>(`${this.apiUrl}/perguntas-multipla/${id}/`);
   }
 
-  /**
-   * Cria uma nova pergunta de múltipla escolha
-   */
-  createPerguntaMultipla(pergunta: PerguntaMultiplaCreateUpdate): Observable<PerguntaMultipla> {
-    return this.http.post<PerguntaMultipla>(`${this.apiUrl}/perguntas-multipla/`, pergunta);
-  }
-
-  /**
-   * Atualiza uma pergunta de múltipla escolha
-   */
-  updatePerguntaMultipla(id: number, pergunta: Partial<PerguntaMultiplaCreateUpdate>): Observable<PerguntaMultipla> {
-    return this.http.patch<PerguntaMultipla>(`${this.apiUrl}/perguntas-multipla/${id}/`, pergunta);
-  }
-
-  /**
-   * Remove uma pergunta de múltipla escolha
-   */
-  deletePerguntaMultipla(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/perguntas-multipla/${id}/`);
-  }
-
   // ==================== PERGUNTAS VERDADEIRO/FALSO ====================
 
   /**
@@ -199,27 +144,6 @@ export class PerguntasService {
    */
   getPerguntaVF(id: number): Observable<PerguntaVF> {
     return this.http.get<PerguntaVF>(`${this.apiUrl}/perguntas-vf/${id}/`);
-  }
-
-  /**
-   * Cria uma nova pergunta de verdadeiro/falso
-   */
-  createPerguntaVF(pergunta: PerguntaVFCreateUpdate): Observable<PerguntaVF> {
-    return this.http.post<PerguntaVF>(`${this.apiUrl}/perguntas-vf/`, pergunta);
-  }
-
-  /**
-   * Atualiza uma pergunta de verdadeiro/falso
-   */
-  updatePerguntaVF(id: number, pergunta: Partial<PerguntaVFCreateUpdate>): Observable<PerguntaVF> {
-    return this.http.patch<PerguntaVF>(`${this.apiUrl}/perguntas-vf/${id}/`, pergunta);
-  }
-
-  /**
-   * Remove uma pergunta de verdadeiro/falso
-   */
-  deletePerguntaVF(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/perguntas-vf/${id}/`);
   }
 
   // ==================== PERGUNTAS DE CORRELAÇÃO ====================
@@ -252,35 +176,7 @@ export class PerguntasService {
     return this.http.get<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/${id}/`);
   }
 
-  /**
-   * Cria uma nova pergunta de correlação
-   */
-  createPerguntaCorrelacao(pergunta: PerguntaCorrelacaoCreateUpdate): Observable<PerguntaCorrelacao> {
-    return this.http.post<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/`, pergunta);
-  }
-
-  /**
-   * Atualiza uma pergunta de correlação
-   */
-  updatePerguntaCorrelacao(id: number, pergunta: Partial<PerguntaCorrelacaoCreateUpdate>): Observable<PerguntaCorrelacao> {
-    return this.http.patch<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/${id}/`, pergunta);
-  }
-
-  /**
-   * Remove uma pergunta de correlação
-   */
-  deletePerguntaCorrelacao(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/perguntas-correlacao/${id}/`);
-  }
-
   // ==================== MÉTODOS UTILITÁRIOS ====================
-
-  /**
-   * Refresh das bibliografias (força nova consulta)
-   */
-  refreshBibliografias(): void {
-    this.getBibliografias().subscribe();
-  }
 
   /**
    * Busca todas as perguntas de todos os tipos (para estatísticas)
@@ -390,96 +286,4 @@ export class PerguntasService {
     }, {} as { [ano: string]: number });
   }
 
-  // ==================== MÉTODOS DE VALIDAÇÃO ====================
-
-  /**
-   * Valida dados de uma pergunta de múltipla escolha
-   */
-  validatePerguntaMultipla(pergunta: PerguntaMultiplaCreateUpdate): string[] {
-    const errors: string[] = [];
-    
-    if (!pergunta.pergunta?.trim()) {
-      errors.push('Pergunta é obrigatória');
-    }
-    
-    if (!pergunta.alternativa_a?.trim()) {
-      errors.push('Alternativa A é obrigatória');
-    }
-    
-    if (!pergunta.alternativa_b?.trim()) {
-      errors.push('Alternativa B é obrigatória');
-    }
-    
-    if (!pergunta.alternativa_c?.trim()) {
-      errors.push('Alternativa C é obrigatória');
-    }
-    
-    if (!pergunta.alternativa_d?.trim()) {
-      errors.push('Alternativa D é obrigatória');
-    }
-    
-    if (!['a', 'b', 'c', 'd'].includes(pergunta.resposta_correta)) {
-      errors.push('Resposta correta deve ser A, B, C ou D');
-    }
-    
-    if (!pergunta.justificativa_resposta_certa?.trim()) {
-      errors.push('Justificativa é obrigatória');
-    }
-    
-    return errors;
-  }
-
-  /**
-   * Valida dados de uma pergunta V/F
-   */
-  validatePerguntaVF(pergunta: PerguntaVFCreateUpdate): string[] {
-    const errors: string[] = [];
-    
-    if (!pergunta.pergunta?.trim()) {
-      errors.push('Pergunta é obrigatória');
-    }
-    
-    if (!pergunta.afirmacao?.trim()) {
-      errors.push('Afirmação é obrigatória');
-    }
-    
-    if (pergunta.resposta_correta === undefined || pergunta.resposta_correta === null) {
-      errors.push('Resposta correta é obrigatória');
-    }
-    
-    if (!pergunta.justificativa_resposta_certa?.trim()) {
-      errors.push('Justificativa é obrigatória');
-    }
-    
-    return errors;
-  }
-
-  /**
-   * Valida dados de uma pergunta de correlação
-   */
-  validatePerguntaCorrelacao(pergunta: PerguntaCorrelacaoCreateUpdate): string[] {
-    const errors: string[] = [];
-    
-    if (!pergunta.pergunta?.trim()) {
-      errors.push('Pergunta é obrigatória');
-    }
-    
-    if (!pergunta.coluna_a || pergunta.coluna_a.length === 0) {
-      errors.push('Coluna A deve ter pelo menos um item');
-    }
-    
-    if (!pergunta.coluna_b || pergunta.coluna_b.length === 0) {
-      errors.push('Coluna B deve ter pelo menos um item');
-    }
-    
-    if (!pergunta.resposta_correta || Object.keys(pergunta.resposta_correta).length === 0) {
-      errors.push('Resposta correta deve ter pelo menos um par');
-    }
-    
-    if (!pergunta.justificativa_resposta_certa?.trim()) {
-      errors.push('Justificativa é obrigatória');
-    }
-    
-    return errors;
-  }
 }

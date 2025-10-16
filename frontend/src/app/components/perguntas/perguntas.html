@@ -1,0 +1,321 @@
+<!-- Simulado de Perguntas Component -->
+<div class="simulado-container">
+  
+  <!-- Seleção de Bibliografias -->
+  <div *ngIf="showBibliografiaSelector && !isSimuladoActive && !isSimuladoComplete" class="bibliografia-selector">
+    <h3>Selecione as Bibliografias</h3>
+    
+    <div *ngIf="isLoading" class="loading">
+      <p>Carregando bibliografias...</p>
+    </div>
+    
+    <div *ngIf="!isLoading" class="bibliografia-list">
+      <div *ngFor="let bibliografia of bibliografias" class="bibliografia-item">
+        <label class="checkbox-label">
+          <input 
+            type="checkbox"
+            [checked]="isBibliografiaSelected(bibliografia.id)"
+            (change)="onBibliografiaChange(bibliografia.id, $any($event.target).checked || false)"
+          />
+          <span class="checkmark"></span>
+          <div class="bibliografia-info">
+            <strong>{{ bibliografia.titulo }}</strong>
+            <div class="bibliografia-details">
+              <span *ngIf="bibliografia.autor">Autor: {{ bibliografia.autor }}</span>
+              <span *ngIf="bibliografia.materia">Matéria: {{ bibliografia.materia }}</span>
+              <span *ngIf="bibliografia.perguntas_count">{{ bibliografia.perguntas_count }} perguntas</span>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+    
+    <div class="simulado-config">
+      <h4>Configuração do Simulado</h4>
+      <div class="config-item">
+        <label>Perguntas Verdadeiro/Falso:</label>
+        <input type="number" [(ngModel)]="simuladoConfig.questoesVF" min="0" max="10" />
+      </div>
+      <div class="config-item">
+        <label>Perguntas Múltipla Escolha:</label>
+        <input type="number" [(ngModel)]="simuladoConfig.questoesMultipla" min="0" max="10" />
+      </div>
+      <div class="config-item">
+        <label>Perguntas de Correlação:</label>
+        <input type="number" [(ngModel)]="simuladoConfig.questoesCorrelacao" min="0" max="5" />
+      </div>
+      <div class="total-questoes">
+        Total: {{ simuladoConfig.questoesVF + simuladoConfig.questoesMultipla + simuladoConfig.questoesCorrelacao }} questões
+      </div>
+    </div>
+    
+    <button 
+      class="btn btn-primary start-btn"
+      [disabled]="!canStartSimulado()"
+      (click)="startSimulado()"
+    >
+      {{ isLoadingQuestions ? 'Carregando questões...' : 'Iniciar Simulado' }}
+    </button>
+  </div>
+
+  <!-- Loading das Questões -->
+  <div *ngIf="isLoadingQuestions" class="loading-questions">
+    <div class="loading-spinner"></div>
+    <p>Preparando suas questões...</p>
+  </div>
+
+  <!-- Simulado Ativo -->
+  <div *ngIf="isSimuladoActive && !isLoadingQuestions && currentQuestion" class="simulado-active">
+    
+    <!-- Header do Simulado -->
+    <div class="simulado-header">
+      <div class="progress-info">
+        <span class="question-counter">Questão {{ currentQuestionNumber }} de {{ totalQuestions }}</span>
+        <div class="progress-bar">
+          <div class="progress-fill" [style.width.%]="(currentQuestionNumber / totalQuestions) * 100"></div>
+        </div>
+      </div>
+      
+      <div class="question-navigation">
+        <div class="nav-dots">
+          <button 
+            *ngFor="let question of simuladoQuestions; let i = index"
+            class="nav-dot"
+            [class.current]="getQuestionStatus(i) === 'current'"
+            [class.answered]="getQuestionStatus(i) === 'answered'"
+            [class.pending]="getQuestionStatus(i) === 'pending'"
+            (click)="goToQuestion(i)"
+          >
+            {{ i + 1 }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Questão Atual -->
+    <div class="question-container">
+      <div class="question-header">
+        <div class="question-type">
+          <span class="type-badge" [class]="'type-' + currentQuestion.tipo">
+            {{ currentQuestion.tipo === 'vf' ? 'V/F' : 
+               currentQuestion.tipo === 'multipla' ? 'Múltipla Escolha' : 'Correlação' }}
+          </span>
+        </div>
+        <div class="question-info">
+          <span *ngIf="currentQuestion.bibliografia_titulo" class="bibliografia">
+            {{ currentQuestion.bibliografia_titulo }}
+          </span>
+          <span *ngIf="currentQuestion.paginas" class="paginas">
+            Páginas: {{ currentQuestion.paginas }}
+          </span>
+        </div>
+      </div>
+
+      <div class="question-content">
+        <h4 class="question-text">{{ currentQuestion.pergunta }}</h4>
+
+        <!-- Pergunta Verdadeiro/Falso -->
+        <div *ngIf="currentQuestion.tipo === 'vf'" class="vf-question">
+          <div class="afirmacao">
+            <p><strong>Afirmação:</strong> {{ getVFData(currentQuestion).afirmacao }}</p>
+          </div>
+          <div class="vf-options">
+            <label class="vf-option">
+              <input 
+                type="radio" 
+                name="vf-answer"
+                [value]="true"
+                [checked]="currentQuestion.userAnswer === true"
+                (change)="answerQuestion(true)"
+              />
+              <span>Verdadeiro</span>
+            </label>
+            <label class="vf-option">
+              <input 
+                type="radio" 
+                name="vf-answer"
+                [value]="false"
+                [checked]="currentQuestion.userAnswer === false"
+                (change)="answerQuestion(false)"
+              />
+              <span>Falso</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pergunta Múltipla Escolha -->
+        <div *ngIf="currentQuestion.tipo === 'multipla'" class="multipla-question">
+          <div class="alternativas">
+            <label class="alternativa">
+              <input 
+                type="radio" 
+                name="multipla-answer"
+                value="a"
+                [checked]="currentQuestion.userAnswer === 'a'"
+                (change)="answerQuestion('a')"
+              />
+              <span class="alternativa-letter">A)</span>
+              <span class="alternativa-text">{{ getMultiplaData(currentQuestion).alternativa_a }}</span>
+            </label>
+            <label class="alternativa">
+              <input 
+                type="radio" 
+                name="multipla-answer"
+                value="b"
+                [checked]="currentQuestion.userAnswer === 'b'"
+                (change)="answerQuestion('b')"
+              />
+              <span class="alternativa-letter">B)</span>
+              <span class="alternativa-text">{{ getMultiplaData(currentQuestion).alternativa_b }}</span>
+            </label>
+            <label class="alternativa">
+              <input 
+                type="radio" 
+                name="multipla-answer"
+                value="c"
+                [checked]="currentQuestion.userAnswer === 'c'"
+                (change)="answerQuestion('c')"
+              />
+              <span class="alternativa-letter">C)</span>
+              <span class="alternativa-text">{{ getMultiplaData(currentQuestion).alternativa_c }}</span>
+            </label>
+            <label class="alternativa">
+              <input 
+                type="radio" 
+                name="multipla-answer"
+                value="d"
+                [checked]="currentQuestion.userAnswer === 'd'"
+                (change)="answerQuestion('d')"
+              />
+              <span class="alternativa-letter">D)</span>
+              <span class="alternativa-text">{{ getMultiplaData(currentQuestion).alternativa_d }}</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pergunta de Correlação -->
+        <div *ngIf="currentQuestion.tipo === 'correlacao'" class="correlacao-question">
+          <div class="correlacao-instructions">
+            <p>Correlacione os itens da Coluna A com os da Coluna B:</p>
+          </div>
+          <div class="correlacao-container">
+            <div class="coluna coluna-a">
+              <h5>Coluna A</h5>
+              <div *ngFor="let item of getCorrelacaoData(currentQuestion).coluna_a; let i = index" class="correlacao-item">
+                <span class="item-number">{{ i + 1 }}.</span>
+                <span class="item-text">{{ item }}</span>
+              </div>
+            </div>
+            <div class="coluna coluna-b">
+              <h5>Coluna B</h5>
+              <div *ngFor="let item of getCorrelacaoData(currentQuestion).coluna_b; let i = index" class="correlacao-item">
+                <span class="item-letter">{{ getStringFromCharCode(65 + i) }}.</span>
+                <span class="item-text">{{ item }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="correlacao-mapping">
+            <h6>Sua resposta:</h6>
+            <div *ngFor="let itemA of getCorrelacaoData(currentQuestion).coluna_a; let i = index" class="mapping-row">
+              <span class="mapping-label">{{ i + 1 }} = </span>
+              <select 
+                class="mapping-select"
+                [value]="currentQuestion.userAnswer?.[i + 1] || ''"
+                (change)="updateCorrelacaoAnswer(i + 1, $any($event.target).value || '')"
+              >
+                <option value="">Selecione...</option>
+                <option 
+                  *ngFor="let itemB of getCorrelacaoData(currentQuestion).coluna_b; let j = index" 
+                  [value]="getStringFromCharCode(65 + j)"
+                >
+                  {{ getStringFromCharCode(65 + j) }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegação entre questões -->
+      <div class="question-navigation-buttons">
+        <button 
+          class="btn btn-secondary"
+          [disabled]="isFirstQuestion"
+          (click)="previousQuestion()"
+        >
+          ← Anterior
+        </button>
+        
+        <button 
+          *ngIf="!isLastQuestion"
+          class="btn btn-primary"
+          (click)="nextQuestion()"
+        >
+          Próxima →
+        </button>
+        
+        <button 
+          *ngIf="isLastQuestion"
+          class="btn btn-success"
+          (click)="finishSimulado()"
+        >
+          Finalizar Simulado
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resultado do Simulado -->
+  <div *ngIf="isSimuladoComplete && simuladoResult" class="simulado-result">
+    <div class="result-header">
+      <h3>Resultado do Simulado</h3>
+      <div class="score" [class.good-score]="simuladoResult.percentual >= 70" [class.poor-score]="simuladoResult.percentual < 70">
+        {{ simuladoResult.percentual.toFixed(1) }}%
+      </div>
+    </div>
+    
+    <div class="result-stats">
+      <div class="stat-item">
+        <span class="stat-label">Total de questões:</span>
+        <span class="stat-value">{{ simuladoResult.totalQuestoes }}</span>
+      </div>
+      <div class="stat-item success">
+        <span class="stat-label">Acertos:</span>
+        <span class="stat-value">{{ simuladoResult.acertos }}</span>
+      </div>
+      <div class="stat-item error">
+        <span class="stat-label">Erros:</span>
+        <span class="stat-value">{{ simuladoResult.erros }}</span>
+      </div>
+    </div>
+
+    <div class="result-details">
+      <h4>Detalhes das questões:</h4>
+      <div *ngFor="let questao of simuladoResult.questoes; let i = index" class="question-result">
+        <div class="question-result-header">
+          <span class="question-number">{{ i + 1 }}.</span>
+          <span class="question-type-badge" [class]="'type-' + questao.tipo">
+            {{ questao.tipo === 'vf' ? 'V/F' : 
+               questao.tipo === 'multipla' ? 'Múltipla' : 'Correlação' }}
+          </span>
+          <span class="result-status" [class.correct]="questao.isCorrect" [class.incorrect]="!questao.isCorrect">
+            {{ questao.isCorrect ? '✓ Correta' : '✗ Incorreta' }}
+          </span>
+        </div>
+        <div class="question-text-small">{{ questao.pergunta }}</div>
+        
+        <!-- Justificativa -->
+        <div class="justificativa">
+          <strong>Justificativa:</strong>
+          <p>{{ getAnyData(questao).justificativa_resposta_certa }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-actions">
+      <button class="btn btn-primary" (click)="restartSimulado()">
+        Novo Simulado
+      </button>
+    </div>
+  </div>
+</div>

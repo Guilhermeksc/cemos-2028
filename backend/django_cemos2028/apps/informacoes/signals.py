@@ -114,7 +114,7 @@ def load_fixtures_informacoes(sender, **kwargs):
             df = load_fixture('presidentes.xlsx', ['bibliografia_titulo', 'periodo_presidencial', 'presidente'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'periodo_presidencial', 'presidente'], 'presidentes', idx):
+                    if not _require_fields(row, ['bibliografia_titulo', 'periodo_presidencial', 'presidente'], 'presidentes', idx, string_fields=['bibliografia_titulo', 'periodo_presidencial', 'presidente']):
                         continue
                     try:
                         bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
@@ -136,7 +136,7 @@ def load_fixtures_informacoes(sender, **kwargs):
             df = load_fixture('filosofos.xlsx', ['bibliografia_titulo', 'periodo_filosofico', 'nome'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'periodo_filosofico', 'nome'], 'filosofos', idx):
+                    if not _require_fields(row, ['bibliografia_titulo', 'periodo_filosofico', 'nome'], 'filosofos', idx, string_fields=['bibliografia_titulo', 'periodo_filosofico', 'nome']):
                         continue
                     try:
                         bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
@@ -157,7 +157,7 @@ def load_fixtures_informacoes(sender, **kwargs):
             df = load_fixture('cronologia.xlsx', ['bibliografia_titulo', 'evento_conflito', 'periodo'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'evento_conflito', 'periodo'], 'cronologia', idx):
+                    if not _require_fields(row, ['bibliografia_titulo', 'evento_conflito', 'periodo'], 'cronologia', idx, string_fields=['bibliografia_titulo', 'evento_conflito', 'periodo']):
                         continue
                     try:
                         bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
@@ -178,7 +178,7 @@ def load_fixtures_informacoes(sender, **kwargs):
             df = load_fixture('conceitos.xlsx', ['bibliografia_titulo', 'titulo'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'titulo'], 'conceitos', idx):
+                    if not _require_fields(row, ['bibliografia_titulo', 'titulo'], 'conceitos', idx, string_fields=['bibliografia_titulo', 'titulo']):
                         continue
                     try:
                         bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
@@ -200,7 +200,7 @@ def load_fixtures_informacoes(sender, **kwargs):
             df = load_fixture('hiperlinks.xlsx', ['bibliografia_titulo', 'tipo', 'url'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'tipo', 'url'], 'hiperlinks', idx):
+                    if not _require_fields(row, ['bibliografia_titulo', 'tipo', 'url'], 'hiperlinks', idx, string_fields=['bibliografia_titulo', 'tipo', 'url']):
                         continue
                     try:
                         bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))

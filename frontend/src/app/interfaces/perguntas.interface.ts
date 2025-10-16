@@ -9,13 +9,7 @@ export interface Bibliografia {
   perguntas_count?: number;
 }
 
-export interface BibliografiaCreateUpdate {
-  id?: number;
-  titulo: string;
-  autor?: string;
-  materia?: string;
-  descricao?: string;
-}
+
 
 // Interface base para perguntas (não utilizada diretamente, apenas para referência)
 export interface PerguntaBase {
@@ -42,19 +36,7 @@ export interface PerguntaMultipla extends PerguntaBase {
   resposta_correta_display?: string;
 }
 
-export interface PerguntaMultiplaCreateUpdate {
-  bibliografia: number;
-  paginas?: string;
-  caiu_em_prova: boolean;
-  ano_prova?: number;
-  pergunta: string;
-  alternativa_a: string;
-  alternativa_b: string;
-  alternativa_c: string;
-  alternativa_d: string;
-  resposta_correta: 'a' | 'b' | 'c' | 'd';
-  justificativa_resposta_certa: string;
-}
+
 
 // Pergunta Verdadeiro ou Falso
 export interface PerguntaVF extends PerguntaBase {
@@ -64,16 +46,7 @@ export interface PerguntaVF extends PerguntaBase {
   resposta_correta_display?: string;
 }
 
-export interface PerguntaVFCreateUpdate {
-  bibliografia: number;
-  paginas?: string;
-  caiu_em_prova: boolean;
-  ano_prova?: number;
-  pergunta: string;
-  afirmacao: string;
-  resposta_correta: boolean;
-  justificativa_resposta_certa: string;
-}
+
 
 // Pergunta de Correlação
 export interface PerguntaCorrelacao extends PerguntaBase {
@@ -83,17 +56,7 @@ export interface PerguntaCorrelacao extends PerguntaBase {
   resposta_correta: { [key: string]: string };
 }
 
-export interface PerguntaCorrelacaoCreateUpdate {
-  bibliografia: number;
-  paginas?: string;
-  caiu_em_prova: boolean;
-  ano_prova?: number;
-  pergunta: string;
-  coluna_a: string[];
-  coluna_b: string[];
-  resposta_correta: { [key: string]: string };
-  justificativa_resposta_certa: string;
-}
+
 
 // Interface para resumo de perguntas (usado em listagens)
 export interface PerguntaResumo {
@@ -183,20 +146,3 @@ export enum AlternativaMultipla {
   D = 'd'
 }
 
-// Interface para validação de formulários
-export interface PerguntaFormErrors {
-  bibliografia?: string[];
-  paginas?: string[];
-  pergunta?: string[];
-  alternativa_a?: string[];
-  alternativa_b?: string[];
-  alternativa_c?: string[];
-  alternativa_d?: string[];
-  resposta_correta?: string[];
-  afirmacao?: string[];
-  coluna_a?: string[];
-  coluna_b?: string[];
-  justificativa_resposta_certa?: string[];
-  ano_prova?: string[];
-  non_field_errors?: string[];
-}

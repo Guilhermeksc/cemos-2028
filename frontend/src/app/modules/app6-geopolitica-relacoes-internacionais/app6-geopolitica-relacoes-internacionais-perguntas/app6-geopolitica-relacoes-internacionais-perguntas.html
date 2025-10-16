@@ -1,1 +1,146 @@
-<p>app6-geopolitica-relacoes-internacionais-perguntas works!</p>
+<!-- Módulo de Perguntas - Geopolítica e Relações Internacionais -->
+<div class="geopolitica-perguntas-container">
+  
+  <!-- Header do Módulo -->
+  <div class="module-header">
+    <div class="module-title">
+      <h2>Simulado de Geopolítica e Relações Internacionais</h2>
+      <p class="module-description">
+        Teste seus conhecimentos em geopolítica mundial, relações internacionais, 
+        organizações internacionais e diplomacia com questões específicas da matéria.
+      </p>
+    </div>
+    
+    <!-- Estatísticas do usuário -->
+    <div class="user-stats" *ngIf="totalSimuladosRealizados > 0">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{ totalSimuladosRealizados }}</span>
+          <span class="stat-label">Simulados Realizados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{ melhorResultado.toFixed(1) }}%</span>
+          <span class="stat-label">Melhor Resultado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Informações sobre o simulado -->
+  <div class="simulado-info" *ngIf="!simuladoAtivo && !ultimoResultado">
+    <div class="info-card">
+      <h3>📚 Sobre este Simulado</h3>
+      <div class="info-content">
+        <div class="info-item">
+          <strong>Matéria:</strong> Geopolítica e Relações Internacionais
+        </div>
+        <div class="info-item">
+          <strong>Questões:</strong> 10 perguntas (5 V/F, 4 Múltipla Escolha, 1 Correlação)
+        </div>
+        <div class="info-item">
+          <strong>Tempo:</strong> Sem limite de tempo
+        </div>
+        <div class="info-item">
+          <strong>Bibliografia:</strong> Material específico de Geopolítica (ID: 1)
+        </div>
+      </div>
+      
+      <div class="topics-covered">
+        <h4>🎯 Tópicos Abordados:</h4>
+        <ul>
+          <li>Ordem mundial e sistemas internacionais</li>
+          <li>Organizações internacionais (ONU, OTAN, UE, etc.)</li>
+          <li>Conflitos e crises internacionais</li>
+          <li>Política externa brasileira</li>
+          <li>Teorias das relações internacionais</li>
+          <li>Geopolítica regional e global</li>
+          <li>Direito internacional público</li>
+          <li>Diplomacia e negociações</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Componente de Perguntas -->
+  <div class="perguntas-wrapper">
+    <app-perguntas
+      [bibliografiaIds]="bibliografiaIds"
+      [showBibliografiaSelector]="showBibliografiaSelector"
+      [autoStartSimulado]="autoStartSimulado"
+      (simuladoStarted)="onSimuladoStarted()"
+      (simuladoFinished)="onSimuladoFinished($event)"
+    ></app-perguntas>
+  </div>
+
+  <!-- Resultado Personalizado -->
+  <div class="resultado-personalizado" *ngIf="ultimoResultado && !simuladoAtivo">
+    <div class="resultado-card">
+      <div class="resultado-header">
+        <h3>🎯 Análise do seu Desempenho</h3>
+        <div class="resultado-badge" 
+             [class.excelente]="ultimoResultado.percentual >= 80"
+             [class.bom]="ultimoResultado.percentual >= 60 && ultimoResultado.percentual < 80"
+             [class.regular]="ultimoResultado.percentual < 60">
+          {{ ultimoResultado.percentual >= 80 ? 'Excelente!' : 
+             ultimoResultado.percentual >= 60 ? 'Bom!' : 'Continue estudando!' }}
+        </div>
+      </div>
+
+      <div class="resultado-analise">
+        <div class="analise-item" *ngIf="ultimoResultado.percentual >= 80">
+          <h4>🏆 Parabéns!</h4>
+          <p>Você demonstrou excelente conhecimento em Geopolítica e Relações Internacionais. 
+             Continue assim e mantenha-se atualizado com os acontecimentos mundiais.</p>
+        </div>
+        
+        <div class="analise-item" *ngIf="ultimoResultado.percentual >= 60 && ultimoResultado.percentual < 80">
+          <h4>👍 Bom trabalho!</h4>
+          <p>Você tem uma boa base em geopolítica. Recomendamos focar nos tópicos onde teve mais dificuldade 
+             e acompanhar análises geopolíticas atuais.</p>
+        </div>
+        
+        <div class="analise-item" *ngIf="ultimoResultado.percentual < 60">
+          <h4>📖 Continue estudando!</h4>
+          <p>A geopolítica é uma área complexa que requer estudo constante. Recomendamos revisar os conceitos 
+             fundamentais e acompanhar noticiários especializados em relações internacionais.</p>
+        </div>
+
+        <div class="dicas-estudo">
+          <h4>💡 Dicas de Estudo:</h4>
+          <ul>
+            <li>Acompanhe organizações como CEBRI, IPEA e FGV para análises atualizadas</li>
+            <li>Leia periódicos especializados em relações internacionais</li>
+            <li>Estude mapas e entenda a geografia dos conflitos</li>
+            <li>Acompanhe documentos oficiais de política externa</li>
+            <li>Analise casos históricos de crises internacionais</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resultado-acoes">
+        <button class="btn btn-primary" (click)="resetarSimulado()">
+          Fazer Novo Simulado
+        </button>
+        <button class="btn btn-secondary" onclick="window.print()">
+          Imprimir Resultado
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Histórico de Resultados -->
+  <div class="historico-resultados" *ngIf="totalSimuladosRealizados > 1 && !simuladoAtivo">
+    <div class="historico-card">
+      <h3>📊 Histórico de Desempenho</h3>
+      <div class="historico-stats">
+        <div class="progress-chart">
+          <div class="chart-info">
+            <span>Evolução do seu aprendizado</span>
+            <small>Últimos simulados realizados</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

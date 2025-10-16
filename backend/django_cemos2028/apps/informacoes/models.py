@@ -11,7 +11,7 @@ class PresidentesModel(models.Model):
     )
     periodo_presidencial = models.CharField(max_length=255, verbose_name="Período Presidencial")
     presidente = models.CharField(max_length=255, verbose_name="Presidente")
-    pais = models.CharField(max_length=100, verbose_name="País")
+    pais = models.CharField(max_length=100, blank=True, null=True, verbose_name="País")
     conflitos_principais = models.TextField(blank=True, null=True, verbose_name="Conflito(s) Principal(is)")
     imagem_caminho = models.CharField(
         max_length=300,
