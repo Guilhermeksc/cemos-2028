@@ -1,29 +1,90 @@
-$gray-700: #374151;
+// ===== VARIÁVEIS DE CORES =====
+:root {
+  --page-primary-black: #000000;
+  --page-soft-black: #1a1a1a;
+  --page-dark-gray: #2d2d2d;
+  --page-medium-gray: #666666;
+  --page-light-gray: #e0e0e0;
+  --page-off-white: #f8f9fa;
+  --page-pure-white: #ffffff;
+  --page-text-secondary: #6c757d;
+  --page-transition-medium: 0.3s ease;
+}
 
+// ===== CONTAINER PRINCIPAL =====
 .geopolitica-conceitos-container {
-  width: 100%;
-  max-width: 72rem;
-  margin: 0 auto;
-  padding: 1.5rem;
+  min-height: 100vh;
+  background: var(--page-off-white);
+  padding: 0;
+}
+
+// ===== HEADER DA PÁGINA =====
+.page-header {
+  background: linear-gradient(135deg, var(--page-pure-white) 0%, var(--page-off-white) 100%);
+  border-bottom: 1px solid var(--page-light-gray);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
   
-  @media (min-width: 1024px) {
-    padding: 2rem;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background: var(--page-medium-gray);
+    opacity: 0.3;
   }
 }
 
-.page-header {
-  margin-bottom: 2rem;
-  text-align: center;
+// ===== TÍTULO DA PÁGINA =====
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--page-dark-gray);
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: all var(--page-transition-medium);
+  
+  &:hover {
+    opacity: 1;
+    color: var(--page-primary-black);
+  }
 }
 
-.page-title {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: $gray-700;
-  margin-bottom: 0.75rem;
-  line-height: 1.2;
+// ===== RESPONSIVIDADE =====
+@media (max-width: 768px) {
+  .page-header {
+    padding: 24px 16px;
+  }
   
-  @media (min-width: 768px) {
-    font-size: 2.25rem;
+  .page-title {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 20px 12px;
+  }
+  
+  .page-title {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+}
+
+// ===== MELHORIAS DE ACESSIBILIDADE =====
+@media (prefers-reduced-motion: reduce) {
+  .page-title {
+    transition: none;
   }
 }

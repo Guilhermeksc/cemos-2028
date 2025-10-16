@@ -152,6 +152,7 @@
   border: none;
   transition: all var(--transition-fast);
   position: relative;
+  min-height: 60px; // Garantir altura mínima
   
   &:hover {
     background: var(--hover-gray);
@@ -182,6 +183,8 @@
   margin-right: 12px;
   font-size: 20px;
   transition: all var(--transition-fast);
+  flex-shrink: 0; // Evitar que o ícone seja comprimido
+  min-width: 24px; // Largura mínima garantida
 }
 
 .nav-section-icon {
@@ -189,6 +192,8 @@
   margin-right: 16px;
   font-size: 22px;
   transition: all var(--transition-fast);
+  flex-shrink: 0; // Evitar que o ícone seja comprimido
+  min-width: 24px; // Largura mínima garantida
 }
 
 .nav-section-title {
@@ -197,6 +202,10 @@
   color: var(--primary-black);
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  flex: 1; // Permitir que o texto ocupe o espaço restante
+  line-height: 1.3; // Melhor espaçamento de linha
+  word-wrap: break-word; // Quebrar palavras longas se necessário
+  overflow-wrap: break-word; // Fallback para quebra de palavras
 }
 
 // ===== CONTEÚDO DAS SEÇÕES =====
@@ -334,26 +343,6 @@
   }
 }
 
-// ===== ANIMAÇÕES =====
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 // ===== RESPONSIVIDADE =====
 @media (max-width: 768px) {
@@ -373,6 +362,22 @@
   
   .nav-section-header {
     padding: 14px 16px;
+    min-height: 70px; // Aumentar altura em dispositivos móveis
+    
+    .nav-section-title {
+      font-size: 14px; // Reduzir fonte em telas menores
+      letter-spacing: 0.3px;
+    }
+    
+    .nav-section-icon {
+      font-size: 20px; // Reduzir tamanho do ícone
+      margin-right: 12px;
+    }
+    
+    .nav-section-expand-icon {
+      font-size: 18px; // Reduzir tamanho do ícone
+      margin-right: 10px;
+    }
   }
   
   .nav-subsection-header {
@@ -383,6 +388,19 @@
   .nav-item-simple,
   .nav-item-object {
     padding: 8px 20px;
+  }
+}
+
+// ===== MEDIA QUERY ADICIONAL PARA TEXTOS LONGOS =====
+@media (max-width: 480px) {
+  .nav-section-header {
+    min-height: 80px; // Ainda mais altura para telas muito pequenas
+    
+    .nav-section-title {
+      font-size: 13px;
+      letter-spacing: 0.2px;
+      text-transform: none; // Remover uppercase em telas muito pequenas
+    }
   }
 }
 
@@ -400,34 +418,5 @@
       background: var(--pure-white);
       padding-left: inherit;
     }
-  }
-}
-
-// ===== MELHORIAS DE ACESSIBILIDADE =====
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
-  }
-}
-
-// ===== ESTADOS DE FOCO MELHORADOS =====
-.nav-section-header:focus-visible,
-.nav-subsection-header:focus-visible,
-.nav-subitem:focus-visible,
-.nav-item-simple:focus-visible,
-.nav-item-object:focus-visible {
-  outline: 2px solid var(--primary-black);
-  outline-offset: 2px;
-  box-shadow: none;
-}
-
-// ===== EFEITOS DE ELEVAÇÃO =====
-.nav-section {
-  transition: all var(--transition-medium);
-  
-  &:hover {
-    box-shadow: 0 2px 8px var(--shadow-light);
-    transform: translateY(-1px);
   }
 }

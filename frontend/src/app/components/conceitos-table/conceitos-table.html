@@ -1,98 +1,127 @@
-<div class="w-full bg-white rounded-lg shadow-sm overflow-hidden">
-  <!-- Título do componente -->
-  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-6 bg-gradient-to-br from-blue-600 to-purple-600 text-white border-b border-gray-200">
-    <h3 class="m-0 text-xl font-semibold text-white">{{ title }}</h3>
-    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm font-medium mt-3 sm:mt-0 self-end sm:self-auto" *ngIf="conceitos.length > 0">
-      {{ conceitos.length }} {{ conceitos.length === 1 ? 'conceito' : 'conceitos' }}
-    </span>
-  </div>
+<!-- Container principal com Material Card -->
+<mat-card class="conceitos-card">
 
-  <!-- Mensagem quando não há conceitos -->
-  <div class="text-center py-12 px-6 text-gray-500" *ngIf="conceitos.length === 0">
-    <div class="mb-4 text-gray-300">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-        <polyline points="14,2 14,8 20,8"></polyline>
-        <line x1="16" y1="13" x2="8" y2="13"></line>
-        <line x1="16" y1="17" x2="8" y2="17"></line>
-        <polyline points="10,9 9,9 8,9"></polyline>
-      </svg>
+  <!-- Conteúdo da tabela -->
+  <mat-card-content class="card-content">
+    <!-- Estado vazio -->
+    <div class="empty-state" *ngIf="conceitos.length === 0">
+      <mat-icon class="empty-icon">description</mat-icon>
+      <p class="empty-message">{{ emptyMessage }}</p>
     </div>
-    <p class="text-base m-0">{{ emptyMessage }}</p>
-  </div>
 
-  <!-- Tabela de conceitos -->
-  <div class="overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100" *ngIf="conceitos.length > 0">
-    <table class="w-full border-collapse text-sm">
-      <thead>
-        <tr class="bg-gray-50">
-          <th class="py-3 px-4 text-left font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[200px] w-1/4">Título</th>
-          <th class="py-3 px-4 text-left font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[300px] w-[45%]">Descrição</th>
-          <th class="py-3 px-4 text-left font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[180px] w-1/5 md:table-cell hidden" *ngIf="showBibliografia">Bibliografia</th>
-          <th class="py-3 px-4 text-center font-semibold text-gray-700 border-b-2 border-gray-200 whitespace-nowrap min-w-[120px] w-[10%] md:table-cell hidden">Prova</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let conceito of conceitos; trackBy: trackByConceito" class="transition-colors duration-200 border-b border-gray-100 hover:bg-gray-50 last:border-b-0 animate-[fadeIn_0.3s_ease-out]">
-          <!-- Título -->
-          <td class="p-4 align-top">
-            <div class="flex flex-col gap-2">
-              <strong class="text-gray-800 font-semibold leading-relaxed">{{ conceito.titulo }}</strong>
-              <!-- Badge inline para mobile -->
-              <div class="inline-flex items-center gap-1.5 px-3 py-1.5 text-white rounded-md text-xs font-semibold shadow-sm md:hidden" 
-                   *ngIf="conceito.caiu_em_prova"
-                   [class]="conceito.ano_prova ? 'bg-gradient-to-r from-red-500 to-red-600' : 'bg-gradient-to-r from-yellow-400 to-yellow-500'">
-                <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                <span>{{ getCaiuEmProvaText(conceito) }}</span>
-              </div>
+    <!-- Tabela Material -->
+    <div class="table-container" *ngIf="conceitos.length > 0">
+      <table mat-table [dataSource]="conceitos" class="conceitos-table">
+        
+        <!-- Coluna Assunto -->
+        <ng-container matColumnDef="assunto">
+          <th mat-header-cell *matHeaderCellDef class="header-cell assunto-header">
+            Assunto
+          </th>
+          <td mat-cell *matCellDef="let conceito" class="assunto-cell">
+            <div class="assunto-content">
+              <span class="assunto-text" *ngIf="conceito.assunto">
+                {{ conceito.assunto }}
+              </span>
+              <span class="no-assunto" *ngIf="!conceito.assunto">
+                Sem assunto
+              </span>
             </div>
           </td>
-
-          <!-- Descrição -->
-          <td class="p-4 align-top">
-            <div *ngIf="hasDescricao(conceito)">
-              <p class="text-gray-600 leading-relaxed m-0">{{ getTruncatedDescricao(conceito.descricao!, 200) }}</p>
-            </div>
-            <div *ngIf="!hasDescricao(conceito)">
-              <span class="text-gray-400 italic">Sem descrição</span>
+        </ng-container>
+                
+        <!-- Coluna Título -->
+        <ng-container matColumnDef="titulo">
+          <th mat-header-cell *matHeaderCellDef class="header-cell titulo-header">
+            Título
+          </th>
+          <td mat-cell *matCellDef="let conceito" class="titulo-cell">
+            <div class="titulo-content">
+              <span class="titulo-text">{{ conceito.titulo }}</span>
             </div>
           </td>
+        </ng-container>
 
-          <!-- Bibliografia -->
-          <td class="p-4 align-top md:table-cell hidden" *ngIf="showBibliografia">
-            <div>
-              <span class="text-indigo-600 font-medium" *ngIf="conceito.bibliografia_titulo">
+        <!-- Coluna Descrição -->
+        <ng-container matColumnDef="descricao">
+          <th mat-header-cell *matHeaderCellDef class="header-cell descricao-header">
+            Descrição
+          </th>
+          <td mat-cell *matCellDef="let conceito" class="descricao-cell">
+            <div class="descricao-content" *ngIf="hasDescricao(conceito)">
+              <p class="descricao-text">{{ getTruncatedDescricao(conceito.descricao!, 200) }}</p>
+            </div>
+            <div class="no-descricao" *ngIf="!hasDescricao(conceito)">
+              <span class="no-descricao-text">Sem descrição</span>
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Coluna Bibliografia -->
+        <ng-container matColumnDef="bibliografia" *ngIf="showBibliografia">
+          <th mat-header-cell *matHeaderCellDef class="header-cell bibliografia-header">
+            Bibliografia
+          </th>
+          <td mat-cell *matCellDef="let conceito" class="bibliografia-cell">
+            <div class="bibliografia-content">
+              <span class="bibliografia-titulo" *ngIf="conceito.bibliografia_titulo">
                 {{ conceito.bibliografia_titulo }}
               </span>
-              <span class="text-gray-500 text-xs" *ngIf="!conceito.bibliografia_titulo">
+              <span class="bibliografia-id" *ngIf="!conceito.bibliografia_titulo">
                 Bibliografia #{{ conceito.bibliografia }}
               </span>
             </div>
           </td>
+        </ng-container>
 
-          <!-- Status da Prova -->
-          <td class="p-4 align-top text-center md:table-cell hidden">
-            <div class="flex justify-center">
-              <!-- Caiu em prova -->
-              <div class="inline-flex items-center gap-1.5 px-3 py-1.5 text-white rounded-md text-xs font-semibold shadow-sm" 
-                   *ngIf="conceito.caiu_em_prova"
-                   [class]="conceito.ano_prova ? 'bg-gradient-to-r from-red-500 to-red-600' : 'bg-gradient-to-r from-yellow-400 to-yellow-500'">
-                <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                <span>{{ getCaiuEmProvaText(conceito) }}</span>
-              </div>
-              
-              <!-- Não caiu em prova -->
-              <div *ngIf="!conceito.caiu_em_prova">
-                <span class="text-gray-400">-</span>
-              </div>
+        <!-- Coluna Palavra-chave -->
+        <ng-container matColumnDef="palavra-chave">
+          <th mat-header-cell *matHeaderCellDef class="header-cell palavra-chave-header">
+            Palavra-chave
+          </th>
+          <td mat-cell *matCellDef="let conceito" class="palavra-chave-cell">
+            <div class="palavra-chave-content">
+              <span class="palavra-chave-text" *ngIf="conceito.palavra_chave">
+                {{ conceito.palavra_chave }}
+              </span>
+              <span class="no-palavra-chave" *ngIf="!conceito.palavra_chave">
+                Sem palavra-chave
+              </span>
             </div>
           </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+        </ng-container>
+
+        <!-- Coluna Prova -->
+        <ng-container matColumnDef="prova">
+          <th mat-header-cell *matHeaderCellDef class="header-cell prova-header">
+            Prova
+          </th>
+          <td mat-cell *matCellDef="let conceito" class="prova-cell">
+            <div class="prova-content">
+              <!-- Caiu em prova -->
+              <mat-chip-set *ngIf="conceito.caiu_em_prova">
+                <mat-chip 
+                  [class]="conceito.ano_prova ? 'prova-chip-confirmada' : 'prova-chip-pendente'"
+                  matTooltip="{{ getCaiuEmProvaText(conceito) }}">
+                  <mat-icon matChipTrailingIcon>star</mat-icon>
+                  {{ getCaiuEmProvaText(conceito) || 'Sim' }}
+                </mat-chip>
+              </mat-chip-set>
+              
+              <!-- Não caiu em prova -->
+              <span class="no-prova" *ngIf="!conceito.caiu_em_prova">
+                <mat-icon class="no-prova-icon">remove</mat-icon>
+              </span>
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Definir linhas -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" 
+            class="table-row"
+            [attr.data-conceito-id]="row.id"></tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card>
