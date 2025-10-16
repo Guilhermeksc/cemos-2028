@@ -168,9 +168,10 @@
 }
 
 .questao-info {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 12px; /* distancia entre os elementos */
+  align-items: center;
   flex: 1;
   margin-left: 20px;
 }

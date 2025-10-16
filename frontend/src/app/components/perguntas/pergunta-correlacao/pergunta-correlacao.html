@@ -47,7 +47,6 @@
             [value]="getStringFromCharCode(65 + j)"
             [(ngModel)]="userAnswer[(i + 1).toString()]"
             (change)="updateCorrelacao(i + 1, getStringFromCharCode(65 + j))"
-            [disabled]="isAnswered"
           />
           <span class="mapping-radio-label">{{ getStringFromCharCode(65 + j) }}</span>
         </label>

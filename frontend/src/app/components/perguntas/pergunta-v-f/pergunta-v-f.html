@@ -11,7 +11,6 @@
         name="vf-{{ questionId }}"
         [value]="true"
         [(ngModel)]="userAnswer"
-        [disabled]="isAnswered"
       />
       <span>Verdadeiro</span>
     </label>
@@ -21,7 +20,6 @@
         name="vf-{{ questionId }}"
         [value]="false"
         [(ngModel)]="userAnswer"
-        [disabled]="isAnswered"
       />
       <span>Falso</span>
     </label>
@@ -48,10 +46,5 @@
       <h5>💡 Justificativa:</h5>
       <p>{{ questionData.justificativa_resposta_certa }}</p>
     </div>
-  </div>
-  
-  <!-- Debug Info -->
-  <div style="background: #fee2e2; padding: 10px; margin-top: 10px; font-size: 12px; border: 1px solid #ef4444;">
-    <strong>DEBUG V/F:</strong> isAnswered={{ isAnswered }}, isCorrect={{ isCorrect }}, questionId={{ questionId }}, userAnswer={{ userAnswer }}
   </div>
 </div>
