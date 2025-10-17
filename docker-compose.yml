@@ -46,28 +46,16 @@ services:
       timeout: 5s
       retries: 5
 
-  # 🔹 Novo container apenas para build do Angular
-  frontend-build:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: cemos2028_frontend_build
-    volumes:
-      - ./frontend/dist:/app/dist
-    command: ["/bin/true"]
-    networks:
-      - app_network
-
-  # 🔹 Nginx reverso principal com HTTPS e proxy para Django
+  # 🔹 Nginx reverso principal com proxy para Django e servindo Angular
   nginx:
     image: nginx:latest
     container_name: cemos2028_nginx
     restart: unless-stopped
     depends_on:
       - backend
-      - frontend-build
     ports:
       - "80:80"
+      - "8088:8088"
       - "443:443"
     volumes:
       - ./frontend/dist/frontend/browser:/usr/share/nginx/html
