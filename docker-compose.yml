@@ -28,7 +28,6 @@ services:
     networks:
       - app_network
 
-
   db:
     image: postgres:18
     container_name: postgres_cemos
@@ -47,23 +46,37 @@ services:
       timeout: 5s
       retries: 5
 
-
-  nginx:
+  # 🔹 Novo container apenas para build do Angular
+  frontend-build:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: cemos2028_nginx
-    restart: unless-stopped
-    ports:
-      - "8088:80"
-    depends_on:
-      - backend
+    container_name: cemos2028_frontend_build
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - static_volume:/static
+      - ./frontend/dist:/app/dist
+    command: ["/bin/true"]
     networks:
       - app_network
 
+  # 🔹 Nginx reverso principal com HTTPS e proxy para Django
+  nginx:
+    image: nginx:latest
+    container_name: cemos2028_nginx
+    restart: unless-stopped
+    depends_on:
+      - backend
+      - frontend-build
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./frontend/dist/frontend/browser:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certbot/www:/var/www/certbot
+      - ./certbot/conf:/etc/letsencrypt
+      - static_volume:/static
+    networks:
+      - app_network
 
 volumes:
   static_volume:
