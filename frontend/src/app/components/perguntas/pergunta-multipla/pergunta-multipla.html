@@ -24,15 +24,8 @@
   <!-- Justificativa (aparece após responder) -->
   <div *ngIf="isAnswered" class="justificativa">
     <div>
-      <h5>✅ Resposta Correta:</h5>
-      <p class="resposta-destaque">
-        <strong>{{ getCorrectAnswer() }}) {{ getAlternativaText(getCorrectAnswer().toLowerCase()) }}</strong>
-      </p>
-    </div>
-    
-    <div class="justificativa-texto">
-      <h5>💡 Justificativa:</h5>
-      <p>{{ questionData.justificativa_resposta_certa }}</p>
+      <h5>✅ Resposta Correta: {{ getCorrectAnswer() }}) {{ getAlternativaText(getCorrectAnswer().toLowerCase()) }}</h5>
+      <h5>💡 Justificativa: {{ questionData.justificativa_resposta_certa }}</h5>
     </div>
   </div>
 </div>

@@ -8,28 +8,7 @@
         [mode]="getSidenavMode()" 
         [opened]="sidenavOpen()"
         (openedChange)="isMobile() && sidenavOpen.set($event)"
-        class="sidebar">
-    <mat-card-actions class="download-buttons" *ngIf="pdfDownloadUrl || docxDownloadUrl">
-      <button 
-        mat-raised-button 
-        color="primary" 
-        *ngIf="pdfDownloadUrl"
-        (click)="downloadPdf()"
-        class="download-btn">
-        <mat-icon>picture_as_pdf</mat-icon>
-        Download PDF
-      </button>
-      
-      <button 
-        mat-raised-button 
-        color="primary" 
-        *ngIf="docxDownloadUrl"
-        (click)="downloadDocx()"
-        class="download-btn">
-        <mat-icon>description</mat-icon>
-        Download DOCX
-      </button>
-    </mat-card-actions>        
+        class="sidebar">       
         <mat-nav-list class="toc-list">
           <mat-list-item 
             *ngFor="let item of getVisibleItems()" 

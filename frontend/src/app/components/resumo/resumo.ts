@@ -37,9 +37,6 @@ interface TableOfContentsItem {
 export class Resumo implements OnInit, AfterViewInit {
   @Input() markdownPath = '';
   @Input() title = '';
-  @Input() pdfDownloadUrl = '';
-  @Input() docxDownloadUrl = '';
-
   @ViewChild('contentContainer', { static: false }) contentContainer!: ElementRef<HTMLDivElement>;
 
   htmlContent = signal<string>('');
@@ -91,28 +88,6 @@ export class Resumo implements OnInit, AfterViewInit {
         this.isLoading.set(false);
       }
     });
-  }
-
-  downloadPdf(): void {
-    if (this.pdfDownloadUrl) {
-      const link = document.createElement('a');
-      link.href = this.pdfDownloadUrl;
-      link.download = `${this.title || 'resumo'}.pdf`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  }
-
-  downloadDocx(): void {
-    if (this.docxDownloadUrl) {
-      const link = document.createElement('a');
-      link.href = this.docxDownloadUrl;
-      link.download = `${this.title || 'resumo'}.docx`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
   }
 
   generateTableOfContents(): void {

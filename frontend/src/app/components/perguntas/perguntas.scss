@@ -32,12 +32,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  color: #1a1a1a;
   padding: 25px;
   border-radius: 12px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 2px solid #e0e0e0;
 }
 
 .prova-info h2 {
@@ -53,31 +53,67 @@
 }
 
 .prova-stats .stat {
-  background: rgba(255,255,255,0.2);
+  background: transparent;
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 0.9rem;
-  backdrop-filter: blur(10px);
+  border: 1px solid #d0d0d0;
 }
 
 .prova-stats .stat.good-score {
-  background: rgba(40, 167, 69, 0.8);
+  background: #f5f5f5;
+  border-color: #1a1a1a;
 }
 
 .gerar-nova-prova-btn {
-  background: rgba(255,255,255,0.2);
-  border: 2px solid rgba(255,255,255,0.3);
-  color: white;
+  background: white;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
   padding: 12px 25px;
-  border-radius: 25px;
+  border-radius: 8px;
   font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.gerar-nova-prova-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  transition: left 0.3s ease;
+  z-index: -1;
 }
 
 .gerar-nova-prova-btn:hover:not(:disabled) {
-  background: rgba(255,255,255,0.3);
+  color: white;
+  border-color: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
+}
+
+.gerar-nova-prova-btn:hover:not(:disabled)::before {
+  left: 0;
+}
+
+.gerar-nova-prova-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gerar-nova-prova-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f5f5f5;
+  border-color: #d0d0d0;
+  color: #999;
 }
 
 /* Lista de Questões */
@@ -513,11 +549,9 @@
 
 /* Justificativa */
 .justificativa {
-  background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
-  padding: 20px;
+  padding-left: 20px;
   border-radius: 8px;
-  margin-top: 20px;
-  border-left: 4px solid #2196f3;
+  margin-top: 10px;
 }
 
 .resposta-correta {

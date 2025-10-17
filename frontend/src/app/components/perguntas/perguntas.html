@@ -112,25 +112,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Resumo Final -->
-    <div *ngIf="getTotalAnsweredQuestions() > 0" class="resumo-final">
-      <h3>📊 Resumo da Prova</h3>
-      <div class="resumo-stats">
-        <div class="stat-card">
-          <span class="stat-value">{{ getTotalAnsweredQuestions() }}</span>
-          <span class="stat-label">Questões Respondidas</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">{{ getTotalCorrectAnswers() }}</span>
-          <span class="stat-label">Acertos</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">{{ getScorePercentage().toFixed(1) }}%</span>
-          <span class="stat-label">Performance</span>
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Mensagem se não há questões -->
