@@ -21,25 +21,38 @@
   display: block;
   background: linear-gradient(135deg, var(--pure-white) 0%, var(--off-white) 100%);
   height: 100%;
+  max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   
+  // Barra de rolagem para navegadores Webkit (Chrome, Safari, Edge)
   &::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
   }
   
   &::-webkit-scrollbar-track {
     background: var(--off-white);
+    border-radius: 4px;
   }
   
   &::-webkit-scrollbar-thumb {
-    background: var(--light-gray);
-    border-radius: 3px;
+    background: var(--medium-gray);
+    border-radius: 4px;
+    transition: background var(--transition-fast);
     
     &:hover {
-      background: var(--medium-gray);
+      background: var(--dark-gray);
     }
   }
+  
+  // Barra de rolagem para Firefox
+  scrollbar-width: thin;
+  scrollbar-color: var(--medium-gray) var(--off-white);
+}
+
+// ===== WRAPPER DO TOPO =====
+.top-section-wrapper {
+  display: block;
 }
 
 // ===== BOTÃO DE LOGOUT =====
@@ -340,20 +353,29 @@
 
 
 // ===== RESPONSIVIDADE =====
-
-// Esconder header quando em modo tablet (via binding)
-.header-container.tablet-mode {
-  display: none;
-}
+// Nota: O header é controlado via *ngIf no HTML
+// Em modo mobile/tablet (isTopMenuMode=true), o header não é renderizado
 
 // Tablet - Menu no topo
 @media (min-width: 768px) and (max-width: 1023px) {
+  .top-section-wrapper {
+    padding: 0;
+    background: transparent;
+  }
+  
   .logout-container {
-    border-bottom: 2px solid var(--border-gray);
+    border-bottom: 1px solid var(--border-gray);
+    padding: 12px 16px;
+    background: var(--off-white);
     
     .logout-button {
+      width: 100%;
       padding: 10px 16px;
       font-size: 13px;
+      
+      mat-icon {
+        font-size: 16px;
+      }
     }
   }
   
@@ -367,61 +389,21 @@
 }
 
 // Mobile
+/* ===== Ajuste de layout mobile ===== */
 @media (max-width: 767px) {
-  .header-container {
-    padding: 16px 12px;
-    
-    .header-title {
-      font-size: 24px;
-      letter-spacing: 2px;
-    }
-    
-    .header-subtitle {
-      font-size: 14px;
-      letter-spacing: 1.5px;
-    }
-  }
-  
-  .nav-section-header {
-    padding: 14px 16px;
-    min-height: 70px; // Aumentar altura em dispositivos móveis
-    
-    .nav-section-title {
-      font-size: 14px; // Reduzir fonte em telas menores
-      letter-spacing: 0.3px;
-    }
-    
-    .nav-section-icon {
-      font-size: 20px; // Reduzir tamanho do ícone
-      margin-right: 12px;
-    }
-    
-    .nav-section-expand-icon {
-      font-size: 18px; // Reduzir tamanho do ícone
-      margin-right: 10px;
-    }
-  }
-  
-  .nav-subsection-header {
-    padding: 10px 16px;
-  }
-  
-  .nav-subitem,
-  .nav-item-simple,
-  .nav-item-object {
-    padding: 10px 20px;
-  }
+  // Em modo mobile, o botão de logout e header não são renderizados no side-menu
+  // pois estão no header principal do home.component
 }
 
 // ===== MEDIA QUERY ADICIONAL PARA TEXTOS LONGOS =====
 @media (max-width: 480px) {
   .nav-section-header {
-    min-height: 80px; // Ainda mais altura para telas muito pequenas
+    min-height: 80px;
     
     .nav-section-title {
       font-size: 13px;
       letter-spacing: 0.2px;
-      text-transform: none; // Remover uppercase em telas muito pequenas
+      text-transform: none;
     }
   }
 }

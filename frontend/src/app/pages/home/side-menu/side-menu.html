@@ -1,19 +1,22 @@
-<!-- Botão de Logout -->
-<div class="logout-container">
-  <button 
-    mat-flat-button 
-    class="logout-button"
-    (click)="logout()"
-    aria-label="Fazer logout">
-    <mat-icon>logout</mat-icon>
-    <span>Sair</span>
-  </button>
-</div>
+<!-- Container agrupador -->
+<div class="top-section-wrapper">
+  <!-- Botão de Logout - Apenas para desktop (sidebar) -->
+  <div class="logout-container" *ngIf="!isTopMenuMode">
+    <button 
+      mat-flat-button 
+      class="logout-button"
+      (click)="logout()"
+      aria-label="Fazer logout">
+      <mat-icon>logout</mat-icon>
+      <span>Sair</span>
+    </button>
+  </div>
 
-<!-- Header - Escondido em modo tablet -->
-<div class="header-container" [class.tablet-mode]="isTopMenuMode">
-  <span class="header-title">CEMOS</span>
-  <span class="header-subtitle">2028</span>
+  <!-- Header - Apenas para desktop (sidebar) -->
+  <div class="header-container" *ngIf="!isTopMenuMode">
+    <span class="header-title">CEMOS</span>
+    <span class="header-subtitle">2028</span>
+  </div>
 </div>
 
 <mat-nav-list class="nav-list">

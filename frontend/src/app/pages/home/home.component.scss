@@ -132,7 +132,7 @@ app-side-menu {
 }
 
 .content-section {
-  padding: 20px;
+
   min-height: 100%;
 }
 
@@ -197,12 +197,7 @@ app-side-menu {
   }
 }
 
-// Desktop
-@media (min-width: 1024px) {
-  .content-section {
-    padding: 32px;
-  }
-}
+
 
 // ===== ANIMAÇÕES E TRANSIÇÕES =====
 .top-menu-container,
