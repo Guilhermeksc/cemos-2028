@@ -54,35 +54,34 @@
               Senha deve ter pelo menos 6 caracteres
             </mat-error>
           </mat-form-field>
+
+          <!-- Login Button -->
+          <button 
+            mat-raised-button 
+            color="primary" 
+            class="login-button" 
+            type="submit"
+            [disabled]="isLoading || loginForm.invalid">
+            
+            <span *ngIf="!isLoading">Entrar</span>
+            <span *ngIf="isLoading">Entrando...</span>
+            
+            <mat-icon 
+              *ngIf="!isLoading" 
+              fontIcon="arrow_forward" 
+              class="login-button__icon">
+            </mat-icon>
+            
+            <mat-icon 
+              *ngIf="isLoading" 
+              class="login-button__icon login-button__icon--loading">
+              refresh
+            </mat-icon>
+          </button>
         </form>
       </mat-card-content>
       
       <mat-card-actions>
-        <!-- Login Button -->
-        <button 
-          mat-raised-button 
-          color="primary" 
-          class="login-button" 
-          (click)="onSubmit()"
-          [disabled]="isLoading || loginForm.invalid">
-          
-          <span *ngIf="!isLoading">Entrar</span>
-          <span *ngIf="isLoading">Entrando...</span>
-          
-          <mat-icon 
-            *ngIf="!isLoading" 
-            fontIcon="arrow_forward" 
-            class="login-button__icon">
-          </mat-icon>
-          
-          <mat-icon 
-            *ngIf="isLoading" 
-            class="login-button__icon login-button__icon--loading">
-            refresh
-          </mat-icon>
-        </button>
-
-
       </mat-card-actions>
     </mat-card>
   </div>

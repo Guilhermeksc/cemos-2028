@@ -6,6 +6,9 @@
 // Importe este arquivo em componentes que exibem conteúdo Markdown
 
 @mixin markdown-content-styles {
+  // ========================================
+  // BASE STYLES
+  // ========================================
   padding: 24px;
   line-height: 1.6;
   color: #333333;
@@ -194,7 +197,9 @@
   // RESPONSIVIDADE
   // ========================================
   @media (max-width: 768px) {
-    padding: 16px;
+    & {
+      padding: 16px;
+    }
     
     h1 {
       font-size: 2em;
@@ -214,7 +219,9 @@
   }
   
   @media (max-width: 480px) {
-    padding: 12px;
+    & {
+      padding: 12px;
+    }
     
     h1 {
       font-size: 1.75em;

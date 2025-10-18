@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { GenericBibliografia } from '../../../components/generic-bibliografia/generic-bibliografia';
 import { BibliografiaConfig } from '../../../interfaces/bibliografia-topic.interface';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-app4-historia-bibliografia',
   standalone: true,
-  imports: [GenericBibliografia],
+  imports: [CommonModule, RouterOutlet, GenericBibliografia],
   templateUrl: './app4-historia-bibliografia.html',
   styleUrl: './app4-historia-bibliografia.scss'
 })
 export class App4HistoriaBibliografia implements OnInit {
+
+  // Controla se deve mostrar o GenericBibliografia ou não
+  showGenericBibliografia = true;
+
+  constructor(private router: Router) {}
 
   /** Configuração da bibliografia genérica */
   bibliografiaConfig: BibliografiaConfig = {
@@ -93,5 +101,16 @@ export class App4HistoriaBibliografia implements OnInit {
     }
   ];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // Escuta mudanças de rota para decidir se mostra o GenericBibliografia ou não
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        // Mostra GenericBibliografia apenas se estamos exatamente na rota /bibliografia
+        this.showGenericBibliografia = event.url.endsWith('/bibliografia');
+      });
+
+    // Verifica a rota inicial
+    this.showGenericBibliografia = this.router.url.endsWith('/bibliografia');
+  }
 }

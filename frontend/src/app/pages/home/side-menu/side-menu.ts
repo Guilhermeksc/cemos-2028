@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, EventEmitter, Output, signal } from '@angular/core';
+import { Component, EventEmitter, Output, Input, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
@@ -56,6 +56,7 @@ interface SubSubMenuItem {
   ]
 })
 export class SideMenu {
+  @Input() isTopMenuMode: boolean = false;
   @Output() itemClicked = new EventEmitter<void>();
   
   // Rastrear o item ativo atual
@@ -256,7 +257,7 @@ export class SideMenu {
     // First, toggle the subsection expansion
     this.toggleSubSection(sectionIndex, subIndex);
     
-    // Then, navigate to the division route
+    // Then, navigate to the division route (item pai)
     this.navigate(section, division);
   }
 

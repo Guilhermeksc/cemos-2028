@@ -1,4 +1,9 @@
+<!-- Router Outlet para renderizar componentes filhos -->
+<router-outlet></router-outlet>
+
+<!-- Generic Bibliografia - Exibida SOMENTE quando não há filho ativo -->
 <app-generic-bibliografia
+  *ngIf="showGenericBibliografia"
   [config]="bibliografiaConfig"
   [assunto]="assunto"
   [proposito]="proposito"

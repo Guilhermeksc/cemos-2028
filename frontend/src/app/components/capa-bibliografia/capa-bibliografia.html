@@ -1,0 +1,38 @@
+<div class="capa-bibliografia-container">
+  
+  <!-- Loading Spinner -->
+  <div class="loading-container" *ngIf="isLoading">
+    <mat-spinner diameter="50"></mat-spinner>
+    <p>Carregando conteúdo...</p>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content-wrapper" *ngIf="!isLoading && hasContent">
+    
+    <!-- Imagem da Capa -->
+    <div class="image-container" *ngIf="imageUrl">
+      <img 
+        [src]="imageUrl" 
+        [alt]="'Capa da Bibliografia'"
+        class="capa-image"
+        (error)="onImageError($event)">
+    </div>
+
+    <!-- Conteúdo Markdown -->
+    <div class="markdown-content" *ngIf="htmlContent">
+      <mat-card class="content-card">
+        <mat-card-content>
+          <div [innerHTML]="htmlContent"></div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <!-- Mensagem de Erro ou Sem Conteúdo -->
+  <div class="no-content" *ngIf="!isLoading && !hasContent">
+    <p>Nenhum conteúdo disponível</p>
+    <p class="subtitle">Configure os caminhos de imagem e/ou markdown</p>
+  </div>
+
+</div>

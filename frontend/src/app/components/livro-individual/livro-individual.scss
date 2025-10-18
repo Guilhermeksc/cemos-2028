@@ -344,8 +344,6 @@
     // Aplica os estilos compartilhados
     @include markdown-content-styles;
     
-    // Sobrescreve padding já que está sendo aplicado no wrapper
-    padding: 0;
   }
 }
 

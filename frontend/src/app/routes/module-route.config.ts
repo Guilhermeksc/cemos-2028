@@ -475,13 +475,8 @@ export const moduleRoutes: Route[] = MODULE_ROUTE_CONFIGS.map(({ path, defaultCh
     },
     ...segments.map(({ path: segmentPath, loadComponent, children }) => {
       if (children && children.length > 0) {
-        // Se tem filhos, criar rotas aninhadas
+        // Se tem filhos, criar rotas aninhadas SEM redirecionamento automático
         const nestedChildren: Route['children'] = [
-          {
-            path: '',
-            redirectTo: children[0]?.path ?? '',
-            pathMatch: 'full'
-          },
           ...children.map(({ path: childPath, loadComponent: childLoadComponent }) => ({
             path: childPath,
             loadComponent: childLoadComponent

@@ -1,4 +1,4 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component, ViewChild, computed, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -7,6 +7,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterOutlet } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { SideMenu } from './side-menu/side-menu';
+import { NgIf } from '@angular/common';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+
+type DeviceType = 'mobile' | 'desktop';
 
 @Component({
   selector: 'app-home',
@@ -17,33 +21,67 @@ import { SideMenu } from './side-menu/side-menu';
     MatIconModule,
     MatSidenavModule,
     MatToolbarModule,
-    SideMenu
+    SideMenu,
+    NgIf
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  animations: [
+    trigger('topMenuCollapse', [
+      state('collapsed', style({
+        height: '0px',
+        opacity: 0,
+        overflow: 'hidden'
+      })),
+      state('expanded', style({
+        height: '*',
+        opacity: 1,
+        overflow: 'visible'
+      })),
+      transition('collapsed <=> expanded', [
+        animate('300ms ease-in-out')
+      ])
+    ])
+  ]
 })
 export class HomeComponent {
   @ViewChild(MatSidenav) private readonly drawer?: MatSidenav;
 
-  readonly isHandset = signal(false);
-  readonly drawerMode = computed(() => (this.isHandset() ? 'over' : 'side'));
+  readonly deviceType = signal<DeviceType>('desktop');
+  readonly isTopMenuExpanded = signal(false);
+  
+  readonly showSideMenu = computed(() => {
+    return this.deviceType() === 'desktop';
+  });
+
+  readonly showTopMenu = computed(() => {
+    return this.deviceType() === 'mobile';
+  });
 
   constructor(private readonly breakpointObserver: BreakpointObserver) {
+    // Observar breakpoint: Mobile/Tablet vs Desktop
     this.breakpointObserver
-      .observe([Breakpoints.HandsetPortrait, Breakpoints.Handset])
+      .observe([
+        '(max-width: 1023px)',   // Mobile/Tablet
+        '(min-width: 1024px)'    // Desktop
+      ])
       .pipe(takeUntilDestroyed())
-      .subscribe((state) => this.isHandset.set(state.matches));
+      .subscribe((state) => {
+        if (state.breakpoints['(max-width: 1023px)']) {
+          this.deviceType.set('mobile');
+          this.drawer?.close();
+        } else {
+          this.deviceType.set('desktop');
+          this.isTopMenuExpanded.set(false);
+        }
+      });
   }
 
-  toggleDrawer(): void {
-    if (this.drawerMode() === 'over') {
-      this.drawer?.toggle();
-    }
+  toggleTopMenu(): void {
+    this.isTopMenuExpanded.update(value => !value);
   }
 
-  closeDrawerIfMobile(): void {
-    if (this.drawerMode() === 'over') {
-      this.drawer?.close();
-    }
+  closeTopMenu(): void {
+    this.isTopMenuExpanded.set(false);
   }
 }

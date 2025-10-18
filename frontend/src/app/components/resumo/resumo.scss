@@ -176,14 +176,7 @@
           margin: 16px 0;
         }
       }
-      
-      // Conteúdo markdown
-      .markdown-content {
-        // Importa estilos compartilhados de markdown
-        @import '../../styles/markdown';
-        @include markdown-content-styles;
-      }
-      
+            
       // Sem conteúdo
       .no-content {
         text-align: center;
