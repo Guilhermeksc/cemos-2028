@@ -1,12 +1,11 @@
-
-<!-- Container principal com Material Card -->
-<mat-card class="conceitos-card">
+<div class="main-container">
 
   <div class="header">
      <h2>💡 Conceitos</h2>
   </div>
 
-  <mat-card-content class="card-content">
+  <mat-card class="conceitos-card">
+    <mat-card-content class="card-content">
     <!-- Estado vazio -->
     <div class="empty-state" *ngIf="conceitos.length === 0">
       <mat-icon class="empty-icon">description</mat-icon>

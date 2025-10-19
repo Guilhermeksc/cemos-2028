@@ -1,27 +1,11 @@
-<div class="media-page-container">
-  <!-- Loading -->
-  <div class="loading-state" *ngIf="isLoading">
-    <div class="spinner"></div>
-    <p>Carregando configuração de mídias...</p>
+<header class="page-header">
+  <div class="breadcrumb">
+    <a routerLink="/app6">🌍 Geopolítica & Relações Internacionais</a>
   </div>
+</header>
 
-  <!-- Mensagem de erro se houver -->
-  <div class="error-message" *ngIf="errorMessage && !isLoading">
-    <div class="error-icon">⚠️</div>
-    <p>{{ errorMessage }}</p>
-    <small>Exibindo dados de exemplo...</small>
-  </div>
-
-  <!-- Componente de vídeos e podcasts - só renderiza quando houver dados -->
-  <app-videos-podcasts 
-    *ngIf="!isLoading && bibliografiasMedia.length > 0"
-    [bibliografiasMedia]="bibliografiasMedia">
-  </app-videos-podcasts>
-
-  <!-- Empty state -->
-  <div class="empty-state" *ngIf="!isLoading && bibliografiasMedia.length === 0 && !errorMessage">
-    <div class="empty-icon">📭</div>
-    <h3>Nenhuma mídia configurada</h3>
-    <p>Adicione arquivos de mídia no arquivo <code>geopolitica-media.json</code></p>
-  </div>
-</div>
+<!-- Componente de vídeos e podcasts - só renderiza quando houver dados -->
+<app-videos-podcasts 
+  *ngIf="!isLoading && bibliografiasMedia.length > 0"
+  [bibliografiasMedia]="bibliografiasMedia">
+</app-videos-podcasts>

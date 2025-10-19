@@ -398,13 +398,18 @@
 // ===== MEDIA QUERY ADICIONAL PARA TEXTOS LONGOS =====
 @media (max-width: 480px) {
   .nav-section-header {
-    min-height: 80px;
-    
+    min-height: 48px; // reduzido para deixar os itens mais próximos
+    padding: 6px 12px; // padding menor para mobile
     .nav-section-title {
       font-size: 13px;
       letter-spacing: 0.2px;
       text-transform: none;
     }
+  }
+  .nav-item-simple,
+  .nav-subitem,
+  .nav-item-object {
+    padding: 6px 16px; // padding menor para mobile
   }
 }
 
