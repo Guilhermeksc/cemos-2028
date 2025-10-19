@@ -1,0 +1,314 @@
+<div class="landing-container">
+  <div class="welcome-section">
+    <div class="welcome-header">
+      <h1 class="main-title">CEMOS 2028</h1>
+      <p class="subtitle">Sistema de Estudos para o Concurso de Admissão</p>
+    </div>
+
+    <div class="intro-text">
+      <p>
+        Bem-vindo ao sistema integrado de estudos para o <strong>CEMOS 2028</strong>. 
+        Este ambiente foi desenvolvido para auxiliar sua preparação através de conteúdos 
+        organizados, recursos multimídia e exercícios práticos.
+      </p>
+    </div>
+  </div>
+
+  <div class="modules-grid">
+    <mat-card class="module-card" (click)="navigateTo(['app1-intendencia', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">inventory_2</mat-icon>
+        <mat-card-title>Intendência</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Administração de recursos, logística e gestão militar.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app2-estrategia', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">route</mat-icon>
+        <mat-card-title>Estratégia</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Fundamentos estratégicos e planejamento de operações.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app3-planejamento-militar', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">military_tech</mat-icon>
+        <mat-card-title>Planejamento Militar</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Metodologias e processos de planejamento operacional.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app4-historia', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">history_edu</mat-icon>
+        <mat-card-title>História</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>História militar e análise de conflitos históricos.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app5-ingles', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">translate</mat-icon>
+        <mat-card-title>Inglês</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Língua inglesa aplicada ao contexto militar e profissional.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app6-geopolitica-relacoes-internacionais', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">public</mat-icon>
+        <mat-card-title>Geopolítica e RI</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Análise geopolítica e relações internacionais contemporâneas.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app7-politica', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">account_balance</mat-icon>
+        <mat-card-title>Política</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Teoria política e sistemas de governo.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app8-direito', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">gavel</mat-icon>
+        <mat-card-title>Direito</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Fundamentos jurídicos e direito aplicado às Forças Armadas.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app9-economia', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">show_chart</mat-icon>
+        <mat-card-title>Economia</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Princípios econômicos e economia de defesa.</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="quick-info">
+    <mat-card class="info-card">
+      <mat-card-header>
+        <mat-icon class="info-icon">info</mat-icon>
+        <mat-card-title>Como usar o sistema</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li><strong>Menu Lateral/Superior:</strong> Navegue entre as disciplinas e recursos</li>
+          <li><strong>Bibliografia:</strong> Acesse os materiais de estudo organizados</li>
+          <li><strong>Mídia:</strong> Recursos audiovisuais complementares</li>
+          <li><strong>Perguntas:</strong> Pratique com questões de concursos anteriores</li>
+          <li><strong>Resumo:</strong> Consulte sínteses dos principais tópicos</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="calendar-section">
+    <mat-card class="calendar-card">
+      <mat-card-header>
+        <mat-icon class="calendar-icon">calendar_month</mat-icon>
+        <mat-card-title>Calendário de Estudos</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="calendar-description">
+          Cronograma organizado em 3 passadas para otimizar sua preparação e retenção do conteúdo.
+        </p>
+        
+        <div class="calendar-table-container">
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Passada</th>
+                <th>Matéria</th>
+                <th>Início</th>
+                <th>Término</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Passada 1 -->
+              <tr class="passada-1">
+                <td class="passada-cell" rowspan="9">1</td>
+                <td>História</td>
+                <td>01/09/2025</td>
+                <td>17/10/2025</td>
+              </tr>
+              <tr class="passada-1">
+                <td>Geopolítica</td>
+                <td>20/10/2025</td>
+                <td>28/10/2025</td>
+              </tr>
+              <tr class="passada-1">
+                <td>Relações Internacionais</td>
+                <td>29/10/2025</td>
+                <td>07/11/2025</td>
+              </tr>
+              <tr class="passada-1">
+                <td>Política</td>
+                <td>10/11/2025</td>
+                <td>19/11/2025</td>
+              </tr>
+              <tr class="passada-1">
+                <td>Direito</td>
+                <td>20/11/2025</td>
+                <td>10/12/2025</td>
+              </tr>
+              <tr class="passada-1">
+                <td>Economia</td>
+                <td>11/12/2025</td>
+                <td>22/12/2025</td>
+              </tr>
+              <tr class="passada-1">
+                <td>Estratégia</td>
+                <td>23/12/2025</td>
+                <td>07/01/2026</td>
+              </tr>
+              <tr class="passada-1">
+                <td>Planejamento Militar</td>
+                <td>08/01/2026</td>
+                <td>19/01/2026</td>
+              </tr>
+              <tr class="passada-1 last-row">
+                <td>Serviço de Intendência (SIM)</td>
+                <td>20/01/2026</td>
+                <td>04/02/2026</td>
+              </tr>
+
+              <!-- Passada 2 -->
+              <tr class="passada-2">
+                <td class="passada-cell" rowspan="9">2</td>
+                <td>História</td>
+                <td>05/02/2026</td>
+                <td>19/02/2026</td>
+              </tr>
+              <tr class="passada-2">
+                <td>Geopolítica</td>
+                <td>20/02/2026</td>
+                <td>02/03/2026</td>
+              </tr>
+              <tr class="passada-2">
+                <td>Relações Internacionais</td>
+                <td>03/03/2026</td>
+                <td>12/03/2026</td>
+              </tr>
+              <tr class="passada-2">
+                <td>Política</td>
+                <td>13/03/2026</td>
+                <td>24/03/2026</td>
+              </tr>
+              <tr class="passada-2">
+                <td>Direito</td>
+                <td>25/03/2026</td>
+                <td>14/04/2026</td>
+              </tr>
+              <tr class="passada-2">
+                <td>Economia</td>
+                <td>15/04/2026</td>
+                <td>24/04/2026</td>
+              </tr>
+              <tr class="passada-2">
+                <td>Estratégia</td>
+                <td>27/04/2026</td>
+                <td>12/05/2026</td>
+              </tr>
+              <tr class="passada-2">
+                <td>Planejamento Militar</td>
+                <td>13/05/2026</td>
+                <td>22/05/2026</td>
+              </tr>
+              <tr class="passada-2 last-row">
+                <td>Serviço de Intendência (SIM)</td>
+                <td>25/05/2026</td>
+                <td>09/06/2026</td>
+              </tr>
+
+              <!-- Passada 3 -->
+              <tr class="passada-3">
+                <td class="passada-cell" rowspan="9">3</td>
+                <td>História</td>
+                <td>10/06/2026</td>
+                <td>17/06/2026</td>
+              </tr>
+              <tr class="passada-3">
+                <td>Geopolítica</td>
+                <td>18/06/2026</td>
+                <td>23/06/2026</td>
+              </tr>
+              <tr class="passada-3">
+                <td>Relações Internacionais</td>
+                <td>24/06/2026</td>
+                <td>29/06/2026</td>
+              </tr>
+              <tr class="passada-3">
+                <td>Política</td>
+                <td>30/06/2026</td>
+                <td>02/07/2026</td>
+              </tr>
+              <tr class="passada-3">
+                <td>Direito</td>
+                <td>03/07/2026</td>
+                <td>09/07/2026</td>
+              </tr>
+              <tr class="passada-3">
+                <td>Economia</td>
+                <td>10/07/2026</td>
+                <td>15/07/2026</td>
+              </tr>
+              <tr class="passada-3">
+                <td>Estratégia</td>
+                <td>16/07/2026</td>
+                <td>23/07/2026</td>
+              </tr>
+              <tr class="passada-3">
+                <td>Planejamento Militar</td>
+                <td>24/07/2026</td>
+                <td>30/07/2026</td>
+              </tr>
+              <tr class="passada-3 last-row">
+                <td>Serviço de Intendência (SIM)</td>
+                <td>31/07/2026</td>
+                <td>07/08/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="calendar-legend">
+          <div class="legend-item">
+            <span class="legend-badge passada-1-badge">1ª Passada</span>
+            <span class="legend-text">Primeiro contato com o conteúdo</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge passada-2-badge">2ª Passada</span>
+            <span class="legend-text">Revisão e aprofundamento</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge passada-3-badge">3ª Passada</span>
+            <span class="legend-text">Consolidação final</span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

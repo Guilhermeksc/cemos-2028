@@ -141,10 +141,10 @@ export class SideMenu {
             'Princípios de Relações Internacionais'
           ]
         },
-        'Mídia',
+        'Vídeos / Podcasts',
+        'Flash Cards',
         'Perguntas',
         'Conceitos',
-        'Pensadores',
         {
           title: 'Resumo',
           children: [
@@ -420,18 +420,18 @@ export class SideMenu {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
-            case 'Mídia':
+            case 'Vídeos / Podcasts':
               pathParts.push('media');
               break;
+            case 'Flash Cards':
+              pathParts.push('flash-cards');
+              break;  
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
               break;
-            case 'Pensadores':
-              pathParts.push('pensadores');
-              break;  
             case 'Resumo':
               pathParts.push('resumo');
               break;
@@ -550,6 +550,9 @@ export class SideMenu {
           break;
         case 'Mídia':
           pathParts.push('media');
+          break;
+        case 'Flash Cards':
+          pathParts.push('flash-cards');
           break;
         case 'Perguntas':
           pathParts.push('perguntas');

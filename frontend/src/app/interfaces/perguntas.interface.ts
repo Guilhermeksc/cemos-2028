@@ -7,9 +7,32 @@ export interface Bibliografia {
   materia?: string;
   descricao?: string;
   perguntas_count?: number;
+  flashcards_count?: number;
 }
 
+export interface FlashCards {
+  id: number;
+  bibliografia: number;
+  bibliografia_titulo?: string;
+  pergunta: string;
+  resposta: string;
+  assunto?: string;
+}
 
+export interface FlashCardsFilters {
+  search?: string;
+  bibliografia?: number;
+  assunto?: string;
+  ordering?: string;
+  page?: number;
+  page_size?: number;
+}
+
+export interface EstatisticasFlashCards {
+  total_flashcards: number;
+  flashcards_por_assunto: { [assunto: string]: number };
+  flashcards_por_bibliografia: { [bibliografia: string]: number };
+}
 
 // Interface base para perguntas (não utilizada diretamente, apenas para referência)
 export interface PerguntaBase {

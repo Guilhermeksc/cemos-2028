@@ -34,13 +34,15 @@ Lester Thurow não é somente um acadêmico, mas antes de tudo um geopolítico, 
 
 Com isso, ele quis dizer que cabe agora aos norte-americanos tomarem consciência e se engajarem na estratégia adequada para esse novo jogo competitivo/cooperativo: evitar os perigos (que, na sua opinião, não consistem mais em ideologias alternativas ao capitalismo e sim no descontentamento, gerado pelas desigualdades, migrações e injustiças, que está produzindo em algumas áreas o crescimento do racismo e do neonazismo) e promover as condições para o seu país continuar liderando o mundo neste novo século, quais sejam: investir mais e melhor em pesquisa e desenvolvimento, em projetos de infraestrutura, em reformas nos programas de pensão e assistência médica para os idosos, e em educação e qualificação da força de trabalho.¹¹
 
-OS MEGABLOCOS OU MERCADOS REGIONAIS
+## OS MEGABLOCOS OU MERCADOS REGIONAIS
 
 Uma das ideias mais populares a respeito da disputa pelo poder no mundo pós-guerra fria é a dos megablocos ou “blocos regionais”. Ela não propriamente uma paternidade a um “teórico principal”, tal como ocorre com outras ideias similares (a noção de competição/cooperação econômica, o choque de civilizações, a Geoeconomia substituindo a geopolítica ou o fim da história, por exemplo). Ela se desenvolveu, antes mesmo do final da guerra fria, por meio de inúmeras discussões — e os ensaios que foram publicados a partir delas — ocorridas no seio de organizações internacionais — notadamente na CEE (atual União Europeia) — e também na mídia.
 
 Essa interpretação consiste basicamente na ideia de que são os megablocos, e não mais os Estados nacionais, que dominam o cenário mundial ou as relações de poder no espaço planetário. Normalmente se divide o mundo em três “blocos regionais” preponderantes: o americano (liderado pelos Estados Unidos), o europeu, que incluiria a África (comandado pela Alemanha) e o asiático ou “oriental”, que incluiria a Oceania (capitaneado pelo Japão e/ou pela China). Também se especula a respeito de um “bloco” liderado pela Rússia (a CEI — Comunidade de Estados Independentes) e de um potencial ou hipotético “bloco islâmico”. O momento em que essa interpretação se consolidou ajuda a elucidar-la. Foi por volta de 1989-1990, quando parecia já certo o final da bipolaridade e da disputa entre os “blocos da guerra fria”: o capitalista, liderado pelos EUA, e o socialista, liderado pela ex-URSS. Assim sendo, a primeira reação de alguns foi a de identificar “novos blocos” no espaço mundial. E como já existia um crescimento econômico da Europa Ocidental e do Japão, que desde os anos 1970 constituíam junto com os EUA a chamada “tríade” do mundo capitalista, mais natural que substituir os dois “blocos” da guerra fria pelos três “blocos” que aparentemente dominariam o mundo pós-guerra fria.
 
 Um dos principais fundamentos dessa interpretação foi o sucesso da integração europeia, cujo exemplo foi parcialmente imitado em várias partes do mundo (Nafta, Mercosul, Apec, as tentativas de se criar a Alca — Área de Livre Comércio nas Américas etc.). Nos anos 1980 alguns autores, e inúmeros jornalistas, falavam em “fortaleza europeia”, sugerindo um progressivo fechamento do continente com o avançar da integração. A partir daí, muitos começaram a interpretar como “natural” a formação de mercados regionais nos diversos continentes, vendo nesse processo o início de uma nova ordem geopolítica mundial “plural”, marcada pelas associações de países ao redor de um Estado núcleo ou central.
+
+### Teste 
 
 Alguns dos adeptos dessa interpretação, exagerando a importância desses mercados regionais (e inclusive os homogeneizando, não percebendo as suas diferenças e vendo todos a partir do prisma da União Europeia, o único que caminha de fato no sentido de construir uma confederação), passaram a falar numa “nova geografia regional do mundo” ou até mesmo em “blocos internacionais de poder”.
 
@@ -54,7 +56,7 @@ Há aqueles que especulam a respeito de um mundo dividido em blocos — um japon
 
 Cabe apenas indagar se essa interpretação, muito mais popular na Europa (em especial na França) e em determinados meios por ela influenciados culturalmente, não esconderia um projeto. Não seria, como todas as geopolíticas, só que de forma bem mais velada (e inclusive não consciente para alguns de seus divulgadores), uma tentativa de influenciar a realidade? Não seria basicamente uma aposta na unificação político-militar da União Europeia? Afinal, apresentar como “natural” uma formação de blocos continentais que dividem entre si o mundo e constroem uma unidade não somente econômica mas também político-militar, não implicaria um estratagema para influenciar a opinião pública (e as autoridades) no sentido de que esse é o único caminho para o futuro?
 
-O SISTEMA-MUNDO E A SUA LÓGICA
+## O SISTEMA-MUNDO E A SUA LÓGICA
 
 A nova geografia política do mundo, segundo alguns, teria como base fundamental o chamado “sistema global”, ou sistema-mundo, que seria uma espécie de “ator” muito mais importante que os Estados nacionais ou mesmo que as associações internacionais como a União Europeia. São vários os adeptos dessa interpretação, que possui diferentes versões. O que há de comum entre elas é a crença no enfraquecimento do Estado-nação, que teria deixado de ser o ator preponderante no cenário mundial — advindo daí a superação do conceito de grande potência —, sendo que a chave para se entender as relações de poder seria o sistema global.
 
@@ -78,7 +80,7 @@ Pode-se inclusive questionar se existe algum fundamento na noção de “resist�
 
 Não seria essa mais uma forma de pensamento tipo “tudo ou nada”, que afinal de contas apenas encobre o ideal de uma sociedade transparente de ponta a ponta, legível e visível em cada uma de suas partes? Não deixa de ser preocupante que Wallerstein, numa recente entrevista, tenha dito que o “sistema global está em colapso” devido a uma pretensa “tendência à baixa nas margens de lucros”, e, prevendo a eclosão de sangrentas revoltas e guerras nesta fase de “desmoronamento do capitalismo”, teríamos de construir uma “nova estrutura” tendo por modelo “como uma universidade ou um hospital funcionam: internamente são semiautoritários, mas permitem grande autonomia para seus profissionais”.²¹
 
-GLOBALIZAÇÃO E DESCENTRALIZAÇÃO SÃO SINÔNIMOS?
+## GLOBALIZAÇÃO E DESCENTRALIZAÇÃO SÃO SINÔNIMOS?
 
 Para alguns autores o avanço no processo de globalização enfraquece os grandes atores do cenário mundial, em especial os Estados, e favorece os atores menores (regiões, lugares, pequenas empresas, indivíduos). Apesar de ter algo em comum com a teoria do sistema-mundo (a ênfase no global e a crença no enfraquecimento dos Estados nacionais), essa interpretação é praticamente o oposto àquele: o sistema global é visto como algo extremamente positivo, e mais do que isso, como a garantia da humanidade para um mundo de prosperidade e diminuição do autoritarismo e dos conflitos militares. Os adeptos dessa interpretação, que possui várias nuances, constituem na realidade os forjadores do termo “globalização” tal como ele vem sendo utilizado desde os anos 1980, como uma crescente interdependência de todas as economias nacionais num rede ou sistema global (o mercado mundial, que se torna mais importante que os nacionais) impulsionada por novas tecnologias, notadamente pela telemática.²²
 
@@ -112,11 +114,9 @@ Segundo, a democracia nasceu originalmente antes de tudo como participação dir
 
 O grande problema dessa interpretação que pode ser vista como ultraliberal — não no sentido “neoliberal” do mercado declinado
 
-
-
 Tudo, mas sim pela percepção do que é ou deveria ser o indivíduo, o cidadão enfim, o único agente legítimo da política e inclusive da política econômica — é que ela omite as enormes desigualdades internacionais e também os conflitos entre os povos e Estados, ou seja, a questão da violência. Se o mundo todo fosse como os Estados Unidos ou a Europa Ocidental, talvez esse fascinante ideal tivesse alguma viabilidade. Afinal, ele pressupõe uma população mais ou menos homogênea (cultural e economicamente), que tenha um alto nível educacional e de consumo, inclusive com o acesso a tecnologias modernas. Mas como conciliar esse ideal com a dura realidade da enorme pobreza nos países subdesenvolvidos, com os choques culturais, com a marcante presença de elites conservadoras e que vivem em simbiose com as burocracias estatais? E como conciliar essa interpretação do enfraquecimento ou final do Estado-nação (tanto em Naisbitt quanto em Ohmae) com a presença ainda significativa do poderio militar e dos perigos — que infelizmente não acabaram — de guerras de conquistas ou de extermínios?
 
-AS DISPARIDADES NORTE/SUL LEVAM A CONFLITOS?
+## AS DISPARIDADES NORTE/SUL LEVAM A CONFLITOS?
 
 Para alguns, o maior problema e a fonte mais importante de potenciais conflitos na nova ordem mundial é a crescente disparidade entre o Norte e o Sul, entre uma minoria de nações ricas e uma imensa maioria de países subdesenvolvidos. São vários os propagadores dessa ideia, desde marxistas até fundamentalistas de diversos matizes, passando inclusive por liberais.
 
@@ -138,9 +138,9 @@ O principal reparo que se pode fazer a esse tipo de interpretação é que vê n
 
 Seria possível, por exemplo, colocar num mesmo grupo — o chamado Sul — a Nicarágua e o Haiti juntos com Cingapura ou com a Coreia do Sul? Ou Moçambique e Tanzânia juntos com o México e o Brasil? Será que não existem algumas economias do Sul que estão se saindo bem nessa nova fase de globalização e revolução técnico-científica? Pode-se realmente dizer, sem cair num discurso meramente panfletário, que a pobreza ou a miséria que existem em inúmeras regiões do mundo foram de fato produzidas (ou necessariamente estão sendo agravadas) pela globalização? E existe algum ator ou grupo denominado Sul que atua em conjunto nas discussões internacionais sobre o meio ambiente, sobre o Conselho de Segurança da ONU ou sobre o sistema financeiro mundial? É evidente que não. De acordo com cada assunto, os grupos em oposição se redefinem. Quando se trata de reformular a ONU e principalmente o seu Conselho de Segurança, de um lado costumam estar Brasil e Índia (pleiteando a entrada de novos membros permanentes, ou seja, eles próprios) e de outro lado (entre os Estados que descartam essa alteração) normalmente estão a China e até a Argentina. E quando se trata de valorizar a biodiversidade — isto é, as florestas tropicais — de um lado estão determinados países que possuem uma megadiversidade biológica (Brasil, Costa Rica e alguns outros), mas não todos os países subdesenvolvidos (sequer a maioria), e do outro lado certas economias que dominam amplamente a biotecnologia (notadamente os Estados Unidos), mas nunca um “Norte” coeso.
 
-OS CHOQUES CULTURAIS MARCARÃO O SÉCULO XXI?
+# OS CHOQUES CULTURAIS MARCARÃO O SÉCULO XXI?
 
-HUNTINGTON E O NOVO PARADIGMA
+## HUNTINGTON E O NOVO PARADIGMA
 
 Samuel P. Huntington, diretor do Instituto de Estudos Estratégicos de Harvard e professor de relações internacionais, além de conhecido estrategista da época da Guerra do Vietnã (ele propôs em 1969 uma “urbanização forçada” da população sul-vietnamita como forma de combater os guerrilheiros e o apoio popular a eles, que era maior no campo que nas cidades), provocou um grande alvoroço em 1993 quando publicou na revista Foreign Affairs um ensaio intitulado “Choque das civilizações?”. O artigo inaugurou uma nova interpretação sobre a geopolítica mundial e logo foi traduzido em quase todo o mundo, suscitando uma onda de discussões.
 
@@ -164,7 +164,7 @@ Uma noção fundamental nessa interpretação é a de “linhas de cisão entre 
 
 A Bósnia-Hezergovina e o Kosovo são vistas por ele como áreas localizadas exatamente em linhas de cisão: na Bósnia ocorreria uma disputa entre grupos ocidentais (os croatas), islâmicos (os bósnios) e eslavos ortodoxos (os sérvios); e no Kosovo haveria uma disputa entre islâmicos (os kosovares) e eslavos ortodoxos (os sérvios).
 
-O ESTADO CIVILIZACIONAL NÚCLEO
+## O ESTADO CIVILIZACIONAL NÚCLEO
 
 Em 1996, Huntington publicou um volumoso livro, que é essencialmente uma tentativa de fundamentar melhor — e retrabalhar certos aspectos da — sua interpretação do choque de civilizações. Alguns novos temas são desenvolvidos nessa obra, notadamente o de ordem multipolar e multicivilizacional, de Estado-núcleo e da sobrevivência do Ocidente e em particular da liderança norte-americana.
 
@@ -178,10 +178,9 @@ Quanto às demais grandes civilizações, os problemas de disputas por lideranç
 
 Esquema do alinhamento das civilizações segundo Huntington:
 
-
 Fonte: Samuel P. Huntington. O choque de civilizações, p. 310.
 
-QUAL SERIA O PAPEL DOS ESTADOS UNIDOS?
+## QUAL SERIA O PAPEL DOS ESTADOS UNIDOS?
 
 A grande preocupação de Huntington é com o que chama “declínio do Ocidente” e com o papel que os Estados Unidos deveriam desempenhar nessa nova ordem multipolar e multicivilizacional.
 
@@ -198,7 +197,7 @@ Huntington propõe então uma atuação “realista” (termo que ele gosta de e
 
 se abster de intervir em conflitos de outras civilizações. Esse seria o primeiro requisito para a paz nesse mundo multipolar e multicivilizacional. E a segunda regra seria a da “mediação conjunta”, ou seja, os Estados-núcleos deveriam negociar entre si para conter as guerras que ocorrem nas linhas de cisão entre essas civilizações. O autor até sugere que não se deve impedir a Rússia de dominar os países eslavos ortodoxos da Europa (e, inversamente, a Rússia não deveria se opor à expansão da OTAN até os países da ex-Europa Oriental que têm uma cultura ocidental), e que não se deve intervir no desejo da China de anexar Taiwan e outras áreas, e isso tudo sem manifestar a menor preocupação do ponto de vista das populações que vivem nessas áreas! Um conselho sem dúvida “realista”, de quem acredita que é “inútil e até arrogante” tentar impedir a China de cumprir o seu “destino” de dominar a Ásia oriental¹¹.
 
-AS INSUFICIÊNCIAS DA REALPOLITIK CULTURALISTA
+## AS INSUFICIÊNCIAS DA REALPOLITIK CULTURALISTA
 
 Deixando-se de lado a (problemática) discussão sobre os fatos – “as guerras da Bósnia ou do Kosovo teriam realmente sido conflitos culturais?”, “as grandes ameaças para a paz mundial consistem de fato nas linhas de cisão entre o Ocidente e o islamismo, ou entre este e a civilização hinduísta?” –, a principal crítica que se pode fazer a essa realpolitik culturalista de Huntington é que ela legitima uma espécie de “desconsideração pelos direitos humanos” em culturas não ocidentais.
 Uma política externa baseada nessa teoria, que é exatamente o que Huntington sugere para os Estados Unidos, seria na prática o abandono de qualquer universalismo (por exemplo, da “democracia como valor universal”) e uma espécie de “partilha do planeta” entre meia dúzia de Estados-núcleos, cada um podendo fazer o que bem entender na sua zona de influência.
@@ -217,8 +216,9 @@ E, finalmente, um dissidente chinês foi enfático ao afirmar:
 
 É irônico que Huntington vislumbre um confucionismo ressurgente no exato momento em que a deterioração moral e espiritual corrói as fundações culturais da China. Os 47 anos de regime comunista destruíram a religião, a educação, o império da lei e a moralidade (...) O século XXI na realidade será uma era em que, através da interação e do consenso, as civilizações poderão se fundir, ajudando os povos a (...) livrarem-se da pobreza e da escravidão, transformando pessoas subjugadas em seres humanos. Isso vai exigir o que há de melhor em cada uma das civilizações, e não que se enfatizem as diferenças entre elas.
 
-A DEMOCRACIA LIBERAL TENDE A DOMINAR TODO O MUNDO?
-FUKUYAMA E A FASE PÓS-HISTÓRICA
+# A DEMOCRACIA LIBERAL TENDE A DOMINAR TODO O MUNDO?
+
+## FUKUYAMA E A FASE PÓS-HISTÓRICA
 
 Francis Fukuyama, funcionário público do Departamento de Estado norte-americano, escreveu em outubro de 1989 um artigo — “The end of History?” [O fim da História?] — que desencadeou um intenso debate em todo o mundo e implica uma nova visão geopolítica¹.
 No exato momento da queda do muro de Berlim, Fukuyama retoma a questão do fim da História, tematizada primeiro por Hegel — ou pelo menos pelo Hegel kojeveano² — e depois por Marx.
@@ -274,7 +274,7 @@ Em segundo lugar, e de forma complementar, o seu artigo foi publicado num moment
 
 E logo a seguir, em 1991 (guerra do Golfo) e nos anos seguintes (Somália e Ruanda em 1992, Bósnia em 1993 etc.), as tropas dos Estados Unidos e/ou da ONU intervieram em algumas partes do globo sob o pretexto de “promover a paz e defender os direitos humanos”. Isso tudo fez com que esse simplório artigo de Fukuyama — e aquele mencionado livro de 1992 — fosse discutido em quase todo o mundo, como um ponto de partida para se indagar a respeito da nova era das relações internacionais após o final da bipolaridade e da guerra fria.
 
-A DEMOCRACIA E OS DIREITOS HUMANOS SÃO UNIVERSAIS?
+## A DEMOCRACIA E OS DIREITOS HUMANOS SÃO UNIVERSAIS?
 
 A democracia ocidental moderna, nascida com as revoluções americana e francesa e cuja base são os direitos do homem ou do cidadão, pode de fato ser implementada em todo o mundo? Ela seria um “valor universal” acima não apenas das diferenças econômico-sociais, como já foi amplamente demonstrado, mas também acima das diferenças culturais ou de civilizações? Não seria, como afirmou Huntington (e vários outros), somente uma estratégia das potências ocidentais para impor o seu domínio sobre outros povos?
 
@@ -297,7 +297,7 @@ A democracia foi pensada antes de tudo para uma comunidade que pudesse deliberar
 
 Dessa forma, a questão da democracia a grupos não consiste apenas e nem principalmente na sua expansão até as sociedades que não a praticam. Ela consiste também e cada vez mais na sua redefinição para levar em conta as mudanças que ocorrem no mundo, onde por um lado há o enfraquecimento dos Estados nacionais — ou, pelo menos das nações como entidades relativamente homogêneas e autônomas — e por outro lado existem novas configurações comunitárias, novas “tribos” que se definem por outros critérios diferentes dos tradicionais, que enfatizavam mais o local de morada. Expandir os direitos do homem ou do cidadão sim, mas sabendo que eles não estão — e provavelmente nunca estarão — completamente definidos ou acabados. Eles se redefinem, se recriam, incorporando novos atores e novas demandas, alargando continuamente a noção de democracia.
 
-A ONU OU AS GRANDES POTÊNCIAS TÊM O DIREITO DE INTERVIR NOS DIVERSOS RECANTOS DO PLANETA?
+## A ONU OU AS GRANDES POTÊNCIAS TÊM O DIREITO DE INTERVIR NOS DIVERSOS RECANTOS DO PLANETA?
 
 Segundo vários estudiosos, teria ocorrido na década de 1990 uma significativa mudança na política internacional. O princípio de soberania ou de não ingerência estrangeira num território nacional estaria sendo revisto. Essa revisão, para alguns, teria começado com a criação à revelia do Iraque de “zonas de exclusão aérea” no norte e no sul desse país²⁴, nas quais as tropas aliadas lideradas pelos EUA impedem que as tropas ou os aviões iraquianos entrem com o argumento de “impedir os ataques aos curdos e aos xiitas”. E, segundo outros, o marco dessa revisão foi a guerra do Kosovo, na qual as tropas da ONU intervieram dentro do território iugoslavo a fim de “proteger a população kosovar de um extermínio”²⁵. Cabe lembrar ainda as ameaças que a “comunidade internacional”, por meio da ONU, fez à Indonésia no final de 1999, no sentido de praticamente obrigar esse país a promover um plebiscito entre a população do Timor Leste para decidir o seu status de província indonésia ou Estado independente.
 
@@ -323,10 +323,9 @@ E por fim, as intervenções no estrangeiro — ou melhor, em Estados fracos —
 
 Não acreditamos, no entanto, que seja o caso de denegar radicalmente essa possibilidade de intervir dentro das fronteiras de um Estado em nome dos direitos humanos ou até, no limite (no caso de catástrofes ambientais e/ou nucleares), da sobrevivência da humanidade. O mundo cada vez menor ou globalizado — algo que implica o surgimento ou a expansão de problemas comuns da humanidade e leva de fato a uma perda relativa das soberanias nacionais — deve (re)construir um sistema internacional de regras para a coexistência democrática entre os povos. E, como em qualquer sistema jurídico, ele não será efetivo se não houver a possibilidade de sanções a alguém que estiver deliberadamente infringindo essas regras. Mas essa possível ação coercitiva não deveria ser atribuição de uma grande potência militar e sim de uma instituição internacional legítima — uma ONU reformulada, por exemplo. Uma instituição que inclua também organizações não governamentais, especialmente aquelas que há tempos lutam pelos direitos humanos, e que decida por meio de inúmeras negociações os critérios nos quais essa sanção — sejam restrições econômicas ou, no extremo, intervenção militar — seria possível. Mas por enquanto isso não existe, pois ainda prevalece a lei do mais forte ou das — pouquíssimas — grandes potências.
 
+# A NOVA (DES)ORDEM SERIA CAÓTICA OU DESPROVIDA DE SENTIDO?
 
-A NOVA (DES)ORDEM SERIA CAÓTICA OU DESPROVIDA DE SENTIDO?
-
-O CAOS OU A DESORDEM MUNDIAL
+## O CAOS OU A DESORDEM MUNDIAL
 
 O mundo pós-guerra fria, segundo alguns, seria na realidade uma “desordem mundial”, um caos no sentido de ausência de regulação, de predomínio do mercado instável, da multiplicação de conflitos, máfias, gangues, criminalidade e exclusões de todos os tipos.
 

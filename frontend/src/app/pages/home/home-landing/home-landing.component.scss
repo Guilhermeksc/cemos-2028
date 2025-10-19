@@ -1,0 +1,414 @@
+.landing-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .welcome-header {
+    margin-bottom: 1.5rem;
+
+    .main-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #1a237e;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 2rem;
+      }
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      color: #5c6bc0;
+      margin: 0.5rem 0 0;
+      font-weight: 300;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #424242;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .module-card {
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    mat-card-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .module-icon {
+        font-size: 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      mat-card-title {
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+    mat-card-content {
+      padding: 1.5rem;
+      
+      p {
+        margin: 0;
+        color: #616161;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+    }
+
+    // Cores específicas para cada módulo
+    &:nth-child(1) mat-card-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    &:nth-child(2) mat-card-header {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+    &:nth-child(3) mat-card-header {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
+    &:nth-child(4) mat-card-header {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    }
+    &:nth-child(5) mat-card-header {
+      background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    }
+    &:nth-child(6) mat-card-header {
+      background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    }
+    &:nth-child(7) mat-card-header {
+      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    }
+    &:nth-child(8) mat-card-header {
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    }
+    &:nth-child(9) mat-card-header {
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    }
+  }
+}
+
+.quick-info {
+  margin-top: 3rem;
+
+  .info-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    mat-card-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .info-icon {
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+      }
+
+      mat-card-title {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+    mat-card-content {
+      padding: 1.5rem;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 0.75rem 0;
+          border-bottom: 1px solid #e0e0e0;
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #424242;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          strong {
+            color: #1a237e;
+          }
+        }
+      }
+    }
+  }
+}
+
+.calendar-section {
+  margin-top: 3rem;
+
+  .calendar-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    mat-card-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .calendar-icon {
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+      }
+
+      mat-card-title {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+    mat-card-content {
+      padding: 1.5rem;
+
+      .calendar-description {
+        text-align: center;
+        color: #616161;
+        font-size: 1rem;
+        margin: 0 0 1.5rem 0;
+        font-style: italic;
+      }
+
+      .calendar-table-container {
+        overflow-x: auto;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 768px) {
+          margin: 0 -1rem 2rem -1rem;
+          border-radius: 0;
+        }
+      }
+
+      .calendar-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        font-size: 0.95rem;
+
+        @media (max-width: 768px) {
+          font-size: 0.85rem;
+        }
+
+        thead {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+
+          th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            white-space: nowrap;
+
+            @media (max-width: 768px) {
+              padding: 0.75rem 0.5rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            transition: background-color 0.2s ease;
+
+            &:hover {
+              background-color: #f5f5f5;
+            }
+
+            &.passada-1 {
+              border-left: 4px solid #667eea;
+            }
+
+            &.passada-2 {
+              border-left: 4px solid #43e97b;
+            }
+
+            &.passada-3 {
+              border-left: 4px solid #fa709a;
+            }
+
+            &.last-row {
+              border-bottom: 2px solid #e0e0e0;
+            }
+          }
+
+          td {
+            padding: 0.875rem 1rem;
+            border-bottom: 1px solid #f0f0f0;
+            color: #424242;
+
+            @media (max-width: 768px) {
+              padding: 0.625rem 0.5rem;
+            }
+
+            &.passada-cell {
+              font-weight: 700;
+              font-size: 1.2rem;
+              text-align: center;
+              vertical-align: middle;
+              color: #1a237e;
+              background-color: #f8f9fa;
+
+              @media (max-width: 768px) {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          tr:nth-child(odd):not(.last-row) {
+            background-color: #fafafa;
+          }
+        }
+      }
+
+      .calendar-legend {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+
+        @media (max-width: 768px) {
+          gap: 1rem;
+          padding: 1rem;
+        }
+
+        .legend-item {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+
+          @media (max-width: 480px) {
+            width: 100%;
+            justify-content: center;
+          }
+
+          .legend-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: white;
+            white-space: nowrap;
+
+            &.passada-1-badge {
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            }
+
+            &.passada-2-badge {
+              background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            }
+
+            &.passada-3-badge {
+              background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            }
+          }
+
+          .legend-text {
+            color: #616161;
+            font-size: 0.9rem;
+
+            @media (max-width: 480px) {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

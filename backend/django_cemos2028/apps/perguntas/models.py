@@ -22,6 +22,24 @@ class BibliografiaModel(models.Model):
             parts.append(f"({self.materia})")
         return " ".join(parts)
 
+class FlashCardsModel(models.Model):
+    bibliografia = models.ForeignKey(
+        BibliografiaModel, 
+        on_delete=models.CASCADE, 
+        verbose_name="Bibliografia",
+        related_name="+"
+    )
+    pergunta = models.TextField(verbose_name="Pergunta")
+    resposta = models.TextField(verbose_name="Resposta")
+    assunto = models.CharField(max_length=100, blank=True, null=True, verbose_name="Assunto")
+    
+    class Meta:
+        verbose_name = "Flash Cards"
+        verbose_name_plural = "Flash Cards"
+        ordering = ['id']
+    
+    def __str__(self):
+        return f"{self.bibliografia.titulo} - {self.pergunta}"
 
 class PerguntasBaseModel(models.Model):
     TIPO_CHOICES = [

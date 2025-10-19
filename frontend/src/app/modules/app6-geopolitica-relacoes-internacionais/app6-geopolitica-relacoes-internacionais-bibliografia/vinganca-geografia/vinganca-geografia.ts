@@ -12,9 +12,7 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
   selector: 'app-vinganca-geografia',
   imports: [
     CommonModule,
-    SubMenu,
     HttpClientModule,
-    BibliografiaCompleta,
     LivroIndividual
   ],
   templateUrl: './vinganca-geografia.html',
@@ -30,6 +28,8 @@ export class VingancaGeografia implements OnInit {
     'capXI.md',
     'capXII.md'
   ];
+  backRoute: string = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
+  backLabel: string = 'Bibliografia';
 
   ngOnInit() {
     // Inicialização do componente

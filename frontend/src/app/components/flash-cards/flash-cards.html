@@ -1,0 +1,160 @@
+<div class="flashcards-container">
+  <!-- Header -->
+  <div class="flashcards-header">
+    <h2>📚 Flash Cards</h2>
+    <div class="stats" *ngIf="!isLoading">
+      <span class="stat-item">
+        <strong>{{ displayedFlashCards.length }}</strong> de <strong>{{ allFlashCards.length }}</strong> cards
+      </span>
+      <span class="stat-item">
+        <strong>{{ bibliografias.length }}</strong> {{ bibliografias.length === 1 ? 'bibliografia' : 'bibliografias' }}
+      </span>
+      <span class="stat-item">
+        <strong>{{ assuntosDisponiveis.length }}</strong> {{ assuntosDisponiveis.length === 1 ? 'assunto' : 'assuntos' }}
+      </span>
+    </div>
+  </div>
+
+  <!-- Filtros -->
+  <div class="filters-section" *ngIf="!isLoading">
+    <div class="filter-row">
+      <!-- Filtro de Bibliografia -->
+      <div class="filter-group">
+        <label for="bibliografia-filter">📖 Bibliografia:</label>
+        <select 
+          id="bibliografia-filter"
+          [(ngModel)]="selectedBibliografiaId"
+          (ngModelChange)="onBibliografiaChange()"
+          class="filter-select">
+          <option [ngValue]="null">Todas as Bibliografias</option>
+          <option 
+            *ngFor="let bib of bibliografias" 
+            [ngValue]="bib.id">
+            {{ bib.titulo }}
+            <span *ngIf="bib.flashcards_count">({{ bib.flashcards_count }} cards)</span>
+          </option>
+        </select>
+      </div>
+
+      <!-- Filtro de Assunto -->
+      <div class="filter-group">
+        <label for="assunto-filter">🏷️ Assunto:</label>
+        <select 
+          id="assunto-filter"
+          [(ngModel)]="selectedAssunto"
+          (ngModelChange)="onAssuntoChange()"
+          class="filter-select"
+          [disabled]="assuntosDisponiveis.length === 0">
+          <option value="">Todos os Assuntos</option>
+          <option 
+            *ngFor="let assunto of assuntosDisponiveis" 
+            [value]="assunto">
+            {{ assunto }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Ações -->
+    <div class="actions-row">
+      <button 
+        class="btn btn-primary"
+        (click)="loadRandomFlashCards()"
+        [disabled]="allFlashCards.length === 0">
+        🎲 Embaralhar Cards
+      </button>
+      
+      <button 
+        class="btn btn-secondary"
+        (click)="flipAllCards()"
+        [disabled]="displayedFlashCards.length === 0">
+        🔄 Virar Todos
+      </button>
+      
+      <button 
+        class="btn btn-outline"
+        (click)="resetFilters()"
+        [disabled]="!selectedBibliografiaId && !selectedAssunto">
+        ✖️ Limpar Filtros
+      </button>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div class="loading-container" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <p>Carregando flash cards...</p>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="flashcards-grid" *ngIf="!isLoading && displayedFlashCards.length > 0">
+    <div 
+      *ngFor="let card of displayedFlashCards; trackBy: trackByCardId"
+      class="flashcard-wrapper">
+      <div 
+        class="flashcard"
+        [class.flipped]="card.isFlipped"
+        (click)="flipCard(card)">
+        
+        <!-- Frente do Card (Pergunta) -->
+        <div class="flashcard-face flashcard-front">
+          <div class="card-header">
+            <span class="card-badge">❓ Pergunta</span>
+            <span class="card-assunto" *ngIf="card.assunto">
+              🏷️ {{ card.assunto }}
+            </span>
+          </div>
+          
+          <div class="card-content">
+            <p class="card-question">{{ card.pergunta }}</p>
+          </div>
+          
+          <div class="card-footer">
+            <small class="card-bibliografia">
+              📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
+            </small>
+            <small class="flip-hint">👆 Clique para ver a resposta</small>
+          </div>
+        </div>
+
+        <!-- Verso do Card (Resposta) -->
+        <div class="flashcard-face flashcard-back">
+          <div class="card-header">
+            <span class="card-badge">✅ Resposta</span>
+            <span class="card-assunto" *ngIf="card.assunto">
+              🏷️ {{ card.assunto }}
+            </span>
+          </div>
+          
+          <div class="card-content">
+            <p class="card-answer">{{ card.resposta }}</p>
+          </div>
+          
+          <div class="card-footer">
+            <small class="card-bibliografia">
+              📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
+            </small>
+            <small class="flip-hint">👆 Clique para ver a pergunta</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div class="empty-state" *ngIf="!isLoading && displayedFlashCards.length === 0 && allFlashCards.length > 0">
+    <div class="empty-icon">🔍</div>
+    <h3>Nenhum flash card encontrado</h3>
+    <p>Tente ajustar os filtros ou embaralhar novamente.</p>
+    <button class="btn btn-primary" (click)="resetFilters()">
+      🔄 Resetar Filtros
+    </button>
+  </div>
+
+  <!-- No Data State -->
+  <div class="empty-state" *ngIf="!isLoading && allFlashCards.length === 0">
+    <div class="empty-icon">📭</div>
+    <h3>Nenhum flash card disponível</h3>
+    <p>Não há flash cards cadastrados para as bibliografias selecionadas.</p>
+  </div>
+</div>

@@ -9,3 +9,5 @@ https://github.com/Guilhermeksc/360_novo/blob/mainnovo/src/modules/dispensa_elet
   * V/F: mostra "VERDADEIRO" ou "FALSO"
   * Múltipla escolha: mostra letra e texto da alternativa
   * Correlação: mostra todas as correlações corretas (1=A, 2=B, etc.)
+
+

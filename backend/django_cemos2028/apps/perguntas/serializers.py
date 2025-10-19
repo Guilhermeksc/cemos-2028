@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import (
-    BibliografiaModel, 
+    BibliografiaModel,
+    FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel
@@ -9,12 +10,13 @@ from .models import (
 
 class BibliografiaSerializer(serializers.ModelSerializer):
     perguntas_count = serializers.SerializerMethodField()
+    flashcards_count = serializers.SerializerMethodField()
     
     class Meta:
         model = BibliografiaModel
         fields = [
             'id', 'titulo', 'autor', 'materia', 'descricao',
-            'perguntas_count'
+            'perguntas_count', 'flashcards_count'
         ]
         read_only_fields = ['id']
     
@@ -26,6 +28,22 @@ class BibliografiaSerializer(serializers.ModelSerializer):
         count += PerguntaVFModel.objects.filter(bibliografia=obj).count()
         count += PerguntaCorrelacaoModel.objects.filter(bibliografia=obj).count()
         return count
+    
+    def get_flashcards_count(self, obj):
+        """Retorna o número total de flashcards desta bibliografia"""
+        return FlashCardsModel.objects.filter(bibliografia=obj).count()
+
+
+class FlashCardsSerializer(serializers.ModelSerializer):
+    bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
+    
+    class Meta:
+        model = FlashCardsModel
+        fields = [
+            'id', 'bibliografia', 'bibliografia_titulo', 
+            'pergunta', 'resposta', 'assunto'
+        ]
+        read_only_fields = ['id']
 
 
 class PerguntaMultiplaSerializer(serializers.ModelSerializer):
@@ -150,3 +168,9 @@ class PerguntaCorrelacaoCreateUpdateSerializer(PerguntaCorrelacaoSerializer):
             'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
         ]
+
+
+class FlashCardsCreateUpdateSerializer(FlashCardsSerializer):
+    """Serializer específico para criação e edição de flash cards"""
+    class Meta(FlashCardsSerializer.Meta):
+        fields = ['bibliografia', 'pergunta', 'resposta', 'assunto']

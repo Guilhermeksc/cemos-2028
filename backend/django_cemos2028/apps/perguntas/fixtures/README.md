@@ -12,7 +12,15 @@ Colunas obrigatórias:
 - `materia` (string, opcional): Matéria da bibliografia
 - `descricao` (string, opcional): Descrição da bibliografia
 
-### 2. perguntas_multipla.xlsx
+### 2. flashcards.xlsx
+
+Colunas obrigatórias:
+- `bibliografia_id` (int): ID da bibliografia (deve existir em bibliografias.xlsx)
+- `pergunta` (string): Pergunta/Frente do flashcard
+- `resposta` (string): Resposta/Verso do flashcard
+- `assunto` (string): Assunto/categoria do flashcard
+
+### 3. perguntas_multipla.xlsx
 
 Colunas obrigatórias:
 - `bibliografia_titulo` (string): Título da bibliografia (deve existir em bibliografias.xlsx)
@@ -28,7 +36,7 @@ Colunas opcionais:
 - `caiu_em_prova` (boolean): Se a pergunta caiu em prova
 - `ano_prova` (int): Ano da prova
 
-### 3. perguntas_vf.xlsx
+### 4. perguntas_vf.xlsx
 
 Colunas obrigatórias:
 - `bibliografia_titulo` (string): Título da bibliografia
@@ -41,7 +49,7 @@ Colunas opcionais:
 - `caiu_em_prova` (boolean): Se a pergunta caiu em prova
 - `ano_prova` (int): Ano da prova
 
-### 4. perguntas_correlacao.xlsx
+### 5. perguntas_correlacao.xlsx
 
 Colunas obrigatórias:
 - `bibliografia_titulo` (string): Título da bibliografia
@@ -61,6 +69,12 @@ Colunas opcionais:
 ```
 titulo | autor | materia | descricao
 Direito Constitucional | José Silva | Direito | 2020 | Livro sobre direito constitucional
+```
+
+### Flash Card
+```
+bibliografia_id | pergunta | resposta | assunto
+1 | O que é legalidade? | É o princípio que estabelece que ninguém será obrigado a fazer ou deixar de fazer algo senão em virtude de lei. | Princípios Constitucionais
 ```
 
 ### Pergunta Múltipla Escolha

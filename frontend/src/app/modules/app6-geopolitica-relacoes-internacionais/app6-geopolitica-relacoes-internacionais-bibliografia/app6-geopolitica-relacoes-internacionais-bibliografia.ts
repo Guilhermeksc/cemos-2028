@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { CapaBibliografia } from '../../../components/capa-bibliografia/capa-bibliografia';
+import { CapaBibliografia, CapaConfig } from '../../../components/capa-bibliografia/capa-bibliografia';
 import { filter } from 'rxjs/operators';
 
 @Component({
@@ -12,8 +12,35 @@ import { filter } from 'rxjs/operators';
   styleUrl: './app6-geopolitica-relacoes-internacionais-bibliografia.scss',
 })
 export class App6GeopoliticaRelacoesInternacionaisBibliografia implements OnInit {
-  // Configuração da Capa - Exibida quando clicar no item pai "Bibliografia"
-  imagePath = 'assets/content/geopolitica-ri/img/vinganca-geografia.jpg';
+  // Configuração de múltiplas capas
+  capas: CapaConfig[] = [
+    {
+      imagePath: 'assets/content/geopolitica-ri/img/vinganca-geografia.jpg',
+      routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/vinganca-geografia',
+      title: 'A Vingança da Geografia',
+      description: 'Robert D. Kaplan'
+    },
+    {
+      imagePath: 'assets/content/geopolitica-ri/img/geopolitica-modernidade.jpg',
+      routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/geopolitica-modernidade',
+      title: 'Geopolítica e Modernidade',
+      description: 'Agnew, Mitchell e Toal'
+    },
+    {
+      imagePath: 'assets/content/geopolitica-ri/img/novas-geopoliticas.jpg',
+      routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/novas-geopoliticas',
+      title: 'Novas Geopolíticas',
+      description: 'Paulo Fagundes Visentini'
+    },
+    {
+      imagePath: 'assets/content/geopolitica-ri/img/principios-ri.jpg',
+      routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/principios-ri',
+      title: 'Princípios de Relações Internacionais',
+      description: 'Karen A. Mingst'
+    }
+  ];
+
+  // Configuração do Markdown (opcional)
   markdownPath = 'assets/content/geopolitica-ri/Bibliografia.md';
   basePath = 'assets/content/geopolitica-ri';
 

@@ -3,12 +3,27 @@
   <!-- Menu Lateral -->
   <aside class="side-menu" [class.collapsed]="isMenuCollapsed">
     
-    <!-- Botão de Toggle do Menu -->
+    <!-- Botões do Menu -->
     <div class="menu-toggle-container">
+      <!-- Botão de Voltar -->
+      <button 
+        *ngIf="backRoute"
+        mat-icon-button 
+        class="back-button"
+        (click)="navigateBack()"
+        [matTooltip]="'Voltar para ' + backLabel"
+        matTooltipPosition="right"
+        aria-label="Voltar">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      
+      <!-- Botão de Toggle do Menu -->
       <button 
         mat-icon-button 
         class="menu-toggle-button"
         (click)="toggleMenu()"
+        [matTooltip]="isMenuCollapsed ? 'Expandir menu' : 'Recolher menu'"
+        matTooltipPosition="right"
         [attr.aria-label]="isMenuCollapsed ? 'Expandir menu' : 'Recolher menu'">
         <mat-icon>{{ isMenuCollapsed ? 'menu' : 'close' }}</mat-icon>
       </button>
@@ -19,8 +34,17 @@
       
       <!-- Seletor de Arquivo -->
       <div class="file-selector" *ngIf="markdownFiles.length > 1">
-        <h3 class="menu-title">Arquivos</h3>
-        <mat-nav-list>
+        <div class="menu-title-container">
+          <h3 class="menu-title">Arquivos</h3>
+          <button 
+            mat-icon-button 
+            class="section-toggle-button"
+            (click)="toggleFileSelector()"
+            [attr.aria-label]="isFileSelectorExpanded ? 'Recolher arquivos' : 'Expandir arquivos'">
+            <mat-icon>{{ isFileSelectorExpanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+          </button>
+        </div>
+        <mat-nav-list *ngIf="isFileSelectorExpanded">
           <mat-list-item 
             *ngFor="let file of markdownFiles"
             [class.active]="selectedFile?.fileName === file.fileName"
@@ -35,9 +59,18 @@
 
       <!-- Navegação por Headings -->
       <div class="headings-navigation" *ngIf="headings.length > 0">
-        <h3 class="menu-title">Índice</h3>
+        <div class="menu-title-container">
+          <h3 class="menu-title">Índice</h3>
+          <button 
+            mat-icon-button 
+            class="section-toggle-button"
+            (click)="toggleHeadingsNavigation()"
+            [attr.aria-label]="isHeadingsNavigationExpanded ? 'Recolher índice' : 'Expandir índice'">
+            <mat-icon>{{ isHeadingsNavigationExpanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+          </button>
+        </div>
         
-        <div class="headings-tree">
+        <div class="headings-tree" *ngIf="isHeadingsNavigationExpanded">
           
           <!-- Nível 1 (H1) -->
           <ng-container *ngFor="let h1 of headings">

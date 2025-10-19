@@ -5,7 +5,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { LivroIndividualService } from '../../services/livro-individual.service';
 import { MarkdownFile, MarkdownHeading } from '../../interfaces/livro-individual.interface';
 
@@ -17,7 +19,8 @@ import { MarkdownFile, MarkdownHeading } from '../../interfaces/livro-individual
     MatIconModule,
     MatButtonModule,
     MatExpansionModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTooltipModule
   ],
   templateUrl: './livro-individual.html',
   styleUrl: './livro-individual.scss'
@@ -25,9 +28,13 @@ import { MarkdownFile, MarkdownHeading } from '../../interfaces/livro-individual
 export class LivroIndividual implements OnInit {
   @Input() contentPath: string = 'assets/content'; // Pasta base dos arquivos MD
   @Input() fileNames: string[] = []; // Lista de arquivos MD a carregar
+  @Input() backRoute: string = ''; // Rota de volta (ex: '/home/app6-geopolitica-relacoes-internacionais/bibliografia')
+  @Input() backLabel: string = 'Bibliografia'; // Label do botão de voltar
 
   isMenuCollapsed: boolean = false;
   isLoading: boolean = false;
+  isFileSelectorExpanded: boolean = true;
+  isHeadingsNavigationExpanded: boolean = true;
   
   markdownFiles: MarkdownFile[] = [];
   selectedFile: MarkdownFile | null = null;
@@ -38,7 +45,8 @@ export class LivroIndividual implements OnInit {
 
   constructor(
     private livroService: LivroIndividualService,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -91,6 +99,33 @@ export class LivroIndividual implements OnInit {
    */
   toggleMenu() {
     this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
+  /**
+   * Navega de volta para a rota especificada
+   */
+  navigateBack() {
+    if (this.backRoute) {
+      const pathSegments = this.backRoute.startsWith('/') 
+        ? this.backRoute.substring(1).split('/')
+        : this.backRoute.split('/');
+      
+      this.router.navigate(pathSegments);
+    }
+  }
+
+  /**
+   * Alterna a seção de seletor de arquivos
+   */
+  toggleFileSelector() {
+    this.isFileSelectorExpanded = !this.isFileSelectorExpanded;
+  }
+
+  /**
+   * Alterna a seção de navegação por headings
+   */
+  toggleHeadingsNavigation() {
+    this.isHeadingsNavigationExpanded = !this.isHeadingsNavigationExpanded;
   }
 
   /**

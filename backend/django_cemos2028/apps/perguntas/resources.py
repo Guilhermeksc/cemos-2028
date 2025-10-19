@@ -1,8 +1,9 @@
 # Recursos de import/export
 from import_export import resources, fields
-from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget
+from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget, TextFieldWidget
 from .models import (
     BibliografiaModel, 
+    FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel
@@ -18,6 +19,20 @@ class BibliografiaResource(resources.ModelResource):
         skip_unchanged = True
         report_skipped = True
 
+class FlashCardsResource(resources.ModelResource):
+    bibliografia = fields.Field(
+        column_name='bibliografia',
+        attribute='bibliografia',
+        widget=ForeignKeyWidget(BibliografiaModel, 'titulo')
+    )
+
+    class Meta:
+        model = FlashCardsModel
+        fields = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto')
+        export_order = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto')
+        import_id_fields = ('id',)
+        skip_unchanged = True
+        report_skipped = True
 
 class PerguntaMultiplaResource(resources.ModelResource):
     bibliografia = fields.Field(

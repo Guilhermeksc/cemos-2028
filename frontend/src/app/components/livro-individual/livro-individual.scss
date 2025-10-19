@@ -1,3 +1,19 @@
+// ========================================
+// ESTILOS PERSONALIZADOS PARA TOOLTIPS
+// ========================================
+::ng-deep .mat-mdc-tooltip {
+  .mdc-tooltip__surface {
+    background-color: #424242 !important;
+    border: 2px solid #2196f3 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+  }
+}
+
 .livro-container {
   display: flex;
   height: 100vh;
@@ -34,9 +50,23 @@
   .menu-toggle-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
     padding: 8px;
     border-bottom: 1px solid #e0e0e0;
     background-color: #fff;
+
+    .back-button {
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: rgba(33, 150, 243, 0.08);
+      }
+
+      mat-icon {
+        color: #2196f3;
+      }
+    }
 
     .menu-toggle-button {
       transition: all 0.2s ease;
@@ -71,6 +101,47 @@
 
       &:hover {
         background: #555;
+      }
+    }
+  }
+
+  .menu-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 16px;
+
+    .menu-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #616161;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 0;
+      flex: 1;
+    }
+
+    .section-toggle-button {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+
+      mat-icon {
+        color: #616161;
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

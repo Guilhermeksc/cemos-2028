@@ -5,7 +5,7 @@ from django.conf import settings
 from django.db import transaction
 from django.db.models.signals import post_migrate
 from django.dispatch import receiver
-from .models import BibliografiaModel, PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
+from .models import BibliografiaModel, FlashCardsModel, PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
 
 logger = logging.getLogger(__name__)
 
@@ -127,7 +127,43 @@ def load_fixtures_perguntas(sender, **kwargs):
                         if created:
                             logger.info(f"✅ Criada bibliografia: {obj.titulo}")
 
-            # 2. Perguntas Múltipla Escolha
+            # 2. Flash Cards
+            df = load_fixture('flashcards.xlsx', ['bibliografia_id', 'pergunta', 'resposta', 'assunto'])
+            if df is not None:
+                logger.info("📄 Processando flash cards...")
+                loaded_count = 0
+                for idx, row in df.iterrows():
+                    if _require_fields(row, ['bibliografia_id', 'pergunta', 'resposta', 'assunto'], 
+                                     'flashcards', idx, 
+                                     ['pergunta', 'resposta', 'assunto']):
+                        
+                        try:
+                            bibliografia_id = _as_int(row['bibliografia_id'])
+                            if bibliografia_id is None:
+                                logger.warning(f"⚠️ ID de bibliografia inválido na linha {idx}")
+                                continue
+                            
+                            bibliografia = BibliografiaModel.objects.get(id=bibliografia_id)
+                            
+                            obj, created = FlashCardsModel.objects.update_or_create(
+                                bibliografia=bibliografia,
+                                pergunta=_as_clean_str(row['pergunta']),
+                                defaults={
+                                    'resposta': _as_clean_str(row['resposta']),
+                                    'assunto': _as_clean_str(row.get('assunto'))
+                                }
+                            )
+                            if created:
+                                loaded_count += 1
+                                logger.info(f"✅ Criado flash card: {obj.pergunta[:50]}...")
+                        except BibliografiaModel.DoesNotExist:
+                            logger.warning(f"⚠️ Bibliografia ID {row.get('bibliografia_id')} não encontrada (linha {idx})")
+                        except Exception as e:
+                            logger.error(f"❌ Erro ao processar flash card (linha {idx}): {e}")
+                
+                logger.info(f"📊 Total de flash cards carregados: {loaded_count}")
+
+            # 3. Perguntas Múltipla Escolha
             df = load_fixture('perguntas_multipla.xlsx', [
                 'bibliografia_titulo', 'paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 
                 'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa'
@@ -170,7 +206,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 
                 logger.info(f"📊 Total de perguntas múltipla carregadas: {loaded_count}")
 
-            # 3. Perguntas Verdadeiro/Falso
+            # 4. Perguntas Verdadeiro/Falso
             df = load_fixture('perguntas_vf.xlsx', [
                 'bibliografia_titulo', 'paginas', 'pergunta', 'afirmacao', 'resposta_correta', 'justificativa_resposta_certa'
             ])
@@ -211,7 +247,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 
                 logger.info(f"📊 Total de perguntas V/F carregadas: {loaded_count}")
 
-            # 4. Perguntas de Correlação
+            # 5. Perguntas de Correlação
             df = load_fixture('perguntas_correlacao.xlsx', [
                 'bibliografia_titulo', 'paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
             ])

@@ -4,7 +4,8 @@ from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import Q
 from .models import (
-    BibliografiaModel, 
+    BibliografiaModel,
+    FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel
@@ -12,6 +13,8 @@ from .models import (
 from .serializers import (
     BibliografiaSerializer,
     BibliografiaCreateUpdateSerializer,
+    FlashCardsSerializer,
+    FlashCardsCreateUpdateSerializer,
     PerguntaMultiplaSerializer,
     PerguntaMultiplaCreateUpdateSerializer,
     PerguntaVFSerializer,
@@ -90,6 +93,30 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
         
         serializer = PerguntaResumoSerializer(perguntas, many=True)
         return Response(serializer.data)
+    
+    @action(detail=True, methods=['get'])
+    def flashcards(self, request, pk=None):
+        """Retorna todos os flashcards de uma bibliografia"""
+        bibliografia = self.get_object()
+        flashcards = FlashCardsModel.objects.filter(bibliografia=bibliografia).order_by('id')
+        serializer = FlashCardsSerializer(flashcards, many=True)
+        return Response(serializer.data)
+
+
+class FlashCardsViewSet(viewsets.ModelViewSet):
+    """ViewSet para gerenciar flash cards"""
+    queryset = FlashCardsModel.objects.select_related('bibliografia').all()
+    serializer_class = FlashCardsSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ['bibliografia', 'assunto']
+    search_fields = ['pergunta', 'resposta', 'assunto', 'bibliografia__titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'assunto']
+    ordering = ['id']
+    
+    def get_serializer_class(self):
+        if self.action in ['create', 'update', 'partial_update']:
+            return FlashCardsCreateUpdateSerializer
+        return FlashCardsSerializer
 
 
 class PerguntaMultiplaViewSet(viewsets.ModelViewSet):

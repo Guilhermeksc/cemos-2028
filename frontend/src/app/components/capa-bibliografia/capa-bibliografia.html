@@ -9,16 +9,46 @@
   <!-- Conteúdo -->
   <div class="content-wrapper" *ngIf="!isLoading && hasContent">
     
-    <!-- Imagem da Capa -->
-    <div class="image-container" *ngIf="imageUrl">
-      <img 
-        [src]="imageUrl" 
-        [alt]="'Capa da Bibliografia'"
-        class="capa-image"
-        (error)="onImageError($event)">
+    <!-- MODO MÚLTIPLAS CAPAS: Grid de capas clicáveis -->
+    <div class="capas-grid" *ngIf="displayMode === 'multiple'">
+      <div 
+        *ngFor="let capa of capas" 
+        class="capa-card"
+        role="button"
+        tabindex="0"
+        (click)="navigateToCapa(capa)"
+        (keydown.enter)="navigateToCapa(capa)"
+        (keydown.space)="navigateToCapa(capa)"
+        [attr.aria-label]="capa.title || 'Navegar para livro'"
+        [attr.data-route]="capa.routePath">
+        
+        <div class="capa-image-wrapper">
+          <img 
+            [src]="getImageUrl(capa.imagePath)" 
+            [alt]="capa.title || 'Capa da Bibliografia'"
+            class="capa-image"
+            [attr.draggable]="false"
+            (error)="onImageError($event, capa.imagePath)">
+          
+          <!-- Overlay com título e descrição -->
+          <div class="capa-overlay" *ngIf="capa.title || capa.description">
+            <h3 class="capa-title" *ngIf="capa.title">{{ capa.title }}</h3>
+            <p class="capa-description" *ngIf="capa.description">{{ capa.description }}</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Conteúdo Markdown -->
+    <!-- MODO SINGLE: Imagem única com markdown -->
+    <div class="image-container" *ngIf="displayMode === 'single' && imagePath">
+      <img 
+        [src]="getImageUrl(imagePath)" 
+        [alt]="'Capa da Bibliografia'"
+        class="capa-image"
+        (error)="onImageError($event, imagePath)">
+    </div>
+
+    <!-- Conteúdo Markdown (disponível em ambos os modos) -->
     <div class="markdown-content" *ngIf="htmlContent">
       <mat-card class="content-card">
         <mat-card-content>

@@ -25,7 +25,7 @@
 
   // Conteúdo Principal
   .content-wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -33,7 +33,86 @@
     gap: 2rem;
   }
 
-  // Container da Imagem
+  // Grid de Múltiplas Capas
+  .capas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+
+    .capa-card {
+      cursor: pointer;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+        .capa-overlay {
+          opacity: 1;
+        }
+
+        .capa-image {
+          transform: scale(1.05);
+        }
+      }
+
+      .capa-image-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 140%; // Ratio 1:1.4 (típico de capas de livros)
+        overflow: hidden;
+
+        .capa-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+          pointer-events: none;
+          user-select: none;
+          -webkit-user-drag: none;
+        }
+
+        .capa-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+          padding: 1.5rem 1rem 1rem;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+
+          .capa-title {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.3;
+          }
+
+          .capa-description {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+
+  // Container da Imagem (Modo Single)
   .image-container {
     display: flex;
     justify-content: center;
@@ -206,11 +285,40 @@
   }
 
   // Responsividade
+  @media (max-width: 1200px) {
+    .capas-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+
   @media (max-width: 768px) {
     padding: 1rem;
 
     .content-wrapper {
       gap: 1.5rem;
+    }
+
+    .capas-grid {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+
+      .capa-card {
+        .capa-image-wrapper {
+          .capa-overlay {
+            opacity: 1; // Sempre visível em mobile
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+
+            .capa-title {
+              font-size: 0.95rem;
+            }
+
+            .capa-description {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
     }
 
     .image-container {
@@ -241,6 +349,18 @@
           p, ul li, ol li {
             font-size: 1rem;
           }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .capas-grid {
+      grid-template-columns: 1fr;
+      
+      .capa-card {
+        .capa-image-wrapper {
+          padding-top: 120%; // Ratio ajustado para mobile
         }
       }
     }

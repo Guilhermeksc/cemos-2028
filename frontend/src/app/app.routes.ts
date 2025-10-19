@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-import { defaultHomeRedirect, moduleRoutes } from './routes/module-route.config';
+import { moduleRoutes } from './routes/module-route.config';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -12,7 +12,10 @@ export const routes: Routes = [
     path: 'home',
     loadComponent: () => import('./pages/home/home.component').then((m) => m.HomeComponent),
     children: [
-      { path: '', redirectTo: defaultHomeRedirect, pathMatch: 'full' },
+      { 
+        path: '', 
+        loadComponent: () => import('./pages/home/home-landing/home-landing.component').then((m) => m.HomeLandingComponent)
+      },
       ...moduleRoutes
     ]
   },

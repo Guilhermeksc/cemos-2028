@@ -1,34 +1,8 @@
-<div class="bibliografia-container">
-  <!-- Layout com duas colunas -->
-  <div class="bibliografia-layout" [class.sidebar-collapsed]="isSubMenuCollapsed">
-
-    <!-- Coluna esquerda: Sub-menu -->
-    <aside class="bibliografia-sidebar" [class.collapsed]="isSubMenuCollapsed">
-      <app-sub-menu
-        [title]="menuTitle"
-        [secondtitle]="menuSecondTitle"
-        [items]="subMenuItems"
-        [showBackButton]="true"
-        [backButtonLabel]="'Voltar à Bibliografia'"
-        [isCollapsed]="isSubMenuCollapsed"
-        (itemSelected)="onItemSelected($event)"
-        (backButtonClicked)="onBackToBibliografia()"
-        (collapsedChanged)="onSubMenuCollapsedChanged($event)">
-      </app-sub-menu>
-    </aside>
-
-    <!-- Coluna direita: Conteúdo -->
-    <main class="bibliografia-content">
-      <div class="content-area">
-        <!-- Component Bibliografia Completa -->
-        <app-bibliografia-completa 
-          [data]="bibliografiaData" 
-          [selectedHtmlContent]="selectedHtmlContent"
-          [isLoading]="isLoading"
-          [selectedMenuItem]="selectedMenuItem">
-        </app-bibliografia-completa>
-      </div>
-    </main>
-
-  </div>
+<div>
+  <app-livro-individual
+    [contentPath]="contentPath"
+    [fileNames]="fileNames"
+    [backRoute]="backRoute"
+    [backLabel]="backLabel">
+  </app-livro-individual>
 </div>
