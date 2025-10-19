@@ -63,6 +63,8 @@ export interface Conceitos {
   bibliografia: number;
   bibliografia_titulo?: string;
   titulo: string;
+  palavra_chave?: string;
+  assunto?: string;
   descricao?: string;
   caiu_em_prova: boolean;
   ano_prova?: number;

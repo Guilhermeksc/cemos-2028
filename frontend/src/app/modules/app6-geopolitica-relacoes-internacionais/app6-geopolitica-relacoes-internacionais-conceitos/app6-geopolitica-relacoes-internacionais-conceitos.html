@@ -1,12 +1,13 @@
-<div class="geopolitica-conceitos-container">
-  <div class="page-header">
-    <h1 class="page-title">{{ pageTitle }}</h1>
-  </div>
 
-  <!-- Componente reutilizável de conceitos -->
-  <app-conceitos
-    [bibliografiaIds]="geopoliticaBibliografiaIds"
-    [title]="''"
-    [emptyMessage]="emptyMessage">
-  </app-conceitos>
-</div>
+<header class="page-header">
+  <div class="breadcrumb">
+    <a routerLink="/app6">🌍 Geopolítica & Relações Internacionais</a>
+  </div>
+</header>
+
+<!-- Componente reutilizável de conceitos -->
+<app-conceitos
+  [bibliografiaIds]="geopoliticaBibliografiaIds"
+  [title]="''"
+  [emptyMessage]="emptyMessage">
+</app-conceitos>
