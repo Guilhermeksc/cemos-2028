@@ -1,5 +1,4 @@
-
-## CAPÍTULO 15 CAI O PANO  (Páginas 166-178)
+# CAPÍTULO 15 CAI O PANO  (Páginas 166-178)
 
 A mais devastadora guerra da história mundial havia ocorrido. O número de militares e civis mortos, mesmo em contagem parcial, era maior do que o da Primeira Guerra. A destruição de casas, escolas, igrejas, sinagogas, estradas, pontes, ferrovias, portos fábricas, escritórios, aviões, navios, bem como outros equipamento uso militar em tantos países rivalizava, em seu total, com a devastação causada por todos os desastres naturais ao longo do século anterior. A capacidade global de produzir alimentos a curto prazo fora reduzida, uma vez que muitas terras próprias para cultivo estavam danificadas, animais de criação haviam sido mortos e moinhos de farinha, cervejarias e panificadoras estavam em destroços. A comida continuou escassa por muito tempo após o fim da guerra.
 

@@ -24,7 +24,11 @@ export class NovasGeopoliticas implements OnInit {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/geopolitica-ri/novas-geopoliticas';
   fileNames: string[] = [
-    'cap1.md'
+    'cap1.md',
+    'cap2.md',
+    'cap3.md',
+    'cap4.md',
+    'cap5.md'
   ];
   backRoute: string = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
   backLabel: string = 'Bibliografia';

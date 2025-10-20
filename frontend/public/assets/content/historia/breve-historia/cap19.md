@@ -1,5 +1,4 @@
-
-## CAPÍTULO 19 A ILHA EXPLOSIVA E O NAVIO FANTASMA (Páginas 212-221)
+# CAPÍTULO 19 A ILHA EXPLOSIVA E O NAVIO FANTASMA (Páginas 212-221)
 
 Nenhuma outra grande nação era tão segura quanto os Estados Unidos. O país desfrutava da proteção proporcionada pelos dois vastos oceanos, o Atlântico e o Pacífico. Além disso, tinha somente três vizinhos de peso, que perdiam em qualquer comparação, em termos populacionais ou econômicos: o Canadá, com o qual sempre manteve boas relações; o México, com o qual às vezes tinha algumas disputas; e a fértil ilha produtora de açúcar, Cuba, tão pequena que pouco representava.
 

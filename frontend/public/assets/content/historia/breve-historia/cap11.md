@@ -1,4 +1,4 @@
-## CAPÍTULO 11 A ASCENSÃO DE HITLER (Páginas 125-133)
+# CAPÍTULO 11 A ASCENSÃO DE HITLER (Páginas 125-133)
 
 A Alemanha, mais do que talvez qualquer outra nação da Europa, sofreu com a depressão mundial. O país estava completamente aberto a novas soluções políticas. Poderiam o comunismo, o socialismo ou o capitalismo oferecer uma resposta ou havia uma solução caseira?
 

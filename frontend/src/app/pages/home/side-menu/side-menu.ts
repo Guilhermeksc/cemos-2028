@@ -66,6 +66,52 @@ export class SideMenu {
 
   readonly menuItems = signal<MenuItem[]>([
     { 
+      title: 'História', 
+      icon: 'history_edu', 
+      children: [
+        {
+          title: 'Bibliografia',
+          children: [
+            'Breve História',
+            'Guerra no Mar',
+            'História das Guerras',
+            'Síntese Histórica'
+          ]
+        },
+        'Mídia',
+        'Perguntas',
+        'Resumo',    
+      ],
+      expanded: false
+    },  
+    { 
+      title: 'Geopolítica e Relações Internacionais', 
+      icon: 'public', 
+      children: [
+        {
+          title: 'Bibliografia',
+          children: [
+            'A Vingança da Geografia',
+            'Geopolítica e Modernidade',
+            'Novas Geopolíticas',
+            'Princípios de Relações Internacionais'
+          ]
+        },
+        'Vídeos / Podcasts',
+        'Flash Cards',
+        'Perguntas',
+        'Conceitos',
+        {
+          title: 'Resumo',
+          children: [
+            'Geopolítica',
+            'Relações Internacionais'
+          ]
+        }, 
+      ],
+      expanded: false
+    },      
+    { 
       title: 'Intendência', 
       icon: 'inventory_2', 
       children: [
@@ -99,25 +145,6 @@ export class SideMenu {
       expanded: false
     },
     { 
-      title: 'História', 
-      icon: 'history_edu', 
-      children: [
-        {
-          title: 'Bibliografia',
-          children: [
-            'Breve História',
-            'Guerra no Mar',
-            'História das Guerras',
-            'Síntese Histórica'
-          ]
-        },
-        'Mídia',
-        'Perguntas',
-        'Resumo',    
-      ],
-      expanded: false
-    },
-    { 
       title: 'Inglês', 
       icon: 'translate', 
       children: [
@@ -125,33 +152,6 @@ export class SideMenu {
         'Mídia',
         'Perguntas',
         'Resumo',    
-      ],
-      expanded: false
-    },
-    { 
-      title: 'Geopolítica e Relações Internacionais', 
-      icon: 'public', 
-      children: [
-        {
-          title: 'Bibliografia',
-          children: [
-            'A Vingança da Geografia',
-            'Geopolítica e Modernidade',
-            'Novas Geopolíticas',
-            'Princípios de Relações Internacionais'
-          ]
-        },
-        'Vídeos / Podcasts',
-        'Flash Cards',
-        'Perguntas',
-        'Conceitos',
-        {
-          title: 'Resumo',
-          children: [
-            'Geopolítica',
-            'Relações Internacionais'
-          ]
-        }, 
       ],
       expanded: false
     },

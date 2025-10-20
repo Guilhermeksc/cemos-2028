@@ -1,4 +1,4 @@
-## CAPÍTULO 6 UTOPIA E PESADELO (Páginas 78-91)
+# CAPÍTULO 6 UTOPIA E PESADELO (Páginas 78-91)
 
 Por todo o mundo alfabetizado, as pessoas abriam os jornais e procuravam, ávida ou apreensivamente, saber o que estava acontecendo na Rússia. O comunismo, uma das criações mais extraordinárias da história humana, era visto por milhões como uma prévia do futuro. Ainda que continuasse um experimento isolado, a Rússia provavelmente influenciaria o resto do globo. Não se tratava apenas do maior país em área, mas também do terceiro mais populoso, abrigando ainda mais pessoas do que a adormecida África.
 

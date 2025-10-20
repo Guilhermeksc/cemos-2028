@@ -1,4 +1,4 @@
-## CAPÍTULO 18 AS NAVES DA VINGANÇA (Páginas 202-211)
+# CAPÍTULO 18 AS NAVES DA VINGANÇA (Páginas 202-211)
 
 Em 1903 - ano do primeiro voo de avião-, um professor russo chamado Konstantin Tsiolkovsky terminou de escrever um livro bastante perspicaz, cujo título era A Exploração do Espaço Cósmico. De acordo com seus cálculos, um foguete que usasse combustível líquido poderia subir alto o bastante para entrar em órbita ao redor da Terra. Durante os vinte anos que separaram a duas guerras mundiais, cientistas amadores e profissionais de vário países lançaram foguetes, muitos dos quais podiam ser facilmente carregados até os locais de lançamento. Alguns explodiram ante de decolar, outros não conseguiram subir, mas houve os que atingiram alturas consideráveis.
 

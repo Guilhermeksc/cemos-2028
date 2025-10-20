@@ -1,5 +1,4 @@
-
-## CAPÍTULO 23 RAIOS E TROVÕES EM MOSCOU E VARSÓVIA (Páginas 258-266)
+# CAPÍTULO 23 RAIOS E TROVÕES EM MOSCOU E VARSÓVIA (Páginas 258-266)
 
 A conquista da Lua foi memorável para os Estados Unidos e para o presidente Richard Nixon. Poucos países haviam experimentado um triunfo tão importante. Mas os norte-americanos estavam espalhados além dos limites de suas capacidades, operando bases, quartéis e campos de aviação em vários países. Os custos da Guerra do Vietnã eram altos demais e a perda de vidas só de combatentes americanos, chegava a 57 mil. As dispendiosas atividades da nação, fossem no espaço sideral, no Vietnã ou no limites de suas fronteiras, não poderiam ser sustentadas por muito tempo. Um acordo de paz era a única solução.
 

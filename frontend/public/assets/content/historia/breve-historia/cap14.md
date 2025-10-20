@@ -1,4 +1,4 @@
-## CAPÍTULO 14 UMA ARMA MUITO SECRETA (Páginas 159-165)
+# CAPÍTULO 14 UMA ARMA MUITO SECRETA (Páginas 159-165)
 
 Em meados de 1945, a guerra havia acabado na Europa, mas não no leste da Ásia e em áreas do litoral do Pacífico. Ainda que os britânicos tivessem retomado uma parte significativa da Birmânia, que as forças norte-americanas houvessem recuperado a maior parte das Filipinas e algumas importantes ilhas meridionais japonesas e que as aeronaves dos Estados Unidos pudessem então se valer desses avanços para lançar pesados ataques contra Tóquio, os aliados não estavam preparados para invadir o Japão.
 

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { App6GeopoliticaRelacoesInternacionaisMedia } from './app6-geopolitica-relacoes-internacionais-media/app6-geopolitica-relacoes-internacionais-media';
+import { App6GeopoliticaRelacoesInternacionaisMedia } from './app6-geopolitica-relacoes-internacionais-media';
 
 describe('App6GeopoliticaRelacoesInternacionaisMedia', () => {
   let component: App6GeopoliticaRelacoesInternacionaisMedia;

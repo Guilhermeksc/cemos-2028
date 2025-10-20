@@ -1,4 +1,4 @@
-## CAPÍTULO 13 DE PEARL HARBOR À QUEDA DE BERLIM (Páginas 145-158)
+# CAPÍTULO 13 DE PEARL HARBOR À QUEDA DE BERLIM (Páginas 145-158)
 
 Pearl Harbor, na remota ilha do Havaí, era uma das maiores bases navais do mundo. Na manhã de 8 de dezembro de 1941 - horário de Tóquio - esse porto abrigava cerca de 70 embarcações de guerra de todos os tamanhos. Seu comandante acreditava que um ataque japonês pelo mar, embora possível, não fosse provável. Tecnicamente, os Estados Unidos continuavam neutros, o que aumentava a sensação de segurança. A base naval japonesa mais próxima estava do outro lado do oceano, fato que tranquilizava os norte-americanos. 
 

@@ -1,8 +1,8 @@
 .page-header {
   max-width: 1400px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0.1rem;
 
   .breadcrumb {
     a {
@@ -27,31 +27,21 @@
   }
 }
 
-.flashcards-section {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
 // Responsivo
 @media (max-width: 768px) {
   .page-header {
-    padding: 1.5rem 1rem;
+    padding: 0.1rem;
 
     .breadcrumb a {
       font-size: 1rem;
-      padding: 0.4rem 0.8rem;
-    }
-  }
 
-  .flashcards-section {
-    padding: 0 0.75rem;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .page-header {
-    padding: 1rem 0.75rem;
+    padding: 0.1rem;
 
     .breadcrumb a {
       font-size: 0.95rem;

@@ -1,5 +1,4 @@
-
-## CAPÍTULO 26 A LUA DO ISLÃ BRILHA OUTRA VEZ (Páginas 293-302)
+# CAPÍTULO 26 A LUA DO ISLÃ BRILHA OUTRA VEZ (Páginas 293-302)
 
 A Lua, após décadas de escuridão, brilhava mais uma vez sobre países muçulmanos. Na década de 1960, nações que pouco tempo antes haviam se tornado independentes desfraldavam cada vez mais a bandeira na qual se via a Lua crescente e a sombra verde do Islã. Os primeiros triunfos aconteceram no Paquistão, lar da maioria dos muçulmanos indianos, e na república da Indonésia, onde se concentrava a maior população muçulmana do mundo. Nasser, no Egito, e Sukarno, na Indonésia, representavam a nova convicção que se fazia visível em alguns países islâmicos. Apenas vinte e cinco anos antes, quase todas os países islâmicos haviam estado sob o domínio da Europa cristã.
 

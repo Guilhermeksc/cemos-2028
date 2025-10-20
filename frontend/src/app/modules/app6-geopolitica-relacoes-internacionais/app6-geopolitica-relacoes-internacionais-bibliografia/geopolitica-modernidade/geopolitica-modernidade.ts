@@ -20,23 +20,23 @@
     encapsulation: ViewEncapsulation.None
   })
   
-  export class GeopoliticaModernidade implements OnInit {
-    // Configuração do LivroIndividual
-    contentPath: string = 'assets/content/geopolitica-ri/geopolitica-modernidade';
-    fileNames: string[] = [
-      'capI.md',
-      'capII.md',
-      'capIII.md',
-      'capIV.md',
-      'capV.md',
-      'capVI.md',
-      'capVII.md',
-      'anexo1.md'
-    ];
-    backRoute: string = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
-    backLabel: string = 'Bibliografia';
-  
-    ngOnInit() {
-      // Inicialização do componente
-    }
+export class GeopoliticaModernidade implements OnInit {
+  // Configuração do LivroIndividual
+  contentPath: string = 'assets/content/geopolitica-ri/geopolitica-modernidade';
+  fileNames: string[] = [
+    'capI.md',
+    'capII.md',
+    'capIII.md',
+    'capIV.md',
+    'capV.md',
+    'capVI.md',
+    'capVII.md',
+    'anexo1.md'
+  ];
+  backRoute: string = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
+  backLabel: string = 'Bibliografia';
+
+  ngOnInit() {
+    // Inicialização do componente
   }
+}

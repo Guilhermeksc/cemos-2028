@@ -1,5 +1,4 @@
-
-## CAPÍTULO 16 A FLECHA FLAMEJANTE E OS VENTOS DA MUDANÇA (Páginas 179-192)
+# CAPÍTULO 16 A FLECHA FLAMEJANTE E OS VENTOS DA MUDANÇA (Páginas 179-192)
 
 A população dos grandes países europeus se orgulhava de suas colônias. Era algo que lhes conferia prestígio, principalmente no início do século 20. Apareciam, pela primeira vez, os mapas coloridos nas salas de aula, e as crianças britânicas se alegravam ao ver boa parte do mundo pintada com o vermelho de seu país. Alemanha e Itália, que se juntaram tardiamente à corrida da colonização, sentiam-se ludibriadas de alguma forma por não participar da divisão de terras – consideravam as colônias mais um problema do que um prêmio. Richard Cobden, um defensor britânico do livre-comércio, uma vez perguntou o que aconteceria "se a França tomasse o controle completo da África". Ele mesmo respondeu que isso não prejudicaria ninguém, "a não ser a própria França". Certamente algumas colônias representavam vantagem econômica, mas muitas eram uma perda total.
 

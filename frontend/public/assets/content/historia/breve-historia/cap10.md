@@ -1,4 +1,4 @@
-## CAPÍTULO 10 UMA DEPRESSÃO MUNDIAL (Páginas 118-124)
+# CAPÍTULO 10 UMA DEPRESSÃO MUNDIAL (Páginas 118-124)
 
 A Primeira Guerra Mundial enfraqueceu de tal maneira a Europa que a participação do continente no total da população global e na economia caiu consideravelmente. O centro das finanças mudou-se para os Estados Unidos - o dínamo da atividade econômica. Pela primeira vez, os principais países europeus dependiam parcialmente de Nova York, que no papel de centro financeiro era naturalmente menos experiente do que Londres no enfrentamento de crises. Infelizmente, a crise financeira que estourou em Nova York no ano de 1929 foi mais séria do que qualquer outra enfrentada por Londres.
 

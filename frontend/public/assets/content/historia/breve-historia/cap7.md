@@ -1,4 +1,4 @@
-## CAPÍTULO 7 O VELHO SULTÃO E O JOVEM TURCO (Páginas 91 a 98)
+# CAPÍTULO 7 O VELHO SULTÃO E O JOVEM TURCO (Páginas 91 a 98)
 
 A Rússia e a Turquia eram inimigas implacáveis havia muito tempo, mas depois da Primeira Guerra Mundial seguiram novos caminhos com determinação semelhante. Usando a derrota e as adversidades para se reformular, esses países tentaram apagar grande parte de seu passado. Embora a jovem União Soviética fosse uma ideia interessante, a Turquia também fez uma das experiências mais corajosas da história do mundo islâmico. Seu novo soldado líder tentou tirar o véu islâmico da vida turca.
 

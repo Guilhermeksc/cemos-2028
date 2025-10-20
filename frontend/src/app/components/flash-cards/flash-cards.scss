@@ -1,37 +1,36 @@
-.flashcards-container {
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
 
-  max-width: 1400px;
-  margin: 0 auto;
 
-  // ==================== HEADER ====================
-  .flashcards-header {
-    text-align: center;
-    margin-bottom: 1rem;
+    .header {
+        text-align: center;
+        margin-bottom: 1rem;
 
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #2c3e50;
-      margin-bottom: 1rem;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-
-      .stat-item {
-        color: #7f8c8d;
-        font-size: 0.95rem;
-
-        strong {
-          color: #3498db;
-          font-size: 1.1rem;
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
         }
-      }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            .stat-item {
+                color: #7f8c8d;
+                font-size: 0.95rem;
+
+                strong {
+                    color: #3498db;
+                    font-size: 1.1rem;
+                }
+            }
+        }
     }
-  }
 
   // ==================== FILTROS ====================
   .filters-section {

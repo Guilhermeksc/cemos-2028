@@ -1,4 +1,4 @@
-## CAPÍTULO 24 A QUEDA DOS MUROS (Páginas 167-180)
+# CAPÍTULO 24 A QUEDA DOS MUROS (Páginas 167-180)
 
 Gorbachev enfrentava severas dificuldades. Tanto na corrida espacial quanto na disputa armamentista, a União Soviética se exauria. A população, no campo e na cidade, pagava o preço. Além disso, os valores do Ocidente capitalista, seus bens materiais e a ênfase na liberdade (e mesmo na licenciosidade) infiltravam-se no estilo de vida soviético. Quando o Acordo de Helsinque foi assinado em 1975 pela União Soviética e seus aliados comunistas na Europa - como retribuição ao fato de esses países terem concordado com a delimitação de fronteira naturais em 1945 -, o gesto pareceu um pequeno passo em direção aos direitos humanos. No entanto, tal passo enfraqueceu uma crença dos comunistas: a de que tinham o direito de fazer o que bem entendessem dentro de suas fronteiras.
 

@@ -1,4 +1,4 @@
-## CAPÍTULO 5 REVOLTA EM PETROGRADO, PAZ EM PARIS (Páginas 65-78)
+# CAPÍTULO 5 REVOLTA EM PETROGRADO, PAZ EM PARIS (Páginas 65-78)
 
 No final de 1916, muitas das forças em guerra passavam por um momento de descontentamento tão generalizado que havia a possibilidade de motins. O número de baixas aumentava, as trincheiras no inverno tornavam-se abomináveis e uma vitória absoluta já não parecia ao alcance de nenhuma das partes. O moral baixo das forças armadas contaminava a população civil, e as cartas escritas pelos soldados - mesmo quando censuradas - aumentavam ainda mais as dúvidas em seus lares. O primeiro exército a desintegrar-se poderia determinar o resultado da guerra.
 

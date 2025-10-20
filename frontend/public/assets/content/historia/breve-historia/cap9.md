@@ -1,4 +1,4 @@
-## CAPÍTULO 9 UM PERCUSSIONISTA ITALIANO (Páginas 111-117)
+# CAPÍTULO 9 UM PERCUSSIONISTA ITALIANO (Páginas 111-117)
 
 A Itália mesclava o sofisticado ao primitivo. Em Roma, havia corais encantadores, hábeis cirurgiões, teólogos dedicados e a nobre arquitetura de muitas épocas; em Milão estavam competentes engenheiros e artesãos e a aclamada casa de ópera. Mas no campo a maior parte do povo era pobre. As vésperas da Primeira Guerra Mundial, a família italiana típica era rural e seu padrão de vida assemelhava-se mais ao do norte da África do que ao das famílias alemãs. Em 1910, nas cidades, a lei ainda permitia que crianças de 9 anos trabalhassem em fábricas.
 

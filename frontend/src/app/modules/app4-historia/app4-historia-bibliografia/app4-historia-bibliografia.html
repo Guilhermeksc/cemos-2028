@@ -1,14 +1,10 @@
 <!-- Router Outlet para renderizar componentes filhos -->
 <router-outlet></router-outlet>
 
-<!-- Generic Bibliografia - Exibida SOMENTE quando não há filho ativo -->
-<app-generic-bibliografia
-  *ngIf="showGenericBibliografia"
-  [config]="bibliografiaConfig"
-  [assunto]="assunto"
-  [proposito]="proposito"
-  [materias]="materias"
-  [bibliografias]="bibliografias"
-  pdfUrl="/assets/docs/geopolitica.pdf"
-  wordUrl="/assets/docs/geopolitica.docx">
-</app-generic-bibliografia>
+<!-- Capa da Bibliografia - Exibida SOMENTE quando não há filho ativo -->
+<app-capa-bibliografia
+  *ngIf="showCapa"
+  [capas]="capas"
+  [markdownPath]="markdownPath"
+  [basePath]="basePath">
+</app-capa-bibliografia>

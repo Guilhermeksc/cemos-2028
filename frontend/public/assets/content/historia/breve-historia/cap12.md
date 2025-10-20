@@ -1,4 +1,4 @@
-## CAPÍTULO 12 UMA SEGUNDA GUERRA MUNDIAL (Páginas 134-144)
+# CAPÍTULO 12 UMA SEGUNDA GUERRA MUNDIAL (Páginas 134-144)
 
 Os generais alemães previam que não conseguiriam travar uma guerra longa. Embora rico em carvão, o país não contava com poços de petróleo. Sem colônias, não podia produzir durante a guerra, borracha, estanho e outras mercadorias que vinham principalmente das regiões dos trópicos. Matéria-prima vital tinha sido acumulada inteligentemente, mas o estoque de alguns metais - cobre , ferro, magnésio e chumbo - duraria apenas nove meses. O país estava pouco preparado para uma guerra prolongada, uma vez que ficaria rapidamente sem munição e petróleo, sendo então forçado a negociar a paz em termos desfavoráveis.
 
