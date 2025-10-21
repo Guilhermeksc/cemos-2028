@@ -10,7 +10,7 @@
       aria-label="Toggle menu">
       <mat-icon>{{ isTopMenuExpanded() ? 'close' : 'menu' }}</mat-icon>
     </button>
-    <div class="top-header-title">
+    <div class="top-header-title clickable" (click)="navigateHome()" tabindex="0" role="link" aria-label="Ir para Home">
       <span class="title">CEMOS</span>
       <span class="subtitle">2028</span>
     </div>

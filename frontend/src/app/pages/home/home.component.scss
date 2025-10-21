@@ -56,6 +56,14 @@
       opacity: 0.9;
     }
   }
+
+  .top-header-title.clickable {
+    cursor: pointer;
+    transition: filter 0.2s;
+    &:hover, &:focus {
+      filter: brightness(1.15);
+    }
+  }
 }
 
 .menu-overlay {

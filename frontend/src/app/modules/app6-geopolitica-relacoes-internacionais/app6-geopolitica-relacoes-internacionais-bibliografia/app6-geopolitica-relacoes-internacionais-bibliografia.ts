@@ -12,6 +12,11 @@ import { filter } from 'rxjs/operators';
   styleUrl: './app6-geopolitica-relacoes-internacionais-bibliografia.scss',
 })
 export class App6GeopoliticaRelacoesInternacionaisBibliografia implements OnInit {
+  // Caminhos para os botões de navegação
+  public conceitosPath = '/home/app6-geopolitica-relacoes-internacionais/conceitos';
+  public flashcardsPath = '/home/app6-geopolitica-relacoes-internacionais/flashcards';
+  public mediaPath = '/home/app6-geopolitica-relacoes-internacionais/media';
+  public perguntasPath = '/home/app6-geopolitica-relacoes-internacionais/perguntas';
   // Configuração de múltiplas capas
   capas: CapaConfig[] = [
     {

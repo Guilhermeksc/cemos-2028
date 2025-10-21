@@ -21,7 +21,7 @@
         (keydown.space)="navigateToCapa(capa)"
         [attr.aria-label]="capa.title || 'Navegar para livro'"
         [attr.data-route]="capa.routePath">
-        
+      
         <div class="capa-image-wrapper">
           <img 
             [src]="getImageUrl(capa.imagePath)" 
@@ -29,7 +29,7 @@
             class="capa-image"
             [attr.draggable]="false"
             (error)="onImageError($event, capa.imagePath)">
-          
+        
           <!-- Overlay com título e descrição -->
           <div class="capa-overlay" *ngIf="capa.title || capa.description">
             <h3 class="capa-title" *ngIf="capa.title">{{ capa.title }}</h3>
@@ -37,6 +37,29 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- Texto discreto de orientação -->
+    <div class="bibliografia-hint" *ngIf="displayMode === 'multiple' && capas?.length">
+      <small>Clique na bibliografia para acessar.</small>
+    </div>
+
+    <!-- Botões de navegação abaixo das imagens -->
+    <div class="navigation-buttons" *ngIf="showNavigationButtons">
+      <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
+        <mat-icon>arrow_back</mat-icon> Voltar ao Home
+      </button>
+      <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
+        <mat-icon>category</mat-icon> Conceitos
+      </button>
+      <button mat-stroked-button (click)="navigateTo(flashcardsPath)" *ngIf="flashcardsPath">
+        <mat-icon>style</mat-icon> Flashcards
+      </button>
+      <button mat-stroked-button (click)="navigateTo(mediaPath)" *ngIf="mediaPath">
+        <mat-icon>play_circle</mat-icon> Media
+      </button>
+      <button mat-stroked-button (click)="navigateTo(perguntasPath)" *ngIf="perguntasPath">
+        <mat-icon>quiz</mat-icon> Perguntas
+      </button>
     </div>
 
     <!-- MODO SINGLE: Imagem única com markdown -->

@@ -94,4 +94,8 @@ export class HomeComponent {
     this.authService.logout();
     this.router.navigate(['/login']);
   }
+
+  navigateHome(): void {
+    this.router.navigate(['/home']);
+  }
 }

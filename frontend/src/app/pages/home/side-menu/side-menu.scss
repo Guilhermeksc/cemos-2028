@@ -1,3 +1,144 @@
+// Garante clique e visibilidade do header-link-mobile
+// Header-link para mobile/tablet (apenas uma definição, reforçada)
+.header-link-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0 8px 0;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--pure-white) 0%, var(--off-white) 100%);
+  border-bottom: 1px solid var(--border-gray);
+  outline: none;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+  position: relative !important;
+
+  .header-container {
+    text-align: center;
+    color: var(--primary-black);
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .header-title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-black);
+    text-shadow: none;
+  }
+  .header-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    color: var(--medium-gray);
+  }
+
+  .header-home-hint {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    color: var(--medium-gray);
+    font-size: 14px;
+    opacity: 0.85;
+    mat-icon {
+      font-size: 18px;
+      color: var(--medium-gray);
+    }
+  }
+
+  &:hover, &:focus {
+    background: var(--hover-gray);
+    .header-title, .header-subtitle, .header-home-hint {
+      color: var(--primary-black);
+    }
+    .header-home-hint mat-icon {
+      color: var(--primary-black);
+    }
+  }
+}
+// Header-link para mobile/tablet
+.header-link-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0 8px 0;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--pure-white) 0%, var(--off-white) 100%);
+  border-bottom: 1px solid var(--border-gray);
+  outline: none;
+
+  .header-container {
+    text-align: center;
+    color: var(--primary-black);
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .header-title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-black);
+    text-shadow: none;
+  }
+  .header-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    color: var(--medium-gray);
+  }
+
+  .header-home-hint {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    color: var(--medium-gray);
+    font-size: 14px;
+    opacity: 0.85;
+    mat-icon {
+      font-size: 18px;
+      color: var(--medium-gray);
+    }
+  }
+
+  &:hover, &:focus {
+    background: var(--hover-gray);
+    .header-title, .header-subtitle, .header-home-hint {
+      color: var(--primary-black);
+    }
+    .header-home-hint mat-icon {
+      color: var(--primary-black);
+    }
+  }
+}
+// ===== LINK DO HEADER =====
+.header-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  cursor: pointer;
+}
+
+.header-link .header-container {
+  pointer-events: auto;
+}
+
+.header-link:focus {
+  outline: 2px solid var(--primary-black);
+}
+
 // ===== VARIÁVEIS DE CORES =====
 :root {
   --primary-black: #000000;
@@ -236,18 +377,18 @@
 .nav-subsection-header {
   display: flex;
   align-items: center;
-  padding: 6px 20px;
+  padding: 8px 16px 8px 32px;
   cursor: pointer;
-  background: var(--off-white);
+  background: rgba(0, 0, 0, 0.02);
   transition: all var(--transition-fast);
   
   &:hover {
-    background: var(--hover-gray);
-    padding-left: 24px;
+    background: rgba(0, 0, 0, 0.04);
+    padding-left: 36px;
   }
   
   &.expanded {
-    background: var(--pure-white);
+    background: rgba(0, 0, 0, 0.03);
     border-left: 3px solid var(--dark-gray);
     font-weight: 600;
   }
@@ -288,12 +429,13 @@
 }
 
 // ===== ITENS DE NAVEGAÇÃO =====
-.nav-subitem,
+
+// Itens de nível 2 (simples e objetos sem children)
 .nav-item-simple,
 .nav-item-object {
-  padding: 6px 24px;
+  padding: 8px 16px 8px 32px;
   cursor: pointer;
-  background: var(--pure-white);
+  background: rgba(0, 0, 0, 0.02);
   border-bottom: 1px solid var(--light-gray);
   transition: all var(--transition-fast);
   position: relative;
@@ -303,8 +445,70 @@
   }
   
   &:hover {
-    background: var(--hover-gray);
-    padding-left: 28px;
+    background: rgba(0, 0, 0, 0.04);
+    padding-left: 36px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--medium-gray);
+    }
+  }
+  
+  &.active {
+    background: linear-gradient(135deg, var(--primary-black) 0%, var(--soft-black) 100%);
+    color: var(--pure-white);
+    font-weight: 600;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--pure-white);
+    }
+    
+    span {
+      color: var(--pure-white);
+    }
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--primary-black);
+  }
+  
+  span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--dark-gray);
+    letter-spacing: 0.2px;
+    transition: all var(--transition-fast);
+  }
+}
+
+// Itens de nível 3 (subitens dentro de subseções)
+.nav-subitem {
+  padding: 8px 16px 8px 48px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid var(--light-gray);
+  transition: all var(--transition-fast);
+  position: relative;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+    padding-left: 52px;
     
     &::before {
       content: '';
@@ -406,10 +610,30 @@
       text-transform: none;
     }
   }
+  
+  .nav-subsection-header {
+    padding: 6px 12px 6px 24px;
+    
+    &:hover {
+      padding-left: 28px;
+    }
+  }
+  
   .nav-item-simple,
-  .nav-subitem,
   .nav-item-object {
-    padding: 6px 16px; // padding menor para mobile
+    padding: 6px 12px 6px 24px;
+    
+    &:hover {
+      padding-left: 28px;
+    }
+  }
+  
+  .nav-subitem {
+    padding: 6px 12px 6px 36px;
+    
+    &:hover {
+      padding-left: 40px;
+    }
   }
 }
 

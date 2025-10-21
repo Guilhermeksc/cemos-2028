@@ -1,3 +1,4 @@
+// ...existing code...
 import { NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Output, Input, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
@@ -63,6 +64,12 @@ export class SideMenu {
   currentActivePath = signal<string>('');
 
   constructor(private router: Router, private authService: AuthService) {}
+      /**
+       * Navega para a página Home
+       */
+      navigateHome(): void {
+        this.router.navigate(['/home']);
+      }
 
   readonly menuItems = signal<MenuItem[]>([
     { 

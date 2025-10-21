@@ -13,10 +13,13 @@
   </div>
 
   <!-- Header - Apenas para desktop (sidebar) -->
-  <div class="header-container" *ngIf="!isTopMenuMode">
-    <span class="header-title">CEMOS</span>
-    <span class="header-subtitle">2028</span>
+  <div class="header-link" *ngIf="!isTopMenuMode" (click)="navigateHome()" tabindex="0" role="link" aria-label="Ir para Home">
+    <div class="header-container">
+      <span class="header-title">CEMOS</span>
+      <span class="header-subtitle">2028</span>
+    </div>
   </div>
+
 </div>
 
 <mat-nav-list class="nav-list">

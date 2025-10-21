@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
 import { LivroIndividualService } from '../../services/livro-individual.service';
 import { CapaConfig } from '../../interfaces/capa-config.interface';
@@ -15,12 +16,32 @@ export type { CapaConfig } from '../../interfaces/capa-config.interface';
   imports: [
     CommonModule,
     MatProgressSpinnerModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   templateUrl: './capa-bibliografia.html',
   styleUrl: './capa-bibliografia.scss'
 })
 export class CapaBibliografia implements OnInit {
+  // Caminhos parametrizáveis para navegação
+  @Input() conceitosPath: string = '';
+  @Input() flashcardsPath: string = '';
+  @Input() mediaPath: string = '';
+  @Input() perguntasPath: string = '';
+
+  get showNavigationButtons(): boolean {
+    return true;
+  }
+
+  /**
+   * Navega para um caminho parametrizável
+   */
+  navigateTo(path: string): void {
+    if (path) {
+      const segments = path.startsWith('/') ? path.substring(1).split('/') : path.split('/');
+      this.router.navigate(segments);
+    }
+  }
   // Novas propriedades para múltiplas capas
   @Input() capas: CapaConfig[] = []; // Array de capas com imagem e rota
   
@@ -40,6 +61,13 @@ export class CapaBibliografia implements OnInit {
     private sanitizer: DomSanitizer,
     private router: Router
   ) {}
+
+  /**
+   * Navega para a página Home
+   */
+  navigateHome(): void {
+    this.router.navigate(['/home']);
+  }
 
   ngOnInit() {
     // Determina o modo de operação

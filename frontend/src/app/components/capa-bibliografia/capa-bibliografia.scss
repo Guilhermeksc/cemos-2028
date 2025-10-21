@@ -1,11 +1,93 @@
+// Texto discreto de orientação para bibliografia
+.bibliografia-hint {
+  text-align: center;
+  color: var(--medium-gray, #666);
+  font-size: 20px;
+  opacity: 0.85;
+}
+// Responsividade para botões de navegação
+@media (max-width: 600px) {
+  .navigation-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    button[mat-stroked-button] {
+      min-width: 0;
+      width: 100%;
+      font-size: 15px;
+      min-height: 38px;
+      padding: 8px 0;
+      border-radius: 5px;
+      mat-icon {
+        font-size: 18px;
+      }
+    }
+  }
+}
+// Estilo dos botões de navegação em tons de preto e branco
+.navigation-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 24px 0 8px 0;
+
+  button[mat-stroked-button] {
+    background: var(--pure-white, #fff);
+    color: var(--primary-black, #000);
+    border: 2px solid var(--primary-black, #000);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 120px;
+    min-height: 40px;
+
+    mat-icon {
+      color: var(--primary-black, #000);
+      font-size: 20px;
+      transition: color 0.2s;
+      margin: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    span, .mat-button-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &:hover, &:focus {
+      background: var(--primary-black, #000);
+      color: var(--pure-white, #fff);
+      border-color: var(--primary-black, #000);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      mat-icon {
+        color: var(--pure-white, #fff);
+      }
+    }
+    &:active {
+      background: #222;
+      color: #fff;
+      border-color: #222;
+      mat-icon {
+        color: #fff;
+      }
+    }
+  }
+}
 .capa-bibliografia-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e3e8ef 100%);
-  padding: 2rem;
 
   // Loading
   .loading-container {
@@ -301,7 +383,6 @@
   }
 
   @media (max-width: 768px) {
-    padding: 1rem;
 
     .content-wrapper {
       gap: 1.5rem;
