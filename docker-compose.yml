@@ -7,6 +7,7 @@ services:
     working_dir: /app
     command: >
       sh -c "
+        ls -la /app &&
         python manage.py makemigrations --noinput &&
         python manage.py migrate --noinput &&
         python manage.py collectstatic --noinput &&
