@@ -13,7 +13,7 @@ services:
         gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000
       "
     volumes:
-      - ./backend:/app
+      - ./backend:/app:rw
       - static_volume:/app/static
     environment:
       - POSTGRES_DB=appdb
