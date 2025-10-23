@@ -4,6 +4,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: cemos2028_backend
+    working_dir: /app
     command: >
       sh -c "
         python manage.py makemigrations --noinput &&
