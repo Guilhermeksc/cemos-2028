@@ -1,23 +1,31 @@
-# backend/Dockerfile
+# 🐳 Backend Django para CEMOS2028
 FROM python:3.12-slim
 
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-
+# Diretório de trabalho
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y build-essential libpq-dev curl netcat-openbsd && rm -rf /var/lib/apt/lists/*
+# Dependências do sistema
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential libpq-dev curl netcat-openbsd \
+ && rm -rf /var/lib/apt/lists/*
 
-# Copia dependências e instala
-COPY backend/requirements.txt /app/requirements.txt
-RUN pip install --no-cache-dir -r /app/requirements.txt
+# Copia dependências
+COPY requirements.txt /app/
 
-# Copia o backend inteiro (inclui manage.py e django_cemos2028/)
-COPY backend /app
+# Instala dependências Python
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Exibe estrutura para debug (útil em Coolify logs)
-RUN ls -la /app
+# Copia o restante do código
+COPY . /app/
 
+# Expõe a porta do Gunicorn
 EXPOSE 8000
 
-CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000"]
+# Entrypoint padrão
+CMD sh -c "
+  echo '🚀 Iniciando Django com Gunicorn...' &&
+  python manage.py makemigrations --noinput &&
+  python manage.py migrate --noinput &&
+  python manage.py collectstatic --noinput &&
+  gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000
+"

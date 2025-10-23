@@ -1,13 +1,13 @@
 services:
   backend:
     build:
-      context: .
-      dockerfile: backend/Dockerfile
+      context: ./backend
+      dockerfile: Dockerfile
     container_name: cemos2028_backend
+    restart: unless-stopped
     working_dir: /app
     command: >
       sh -c "
-        ls -la /app &&
         python manage.py makemigrations --noinput &&
         python manage.py migrate --noinput &&
         python manage.py collectstatic --noinput &&
@@ -17,13 +17,13 @@ services:
       - ./backend:/app
       - static_volume:/app/static
     environment:
-      POSTGRES_DB: appdb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_HOST: db
-      DJANGO_SUPERUSER_USERNAME: admin
-      DJANGO_SUPERUSER_PASSWORD: admin123
-      DJANGO_SUPERUSER_EMAIL: admin@example.com
+      - POSTGRES_DB=appdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_HOST=db
+      - DJANGO_SUPERUSER_USERNAME=admin
+      - DJANGO_SUPERUSER_PASSWORD=admin123
+      - DJANGO_SUPERUSER_EMAIL=admin@example.com
     depends_on:
       db:
         condition: service_healthy
