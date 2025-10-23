@@ -1,8 +1,8 @@
 services:
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
     container_name: cemos2028_backend
     working_dir: /app
     entrypoint: ["/bin/sh", "-c"]
