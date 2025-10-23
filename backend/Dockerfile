@@ -22,5 +22,4 @@ COPY . /app/
 EXPOSE 8000
 
 # Entrypoint padrão
-CMD ["sh", "-c", "echo '🚀 Iniciando Django com Gunicorn...' && python manage.py makemigrations --noinput && python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000"]
-
+CMD ["sh", "-c", "echo '🚀 Iniciando Django com Gunicorn...' && python backend/manage.py makemigrations --noinput && python backend/manage.py migrate --noinput && python backend/manage.py collectstatic --noinput && gunicorn backend.django_cemos2028.wsgi:application --chdir backend --bind 0.0.0.0:8000"]

@@ -3,7 +3,6 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: cemos2028_backend
     restart: unless-stopped
     working_dir: /app
     command: >
