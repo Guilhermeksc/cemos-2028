@@ -1,16 +1,17 @@
 services:
   backend:
-  build:
-    context: .
-    dockerfile: backend/Dockerfile
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
     container_name: cemos2028_backend
     working_dir: /app
-    entrypoint: ["/bin/sh", "-c"]
     command: >
-      "python manage.py makemigrations --noinput &&
-       python manage.py migrate --noinput &&
-       python manage.py collectstatic --noinput &&
-       gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000"
+      sh -c "
+        python manage.py makemigrations --noinput &&
+        python manage.py migrate --noinput &&
+        python manage.py collectstatic --noinput &&
+        gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000
+      "
     volumes:
       - ./backend:/app
       - static_volume:/app/static
