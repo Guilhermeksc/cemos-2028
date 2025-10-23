@@ -5,29 +5,29 @@ services:
       dockerfile: Dockerfile
     container_name: cemos2028_backend
     working_dir: /app
+    entrypoint: ["/bin/sh", "-c"]
     command: >
-      sh -c "
-        python manage.py makemigrations --noinput &&
-        python manage.py migrate --noinput &&
-        python manage.py collectstatic --noinput &&
-        gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000
-      "
+      "python manage.py makemigrations --noinput &&
+       python manage.py migrate --noinput &&
+       python manage.py collectstatic --noinput &&
+       gunicorn django_cemos2028.wsgi:application --bind 0.0.0.0:8000"
     volumes:
       - ./backend:/app
       - static_volume:/app/static
     environment:
-      - POSTGRES_DB=appdb
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_HOST=db
-      - DJANGO_SUPERUSER_USERNAME=admin
-      - DJANGO_SUPERUSER_PASSWORD=admin123
-      - DJANGO_SUPERUSER_EMAIL=admin@example.com
+      POSTGRES_DB: appdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST: db
+      DJANGO_SUPERUSER_USERNAME: admin
+      DJANGO_SUPERUSER_PASSWORD: admin123
+      DJANGO_SUPERUSER_EMAIL: admin@example.com
     depends_on:
       db:
         condition: service_healthy
     networks:
       - app_network
+
 
   db:
     image: postgres:18
