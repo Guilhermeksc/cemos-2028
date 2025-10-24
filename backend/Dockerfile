@@ -1,25 +1,17 @@
-# 🐳 Backend Django para CEMOS2028
 FROM python:3.12-slim
 
-# Diretório de trabalho
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
 WORKDIR /app
 
-# Dependências do sistema
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential libpq-dev curl netcat-openbsd \
- && rm -rf /var/lib/apt/lists/*
+# Instalar dependências do sistema (PostgreSQL, build essentials, curl, netcat)
+RUN apt-get update && apt-get install -y build-essential libpq-dev curl netcat-openbsd && rm -rf /var/lib/apt/lists/*
 
-# Copia dependências
-COPY requirements.txt /app/
-
-# Instala dependências Python
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia o restante do código
-COPY . /app/
-
-# Expõe a porta do Gunicorn
+COPY . .
 EXPOSE 8000
 
-# Entrypoint padrão
-CMD ["sh", "-c", "echo '🚀 Iniciando Django com Gunicorn...' && python backend/manage.py makemigrations --noinput && python backend/manage.py migrate --noinput && python backend/manage.py collectstatic --noinput && gunicorn backend.django_cemos2028.wsgi:application --chdir backend --bind 0.0.0.0:8000"]
+CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]
