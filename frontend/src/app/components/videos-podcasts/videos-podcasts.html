@@ -1,19 +1,44 @@
 <div class="videos-podcasts-container">
-  <!-- Header -->
-  <div class="header">
-    <h2>🎬 Vídeos & Podcasts</h2>
-    <div class="stats" *ngIf="!isLoading">
-      <span class="stat-item">
-        <strong>{{ getStats().totalVideos }}</strong> vídeos
-      </span>
-      <span class="stat-item">
-        <strong>{{ getStats().totalAudios }}</strong> podcasts
-      </span>
-      <span class="stat-item">
-        <strong>{{ bibliografiasMedia.length }}</strong> {{ bibliografiasMedia.length === 1 ? 'bibliografia' : 'bibliografias' }}
-      </span>
+  <!-- Header: breadcrumb + title (left) and navigation buttons (right) -->
+  <header class="header-generic-content" role="banner">
+    <div class="header-left">
+      <div class="breadcrumb">
+        <a aria-label="Módulo pai">{{ moduleEmoji ? (moduleEmoji + ' ') : '' }}{{ moduleLabel || 'Módulo' }}</a>
+      </div>
+
+      <!-- Page Title + stats (moved here to match conceitos layout) -->
+      <div class="page-title-and-stats">
+        <h2>🎬 Vídeos & Podcasts</h2>
+        <div class="stats" *ngIf="!isLoading">
+          <span class="stat-item">
+            <strong>{{ getStats().totalVideos }}</strong> vídeos
+          </span>
+          <span class="stat-item">
+            <strong>{{ getStats().totalAudios }}</strong> podcasts
+          </span>
+          <span class="stat-item">
+            <strong>{{ bibliografiasMedia.length }}</strong> {{ bibliografiasMedia.length === 1 ? 'bibliografia' : 'bibliografias' }}
+          </span>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <!-- Botões de navegação (similar ao componente capa-bibliografia) -->
+    <nav class="navigation-buttons" aria-label="Navegação" *ngIf="!isLoading">
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">
+        ⬅️ Voltar à Bibliografia
+      </button>
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('flash-cards'))" aria-label="Flashcards">
+        📇 Flashcards
+      </button>
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('perguntas'))" aria-label="Perguntas">
+        ❓ Perguntas
+      </button>
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('conceitos'))" aria-label="Conceitos">
+        🧭 Conceitos
+      </button>
+    </nav>
+  </header>
 
   <!-- Filtros -->
   <div class="filters-section" *ngIf="!isLoading">

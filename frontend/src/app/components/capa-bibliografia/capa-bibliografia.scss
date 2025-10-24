@@ -24,66 +24,6 @@
     }
   }
 }
-// Estilo dos botões de navegação em tons de preto e branco
-.navigation-buttons {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  margin: 24px 0 8px 0;
-
-  button[mat-stroked-button] {
-    background: var(--pure-white, #fff);
-    color: var(--primary-black, #000);
-    border: 2px solid var(--primary-black, #000);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border-radius: 6px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-width: 120px;
-    min-height: 40px;
-
-    mat-icon {
-      color: var(--primary-black, #000);
-      font-size: 20px;
-      transition: color 0.2s;
-      margin: 0;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    span, .mat-button-wrapper {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-
-    &:hover, &:focus {
-      background: var(--primary-black, #000);
-      color: var(--pure-white, #fff);
-      border-color: var(--primary-black, #000);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-      mat-icon {
-        color: var(--pure-white, #fff);
-      }
-    }
-    &:active {
-      background: #222;
-      color: #fff;
-      border-color: #222;
-      mat-icon {
-        color: #fff;
-      }
-    }
-  }
-}
 .capa-bibliografia-container {
   display: flex;
   flex-direction: column;

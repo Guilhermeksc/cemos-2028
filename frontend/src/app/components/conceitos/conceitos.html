@@ -1,8 +1,32 @@
 <div class="conceitos-container">
-  <!-- Page Title -->
-  <div *ngIf="title" class="page-title">
-    <h2>{{ title }}</h2>
-  </div>
+
+  <!-- Header: breadcrumb + title (left) and navigation buttons (right) -->
+  <header *ngIf="showHeader" class="header-generic-content" role="banner">
+    <div class="header-left">
+      <div class="breadcrumb">
+        <a aria-label="Módulo pai">{{ moduleEmoji ? (moduleEmoji + ' ') : '' }}{{ moduleLabel || 'Módulo' }}</a>
+      </div>
+    </div>
+
+    <!-- Botões de navegação (similar ao componente capa-bibliografia) -->
+    <nav class="navigation-buttons" aria-label="Navegação" *ngIf="!isLoading">
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">
+        ⬅️ Voltar à Bibliografia
+      </button>
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('flash-cards'))" aria-label="Flashcards">
+        📇 Flashcards
+      </button>
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('media'))" aria-label="Media">
+        ▶️ Media
+      </button>
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('perguntas'))" aria-label="Perguntas">
+        ❓ Perguntas
+      </button>
+      <button class="btn btn-stroked" (click)="navigateTo(getPath('conceitos'))" aria-label="Conceitos">
+        🧭 Conceitos
+      </button>
+    </nav>
+  </header>
 
   <!-- Loading state -->
   <div class="loading-state" *ngIf="loading">
@@ -75,7 +99,7 @@
     <!-- Conceitos table -->
     <app-conceitos-table 
       [conceitos]="filteredConceitos"
-      [title]="bibliografias.length <= 1 ? 'Conceitos' : 'Conceitos da Bibliografia'"
+      [title]="!showHeader ? (bibliografias.length <= 1 ? 'Conceitos' : 'Conceitos da Bibliografia') : ''"
       [showBibliografia]="bibliografias.length <= 1"
       [emptyMessage]="getEmptyMessage()">
     </app-conceitos-table>

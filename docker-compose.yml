@@ -54,6 +54,8 @@ services:
     image: nginx:latest
     container_name: cemos2028_nginx
     restart: unless-stopped
+    ports:
+      - "8088:80"
     depends_on:
       - backend
     volumes:

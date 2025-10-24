@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards';
+import { HeaderConcentComponent } from '../../../components/header-concent/header-concent';
 
 @Component({
   selector: 'app-app6-geopolitica-relacoes-internacionais-flashcards',
   standalone: true,
-  imports: [CommonModule, FlashCardsComponent],
+  imports: [CommonModule, FlashCardsComponent, HeaderConcentComponent],
   templateUrl: './app6-geopolitica-relacoes-internacionais-flashcards.html',
   styleUrl: './app6-geopolitica-relacoes-internacionais-flashcards.scss'
 })
 export class App6GeopoliticaRelacoesInternacionaisFlashcards {
   // IDs das bibliografias de Geopolítica e Relações Internacionais
   bibliografiaIds: number[] = [1, 2, 3, 4];
+
+  pageTitle = 'Flashcards de Geopolítica e Relações Internacionais';
 }

@@ -9,19 +9,24 @@ import {
 } from '../../interfaces/videos-podcasts.interface';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-videos-podcasts',
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './videos-podcasts.html',
-  styleUrl: './videos-podcasts.scss'
+  styleUrls: ['./videos-podcasts.scss']
 })
 export class VideosPodcasts implements OnInit, OnChanges, OnDestroy {
   @Input() bibliografiasMedia: BibliografiaMedia[] = [];
+  // Breadcrumb customization
+  @Input() moduleLabel: string = '';
+  @Input() moduleEmoji: string = '';
   
   private videosPodcastsService = inject(VideosPodcastsService);
   private destroy$ = new Subject<void>();
+  private router = inject(Router);
 
   // Estados do componente
   isLoading = false;
@@ -44,10 +49,57 @@ export class VideosPodcasts implements OnInit, OnChanges, OnDestroy {
   ngOnInit() {
     console.log('🎬 Videos-Podcasts Component inicializado');
     console.log('📚 Bibliografias Media recebidas no ngOnInit:', this.bibliografiasMedia);
+    // inferir module base for navigation
+    this.computeModuleBase();
     
     if (this.bibliografiasMedia.length > 0) {
       this.loadData();
     }
+  }
+
+  private moduleBasePath: string = '/home';
+
+  private computeModuleBase() {
+    try {
+      const url = this.router.url || '';
+      const segments = url.split('/').filter(Boolean);
+      const homeIndex = segments.indexOf('home');
+      if (homeIndex >= 0 && segments.length > homeIndex + 1) {
+        const moduleSeg = segments[homeIndex + 1];
+        this.moduleBasePath = `/home/${moduleSeg}`;
+      } else if (segments.length > 0) {
+        this.moduleBasePath = `/${segments[0]}`;
+      } else {
+        this.moduleBasePath = '/home';
+      }
+    } catch (err) {
+      console.warn('Não foi possível inferir moduleBasePath da URL:', err);
+      this.moduleBasePath = '/home';
+    }
+  }
+
+  getPath(segment: string): string {
+    if (!segment) return '';
+    switch (segment) {
+      case 'bibliografia':
+        return `${this.moduleBasePath}/bibliografia`;
+      case 'flash-cards':
+        return `${this.moduleBasePath}/flash-cards`;
+      case 'media':
+        return `${this.moduleBasePath}/media`;
+      case 'perguntas':
+        return `${this.moduleBasePath}/perguntas`;
+      case 'conceitos':
+        return `${this.moduleBasePath}/conceitos`;
+      default:
+        return `${this.moduleBasePath}/${segment}`;
+    }
+  }
+
+  navigateTo(path: string) {
+    if (!path) return;
+    const segments = path.startsWith('/') ? path.substring(1).split('/') : path.split('/');
+    this.router.navigate(segments).catch(err => console.error('Erro ao navegar:', err));
   }
 
   ngOnChanges(changes: SimpleChanges) {

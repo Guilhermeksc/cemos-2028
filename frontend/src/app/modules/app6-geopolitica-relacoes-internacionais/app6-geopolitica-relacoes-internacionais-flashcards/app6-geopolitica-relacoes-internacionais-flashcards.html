@@ -1,11 +1,15 @@
-
-  <header class="page-header">
-    <div class="breadcrumb">
-      <a routerLink="/app6">🌍 Geopolítica & Relações Internacionais</a>
-    </div>
-  </header>
-
   <!-- Componente de Flash Cards -->
+<app-header-concent
+  [moduleEmoji]="'🌍'"
+  [moduleLabel]="pageTitle"
+  [showBibliografia]="true"
+  [showFlashcards]="true"
+  [showMedia]="true"
+  [showPerguntas]="true"
+  [showConceitos]="true">
+</app-header-concent>
+
+
   <section class="flashcards-section">
     <app-flash-cards [bibliografiaIds]="bibliografiaIds"></app-flash-cards>
   </section>

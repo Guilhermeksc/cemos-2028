@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConceitosComponent } from '../../../components/conceitos/conceitos';
+import { HeaderConcentComponent } from '../../../components/header-concent/header-concent';
 
 @Component({
   selector: 'app-app6-geopolitica-relacoes-internacionais-conceitos',
   standalone: true,
-  imports: [CommonModule, ConceitosComponent],
+  imports: [CommonModule, HeaderConcentComponent, ConceitosComponent],
   templateUrl: './app6-geopolitica-relacoes-internacionais-conceitos.html',
   styleUrl: './app6-geopolitica-relacoes-internacionais-conceitos.scss'
 })
