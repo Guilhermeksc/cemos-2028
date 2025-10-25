@@ -426,19 +426,85 @@
     flex-direction: column;
   }
 
+  /* Menu discreto em dispositivos móveis: posição flutuante, bordas arredondadas
+     ícones menores e fundo translúcido para reduzir impacto visual. */
   .side-menu {
-    width: 100%;
-    max-height: 50vh;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: auto;
+    max-height: none;
     border-right: none;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: none;
+    background: 255, 255, 255;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    padding: 6px;
+    border-radius: 10px;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    z-index: 200;
 
     &.collapsed {
-      max-height: 56px;
-      width: 100%;
+      /* Estado mais discreto: botão circular pequeno */
+      width: 48px;
+      height: 48px;
+      padding: 6px;
+      overflow: visible;
+
+      .menu-content {
+        display: none;
+      }
+
+      .menu-toggle-button {
+        margin: 0;
+        width: 36px;
+        height: 36px;
+      }
+
+      .back-button {
+        display: none;
+      }
+    }
+
+    .menu-toggle-container {
+      padding: 4px;
+      gap: 6px;
+    }
+
+    /* Botões menores e sem sombra para parecerem sutis */
+    .menu-toggle-button,
+    .back-button {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: none;
+
+      mat-icon {
+        font-size: 20px;
+        color: rgba(33, 33, 33, 0.82);
+      }
+    }
+
+    /* Quando expandido, o conteúdo pode ocupar parte da tela mas sem sobressair tanto */
+    .menu-content {
+      max-height: 50vh;
+      overflow-y: auto;
+      margin-top: 6px;
+      background: transparent;
+      box-shadow: none;
+      border-radius: 8px;
     }
   }
 
   .markdown-content .content-wrapper {
-    padding: 20px 24px;
+    padding: 12px 16px;
+  }
+
+  /* Garante que o conteúdo principal não fique atrás do botão flutuante */
+  .content-area {
+    padding-top: 64px;
   }
 }

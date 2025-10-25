@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Perguntas } from '../../../components/perguntas/perguntas';
+import { HeaderConcentComponent } from '../../../components/header-concent/header-concent';
 
 @Component({
   selector: 'app-app6-geopolitica-relacoes-internacionais-perguntas',
   standalone: true,
-  imports: [CommonModule, Perguntas],
+  imports: [CommonModule, Perguntas, HeaderConcentComponent],
   templateUrl: './app6-geopolitica-relacoes-internacionais-perguntas.html',
   styleUrl: './app6-geopolitica-relacoes-internacionais-perguntas.scss'
 })
@@ -13,6 +14,7 @@ export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit {
   // Configuração específica para o módulo de Geopolítica
   bibliografiaIds: number[] = [1]; // Bibliografia ID 1 para Geopolítica
   
+  pageTitle = 'Perguntas de Geopolítica e Relações Internacionais';
   // Estado do simulado
   simuladoAtivo: boolean = false;
   ultimoResultado: any | null = null;

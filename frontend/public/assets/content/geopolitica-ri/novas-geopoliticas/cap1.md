@@ -1,6 +1,6 @@
 # AS DISPUTAS MUNDIAIS DE PODER SÃO ESSENCIALMENTE ECONÔMICAS?
 
-LUTTWAK E THUROW: A GEOECONOMIA E A IDEIA DE COMPETIÇÃO/COOPERAÇÃO
+## LUTTWAK E THUROW: A GEOECONOMIA E A IDEIA DE COMPETIÇÃO/COOPERAÇÃO
 
 Edward N. Luttwak, professor do Centro de Estudos Estratégicos e Internacionais de Washington, foi talvez o primeiro autor que, em plena crise do mundo socialista e início do final da Guerra Fria, proclamou que as guerras militares foram agora substituídas pelos conflitos econômicos.
 

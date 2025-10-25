@@ -1,13 +1,17 @@
+  <!-- Componente de Flash Cards -->
+<app-header-concent
+  [moduleEmoji]="'🌍'"
+  [moduleLabel]="pageTitle"
+  [showBibliografia]="true"
+  [showFlashcards]="true"
+  [showMedia]="true"
+  [showPerguntas]="false"
+  [showConceitos]="true">
+</app-header-concent>
+
 <!-- Módulo de Perguntas - Geopolítica e Relações Internacionais -->
 <div class="geopolitica-perguntas-container">
   
-  <!-- Header do Módulo -->
-  <div class="module-header">
-    <div class="module-title">
-      <h2>Simulado de Geopolítica e Relações Internacionais</h2>
-    </div>  
-  </div>
-
   <!-- Informações sobre o simulado -->
   <div class="simulado-info" *ngIf="!simuladoAtivo">
     <div class="info-card">

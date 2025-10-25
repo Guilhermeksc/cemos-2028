@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { VideosPodcasts } from '../../../components/videos-podcasts/videos-podcasts';
 import { BibliografiaMedia } from '../../../interfaces/videos-podcasts.interface';
 import { MediaConfigService } from '../../../services/media-config.service';
+import { HeaderConcentComponent } from '../../../components/header-concent/header-concent';
 
 @Component({
   selector: 'app-app6-geopolitica-relacoes-internacionais-media',
   standalone: true,
-  imports: [CommonModule, VideosPodcasts],
+  imports: [CommonModule, VideosPodcasts, HeaderConcentComponent],
   templateUrl: './app6-geopolitica-relacoes-internacionais-media.html',
   styleUrl: './app6-geopolitica-relacoes-internacionais-media.scss'
 })
@@ -17,6 +18,7 @@ export class App6GeopoliticaRelacoesInternacionaisMedia implements OnInit {
   bibliografiasMedia: BibliografiaMedia[] = [];
   isLoading = true;
   errorMessage = '';
+  pageTitle = 'Vídeos e Podcasts de Geopolítica e Relações Internacionais';
 
   ngOnInit() {
     console.log('🎬 Geopolítica e RI - Media Component inicializado');
