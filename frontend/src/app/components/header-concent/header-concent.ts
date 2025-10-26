@@ -1,6 +1,7 @@
-import { Component, Input, OnInit, inject } from '@angular/core';
+import { Component, Input, OnInit, inject, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header-concent',
@@ -21,8 +22,10 @@ export class HeaderConcentComponent implements OnInit {
   @Input() showConceitos: boolean = true;
 
   private router = inject(Router);
+  private host = inject(ElementRef);
 
   private moduleBasePath: string = '/home';
+  isMenuOpen: boolean = false;
 
   ngOnInit() {
     this.computeModuleBase();
@@ -46,6 +49,19 @@ export class HeaderConcentComponent implements OnInit {
     }
   }
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event) {
+    // fecha o menu se o clique for fora do componente
+    const target = event.target as Node;
+    if (this.isMenuOpen && target && !this.host.nativeElement.contains(target)) {
+      this.isMenuOpen = false;
+    }
+  }
+
   getPath(segment: string): string {
     if (!segment) return '';
     switch (segment) {
@@ -62,5 +78,7 @@ export class HeaderConcentComponent implements OnInit {
     if (!path) return;
     const segments = path.startsWith('/') ? path.substring(1).split('/') : path.split('/');
     this.router.navigate(segments).catch(err => console.error('Erro ao navegar:', err));
+    // fechar menu mobile ao navegar
+    this.isMenuOpen = false;
   }
 }

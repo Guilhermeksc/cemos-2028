@@ -40,9 +40,10 @@
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
-    .filter-row {
+      .filter-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      /* reduzir min-width para caber melhor em telas pequenas */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
       margin-bottom: 1.5rem;
 
@@ -58,6 +59,10 @@
         }
 
         .filter-select {
+          /* garantir que o select não ultrapasse o container */
+          width: 100%;
+          max-width: 100%;
+          box-sizing: border-box;
           padding: 0.75rem 1rem;
           border: 2px solid #e0e0e0;
           border-radius: 8px;
@@ -65,6 +70,9 @@
           background: white;
           cursor: pointer;
           transition: all 0.3s ease;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; /* evita quebrar o controle e manter o botão dentro do layout */
 
           &:hover:not(:disabled) {
             border-color: #3498db;
@@ -418,6 +426,9 @@
   @media (max-width: 768px) {
     padding: 1rem;
 
+    /* garantir espaço no fim para a barra fixa de ações mobile */
+    padding-bottom: 5.5rem;
+
     .flashcards-header {
       h2 {
         font-size: 1.5rem;
@@ -455,13 +466,82 @@
     }
 
     .flashcard-wrapper {
-      height: 350px;
+      height: 300px;
     }
 
     .card-content {
       .card-question,
       .card-answer {
-        font-size: 1rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    /* ajustes adicionais para tornar o card mais compacto no mobile */
+    .flashcard {
+      transform-origin: center center;
+    }
+
+    .flashcard-face {
+      padding: 1rem; /* reduzir padding interno */
+      border-radius: 12px;
+    }
+
+    .card-header {
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.6rem;
+    }
+
+    .card-badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+    }
+
+    .card-assunto {
+      font-size: 0.7rem;
+      max-width: 120px;
+    }
+
+    .card-footer {
+      padding-top: 0.8rem;
+
+      .card-bibliografia {
+        font-size: 0.75rem;
+      }
+
+      .flip-hint {
+        font-size: 0.7rem;
+      }
+    }
+
+    /* Barra de ações fixa apenas no mobile */
+    .mobile-action-bar {
+      display: flex;
+      gap: 0.5rem;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.6rem;
+      background: rgba(255,255,255,0.98);
+      box-shadow: 0 -6px 18px rgba(0,0,0,0.06);
+      z-index: 12000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobile-action-bar .btn {
+      flex: 1 1 45%;
+      padding: 0.7rem 0.9rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    /* esconder os botões originais no topo/ações em telas pequenas (usamos a barra fixa) */
+    .actions-row {
+      .btn.btn-primary,
+      .btn.btn-secondary {
+        display: none;
       }
     }
   }

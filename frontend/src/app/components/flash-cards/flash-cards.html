@@ -143,6 +143,25 @@
     </div>
   </div>
 
+  <!-- Mobile action bar (visível no final em telas pequenas) -->
+  <div class="mobile-action-bar" *ngIf="!isLoading && allFlashCards.length > 0" role="toolbar" aria-label="Ações rápidas">
+    <button 
+      class="btn btn-primary"
+      (click)="loadRandomFlashCards()"
+      [disabled]="allFlashCards.length === 0"
+      aria-label="Embaralhar Cards">
+      🎲 Embaralhar Cards
+    </button>
+    
+    <button 
+      class="btn btn-secondary"
+      (click)="flipAllCards()"
+      [disabled]="displayedFlashCards.length === 0"
+      aria-label="Virar Todos">
+      🔄 Virar Todos
+    </button>
+  </div>
+
   <!-- Empty State -->
   <div class="empty-state" *ngIf="!isLoading && displayedFlashCards.length === 0 && allFlashCards.length > 0">
     <div class="empty-icon">🔍</div>

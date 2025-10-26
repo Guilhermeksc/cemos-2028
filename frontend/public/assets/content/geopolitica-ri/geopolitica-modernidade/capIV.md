@@ -32,9 +32,9 @@ Pág 45
 
 A teoria do "desafio e resposta" de Toynbee fica bem explicitada nos seguintes conceitos:
 
-- Foram **vitoriosas** as sociedades que se mostraram capazes de **responder ao desafio do meio físico** (geografia) e de suas pró­prias contradições psicossociais e fracassadas aquelas que não tiveram capacidade de responder a estes desafios.
+1- Foram **vitoriosas** as sociedades que se mostraram capazes de **responder ao desafio do meio físico** (geografia) e de suas pró­prias contradições psicossociais e fracassadas aquelas que não tiveram capacidade de responder a estes desafios.
 
-- A **geografia** condiciona, dificulta, sugere, inspira, estimula, en­fim, **apresenta os seus desafios**, caberá ao **homem** responder a estes desafios. <u>Ou os responde e os supera ou não os respon­de e é derrotado.</u>
+2- A **geografia** condiciona, dificulta, sugere, inspira, estimula, en­fim, **apresenta os seus desafios**, caberá ao **homem** responder a estes desafios. <u>Ou os responde e os supera ou não os respon­de e é derrotado.</u>
 
 Esta teoria toynbeana elimina os traços das doutrinas etnocentristas e geocentristas, erigidas, respectivamente, no preconceito de raça superior e de posição e clima privilegiados como razão determinista de cultura superior. O homem ativo de qualquer raça, habitante de qualquer latitude ou longitude, se responder o desafio toynbeano, poderá triunfar no proces­so evolutivo da sociedade.
 
@@ -46,27 +46,29 @@ As doutrinas etnocentristas e as geocentristas, muito apreciadas pelos europeus,
 
 ## Campo inteligível de estudo histórico
 
+Pág 46
+
 O método de investigação histórica de Toynbee, cujas fontes podem ser encontradas em Vico e Michelet, apóia-se em três critérios principais:
 
-- definição de "um campo inteligível de estudo histórico" para cada sociedade;
+- definição de **"um campo inteligível de estudo histórico"** para cada sociedade;
 
-- criação de um esquema típico baseado na teoria do "desafio e da resposta", aplicado nas avaliações;
+- criação de um esquema típico baseado na teoria do **"desafio e da resposta"**, aplicado nas avaliações;
 
 - separação da teologia da política nas avaliações de contribui­ção histórica, considerando a participação das religiões univer­sais como crisálidas de intrafiliações entre civilizações.
 
-Na França contemporânea, um grupo de intelectuais reunidos em torno da revista Annales mantém viva a chama de la Nouvel/e Histoire, fundada em 1929 pelos então jovens historiadores Lucien Febvres e Marc Bloch.
+Na França contemporânea, um grupo de intelectuais reunidos em torno da revista **Annales** mantém viva a chama de *La Nouvelle Histoire*, fundada em 1929 pelos então jovens historiadores **Lucien Febvres**📌 e **Marc Bloch**📌.
 
-Hoje, a este grupo se associam os historiadores Fernand Braudel, Peter Burke, entre outros. Esta chamada escola de Annales, seguidora do mestre Michelet, tem como característica particular sua discordância em se dar ao estudo da História a predominância do fato político. Defende a abrangência da historiografia aos campos da geografia, sociologia, psico­logia, economia, antropologia e tantas outras. 
+Hoje, a este grupo se associam os historiadores Fernand Braudel, Peter Burke, entre outros. Esta chamada **escola de Annales**, seguidora do mestre Michelet, tem como característica particular sua discordância em se dar ao estudo da História a predominância do fato político. <U>Defende a abrangência da **historiografia** aos campos da geografia, sociologia, psico­logia, economia, antropologia e tantas outras</8>. 
 
-Ortega Y Gasset no seu livro Una lnterpretación de la Historia Uni­versal dedica-se essencialmente à análise crítica da doutrina de Toynbee, contida no Studyof History. O escritor espanhol contesta, principalmente, o conceito toynbeano de "campo inteligível de estudo da História" e a teoria do "desafio e da resposta". No primeiro caso, a discordância nos parece apenas especulativa, de avaliação do que é "um campo inteligí­vel". No segundo caso, o que refuta Gasset é ter Toynbee transformado em princípio fenômenos históricos fatuais - acontecidos algumas vezes na luta civilizatória.
+**Ortega Y Gasset**📌 no seu livro *Una lnterpretación de la Historia Uni­versal* dedica-se essencialmente à análise crítica da doutrina de Toynbee, contida no *Study of History*. O escritor espanhol contesta, principalmente, o conceito toynbeano de "campo inteligível de estudo da História" e a teoria do "desafio e da resposta". No primeiro caso, a discordância nos parece apenas especulativa, de avaliação do que é "um campo inteligí­vel". No segundo caso, o que refuta Gasset é ter Toynbee transformado em princípio fenômenos históricos fatuais - acontecidos algumas vezes na luta civilizatória.
 
-Sintetizando-se as refutações de Ortega y Gasset à obra de Toynbee, verifica-se que o filósofo e historiador espanhol considerou que a doutri­ na de interpretação da História de Toynbee metodizou demais uma ciência social que "é permanente inquietação, surpresa e mudança". Entretan­to, no fundo, não a desmerece.
+Sintetizando-se as refutações de Ortega y Gasset à obra de Toynbee, verifica-se que o filósofo e historiador espanhol considerou que a doutrina de interpretação da História de Toynbee metodizou demais uma ciência social que "é permanente inquietação, surpresa e mudança". Entretan­to, no fundo, não a desmerece.
 
-Na atualidade, Barbara Tuchman é considerada a mais bem-suce­dida historiadora dos Estados Unidos. Os seus livros de história. Os Ca­nhões de Agosto, A Marcha da Insensatez. Um Espelho Distante. com tiragens de milhões de exemplares, foram traduzidos em mais de dez idiomas. Em 1989, Barbara Tuchman lançou um de seus últimos livros, Prática da História, uma obra diferente, na qual faz ampla análise das principais obras publicadas desde a antigüidade e investiga quais as que resistiram ao tempo, tornando-se clássicos. Nesta obra, a historiadora enfoca sua visão sobre o papel da História na sociedade moderna.
+Na atualidade, <u>**Barbara Tuchman**📌 é considerada a mais bem-suce­dida historiadora dos Estados Unidos</u>. Os seus livros de história, *Os Ca­nhões de Agosto*, *A Marcha da Insensatez*, *Um Espelho Distante*, com tiragens de milhões de exemplares, foram traduzidos em mais de dez idiomas. Em 1989, Barbara Tuchman lançou um de seus últimos livros, Prática da História, uma obra diferente, na qual faz ampla análise das principais obras publicadas desde a antigüidade e investiga quais as que resistiram ao tempo, tornando-se clássicos. Nesta obra, a historiadora enfoca sua visão sobre o papel da História na sociedade moderna.
 
 Damos a palavra a Tuchman :
 
-"Pode ser que numa época de crescente incerteza e de preocupação crônica a voz do historiador seja a mais necessária, e mais ainda porque as outras parecem inadequadas com absurda freqüência. Embora as ra­zões possam ser discutidas, creio que o historiador tem uma clara oportu­nidade de tornar-se o principal intérprete, na ciência literária, do papel do homem na sociedade. A sua tarefa de proporcionar tanta matéria que satisfaça o interesse do público. quanto à compreensão humana. sem a qual qualquer leitura é insípida."
+"Pode ser que numa época de crescente incerteza e de preocupação crônica a voz do historiador seja a mais necessária, e mais ainda porque as outras parecem inadequadas com absurda freqüência. Embora as ra­zões possam ser discutidas, creio que o historiador tem uma clara oportu­nidade de tornar-se o principal intérprete, na ciência literária, do papel do homem na sociedade. A sua tarefa de proporcionar tanta matéria que satisfaça o interesse do público, quanto à compreensão humana, sem a qual qualquer leitura é insípida."
 
 Com este repasse às principais obras e autores da moderna ciência histórica, podemos concluir que os progressos alcançados nesta área de conhecimento só vieram fortalecer a sua inserção como inspiradora da Política e, por conseqüência, da Geopolítica.
 
