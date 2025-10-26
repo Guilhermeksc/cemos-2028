@@ -37,6 +37,7 @@
 
   &.collapsed {
     width: 56px;
+    background-color: transparent;
 
     .menu-content {
       display: none;
@@ -44,6 +45,7 @@
 
     .menu-toggle-button {
       margin: 12px auto;
+      background-color: transparent;
     }
   }
 
@@ -54,10 +56,11 @@
     gap: 4px;
     padding: 8px;
     border-bottom: 1px solid #e0e0e0;
-    background-color: #fff;
+    background-color: transparent;
 
     .back-button {
       transition: all 0.2s ease;
+      background-color: transparent;
 
       &:hover {
         background-color: rgba(33, 150, 243, 0.08);
@@ -70,6 +73,7 @@
 
     .menu-toggle-button {
       transition: all 0.2s ease;
+      background-color: transparent;
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.04);
@@ -86,7 +90,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-bottom: 20px;
-
+    background-color: transparent;
     &::-webkit-scrollbar {
       width: 8px;
     }
@@ -451,15 +455,18 @@
       height: 48px;
       padding: 6px;
       overflow: visible;
+      background-color: transparent;
 
       .menu-content {
         display: none;
+        background-color: transparent;
       }
 
       .menu-toggle-button {
         margin: 0;
         width: 36px;
         height: 36px;
+        background-color: transparent;
       }
 
       .back-button {
@@ -470,6 +477,7 @@
     .menu-toggle-container {
       padding: 4px;
       gap: 6px;
+      background-color: transparent;
     }
 
     /* Botões menores e sem sombra para parecerem sutis */
@@ -481,6 +489,7 @@
       border-radius: 50%;
       background: transparent;
       box-shadow: none;
+      background-color: transparent;
 
       mat-icon {
         font-size: 20px;
@@ -500,7 +509,7 @@
   }
 
   .markdown-content .content-wrapper {
-    padding: 12px 16px;
+    padding: 0.1px 0.1px;
   }
 
   /* Garante que o conteúdo principal não fique atrás do botão flutuante */

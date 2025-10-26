@@ -12,7 +12,7 @@ import { HeaderConcentComponent } from '../../../components/header-concent/heade
 })
 export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit {
   // Configuração específica para o módulo de Geopolítica
-  bibliografiaIds: number[] = [1]; // Bibliografia ID 1 para Geopolítica
+  bibliografiaIds: number[] = [2]; // Bibliografia ID 1 para Geopolítica
   
   pageTitle = 'Perguntas de Geopolítica e Relações Internacionais';
   // Estado do simulado
