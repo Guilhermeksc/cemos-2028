@@ -44,7 +44,7 @@ Disse ainda Kennan:
 
 Pág 37 
 
-O consagrado pensador patrício **Miguel Reale**📌, em um de seus últi­mos 1ivros, *Pluralismo e liberdade*, reafirma o valor e a necessidade de se <u>preservar o Poder Nacional nesta fase de reavaliações estratégicas que estamos vivendo</u>. Vamos dar a palavra ao Professor Reale:
+O consagrado pensador patrício **Miguel Reale**📌, em um de seus últi­mos livros, *Pluralismo e liberdade*, reafirma o valor e a necessidade de se <u>preservar o Poder Nacional nesta fase de reavaliações estratégicas que estamos vivendo</u>. Vamos dar a palavra ao Professor Reale:
 
 "O respeito aos valores universais não significa que, nas atuais conjunturas históricas, seja possível ou necessário resolver os problemas da sociedade, fora dos quadros nacionais, apelando-se para uma solidari­edade de classe superior às exigências de coesão interna de cada povo. O internacionalismo concebido em antítese às pátrias é uma ilusão perigo­sa, que só serve para enfraquecer certos estados, deixando-os à mercê dos que se arvoram ideológicos do alardeado ideal de universalidade.
 
