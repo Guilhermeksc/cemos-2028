@@ -401,13 +401,111 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
     path: 'app8-direito',
     defaultChild: 'bibliografia',
     segments: [
-      {
+  {
         title: 'Bibliografia',
         path: 'bibliografia',
         loadComponent: () =>
           import('../modules/app8-direito/app8-direito-bibliografia/app8-direito-bibliografia').then(
             (m) => m.App8DireitoBibliografia
-          )
+          ),
+        children: [
+          {
+            title: 'EMA-135',
+            path: 'ema-135',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/ema-135/ema-135').then(
+                (m) => m.Ema135
+              )
+          },
+          {
+            title: 'A Lei da Guerra',
+            path: 'lei-da-guerra',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/lei-da-guerra/lei-da-guerra').then(
+                (m) => m.LeiDaGuerra
+              )
+          },
+          {
+            title: 'Carta das Nações Unidas',
+            path: 'carta-nacoes-unidas',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/3-carta-nacoes-unidas/carta-nacoes-unidas').then(
+                (m) => m.CartaNacoesUnidas
+              )
+          },
+          {
+            title: 'Feridos, enfermos e náufragos',
+            path: 'feridos-enfermos',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/feridos-enfermos/feridos-enfermos').then(
+                (m) => m.FeridosEnfermos
+              )
+          },
+          {
+            title: 'Protocolo I',
+            path: 'protocolo-i',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/protocolo-i/protocolo-i').then(
+                (m) => m.ProtocoloI
+              )
+          },
+          {
+            title: 'Protocolo II',
+            path: 'protocolo-ii',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/protocolo-ii/protocolo-ii').then(
+                (m) => m.ProtocoloII
+              )
+          },
+          {
+            title: 'San Remo Manual',
+            path: 'san-remo-manual',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/san-remo-manual/san-remo-manual').then(
+                (m) => m.SanRemoManual
+              )
+          },
+          {
+            title: 'Concenção das Nações Unidas sobre o Direito do Mar',
+            path: 'cnudm',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/cnudm/cnudm').then(
+                (m) => m.Cnudm
+              )
+          },
+          {
+            title: 'Entorpecentes e Psicotrópicos',
+            path: 'entorpecentes-psicotropicos',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/entorpecentes-psicotropicos/entorpecentes-psicotropicos').then(
+                (m) => m.EntorpecentesPsicotropicos
+              )
+          },
+          {
+            title: 'Pacto de São José',
+            path: 'pacto-sao-jose',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/pacto-sao-jose/pacto-sao-jose').then(
+                (m) => m.PactoSaoJose
+              )
+          },
+          {
+            title: 'Declaração Universal dos Direitos Humanos',
+            path: 'declaracao-direitos-humanos',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/declaracao-direitos-humanos/declaracao-direitos-humanos').then(
+                (m) => m.DeclaracaoDireitosHumanos
+              )
+          },
+          {
+            title: 'Direito dos Tratados',
+            path: 'declaracao-direito-tratados',
+            loadComponent: () =>
+              import('../modules/app8-direito/app8-direito-bibliografia/declaracao-direito-tratados/declaracao-direito-tratados').then(
+                (m) => m.DeclaracaoDireitoTratados
+              )
+          }
+        ]
       },
       {
         title: 'Mídia',

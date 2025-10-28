@@ -8,7 +8,30 @@
 
   <!-- Conteúdo -->
   <div class="content-wrapper" *ngIf="!isLoading && hasContent">
-    
+
+        <!-- Botões de navegação abaixo das imagens -->
+    <div class="navigation-buttons" *ngIf="showNavigationButtons">
+      <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
+        <mat-icon>arrow_back</mat-icon> Voltar ao Home
+      </button>
+      <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
+        <mat-icon>category</mat-icon> Conceitos
+      </button>
+      <button mat-stroked-button (click)="navigateTo(flashcardsPath)" *ngIf="flashcardsPath">
+        <mat-icon>style</mat-icon> Flashcards
+      </button>
+      <button mat-stroked-button (click)="navigateTo(mediaPath)" *ngIf="mediaPath">
+        <mat-icon>play_circle</mat-icon> Media
+      </button>
+      <button mat-stroked-button (click)="navigateTo(perguntasPath)" *ngIf="perguntasPath">
+        <mat-icon>quiz</mat-icon> Perguntas
+      </button>
+    </div>
+
+    <!-- Texto discreto de orientação -->
+    <div class="bibliografia-hint" *ngIf="displayMode === 'multiple' && capas?.length">
+      <small>Clique na bibliografia para acessar.</small>
+    </div>    
     <!-- MODO MÚLTIPLAS CAPAS: Grid de capas clicáveis -->
     <div class="capas-grid" *ngIf="displayMode === 'multiple'">
       <div 
@@ -38,29 +61,9 @@
         </div>
       </div>
     </div>
-    <!-- Texto discreto de orientação -->
-    <div class="bibliografia-hint" *ngIf="displayMode === 'multiple' && capas?.length">
-      <small>Clique na bibliografia para acessar.</small>
-    </div>
 
-    <!-- Botões de navegação abaixo das imagens -->
-    <div class="navigation-buttons" *ngIf="showNavigationButtons">
-      <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
-        <mat-icon>arrow_back</mat-icon> Voltar ao Home
-      </button>
-      <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
-        <mat-icon>category</mat-icon> Conceitos
-      </button>
-      <button mat-stroked-button (click)="navigateTo(flashcardsPath)" *ngIf="flashcardsPath">
-        <mat-icon>style</mat-icon> Flashcards
-      </button>
-      <button mat-stroked-button (click)="navigateTo(mediaPath)" *ngIf="mediaPath">
-        <mat-icon>play_circle</mat-icon> Media
-      </button>
-      <button mat-stroked-button (click)="navigateTo(perguntasPath)" *ngIf="perguntasPath">
-        <mat-icon>quiz</mat-icon> Perguntas
-      </button>
-    </div>
+
+
 
     <!-- MODO SINGLE: Imagem única com markdown -->
     <div class="image-container" *ngIf="displayMode === 'single' && imagePath">

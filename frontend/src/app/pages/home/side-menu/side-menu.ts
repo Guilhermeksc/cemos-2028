@@ -177,7 +177,23 @@ export class SideMenu {
       title: 'Direito', 
       icon: 'gavel', 
       children: [
-        'Bibliografia',
+        {
+          title: 'Bibliografia',
+          children: [
+            'EMA-135',
+            'A Lei da Guerra',
+            'Carta das Nações Unidas',
+            'Feridos, enfermos e náufragos',
+            'Protocolo I',
+            'Protocolo II',
+            'San Remo Manual',
+            'Concenção das Nações Unidas sobre o Direito do Mar',
+            'Entorpecentes e Psicotrópicos',
+            'Pacto de São José',
+            'Declaração Universal dos Direitos Humanos',
+            'Direito dos Tratados'
+          ]
+        },
         'Mídia',
         'Perguntas',
         'Resumo',    
@@ -466,7 +482,49 @@ export class SideMenu {
         break;
       case 'Direito':
         pathParts.push('app8-direito');
-        if (optionText) {
+        if (division === 'Bibliografia') {
+          pathParts.push('bibliografia');
+          if (optionText) {
+            switch (optionText) {
+              case 'EMA-135':
+                pathParts.push('ema-135');
+                break;
+              case 'A Lei da Guerra':
+                pathParts.push('lei-da-guerra');
+                break;
+              case 'Carta das Nações Unidas':
+                pathParts.push('carta-nacoes-unidas');
+                break;
+              case 'Feridos, enfermos e náufragos':
+                pathParts.push('feridos-enfermos');
+                break;
+              case 'Protocolo I':
+                pathParts.push('protocolo-i');
+                break;
+              case 'Protocolo II':
+                pathParts.push('protocolo-ii');
+                break;
+              case 'San Remo Manual':
+                pathParts.push('san-remo-manual');
+                break;
+              case 'Concenção das Nações Unidas sobre o Direito do Mar':
+                pathParts.push('cnudm');
+                break;
+              case 'Entorpecentes e Psicotrópicos':
+                pathParts.push('entorpecentes-psicotropicos');
+                break;
+              case 'Pacto de São José':
+                pathParts.push('pacto-sao-jose');
+                break;
+              case 'Declaração Universal dos Direitos Humanos':
+                pathParts.push('declaracao-direitos-humanos');
+                break;
+              case 'Direito dos Tratados':
+                pathParts.push('declaracao-direito-tratados');
+                break;
+            }
+          }
+        } else if (optionText) {
           switch (optionText) {
             case 'Bibliografia':
               pathParts.push('bibliografia');
