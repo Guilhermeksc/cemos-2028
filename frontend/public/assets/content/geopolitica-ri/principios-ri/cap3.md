@@ -1,5 +1,5 @@
 
-# Capítulo 3 - Perspectivas concorrentes: Como pensar as relações internacionais em termos teóricos (Página 89-)
+# Capítulo 3 - Perspectivas concorrentes: Como pensar as relações internacionais em termos teóricos
 
 ■ Qual o valor de estudar relações internacionais de uma perspectiva teórica?
 ■ Por que os estudiosos dão atenção ao problema dos níveis de análise?

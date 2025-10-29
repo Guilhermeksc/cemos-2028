@@ -23,18 +23,43 @@ Pág 19
 Das obras pioneiras de **Ratzel** e **Kjellen**, ressaltamos alguns con­ceitos que se destacaram por sua projeção no tempo. **Ratzel**, no seu livro **Leis do Crescimento Territorial dos Estados, lançou as famosas "Sete Leis do Expansionismo"** que aqui reproduzimos:
 
 1 - O espaço dos Estados deve **crescer com a sua cultura**.
+Responsável pela coesão social.
+A assimilação de novos membros dificulta a Coesão
 
-2 - O crescimento dos Estados apresenta outros sintomas de ex­pansão: idéias, intercâmbio comercial, atividades missionárias.
+2 - O crescimento dos Estados apresenta outros sintomas de ex­pansão: idéias, produção, linguagem, intercâmbio comercial, atividades missionárias.
 
-3 - O crescimento do Estado manifesta-se pela adição de novos estados, dentro do **processo de amalgação**.
+3 - O crescimento do Estado manifesta-se pela adição de novos estados, dentro do **processo de amalgação (combinação, mescla)**.
+"A expansão de um Estado inicia-se coma  fusão ou assimilação de unidades menores". **Sucesso da expansão.**
 
-4 - A **fronteira é o órgão periférico do Estado** e, como tal, prova do crescimento, da força e das mudanças desse organismo.
+4 - A **fronteira é o órgão periférico do Estado** e, como tal, prova do crescimento, da força e das mudanças desse "organismo vivo".
+As fronteiras evidenciama  vitalidade dos Estados; Variáveis e Dinâmicas
+**<font color="blue">Reflexo da Força dos Estados</font>**
+Estados Fracos ==> Fronteiras recuam;
+Estados Fortes ==> Fronteiras avançam / mantidas.
+Ex: Estados Unidos x México
 
-5 - Em seu crescimento, o Estado **luta pela absorção de áreas políticamente valiosas**: litorais, planícies, regiões ricas em recursos.
+5 - Em seu crescimento, o Estado **luta pela absorção de áreas políticamente e estrategicamente valiosas**: bacias, litorais, planícies, regiões ricas em recursos.
+Ex 1: Alemanha buscando regiões ricas em recursos na segunda guerra.
+Ex 2: União Soviética na segunda guerra assimilou terrifório da finlândia, e ao final da guerra não devolveu
 
 6- O primeiro impulso de crescimento territorial chega ao Estado primitivo de fora, de uma civilização superior.
+Não mobilizar-se pode implicar ser conquistado.
+Ex: Inglaterra, França e União Soviética ->**<font color="blue">impulsionaram</font>** a expansão da alemanha.
 
 7 -A orientação geral da amalgação transmite a tendência de cres­cimento territorial de Estado para Estado e aumenta esta tendência no processo de transmissão (é como um apetite que vem comendo).
+A **<font color="blue">assimilação</font>** de Estados menores:
+    - Estado mais forte relativamente;
+    - Tendência de continuar a expansão -> **<font color="blue">Efeito Dominó</font>**
+    - Estado encontra outro **<font color="blue">mais poderoso</font>**; ou
+    - **<font color="blue">Sustentabilidade</font>** do crescimento se esgota.
+
+## Teoria Organicista - Ratzel é da vida
+
+O estado é um ser vivo ==> Teoria Organicista.
+
+Duas variáveis analíticas de Ratzel:
+ - Território (Espaço); e 
+ - Povo (Homem).
 
 Os **<font color="red">autores alemães</font>** formaram uma "escola", que no estudo da inte­ração homem-geografia consideraram a preponderância do fator geo­gráfico, por isto chamada, usualmente, de escola **<font color="red">"determinista"</font>** <u>(por con­siderar o fator geográfico determinante no processo civilizatório).</u>
 
@@ -59,6 +84,8 @@ Nesse clima de inquietação e de frustração da nação alemã, nasceu a lider
 O imperialismo da Alemanha de Hitler buscou, nos estudos aca­dêmicos do Instituto de Geopolítica de Munique, um endosso científico para as suas teses expansionistas. Isto gerou para a Geopolítica, no Ocidente, no meio acadêmico, um clima de desconfiança quanto à sua autenticidade científica. Desconfiança injusta, pois seria o mesmo que desclassificar a Estatística ou a Economia como ciência em virtude de seu uso perverso.
 
 O pensamento geopolítico de **Haushofer**, encontrado em vários li­vros e inúmeros artigos em jornais e revistas, <u>é uma combinação das teses de Kjellen. Mackinder e Mahan</u>. Visualiza o planeta dividido em quatro grandes regiões naturais, cada uma submetida a um Estado-Dire­tor. 
+
+## Haushofer Padeiro - Pan-Regiões
 
 Assim discrimina as suas grandes regiões:
 

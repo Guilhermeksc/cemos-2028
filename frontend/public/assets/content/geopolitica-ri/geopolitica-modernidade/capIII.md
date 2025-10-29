@@ -24,6 +24,8 @@ Assim como no capítulo anterior, examinamos as modificações ocorridas no camp
 
 Pág 36 
 
+## Poder Extraterritorial 
+
 A modernidade na área da Política está representada principal­mente pela presença, cada vez mais acentuada, do **Poder Extraterritorial**, exercido pelo Estado ou grupo de estados poderosos. Dotados de supre­macia econômica e de alta tecnologia informática, os estados podero­sos penetram verticalmente, através de suas redes de com unicação, nos espaços territoriais de outros países, levando a informação que interes­sa a sua cultura, a sua política e a sua economia.
 
 Os <u>tradicionais meios de proteção territorial dos estados sobera­nos mostram-se, hoje, incapazes de impedir esta invasão de mensagens sonoras e visuais</u>, difundindo idéias, propaganda e operações financei­ras de empresas multinacionais.

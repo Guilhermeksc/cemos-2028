@@ -26,7 +26,8 @@ export class PrincipiosRi implements OnInit {
   fileNames: string[] = [
     'cap1.md',
     'cap2.md',
-    'cap3.md'
+    'cap3.md',
+    'cap4.md',
   ];
   backRoute: string = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
   backLabel: string = 'Bibliografia';

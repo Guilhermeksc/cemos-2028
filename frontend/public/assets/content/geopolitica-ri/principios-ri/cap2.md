@@ -1,5 +1,5 @@
 
-# Capítulo 2 - O contexto histórico das relações internacionais contemporâneas (Página 41-88)
+# Capítulo 2 - O contexto histórico das relações internacionais contemporâneas
 
 *■ Quais períodos históricos parecem ter exercido maior influência sobre o desenvolvimento das relações internacionais?*
 1. A Grécia Antiga/Era Clássica: A investigação em RI frequentemente começa pela História. O historiador da Grécia Antiga, Tucídides (460–401 a.C.), em sua História da Guerra do Peloponeso, é um marco, pois distinguiu as causas subjacentes (o recrudescimento do poder de Atenas) e imediatas das guerras, um método que muitos acadêmicos ainda seguem. Filosoficamente, Platão (427–347 a.C.) introduziu a análise de classe e o raciocínio dialético, bases para analistas radicais (marxistas); e Aristóteles (384–322 a.C.) foi o primeiro a usar o método comparativo de análise.

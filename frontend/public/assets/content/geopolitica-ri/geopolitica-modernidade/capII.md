@@ -32,7 +32,13 @@ Pág 31
 
 A quase instantaneidade da comunicação da imagem e do som a qualquer quadrante da Terra, assim como o encurtamento drástico das distâncias pelos novos meios de transporte, volatizou o fator tempo. Constatamos que a incidência sobre os anseios. hábitos e costu­mes da sociedade, provocada pelos extraordinários avanços tecnológicos, alterou muito mais o fator tempo do que o fator espaço. Descartes já observara: **"O espaço é concreto, o tempo não"**. O contexto físico do espa­ço. objeto da Geopolítica, continua inalterado; sua extensão, forma e po­sição inamovíveis. só que agora são operacionalizados por agentes políti­cos dispondo de instrumentos de progresso mais eficazes.
 
-## O Território em Duas Dimensões: Horizontalidades e Verticalidades (Milton Santos)
+## O Território em Duas Dimensões: Horizontalidades e Verticalidades (Milton Santos dos espaços)
+
+**Horizontalidade** - Domínios da contiguidade, <u>**<font color="blue">daqueles lugares vizinhos ligados por uma continuidade territorial.</font>**</u>
+**Verticalidade** - Domínios formados por <u>**<font color="blue">pontos distantes uns dos outros, ligados por todas as formas de processos sociais.</font>**</u>
+
+**Lugares contíguos** - conectados fisicamente > **Domínio da Horizontalidade**.
+**Lugares em rede**** - Espaços discontínuos ligados por fluxos eletrônicos e informáticos, que criam sistemas políticos e econômicos solidários > **Domínio da Verticalidade**.
 
 Nos seus estudos sobre o espaço na modernidade, o **Geógrafo Mil­ton Santos**, da Universidade de São Paulo (USP), oferece-nos conceitos bastante elucidativos que transcreveremos abaixo:
 

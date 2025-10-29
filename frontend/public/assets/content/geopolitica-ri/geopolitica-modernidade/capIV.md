@@ -6,7 +6,8 @@ Nos capítulos anteriores analisamos, à luz da modernidade, as con­tribuiçõe
 
 Quase todos os historiadores reconhecem no italiano **Giovanni Vico**📌(1668-1744) o principal inovador dos estudos da ciência histórica.
 
-## Giovanni Vico - Unidade orgânica da História
+## Giovanni Vico - Unidade orgânica da História (Ambientalista Social)
+"Os governos se adaptam necessariamente à natureza dos governa­dos"
 
 No seu livro clássico, *Princípios de uma Ciência Nova sobre a Natu­reza Comum das Nações da qual também se revelam os Novos Princípios da lei Natural dos Povos*, **Vico** revolucionou e renovou o método de estudo da História. Antes predominantemente descritivo e factual, este estudo adquire nova autenticidade com a análise do ambiente sociológico do local e da época em que se deram os fatos e o enfoque psicológico dos principais personagens.
 
@@ -24,7 +25,7 @@ O pensamento de Vico, como vemos acima, fundamenta-se essen­cialmente no **prin
 
 Apoiado na doutrina de estudo histórico de Vico, surge, mais de cem anos passado, o historiador francês **Jules Michelet**📌 (1798-1874), seu seguidor e principal divulgador. Michelet já era autor de várias pública­ções quando, em 1824, descobriu a obra de Vico *Princípios de uma Ciência Nova* ... Empolgou-se pelo método de pesquisa da História do autor itali­ano. Abandonou os projetos em andamento e decidiu-se engajar na tarefa árdua de escrever a História da Revolução Francesa, aplicando e aperfei­çoando o método analítico-interpretativo de Vico. Mais de trinta anos foram necessários para que a completasse, reunindo em 23 volumes os fatos e a interpretação histórico-sociológica desse movimento político eclodido em 1789 e que modificou profundamente a concepção política de governo vigente até então. <u>Os historiadores franceses modernos são unânimes em consagrar a obra de **Michelet** como o mais completo estudo histórico sobre a **Revolução de 1789**.</u>
 
-## Arnold Toynbee - Teoria do desafio e da resposta
+## Arnold Toynbee - Teoria do desafio e da resposta (Desafia a responder)
 
 De Michelet passamos ao consagrado historiador inglês **Arnold Toynbee**📌 (1889-1975), nosso contemporâneo. Escreveu Toynbee a obra monumental *Study of History*, em sete volumes, na qual analisa a história de 21 civilizações que povoaram o mundo desde a mais remota antigüida­de. Na sua pesquisa aplica o método interpretativo de Vico, ao qual acres­centa a sua **<font color="red">"teoria do desafio e da resposta"</font>**. Enfoca as razões de êxito ou fracasso no processo histórico das civilizações à sua capacidade de res­ponder, no curso de sua existência, aos desafios de sua geografia e de sua coesão interna.
 
