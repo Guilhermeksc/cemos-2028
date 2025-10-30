@@ -19,9 +19,13 @@ Pág 57
 
 Destacou o Embaixador Meira Penna, a presença já nos primórdios de século XVI, dos dois desafios vitais de nossa segurança externa: a proteção das fronteiras terrestres a oeste e a proteção da fronteira maríti­ma a leste. Dois problemas geopolíticos que exigiram da diplomacia co­lonial portuguesa, da diplomacia imperial e republicana preocupação constante, negociação permanente e, algumas vezes, luta armada.
 
-A mais antiga visão prospectiva sobre o futuro do Brasil data de 1587, do historiador português Gabriel Soares de Sousa, que no seu livro *In Tratado Descritivo do Brasil - Proemio*, relatando a visita que fez à nossa terra, assim sintetiza as suas impressões:
+# Gabriel Soares de Sousa - Futuro do Brasil
+
+A mais antiga visão prospectiva sobre o **futuro do Brasil** data de 1587, do historiador português Gabriel Soares de Sousa, que no seu livro *In Tratado Descritivo do Brasil - Proemio*, relatando a visita que fez à nossa terra, assim sintetiza as suas impressões:
 
 "Está capaz para se edificar nelle hum grande Imperio, o qual com pouca despeza destes reynos se fará tão soberano que sera hum dos Esta­dos do Mundo."
+
+## José Bonifácio - Unidade Nacional, interiorização da capital.
 
 Antes de nossa Independência, em 1821, **José Bonifácio**📌 produziu um documento precioso em termos de visão do Estado brasileiro do futu­ro. Tal documento, denominado **"Lembranças e Apontamentos"**, era desti­nado a orientar os deputados da Província de São Paulo, eleitos para re­presentar o Brasil na Corte de Lisboa, encarregada de elaborar a nova Constituição para o Império português.
 
@@ -35,11 +39,13 @@ As razões que José Bonifácio vê para a mudança da capital para o interior r
 
 "Com a mudança da capital para o interior, fica a Corte ou assento da Regência livre de qualquer assalto de surpresa externa, e se chama para as províncias centrais o excesso de população vadia das cidades marítimas e mercantis", e mais adiante, "desta Corte central dever-se-ão logo abrir estradas para as diversas províncias e portos de mar. para que se comuniquem e circulem com toda a prontidão as ordens do governo, e se favoreça por elas o comércio interno do vasto Império do Brasil".
 
+## Alexandre de Gusmão - Legitimou Bandeirantes
+
 Outra figura de visão geopolítica foi, sem dúvida, o brasileiro, santista, diplomata da Corte portuguesa de D. José I, **Alexandre de Gusmão**📌, <u>considerado o inspirador do Tratado de Madri de 1750</u>. Segundo o historiador português Jaime Cortezão, "Alexandre de Gusmão dava-nos de jure aquilo que bandeirantes já nos haviam dado de fato." O Tratado de Madri legitimou as conquistas dos bandeirantes paulistas e nortistas até então contestadas pelos espanhóis. Ali, ficaram já esboçadas as nossas atuais fronteiras políticas.
 
 <u>Apresentados os três precursores intuitivos da geopolítica brasilei­ra: o historiador seiscentista Gabriel Soares de Sousa, o diplomata oitocentista Alexandre de Gusmão e o estadista novecentista José Bonifácio de Andrada e Silva</u>, vamos enfocar, agora, o pensamento geopolítico já fundamentado na metodologia científica das escolas ale­mã e francesa, lideradas, respetivamente, pelo talento acadêmico de Friedrich Ratzel e Vidal de La Biache.
 
-## Os Geopolíticos
+## Everardo Backheuser - Percursor da Geopolítica no Brasil (Fronteiras Federais)
 
 Pág 59
 
@@ -51,15 +57,17 @@ O Projeção Continental, escreveu Ronald de Carvalho, foi a primei­ra obra de 
 
 Não se sabe o que mais admirar nessa obra, se clareza das análises ou a objetividade das soluções propostas.
 
+## Capitão Mário Travassos - Triângulo Boliviano
+
 Na sua análise geopolítica, Mario Travassos destaca os dois gran­des antagonismos geográficos de nosso subcontinente - do Atlântico e do Pacífico. Mostra a importância da cordilheira andina como divisor desses antagonismos. Aponta nesse grande divisor, que se estende da Venezuela à Patagônia, os pontos de rebaixamento. os chamados "nudos" (passagem na cordilheira ), onde a cordilheira oferece passagem mais fácil de uma vertente para a outra. Pesquisa nossa posição atlântica, por sua vez submetida a dois outros antagonismos geográficos - do Prata e do Amazonas. Salienta a força convergente do Prata carreando para Buenos Aires a influência sobre as bacias de seus formadores - o Uruguai, o Paraná e o Paraguai -. todos os três mergulhando fundo no território brasileiro.
 
 Pág 60 
 
-Realça, em termos de uma política continental, a importância do triângulo geopolítico boliviano - Santa Cruz de la Sierra-Cochabamba­ Sucre - como pólo de convergência das influências Atlântico-Pacífico. Santa Cruz na bacia amazônica, mas bem articulada com a região andina de Cochabamba e Sucre, Cochabamba andina mas também próxima à calha amazônica.
+Realça, em termos de uma política continental, a importância do **triângulo geopolítico boliviano** - Santa Cruz de la Sierra-Cochabamba­ Sucre - como pólo de convergência das influências Atlântico-Pacífico. Santa Cruz na bacia amazônica, mas bem articulada com a região andina de Cochabamba e Sucre, Cochabamba andina mas também próxima à calha amazônica.
 
 Finalmente, Sucre andina, próxima a um dos "nudos" e ligada à Cochabamba e à influência amazônica de Santa Cruz de la Sierra, que recebe a atração platina de Corumbá. Segundo Mario Travassos, o poder sul-americano que conseguir controlar esse triângulo-chave, região de convergência das três forças geográficas que o operam no subcontinente, dominará a política conti nentalista regional. Nessa região, encontram­ se e poder-se-ão dar-se as mãos ou partir para a disputa.
 
-As soluções sugeridas por Travassos, visando à superação dos óbi­ces oferecidos pela geografia sul-americana, situam-se na realização de uma política de transportes que neutralize, a nosso favor, desequilíbrios potenciais oferecidos pelos antagonismos fisiográficos existentes. Suge­re que se implante ou se complete (quando for o caso) uma rede ferroviá­ria carreadora para os portos brasileiros do Atlântico-Santos, Paranaguá, São Francisco, Porto Alegre e Rio Grande -. as influências platinas sobre as regiões interiores brasileiras das bacias dos rios Paraná, Paraguai e Uruguai. Propõe a chegada de nossos trilhos a Santa Cruz de la Sierra e, daí, a Arica, articulando as grandes regiões platina (Atlântico) e andina (Pacífico), e a construção de ramais da Estrada de Ferro Noroeste do Brasil para a República do Paraguai.
+As soluções sugeridas por Travassos, visando à superação dos óbi­ces oferecidos pela geografia sul-americana, situam-se na realização de uma política de transportes que neutralize, a nosso favor, desequilíbrios potenciais oferecidos pelos antagonismos fisiográficos existentes. Suge­re que se implante ou se complete (quando for o caso) uma **rede ferroviá­ria** carreadora para os portos brasileiros do Atlântico-Santos, Paranaguá, São Francisco, Porto Alegre e Rio Grande -. as influências platinas sobre as regiões interiores brasileiras das bacias dos rios Paraná, Paraguai e Uruguai. Propõe a chegada de nossos trilhos a Santa Cruz de la Sierra e, daí, a Arica, articulando as grandes regiões platina (Atlântico) e andina (Pacífico), e a construção de ramais da Estrada de Ferro Noroeste do Brasil para a República do Paraguai.
 
 Em termos de vertebração da massa continental sul-americana, sugere ampla conjugação das redes ferroviária, hidroviária e aérea, além de propor a criação de um sistema aéreo interligando todas as capitais dos países de nosso subcontinente austral, superando assim, temporariamente, as dificuldades de tráfego terrestre oferecidas pelos obstáculos geográficos. Anteve o desenvolvimento do trans­porte rodoviário para longas distâncias e sua futura i nserção no sistema múltiplo de articulação vial.
 
@@ -81,6 +89,8 @@ Realmente, nos primeiros anos que se seguiram à Revolução de 1930, o espírit
 
 <u>Estas idéias difundidas por Backheuser foram decisivas para a criação dos nossos territórios federais do **Amapá, Roraima, Rondônia, Fernando de Noronha, Ponta Porã e Foz do Iguaçu**</u>. Cumprida a finalidade de povoamento e fortalecimento destes territórios, foram os três primeiros transformados em Estado e os outros extintos e reincorporados aos estados contíguos.
 
+## Brigadeiro Lysias Rodrigues - aviação para integração
+
 No período das décadas de 1940 e 1950, tivemos o aporte valioso dos estudos geopolíticos do Brigadeiro Lysias Rodrigues, condensados no livro *Geopolítica do Brasil (1947)*, prefaciado pelo Professor Backheuser. O autor destaca o importante papel presente e futuro da aviação para o desenvolvimento das áreas longínquas e despovoadas de nosso território, em particular das fronteiras terrestres. Preocupa-se com as nossas fronteiras do norte, analisa-as e aponta seus pontos críticos (punctum dolentis). Defende com entusiasmo uma política de interiorização, de mudança da Capital e de redivisão territorial. Preocupa-se, particularmente, com o futuro de nossas fronteiras com os estados europeus ocupantes das Guianas. **Pregando a interiorização escreve:**
 
 Pág 66
@@ -98,6 +108,8 @@ Analisando este período da geopolítica brasileira, que engloba des­de as obra
 Pág 67
 
 "Contudo, embora oriundos de origens que poderíamos ter como di­versas, a verdade é que Alberto Torres, Oliveira Vianna, Backheuser e Mario Travassos parecem corresponder a um reclamo, a um espírito da nacionali­dade que dir-se-ia desejosa de se encontrar com seus problemas, avaliá­-los, conhecê-los, e para eles procurar soluções que correspondessem efeti­vamente à decantada realidade nacional. Realidade muito mais real do que se imaginava, e cujo conhecimento era intensamente almejado pelas gerações jovens. Gerações ávidas por encontrar novos caminhos para o Brasil e que, a bem dizer, como que adivinhavam a necessidade de adquirirmos uma outra dimensão interna e externa. Internamente, não podíamos conti­nuar a ser apenas a pátria do Jeca Tatu, e externamente repugnava perma­necermos como simples e explorados exportadores de produtos primários."
+
+## Golbery do Couto e Silva - Boas relações com os EUA.
 
 Na década de 1950, desponta no horizonte geopolítico brasileiro a figura do então Tenente-Coronel Golbery do Couto e Silva. Ele proferiu inú­meras conferências em nossas escolas de Estado-Maior e na Escola Supe­rior de Guerra. Escreveu dezenas de artigos para revistas especializadas, como a Defesa Nacional e a do Instituto Histórico e Geográfico. Em 1976, condensou todos os seus escritos no livro que alcançou grande projeção, Geopolítica do Brasil, lançado pela Editora José Olympio.
 
@@ -151,6 +163,8 @@ A influência doutrinária pode ser exemplificada pela expansão territorial, qu
 
 No caso brasileiro, a nossa longa tradição pacifista nos leva a uma doutrina essencialmente defensiva. A opção que realmente se apresenta é entre um conceito de segurança eminentemente nacional, o que seria algo irreal no mundo moderno, e esquemas de defesa associativa em que possamos pensar em termos de segurança continental."
 
+## Therezinha de Castro - Antártica
+
 Na década de 1970, aparece nos estudos da geopolítica brasilei­ra **Therezinha de Castro**, professora de História e Geografia do Colégio D. Pedro II. 
 
 Logo nos seus primeiros escritos na área da Geopolítica, revela-se uma incansável pesquisadora e uma inteligência criativa. Deixou inúmeros livros, entre os quais, na área específica da Geopolítica, destacam-se: "O Brasil da Amazônia ao Prata", "África - Geohistória", "Geopolítica e Trata­dos Internacionais", "Rumo à Antártica", "Nossa América - Geopolítica Com­parada", "Geopolítica - Principíos, Meios e Fins". Sua presença foi contínua nestes últimos trinta anos, com artigos sobre temas geopolíticos em nossos jornais e revistas. Conferencista entusiasta e dotada de grande poder de comunicação, ocupou com freqüência o podium dos institutos de ensino superior das Forças Armadas, tais como: da ESG, a cujo qua­dro de professores pertenceu e das escolas de estado-maior e de altos estudos políticos e estratégicos do Exército, Marinha e Aeronáutica. Era convidada a pronunciar conferências sobre temas geopolíticos na Ar­gentina, Uruguai, Chile e Portugal. Teve vários de seus livros traduzidos para o idioma espanhol.
@@ -160,6 +174,8 @@ Logo nos seus primeiros escritos na área da Geopolítica, revela-se uma incans�
 Pág 73
 
 De todos os temas geopolíticos que Therezinha de Castro tratava, destacavam-se: geoestratégia do Atlântico Sul, importância estratégica da ocupação da Antártica, integração do Cone Sul, Bacia do Caribe, problemas amazônicos. Foi uma das poucas vozes pioneiras, e entre elas a mais insistente, sobre a necessidade de o Brasil instalar uma base na Antártica, tendo em vista a prospectiva de sua importância estratégica num futuro próximo, em função de sua posição de defrontação com todo o Hemisfério Sul do planeta e por suas imensas reservas minerais e de água. Therezinha de Castro reivindicava que o Brasil participasse territorialmente da comunidade antártica, defendendo o seu direito pelo prin­cípio de defrontação, que já fora aplicado no caso dos direitos territoriais no Ártico. Viu a sua pregação realizar-se quando, em 1983, o Brasil instalou a Estação Comandante Ferraz, comandada pela Marinha, na ilha Rei George, do arquipélago Shetlands.
+
+## General Meira Mattos - Calha Norte (Amazônia)
 
 O autor deste livro, quando ainda Tenente Meira Mattos, no final da década de 1930, teve oportunidade de ler os livros de Mario Travassos. Empolgou-se por sua visão geopolítica do Brasil.
 

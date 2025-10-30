@@ -40,6 +40,30 @@ export class LivroIndividual implements OnInit {
   selectedFile: MarkdownFile | null = null;
   headings: MarkdownHeading[] = [];
   htmlContent: SafeHtml = '';
+
+  /**
+   * Adiciona interatividade de zoom nas imagens após renderização do HTML
+   */
+  private enableImageZoom() {
+    setTimeout(() => {
+      const wrapper = document.querySelector('.content-wrapper');
+      if (!wrapper) return;
+      const imgs = wrapper.querySelectorAll('img');
+      imgs.forEach(img => {
+        img.addEventListener('click', function () {
+          if (img.classList.contains('zoomed')) {
+            img.classList.remove('zoomed');
+          } else {
+            // Remove zoom de outras imagens
+            wrapper.querySelectorAll('img.zoomed').forEach(other => {
+              other.classList.remove('zoomed');
+            });
+            img.classList.add('zoomed');
+          }
+        });
+      });
+    }, 200);
+  }
   
   expandedHeadings: Set<string> = new Set();
 
@@ -84,7 +108,7 @@ export class LivroIndividual implements OnInit {
     this.htmlContent = this.sanitizer.bypassSecurityTrustHtml(
       this.livroService.markdownToHtml(file.content, file.basePath)
     );
-    
+
     // Expande apenas os headings de nível 1
     this.expandedHeadings.clear();
     this.headings.forEach(h => {
@@ -92,6 +116,9 @@ export class LivroIndividual implements OnInit {
         this.expandedHeadings.add(h.id);
       }
     });
+
+    // Ativa zoom nas imagens após renderização
+    this.enableImageZoom();
   }
 
   /**
