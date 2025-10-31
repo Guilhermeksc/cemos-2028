@@ -198,7 +198,7 @@
 
 // ===== BOTÃO DE LOGOUT =====
 .logout-container {
-  padding: 12px;
+  padding: 2px;
   border-bottom: 1px solid var(--border-gray);
   background: var(--pure-white);
   
@@ -316,7 +316,7 @@
   &.expanded {
     background: var(--off-white);
     border-left: 4px solid var(--primary-black);
-    padding-left: 16px;
+
     
     .nav-section-expand-icon {
       color: var(--primary-black);
@@ -326,6 +326,7 @@
   &:focus {
     outline: none;
     box-shadow: inset 0 0 0 2px var(--primary-black);
+    
   }
 }
 
@@ -379,23 +380,22 @@
   align-items: center;
   padding: 8px 16px 8px 32px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.02);
+
   transition: all var(--transition-fast);
-  
-  &:hover {
-    background: rgba(0, 0, 0, 0.04);
-    padding-left: 36px;
-  }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+    }
   
   &.expanded {
-    background: rgba(0, 0, 0, 0.03);
-    border-left: 3px solid var(--dark-gray);
     font-weight: 600;
   }
   
   &.active {
-    background: var(--primary-black);
+    background: rgba(255, 175, 3, 0.1);
     color: var(--pure-white);
+    border-radius: 30px;
     
     mat-icon {
       color: var(--pure-white);
@@ -435,7 +435,6 @@
 .nav-item-object {
   padding: 8px 16px 8px 32px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.02);
   border-bottom: 1px solid var(--light-gray);
   transition: all var(--transition-fast);
   position: relative;
@@ -443,10 +442,11 @@
   &:last-child {
     border-bottom: none;
   }
-  
+
   &:hover {
-    background: rgba(0, 0, 0, 0.04);
-    padding-left: 36px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+
     
     &::before {
       content: '';
@@ -458,12 +458,12 @@
       background: var(--medium-gray);
     }
   }
-  
+
   &.active {
-    background: linear-gradient(135deg, var(--primary-black) 0%, var(--soft-black) 100%);
+    background: rgba(255, 175, 3, 0.1);
     color: var(--pure-white);
     font-weight: 600;
-    
+    border-radius: 30px;
     &::before {
       content: '';
       position: absolute;
@@ -497,7 +497,7 @@
 .nav-subitem {
   padding: 8px 16px 8px 48px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.03);
+
   border-bottom: 1px solid var(--light-gray);
   transition: all var(--transition-fast);
   position: relative;
@@ -507,8 +507,9 @@
   }
   
   &:hover {
-    background: rgba(0, 0, 0, 0.05);
-    padding-left: 52px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+
     
     &::before {
       content: '';
@@ -522,10 +523,10 @@
   }
   
   &.active {
-    background: linear-gradient(135deg, var(--primary-black) 0%, var(--soft-black) 100%);
+    background: rgba(255, 175, 3, 0.1);
     color: var(--pure-white);
     font-weight: 600;
-    
+    border-radius: 30px;
     &::before {
       content: '';
       position: absolute;

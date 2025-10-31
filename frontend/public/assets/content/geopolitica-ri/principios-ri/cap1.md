@@ -1,8 +1,5 @@
 # Capítulo 1 - Abordagens de relações internacionais
 
-MINGST, Karen A. Princípios de Relações Internacionais. Tradução de Cristina de Assis Serra. Rio de Janeiro: Elsevier, 6ª Edição, 2014. cap. 1 a 5; 7 (pp. 165 a 187; 191 a 197); 8 e 11.
-
-
 **■ Como as relações internacionais afetam a sua vida diária?**
 As relações internacionais (RI) afetam a vida diária de várias maneiras, envolvendo diferentes atores, incluindo o cidadão comum:
 

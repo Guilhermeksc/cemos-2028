@@ -104,17 +104,9 @@ export class SideMenu {
             'Princípios de Relações Internacionais'
           ]
         },
-        'Vídeos / Podcasts',
         'Flash Cards',
         'Perguntas',
         'Conceitos',
-        {
-          title: 'Resumo',
-          children: [
-            'Geopolítica',
-            'Relações Internacionais'
-          ]
-        }, 
       ],
       expanded: false
     },      
@@ -426,25 +418,10 @@ export class SideMenu {
                 break;
             }
           }
-        } else if (division === 'Resumo') {
-          pathParts.push('resumo');
-          if (optionText) {
-            switch (optionText) {
-              case 'Geopolítica':
-                pathParts.push('geopolitica');
-                break;
-              case 'Relações Internacionais':
-                pathParts.push('relacoes-internacionais');
-                break;
-            }
-          }
         } else if (optionText) {
           switch (optionText) {
             case 'Bibliografia':
               pathParts.push('bibliografia');
-              break;
-            case 'Vídeos / Podcasts':
-              pathParts.push('media');
               break;
             case 'Flash Cards':
               pathParts.push('flash-cards');

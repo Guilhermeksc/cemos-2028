@@ -189,6 +189,12 @@
     }
   }
 
+  /* By default hide the mobile action bar on larger screens.
+     It will be shown only inside the mobile media query below. */
+  .mobile-action-bar {
+    display: none;
+  }
+
   // ==================== FLASHCARD ====================
   .flashcard-wrapper {
     perspective: 1000px;
@@ -424,7 +430,6 @@
 
   // ==================== RESPONSIVO ====================
   @media (max-width: 768px) {
-    padding: 1rem;
 
     /* garantir espaço no fim para a barra fixa de ações mobile */
     padding-bottom: 5.5rem;
@@ -466,7 +471,7 @@
     }
 
     .flashcard-wrapper {
-      height: 300px;
+      height: 340px;
     }
 
     .card-content {

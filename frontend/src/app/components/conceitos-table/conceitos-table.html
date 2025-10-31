@@ -44,7 +44,8 @@
           </th>
           <td mat-cell *matCellDef="let conceito" class="descricao-cell">
             <div class="descricao-content" *ngIf="hasDescricao(conceito)">
-              <p class="descricao-text">{{ getTruncatedDescricao(conceito.descricao!, 200) }}</p>
+              <!-- Exibir descrição completa na tabela (sem truncamento) -->
+              <p class="descricao-text">{{ conceito.descricao }}</p>
             </div>
             <div class="no-descricao" *ngIf="!hasDescricao(conceito)">
               <span class="no-descricao-text">Sem descrição</span>
@@ -114,7 +115,7 @@
         <div class="conceito-card-content">
           <div class="conceito-field">
             <span class="conceito-label">Título:</span>
-            <span class="conceito-value">{{ conceito.titulo }}</span>
+            <span class="conceito-value titulo-text">{{ conceito.titulo }}</span>
           </div>
           <div class="conceito-field">
             <span class="conceito-label">Palavra-chave:</span>

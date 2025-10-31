@@ -1,0 +1,99 @@
+
+/* Pequenas adaptações para largura muito pequena */
+@media (max-width: 420px) {
+	.tab-button {
+		padding: 0.35rem 0.6rem;
+		font-size: 0.9rem;
+	}
+}
+
+/* Header & Filters (inspirado no estilo de Flash Cards) */
+.header {
+	text-align: center;
+	margin-bottom: 1rem;
+
+	h2 {
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: #2c3e50;
+		margin-bottom: 0.5rem;
+	}
+
+	.stats {
+		display: flex;
+		justify-content: center;
+		gap: 1.25rem;
+		flex-wrap: wrap;
+
+		.stat-item {
+			color: #7f8c8d;
+			font-size: 0.95rem;
+
+			strong {
+				color: #111;
+				font-size: 1.05rem;
+			}
+		}
+	}
+}
+
+.filters-section {
+	border-radius: 10px;
+	padding: 0.75rem 1rem;
+	margin: 0.75rem auto 1rem; /* centraliza dentro do container */
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1100px; /* limita largura para casar com conteúdo principal */
+}
+
+.filter-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 0.75rem;
+	align-items: end;
+	width: 100%;
+}
+
+.filter-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	label {
+		font-weight: 600;
+		color: #333;
+	}
+}
+
+.filter-select {
+	padding: 0.45rem 0.6rem;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	background: #fff;
+	color: #111;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.actions-row {
+	margin-top: 0.6rem;
+	display: flex;
+	justify-content: center;
+	gap: 0.75rem;
+}
+
+.btn.btn-outline {
+	background: transparent;
+	color: #111;
+	border: 1px solid #bbb;
+	padding: 0.45rem 0.8rem;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+@media (max-width: 700px) {
+	.filter-row {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,14 +1,22 @@
 <div class="conceitos-container">
 
-  <!-- Header: breadcrumb + title (left) and navigation buttons (right) -->
+  <!-- Header: título + stats + filtros + navegação (inspirado em Flash Cards) -->
   <header *ngIf="showHeader" class="header-generic-content" role="banner">
-    <div class="header-left">
-      <div class="breadcrumb">
-        <a aria-label="Módulo pai">{{ moduleEmoji ? (moduleEmoji + ' ') : '' }}{{ moduleLabel || 'Módulo' }}</a>
+    <div class="header">
+      <h2>{{ moduleEmoji ? (moduleEmoji + ' ') : '' }}{{ moduleLabel || 'Conceitos' }}</h2>
+      <div class="stats" *ngIf="!isLoading">
+        <span class="stat-item">
+          <strong>{{ filteredConceitos.length }}</strong> de <strong>{{ conceitos.length }}</strong> conceitos
+        </span>
+        <span class="stat-item">
+          <strong>{{ bibliografias.length }}</strong> {{ bibliografias.length === 1 ? 'bibliografia' : 'bibliografias' }}
+        </span>
       </div>
     </div>
 
-    <!-- Botões de navegação (similar ao componente capa-bibliografia) -->
+
+
+    <!-- Botões de navegação (preservados) -->
     <nav class="navigation-buttons" aria-label="Navegação" *ngIf="!isLoading">
       <button class="btn btn-stroked" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">
         ⬅️ Voltar à Bibliografia
@@ -51,50 +59,44 @@
     </button>
   </div>
 
+    </div>
   <!-- Content with tabs -->
   <div *ngIf="!loading && !error" class="content-container">
-    <!-- Bibliografia Tabs -->
-    <div class="tabs-container" *ngIf="bibliografias.length > 1">
-      <div class="tabs-border">
-        <nav class="tabs-nav" aria-label="Tabs">
-          <button
-            *ngFor="let bibliografia of bibliografias; trackBy: trackByBibliografia"
-            (click)="selectBibliografia(bibliografia.id)"
-            [class.active]="selectedBibliografiaId === bibliografia.id"
-            class="tab-button">
-            {{ bibliografia.titulo }}
-            <span class="tab-count">
-              {{ getConceptCountByBibliografia(bibliografia.id) }}
-            </span>
-          </button>
-        </nav>
-      </div>
-    </div>
+        <!-- Filtros (Bibliografia + Assunto) -->
+    <div class="filters-section" *ngIf="!isLoading">
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="bibliografia-filter">📖 Bibliografia:</label>
+          <select
+            id="bibliografia-filter"
+            name="bibliografia"
+            [(ngModel)]="selectedBibliografiaId"
+            (ngModelChange)="onBibliografiaChange()"
+            class="filter-select">
+            <option [ngValue]="null">Todas as Bibliografias</option>
+            <option *ngFor="let bib of bibliografias" [ngValue]="bib.id">{{ bib.titulo }}</option>
+          </select>
+        </div>
 
-    <!-- Selected Bibliografia Info -->
-    <div *ngIf="selectedBibliografia && bibliografias.length > 1" class="bibliografia-info">
-      <div class="bibliografia-content">
-        <div class="bibliografia-icon">
-          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-          </svg>
+        <div class="filter-group">
+          <label for="assunto-filter">🏷️ Assunto:</label>
+          <select
+            id="assunto-filter"
+            name="assunto"
+            [(ngModel)]="selectedAssunto"
+            (ngModelChange)="onAssuntoChange()"
+            class="filter-select"
+            [disabled]="assuntosDisponiveis.length === 0">
+            <option value="">Todos os assuntos</option>
+            <option *ngFor="let assunto of assuntosDisponiveis" [value]="assunto">{{ assunto }}</option>
+          </select>
         </div>
-        <div class="bibliografia-details">
-          <h3 class="bibliografia-title">{{ selectedBibliografia.titulo }}</h3>
-          <div class="bibliografia-meta">
-            <span *ngIf="selectedBibliografia.autor">
-              <strong>Autor:</strong> {{ selectedBibliografia.autor }}
-            </span>
-            <span *ngIf="selectedBibliografia.materia">
-              <strong>Matéria:</strong> {{ selectedBibliografia.materia }}
-            </span>
-          </div>
-          <p *ngIf="selectedBibliografia.descricao" class="bibliografia-description">
-            {{ selectedBibliografia.descricao }}
-          </p>
-        </div>
+      <div class="actions-row">
+        <button class="btn btn-outline" (click)="resetFilters()" [disabled]="!selectedBibliografiaId && !selectedAssunto">✖️ Limpar Filtros</button>
+      </div>        
       </div>
-    </div>
+
+
 
     <!-- Conceitos table -->
     <app-conceitos-table 

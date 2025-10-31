@@ -44,6 +44,22 @@
         font-size: 1rem;
     }
 
+    /* Título em vermelho e negrito (aplica na tabela desktop) */
+    .titulo-text {
+        color: #c62828; /* vermelho mais fechado */
+        font-weight: 700;
+    }
+
+    /* Descrição: permitir quebra de linha e evitar overflow na tabela */
+    .descricao-text {
+        white-space: normal; /* permitir múltiplas linhas */
+        word-break: break-word; /* quebrar palavras longas quando necessário */
+        overflow-wrap: anywhere;
+        margin: 0; /* remover margem padrão de p */
+        line-height: 1.6; /* aumenta o espaçamento entre linhas */
+        margin-bottom: 0.5rem; /* espaço visual após a descrição */
+    }
+
     .header-cell {
         font-weight: 600;
         background: #f5f5f5;
@@ -90,7 +106,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 0.1rem;
+            gap: 0.4rem; /* aumenta espaço entre campos para melhor leitura */
             font-size: 1rem;
         }
         .conceito-label {

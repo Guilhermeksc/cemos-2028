@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { Conceitos as ConceitosInterface } from '../../interfaces/informacoes.interface';
 import { Bibliografia } from '../../interfaces/perguntas.interface';
 import { InformacoesService } from '../../services/informacoes.service';
@@ -11,11 +12,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-conceitos',
   standalone: true,
-  imports: [CommonModule, ConceitosTableComponent],
+  imports: [CommonModule, FormsModule, ConceitosTableComponent],
   templateUrl: './conceitos.html',
-  styleUrl: './conceitos.scss'
+  styleUrls: ['./conceitos.scss']
 })
 export class ConceitosComponent implements OnInit {
+
+  // Filtros (UI)
+  selectedAssunto: string = '';
+  assuntosDisponiveis: string[] = [];
   @Input() bibliografiaIds: number[] = []; // IDs das bibliografias a serem exibidas
   @Input() title: string = 'Conceitos'; // Título customizável
   @Input() emptyMessage: string = 'Nenhum conceito encontrado. Adicione conceitos para visualizá-los aqui.';
@@ -91,11 +96,16 @@ export class ConceitosComponent implements OnInit {
         }
 
         this.conceitos = response.conceitos.results;
-        
+
         // Define a primeira bibliografia como selecionada se houver alguma
         if (this.bibliografias.length > 0) {
           this.selectedBibliografiaId = this.bibliografias[0].id;
+        } else {
+          this.selectedBibliografiaId = null;
         }
+
+        // Extrair assuntos únicos disponíveis (conforme bibliografia selecionada)
+        this.extractAssuntos(this.selectedBibliografiaId);
         
         this.loading = false;
       },
@@ -116,15 +126,64 @@ export class ConceitosComponent implements OnInit {
     });
   }
 
+  /** Extrai assuntos únicos da lista de conceitos */
+  private extractAssuntos(bibliografiaId: number | null = null) {
+    const set = new Set<string>();
+
+    this.conceitos.forEach(c => {
+      const matchesBib = bibliografiaId ? c.bibliografia === bibliografiaId : true;
+      if (matchesBib && c.assunto && typeof c.assunto === 'string' && c.assunto.trim().length > 0) {
+        set.add(c.assunto.trim());
+      }
+    });
+
+    this.assuntosDisponiveis = Array.from(set).sort();
+
+    // Se o assunto atualmente selecionado não existe mais na lista, resetá-lo
+    if (this.selectedAssunto && !this.assuntosDisponiveis.includes(this.selectedAssunto)) {
+      this.selectedAssunto = '';
+    }
+  }
+
+  onBibliografiaChange() {
+    // Quando a bibliografia é alterada via select, atualizar a lista de assuntos
+    // para conter apenas assuntos daquela bibliografia. Também sincroniza o tab.
+    if (this.selectedBibliografiaId) {
+      // sincroniza tab
+      // (a seleção do tab já é feita pelo método selectBibliografia quando o usuário clica;
+      // aqui apenas garantimos que a variável está coerente)
+    }
+    this.extractAssuntos(this.selectedBibliografiaId);
+    // limpar assunto selecionado caso não exista nos novos assuntos
+    this.selectedAssunto = '';
+  }
+
+  onAssuntoChange() {
+    // reload view via getter filteredConceitos
+  }
+
+  resetFilters() {
+    this.selectedBibliografiaId = null;
+    this.selectedAssunto = '';
+  }
+
   selectBibliografia(bibliografiaId: number) {
     this.selectedBibliografiaId = bibliografiaId;
   }
 
   get filteredConceitos(): ConceitosInterface[] {
-    if (!this.selectedBibliografiaId) {
-      return this.conceitos;
+    let list = [...this.conceitos];
+
+    if (this.selectedBibliografiaId) {
+      list = list.filter(conceito => conceito.bibliografia === this.selectedBibliografiaId);
     }
-    return this.conceitos.filter(conceito => conceito.bibliografia === this.selectedBibliografiaId);
+
+    if (this.selectedAssunto && this.selectedAssunto.trim().length > 0) {
+      const needle = this.selectedAssunto.trim().toLowerCase();
+      list = list.filter(conceito => (conceito.assunto || '').toString().toLowerCase().includes(needle));
+    }
+
+    return list;
   }
 
   get selectedBibliografia(): Bibliografia | null {
