@@ -1,0 +1,21 @@
+  <!-- Componente de Flash Cards -->
+<app-header-concent
+  [moduleEmoji]="'🌍'"
+  [moduleLabel]="pageTitle"
+  [showBibliografia]="true"
+  [showFlashcards]="false"
+  [showMedia]="true"
+  [showPerguntas]="true"
+  [showConceitos]="true">
+</app-header-concent>
+
+
+<div class="app6-mapa-mental-page">
+		<!-- Use the standalone MapaMental component and pass inputs from this wrapper for reuse -->
+		<app-mapa-mental
+			[basePath]="basePath"
+			[folder]="folder"
+			[files]="files"
+			[requireExplicitFiles]="requireExplicitFiles"
+		></app-mapa-mental>
+</div>

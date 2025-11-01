@@ -17,6 +17,7 @@ export class HeaderConcentComponent implements OnInit {
 
   @Input() showBibliografia: boolean = true;
   @Input() showFlashcards: boolean = true;
+  @Input() showMapaMental: boolean = true;
   @Input() showMedia: boolean = true;
   @Input() showPerguntas: boolean = true;
   @Input() showConceitos: boolean = true;
@@ -67,6 +68,7 @@ export class HeaderConcentComponent implements OnInit {
     switch (segment) {
       case 'bibliografia': return `${this.moduleBasePath}/bibliografia`;
       case 'flash-cards': return `${this.moduleBasePath}/flash-cards`;
+      case 'mapa-mental': return `${this.moduleBasePath}/mapa-mental`;
       case 'media': return `${this.moduleBasePath}/media`;
       case 'perguntas': return `${this.moduleBasePath}/perguntas`;
       case 'conceitos': return `${this.moduleBasePath}/conceitos`;

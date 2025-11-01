@@ -298,6 +298,14 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           ).then((m) => m.App6GeopoliticaRelacoesInternacionaisMedia),
         },
       {
+        title: 'Mapa Mental',
+        path: 'mapa-mental',
+        loadComponent: () =>
+          import(
+            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-mapa-mental/app6-geopolitica-relacoes-internacionais-mapa-mental'
+          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisMapaMental)
+      },        
+      {
         title: 'Flash Cards',
         path: 'flash-cards',
         loadComponent: () =>
