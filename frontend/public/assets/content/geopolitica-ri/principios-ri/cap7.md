@@ -1,12 +1,10 @@
-[text](mingst_principios_das_relacoes_internacionais.md)MINGST, Karen A. Princípios de Relações Internacionais. Tradução de Cristina de Assis Serra. Rio de Janeiro: Elsevier, 6ª Edição, 2014. cap. 1 a 5; 7 (pp. 165 a 187; 191 a 197); 8 e 11.
-
 # Capítulo 7 - Organizações intergovernamentais, direito internacional e organizações não governamentais
 
-■ Por que são formadas organizações intergovernamentais? ■ Qual é a contribuição de organizações intergovernamentais como as Nações Unidas à
-
-paz e à segurança internacionais?
-
-■ Como a União Europeia mudou ao longo do tempo? ■ Qual é o papel do direito internacional nas relações internacionais? ■ Quais são os papéis desempenhados pelas organizações não governamentais? ■ Que perspectivas rivais os teóricos de relações internacionais trazem para sua análise das organizações intergovernamentais, organizações não governamentais e direito internacional?
+■ Por que são formadas organizações intergovernamentais? ■ Qual é a contribuição de organizações intergovernamentais como as Nações Unidas à paz e à segurança internacionais?
+■ Como a União Europeia mudou ao longo do tempo?
+■ Qual é o papel do direito internacional nas relações internacionais?
+■ Quais são os papéis desempenhados pelas organizações não governamentais?
+■ Que perspectivas rivais os teóricos de relações internacionais trazem para sua análise das organizações intergovernamentais, organizações não governamentais e direito internacional?
 
 Estados e indivíduos não são os únicos atores na política internacional. As organizações intergovernamentais (OIGs) também desempenham um papel no sistema internacional. Neste capítulo, descrevemos sua participação nas relações internacionais. Mostramos como o direito internacional difere daquele praticado dentro da esfera nacional e como tanto Estados quanto organizações intergovernamentais nele se inserem. Compreender o quadro jurídico internacional é fundamental para entender a perspectiva liberal da política internacional. Em seguida, examinamos as organizações não governamentais (ONGs), relativamente novas nesse cenário, mas cada vez mais poderosas. Por fim, exploramos as respostas realista, radical e construtivista.
 

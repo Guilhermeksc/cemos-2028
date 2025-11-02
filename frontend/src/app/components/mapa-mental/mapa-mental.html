@@ -11,9 +11,9 @@
         <ul class="roots" *ngIf="!loading && nodes.length">
             <li *ngFor="let root of nodes" class="root">
                                 <div class="root-title" (click)="onNodeClick(root, true)">
-                                    <span class="title-label" title="{{ root.title }}" [ngStyle]="{ 'background-color': levelBg(root.level) }" [class.expanded]="isExpanded(root.id)">
+                                    <span class="title-label" title="{{ root.title }}" [ngStyle]="{ 'background-color': levelBg(root.level) }" [class.expanded]="isExpanded(root.id)" [class.has-children]="root.children?.length" [attr.aria-label]="root.children?.length ? ('Contém ' + root.children?.length + ' filhos') : 'Sem filhos'">
                                         <span class="title-text">{{ root.title }}</span>
-                                        <span class="child-indicator" [class.none]="!root.children?.length" [attr.aria-label]="root.children?.length ? ('Contém ' + root.children?.length + ' filhos') : 'Sem filhos'">{{ root.children?.length || '—' }}</span>
+                                        <span *ngIf="root.children?.length" class="child-indicator">{{ root.children?.length }}</span>
                                     </span>
                                 </div>
                 <ul class="children" *ngIf="isExpanded(root.id)">
@@ -25,9 +25,9 @@
         <ng-template #nodeList let-nodes>
             <li *ngFor="let node of nodes" class="node">
                                 <div class="node-title" (click)="$event.stopPropagation(); onNodeClick(node)">
-                                    <span class="title-label" title="{{ node.title }}" [ngStyle]="{ 'background-color': levelBg(node.level) }" [class.expanded]="isExpanded(node.id)">
+                                    <span class="title-label" title="{{ node.title }}" [ngStyle]="{ 'background-color': levelBg(node.level) }" [class.expanded]="isExpanded(node.id)" [class.has-children]="node.children?.length" [attr.aria-label]="node.children?.length ? ('Contém ' + node.children?.length + ' filhos') : 'Sem filhos'">
                                         <span class="title-text">{{ node.title }}</span>
-                                        <span class="child-indicator" [class.none]="!node.children?.length" [attr.aria-label]="node.children?.length ? ('Contém ' + node.children?.length + ' filhos') : 'Sem filhos'">{{ node.children?.length || '—' }}</span>
+                                        <span *ngIf="node.children?.length" class="child-indicator">{{ node.children?.length }}</span>
                                     </span>
                                 </div>
                 <ul *ngIf="node.children?.length && isExpanded(node.id)" class="children">

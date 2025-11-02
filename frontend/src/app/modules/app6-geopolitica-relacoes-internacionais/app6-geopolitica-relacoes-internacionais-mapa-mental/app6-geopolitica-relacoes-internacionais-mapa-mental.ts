@@ -15,7 +15,8 @@ export class App6GeopoliticaRelacoesInternacionaisMapaMental {
   @Input() files?: string[] = [
     '/assets/content/geopolitica-ri/json/cap1.json',
     '/assets/content/geopolitica-ri/json/cap2.json',
-    '/assets/content/geopolitica-ri/json/cap3.json'
+    '/assets/content/geopolitica-ri/json/cap3.json',
+    '/assets/content/geopolitica-ri/json/cap4.json',
   ];
   @Input() basePath = '/assets/content';
   @Input() folder = 'geopolitica-ri/json';
