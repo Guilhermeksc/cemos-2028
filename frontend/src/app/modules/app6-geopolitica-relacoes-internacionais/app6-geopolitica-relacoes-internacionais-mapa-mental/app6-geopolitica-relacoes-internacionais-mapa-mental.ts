@@ -13,8 +13,9 @@ import { HeaderConcentComponent } from '../../../components/header-concent/heade
 export class App6GeopoliticaRelacoesInternacionaisMapaMental {
   // Allow the parent module/page to pass a list of files (absolute or relative) to the MapaMental component.
   @Input() files?: string[] = [
-    '/assets/content/geopolitica-ri/json/contexto_historico.json',
-    '/assets/content/geopolitica-ri/json/contexto_historico2.json'
+    '/assets/content/geopolitica-ri/json/cap1.json',
+    '/assets/content/geopolitica-ri/json/cap2.json',
+    '/assets/content/geopolitica-ri/json/cap3.json'
   ];
   @Input() basePath = '/assets/content';
   @Input() folder = 'geopolitica-ri/json';

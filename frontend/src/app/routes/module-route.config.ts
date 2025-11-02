@@ -26,9 +26,43 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         title: 'Bibliografia',
         path: 'bibliografia',
         loadComponent: () =>
-          import(
-            '../modules/app1-intendencia/app1-intendencia-bibliografia/app1-intendencia-bibliografia'
-          ).then((m) => m.App1IntendenciaBibliografia)
+          import('../modules/app1-intendencia/app1-intendencia-bibliografia/app1-intendencia-bibliografia').then(
+            (m) => m.App1IntendenciaBibliografia
+          ),
+        children: [
+          {
+            title: 'Cadeias de Suprimentos e Logística',
+            path: 'cadeias-suprimentos-logistica',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/cadeias-suprimentos-logistica/cadeias-suprimentos-logistica').then(
+                (m) => m.CadeiasSuprimentosLogistica
+              )
+          },
+          {
+            title: 'EMA-400 - Logística da Marinha',
+            path: 'ema-400',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/ema-400/ema-400').then(
+                (m) => m.Ema400
+              )
+          },
+          {
+            title: 'EMA-401 - Mobilização Marítima',
+            path: 'ema-401',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/ema-401/ema-401').then(
+                (m) => m.Ema401
+              )
+          },
+          {
+            title: 'MD-41-M-01 - Doutrina de Mobilização Militar',
+            path: 'md-41-m-01',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/md-41-m-01/md-41-m-01').then(
+                (m) => m.Md41M01
+              )
+          }
+        ]
       },
       {
         title: 'Mídia',

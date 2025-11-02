@@ -115,7 +115,23 @@ export class SideMenu {
       title: 'Intendência', 
       icon: 'inventory_2', 
       children: [
-        'Bibliografia',
+        {
+          title: 'Bibliografia',
+          children: [
+            'Cadeias de Suprimentos e Logística',
+            'EMA-400 - Logística da Marinha',
+            'EMA-401 - Mobilização Marítima',
+            'MD-41-M-01 - Doutrina de Mobilização Militar',
+            'MD-41-M-02 - Manual de Mobilização Militar',
+            'MD-41-M-03 - Planejamento da Mobilização',
+            'Lei nº 11.631/2007 (Mobilização Nacional)',  
+            'Decreto nº 6.592/2008 (Regulamenta a Mobilização Nacional)',
+            'EMA-420 - Sistemas de Defesa',
+            'DGMM-0130 - Apoio Logístico Integrado',
+            'MD-40-M-01 - Doutrina de Mobilização Militar',
+            'MD-40-M-02 - Manual de Mobilização Militar',
+          ]
+        },
         'Mídia',
         'Perguntas',
         'Resumo',    
@@ -288,7 +304,49 @@ export class SideMenu {
     switch (section) {
       case 'Intendência':
         pathParts.push('app1-intendencia');
-        if (optionText) {
+        if (division === 'Bibliografia') {
+          pathParts.push('bibliografia');
+          if (optionText) {
+            switch (optionText) {
+              case 'Cadeias de Suprimentos e Logística':
+                pathParts.push('cadeias-suprimentos-logistica');
+                break;              
+              case 'EMA-400 - Logística da Marinha':
+                pathParts.push('ema-400');
+                break;
+              case 'EMA-401 - Mobilização Marítima':
+                pathParts.push('ema-401');
+                break;
+              case 'MD-41-M-01 - Doutrina de Mobilização Militar':
+                pathParts.push('md-41-m-01');
+                break;
+              case 'MD-41-M-02 - Manual de Mobilização Militar':
+                pathParts.push('md-41-m-02');
+                break;
+              case 'MD-41-M-03 - Planejamento da Mobilização':
+                pathParts.push('md-41-m-03');
+                break;
+              case 'Lei nº 11.631/2007 (Mobilização Nacional)':
+                pathParts.push('lei-mobilizacao-nacional');
+                break;
+              case 'Decreto nº 6.592/2008 (Regulamenta a Mobilização Nacional)':
+                pathParts.push('regulamento-mobilizacao-nacional');
+                break;
+              case 'EMA-420 - Sistemas de Defesa':
+                pathParts.push('ema-420');
+                break;
+              case 'DGMM-0130 - Apoio Logístico Integrado':
+                pathParts.push('dgmm-0130');
+                break;
+              case 'MD-40-M-01 - Doutrina de Mobilização Militar':
+                pathParts.push('md-41-m-01');
+                break;
+              case 'MD-40-M-02 - Manual de Mobilização Militar':
+                pathParts.push('md-41-m-02');
+                break;                
+            }
+          }
+        } else if (optionText) {
           switch (optionText) {
             case 'Bibliografia':
               pathParts.push('bibliografia');
@@ -597,6 +655,9 @@ export class SideMenu {
         case 'Mídia':
           pathParts.push('media');
           break;
+        case 'Mapa Mental':
+          pathParts.push('mapa-mental');
+          break;
         case 'Flash Cards':
           pathParts.push('flash-cards');
           break;
@@ -655,6 +716,46 @@ export class SideMenu {
       }
     }
 
+    if (subDivision) {
+      switch (subDivision) {
+        case 'Cadeias de Suprimentos e Logística':
+          pathParts.push('cadeias-suprimentos-logistica');
+          break;              
+        case 'EMA-400 - Logística da Marinha':
+          pathParts.push('ema-400');
+          break;
+        case 'EMA-401 - Mobilização Marítima':
+          pathParts.push('ema-401');
+          break;
+        case 'MD-41-M-01 - Doutrina de Mobilização Militar':
+          pathParts.push('md-41-m-01');
+          break;
+        case 'MD-41-M-02 - Manual de Mobilização Militar':
+          pathParts.push('md-41-m-02');
+          break;
+        case 'MD-41-M-03 - Planejamento da Mobilização':
+          pathParts.push('md-41-m-03');
+          break;
+        case 'Lei nº 11.631/2007 (Mobilização Nacional)':
+          pathParts.push('lei-mobilizacao-nacional');
+          break;
+        case 'Decreto nº 6.592/2008 (Regulamenta a Mobilização Nacional)':
+          pathParts.push('regulamento-mobilizacao-nacional');
+          break;
+        case 'EMA-420 - Sistemas de Defesa':
+          pathParts.push('ema-420');
+          break;
+        case 'DGMM-0130 - Apoio Logístico Integrado':
+          pathParts.push('dgmm-0130');
+          break;
+        case 'MD-40-M-01 - Doutrina de Mobilização Militar':
+          pathParts.push('md-40-m-01');
+          break;
+        case 'MD-40-M-02 - Manual de Mobilização Militar':
+          pathParts.push('md-40-m-02');
+          break;
+      }
+    }
     return currentPath === pathParts.join('/');
   }
 

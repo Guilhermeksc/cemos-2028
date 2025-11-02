@@ -1,1 +1,17 @@
-<p>app1-intendencia-bibliografia works!</p>
+<!-- Router Outlet para renderizar componentes filhos -->
+<!-- Quando a URL é /bibliografia -> mostra a capa -->
+<!-- Quando a URL é /bibliografia/vinganca-geografia -> mostra o livro -->
+<router-outlet></router-outlet>
+
+<!-- Capa da Bibliografia - Exibida SOMENTE quando não há filho ativo -->
+<app-capa-bibliografia
+  *ngIf="showCapa"
+  [capas]="capas"
+  [markdownPath]="markdownPath"
+  [basePath]="basePath"
+  [conceitosPath]="conceitosPath"
+  [mapaMentalPath]="mapaMentalPath"
+  [flashcardsPath]="flashcardsPath"
+  [mediaPath]="mediaPath"
+  [perguntasPath]="perguntasPath">
+</app-capa-bibliografia>
