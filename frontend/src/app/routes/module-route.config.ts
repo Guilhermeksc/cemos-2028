@@ -410,7 +410,81 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         loadComponent: () =>
           import('../modules/app7-politica/app7-politica-bibliografia/app7-politica-bibliografia').then(
             (m) => m.App7PoliticaBibliografia
-          )
+          ),
+        children: [
+          {
+            title: 'Ciência Política',
+            path: 'ciencia-politica',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/ciencia-politica/ciencia-politica').then(
+                (m) => m.CienciaPolitica
+              )
+          },
+          {
+            title: 'Constituição da República Federativa do Brasil',
+            path: 'constituicao-brasil',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/constituicao-brasil/constituicao-brasil').then(
+                (m) => m.ConstituicaoBrasil
+              )
+          },
+          {
+            title: 'Estratégia Nacional de Defesa',
+            path: 'estrategia-nacional-defesa',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/estrategia-nacional-defesa/estrategia-nacional-defesa').then(
+                (m) => m.EstrategiaNacionalDefesa
+              )
+          },
+          {
+            title: 'Política Nacional de Defesa',
+            path: 'politica-nacional-defesa',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/politica-nacional-defesa/politica-nacional-defesa').then(
+                (m) => m.PoliticaNacionalDefesa
+              )
+          },
+          {
+            title: 'Lei Complementar nº 97',
+            path: 'lei-complementar-97',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/lei-complementar-97/lei-complementar-97').then(
+                (m) => m.LeiComplementar97
+              )
+          },
+          {
+            title: 'Decreto nº 12.481 - Política Marítima Nacional (PMN)',
+            path: 'decreto-12481',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/decreto-12481/decreto-12481').then(
+                (m) => m.Decreto12481
+              )
+          },
+          {
+            title: 'Economia Azul - vetor para o desenvolvimento do Brasil',
+            path: 'economia-azul',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/economia-azul/economia-azul').then(
+                (m) => m.EconomiaAzul
+              )
+          },
+          {
+            title: 'EMA-323 - Política Naval',
+            path: 'ema-323',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/ema-323/ema-323').then(
+                (m) => m.Ema323
+              )
+          },
+          {
+            title: 'Decreto nº 12.363 - Plano Setorial para os Recursos do Mar',
+            path: 'decreto-12363',
+            loadComponent: () =>
+              import('../modules/app7-politica/app7-politica-bibliografia/decreto-12363/decreto-12363').then(
+                (m) => m.Decreto12363
+              )
+          }
+        ]
       },
       {
         title: 'Mídia',

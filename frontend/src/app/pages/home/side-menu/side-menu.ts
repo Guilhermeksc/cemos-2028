@@ -175,7 +175,20 @@ export class SideMenu {
       title: 'Política', 
       icon: 'account_balance', 
       children: [
-        'Bibliografia',
+        {
+          title: 'Bibliografia',
+          children: [
+            'Ciência Política',
+            'Constituição da República Federativa do Brasil',
+            'Estratégia Nacional de Defesa',
+            'Política Nacional de Defesa',
+            'Lei Complementar nº 97',
+            'Decreto nº 12.481 - Política Marítima Nacional (PMN)',
+            'Economia Azul - vetor para o desenvolvimento do Brasil',
+            'EMA-323 - Política Naval',
+            'Decreto nº 12.363 - Plano Setorial para os Recursos do Mar',
+          ]
+        },
         'Mídia',
         'Perguntas',
         'Resumo',    
@@ -502,7 +515,40 @@ export class SideMenu {
         break;
       case 'Política':
         pathParts.push('app7-politica');
-        if (optionText) {
+        if (division === 'Bibliografia') {
+          pathParts.push('bibliografia');
+          if (optionText) {
+            switch (optionText) {
+              case 'Ciência Política':
+                pathParts.push('ciencia-politica');
+                break;
+              case 'Constituição da República Federativa do Brasil':
+                pathParts.push('constituicao-brasil');
+                break;
+              case 'Estratégia Nacional de Defesa':
+                pathParts.push('estrategia-nacional-defesa');
+                break;
+              case 'Política Nacional de Defesa':
+                pathParts.push('politica-nacional-defesa');
+                break;
+              case 'Lei Complementar nº 97':
+                pathParts.push('lei-complementar-97');
+                break;
+              case 'Decreto nº 12.481 - Política Marítima Nacional (PMN)':
+                pathParts.push('decreto-12481');
+                break;
+              case 'Economia Azul - vetor para o desenvolvimento do Brasil':
+                pathParts.push('economia-azul');
+                break;
+              case 'EMA-323 - Política Naval':
+                pathParts.push('ema-323');
+                break;
+              case 'Decreto nº 12.363 - Plano Setorial para os Recursos do Mar':
+                pathParts.push('decreto-12363');
+                break;
+            }
+          }
+        } else if (optionText) {
           switch (optionText) {
             case 'Bibliografia':
               pathParts.push('bibliografia');
@@ -756,8 +802,41 @@ export class SideMenu {
           break;
       }
     }
+
+    if (subDivision) {
+      switch (subDivision) {
+        case 'Ciência Política':
+          pathParts.push('ciencia-politica');
+          break;
+        case 'Constituição da República Federativa do Brasil':
+          pathParts.push('constituicao-brasil');
+          break;
+        case 'Estratégia Nacional de Defesa':
+          pathParts.push('estrategia-nacional-defesa');
+          break;
+        case 'Política Nacional de Defesa':
+          pathParts.push('politica-nacional-defesa');
+          break;
+        case 'Lei Complementar nº 97':
+          pathParts.push('lei-complementar-97');
+          break;
+        case 'Decreto nº 12.481 - Política Marítima Nacional (PMN)':
+          pathParts.push('decreto-12481');
+          break;
+        case 'Economia Azul - vetor para o desenvolvimento do Brasil':
+          pathParts.push('economia-azul');
+          break;
+        case 'EMA-323 - Política Naval':
+          pathParts.push('ema-323');
+          break;
+        case 'Decreto nº 12.363 - Plano Setorial para os Recursos do Mar':
+          pathParts.push('decreto-12363');
+          break;
+      }
+    }    
     return currentPath === pathParts.join('/');
   }
+
 
   getItemIcon(item: string): string {
     switch (item) {
