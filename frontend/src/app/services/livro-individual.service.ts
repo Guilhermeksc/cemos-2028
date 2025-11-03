@@ -110,6 +110,9 @@ export class LivroIndividualService {
     if (basePath) {
       processedContent = this.processImagePaths(content, basePath);
     }
+
+    // Converter tabelas (GFM) antes das demais transformações
+    processedContent = this.parseTables(processedContent);
     
     const lines = processedContent.split('\n');
     let html = '';
@@ -166,14 +169,117 @@ export class LivroIndividualService {
     // Listas ordenadas
     html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
 
-    // Parágrafos
-    html = html.replace(/^(?!<[h|u|o|l]|<\/[u|o])(.+)$/gm, '<p>$1</p>');
+    // Parágrafos (não envolve elementos de bloco HTML como tabelas, listas, códigos, etc.)
+    html = html.replace(
+      /^(?!<(h[1-6]|ul|ol|li|pre|code|blockquote|table|thead|tbody|tr|th|td)|<\/(ul|ol|li|pre|code|blockquote|table|thead|tbody|tr|th|td)>)(.+)$/gm,
+      '<p>$3</p>'
+    );
 
     // Code blocks
     html = html.replace(/```(\w+)?\n([\s\S]+?)```/g, '<pre><code class="language-$1">$2</code></pre>');
     html = html.replace(/`(.+?)`/g, '<code>$1</code>');
 
     return html;
+  }
+
+  /**
+   * Converte blocos de tabelas em Markdown (GFM) para HTML
+   * Suporta sintaxe com pipes e linha separadora com hífens/alinhamento.
+   */
+  private parseTables(markdown: string): string {
+    const lines = markdown.split('\n');
+    const result: string[] = [];
+
+    let i = 0;
+    while (i < lines.length) {
+      const headerLine = lines[i];
+
+      // Verifica se a linha parece um cabeçalho de tabela (contém pelo menos um pipe)
+      if (this.isTableRow(headerLine)) {
+        const separatorLine = lines[i + 1] ?? '';
+        if (this.isSeparatorRow(separatorLine)) {
+          // Coleta linhas da tabela
+          const tableRows: string[] = [];
+          tableRows.push(headerLine);
+          tableRows.push(separatorLine);
+
+          let j = i + 2;
+          while (j < lines.length && this.isTableRow(lines[j])) {
+            tableRows.push(lines[j]);
+            j++;
+          }
+
+          // Constrói HTML da tabela
+          const tableHtml = this.buildTableHtml(tableRows);
+          result.push(tableHtml);
+          i = j; // avança além da tabela
+          continue;
+        }
+      }
+
+      // Linha normal
+      result.push(headerLine);
+      i++;
+    }
+
+    return result.join('\n');
+  }
+
+  private isTableRow(line: string): boolean {
+    if (!line) return false;
+    // Deve conter ao menos um pipe e não ser apenas pipes/whitespace
+    const hasPipe = line.includes('|');
+    if (!hasPipe) return false;
+    // Evita considerar cabeçalhos markdown (### | etc.), exige algum texto entre pipes
+    const content = line.replace(/^\s*\|?|\|?\s*$/g, '').trim();
+    return content.length > 0 && content.split('|').some(cell => cell.trim().length > 0);
+  }
+
+  private isSeparatorRow(line: string): boolean {
+    if (!line) return false;
+    // GFM: linha composta por |, :, -, e espaços. Ex: | --- | :---: | ---: |
+    return /^\s*\|?\s*(:?-{3,}:?\s*\|\s*)+:?-{3,}:?\s*\|?\s*$/.test(line);
+  }
+
+  private buildTableHtml(rows: string[]): string {
+    if (rows.length < 2) return rows.join('\n');
+
+    const headerCells = this.splitRow(rows[0]).map(cell => cell.trim());
+
+    // Alinhamentos (opcional, por ora ignorado)
+    // const aligns = this.splitRow(rows[1]).map(seg => this.parseAlign(seg));
+
+    const bodyRows = rows.slice(2).map(r => this.splitRow(r));
+
+    // Usamos estilos inline para garantir que a tabela renderizada a partir
+    // do Markdown mantenha bordas e estilos mesmo sem dependência de CSS externo.
+    const tableStyle = 'border-collapse: collapse; border: 1px solid #000; width: 100%;';
+    const cellStyle = 'border: 1px solid #000; padding: 8px;';
+    // Fundo do header e estilo mais destacado para th
+    const headerCellStyle = `${cellStyle} background-color: #c1c8d2ff; font-weight: 600;`;
+
+    const thead = `<thead><tr>${headerCells.map(h => `<th style="${headerCellStyle}">${h}</th>`).join('')}</tr></thead>`;
+
+    // Construir tbody com cores sutis alternadas nas linhas (zebra)
+    const tbodyRows = bodyRows
+      .map((cols, rowIndex) => {
+        // Cores sutis: linhas pares brancas, linhas ímpares com leve cinza
+        const rowBg = rowIndex % 2 === 0 ? '#fbf1f1ff' : '#edf2f8ff';
+        const trOpen = `<tr style="background-color: ${rowBg};">`;
+        const tds = cols.map(c => `<td style="${cellStyle}">${c.trim()}</td>`).join('');
+        return `${trOpen}${tds}</tr>`;
+      })
+      .join('');
+
+    const tbody = `<tbody>${tbodyRows}</tbody>`;
+
+    return `<table style="${tableStyle}">\n${thead}\n${tbody}\n</table>`;
+  }
+
+  private splitRow(line: string): string[] {
+    // Remove pipe inicial/final e divide
+    const trimmed = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+    return trimmed.split('|').map(s => s.trim());
   }
 
   /**

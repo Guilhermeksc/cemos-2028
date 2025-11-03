@@ -28,6 +28,10 @@ export class PrincipiosRi implements OnInit {
     'cap2.md',
     'cap3.md',
     'cap4.md',
+    'cap5.md',
+    'cap7.md',
+    'cap8.md',
+    'cap11.md',
   ];
   backRoute: string = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
   backLabel: string = 'Bibliografia';

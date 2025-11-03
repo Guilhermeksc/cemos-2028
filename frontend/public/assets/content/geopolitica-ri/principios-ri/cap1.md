@@ -1,5 +1,17 @@
 # Capítulo 1 - Abordagens de relações internacionais
 
+| **CATEGORIA** | **REALISMO** | **LIBERALISMO** | **RADICALISMO** | **CONSTRUTIVISMO** |
+|----------------|---------------|------------------|------------------|---------------------|
+| **ATORES PRINCIPAIS** | **ESTADOS** (mais poderosos têm mais relevância) | ESTADOS, OIG, ONG | **CLASSES SOCIAIS**, Elites Transnacionais e Corporações Multinacionais (Estado Capitalistas X Subdesenvolvidos) | Culturas, Pessoas, Elites (não diferenciam sistema interno e SI) |
+| **INDIVÍDUO** | **MAU** — Egoísta, Inseguro e sequioso por poder | **BOM** — Social e colaborativo | Age conforme o **interesse** de cada **Classe Econômica** | Componente-chave na criação de significado; influenciado pela educação, socialização e cultura |
+| **ESTADO** | Inseguro, **Egoísta**, Unitário e **sequioso por poder** (evidência da Racionalidade) | **Egoísta**. Pode ser **Bom** (liberal-democrata) ou **mau** (autoritário). Relacionam-se (Amizades ou Rivalidades duradouras). | **Agente** da estrutura do **Capitalismo Internacional** e executor da **Burguesia** | Construído socialmente por meio do **DISCURSO** |
+| **SISTEMA INTERNACIONAL** | **ANÁRQUICO** (permanente risco de guerra). Mais estável à medida que se aproxima do **Leviatã (unipolaridade)** | Anarquia restrita pela **Interdependência**. Existência de uma **Ordem Internacional** — **Institucionalismo Neoliberal** | Alto grau de **ESTRATIFICAÇÃO**. Dominado pelo sistema capitalista internacional | Construído socialmente por meio do **DISCURSO** |
+| **MUDANÇA NO SI** | **Administrar frequência e intensidade da Guerra.**<br>**Paz Perpétua impossível** | Interesses próprios administrados pelas **Instituições**.<br>**Possível Paz Permanente** | **Revolução** (mudança radical) **Inevitável** (limitada pela estrutura capitalista) | Possível por meio de **Discursos**.<br>Ênfase na mudança de **identidade e normas sociais** |
+| **RESTRIÇÕES NO SI** | **Polaridade**<br>Distribuição de Poder | **Interdependência**<br>Instituições | **Capitalismo**<br>Estratificação | **Interações**<br>Permanentes |
+| **SOBERANIA** | **Absoluta.**<br>Elemento Central | **Limitada voluntariamente** pelas OIG (Instituições) | **Inexistente**<br>Estados sujeitos aos interesses Capitalistas | **Relativa** |
+| **CONCEITO CHAVE** | **EQUILÍBRIO DE PODER** | **INSTITUIÇÕES COOPERATIVAS** | **LUTA DE CLASSES** | **IDENTIDADES E SIGNIFICADOS** |
+
+
 **■ Como as relações internacionais afetam a sua vida diária?**
 As relações internacionais (RI) afetam a vida diária de várias maneiras, envolvendo diferentes atores, incluindo o cidadão comum:
 

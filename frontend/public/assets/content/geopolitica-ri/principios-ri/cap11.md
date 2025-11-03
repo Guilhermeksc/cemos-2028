@@ -1,5 +1,3 @@
-[text](mingst_principios_das_relacoes_internacionais.md)MINGST, Karen A. Princípios de Relações Internacionais. Tradução de Cristina de Assis Serra. Rio de Janeiro: Elsevier, 6ª Edição, 2014. cap. 1 a 5; 7 (pp. 165 a 187; 191 a 197); 8 e 11.
-
 # Capítulo 11 - Questões transnacionais: meio ambiente, saúde mundial e crime
 
 ■ O que caracteriza o meio ambiente, a saúde e o crime como questões transnacionais? ■ Como os conceitos de bens coletivos e sustentabilidade nos ajudam a pensar sobre as questões ambientais?

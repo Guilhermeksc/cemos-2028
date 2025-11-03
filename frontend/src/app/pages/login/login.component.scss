@@ -279,3 +279,70 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+// Mobile optimizations
+@media (max-width: 480px) {
+  .login-container {
+    min-height: 100dvh;
+    padding-top: calc(1rem + env(safe-area-inset-top));
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+    padding-left: calc(1rem + env(safe-area-inset-left));
+    padding-right: calc(1rem + env(safe-area-inset-right));
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+  }
+
+  .gradient-overlay {
+    display: none;
+  }
+
+  .login-wrapper {
+    max-width: 100%;
+  }
+
+  .login-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 16px 24px -12px rgba(0, 0, 0, 0.12);
+  }
+
+  .login-header {
+    margin-bottom: 1.5rem;
+
+    .login-title {
+      font-size: 2rem;
+    }
+
+    .login-subtitle {
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+    }
+  }
+
+  .login-description {
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .login-form {
+    gap: 1rem;
+  }
+
+  .form-field {
+    .mat-mdc-text-field-wrapper {
+      border-radius: 10px;
+    }
+  }
+
+  .login-button {
+    margin-top: 1rem;
+    height: 48px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+
+    &__icon {
+      font-size: 1.1rem;
+    }
+  }
+}
