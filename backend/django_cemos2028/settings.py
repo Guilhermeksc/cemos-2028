@@ -30,8 +30,8 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "0.0.0.0",
     "195.200.1.112",
-    "cemos2028.site",
-    "www.cemos2028.site",
+    "cemos2028.com",
+    "www.cemos2028.com",
 ]
 
 # Application definition
@@ -74,8 +74,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:4200",
     "http://127.0.0.1:8088",
     "http://195.200.1.112",          # IP direto
-    "http://cemos2028.site",         # Domínio sem HTTPS
-    "https://cemos2028.site",        # Domínio com HTTPS
+    "http://cemos2028.com",         # Domínio sem HTTPS
+    "https://cemos2028.com",        # Domínio com HTTPS
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -85,8 +85,8 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:8088",
     "http://195.200.1.112",
     "https://195.200.1.112",
-    "http://cemos2028.site",
-    "https://cemos2028.site",
+    "http://cemos2028.com",
+    "https://cemos2028.com",
 ]
 
 ROOT_URLCONF = 'django_cemos2028.urls'

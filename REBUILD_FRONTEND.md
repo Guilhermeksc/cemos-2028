@@ -5,7 +5,7 @@
 O Angular tem **dois ambientes de build**:
 
 - **Development** (`npm run build:dev`): Usa `http://localhost:8088/api` para chamadas de API
-- **Production** (`npm run build:prod`): Usa `https://cemos2028.site/api` para chamadas de API
+- **Production** (`npm run build:prod`): Usa `https://cemos2028.com/api` para chamadas de API
 
 **Para desenvolvimento local, SEMPRE use `build:dev`!**
 
@@ -46,7 +46,7 @@ docker compose restart nginx
 ### Opção 3: Manual - Build de Produção
 ```powershell
 cd frontend
-npm run build:prod  # Usa cemos2028.site
+npm run build:prod  # Usa cemos2028.com
 cd ..
 docker compose restart nginx
 ```

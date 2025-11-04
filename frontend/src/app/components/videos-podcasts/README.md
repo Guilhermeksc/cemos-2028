@@ -162,7 +162,7 @@ export const environment = {
 ```typescript
 export const environment = {
   production: true,
-  apiUrl: 'https://cemos2028.site/api',
+  apiUrl: 'https://cemos2028.com/api',
   mediasBasePath: '/var/www/arquivos'
 };
 ```

@@ -132,8 +132,8 @@ export const environment = {
 ```typescript
 export const environment = {
   production: true,
-  apiUrl: 'https://cemos2028.site/api',
-  mediasBasePath: 'https://cemos2028.site/midias'  // ← URL de produção
+  apiUrl: 'https://cemos2028.com/api',
+  mediasBasePath: 'https://cemos2028.com/midias'  // ← URL de produção
 };
 ```
 
@@ -149,8 +149,8 @@ http://localhost:8089/geopolitica/vinganca-geografia/audio/podcast_capX.mp3
 
 ### Produção (servidor web)
 ```
-https://cemos2028.site/midias/geopolitica/vinganca-geografia/video/capX.mp4
-https://cemos2028.site/midias/geopolitica/vinganca-geografia/audio/podcast_capX.mp3
+https://cemos2028.com/midias/geopolitica/vinganca-geografia/video/capX.mp4
+https://cemos2028.com/midias/geopolitica/vinganca-geografia/audio/podcast_capX.mp3
 ```
 
 ---
@@ -203,7 +203,7 @@ http-server -p 8089 --cors="*"
 ```nginx
 server {
     listen 80;
-    server_name cemos2028.site;
+    server_name cemos2028.com;
 
     # API
     location /api/ {
