@@ -14,9 +14,8 @@ import { filter } from 'rxjs/operators';
 export class App6GeopoliticaRelacoesInternacionaisBibliografia implements OnInit {
   // Caminhos para os botões de navegação
   public conceitosPath = '/home/app6-geopolitica-relacoes-internacionais/conceitos';
-  public mapaMentalPath = '/home/app6-geopolitica-relacoes-internacionais/mapa-mental';
   public flashcardsPath = '/home/app6-geopolitica-relacoes-internacionais/flash-cards';
-  public mediaPath = '/home/app6-geopolitica-relacoes-internacionais/media';
+  // public mediaPath = '/home/app6-geopolitica-relacoes-internacionais/media';
   public perguntasPath = '/home/app6-geopolitica-relacoes-internacionais/perguntas';
   // Configuração de múltiplas capas
   capas: CapaConfig[] = [

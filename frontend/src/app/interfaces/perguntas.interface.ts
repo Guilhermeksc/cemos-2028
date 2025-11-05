@@ -17,12 +17,16 @@ export interface FlashCards {
   pergunta: string;
   resposta: string;
   assunto?: string;
+  prova: boolean;
+  ano?: number;
 }
 
 export interface FlashCardsFilters {
   search?: string;
   bibliografia?: number;
   assunto?: string;
+  prova?: boolean;
+  ano?: number;
   ordering?: string;
   page?: number;
   page_size?: number;
@@ -32,6 +36,9 @@ export interface EstatisticasFlashCards {
   total_flashcards: number;
   flashcards_por_assunto: { [assunto: string]: number };
   flashcards_por_bibliografia: { [bibliografia: string]: number };
+  flashcards_que_cairam_prova: number;
+  flashcards_por_ano: { [ano: string]: number };
+  anos_prova: number[];
 }
 
 // Interface base para perguntas (não utilizada diretamente, apenas para referência)

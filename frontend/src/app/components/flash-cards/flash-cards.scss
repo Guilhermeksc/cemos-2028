@@ -251,6 +251,33 @@
     transform: rotateY(180deg);
   }
 
+  // Estilo especial para cards que caíram em prova
+  .prova-card {
+    .flashcard-front {
+      border: 3px solid #ffd700;
+      background: linear-gradient(135deg, #fffef0 0%, #ffffff 100%);
+      box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2), 0 0 0 1px rgba(255, 215, 0, 0.1);
+    }
+
+    .flashcard-back {
+      border: 3px solid #ffd700;
+      background: linear-gradient(135deg, #3d3a20 0%, #2c3e50 100%);
+      box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3), 0 0 0 1px rgba(255, 215, 0, 0.2);
+    }
+
+    &:hover {
+      .flashcard-front {
+        box-shadow: 0 8px 28px rgba(255, 215, 0, 0.3), 0 0 0 1px rgba(255, 215, 0, 0.2);
+        border-color: #ffed4e;
+      }
+
+      .flashcard-back {
+        box-shadow: 0 8px 28px rgba(255, 215, 0, 0.4), 0 0 0 1px rgba(255, 215, 0, 0.3);
+        border-color: #ffed4e;
+      }
+    }
+  }
+
   .card-header {
     display: flex;
     justify-content: space-between;
@@ -258,6 +285,8 @@
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #ddd;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 
     .card-badge {
       font-weight: 700;
@@ -267,6 +296,25 @@
       color: #333;
       border-radius: 4px;
       border: 1px solid #ddd;
+    }
+
+    .card-header-right {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .card-prova-badge {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.7rem;
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+      color: #333;
+      border-radius: 4px;
+      border: 1px solid #ffb700;
+      font-weight: 700;
+      white-space: nowrap;
+      box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
     }
 
     .card-assunto {
@@ -291,6 +339,13 @@
       background: rgba(255, 255, 255, 0.15);
       color: white;
       border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .card-prova-badge {
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+      color: #333;
+      border: 1px solid #ffb700;
+      box-shadow: 0 2px 4px rgba(255, 215, 0, 0.5);
     }
   }
 

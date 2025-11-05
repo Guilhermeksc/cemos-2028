@@ -41,7 +41,7 @@ class FlashCardsSerializer(serializers.ModelSerializer):
         model = FlashCardsModel
         fields = [
             'id', 'bibliografia', 'bibliografia_titulo', 
-            'pergunta', 'resposta', 'assunto'
+            'pergunta', 'resposta', 'assunto', 'prova', 'ano'
         ]
         read_only_fields = ['id']
 
@@ -173,4 +173,4 @@ class PerguntaCorrelacaoCreateUpdateSerializer(PerguntaCorrelacaoSerializer):
 class FlashCardsCreateUpdateSerializer(FlashCardsSerializer):
     """Serializer específico para criação e edição de flash cards"""
     class Meta(FlashCardsSerializer.Meta):
-        fields = ['bibliografia', 'pergunta', 'resposta', 'assunto']
+        fields = ['bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano']

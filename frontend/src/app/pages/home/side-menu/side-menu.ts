@@ -104,7 +104,6 @@ export class SideMenu {
             'Princípios de Relações Internacionais'
           ]
         },
-        'Mapa Mental',
         'Flash Cards',
         'Perguntas',
         'Conceitos',
@@ -495,9 +494,6 @@ export class SideMenu {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
-            case 'Mapa Mental':
-              pathParts.push('mapa-mental');
-              break;
             case 'Flash Cards':
               pathParts.push('flash-cards');
               break;  
@@ -700,9 +696,6 @@ export class SideMenu {
           break;
         case 'Mídia':
           pathParts.push('media');
-          break;
-        case 'Mapa Mental':
-          pathParts.push('mapa-mental');
           break;
         case 'Flash Cards':
           pathParts.push('flash-cards');

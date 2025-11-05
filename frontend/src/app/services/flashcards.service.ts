@@ -118,7 +118,11 @@ export class FlashCardsService {
       map(flashcards => ({
         total_flashcards: flashcards.length,
         flashcards_por_assunto: this.groupByAssunto(flashcards),
-        flashcards_por_bibliografia: this.groupByBibliografia(flashcards)
+        flashcards_por_bibliografia: this.groupByBibliografia(flashcards),
+        flashcards_que_cairam_prova: flashcards.filter(f => f.prova).length,
+        flashcards_por_ano: this.groupByAno(flashcards),
+        anos_prova: [...new Set(flashcards.filter(f => f.ano).map(f => f.ano!))]
+          .sort((a, b) => b - a)
       }))
     );
   }
@@ -155,6 +159,38 @@ export class FlashCardsService {
     );
   }
 
+  /**
+   * Busca flashcards que caíram em prova
+   */
+  getFlashCardsComProva(): Observable<FlashCards[]> {
+    return this.getFlashCards({ prova: true }).pipe(
+      map(response => response.results)
+    );
+  }
+
+  /**
+   * Busca flashcards por ano
+   */
+  getFlashCardsByAno(ano: number): Observable<FlashCards[]> {
+    return this.getFlashCards({ ano }).pipe(
+      map(response => response.results)
+    );
+  }
+
+  /**
+   * Retorna lista única de anos
+   */
+  getAnos(): Observable<number[]> {
+    return this.getAllFlashCards().pipe(
+      map(flashcards => {
+        const anos = flashcards
+          .map(f => f.ano)
+          .filter((ano): ano is number => ano !== undefined);
+        return [...new Set(anos)].sort((a, b) => b - a);
+      })
+    );
+  }
+
   // ==================== MÉTODOS PRIVADOS ====================
 
   private groupByAssunto(flashcards: FlashCards[]): { [assunto: string]: number } {
@@ -171,5 +207,15 @@ export class FlashCardsService {
       acc[bibliografia] = (acc[bibliografia] || 0) + 1;
       return acc;
     }, {} as { [bibliografia: string]: number });
+  }
+
+  private groupByAno(flashcards: FlashCards[]): { [ano: string]: number } {
+    return flashcards.reduce((acc, flashcard) => {
+      if (flashcard.ano) {
+        const ano = flashcard.ano.toString();
+        acc[ano] = (acc[ano] || 0) + 1;
+      }
+      return acc;
+    }, {} as { [ano: string]: number });
   }
 }

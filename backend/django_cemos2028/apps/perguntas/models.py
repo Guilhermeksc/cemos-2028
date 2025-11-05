@@ -32,6 +32,13 @@ class FlashCardsModel(models.Model):
     pergunta = models.TextField(verbose_name="Pergunta")
     resposta = models.TextField(verbose_name="Resposta")
     assunto = models.CharField(max_length=100, blank=True, null=True, verbose_name="Assunto")
+    prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
+    ano = models.IntegerField(
+        blank=True, 
+        null=True, 
+        verbose_name="Ano da Prova",
+        validators=[MinValueValidator(2000), MaxValueValidator(2100)]
+    )
     
     class Meta:
         verbose_name = "Flash Cards"

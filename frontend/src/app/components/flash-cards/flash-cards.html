@@ -96,15 +96,21 @@
       <div 
         class="flashcard"
         [class.flipped]="card.isFlipped"
+        [class.prova-card]="card.prova"
         (click)="flipCard(card)">
         
         <!-- Frente do Card (Pergunta) -->
         <div class="flashcard-face flashcard-front">
           <div class="card-header">
             <span class="card-badge">❓ Pergunta</span>
-            <span class="card-assunto" *ngIf="card.assunto">
-              🏷️ {{ card.assunto }}
-            </span>
+            <div class="card-header-right">
+              <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
+                ⭐ {{ card.ano }}
+              </span>
+              <span class="card-assunto" *ngIf="card.assunto">
+                🏷️ {{ card.assunto }}
+              </span>
+            </div>
           </div>
           
           <div class="card-content">
@@ -123,9 +129,14 @@
         <div class="flashcard-face flashcard-back">
           <div class="card-header">
             <span class="card-badge">✅ Resposta</span>
-            <span class="card-assunto" *ngIf="card.assunto">
-              🏷️ {{ card.assunto }}
-            </span>
+            <div class="card-header-right">
+              <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
+                ⭐ {{ card.ano }}
+              </span>
+              <span class="card-assunto" *ngIf="card.assunto">
+                🏷️ {{ card.assunto }}
+              </span>
+            </div>
           </div>
           
           <div class="card-content">

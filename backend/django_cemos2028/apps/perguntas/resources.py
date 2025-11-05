@@ -25,11 +25,16 @@ class FlashCardsResource(resources.ModelResource):
         attribute='bibliografia',
         widget=ForeignKeyWidget(BibliografiaModel, 'titulo')
     )
+    prova = fields.Field(
+        column_name='prova',
+        attribute='prova',
+        widget=BooleanWidget()
+    )
 
     class Meta:
         model = FlashCardsModel
-        fields = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto')
-        export_order = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto')
+        fields = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano')
+        export_order = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano')
         import_id_fields = ('id',)
         skip_unchanged = True
         report_skipped = True

@@ -25,7 +25,7 @@ export type { CapaConfig } from '../../interfaces/capa-config.interface';
 export class CapaBibliografia implements OnInit {
   // Caminhos parametrizáveis para navegação
   @Input() conceitosPath: string = '';
-  @Input() mapaMentalPath: string = '';
+  // @Input() mapaMentalPath: string = '';
   @Input() flashcardsPath: string = '';
   @Input() mediaPath: string = '';
   @Input() perguntasPath: string = '';

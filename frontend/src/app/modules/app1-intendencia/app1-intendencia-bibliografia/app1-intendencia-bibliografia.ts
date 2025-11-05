@@ -20,7 +20,6 @@ export class App1IntendenciaBibliografia implements OnInit {
 
   /** 🔹 Subrotas */
   public conceitosPath = `${this.ROUTE_BASE}/conceitos`;
-  public mapaMentalPath = `${this.ROUTE_BASE}/mapa-mental`;
   public flashcardsPath = `${this.ROUTE_BASE}/flash-cards`;
   public mediaPath = `${this.ROUTE_BASE}/media`;
   public perguntasPath = `${this.ROUTE_BASE}/perguntas`;

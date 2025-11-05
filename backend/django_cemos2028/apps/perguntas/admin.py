@@ -27,14 +27,17 @@ class BibliografiaAdmin(admin.ModelAdmin):
 
 @admin.register(FlashCardsModel)
 class FlashCardsAdmin(admin.ModelAdmin):
-    list_display = ['__str__', 'bibliografia', 'pergunta', 'resposta', 'assunto']
-    list_filter = ['bibliografia', 'assunto']
+    list_display = ['__str__', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano']
+    list_filter = ['bibliografia', 'assunto', 'prova', 'ano']
     search_fields = ['pergunta', 'resposta', 'assunto', 'bibliografia__titulo']
     ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
             'fields': ('bibliografia', 'pergunta', 'resposta', 'assunto')
+        }),
+        ('Informações da Prova', {
+            'fields': ('prova', 'ano')
         }),
     )
 

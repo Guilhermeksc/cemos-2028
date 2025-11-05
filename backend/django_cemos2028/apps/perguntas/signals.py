@@ -145,12 +145,26 @@ def load_fixtures_perguntas(sender, **kwargs):
                             
                             bibliografia = BibliografiaModel.objects.get(id=bibliografia_id)
                             
+                            # Converter prova para boolean (aceita múltiplos formatos)
+                            prova_val = row.get('prova', False)
+                            if pd.isna(prova_val):
+                                prova_bool = False
+                            elif isinstance(prova_val, bool):
+                                prova_bool = prova_val
+                            elif isinstance(prova_val, (int, float)):
+                                prova_bool = bool(prova_val)
+                            else:
+                                prova_str = str(prova_val).lower().strip()
+                                prova_bool = prova_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
                             obj, created = FlashCardsModel.objects.update_or_create(
                                 bibliografia=bibliografia,
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
                                     'resposta': _as_clean_str(row['resposta']),
-                                    'assunto': _as_clean_str(row.get('assunto'))
+                                    'assunto': _as_clean_str(row.get('assunto')),
+                                    'prova': prova_bool,
+                                    'ano': _as_int(row.get('ano'))
                                 }
                             )
                             if created:
