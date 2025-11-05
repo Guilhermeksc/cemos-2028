@@ -39,9 +39,16 @@
 
   .top-header-title {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 8px;
     flex: 1;
+
+    .brazil-flag-mobile {
+      height: 28px;
+      width: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
 
     .title {
       font-size: 24px;
@@ -164,6 +171,10 @@ app-side-menu {
 
     .top-header-title {
       gap: 6px;
+
+      .brazil-flag-mobile {
+        height: 22px;
+      }
 
       .title {
         font-size: 20px;

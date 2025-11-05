@@ -25,7 +25,7 @@ jobs:
         echo "POSTGRES_PASSWORD=postgres" >> .env
         echo "POSTGRES_HOST=db" >> .env
         echo "DJANGO_SUPERUSER_USERNAME=admin" >> .env
-        echo "DJANGO_SUPERUSER_PASSWORD=admin123" >> .env
+        echo "DJANGO_SUPERUSER_PASSWORD=@cemos2028" >> .env
         echo "DJANGO_SUPERUSER_EMAIL=admin@example.com" >> .env
 
     - name: Build test environment
@@ -107,7 +107,7 @@ jobs:
           docker compose exec backend python manage.py shell -c "
           from django_cemos2028.apps.core.users.models import Usuario;
           if not Usuario.objects.filter(username='admin').exists():
-              Usuario.objects.create_superuser('admin', 'admin123', perfil='admin')
+              Usuario.objects.create_superuser('admin', '@cemos2028', perfil='admin')
               print('Admin user created')
           else:
               print('Admin user already exists')
@@ -139,7 +139,7 @@ jobs:
         echo "POSTGRES_PASSWORD=postgres" >> .env
         echo "POSTGRES_HOST=db" >> .env
         echo "DJANGO_SUPERUSER_USERNAME=admin" >> .env
-        echo "DJANGO_SUPERUSER_PASSWORD=admin123" >> .env
+        echo "DJANGO_SUPERUSER_PASSWORD=@cemos2028" >> .env
         echo "DJANGO_SUPERUSER_EMAIL=admin@example.com" >> .env
 
     - name: Build for development
@@ -167,7 +167,7 @@ jobs:
         # Test if login endpoint is accessible
         curl -X POST http://localhost:8088/api/auth/login/ \
           -H "Content-Type: application/json" \
-          -d '{"username":"admin","password":"admin123"}' || echo "Login test failed"
+          -d '{"username":"admin","password":"@cemos2028"}' || echo "Login test failed"
         
     - name: Cleanup
       run: |

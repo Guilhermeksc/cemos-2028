@@ -12,6 +12,15 @@
     </button>
   </div>
 
+<!-- Imagem do Brasil - Apenas para desktop (sidebar) -->
+<div class="brazil-image-container" *ngIf="!isTopMenuMode">
+  <img 
+    src="/assets/img/svg/brazil.png" 
+    alt="Bandeira do Brasil" 
+    class="brazil-image"
+    aria-hidden="true">
+</div>
+
   <!-- Header - Apenas para desktop (sidebar) -->
   <div class="header-link" *ngIf="!isTopMenuMode" (click)="navigateHome()" tabindex="0" role="link" aria-label="Ir para Home">
     <div class="header-container">
@@ -21,7 +30,6 @@
   </div>
 
 </div>
-
 <mat-nav-list class="nav-list">
   <div class="nav-section" *ngFor="let item of menuItems(); let i = index">
     <!-- Cabeçalho da seção clicável -->
@@ -114,3 +122,5 @@
     </div>
   </div>
 </mat-nav-list>
+
+

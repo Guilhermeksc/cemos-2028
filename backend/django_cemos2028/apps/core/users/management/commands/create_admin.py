@@ -13,7 +13,7 @@ class Command(BaseCommand):
             # Cria o usuário admin padrão
             admin_user = Usuario.objects.create_user(
                 username='admin',
-                password='admin123',
+                password='@cemos2028',
                 perfil='admin'
             )
             admin_user.is_staff = True
@@ -24,7 +24,7 @@ class Command(BaseCommand):
                 self.style.SUCCESS('✅ Usuário admin padrão criado com sucesso!')
             )
             self.stdout.write(f'   Username: admin')
-            self.stdout.write(f'   Password: admin123')
+            self.stdout.write(f'   Password: @cemos2028')
             self.stdout.write(
                 self.style.WARNING('   ⚠️  IMPORTANTE: Altere a senha padrão após o primeiro login!')
             )
