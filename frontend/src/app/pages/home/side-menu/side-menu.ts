@@ -141,7 +141,14 @@ export class SideMenu {
       title: 'Estratégia', 
       icon: 'route', 
       children: [
-        'Bibliografia',
+        {
+          title: 'Bibliografia',
+          children: [
+            'COUTAU-BÉGARIE. Tratado de Estratégia',
+            'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex',
+            'EMA-310 - Estratégia de Defesa Marítima',
+          ]
+        },
         'Mídia',
         'Perguntas',
         'Resumo',    
@@ -152,7 +159,14 @@ export class SideMenu {
       title: 'Planejamento Militar', 
       icon: 'military_tech', 
       children: [
-        'Bibliografia',
+        {
+          title: 'Bibliografia',
+          children: [
+            'Lei nº 97/1999 - Organização, Preparo e o Emprego das Forças Armadas',
+            'Decreto 7.276/2010 - Estrutura Militar de Defesa',
+            'MD30-M-01 - Doutrina de Operações Conjuntas',
+          ]
+        },
         'Mídia',
         'Perguntas',
         'Resumo',    
@@ -225,7 +239,14 @@ export class SideMenu {
       title: 'Economia', 
       icon: 'show_chart', 
       children: [
-        'Bibliografia',
+        {
+          title: 'Bibliografia',
+          children: [
+            'Economia Brasileira Contemporânea',
+            'Economia Micro e Macro – Teoria, Exercícios e Casos',
+            'Economia Azul',
+          ]
+        },
         'Mídia',
         'Perguntas',
         'Resumo',    
@@ -377,7 +398,22 @@ export class SideMenu {
         break;
       case 'Estratégia':
         pathParts.push('app2-estrategia');
-        if (optionText) {
+        if (division === 'Bibliografia') {
+          pathParts.push('bibliografia');
+          if (optionText) {
+            switch (optionText) {
+              case 'COUTAU-BÉGARIE. Tratado de Estratégia':
+                pathParts.push('tratado-de-estrategia');
+                break;
+              case 'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex':
+                pathParts.push('estrategias-maritimas');
+                break;
+              case 'EMA-310 - Estratégia de Defesa Marítima':
+                pathParts.push('ema-310-estrategia');
+                break;
+            }
+          }
+        } else if (optionText) {
           switch (optionText) {
             case 'Bibliografia':
               pathParts.push('bibliografia');
@@ -396,19 +432,34 @@ export class SideMenu {
         break;
       case 'Planejamento Militar':
         pathParts.push('app3-planejamento-militar');
-        if (optionText) {
+        if (division === 'Bibliografia') {
+          pathParts.push('bibliografia');
+          if (optionText) {
+            switch (optionText) {
+              case 'Lei nº 97/1999 - Organização, Preparo e o Emprego das Forças Armadas':
+                pathParts.push('lei-97');
+                break;
+              case 'Decreto 7.276/2010 - Estrutura Militar de Defesa':
+                pathParts.push('decreto-7276');
+                break;
+              case 'MD30-M-01 - Doutrina de Operações Conjuntas':
+                pathParts.push('md-30-m-01');
+                break;
+            }
+          }
+        } else if (optionText) {
           switch (optionText) {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
-            case 'Mídia':
-              pathParts.push('media');
-              break;
+            case 'Flash Cards':
+              pathParts.push('flash-cards');
+              break;  
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
-            case 'Resumo':
-              pathParts.push('resumo');
+            case 'Conceitos':
+              pathParts.push('conceitos');
               break;
           }
         }
@@ -624,7 +675,22 @@ export class SideMenu {
         break;
       case 'Economia':
         pathParts.push('app9-economia');
-        if (optionText) {
+        if (division === 'Bibliografia') {
+          pathParts.push('bibliografia');
+          if (optionText) {
+            switch (optionText) {
+              case 'Economia Brasileira Contemporânea':
+                pathParts.push('economia-brasileira');
+                break;
+              case 'Economia Micro e Macro – Teoria, Exercícios e Casos':
+                pathParts.push('economia-micro-macro');
+                break;
+              case 'Economia Azul':
+                pathParts.push('economia-azul-2');
+                break;
+            }
+          }
+        } else if (optionText) {
           switch (optionText) {
             case 'Bibliografia':
               pathParts.push('bibliografia');
@@ -754,6 +820,90 @@ export class SideMenu {
           break;          
       }
     }
+
+    if (subDivision) {
+      switch (subDivision) {
+        case 'Lei nº 97/1999 - Organização, Preparo e o Emprego das Forças Armadas':
+          pathParts.push('lei-97');
+          break;
+        case 'Decreto 7.276/2010 - Estrutura Militar de Defesa':
+          pathParts.push('decreto-7276');
+          break;
+        case 'MD30-M-01 - Doutrina de Operações Conjuntas':
+          pathParts.push('md-30-m-01');
+          break;
+      }
+    }
+
+    if (subDivision) {
+      switch (subDivision) {
+        case 'COUTAU-BÉGARIE. Tratado de Estratégia':
+          pathParts.push('tratado-de-estrategia');
+          break;
+        case 'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex':
+          pathParts.push('estrategias-maritimas');
+          break;
+        case 'EMA-310 - Estratégia de Defesa Marítima':
+          pathParts.push('ema-310-estrategia');
+          break;
+      }
+    }
+
+    if (subDivision) {
+      switch (subDivision) {
+        case 'Economia Brasileira Contemporânea':
+          pathParts.push('economia-brasileira');
+          break;
+        case 'Economia Micro e Macro – Teoria, Exercícios e Casos':
+          pathParts.push('economia-micro-macro');
+          break;
+        case 'Economia Azul':
+          pathParts.push('economia-azul');
+          break;
+      }
+    }
+
+    if (subDivision) {
+      switch (subDivision) {
+        case 'EMA-135':
+          pathParts.push('ema-135');
+          break;
+        case 'A Lei da Guerra':
+          pathParts.push('lei-da-guerra');
+          break;
+        case 'Carta das Nações Unidas':
+          pathParts.push('carta-nacoes-unidas');
+          break;
+        case 'Feridos, enfermos e náufragos':
+          pathParts.push('feridos-enfermos');
+          break;
+        case 'Protocolo I':
+          pathParts.push('protocolo-i');
+          break;
+        case 'Protocolo II':
+          pathParts.push('protocolo-ii');
+          break;
+        case 'San Remo Manual':
+          pathParts.push('san-remo-manual');
+          break;
+        case 'Concenção das Nações Unidas sobre o Direito do Mar':
+          pathParts.push('cnudm');
+          break;
+        case 'Entorpecentes e Psicotrópicos':
+          pathParts.push('entorpecentes-psicotropicos');
+          break;
+        case 'Pacto de São José':
+          pathParts.push('pacto-sao-jose');
+          break;
+        case 'Declaração Universal dos Direitos Humanos':
+          pathParts.push('declaracao-direitos-humanos');
+          break;
+        case 'Direito dos Tratados':
+          pathParts.push('declaracao-direito-tratados');
+          break;
+      }
+    }
+
 
     if (subDivision) {
       switch (subDivision) {

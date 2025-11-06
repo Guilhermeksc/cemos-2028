@@ -99,9 +99,35 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         title: 'Bibliografia',
         path: 'bibliografia',
         loadComponent: () =>
-          import(
-            '../modules/app2-estrategia/app2-estrategia-bibliografia/app2-estrategia-bibliografia'
-          ).then((m) => m.App2EstrategiaBibliografia)
+          import('../modules/app2-estrategia/app2-estrategia-bibliografia/app2-estrategia-bibliografia').then(
+            (m) => m.App2EstrategiaBibliografia
+          ),
+        children: [
+          {
+            title: 'COUTAU-BÉGARIE. Tratado de Estratégia',
+            path: 'tratado-de-estrategia',
+            loadComponent: () =>
+              import('../modules/app2-estrategia/app2-estrategia-bibliografia/tratado-de-estrategia/tratado-de-estrategia').then(
+                (m) => m.TratadoDeEstrategia
+              )
+          },
+          {
+            title: 'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex',
+            path: 'estrategias-maritimas',
+            loadComponent: () =>
+              import('../modules/app2-estrategia/app2-estrategia-bibliografia/estrategias-maritimas/estrategias-maritimas').then(
+                (m) => m.EstrategiasMaritimas
+              )
+          },
+          {
+            title: 'EMA-310 - Estratégia de Defesa Marítima',
+            path: 'ema-310-estrategia',
+            loadComponent: () =>
+              import('../modules/app2-estrategia/app2-estrategia-bibliografia/ema-310-estrategia/ema-310-estrategia').then(
+                (m) => m.Ema310Estrategia
+              )
+          }
+        ]
       },
       {
         title: 'Mídia',
@@ -138,9 +164,35 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         title: 'Bibliografia',
         path: 'bibliografia',
         loadComponent: () =>
-          import(
-            '../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/app3-planejamento-militar-bibliografia'
-          ).then((m) => m.App3PlanejamentoMilitarBibliografia)
+          import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/app3-planejamento-militar-bibliografia').then(
+            (m) => m.App3PlanejamentoMilitarBibliografia
+          ),
+        children: [
+          {
+            title: 'Lei nº 97/1999 - Organização, Preparo e o Emprego das Forças Armadas',
+            path: 'lei-97',
+            loadComponent: () =>
+              import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/lei-97/lei-97').then(
+                (m) => m.Lei97
+              )
+          },
+          {
+            title: 'Decreto 7.276/2010 - Estrutura Militar de Defesa',
+            path: 'decreto-7276',
+            loadComponent: () =>
+              import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/decreto-7276/decreto-7276').then(
+                (m) => m.Decreto7276
+              )
+          },
+          {
+            title: 'MD30-M-01 - Doutrina de Operações Conjuntas',
+            path: 'md-30-m-01',
+            loadComponent: () =>
+              import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/md-30-m-01/md-30-m-01').then(
+                (m) => m.Md30M01
+              )
+          }
+        ]
       },
       {
         title: 'Mídia',
@@ -650,7 +702,33 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         loadComponent: () =>
           import('../modules/app9-economia/app9-economia-bibliografia/app9-economia-bibliografia').then(
             (m) => m.App9EconomiaBibliografia
-          )
+          ),
+        children: [
+          {
+            title: 'Economia Brasileira Contemporânea',
+            path: 'economia-brasileira',
+            loadComponent: () =>
+              import('../modules/app9-economia/app9-economia-bibliografia/economia-brasileira/economia-brasileira').then(
+                (m) => m.EconomiaBrasileira
+              )
+          },
+          {
+            title: 'Economia Micro e Macro – Teoria, Exercícios e Casos',
+            path: 'economia-micro-macro',
+            loadComponent: () =>
+              import('../modules/app9-economia/app9-economia-bibliografia/economia-micro-macro/economia-micro-macro').then(
+                (m) => m.EconomiaMicroMacro
+              )
+          },
+          {
+            title: 'Economia Azul',
+            path: 'economia-azul-2',
+            loadComponent: () =>
+              import('../modules/app9-economia/app9-economia-bibliografia/economia-azul-2/economia-azul-2').then(
+                (m) => m.EconomiaAzul2
+              )
+          }
+        ]
       },
       {
         title: 'Mídia',

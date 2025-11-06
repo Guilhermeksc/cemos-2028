@@ -24,6 +24,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   private flashcardsService = inject(FlashCardsService);
   private perguntasService = inject(PerguntasService);
   private destroy$ = new Subject<void>();
+  private fullscreenChangeHandler = this.handleFullscreenChange.bind(this);
+  private webkitFullscreenChangeHandler = this.handleFullscreenChange.bind(this);
+  private mozFullscreenChangeHandler = this.handleFullscreenChange.bind(this);
 
   // Estados do componente
   isLoading = false;
@@ -38,6 +41,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   
   // Configuração
   maxCardsToShow = 6;
+  
+  // Estado do fullscreen
+  isFullscreen = false;
 
   ngOnInit() {
     console.log('🎴 Flash Cards Component inicializado');
@@ -46,11 +52,37 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     if (this.bibliografiaIds.length > 0) {
       this.loadData();
     }
+
+    // Listeners para quando o usuário sai do fullscreen usando ESC (suporte multi-navegador)
+    document.addEventListener('fullscreenchange', this.fullscreenChangeHandler);
+    document.addEventListener('webkitfullscreenchange', this.webkitFullscreenChangeHandler);
+    document.addEventListener('mozfullscreenchange', this.mozFullscreenChangeHandler);
   }
 
   ngOnDestroy() {
+    // Remove listeners do fullscreen
+    document.removeEventListener('fullscreenchange', this.fullscreenChangeHandler);
+    document.removeEventListener('webkitfullscreenchange', this.webkitFullscreenChangeHandler);
+    document.removeEventListener('mozfullscreenchange', this.mozFullscreenChangeHandler);
+    
     this.destroy$.next();
     this.destroy$.complete();
+  }
+
+  /**
+   * Handler para mudanças no estado de fullscreen (ex: ESC)
+   */
+  private handleFullscreenChange() {
+    const isFullscreenActive = 
+      document.fullscreenElement || 
+      (document as any).webkitFullscreenElement || 
+      (document as any).mozFullScreenElement;
+    
+    if (!isFullscreenActive && this.isFullscreen) {
+      // Usuário saiu do fullscreen (provavelmente ESC)
+      this.isFullscreen = false;
+      document.body.classList.remove('flashcards-fullscreen-active');
+    }
   }
 
   /**
@@ -291,10 +323,63 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     };
   }
 
+  get topRowCards(): FlashCardDisplay[] {
+    return this.displayedFlashCards.slice(0, 3);
+  }
+
+  get bottomRowCards(): FlashCardDisplay[] {
+    return this.displayedFlashCards.slice(3, 6);
+  }
+
   /**
    * TrackBy function para otimizar renderização do ngFor
    */
   trackByCardId(index: number, card: FlashCardDisplay): number {
     return card.id;
+  }
+
+  /**
+   * Alterna o modo fullscreen
+   */
+  toggleFullscreen() {
+    this.isFullscreen = !this.isFullscreen;
+    
+    if (this.isFullscreen) {
+      // Adiciona classe ao body para permitir controle CSS global se necessário
+      document.body.classList.add('flashcards-fullscreen-active');
+      
+      // Tenta usar Fullscreen API do navegador (com suporte a prefixos)
+      const element = document.querySelector('.main-container') as HTMLElement;
+      if (element) {
+        const requestFullscreen = 
+          element.requestFullscreen || 
+          (element as any).webkitRequestFullscreen || 
+          (element as any).mozRequestFullscreen || 
+          (element as any).msRequestFullscreen;
+        
+        if (requestFullscreen) {
+          requestFullscreen.call(element).catch((err: any) => {
+            console.log('Erro ao entrar em fullscreen:', err);
+            // Se falhar, mantém o estado visual mesmo sem fullscreen nativo
+          });
+        }
+      }
+    } else {
+      // Remove classe do body
+      document.body.classList.remove('flashcards-fullscreen-active');
+      
+      // Sai do fullscreen do navegador (com suporte a prefixos)
+      const exitFullscreen = 
+        document.exitFullscreen || 
+        (document as any).webkitExitFullscreen || 
+        (document as any).mozCancelFullScreen || 
+        (document as any).msExitFullscreen;
+      
+      if (exitFullscreen && (document.fullscreenElement || (document as any).webkitFullscreenElement)) {
+        exitFullscreen.call(document).catch((err: any) => {
+          console.log('Erro ao sair do fullscreen:', err);
+        });
+      }
+    }
   }
 }

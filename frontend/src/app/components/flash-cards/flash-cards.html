@@ -1,6 +1,6 @@
-<div class="main-container">
+<div class="main-container" [class.fullscreen-mode]="isFullscreen">
     <!-- Botões de navegação (similar ao componente capa-bibliografia) -->
-  <div class="header">
+  <div class="header" [class.hidden-fullscreen]="isFullscreen">
     <h2>📚 Flash Cards</h2>
     <div class="stats" *ngIf="!isLoading">
       <span class="stat-item">
@@ -79,20 +79,52 @@
         [disabled]="!selectedBibliografiaId && !selectedAssunto">
         ✖️ Limpar Filtros
       </button>
+
+      <button 
+        class="btn btn-fullscreen"
+        (click)="toggleFullscreen()"
+        [class.btn-exit-fullscreen]="isFullscreen"
+        *ngIf="!isLoading && displayedFlashCards.length > 0"
+        [attr.aria-label]="isFullscreen ? 'Sair do modo tela cheia' : 'Entrar no modo tela cheia'">
+        {{ isFullscreen ? '⤓ Sair da Tela Cheia' : '⤢ Tela Cheia' }}
+      </button>
     </div>
   </div>
 
   <!-- Loading -->
-  <div class="loading-container" *ngIf="isLoading">
+  <div class="loading-container" *ngIf="isLoading" [class.hidden-fullscreen]="isFullscreen">
     <div class="spinner"></div>
     <p>Carregando flash cards...</p>
   </div>
 
   <!-- Cards Grid -->
-  <div class="flashcards-grid" *ngIf="!isLoading && displayedFlashCards.length > 0">
-    <div 
-      *ngFor="let card of displayedFlashCards; trackBy: trackByCardId"
-      class="flashcard-wrapper">
+  <div class="flashcards-grid-wrapper" *ngIf="!isLoading && displayedFlashCards.length > 0">
+    <ng-container *ngIf="isFullscreen; else defaultGridView">
+      <div class="fullscreen-grid">
+        <div class="fullscreen-row">
+          <ng-container *ngFor="let card of topRowCards; trackBy: trackByCardId">
+            <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
+          </ng-container>
+        </div>
+        <div class="fullscreen-row" *ngIf="bottomRowCards.length > 0">
+          <ng-container *ngFor="let card of bottomRowCards; trackBy: trackByCardId">
+            <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <ng-template #defaultGridView>
+    <div class="flashcards-grid">
+      <ng-container *ngFor="let card of displayedFlashCards; trackBy: trackByCardId">
+        <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #flashcardTemplate let-card>
+    <div class="flashcard-wrapper">
       <div 
         class="flashcard"
         [class.flipped]="card.isFlipped"
@@ -152,10 +184,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </ng-template>
 
   <!-- Mobile action bar (visível no final em telas pequenas) -->
-  <div class="mobile-action-bar" *ngIf="!isLoading && allFlashCards.length > 0" role="toolbar" aria-label="Ações rápidas">
+  <div class="mobile-action-bar" *ngIf="!isLoading && allFlashCards.length > 0 && !isFullscreen" role="toolbar" aria-label="Ações rápidas">
     <button 
       class="btn btn-primary"
       (click)="loadRandomFlashCards()"
@@ -164,6 +196,7 @@
       🎲 Embaralhar
     </button>
   </div>
+
 
   <!-- Empty State -->
   <div class="empty-state" *ngIf="!isLoading && displayedFlashCards.length === 0 && allFlashCards.length > 0">

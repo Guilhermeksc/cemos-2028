@@ -28,48 +28,18 @@ export class App2EstrategiaBibliografia implements OnInit {
   public capas: CapaConfig[] = [
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/ciencia-politica`,
-      title: 'Ciência Política',
+      routePath: `${this.ROUTE_BASE}/bibliografia/tratado-de-estrategia`,
+      title: 'COUTAU-BÉGARIE. Tratado de Estratégia',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/constituicao-brasil`,
-      title: 'Constituição da República Federativa do Brasil',
+      routePath: `${this.ROUTE_BASE}/bibliografia/estrategias-maritimas`,
+      title: 'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/estrategia-nacional-defesa`,
-      title: 'Estratégia Nacional de Defesa',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/4.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/politica-nacional-defesa`,
-      title: 'Política Nacional de Defesa',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/5.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/lei-complementar-97`,
-      title: 'Lei Complementar nº 97',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/6.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/decreto-12481`,
-      title: 'Decreto nº 12.481 - Política Marítima Nacional (PMN)',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/7.jpg`,
-        routePath: `${this.ROUTE_BASE}/bibliografia/economia-azul`,
-      title: 'Economia Azul - vetor para o desenvolvimento do Brasil',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/8.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/ema-323`,
-      title: 'EMA-323 - Política Naval',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/9.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/decreto-12363`,
-      title: 'Decreto nº 12.363 - Plano Setorial para os Recursos do Mar',
+      routePath: `${this.ROUTE_BASE}/bibliografia/ema-310-estrategia`,
+      title: 'EMA-310 - Estratégia de Defesa Marítima',
     }
   ];
 
