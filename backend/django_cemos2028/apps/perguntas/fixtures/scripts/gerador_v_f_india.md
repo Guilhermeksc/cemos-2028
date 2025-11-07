@@ -12,9 +12,9 @@ Instruções específicas:
 
     bibliografia_id" será preenchido com 'Vingança da Geografia'.
 
-    “paginas” será preenchido com 'Cap X'
+    “paginas” será preenchido com 'Cap XII'
 
-    “assunto” será preenchido com 'Rússia'
+    “assunto” será preenchido com 'Índia'
 
     “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa.
 
