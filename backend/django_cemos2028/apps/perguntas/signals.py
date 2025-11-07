@@ -239,7 +239,6 @@ def load_fixtures_perguntas(sender, **kwargs):
                             pergunta_text = _as_clean_str(row.get('pergunta'))
                             if not pergunta_text:
                                 assunto_text = _as_clean_str(row.get('assunto')) or 'Assunto não especificado'
-                                pergunta_text = f"Assinale Verdadeiro ou Falso: {assunto_text}"
                             
                             # Usar uma combinação única para identificar a pergunta
                             lookup_key = {
@@ -251,7 +250,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 bibliografia=bibliografia,
                                 afirmacao_verdadeira=_as_clean_str(row['afirmacao_verdadeira']),
                                 defaults={
-                                    'pergunta': pergunta_text,
+                                    'pergunta': assunto_text,
                                     'paginas': _as_clean_str(row.get('paginas')),
                                     'assunto': _as_clean_str(row.get('assunto')),
                                     'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),

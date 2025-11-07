@@ -69,7 +69,7 @@ export class Perguntas implements OnInit, OnDestroy {
   // Configuração do simulado
   simuladoConfig: SimuladoConfig = {
     bibliografias: [],
-    questoesVF: 5,
+    questoesVF: 10,
     questoesMultipla: 4,
     questoesCorrelacao: 1
   };
