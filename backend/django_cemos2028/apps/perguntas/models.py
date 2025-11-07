@@ -110,8 +110,9 @@ class PerguntaMultiplaModel(PerguntasBaseModel):
 
 
 class PerguntaVFModel(PerguntasBaseModel):
-    afirmacao = models.TextField(verbose_name="Afirmação")
-    resposta_correta = models.BooleanField(verbose_name="Resposta Correta (Verdadeiro/Falso)")
+    assunto = models.CharField(max_length=100, blank=True, null=True, verbose_name="Assunto")
+    afirmacao_verdadeira = models.TextField(verbose_name="Afirmação Verdadeira", blank=True, null=True)
+    afirmacao_falsa = models.TextField(verbose_name="Afirmação Falsa", blank=True, null=True)
     
     class Meta:
         verbose_name = "Pergunta Verdadeiro ou Falso"
@@ -121,6 +122,11 @@ class PerguntaVFModel(PerguntasBaseModel):
     def save(self, *args, **kwargs):
         self.tipo = 'vf'
         super().save(*args, **kwargs)
+    
+    @property
+    def resposta_correta(self):
+        """A resposta correta é sempre True (Verdadeiro), pois a afirmacao_verdadeira é a correta"""
+        return True
 
 
 class PerguntaCorrelacaoModel(PerguntasBaseModel):

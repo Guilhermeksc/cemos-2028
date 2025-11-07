@@ -16,6 +16,7 @@ bibliografia_titulo	paginas	pergunta	afirmacao	resposta_correta	justificativa_re
 	|	Conceito-chave do Realismo	O conceito-chave do Realismo é o Poder das Ideias, visto que a distribuição de recursos materiais não é relevante para essa teoria.	false	O conceito-chave do Realismo é o Equilíbrio de Poder, e a teoria que foca no Poder das Ideias é o Construtivismo.	|	|
 	|	Conceito-chave do Liberalismo	O conceito-chave do Liberalismo e do institucionalismo neoliberal é a Luta de Classes.	false	O conceito-chave do Liberalismo e do institucionalismo neoliberal é a promoção de Instituições colaborativas, em oposição à Luta de Classes do Radicalismo.	|	|
 	|	Conceito-chave do Construtivismo	O Construtivismo postula que o conceito-chave para entender as Relações Internacionais é o Poder das Ideias.	true	O Construtivis
+    
     """
 
     # Limpa e organiza o texto

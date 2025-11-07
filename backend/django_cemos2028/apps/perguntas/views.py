@@ -140,9 +140,9 @@ class PerguntaVFViewSet(viewsets.ModelViewSet):
     queryset = PerguntaVFModel.objects.select_related('bibliografia').all()
     serializer_class = PerguntaVFSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
-    search_fields = ['pergunta', 'afirmacao', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova']
+    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
+    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto', 'bibliografia__titulo', 'justificativa_resposta_certa']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto']
     ordering = ['id']
     
     def get_serializer_class(self):

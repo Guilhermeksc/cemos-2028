@@ -12,7 +12,7 @@ import { HeaderConcentComponent } from '../../../components/header-concent/heade
 })
 export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit {
   // Configuração específica para o módulo de Geopolítica
-  bibliografiaIds: number[] = [2]; // Bibliografia ID 1 para Geopolítica
+  bibliografiaIds: number[] = [1, 2, 3, 4]; // Bibliografias IDs 1, 2, 3 e 4 para Geopolítica
   
   pageTitle = 'Perguntas de Geopolítica e Relações Internacionais';
   // Estado do simulado
@@ -21,7 +21,11 @@ export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit {
 
   ngOnInit() {
     console.log('Módulo de Perguntas - Geopolítica e Relações Internacionais iniciado');
-    console.log('Bibliografia configurada:', this.bibliografiaIds);
+    console.log('Bibliografias configuradas:', this.bibliografiaIds);
+  }
+
+  getBibliografiaIdsString(): string {
+    return this.bibliografiaIds.join(', ');
   }
 
   onSimuladoStarted() {

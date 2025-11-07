@@ -66,17 +66,18 @@ class PerguntaMultiplaAdmin(admin.ModelAdmin):
 
 @admin.register(PerguntaVFModel)
 class PerguntaVFAdmin(admin.ModelAdmin):
-    list_display = ['__str__', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
-    list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia']
-    search_fields = ['pergunta', 'afirmacao', 'bibliografia__titulo', 'justificativa_resposta_certa']
+    list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova']
+    list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'assunto']
+    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto', 'bibliografia__titulo', 'justificativa_resposta_certa']
     ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
-            'fields': ('bibliografia', 'pergunta', 'paginas', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'pergunta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova')
         }),
-        ('Afirmação e Resposta', {
-            'fields': ('afirmacao', 'resposta_correta')
+        ('Afirmações', {
+            'fields': ('afirmacao_verdadeira', 'afirmacao_falsa'),
+            'description': 'A resposta correta é sempre "Verdadeiro" (afirmacao_verdadeira é a correta)'
         }),
         ('Justificativa', {
             'fields': ('justificativa_resposta_certa',),

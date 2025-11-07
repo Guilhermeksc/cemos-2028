@@ -79,21 +79,16 @@ class PerguntaVFResource(resources.ModelResource):
         attribute='caiu_em_prova',
         widget=BooleanWidget()
     )
-    resposta_correta = fields.Field(
-        column_name='resposta_correta',
-        attribute='resposta_correta',
-        widget=BooleanWidget()
-    )
 
     class Meta:
         model = PerguntaVFModel
         fields = (
-            'id', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
-            'afirmacao', 'resposta_correta', 'justificativa_resposta_certa', 'tipo'
+            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa', 'tipo'
         )
         export_order = (
-            'id', 'bibliografia', 'pergunta', 'afirmacao', 'resposta_correta',
-            'paginas', 'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa', 'tipo'
+            'id', 'bibliografia', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 
+            'justificativa_resposta_certa', 'caiu_em_prova', 'ano_prova', 'tipo'
         )
         import_id_fields = ('id',)
         skip_unchanged = True

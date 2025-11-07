@@ -222,30 +222,39 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 4. Perguntas Verdadeiro/Falso
             df = load_fixture('perguntas_vf.xlsx', [
-                'bibliografia_titulo', 'paginas', 'pergunta', 'afirmacao', 'resposta_correta', 'justificativa_resposta_certa'
+                'bibliografia_titulo', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas verdadeiro/falso...")
                 loaded_count = 0
                 for idx, row in df.iterrows():
-                    if _require_fields(row, ['bibliografia_titulo', 'pergunta', 'afirmacao'], 
+                    if _require_fields(row, ['bibliografia_titulo', 'afirmacao_verdadeira', 'afirmacao_falsa'], 
                                      'perguntas_vf', idx, 
-                                     ['bibliografia_titulo', 'paginas', 'pergunta', 'afirmacao', 'justificativa_resposta_certa']):
+                                     ['bibliografia_titulo', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']):
                         
                         try:
                             bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
                             
-                            # Converter resposta_correta para boolean
-                            resposta_str = _as_clean_str(row.get('resposta_correta', 'false')).lower()
-                            resposta_bool = resposta_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            # Gerar pergunta padrão se não existir no Excel
+                            pergunta_text = _as_clean_str(row.get('pergunta'))
+                            if not pergunta_text:
+                                assunto_text = _as_clean_str(row.get('assunto')) or 'Assunto não especificado'
+                                pergunta_text = f"Assinale Verdadeiro ou Falso: {assunto_text}"
+                            
+                            # Usar uma combinação única para identificar a pergunta
+                            lookup_key = {
+                                'bibliografia': bibliografia,
+                                'afirmacao_verdadeira': _as_clean_str(row['afirmacao_verdadeira'])[:200]  # Primeiros 200 chars para lookup
+                            }
                             
                             obj, created = PerguntaVFModel.objects.update_or_create(
                                 bibliografia=bibliografia,
-                                pergunta=_as_clean_str(row['pergunta']),
+                                afirmacao_verdadeira=_as_clean_str(row['afirmacao_verdadeira']),
                                 defaults={
+                                    'pergunta': pergunta_text,
                                     'paginas': _as_clean_str(row.get('paginas')),
-                                    'afirmacao': _as_clean_str(row['afirmacao']),
-                                    'resposta_correta': resposta_bool,
+                                    'assunto': _as_clean_str(row.get('assunto')),
+                                    'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),
                                     'justificativa_resposta_certa': _as_clean_str(row.get('justificativa_resposta_certa', '')),
                                     'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
                                     'ano_prova': _as_int(row.get('ano_prova'))

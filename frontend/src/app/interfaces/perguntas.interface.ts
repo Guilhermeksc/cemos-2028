@@ -71,9 +71,14 @@ export interface PerguntaMultipla extends PerguntaBase {
 // Pergunta Verdadeiro ou Falso
 export interface PerguntaVF extends PerguntaBase {
   tipo: 'vf';
-  afirmacao: string;
-  resposta_correta: boolean;
-  resposta_correta_display?: string;
+  assunto?: string;
+  afirmacao_verdadeira: string;
+  afirmacao_falsa: string;
+  resposta_correta?: boolean; // Sempre true (calculado) - afirmacao_verdadeira é sempre a correta
+  resposta_correta_display?: string; // Sempre "Verdadeiro"
+  // Campos para sorteio aleatório da afirmação
+  afirmacao_sorteada?: string; // A afirmação que será exibida (verdadeira ou falsa)
+  afirmacao_sorteada_eh_verdadeira?: boolean; // Se a afirmação sorteada é verdadeira ou falsa
 }
 
 
@@ -128,7 +133,7 @@ export interface PerguntaMultiplaFilters extends PerguntaFilters {
 }
 
 export interface PerguntaVFFilters extends PerguntaFilters {
-  resposta_correta?: boolean;
+  // resposta_correta removido - sempre é true (afirmacao_verdadeira é sempre a correta)
 }
 
 // Interface para resposta paginada da API

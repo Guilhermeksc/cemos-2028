@@ -10,7 +10,8 @@ import {
   Pergunta,
   PerguntaMultiplaFilters,
   PerguntaVFFilters,
-  PerguntaFilters 
+  PerguntaFilters,
+  PaginatedResponse
 } from '../../interfaces/perguntas.interface';
 import { Subject, forkJoin, Observable } from 'rxjs';
 import { takeUntil, map } from 'rxjs/operators';
@@ -279,7 +280,10 @@ export class Perguntas implements OnInit, OnDestroy {
       
       case 'vf':
         const vf = question.data as PerguntaVF;
-        return vf.resposta_correta === answer;
+        // Se a afirmação sorteada é verdadeira, a resposta correta é true (Verdadeiro)
+        // Se a afirmação sorteada é falsa, a resposta correta é false (Falso)
+        const respostaEsperada = vf.afirmacao_sorteada_eh_verdadeira ?? true;
+        return answer === respostaEsperada;
       
       case 'correlacao':
         const correlacao = question.data as PerguntaCorrelacao;
@@ -428,39 +432,55 @@ export class Perguntas implements OnInit, OnDestroy {
   }
 
   private loadRandomQuestions(): Observable<SimuladoQuestion[]> {
-    const filters = {
-      page_size: 100,
-      // Adicionar filtro de bibliografia se houver bibliografias selecionadas
-      ...(this.simuladoConfig.bibliografias.length > 0 && {
-        bibliografia: this.simuladoConfig.bibliografias[0] // API do Django aceita apenas uma bibliografia por vez
-      })
-    };
+    console.log('📚 Buscando questões para bibliografias:', this.simuladoConfig.bibliografias);
+    
+    // Se não há bibliografias selecionadas, retornar array vazio
+    if (this.simuladoConfig.bibliografias.length === 0) {
+      console.warn('⚠️ Nenhuma bibliografia selecionada');
+      return new Observable(observer => {
+        observer.next([]);
+        observer.complete();
+      });
+    }
 
-    console.log('📚 Buscando questões com filtros:', filters);
-    console.log('🎯 Bibliografias selecionadas:', this.simuladoConfig.bibliografias);
+    // Criar arrays de observables para cada tipo de pergunta e cada bibliografia
+    const multiplaObservables: Observable<PaginatedResponse<PerguntaMultipla>>[] = [];
+    const vfObservables: Observable<PaginatedResponse<PerguntaVF>>[] = [];
+    const correlacaoObservables: Observable<PaginatedResponse<PerguntaCorrelacao>>[] = [];
 
-    const multiplaFilters: PerguntaMultiplaFilters = { 
-      ...filters
-    };
-    const vfFilters: PerguntaVFFilters = { 
-      ...filters
-    };
-    const correlacaoFilters: PerguntaFilters = { 
-      ...filters
-    };
+    // Criar uma chamada para cada bibliografia
+    this.simuladoConfig.bibliografias.forEach(bibliografiaId => {
+      const baseFilters = { page_size: 100, bibliografia: bibliografiaId };
+      
+      multiplaObservables.push(
+        this.perguntasService.getPerguntasMultipla(baseFilters as PerguntaMultiplaFilters)
+      );
+      vfObservables.push(
+        this.perguntasService.getPerguntasVF(baseFilters as PerguntaVFFilters)
+      );
+      correlacaoObservables.push(
+        this.perguntasService.getPerguntasCorrelacao(baseFilters as PerguntaFilters)
+      );
+    });
 
+    // Combinar todas as chamadas usando forkJoin
     return forkJoin({
-      multiplas: this.perguntasService.getPerguntasMultipla(multiplaFilters),
-      vfs: this.perguntasService.getPerguntasVF(vfFilters),
-      correlacoes: this.perguntasService.getPerguntasCorrelacao(correlacaoFilters)
+      multiplas: forkJoin(multiplaObservables),
+      vfs: forkJoin(vfObservables),
+      correlacoes: forkJoin(correlacaoObservables)
     }).pipe(
       map(({ multiplas, vfs, correlacoes }) => {
-        console.log('📊 Dados brutos recebidos do backend:', {
+        // Combinar resultados de todas as bibliografias
+        const todasMultiplas: PerguntaMultipla[] = multiplas.flatMap(response => response.results);
+        const todasVFs: PerguntaVF[] = vfs.flatMap(response => response.results);
+        const todasCorrelacoes: PerguntaCorrelacao[] = correlacoes.flatMap(response => response.results);
+
+        console.log('📊 Dados brutos recebidos do backend (combinados de todas bibliografias):', {
           multiplas: {
-            count: multiplas.count,
-            total_results: multiplas.results.length,
-            bibliografias_encontradas: [...new Set(multiplas.results.map(q => q.bibliografia))],
-            primeiras_questoes: multiplas.results.slice(0, 3).map(q => ({
+            total_bibliografias: multiplas.length,
+            count_total: todasMultiplas.length,
+            bibliografias_encontradas: [...new Set(todasMultiplas.map(q => q.bibliografia))],
+            primeiras_questoes: todasMultiplas.slice(0, 3).map(q => ({
               id: q.id,
               bibliografia: q.bibliografia,
               bibliografia_titulo: q.bibliografia_titulo,
@@ -468,10 +488,10 @@ export class Perguntas implements OnInit, OnDestroy {
             }))
           },
           vfs: {
-            count: vfs.count,
-            total_results: vfs.results.length,
-            bibliografias_encontradas: [...new Set(vfs.results.map(q => q.bibliografia))],
-            primeiras_questoes: vfs.results.slice(0, 3).map(q => ({
+            total_bibliografias: vfs.length,
+            count_total: todasVFs.length,
+            bibliografias_encontradas: [...new Set(todasVFs.map(q => q.bibliografia))],
+            primeiras_questoes: todasVFs.slice(0, 3).map(q => ({
               id: q.id,
               bibliografia: q.bibliografia,
               bibliografia_titulo: q.bibliografia_titulo,
@@ -479,10 +499,10 @@ export class Perguntas implements OnInit, OnDestroy {
             }))
           },
           correlacoes: {
-            count: correlacoes.count,
-            total_results: correlacoes.results.length,
-            bibliografias_encontradas: [...new Set(correlacoes.results.map(q => q.bibliografia))],
-            primeiras_questoes: correlacoes.results.slice(0, 3).map(q => ({
+            total_bibliografias: correlacoes.length,
+            count_total: todasCorrelacoes.length,
+            bibliografias_encontradas: [...new Set(todasCorrelacoes.map(q => q.bibliografia))],
+            primeiras_questoes: todasCorrelacoes.slice(0, 3).map(q => ({
               id: q.id,
               bibliografia: q.bibliografia,
               bibliografia_titulo: q.bibliografia_titulo,
@@ -493,28 +513,19 @@ export class Perguntas implements OnInit, OnDestroy {
 
         const questions: SimuladoQuestion[] = [];
 
-        // Filtrar questões por bibliografia
+        // Filtrar questões por bibliografia (já devem estar filtradas, mas garantindo)
         console.log('🎯 Configuração de filtro:', {
           bibliografias_solicitadas: this.simuladoConfig.bibliografias,
-          tipo_array: Array.isArray(this.simuladoConfig.bibliografias),
-          exemplo_questao_multipla: multiplas.results[0] ? {
-            id: multiplas.results[0].id,
-            bibliografia: multiplas.results[0].bibliografia,
-            tipo_bibliografia: typeof multiplas.results[0].bibliografia
-          } : 'sem questões'
+          tipo_array: Array.isArray(this.simuladoConfig.bibliografias)
         });
         
-        const multiplasFiltradas = multiplas.results.filter(q => {
-          const includes = this.simuladoConfig.bibliografias.includes(q.bibliografia);
-          if (!includes && multiplas.results.indexOf(q) < 3) {
-            console.log(`❌ Questão ${q.id} REJEITADA - bibliografia ${q.bibliografia} não está em`, this.simuladoConfig.bibliografias);
-          }
-          return includes;
-        });
-        const vfsFiltradas = vfs.results.filter(q => 
+        const multiplasFiltradas = todasMultiplas.filter(q => 
           this.simuladoConfig.bibliografias.includes(q.bibliografia)
         );
-        const correlacoesFiltradas = correlacoes.results.filter(q => 
+        const vfsFiltradas = todasVFs.filter(q => 
+          this.simuladoConfig.bibliografias.includes(q.bibliografia)
+        );
+        const correlacoesFiltradas = todasCorrelacoes.filter(q => 
           this.simuladoConfig.bibliografias.includes(q.bibliografia)
         );
 
@@ -522,30 +533,27 @@ export class Perguntas implements OnInit, OnDestroy {
           bibliografias_solicitadas: this.simuladoConfig.bibliografias,
           questoes_encontradas: {
             multiplas: {
-              total_antes_filtro: multiplas.results.length,
+              total_antes_filtro: todasMultiplas.length,
               total_apos_filtro: multiplasFiltradas.length,
-              questoes_disponiveis: multiplasFiltradas.map(q => ({
-                id: q.id,
-                bibliografia: q.bibliografia,
-                pergunta_preview: q.pergunta.substring(0, 30) + '...'
+              distribuicao_por_bibliografia: this.simuladoConfig.bibliografias.map(bibId => ({
+                bibliografia: bibId,
+                count: multiplasFiltradas.filter(q => q.bibliografia === bibId).length
               }))
             },
             vfs: {
-              total_antes_filtro: vfs.results.length,
+              total_antes_filtro: todasVFs.length,
               total_apos_filtro: vfsFiltradas.length,
-              questoes_disponiveis: vfsFiltradas.map(q => ({
-                id: q.id,
-                bibliografia: q.bibliografia,
-                pergunta_preview: q.pergunta.substring(0, 30) + '...'
+              distribuicao_por_bibliografia: this.simuladoConfig.bibliografias.map(bibId => ({
+                bibliografia: bibId,
+                count: vfsFiltradas.filter(q => q.bibliografia === bibId).length
               }))
             },
             correlacoes: {
-              total_antes_filtro: correlacoes.results.length,
+              total_antes_filtro: todasCorrelacoes.length,
               total_apos_filtro: correlacoesFiltradas.length,
-              questoes_disponiveis: correlacoesFiltradas.map(q => ({
-                id: q.id,
-                bibliografia: q.bibliografia,
-                pergunta_preview: q.pergunta.substring(0, 30) + '...'
+              distribuicao_por_bibliografia: this.simuladoConfig.bibliografias.map(bibId => ({
+                bibliografia: bibId,
+                count: correlacoesFiltradas.filter(q => q.bibliografia === bibId).length
               }))
             }
           }
@@ -626,13 +634,24 @@ export class Perguntas implements OnInit, OnDestroy {
 
         // Converter para SimuladoQuestion
         selectedVFs.forEach(q => {
+          // Sortear aleatoriamente se vai mostrar a afirmação verdadeira ou falsa
+          const mostrarVerdadeira = Math.random() < 0.5;
+          const afirmacaoSorteada = mostrarVerdadeira ? q.afirmacao_verdadeira : q.afirmacao_falsa;
+          
+          // Criar uma cópia da pergunta com os campos de sorteio
+          const qComSorteio: PerguntaVF = {
+            ...q,
+            afirmacao_sorteada: afirmacaoSorteada,
+            afirmacao_sorteada_eh_verdadeira: mostrarVerdadeira
+          };
+          
           const simuladoQ: SimuladoQuestion = {
             id: q.id,
             tipo: 'vf',
             pergunta: q.pergunta,
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
-            data: q,
+            data: qComSorteio,
             uniqueKey: `vf-${q.id}`
           };
           questions.push(simuladoQ);
@@ -641,7 +660,9 @@ export class Perguntas implements OnInit, OnDestroy {
             id: simuladoQ.id,
             uniqueKey: simuladoQ.uniqueKey,
             tipo: simuladoQ.tipo,
-            tipo_verificacao: simuladoQ.tipo === 'vf'
+            tipo_verificacao: simuladoQ.tipo === 'vf',
+            afirmacao_sorteada_eh_verdadeira: mostrarVerdadeira,
+            afirmacao_preview: afirmacaoSorteada.substring(0, 50) + '...'
           });
         });
 

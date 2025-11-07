@@ -1,7 +1,7 @@
 <!-- Pergunta Verdadeiro/Falso -->
 <div class="vf-question">
   <div class="afirmacao">
-    <p><strong>Afirmação:</strong> {{ questionData.afirmacao }}</p>
+    <p><strong>Afirmação:</strong> {{ getAfirmacaoSorteada() }}</p>
   </div>
   
   <div class="vf-options">
@@ -37,6 +37,9 @@
   <div *ngIf="isAnswered" class="justificativa">
     <div>
       <h5>✅ Resposta Correta: {{ getCorrectAnswer() ? 'Verdadeiro' : 'Falso' }}</h5>
+      <p *ngIf="questionData.afirmacao_sorteada_eh_verdadeira === false" class="afirmacao-info">
+        <small>ℹ️ A afirmação apresentada era <strong>falsa</strong>. A afirmação verdadeira seria: "{{ questionData.afirmacao_verdadeira }}"</small>
+      </p>
     </div>    
     <div class="justificativa-texto">
       <h5>💡 Justificativa: {{ questionData.justificativa_resposta_certa }}</h5>

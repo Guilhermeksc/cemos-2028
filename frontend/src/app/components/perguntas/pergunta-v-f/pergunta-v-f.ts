@@ -34,6 +34,13 @@ export class PerguntaVF {
   }
 
   getCorrectAnswer(): boolean {
-    return this.questionData.resposta_correta;
+    // Se a afirmação sorteada é verdadeira, a resposta correta é true (Verdadeiro)
+    // Se a afirmação sorteada é falsa, a resposta correta é false (Falso)
+    return this.questionData.afirmacao_sorteada_eh_verdadeira ?? true;
+  }
+  
+  getAfirmacaoSorteada(): string {
+    // Retorna a afirmação que foi sorteada para exibição
+    return this.questionData.afirmacao_sorteada ?? this.questionData.afirmacao_verdadeira;
   }
 }

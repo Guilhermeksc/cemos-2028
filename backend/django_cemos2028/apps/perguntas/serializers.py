@@ -71,20 +71,21 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
 class PerguntaVFSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
+    resposta_correta = serializers.ReadOnlyField()
     resposta_correta_display = serializers.SerializerMethodField()
     
     class Meta:
         model = PerguntaVFModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'caiu_em_prova', 'ano_prova',
-            'pergunta', 'afirmacao', 'resposta_correta', 'resposta_correta_display',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
+            'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'resposta_correta', 'resposta_correta_display',
             'justificativa_resposta_certa', 'tipo', 'tipo_display'
         ]
-        read_only_fields = ['tipo']
+        read_only_fields = ['tipo', 'resposta_correta']
     
     def get_resposta_correta_display(self, obj):
-        """Retorna 'Verdadeiro' ou 'Falso' ao invés de True/False"""
-        return "Verdadeiro" if obj.resposta_correta else "Falso"
+        """Retorna 'Verdadeiro' pois a afirmacao_verdadeira é sempre a correta"""
+        return "Verdadeiro"
 
 
 class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
@@ -156,8 +157,8 @@ class PerguntaVFCreateUpdateSerializer(PerguntaVFSerializer):
     """Serializer específico para criação e edição de pergunta V/F"""
     class Meta(PerguntaVFSerializer.Meta):
         fields = [
-            'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
-            'afirmacao', 'resposta_correta', 'justificativa_resposta_certa'
+            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
         ]
 
 
