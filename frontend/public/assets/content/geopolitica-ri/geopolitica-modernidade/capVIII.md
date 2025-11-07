@@ -61,7 +61,7 @@ A aviação, nos seus primórdios, heroicamente desbravando as ro­tas na selva,
 
 Entre as iniciativas e projetos que consideramos mais importantes para este primeiro quarto de século, a fim de se dar a necessária continuidade à Política de Desenvolvimento Econômico e Social, base de susten­tação indispensável à realização dos objetivos de progresso, destacamos: 
 
-Área de Infra-estrutura - A complementação e atualização de proje­ tos iniciados e inacabados, contidos no Programa "Avança Brasil" (1998), do atual governo, tais como:
+Área de Infra-estrutura - A complementação e atualização de proje tos iniciados e inacabados, contidos no Programa "Avança Brasil" (1998), do atual governo, tais como:
 
 - Eixo de Saída Norte para o Caribe;
 - Eixo de Saída para o Atlântico Norte- hidrovia Madeira-Amazonas;

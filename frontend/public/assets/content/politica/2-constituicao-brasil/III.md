@@ -10,23 +10,23 @@ Título III – art. 18 a 22, 25 a 32 e 34 a 38;
 
 ✨ § 2º Os Territórios Federais integram a União, e sua criação, transformação em Estado ou reintegração ao Estado de origem serão reguladas em lei complementar.
 
-✨ § 3º Os Estados podem incorporar-se entre si, subdividir-se ou desmembrar-se para se anexarem a outros, ou formarem novos Estados ou Territórios Federais, mediante aprovação da população diretamente interessada, através de plebiscito, e do Congresso Nacional, por lei complementar.
+✨ § 3º Os Estados podem incorporar-se entre si, subdividir-se ou desmembrar-se para se anexarem a outros, ou formarem novos Estados ou Territórios Federais, <u>mediante aprovação da população diretamente interessada, **através de plebiscito**, e do Congresso Nacional, **por lei complementar**.</u>
 
 ✨ § 4º A criação, a incorporação, a fusão e o desmembramento de Municípios, far-se-ão por lei estadual, dentro do período determinado por Lei Complementar Federal, e dependerão de consulta prévia, mediante plebiscito, às populações dos Municípios envolvidos, após divulgação dos Estudos de Viabilidade Municipal, apresentados e publicados na forma da lei. (Redação dada pela Emenda Constitucional nº 15, de 1996) Vide art. 96 - ADCT
 
 ⚖️ **Art. 19.** É vedado à União, aos Estados, ao Distrito Federal e aos Municípios:
 
-I - estabelecer cultos religiosos ou igrejas, subvencioná-los, embaraçar-lhes o funcionamento ou manter com eles ou seus representantes relações de dependência ou aliança, ressalvada, na forma da lei, a colaboração de interesse público;
+✨ I - estabelecer cultos religiosos ou igrejas, subvencioná-los, embaraçar-lhes o funcionamento ou manter com eles ou seus representantes relações de dependência ou aliança, ressalvada, na forma da lei, a colaboração de interesse público;
 
-II - recusar fé aos documentos públicos;
+✨ II - recusar fé aos documentos públicos;
 
-III - criar distinções entre brasileiros ou preferências entre si.
+✨ III - criar distinções entre brasileiros ou preferências entre si.
 
 ## CAPÍTULO II - DA UNIÃO
 
 ⚖️ **Art. 20.** São bens da União:
 
-I - os que atualmente lhe pertencem e os que lhe vierem a ser atribuídos;
+✨ I - os que atualmente lhe pertencem e os que lhe vierem a ser atribuídos;
 
 II - as terras devolutas indispensáveis à defesa das fronteiras, das fortificações e construções militares, das vias federais de comunicação e à preservação ambiental, definidas em lei;
 

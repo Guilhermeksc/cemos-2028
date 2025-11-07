@@ -35,33 +35,12 @@ Nascido em São Paulo em 1913, Meira Mattos concluiu o curso da Academia Militar
 destacam-se: adido militar na Bolívia, interventor federal no Estado de Goiás (1964), comandante do contingente brasi leiro da Força Interamericana de Paz enviada para São Domingos (1964), chefe da Divisão de Assuntos Políticos da ESG, comandante da Polícia Militar de Brasília (1966), Vice-Chefe do Estado-Maior das Forças Armadas, Vice-Diretor do
 Colégio Interamericano de Defesa em Washington. D.C., Comandante da Academia Militar (1969) - cujo currículo Meira Mattos reviu à luz da dou­trina da ESG, para ajustá-lo às linhas da filosofia do grupo da Sorbonn e Inspetor-Geral da Polícia Militar (1970), Meira Mattos foi promovido a General-de-Brigada em 1968 e a General-de-Divisão em 1973. Ronald Schneider cita o General como amigo íntimo e "assessor militar-chave" do Presidente Castello Branco e como "um oficial que recebeu pelo menos uma delicada missão (política) durante cada um dos quatro anos" do man­dato do Presidente.
 
-Considerado um "instrutor de tática altamente respeitado" e um "escritor prolífico", Meira Mattos foi mencionado por Fontaine como res­ponsável por ligar tradições geopolíticas ao grupo da Sorbonne: "O Gene­ral Meira Mattos prosseguiu do ponto de onde os geopolíticos teóricos geralmente se detêm. Meira Mattos estabeleceu os fundamentos da posição dos oficiais moderados em uma série de livros e artigos publica­dos sob os auspícios do Exército1 1 ." Entre seus trabalhos. os de maior
- 
-infl uência geopolítica são: Projeção Mundial do Brasil ( 1960), Doutrina
+Considerado um "instrutor de tática altamente respeitado" e um "escritor prolífico", Meira Mattos foi mencionado por Fontaine como res­ponsável por ligar tradições geopolíticas ao grupo da Sorbonne: "O Gene­ral Meira Mattos prosseguiu do ponto de onde os geopolíticos teóricos geralmente se detêm. Meira Mattos estabeleceu os fundamentos da posição dos oficiais moderados em uma série de livros e artigos publica­dos sob os auspícios do Exército." Entre seus trabalhos. os de maior infl uência geopolítica são: Projeção Mundial do Brasil (1960), Doutrina Política da Revolução de 31 de março de 1964 (1967), Brasil, Geopolítica e Destino (1975 e 1979) , A Geopolítica e as Projeções do Poder ( 979) e Uma Geopolítica Pan-Amazônica (1980). Seus n umerosos artigos foram publicados principalmente em A Defesa Nacional, Estratégia (Argentina).
 
-Política da Revolução de 31 de março de 1 964 ( 1 967), Brasil, Geopolítica
+Boletim Geográfico. Revista Brasileira de Política Internacional e Revista 
+dei Colegio Inter-Americano de Defensa. 
 
-e Destino ( 1 975 e 1 979) , A Geopolítica e as Projeções do Poder ( 1 979) e
-
-Uma Geopolítica Pan-Amazônica ( 1 980). Seus n umerosos artigos foram
-
-publicados principalmente em A Defesa Nacional, Estratégia (Argentina).
-
-Boletim Geográfico. Revista Brasileira de Política Internacional e Revista
-
-dei Colegio Inter-Americano de Defensa.
-
-Os trabalhos de Mei ra Mattos são representativos da escola "rea­
-
-lista" da política i nternacional e é dentro desse modelo que ele enqua' Ronald Sch neider. The Political System of Brazi /: Emergence of a "Modemizing· Authoritarian Re­
-
-gime 1 964-70 (Nova York: Columbia University Press. 1 97 1 1 . p. 1 47.
-
-" Schneider. p. 1 47 1 1 Fontaine, p. 82.
-
-1 1 3
-
-GEOPOLÍTICA E MODERNIDADE
+Os trabalhos de Meira Mattos são representativos da escola "rea­lista" da política i nternacional e é dentro desse modelo que ele enqua' Ronald Sch neider. The Political System of Brazi /: Emergence of a "Modemizing· Authoritarian Re­gime 1 964-70 (Nova York: Columbia University Press. 1 97 1 1 . p. 1 47. " Schneider. p. 1 47 1 1 Fontaine, p. 82. 
 
 dra suas diretrizes geopolíticas para o Brasi l . De acordo com os ditames
 
