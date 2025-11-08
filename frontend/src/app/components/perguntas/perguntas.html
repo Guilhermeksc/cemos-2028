@@ -1,6 +1,40 @@
-<!-- Simulado de Perguntas - Layout Simplificado -->
+<!-- Simulado de Perguntas - Layout com Tabs -->
 <div class="simulado-container-simplified">
   
+  <!-- Sistema de Tabs -->
+  <div class="tabs-container">
+    <div class="tabs-header">
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'completo'"
+        (click)="setActiveTab('completo')"
+      >
+        📝 Simulado Completo (15 questões)
+      </button>
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'vf'"
+        (click)="setActiveTab('vf')"
+      >
+        ✅ Verdadeiro/Falso (20 questões)
+      </button>
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'multipla'"
+        (click)="setActiveTab('multipla')"
+      >
+        🔘 Múltipla Escolha (10 questões)
+      </button>
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'correlacao'"
+        (click)="setActiveTab('correlacao')"
+      >
+        🔗 Correlação (5 questões)
+      </button>
+    </div>
+  </div>
+
   <!-- Loading das Questões -->
   <div *ngIf="isLoadingQuestions" class="loading-questions">
     <div class="loading-spinner"></div>
@@ -57,7 +91,7 @@
               📚 {{ question.bibliografia_titulo }}
             </span>
             <span *ngIf="question.paginas" class="paginas">
-              📄 Páginas: {{ question.paginas }}
+              📄 {{ question.paginas }}
             </span>
           </div>
 

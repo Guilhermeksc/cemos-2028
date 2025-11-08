@@ -1,17 +1,43 @@
-  <!-- Componente de Flash Cards -->
-<app-header-concent
-  [moduleEmoji]="'🌍'"
-  [moduleLabel]="pageTitle"
-  [showBibliografia]="true"
-  [showFlashcards]="true"
-  [showMedia]="true"
-  [showPerguntas]="false"
-  [showConceitos]="true">
-</app-header-concent>
-
 <!-- Módulo de Perguntas - Geopolítica e Relações Internacionais -->
 <div class="geopolitica-perguntas-container">
   
+  <!-- Seletor de Bibliografia - Sempre visível -->
+  <div class="bibliografia-selector-container">
+    <div class="bibliografia-selector-card">
+      <label for="bibliografia-select" class="bibliografia-label">
+        <strong>📖 Selecionar Bibliografia:</strong>
+      </label>
+      <select 
+        id="bibliografia-select"
+        class="bibliografia-select"
+        [(ngModel)]="selectedBibliografiaId"
+        (change)="onBibliografiaChange()"
+        [disabled]="isLoadingBibliografias"
+      >
+        <option [ngValue]="null">📚 Todas as Bibliografias</option>
+        <option 
+          *ngFor="let bibliografia of bibliografias" 
+          [ngValue]="bibliografia.id"
+        >
+          {{ bibliografia.titulo }}
+          <span *ngIf="bibliografia.autor"> - {{ bibliografia.autor }}</span>
+          <span *ngIf="bibliografia.perguntas_count !== undefined">
+            ({{ bibliografia.perguntas_count }} questões)
+          </span>
+        </option>
+      </select>
+      <div *ngIf="isLoadingBibliografias" class="loading-text">
+        Carregando bibliografias...
+      </div>
+      <div *ngIf="!isLoadingBibliografias" class="selected-info">
+        <strong>Bibliografia Selecionada:</strong> {{ getSelectedBibliografiaName() }}
+        <span *ngIf="selectedBibliografiaId === null">
+          (IDs: {{ getBibliografiaIdsString() }})
+        </span>
+      </div>
+    </div>
+  </div>
+
   <!-- Informações sobre o simulado -->
   <div class="simulado-info" *ngIf="!simuladoAtivo">
     <div class="info-card">
@@ -21,16 +47,12 @@
           <strong>Matéria:</strong> Geopolítica e Relações Internacionais
         </div>
         <div class="info-item">
-          <strong>Questões:</strong> 10 perguntas (5 V/F, 4 Múltipla Escolha, 1 Correlação)
+          <strong>Questões:</strong> Variável conforme o tipo de simulado escolhido
         </div>
         <div class="info-item">
           <strong>Tempo:</strong> Sem limite de tempo
         </div>
-        <div class="info-item">
-          <strong>Bibliografias:</strong> Material específico de Geopolítica (IDs: {{ getBibliografiaIdsString() }})
-        </div>
       </div>
-
     </div>
   </div>
 

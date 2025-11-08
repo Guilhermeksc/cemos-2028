@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, inject, ChangeDetectorRef } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, OnChanges, SimpleChanges, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PerguntasService } from '../../services/perguntas.service';
@@ -38,6 +38,16 @@ interface SimuladoConfig {
   questoesCorrelacao: number;
 }
 
+interface TabState {
+  isLoadingQuestions: boolean;
+  questionsLoaded: boolean;
+  simuladoQuestions: SimuladoQuestion[];
+  questionResults: { [uniqueKey: string]: { answered: boolean, isCorrect: boolean, showResult: boolean } };
+  simuladoConfig: SimuladoConfig;
+}
+
+type TabType = 'completo' | 'vf' | 'multipla' | 'correlacao';
+
 @Component({
   selector: 'app-perguntas',
   standalone: true,
@@ -51,7 +61,7 @@ interface SimuladoConfig {
   templateUrl: './perguntas.html',
   styleUrl: './perguntas.scss'
 })
-export class Perguntas implements OnInit, OnDestroy {
+export class Perguntas implements OnInit, OnDestroy, OnChanges {
   @Input() bibliografiaIds: number[] = [];
   @Output() simuladoStarted = new EventEmitter<void>();
 
@@ -63,31 +73,92 @@ export class Perguntas implements OnInit, OnDestroy {
   bibliografias: Bibliografia[] = [];
   selectedBibliografias: number[] = [];
   isLoading = false;
-  isLoadingQuestions = false;
-  questionsLoaded = false;
 
-  // Configuração do simulado
-  simuladoConfig: SimuladoConfig = {
-    bibliografias: [],
-    questoesVF: 10,
-    questoesMultipla: 4,
-    questoesCorrelacao: 1
+  // Sistema de tabs
+  activeTab: TabType = 'completo';
+  tabs: { [key in TabType]: TabState } = {
+    completo: {
+      isLoadingQuestions: false,
+      questionsLoaded: false,
+      simuladoQuestions: [],
+      questionResults: {},
+      simuladoConfig: {
+        bibliografias: [],
+        questoesVF: 10,
+        questoesMultipla: 4,
+        questoesCorrelacao: 1
+      }
+    },
+    vf: {
+      isLoadingQuestions: false,
+      questionsLoaded: false,
+      simuladoQuestions: [],
+      questionResults: {},
+      simuladoConfig: {
+        bibliografias: [],
+        questoesVF: 20,
+        questoesMultipla: 0,
+        questoesCorrelacao: 0
+      }
+    },
+    multipla: {
+      isLoadingQuestions: false,
+      questionsLoaded: false,
+      simuladoQuestions: [],
+      questionResults: {},
+      simuladoConfig: {
+        bibliografias: [],
+        questoesVF: 0,
+        questoesMultipla: 10,
+        questoesCorrelacao: 0
+      }
+    },
+    correlacao: {
+      isLoadingQuestions: false,
+      questionsLoaded: false,
+      simuladoQuestions: [],
+      questionResults: {},
+      simuladoConfig: {
+        bibliografias: [],
+        questoesVF: 0,
+        questoesMultipla: 0,
+        questoesCorrelacao: 5
+      }
+    }
   };
 
-  // Questões do simulado
-  simuladoQuestions: SimuladoQuestion[] = [];
+  // Getters para facilitar acesso ao estado da aba ativa
+  get currentTab(): TabState {
+    return this.tabs[this.activeTab];
+  }
 
-  // Resultados individuais por questão (usando uniqueKey)
-  questionResults: { [uniqueKey: string]: { answered: boolean, isCorrect: boolean, showResult: boolean } } = {};
+  get isLoadingQuestions(): boolean {
+    return this.currentTab.isLoadingQuestions;
+  }
+
+  get questionsLoaded(): boolean {
+    return this.currentTab.questionsLoaded;
+  }
+
+  get simuladoQuestions(): SimuladoQuestion[] {
+    return this.currentTab.simuladoQuestions;
+  }
+
+  get questionResults(): { [uniqueKey: string]: { answered: boolean, isCorrect: boolean, showResult: boolean } } {
+    return this.currentTab.questionResults;
+  }
+
+  get simuladoConfig(): SimuladoConfig {
+    return this.currentTab.simuladoConfig;
+  }
 
   ngOnInit() {
-    console.log('🚀 Componente Perguntas inicializado - Modo Simplificado');
+    console.log('🚀 Componente Perguntas inicializado - Modo com Tabs');
     
     this.loadBibliografias();
     
     if (this.bibliografiaIds.length > 0) {
-      this.selectedBibliografias = [...this.bibliografiaIds];
-      this.simuladoConfig.bibliografias = [...this.bibliografiaIds];
+      this.updateBibliografiasConfig();
       
       console.log('📋 Auto-carregando prova...');
       // Aguardar um pouco para garantir que as bibliografias foram carregadas
@@ -97,50 +168,100 @@ export class Perguntas implements OnInit, OnDestroy {
     }
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    // Reagir a mudanças no bibliografiaIds
+    if (changes['bibliografiaIds'] && !changes['bibliografiaIds'].firstChange) {
+      const newIds = changes['bibliografiaIds'].currentValue;
+      const previousIds = changes['bibliografiaIds'].previousValue;
+      
+      // Verificar se realmente mudou
+      if (JSON.stringify(newIds) !== JSON.stringify(previousIds)) {
+        console.log('📚 Bibliografias atualizadas:', {
+          anteriores: previousIds,
+          novas: newIds
+        });
+        
+        this.updateBibliografiasConfig();
+        
+        // Se já havia questões carregadas, limpar e permitir que o usuário gere nova prova
+        if (this.currentTab.questionsLoaded) {
+          console.log('🔄 Limpando questões anteriores devido à mudança de bibliografia');
+          this.currentTab.questionsLoaded = false;
+          this.currentTab.simuladoQuestions = [];
+          this.currentTab.questionResults = {};
+          this.cdr.detectChanges();
+        }
+      }
+    }
+  }
+
   ngOnDestroy() {
     this.destroy$.next();
     this.destroy$.complete();
   }
 
+  /**
+   * Atualiza a configuração de bibliografias em todas as tabs
+   */
+  private updateBibliografiasConfig() {
+    if (this.bibliografiaIds.length > 0) {
+      this.selectedBibliografias = [...this.bibliografiaIds];
+      
+      // Configurar bibliografias para todas as tabs
+      Object.keys(this.tabs).forEach(tabKey => {
+        this.tabs[tabKey as TabType].simuladoConfig.bibliografias = [...this.bibliografiaIds];
+      });
+      
+      console.log('✅ Bibliografias configuradas para todas as tabs:', this.bibliografiaIds);
+    }
+  }
+
+  setActiveTab(tab: TabType) {
+    this.activeTab = tab;
+    this.cdr.detectChanges();
+  }
+
   gerarNovaProva() {
-    console.log('🔄 Gerando nova prova...');
+    console.log(`🔄 Gerando nova prova para aba: ${this.activeTab}`);
+    
+    const currentTab = this.tabs[this.activeTab];
     
     // Garantir que as bibliografias estão configuradas
-    if (this.simuladoConfig.bibliografias.length === 0 && this.bibliografiaIds.length > 0) {
-      this.simuladoConfig.bibliografias = [...this.bibliografiaIds];
+    if (currentTab.simuladoConfig.bibliografias.length === 0 && this.bibliografiaIds.length > 0) {
+      currentTab.simuladoConfig.bibliografias = [...this.bibliografiaIds];
     }
     
-    console.log('📚 Bibliografias configuradas para a prova:', this.simuladoConfig.bibliografias);
+    console.log('📚 Bibliografias configuradas para a prova:', currentTab.simuladoConfig.bibliografias);
     
-    this.isLoadingQuestions = true;
-    this.questionsLoaded = false;
-    this.simuladoQuestions = [];
-    this.questionResults = {};
+    currentTab.isLoadingQuestions = true;
+    currentTab.questionsLoaded = false;
+    currentTab.simuladoQuestions = [];
+    currentTab.questionResults = {};
 
-    this.loadRandomQuestions()
+    this.loadRandomQuestions(this.activeTab)
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (questions) => {
-          console.log('✅ Nova prova carregada:', questions.length, 'questões');
+          console.log(`✅ Nova prova carregada para aba ${this.activeTab}:`, questions.length, 'questões');
           
-          this.simuladoQuestions = this.shuffleArray(questions);
+          currentTab.simuladoQuestions = this.shuffleArray(questions);
           
           console.log('🔀 Questões após shuffle:', {
-            total: this.simuladoQuestions.length,
-            tipos: this.simuladoQuestions.map(q => ({
+            total: currentTab.simuladoQuestions.length,
+            tipos: currentTab.simuladoQuestions.map(q => ({
               id: q.id,
               tipo: q.tipo,
               tipo_original: (q.data as any)?.tipo
             }))
           });
           
-          this.questionsLoaded = true;
-          this.isLoadingQuestions = false;
+          currentTab.questionsLoaded = true;
+          currentTab.isLoadingQuestions = false;
           
           // Inicializar resultados das questões usando uniqueKey
-          this.simuladoQuestions.forEach(q => {
+          currentTab.simuladoQuestions.forEach(q => {
             if (q.uniqueKey) {
-              this.questionResults[q.uniqueKey] = {
+              currentTab.questionResults[q.uniqueKey] = {
                 answered: false,
                 isCorrect: false,
                 showResult: false
@@ -148,14 +269,16 @@ export class Perguntas implements OnInit, OnDestroy {
             }
           });
           
-          console.log('🔑 Chaves únicas inicializadas:', Object.keys(this.questionResults));
+          console.log('🔑 Chaves únicas inicializadas:', Object.keys(currentTab.questionResults));
           
           this.simuladoStarted.emit();
+          this.cdr.detectChanges();
         },
         error: (error) => {
           console.error('❌ Erro ao carregar nova prova:', error);
-          this.isLoadingQuestions = false;
-          this.questionsLoaded = false;
+          currentTab.isLoadingQuestions = false;
+          currentTab.questionsLoaded = false;
+          this.cdr.detectChanges();
         }
       });
   }
@@ -216,12 +339,14 @@ export class Perguntas implements OnInit, OnDestroy {
   onAnswerSubmitted(event: { questionId: number, answer: any }) {
     const { questionId, answer } = event;
     
-    console.log('📝 Resposta recebida:', { questionId, answer });
+    console.log('📝 Resposta recebida:', { questionId, answer, activeTab: this.activeTab });
+
+    const currentTab = this.tabs[this.activeTab];
 
     // IMPORTANTE: Buscar pela uniqueKey, não pelo ID!
     // Como os componentes filhos ainda enviam questionId, precisamos encontrar
     // a questão correta comparando AMBOS: id E tipo da resposta
-    const question = this.simuladoQuestions.find(q => {
+    const question = currentTab.simuladoQuestions.find(q => {
       if (q.id !== questionId) return false;
       
       // Verificar o tipo de resposta para distinguir entre questões com mesmo ID
@@ -240,7 +365,8 @@ export class Perguntas implements OnInit, OnDestroy {
       console.error('❌ Questão não encontrada ou sem uniqueKey:', { 
         questionId, 
         answerType: typeof answer,
-        questoesDisponiveis: this.simuladoQuestions.map(q => ({
+        activeTab: this.activeTab,
+        questoesDisponiveis: currentTab.simuladoQuestions.map(q => ({
           id: q.id,
           tipo: q.tipo,
           uniqueKey: q.uniqueKey
@@ -253,7 +379,7 @@ export class Perguntas implements OnInit, OnDestroy {
     question.isCorrect = this.checkAnswer(question, answer);
     
     // Atualizar resultado da questão usando uniqueKey
-    this.questionResults[question.uniqueKey] = {
+    currentTab.questionResults[question.uniqueKey] = {
       answered: true,
       isCorrect: question.isCorrect,
       showResult: true
@@ -264,8 +390,9 @@ export class Perguntas implements OnInit, OnDestroy {
       uniqueKey: question.uniqueKey,
       tipo: question.tipo,
       isCorrect: question.isCorrect,
-      totalRespondidas: Object.values(this.questionResults).filter(r => r.answered).length,
-      questionResults_ESTADO: this.questionResults
+      activeTab: this.activeTab,
+      totalRespondidas: Object.values(currentTab.questionResults).filter(r => r.answered).length,
+      questionResults_ESTADO: currentTab.questionResults
     });
 
     // Forçar detecção de mudanças
@@ -315,21 +442,21 @@ export class Perguntas implements OnInit, OnDestroy {
 
   // Métodos utilitários simplificados
   isQuestionAnswered(uniqueKey: string): boolean {
-    return this.questionResults[uniqueKey]?.answered || false;
+    return this.currentTab.questionResults[uniqueKey]?.answered || false;
   }
 
   getQuestionAnswerStatus(uniqueKey: string): 'not-answered' | 'correct' | 'incorrect' {
-    const result = this.questionResults[uniqueKey];
+    const result = this.currentTab.questionResults[uniqueKey];
     if (!result?.answered) return 'not-answered';
     return result.isCorrect ? 'correct' : 'incorrect';
   }
 
   getTotalAnsweredQuestions(): number {
-    return Object.values(this.questionResults).filter(r => r.answered).length;
+    return Object.values(this.currentTab.questionResults).filter(r => r.answered).length;
   }
 
   getTotalCorrectAnswers(): number {
-    return Object.values(this.questionResults).filter(r => r.answered && r.isCorrect).length;
+    return Object.values(this.currentTab.questionResults).filter(r => r.answered && r.isCorrect).length;
   }
 
   getScorePercentage(): number {
@@ -431,11 +558,12 @@ export class Perguntas implements OnInit, OnDestroy {
     return missingCount;
   }
 
-  private loadRandomQuestions(): Observable<SimuladoQuestion[]> {
-    console.log('📚 Buscando questões para bibliografias:', this.simuladoConfig.bibliografias);
+  private loadRandomQuestions(tabType: TabType): Observable<SimuladoQuestion[]> {
+    const config = this.tabs[tabType].simuladoConfig;
+    console.log(`📚 Buscando questões para aba ${tabType} e bibliografias:`, config.bibliografias);
     
     // Se não há bibliografias selecionadas, retornar array vazio
-    if (this.simuladoConfig.bibliografias.length === 0) {
+    if (config.bibliografias.length === 0) {
       console.warn('⚠️ Nenhuma bibliografia selecionada');
       return new Observable(observer => {
         observer.next([]);
@@ -449,35 +577,65 @@ export class Perguntas implements OnInit, OnDestroy {
     const correlacaoObservables: Observable<PaginatedResponse<PerguntaCorrelacao>>[] = [];
 
     // Criar uma chamada para cada bibliografia
-    this.simuladoConfig.bibliografias.forEach(bibliografiaId => {
+    config.bibliografias.forEach(bibliografiaId => {
       const baseFilters = { page_size: 100, bibliografia: bibliografiaId };
       
-      multiplaObservables.push(
-        this.perguntasService.getPerguntasMultipla(baseFilters as PerguntaMultiplaFilters)
-      );
-      vfObservables.push(
-        this.perguntasService.getPerguntasVF(baseFilters as PerguntaVFFilters)
-      );
-      correlacaoObservables.push(
-        this.perguntasService.getPerguntasCorrelacao(baseFilters as PerguntaFilters)
-      );
+      if (config.questoesMultipla > 0) {
+        multiplaObservables.push(
+          this.perguntasService.getPerguntasMultipla(baseFilters as PerguntaMultiplaFilters)
+        );
+      }
+      
+      if (config.questoesVF > 0) {
+        vfObservables.push(
+          this.perguntasService.getPerguntasVF(baseFilters as PerguntaVFFilters)
+        );
+      }
+      
+      if (config.questoesCorrelacao > 0) {
+        correlacaoObservables.push(
+          this.perguntasService.getPerguntasCorrelacao(baseFilters as PerguntaFilters)
+        );
+      }
     });
 
     // Combinar todas as chamadas usando forkJoin
-    return forkJoin({
-      multiplas: forkJoin(multiplaObservables),
-      vfs: forkJoin(vfObservables),
-      correlacoes: forkJoin(correlacaoObservables)
-    }).pipe(
-      map(({ multiplas, vfs, correlacoes }) => {
+    const observables: any = {};
+    
+    if (multiplaObservables.length > 0) {
+      observables.multiplas = forkJoin(multiplaObservables);
+    }
+    if (vfObservables.length > 0) {
+      observables.vfs = forkJoin(vfObservables);
+    }
+    if (correlacaoObservables.length > 0) {
+      observables.correlacoes = forkJoin(correlacaoObservables);
+    }
+
+    // Se não há observables, retornar array vazio
+    if (Object.keys(observables).length === 0) {
+      return new Observable(observer => {
+        observer.next([]);
+        observer.complete();
+      });
+    }
+
+    return forkJoin(observables).pipe(
+      map((results: any) => {
         // Combinar resultados de todas as bibliografias
-        const todasMultiplas: PerguntaMultipla[] = multiplas.flatMap(response => response.results);
-        const todasVFs: PerguntaVF[] = vfs.flatMap(response => response.results);
-        const todasCorrelacoes: PerguntaCorrelacao[] = correlacoes.flatMap(response => response.results);
+        const todasMultiplas: PerguntaMultipla[] = results.multiplas 
+          ? results.multiplas.flatMap((response: PaginatedResponse<PerguntaMultipla>) => response.results)
+          : [];
+        const todasVFs: PerguntaVF[] = results.vfs 
+          ? results.vfs.flatMap((response: PaginatedResponse<PerguntaVF>) => response.results)
+          : [];
+        const todasCorrelacoes: PerguntaCorrelacao[] = results.correlacoes 
+          ? results.correlacoes.flatMap((response: PaginatedResponse<PerguntaCorrelacao>) => response.results)
+          : [];
 
         console.log('📊 Dados brutos recebidos do backend (combinados de todas bibliografias):', {
           multiplas: {
-            total_bibliografias: multiplas.length,
+            total_bibliografias: results.multiplas ? results.multiplas.length : 0,
             count_total: todasMultiplas.length,
             bibliografias_encontradas: [...new Set(todasMultiplas.map(q => q.bibliografia))],
             primeiras_questoes: todasMultiplas.slice(0, 3).map(q => ({
@@ -488,7 +646,7 @@ export class Perguntas implements OnInit, OnDestroy {
             }))
           },
           vfs: {
-            total_bibliografias: vfs.length,
+            total_bibliografias: results.vfs ? results.vfs.length : 0,
             count_total: todasVFs.length,
             bibliografias_encontradas: [...new Set(todasVFs.map(q => q.bibliografia))],
             primeiras_questoes: todasVFs.slice(0, 3).map(q => ({
@@ -499,7 +657,7 @@ export class Perguntas implements OnInit, OnDestroy {
             }))
           },
           correlacoes: {
-            total_bibliografias: correlacoes.length,
+            total_bibliografias: results.correlacoes ? results.correlacoes.length : 0,
             count_total: todasCorrelacoes.length,
             bibliografias_encontradas: [...new Set(todasCorrelacoes.map(q => q.bibliografia))],
             primeiras_questoes: todasCorrelacoes.slice(0, 3).map(q => ({
@@ -515,27 +673,27 @@ export class Perguntas implements OnInit, OnDestroy {
 
         // Filtrar questões por bibliografia (já devem estar filtradas, mas garantindo)
         console.log('🎯 Configuração de filtro:', {
-          bibliografias_solicitadas: this.simuladoConfig.bibliografias,
-          tipo_array: Array.isArray(this.simuladoConfig.bibliografias)
+          bibliografias_solicitadas: config.bibliografias,
+          tipo_array: Array.isArray(config.bibliografias)
         });
         
         const multiplasFiltradas = todasMultiplas.filter(q => 
-          this.simuladoConfig.bibliografias.includes(q.bibliografia)
+          config.bibliografias.includes(q.bibliografia)
         );
         const vfsFiltradas = todasVFs.filter(q => 
-          this.simuladoConfig.bibliografias.includes(q.bibliografia)
+          config.bibliografias.includes(q.bibliografia)
         );
         const correlacoesFiltradas = todasCorrelacoes.filter(q => 
-          this.simuladoConfig.bibliografias.includes(q.bibliografia)
+          config.bibliografias.includes(q.bibliografia)
         );
 
         console.log('🔍 Questões filtradas por bibliografia:', {
-          bibliografias_solicitadas: this.simuladoConfig.bibliografias,
+          bibliografias_solicitadas: config.bibliografias,
           questoes_encontradas: {
             multiplas: {
               total_antes_filtro: todasMultiplas.length,
               total_apos_filtro: multiplasFiltradas.length,
-              distribuicao_por_bibliografia: this.simuladoConfig.bibliografias.map(bibId => ({
+              distribuicao_por_bibliografia: config.bibliografias.map(bibId => ({
                 bibliografia: bibId,
                 count: multiplasFiltradas.filter(q => q.bibliografia === bibId).length
               }))
@@ -543,7 +701,7 @@ export class Perguntas implements OnInit, OnDestroy {
             vfs: {
               total_antes_filtro: todasVFs.length,
               total_apos_filtro: vfsFiltradas.length,
-              distribuicao_por_bibliografia: this.simuladoConfig.bibliografias.map(bibId => ({
+              distribuicao_por_bibliografia: config.bibliografias.map(bibId => ({
                 bibliografia: bibId,
                 count: vfsFiltradas.filter(q => q.bibliografia === bibId).length
               }))
@@ -551,7 +709,7 @@ export class Perguntas implements OnInit, OnDestroy {
             correlacoes: {
               total_antes_filtro: todasCorrelacoes.length,
               total_apos_filtro: correlacoesFiltradas.length,
-              distribuicao_por_bibliografia: this.simuladoConfig.bibliografias.map(bibId => ({
+              distribuicao_por_bibliografia: config.bibliografias.map(bibId => ({
                 bibliografia: bibId,
                 count: correlacoesFiltradas.filter(q => q.bibliografia === bibId).length
               }))
@@ -562,19 +720,19 @@ export class Perguntas implements OnInit, OnDestroy {
         // Verificar se há questões suficientes
         const verificacao = {
           vf: {
-            solicitadas: this.simuladoConfig.questoesVF,
+            solicitadas: config.questoesVF,
             disponiveis: vfsFiltradas.length,
-            suficientes: vfsFiltradas.length >= this.simuladoConfig.questoesVF
+            suficientes: vfsFiltradas.length >= config.questoesVF
           },
           multipla: {
-            solicitadas: this.simuladoConfig.questoesMultipla,
+            solicitadas: config.questoesMultipla,
             disponiveis: multiplasFiltradas.length,
-            suficientes: multiplasFiltradas.length >= this.simuladoConfig.questoesMultipla
+            suficientes: multiplasFiltradas.length >= config.questoesMultipla
           },
           correlacao: {
-            solicitadas: this.simuladoConfig.questoesCorrelacao,
+            solicitadas: config.questoesCorrelacao,
             disponiveis: correlacoesFiltradas.length,
-            suficientes: correlacoesFiltradas.length >= this.simuladoConfig.questoesCorrelacao
+            suficientes: correlacoesFiltradas.length >= config.questoesCorrelacao
           }
         };
 
@@ -589,7 +747,7 @@ export class Perguntas implements OnInit, OnDestroy {
               solicitadas: info.solicitadas,
               disponiveis: info.disponiveis,
               diferenca: info.solicitadas - info.disponiveis,
-              bibliografia_ids: this.simuladoConfig.bibliografias
+              bibliografia_ids: config.bibliografias
             });
             questoesInsuficientes.push(`${tipo}: ${info.disponiveis}/${info.solicitadas}`);
           }
@@ -599,7 +757,8 @@ export class Perguntas implements OnInit, OnDestroy {
         if (questoesInsuficientes.length > 0) {
           console.warn('🚨 SIMULADO COM QUESTÕES REDUZIDAS:', {
             problema: 'Não há questões suficientes para a configuração solicitada',
-            bibliografias_consultadas: this.simuladoConfig.bibliografias,
+            aba: tabType,
+            bibliografias_consultadas: config.bibliografias,
             questoes_insuficientes: questoesInsuficientes,
             acoes_recomendadas: [
               'Verificar se a bibliografia ID existe no backend',
@@ -610,23 +769,24 @@ export class Perguntas implements OnInit, OnDestroy {
         }
 
         // Selecionar questões aleatórias
-        const selectedVFs = this.getRandomItems(vfsFiltradas, this.simuladoConfig.questoesVF);
-        const selectedMultiplas = this.getRandomItems(multiplasFiltradas, this.simuladoConfig.questoesMultipla);
-        const selectedCorrelacoes = this.getRandomItems(correlacoesFiltradas, this.simuladoConfig.questoesCorrelacao);
+        const selectedVFs = this.getRandomItems(vfsFiltradas, config.questoesVF);
+        const selectedMultiplas = this.getRandomItems(multiplasFiltradas, config.questoesMultipla);
+        const selectedCorrelacoes = this.getRandomItems(correlacoesFiltradas, config.questoesCorrelacao);
 
         console.log('🎲 Questões selecionadas aleatoriamente:', {
+          aba: tabType,
           vf: {
-            solicitadas: this.simuladoConfig.questoesVF,
+            solicitadas: config.questoesVF,
             selecionadas: selectedVFs.length,
             ids: selectedVFs.map(q => q.id)
           },
           multipla: {
-            solicitadas: this.simuladoConfig.questoesMultipla,
+            solicitadas: config.questoesMultipla,
             selecionadas: selectedMultiplas.length,
             ids: selectedMultiplas.map(q => q.id)
           },
           correlacao: {
-            solicitadas: this.simuladoConfig.questoesCorrelacao,
+            solicitadas: config.questoesCorrelacao,
             selecionadas: selectedCorrelacoes.length,
             ids: selectedCorrelacoes.map(q => q.id)
           }

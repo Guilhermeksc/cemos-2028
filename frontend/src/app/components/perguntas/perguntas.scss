@@ -5,6 +5,59 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Sistema de Tabs */
+.tabs-container {
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.tabs-header {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -12px;
+}
+
+.tab-button:hover {
+  background: #f8f9fa;
+  color: #495057;
+}
+
+.tab-button.active {
+  color: #007bff;
+  background: #e7f3ff;
+  border-bottom-color: #007bff;
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #007bff;
+}
+
 /* Loading */
 .loading-questions {
   text-align: center;
@@ -707,6 +760,28 @@
     padding: 15px;
   }
   
+  .tabs-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .tab-button {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+  
+  .tab-button.active {
+    border-left-color: #007bff;
+    border-bottom-color: transparent;
+  }
+  
+  .tab-button.active::after {
+    display: none;
+  }
+  
   .prova-header {
     flex-direction: column;
     gap: 20px;
@@ -748,7 +823,16 @@
 /* Smartphones - otimizações agressivas de espaço */
 @media (max-width: 480px) {
   .simulado-container-simplified {
-    padding: 10px;
+    padding: 0px;
+  }
+
+  .tabs-container {
+    padding: 8px;
+  }
+
+  .tab-button {
+    padding: 10px 15px;
+    font-size: 0.85rem;
   }
 
   .prova-header {

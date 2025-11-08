@@ -97,6 +97,95 @@
   }
 }
 
+/* Seletor de Bibliografia - Sempre visível */
+.bibliografia-selector-container {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+
+  .bibliografia-selector-card {
+    background: white;
+    border: 2px solid var(--geopolitica-light);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+    .bibliografia-label {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--geopolitica-dark);
+      font-size: 1rem;
+
+      strong {
+        color: var(--geopolitica-primary);
+        font-weight: 600;
+      }
+    }
+
+    .bibliografia-select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: white;
+      color: var(--geopolitica-dark);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23334155' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 12px;
+      padding-right: 40px;
+      margin-bottom: 10px;
+
+      &:hover {
+        border-color: var(--geopolitica-primary);
+        box-shadow: 0 2px 4px rgba(30, 64, 175, 0.1);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: var(--geopolitica-primary);
+        box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+      }
+
+      &:disabled {
+        background-color: #f1f5f9;
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+
+      option {
+        padding: 10px;
+        background: white;
+        color: var(--geopolitica-dark);
+      }
+    }
+
+    .loading-text {
+      color: #6b7280;
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .selected-info {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #f1f5f9;
+      color: var(--geopolitica-dark);
+      font-size: 0.9rem;
+
+      strong {
+        color: var(--geopolitica-primary);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
 /* Informações do Simulado */
 .simulado-info {
   margin-bottom: 30px;
@@ -126,6 +215,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
 
         &:last-child {
           border-bottom: none;
@@ -136,6 +227,7 @@
           font-weight: 600;
         }
       }
+
     }
 
     .topics-covered {
@@ -406,6 +498,18 @@
 
   .topics-covered ul {
     grid-template-columns: 1fr;
+  }
+
+  .bibliografia-selector-container {
+    .bibliografia-selector-card {
+      padding: 15px;
+
+      .bibliografia-select {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+        padding-right: 35px;
+      }
+    }
   }
 }
 

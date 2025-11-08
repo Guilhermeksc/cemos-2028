@@ -9,7 +9,7 @@
         [(ngModel)]="userAnswer"
       />
       <span class="alternativa-letter">{{ letra.toUpperCase() }})</span>
-      <span class="alternativa-text">{{ getAlternativaText(letra) }}</span>
+      <span class="alternativa-text" [innerHTML]="getAlternativaTextFormatted(letra)"></span>
     </label>
   </div>
 
@@ -24,8 +24,8 @@
   <!-- Justificativa (aparece após responder) -->
   <div *ngIf="isAnswered" class="justificativa">
     <div>
-      <h5>✅ Resposta Correta: {{ getCorrectAnswer() }}) {{ getAlternativaText(getCorrectAnswer().toLowerCase()) }}</h5>
-      <h5>💡 Justificativa: {{ questionData.justificativa_resposta_certa }}</h5>
+      <h5>✅ Resposta Correta: {{ getCorrectAnswer() }}) <span [innerHTML]="getAlternativaTextFormatted(getCorrectAnswer().toLowerCase())"></span></h5>
+      <h5>💡 Justificativa: <span [innerHTML]="getJustificativaFormatted()"></span></h5>
     </div>
   </div>
 </div>

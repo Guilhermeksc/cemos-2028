@@ -9,7 +9,7 @@
       <h5>Coluna A</h5>
       <div *ngFor="let item of questionData.coluna_a; let i = index" class="correlacao-item">
         <span class="item-number">{{ i + 1 }}.</span>
-        <span class="item-text">{{ item }}</span>
+        <span class="item-text" [innerHTML]="getColunaAItemFormatted(item)"></span>
       </div>
     </div>
     
@@ -17,7 +17,7 @@
       <h5>Coluna B</h5>
       <div *ngFor="let item of questionData.coluna_b; let i = index" class="correlacao-item">
         <span class="item-letter">{{ getStringFromCharCode(65 + i) }}.</span>
-        <span class="item-text">{{ item }}</span>
+        <span class="item-text" [innerHTML]="getColunaBItemFormatted(item)"></span>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
       
       <div class="mapping-item-label">
         <span class="mapping-label-number">{{ i + 1 }}</span>
-        <span class="mapping-item-text">{{ itemA }}</span>
+        <span class="mapping-item-text" [innerHTML]="getColunaAItemFormatted(itemA)"></span>
         <span class="mapping-status-badge" 
               [class.answered]="isItemAnswered(i + 1)">
           {{ isItemAnswered(i + 1) ? '✓ Respondido' : '⏳ Aguardando' }}
@@ -85,7 +85,7 @@
     
     <div class="justificativa-texto">
       <h5>💡 Justificativa:</h5>
-      <p>{{ questionData.justificativa_resposta_certa }}</p>
+      <p [innerHTML]="getJustificativaFormatted()"></p>
     </div>
   </div>
 </div>
