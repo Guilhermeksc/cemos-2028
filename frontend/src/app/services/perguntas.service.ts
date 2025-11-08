@@ -271,6 +271,7 @@ export class PerguntasService {
       bibliografia_titulo: pergunta.bibliografia_titulo || '',
       pergunta: pergunta.pergunta,
       paginas: pergunta.paginas,
+      assunto: pergunta.assunto,
       caiu_em_prova: pergunta.caiu_em_prova,
       ano_prova: pergunta.ano_prova
     };

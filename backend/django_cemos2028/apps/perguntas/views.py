@@ -56,6 +56,7 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
                 'bibliografia_titulo': pergunta.bibliografia.titulo,
                 'pergunta': pergunta.pergunta,
                 'paginas': pergunta.paginas,
+                'assunto': pergunta.assunto,
                 'caiu_em_prova': pergunta.caiu_em_prova,
                 'ano_prova': pergunta.ano_prova
             })
@@ -70,6 +71,7 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
                 'bibliografia_titulo': pergunta.bibliografia.titulo,
                 'pergunta': pergunta.pergunta,
                 'paginas': pergunta.paginas,
+                'assunto': pergunta.assunto,
                 'caiu_em_prova': pergunta.caiu_em_prova,
                 'ano_prova': pergunta.ano_prova
             })
@@ -84,6 +86,7 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
                 'bibliografia_titulo': pergunta.bibliografia.titulo,
                 'pergunta': pergunta.pergunta,
                 'paginas': pergunta.paginas,
+                'assunto': pergunta.assunto,
                 'caiu_em_prova': pergunta.caiu_em_prova,
                 'ano_prova': pergunta.ano_prova
             })
@@ -124,9 +127,9 @@ class PerguntaMultiplaViewSet(viewsets.ModelViewSet):
     queryset = PerguntaMultiplaModel.objects.select_related('bibliografia').all()
     serializer_class = PerguntaMultiplaSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova']
+    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta', 'assunto']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -156,9 +159,9 @@ class PerguntaCorrelacaoViewSet(viewsets.ModelViewSet):
     queryset = PerguntaCorrelacaoModel.objects.select_related('bibliografia').all()
     serializer_class = PerguntaCorrelacaoSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova']
+    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto']
     ordering = ['id']
     
     def get_serializer_class(self):

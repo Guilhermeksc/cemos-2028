@@ -54,13 +54,13 @@ class PerguntaMultiplaResource(resources.ModelResource):
     class Meta:
         model = PerguntaMultiplaModel
         fields = (
-            'id', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'justificativa_resposta_certa', 'tipo'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'alternativa_a', 'alternativa_b',
-            'alternativa_c', 'alternativa_d', 'resposta_correta', 'paginas',
+            'alternativa_c', 'alternativa_d', 'resposta_correta', 'paginas', 'assunto',
             'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa', 'tipo'
         )
         import_id_fields = ('id',)
@@ -125,13 +125,13 @@ class PerguntaCorrelacaoResource(resources.ModelResource):
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = (
-            'id', 'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta',
             'justificativa_resposta_certa', 'tipo'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'coluna_a', 'coluna_b',
-            'resposta_correta', 'paginas', 'caiu_em_prova', 'ano_prova',
+            'resposta_correta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
             'justificativa_resposta_certa', 'tipo'
         )
         import_id_fields = ('id',)

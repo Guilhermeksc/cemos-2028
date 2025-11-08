@@ -62,6 +62,7 @@ class PerguntasBaseModel(models.Model):
         related_name="+"
     )
     paginas = models.CharField(max_length=100, blank=True, null=True, verbose_name="Páginas")
+    assunto = models.CharField(max_length=100, blank=True, null=True, verbose_name="Assunto")
     caiu_em_prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
     ano_prova = models.IntegerField(
         blank=True, 
@@ -110,7 +111,6 @@ class PerguntaMultiplaModel(PerguntasBaseModel):
 
 
 class PerguntaVFModel(PerguntasBaseModel):
-    assunto = models.CharField(max_length=100, blank=True, null=True, verbose_name="Assunto")
     afirmacao_verdadeira = models.TextField(verbose_name="Afirmação Verdadeira", blank=True, null=True)
     afirmacao_falsa = models.TextField(verbose_name="Afirmação Falsa", blank=True, null=True)
     

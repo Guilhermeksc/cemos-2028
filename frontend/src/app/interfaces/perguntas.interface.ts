@@ -47,6 +47,7 @@ export interface PerguntaBase {
   bibliografia: number;
   bibliografia_titulo?: string;
   paginas?: string;
+  assunto?: string;
   caiu_em_prova: boolean;
   ano_prova?: number;
   pergunta: string;
@@ -71,7 +72,6 @@ export interface PerguntaMultipla extends PerguntaBase {
 // Pergunta Verdadeiro ou Falso
 export interface PerguntaVF extends PerguntaBase {
   tipo: 'vf';
-  assunto?: string;
   afirmacao_verdadeira: string;
   afirmacao_falsa: string;
   resposta_correta?: boolean; // Sempre true (calculado) - afirmacao_verdadeira é sempre a correta
@@ -101,6 +101,7 @@ export interface PerguntaResumo {
   bibliografia_titulo: string;
   pergunta: string;
   paginas?: string;
+  assunto?: string;
   caiu_em_prova: boolean;
   ano_prova?: number;
 }
@@ -121,6 +122,7 @@ export interface BibliografiaFilters {
 export interface PerguntaFilters {
   search?: string;
   bibliografia?: number;
+  assunto?: string;
   caiu_em_prova?: boolean;
   ano_prova?: number;
   ordering?: string;

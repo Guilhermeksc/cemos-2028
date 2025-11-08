@@ -54,7 +54,7 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaMultiplaModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'resposta_correta_display', 'justificativa_resposta_certa',
             'tipo', 'tipo_display'
@@ -95,7 +95,7 @@ class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta',
             'justificativa_resposta_certa', 'tipo', 'tipo_display'
         ]
@@ -132,6 +132,7 @@ class PerguntaResumoSerializer(serializers.Serializer):
     bibliografia_titulo = serializers.CharField()
     pergunta = serializers.CharField()
     paginas = serializers.CharField()
+    assunto = serializers.CharField(allow_null=True)
     caiu_em_prova = serializers.BooleanField()
     ano_prova = serializers.IntegerField()
 
@@ -147,7 +148,7 @@ class PerguntaMultiplaCreateUpdateSerializer(PerguntaMultiplaSerializer):
     """Serializer específico para criação e edição de pergunta múltipla escolha"""
     class Meta(PerguntaMultiplaSerializer.Meta):
         fields = [
-            'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'justificativa_resposta_certa'
         ]
@@ -166,7 +167,7 @@ class PerguntaCorrelacaoCreateUpdateSerializer(PerguntaCorrelacaoSerializer):
     """Serializer específico para criação e edição de pergunta de correlação"""
     class Meta(PerguntaCorrelacaoSerializer.Meta):
         fields = [
-            'bibliografia', 'paginas', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
         ]
 

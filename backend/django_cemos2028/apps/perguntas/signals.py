@@ -200,6 +200,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
                                     'paginas': _as_clean_str(row.get('paginas')),
+                                    'assunto': _as_clean_str(row.get('assunto')),
                                     'alternativa_a': _as_clean_str(row['alternativa_a']),
                                     'alternativa_b': _as_clean_str(row['alternativa_b']),
                                     'alternativa_c': _as_clean_str(row['alternativa_c']),
@@ -305,6 +306,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
                                     'paginas': _as_clean_str(row.get('paginas')),
+                                    'assunto': _as_clean_str(row.get('assunto')),
                                     'coluna_a': coluna_a,
                                     'coluna_b': coluna_b,
                                     'resposta_correta': resposta_correta,

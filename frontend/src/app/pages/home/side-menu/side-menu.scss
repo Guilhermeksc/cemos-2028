@@ -309,20 +309,27 @@
 
   
   &:hover {
-    background: var(--hover-gray);
-    
     .nav-section-icon {
       color: var(--primary-black);
+    }
+    
+    .nav-section-title {
+      color: var(--dark-gray);
+      text-decoration: underline;
     }
   }
   
   &.expanded {
-    background: var(--off-white);
     border-left: 4px solid var(--primary-black);
 
     
     .nav-section-expand-icon {
       color: var(--primary-black);
+    }
+    
+    .nav-section-title {
+      text-decoration: underline;
+      color: var(--dark-gray);
     }
   }
   
@@ -359,6 +366,7 @@
   line-height: 1.3; // Melhor espaçamento de linha
   word-wrap: break-word; // Quebrar palavras longas se necessário
   overflow-wrap: break-word; // Fallback para quebra de palavras
+  transition: color var(--transition-fast), text-decoration var(--transition-fast);
 }
 
 // ===== CONTEÚDO DAS SEÇÕES =====
