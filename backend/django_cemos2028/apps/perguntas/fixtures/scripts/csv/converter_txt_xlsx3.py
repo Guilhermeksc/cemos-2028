@@ -35,5 +35,5 @@ def markdown_to_xlsx(txt_path):
     print(f"✅ Arquivo Excel gerado com sucesso: {output_path}")
 
 if __name__ == "__main__":
-    txt_file = Path(__file__).parent / "tabela.txt"
+    txt_file = Path(__file__).parent / "multipla_nova_geo_cap5.txt"
     markdown_to_xlsx(txt_file)

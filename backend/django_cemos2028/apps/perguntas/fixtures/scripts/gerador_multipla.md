@@ -15,10 +15,10 @@ Gere perguntas que testem:
 - As alternativas devem ser plausíveis, evitando opções óbvias ou absurdas.
 - Preenchimento dos campos
 
-bibliografia_titulo: preencher com "Princípios de Relações Internacionais".
+bibliografia_titulo: preencher com "Novas Geopolíticas".
 paginas: preencher com o título do arquivo consultado, como Cap I, II, III....
 pergunta: texto completo da questão.
-assunto: "China"
+assunto: "Nova (Des)Ordem"
 alternativa_a até alternativa_d: alternativas de resposta.
 resposta_correta: letra da alternativa correta (a, b, c ou d).
 justificativa_resposta_certa: uma frase explicando o motivo da resposta correta.
