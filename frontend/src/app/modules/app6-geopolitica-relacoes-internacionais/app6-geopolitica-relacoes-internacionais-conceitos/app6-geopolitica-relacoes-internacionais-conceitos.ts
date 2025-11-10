@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConceitosComponent } from '../../../components/conceitos/conceitos';
-import { HeaderConcentComponent } from '../../../components/header-concent/header-concent';
 
 @Component({
   selector: 'app-app6-geopolitica-relacoes-internacionais-conceitos',
   standalone: true,
-  imports: [CommonModule, HeaderConcentComponent, ConceitosComponent],
+  imports: [CommonModule, ConceitosComponent],
   templateUrl: './app6-geopolitica-relacoes-internacionais-conceitos.html',
   styleUrl: './app6-geopolitica-relacoes-internacionais-conceitos.scss'
 })
@@ -22,8 +21,7 @@ export class App6GeopoliticaRelacoesInternacionaisConceitos {
   // geopoliticaBibliografiaIds: number[] = [1, 5, 12]; // Kaplan, Mattos, Vesentini
   //
   // Se deixar vazio [], o componente mostrará todas as bibliografias que têm conceitos
-  geopoliticaBibliografiaIds: number[] = [];
+  geopoliticaBibliografiaIds: number[] = [1, 2, 3, 4];
 
-  pageTitle = 'Conceitos de Geopolítica e Relações Internacionais';
   emptyMessage = 'Nenhum conceito de Geopolítica e RI encontrado. Adicione conceitos relacionados às matérias para visualizá-los aqui.';
 }

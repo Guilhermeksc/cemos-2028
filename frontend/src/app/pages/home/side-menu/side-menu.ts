@@ -107,6 +107,7 @@ export class SideMenu {
         'Flash Cards',
         'Perguntas',
         'Conceitos',
+        'Teóricos',
       ],
       expanded: false
     },      
@@ -557,6 +558,9 @@ export class SideMenu {
             case 'Resumo':
               pathParts.push('resumo');
               break;
+            case 'Teóricos':
+              pathParts.push('teoricos');
+              break;
           }
         }
         break;
@@ -772,8 +776,8 @@ export class SideMenu {
         case 'Conceitos':
           pathParts.push('conceitos');
           break;
-        case 'Pensadores':
-          pathParts.push('pensadores');
+        case 'Teóricos':
+          pathParts.push('teoricos');
           break;
         case 'Resumo':
           pathParts.push('resumo');

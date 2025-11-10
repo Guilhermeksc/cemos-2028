@@ -376,14 +376,6 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         ]
       },
       {
-        title: 'Mídia',
-        path: 'media',
-        loadComponent: () =>
-          import(
-            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-media/app6-geopolitica-relacoes-internacionais-media'
-          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisMedia),
-        },      
-      {
         title: 'Flash Cards',
         path: 'flash-cards',
         loadComponent: () =>
@@ -408,38 +400,12 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           ).then((m) => m.App6GeopoliticaRelacoesInternacionaisConceitos)
       },
       {
-        title: 'Pensadores',
-        path: 'pensadores',
+        title: 'Teóricos',
+        path: 'teoricos',
         loadComponent: () =>
           import(
             '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-pensadores/app6-geopolitica-relacoes-internacionais-pensadores'
           ).then((m) => m.App6GeopoliticaRelacoesInternacionaisPensadores)
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-resumo/app6-geopolitica-relacoes-internacionais-resumo').then(
-            (m) => m.App6GeopoliticaRelacoesInternacionaisResumo
-          ),                  
-        children: [
-          {
-            title: 'Geopolítica',
-            path: 'geopolitica',
-            loadComponent: () =>
-              import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-resumo/geopolitica/geopolitica').then(
-                (m) => m.Geopolitica
-              )
-          },
-          {
-            title: 'Relações Internacionais',
-            path: 'relacoes-internacionais',
-            loadComponent: () =>
-              import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-resumo/relacoes-internacionais/relacoes-internacionais').then(
-                (m) => m.RelacoesInternacionais
-              )
-          }
-        ]
       }
     ]
   },
