@@ -1,16 +1,7 @@
-  <!-- Componente de Flash Cards -->
-<app-header-concent
-  [moduleEmoji]="'🌍'"
-  [moduleLabel]="pageTitle"
-  [showBibliografia]="true"
-  [showFlashcards]="false"
-  [showMedia]="true"
-  [showPerguntas]="true"
-  [showConceitos]="true">
-</app-header-concent>
-
-
   <section class="flashcards-section">
-    <app-flash-cards [bibliografiaIds]="bibliografiaIds"></app-flash-cards>
+    <app-flash-cards 
+      [bibliografiaIds]="bibliografiaIds"
+      [bibliografiaPath]="bibliografiaPath">
+    </app-flash-cards>
   </section>
 

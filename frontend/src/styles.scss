@@ -49,6 +49,52 @@ app-side-menu {
   overflow-x: hidden !important;
 }
 
+// Estilos globais para garantir que o fullscreen fique acima do sidenav
+body.flashcards-fullscreen-active {
+  // Sidenav do Angular Material - todas as variações possíveis
+  .mat-sidenav,
+  .mat-drawer,
+  mat-sidenav,
+  mat-drawer,
+  .mat-sidenav-container,
+  .mat-drawer-container,
+  .mat-drawer-backdrop,
+  .mat-drawer-side,
+  [class*="mat-sidenav"],
+  [class*="mat-drawer"] {
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  // Menu mobile no topo
+  .top-menu-container,
+  .menu-overlay {
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  // Header mobile
+  .top-header {
+    z-index: 1 !important;
+  }
+
+  // Overlay de fullscreen deve estar acima de tudo
+  .fullscreen-overlay {
+    z-index: 2147483647 !important;
+    pointer-events: auto !important;
+    position: fixed !important;
+  }
+
+  // Garantir que qualquer elemento com z-index alto fique abaixo do overlay
+  * {
+    &[style*="z-index"] {
+      &:not(.fullscreen-overlay):not(.fullscreen-container):not(.fullscreen-header):not(.fullscreen-grid):not(.fullscreen-actions) {
+        z-index: 1 !important;
+      }
+    }
+  }
+}
+
 
 // Estilo dos botões de navegação em tons de preto e branco
 .navigation-buttons {

@@ -14,5 +14,7 @@ export class App6GeopoliticaRelacoesInternacionaisFlashcards {
   // IDs das bibliografias de Geopolítica e Relações Internacionais
   bibliografiaIds: number[] = [1, 2, 3, 4];
 
-  pageTitle = 'Flashcards de Geopolítica e Relações Internacionais';
+  // Rota para voltar à bibliografia
+  bibliografiaPath = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
+
 }

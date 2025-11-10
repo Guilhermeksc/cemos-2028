@@ -16,42 +16,20 @@
       >
         <option [ngValue]="null">📚 Todas as Bibliografias</option>
         <option 
-          *ngFor="let bibliografia of bibliografias" 
+          *ngFor="let bibliografia of bibliografiasComEstatisticas" 
           [ngValue]="bibliografia.id"
         >
-          {{ bibliografia.titulo }}
-          <span *ngIf="bibliografia.autor"> - {{ bibliografia.autor }}</span>
-          <span *ngIf="bibliografia.perguntas_count !== undefined">
-            ({{ bibliografia.perguntas_count }} questões)
-          </span>
+          {{ getBibliografiaOptionText(bibliografia) }}
         </option>
       </select>
+      <button 
+        class="btn btn-back"
+        (click)="goToBibliografia()">
+        <span class="back-arrow"></span>
+        Voltar
+      </button>
       <div *ngIf="isLoadingBibliografias" class="loading-text">
         Carregando bibliografias...
-      </div>
-      <div *ngIf="!isLoadingBibliografias" class="selected-info">
-        <strong>Bibliografia Selecionada:</strong> {{ getSelectedBibliografiaName() }}
-        <span *ngIf="selectedBibliografiaId === null">
-          (IDs: {{ getBibliografiaIdsString() }})
-        </span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Informações sobre o simulado -->
-  <div class="simulado-info" *ngIf="!simuladoAtivo">
-    <div class="info-card">
-      <h3>📚 Sobre este Simulado</h3>
-      <div class="info-content">
-        <div class="info-item">
-          <strong>Matéria:</strong> Geopolítica e Relações Internacionais
-        </div>
-        <div class="info-item">
-          <strong>Questões:</strong> Variável conforme o tipo de simulado escolhido
-        </div>
-        <div class="info-item">
-          <strong>Tempo:</strong> Sem limite de tempo
-        </div>
       </div>
     </div>
   </div>

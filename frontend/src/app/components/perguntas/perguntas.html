@@ -148,10 +148,17 @@
     </div>
   </div>
 
-  <!-- Mensagem se não há questões -->
+  <!-- Mensagem se não há questões ou questões insuficientes -->
   <div *ngIf="!questionsLoaded && !isLoadingQuestions" class="no-questions">
-    <h3>🤔 Nenhuma prova carregada</h3>
-    <p>Configure as bibliografias e gere uma nova prova.</p>
+    <h3 *ngIf="!insufficientQuestionsMessage">🤔 Nenhuma prova carregada</h3>
+    <h3 *ngIf="insufficientQuestionsMessage">⚠️ Não foi possível gerar a prova</h3>
+    
+    <div *ngIf="insufficientQuestionsMessage" class="insufficient-message">
+      <p>{{ insufficientQuestionsMessage }}</p>
+    </div>
+    
+    <p *ngIf="!insufficientQuestionsMessage">Configure as bibliografias e gere uma nova prova.</p>
+    
     <button class="btn btn-primary" (click)="gerarNovaProva()">
       🚀 Gerar Prova
     </button>

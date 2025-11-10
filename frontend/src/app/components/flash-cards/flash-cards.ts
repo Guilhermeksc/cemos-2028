@@ -1,6 +1,7 @@
 import { Component, Input, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { FlashCardsService } from '../../services/flashcards.service';
 import { PerguntasService } from '../../services/perguntas.service';
 import { FlashCards as FlashCard, Bibliografia } from '../../interfaces/perguntas.interface';
@@ -20,19 +21,19 @@ interface FlashCardDisplay extends FlashCard {
 })
 export class FlashCardsComponent implements OnInit, OnDestroy {
   @Input() bibliografiaIds: number[] = [];
+  @Input() bibliografiaPath?: string; // Rota para voltar à bibliografia
   
   private flashcardsService = inject(FlashCardsService);
   private perguntasService = inject(PerguntasService);
+  private router = inject(Router);
   private destroy$ = new Subject<void>();
-  private fullscreenChangeHandler = this.handleFullscreenChange.bind(this);
-  private webkitFullscreenChangeHandler = this.handleFullscreenChange.bind(this);
-  private mozFullscreenChangeHandler = this.handleFullscreenChange.bind(this);
 
   // Estados do componente
   isLoading = false;
   bibliografias: Bibliografia[] = [];
   allFlashCards: FlashCard[] = [];
   displayedFlashCards: FlashCardDisplay[] = [];
+  isFullscreen = false;
   
   // Filtros
   selectedBibliografiaId: number | null = null;
@@ -41,9 +42,6 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   
   // Configuração
   maxCardsToShow = 6;
-  
-  // Estado do fullscreen
-  isFullscreen = false;
 
   ngOnInit() {
     console.log('🎴 Flash Cards Component inicializado');
@@ -53,35 +51,68 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
       this.loadData();
     }
 
-    // Listeners para quando o usuário sai do fullscreen usando ESC (suporte multi-navegador)
-    document.addEventListener('fullscreenchange', this.fullscreenChangeHandler);
-    document.addEventListener('webkitfullscreenchange', this.webkitFullscreenChangeHandler);
-    document.addEventListener('mozfullscreenchange', this.mozFullscreenChangeHandler);
+    // Escutar eventos de fullscreen para sincronizar o estado
+    this.setupFullscreenListeners();
   }
 
   ngOnDestroy() {
-    // Remove listeners do fullscreen
-    document.removeEventListener('fullscreenchange', this.fullscreenChangeHandler);
-    document.removeEventListener('webkitfullscreenchange', this.webkitFullscreenChangeHandler);
-    document.removeEventListener('mozfullscreenchange', this.mozFullscreenChangeHandler);
-    
+    // Garantir que saia do fullscreen ao destruir o componente
+    if (this.isFullscreen) {
+      this.exitFullscreen();
+    }
+    // Garantir que o overflow do body seja restaurado ao destruir o componente
+    document.body.style.overflow = '';
+    document.body.classList.remove('flashcards-fullscreen-active');
+    this.removeFullscreenListeners();
     this.destroy$.next();
     this.destroy$.complete();
   }
 
   /**
-   * Handler para mudanças no estado de fullscreen (ex: ESC)
+   * Configura listeners para eventos de fullscreen
    */
-  private handleFullscreenChange() {
-    const isFullscreenActive = 
-      document.fullscreenElement || 
-      (document as any).webkitFullscreenElement || 
-      (document as any).mozFullScreenElement;
-    
-    if (!isFullscreenActive && this.isFullscreen) {
-      // Usuário saiu do fullscreen (provavelmente ESC)
+  private setupFullscreenListeners() {
+    document.addEventListener('fullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('mozfullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('MSFullscreenChange', this.handleFullscreenChange);
+  }
+
+  /**
+   * Remove listeners de fullscreen
+   */
+  private removeFullscreenListeners() {
+    document.removeEventListener('fullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('webkitfullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('mozfullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('MSFullscreenChange', this.handleFullscreenChange);
+  }
+
+  /**
+   * Handler para mudanças no estado de fullscreen
+   */
+  private handleFullscreenChange = () => {
+    const isCurrentlyFullscreen = !!(
+      document.fullscreenElement ||
+      (document as any).webkitFullscreenElement ||
+      (document as any).mozFullScreenElement ||
+      (document as any).msFullscreenElement
+    );
+
+    if (!isCurrentlyFullscreen && this.isFullscreen) {
+      // Sincronizar estado se o usuário saiu do fullscreen via ESC ou outro método
       this.isFullscreen = false;
+      document.body.style.overflow = '';
       document.body.classList.remove('flashcards-fullscreen-active');
+      
+      // Restaurar z-index dos sidenavs
+      const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+      sidenavs.forEach((el: Element) => {
+        (el as HTMLElement).style.zIndex = '';
+        (el as HTMLElement).style.pointerEvents = '';
+      });
+      
+      console.log('🖥️ Fullscreen desativado (via evento)');
     }
   }
 
@@ -301,17 +332,6 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Vira todos os cards
-   */
-  flipAllCards() {
-    const targetState = !this.displayedFlashCards[0]?.isFlipped;
-    this.displayedFlashCards.forEach(card => {
-      card.isFlipped = targetState;
-    });
-    console.log(`🔄 Todos os cards ${targetState ? 'virados' : 'desvirados'}`);
-  }
-
-  /**
    * Retorna estatísticas
    */
   getStats() {
@@ -323,14 +343,6 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     };
   }
 
-  get topRowCards(): FlashCardDisplay[] {
-    return this.displayedFlashCards.slice(0, 3);
-  }
-
-  get bottomRowCards(): FlashCardDisplay[] {
-    return this.displayedFlashCards.slice(3, 6);
-  }
-
   /**
    * TrackBy function para otimizar renderização do ngFor
    */
@@ -339,47 +351,160 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Alterna o modo fullscreen
+   * Abre o modo fullscreen usando a API do navegador
    */
-  toggleFullscreen() {
-    this.isFullscreen = !this.isFullscreen;
-    
-    if (this.isFullscreen) {
-      // Adiciona classe ao body para permitir controle CSS global se necessário
+  async openFullscreen() {
+    if (this.displayedFlashCards.length === 0) {
+      return;
+    }
+
+    const element = document.documentElement;
+
+    try {
+      if (element.requestFullscreen) {
+        await element.requestFullscreen();
+      } else if ((element as any).webkitRequestFullscreen) {
+        // Safari
+        await (element as any).webkitRequestFullscreen();
+      } else if ((element as any).mozRequestFullScreen) {
+        // Firefox
+        await (element as any).mozRequestFullScreen();
+      } else if ((element as any).msRequestFullscreen) {
+        // IE/Edge
+        await (element as any).msRequestFullscreen();
+      } else {
+        console.warn('⚠️ Fullscreen API não suportada neste navegador');
+      // Fallback para overlay se a API não estiver disponível
+      this.isFullscreen = true;
+      document.body.style.overflow = 'hidden';
       document.body.classList.add('flashcards-fullscreen-active');
       
-      // Tenta usar Fullscreen API do navegador (com suporte a prefixos)
-      const element = document.querySelector('.main-container') as HTMLElement;
-      if (element) {
-        const requestFullscreen = 
-          element.requestFullscreen || 
-          (element as any).webkitRequestFullscreen || 
-          (element as any).mozRequestFullscreen || 
-          (element as any).msRequestFullscreen;
+      // Forçar z-index baixo em todos os sidenavs do Angular Material
+      setTimeout(() => {
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '1';
+          (el as HTMLElement).style.pointerEvents = 'none';
+        });
         
-        if (requestFullscreen) {
-          requestFullscreen.call(element).catch((err: any) => {
-            console.log('Erro ao entrar em fullscreen:', err);
-            // Se falhar, mantém o estado visual mesmo sem fullscreen nativo
-          });
+        // Garantir que o overlay tenha z-index máximo
+        const overlay = document.querySelector('.fullscreen-overlay');
+        if (overlay) {
+          (overlay as HTMLElement).style.zIndex = '2147483647';
+          (overlay as HTMLElement).style.pointerEvents = 'auto';
         }
+      }, 0);
+      return;
       }
-    } else {
-      // Remove classe do body
+
+      this.isFullscreen = true;
+      document.body.style.overflow = 'hidden';
+      // Adicionar classe ao body para aplicar estilos globais
+      document.body.classList.add('flashcards-fullscreen-active');
+      
+      // Forçar z-index baixo em todos os sidenavs do Angular Material
+      setTimeout(() => {
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '1';
+          (el as HTMLElement).style.pointerEvents = 'none';
+        });
+        
+        // Garantir que o overlay tenha z-index máximo
+        const overlay = document.querySelector('.fullscreen-overlay');
+        if (overlay) {
+          (overlay as HTMLElement).style.zIndex = '2147483647';
+          (overlay as HTMLElement).style.pointerEvents = 'auto';
+        }
+      }, 0);
+      
+      console.log('🖥️ Modo fullscreen ativado');
+    } catch (error) {
+      console.error('❌ Erro ao entrar em fullscreen:', error);
+      // Fallback para overlay em caso de erro
+      this.isFullscreen = true;
+      document.body.style.overflow = 'hidden';
+      document.body.classList.add('flashcards-fullscreen-active');
+      
+      // Forçar z-index baixo em todos os sidenavs do Angular Material
+      setTimeout(() => {
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '1';
+          (el as HTMLElement).style.pointerEvents = 'none';
+        });
+        
+        // Garantir que o overlay tenha z-index máximo
+        const overlay = document.querySelector('.fullscreen-overlay');
+        if (overlay) {
+          (overlay as HTMLElement).style.zIndex = '2147483647';
+          (overlay as HTMLElement).style.pointerEvents = 'auto';
+        }
+      }, 0);
+    }
+  }
+
+  /**
+   * Fecha o modo fullscreen
+   */
+  async closeFullscreen() {
+    try {
+      if (document.exitFullscreen) {
+        await document.exitFullscreen();
+      } else if ((document as any).webkitExitFullscreen) {
+        // Safari
+        await (document as any).webkitExitFullscreen();
+      } else if ((document as any).mozCancelFullScreen) {
+        // Firefox
+        await (document as any).mozCancelFullScreen();
+      } else if ((document as any).msExitFullscreen) {
+        // IE/Edge
+        await (document as any).msExitFullscreen();
+      } else {
+      // Fallback se não houver API
+      this.isFullscreen = false;
+      document.body.style.overflow = '';
       document.body.classList.remove('flashcards-fullscreen-active');
       
-      // Sai do fullscreen do navegador (com suporte a prefixos)
-      const exitFullscreen = 
-        document.exitFullscreen || 
-        (document as any).webkitExitFullscreen || 
-        (document as any).mozCancelFullScreen || 
-        (document as any).msExitFullscreen;
-      
-      if (exitFullscreen && (document.fullscreenElement || (document as any).webkitFullscreenElement)) {
-        exitFullscreen.call(document).catch((err: any) => {
-          console.log('Erro ao sair do fullscreen:', err);
-        });
+      // Restaurar z-index dos sidenavs
+      const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+      sidenavs.forEach((el: Element) => {
+        (el as HTMLElement).style.zIndex = '';
+        (el as HTMLElement).style.pointerEvents = '';
+      });
+      return;
       }
+
+      // O estado será atualizado pelo listener de eventos
+    } catch (error) {
+      console.error('❌ Erro ao sair do fullscreen:', error);
+      // Forçar saída mesmo em caso de erro
+      this.isFullscreen = false;
+      document.body.style.overflow = '';
+      document.body.classList.remove('flashcards-fullscreen-active');
+      
+      // Restaurar z-index dos sidenavs
+      const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+      sidenavs.forEach((el: Element) => {
+        (el as HTMLElement).style.zIndex = '';
+        (el as HTMLElement).style.pointerEvents = '';
+      });
+    }
+  }
+
+  /**
+   * Alias para closeFullscreen (usado no template)
+   */
+  exitFullscreen() {
+    this.closeFullscreen();
+  }
+
+  /**
+   * Navega de volta para a página de bibliografia
+   */
+  goToBibliografia() {
+    if (this.bibliografiaPath) {
+      this.router.navigate([this.bibliografiaPath]);
     }
   }
 }

@@ -1,3 +1,6 @@
+// Importa estilos compartilhados de markdown
+@use '../../styles/markdown' as *;
+
 // ========================================
 // ESTILOS PERSONALIZADOS PARA TOOLTIPS
 // ========================================
@@ -405,9 +408,6 @@
 // ========================================
 // CONTEÚDO MARKDOWN
 // ========================================
-// Importa estilos compartilhados de markdown
-@import '../../styles/markdown';
-
 .markdown-content {
   padding: 0;
   

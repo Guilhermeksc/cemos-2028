@@ -44,6 +44,7 @@ interface TabState {
   simuladoQuestions: SimuladoQuestion[];
   questionResults: { [uniqueKey: string]: { answered: boolean, isCorrect: boolean, showResult: boolean } };
   simuladoConfig: SimuladoConfig;
+  insufficientQuestionsMessage?: string; // Mensagem quando não há questões suficientes
 }
 
 type TabType = 'completo' | 'vf' | 'multipla' | 'correlacao';
@@ -152,6 +153,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     return this.currentTab.simuladoConfig;
   }
 
+  get insufficientQuestionsMessage(): string | undefined {
+    return this.currentTab.insufficientQuestionsMessage;
+  }
+
   ngOnInit() {
     console.log('🚀 Componente Perguntas inicializado - Modo com Tabs');
     
@@ -183,14 +188,24 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         
         this.updateBibliografiasConfig();
         
-        // Se já havia questões carregadas, limpar e permitir que o usuário gere nova prova
-        if (this.currentTab.questionsLoaded) {
-          console.log('🔄 Limpando questões anteriores devido à mudança de bibliografia');
-          this.currentTab.questionsLoaded = false;
-          this.currentTab.simuladoQuestions = [];
-          this.currentTab.questionResults = {};
-          this.cdr.detectChanges();
+        // Limpar questões anteriores e gerar nova prova automaticamente
+        console.log('🔄 Recarregando questões devido à mudança de bibliografia');
+        Object.keys(this.tabs).forEach(tabKey => {
+          const tab = this.tabs[tabKey as TabType];
+          tab.questionsLoaded = false;
+          tab.simuladoQuestions = [];
+          tab.questionResults = {};
+          tab.insufficientQuestionsMessage = undefined;
+        });
+        
+        // Gerar nova prova automaticamente para a tab ativa
+        if (this.bibliografiaIds.length > 0) {
+          setTimeout(() => {
+            this.gerarNovaProva();
+          }, 100);
         }
+        
+        this.cdr.detectChanges();
       }
     }
   }
@@ -217,7 +232,24 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   }
 
   setActiveTab(tab: TabType) {
+    // Se já é a tab ativa, não fazer nada
+    if (this.activeTab === tab) {
+      return;
+    }
+    
     this.activeTab = tab;
+    
+    // Atualizar bibliografias na configuração da tab
+    const currentTab = this.tabs[tab];
+    if (currentTab.simuladoConfig.bibliografias.length === 0 && this.bibliografiaIds.length > 0) {
+      currentTab.simuladoConfig.bibliografias = [...this.bibliografiaIds];
+    }
+    
+    // Gerar prova automaticamente se não estiver carregada e houver bibliografias
+    if (!currentTab.questionsLoaded && this.bibliografiaIds.length > 0) {
+      this.gerarNovaProva();
+    }
+    
     this.cdr.detectChanges();
   }
 
@@ -237,12 +269,22 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     currentTab.questionsLoaded = false;
     currentTab.simuladoQuestions = [];
     currentTab.questionResults = {};
+    currentTab.insufficientQuestionsMessage = undefined; // Limpar mensagem anterior
 
     this.loadRandomQuestions(this.activeTab)
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (questions) => {
           console.log(`✅ Nova prova carregada para aba ${this.activeTab}:`, questions.length, 'questões');
+          
+          // Verificar se há questões carregadas
+          if (questions.length === 0) {
+            currentTab.isLoadingQuestions = false;
+            currentTab.questionsLoaded = false;
+            currentTab.insufficientQuestionsMessage = 'Não foi possível carregar questões. Verifique se há questões cadastradas para as bibliografias selecionadas.';
+            this.cdr.detectChanges();
+            return;
+          }
           
           currentTab.simuladoQuestions = this.shuffleArray(questions);
           
@@ -278,6 +320,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           console.error('❌ Erro ao carregar nova prova:', error);
           currentTab.isLoadingQuestions = false;
           currentTab.questionsLoaded = false;
+          currentTab.insufficientQuestionsMessage = 'Erro ao carregar questões. Por favor, tente novamente.';
           this.cdr.detectChanges();
         }
       });
@@ -753,19 +796,29 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           }
         });
 
-        // Se não há questões suficientes, dar um aviso mas continuar com as disponíveis
+        // Se não há questões suficientes, criar mensagem de aviso
         if (questoesInsuficientes.length > 0) {
+          const mensagensDetalhadas = questoesInsuficientes.map(item => {
+            const [tipo, info] = item.split(': ');
+            const [disponiveis, solicitadas] = info.split('/');
+            const tipoNome = tipo === 'vf' ? 'Verdadeiro/Falso' : 
+                           tipo === 'multipla' ? 'Múltipla Escolha' : 
+                           'Correlação';
+            return `${tipoNome}: ${disponiveis} disponíveis de ${solicitadas} solicitadas`;
+          });
+          
+          const mensagem = `Não há questões suficientes para gerar esta prova.\n\n${mensagensDetalhadas.join('\n')}\n\nPor favor, verifique se há questões cadastradas para as bibliografias selecionadas.`;
+          
           console.warn('🚨 SIMULADO COM QUESTÕES REDUZIDAS:', {
             problema: 'Não há questões suficientes para a configuração solicitada',
             aba: tabType,
             bibliografias_consultadas: config.bibliografias,
             questoes_insuficientes: questoesInsuficientes,
-            acoes_recomendadas: [
-              'Verificar se a bibliografia ID existe no backend',
-              'Verificar se há questões cadastradas para esta bibliografia',
-              'Considerar reduzir o número de questões solicitadas'
-            ]
+            mensagem: mensagem
           });
+          
+          // Armazenar mensagem no estado da tab para exibir no template
+          this.tabs[tabType].insufficientQuestionsMessage = mensagem;
         }
 
         // Selecionar questões aleatórias

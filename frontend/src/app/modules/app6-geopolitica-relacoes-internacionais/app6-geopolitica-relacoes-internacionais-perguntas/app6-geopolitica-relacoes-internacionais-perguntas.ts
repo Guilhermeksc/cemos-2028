@@ -1,22 +1,23 @@
 import { Component, OnInit, inject, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Subject } from 'rxjs';
+import { Router } from '@angular/router';
+import { Subject, forkJoin } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { Perguntas } from '../../../components/perguntas/perguntas';
-import { HeaderConcentComponent } from '../../../components/header-concent/header-concent';
 import { PerguntasService } from '../../../services/perguntas.service';
-import { Bibliografia } from '../../../interfaces/perguntas.interface';
+import { Bibliografia, EstatisticasBibliografia } from '../../../interfaces/perguntas.interface';
 
 @Component({
   selector: 'app-app6-geopolitica-relacoes-internacionais-perguntas',
   standalone: true,
-  imports: [CommonModule, FormsModule, Perguntas, HeaderConcentComponent],
+  imports: [CommonModule, FormsModule, Perguntas],
   templateUrl: './app6-geopolitica-relacoes-internacionais-perguntas.html',
   styleUrl: './app6-geopolitica-relacoes-internacionais-perguntas.scss'
 })
 export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit, OnDestroy {
   private perguntasService = inject(PerguntasService);
+  private router = inject(Router);
   private destroy$ = new Subject<void>();
 
   // Bibliografias disponíveis para este módulo
@@ -24,6 +25,7 @@ export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit, O
   
   // Bibliografias carregadas do backend
   bibliografias: Bibliografia[] = [];
+  bibliografiasComEstatisticas: Array<Bibliografia & { estatisticas?: EstatisticasBibliografia }> = [];
   isLoadingBibliografias = false;
   
   // Bibliografia selecionada (null = "Todas")
@@ -32,10 +34,10 @@ export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit, O
   // IDs das bibliografias a serem usadas (atualizado baseado na seleção)
   bibliografiaIds: number[] = [1, 2, 3, 4];
   
+  // Rota para voltar à bibliografia
+  bibliografiaPath = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
+  
   pageTitle = 'Perguntas de Geopolítica e Relações Internacionais';
-  // Estado do simulado
-  simuladoAtivo: boolean = false;
-  ultimoResultado: any | null = null;
 
   ngOnInit() {
     console.log('Módulo de Perguntas - Geopolítica e Relações Internacionais iniciado');
@@ -61,19 +63,57 @@ export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit, O
             this.bibliografiasDisponiveisIds.includes(b.id)
           );
           
+          // Buscar estatísticas para cada bibliografia
+          this.loadEstatisticasBibliografias();
+        },
+        error: (error) => {
+          console.error('❌ Erro ao carregar bibliografias:', error);
+          this.isLoadingBibliografias = false;
+        }
+      });
+  }
+
+  loadEstatisticasBibliografias() {
+    // Se não há bibliografias, não fazer nada
+    if (this.bibliografias.length === 0) {
+      this.bibliografiasComEstatisticas = [];
+      this.isLoadingBibliografias = false;
+      return;
+    }
+
+    // Criar array de observables para buscar estatísticas de cada bibliografia
+    const estatisticasRequests = this.bibliografias.map(bib => 
+      this.perguntasService.getEstatisticasBibliografia(bib.id).pipe(
+        takeUntil(this.destroy$)
+      )
+    );
+
+    forkJoin(estatisticasRequests)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (estatisticas) => {
+          // Combinar bibliografias com suas estatísticas
+          this.bibliografiasComEstatisticas = this.bibliografias.map((bib, index) => ({
+            ...bib,
+            estatisticas: estatisticas[index]
+          }));
+          
           this.isLoadingBibliografias = false;
           
-          console.log('📖 Bibliografias carregadas para Geopolítica:', {
-            total: this.bibliografias.length,
-            bibliografias: this.bibliografias.map(b => ({
+          console.log('📖 Bibliografias com estatísticas carregadas:', {
+            total: this.bibliografiasComEstatisticas.length,
+            bibliografias: this.bibliografiasComEstatisticas.map(b => ({
               id: b.id,
               titulo: b.titulo,
-              autor: b.autor
+              autor: b.autor,
+              estatisticas: b.estatisticas
             }))
           });
         },
         error: (error) => {
-          console.error('❌ Erro ao carregar bibliografias:', error);
+          console.error('❌ Erro ao carregar estatísticas:', error);
+          // Em caso de erro, usar bibliografias sem estatísticas
+          this.bibliografiasComEstatisticas = this.bibliografias.map(bib => ({ ...bib }));
           this.isLoadingBibliografias = false;
         }
       });
@@ -108,14 +148,49 @@ export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit, O
 
   onSimuladoStarted() {
     console.log('Simulado de Geopolítica iniciado');
-    this.simuladoAtivo = true;
-    this.ultimoResultado = null;
   }
 
-  resetarSimulado() {
-    this.simuladoAtivo = false;
-    this.ultimoResultado = null;
-    // Recarregar a página ou resetar o estado do componente
-    window.location.reload();
+  /**
+   * Formata o texto da opção do select com números em negrito usando caracteres Unicode
+   */
+  getBibliografiaOptionText(bibliografia: Bibliografia & { estatisticas?: EstatisticasBibliografia }): string {
+    let texto = bibliografia.titulo;
+    
+    if (bibliografia.autor) {
+      texto += ` - ${bibliografia.autor}`;
+    }
+    
+    if (bibliografia.estatisticas) {
+      const total = this.formatBoldNumber(bibliografia.estatisticas.total_perguntas);
+      const vf = this.formatBoldNumber(bibliografia.estatisticas.perguntas_vf);
+      const multipla = this.formatBoldNumber(bibliografia.estatisticas.perguntas_multipla);
+      const correlacao = this.formatBoldNumber(bibliografia.estatisticas.perguntas_correlacao);
+      
+      texto += ` (Total: ${total} | V/F: ${vf} | Múltipla: ${multipla} | Correlação: ${correlacao})`;
+    } else if (bibliografia.perguntas_count !== undefined) {
+      const count = this.formatBoldNumber(bibliografia.perguntas_count);
+      texto += ` (${count} questões)`;
+    }
+    
+    return texto;
+  }
+
+  /**
+   * Converte um número para caracteres Unicode em negrito matemático
+   */
+  private formatBoldNumber(num: number): string {
+    const boldMap: { [key: string]: string } = {
+      '0': '𝟎', '1': '𝟏', '2': '𝟐', '3': '𝟑', '4': '𝟒',
+      '5': '𝟓', '6': '𝟔', '7': '𝟕', '8': '𝟖', '9': '𝟗'
+    };
+    
+    return num.toString().split('').map(digit => boldMap[digit] || digit).join('');
+  }
+
+  /**
+   * Navega de volta para a página de bibliografia
+   */
+  goToBibliografia() {
+    this.router.navigate([this.bibliografiaPath]);
   }
 }

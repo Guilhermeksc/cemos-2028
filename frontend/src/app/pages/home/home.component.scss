@@ -130,6 +130,29 @@ mat-sidenav {
   overflow-x: hidden !important;
 }
 
+// Quando o fullscreen está ativo, garantir que o sidenav fique abaixo
+:host-context(body.flashcards-fullscreen-active) {
+  mat-sidenav-container,
+  mat-sidenav,
+  .mat-sidenav-container,
+  .mat-drawer-container,
+  .mat-drawer,
+  .mat-sidenav {
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  .top-menu-container,
+  .menu-overlay {
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  .top-header {
+    z-index: 1 !important;
+  }
+}
+
 app-side-menu {
   background-color: #f7f8fa !important;
   display: block;

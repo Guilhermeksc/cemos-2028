@@ -1,6 +1,6 @@
-<div class="main-container" [class.fullscreen-mode]="isFullscreen">
+<div class="main-container">
     <!-- Botões de navegação (similar ao componente capa-bibliografia) -->
-  <div class="header" [class.hidden-fullscreen]="isFullscreen">
+  <div class="header">
     <h2>📚 Flash Cards</h2>
     <div class="stats" *ngIf="!isLoading">
       <span class="stat-item">
@@ -67,10 +67,10 @@
       </button>
       
       <button 
-        class="btn btn-secondary"
-        (click)="flipAllCards()"
+        class="btn btn-fullscreen"
+        (click)="openFullscreen()"
         [disabled]="displayedFlashCards.length === 0">
-        🔄 Virar Todos
+        🖥️ Tela Cheia
       </button>
       
       <button 
@@ -79,49 +79,31 @@
         [disabled]="!selectedBibliografiaId && !selectedAssunto">
         ✖️ Limpar Filtros
       </button>
-
+      
       <button 
-        class="btn btn-fullscreen"
-        (click)="toggleFullscreen()"
-        [class.btn-exit-fullscreen]="isFullscreen"
-        *ngIf="!isLoading && displayedFlashCards.length > 0"
-        [attr.aria-label]="isFullscreen ? 'Sair do modo tela cheia' : 'Entrar no modo tela cheia'">
-        {{ isFullscreen ? '⤓ Sair da Tela Cheia' : '⤢ Tela Cheia' }}
+        *ngIf="bibliografiaPath"
+        class="btn btn-back"
+        (click)="goToBibliografia()">
+        <span class="back-arrow"></span>
+        Voltar à Bibliografia
       </button>
     </div>
   </div>
 
   <!-- Loading -->
-  <div class="loading-container" *ngIf="isLoading" [class.hidden-fullscreen]="isFullscreen">
+  <div class="loading-container" *ngIf="isLoading">
     <div class="spinner"></div>
     <p>Carregando flash cards...</p>
   </div>
 
   <!-- Cards Grid -->
-  <div class="flashcards-grid-wrapper" *ngIf="!isLoading && displayedFlashCards.length > 0">
-    <ng-container *ngIf="isFullscreen; else defaultGridView">
-      <div class="fullscreen-grid">
-        <div class="fullscreen-row">
-          <ng-container *ngFor="let card of topRowCards; trackBy: trackByCardId">
-            <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
-          </ng-container>
-        </div>
-        <div class="fullscreen-row" *ngIf="bottomRowCards.length > 0">
-          <ng-container *ngFor="let card of bottomRowCards; trackBy: trackByCardId">
-            <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
-          </ng-container>
-        </div>
-      </div>
-    </ng-container>
-  </div>
-
-  <ng-template #defaultGridView>
+  <div *ngIf="!isLoading && displayedFlashCards.length > 0">
     <div class="flashcards-grid">
       <ng-container *ngFor="let card of displayedFlashCards; trackBy: trackByCardId">
         <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
       </ng-container>
     </div>
-  </ng-template>
+  </div>
 
   <ng-template #flashcardTemplate let-card>
     <div class="flashcard-wrapper">
@@ -187,13 +169,20 @@
   </ng-template>
 
   <!-- Mobile action bar (visível no final em telas pequenas) -->
-  <div class="mobile-action-bar" *ngIf="!isLoading && allFlashCards.length > 0 && !isFullscreen" role="toolbar" aria-label="Ações rápidas">
+  <div class="mobile-action-bar" *ngIf="!isLoading && allFlashCards.length > 0" role="toolbar" aria-label="Ações rápidas">
     <button 
       class="btn btn-primary"
       (click)="loadRandomFlashCards()"
       [disabled]="allFlashCards.length === 0"
       aria-label="Embaralhar">
       🎲 Embaralhar
+    </button>
+    <button 
+      class="btn btn-fullscreen"
+      (click)="openFullscreen()"
+      [disabled]="displayedFlashCards.length === 0"
+      aria-label="Tela cheia">
+      🖥️ Tela Cheia
     </button>
   </div>
 
@@ -213,5 +202,40 @@
     <div class="empty-icon">📭</div>
     <h3>Nenhum flash card disponível</h3>
     <p>Não há flash cards cadastrados para as bibliografias selecionadas.</p>
+  </div>
+
+  <!-- Fullscreen Overlay -->
+  <div class="fullscreen-overlay" *ngIf="isFullscreen">
+    <div class="fullscreen-container">
+      <div class="fullscreen-header">
+        <h3>📚 Flash Cards - Modo Tela Cheia</h3>
+        <button 
+          class="btn-close-fullscreen"
+          (click)="exitFullscreen()"
+          aria-label="Fechar tela cheia">
+          ✕
+        </button>
+      </div>
+      
+      <div class="fullscreen-grid">
+        <ng-container *ngFor="let card of displayedFlashCards; trackBy: trackByCardId">
+          <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
+        </ng-container>
+      </div>
+      
+      <div class="fullscreen-actions">
+        <button 
+          class="btn btn-primary"
+          (click)="loadRandomFlashCards()"
+          [disabled]="allFlashCards.length === 0">
+          🎲 Embaralhar
+        </button>
+        <button 
+          class="btn btn-outline"
+          (click)="exitFullscreen()">
+          ✖️ Fechar (ESC)
+        </button>
+      </div>
+    </div>
   </div>
 </div>
