@@ -1,10 +1,25 @@
-INFRAESTRUTURA DE TI: 
+https://cdn.cebraspe.org.br/concursos/tcu_25_aufc/arquivos/54AC3A8B24B3C372E1D0A32A13C3F12652FA21481E5D9AF036EB00FFFD3C9CD7.html
 
-1 Arquitetura Infraestrutura de TI. Topologias físicas e lógicas de redes corporativas. Arquiteturas de data center (on-premises, cloud, híbrida). Infraestrutura hiperconvergente. Arquitetura escalável, tolerante a falhas e redundante. 
+# INFRAESTRUTURA DE TI: 
 
-2 Redes e Comunicação de Dados. Protocolos de comunicação de dados TCP, UDP, SCTP, ARP, TLS, SSL, OSPF, BGP, DNS, DHCP, ICMP, FTP, SFTP, SSH, HTTP, HTTPS, SMTP, IMAP, POP3. VLANs, STP, QoS, roteamento e switching em ambientes corporativos. SDN (Software Defined Networking) e redes programáveis. Wireless corporativo: Wi-Fi 6, WPA3, roaming, mesh. 
+## 1 Arquitetura Infraestrutura de TI. 
+Topologias físicas e lógicas de redes corporativas. 
+Arquiteturas de data center (on-premises, cloud, híbrida). 
+Infraestrutura hiperconvergente. 
+Arquitetura escalável, tolerante a falhas e redundante. 
 
-3 Sistemas Operacionais e Servidores. Administração avançada de Linux e Windows Server. Virtualização (KVM, VMware vSphere/ESXi. Serviços de diretório (Active Directory, LDAP). Gerenciamento de usuários, permissões, GPOs.
+## 2 Redes e Comunicação de Dados. 
+Protocolos de comunicação de dados TCP, UDP, SCTP, ARP, TLS, SSL, OSPF, BGP, DNS, DHCP, ICMP, FTP, SFTP, SSH, HTTP, HTTPS, SMTP, IMAP, POP3.
+VLANs, STP, QoS, roteamento e switching em ambientes corporativos. 
+SDN (Software Defined Networking) e redes programáveis. 
+Wireless corporativo: Wi-Fi 6, WPA3, roaming, mesh. 
+
+## 3 Sistemas Operacionais e Servidores.
+
+Administração avançada de Linux e Windows Server. 
+Virtualização (KVM, VMware vSphere/ESXi. 
+✅ Serviços de diretório (Active Directory, LDAP). 
+Gerenciamento de usuários, permissões, GPOs.
 
 4 Armazenamento e Backup. SAN, NAS, DAS: arquiteturas e protocolos (iSCSI, NFS, SMB). RAID (níveis, vantagens, hot-spare). Backup e recuperação: RPO, RTO, snapshots, deduplicação. Oracle RMAN. 
 
@@ -71,13 +86,26 @@ SEGURANÇA DA INFORMAÇÃO:
 
 COMPUTAÇÃO EM NUVEM: 
 
-1 Fundamentos de Computação em Nuvem. Modelos de serviço: IaaS, PaaS, SaaS. Modelos de implantação: nuvem pública, privada, híbrida. Arquitetura orientada a serviços (SOA) e microsserviços. Elasticidade, escalabilidade e alta disponibilidade
+1 Fundamentos de Computação em Nuvem. 
+Modelos de serviço: IaaS, PaaS, SaaS. 
+Modelos de implantação: nuvem pública, privada, híbrida. 
+Arquitetura orientada a serviços (SOA) e microsserviços.
+Elasticidade, escalabilidade e alta disponibilidade
 
 2 Plataformas e Serviços de Nuvem: AWS, Microsoft Azure e Google Cloud Platform.
 
-3 Arquitetura de Soluções em Nuvem. Design de sistemas distribuídos resilientes. Arquiteturas serverless e event-driven. Balanceamento de carga e auto escalonamento. Containers e orquestração (Docker, Kubernetes).
+3 Arquitetura de Soluções em Nuvem.
+Design de sistemas distribuídos resilientes.
+Arquiteturas serverless e event-driven.
+Balanceamento de carga e auto escalonamento.
+Containers e orquestração (Docker, Kubernetes).
 
-4 Redes e Segurança em Nuvem. VPNs, sub-redes, gateways e grupos de segurança. Gestão de identidade e acesso (IAM, RBAC, MFA). Criptografia em trânsito e em repouso (TLS, KMS). Zero Trust Architecture em ambientes de nuvem. VPNs site-to-site, Direct Connect, ExpressRoute 
+4 Redes e Segurança em Nuvem.
+VPNs, sub-redes, gateways e grupos de segurança.
+Gestão de identidade e acesso (IAM, RBAC, MFA).
+Criptografia em trânsito e em repouso (TLS, KMS).
+Zero Trust Architecture em ambientes de nuvem.
+VPNs site-to-site, Direct Connect, ExpressRoute 
 
 5 DevOps, CI/CD e Infraestrutura como Código (IaC). Ferrramentas: Terraform. Pipelines de integração e entrega contínua (Jenkins, GitHub Actions). Observabilidade: monitoramento, logging, tracing (CloudWatch, Azure Monitor, GCloud Monitoring). 
 

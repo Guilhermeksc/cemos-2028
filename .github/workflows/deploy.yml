@@ -1,174 +1,42 @@
-name: Deploy CEMOS 2028
+name: 🚀 Deploy to Hostinger Server
 
 on:
   push:
-    branches: [ master, main ]
-  pull_request:
-    branches: [ master, main ]
+    branches:
+      - master  # dispara o deploy quando houver push na master
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
-    name: Test Application
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: 📥 Checkout do repositório
+        uses: actions/checkout@v4
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
+      - name: 🔑 Configurar acesso SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Create environment file
-      run: |
-        echo "POSTGRES_DB=appdb" > .env
-        echo "POSTGRES_USER=postgres" >> .env
-        echo "POSTGRES_PASSWORD=postgres" >> .env
-        echo "POSTGRES_HOST=db" >> .env
-        echo "DJANGO_SUPERUSER_USERNAME=admin" >> .env
-        echo "DJANGO_SUPERUSER_PASSWORD=@cemos2028" >> .env
-        echo "DJANGO_SUPERUSER_EMAIL=admin@example.com" >> .env
+      - name: 🧩 Adicionar host ao known_hosts
+        run: |
+          ssh-keyscan -H 195.200.1.112 >> ~/.ssh/known_hosts
 
-    - name: Build test environment
-      run: |
-        docker compose build --no-cache
+      - name: 🚀 Executar comandos no servidor
+        run: |
+          ssh root@195.200.1.112 << 'EOF'
+            cd ~/cemos-2028
+            echo "📦 Atualizando repositório..."
+            git pull origin master
 
-    - name: Run tests
-      run: |
-        # Start database service
-        docker compose up -d db
-        
-        # Wait for database to be ready
-        sleep 20
-        
-        # Run Django tests
-        docker compose run --rm backend python manage.py test
-        
-        # Cleanup
-        docker compose down -v
+            echo "🏗️ Build do frontend..."
+            cd frontend
+            npm install --legacy-peer-deps
+            npm run build:prod
 
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
-    name: Build and Deploy
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+            echo "🔁 Reiniciando containers Docker..."
+            cd ..
+            docker compose restart backend nginx
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
-
-    - name: Login to Docker Hub (Optional)
-      if: ${{ secrets.DOCKER_HUB_USERNAME }}
-      uses: docker/login-action@v3
-      with:
-        username: ${{ secrets.DOCKER_HUB_USERNAME }}
-        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-
-    - name: Build application
-      run: |
-        docker compose build --no-cache
-
-    - name: Deploy to staging/production server
-      if: ${{ secrets.HOST }}
-      uses: appleboy/ssh-action@v1.0.0
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        port: ${{ secrets.PORT || 22 }}
-        script: |
-          # Navigate to project directory
-          cd ${{ secrets.PROJECT_PATH || '/opt/cemos-2028' }} || exit 1
-          
-          # Pull latest changes
-          git pull origin master
-          
-          # Stop current containers
-          docker compose down
-          
-          # Remove old images to save space
-          docker image prune -f
-          
-          # Build and start new containers
-          docker compose up -d --build
-          
-          # Wait for services to be ready
-          sleep 45
-          
-          # Run migrations
-          docker compose exec backend python manage.py migrate
-          
-          # Collect static files
-          docker compose exec backend python manage.py collectstatic --noinput
-          
-          # Create admin user if needed
-          docker compose exec backend python manage.py shell -c "
-          from django_cemos2028.apps.core.users.models import Usuario;
-          if not Usuario.objects.filter(username='admin').exists():
-              Usuario.objects.create_superuser('admin', '@cemos2028', perfil='admin')
-              print('Admin user created')
-          else:
-              print('Admin user already exists')
-          "
-          
-          # Check if services are running
-          docker compose ps
-          
-          # Test health endpoint
-          curl -f http://localhost:8088/api/health/ || echo "Health check failed"
-
-  # Job for local development deployment (opcional)
-  deploy-local:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    name: Local Development Deploy
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
-
-    - name: Create environment file
-      run: |
-        echo "POSTGRES_DB=appdb" > .env
-        echo "POSTGRES_USER=postgres" >> .env
-        echo "POSTGRES_PASSWORD=postgres" >> .env
-        echo "POSTGRES_HOST=db" >> .env
-        echo "DJANGO_SUPERUSER_USERNAME=admin" >> .env
-        echo "DJANGO_SUPERUSER_PASSWORD=@cemos2028" >> .env
-        echo "DJANGO_SUPERUSER_EMAIL=admin@example.com" >> .env
-
-    - name: Build for development
-      run: |
-        docker compose build
-        
-    - name: Start development environment
-      run: |
-        docker compose up -d
-        sleep 45
-        
-    - name: Check containers status
-      run: |
-        docker compose ps
-        docker compose logs backend --tail=20
-        docker compose logs nginx --tail=10
-        
-    - name: Health check
-      run: |
-        # Wait for backend to be ready through nginx
-        timeout 90 bash -c 'until curl -f http://localhost:8088/api/health/ 2>/dev/null; do echo "Waiting for health check..."; sleep 5; done' || echo "Health check failed after 90 seconds"
-        
-    - name: Test login endpoint
-      run: |
-        # Test if login endpoint is accessible
-        curl -X POST http://localhost:8088/api/auth/login/ \
-          -H "Content-Type: application/json" \
-          -d '{"username":"admin","password":"@cemos2028"}' || echo "Login test failed"
-        
-    - name: Cleanup
-      run: |
-        docker compose down -v
+            echo "✅ Deploy concluído!"
+          EOF
