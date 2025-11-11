@@ -3,7 +3,7 @@ from django.apps import apps
 
 
 class Command(BaseCommand):
-    help = 'Cria um usuário admin padrão se não existir'
+    help = 'Cria um usuário admin padrão e um usuário anderson se não existirem'
 
     def handle(self, *args, **options):
         Usuario = apps.get_model('users', 'Usuario')
@@ -31,4 +31,24 @@ class Command(BaseCommand):
         else:
             self.stdout.write(
                 self.style.WARNING('ℹ️  Usuário admin já existe. Nenhuma ação necessária.')
+            )
+
+        # Verifica/cria usuário 'anderson'
+        if not Usuario.objects.filter(username='anderson').exists():
+            anderson_user = Usuario.objects.create_user(
+                username='anderson',
+                password='@cemos2028',
+                perfil='user'
+            )
+            # Não é staff nem superuser por padrão
+            anderson_user.save()
+
+            self.stdout.write(
+                self.style.SUCCESS('✅ Usuário "anderson" criado com sucesso!')
+            )
+            self.stdout.write(f'   Username: anderson')
+            self.stdout.write(f'   Password: @cemos2028')
+        else:
+            self.stdout.write(
+                self.style.WARNING('ℹ️  Usuário "anderson" já existe. Nenhuma ação necessária.')
             )
