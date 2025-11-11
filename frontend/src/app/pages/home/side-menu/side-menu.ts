@@ -175,17 +175,6 @@ export class SideMenu {
       expanded: false
     },
     { 
-      title: 'Inglês', 
-      icon: 'translate', 
-      children: [
-        'Bibliografia',
-        'Mídia',
-        'Perguntas',
-        'Resumo',    
-      ],
-      expanded: false
-    },
-    { 
       title: 'Política', 
       icon: 'account_balance', 
       children: [
@@ -502,25 +491,6 @@ export class SideMenu {
           }
         }
         break;
-      case 'Inglês':
-        pathParts.push('app5-ingles');
-        if (optionText) {
-          switch (optionText) {
-            case 'Bibliografia':
-              pathParts.push('bibliografia');
-              break;
-            case 'Mídia':
-              pathParts.push('media');
-              break;
-            case 'Perguntas':
-              pathParts.push('perguntas');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
-              break;
-          }
-        }
-        break;
       case 'Geopolítica e Relações Internacionais':
         pathParts.push('app6-geopolitica-relacoes-internacionais');
         if (division === 'Bibliografia') {
@@ -741,9 +711,6 @@ export class SideMenu {
         break;
       case 'História':
         pathParts.push('app4-historia');
-        break;
-      case 'Inglês':
-        pathParts.push('app5-ingles');
         break;
       case 'Geopolítica e Relações Internacionais':
         pathParts.push('app6-geopolitica-relacoes-internacionais');

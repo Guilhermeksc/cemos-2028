@@ -294,41 +294,6 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
     ]
   },
   {
-    title: 'App5 Inglês',
-    path: 'app5-ingles',
-    defaultChild: 'bibliografia',
-    segments: [
-      {
-        title: 'Bibliografia',
-        path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app5-ingles/app5-ingles-bibliografia/app5-ingles-bibliografia').then(
-            (m) => m.App5InglesBibliografia
-          )
-      },
-      {
-        title: 'Mídia',
-        path: 'media',
-        loadComponent: () =>
-          import('../modules/app5-ingles/app5-ingles-media/app5-ingles-media').then((m) => m.App5InglesMedia)
-      },
-      {
-        title: 'Perguntas',
-        path: 'perguntas',
-        loadComponent: () =>
-          import('../modules/app5-ingles/app5-ingles-perguntas/app5-ingles-perguntas').then(
-            (m) => m.App5InglesPerguntas
-          )
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app5-ingles/app5-ingles-resumo/app5-ingles-resumo').then((m) => m.App5InglesResumo)
-      }
-    ]
-  },
-  {
     title: 'App6 Geopolítica',
     path: 'app6-geopolitica-relacoes-internacionais',
     defaultChild: 'bibliografia',
