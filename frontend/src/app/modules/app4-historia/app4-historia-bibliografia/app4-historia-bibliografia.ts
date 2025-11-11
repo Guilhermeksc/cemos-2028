@@ -12,6 +12,9 @@ import { filter } from 'rxjs/operators';
   styleUrl: './app4-historia-bibliografia.scss'
 })
 export class App4HistoriaBibliografia implements OnInit {
+  public conceitosPath = '/home/app4-historia/conceitos';
+  public flashcardsPath = '/home/app4-historia/flash-cards';
+  public perguntasPath = '/home/app4-historia/perguntas';
   // Configuração de múltiplas capas
   capas: CapaConfig[] = [
     {

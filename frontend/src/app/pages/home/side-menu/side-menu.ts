@@ -85,9 +85,10 @@ export class SideMenu {
             'Síntese Histórica'
           ]
         },
-        'Mídia',
+        'Flash Cards',
         'Perguntas',
-        'Resumo',    
+        'Conceitos',
+        'Líderes Históricos',   
       ],
       expanded: false
     },  
@@ -479,6 +480,9 @@ export class SideMenu {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
+            case 'Flash Cards':
+              pathParts.push('flash-cards');
+              break;                
             case 'Mídia':
               pathParts.push('media');
               break;

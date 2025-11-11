@@ -268,12 +268,12 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         ]
       },
       {
-        title: 'Mídia',
-        path: 'media',
+        title: 'Flash Cards',
+        path: 'flash-cards',
         loadComponent: () =>
-          import('../modules/app4-historia/app4-historia-media/app4-historia-media').then(
-            (m) => m.App4HistoriaMedia
-          )
+          import(
+            '../modules/app4-historia/app4-historia-flashcards/app4-historia-flashcards'
+          ).then((m) => m.App4HistoriaFlashcards)
       },
       {
         title: 'Perguntas',
@@ -284,12 +284,12 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           )
       },
       {
-        title: 'Resumo',
-        path: 'resumo',
+        title: 'Líderes Históricos',
+        path: 'lideres-historicos',
         loadComponent: () =>
-          import('../modules/app4-historia/app4-historia-resumo/app4-historia-resumo').then(
-            (m) => m.App4HistoriaResumo
-          )
+          import(
+            '../modules/app4-historia/app4-historia-lideres/app4-historia-lideres'
+          ).then((m) => m.App4HistoriaLideres)
       }
     ]
   },
