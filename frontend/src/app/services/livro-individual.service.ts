@@ -251,21 +251,19 @@ export class LivroIndividualService {
 
     const bodyRows = rows.slice(2).map(r => this.splitRow(r));
 
-    // Usamos estilos inline para garantir que a tabela renderizada a partir
-    // do Markdown mantenha bordas e estilos mesmo sem dependência de CSS externo.
-    const tableStyle = 'border-collapse: collapse; border: 1px solid #000; width: 100%;';
-    const cellStyle = 'border: 1px solid #000; padding: 8px;';
-    // Fundo do header e estilo mais destacado para th
-    const headerCellStyle = `${cellStyle} background-color: #c1c8d2ff; font-weight: 600;`;
+    // Usamos estilos inline para bordas estruturais básicas
+    // As cores de fundo e texto são controladas pelo CSS do componente
+    const tableStyle = 'border-collapse: collapse; width: 100%; border: 2px solid #000000;';
+    const cellStyle = 'padding: 8px; border: 1px solid #000000;';
+    // Header sem background-color inline para permitir controle via CSS
+    const headerCellStyle = `${cellStyle} font-weight: 600; border-bottom: 2px solid #000000;`;
 
     const thead = `<thead><tr>${headerCells.map(h => `<th style="${headerCellStyle}">${h}</th>`).join('')}</tr></thead>`;
 
-    // Construir tbody com cores sutis alternadas nas linhas (zebra)
+    // Construir tbody sem cores de fundo inline para permitir controle via CSS
     const tbodyRows = bodyRows
-      .map((cols, rowIndex) => {
-        // Cores sutis: linhas pares brancas, linhas ímpares com leve cinza
-        const rowBg = rowIndex % 2 === 0 ? '#fbf1f1ff' : '#edf2f8ff';
-        const trOpen = `<tr style="background-color: ${rowBg};">`;
+      .map((cols) => {
+        const trOpen = `<tr>`;
         const tds = cols.map(c => `<td style="${cellStyle}">${c.trim()}</td>`).join('');
         return `${trOpen}${tds}</tr>`;
       })

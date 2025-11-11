@@ -31,10 +31,6 @@
       <div class="mapping-item-label">
         <span class="mapping-label-number">{{ i + 1 }}</span>
         <span class="mapping-item-text" [innerHTML]="getColunaAItemFormatted(itemA)"></span>
-        <span class="mapping-status-badge" 
-              [class.answered]="isItemAnswered(i + 1)">
-          {{ isItemAnswered(i + 1) ? '✓ Respondido' : '⏳ Aguardando' }}
-        </span>
       </div>
 
       <div class="mapping-options">

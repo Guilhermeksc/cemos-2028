@@ -97,9 +97,6 @@
 
           <!-- Status da Resposta -->
           <div class="answer-status">
-            <div *ngIf="question.uniqueKey && !isQuestionAnswered(question.uniqueKey)" class="status-badge not-answered">
-              ⏳ Não respondida
-            </div>
             <div *ngIf="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'correct'" class="status-badge correct">
               ✅ Correta
             </div>
