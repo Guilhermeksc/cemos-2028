@@ -116,52 +116,52 @@
         <!-- Frente do Card (Pergunta) -->
         <div class="flashcard-face flashcard-front">
           <div class="card-header">
-            <span class="card-badge">❓ Pergunta</span>
-            <div class="card-header-right">
-              <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
-                ⭐ {{ card.ano }}
-              </span>
-              <span class="card-assunto" *ngIf="card.assunto">
-                🏷️ {{ card.assunto }}
-              </span>
+            <div class="card-header-top">
+              <div class="card-header-left">
+                <span class="card-badge">❓</span>
+              </div>
+              <div class="card-header-center">
+                <small class="card-bibliografia">
+                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}<span *ngIf="card.assunto"> - {{ card.assunto }}</span>
+                </small>
+                <small class="flip-hint">👆 Clique para ver a resposta</small>
+              </div>
+              <div class="card-header-right">
+                <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
+                  ⭐ {{ card.ano }}
+                </span>
+              </div>
             </div>
           </div>
           
           <div class="card-content">
             <p class="card-question">{{ card.pergunta }}</p>
           </div>
-          
-          <div class="card-footer">
-            <small class="card-bibliografia">
-              📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
-            </small>
-            <small class="flip-hint">👆 Clique para ver a resposta</small>
-          </div>
         </div>
 
         <!-- Verso do Card (Resposta) -->
         <div class="flashcard-face flashcard-back">
           <div class="card-header">
-            <span class="card-badge">✅ Resposta</span>
-            <div class="card-header-right">
-              <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
-                ⭐ {{ card.ano }}
-              </span>
-              <span class="card-assunto" *ngIf="card.assunto">
-                🏷️ {{ card.assunto }}
-              </span>
+            <div class="card-header-top">
+              <div class="card-header-left">
+                <span class="card-badge">✅</span>
+              </div>
+              <div class="card-header-center">
+                <small class="card-bibliografia">
+                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}<span *ngIf="card.assunto"> - {{ card.assunto }}</span>
+                </small>
+                <small class="flip-hint">👆 Clique para ver a pergunta</small>
+              </div>
+              <div class="card-header-right">
+                <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
+                  ⭐ {{ card.ano }}
+                </span>
+              </div>
             </div>
           </div>
           
           <div class="card-content">
             <p class="card-answer">{{ card.resposta }}</p>
-          </div>
-          
-          <div class="card-footer">
-            <small class="card-bibliografia">
-              📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
-            </small>
-            <small class="flip-hint">👆 Clique para ver a pergunta</small>
           </div>
         </div>
       </div>

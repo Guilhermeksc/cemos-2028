@@ -5,13 +5,13 @@
 
     .header {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
 
         h2 {
             font-size: 2rem;
             font-weight: 700;
             color: #2c3e50;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .stats {
@@ -33,74 +33,29 @@
     }
 
   // ==================== FILTROS ====================
+  // Importar estilos compartilhados de filtros
+  @import '../../styles/filters';
+
   .filters-section {
 
-    border-radius: 12px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    .filter-row {
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-      .filter-row {
-      display: grid;
-      /* reduzir min-width para caber melhor em telas pequenas */
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
+    .filter-group {
+      gap: 0.5rem;
 
-      .filter-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        label {
-          font-weight: 600;
-          color: #2c3e50;
-          font-size: 0.95rem;
-        }
-
-        .filter-select {
-          /* garantir que o select não ultrapasse o container */
-          width: 100%;
-          max-width: 100%;
-          box-sizing: border-box;
-          padding: 0.75rem 1rem;
-          border: 2px solid #e0e0e0;
-          border-radius: 8px;
-          font-size: 1rem;
-          background: white;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap; /* evita quebrar o controle e manter o botão dentro do layout */
-
-          &:hover:not(:disabled) {
-            border-color: #3498db;
-          }
-
-          &:focus {
-            outline: none;
-            border-color: #3498db;
-            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
-          }
-
-          &:disabled {
-            background: #f0f0f0;
-            cursor: not-allowed;
-            opacity: 0.6;
-          }
-        }
+      label {
+        color: #2c3e50;
       }
     }
 
     .actions-row {
-      display: flex;
-      justify-content: center;
       gap: 1rem;
-      flex-wrap: wrap;
 
       .btn {
-        padding: 0.75rem 1.5rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 8px;
         font-weight: 600;
         font-size: 0.95rem;
@@ -219,7 +174,7 @@
   // ==================== FLASHCARD ====================
   .flashcard-wrapper {
     perspective: 1000px;
-    height: 450px;
+    height: 350px;
     display: block;
     width: 100%;
     min-width: 0; // Evita problemas de overflow no grid
@@ -256,7 +211,7 @@
     height: 100%;
     backface-visibility: hidden;
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -304,36 +259,53 @@
   }
 
   .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #ddd;
-    gap: 0.5rem;
-    flex-wrap: wrap;
 
-    .card-badge {
-      font-weight: 700;
-      font-size: 0.85rem;
-      padding: 0.3rem 0.7rem;
-      background: #f5f5f5;
-      color: #333;
-      border-radius: 4px;
-      border: 1px solid #ddd;
+    .card-header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: nowrap;
+    }
+
+    .card-header-left {
+      flex-shrink: 0;
+    }
+
+    .card-header-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      min-width: 0;
+
     }
 
     .card-header-right {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+
+    .card-badge {
+      font-weight: 700;
+      font-size: 1.5rem;
+      white-space: nowrap;
+    }
+
+    .flip-hint {
+      font-size: 0.75rem;
+      color: #999;
+      animation: pulse 2s infinite;
+      text-align: center;
+      white-space: nowrap;
     }
 
     .card-prova-badge {
+      background: #fffef0;
       font-size: 0.75rem;
       padding: 0.3rem 0.7rem;
-      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
       color: #333;
       border-radius: 4px;
       border: 1px solid #ffb700;
@@ -342,35 +314,32 @@
       box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
     }
 
-    .card-assunto {
+    .card-bibliografia {
       font-size: 0.8rem;
-      padding: 0.3rem 0.7rem;
-      background: #f5f5f5;
       color: #666;
-      border-radius: 4px;
-      border: 1px solid #ddd;
-      max-width: 150px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      text-align: center;
+      width: 100%;
+      max-width: 100%;
+      word-wrap: break-word;
+      word-break: break-word;
     }
   }
 
   .flashcard-back .card-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
-    .card-badge,
-    .card-assunto {
-      background: rgba(255, 255, 255, 0.15);
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.3);
+    .flip-hint {
+      color: rgba(255, 255, 255, 0.6);
     }
 
     .card-prova-badge {
-      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
       color: #333;
       border: 1px solid #ffb700;
       box-shadow: 0 2px 4px rgba(255, 215, 0, 0.5);
+    }
+
+    .card-bibliografia {
+      color: rgba(255, 255, 255, 0.8);
     }
   }
 
@@ -424,40 +393,6 @@
     }
   }
 
-  .card-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ddd;
-
-    .card-bibliografia {
-      font-size: 0.8rem;
-      color: #666;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .flip-hint {
-      font-size: 0.75rem;
-      color: #999;
-      text-align: center;
-      animation: pulse 2s infinite;
-    }
-  }
-
-  .flashcard-back .card-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-
-    .card-bibliografia {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    .flip-hint {
-      color: rgba(255, 255, 255, 0.6);
-    }
-  }
 
   @keyframes pulse {
     0%, 100% {
@@ -647,13 +582,13 @@ body.flashcards-fullscreen-active {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: calc((100vh - 320px) / 2); // Altura automática para 2 linhas
+    grid-auto-rows: calc((100vh - 310px) / 2); // Altura automática para 2 linhas
     gap: 1rem;
     overflow-y: auto;
     padding: 1rem;
     perspective: 1000px;
     max-width: 100%;
-    max-height: calc(100vh - 280px); // Limita a altura total do grid
+    max-height: calc(100vh - 270px); // Limita a altura total do grid
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -840,27 +775,32 @@ body.flashcards-fullscreen-active {
     .card-header {
       margin-bottom: 0.2rem;
       padding-bottom: 0.1rem;
-    }
 
-    .card-badge {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
-    }
+      .card-header-top {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
 
-    .card-assunto {
-      font-size: 0.7rem;
-      max-width: 120px;
-    }
+      .card-header-center {
+        gap: 0.2rem;
+      }
 
-    .card-footer {
-      padding-top: 0.8rem;
-
-      .card-bibliografia {
+      .card-badge {
         font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
       }
 
       .flip-hint {
         font-size: 0.7rem;
+      }
+
+      .card-prova-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+      }
+
+      .card-bibliografia {
+        font-size: 0.75rem;
       }
     }
 

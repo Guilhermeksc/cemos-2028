@@ -91,9 +91,11 @@
             <option *ngFor="let assunto of assuntosDisponiveis" [value]="assunto">{{ assunto }}</option>
           </select>
         </div>
+      </div>
+
+      <!-- Ações -->
       <div class="actions-row">
         <button class="btn btn-outline" (click)="resetFilters()" [disabled]="!selectedBibliografiaId && !selectedAssunto">✖️ Limpar Filtros</button>
-      </div>        
       </div>
 
 

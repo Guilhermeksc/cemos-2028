@@ -4,24 +4,26 @@
   <!-- Seletor de Bibliografia - Sempre visível -->
   <div class="bibliografia-selector-container">
     <div class="bibliografia-selector-card">
-      <label for="bibliografia-select" class="bibliografia-label">
-        <strong>📖 Selecionar Bibliografia:</strong>
-      </label>
-      <select 
-        id="bibliografia-select"
-        class="bibliografia-select"
-        [(ngModel)]="selectedBibliografiaId"
-        (change)="onBibliografiaChange()"
-        [disabled]="isLoadingBibliografias"
-      >
-        <option [ngValue]="null">📚 Todas as Bibliografias</option>
-        <option 
-          *ngFor="let bibliografia of bibliografiasComEstatisticas" 
-          [ngValue]="bibliografia.id"
+      <div class="filter-group">
+        <label for="bibliografia-select">
+          📖 Bibliografia:
+        </label>
+        <select 
+          id="bibliografia-select"
+          class="filter-select"
+          [(ngModel)]="selectedBibliografiaId"
+          (change)="onBibliografiaChange()"
+          [disabled]="isLoadingBibliografias"
         >
-          {{ getBibliografiaOptionText(bibliografia) }}
-        </option>
-      </select>
+          <option [ngValue]="null">📚 Todas as Bibliografias</option>
+          <option 
+            *ngFor="let bibliografia of bibliografiasComEstatisticas" 
+            [ngValue]="bibliografia.id"
+          >
+            {{ getBibliografiaOptionText(bibliografia) }}
+          </option>
+        </select>
+      </div>
       <button 
         class="btn btn-back"
         (click)="goToBibliografia()">

@@ -1,0 +1,120 @@
+// ========================================
+// ESTILOS COMPARTILHADOS PARA FILTROS
+// ========================================
+// Este arquivo contém estilos reutilizáveis para seções de filtros
+// Importe este arquivo em componentes que exibem filtros de bibliografia/assunto
+
+// Seção de filtros
+.filters-section {
+	border-radius: 10px;
+	padding: 0.75rem 1rem;
+	margin: 0.75rem auto 1rem; /* centraliza dentro do container */
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1100px; /* limita largura para casar com conteúdo principal */
+}
+
+// Linha de filtros (grid)
+.filter-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 0.75rem;
+	align-items: end;
+	width: 100%;
+}
+
+// Grupo de filtro individual
+.filter-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	label {
+		font-weight: 600;
+		color: #333;
+		font-size: 0.95rem;
+	}
+}
+
+// Select de filtro
+.filter-select {
+	padding: 0.45rem 0.6rem;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	background: #fff;
+	color: #111;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; /* evita quebrar o controle e manter o botão dentro do layout */
+
+	&:hover:not(:disabled) {
+		border-color: #3498db;
+	}
+
+	&:focus {
+		outline: none;
+		border-color: #3498db;
+		box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+	}
+
+	&:disabled {
+		background: #f0f0f0;
+		cursor: not-allowed;
+		opacity: 0.6;
+	}
+}
+
+// Linha de ações (botões)
+.actions-row {
+	margin-top: 0.6rem;
+	display: flex;
+	justify-content: center;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+}
+
+// Botão outline
+.btn.btn-outline {
+	background: transparent;
+	color: #111;
+	border: 1px solid #bbb;
+	padding: 0.45rem 0.8rem;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover:not(:disabled) {
+		background: #000;
+		color: white;
+		border-color: #000;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+}
+
+// Responsividade
+@media (max-width: 700px) {
+	.filter-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+// Pequenas adaptações para largura muito pequena
+@media (max-width: 420px) {
+	.tab-button {
+		padding: 0.35rem 0.6rem;
+		font-size: 0.9rem;
+	}
+}
+

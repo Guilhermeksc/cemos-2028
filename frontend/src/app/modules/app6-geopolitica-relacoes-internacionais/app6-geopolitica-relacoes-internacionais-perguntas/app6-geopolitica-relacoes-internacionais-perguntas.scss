@@ -1,4 +1,7 @@
 /* Geopolítica e Relações Internacionais - Perguntas */
+// Importar estilos compartilhados de filtros
+@import '../../../styles/filters';
+
 .geopolitica-perguntas-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -118,63 +121,43 @@
     width: 100%;
     box-sizing: border-box;
 
-    .bibliografia-label {
-      display: flex;
-      align-items: center;
-      margin: 0;
-      color: var(--geopolitica-dark);
-      font-size: 1rem;
-      white-space: nowrap;
-
-      strong {
-        color: var(--geopolitica-primary);
-        font-weight: 600;
-      }
-    }
-
-    .bibliografia-select {
+    // Usar estilos compartilhados de filtros
+    .filter-group {
       flex: 1;
       min-width: 250px;
       max-width: 100%;
-      padding: 12px 16px;
-      border: 2px solid #e2e8f0;
-      border-radius: 8px;
-      font-size: 1rem;
-      background: white;
-      color: var(--geopolitica-dark);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23334155' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 12px center;
-      background-size: 12px;
-      padding-right: 40px;
-      margin: 0;
-      box-sizing: border-box;
-      width: 100%;
 
-      &:hover {
-        border-color: var(--geopolitica-primary);
-        box-shadow: 0 2px 4px rgba(30, 64, 175, 0.1);
-      }
-
-      &:focus {
-        outline: none;
-        border-color: var(--geopolitica-primary);
-        box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
-      }
-
-      &:disabled {
-        background-color: #f1f5f9;
-        cursor: not-allowed;
-        opacity: 0.6;
-      }
-
-      option {
-        padding: 10px;
-        background: white;
+      label {
         color: var(--geopolitica-dark);
+      }
+
+      .filter-select {
+        flex: 1;
+        min-width: 250px;
+        max-width: 100%;
+        color: var(--geopolitica-dark);
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23334155' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 12px;
+        padding-right: 40px;
+
+        &:hover:not(:disabled) {
+          border-color: var(--geopolitica-primary);
+          box-shadow: 0 2px 4px rgba(30, 64, 175, 0.1);
+        }
+
+        &:focus {
+          border-color: var(--geopolitica-primary);
+          box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        option {
+          padding: 10px;
+          background: white;
+          color: var(--geopolitica-dark);
+        }
       }
     }
 
@@ -494,19 +477,19 @@
       width: 100%;
       box-sizing: border-box;
 
-      .bibliografia-label {
+      .filter-group {
         width: 100%;
-      }
 
-      .bibliografia-select {
-        flex: 1 1 auto;
-        min-width: 0;
-        max-width: 100%;
-        width: 100%;
-        font-size: 0.9rem;
-        padding: 10px 14px;
-        padding-right: 35px;
-        box-sizing: border-box;
+        .filter-select {
+          flex: 1 1 auto;
+          min-width: 0;
+          max-width: 100%;
+          width: 100%;
+          font-size: 0.9rem;
+          padding: 10px 14px;
+          padding-right: 35px;
+          box-sizing: border-box;
+        }
       }
 
       .btn {
@@ -526,14 +509,16 @@
       padding: 12px;
       gap: 0.5rem;
 
-      .bibliografia-label {
-        font-size: 0.9rem;
-      }
+      .filter-group {
+        label {
+          font-size: 0.9rem;
+        }
 
-      .bibliografia-select {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-        padding-right: 32px;
+        .filter-select {
+          font-size: 0.85rem;
+          padding: 8px 12px;
+          padding-right: 32px;
+        }
       }
 
       .btn {
