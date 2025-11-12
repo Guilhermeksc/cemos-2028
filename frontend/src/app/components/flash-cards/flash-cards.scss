@@ -323,6 +323,19 @@
       word-wrap: break-word;
       word-break: break-word;
     }
+
+    .card-assunto {
+      font-size: 0.7rem;
+      color: #999;
+      text-align: center;
+      width: 100%;
+      max-width: 100%;
+      word-wrap: break-word;
+      word-break: break-word;
+      display: block;
+      margin-top: 0.2rem;
+      opacity: 0.7;
+    }
   }
 
   .flashcard-back .card-header {
@@ -340,6 +353,11 @@
 
     .card-bibliografia {
       color: rgba(255, 255, 255, 0.8);
+    }
+
+    .card-assunto {
+      color: rgba(255, 255, 255, 0.5);
+      opacity: 0.6;
     }
   }
 
@@ -548,6 +566,7 @@ body.flashcards-fullscreen-active {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0; // Evita que o header encolha
 
     h3 {
       color: white;
@@ -582,13 +601,13 @@ body.flashcards-fullscreen-active {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: calc((100vh - 310px) / 2); // Altura automática para 2 linhas
+    grid-auto-rows: minmax(350px, auto); // Altura mínima e auto para evitar sobreposição
     gap: 1rem;
     overflow-y: auto;
     padding: 1rem;
     perspective: 1000px;
     max-width: 100%;
-    max-height: calc(100vh - 270px); // Limita a altura total do grid
+    min-height: 0; // Permite que o flex funcione corretamente
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -610,7 +629,8 @@ body.flashcards-fullscreen-active {
 
     .flashcard-wrapper {
       height: 100%; // Ocupa toda a altura da célula do grid
-      min-height: 300px; // Altura mínima reduzida
+      min-height: 350px; // Altura mínima para evitar sobreposição
+      max-height: 100%; // Garante que não ultrapasse a célula do grid
     }
   }
 
@@ -621,6 +641,7 @@ body.flashcards-fullscreen-active {
     margin-top: 2rem;
     padding-top: 1.5rem;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0; // Evita que as ações encolham
 
     .btn {
       padding: 0.75rem 1.5rem;
@@ -649,6 +670,51 @@ body.flashcards-fullscreen-active {
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
         }
+      }
+    }
+  }
+
+  // Notebooks 14-15 polegadas - Otimização específica
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    .fullscreen-container {
+      padding: 0.75rem;
+    }
+
+    .fullscreen-header {
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      flex-shrink: 0; // Evita que o header encolha
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .fullscreen-grid {
+      grid-template-columns: repeat(3, 1fr); // Mantém 3 colunas
+      grid-auto-rows: minmax(400px, auto); // Altura mínima maior e auto para evitar sobreposição
+      gap: 1.25rem;
+      padding: 0.75rem;
+      overflow-y: auto;
+      flex: 1;
+      min-height: 0; // Permite que o flex funcione corretamente
+
+      .flashcard-wrapper {
+        height: 100%;
+        min-height: 400px; // Altura mínima maior para evitar sobreposição
+        max-height: 100%; // Garante que não ultrapasse a célula do grid
+      }
+    }
+
+    .fullscreen-actions {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      gap: 0.75rem;
+      flex-shrink: 0; // Evita que as ações encolham
+
+      .btn {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
       }
     }
   }
@@ -801,6 +867,10 @@ body.flashcards-fullscreen-active {
 
       .card-bibliografia {
         font-size: 0.75rem;
+      }
+
+      .card-assunto {
+        font-size: 0.65rem;
       }
     }
 

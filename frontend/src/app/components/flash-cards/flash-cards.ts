@@ -2,6 +2,7 @@ import { Component, Input, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { FlashCardsService } from '../../services/flashcards.service';
 import { PerguntasService } from '../../services/perguntas.service';
 import { FlashCards as FlashCard, Bibliografia } from '../../interfaces/perguntas.interface';
@@ -26,6 +27,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   private flashcardsService = inject(FlashCardsService);
   private perguntasService = inject(PerguntasService);
   private router = inject(Router);
+  private sanitizer = inject(DomSanitizer);
   private destroy$ = new Subject<void>();
 
   // Estados do componente
@@ -506,5 +508,49 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     if (this.bibliografiaPath) {
       this.router.navigate([this.bibliografiaPath]);
     }
+  }
+
+  /**
+   * Processa texto convertendo markdown básico (*texto* ou **texto**) para HTML
+   * e permite HTML customizado (cores, etc)
+   */
+  processText(text: string): SafeHtml {
+    if (!text) {
+      return this.sanitizer.sanitize(1, '') as SafeHtml;
+    }
+
+    // Converter markdown básico para HTML
+    // Suporta *texto* ou **texto** para negrito
+    // Permite HTML customizado (cores via <span style="color: ...">, etc)
+    let processed = text;
+    
+    // Usar marcação temporária única para proteger conteúdo já processado
+    const tempPlaceholder = '___TEMP_STRONG_PLACEHOLDER___';
+    const placeholders: string[] = [];
+    let placeholderIndex = 0;
+    
+    // Primeiro, converter **texto** para <strong>texto</strong> (duplo asterisco)
+    // Substituir por placeholder temporário para evitar conflitos
+    processed = processed.replace(/\*\*([^*]+)\*\*/g, (match, content) => {
+      const placeholder = tempPlaceholder + placeholderIndex;
+      placeholders[placeholderIndex] = '<strong>' + content + '</strong>';
+      placeholderIndex++;
+      return placeholder;
+    });
+    
+    // Depois, converter *texto* para <strong>texto</strong> (asterisco simples)
+    // Isso não vai conflitar porque ** já foi substituído por placeholders
+    processed = processed.replace(/\*([^*\n]+?)\*/g, '<strong>$1</strong>');
+    
+    // Restaurar placeholders para o HTML final
+    placeholders.forEach((html, index) => {
+      processed = processed.replace(tempPlaceholder + index, html);
+    });
+
+    // Sanitizar e retornar HTML seguro
+    // O DomSanitizer permite HTML seguro como <strong>, <span>, <em>, etc.
+    // e atributos de estilo para cores, mantendo segurança contra XSS
+    // SecurityContext.HTML = 1
+    return this.sanitizer.sanitize(1, processed) as SafeHtml;
   }
 }

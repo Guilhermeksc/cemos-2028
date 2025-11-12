@@ -462,11 +462,19 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         ]
       },
       {
-        title: 'Mídia',
-        path: 'media',
+        title: 'Flash Cards',
+        path: 'flash-cards',
         loadComponent: () =>
-          import('../modules/app7-politica/app7-politica-media/app7-politica-media').then(
-            (m) => m.App7PoliticaMedia
+          import(
+            '../modules/app7-politica/app7-politica-flashcards/app7-politica-flashcards'
+          ).then((m) => m.App7PoliticaFlashcards)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () =>
+          import('../modules/app7-politica/app7-politica-conceitos/app7-politica-conceitos').then(
+            (m) => m.App7PoliticaConceitos
           )
       },
       {
@@ -599,10 +607,16 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         ]
       },
       {
-        title: 'Mídia',
-        path: 'media',
+        title: 'Flash Cards',
+        path: 'flash-cards',
         loadComponent: () =>
-          import('../modules/app8-direito/app8-direito-media/app8-direito-media').then((m) => m.App8DireitoMedia)
+          import('../modules/app8-direito/app8-direito-flashcards/app8-direito-flashcards').then((m) => m.App8DireitoFlashcards)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () =>
+          import('../modules/app8-direito/app8-direito-conceitos/app8-direito-conceitos').then((m) => m.App8DireitoConceitos)
       },
       {
         title: 'Perguntas',

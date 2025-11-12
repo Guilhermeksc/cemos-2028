@@ -122,7 +122,10 @@
               </div>
               <div class="card-header-center">
                 <small class="card-bibliografia">
-                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}<span *ngIf="card.assunto"> - {{ card.assunto }}</span>
+                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
+                </small>
+                <small class="card-assunto" *ngIf="card.assunto">
+                  ({{ card.assunto }})
                 </small>
                 <small class="flip-hint">👆 Clique para ver a resposta</small>
               </div>
@@ -135,7 +138,7 @@
           </div>
           
           <div class="card-content">
-            <p class="card-question">{{ card.pergunta }}</p>
+            <p class="card-question" [innerHTML]="processText(card.pergunta)"></p>
           </div>
         </div>
 
@@ -148,7 +151,10 @@
               </div>
               <div class="card-header-center">
                 <small class="card-bibliografia">
-                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}<span *ngIf="card.assunto"> - {{ card.assunto }}</span>
+                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
+                </small>
+                <small class="card-assunto" *ngIf="card.assunto">
+                  ({{ card.assunto }})
                 </small>
                 <small class="flip-hint">👆 Clique para ver a pergunta</small>
               </div>
@@ -161,7 +167,7 @@
           </div>
           
           <div class="card-content">
-            <p class="card-answer">{{ card.resposta }}</p>
+            <p class="card-answer" [innerHTML]="processText(card.resposta)"></p>
           </div>
         </div>
       </div>
