@@ -1,6 +1,6 @@
 /* Layout Simplificado - Perguntas Component */
 .simulado-container-simplified {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
@@ -26,63 +26,187 @@
   --geopolitica-warning-light: #fef3c7; // Amarelo claro de fundo
 }
 
+/* Header com Estatísticas - Padronizado com FlashCards */
+.header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+
+    .stat-item {
+      color: #7f8c8d;
+      font-size: 0.95rem;
+
+      strong {
+        color: #3498db;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// ==================== FILTROS ====================
+// Importar estilos compartilhados de filtros
+@import '../../styles/filters';
+
+.filters-section {
+  .filter-row {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .filter-group {
+    gap: 0.5rem;
+
+    label {
+      color: #2c3e50;
+    }
+  }
+
+  .actions-row {
+    gap: 1rem;
+
+    .btn {
+      padding: 0.5rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid #000;
+      background: white;
+      color: #000;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      &:hover:not(:disabled) {
+        background: #000;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      &.btn-back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .back-arrow {
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-top: 6px solid transparent;
+          border-bottom: 6px solid transparent;
+          border-right: 8px solid currentColor;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover:not(:disabled) {
+          .back-arrow {
+            transform: translateX(-3px);
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Sistema de Tabs */
 .tabs-container {
   margin-bottom: 20px;
   background: white;
   border-radius: 12px;
-  padding: 10px;
+  border: 2px solid var(--geopolitica-border);
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
 }
 
 .tabs-header {
   display: flex;
-  gap: 10px;
+  gap: 0;
   flex-wrap: wrap;
   border-bottom: 2px solid var(--geopolitica-border);
-  padding-bottom: 10px;
+  padding: 0;
+  background: var(--geopolitica-light-gray);
+}
+
+.tabs-content {
+  padding: 20px;
+  border-top: 2px solid var(--geopolitica-border);
+  min-height: 200px;
+  background: white;
 }
 
 .tab-button {
   background: transparent;
   border: none;
   padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: 0;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--geopolitica-dark-text);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -12px;
+  border-bottom: 2px solid var(--geopolitica-border);
+  margin-bottom: -2px;
+  border-top: 2px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.tab-button:first-child {
+  border-left: 2px solid transparent;
 }
 
 .tab-button:hover {
-  background: var(--geopolitica-light-gray);
+  background: rgba(255, 255, 255, 0.5);
   color: var(--geopolitica-dark);
 }
 
 .tab-button.active {
   color: var(--geopolitica-primary);
-  background: var(--geopolitica-light);
-  border-bottom-color: var(--geopolitica-primary);
+  background: white;
+  border-bottom-color: white;
+  border-top-color: var(--geopolitica-border);
+  border-left-color: var(--geopolitica-border);
+  border-right-color: var(--geopolitica-border);
+  z-index: 1;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+.tab-button.active:first-child {
+  border-left-width: 2px;
 }
 
 .tab-button.active::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--geopolitica-primary);
+  display: none;
 }
 
 /* Loading */
 .loading-questions {
   text-align: center;
   padding: 60px 20px;
+  border: none;
 }
 
 .loading-spinner {
@@ -100,6 +224,12 @@
   100% { transform: rotate(360deg); }
 }
 
+/* Prova Carregada - dentro do tab content */
+.prova-loaded {
+  border: none;
+  padding: 0;
+}
+
 /* Header da Prova */
 .prova-header {
   display: flex;
@@ -107,10 +237,11 @@
   align-items: center;
   background: white;
   color: var(--geopolitica-dark);
-  padding: 10px;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  border: 2px solid var(--geopolitica-border);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid var(--geopolitica-border);
+  background: var(--geopolitica-light-gray);
 }
 
 .prova-info h2 {
@@ -723,12 +854,11 @@
   opacity: 0.9;
 }
 
-/* Mensagem sem questões */
+/* Mensagem sem questões - dentro do tab content */
 .no-questions {
   text-align: center;
   padding: 60px 20px;
-  background: var(--geopolitica-light-gray);
-  border-radius: 12px;
+  border: none;
 
   .insufficient-message {
     background: var(--geopolitica-warning-light);
@@ -796,26 +926,65 @@
     padding: 15px;
   }
   
+  .header {
+    .stats {
+      gap: 1rem;
+      
+      .stat-item {
+        font-size: 0.85rem;
+        
+        strong {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  
+  .filters-section {
+    padding: 0.1rem;
+
+    .filter-row {
+      grid-template-columns: 1fr;
+    }
+
+    .actions-row {
+      flex-direction: column;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  
   .tabs-header {
     flex-direction: column;
-    gap: 5px;
+    gap: 0;
   }
   
   .tab-button {
     width: 100%;
     text-align: left;
     margin-bottom: 0;
-    border-bottom: none;
+    border-bottom: 1px solid var(--geopolitica-border);
     border-left: 3px solid transparent;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
   }
   
   .tab-button.active {
     border-left-color: var(--geopolitica-primary);
-    border-bottom-color: transparent;
+    border-bottom-color: var(--geopolitica-border);
+    border-top: none;
+    border-right: none;
   }
   
   .tab-button.active::after {
     display: none;
+  }
+  
+  .tabs-content {
+    border-top: none;
   }
   
   .prova-header {
@@ -860,6 +1029,14 @@
 @media (max-width: 480px) {
   .simulado-container-simplified {
     padding: 0px;
+  }
+  
+  .filters-section {
+    padding: 0.1rem;
+
+    .filter-row {
+      grid-template-columns: 1fr;
+    }
   }
 
   .tabs-container {

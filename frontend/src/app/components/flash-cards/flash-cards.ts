@@ -188,6 +188,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
       });
   }
 
+
   /**
    * Extrai lista única de assuntos dos flash cards
    */
@@ -283,7 +284,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     // Resetar assunto selecionado
     this.selectedAssunto = '';
     
-    // Se uma bibliografia específica foi selecionada, filtrar assuntos
+    // IMPORTANTE: Sempre usar allFlashCards (cache completo) para extrair assuntos
+    // Isso garante que TODOS os assuntos da bibliografia estejam sempre visíveis,
+    // independentemente do filtro de assunto aplicado
     if (this.selectedBibliografiaId) {
       const cardsFromBibliografia = this.allFlashCards.filter(card => 
         card.bibliografia === this.selectedBibliografiaId
@@ -302,15 +305,26 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
       this.extractAssuntos();
     }
     
+    console.log('🏷️ Assuntos disponíveis atualizados:', {
+      bibliografiaSelecionada: this.selectedBibliografiaId,
+      totalAssuntos: this.assuntosDisponiveis.length,
+      assuntos: this.assuntosDisponiveis
+    });
+    
     // Recarregar cards
     this.loadRandomFlashCards();
   }
 
   /**
    * Quando o assunto é alterado
+   * IMPORTANTE: Não atualizar assuntosDisponiveis aqui!
+   * A lista de assuntos deve sempre mostrar TODOS os assuntos da bibliografia,
+   * independentemente do assunto selecionado para filtro.
    */
   onAssuntoChange() {
     console.log('🏷️ Assunto alterado:', this.selectedAssunto);
+    // Apenas recarregar cards com o novo filtro
+    // A lista de assuntos disponíveis permanece a mesma
     this.loadRandomFlashCards();
   }
 

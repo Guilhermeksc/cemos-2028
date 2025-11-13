@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, OnChanges, SimpleChanges, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { PerguntasService } from '../../services/perguntas.service';
 import { 
   Bibliografia, 
@@ -11,7 +12,8 @@ import {
   PerguntaMultiplaFilters,
   PerguntaVFFilters,
   PerguntaFilters,
-  PaginatedResponse
+  PaginatedResponse,
+  EstatisticasBibliografia
 } from '../../interfaces/perguntas.interface';
 import { Subject, forkJoin, Observable } from 'rxjs';
 import { takeUntil, map } from 'rxjs/operators';
@@ -64,16 +66,31 @@ type TabType = 'completo' | 'vf' | 'multipla' | 'correlacao';
 })
 export class Perguntas implements OnInit, OnDestroy, OnChanges {
   @Input() bibliografiaIds: number[] = [];
+  @Input() bibliografiaPath?: string; // Rota para voltar à bibliografia (opcional)
   @Output() simuladoStarted = new EventEmitter<void>();
 
   private perguntasService = inject(PerguntasService);
+  private router = inject(Router);
   private cdr = inject(ChangeDetectorRef);
   private destroy$ = new Subject<void>();
 
   // Estados do componente - simplificado
   bibliografias: Bibliografia[] = [];
+  bibliografiasComEstatisticas: Array<Bibliografia & { estatisticas?: EstatisticasBibliografia }> = [];
   selectedBibliografias: number[] = [];
   isLoading = false;
+  isLoadingBibliografias = false;
+  
+  // Filtros de bibliografia e assunto
+  selectedBibliografiaId: number | null = null;
+  assuntosDisponiveis: string[] = [];
+  selectedAssunto: string = '';
+  
+  // Cache de todas as questões para extrair assuntos (SEM filtro de assunto)
+  allQuestionsCache: Array<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao> = [];
+  
+  // Cache completo de TODAS as questões (para extrair assuntos, sem filtros)
+  allQuestionsCacheComplete: Array<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao> = [];
 
   // Sistema de tabs
   activeTab: TabType = 'completo';
@@ -160,10 +177,18 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   ngOnInit() {
     console.log('🚀 Componente Perguntas inicializado - Modo com Tabs');
     
+    // Inicializar bibliografias selecionadas com as recebidas via Input
+    if (this.bibliografiaIds.length > 0) {
+      this.selectedBibliografias = [...this.bibliografiaIds];
+    }
+    
     this.loadBibliografias();
     
     if (this.bibliografiaIds.length > 0) {
       this.updateBibliografiasConfig();
+      
+      // Carregar cache completo de todas as questões para estatísticas
+      this.loadCompleteCache();
       
       console.log('📋 Auto-carregando prova...');
       // Aguardar um pouco para garantir que as bibliografias foram carregadas
@@ -171,6 +196,315 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         this.gerarNovaProva();
       }, 1000);
     }
+  }
+  
+  /**
+   * Carrega o cache completo com TODAS as questões disponíveis (sem filtros de tipo ou assunto)
+   * Isso garante que as estatísticas do header sempre mostrem todos os valores disponíveis
+   */
+  private loadCompleteCache() {
+    if (this.selectedBibliografias.length === 0) {
+      return;
+    }
+    
+    console.log('📊 Carregando cache completo de todas as questões para estatísticas...');
+    
+    // Buscar TODAS as questões de TODOS os tipos, sem filtro de assunto
+    const multiplaObservables: Observable<PerguntaMultipla[]>[] = [];
+    const vfObservables: Observable<PerguntaVF[]>[] = [];
+    const correlacaoObservables: Observable<PerguntaCorrelacao[]>[] = [];
+    
+    this.selectedBibliografias.forEach(bibliografiaId => {
+      const baseFilters: any = { bibliografia: bibliografiaId };
+      // Não adicionar filtro de assunto - queremos TODAS as questões
+      
+      // Buscar TODAS as questões de cada tipo
+      multiplaObservables.push(
+        this.perguntasService.getAllPerguntasMultipla(baseFilters as PerguntaMultiplaFilters)
+      );
+      vfObservables.push(
+        this.perguntasService.getAllPerguntasVF(baseFilters as PerguntaVFFilters)
+      );
+      correlacaoObservables.push(
+        this.perguntasService.getAllPerguntasCorrelacao(baseFilters as PerguntaFilters)
+      );
+    });
+    
+    forkJoin({
+      multiplas: forkJoin(multiplaObservables),
+      vfs: forkJoin(vfObservables),
+      correlacoes: forkJoin(correlacaoObservables)
+    })
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (results: any) => {
+          const todasMultiplas: PerguntaMultipla[] = results.multiplas 
+            ? results.multiplas.flatMap((perguntas: PerguntaMultipla[]) => perguntas)
+            : [];
+          const todasVFs: PerguntaVF[] = results.vfs 
+            ? results.vfs.flatMap((perguntas: PerguntaVF[]) => perguntas)
+            : [];
+          const todasCorrelacoes: PerguntaCorrelacao[] = results.correlacoes 
+            ? results.correlacoes.flatMap((perguntas: PerguntaCorrelacao[]) => perguntas)
+            : [];
+          
+          // Atualizar cache completo com TODAS as questões disponíveis
+          this.allQuestionsCacheComplete = [
+            ...todasMultiplas,
+            ...todasVFs,
+            ...todasCorrelacoes
+          ];
+          
+          // Invalidar cache de estatísticas para recalcular
+          this._statsCache = null;
+          
+          console.log('✅ Cache completo atualizado com TODAS as questões:', {
+            total: this.allQuestionsCacheComplete.length,
+            vf: todasVFs.length,
+            multipla: todasMultiplas.length,
+            correlacao: todasCorrelacoes.length
+          });
+        },
+        error: (error) => {
+          console.error('❌ Erro ao carregar cache completo:', error);
+        }
+      });
+  }
+  
+  /**
+   * Carrega bibliografias e suas estatísticas
+   */
+  private loadBibliografias() {
+    this.isLoadingBibliografias = true;
+    
+    this.perguntasService.getBibliografias({ page_size: 100 })
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (response) => {
+          // Se há bibliografiaIds definidos, filtrar apenas essas
+          if (this.bibliografiaIds.length > 0) {
+            this.bibliografias = response.results.filter(b => 
+              this.bibliografiaIds.includes(b.id)
+            );
+          } else {
+            this.bibliografias = response.results;
+          }
+          
+          // Buscar estatísticas para cada bibliografia
+          this.loadEstatisticasBibliografias();
+        },
+        error: (error) => {
+          console.error('❌ Erro ao carregar bibliografias:', error);
+          this.isLoadingBibliografias = false;
+        }
+      });
+  }
+  
+  /**
+   * Carrega estatísticas para cada bibliografia
+   */
+  private loadEstatisticasBibliografias() {
+    if (this.bibliografias.length === 0) {
+      this.bibliografiasComEstatisticas = [];
+      this.isLoadingBibliografias = false;
+      return;
+    }
+
+    const estatisticasRequests = this.bibliografias.map(bib => 
+      this.perguntasService.getEstatisticasBibliografia(bib.id).pipe(
+        takeUntil(this.destroy$)
+      )
+    );
+
+    forkJoin(estatisticasRequests)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (estatisticas) => {
+          this.bibliografiasComEstatisticas = this.bibliografias.map((bib, index) => ({
+            ...bib,
+            estatisticas: estatisticas[index]
+          }));
+          
+          this.isLoadingBibliografias = false;
+          
+          // Invalidar cache de estatísticas para recalcular
+          this._statsCache = null;
+          
+          console.log('📖 Bibliografias com estatísticas carregadas:', {
+            total: this.bibliografiasComEstatisticas.length,
+            bibliografias: this.bibliografiasComEstatisticas.map(b => ({
+              id: b.id,
+              titulo: b.titulo,
+              autor: b.autor,
+              estatisticas: b.estatisticas
+            }))
+          });
+        },
+        error: (error) => {
+          console.error('❌ Erro ao carregar estatísticas:', error);
+          this.bibliografiasComEstatisticas = this.bibliografias.map(bib => ({ ...bib }));
+          this.isLoadingBibliografias = false;
+        }
+      });
+  }
+  
+  /**
+   * Quando a bibliografia é alterada
+   */
+  onBibliografiaChange() {
+    if (this.selectedBibliografiaId === null) {
+      // "Todas" selecionada - usar todas as bibliografias disponíveis
+      this.selectedBibliografias = this.bibliografiaIds.length > 0 
+        ? [...this.bibliografiaIds] 
+        : this.bibliografias.map(b => b.id);
+    } else {
+      // Uma bibliografia específica selecionada
+      this.selectedBibliografias = [this.selectedBibliografiaId];
+    }
+    
+    // Resetar assunto selecionado
+    this.selectedAssunto = '';
+    
+    // Atualizar assuntos disponíveis baseado na bibliografia selecionada
+    // Usar cache completo (sem filtro de assunto) para garantir que todos os assuntos apareçam
+    if (this.allQuestionsCacheComplete.length > 0 || this.allQuestionsCache.length > 0) {
+      this.updateAssuntosDisponiveis();
+    }
+    
+    // Se não há cache completo ainda, será atualizado quando gerarNovaProva() for chamado
+    // (quando não há assunto selecionado, o cache completo será atualizado)
+    
+    // Atualizar configuração de bibliografias em todas as tabs
+    this.updateBibliografiasConfig();
+    
+    // Recarregar cache completo com todas as questões para atualizar estatísticas
+    if (this.selectedBibliografias.length > 0) {
+      this.loadCompleteCache();
+    }
+    
+    console.log('📚 Bibliografia selecionada:', {
+      selectedId: this.selectedBibliografiaId,
+      bibliografiaIds: this.selectedBibliografias
+    });
+    
+    // Recarregar questões se já houver questões carregadas
+    if (this.currentTab.questionsLoaded) {
+      this.gerarNovaProva();
+    }
+  }
+  
+  /**
+   * Quando o assunto é alterado
+   */
+  onAssuntoChange() {
+    console.log('🏷️ Assunto alterado:', this.selectedAssunto);
+    
+    // IMPORTANTE: Não atualizar assuntosDisponiveis aqui!
+    // A lista de assuntos deve sempre mostrar TODOS os assuntos da bibliografia,
+    // independentemente do assunto selecionado para filtro.
+    // Os assuntos disponíveis são atualizados apenas quando a bibliografia muda.
+    
+    // Recarregar questões se já houver questões carregadas
+    if (this.currentTab.questionsLoaded) {
+      this.gerarNovaProva();
+    }
+  }
+  
+
+  /**
+   * Extrai assuntos únicos das questões carregadas (usa cache completo, não filtrado)
+   */
+  private extractAssuntos() {
+    const assuntosSet = new Set<string>();
+    
+    // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos disponíveis
+    const cacheToUse = this.allQuestionsCacheComplete.length > 0 
+      ? this.allQuestionsCacheComplete 
+      : this.allQuestionsCache;
+    
+    cacheToUse.forEach(question => {
+      if (question.assunto && question.assunto.trim()) {
+        assuntosSet.add(question.assunto.trim());
+      }
+    });
+
+    this.assuntosDisponiveis = Array.from(assuntosSet).sort();
+    
+    console.log('🏷️ Assuntos disponíveis (do cache completo):', this.assuntosDisponiveis);
+  }
+  
+  /**
+   * Atualiza assuntos disponíveis baseado na bibliografia selecionada
+   * IMPORTANTE: Sempre usa o cache completo (sem filtro de assunto) para garantir
+   * que todos os assuntos da bibliografia estejam visíveis
+   */
+  private updateAssuntosDisponiveis() {
+    // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos
+    const cacheToUse = this.allQuestionsCacheComplete.length > 0 
+      ? this.allQuestionsCacheComplete 
+      : this.allQuestionsCache;
+    
+    if (this.selectedBibliografiaId) {
+      // Filtrar questões da bibliografia selecionada do cache completo
+      const questionsFromBibliografia = cacheToUse.filter(q => 
+        q.bibliografia === this.selectedBibliografiaId
+      );
+      
+      const assuntosSet = new Set<string>();
+      questionsFromBibliografia.forEach(q => {
+        if (q.assunto && q.assunto.trim()) {
+          assuntosSet.add(q.assunto.trim());
+        }
+      });
+      
+      this.assuntosDisponiveis = Array.from(assuntosSet).sort();
+    } else {
+      // Se "Todas" foi selecionado, mostrar todos os assuntos do cache completo
+      this.extractAssuntos();
+    }
+    
+    console.log('🏷️ Assuntos disponíveis atualizados:', {
+      bibliografiaSelecionada: this.selectedBibliografiaId,
+      totalAssuntos: this.assuntosDisponiveis.length,
+      assuntos: this.assuntosDisponiveis
+    });
+  }
+  
+  /**
+   * Formata o texto da opção do select com números em negrito usando caracteres Unicode
+   */
+  getBibliografiaOptionText(bibliografia: Bibliografia & { estatisticas?: EstatisticasBibliografia }): string {
+    let texto = bibliografia.titulo;
+    
+    if (bibliografia.autor) {
+      texto += ` - ${bibliografia.autor}`;
+    }
+    
+    if (bibliografia.estatisticas) {
+      const total = this.formatBoldNumber(bibliografia.estatisticas.total_perguntas);
+      const vf = this.formatBoldNumber(bibliografia.estatisticas.perguntas_vf);
+      const multipla = this.formatBoldNumber(bibliografia.estatisticas.perguntas_multipla);
+      const correlacao = this.formatBoldNumber(bibliografia.estatisticas.perguntas_correlacao);
+      
+      texto += ` (Total: ${total} | V/F: ${vf} | Múltipla: ${multipla} | Correlação: ${correlacao})`;
+    } else if (bibliografia.perguntas_count !== undefined) {
+      const count = this.formatBoldNumber(bibliografia.perguntas_count);
+      texto += ` (${count} questões)`;
+    }
+    
+    return texto;
+  }
+
+  /**
+   * Converte um número para caracteres Unicode em negrito matemático
+   */
+  private formatBoldNumber(num: number): string {
+    const boldMap: { [key: string]: string } = {
+      '0': '𝟎', '1': '𝟏', '2': '𝟐', '3': '𝟑', '4': '𝟒',
+      '5': '𝟓', '6': '𝟔', '7': '𝟕', '8': '𝟖', '9': '𝟗'
+    };
+    
+    return num.toString().split('').map(digit => boldMap[digit] || digit).join('');
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -219,15 +553,20 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Atualiza a configuração de bibliografias em todas as tabs
    */
   private updateBibliografiasConfig() {
-    if (this.bibliografiaIds.length > 0) {
-      this.selectedBibliografias = [...this.bibliografiaIds];
+    // Usar bibliografias selecionadas se houver, senão usar as recebidas via Input
+    const bibliografiasParaUsar = this.selectedBibliografias.length > 0 
+      ? this.selectedBibliografias 
+      : (this.bibliografiaIds.length > 0 ? this.bibliografiaIds : []);
+    
+    if (bibliografiasParaUsar.length > 0) {
+      this.selectedBibliografias = [...bibliografiasParaUsar];
       
       // Configurar bibliografias para todas as tabs
       Object.keys(this.tabs).forEach(tabKey => {
-        this.tabs[tabKey as TabType].simuladoConfig.bibliografias = [...this.bibliografiaIds];
+        this.tabs[tabKey as TabType].simuladoConfig.bibliografias = [...bibliografiasParaUsar];
       });
       
-      console.log('✅ Bibliografias configuradas para todas as tabs:', this.bibliografiaIds);
+      console.log('✅ Bibliografias configuradas para todas as tabs:', bibliografiasParaUsar);
     }
   }
 
@@ -322,58 +661,6 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           currentTab.questionsLoaded = false;
           currentTab.insufficientQuestionsMessage = 'Erro ao carregar questões. Por favor, tente novamente.';
           this.cdr.detectChanges();
-        }
-      });
-  }
-
-  private loadBibliografias() {
-    this.isLoading = true;
-    console.log('📚 Carregando bibliografias disponíveis...');
-    
-    this.perguntasService.getBibliografias({ page_size: 100 })
-      .pipe(takeUntil(this.destroy$))
-      .subscribe({
-        next: (response) => {
-          this.bibliografias = response.results;
-          this.isLoading = false;
-          
-          console.log('📖 Bibliografias carregadas:', {
-            total: response.results.length,
-            bibliografias: response.results.map(b => ({
-              id: b.id,
-              titulo: b.titulo,
-              autor: b.autor,
-              materia: b.materia,
-              perguntas_count: b.perguntas_count
-            }))
-          });
-
-          // Verificar se as bibliografias solicitadas existem
-          if (this.bibliografiaIds.length > 0) {
-            const bibliografiasEncontradas = response.results.filter(b => 
-              this.bibliografiaIds.includes(b.id)
-            );
-            
-            console.log('🔍 Verificação das bibliografias solicitadas:', {
-              ids_solicitados: this.bibliografiaIds,
-              bibliografias_encontradas: bibliografiasEncontradas.map(b => ({
-                id: b.id,
-                titulo: b.titulo,
-                perguntas_disponiveis: b.perguntas_count
-              })),
-              ids_nao_encontrados: this.bibliografiaIds.filter(id => 
-                !response.results.some(b => b.id === id)
-              )
-            });
-
-            if (bibliografiasEncontradas.length !== this.bibliografiaIds.length) {
-              console.warn('⚠️ ATENÇÃO: Algumas bibliografias solicitadas não foram encontradas!');
-            }
-          }
-        },
-        error: (error) => {
-          console.error('❌ Erro ao carregar bibliografias:', error);
-          this.isLoading = false;
         }
       });
   }
@@ -622,7 +909,12 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
     // Criar uma chamada para cada bibliografia usando os métodos que buscam todas as páginas
     config.bibliografias.forEach(bibliografiaId => {
-      const baseFilters = { bibliografia: bibliografiaId };
+      const baseFilters: any = { bibliografia: bibliografiaId };
+      
+      // Adicionar filtro de assunto se selecionado
+      if (this.selectedAssunto && this.selectedAssunto.trim()) {
+        baseFilters.assunto = this.selectedAssunto.trim();
+      }
       
       if (config.questoesMultipla > 0) {
         multiplaObservables.push(
@@ -677,6 +969,27 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         const todasCorrelacoes: PerguntaCorrelacao[] = results.correlacoes 
           ? results.correlacoes.flatMap((perguntas: PerguntaCorrelacao[]) => perguntas)
           : [];
+        
+        // Atualizar cache de questões filtradas (para exibição)
+        this.allQuestionsCache = [
+          ...todasMultiplas,
+          ...todasVFs,
+          ...todasCorrelacoes
+        ];
+        
+        // IMPORTANTE: NÃO atualizar o cache completo aqui!
+        // O cache completo é atualizado separadamente pelo método loadCompleteCache()
+        // que busca TODAS as questões de TODOS os tipos, independentemente da tab.
+        // Isso garante que as estatísticas do header sempre mostrem todos os valores disponíveis.
+        // O cache completo só é atualizado quando a bibliografia muda, não quando muda de tab.
+        
+        // Extrair assuntos disponíveis do cache completo (sempre mostra todos)
+        // Isso garante que mesmo quando um assunto está selecionado, todos os assuntos
+        // da bibliografia permanecem visíveis no combobox
+        this.updateAssuntosDisponiveis();
+        
+        // Invalidar cache de estatísticas para recalcular
+        this._statsCache = null;
 
         console.log('📊 TODAS as questões recebidas do backend (paginação completa, combinadas de todas bibliografias):', {
           multiplas: {
@@ -978,6 +1291,67 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       return { coluna_a: [], coluna_b: [], resposta_correta: {} } as any;
     }
     return question.data as PerguntaCorrelacao;
+  }
+
+  // Cache de estatísticas para evitar recálculos
+  private _statsCache: {
+    total: number;
+    vf: number;
+    multipla: number;
+    correlacao: number;
+    bibliografias: number;
+    assuntos: number;
+  } | null = null;
+
+  /**
+   * Retorna estatísticas das questões disponíveis
+   * IMPORTANTE: Sempre retorna estatísticas de TODAS as questões disponíveis,
+   * independentemente da tab selecionada. Usa o cache completo (sem filtro de assunto).
+   */
+  getStats() {
+    // SEMPRE usar cache completo para obter estatísticas totais de todas as questões
+    // Isso garante que o header sempre mostre os valores totais, não apenas da tab atual
+    const cacheToUse = this.allQuestionsCacheComplete.length > 0 
+      ? this.allQuestionsCacheComplete 
+      : this.allQuestionsCache;
+    
+    // Calcular estatísticas apenas se o cache mudou
+    const cacheLength = cacheToUse.length;
+    const bibliografiasCount = this.bibliografias.length;
+    const assuntosCount = this.assuntosDisponiveis.length;
+    
+    // Verificar se o cache ainda é válido
+    if (this._statsCache && 
+        this._statsCache.total === cacheLength &&
+        this._statsCache.bibliografias === bibliografiasCount &&
+        this._statsCache.assuntos === assuntosCount) {
+      return this._statsCache;
+    }
+    
+    // Contar questões por tipo usando o cache completo (TODAS as questões disponíveis)
+    const vfCount = cacheToUse.filter(q => q.tipo === 'vf').length;
+    const multiplaCount = cacheToUse.filter(q => q.tipo === 'multipla').length;
+    const correlacaoCount = cacheToUse.filter(q => q.tipo === 'correlacao').length;
+    
+    this._statsCache = {
+      total: cacheLength,
+      vf: vfCount,
+      multipla: multiplaCount,
+      correlacao: correlacaoCount,
+      bibliografias: bibliografiasCount,
+      assuntos: assuntosCount
+    };
+    
+    return this._statsCache;
+  }
+
+  /**
+   * Navega de volta para a página de bibliografia
+   */
+  goToBibliografia() {
+    if (this.bibliografiaPath) {
+      this.router.navigate([this.bibliografiaPath]);
+    }
   }
 }
 

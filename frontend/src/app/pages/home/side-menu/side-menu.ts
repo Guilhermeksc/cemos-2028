@@ -195,9 +195,7 @@ export class SideMenu {
         },
         'Conceitos',
         'Flash Cards',
-        'Mídia',
-        'Perguntas',
-        'Resumo',    
+        'Perguntas',  
       ],
       expanded: false
     },
@@ -224,9 +222,7 @@ export class SideMenu {
         },
         'Conceitos',
         'Flash Cards',        
-        'Mídia',
-        'Perguntas',
-        'Resumo',    
+        'Perguntas', 
       ],
       expanded: false
     },
