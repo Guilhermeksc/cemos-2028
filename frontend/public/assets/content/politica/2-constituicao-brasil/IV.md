@@ -6,17 +6,17 @@ Título IV – art. 44 a 92, 95 a 99, 101 a 110, 118 a 124 e 127 a 135;
 
 **Seção I - DO CONGRESSO NACIONAL**
 
-Art. 44. O Poder Legislativo é exercido pelo Congresso Nacional, que se compõe da Câmara dos Deputados e do Senado Federal.
+⚖️  **Art. 44.** O Poder Legislativo é exercido pelo Congresso Nacional, que se compõe da Câmara dos Deputados e do Senado Federal.
 
 Parágrafo único. Cada legislatura terá a duração de quatro anos.
 
-Art. 45. A Câmara dos Deputados compõe-se de representantes do povo, eleitos, pelo sistema proporcional, em cada Estado, em cada Território e no Distrito Federal.
+⚖️  **Art. 45.** A Câmara dos Deputados compõe-se de representantes do povo, eleitos, pelo sistema proporcional, em cada Estado, em cada Território e no Distrito Federal.
 
 § 1º O número total de Deputados, bem como a representação por Estado e pelo Distrito Federal, será estabelecido por lei complementar, proporcionalmente à população, procedendo-se aos ajustes necessários, no ano anterior às eleições, para que nenhuma daquelas unidades da Federação tenha menos de oito ou mais de setenta Deputados.   (Vide Lei Complementar nº 78, de 1993)
 
 § 2º Cada Território elegerá quatro Deputados.
 
-Art. 46. O Senado Federal compõe-se de representantes dos Estados e do Distrito Federal, eleitos segundo o princípio majoritário.
+⚖️  **Art. 46.** O Senado Federal compõe-se de representantes dos Estados e do Distrito Federal, eleitos segundo o princípio majoritário.
 
 § 1º Cada Estado e o Distrito Federal elegerão três Senadores, com mandato de oito anos.
 
@@ -24,11 +24,11 @@ Art. 46. O Senado Federal compõe-se de representantes dos Estados e do Distrito
 
 § 3º Cada Senador será eleito com dois suplentes.
 
-Art. 47. Salvo disposição constitucional em contrário, as deliberações de cada Casa e de suas Comissões serão tomadas por maioria dos votos, presente a maioria absoluta de seus membros.
+⚖️  **Art. 47.** Salvo disposição constitucional em contrário, as deliberações de cada Casa e de suas Comissões serão tomadas por maioria dos votos, presente a maioria absoluta de seus membros.
 
 **Seção II - DAS ATRIBUIÇÕES DO CONGRESSO NACIONAL**
 
-Art. 48. Cabe ao Congresso Nacional, com a sanção do Presidente da República, não exigida esta para o especificado nos arts. 49, 51 e 52, dispor sobre todas as matérias de competência da União, especialmente sobre:
+⚖️  **Art. 48.** Cabe ao Congresso Nacional, com a sanção do Presidente da República, não exigida esta para o especificado nos arts. 49, 51 e 52, dispor sobre todas as matérias de competência da União, especialmente sobre:
 
 I - sistema tributário, arrecadação e distribuição de rendas;
 
@@ -46,11 +46,11 @@ VII - transferência temporária da sede do Governo Federal;
 
 VIII - concessão de anistia;
 
-IX - organização administrativa, judiciária, do Ministério Público e da Defensoria Pública da União e dos Territórios e organização judiciária e do Ministério Público do Distrito Federal;            (Redação dada pela Emenda Constitucional nº 69, de 2012)  (Produção de efeito)
+IX - organização administrativa, judiciária, do Ministério Público e da Defensoria Pública da União e dos Territórios e organização judiciária e do Ministério Público do Distrito Federal; (Redação dada pela Emenda Constitucional nº 69, de 2012)  (Produção de efeito)
 
-X – criação, transformação e extinção de cargos, empregos e funções públicas, observado o que estabelece o art. 84, VI, b;           (Redação dada pela Emenda Constitucional nº 32, de 2001)
+X – criação, transformação e extinção de cargos, empregos e funções públicas, observado o que estabelece o art. 84, VI, b; (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
-XI – criação e extinção de Ministérios e órgãos da administração pública;             (Redação dada pela Emenda Constitucional nº 32, de 2001)
+XI – criação e extinção de Ministérios e órgãos da administração pública; (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
 XII - telecomunicações e radiodifusão;
 
@@ -58,9 +58,9 @@ XIII - matéria financeira, cambial e monetária, instituições financeiras e s
 
 XIV - moeda, seus limites de emissão, e montante da dívida mobiliária federal.
 
-XV - fixação do subsídio dos Ministros do Supremo Tribunal Federal, observado o que dispõem os arts. 39, § 4º; 150, II; 153, III; e 153, § 2º, I.             (Redação dada pela Emenda Constitucional nº 41, 19.12.2003)
+XV - fixação do subsídio dos Ministros do Supremo Tribunal Federal, observado o que dispõem os arts. 39, § 4º; 150, II; 153, III; e 153, § 2º, I. (Redação dada pela Emenda Constitucional nº 41, 19.12.2003)
 
-Art. 49. É da competência exclusiva do Congresso Nacional:
+⚖️  **Art. 49.** É da competência exclusiva do Congresso Nacional:
 
 I - resolver definitivamente sobre tratados, acordos ou atos internacionais que acarretem encargos ou compromissos gravosos ao patrimônio nacional;
 
@@ -74,9 +74,9 @@ V - sustar os atos normativos do Poder Executivo que exorbitem do poder regulame
 
 VI - mudar temporariamente sua sede;
 
-VII - fixar idêntico subsídio para os Deputados Federais e os Senadores, observado o que dispõem os arts. 37, XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I;            (Redação dada pela Emenda Constitucional nº 19, de 1998)
+VII - fixar idêntico subsídio para os Deputados Federais e os Senadores, observado o que dispõem os arts. 37, XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I; (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
-VIII - fixar os subsídios do Presidente e do Vice-Presidente da República e dos Ministros de Estado, observado o que dispõem os arts. 37, XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I;          (Redação dada pela Emenda Constitucional nº 19, de 1998)
+VIII - fixar os subsídios do Presidente e do Vice-Presidente da República e dos Ministros de Estado, observado o que dispõem os arts. 37, XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I;  (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 IX - julgar anualmente as contas prestadas pelo Presidente da República e apreciar os relatórios sobre a execução dos planos de governo;
 
@@ -96,17 +96,17 @@ XVI - autorizar, em terras indígenas, a exploração e o aproveitamento de recu
 
 XVII - aprovar, previamente, a alienação ou concessão de terras públicas com área superior a dois mil e quinhentos hectares.
 
-XVIII - decretar o estado de calamidade pública de âmbito nacional previsto nos arts. 167-B, 167-C, 167-D, 167-E, 167-F e 167-G desta Constituição.      (Incluído pela Emenda Constitucional nº 109, de 2021)
+XVIII - decretar o estado de calamidade pública de âmbito nacional previsto nos arts. 167-B, 167-C, 167-D, 167-E, 167-F e 167-G desta Constituição. (Incluído pela Emenda Constitucional nº 109, de 2021)
 
-Art. 50. A Câmara dos Deputados e o Senado Federal, ou qualquer de suas Comissões, poderão convocar Ministro de Estado, quaisquer titulares de órgãos diretamente subordinados à Presidência da República ou o Presidente do Comitê Gestor do Imposto sobre Bens e Serviços para prestarem, pessoalmente, informações sobre assunto previamente determinado, importando crime de responsabilidade a ausência sem justificação adequada.       (Redação dada pela Emenda Constitucional nº 132, de 2023)
+⚖️  **Art. 50. A Câmara dos Deputados e o Senado Federal, ou qualquer de suas Comissões, poderão convocar Ministro de Estado, quaisquer titulares de órgãos diretamente subordinados à Presidência da República ou o Presidente do Comitê Gestor do Imposto sobre Bens e Serviços para prestarem, pessoalmente, informações sobre assunto previamente determinado, importando crime de responsabilidade a ausência sem justificação adequada.       (Redação dada pela Emenda Constitucional nº 132, de 2023)
 
 § 1º Os Ministros de Estado poderão comparecer ao Senado Federal, à Câmara dos Deputados, ou a qualquer de suas Comissões, por sua iniciativa e mediante entendimentos com a Mesa respectiva, para expor assunto de relevância de seu Ministério.
 
-§ 2º As Mesas da Câmara dos Deputados e do Senado Federal poderão encaminhar pedidos escritos de informações a Ministros de Estado ou a qualquer das pessoas referidas no caput deste artigo, importando em crime de responsabilidade a recusa, ou o não - atendimento, no prazo de trinta dias, bem como a prestação de informações falsas.          (Redação dada pela Emenda Constitucional de Revisão nº 2, de 1994)
+§ 2º As Mesas da Câmara dos Deputados e do Senado Federal poderão encaminhar pedidos escritos de informações a Ministros de Estado ou a qualquer das pessoas referidas no caput deste artigo, importando em crime de responsabilidade a recusa, ou o não - atendimento, no prazo de trinta dias, bem como a prestação de informações falsas. (Redação dada pela Emenda Constitucional de Revisão nº 2, de 1994)
 
 **Seção III - DA CÂMARA DOS DEPUTADOS**
 
-Art. 51. Compete privativamente à Câmara dos Deputados:
+⚖️  **Art. 51.** Compete privativamente à Câmara dos Deputados:
 
 I - autorizar, por dois terços de seus membros, a instauração de processo contra o Presidente e o Vice-Presidente da República e os Ministros de Estado;
 
@@ -114,17 +114,17 @@ II - proceder à tomada de contas do Presidente da República, quando não apres
 
 III - elaborar seu regimento interno;
 
-IV – dispor sobre sua organização, funcionamento, polícia, criação, transformação ou extinção dos cargos, empregos e funções de seus serviços, e a iniciativa de lei para fixação da respectiva remuneração, observados os parâmetros estabelecidos na lei de diretrizes orçamentárias;             (Redação dada pela Emenda Constitucional nº 19, de 1998)
+IV – dispor sobre sua organização, funcionamento, polícia, criação, transformação ou extinção dos cargos, empregos e funções de seus serviços, e a iniciativa de lei para fixação da respectiva remuneração, observados os parâmetros estabelecidos na lei de diretrizes orçamentárias; (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 V - eleger membros do Conselho da República, nos termos do art. 89, VII.
 
 **Seção IV - DO SENADO FEDERAL**
 
-Art. 52. Compete privativamente ao Senado Federal:
+⚖️  **Art. 52.** Compete privativamente ao Senado Federal:
 
-I - processar e julgar o Presidente e o Vice-Presidente da República nos crimes de responsabilidade, bem como os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica nos crimes da mesma natureza conexos com aqueles;    (Redação dada pela Emenda Constitucional nº 23, de 1999)
+I - processar e julgar o Presidente e o Vice-Presidente da República nos crimes de responsabilidade, bem como os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica nos crimes da mesma natureza conexos com aqueles; (Redação dada pela Emenda Constitucional nº 23, de 1999)
 
-II processar e julgar os Ministros do Supremo Tribunal Federal, os membros do Conselho Nacional de Justiça e do Conselho Nacional do Ministério Público, o Procurador-Geral da República e o Advogado-Geral da União nos crimes de responsabilidade;           (Redação dada pela Emenda Constitucional nº 45, de 2004)     
+II processar e julgar os Ministros do Supremo Tribunal Federal, os membros do Conselho Nacional de Justiça e do Conselho Nacional do Ministério Público, o Procurador-Geral da República e o Advogado-Geral da União nos crimes de responsabilidade; (Redação dada pela Emenda Constitucional nº 45, de 2004)     
 
 III - aprovar previamente, por voto secreto, após argüição pública, a escolha de:
 
@@ -158,35 +158,35 @@ XI - aprovar, por maioria absoluta e por voto secreto, a exoneração, de ofíci
 
 XII - elaborar seu regimento interno;
 
-XIII - dispor sobre sua organização, funcionamento, polícia, criação, transformação ou extinção dos cargos, empregos e funções de seus serviços, e a iniciativa de lei para fixação da respectiva remuneração, observados os parâmetros estabelecidos na lei de diretrizes orçamentárias;           (Redação dada pela Emenda Constitucional nº 19, de 1998)
+XIII - dispor sobre sua organização, funcionamento, polícia, criação, transformação ou extinção dos cargos, empregos e funções de seus serviços, e a iniciativa de lei para fixação da respectiva remuneração, observados os parâmetros estabelecidos na lei de diretrizes orçamentárias; (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 XIV - eleger membros do Conselho da República, nos termos do art. 89, VII.
 
-XV - avaliar periodicamente a funcionalidade do Sistema Tributário Nacional, em sua estrutura e seus componentes, e o desempenho das administrações tributárias da União, dos Estados e do Distrito Federal e dos Municípios.             (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
+XV - avaliar periodicamente a funcionalidade do Sistema Tributário Nacional, em sua estrutura e seus componentes, e o desempenho das administrações tributárias da União, dos Estados e do Distrito Federal e dos Municípios. (Incluído pela Emenda Constitucional nº 42, de 19.12.2003)
 
 Parágrafo único. Nos casos previstos nos incisos I e II, funcionará como Presidente o do Supremo Tribunal Federal, limitando-se a condenação, que somente será proferida por dois terços dos votos do Senado Federal, à perda do cargo, com inabilitação, por oito anos, para o exercício de função pública, sem prejuízo das demais sanções judiciais cabíveis.
 
 **Seção V - DOS DEPUTADOS E DOS SENADORES**
 
-Art. 53. Os Deputados e Senadores são invioláveis, civil e penalmente, por quaisquer de suas opiniões, palavras e votos.            (Redação dada pela Emenda Constitucional nº 35, de 2001)
+⚖️  **Art. 53.** Os Deputados e Senadores são invioláveis, civil e penalmente, por quaisquer de suas opiniões, palavras e votos.            (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 1º Os Deputados e Senadores, desde a expedição do diploma, serão submetidos a julgamento perante o Supremo Tribunal Federal.         (Redação dada pela Emenda Constitucional nº 35, de 2001)
+§ 1º Os Deputados e Senadores, desde a expedição do diploma, serão submetidos a julgamento perante o Supremo Tribunal Federal. (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 2º Desde a expedição do diploma, os membros do Congresso Nacional não poderão ser presos, salvo em flagrante de crime inafiançável. Nesse caso, os autos serão remetidos dentro de vinte e quatro horas à Casa respectiva, para que, pelo voto da maioria de seus membros, resolva sobre a prisão.             (Redação dada pela Emenda Constitucional nº 35, de 2001)
+§ 2º Desde a expedição do diploma, os membros do Congresso Nacional não poderão ser presos, salvo em flagrante de crime inafiançável. Nesse caso, os autos serão remetidos dentro de vinte e quatro horas à Casa respectiva, para que, pelo voto da maioria de seus membros, resolva sobre a prisão. (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 3º Recebida a denúncia contra o Senador ou Deputado, por crime ocorrido após a diplomação, o Supremo Tribunal Federal dará ciência à Casa respectiva, que, por iniciativa de partido político nela representado e pelo voto da maioria de seus membros, poderá, até a decisão final, sustar o andamento da ação.              (Redação dada pela Emenda Constitucional nº 35, de 2001)
+§ 3º Recebida a denúncia contra o Senador ou Deputado, por crime ocorrido após a diplomação, o Supremo Tribunal Federal dará ciência à Casa respectiva, que, por iniciativa de partido político nela representado e pelo voto da maioria de seus membros, poderá, até a decisão final, sustar o andamento da ação. (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 4º O pedido de sustação será apreciado pela Casa respectiva no prazo improrrogável de quarenta e cinco dias do seu recebimento pela Mesa Diretora.          (Redação dada pela Emenda Constitucional nº 35, de 2001)
+§ 4º O pedido de sustação será apreciado pela Casa respectiva no prazo improrrogável de quarenta e cinco dias do seu recebimento pela Mesa Diretora. (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 5º A sustação do processo suspende a prescrição, enquanto durar o mandato.             (Redação dada pela Emenda Constitucional nº 35, de 2001)
+§ 5º A sustação do processo suspende a prescrição, enquanto durar o mandato. (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 6º Os Deputados e Senadores não serão obrigados a testemunhar sobre informações recebidas ou prestadas em razão do exercício do mandato, nem sobre as pessoas que lhes confiaram ou deles receberam informações.            (Redação dada pela Emenda Constitucional nº 35, de 2001)
+§ 6º Os Deputados e Senadores não serão obrigados a testemunhar sobre informações recebidas ou prestadas em razão do exercício do mandato, nem sobre as pessoas que lhes confiaram ou deles receberam informações. (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 7º A incorporação às Forças Armadas de Deputados e Senadores, embora militares e ainda que em tempo de guerra, dependerá de prévia licença da Casa respectiva.            (Redação dada pela Emenda Constitucional nº 35, de 2001)
+§ 7º A incorporação às Forças Armadas de Deputados e Senadores, embora militares e ainda que em tempo de guerra, dependerá de prévia licença da Casa respectiva. (Redação dada pela Emenda Constitucional nº 35, de 2001)
 
-§ 8º As imunidades de Deputados ou Senadores subsistirão durante o estado de sítio, só podendo ser suspensas mediante o voto de dois terços dos membros da Casa respectiva, nos casos de atos praticados fora do recinto do Congresso Nacional, que sejam incompatíveis com a execução da medida.            (Incluído pela Emenda Constitucional nº 35, de 2001)
+§ 8º As imunidades de Deputados ou Senadores subsistirão durante o estado de sítio, só podendo ser suspensas mediante o voto de dois terços dos membros da Casa respectiva, nos casos de atos praticados fora do recinto do Congresso Nacional, que sejam incompatíveis com a execução da medida. (Incluído pela Emenda Constitucional nº 35, de 2001)
 
-Art. 54. Os Deputados e Senadores não poderão:
+⚖️  **Art. 54.** Os Deputados e Senadores não poderão:
 
 I - desde a expedição do diploma:
 
@@ -204,7 +204,7 @@ c) patrocinar causa em que seja interessada qualquer das entidades a que se refe
 
 d) ser titulares de mais de um cargo ou mandato público eletivo.
 
-Art. 55. Perderá o mandato o Deputado ou Senador:
+⚖️  **Art. 55.** Perderá o mandato o Deputado ou Senador:
 
 I - que infringir qualquer das proibições estabelecidas no artigo anterior;
 
@@ -220,13 +220,13 @@ VI - que sofrer condenação criminal em sentença transitada em julgado.
 
 § 1º - É incompatível com o decoro parlamentar, além dos casos definidos no regimento interno, o abuso das prerrogativas asseguradas a membro do Congresso Nacional ou a percepção de vantagens indevidas.
 
-§ 2º Nos casos dos incisos I, II e VI, a perda do mandato será decidida pela Câmara dos Deputados ou pelo Senado Federal, por maioria absoluta, mediante provocação da respectiva Mesa ou de partido político representado no Congresso Nacional, assegurada ampla defesa.              (Redação dada pela Emenda Constitucional nº 76, de 2013)
+§ 2º Nos casos dos incisos I, II e VI, a perda do mandato será decidida pela Câmara dos Deputados ou pelo Senado Federal, por maioria absoluta, mediante provocação da respectiva Mesa ou de partido político representado no Congresso Nacional, assegurada ampla defesa. (Redação dada pela Emenda Constitucional nº 76, de 2013)
 
 § 3º - Nos casos previstos nos incisos III a V, a perda será declarada pela Mesa da Casa respectiva, de ofício ou mediante provocação de qualquer de seus membros, ou de partido político representado no Congresso Nacional, assegurada ampla defesa.
 
-§ 4º A renúncia de parlamentar submetido a processo que vise ou possa levar à perda do mandato, nos termos deste artigo, terá seus efeitos suspensos até as deliberações finais de que tratam os §§ 2º e 3º.          (Incluído pela Emenda Constitucional de Revisão nº 6, de 1994)
+§ 4º A renúncia de parlamentar submetido a processo que vise ou possa levar à perda do mandato, nos termos deste artigo, terá seus efeitos suspensos até as deliberações finais de que tratam os §§ 2º e 3º. (Incluído pela Emenda Constitucional de Revisão nº 6, de 1994)
 
-Art. 56. Não perderá o mandato o Deputado ou Senador:
+⚖️  **Art. 56.** Não perderá o mandato o Deputado ou Senador:
 
 I - investido no cargo de Ministro de Estado, Governador de Território, Secretário de Estado, do Distrito Federal, de Território, de Prefeitura de Capital ou chefe de missão diplomática temporária;
 
@@ -240,7 +240,7 @@ II - licenciado pela respectiva Casa por motivo de doença, ou para tratar, sem 
 
 **Seção VI - DAS REUNIÕES**
 
-Art. 57. O Congresso Nacional reunir-se-á, anualmente, na Capital Federal, de 2 de fevereiro a 17 de julho e de 1º de agosto a 22 de dezembro.              (Redação dada pela Emenda Constitucional nº 50, de 2006)   
+⚖️  **Art. 57.** O Congresso Nacional reunir-se-á, anualmente, na Capital Federal, de 2 de fevereiro a 17 de julho e de 1º de agosto a 22 de dezembro. (Redação dada pela Emenda Constitucional nº 50, de 2006)   
 
 § 1º As reuniões marcadas para essas datas serão transferidas para o primeiro dia útil subseqüente, quando recaírem em sábados, domingos ou feriados.
 
@@ -256,23 +256,23 @@ III - receber o compromisso do Presidente e do Vice-Presidente da República;
 
 IV - conhecer do veto e sobre ele deliberar.
 
-§ 4º Cada uma das Casas reunir-se-á em sessões preparatórias, a partir de 1º de fevereiro, no primeiro ano da legislatura, para a posse de seus membros e eleição das respectivas Mesas, para mandato de 2 (dois) anos, vedada a recondução para o mesmo cargo na eleição imediatamente subseqüente.            (Redação dada pela Emenda Constitucional nº 50, de 2006)
+§ 4º Cada uma das Casas reunir-se-á em sessões preparatórias, a partir de 1º de fevereiro, no primeiro ano da legislatura, para a posse de seus membros e eleição das respectivas Mesas, para mandato de 2 (dois) anos, vedada a recondução para o mesmo cargo na eleição imediatamente subseqüente. (Redação dada pela Emenda Constitucional nº 50, de 2006)
 
 § 5º A Mesa do Congresso Nacional será presidida pelo Presidente do Senado Federal, e os demais cargos serão exercidos, alternadamente, pelos ocupantes de cargos equivalentes na Câmara dos Deputados e no Senado Federal.
 
-§ 6º A convocação extraordinária do Congresso Nacional far-se-á:             (Redação dada pela Emenda Constitucional nº 50, de 2006)
+§ 6º A convocação extraordinária do Congresso Nacional far-se-á: (Redação dada pela Emenda Constitucional nº 50, de 2006)
 
 I - pelo Presidente do Senado Federal, em caso de decretação de estado de defesa ou de intervenção federal, de pedido de autorização para a decretação de estado de sítio e para o compromisso e a posse do Presidente e do Vice-Presidente da República;
 
-II - pelo Presidente da República, pelos Presidentes da Câmara dos Deputados e do Senado Federal ou a requerimento da maioria dos membros de ambas as Casas, em caso de urgência ou interesse público relevante, em todas as hipóteses deste inciso com a aprovação da maioria absoluta de cada uma das Casas do Congresso Nacional.          (Redação dada pela Emenda Constitucional nº 50, de 2006)
+II - pelo Presidente da República, pelos Presidentes da Câmara dos Deputados e do Senado Federal ou a requerimento da maioria dos membros de ambas as Casas, em caso de urgência ou interesse público relevante, em todas as hipóteses deste inciso com a aprovação da maioria absoluta de cada uma das Casas do Congresso Nacional. (Redação dada pela Emenda Constitucional nº 50, de 2006)
 
-§ 7º Na sessão legislativa extraordinária, o Congresso Nacional somente deliberará sobre a matéria para a qual foi convocado, ressalvada a hipótese do § 8º deste artigo, vedado o pagamento de parcela indenizatória, em razão da convocação.               (Redação dada pela Emenda Constitucional nº 50, de 2006)
+§ 7º Na sessão legislativa extraordinária, o Congresso Nacional somente deliberará sobre a matéria para a qual foi convocado, ressalvada a hipótese do § 8º deste artigo, vedado o pagamento de parcela indenizatória, em razão da convocação. (Redação dada pela Emenda Constitucional nº 50, de 2006)
 
-§ 8º Havendo medidas provisórias em vigor na data de convocação extraordinária do Congresso Nacional, serão elas automaticamente incluídas na pauta da convocação.           (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 8º Havendo medidas provisórias em vigor na data de convocação extraordinária do Congresso Nacional, serão elas automaticamente incluídas na pauta da convocação. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 **Seção VII - DAS COMISSÕES**
 
-Art. 58. O Congresso Nacional e suas Casas terão comissões permanentes e temporárias, constituídas na forma e com as atribuições previstas no respectivo regimento ou no ato de que resultar sua criação.
+⚖️  **Art. 58.** O Congresso Nacional e suas Casas terão comissões permanentes e temporárias, constituídas na forma e com as atribuições previstas no respectivo regimento ou no ato de que resultar sua criação.
 
 § 1º Na constituição das Mesas e de cada Comissão, é assegurada, tanto quanto possível, a representação proporcional dos partidos ou dos blocos parlamentares que participam da respectiva Casa.
 
@@ -298,7 +298,7 @@ VI - apreciar programas de obras, planos nacionais, regionais e setoriais de des
 
 Subseção I - Disposição Geral
 
-Art. 59. O processo legislativo compreende a elaboração de:
+⚖️  **Art. 59.** O processo legislativo compreende a elaboração de:
 
 I - emendas à Constituição;
 
@@ -318,7 +318,7 @@ Parágrafo único. Lei complementar disporá sobre a elaboração, redação, al
 
 Subseção II - Da Emenda à Constituição
 
-Art. 60. A Constituição poderá ser emendada mediante proposta:
+⚖️  **Art. 60.** A Constituição poderá ser emendada mediante proposta:
 
 I - de um terço, no mínimo, dos membros da Câmara dos Deputados ou do Senado Federal;
 
@@ -346,7 +346,7 @@ IV - os direitos e garantias individuais.
 
 Subseção III - Das Leis
 
-Art. 61. A iniciativa das leis complementares e ordinárias cabe a qualquer membro ou Comissão da Câmara dos Deputados, do Senado Federal ou do Congresso Nacional, ao Presidente da República, ao Supremo Tribunal Federal, aos Tribunais Superiores, ao Procurador-Geral da República e aos cidadãos, na forma e nos casos previstos nesta Constituição.
+⚖️  **Art. 61.** A iniciativa das leis complementares e ordinárias cabe a qualquer membro ou Comissão da Câmara dos Deputados, do Senado Federal ou do Congresso Nacional, ao Presidente da República, ao Supremo Tribunal Federal, aos Tribunais Superiores, ao Procurador-Geral da República e aos cidadãos, na forma e nos casos previstos nesta Constituição.
 
 § 1º São de iniciativa privativa do Presidente da República as leis que:
 
@@ -358,79 +358,79 @@ a) criação de cargos, funções ou empregos públicos na administração diret
 
 b) organização administrativa e judiciária, matéria tributária e orçamentária, serviços públicos e pessoal da administração dos Territórios;
 
-c) servidores públicos da União e Territórios, seu regime jurídico, provimento de cargos, estabilidade e aposentadoria;            (Redação dada pela Emenda Constitucional nº 18, de 1998)
+c) servidores públicos da União e Territórios, seu regime jurídico, provimento de cargos, estabilidade e aposentadoria; (Redação dada pela Emenda Constitucional nº 18, de 1998)
 
 d) organização do Ministério Público e da Defensoria Pública da União, bem como normas gerais para a organização do Ministério Público e da Defensoria Pública dos Estados, do Distrito Federal e dos Territórios;
 
-e) criação e extinção de Ministérios e órgãos da administração pública, observado o disposto no art. 84, VI;              (Redação dada pela Emenda Constitucional nº 32, de 2001)
+e) criação e extinção de Ministérios e órgãos da administração pública, observado o disposto no art. 84, VI; (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
-f) militares das Forças Armadas, seu regime jurídico, provimento de cargos, promoções, estabilidade, remuneração, reforma e transferência para a reserva.              (Incluída pela Emenda Constitucional nº 18, de 1998)
+f) militares das Forças Armadas, seu regime jurídico, provimento de cargos, promoções, estabilidade, remuneração, reforma e transferência para a reserva. (Incluída pela Emenda Constitucional nº 18, de 1998)
 
 § 2º A iniciativa popular pode ser exercida pela apresentação à Câmara dos Deputados de projeto de lei subscrito por, no mínimo, um por cento do eleitorado nacional, distribuído pelo menos por cinco Estados, com não menos de três décimos por cento dos eleitores de cada um deles.
 
-Art. 62. Em caso de relevância e urgência, o Presidente da República poderá adotar medidas provisórias, com força de lei, devendo submetê-las de imediato ao Congresso Nacional.               (Redação dada pela Emenda Constitucional nº 32, de 2001)
+⚖️  **Art. 62.** Em caso de relevância e urgência, o Presidente da República poderá adotar medidas provisórias, com força de lei, devendo submetê-las de imediato ao Congresso Nacional. (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
-§ 1º É vedada a edição de medidas provisórias sobre matéria:                (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 1º É vedada a edição de medidas provisórias sobre matéria: (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-I – relativa a:              (Incluído pela Emenda Constitucional nº 32, de 2001)
+I – relativa a: (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-a) nacionalidade, cidadania, direitos políticos, partidos políticos e direito eleitoral;             (Incluído pela Emenda Constitucional nº 32, de 2001)
+a) nacionalidade, cidadania, direitos políticos, partidos políticos e direito eleitoral; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-b) direito penal, processual penal e processual civil;           (Incluído pela Emenda Constitucional nº 32, de 2001)
+b) direito penal, processual penal e processual civil; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 c) organização do Poder Judiciário e do Ministério Público, a carreira e a garantia de seus membros;             (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-d) planos plurianuais, diretrizes orçamentárias, orçamento e créditos adicionais e suplementares, ressalvado o previsto no art. 167, § 3º;           (Incluído pela Emenda Constitucional nº 32, de 2001)
+d) planos plurianuais, diretrizes orçamentárias, orçamento e créditos adicionais e suplementares, ressalvado o previsto no art. 167, § 3º; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-II – que vise a detenção ou seqüestro de bens, de poupança popular ou qualquer outro ativo financeiro;            (Incluído pela Emenda Constitucional nº 32, de 2001)
+II – que vise a detenção ou seqüestro de bens, de poupança popular ou qualquer outro ativo financeiro; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-III – reservada a lei complementar;              (Incluído pela Emenda Constitucional nº 32, de 2001)
+III – reservada a lei complementar; (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 IV – já disciplinada em projeto de lei aprovado pelo Congresso Nacional e pendente de sanção ou veto do Presidente da República.            (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 § 2º Medida provisória que implique instituição ou majoração de impostos, exceto os previstos nos arts. 153, I, II, IV, V, e 154, II, só produzirá efeitos no exercício financeiro seguinte se houver sido convertida em lei até o último dia daquele em que foi editada.           (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 3º As medidas provisórias, ressalvado o disposto nos §§ 11 e 12 perderão eficácia, desde a edição, se não forem convertidas em lei no prazo de sessenta dias, prorrogável, nos termos do § 7º, uma vez por igual período, devendo o Congresso Nacional disciplinar, por decreto legislativo, as relações jurídicas delas decorrentes.               (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 3º As medidas provisórias, ressalvado o disposto nos §§ 11 e 12 perderão eficácia, desde a edição, se não forem convertidas em lei no prazo de sessenta dias, prorrogável, nos termos do § 7º, uma vez por igual período, devendo o Congresso Nacional disciplinar, por decreto legislativo, as relações jurídicas delas decorrentes. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 4º O prazo a que se refere o § 3º contar-se-á da publicação da medida provisória, suspendendo-se durante os períodos de recesso do Congresso Nacional.            (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 4º O prazo a que se refere o § 3º contar-se-á da publicação da medida provisória, suspendendo-se durante os períodos de recesso do Congresso Nacional. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 § 5º A deliberação de cada uma das Casas do Congresso Nacional sobre o mérito das medidas provisórias dependerá de juízo prévio sobre o atendimento de seus pressupostos constitucionais.              (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 6º Se a medida provisória não for apreciada em até quarenta e cinco dias contados de sua publicação, entrará em regime de urgência, subseqüentemente, em cada uma das Casas do Congresso Nacional, ficando sobrestadas, até que se ultime a votação, todas as demais deliberações legislativas da Casa em que estiver tramitando.               (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 6º Se a medida provisória não for apreciada em até quarenta e cinco dias contados de sua publicação, entrará em regime de urgência, subseqüentemente, em cada uma das Casas do Congresso Nacional, ficando sobrestadas, até que se ultime a votação, todas as demais deliberações legislativas da Casa em que estiver tramitando. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 7º Prorrogar-se-á uma única vez por igual período a vigência de medida provisória que, no prazo de sessenta dias, contado de sua publicação, não tiver a sua votação encerrada nas duas Casas do Congresso Nacional.               (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 7º Prorrogar-se-á uma única vez por igual período a vigência de medida provisória que, no prazo de sessenta dias, contado de sua publicação, não tiver a sua votação encerrada nas duas Casas do Congresso Nacional. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 8º As medidas provisórias terão sua votação iniciada na Câmara dos Deputados.               (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 8º As medidas provisórias terão sua votação iniciada na Câmara dos Deputados. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 9º Caberá à comissão mista de Deputados e Senadores examinar as medidas provisórias e sobre elas emitir parecer, antes de serem apreciadas, em sessão separada, pelo plenário de cada uma das Casas do Congresso Nacional.          (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 9º Caberá à comissão mista de Deputados e Senadores examinar as medidas provisórias e sobre elas emitir parecer, antes de serem apreciadas, em sessão separada, pelo plenário de cada uma das Casas do Congresso Nacional. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 10. É vedada a reedição, na mesma sessão legislativa, de medida provisória que tenha sido rejeitada ou que tenha perdido sua eficácia por decurso de prazo.            (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 10. É vedada a reedição, na mesma sessão legislativa, de medida provisória que tenha sido rejeitada ou que tenha perdido sua eficácia por decurso de prazo. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
 § 11. Não editado o decreto legislativo a que se refere o § 3º até sessenta dias após a rejeição ou perda de eficácia de medida provisória, as relações jurídicas constituídas e decorrentes de atos praticados durante sua vigência conservar-se-ão por ela regidas.            (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-§ 12. Aprovado projeto de lei de conversão alterando o texto original da medida provisória, esta manter-se-á integralmente em vigor até que seja sancionado ou vetado o projeto.             (Incluído pela Emenda Constitucional nº 32, de 2001)
+§ 12. Aprovado projeto de lei de conversão alterando o texto original da medida provisória, esta manter-se-á integralmente em vigor até que seja sancionado ou vetado o projeto. (Incluído pela Emenda Constitucional nº 32, de 2001)
 
-Art. 63. Não será admitido aumento da despesa prevista:
+⚖️  **Art. 63.** Não será admitido aumento da despesa prevista:
 
 I - nos projetos de iniciativa exclusiva do Presidente da República, ressalvado o disposto no art. 166, § 3º e § 4º;
 
 II - nos projetos sobre organização dos serviços administrativos da Câmara dos Deputados, do Senado Federal, dos Tribunais Federais e do Ministério Público.
 
-Art. 64. A discussão e votação dos projetos de lei de iniciativa do Presidente da República, do Supremo Tribunal Federal e dos Tribunais Superiores terão início na Câmara dos Deputados.
+⚖️  **Art. 64.** A discussão e votação dos projetos de lei de iniciativa do Presidente da República, do Supremo Tribunal Federal e dos Tribunais Superiores terão início na Câmara dos Deputados.
 
 § 1º O Presidente da República poderá solicitar urgência para apreciação de projetos de sua iniciativa.
 
-§ 2º Se, no caso do § 1º, a Câmara dos Deputados e o Senado Federal não se manifestarem sobre a proposição, cada qual sucessivamente, em até quarenta e cinco dias, sobrestar-se-ão todas as demais deliberações legislativas da respectiva Casa, com exceção das que tenham prazo constitucional determinado, até que se ultime a votação.            (Redação dada pela Emenda Constitucional nº 32, de 2001)
+§ 2º Se, no caso do § 1º, a Câmara dos Deputados e o Senado Federal não se manifestarem sobre a proposição, cada qual sucessivamente, em até quarenta e cinco dias, sobrestar-se-ão todas as demais deliberações legislativas da respectiva Casa, com exceção das que tenham prazo constitucional determinado, até que se ultime a votação. (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
 § 3º A apreciação das emendas do Senado Federal pela Câmara dos Deputados far-se-á no prazo de dez dias, observado quanto ao mais o disposto no parágrafo anterior.
 
 § 4º Os prazos do § 2º não correm nos períodos de recesso do Congresso Nacional, nem se aplicam aos projetos de código.
 
-Art. 65. O projeto de lei aprovado por uma Casa será revisto pela outra, em um só turno de discussão e votação, e enviado à sanção ou promulgação, se a Casa revisora o aprovar, ou arquivado, se o rejeitar.
+⚖️  **Art. 65.** O projeto de lei aprovado por uma Casa será revisto pela outra, em um só turno de discussão e votação, e enviado à sanção ou promulgação, se a Casa revisora o aprovar, ou arquivado, se o rejeitar.
 
 Parágrafo único. Sendo o projeto emendado, voltará à Casa iniciadora.
 
-Art. 66. A Casa na qual tenha sido concluída a votação enviará o projeto de lei ao Presidente da República, que, aquiescendo, o sancionará.
+⚖️  **Art. 66.** A Casa na qual tenha sido concluída a votação enviará o projeto de lei ao Presidente da República, que, aquiescendo, o sancionará.
 
 § 1º - Se o Presidente da República considerar o projeto, no todo ou em parte, inconstitucional ou contrário ao interesse público, vetá-lo-á total ou parcialmente, no prazo de quinze dias úteis, contados da data do recebimento, e comunicará, dentro de quarenta e oito horas, ao Presidente do Senado Federal os motivos do veto.
 
@@ -438,17 +438,17 @@ Art. 66. A Casa na qual tenha sido concluída a votação enviará o projeto de 
 
 § 3º Decorrido o prazo de quinze dias, o silêncio do Presidente da República importará sanção.
 
-§ 4º O veto será apreciado em sessão conjunta, dentro de trinta dias a contar de seu recebimento, só podendo ser rejeitado pelo voto da maioria absoluta dos Deputados e Senadores.              (Redação dada pela Emenda Constitucional nº 76, de 2013)
+§ 4º O veto será apreciado em sessão conjunta, dentro de trinta dias a contar de seu recebimento, só podendo ser rejeitado pelo voto da maioria absoluta dos Deputados e Senadores. (Redação dada pela Emenda Constitucional nº 76, de 2013)
 
 § 5º Se o veto não for mantido, será o projeto enviado, para promulgação, ao Presidente da República.
 
-§ 6º Esgotado sem deliberação o prazo estabelecido no § 4º, o veto será colocado na ordem do dia da sessão imediata, sobrestadas as demais proposições, até sua votação final.                (Redação dada pela Emenda Constitucional nº 32, de 2001)
+§ 6º Esgotado sem deliberação o prazo estabelecido no § 4º, o veto será colocado na ordem do dia da sessão imediata, sobrestadas as demais proposições, até sua votação final. (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
 § 7º Se a lei não for promulgada dentro de quarenta e oito horas pelo Presidente da República, nos casos dos § 3º e § 5º, o Presidente do Senado a promulgará, e, se este não o fizer em igual prazo, caberá ao Vice-Presidente do Senado fazê-lo.
 
-Art. 67. A matéria constante de projeto de lei rejeitado somente poderá constituir objeto de novo projeto, na mesma sessão legislativa, mediante proposta da maioria absoluta dos membros de qualquer das Casas do Congresso Nacional.
+⚖️  **Art. 67.** A matéria constante de projeto de lei rejeitado somente poderá constituir objeto de novo projeto, na mesma sessão legislativa, mediante proposta da maioria absoluta dos membros de qualquer das Casas do Congresso Nacional.
 
-Art. 68. As leis delegadas serão elaboradas pelo Presidente da República, que deverá solicitar a delegação ao Congresso Nacional.
+⚖️  **Art. 68.** As leis delegadas serão elaboradas pelo Presidente da República, que deverá solicitar a delegação ao Congresso Nacional.
 
 § 1º Não serão objeto de delegação os atos de competência exclusiva do Congresso Nacional, os de competência privativa da Câmara dos Deputados ou do Senado Federal, a matéria reservada à lei complementar, nem a legislação sobre:
 
@@ -462,15 +462,15 @@ III - planos plurianuais, diretrizes orçamentárias e orçamentos.
 
 § 3º Se a resolução determinar a apreciação do projeto pelo Congresso Nacional, este a fará em votação única, vedada qualquer emenda.
 
-Art. 69. As leis complementares serão aprovadas por maioria absoluta.
+⚖️  **Art. 69.** As leis complementares serão aprovadas por maioria absoluta.
 
 **Seção IX - DA FISCALIZAÇÃO CONTÁBIL, FINANCEIRA E ORÇAMENTÁRIA**
 
-Art. 70. A fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta, quanto à legalidade, legitimidade, economicidade, aplicação das subvenções e renúncia de receitas, será exercida pelo Congresso Nacional, mediante controle externo, e pelo sistema de controle interno de cada Poder.
+⚖️  **Art. 70.** A fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta, quanto à legalidade, legitimidade, economicidade, aplicação das subvenções e renúncia de receitas, será exercida pelo Congresso Nacional, mediante controle externo, e pelo sistema de controle interno de cada Poder.
 
 Parágrafo único. Prestará contas qualquer pessoa física ou jurídica, pública ou privada, que utilize, arrecade, guarde, gerencie ou administre dinheiros, bens e valores públicos ou pelos quais a União responda, ou que, em nome desta, assuma obrigações de natureza pecuniária.           (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
-Art. 71. O controle externo, a cargo do Congresso Nacional, será exercido com o auxílio do Tribunal de Contas da União, ao qual compete:
+⚖️  **Art. 71.** O controle externo, a cargo do Congresso Nacional, será exercido com o auxílio do Tribunal de Contas da União, ao qual compete:
 
 I - apreciar as contas prestadas anualmente pelo Presidente da República, mediante parecer prévio que deverá ser elaborado em sessenta dias a contar de seu recebimento;
 
@@ -502,17 +502,17 @@ XI - representar ao Poder competente sobre irregularidades ou abusos apurados.
 
 § 4º O Tribunal encaminhará ao Congresso Nacional, trimestral e anualmente, relatório de suas atividades.
 
-Art. 72. A Comissão mista permanente a que se refere o art. 166, §1º, diante de indícios de despesas não autorizadas, ainda que sob a forma de investimentos não programados ou de subsídios não aprovados, poderá solicitar à autoridade governamental responsável que, no prazo de cinco dias, preste os esclarecimentos necessários.
+⚖️  **Art. 72.** A Comissão mista permanente a que se refere o art. 166, §1º, diante de indícios de despesas não autorizadas, ainda que sob a forma de investimentos não programados ou de subsídios não aprovados, poderá solicitar à autoridade governamental responsável que, no prazo de cinco dias, preste os esclarecimentos necessários.
 
 § 1º Não prestados os esclarecimentos, ou considerados estes insuficientes, a Comissão solicitará ao Tribunal pronunciamento conclusivo sobre a matéria, no prazo de trinta dias.
 
 § 2º Entendendo o Tribunal irregular a despesa, a Comissão, se julgar que o gasto possa causar dano irreparável ou grave lesão à economia pública, proporá ao Congresso Nacional sua sustação.
 
-Art. 73. O Tribunal de Contas da União, integrado por nove Ministros, tem sede no Distrito Federal, quadro próprio de pessoal e jurisdição em todo o território nacional, exercendo, no que couber, as atribuições previstas no art. 96. .
+⚖️  **Art. 73.** O Tribunal de Contas da União, integrado por nove Ministros, tem sede no Distrito Federal, quadro próprio de pessoal e jurisdição em todo o território nacional, exercendo, no que couber, as atribuições previstas no art. 96. .
 
 § 1º Os Ministros do Tribunal de Contas da União serão nomeados dentre brasileiros que satisfaçam os seguintes requisitos:
 
-I - mais de trinta e cinco e menos de setenta anos de idade;      (Redação dada pela Emenda Constitucional nº 122, de 2022)
+I - mais de trinta e cinco e menos de setenta anos de idade; (Redação dada pela Emenda Constitucional nº 122, de 2022)
 
 II - idoneidade moral e reputação ilibada;
 
@@ -526,11 +526,11 @@ I - um terço pelo Presidente da República, com aprovação do Senado Federal, 
 
 II - dois terços pelo Congresso Nacional.
 
-§ 3° Os Ministros do Tribunal de Contas da União terão as mesmas garantias, prerrogativas, impedimentos, vencimentos e vantagens dos Ministros do Superior Tribunal de Justiça, aplicando-se-lhes, quanto à aposentadoria e pensão, as normas constantes do art. 40.           (Redação dada pela Emenda Constitucional nº 20, de 1998)
+§ 3° Os Ministros do Tribunal de Contas da União terão as mesmas garantias, prerrogativas, impedimentos, vencimentos e vantagens dos Ministros do Superior Tribunal de Justiça, aplicando-se-lhes, quanto à aposentadoria e pensão, as normas constantes do art. 40. (Redação dada pela Emenda Constitucional nº 20, de 1998)
 
 § 4º O auditor, quando em substituição a Ministro, terá as mesmas garantias e impedimentos do titular e, quando no exercício das demais atribuições da judicatura, as de juiz de Tribunal Regional Federal.
 
-Art. 74. Os Poderes Legislativo, Executivo e Judiciário manterão, de forma integrada, sistema de controle interno com a finalidade de:
+⚖️  **Art. 74.** Os Poderes Legislativo, Executivo e Judiciário manterão, de forma integrada, sistema de controle interno com a finalidade de:
 
 I - avaliar o cumprimento das metas previstas no plano plurianual, a execução dos programas de governo e dos orçamentos da União;
 
@@ -544,7 +544,7 @@ IV - apoiar o controle externo no exercício de sua missão institucional.
 
 § 2º Qualquer cidadão, partido político, associação ou sindicato é parte legítima para, na forma da lei, denunciar irregularidades ou ilegalidades perante o Tribunal de Contas da União.
 
-Art. 75. As normas estabelecidas nesta seção aplicam-se, no que couber, à organização, composição e fiscalização dos Tribunais de Contas dos Estados e do Distrito Federal, bem como dos Tribunais e Conselhos de Contas dos Municípios.
+⚖️  **Art. 75.** As normas estabelecidas nesta seção aplicam-se, no que couber, à organização, composição e fiscalização dos Tribunais de Contas dos Estados e do Distrito Federal, bem como dos Tribunais e Conselhos de Contas dos Municípios.
 
 Parágrafo único. As Constituições estaduais disporão sobre os Tribunais de Contas respectivos, que serão integrados por sete Conselheiros.
 
@@ -552,9 +552,9 @@ Parágrafo único. As Constituições estaduais disporão sobre os Tribunais de 
 
 **Seção I - DO PRESIDENTE E DO VICE-PRESIDENTE DA REPÚBLICA**
 
-Art. 76. O Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado.
+⚖️  **Art. 76.** O Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado.
 
-Art. 77. A eleição do Presidente e do Vice-Presidente da República realizar-se-á, simultaneamente, no primeiro domingo de outubro, em primeiro turno, e no último domingo de outubro, em segundo turno, se houver, do ano anterior ao do término do mandato presidencial vigente.              (Redação dada pela Emenda Constitucional nº 16, de 1997)
+⚖️  **Art. 77.** A eleição do Presidente e do Vice-Presidente da República realizar-se-á, simultaneamente, no primeiro domingo de outubro, em primeiro turno, e no último domingo de outubro, em segundo turno, se houver, do ano anterior ao do término do mandato presidencial vigente. (Redação dada pela Emenda Constitucional nº 16, de 1997)
 
 § 1º A eleição do Presidente da República importará a do Vice-Presidente com ele registrado.
 
@@ -566,29 +566,29 @@ Art. 77. A eleição do Presidente e do Vice-Presidente da República realizar-s
 
 § 5º Se, na hipótese dos parágrafos anteriores, remanescer, em segundo lugar, mais de um candidato com a mesma votação, qualificar-se-á o mais idoso.
 
-Art. 78. O Presidente e o Vice-Presidente da República tomarão posse em sessão do Congresso Nacional, prestando o compromisso de manter, defender e cumprir a Constituição, observar as leis, promover o bem geral do povo brasileiro, sustentar a união, a integridade e a independência do Brasil.
+⚖️  **Art. 78.** O Presidente e o Vice-Presidente da República tomarão posse em sessão do Congresso Nacional, prestando o compromisso de manter, defender e cumprir a Constituição, observar as leis, promover o bem geral do povo brasileiro, sustentar a união, a integridade e a independência do Brasil.
 
 Parágrafo único. Se, decorridos dez dias da data fixada para a posse, o Presidente ou o Vice-Presidente, salvo motivo de força maior, não tiver assumido o cargo, este será declarado vago.
 
-Art. 79. Substituirá o Presidente, no caso de impedimento, e suceder- lhe-á, no de vaga, o Vice-Presidente.
+⚖️  **Art. 79.** Substituirá o Presidente, no caso de impedimento, e suceder- lhe-á, no de vaga, o Vice-Presidente.
 
 Parágrafo único. O Vice-Presidente da República, além de outras atribuições que lhe forem conferidas por lei complementar, auxiliará o Presidente, sempre que por ele convocado para missões especiais.
 
-Art. 80. Em caso de impedimento do Presidente e do Vice-Presidente, ou vacância dos respectivos cargos, serão sucessivamente chamados ao exercício da Presidência o Presidente da Câmara dos Deputados, o do Senado Federal e o do Supremo Tribunal Federal.
+⚖️  **Art. 80.** Em caso de impedimento do Presidente e do Vice-Presidente, ou vacância dos respectivos cargos, serão sucessivamente chamados ao exercício da Presidência o Presidente da Câmara dos Deputados, o do Senado Federal e o do Supremo Tribunal Federal.
 
-Art. 81. Vagando os cargos de Presidente e Vice-Presidente da República, far-se-á eleição noventa dias depois de aberta a última vaga.
+⚖️  **Art. 81.** Vagando os cargos de Presidente e Vice-Presidente da República, far-se-á eleição noventa dias depois de aberta a última vaga.
 
 § 1º - Ocorrendo a vacância nos últimos dois anos do período presidencial, a eleição para ambos os cargos será feita trinta dias depois da última vaga, pelo Congresso Nacional, na forma da lei.
 
 § 2º - Em qualquer dos casos, os eleitos deverão completar o período de seus antecessores.
 
-Art. 82. O mandato do Presidente da República é de 4 (quatro) anos e terá início em 5 de janeiro do ano seguinte ao de sua eleição.     (Redação dada pela Emenda Constitucional nº 111, de 2021)
+⚖️  **Art. 82.** O mandato do Presidente da República é de 4 (quatro) anos e terá início em 5 de janeiro do ano seguinte ao de sua eleição.     (Redação dada pela Emenda Constitucional nº 111, de 2021)
 
-Art. 83. O Presidente e o Vice-Presidente da República não poderão, sem licença do Congresso Nacional, ausentar-se do País por período superior a quinze dias, sob pena de perda do cargo.
+⚖️  **Art. 83.** O Presidente e o Vice-Presidente da República não poderão, sem licença do Congresso Nacional, ausentar-se do País por período superior a quinze dias, sob pena de perda do cargo.
 
 **Seção II - Das Atribuições do Presidente da República**
 
-Art. 84. Compete privativamente ao Presidente da República:
+⚖️  **Art. 84.** Compete privativamente ao Presidente da República:
 
 I - nomear e exonerar os Ministros de Estado;
 
@@ -602,9 +602,9 @@ V - vetar projetos de lei, total ou parcialmente;
 
 VI – dispor, mediante decreto, sobre: (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
-a) organização e funcionamento da administração federal, quando não implicar aumento de despesa nem criação ou extinção de órgãos públicos;               (Incluída pela Emenda Constitucional nº 32, de 2001)
+a) organização e funcionamento da administração federal, quando não implicar aumento de despesa nem criação ou extinção de órgãos públicos; (Incluída pela Emenda Constitucional nº 32, de 2001)
 
-b) extinção de funções ou cargos públicos, quando vagos;                   (Incluída pela Emenda Constitucional nº 32, de 2001)
+b) extinção de funções ou cargos públicos, quando vagos; (Incluída pela Emenda Constitucional nº 32, de 2001)
 
 VII - manter relações com Estados estrangeiros e acreditar seus representantes diplomáticos;
 
@@ -618,7 +618,7 @@ XI - remeter mensagem e plano de governo ao Congresso Nacional por ocasião da a
 
 XII - conceder indulto e comutar penas, com audiência, se necessário, dos órgãos instituídos em lei;
 
-XIII - exercer o comando supremo das Forças Armadas, nomear os Comandantes da Marinha, do Exército e da Aeronáutica, promover seus oficiais-generais e nomeá-los para os cargos que lhes são privativos;                (Redação dada pela Emenda Constitucional nº 23, de 1999)
+XIII - exercer o comando supremo das Forças Armadas, nomear os Comandantes da Marinha, do Exército e da Aeronáutica, promover seus oficiais-generais e nomeá-los para os cargos que lhes são privativos; (Redação dada pela Emenda Constitucional nº 23, de 1999)
 
 XIV - nomear, após aprovação pelo Senado Federal, os Ministros do Supremo Tribunal Federal e dos Tribunais Superiores, os Governadores de Territórios, o Procurador-Geral da República, o presidente e os diretores do banco central e outros servidores, quando determinado em lei;
 
@@ -648,13 +648,13 @@ XXVI - editar medidas provisórias com força de lei, nos termos do art. 62;
 
 XXVII - exercer outras atribuições previstas nesta Constituição.
 
-XXVIII - propor ao Congresso Nacional a decretação do estado de calamidade pública de âmbito nacional previsto nos arts. 167-B, 167-C, 167-D, 167-E, 167-F e 167-G desta Constituição.      (Incluído pela Emenda Constitucional nº 109, de 2021)
+XXVIII - propor ao Congresso Nacional a decretação do estado de calamidade pública de âmbito nacional previsto nos arts. 167-B, 167-C, 167-D, 167-E, 167-F e 167-G desta Constituição. (Incluído pela Emenda Constitucional nº 109, de 2021)
 
 Parágrafo único. O Presidente da República poderá delegar as atribuições mencionadas nos incisos VI, XII e XXV, primeira parte, aos Ministros de Estado, ao Procurador-Geral da República ou ao Advogado-Geral da União, que observarão os limites traçados nas respectivas delegações.
 
 **Seção III - Da Responsabilidade do Presidente da República**
 
-Art. 85. São crimes de responsabilidade os atos do Presidente da República que atentem contra a Constituição Federal e, especialmente, contra:
+⚖️  **Art. 85.** São crimes de responsabilidade os atos do Presidente da República que atentem contra a Constituição Federal e, especialmente, contra:
 
 I - a existência da União;
 
@@ -672,7 +672,7 @@ VII - o cumprimento das leis e das decisões judiciais.
 
 Parágrafo único. Esses crimes serão definidos em lei especial, que estabelecerá as normas de processo e julgamento.
 
-Art. 86. Admitida a acusação contra o Presidente da República, por dois terços da Câmara dos Deputados, será ele submetido a julgamento perante o Supremo Tribunal Federal, nas infrações penais comuns, ou perante o Senado Federal, nos crimes de responsabilidade.
+⚖️  **Art. 86.** Admitida a acusação contra o Presidente da República, por dois terços da Câmara dos Deputados, será ele submetido a julgamento perante o Supremo Tribunal Federal, nas infrações penais comuns, ou perante o Senado Federal, nos crimes de responsabilidade.
 
 § 1º O Presidente ficará suspenso de suas funções:
 
@@ -688,7 +688,7 @@ II - nos crimes de responsabilidade, após a instauração do processo pelo Sena
 
 **Seção IV - DOS MINISTROS DE ESTADO**
 
-Art. 87. Os Ministros de Estado serão escolhidos dentre brasileiros maiores de vinte e um anos e no exercício dos direitos políticos.
+⚖️  **Art. 87.** Os Ministros de Estado serão escolhidos dentre brasileiros maiores de vinte e um anos e no exercício dos direitos políticos.
 
 Parágrafo único. Compete ao Ministro de Estado, além de outras atribuições estabelecidas nesta Constituição e na lei:
 
@@ -700,13 +700,13 @@ III - apresentar ao Presidente da República relatório anual de sua gestão no 
 
 IV - praticar os atos pertinentes às atribuições que lhe forem outorgadas ou delegadas pelo Presidente da República.
 
-Art. 88. A lei disporá sobre a criação e extinção de Ministérios e órgãos da administração pública.                 (Redação dada pela Emenda Constitucional nº 32, de 2001)
+⚖️  **Art. 88.** A lei disporá sobre a criação e extinção de Ministérios e órgãos da administração pública. (Redação dada pela Emenda Constitucional nº 32, de 2001)
 
 **Seção V - DO CONSELHO DA REPÚBLICA E DO CONSELHO DE DEFESA NACIONAL**
 
 Subseção I - Do Conselho da República
 
-Art. 89. O Conselho da República é órgão superior de consulta do Presidente da República, e dele participam:
+⚖️  **Art. 89.** O Conselho da República é órgão superior de consulta do Presidente da República, e dele participam:
 
 I - o Vice-Presidente da República;
 
@@ -722,7 +722,7 @@ VI - o Ministro da Justiça;
 
 VII - seis cidadãos brasileiros natos, com mais de trinta e cinco anos de idade, sendo dois nomeados pelo Presidente da República, dois eleitos pelo Senado Federal e dois eleitos pela Câmara dos Deputados, todos com mandato de três anos, vedada a recondução.
 
-Art. 90. Compete ao Conselho da República pronunciar-se sobre:
+⚖️  **Art. 90.** Compete ao Conselho da República pronunciar-se sobre:
 
 I - intervenção federal, estado de defesa e estado de sítio;
 
@@ -734,7 +734,7 @@ II - as questões relevantes para a estabilidade das instituições democrática
 
 Subseção II - Do Conselho de Defesa Nacional
 
-Art. 91. O Conselho de Defesa Nacional é órgão de consulta do Presidente da República nos assuntos relacionados com a soberania nacional e a defesa do Estado democrático, e dele participam como membros natos:
+⚖️  **Art. 91.** O Conselho de Defesa Nacional é órgão de consulta do Presidente da República nos assuntos relacionados com a soberania nacional e a defesa do Estado democrático, e dele participam como membros natos:
 
 I - o Vice-Presidente da República;
 
@@ -744,13 +744,13 @@ III - o Presidente do Senado Federal;
 
 IV - o Ministro da Justiça;
 
-V - o Ministro de Estado da Defesa;            (Redação dada pela Emenda Constitucional nº 23, de 1999)
+V - o Ministro de Estado da Defesa; (Redação dada pela Emenda Constitucional nº 23, de 1999)
 
 VI - o Ministro das Relações Exteriores;
 
 VII - o Ministro do Planejamento.
 
-VIII - os Comandantes da Marinha, do Exército e da Aeronáutica.                (Incluído pela Emenda Constitucional nº 23, de 1999)
+VIII - os Comandantes da Marinha, do Exército e da Aeronáutica. (Incluído pela Emenda Constitucional nº 23, de 1999)
 
 § 1º Compete ao Conselho de Defesa Nacional:
 
@@ -762,21 +762,21 @@ III - propor os critérios e condições de utilização de áreas indispensáve
 
 IV - estudar, propor e acompanhar o desenvolvimento de iniciativas necessárias a garantir a independência nacional e a defesa do Estado democrático.
 
-§ 2º A lei regulará a organização e o funcionamento do Conselho de Defesa Nacional.    (Vide Lei nº 8.183, de 1991)
+§ 2º A lei regulará a organização e o funcionamento do Conselho de Defesa Nacional. (Vide Lei nº 8.183, de 1991)
 
 ## CAPÍTULO III - DO PODER JUDICIÁRIO
 
 Seção I - DISPOSIÇÕES GERAIS
 
-Art. 92. São órgãos do Poder Judiciário:
+⚖️  **Art. 92.** São órgãos do Poder Judiciário:
 
 I - o Supremo Tribunal Federal;
 
-I-A o Conselho Nacional de Justiça;             (Incluído pela Emenda Constitucional nº 45, de 2004)    
+I-A o Conselho Nacional de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)    
 
 II - o Superior Tribunal de Justiça;
 
-II-A - o Tribunal Superior do Trabalho;                 (Incluído pela Emenda Constitucional nº 92, de 2016)
+II-A - o Tribunal Superior do Trabalho; (Incluído pela Emenda Constitucional nº 92, de 2016)
 
 III - os Tribunais Regionais Federais e Juízes Federais;
 
@@ -788,18 +788,17 @@ VI - os Tribunais e Juízes Militares;
 
 VII - os Tribunais e Juízes dos Estados e do Distrito Federal e Territórios.
 
-§ 1º O Supremo Tribunal Federal, o Conselho Nacional de Justiça e os Tribunais Superiores têm sede na Capital Federal.             (Incluído pela Emenda Constitucional nº 45, de 2004)       (Vide ADIN 3392)
+§ 1º O Supremo Tribunal Federal, o Conselho Nacional de Justiça e os Tribunais Superiores têm sede na Capital Federal. (Incluído pela Emenda Constitucional nº 45, de 2004) (Vide ADIN 3392)
 
-§ 2º O Supremo Tribunal Federal e os Tribunais Superiores têm jurisdição em todo o território nacional.                 (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 2º O Supremo Tribunal Federal e os Tribunais Superiores têm jurisdição em todo o território nacional. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-
- Art. 95. Os juízes gozam das seguintes garantias:
+⚖️  **Art. 95.** Os juízes gozam das seguintes garantias:
 
 I - vitaliciedade, que, no primeiro grau, só será adquirida após dois anos de exercício, dependendo a perda do cargo, nesse período, de deliberação do tribunal a que o juiz estiver vinculado, e, nos demais casos, de sentença judicial transitada em julgado;
 
 II - inamovibilidade, salvo por motivo de interesse público, na forma do art. 93, VIII;
 
-III - irredutibilidade de subsídio, ressalvado o disposto nos arts. 37, X e XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I.               (Redação dada pela Emenda Constitucional nº 19, de 1998)
+III - irredutibilidade de subsídio, ressalvado o disposto nos arts. 37, X e XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I. (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 Parágrafo único. Aos juízes é vedado:
 
@@ -809,11 +808,11 @@ II - receber, a qualquer título ou pretexto, custas ou participação em proces
 
 III - dedicar-se à atividade político-partidária.
 
-IV receber, a qualquer título ou pretexto, auxílios ou contribuições de pessoas físicas, entidades públicas ou privadas, ressalvadas as exceções previstas em lei;             (Incluído pela Emenda Constitucional nº 45, de 2004) 
+IV receber, a qualquer título ou pretexto, auxílios ou contribuições de pessoas físicas, entidades públicas ou privadas, ressalvadas as exceções previstas em lei; (Incluído pela Emenda Constitucional nº 45, de 2004) 
 
-V exercer a advocacia no juízo ou tribunal do qual se afastou, antes de decorridos três anos do afastamento do cargo por aposentadoria ou exoneração.                (Incluído pela Emenda Constitucional nº 45, de 2004)  
+V exercer a advocacia no juízo ou tribunal do qual se afastou, antes de decorridos três anos do afastamento do cargo por aposentadoria ou exoneração.  (Incluído pela Emenda Constitucional nº 45, de 2004)  
 
-Art. 96. Compete privativamente:
+⚖️  **Art. 96.** Compete privativamente:
 
 I - aos tribunais:
 
@@ -833,7 +832,7 @@ II - ao Supremo Tribunal Federal, aos Tribunais Superiores e aos Tribunais de Ju
 
 a) a alteração do número de membros dos tribunais inferiores;
 
-b) a criação e a extinção de cargos e a remuneração dos seus serviços auxiliares e dos juízos que lhes forem vinculados, bem como a fixação do subsídio de seus membros e dos juízes, inclusive dos tribunais inferiores, onde houver;               (Redação dada pela Emenda Constitucional nº 41, 19.12.2003)
+b) a criação e a extinção de cargos e a remuneração dos seus serviços auxiliares e dos juízos que lhes forem vinculados, bem como a fixação do subsídio de seus membros e dos juízes, inclusive dos tribunais inferiores, onde houver;  (Redação dada pela Emenda Constitucional nº 41, 19.12.2003)
 
 c) a criação ou extinção dos tribunais inferiores;
 
@@ -841,21 +840,21 @@ d) a alteração da organização e da divisão judiciárias;
 
 III - aos Tribunais de Justiça julgar os juízes estaduais e do Distrito Federal e Territórios, bem como os membros do Ministério Público, nos crimes comuns e de responsabilidade, ressalvada a competência da Justiça Eleitoral.
 
-Parágrafo único. Nos Tribunais de Justiça compostos de mais de 170 (cento e setenta) desembargadores em efetivo exercício, a eleição para os cargos diretivos, de que trata a alínea "a" do inciso I docaputdeste artigo, será realizada entre os membros do tribunal pleno, por maioria absoluta e por voto direto e secreto, para um mandato de 2 (dois) anos, vedada mais de 1 (uma) recondução sucessiva.      (Incluído pela Emenda Constitucional nº 134, de 2024)
+Parágrafo único. Nos Tribunais de Justiça compostos de mais de 170 (cento e setenta) desembargadores em efetivo exercício, a eleição para os cargos diretivos, de que trata a alínea "a" do inciso I docaputdeste artigo, será realizada entre os membros do tribunal pleno, por maioria absoluta e por voto direto e secreto, para um mandato de 2 (dois) anos, vedada mais de 1 (uma) recondução sucessiva. (Incluído pela Emenda Constitucional nº 134, de 2024)
 
-Art. 97. Somente pelo voto da maioria absoluta de seus membros ou dos membros do respectivo órgão especial poderão os tribunais declarar a inconstitucionalidade de lei ou ato normativo do Poder Público.      (Vide Lei nº 13.105, de 2015) (Vigência)
+⚖️  **Art. 97.** Somente pelo voto da maioria absoluta de seus membros ou dos membros do respectivo órgão especial poderão os tribunais declarar a inconstitucionalidade de lei ou ato normativo do Poder Público. (Vide Lei nº 13.105, de 2015) (Vigência)
 
-Art. 98. A União, no Distrito Federal e nos Territórios, e os Estados criarão:
+⚖️  **Art. 98.** A União, no Distrito Federal e nos Territórios, e os Estados criarão:
 
 I - juizados especiais, providos por juízes togados, ou togados e leigos, competentes para a conciliação, o julgamento e a execução de causas cíveis de menor complexidade e infrações penais de menor potencial ofensivo, mediante os procedimentos oral e sumaríssimo, permitidos, nas hipóteses previstas em lei, a transação e o julgamento de recursos por turmas de juízes de primeiro grau;
 
 II - justiça de paz, remunerada, composta de cidadãos eleitos pelo voto direto, universal e secreto, com mandato de quatro anos e competência para, na forma da lei, celebrar casamentos, verificar, de ofício ou em face de impugnação apresentada, o processo de habilitação e exercer atribuições conciliatórias, sem caráter jurisdicional, além de outras previstas na legislação.
 
-§ 1º Lei federal disporá sobre a criação de juizados especiais no âmbito da Justiça Federal.              (Renumerado pela Emenda Constitucional nº 45, de 2004)        (Vide ADIN 3392)
+§ 1º Lei federal disporá sobre a criação de juizados especiais no âmbito da Justiça Federal. (Renumerado pela Emenda Constitucional nº 45, de 2004) (Vide ADIN 3392)
 
-§ 2º As custas e emolumentos serão destinados exclusivamente ao custeio dos serviços afetos às atividades específicas da Justiça.     (Incluído pela Emenda Constitucional nº 45, de 2004)  
+§ 2º As custas e emolumentos serão destinados exclusivamente ao custeio dos serviços afetos às atividades específicas da Justiça. (Incluído pela Emenda Constitucional nº 45, de 2004)  
 
-Art. 99. Ao Poder Judiciário é assegurada autonomia administrativa e financeira.
+⚖️  **Art. 99.** Ao Poder Judiciário é assegurada autonomia administrativa e financeira.
 
 § 1º Os tribunais elaborarão suas propostas orçamentárias dentro dos limites estipulados conjuntamente com os demais Poderes na lei de diretrizes orçamentárias.
 
@@ -865,29 +864,29 @@ I - no âmbito da União, aos Presidentes do Supremo Tribunal Federal e dos Trib
 
 II - no âmbito dos Estados e no do Distrito Federal e Territórios, aos Presidentes dos Tribunais de Justiça, com a aprovação dos respectivos tribunais.
 
-§ 3º Se os órgãos referidos no § 2º não encaminharem as respectivas propostas orçamentárias dentro do prazo estabelecido na lei de diretrizes orçamentárias, o Poder Executivo considerará, para fins de consolidação da proposta orçamentária anual, os valores aprovados na lei orçamentária vigente, ajustados de acordo com os limites estipulados na forma do § 1º deste artigo.                  (Incluído pela Emenda Constitucional nº 45, de 2004)  
+§ 3º Se os órgãos referidos no § 2º não encaminharem as respectivas propostas orçamentárias dentro do prazo estabelecido na lei de diretrizes orçamentárias, o Poder Executivo considerará, para fins de consolidação da proposta orçamentária anual, os valores aprovados na lei orçamentária vigente, ajustados de acordo com os limites estipulados na forma do § 1º deste artigo. (Incluído pela Emenda Constitucional nº 45, de 2004)  
 
-§ 4º Se as propostas orçamentárias de que trata este artigo forem encaminhadas em desacordo com os limites estipulados na forma do § 1º, o Poder Executivo procederá aos ajustes necessários para fins de consolidação da proposta orçamentária anual.         (Incluído pela Emenda Constitucional nº 45, de 2004) 
+§ 4º Se as propostas orçamentárias de que trata este artigo forem encaminhadas em desacordo com os limites estipulados na forma do § 1º, o Poder Executivo procederá aos ajustes necessários para fins de consolidação da proposta orçamentária anual. (Incluído pela Emenda Constitucional nº 45, de 2004) 
 
 § 5º Durante a execução orçamentária do exercício, não poderá haver a realização de despesas ou a assunção de obrigações que extrapolem os limites estabelecidos na lei de diretrizes orçamentárias, exceto se previamente autorizadas, mediante a abertura de créditos suplementares ou especiais. (Incluído pela Emenda Constitucional nº 45, de 2004)  
 
- Seção II
+Seção II
 
 DO SUPREMO TRIBUNAL FEDERAL
 
-Art. 101. O Supremo Tribunal Federal compõe-se de onze Ministros, escolhidos dentre cidadãos com mais de trinta e cinco e menos de setenta anos de idade, de notável saber jurídico e reputação ilibada.   (Redação dada pela Emenda Constitucional nº 122, de 2022)
+⚖️  **Art. 101.** O Supremo Tribunal Federal compõe-se de onze Ministros, escolhidos dentre cidadãos com mais de trinta e cinco e menos de setenta anos de idade, de notável saber jurídico e reputação ilibada. (Redação dada pela Emenda Constitucional nº 122, de 2022)
 
 Parágrafo único. Os Ministros do Supremo Tribunal Federal serão nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.
 
-Art. 102. Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:
+⚖️  **Art. 102.** Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:
 
 I - processar e julgar, originariamente:
 
-a) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal;             (Redação dada pela Emenda Constitucional nº 3, de 1993)
+a) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal; (Redação dada pela Emenda Constitucional nº 3, de 1993)
 
 b) nas infrações penais comuns, o Presidente da República, o Vice-Presidente, os membros do Congresso Nacional, seus próprios Ministros e o Procurador-Geral da República;
 
-c) nas infrações penais comuns e nos crimes de responsabilidade, os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica, ressalvado o disposto no art. 52, I, os membros dos Tribunais Superiores, os do Tribunal de Contas da União e os chefes de missão diplomática de caráter permanente;              (Redação dada pela Emenda Constitucional nº 23, de 1999)
+c) nas infrações penais comuns e nos crimes de responsabilidade, os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica, ressalvado o disposto no art. 52, I, os membros dos Tribunais Superiores, os do Tribunal de Contas da União e os chefes de missão diplomática de caráter permanente; (Redação dada pela Emenda Constitucional nº 23, de 1999)
 
 d) o habeas corpus, sendo paciente qualquer das pessoas referidas nas alíneas anteriores; o mandado de segurança e o habeas data contra atos do Presidente da República, das Mesas da Câmara dos Deputados e do Senado Federal, do Tribunal de Contas da União, do Procurador-Geral da República e do próprio Supremo Tribunal Federal;
 
@@ -897,9 +896,9 @@ f) as causas e os conflitos entre a União e os Estados, a União e o Distrito F
 
 g) a extradição solicitada por Estado estrangeiro;
 
-h)            (Revogado pela Emenda Constitucional nº 45, de 2004)
+h) (Revogado pela Emenda Constitucional nº 45, de 2004)
 
-i) o habeas corpus, quando o coator for Tribunal Superior ou quando o coator ou o paciente for autoridade ou funcionário cujos atos estejam sujeitos diretamente à jurisdição do Supremo Tribunal Federal, ou se trate de crime sujeito à mesma jurisdição em uma única instância;             (Redação dada pela Emenda Constitucional nº 22, de 1999)
+i) o habeas corpus, quando o coator for Tribunal Superior ou quando o coator ou o paciente for autoridade ou funcionário cujos atos estejam sujeitos diretamente à jurisdição do Supremo Tribunal Federal, ou se trate de crime sujeito à mesma jurisdição em uma única instância; (Redação dada pela Emenda Constitucional nº 22, de 1999)
 
 j) a revisão criminal e a ação rescisória de seus julgados;
 
@@ -915,7 +914,7 @@ p) o pedido de medida cautelar das ações diretas de inconstitucionalidade;
 
 q) o mandado de injunção, quando a elaboração da norma regulamentadora for atribuição do Presidente da República, do Congresso Nacional, da Câmara dos Deputados, do Senado Federal, das Mesas de uma dessas Casas Legislativas, do Tribunal de Contas da União, de um dos Tribunais Superiores, ou do próprio Supremo Tribunal Federal;
 
-r) as ações contra o Conselho Nacional de Justiça e contra o Conselho Nacional do Ministério Público;                (Incluída pela Emenda Constitucional nº 45, de 2004)  
+r) as ações contra o Conselho Nacional de Justiça e contra o Conselho Nacional do Ministério Público; (Incluída pela Emenda Constitucional nº 45, de 2004)  
 
 II - julgar, em recurso ordinário:
 
@@ -931,15 +930,15 @@ b) declarar a inconstitucionalidade de tratado ou lei federal;
 
 c) julgar válida lei ou ato de governo local contestado em face desta Constituição.
 
-d) julgar válida lei local contestada em face de lei federal.                 (Incluída pela Emenda Constitucional nº 45, de 2004)
+d) julgar válida lei local contestada em face de lei federal. (Incluída pela Emenda Constitucional nº 45, de 2004)
 
-§ 1.º A argüição de descumprimento de preceito fundamental, decorrente desta Constituição, será apreciada pelo Supremo Tribunal Federal, na forma da lei.              (Transformado do parágrafo único em § 1º pela Emenda Constitucional nº 3, de 17/03/93)
+§ 1.º A argüição de descumprimento de preceito fundamental, decorrente desta Constituição, será apreciada pelo Supremo Tribunal Federal, na forma da lei. (Transformado do parágrafo único em § 1º pela Emenda Constitucional nº 3, de 17/03/93)
 
-§ 2º As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade produzirão eficácia contra todos e efeito vinculante, relativamente aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal.                (Redação dada pela Emenda Constitucional nº 45, de 2004)      (Vide ADIN 3392)
+§ 2º As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade produzirão eficácia contra todos e efeito vinculante, relativamente aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal. (Redação dada pela Emenda Constitucional nº 45, de 2004) (Vide ADIN 3392)
 
-§ 3º No recurso extraordinário o recorrente deverá demonstrar a repercussão geral das questões constitucionais discutidas no caso, nos termos da lei, a fim de que o Tribunal examine a admissão do recurso, somente podendo recusá-lo pela manifestação de dois terços de seus membros.              (Incluída pela Emenda Constitucional nº 45, de 2004)   
+§ 3º No recurso extraordinário o recorrente deverá demonstrar a repercussão geral das questões constitucionais discutidas no caso, nos termos da lei, a fim de que o Tribunal examine a admissão do recurso, somente podendo recusá-lo pela manifestação de dois terços de seus membros. (Incluída pela Emenda Constitucional nº 45, de 2004)   
 
-Art. 103. Podem propor a ação direta de inconstitucionalidade e a ação declaratória de constitucionalidade:               (Redação dada pela Emenda Constitucional nº 45, de 2004)      (Vide Lei nº 13.105, de 2015) (Vigência)
+⚖️  **Art. 103.** Podem propor a ação direta de inconstitucionalidade e a ação declaratória de constitucionalidade: (Redação dada pela Emenda Constitucional nº 45, de 2004)      (Vide Lei nº 13.105, de 2015) (Vigência)
 
  I - o Presidente da República;
 
@@ -947,9 +946,9 @@ II - a Mesa do Senado Federal;
 
 III - a Mesa da Câmara dos Deputados;
 
-IV - a Mesa de Assembléia Legislativa ou da Câmara Legislativa do Distrito Federal;                 (Redação dada pela Emenda Constitucional nº 45, de 2004)    
+IV - a Mesa de Assembléia Legislativa ou da Câmara Legislativa do Distrito Federal; (Redação dada pela Emenda Constitucional nº 45, de 2004)    
 
-V - o Governador de Estado ou do Distrito Federal;             (Redação dada pela Emenda Constitucional nº 45, de 2004)
+V - o Governador de Estado ou do Distrito Federal; (Redação dada pela Emenda Constitucional nº 45, de 2004)
 
 VI - o Procurador-Geral da República;
 
@@ -965,99 +964,99 @@ IX - confederação sindical ou entidade de classe de âmbito nacional.
 
 § 3º Quando o Supremo Tribunal Federal apreciar a inconstitucionalidade, em tese, de norma legal ou ato normativo, citará, previamente, o Advogado-Geral da União, que defenderá o ato ou texto impugnado.
 
-§ 4.º               (Revogado pela Emenda Constitucional nº 45, de 2004)
+§ 4.º (Revogado pela Emenda Constitucional nº 45, de 2004)
 
-Art. 103-A. O Supremo Tribunal Federal poderá, de ofício ou por provocação, mediante decisão de dois terços dos seus membros, após reiteradas decisões sobre matéria constitucional, aprovar súmula que, a partir de sua publicação na imprensa oficial, terá efeito vinculante em relação aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal, bem como proceder à sua revisão ou cancelamento, na forma estabelecida em lei.              (Incluído pela Emenda Constitucional nº 45, de 2004)    (Vide Lei nº 11.417, de 2006).
+⚖️  **Art. 103-A.** O Supremo Tribunal Federal poderá, de ofício ou por provocação, mediante decisão de dois terços dos seus membros, após reiteradas decisões sobre matéria constitucional, aprovar súmula que, a partir de sua publicação na imprensa oficial, terá efeito vinculante em relação aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal, bem como proceder à sua revisão ou cancelamento, na forma estabelecida em lei. (Incluído pela Emenda Constitucional nº 45, de 2004)    (Vide Lei nº 11.417, de 2006).
 
-§ 1º A súmula terá por objetivo a validade, a interpretação e a eficácia de normas determinadas, acerca das quais haja controvérsia atual entre órgãos judiciários ou entre esses e a administração pública que acarrete grave insegurança jurídica e relevante multiplicação de processos sobre questão idêntica.                (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 1º A súmula terá por objetivo a validade, a interpretação e a eficácia de normas determinadas, acerca das quais haja controvérsia atual entre órgãos judiciários ou entre esses e a administração pública que acarrete grave insegurança jurídica e relevante multiplicação de processos sobre questão idêntica. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 2º Sem prejuízo do que vier a ser estabelecido em lei, a aprovação, revisão ou cancelamento de súmula poderá ser provocada por aqueles que podem propor a ação direta de inconstitucionalidade.               (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 2º Sem prejuízo do que vier a ser estabelecido em lei, a aprovação, revisão ou cancelamento de súmula poderá ser provocada por aqueles que podem propor a ação direta de inconstitucionalidade. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 3º Do ato administrativo ou decisão judicial que contrariar a súmula aplicável ou que indevidamente a aplicar, caberá reclamação ao Supremo Tribunal Federal que, julgando-a procedente, anulará o ato administrativo ou cassará a decisão judicial reclamada, e determinará que outra seja proferida com ou sem a aplicação da súmula, conforme o caso.                (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 3º Do ato administrativo ou decisão judicial que contrariar a súmula aplicável ou que indevidamente a aplicar, caberá reclamação ao Supremo Tribunal Federal que, julgando-a procedente, anulará o ato administrativo ou cassará a decisão judicial reclamada, e determinará que outra seja proferida com ou sem a aplicação da súmula, conforme o caso. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-Art. 103-B. O Conselho Nacional de Justiça compõe-se de 15 (quinze) membros com mandato de 2 (dois) anos, admitida 1 (uma) recondução, sendo:                (Redação dada pela Emenda Constitucional nº 61, de 2009)
+⚖️  **Art. 103-B.** O Conselho Nacional de Justiça compõe-se de 15 (quinze) membros com mandato de 2 (dois) anos, admitida 1 (uma) recondução, sendo: (Redação dada pela Emenda Constitucional nº 61, de 2009)
 
-I - o Presidente do Supremo Tribunal Federal;              (Redação dada pela Emenda Constitucional nº 61, de 2009)
+I - o Presidente do Supremo Tribunal Federal; (Redação dada pela Emenda Constitucional nº 61, de 2009)
 
-II um Ministro do Superior Tribunal de Justiça, indicado pelo respectivo tribunal;               (Incluído pela Emenda Constitucional nº 45, de 2004)
+II um Ministro do Superior Tribunal de Justiça, indicado pelo respectivo tribunal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-III um Ministro do Tribunal Superior do Trabalho, indicado pelo respectivo tribunal;              (Incluído pela Emenda Constitucional nº 45, de 2004)
+III um Ministro do Tribunal Superior do Trabalho, indicado pelo respectivo tribunal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-IV um desembargador de Tribunal de Justiça, indicado pelo Supremo Tribunal Federal;              (Incluído pela Emenda Constitucional nº 45, de 2004)
+IV um desembargador de Tribunal de Justiça, indicado pelo Supremo Tribunal Federal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-V um juiz estadual, indicado pelo Supremo Tribunal Federal;                 (Incluído pela Emenda Constitucional nº 45, de 2004)
+V um juiz estadual, indicado pelo Supremo Tribunal Federal; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VI um juiz de Tribunal Regional Federal, indicado pelo Superior Tribunal de Justiça;                (Incluído pela Emenda Constitucional nº 45, de 2004)
+VI um juiz de Tribunal Regional Federal, indicado pelo Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VII um juiz federal, indicado pelo Superior Tribunal de Justiça;               (Incluído pela Emenda Constitucional nº 45, de 2004)
+VII um juiz federal, indicado pelo Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VIII um juiz de Tribunal Regional do Trabalho, indicado pelo Tribunal Superior do Trabalho;              (Incluído pela Emenda Constitucional nº 45, de 2004)
+VIII um juiz de Tribunal Regional do Trabalho, indicado pelo Tribunal Superior do Trabalho; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-IX um juiz do trabalho, indicado pelo Tribunal Superior do Trabalho;               (Incluído pela Emenda Constitucional nº 45, de 2004)
+IX um juiz do trabalho, indicado pelo Tribunal Superior do Trabalho; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-X um membro do Ministério Público da União, indicado pelo Procurador-Geral da República;                 (Incluído pela Emenda Constitucional nº 45, de 2004)
+X um membro do Ministério Público da União, indicado pelo Procurador-Geral da República; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-XI um membro do Ministério Público estadual, escolhido pelo Procurador-Geral da República dentre os nomes indicados pelo órgão competente de cada instituição estadual;               (Incluído pela Emenda Constitucional nº 45, de 2004)
+XI um membro do Ministério Público estadual, escolhido pelo Procurador-Geral da República dentre os nomes indicados pelo órgão competente de cada instituição estadual; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-XII dois advogados, indicados pelo Conselho Federal da Ordem dos Advogados do Brasil;              (Incluído pela Emenda Constitucional nº 45, de 2004)
+XII dois advogados, indicados pelo Conselho Federal da Ordem dos Advogados do Brasil; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-XIII dois cidadãos, de notável saber jurídico e reputação ilibada, indicados um pela Câmara dos Deputados e outro pelo Senado Federal.               (Incluído pela Emenda Constitucional nº 45, de 2004)
+XIII dois cidadãos, de notável saber jurídico e reputação ilibada, indicados um pela Câmara dos Deputados e outro pelo Senado Federal.  (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 1º O Conselho será presidido pelo Presidente do Supremo Tribunal Federal e, nas suas ausências e impedimentos, pelo Vice-Presidente do Supremo Tribunal Federal.              (Redação dada pela Emenda Constitucional nº 61, de 2009)
+§ 1º O Conselho será presidido pelo Presidente do Supremo Tribunal Federal e, nas suas ausências e impedimentos, pelo Vice-Presidente do Supremo Tribunal Federal. (Redação dada pela Emenda Constitucional nº 61, de 2009)
 
-§ 2º Os demais membros do Conselho serão nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal.                 (Redação dada pela Emenda Constitucional nº 61, de 2009)
+§ 2º Os demais membros do Conselho serão nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal. (Redação dada pela Emenda Constitucional nº 61, de 2009)
 
 § 3º Não efetuadas, no prazo legal, as indicações previstas neste artigo, caberá a escolha ao Supremo Tribunal Federal.                  (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 4º Compete ao Conselho o controle da atuação administrativa e financeira do Poder Judiciário e do cumprimento dos deveres funcionais dos juízes, cabendo-lhe, além de outras atribuições que lhe forem conferidas pelo Estatuto da Magistratura:                (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 4º Compete ao Conselho o controle da atuação administrativa e financeira do Poder Judiciário e do cumprimento dos deveres funcionais dos juízes, cabendo-lhe, além de outras atribuições que lhe forem conferidas pelo Estatuto da Magistratura: (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-I - zelar pela autonomia do Poder Judiciário e pelo cumprimento do Estatuto da Magistratura, podendo expedir atos regulamentares, no âmbito de sua competência, ou recomendar providências;                (Incluído pela Emenda Constitucional nº 45, de 2004)
+I - zelar pela autonomia do Poder Judiciário e pelo cumprimento do Estatuto da Magistratura, podendo expedir atos regulamentares, no âmbito de sua competência, ou recomendar providências; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-II - zelar pela observância do art. 37 e apreciar, de ofício ou mediante provocação, a legalidade dos atos administrativos praticados por membros ou órgãos do Poder Judiciário, podendo desconstituí-los, revê-los ou fixar prazo para que se adotem as providências necessárias ao exato cumprimento da lei, sem prejuízo da competência do Tribunal de Contas da União;               (Incluído pela Emenda Constitucional nº 45, de 2004)
+II - zelar pela observância do art. 37 e apreciar, de ofício ou mediante provocação, a legalidade dos atos administrativos praticados por membros ou órgãos do Poder Judiciário, podendo desconstituí-los, revê-los ou fixar prazo para que se adotem as providências necessárias ao exato cumprimento da lei, sem prejuízo da competência do Tribunal de Contas da União; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-III - receber e conhecer das reclamações contra membros ou órgãos do Poder Judiciário, inclusive contra seus serviços auxiliares, serventias e órgãos prestadores de serviços notariais e de registro que atuem por delegação do poder público ou oficializados, sem prejuízo da competência disciplinar e correicional dos tribunais, podendo avocar processos disciplinares em curso, determinar a remoção ou a disponibilidade e aplicar outras sanções administrativas, assegurada ampla defesa;     (Redação dada pela Emenda Constitucional nº 103, de 2019)
+III - receber e conhecer das reclamações contra membros ou órgãos do Poder Judiciário, inclusive contra seus serviços auxiliares, serventias e órgãos prestadores de serviços notariais e de registro que atuem por delegação do poder público ou oficializados, sem prejuízo da competência disciplinar e correicional dos tribunais, podendo avocar processos disciplinares em curso, determinar a remoção ou a disponibilidade e aplicar outras sanções administrativas, assegurada ampla defesa; (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
-IV representar ao Ministério Público, no caso de crime contra a administração pública ou de abuso de autoridade;                 (Incluído pela Emenda Constitucional nº 45, de 2004)
+IV representar ao Ministério Público, no caso de crime contra a administração pública ou de abuso de autoridade; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 V rever, de ofício ou mediante provocação, os processos disciplinares de juízes e membros de tribunais julgados há menos de um ano;               (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VI elaborar semestralmente relatório estatístico sobre processos e sentenças prolatadas, por unidade da Federação, nos diferentes órgãos do Poder Judiciário;                (Incluído pela Emenda Constitucional nº 45, de 2004)
+VI elaborar semestralmente relatório estatístico sobre processos e sentenças prolatadas, por unidade da Federação, nos diferentes órgãos do Poder Judiciário; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-VII elaborar relatório anual, propondo as providências que julgar necessárias, sobre a situação do Poder Judiciário no País e as atividades do Conselho, o qual deve integrar mensagem do Presidente do Supremo Tribunal Federal a ser remetida ao Congresso Nacional, por ocasião da abertura da sessão legislativa.                  (Incluído pela Emenda Constitucional nº 45, de 2004)
+VII elaborar relatório anual, propondo as providências que julgar necessárias, sobre a situação do Poder Judiciário no País e as atividades do Conselho, o qual deve integrar mensagem do Presidente do Supremo Tribunal Federal a ser remetida ao Congresso Nacional, por ocasião da abertura da sessão legislativa. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 5º O Ministro do Superior Tribunal de Justiça exercerá a função de Ministro-Corregedor e ficará excluído da distribuição de processos no Tribunal, competindo-lhe, além das atribuições que lhe forem conferidas pelo Estatuto da Magistratura, as seguintes:              (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 5º O Ministro do Superior Tribunal de Justiça exercerá a função de Ministro-Corregedor e ficará excluído da distribuição de processos no Tribunal, competindo-lhe, além das atribuições que lhe forem conferidas pelo Estatuto da Magistratura, as seguintes: (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-I receber as reclamações e denúncias, de qualquer interessado, relativas aos magistrados e aos serviços judiciários;                  (Incluído pela Emenda Constitucional nº 45, de 2004)
+I receber as reclamações e denúncias, de qualquer interessado, relativas aos magistrados e aos serviços judiciários; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-II exercer funções executivas do Conselho, de inspeção e de correição geral;                   (Incluído pela Emenda Constitucional nº 45, de 2004)
+II exercer funções executivas do Conselho, de inspeção e de correição geral; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-III requisitar e designar magistrados, delegando-lhes atribuições, e requisitar servidores de juízos ou tribunais, inclusive nos Estados, Distrito Federal e Territórios.                  (Incluído pela Emenda Constitucional nº 45, de 2004)
+III requisitar e designar magistrados, delegando-lhes atribuições, e requisitar servidores de juízos ou tribunais, inclusive nos Estados, Distrito Federal e Territórios. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 6º Junto ao Conselho oficiarão o Procurador-Geral da República e o Presidente do Conselho Federal da Ordem dos Advogados do Brasil.                (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 6º Junto ao Conselho oficiarão o Procurador-Geral da República e o Presidente do Conselho Federal da Ordem dos Advogados do Brasil. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 7º A União, inclusive no Distrito Federal e nos Territórios, criará ouvidorias de justiça, competentes para receber reclamações e denúncias de qualquer interessado contra membros ou órgãos do Poder Judiciário, ou contra seus serviços auxiliares, representando diretamente ao Conselho Nacional de Justiça.                (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 7º A União, inclusive no Distrito Federal e nos Territórios, criará ouvidorias de justiça, competentes para receber reclamações e denúncias de qualquer interessado contra membros ou órgãos do Poder Judiciário, ou contra seus serviços auxiliares, representando diretamente ao Conselho Nacional de Justiça. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 Seção III
 
 DO SUPERIOR TRIBUNAL DE JUSTIÇA
 
-Art. 104. O Superior Tribunal de Justiça compõe-se de, no mínimo, trinta e três Ministros.
+⚖️  **Art. 104.** O Superior Tribunal de Justiça compõe-se de, no mínimo, trinta e três Ministros.
 
-Parágrafo único. Os Ministros do Superior Tribunal de Justiça serão nomeados pelo Presidente da República, dentre brasileiros com mais de trinta e cinco e menos de setenta anos de idade, de notável saber jurídico e reputação ilibada, depois de aprovada a escolha pela maioria absoluta do Senado Federal, sendo:       (Redação dada pela Emenda Constitucional nº 122, de 2022)
+Parágrafo único. Os Ministros do Superior Tribunal de Justiça serão nomeados pelo Presidente da República, dentre brasileiros com mais de trinta e cinco e menos de setenta anos de idade, de notável saber jurídico e reputação ilibada, depois de aprovada a escolha pela maioria absoluta do Senado Federal, sendo: (Redação dada pela Emenda Constitucional nº 122, de 2022)
 
 I - um terço dentre juízes dos Tribunais Regionais Federais e um terço dentre desembargadores dos Tribunais de Justiça, indicados em lista tríplice elaborada pelo próprio Tribunal;
 
 II - um terço, em partes iguais, dentre advogados e membros do Ministério Público Federal, Estadual, do Distrito Federal e Territórios, alternadamente, indicados na forma do art. 94.
 
-Art. 105. Compete ao Superior Tribunal de Justiça:
+⚖️  **Art. 105.** Compete ao Superior Tribunal de Justiça:
 
 I - processar e julgar, originariamente:
 
 a) nos crimes comuns, os Governadores dos Estados e do Distrito Federal, e, nestes e nos de responsabilidade, os desembargadores dos Tribunais de Justiça dos Estados e do Distrito Federal, os membros dos Tribunais de Contas dos Estados e do Distrito Federal, os dos Tribunais Regionais Federais, dos Tribunais Regionais Eleitorais e do Trabalho, os membros dos Conselhos ou Tribunais de Contas dos Municípios e os do Ministério Público da União que oficiem perante tribunais;
 
-b) os mandados de segurança e os habeas data contra ato de Ministro de Estado, dos Comandantes da Marinha, do Exército e da Aeronáutica ou do próprio Tribunal;                (Redação dada pela Emenda Constitucional nº 23, de 1999)
+b) os mandados de segurança e os habeas data contra ato de Ministro de Estado, dos Comandantes da Marinha, do Exército e da Aeronáutica ou do próprio Tribunal; (Redação dada pela Emenda Constitucional nº 23, de 1999)
 
-c) os habeas corpus, quando o coator ou paciente for qualquer das pessoas mencionadas na alínea a, ou quando o coator for tribunal sujeito à sua jurisdição, Ministro de Estado ou Comandante da Marinha, do Exército ou da Aeronáutica, ressalvada a competência da Justiça Eleitoral;                (Redação dada pela Emenda Constitucional nº 23, de 1999)
+c) os habeas corpus, quando o coator ou paciente for qualquer das pessoas mencionadas na alínea a, ou quando o coator for tribunal sujeito à sua jurisdição, Ministro de Estado ou Comandante da Marinha, do Exército ou da Aeronáutica, ressalvada a competência da Justiça Eleitoral; (Redação dada pela Emenda Constitucional nº 23, de 1999)
 
 d) os conflitos de competência entre quaisquer tribunais, ressalvado o disposto no art. 102, I, "o", bem como entre tribunal e juízes a ele não vinculados e entre juízes vinculados a tribunais diversos;
 
@@ -1069,9 +1068,9 @@ g) os conflitos de atribuições entre autoridades administrativas e judiciária
 
 h) o mandado de injunção, quando a elaboração da norma regulamentadora for atribuição de órgão, entidade ou autoridade federal, da administração direta ou indireta, excetuados os casos de competência do Supremo Tribunal Federal e dos órgãos da Justiça Militar, da Justiça Eleitoral, da Justiça do Trabalho e da Justiça Federal;
 
-i) a homologação de sentenças estrangeiras e a concessão de exequatur às cartas rogatórias;                (Incluída pela Emenda Constitucional nº 45, de 2004)  
+i) a homologação de sentenças estrangeiras e a concessão de exequatur às cartas rogatórias; (Incluída pela Emenda Constitucional nº 45, de 2004)  
 
-j) os conflitos entre entes federativos, ou entre estes e o Comitê Gestor do Imposto sobre Bens e Serviços, relacionados aos tributos previstos nos arts. 156-A e 195, V;       (Incluído pela Emenda Constitucional nº 132, de 2023)
+j) os conflitos entre entes federativos, ou entre estes e o Comitê Gestor do Imposto sobre Bens e Serviços, relacionados aos tributos previstos nos arts. 156-A e 195, V; (Incluído pela Emenda Constitucional nº 132, de 2023)
 
 II - julgar, em recurso ordinário:
 
@@ -1085,43 +1084,43 @@ III - julgar, em recurso especial, as causas decididas, em única ou última ins
 
 a) contrariar tratado ou lei federal, ou negar-lhes vigência;
 
-b) julgar válido ato de governo local contestado em face de lei federal;              (Redação dada pela Emenda Constitucional nº 45, de 2004)  
+b) julgar válido ato de governo local contestado em face de lei federal; (Redação dada pela Emenda Constitucional nº 45, de 2004)  
 
 c) der a lei federal interpretação divergente da que lhe haja atribuído outro tribunal.
 
 § 1º  Funcionarão junto ao Superior Tribunal de Justiça:
 
-I - a Escola Nacional de Formação e Aperfeiçoamento de Magistrados, cabendo-lhe, dentre outras funções, regulamentar os cursos oficiais para o ingresso e promoção na carreira;         (Incluído pela Emenda Constitucional nº 45, de 2004)
+I - a Escola Nacional de Formação e Aperfeiçoamento de Magistrados, cabendo-lhe, dentre outras funções, regulamentar os cursos oficiais para o ingresso e promoção na carreira; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 II - o Conselho da Justiça Federal, cabendo-lhe exercer, na forma da lei, a supervisão administrativa e orçamentária da Justiça Federal de primeiro e segundo graus, como órgão central do sistema e com poderes correicionais, cujas decisões terão caráter vinculante.         (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 2º No recurso especial, o recorrente deve demonstrar a relevância das questões de direito federal infraconstitucional discutidas no caso, nos termos da lei, a fim de que a admissão do recurso seja examinada pelo Tribunal, o qual somente pode dele não conhecer com base nesse motivo pela manifestação de 2/3 (dois terços) dos membros do órgão competente para o julgamento.   (Incluído pela Emenda Constitucional nº 125, de 2022)
+§ 2º No recurso especial, o recorrente deve demonstrar a relevância das questões de direito federal infraconstitucional discutidas no caso, nos termos da lei, a fim de que a admissão do recurso seja examinada pelo Tribunal, o qual somente pode dele não conhecer com base nesse motivo pela manifestação de 2/3 (dois terços) dos membros do órgão competente para o julgamento. (Incluído pela Emenda Constitucional nº 125, de 2022)
 
-§ 3º Haverá a relevância de que trata o § 2º deste artigo nos seguintes casos:   (Incluído pela Emenda Constitucional nº 125, de 2022)
+§ 3º Haverá a relevância de que trata o § 2º deste artigo nos seguintes casos: (Incluído pela Emenda Constitucional nº 125, de 2022)
 
 I - ações penais;   (Incluído pela Emenda Constitucional nº 125, de 2022)
 
-II - ações de improbidade administrativa;   (Incluído pela Emenda Constitucional nº 125, de 2022)
+II - ações de improbidade administrativa; (Incluído pela Emenda Constitucional nº 125, de 2022)
 
-III - ações cujo valor da causa ultrapasse 500 (quinhentos) salários mínimos;   (Incluído pela Emenda Constitucional nº 125, de 2022)
+III - ações cujo valor da causa ultrapasse 500 (quinhentos) salários mínimos; (Incluído pela Emenda Constitucional nº 125, de 2022)
 
-IV - ações que possam gerar inelegibilidade;   (Incluído pela Emenda Constitucional nº 125, de 2022)
+IV - ações que possam gerar inelegibilidade; (Incluído pela Emenda Constitucional nº 125, de 2022)
 
-V - hipóteses em que o acórdão recorrido contrariar jurisprudência dominante do Superior Tribunal de Justiça;   (Incluído pela Emenda Constitucional nº 125, de 2022)
+V - hipóteses em que o acórdão recorrido contrariar jurisprudência dominante do Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 125, de 2022)
 
-VI - outras hipóteses previstas em lei.   (Incluído pela Emenda Constitucional nº 125, de 2022)
+VI - outras hipóteses previstas em lei. (Incluído pela Emenda Constitucional nº 125, de 2022)
 
 Seção IV
 
 DOS TRIBUNAIS REGIONAIS FEDERAIS E DOS JUÍZES FEDERAIS
 
-Art. 106. São órgãos da Justiça Federal:
+⚖️  **Art. 106.** São órgãos da Justiça Federal:
 
 I - os Tribunais Regionais Federais;
 
 II - os Juízes Federais.
 
-Art. 107. Os Tribunais Regionais Federais compõem-se de, no mínimo, sete juízes, recrutados, quando possível, na respectiva região e nomeados pelo Presidente da República dentre brasileiros com mais de trinta e menos de setenta anos de idade, sendo:       (Redação dada pela Emenda Constitucional nº 122, de 2022)
+⚖️  **Art. 107.** Os Tribunais Regionais Federais compõem-se de, no mínimo, sete juízes, recrutados, quando possível, na respectiva região e nomeados pelo Presidente da República dentre brasileiros com mais de trinta e menos de setenta anos de idade, sendo: (Redação dada pela Emenda Constitucional nº 122, de 2022)
 
 I - um quinto dentre advogados com mais de dez anos de efetiva atividade profissional e membros do Ministério Público Federal com mais de dez anos de carreira;
 
@@ -1129,11 +1128,11 @@ II - os demais, mediante promoção de juízes federais com mais de cinco anos d
 
 § 1º A lei disciplinará a remoção ou a permuta de juízes dos Tribunais Regionais Federais e determinará sua jurisdição e sede.                  (Renumerado do parágrafo único, pela Emenda Constitucional nº 45, de 2004)     
 
-§ 2º Os Tribunais Regionais Federais instalarão a justiça itinerante, com a realização de audiências e demais funções da atividade jurisdicional, nos limites territoriais da respectiva jurisdição, servindo-se de equipamentos públicos e comunitários.                  (Incluído pela Emenda Constitucional nº 45, de 2004)    
+§ 2º Os Tribunais Regionais Federais instalarão a justiça itinerante, com a realização de audiências e demais funções da atividade jurisdicional, nos limites territoriais da respectiva jurisdição, servindo-se de equipamentos públicos e comunitários. (Incluído pela Emenda Constitucional nº 45, de 2004)    
 
-§ 3º Os Tribunais Regionais Federais poderão funcionar descentralizadamente, constituindo Câmaras regionais, a fim de assegurar o pleno acesso do jurisdicionado à justiça em todas as fases do processo.              (Incluído pela Emenda Constitucional nº 45, de 2004)    )
+§ 3º Os Tribunais Regionais Federais poderão funcionar descentralizadamente, constituindo Câmaras regionais, a fim de assegurar o pleno acesso do jurisdicionado à justiça em todas as fases do processo. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-Art. 108. Compete aos Tribunais Regionais Federais:
+⚖️  **Art. 108.** Compete aos Tribunais Regionais Federais:
 
 I - processar e julgar, originariamente:
 
@@ -1149,7 +1148,7 @@ e) os conflitos de competência entre juízes federais vinculados ao Tribunal;
 
 II - julgar, em grau de recurso, as causas decididas pelos juízes federais e pelos juízes estaduais no exercício da competência federal da área de sua jurisdição.
 
-Art. 109. Aos juízes federais compete processar e julgar:
+⚖️  **Art. 109.** Aos juízes federais compete processar e julgar:
 
 I - as causas em que a União, entidade autárquica ou empresa pública federal forem interessadas na condição de autoras, rés, assistentes ou oponentes, exceto as de falência, as de acidentes de trabalho e as sujeitas à Justiça Eleitoral e à Justiça do Trabalho;
 
@@ -1179,22 +1178,22 @@ XI - a disputa sobre direitos indígenas.
 
 § 2º As causas intentadas contra a União poderão ser aforadas na seção judiciária em que for domiciliado o autor, naquela onde houver ocorrido o ato ou fato que deu origem à demanda ou onde esteja situada a coisa, ou, ainda, no Distrito Federal.
 
-§ 3º Lei poderá autorizar que as causas de competência da Justiça Federal em que forem parte instituição de previdência social e segurado possam ser processadas e julgadas na justiça estadual quando a comarca do domicílio do segurado não for sede de vara federal.             (Redação dada pela Emenda Constitucional nº 103, de 2019)
+§ 3º Lei poderá autorizar que as causas de competência da Justiça Federal em que forem parte instituição de previdência social e segurado possam ser processadas e julgadas na justiça estadual quando a comarca do domicílio do segurado não for sede de vara federal. (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
 § 4º Na hipótese do parágrafo anterior, o recurso cabível será sempre para o Tribunal Regional Federal na área de jurisdição do juiz de primeiro grau.
 
 § 5º Nas hipóteses de grave violação de direitos humanos, o Procurador-Geral da República, com a finalidade de assegurar o cumprimento de obrigações decorrentes de tratados internacionais de direitos humanos dos quais o Brasil seja parte, poderá suscitar, perante o Superior Tribunal de Justiça, em qualquer fase do inquérito ou processo, incidente de deslocamento de competência para a Justiça Federal.                  (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-Art. 110. Cada Estado, bem como o Distrito Federal, constituirá uma seção judiciária que terá por sede a respectiva Capital, e varas localizadas segundo o estabelecido em lei.
+⚖️  **Art. 110.** Cada Estado, bem como o Distrito Federal, constituirá uma seção judiciária que terá por sede a respectiva Capital, e varas localizadas segundo o estabelecido em lei.
 
 Parágrafo único. Nos Territórios Federais, a jurisdição e as atribuições cometidas aos juízes federais caberão aos juízes da justiça local, na forma da lei.
 
 
- Seção VI
+Seção VI
 
 DOS TRIBUNAIS E JUÍZES ELEITORAIS
 
-Art. 118. São órgãos da Justiça Eleitoral:
+⚖️  **Art. 118.** São órgãos da Justiça Eleitoral:
 
 I - o Tribunal Superior Eleitoral;
 
@@ -1204,7 +1203,7 @@ III - os Juízes Eleitorais;
 
 IV - as Juntas Eleitorais.
 
-Art. 119. O Tribunal Superior Eleitoral compor-se-á, no mínimo, de sete membros, escolhidos:
+⚖️  **Art. 119.** O Tribunal Superior Eleitoral compor-se-á, no mínimo, de sete membros, escolhidos:
 
 I - mediante eleição, pelo voto secreto:
 
@@ -1216,7 +1215,7 @@ II - por nomeação do Presidente da República, dois juízes dentre seis advoga
 
 Parágrafo único. O Tribunal Superior Eleitoral elegerá seu Presidente e o Vice-Presidente dentre os Ministros do Supremo Tribunal Federal, e o Corregedor Eleitoral dentre os Ministros do Superior Tribunal de Justiça.
 
-Art. 120. Haverá um Tribunal Regional Eleitoral na Capital de cada Estado e no Distrito Federal.
+⚖️  **Art. 120.** Haverá um Tribunal Regional Eleitoral na Capital de cada Estado e no Distrito Federal.
 
 § 1º - Os Tribunais Regionais Eleitorais compor-se-ão:
 
@@ -1232,7 +1231,7 @@ III - por nomeação, pelo Presidente da República, de dois juízes dentre seis
 
 § 2º - O Tribunal Regional Eleitoral elegerá seu Presidente e o Vice-Presidente- dentre os desembargadores.
 
-Art. 121. Lei complementar disporá sobre a organização e competência dos tribunais, dos juízes de direito e das juntas eleitorais.
+⚖️  **Art. 121.** Lei complementar disporá sobre a organização e competência dos tribunais, dos juízes de direito e das juntas eleitorais.
 
 § 1º Os membros dos tribunais, os juízes de direito e os integrantes das juntas eleitorais, no exercício de suas funções, e no que lhes for aplicável, gozarão de plenas garantias e serão inamovíveis.
 
@@ -1256,21 +1255,21 @@ Seção VII
 
 DOS TRIBUNAIS E JUÍZES MILITARES
 
-Art. 122. São órgãos da Justiça Militar:
+⚖️  **Art. 122.** São órgãos da Justiça Militar:
 
 I - o Superior Tribunal Militar;
 
 II - os Tribunais e Juízes Militares instituídos por lei.
 
-Art. 123. O Superior Tribunal Militar compor-se-á de quinze Ministros vitalícios, nomeados pelo Presidente da República, depois de aprovada a indicação pelo Senado Federal, sendo três dentre oficiais-generais da Marinha, quatro dentre oficiais-generais do Exército, três dentre oficiais-generais da Aeronáutica, todos da ativa e do posto mais elevado da carreira, e cinco dentre civis.
+⚖️  **Art. 123.** O Superior Tribunal Militar compor-se-á de quinze Ministros vitalícios, nomeados pelo Presidente da República, depois de aprovada a indicação pelo Senado Federal, sendo três dentre oficiais-generais da Marinha, quatro dentre oficiais-generais do Exército, três dentre oficiais-generais da Aeronáutica, todos da ativa e do posto mais elevado da carreira, e cinco dentre civis.
 
-Parágrafo único. Os Ministros civis serão escolhidos pelo Presidente da República dentre brasileiros com mais de trinta e cinco e menos de setenta anos de idade, sendo:       (Redação dada pela Emenda Constitucional nº 122, de 2022)
+Parágrafo único. Os Ministros civis serão escolhidos pelo Presidente da República dentre brasileiros com mais de trinta e cinco e menos de setenta anos de idade, sendo: (Redação dada pela Emenda Constitucional nº 122, de 2022)
 
 I - três dentre advogados de notório saber jurídico e conduta ilibada, com mais de dez anos de efetiva atividade profissional;
 
 II - dois, por escolha paritária, dentre juízes auditores e membros do Ministério Público da Justiça Militar.
 
-Art. 124. à Justiça Militar compete processar e julgar os crimes militares definidos em lei.
+⚖️  **Art. 124.** à Justiça Militar compete processar e julgar os crimes militares definidos em lei.
 
 Parágrafo único. A lei disporá sobre a organização, o funcionamento e a competência da Justiça Militar.
 
@@ -1284,21 +1283,21 @@ Seção I
 
 DO MINISTÉRIO PÚBLICO
 
-Art. 127. O Ministério Público é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis.
+⚖️  **Art. 127.** O Ministério Público é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis.
 
 § 1º São princípios institucionais do Ministério Público a unidade, a indivisibilidade e a independência funcional.
 
-§ 2º Ao Ministério Público é assegurada autonomia funcional e administrativa, podendo, observado o disposto no art. 169, propor ao Poder Legislativo a criação e extinção de seus cargos e serviços auxiliares, provendo-os por concurso público de provas ou de provas e títulos, a política remuneratória e os planos de carreira; a lei disporá sobre sua organização e funcionamento.         (Redação dada pela Emenda Constitucional nº 19, de 1998)
+§ 2º Ao Ministério Público é assegurada autonomia funcional e administrativa, podendo, observado o disposto no art. 169, propor ao Poder Legislativo a criação e extinção de seus cargos e serviços auxiliares, provendo-os por concurso público de provas ou de provas e títulos, a política remuneratória e os planos de carreira; a lei disporá sobre sua organização e funcionamento. (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 § 3º O Ministério Público elaborará sua proposta orçamentária dentro dos limites estabelecidos na lei de diretrizes orçamentárias.
 
-§ 4º Se o Ministério Público não encaminhar a respectiva proposta orçamentária dentro do prazo estabelecido na lei de diretrizes orçamentárias, o Poder Executivo considerará, para fins de consolidação da proposta orçamentária anual, os valores aprovados na lei orçamentária vigente, ajustados de acordo com os limites estipulados na forma do § 3º.         (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 4º Se o Ministério Público não encaminhar a respectiva proposta orçamentária dentro do prazo estabelecido na lei de diretrizes orçamentárias, o Poder Executivo considerará, para fins de consolidação da proposta orçamentária anual, os valores aprovados na lei orçamentária vigente, ajustados de acordo com os limites estipulados na forma do § 3º. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 5º Se a proposta orçamentária de que trata este artigo for encaminhada em desacordo com os limites estipulados na forma do § 3º, o Poder Executivo procederá aos ajustes necessários para fins de consolidação da proposta orçamentária anual.         (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 5º Se a proposta orçamentária de que trata este artigo for encaminhada em desacordo com os limites estipulados na forma do § 3º, o Poder Executivo procederá aos ajustes necessários para fins de consolidação da proposta orçamentária anual. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 6º Durante a execução orçamentária do exercício, não poderá haver a realização de despesas ou a assunção de obrigações que extrapolem os limites estabelecidos na lei de diretrizes orçamentárias, exceto se previamente autorizadas, mediante a abertura de créditos suplementares ou especiais.         (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 6º Durante a execução orçamentária do exercício, não poderá haver a realização de despesas ou a assunção de obrigações que extrapolem os limites estabelecidos na lei de diretrizes orçamentárias, exceto se previamente autorizadas, mediante a abertura de créditos suplementares ou especiais. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-Art. 128. O Ministério Público abrange:
+⚖️  **Art. 128.** O Ministério Público abrange:
 
 I - o Ministério Público da União, que compreende:
 
@@ -1326,9 +1325,9 @@ I - as seguintes garantias:
 
 a) vitaliciedade, após dois anos de exercício, não podendo perder o cargo senão por sentença judicial transitada em julgado;
 
-b) inamovibilidade, salvo por motivo de interesse público, mediante decisão do órgão colegiado competente do Ministério Público, pelo voto da maioria absoluta de seus membros, assegurada ampla defesa;         (Redação dada pela Emenda Constitucional nº 45, de 2004)
+b) inamovibilidade, salvo por motivo de interesse público, mediante decisão do órgão colegiado competente do Ministério Público, pelo voto da maioria absoluta de seus membros, assegurada ampla defesa; (Redação dada pela Emenda Constitucional nº 45, de 2004)
 
-c) irredutibilidade de subsídio, fixado na forma do art. 39, § 4º, e ressalvado o disposto nos arts. 37, X e XI, 150, II, 153, III, 153, § 2º, I;         (Redação dada pela Emenda Constitucional nº 19, de 1998)
+c) irredutibilidade de subsídio, fixado na forma do art. 39, § 4º, e ressalvado o disposto nos arts. 37, X e XI, 150, II, 153, III, 153, § 2º, I; (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
 II - as seguintes vedações:
 
@@ -1340,13 +1339,13 @@ c) participar de sociedade comercial, na forma da lei;
 
 d) exercer, ainda que em disponibilidade, qualquer outra função pública, salvo uma de magistério;
 
-e) exercer atividade político-partidária;         (Redação dada pela Emenda Constitucional nº 45, de 2004)
+e) exercer atividade político-partidária; (Redação dada pela Emenda Constitucional nº 45, de 2004)
 
-f) receber, a qualquer título ou pretexto, auxílios ou contribuições de pessoas físicas, entidades públicas ou privadas, ressalvadas as exceções previstas em lei.         (Incluída pela Emenda Constitucional nº 45, de 2004)
+f) receber, a qualquer título ou pretexto, auxílios ou contribuições de pessoas físicas, entidades públicas ou privadas, ressalvadas as exceções previstas em lei. (Incluída pela Emenda Constitucional nº 45, de 2004)
 
-§ 6º Aplica-se aos membros do Ministério Público o disposto no art. 95, parágrafo único, V.         (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 6º Aplica-se aos membros do Ministério Público o disposto no art. 95, parágrafo único, V. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-Art. 129. São funções institucionais do Ministério Público:
+⚖️  **Art. 129.** São funções institucionais do Ministério Público:
 
 I - promover, privativamente, a ação penal pública, na forma da lei;
 
@@ -1368,55 +1367,55 @@ IX - exercer outras funções que lhe forem conferidas, desde que compatíveis c
 
 § 1º A legitimação do Ministério Público para as ações civis previstas neste artigo não impede a de terceiros, nas mesmas hipóteses, segundo o disposto nesta Constituição e na lei.
 
-§ 2º As funções do Ministério Público só podem ser exercidas por integrantes da carreira, que deverão residir na comarca da respectiva lotação, salvo autorização do chefe da instituição.         (Redação dada pela Emenda Constitucional nº 45, de 2004)
+§ 2º As funções do Ministério Público só podem ser exercidas por integrantes da carreira, que deverão residir na comarca da respectiva lotação, salvo autorização do chefe da instituição. (Redação dada pela Emenda Constitucional nº 45, de 2004)
 
-§ 3º O ingresso na carreira do Ministério Público far-se-á mediante concurso público de provas e títulos, assegurada a participação da Ordem dos Advogados do Brasil em sua realização, exigindo-se do bacharel em direito, no mínimo, três anos de atividade jurídica e observando-se, nas nomeações, a ordem de classificação.         (Redação dada pela Emenda Constitucional nº 45, de 2004)
+§ 3º O ingresso na carreira do Ministério Público far-se-á mediante concurso público de provas e títulos, assegurada a participação da Ordem dos Advogados do Brasil em sua realização, exigindo-se do bacharel em direito, no mínimo, três anos de atividade jurídica e observando-se, nas nomeações, a ordem de classificação. (Redação dada pela Emenda Constitucional nº 45, de 2004)
 
-§ 4º Aplica-se ao Ministério Público, no que couber, o disposto no art. 93.         (Redação dada pela Emenda Constitucional nº 45, de 2004)
+§ 4º Aplica-se ao Ministério Público, no que couber, o disposto no art. 93.(Redação dada pela Emenda Constitucional nº 45, de 2004)
 
-§ 5º A distribuição de processos no Ministério Público será imediata.         (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 5º A distribuição de processos no Ministério Público será imediata. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-Art. 130. Aos membros do Ministério Público junto aos Tribunais de Contas aplicam-se as disposições desta seção pertinentes a direitos, vedações e forma de investidura.
+⚖️  **Art. 130.** Aos membros do Ministério Público junto aos Tribunais de Contas aplicam-se as disposições desta seção pertinentes a direitos, vedações e forma de investidura.
 
-Art. 130-A. O Conselho Nacional do Ministério Público compõe-se de quatorze membros nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal, para um mandato de dois anos, admitida uma recondução, sendo:         (Incluído pela Emenda Constitucional nº 45, de 2004)
+⚖️  **Art. 130-A.** O Conselho Nacional do Ministério Público compõe-se de quatorze membros nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal, para um mandato de dois anos, admitida uma recondução, sendo: (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 I o Procurador-Geral da República, que o preside;    (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 II quatro membros do Ministério Público da União, assegurada a representação de cada uma de suas carreiras;     (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-III três membros do Ministério Público dos Estados;    (Incluído pela Emenda Constitucional nº 45, de 2004)
+III três membros do Ministério Público dos Estados; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-IV dois juízes, indicados um pelo Supremo Tribunal Federal e outro pelo Superior Tribunal de Justiça;    (Incluído pela Emenda Constitucional nº 45, de 2004)
+IV dois juízes, indicados um pelo Supremo Tribunal Federal e outro pelo Superior Tribunal de Justiça; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-V dois advogados, indicados pelo Conselho Federal da Ordem dos Advogados do Brasil;    (Incluído pela Emenda Constitucional nº 45, de 2004)
+V dois advogados, indicados pelo Conselho Federal da Ordem dos Advogados do Brasil; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 VI dois cidadãos de notável saber jurídico e reputação ilibada, indicados um pela Câmara dos Deputados e outro pelo Senado Federal.    (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 § 1º Os membros do Conselho oriundos do Ministério Público serão indicados pelos respectivos Ministérios Públicos, na forma da lei.     (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 2º Compete ao Conselho Nacional do Ministério Público o controle da atuação administrativa e financeira do Ministério Público e do cumprimento dos deveres funcionais de seus membros, cabendo lhe:    (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 2º Compete ao Conselho Nacional do Ministério Público o controle da atuação administrativa e financeira do Ministério Público e do cumprimento dos deveres funcionais de seus membros, cabendo lhe: (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-I zelar pela autonomia funcional e administrativa do Ministério Público, podendo expedir atos regulamentares, no âmbito de sua competência, ou recomendar providências;   (Incluído pela Emenda Constitucional nº 45, de 2004)
+I zelar pela autonomia funcional e administrativa do Ministério Público, podendo expedir atos regulamentares, no âmbito de sua competência, ou recomendar providências; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-II zelar pela observância do art. 37 e apreciar, de ofício ou mediante provocação, a legalidade dos atos administrativos praticados por membros ou órgãos do Ministério Público da União e dos Estados, podendo desconstituí-los, revê-los ou fixar prazo para que se adotem as providências necessárias ao exato cumprimento da lei, sem prejuízo da competência dos Tribunais de Contas;   (Incluído pela Emenda Constitucional nº 45, de 2004)
+II zelar pela observância do art. 37 e apreciar, de ofício ou mediante provocação, a legalidade dos atos administrativos praticados por membros ou órgãos do Ministério Público da União e dos Estados, podendo desconstituí-los, revê-los ou fixar prazo para que se adotem as providências necessárias ao exato cumprimento da lei, sem prejuízo da competência dos Tribunais de Contas; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-III - receber e conhecer das reclamações contra membros ou órgãos do Ministério Público da União ou dos Estados, inclusive contra seus serviços auxiliares, sem prejuízo da competência disciplinar e correicional da instituição, podendo avocar processos disciplinares em curso, determinar a remoção ou a disponibilidade e aplicar outras sanções administrativas, assegurada ampla defesa;             (Redação dada pela Emenda Constitucional nº 103, de 2019)
+III - receber e conhecer das reclamações contra membros ou órgãos do Ministério Público da União ou dos Estados, inclusive contra seus serviços auxiliares, sem prejuízo da competência disciplinar e correicional da instituição, podendo avocar processos disciplinares em curso, determinar a remoção ou a disponibilidade e aplicar outras sanções administrativas, assegurada ampla defesa; (Redação dada pela Emenda Constitucional nº 103, de 2019)
 
-IV rever, de ofício ou mediante provocação, os processos disciplinares de membros do Ministério Público da União ou dos Estados julgados há menos de um ano;   (Incluído pela Emenda Constitucional nº 45, de 2004)
+IV rever, de ofício ou mediante provocação, os processos disciplinares de membros do Ministério Público da União ou dos Estados julgados há menos de um ano;  (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-V elaborar relatório anual, propondo as providências que julgar necessárias sobre a situação do Ministério Público no País e as atividades do Conselho, o qual deve integrar a mensagem prevista no art. 84, XI.    (Incluído pela Emenda Constitucional nº 45, de 2004)
+V elaborar relatório anual, propondo as providências que julgar necessárias sobre a situação do Ministério Público no País e as atividades do Conselho, o qual deve integrar a mensagem prevista no art. 84, XI. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 § 3º O Conselho escolherá, em votação secreta, um Corregedor nacional, dentre os membros do Ministério Público que o integram, vedada a recondução, competindo-lhe, além das atribuições que lhe forem conferidas pela lei, as seguintes:   (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 I receber reclamações e denúncias, de qualquer interessado, relativas aos membros do Ministério Público e dos seus serviços auxiliares;   (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-II exercer funções executivas do Conselho, de inspeção e correição geral;    (Incluído pela Emenda Constitucional nº 45, de 2004)
+II exercer funções executivas do Conselho, de inspeção e correição geral; (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 III requisitar e designar membros do Ministério Público, delegando-lhes atribuições, e requisitar servidores de órgãos do Ministério Público.   (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 4º O Presidente do Conselho Federal da Ordem dos Advogados do Brasil oficiará junto ao Conselho.   (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 4º O Presidente do Conselho Federal da Ordem dos Advogados do Brasil oficiará junto ao Conselho. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 5º Leis da União e dos Estados criarão ouvidorias do Ministério Público, competentes para receber reclamações e denúncias de qualquer interessado contra membros ou órgãos do Ministério Público, inclusive contra seus serviços auxiliares, representando diretamente ao Conselho Nacional do Ministério Público.    (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 5º Leis da União e dos Estados criarão ouvidorias do Ministério Público, competentes para receber reclamações e denúncias de qualquer interessado contra membros ou órgãos do Ministério Público, inclusive contra seus serviços auxiliares, representando diretamente ao Conselho Nacional do Ministério Público. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
 Seção II
 
@@ -1424,7 +1423,7 @@ DA ADVOCACIA PÚBLICA
 
 (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
-Art. 131. A Advocacia-Geral da União é a instituição que, diretamente ou através de órgão vinculado, representa a União, judicial e extrajudicialmente, cabendo-lhe, nos termos da lei complementar que dispuser sobre sua organização e funcionamento, as atividades de consultoria e assessoramento jurídico do Poder Executivo.
+⚖️  **Art. 131.** A Advocacia-Geral da União é a instituição que, diretamente ou através de órgão vinculado, representa a União, judicial e extrajudicialmente, cabendo-lhe, nos termos da lei complementar que dispuser sobre sua organização e funcionamento, as atividades de consultoria e assessoramento jurídico do Poder Executivo.
 
 § 1º A Advocacia-Geral da União tem por chefe o Advogado-Geral da União, de livre nomeação pelo Presidente da República dentre cidadãos maiores de trinta e cinco anos, de notável saber jurídico e reputação ilibada.
 
@@ -1432,9 +1431,9 @@ Art. 131. A Advocacia-Geral da União é a instituição que, diretamente ou atr
 
 § 3º Na execução da dívida ativa de natureza tributária, a representação da União cabe à Procuradoria-Geral da Fazenda Nacional, observado o disposto em lei.
 
-Art. 132. Os Procuradores dos Estados e do Distrito Federal, organizados em carreira, na qual o ingresso dependerá de concurso público de provas e títulos, com a participação da Ordem dos Advogados do Brasil em todas as suas fases, exercerão a representação judicial e a consultoria jurídica das respectivas unidades federadas.         (Redação dada pela Emenda Constitucional nº 19, de 1998)
+⚖️  **Art. 132.** Os Procuradores dos Estados e do Distrito Federal, organizados em carreira, na qual o ingresso dependerá de concurso público de provas e títulos, com a participação da Ordem dos Advogados do Brasil em todas as suas fases, exercerão a representação judicial e a consultoria jurídica das respectivas unidades federadas. (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
-Parágrafo único. Aos procuradores referidos neste artigo é assegurada estabilidade após três anos de efetivo exercício, mediante avaliação de desempenho perante os órgãos próprios, após relatório circunstanciado das corregedorias.         (Incluído pela Emenda Constitucional nº 19, de 1998)
+Parágrafo único. Aos procuradores referidos neste artigo é assegurada estabilidade após três anos de efetivo exercício, mediante avaliação de desempenho perante os órgãos próprios, após relatório circunstanciado das corregedorias. (Incluído pela Emenda Constitucional nº 19, de 1998)
 
 Seção III
 
@@ -1442,7 +1441,7 @@ Da Advocacia
 
 (Redação dada pela Emenda Constitucional nº 80, de 2014)
 
-Art. 133. O advogado é indispensável à administração da justiça, sendo inviolável por seus atos e manifestações no exercício da profissão, nos limites da lei.
+⚖️  **Art. 133.** O advogado é indispensável à administração da justiça, sendo inviolável por seus atos e manifestações no exercício da profissão, nos limites da lei.
 
 Seção IV
 
@@ -1450,14 +1449,14 @@ Da Defensoria Pública
 
 (Redação dada pela Emenda Constitucional nº 80, de 2014)
 
-Art. 134. A Defensoria Pública é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe, como expressão e instrumento do regime democrático, fundamentalmente, a orientação jurídica, a promoção dos direitos humanos e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos, de forma integral e gratuita, aos necessitados, na forma do inciso LXXIV do art. 5º desta Constituição Federal.           (Redação dada pela Emenda Constitucional nº 80, de 2014)
+⚖️  **Art. 134.** A Defensoria Pública é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe, como expressão e instrumento do regime democrático, fundamentalmente, a orientação jurídica, a promoção dos direitos humanos e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos, de forma integral e gratuita, aos necessitados, na forma do inciso LXXIV do art. 5º desta Constituição Federal. (Redação dada pela Emenda Constitucional nº 80, de 2014)
 
-§ 1º Lei complementar organizará a Defensoria Pública da União e do Distrito Federal e dos Territórios e prescreverá normas gerais para sua organização nos Estados, em cargos de carreira, providos, na classe inicial, mediante concurso público de provas e títulos, assegurada a seus integrantes a garantia da inamovibilidade e vedado o exercício da advocacia fora das atribuições institucionais.         (Renumerado do parágrafo único pela Emenda Constitucional nº 45, de 2004)
+§ 1º Lei complementar organizará a Defensoria Pública da União e do Distrito Federal e dos Territórios e prescreverá normas gerais para sua organização nos Estados, em cargos de carreira, providos, na classe inicial, mediante concurso público de provas e títulos, assegurada a seus integrantes a garantia da inamovibilidade e vedado o exercício da advocacia fora das atribuições institucionais. (Renumerado do parágrafo único pela Emenda Constitucional nº 45, de 2004)
 
-§ 2º Às Defensorias Públicas Estaduais são asseguradas autonomia funcional e administrativa e a iniciativa de sua proposta orçamentária dentro dos limites estabelecidos na lei de diretrizes orçamentárias e subordinação ao disposto no art. 99, § 2º.         (Incluído pela Emenda Constitucional nº 45, de 2004)
+§ 2º Às Defensorias Públicas Estaduais são asseguradas autonomia funcional e administrativa e a iniciativa de sua proposta orçamentária dentro dos limites estabelecidos na lei de diretrizes orçamentárias e subordinação ao disposto no art. 99, § 2º. (Incluído pela Emenda Constitucional nº 45, de 2004)
 
-§ 3º Aplica-se o disposto no § 2º às Defensorias Públicas da União e do Distrito Federal.           (Incluído pela Emenda Constitucional nº 74, de 2013)
+§ 3º Aplica-se o disposto no § 2º às Defensorias Públicas da União e do Distrito Federal. (Incluído pela Emenda Constitucional nº 74, de 2013)
 
-§ 4º São princípios institucionais da Defensoria Pública a unidade, a indivisibilidade e a independência funcional, aplicando-se também, no que couber, o disposto no art. 93 e no inciso II do art. 96 desta Constituição Federal.       (Incluído pela Emenda Constitucional nº 80, de 2014)
+§ 4º São princípios institucionais da Defensoria Pública a unidade, a indivisibilidade e a independência funcional, aplicando-se também, no que couber, o disposto no art. 93 e no inciso II do art. 96 desta Constituição Federal. (Incluído pela Emenda Constitucional nº 80, de 2014)
 
-Art. 135. Os servidores integrantes das carreiras disciplinadas nas Seções II e III deste Capítulo serão remunerados na forma do art. 39, § 4º.         (Redação dada pela Emenda Constitucional nº 19, de 1998)
+⚖️  **Art. 135.** Os servidores integrantes das carreiras disciplinadas nas Seções II e III deste Capítulo serão remunerados na forma do art. 39, § 4º. (Redação dada pela Emenda Constitucional nº 19, de 1998)

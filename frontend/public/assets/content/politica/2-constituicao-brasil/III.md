@@ -28,25 +28,25 @@ Título III – art. 18 a 22, 25 a 32 e 34 a 38;
 
 ✨ I - os que atualmente lhe pertencem e os que lhe vierem a ser atribuídos;
 
-II - as terras devolutas indispensáveis à defesa das fronteiras, das fortificações e construções militares, das vias federais de comunicação e à preservação ambiental, definidas em lei;
+✨ II - as terras devolutas indispensáveis à defesa das fronteiras, das fortificações e construções militares, das vias federais de comunicação e à preservação ambiental, definidas em lei;
 
-III - os lagos, rios e quaisquer correntes de água em terrenos de seu domínio, ou que banhem mais de um Estado, sirvam de limites com outros países, ou se estendam a território estrangeiro ou dele provenham, bem como os terrenos marginais e as praias fluviais;
+✨ III - os lagos, rios e quaisquer correntes de água em terrenos de seu domínio, ou que banhem mais de um Estado, sirvam de limites com outros países, ou se estendam a território estrangeiro ou dele provenham, bem como os terrenos marginais e as praias fluviais;
 
-IV as ilhas fluviais e lacustres nas zonas limítrofes com outros países; as praias marítimas; as ilhas oceânicas e as costeiras, excluídas, destas, as que contenham a sede de Municípios, exceto aquelas áreas afetadas ao serviço público e a unidade ambiental federal, e as referidas no art. 26, II; (Redação dada pela Emenda Constitucional nº 46, de 2005)
+✨ IV as ilhas fluviais e lacustres nas zonas limítrofes com outros países; as praias marítimas; as ilhas oceânicas e as costeiras, excluídas, destas, as que contenham a sede de Municípios, exceto aquelas áreas afetadas ao serviço público e a unidade ambiental federal, e as referidas no art. 26, II; (Redação dada pela Emenda Constitucional nº 46, de 2005)
 
-V - os recursos naturais da plataforma continental e da zona econômica exclusiva;
+✨ V - os recursos naturais da plataforma continental e da zona econômica exclusiva;
 
-VI - o mar territorial;
+✨ VI - o mar territorial;
 
-VII - os terrenos de marinha e seus acrescidos;
+✨ VII - os terrenos de marinha e seus acrescidos;
 
-VIII - os potenciais de energia hidráulica;
+✨ VIII - os potenciais de energia hidráulica;
 
-IX - os recursos minerais, inclusive os do subsolo;
+✨ IX - os recursos minerais, inclusive os do subsolo;
 
-X - as cavidades naturais subterrâneas e os sítios arqueológicos e pré-históricos;
+✨ X - as cavidades naturais subterrâneas e os sítios arqueológicos e pré-históricos;
 
-XI - as terras tradicionalmente ocupadas pelos índios.
+✨ XI - as terras tradicionalmente ocupadas pelos índios.
 
 § 1º É assegurada, nos termos da lei, à União, aos Estados, ao Distrito Federal e aos Municípios a participação no resultado da exploração de petróleo ou gás natural, de recursos hídricos para fins de geração de energia elétrica e de outros recursos minerais no respectivo território, plataforma continental, mar territorial ou zona econômica exclusiva, ou compensação financeira por essa exploração. (Redação dada pela Emenda Constitucional nº 102, de 2019) (Produção de efeito)
 
@@ -78,8 +78,6 @@ XI - explorar, diretamente ou mediante autorização, concessão ou permissão, 
 
 XII - explorar, diretamente ou mediante autorização, concessão ou permissão:
 
-a) os serviços de radiodifusão sonora, e de sons e imagens e demais serviços de telecomunicações;
-
 a) os serviços de radiodifusão sonora, e de sons e imagens; (Redação dada pela Emenda Constitucional nº 8, de 15/08/95:)
 
 b) os serviços e instalações de energia elétrica e o aproveitamento energético dos cursos de água, em articulação com os Estados onde se situam os potenciais hidroenergéticos;
@@ -92,10 +90,7 @@ e) os serviços de transporte rodoviário interestadual e internacional de passa
 
 f) os portos marítimos, fluviais e lacustres;
 
-XIII - organizar e manter o Poder Judiciário, o Ministério Público e a Defensoria Pública do Distrito Federal e dos Territórios;
-
 XIII - organizar e manter o Poder Judiciário, o Ministério Público do Distrito Federal e dos Territórios e a Defensoria Pública dos Territórios; (Redação dada pela Emenda Constitucional nº 69, de 2012) (Produção de efeito)
-
 
 XIV - organizar e manter a polícia civil, a polícia penal, a polícia militar e o corpo de bombeiros militar do Distrito Federal, bem como prestar assistência financeira ao Distrito Federal para a execução de serviços públicos, por meio de fundo próprio; (Redação dada pela Emenda Constitucional nº 104, de 2019)
 
@@ -541,11 +536,11 @@ I - o prazo de duração do contrato;         (Incluído pela Emenda Constitucio
 
 II - os controles e critérios de avaliação de desempenho, direitos, obrigações e responsabilidade dos dirigentes;         (Incluído pela Emenda Constitucional nº 19, de 1998)
 
-III - a remuneração do pessoal.         (Incluído pela Emenda Constitucional nº 19, de 1998)
+III - a remuneração do pessoal. (Incluído pela Emenda Constitucional nº 19, de 1998)
 
 § 9º O disposto no inciso XI aplica-se às empresas públicas e às sociedades de economia mista, e suas subsidiárias, que receberem recursos da União, dos Estados, do Distrito Federal ou dos Municípios para pagamento de despesas de pessoal ou de custeio em geral.         (Incluído pela Emenda Constitucional nº 19, de 1998)
 
-§ 10. É vedada a percepção simultânea de proventos de aposentadoria decorrentes do art. 40 ou dos arts. 42 e 142 com a remuneração de cargo, emprego ou função pública, ressalvados os cargos acumuláveis na forma desta Constituição, os cargos eletivos e os cargos em comissão declarados em lei de livre nomeação e exoneração.         (Incluído pela Emenda Constitucional nº 20, de 1998)         (Vide Emenda Constitucional nº 20, de 1998)
+§ 10. É vedada a percepção simultânea de proventos de aposentadoria decorrentes do art. 40 ou dos arts. 42 e 142 com a remuneração de cargo, emprego ou função pública, ressalvados os cargos acumuláveis na forma desta Constituição, os cargos eletivos e os cargos em comissão declarados em lei de livre nomeação e exoneração. (Incluído pela Emenda Constitucional nº 20, de 1998)         (Vide Emenda Constitucional nº 20, de 1998)
 
 § 11. Não serão computadas, para efeito dos limites remuneratórios de que trata o inciso XI do caput deste artigo, as parcelas de caráter indenizatório expressamente previstas em lei ordinária, aprovada pelo Congresso Nacional, de caráter nacional, aplicada a todos os Poderes e órgãos constitucionalmente autônomos. (Redação dada pela Emenda Constitucional nº 135, de 2024)
 
@@ -557,16 +552,16 @@ III - a remuneração do pessoal.         (Incluído pela Emenda Constitucional 
 
 § 15. É vedada a complementação de aposentadorias de servidores públicos e de pensões por morte a seus dependentes que não seja decorrente do disposto nos §§ 14 a 16 do art. 40 ou que não seja prevista em lei que extinga regime próprio de previdência social. (Incluído pela Emenda Constitucional nº 103, de 2019)
 
-§ 16. Os órgãos e entidades da administração pública, individual ou conjuntamente, devem realizar avaliação das políticas públicas, inclusive com divulgação do objeto a ser avaliado e dos resultados alcançados, na forma da lei.       (Incluído pela Emenda Constitucional nº 109, de 2021)
+§ 16. Os órgãos e entidades da administração pública, individual ou conjuntamente, devem realizar avaliação das políticas públicas, inclusive com divulgação do objeto a ser avaliado e dos resultados alcançados, na forma da lei. (Incluído pela Emenda Constitucional nº 109, de 2021)
 
 ⚖️ **Art. 38.** Ao servidor público da administração direta, autárquica e fundacional, no exercício de mandato eletivo, aplicam-se as seguintes disposições: (Redação dada pela Emenda Constitucional nº 19, de 1998)
 
-I - tratando-se de mandato eletivo federal, estadual ou distrital, ficará afastado de seu cargo, emprego ou função;
+✨ I - tratando-se de mandato eletivo federal, estadual ou distrital, ficará afastado de seu cargo, emprego ou função;
 
-II - investido no mandato de Prefeito, será afastado do cargo, emprego ou função, sendo-lhe facultado optar pela sua remuneração;
+✨ II - investido no mandato de Prefeito, será afastado do cargo, emprego ou função, sendo-lhe facultado optar pela sua remuneração;
 
-III - investido no mandato de Vereador, havendo compatibilidade de horários, perceberá as vantagens de seu cargo, emprego ou função, sem prejuízo da remuneração do cargo eletivo, e, não havendo compatibilidade, será aplicada a norma do inciso anterior;
+✨ III - investido no mandato de Vereador, havendo compatibilidade de horários, perceberá as vantagens de seu cargo, emprego ou função, sem prejuízo da remuneração do cargo eletivo, e, não havendo compatibilidade, será aplicada a norma do inciso anterior;
 
-IV - em qualquer caso que exija o afastamento para o exercício de mandato eletivo, seu tempo de serviço será contado para todos os efeitos legais, exceto para promoção por merecimento;
+✨ IV - em qualquer caso que exija o afastamento para o exercício de mandato eletivo, seu tempo de serviço será contado para todos os efeitos legais, exceto para promoção por merecimento;
 
-V - na hipótese de ser segurado de regime próprio de previdência social, permanecerá filiado a esse regime, no ente federativo de origem.             (Redação dada pela Emenda Constitucional nº 103, de 2019)
+✨ V - na hipótese de ser segurado de regime próprio de previdência social, permanecerá filiado a esse regime, no ente federativo de origem. (Redação dada pela Emenda Constitucional nº 103, de 2019)
