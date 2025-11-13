@@ -1,1 +1,47 @@
-<p>app7-politica-perguntas works!</p>
+<!-- Módulo de Perguntas - Geopolítica e Relações Internacionais -->
+<div class="geopolitica-perguntas-container">
+  
+  <!-- Seletor de Bibliografia - Sempre visível -->
+  <div class="bibliografia-selector-container">
+    <div class="bibliografia-selector-card">
+      <div class="filter-group">
+        <label for="bibliografia-select">
+          📖 Bibliografia:
+        </label>
+        <select 
+          id="bibliografia-select"
+          class="filter-select"
+          [(ngModel)]="selectedBibliografiaId"
+          (change)="onBibliografiaChange()"
+          [disabled]="isLoadingBibliografias"
+        >
+          <option [ngValue]="null">📚 Todas as Bibliografias</option>
+          <option 
+            *ngFor="let bibliografia of bibliografiasComEstatisticas" 
+            [ngValue]="bibliografia.id"
+          >
+            {{ getBibliografiaOptionText(bibliografia) }}
+          </option>
+        </select>
+      </div>
+      <button 
+        class="btn btn-back"
+        (click)="goToBibliografia()">
+        <span class="back-arrow"></span>
+        Voltar
+      </button>
+      <div *ngIf="isLoadingBibliografias" class="loading-text">
+        Carregando bibliografias...
+      </div>
+    </div>
+  </div>
+
+  <!-- Componente de Perguntas -->
+  <div class="perguntas-wrapper">
+    <app-perguntas
+      [bibliografiaIds]="bibliografiaIds"
+      (simuladoStarted)="onSimuladoStarted()"
+    ></app-perguntas>
+  </div>
+
+</div>
