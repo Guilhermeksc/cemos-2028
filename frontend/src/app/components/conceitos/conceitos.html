@@ -1,40 +1,40 @@
 <div class="conceitos-container">
 
-  <!-- Header: título + stats + filtros + navegação (inspirado em Flash Cards) -->
-  <header *ngIf="showHeader" class="header-generic-content" role="banner">
-    <div class="header">
-      <h2>{{ moduleEmoji ? (moduleEmoji + ' ') : '' }}{{ moduleLabel || 'Conceitos' }}</h2>
-      <div class="stats" *ngIf="!isLoading">
-        <span class="stat-item">
-          <strong>{{ filteredConceitos.length }}</strong> de <strong>{{ conceitos.length }}</strong> conceitos
-        </span>
-        <span class="stat-item">
-          <strong>{{ bibliografias.length }}</strong> {{ bibliografias.length === 1 ? 'bibliografia' : 'bibliografias' }}
-        </span>
-      </div>
+  <!-- Header: título + stats (mesmo estilo de Flash Cards e Perguntas) -->
+  <div class="header" *ngIf="showHeader">
+    <h2>{{ moduleEmoji ? (moduleEmoji + ' ') : '🧭 ' }}{{ moduleLabel || 'Conceitos' }}</h2>
+    <div class="stats" *ngIf="!loading">
+      <span class="stat-item">
+        <strong>{{ filteredConceitos.length }}</strong> de <strong>{{ conceitos.length }}</strong> conceitos
+      </span>
+      <span class="stat-item">
+        <strong>{{ bibliografias.length }}</strong> {{ bibliografias.length === 1 ? 'bibliografia' : 'bibliografias' }}
+      </span>
+      <span class="stat-item">
+        <strong>{{ assuntosDisponiveis.length }}</strong> {{ assuntosDisponiveis.length === 1 ? 'assunto' : 'assuntos' }}
+      </span>
     </div>
+  </div>
 
-
-
-    <!-- Botões de navegação (preservados) -->
-    <nav class="navigation-buttons" aria-label="Navegação" *ngIf="!isLoading">
-      <button class="btn btn-stroked" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">
-        ⬅️ Voltar à Bibliografia
-      </button>
-      <button class="btn btn-stroked" (click)="navigateTo(getPath('flash-cards'))" aria-label="Flashcards">
-        📇 Flashcards
-      </button>
-      <button class="btn btn-stroked" (click)="navigateTo(getPath('media'))" aria-label="Media">
-        ▶️ Media
-      </button>
-      <button class="btn btn-stroked" (click)="navigateTo(getPath('perguntas'))" aria-label="Perguntas">
-        ❓ Perguntas
-      </button>
-      <button class="btn btn-stroked" (click)="navigateTo(getPath('conceitos'))" aria-label="Conceitos">
-        🧭 Conceitos
-      </button>
-    </nav>
-  </header>
+  <!-- Botões de navegação (preservados) -->
+  <nav class="navigation-buttons" aria-label="Navegação" *ngIf="showHeader && !loading">
+    <button class="btn btn-back" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">
+      <span class="back-arrow"></span>
+      Voltar à Bibliografia
+    </button>
+    <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
+      <mat-icon>category</mat-icon> Conceitos
+    </button>
+    <button mat-stroked-button (click)="navigateTo(flashcardsPath)" *ngIf="flashcardsPath">
+      <mat-icon>style</mat-icon> Flashcards
+    </button>
+    <button mat-stroked-button (click)="navigateTo(mediaPath)" *ngIf="mediaPath">
+      <mat-icon>play_circle</mat-icon> Media
+    </button>
+    <button mat-stroked-button (click)="navigateTo(perguntasPath)" *ngIf="perguntasPath">
+      <mat-icon>quiz</mat-icon> Perguntas
+    </button>
+  </nav>
 
   <!-- Loading state -->
   <div class="loading-state" *ngIf="loading">
@@ -59,11 +59,10 @@
     </button>
   </div>
 
-    </div>
   <!-- Content with tabs -->
   <div *ngIf="!loading && !error" class="content-container">
-        <!-- Filtros (Bibliografia + Assunto) -->
-    <div class="filters-section" *ngIf="!isLoading">
+    <!-- Filtros (Bibliografia + Assunto) -->
+    <div class="filters-section" *ngIf="!loading">
       <div class="filter-row">
         <div class="filter-group">
           <label for="bibliografia-filter">📖 Bibliografia:</label>

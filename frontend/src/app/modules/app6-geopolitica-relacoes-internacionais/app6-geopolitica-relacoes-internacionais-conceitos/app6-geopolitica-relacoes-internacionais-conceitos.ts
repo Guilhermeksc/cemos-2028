@@ -24,4 +24,15 @@ export class App6GeopoliticaRelacoesInternacionaisConceitos {
   geopoliticaBibliografiaIds: number[] = [1, 2, 3, 4];
 
   emptyMessage = 'Nenhum conceito de Geopolítica e RI encontrado. Adicione conceitos relacionados às matérias para visualizá-los aqui.';
+  
+  // Configurações do header
+  moduleLabel = 'Geopolítica e Relações Internacionais';
+  moduleEmoji = '🌍';
+
+  // Paths para navegação entre módulos
+  private readonly ROUTE_BASE = '/home/app6-geopolitica-relacoes-internacionais';
+  
+  flashcardsPath = `${this.ROUTE_BASE}/flash-cards`;
+  perguntasPath = `${this.ROUTE_BASE}/perguntas`;
+  backToBibliografiaPath = `${this.ROUTE_BASE}/bibliografia`;
 }

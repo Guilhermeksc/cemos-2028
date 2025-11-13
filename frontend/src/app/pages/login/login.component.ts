@@ -58,7 +58,7 @@ export class LoginComponent {
           this.authService.setTokens(response.access, response.refresh, response.user);
           
           // Mostra mensagem de sucesso
-          this.snackBar.open('Login realizado com sucesso!', 'Fechar', {
+          this.snackBar.open('✅ Login realizado com sucesso!', 'Fechar', {
             duration: 3000,
             panelClass: ['success-snackbar']
           });

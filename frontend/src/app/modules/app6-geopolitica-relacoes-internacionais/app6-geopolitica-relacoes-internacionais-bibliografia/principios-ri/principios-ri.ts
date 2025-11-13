@@ -24,7 +24,6 @@ export class PrincipiosRi implements OnInit {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/geopolitica-ri/principios-ri';
   fileNames: string[] = [
-    'teoricos.md',
     'cap1.md',
     'cap2.md',
     'cap3.md',

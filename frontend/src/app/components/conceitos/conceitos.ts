@@ -1,6 +1,8 @@
 import { Component, Input, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { Conceitos as ConceitosInterface } from '../../interfaces/informacoes.interface';
 import { Bibliografia } from '../../interfaces/perguntas.interface';
 import { InformacoesService } from '../../services/informacoes.service';
@@ -12,7 +14,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-conceitos',
   standalone: true,
-  imports: [CommonModule, FormsModule, ConceitosTableComponent],
+  imports: [CommonModule, FormsModule, ConceitosTableComponent, MatButtonModule, MatIconModule],
   templateUrl: './conceitos.html',
   styleUrls: ['./conceitos.scss']
 })
