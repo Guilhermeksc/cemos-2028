@@ -1,6 +1,6 @@
 Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.md  para criar um banco de questões v ou f, do seguinte modo:
 
-    Criar 20 novas questões uma versão verdadeira e uma falsa coerente (invertendo o sentido ou alterando um conceito-chave).
+    Criar 30 novas questões uma versão verdadeira e uma falsa coerente (invertendo o sentido ou alterando um conceito-chave).
 
     Preencher todas as colunas da tabela no formato indicado abaixo.
 
@@ -8,11 +8,11 @@ Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.m
 
 Instruções específicas:
 
-    bibliografia_id" será preenchido com 'Uma breve história do século XX'.
+    bibliografia_id" será preenchido com 'Ciência Política'.
 
-    “paginas” será preenchido com o nome do arquivo 'Cap 1, 2, 3 ...'
+    “paginas” será preenchido com o nome do arquivo 'Pág x ...'
 
-    “assunto” será preenchido com 'Aurora Resplandecente'
+    “assunto” será preenchido com 'Cap. 10 – O Estado Constitucional'
 
     “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa.
 
@@ -26,8 +26,9 @@ Instruções específicas:
 
 Exemplo de saída esperada:
 
-bibliografia_titulo	paginas	assunto	afirmacao_verdadeira	afirmacao_falsa	justificativa_resposta_certa	caiu_em_prova	ano_prova
-Geopolítica e Modernidade	Cap 1	Conceito de Verticalidades	As Verticalidades seriam formadas por pontos distantes uns dos outros, ligados por todas as formas de processos sociais.	As Verticalidades seriam formadas por lugares vizinhos ligados por uma continuidade territorial.	As Verticalidades representam os domínios da descontinuidade, conectando pontos geograficamente distantes através de fluxos e redes.			
+| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Ciência Política | Pág 49| Cap. 3 – O conceito de Estado | O Estado nacional atual é uma corporação territorial de um povo, constituída como nação, que se realiza por um ordenamento jurídico complexo. | O Estado nacional atual se baseia primariamente no parentesco e se realiza sem um ordenamento jurídico complexo, focando apenas na pessoa do governante. | O Estado nacional é uma corporação territorial de um povo constituído como nação, que se estabelece através de um ordenamento jurídico. | | |
 
 
 deverá salvar o resultado em formato markdown
