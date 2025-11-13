@@ -148,14 +148,14 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Carrega todos os flash cards das bibliografias selecionadas
+   * Carrega TODOS os flash cards das bibliografias selecionadas usando paginação completa
    */
   private loadAllFlashCards() {
-    console.log('🎴 Carregando flash cards das bibliografias:', this.bibliografiaIds);
+    console.log('🎴 Carregando TODOS os flash cards das bibliografias (paginação completa):', this.bibliografiaIds);
 
-    // Criar array de observables para cada bibliografia
+    // Criar array de observables para cada bibliografia usando o método que busca todas as páginas
     const requests = this.bibliografiaIds.map(id => 
-      this.flashcardsService.getFlashCardsByBibliografia(id)
+      this.flashcardsService.getAllFlashCardsByBibliografia(id)
     );
 
     forkJoin(requests)
@@ -165,7 +165,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
           // Combinar todos os flash cards
           this.allFlashCards = responses.flat();
           
-          console.log('✅ Total de flash cards carregados:', this.allFlashCards.length);
+          console.log('✅ Total de flash cards carregados (de todas as páginas):', this.allFlashCards.length);
           console.log('📊 Flash cards por bibliografia:', 
             responses.map((cards, idx) => ({
               bibliografiaId: this.bibliografiaIds[idx],

@@ -102,12 +102,24 @@ export class FlashCardsService {
   // ==================== MÉTODOS UTILITÁRIOS ====================
 
   /**
-   * Busca todos os flashcards (sem paginação)
+   * Busca TODOS os flashcards usando paginação completa
+   * Itera por todas as páginas até obter todas as flashcards disponíveis
    */
-  getAllFlashCards(): Observable<FlashCards[]> {
-    return this.getFlashCards({ page_size: 10000 }).pipe(
-      map(response => response.results)
+  getAllFlashCards(filters?: FlashCardsFilters): Observable<FlashCards[]> {
+    return this.getAllPaginatedResults<FlashCards>(
+      (page: number, pageSize: number) => {
+        const filtersWithPagination = { ...filters, page, page_size: pageSize };
+        return this.getFlashCards(filtersWithPagination);
+      }
     );
+  }
+
+  /**
+   * Busca TODOS os flashcards de uma bibliografia usando paginação completa
+   * Usa o endpoint principal com filtro de bibliografia para garantir paginação
+   */
+  getAllFlashCardsByBibliografia(id: number): Observable<FlashCards[]> {
+    return this.getAllFlashCards({ bibliografia: id });
   }
 
   /**
@@ -128,21 +140,17 @@ export class FlashCardsService {
   }
 
   /**
-   * Agrupa flashcards por assunto
+   * Busca TODOS os flashcards por assunto usando paginação completa
    */
   getFlashCardsByAssunto(assunto: string): Observable<FlashCards[]> {
-    return this.getFlashCards({ assunto }).pipe(
-      map(response => response.results)
-    );
+    return this.getAllFlashCards({ assunto });
   }
 
   /**
-   * Busca flashcards por texto (pergunta ou resposta)
+   * Busca TODOS os flashcards por texto (pergunta ou resposta) usando paginação completa
    */
   searchFlashCards(searchTerm: string): Observable<FlashCards[]> {
-    return this.getFlashCards({ search: searchTerm }).pipe(
-      map(response => response.results)
-    );
+    return this.getAllFlashCards({ search: searchTerm });
   }
 
   /**
@@ -160,21 +168,17 @@ export class FlashCardsService {
   }
 
   /**
-   * Busca flashcards que caíram em prova
+   * Busca TODOS os flashcards que caíram em prova usando paginação completa
    */
   getFlashCardsComProva(): Observable<FlashCards[]> {
-    return this.getFlashCards({ prova: true }).pipe(
-      map(response => response.results)
-    );
+    return this.getAllFlashCards({ prova: true });
   }
 
   /**
-   * Busca flashcards por ano
+   * Busca TODOS os flashcards por ano usando paginação completa
    */
   getFlashCardsByAno(ano: number): Observable<FlashCards[]> {
-    return this.getFlashCards({ ano }).pipe(
-      map(response => response.results)
-    );
+    return this.getAllFlashCards({ ano });
   }
 
   /**
@@ -217,5 +221,56 @@ export class FlashCardsService {
       }
       return acc;
     }, {} as { [ano: string]: number });
+  }
+
+  /**
+   * Método genérico para buscar todos os resultados paginados
+   * Faz requisições sequenciais até obter todas as páginas
+   */
+  private getAllPaginatedResults<T>(
+    fetchPage: (page: number, pageSize: number) => Observable<PaginatedResponse<T>>,
+    pageSize: number = 100
+  ): Observable<T[]> {
+    return new Observable(observer => {
+      const allResults: T[] = [];
+      let currentPage = 1;
+      let hasMore = true;
+
+      const fetchNextPage = () => {
+        if (!hasMore) {
+          console.log(`✅ Paginação completa de flashcards: ${allResults.length} resultados obtidos`);
+          observer.next(allResults);
+          observer.complete();
+          return;
+        }
+
+        console.log(`📄 Buscando página ${currentPage} de flashcards (page_size: ${pageSize})...`);
+        fetchPage(currentPage, pageSize).subscribe({
+          next: (response) => {
+            const pageResults = response.results || [];
+            allResults.push(...pageResults);
+            
+            console.log(`📄 Página ${currentPage} de flashcards recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
+            
+            // Verificar se há mais páginas
+            if (response.next) {
+              currentPage++;
+              fetchNextPage();
+            } else {
+              hasMore = false;
+              console.log(`✅ Paginação completa de flashcards: ${allResults.length} resultados obtidos em ${currentPage} página(s)`);
+              observer.next(allResults);
+              observer.complete();
+            }
+          },
+          error: (error) => {
+            console.error(`❌ Erro ao buscar página ${currentPage} de flashcards:`, error);
+            observer.error(error);
+          }
+        });
+      };
+
+      fetchNextPage();
+    });
   }
 }

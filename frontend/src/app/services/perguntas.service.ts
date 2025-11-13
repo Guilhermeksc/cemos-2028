@@ -176,6 +176,98 @@ export class PerguntasService {
     return this.http.get<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/${id}/`);
   }
 
+  // ==================== MÉTODOS PARA BUSCAR TODAS AS PERGUNTAS (PAGINAÇÃO COMPLETA) ====================
+
+  /**
+   * Busca TODAS as perguntas de múltipla escolha usando paginação completa
+   * Itera por todas as páginas até obter todas as perguntas disponíveis
+   */
+  getAllPerguntasMultipla(filters?: PerguntaMultiplaFilters): Observable<PerguntaMultipla[]> {
+    return this.getAllPaginatedResults<PerguntaMultipla>(
+      (page: number, pageSize: number) => {
+        const filtersWithPagination = { ...filters, page, page_size: pageSize };
+        return this.getPerguntasMultipla(filtersWithPagination);
+      }
+    );
+  }
+
+  /**
+   * Busca TODAS as perguntas V/F usando paginação completa
+   * Itera por todas as páginas até obter todas as perguntas disponíveis
+   */
+  getAllPerguntasVF(filters?: PerguntaVFFilters): Observable<PerguntaVF[]> {
+    return this.getAllPaginatedResults<PerguntaVF>(
+      (page: number, pageSize: number) => {
+        const filtersWithPagination = { ...filters, page, page_size: pageSize };
+        return this.getPerguntasVF(filtersWithPagination);
+      }
+    );
+  }
+
+  /**
+   * Busca TODAS as perguntas de correlação usando paginação completa
+   * Itera por todas as páginas até obter todas as perguntas disponíveis
+   */
+  getAllPerguntasCorrelacao(filters?: PerguntaFilters): Observable<PerguntaCorrelacao[]> {
+    return this.getAllPaginatedResults<PerguntaCorrelacao>(
+      (page: number, pageSize: number) => {
+        const filtersWithPagination = { ...filters, page, page_size: pageSize };
+        return this.getPerguntasCorrelacao(filtersWithPagination);
+      }
+    );
+  }
+
+  /**
+   * Método genérico para buscar todos os resultados paginados
+   * Faz requisições sequenciais até obter todas as páginas
+   */
+  private getAllPaginatedResults<T>(
+    fetchPage: (page: number, pageSize: number) => Observable<PaginatedResponse<T>>,
+    pageSize: number = 100
+  ): Observable<T[]> {
+    return new Observable(observer => {
+      const allResults: T[] = [];
+      let currentPage = 1;
+      let hasMore = true;
+
+      const fetchNextPage = () => {
+        if (!hasMore) {
+          console.log(`✅ Paginação completa: ${allResults.length} resultados obtidos`);
+          observer.next(allResults);
+          observer.complete();
+          return;
+        }
+
+        console.log(`📄 Buscando página ${currentPage} (page_size: ${pageSize})...`);
+        fetchPage(currentPage, pageSize).subscribe({
+          next: (response) => {
+            const pageResults = response.results || [];
+            allResults.push(...pageResults);
+            
+            console.log(`📄 Página ${currentPage} recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
+            
+            // Verificar se há mais páginas
+            if (response.next) {
+              currentPage++;
+              fetchNextPage();
+            } else {
+              hasMore = false;
+              console.log(`✅ Paginação completa: ${allResults.length} resultados obtidos em ${currentPage} página(s)`);
+              observer.next(allResults);
+              observer.complete();
+            }
+          },
+          error: (error) => {
+            console.error(`❌ Erro ao buscar página ${currentPage}:`, error);
+            observer.error(error);
+          }
+        });
+      };
+
+      fetchNextPage();
+    });
+  }
+
   // ==================== MÉTODOS UTILITÁRIOS ====================
 
   /**

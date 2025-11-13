@@ -603,7 +603,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
   private loadRandomQuestions(tabType: TabType): Observable<SimuladoQuestion[]> {
     const config = this.tabs[tabType].simuladoConfig;
-    console.log(`📚 Buscando questões para aba ${tabType} e bibliografias:`, config.bibliografias);
+    console.log(`📚 Buscando TODAS as questões para aba ${tabType} e bibliografias:`, config.bibliografias);
     
     // Se não há bibliografias selecionadas, retornar array vazio
     if (config.bibliografias.length === 0) {
@@ -615,29 +615,30 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     }
 
     // Criar arrays de observables para cada tipo de pergunta e cada bibliografia
-    const multiplaObservables: Observable<PaginatedResponse<PerguntaMultipla>>[] = [];
-    const vfObservables: Observable<PaginatedResponse<PerguntaVF>>[] = [];
-    const correlacaoObservables: Observable<PaginatedResponse<PerguntaCorrelacao>>[] = [];
+    // Agora usando os métodos que buscam TODAS as perguntas (paginação completa)
+    const multiplaObservables: Observable<PerguntaMultipla[]>[] = [];
+    const vfObservables: Observable<PerguntaVF[]>[] = [];
+    const correlacaoObservables: Observable<PerguntaCorrelacao[]>[] = [];
 
-    // Criar uma chamada para cada bibliografia
+    // Criar uma chamada para cada bibliografia usando os métodos que buscam todas as páginas
     config.bibliografias.forEach(bibliografiaId => {
-      const baseFilters = { page_size: 100, bibliografia: bibliografiaId };
+      const baseFilters = { bibliografia: bibliografiaId };
       
       if (config.questoesMultipla > 0) {
         multiplaObservables.push(
-          this.perguntasService.getPerguntasMultipla(baseFilters as PerguntaMultiplaFilters)
+          this.perguntasService.getAllPerguntasMultipla(baseFilters as PerguntaMultiplaFilters)
         );
       }
       
       if (config.questoesVF > 0) {
         vfObservables.push(
-          this.perguntasService.getPerguntasVF(baseFilters as PerguntaVFFilters)
+          this.perguntasService.getAllPerguntasVF(baseFilters as PerguntaVFFilters)
         );
       }
       
       if (config.questoesCorrelacao > 0) {
         correlacaoObservables.push(
-          this.perguntasService.getPerguntasCorrelacao(baseFilters as PerguntaFilters)
+          this.perguntasService.getAllPerguntasCorrelacao(baseFilters as PerguntaFilters)
         );
       }
     });
@@ -666,20 +667,21 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     return forkJoin(observables).pipe(
       map((results: any) => {
         // Combinar resultados de todas as bibliografias
+        // Agora os resultados já são arrays completos, não PaginatedResponse
         const todasMultiplas: PerguntaMultipla[] = results.multiplas 
-          ? results.multiplas.flatMap((response: PaginatedResponse<PerguntaMultipla>) => response.results)
+          ? results.multiplas.flatMap((perguntas: PerguntaMultipla[]) => perguntas)
           : [];
         const todasVFs: PerguntaVF[] = results.vfs 
-          ? results.vfs.flatMap((response: PaginatedResponse<PerguntaVF>) => response.results)
+          ? results.vfs.flatMap((perguntas: PerguntaVF[]) => perguntas)
           : [];
         const todasCorrelacoes: PerguntaCorrelacao[] = results.correlacoes 
-          ? results.correlacoes.flatMap((response: PaginatedResponse<PerguntaCorrelacao>) => response.results)
+          ? results.correlacoes.flatMap((perguntas: PerguntaCorrelacao[]) => perguntas)
           : [];
 
-        console.log('📊 Dados brutos recebidos do backend (combinados de todas bibliografias):', {
+        console.log('📊 TODAS as questões recebidas do backend (paginação completa, combinadas de todas bibliografias):', {
           multiplas: {
-            total_bibliografias: results.multiplas ? results.multiplas.length : 0,
-            count_total: todasMultiplas.length,
+            total_bibliografias_consultadas: results.multiplas ? results.multiplas.length : 0,
+            count_total_disponivel: todasMultiplas.length,
             bibliografias_encontradas: [...new Set(todasMultiplas.map(q => q.bibliografia))],
             primeiras_questoes: todasMultiplas.slice(0, 3).map(q => ({
               id: q.id,
@@ -689,8 +691,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             }))
           },
           vfs: {
-            total_bibliografias: results.vfs ? results.vfs.length : 0,
-            count_total: todasVFs.length,
+            total_bibliografias_consultadas: results.vfs ? results.vfs.length : 0,
+            count_total_disponivel: todasVFs.length,
             bibliografias_encontradas: [...new Set(todasVFs.map(q => q.bibliografia))],
             primeiras_questoes: todasVFs.slice(0, 3).map(q => ({
               id: q.id,
@@ -700,8 +702,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             }))
           },
           correlacoes: {
-            total_bibliografias: results.correlacoes ? results.correlacoes.length : 0,
-            count_total: todasCorrelacoes.length,
+            total_bibliografias_consultadas: results.correlacoes ? results.correlacoes.length : 0,
+            count_total_disponivel: todasCorrelacoes.length,
             bibliografias_encontradas: [...new Set(todasCorrelacoes.map(q => q.bibliografia))],
             primeiras_questoes: todasCorrelacoes.slice(0, 3).map(q => ({
               id: q.id,
