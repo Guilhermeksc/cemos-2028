@@ -32,6 +32,8 @@ ALLOWED_HOSTS = [
     "195.200.1.112",
     "cemos2028.com",
     "www.cemos2028.com",
+    "auditapro.com.br",
+    "www.auditapro.com.br",
 ]
 
 # Application definition
@@ -76,6 +78,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://195.200.1.112",          # IP direto
     "http://cemos2028.com",         # Domínio sem HTTPS
     "https://cemos2028.com",        # Domínio com HTTPS
+    "https://www.cemos2028.com",    # Domínio com HTTPS (www)
+    "http://auditapro.com.br",      # Auditapro sem HTTPS
+    "https://auditapro.com.br",     # Auditapro com HTTPS
+    "https://www.auditapro.com.br", # Auditapro com HTTPS (www)
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -87,6 +93,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://195.200.1.112",
     "http://cemos2028.com",
     "https://cemos2028.com",
+    "https://www.cemos2028.com",
+    "http://auditapro.com.br",
+    "https://auditapro.com.br",
+    "https://www.auditapro.com.br",
 ]
 
 ROOT_URLCONF = 'django_cemos2028.urls'
@@ -179,7 +189,9 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-
+# Configurações para proxy reverso (nginx)
+# Permite que o Django reconheça requisições HTTPS através do proxy
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Arquivos estáticos
 STATIC_URL = '/static/'
