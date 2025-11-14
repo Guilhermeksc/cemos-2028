@@ -160,6 +160,15 @@
     &:nth-child(9) mat-card-header {
       background: linear-gradient(135deg, #ffecd2 0%, #4b1300 100%);
     }
+    &:nth-child(10) mat-card-header {
+      background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+    }
+    &:nth-child(11) mat-card-header {
+      background: linear-gradient(135deg, #ff6e7f 0%, #023c5c 100%);
+    }
+    &:nth-child(12) mat-card-header {
+      background: linear-gradient(135deg, #3b0141 0%, #05d7c9 100%);
+    }
   }
 }
 

@@ -6,7 +6,6 @@ export interface RouteSegmentConfig {
   title: string;
   path: string;
   loadComponent: ComponentLoader;
-  children?: RouteSegmentConfig[];
 }
 
 export interface ModuleRouteConfig {
@@ -18,728 +17,345 @@ export interface ModuleRouteConfig {
 
 export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
   {
-    title: 'App1 Intendência',
-    path: 'app1-intendencia',
+    title: 'App1 ControleExt',
+    path: 'app1-controle-ext',
     defaultChild: 'bibliografia',
     segments: [
       {
-        title: 'Bibliografia',
-        path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app1-intendencia/app1-intendencia-bibliografia/app1-intendencia-bibliografia').then(
-            (m) => m.App1IntendenciaBibliografia
-          ),
-        children: [
-          {
-            title: 'Cadeias de Suprimentos e Logística',
-            path: 'cadeias-suprimentos-logistica',
-            loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/cadeias-suprimentos-logistica/cadeias-suprimentos-logistica').then(
-                (m) => m.CadeiasSuprimentosLogistica
-              )
-          },
-          {
-            title: 'EMA-400 - Logística da Marinha',
-            path: 'ema-400',
-            loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/ema-400/ema-400').then(
-                (m) => m.Ema400
-              )
-          },
-          {
-            title: 'EMA-401 - Mobilização Marítima',
-            path: 'ema-401',
-            loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/ema-401/ema-401').then(
-                (m) => m.Ema401
-              )
-          },
-          {
-            title: 'MD-41-M-01 - Doutrina de Mobilização Militar',
-            path: 'md-41-m-01',
-            loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/md-41-m-01/md-41-m-01').then(
-                (m) => m.Md41M01
-              )
-          }
-        ]
-      },
-      {
-        title: 'Mídia',
-        path: 'media',
-        loadComponent: () =>
-          import('../modules/app1-intendencia/app1-intendencia-media/app1-intendencia-media').then(
-            (m) => m.App1IntendenciaMedia
-          )
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app1-controle-ext/app1-controle-ext-flashcards/app1-controle-ext-flashcards').then(m => m.App1ControleExtFlashcards)
       },
       {
         title: 'Perguntas',
         path: 'perguntas',
-        loadComponent: () =>
-          import(
-            '../modules/app1-intendencia/app1-intendencia-perguntas/app1-intendencia-perguntas'
-          ).then((m) => m.App1IntendenciaPerguntas)
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app1-intendencia/app1-intendencia-resumo/app1-intendencia-resumo').then(
-            (m) => m.App1IntendenciaResumo
-          )
-      }
-    ]
-  },
-  {
-    title: 'App2 Estratégia',
-    path: 'app2-estrategia',
-    defaultChild: 'bibliografia',
-    segments: [
-      {
-        title: 'Bibliografia',
-        path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app2-estrategia/app2-estrategia-bibliografia/app2-estrategia-bibliografia').then(
-            (m) => m.App2EstrategiaBibliografia
-          ),
-        children: [
-          {
-            title: 'COUTAU-BÉGARIE. Tratado de Estratégia',
-            path: 'tratado-de-estrategia',
-            loadComponent: () =>
-              import('../modules/app2-estrategia/app2-estrategia-bibliografia/tratado-de-estrategia/tratado-de-estrategia').then(
-                (m) => m.TratadoDeEstrategia
-              )
-          },
-          {
-            title: 'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex',
-            path: 'estrategias-maritimas',
-            loadComponent: () =>
-              import('../modules/app2-estrategia/app2-estrategia-bibliografia/estrategias-maritimas/estrategias-maritimas').then(
-                (m) => m.EstrategiasMaritimas
-              )
-          },
-          {
-            title: 'EMA-310 - Estratégia de Defesa Marítima',
-            path: 'ema-310-estrategia',
-            loadComponent: () =>
-              import('../modules/app2-estrategia/app2-estrategia-bibliografia/ema-310-estrategia/ema-310-estrategia').then(
-                (m) => m.Ema310Estrategia
-              )
-          }
-        ]
-      },
-      {
-        title: 'Mídia',
-        path: 'media',
-        loadComponent: () =>
-          import('../modules/app2-estrategia/app2-estrategia-media/app2-estrategia-media').then(
-            (m) => m.App2EstrategiaMedia
-          )
-      },
-      {
-        title: 'Perguntas',
-        path: 'perguntas',
-        loadComponent: () =>
-          import('../modules/app2-estrategia/app2-estrategia-perguntas/app2-estrategia-perguntas').then(
-            (m) => m.App2EstrategiaPerguntas
-          )
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app2-estrategia/app2-estrategia-resumo/app2-estrategia-resumo').then(
-            (m) => m.App2EstrategiaResumo
-          )
-      }
-    ]
-  },
-  {
-    title: 'App3 Planejamento Militar',
-    path: 'app3-planejamento-militar',
-    defaultChild: 'bibliografia',
-    segments: [
-      {
-        title: 'Bibliografia',
-        path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/app3-planejamento-militar-bibliografia').then(
-            (m) => m.App3PlanejamentoMilitarBibliografia
-          ),
-        children: [
-          {
-            title: 'Lei nº 97/1999 - Organização, Preparo e o Emprego das Forças Armadas',
-            path: 'lei-97',
-            loadComponent: () =>
-              import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/lei-97/lei-97').then(
-                (m) => m.Lei97
-              )
-          },
-          {
-            title: 'Decreto 7.276/2010 - Estrutura Militar de Defesa',
-            path: 'decreto-7276',
-            loadComponent: () =>
-              import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/decreto-7276/decreto-7276').then(
-                (m) => m.Decreto7276
-              )
-          },
-          {
-            title: 'MD30-M-01 - Doutrina de Operações Conjuntas',
-            path: 'md-30-m-01',
-            loadComponent: () =>
-              import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/md-30-m-01/md-30-m-01').then(
-                (m) => m.Md30M01
-              )
-          }
-        ]
-      },
-      {
-        title: 'Mídia',
-        path: 'media',
-        loadComponent: () =>
-          import(
-            '../modules/app3-planejamento-militar/app3-planejamento-militar-media/app3-planejamento-militar-media'
-          ).then((m) => m.App3PlanejamentoMilitarMedia)
-      },
-      {
-        title: 'Perguntas',
-        path: 'perguntas',
-        loadComponent: () =>
-          import(
-            '../modules/app3-planejamento-militar/app3-planejamento-militar-perguntas/app3-planejamento-militar-perguntas'
-          ).then((m) => m.App3PlanejamentoMilitarPerguntas)
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import(
-            '../modules/app3-planejamento-militar/app3-planejamento-militar-resumo/app3-planejamento-militar-resumo'
-          ).then((m) => m.App3PlanejamentoMilitarResumo)
-      }
-    ]
-  },
-  {
-    title: 'App4 História',
-    path: 'app4-historia',
-    defaultChild: 'bibliografia',
-    segments: [
-      {
-        title: 'Bibliografia',
-        path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app4-historia/app4-historia-bibliografia/app4-historia-bibliografia').then(
-            (m) => m.App4HistoriaBibliografia
-          ),
-        children: [
-          {
-            title: 'Breve História',
-            path: 'breve-historia',
-            loadComponent: () =>
-              import('../modules/app4-historia/app4-historia-bibliografia/breve-historia/breve-historia').then(
-                (m) => m.BreveHistoria
-              )
-          },
-          {
-            title: 'Guerra no Mar',
-            path: 'guerra-no-mar',
-            loadComponent: () =>
-              import('../modules/app4-historia/app4-historia-bibliografia/guerra-no-mar/guerra-no-mar').then(
-                (m) => m.GuerraNoMar
-              )
-          },
-          {
-            title: 'História das Guerras',
-            path: 'historia-das-guerras',
-            loadComponent: () =>
-              import('../modules/app4-historia/app4-historia-bibliografia/historia-das-guerras/historia-das-guerras').then(
-                (m) => m.HistoriaDasGuerras
-              )
-          },
-          {
-            title: 'Síntese Histórica',
-            path: 'sintese-historica',
-            loadComponent: () =>
-              import('../modules/app4-historia/app4-historia-bibliografia/sintese-historica/sintese-historica').then(
-                (m) => m.SinteseHistorica
-              )
-          }
-        ]
-      },
-      {
-        title: 'Flash Cards',
-        path: 'flash-cards',
-        loadComponent: () =>
-          import(
-            '../modules/app4-historia/app4-historia-flashcards/app4-historia-flashcards'
-          ).then((m) => m.App4HistoriaFlashcards)
-      },
-      {
-        title: 'Perguntas',
-        path: 'perguntas',
-        loadComponent: () =>
-          import('../modules/app4-historia/app4-historia-perguntas/app4-historia-perguntas').then(
-            (m) => m.App4HistoriaPerguntas
-          )
-      },
-      {
-        title: 'Líderes Históricos',
-        path: 'lideres-historicos',
-        loadComponent: () =>
-          import(
-            '../modules/app4-historia/app4-historia-lideres/app4-historia-lideres'
-          ).then((m) => m.App4HistoriaLideres)
-      }
-    ]
-  },
-  {
-    title: 'App6 Geopolítica',
-    path: 'app6-geopolitica-relacoes-internacionais',
-    defaultChild: 'bibliografia',
-    segments: [
-      {
-        title: 'Bibliografia',
-        path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-bibliografia/app6-geopolitica-relacoes-internacionais-bibliografia').then(
-            (m) => m.App6GeopoliticaRelacoesInternacionaisBibliografia
-          ),
-        children: [
-          {
-            title: 'A Vingança da Geografia',
-            path: 'vinganca-geografia',
-            loadComponent: () =>
-              import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-bibliografia/vinganca-geografia/vinganca-geografia').then(
-                (m) => m.VingancaGeografia
-              )
-          },
-          {
-            title: 'Geopolítica e Modernidade',
-            path: 'geopolitica-modernidade',
-            loadComponent: () =>
-              import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-bibliografia/geopolitica-modernidade/geopolitica-modernidade').then(
-                (m) => m.GeopoliticaModernidade
-              )
-          },
-          {
-            title: 'Novas Geopolíticas',
-            path: 'novas-geopoliticas',
-            loadComponent: () =>
-              import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-bibliografia/novas-geopoliticas/novas-geopoliticas').then(
-                (m) => m.NovasGeopoliticas
-              )
-          },
-          {
-            title: 'Princípios de Relações Internacionais',
-            path: 'principios-ri',
-            loadComponent: () =>
-              import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-bibliografia/principios-ri/principios-ri').then(
-                (m) => m.PrincipiosRi
-              )
-          }
-        ]
-      },
-      {
-        title: 'Flash Cards',
-        path: 'flash-cards',
-        loadComponent: () =>
-          import(
-            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-flashcards/app6-geopolitica-relacoes-internacionais-flashcards'
-          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisFlashcards)
-      },
-      {
-        title: 'Perguntas',
-        path: 'perguntas',
-        loadComponent: () =>
-          import(
-            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-perguntas/app6-geopolitica-relacoes-internacionais-perguntas'
-          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisPerguntas)
+        loadComponent: () => import('../modules/app1-controle-ext/app1-controle-ext-perguntas/app1-controle-ext-perguntas').then(m => m.App1ControleExtPerguntas)
       },
       {
         title: 'Conceitos',
         path: 'conceitos',
-        loadComponent: () =>
-          import(
-            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-conceitos/app6-geopolitica-relacoes-internacionais-conceitos'
-          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisConceitos)
+        loadComponent: () => import('../modules/app1-controle-ext/app1-controle-ext-conceitos/app1-controle-ext-conceitos').then(m => m.App1ControleExtConceitos)
       },
-      {
-        title: 'Teóricos',
-        path: 'teoricos',
-        loadComponent: () =>
-          import(
-            '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-pensadores/app6-geopolitica-relacoes-internacionais-pensadores'
-          ).then((m) => m.App6GeopoliticaRelacoesInternacionaisPensadores)
-      }
-    ]
-  },
-  {
-    title: 'App7 Política',
-    path: 'app7-politica',
-    defaultChild: 'bibliografia',
-    segments: [
       {
         title: 'Bibliografia',
         path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app7-politica/app7-politica-bibliografia/app7-politica-bibliografia').then(
-            (m) => m.App7PoliticaBibliografia
-          ),
-        children: [
-          {
-            title: 'Ciência Política',
-            path: 'ciencia-politica',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/ciencia-politica/ciencia-politica').then(
-                (m) => m.CienciaPolitica
-              )
-          },
-          {
-            title: 'Constituição da República Federativa do Brasil',
-            path: 'constituicao-brasil',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/constituicao-brasil/constituicao-brasil').then(
-                (m) => m.ConstituicaoBrasil
-              )
-          },
-          {
-            title: 'Estratégia Nacional de Defesa',
-            path: 'estrategia-nacional-defesa',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/estrategia-nacional-defesa/estrategia-nacional-defesa').then(
-                (m) => m.EstrategiaNacionalDefesa
-              )
-          },
-          {
-            title: 'Política Nacional de Defesa',
-            path: 'politica-nacional-defesa',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/politica-nacional-defesa/politica-nacional-defesa').then(
-                (m) => m.PoliticaNacionalDefesa
-              )
-          },
-          {
-            title: 'Lei Complementar nº 97',
-            path: 'lei-complementar-97',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/lei-complementar-97/lei-complementar-97').then(
-                (m) => m.LeiComplementar97
-              )
-          },
-          {
-            title: 'Decreto nº 12.481 - Política Marítima Nacional (PMN)',
-            path: 'decreto-12481',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/decreto-12481/decreto-12481').then(
-                (m) => m.Decreto12481
-              )
-          },
-          {
-            title: 'Economia Azul - vetor para o desenvolvimento do Brasil',
-            path: 'economia-azul',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/economia-azul/economia-azul').then(
-                (m) => m.EconomiaAzul
-              )
-          },
-          {
-            title: 'EMA-323 - Política Naval',
-            path: 'ema-323',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/ema-323/ema-323').then(
-                (m) => m.Ema323
-              )
-          },
-          {
-            title: 'Decreto nº 12.363 - Plano Setorial para os Recursos do Mar',
-            path: 'decreto-12363',
-            loadComponent: () =>
-              import('../modules/app7-politica/app7-politica-bibliografia/decreto-12363/decreto-12363').then(
-                (m) => m.Decreto12363
-              )
-          }
-        ]
+        loadComponent: () => import('../modules/app1-controle-ext/app1-controle-ext-bibliografia/app1-controle-ext-bibliografia').then(m => m.App1ControleExtBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App2 AdmPub',
+    path: 'app2-adm-pub',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app2-adm-pub/app2-adm-pub-flashcards/app2-adm-pub-flashcards').then(m => m.App2AdmPubFlashcards)
       },
       {
-        title: 'Flash Cards',
-        path: 'flash-cards',
-        loadComponent: () =>
-          import(
-            '../modules/app7-politica/app7-politica-flashcards/app7-politica-flashcards'
-          ).then((m) => m.App7PoliticaFlashcards)
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app2-adm-pub/app2-adm-pub-perguntas/app2-adm-pub-perguntas').then(m => m.App2AdmPubPerguntas)
       },
       {
         title: 'Conceitos',
         path: 'conceitos',
-        loadComponent: () =>
-          import('../modules/app7-politica/app7-politica-conceitos/app7-politica-conceitos').then(
-            (m) => m.App7PoliticaConceitos
-          )
+        loadComponent: () => import('../modules/app2-adm-pub/app2-adm-pub-conceitos/app2-adm-pub-conceitos').then(m => m.App2AdmPubConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app2-adm-pub/app2-adm-pub-bibliografia/app2-adm-pub-bibliografia').then(m => m.App2AdmPubBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App3 DirConst',
+    path: 'app3-dir-const',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app3-dir-const/app3-dir-const-flashcards/app3-dir-const-flashcards').then(m => m.App3DirConstFlashcards)
       },
       {
         title: 'Perguntas',
         path: 'perguntas',
-        loadComponent: () =>
-          import('../modules/app7-politica/app7-politica-perguntas/app7-politica-perguntas').then(
-            (m) => m.App7PoliticaPerguntas
-          )
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app7-politica/app7-politica-resumo/app7-politica-resumo').then(
-            (m) => m.App7PoliticaResumo
-          )
-      }
-    ]
-  },
-  {
-    title: 'App8 Direito',
-    path: 'app8-direito',
-    defaultChild: 'bibliografia',
-    segments: [
-  {
-        title: 'Bibliografia',
-        path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app8-direito/app8-direito-bibliografia/app8-direito-bibliografia').then(
-            (m) => m.App8DireitoBibliografia
-          ),
-        children: [
-          {
-            title: 'EMA-135',
-            path: 'ema-135',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/ema-135/ema-135').then(
-                (m) => m.Ema135
-              )
-          },
-          {
-            title: 'A Lei da Guerra',
-            path: 'lei-da-guerra',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/lei-da-guerra/lei-da-guerra').then(
-                (m) => m.LeiDaGuerra
-              )
-          },
-          {
-            title: 'Carta das Nações Unidas',
-            path: 'carta-nacoes-unidas',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/3-carta-nacoes-unidas/carta-nacoes-unidas').then(
-                (m) => m.CartaNacoesUnidas
-              )
-          },
-          {
-            title: 'Feridos, enfermos e náufragos',
-            path: 'feridos-enfermos',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/feridos-enfermos/feridos-enfermos').then(
-                (m) => m.FeridosEnfermos
-              )
-          },
-          {
-            title: 'Protocolo I',
-            path: 'protocolo-i',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/protocolo-i/protocolo-i').then(
-                (m) => m.ProtocoloI
-              )
-          },
-          {
-            title: 'Protocolo II',
-            path: 'protocolo-ii',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/protocolo-ii/protocolo-ii').then(
-                (m) => m.ProtocoloII
-              )
-          },
-          {
-            title: 'San Remo Manual',
-            path: 'san-remo-manual',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/san-remo-manual/san-remo-manual').then(
-                (m) => m.SanRemoManual
-              )
-          },
-          {
-            title: 'Concenção das Nações Unidas sobre o Direito do Mar',
-            path: 'cnudm',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/cnudm/cnudm').then(
-                (m) => m.Cnudm
-              )
-          },
-          {
-            title: 'Entorpecentes e Psicotrópicos',
-            path: 'entorpecentes-psicotropicos',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/entorpecentes-psicotropicos/entorpecentes-psicotropicos').then(
-                (m) => m.EntorpecentesPsicotropicos
-              )
-          },
-          {
-            title: 'Pacto de São José',
-            path: 'pacto-sao-jose',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/pacto-sao-jose/pacto-sao-jose').then(
-                (m) => m.PactoSaoJose
-              )
-          },
-          {
-            title: 'Declaração Universal dos Direitos Humanos',
-            path: 'declaracao-direitos-humanos',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/declaracao-direitos-humanos/declaracao-direitos-humanos').then(
-                (m) => m.DeclaracaoDireitosHumanos
-              )
-          },
-          {
-            title: 'Direito dos Tratados',
-            path: 'declaracao-direito-tratados',
-            loadComponent: () =>
-              import('../modules/app8-direito/app8-direito-bibliografia/declaracao-direito-tratados/declaracao-direito-tratados').then(
-                (m) => m.DeclaracaoDireitoTratados
-              )
-          }
-        ]
-      },
-      {
-        title: 'Flash Cards',
-        path: 'flash-cards',
-        loadComponent: () =>
-          import('../modules/app8-direito/app8-direito-flashcards/app8-direito-flashcards').then((m) => m.App8DireitoFlashcards)
+        loadComponent: () => import('../modules/app3-dir-const/app3-dir-const-perguntas/app3-dir-const-perguntas').then(m => m.App3DirConstPerguntas)
       },
       {
         title: 'Conceitos',
         path: 'conceitos',
-        loadComponent: () =>
-          import('../modules/app8-direito/app8-direito-conceitos/app8-direito-conceitos').then((m) => m.App8DireitoConceitos)
+        loadComponent: () => import('../modules/app3-dir-const/app3-dir-const-conceitos/app3-dir-const-conceitos').then(m => m.App3DirConstConceitos)
       },
-      {
-        title: 'Perguntas',
-        path: 'perguntas',
-        loadComponent: () =>
-          import('../modules/app8-direito/app8-direito-perguntas/app8-direito-perguntas').then(
-            (m) => m.App8DireitoPerguntas
-          )
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app8-direito/app8-direito-resumo/app8-direito-resumo').then(
-            (m) => m.App8DireitoResumo
-          )
-      }
-    ]
-  },
-  {
-    title: 'App9 Economia',
-    path: 'app9-economia',
-    defaultChild: 'bibliografia',
-    segments: [
       {
         title: 'Bibliografia',
         path: 'bibliografia',
-        loadComponent: () =>
-          import('../modules/app9-economia/app9-economia-bibliografia/app9-economia-bibliografia').then(
-            (m) => m.App9EconomiaBibliografia
-          ),
-        children: [
-          {
-            title: 'Economia Brasileira Contemporânea',
-            path: 'economia-brasileira',
-            loadComponent: () =>
-              import('../modules/app9-economia/app9-economia-bibliografia/economia-brasileira/economia-brasileira').then(
-                (m) => m.EconomiaBrasileira
-              )
-          },
-          {
-            title: 'Economia Micro e Macro – Teoria, Exercícios e Casos',
-            path: 'economia-micro-macro',
-            loadComponent: () =>
-              import('../modules/app9-economia/app9-economia-bibliografia/economia-micro-macro/economia-micro-macro').then(
-                (m) => m.EconomiaMicroMacro
-              )
-          },
-          {
-            title: 'Economia Azul',
-            path: 'economia-azul-2',
-            loadComponent: () =>
-              import('../modules/app9-economia/app9-economia-bibliografia/economia-azul-2/economia-azul-2').then(
-                (m) => m.EconomiaAzul2
-              )
-          }
-        ]
+        loadComponent: () => import('../modules/app3-dir-const/app3-dir-const-bibliografia/app3-dir-const-bibliografia').then(m => m.App3DirConstBibliografia)
       },
+    ]
+  },
+  {
+    title: 'App4 DirAdm',
+    path: 'app4-dir-adm',
+    defaultChild: 'bibliografia',
+    segments: [
       {
-        title: 'Mídia',
-        path: 'media',
-        loadComponent: () =>
-          import('../modules/app9-economia/app9-economia-media/app9-economia-media').then(
-            (m) => m.App9EconomiaMedia
-          )
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app4-dir-adm/app4-dir-adm-flashcards/app4-dir-adm-flashcards').then(m => m.App4DirAdmFlashcards)
       },
       {
         title: 'Perguntas',
         path: 'perguntas',
-        loadComponent: () =>
-          import('../modules/app9-economia/app9-economia-perguntas/app9-economia-perguntas').then(
-            (m) => m.App9EconomiaPerguntas
-          )
+        loadComponent: () => import('../modules/app4-dir-adm/app4-dir-adm-perguntas/app4-dir-adm-perguntas').then(m => m.App4DirAdmPerguntas)
       },
       {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app9-economia/app9-economia-resumo/app9-economia-resumo').then(
-            (m) => m.App9EconomiaResumo
-          )
-      }
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app4-dir-adm/app4-dir-adm-conceitos/app4-dir-adm-conceitos').then(m => m.App4DirAdmConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app4-dir-adm/app4-dir-adm-bibliografia/app4-dir-adm-bibliografia').then(m => m.App4DirAdmBibliografia)
+      },
     ]
-  }
+  },
+  {
+    title: 'App5 InfraTi',
+    path: 'app5-infra-ti',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app5-infra-ti/app5-infra-ti-flashcards/app5-infra-ti-flashcards').then(m => m.App5InfraTiFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app5-infra-ti/app5-infra-ti-perguntas/app5-infra-ti-perguntas').then(m => m.App5InfraTiPerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app5-infra-ti/app5-infra-ti-conceitos/app5-infra-ti-conceitos').then(m => m.App5InfraTiConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app5-infra-ti/app5-infra-ti-bibliografia/app5-infra-ti-bibliografia').then(m => m.App5InfraTiBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App6 EngDados',
+    path: 'app6-eng-dados',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-flashcards/app6-eng-dados-flashcards').then(m => m.App6EngDadosFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-perguntas/app6-eng-dados-perguntas').then(m => m.App6EngDadosPerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-conceitos/app6-eng-dados-conceitos').then(m => m.App6EngDadosConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/app6-eng-dados-bibliografia').then(m => m.App6EngDadosBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App7 EngSoftware',
+    path: 'app7-eng-software',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app7-eng-software/app7-eng-software-flashcards/app7-eng-software-flashcards').then(m => m.App7EngSoftwareFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app7-eng-software/app7-eng-software-perguntas/app7-eng-software-perguntas').then(m => m.App7EngSoftwarePerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app7-eng-software/app7-eng-software-conceitos/app7-eng-software-conceitos').then(m => m.App7EngSoftwareConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app7-eng-software/app7-eng-software-bibliografia/app7-eng-software-bibliografia').then(m => m.App7EngSoftwareBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App8 SegInfo',
+    path: 'app8-seg-info',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app8-seg-info/app8-seg-info-flashcards/app8-seg-info-flashcards').then(m => m.App8SegInfoFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app8-seg-info/app8-seg-info-perguntas/app8-seg-info-perguntas').then(m => m.App8SegInfoPerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app8-seg-info/app8-seg-info-conceitos/app8-seg-info-conceitos').then(m => m.App8SegInfoConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app8-seg-info/app8-seg-info-bibliografia/app8-seg-info-bibliografia').then(m => m.App8SegInfoBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App9 CompNuvem',
+    path: 'app9-comp-nuvem',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app9-comp-nuvem/app9-comp-nuvem-flashcards/app9-comp-nuvem-flashcards').then(m => m.App9CompNuvemFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app9-comp-nuvem/app9-comp-nuvem-perguntas/app9-comp-nuvem-perguntas').then(m => m.App9CompNuvemPerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app9-comp-nuvem/app9-comp-nuvem-conceitos/app9-comp-nuvem-conceitos').then(m => m.App9CompNuvemConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app9-comp-nuvem/app9-comp-nuvem-bibliografia/app9-comp-nuvem-bibliografia').then(m => m.App9CompNuvemBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App10 IA',
+    path: 'app10-IA',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app10-IA/app10-ia-flashcards/app10-ia-flashcards').then(m => m.App10IAFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app10-IA/app10-ia-perguntas/app10-ia-perguntas').then(m => m.App10IAPerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app10-IA/app10-ia-conceitos/app10-ia-conceitos').then(m => m.App10IAConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app10-IA/app10-ia-bibliografia/app10-ia-bibliografia').then(m => m.App10IABibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App11 ContratacaoTi',
+    path: 'app11-contratacao-ti',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app11-contratacao-ti/app11-contratacao-ti-flashcards/app11-contratacao-ti-flashcards').then(m => m.App11ContratacaoTiFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app11-contratacao-ti/app11-contratacao-ti-perguntas/app11-contratacao-ti-perguntas').then(m => m.App11ContratacaoTiPerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app11-contratacao-ti/app11-contratacao-ti-conceitos/app11-contratacao-ti-conceitos').then(m => m.App11ContratacaoTiConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app11-contratacao-ti/app11-contratacao-ti-bibliografia/app11-contratacao-ti-bibliografia').then(m => m.App11ContratacaoTiBibliografia)
+      },
+    ]
+  },
+  {
+    title: 'App12 GestaoTi',
+    path: 'app12-gestao-ti',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Flashcards',
+        path: 'flashcards',
+        loadComponent: () => import('../modules/app12-gestao-ti/app12-gestao-ti-flashcards/app12-gestao-ti-flashcards').then(m => m.App12GestaoTiFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () => import('../modules/app12-gestao-ti/app12-gestao-ti-perguntas/app12-gestao-ti-perguntas').then(m => m.App12GestaoTiPerguntas)
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () => import('../modules/app12-gestao-ti/app12-gestao-ti-conceitos/app12-gestao-ti-conceitos').then(m => m.App12GestaoTiConceitos)
+      },
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () => import('../modules/app12-gestao-ti/app12-gestao-ti-bibliografia/app12-gestao-ti-bibliografia').then(m => m.App12GestaoTiBibliografia)
+      },
+    ]
+  },
 ];
 
-export const moduleRoutes: Route[] = MODULE_ROUTE_CONFIGS.map(({ path, defaultChild, segments }) => {
-  const children: Route['children'] = [
+export const moduleRoutes: Route[] = MODULE_ROUTE_CONFIGS.map(({ path, defaultChild, segments }) => ({
+  path,
+  children: [
     {
       path: '',
       redirectTo: defaultChild ?? segments[0]?.path ?? '',
       pathMatch: 'full'
     },
-    ...segments.map(({ path: segmentPath, loadComponent, children }) => {
-      if (children && children.length > 0) {
-        // Se tem filhos, criar rotas aninhadas SEM redirecionamento automático
-        const nestedChildren: Route['children'] = [
-          ...children.map(({ path: childPath, loadComponent: childLoadComponent }) => ({
-            path: childPath,
-            loadComponent: childLoadComponent
-          }))
-        ];
-        
-        return {
-          path: segmentPath,
-          loadComponent,
-          children: nestedChildren
-        };
-      } else {
-        // Se não tem filhos, rota simples
-        return {
-          path: segmentPath,
-          loadComponent
-        };
-      }
-    })
-  ];
-
-  return {
-    path,
-    children
-  };
-});
+    ...segments.map(seg => ({
+      path: seg.path,
+      loadComponent: seg.loadComponent
+    }))
+  ]
+}));
 
 export const defaultHomeRedirect = `${MODULE_ROUTE_CONFIGS[0]?.path ?? ''}/${
   MODULE_ROUTE_CONFIGS[0]?.defaultChild ?? MODULE_ROUTE_CONFIGS[0]?.segments[0]?.path ?? ''

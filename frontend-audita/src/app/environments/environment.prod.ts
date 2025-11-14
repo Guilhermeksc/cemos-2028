@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://cemos2028.com/api',
+  apiUrl: 'https://auditapro.com.br/api',
   // URL base para mídias em produção (servidas pelo Nginx)
-  mediasBasePath: 'https://cemos2028.com/midias'
+  mediasBasePath: 'https://auditapro.com.br/midias'
 };

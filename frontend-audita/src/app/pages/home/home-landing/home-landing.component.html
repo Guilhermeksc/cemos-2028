@@ -1,276 +1,129 @@
 <div class="landing-container">
   <div class="welcome-section">
     <div class="welcome-header">
-      <h1 class="main-title">CEMOS 2028</h1>
-      <p class="subtitle">Sistema de Estudos para o Concurso de Admissão</p>
+      <h1 class="main-title">Concursos 2026</h1>
+      <p class="subtitle">Sistema de estudos para aprovação em concursos</p>
     </div>
   </div>
 
   <div class="modules-grid">
-    <mat-card class="module-card" (click)="navigateTo(['app1-intendencia', 'bibliografia'])">
+    <mat-card class="module-card" (click)="navigateTo(['app1-controle-ext', 'bibliografia'])">
       <mat-card-header>
         <mat-icon class="module-icon">inventory_2</mat-icon>
-        <mat-card-title>Intendência</mat-card-title>
+        <mat-card-title>Controle Externo</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p><strong>CORRÊA</strong> - Logística.<br><strong>EMA-400/401</strong>.<br><strong>MD-41-M-01/02/03</strong>.<br><strong>Lei nº 11.631/2007</strong>.<br><strong>DGMM-0130</strong>, entre outras.</p>
+        <p>Conteúdo sobre controle externo, auditoria e fiscalização.</p>
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="module-card" (click)="navigateTo(['app2-estrategia', 'bibliografia'])">
-      <mat-card-header>
-        <mat-icon class="module-icon">route</mat-icon>
-        <mat-card-title>Estratégia</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p><strong>COUTAU-BÉGARIE</strong>, Tratado de Estratégia.<br><strong>WEDIN</strong>, Estratégias Marítimas.<br><strong>EMA-310</strong></p>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card class="module-card" (click)="navigateTo(['app3-planejamento-militar', 'bibliografia'])">
-      <mat-card-header>
-        <mat-icon class="module-icon">military_tech</mat-icon>
-        <mat-card-title>Planejamento Militar</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p><strong>Lei Complementar nº 97</strong>.<br> <strong>Decreto nº 7.276/2010</strong> - Estrutura Militar de Defesa.<br><strong>MD30-M-01</strong></p>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card class="module-card" (click)="navigateTo(['app4-historia', 'bibliografia'])">
-      <mat-card-header>
-        <mat-icon class="module-icon">history_edu</mat-icon>
-        <mat-card-title>História</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p><strong>BLAINEY</strong>, Breve história XX.<br><strong>VIDIGAL</strong>, Guerra no Mar.<br><strong>MAGNOLI</strong>, História das Guerras.<br><strong>ABREU</strong>, Síntese Histórica.</p>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card class="module-card" (click)="navigateTo(['app6-geopolitica-relacoes-internacionais', 'bibliografia'])">
-      <mat-card-header>
-        <mat-icon class="module-icon">public</mat-icon>
-        <mat-card-title>Geopolítica e RI</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p><strong>KAPLAN</strong>, A Vingança da Geografia.<br><strong>MATTOS</strong>, Geopolítica e Modernidade.<br><strong>VESENTINI</strong>, Novas Geopolíticas.<br><strong>MINGST</strong>, Relações Internacionais</p>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card class="module-card" (click)="navigateTo(['app7-politica', 'bibliografia'])">
+    <mat-card class="module-card" (click)="navigateTo(['app2-adm-pub', 'bibliografia'])">
       <mat-card-header>
         <mat-icon class="module-icon">account_balance</mat-icon>
-        <mat-card-title>Política</mat-card-title>
+        <mat-card-title>Administração Pública</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p><strong>DIAS</strong>, Ciência Política.<br><strong>SANTOS</strong>, Economia Azul.<br> <strong>EMA-323</strong> - Política Naval.<br><strong>Decreto nº 12.481/2025</strong> - PMN, entre outras</p>
+        <p>Conteúdo sobre administração pública, gestão e políticas públicas.</p>
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="module-card" (click)="navigateTo(['app8-direito', 'bibliografia'])">
+    <mat-card class="module-card" (click)="navigateTo(['app3-dir-const', 'bibliografia'])">
       <mat-card-header>
         <mat-icon class="module-icon">gavel</mat-icon>
-        <mat-card-title>Direito</mat-card-title>
+        <mat-card-title>Direito Constitucional</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p><strong>BYERS</strong>, A Lei da Guerra.<br><strong>CNUDM</strong> - Convenção das Nações Unidas sobre o Direito do Mar.<br><strong>Pacto de São José.</strong><br><strong>Convenção de Viena.</strong><br><strong>Manual Sanremo</strong>, entre outras.</p>
+        <p>Conteúdo sobre direito constitucional, direitos fundamentais e organização do Estado.</p>
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="module-card" (click)="navigateTo(['app9-economia', 'bibliografia'])">
+    <mat-card class="module-card" (click)="navigateTo(['app4-dir-adm', 'bibliografia'])">
       <mat-card-header>
-        <mat-icon class="module-icon">show_chart</mat-icon>
-        <mat-card-title>Economia</mat-card-title>
+        <mat-icon class="module-icon">balance_scale</mat-icon>
+        <mat-card-title>Direito Administrativo</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p><strong>GREMAUD</strong>, Economia Brasileira Contemporânea.<br><strong>VASCONCELLOS</strong>, Economia Micro e Macro.<br><strong>SANTOS</strong>, Economia Azul</p>
+        <p>Conteúdo sobre direito administrativo, atos administrativos e licitações.</p>
       </mat-card-content>
     </mat-card>
-  </div>
 
-  <div class="calendar-section">
-    <mat-card class="calendar-card">
+    <mat-card class="module-card" (click)="navigateTo(['app5-infra-ti', 'bibliografia'])">
       <mat-card-header>
-        <mat-icon class="calendar-icon">calendar_month</mat-icon>
-        <mat-card-title>Calendário de Estudos</mat-card-title>
+        <mat-icon class="module-icon">memory</mat-icon>
+        <mat-card-title>Infraestrutura de TI</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p class="calendar-description">
-          Cronograma organizado em 3 passadas para otimizar sua preparação e retenção do conteúdo.
-        </p>
-        
-        <div class="calendar-table-container">
-          <table class="calendar-table">
-            <thead>
-              <tr>
-                <th>Passada</th>
-                <th>Matéria</th>
-                <th>Início</th>
-                <th>Término</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Passada 1 -->
-              <tr class="passada-1">
-                <td class="passada-cell" rowspan="9">1</td>
-                <td>História</td>
-                <td>01/09/2025</td>
-                <td>17/10/2025</td>
-              </tr>
-              <tr class="passada-1">
-                <td>Geopolítica</td>
-                <td>20/10/2025</td>
-                <td>28/10/2025</td>
-              </tr>
-              <tr class="passada-1">
-                <td>Relações Internacionais</td>
-                <td>29/10/2025</td>
-                <td>12/11/2025</td>
-              </tr>
-              <tr class="passada-1">
-                <td>Política</td>
-                <td>13/11/2025</td>
-                <td>26/11/2025</td>
-              </tr>
-              <tr class="passada-1">
-                <td>Direito</td>
-                <td>27/11/2025</td>
-                <td>17/12/2025</td>
-              </tr>
-              <tr class="passada-1">
-                <td>Economia</td>
-                <td>18/12/2025</td>
-                <td>29/12/2025</td>
-              </tr>
-              <tr class="passada-1">
-                <td>Estratégia</td>
-                <td>30/12/2025</td>
-                <td>14/01/2026</td>
-              </tr>
-              <tr class="passada-1">
-                <td>Planejamento Militar</td>
-                <td>15/01/2026</td>
-                <td>26/01/2026</td>
-              </tr>
-              <tr class="passada-1 last-row">
-                <td>Serviço de Intendência (SIM)</td>
-                <td>27/01/2026</td>
-                <td>11/02/2026</td>
-              </tr>
+        <p>Conteúdo sobre infraestrutura de TI, redes, servidores e hardware.</p>
+      </mat-card-content>
+    </mat-card>
 
-              <!-- Passada 2 -->
-              <tr class="passada-2">
-                <td class="passada-cell" rowspan="9">2</td>
-                <td>História</td>
-                <td>12/02/2026</td>
-                <td>26/02/2026</td>
-              </tr>
-              <tr class="passada-2">
-                <td>Geopolítica</td>
-                <td>27/02/2026</td>
-                <td>09/03/2026</td>
-              </tr>
-              <tr class="passada-2">
-                <td>Relações Internacionais</td>
-                <td>10/03/2026</td>
-                <td>24/03/2026</td>
-              </tr>
-              <tr class="passada-2">
-                <td>Política</td>
-                <td>25/03/2026</td>
-                <td>07/04/2026</td>
-              </tr>
-              <tr class="passada-2">
-                <td>Direito</td>
-                <td>08/04/2026</td>
-                <td>28/04/2026</td>
-              </tr>
-              <tr class="passada-2">
-                <td>Economia</td>
-                <td>29/04/2026</td>
-                <td>08/05/2026</td>
-              </tr>
-              <tr class="passada-2">
-                <td>Estratégia</td>
-                <td>11/05/2026</td>
-                <td>26/05/2026</td>
-              </tr>
-              <tr class="passada-2">
-                <td>Planejamento Militar</td>
-                <td>27/05/2026</td>
-                <td>05/06/2026</td>
-              </tr>
-              <tr class="passada-2 last-row">
-                <td>Serviço de Intendência (SIM)</td>
-                <td>08/06/2026</td>
-                <td>23/06/2026</td>
-              </tr>
+    <mat-card class="module-card" (click)="navigateTo(['app6-eng-dados', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">storage</mat-icon>
+        <mat-card-title>Engenharia de Dados</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Conteúdo sobre engenharia de dados, bancos de dados e processamento de dados.</p>
+      </mat-card-content>
+    </mat-card>
 
-              <!-- Passada 3 -->
-              <tr class="passada-3">
-                <td class="passada-cell" rowspan="9">3</td>
-                <td>História</td>
-                <td>24/06/2026</td>
-                <td>01/07/2026</td>
-              </tr>
-              <tr class="passada-3">
-                <td>Geopolítica</td>
-                <td>02/07/2026</td>
-                <td>07/07/2026</td>
-              </tr>
-              <tr class="passada-3">
-                <td>Relações Internacionais</td>
-                <td>08/07/2026</td>
-                <td>13/07/2026</td>
-              </tr>
-              <tr class="passada-3">
-                <td>Política</td>
-                <td>14/07/2026</td>
-                <td>19/07/2026</td>
-              </tr>
-              <tr class="passada-3">
-                <td>Direito</td>
-                <td>20/07/2026</td>
-                <td>23/07/2026</td>
-              </tr>
-              <tr class="passada-3">
-                <td>Economia</td>
-                <td>24/07/2026</td>
-                <td>29/07/2026</td>
-              </tr>
-              <tr class="passada-3">
-                <td>Estratégia</td>
-                <td>30/07/2026</td>
-                <td>06/08/2026</td>
-              </tr>
-              <tr class="passada-3">
-                <td>Planejamento Militar</td>
-                <td>07/08/2026</td>
-                <td>13/08/2026</td>
-              </tr>
-              <tr class="passada-3 last-row">
-                <td>Serviço de Intendência (SIM)</td>
-                <td>14/08/2026</td>
-                <td>21/08/2026</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <mat-card class="module-card" (click)="navigateTo(['app7-eng-software', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">terminal</mat-icon>
+        <mat-card-title>Engenharia de Software</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Conteúdo sobre engenharia de software, desenvolvimento e arquitetura de sistemas.</p>
+      </mat-card-content>
+    </mat-card>
 
-        <div class="calendar-legend">
-          <div class="legend-item">
-            <span class="legend-badge passada-1-badge">1ª Passada</span>
-            <span class="legend-text">Primeiro contato com o conteúdo</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-badge passada-2-badge">2ª Passada</span>
-            <span class="legend-text">Revisão e aprofundamento</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-badge passada-3-badge">3ª Passada</span>
-            <span class="legend-text">Consolidação final</span>
-          </div>
-        </div>
+    <mat-card class="module-card" (click)="navigateTo(['app8-seg-info', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">security</mat-icon>
+        <mat-card-title>Segurança da Informação</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Conteúdo sobre segurança da informação, criptografia e proteção de dados.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app9-comp-nuvem', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">cloud</mat-icon>
+        <mat-card-title>Computação em Nuvem</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Conteúdo sobre computação em nuvem, serviços cloud e arquiteturas distribuídas.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app10-IA', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">smart_toy</mat-icon>
+        <mat-card-title>Inteligência Artificial</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Conteúdo sobre inteligência artificial, machine learning e algoritmos.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app11-contratacao-ti', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">assignment</mat-icon>
+        <mat-card-title>Contratação de TI</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Conteúdo sobre contratação de TI, licitações e gestão de contratos de tecnologia.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="module-card" (click)="navigateTo(['app12-gestao-ti', 'bibliografia'])">
+      <mat-card-header>
+        <mat-icon class="module-icon">settings</mat-icon>
+        <mat-card-title>Gestão de TI</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Conteúdo sobre gestão de TI, governança, frameworks e melhores práticas.</p>
       </mat-card-content>
     </mat-card>
   </div>
