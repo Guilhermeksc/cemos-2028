@@ -1,0 +1,110 @@
+<div class="conceitos-container">
+
+  <!-- Header: título + stats (mesmo estilo de Flash Cards e Perguntas) -->
+  <div class="header" *ngIf="showHeader">
+    <h2>{{ moduleEmoji ? (moduleEmoji + ' ') : '🧭 ' }}{{ moduleLabel || 'Conceitos' }}</h2>
+    <div class="stats" *ngIf="!loading">
+      <span class="stat-item">
+        <strong>{{ filteredConceitos.length }}</strong> de <strong>{{ conceitos.length }}</strong> conceitos
+      </span>
+      <span class="stat-item">
+        <strong>{{ bibliografias.length }}</strong> {{ bibliografias.length === 1 ? 'bibliografia' : 'bibliografias' }}
+      </span>
+      <span class="stat-item">
+        <strong>{{ assuntosDisponiveis.length }}</strong> {{ assuntosDisponiveis.length === 1 ? 'assunto' : 'assuntos' }}
+      </span>
+    </div>
+  </div>
+
+  <!-- Botões de navegação (preservados) -->
+  <nav class="navigation-buttons" aria-label="Navegação" *ngIf="showHeader && !loading">
+    <button class="btn btn-back" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">
+      <span class="back-arrow"></span>
+      Voltar à Bibliografia
+    </button>
+    <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
+      <mat-icon>category</mat-icon> Conceitos
+    </button>
+    <button mat-stroked-button (click)="navigateTo(flashcardsPath)" *ngIf="flashcardsPath">
+      <mat-icon>style</mat-icon> Flashcards
+    </button>
+    <button mat-stroked-button (click)="navigateTo(mediaPath)" *ngIf="mediaPath">
+      <mat-icon>play_circle</mat-icon> Media
+    </button>
+    <button mat-stroked-button (click)="navigateTo(perguntasPath)" *ngIf="perguntasPath">
+      <mat-icon>quiz</mat-icon> Perguntas
+    </button>
+  </nav>
+
+  <!-- Loading state -->
+  <div class="loading-state" *ngIf="loading">
+    <div class="spinner"></div>
+    <p class="loading-text">Carregando conceitos...</p>
+  </div>
+
+  <!-- Error state -->
+  <div class="error-state" *ngIf="error && !loading">
+    <div class="error-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="15" y1="9" x2="9" y2="15"></line>
+        <line x1="9" y1="9" x2="15" y2="15"></line>
+      </svg>
+    </div>
+    <p class="error-message">{{ error }}</p>
+    <button 
+      class="retry-button" 
+      (click)="loadConceitos()">
+      Tentar novamente
+    </button>
+  </div>
+
+  <!-- Content with tabs -->
+  <div *ngIf="!loading && !error" class="content-container">
+    <!-- Filtros (Bibliografia + Assunto) -->
+    <div class="filters-section" *ngIf="!loading">
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="bibliografia-filter">📖 Bibliografia:</label>
+          <select
+            id="bibliografia-filter"
+            name="bibliografia"
+            [(ngModel)]="selectedBibliografiaId"
+            (ngModelChange)="onBibliografiaChange()"
+            class="filter-select">
+            <option [ngValue]="null">Todas as Bibliografias</option>
+            <option *ngFor="let bib of bibliografias" [ngValue]="bib.id">{{ bib.titulo }}</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="assunto-filter">🏷️ Assunto:</label>
+          <select
+            id="assunto-filter"
+            name="assunto"
+            [(ngModel)]="selectedAssunto"
+            (ngModelChange)="onAssuntoChange()"
+            class="filter-select"
+            [disabled]="assuntosDisponiveis.length === 0">
+            <option value="">Todos os assuntos</option>
+            <option *ngFor="let assunto of assuntosDisponiveis" [value]="assunto">{{ assunto }}</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Ações -->
+      <div class="actions-row">
+        <button class="btn btn-outline" (click)="resetFilters()" [disabled]="!selectedBibliografiaId && !selectedAssunto">✖️ Limpar Filtros</button>
+      </div>
+
+
+
+    <!-- Conceitos table -->
+    <app-conceitos-table 
+      [conceitos]="filteredConceitos"
+      [title]="!showHeader ? (bibliografias.length <= 1 ? 'Conceitos' : 'Conceitos da Bibliografia') : ''"
+      [showBibliografia]="bibliografias.length <= 1"
+      [emptyMessage]="getEmptyMessage()">
+    </app-conceitos-table>
+  </div>
+</div>

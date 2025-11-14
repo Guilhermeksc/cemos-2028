@@ -1,0 +1,121 @@
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .table-container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .conceitos-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1rem;
+    }
+
+    /* Título em vermelho e negrito (aplica na tabela desktop) */
+    .titulo-text {
+        color: #c62828; /* vermelho mais fechado */
+        font-weight: 700;
+    }
+
+    /* Descrição: permitir quebra de linha e evitar overflow na tabela */
+    .descricao-text {
+        white-space: normal; /* permitir múltiplas linhas */
+        word-break: break-word; /* quebrar palavras longas quando necessário */
+        overflow-wrap: anywhere;
+        margin: 0; /* remover margem padrão de p */
+        line-height: 1.6; /* aumenta o espaçamento entre linhas */
+        margin-bottom: 0.5rem; /* espaço visual após a descrição */
+    }
+
+    .header-cell {
+        font-weight: 600;
+        background: #f5f5f5;
+    }
+
+    .table-row {
+        transition: background 0.2s;
+    }
+
+    .table-row:hover {
+        background: #f9f9f9;
+    }
+
+    .conceitos-cards-mobile {
+        display: none;
+    }
+
+    // Mobile styles
+    @media (max-width: 700px) {
+        .d-desktop {
+            display: none !important;
+        }
+        .conceitos-cards-mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .conceito-card-mobile {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 1rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+        .conceito-card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .conceito-field {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.4rem; /* aumenta espaço entre campos para melhor leitura */
+            font-size: 1rem;
+        }
+        .conceito-label {
+            font-weight: 600;
+            color: #3a3a3a;
+            margin-bottom: 0.1rem;
+        }
+        .conceito-value {
+            color: #222;
+            word-break: break-word;
+        }
+        .prova-chip-mobile {
+            display: inline-flex;
+            align-items: center;
+            background: #e3f2fd;
+            color: #1976d2;
+            border-radius: 16px;
+            padding: 0.2rem 0.7rem;
+            font-size: 0.95em;
+            font-weight: 500;
+            gap: 0.3em;
+        }
+        .prova-chip-confirmada {
+            background: #c8e6c9;
+            color: #388e3c;
+        }
+        .prova-chip-pendente {
+            background: #ffe0b2;
+            color: #f57c00;
+        }
+        .no-prova-icon {
+            color: #aaa;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+    }
+
+    // Responsivo para padding
+    @media (max-width: 768px) {
+        // Estilos responsivos da tabela podem ser adicionados aqui se necessário
+    }
+}

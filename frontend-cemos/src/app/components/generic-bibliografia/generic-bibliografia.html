@@ -1,0 +1,62 @@
+<div class="default-content" *ngIf="!hasActiveChild">
+  <div class="topics-grid">
+    <div 
+      class="topic-card" 
+      *ngFor="let topic of config.topics"
+      (click)="navigateToTopic(topic)">
+      <div class="book-cover">
+        <img [src]="topic.imageUrl" [alt]="topic.title" />
+      </div>
+      <h3>{{ topic.title }}</h3>
+      <p>{{ topic.description }}</p>
+    </div>
+  </div>
+
+  <!-- Estrutura Parametrizável -->
+  <div class="bibliografia-estrutura">
+    <h2>Título - Bibliografia</h2>
+
+    <section class="assunto">
+      <h3>Assunto</h3>
+      <p>{{ assunto }}</p>
+    </section>
+
+    <section class="proposito">
+      <h3>Propósito</h3>
+      <p>{{ proposito }}</p>
+    </section>
+
+    <section class="materia">
+      <h3>Matéria</h3>
+      <div *ngFor="let materia of materias">
+        <h4>{{ materia.letra }}) {{ materia.titulo }}</h4>
+        <ul>
+          <li *ngFor="let topico of materia.topicos; let i = index">
+            {{ toRoman(i + 1) }}. {{ topico }}
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bibliografia">
+      <h3>Bibliografia</h3>
+      <div *ngFor="let biblio of bibliografias">
+        <h4>{{ biblio.letra }}) {{ biblio.titulo }}</h4>
+        <ul>
+          <li *ngFor="let item of biblio.itens">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="links-download">
+      <a *ngIf="pdfUrl" [href]="pdfUrl" download>📄 Baixar PDF</a>
+      <span *ngIf="pdfUrl && wordUrl"> | </span>
+      <a *ngIf="wordUrl" [href]="wordUrl" download>📝 Baixar Word</a>
+    </section>
+  </div>
+</div>
+
+<!-- Router outlet principal -->
+<router-outlet (activate)="onRouteActivate()" (deactivate)="onRouteDeactivate()"></router-outlet>

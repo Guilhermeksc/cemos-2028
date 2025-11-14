@@ -1,0 +1,94 @@
+<div class="capa-bibliografia-container">
+  
+  <!-- Loading Spinner -->
+  <div class="loading-container" *ngIf="isLoading">
+    <mat-spinner diameter="50"></mat-spinner>
+    <p>Carregando conteúdo...</p>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content-wrapper" *ngIf="!isLoading && hasContent">
+
+        <!-- Botões de navegação abaixo das imagens -->
+    <div class="navigation-buttons" *ngIf="showNavigationButtons">
+      <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
+        <mat-icon>arrow_back</mat-icon> Voltar ao Home
+      </button>
+      <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
+        <mat-icon>category</mat-icon> Conceitos
+      </button>
+      <button mat-stroked-button (click)="navigateTo(flashcardsPath)" *ngIf="flashcardsPath">
+        <mat-icon>style</mat-icon> Flashcards
+      </button>
+      <button mat-stroked-button (click)="navigateTo(mediaPath)" *ngIf="mediaPath">
+        <mat-icon>play_circle</mat-icon> Media
+      </button>
+      <button mat-stroked-button (click)="navigateTo(perguntasPath)" *ngIf="perguntasPath">
+        <mat-icon>quiz</mat-icon> Perguntas
+      </button>
+    </div>
+
+    <!-- Texto discreto de orientação -->
+    <div class="bibliografia-hint" *ngIf="displayMode === 'multiple' && capas?.length">
+      <small>Clique na bibliografia para acessar.</small>
+    </div>    
+    <!-- MODO MÚLTIPLAS CAPAS: Grid de capas clicáveis -->
+    <div class="capas-grid" *ngIf="displayMode === 'multiple'">
+      <div 
+        *ngFor="let capa of capas" 
+        class="capa-card"
+        role="button"
+        tabindex="0"
+        (click)="navigateToCapa(capa)"
+        (keydown.enter)="navigateToCapa(capa)"
+        (keydown.space)="navigateToCapa(capa)"
+        [attr.aria-label]="capa.title || 'Navegar para livro'"
+        [attr.data-route]="capa.routePath">
+      
+        <div class="capa-image-wrapper">
+          <img 
+            [src]="getImageUrl(capa.imagePath)" 
+            [alt]="capa.title || 'Capa da Bibliografia'"
+            class="capa-image"
+            [attr.draggable]="false"
+            (error)="onImageError($event, capa.imagePath)">
+        
+          <!-- Overlay com título e descrição -->
+          <div class="capa-overlay" *ngIf="capa.title || capa.description">
+            <h3 class="capa-title" *ngIf="capa.title">{{ capa.title }}</h3>
+            <p class="capa-description" *ngIf="capa.description">{{ capa.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- MODO SINGLE: Imagem única com markdown -->
+    <div class="image-container" *ngIf="displayMode === 'single' && imagePath">
+      <img 
+        [src]="getImageUrl(imagePath)" 
+        [alt]="'Capa da Bibliografia'"
+        class="capa-image"
+        (error)="onImageError($event, imagePath)">
+    </div>
+
+    <!-- Conteúdo Markdown (disponível em ambos os modos) -->
+    <div class="markdown-content" *ngIf="htmlContent">
+      <mat-card class="content-card">
+        <mat-card-content>
+          <div [innerHTML]="htmlContent"></div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+  <!-- Mensagem de Erro ou Sem Conteúdo -->
+  <div class="no-content" *ngIf="!isLoading && !hasContent">
+    <p>Nenhum conteúdo disponível</p>
+    <p class="subtitle">Configure os caminhos de imagem e/ou markdown</p>
+  </div>
+
+</div>

@@ -1,0 +1,338 @@
+// Container principal do resumo
+.resumo-container {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.main-layout {
+  height: 100%;
+}
+
+// Sidenav Container - Esquema preto e branco
+.sidenav-container {
+  height: 100%;
+  background-color: #ffffff;
+  
+  // Sidebar/Menu lateral
+  .sidebar {
+    width: 100%;
+    max-width: 300px;
+    background-color: #1a1a1a; // Fundo preto
+    color: #ffffff; // Texto branco
+    border-right: 2px solid #333333;
+    
+    // Header do sidebar
+    .sidebar-header {
+      padding: 16px;
+      background-color: #000000;
+      border-bottom: 1px solid #333333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      h3 {
+        color: #ffffff;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      
+      // Botão de fechar (mobile)
+      button {
+        color: #ffffff;
+        
+        mat-icon {
+          color: #ffffff;
+        }
+      }
+    }
+    
+    // Lista de navegação
+    .toc-list {
+      background-color: #1a1a1a;
+      padding: 0;
+      
+      .toc-item {
+        display: flex;
+        align-items: flex-start; // permite múltiplas linhas
+        height: auto; // ajusta automaticamente a altura        
+        border-bottom: 1px solid #333333;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        min-height: 48px;
+        
+        // Indicação visual para itens com filhos
+        &.has-children {
+          .toc-text::after {
+            content: ' ▼';
+            font-size: 0.7em;
+            opacity: 0.6;
+            margin-left: 4px;
+            transition: transform 0.2s ease;
+          }
+          
+          &.collapsed .toc-text::after {
+            content: ' ▶';
+          }
+          
+          &:hover .toc-text::after {
+            opacity: 1;
+          }
+        }
+        
+        // Quebra de linha nos itens
+        .toc-text {
+          flex: 1;
+          color: #ffffff;
+          white-space: normal;
+          word-wrap: break-word;
+          line-height: 1.4;
+          display: block;
+          padding: 8px 0;
+          cursor: pointer;
+        
+          // Níveis de indentação
+          &.level-1 {
+            font-weight: 500;
+            padding: 0 12px;
+            color: #cdcba5;
+            font-size: 0.9rem;
+          }
+          
+          &.level-2 {
+            color: #a9b6e0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+          }
+          
+          &.level-3 {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.8;
+          }
+          
+          &.level-4 {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: #00ff26;
+          }
+          
+          &.level-5, &.level-6 {
+            font-weight: 400;
+            font-size: 0.75rem;
+            opacity: 0.6;
+          }
+        }
+        
+        // Hover effect
+        &:hover {
+          background-color: #333333;
+        }
+        
+        // Estado ativo/selecionado
+        &.active {
+          background-color: #404040;
+          border-left: 4px solid #ffffff;
+        }
+      }
+    }
+  }
+  
+  // Conteúdo principal
+  .main-content {
+    background-color: #ffffff;
+    
+    .content-card {
+      margin: 16px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+      // Container de loading
+      .loading-container {
+        text-align: center;
+        padding: 40px;
+        color: #666666;
+        
+        p {
+          margin-top: 16px;
+          color: #666666;
+        }
+      }
+      
+      // Container de erro
+      .error-container {
+        text-align: center;
+        padding: 40px;
+        color: #d32f2f;
+        
+        mat-icon {
+          font-size: 48px;
+          width: 48px;
+          height: 48px;
+        }
+        
+        p {
+          margin: 16px 0;
+        }
+      }
+            
+      // Sem conteúdo
+      .no-content {
+        text-align: center;
+        padding: 40px;
+        color: #666666;
+        
+        mat-icon {
+          font-size: 48px;
+          width: 48px;
+          height: 48px;
+        }
+        
+        p {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Botões de download
+.download-buttons {
+  background-color: #000000;
+  border-bottom: 2px solid #444444; /* linha separadora mais visível */
+  display: flex;
+  flex-direction: row; /* alinhados lado a lado */
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* pequeno espaço entre os botões */
+
+  .download-btn {
+    flex: 1; /* todos ocupam o mesmo espaço */
+    max-width: 100px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #333333;
+    letter-spacing: 0.2px; /* reduz o espaçamento entre letras */
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: none; /* mantém texto legível */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    mat-icon {
+      color: #1a1a1a;
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+
+// Botão toggle para mostrar/ocultar sidebar
+.sidebar-toggle {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1001;
+  width: 56px;
+  height: 56px;
+  background-color: #1a1a1a !important;
+  color: #ffffff;
+  border: 2px solid #333333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  
+  mat-icon {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  &:hover {
+    background-color: #333333 !important;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+// Quando o sidenav está aberto, ajustar a posição do botão
+.sidenav-container.mat-sidenav-container {
+  .sidebar-toggle {
+    // Quando sidebar está aberta, mover o botão para a direita
+    &.sidenav-open {
+      left: 416px; // 400px da largura + 16px de margin
+      background-color: #333333 !important;
+      
+      @media (max-width: 768px) {
+        left: 296px; // 280px da largura + 16px de margin
+      }
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .sidenav-container {
+    .sidebar {
+      max-width: 280px;
+    }
+    
+    .main-content {
+      .content-card {
+        margin: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .sidenav-container {
+    .sidebar {
+      max-width: 100%;
+      
+      .sidebar-header {
+        padding: 12px;
+        
+        h3 {
+          font-size: 1.1rem;
+        }
+      }
+      
+      .toc-list {
+        .toc-item {
+          .toc-text {
+            font-size: 0.9rem;
+            
+            &.level-2 {
+              font-size: 0.85rem;
+            }
+            
+            &.level-3 {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    
+    .main-content {
+      .content-card {
+        margin: 4px;
+        
+        .markdown-content {
+          padding: 16px;
+        }
+      }
+    }
+  }
+}

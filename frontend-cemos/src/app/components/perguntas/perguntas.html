@@ -1,0 +1,245 @@
+<!-- Simulado de Perguntas - Layout com Tabs -->
+<div class="simulado-container-simplified">
+  
+  <!-- Header com Estatísticas -->
+  <div class="header">
+    <h2>📝 Perguntas</h2>
+    <div class="stats" *ngIf="!isLoadingBibliografias">
+      <span class="stat-item">
+        <strong>{{ getStats().vf }}</strong> V/F
+      </span>
+      <span class="stat-item">
+        <strong>{{ getStats().multipla }}</strong> Múltipla
+      </span>
+      <span class="stat-item">
+        <strong>{{ getStats().correlacao }}</strong> Correlação
+      </span>
+      <span class="stat-item">
+        <strong>{{ getStats().bibliografias }}</strong> {{ getStats().bibliografias === 1 ? 'bibliografia' : 'bibliografias' }}
+      </span>
+      <span class="stat-item">
+        <strong>{{ getStats().assuntos }}</strong> {{ getStats().assuntos === 1 ? 'assunto' : 'assuntos' }}
+      </span>
+    </div>
+  </div>
+  
+  <!-- Seletor de Bibliografia e Assunto - Sempre visível -->
+  <div class="filters-section" *ngIf="!isLoadingBibliografias">
+    <div class="filter-row">
+      <div class="filter-group">
+        <label for="bibliografia-select">📖 Bibliografia:</label>
+        <select 
+          id="bibliografia-select"
+          class="filter-select"
+          [(ngModel)]="selectedBibliografiaId"
+          (change)="onBibliografiaChange()"
+          [disabled]="isLoadingBibliografias"
+        >
+          <option [ngValue]="null">Todas as Bibliografias</option>
+          <option 
+            *ngFor="let bibliografia of bibliografiasComEstatisticas" 
+            [ngValue]="bibliografia.id"
+          >
+            {{ getBibliografiaOptionText(bibliografia) }}
+          </option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="assunto-select">🏷️ Assunto:</label>
+        <select 
+          id="assunto-select"
+          class="filter-select"
+          [(ngModel)]="selectedAssunto"
+          (change)="onAssuntoChange()"
+          [disabled]="isLoadingBibliografias || assuntosDisponiveis.length === 0"
+        >
+          <option value="">Todos os Assuntos</option>
+          <option 
+            *ngFor="let assunto of assuntosDisponiveis" 
+            [value]="assunto"
+          >
+            {{ assunto }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Ações -->
+    <div class="actions-row">
+      <button 
+        *ngIf="bibliografiaPath"
+        class="btn btn-back"
+        (click)="goToBibliografia()">
+        <span class="back-arrow"></span>
+        Voltar à Bibliografia
+      </button>
+    </div>
+  </div>
+  
+  <div *ngIf="isLoadingBibliografias" class="loading-text" style="text-align: center; padding: 1rem; color: #6b7280; font-style: italic;">
+    Carregando bibliografias...
+  </div>
+  
+  <!-- Sistema de Tabs -->
+  <div class="tabs-container">
+    <div class="tabs-header">
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'completo'"
+        (click)="setActiveTab('completo')"
+      >
+        📝 Simulado Completo (15 questões)
+      </button>
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'vf'"
+        (click)="setActiveTab('vf')"
+      >
+        ✅ Verdadeiro/Falso (20 questões)
+      </button>
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'multipla'"
+        (click)="setActiveTab('multipla')"
+      >
+        🔘 Múltipla Escolha (10 questões)
+      </button>
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === 'correlacao'"
+        (click)="setActiveTab('correlacao')"
+      >
+        🔗 Correlação (5 questões)
+      </button>
+    </div>
+
+    <!-- Conteúdo do Tab -->
+    <div class="tabs-content">
+      <!-- Loading das Questões -->
+      <div *ngIf="isLoadingQuestions" class="loading-questions">
+        <div class="loading-spinner"></div>
+        <p>Carregando prova...</p>
+      </div>
+
+      <!-- Prova Carregada -->
+      <div *ngIf="questionsLoaded && !isLoadingQuestions" class="prova-loaded">
+    
+    <!-- Header da Prova -->
+    <div class="prova-header">
+      <div class="prova-info">
+        <h2>📝 Prova - {{ simuladoQuestions.length }} Questões</h2>
+        <div class="prova-stats">
+          <span class="stat">Respondidas: {{ getTotalAnsweredQuestions() }}/{{ simuladoQuestions.length }}</span>
+          <span class="stat">Acertos: {{ getTotalCorrectAnswers() }}</span>
+          <span class="stat" [class.good-score]="getScorePercentage() >= 70">
+            Performance: {{ getScorePercentage().toFixed(1) }}%
+          </span>
+        </div>
+      </div>
+      
+      <button 
+        class="btn btn-secondary gerar-nova-prova-btn"
+        (click)="gerarNovaProva()"
+        [disabled]="isLoadingQuestions"
+      >
+        🔄 Gerar Nova Prova
+      </button>
+    </div>
+
+    <!-- Lista de Questões -->
+    <div class="questoes-list">
+      <div 
+        *ngFor="let question of simuladoQuestions; let i = index" 
+        class="questao-item"
+        [class.answered]="question.uniqueKey && isQuestionAnswered(question.uniqueKey)"
+        [class.correct]="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'correct'"
+        [class.incorrect]="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'incorrect'"
+      >
+        
+        <!-- Cabeçalho da Questão -->
+        <div class="questao-header">
+          <div class="questao-numero">
+            <span class="numero">{{ i + 1 }}</span>
+            <span class="tipo-badge" [class]="'tipo-' + question.tipo">
+              {{ question.tipo === 'vf' ? 'V/F' : 
+                 question.tipo === 'multipla' ? 'Múltipla' : 'Correlação' }}
+            </span>
+          </div>
+          
+          <div class="questao-info">
+            <span *ngIf="question.bibliografia_titulo" class="bibliografia">
+              📚 {{ question.bibliografia_titulo }}
+            </span>
+            <span *ngIf="question.paginas" class="paginas">
+              📄 {{ question.paginas }}
+            </span>
+          </div>
+
+          <!-- Status da Resposta -->
+          <div class="answer-status">
+            <div *ngIf="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'correct'" class="status-badge correct">
+              ✅ Correta
+            </div>
+            <div *ngIf="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'incorrect'" class="status-badge incorrect">
+              ❌ Incorreta
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo da Questão -->
+        <div class="questao-content">
+          <h4 class="questao-pergunta">{{ question.pergunta }}</h4>
+
+          <!-- Pergunta Verdadeiro/Falso - Componente Específico -->
+          <app-pergunta-v-f
+            *ngIf="question.tipo === 'vf'"
+            [questionId]="question.id"
+            [questionData]="getVFData(question)"
+            [isAnswered]="questionResults[question.uniqueKey!]?.answered || false"
+            [isCorrect]="questionResults[question.uniqueKey!]?.isCorrect || false"
+            (answerSubmitted)="onAnswerSubmitted($event)"
+          ></app-pergunta-v-f>
+
+          <!-- Pergunta Múltipla Escolha - Componente Específico -->
+          <app-pergunta-multipla
+            *ngIf="question.tipo === 'multipla'"
+            [questionId]="question.id"
+            [questionData]="getMultiplaData(question)"
+            [isAnswered]="questionResults[question.uniqueKey!]?.answered || false"
+            [isCorrect]="questionResults[question.uniqueKey!]?.isCorrect || false"
+            (answerSubmitted)="onAnswerSubmitted($event)"
+          ></app-pergunta-multipla>
+
+          <!-- Pergunta de Correlação - Componente Específico -->
+          <app-pergunta-correlacao
+            *ngIf="question.tipo === 'correlacao'"
+            [questionId]="question.id"
+            [questionData]="getCorrelacaoData(question)"
+            [isAnswered]="questionResults[question.uniqueKey!]?.answered || false"
+            [isCorrect]="questionResults[question.uniqueKey!]?.isCorrect || false"
+            (answerSubmitted)="onAnswerSubmitted($event)"
+          ></app-pergunta-correlacao>
+
+        </div>
+      </div>
+
+      <!-- Mensagem se não há questões ou questões insuficientes -->
+      <div *ngIf="!questionsLoaded && !isLoadingQuestions" class="no-questions">
+        <h3 *ngIf="!insufficientQuestionsMessage">🤔 Nenhuma prova carregada</h3>
+        <h3 *ngIf="insufficientQuestionsMessage">⚠️ Não foi possível gerar a prova</h3>
+        
+        <div *ngIf="insufficientQuestionsMessage" class="insufficient-message">
+          <p>{{ insufficientQuestionsMessage }}</p>
+        </div>
+        
+        <p *ngIf="!insufficientQuestionsMessage">Configure as bibliografias e gere uma nova prova.</p>
+        
+        <button class="btn btn-primary" (click)="gerarNovaProva()">
+          🚀 Gerar Prova
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

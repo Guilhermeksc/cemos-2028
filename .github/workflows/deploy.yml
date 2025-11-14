@@ -3,7 +3,7 @@ name: 🚀 Deploy to Hostinger Server
 on:
   push:
     branches:
-      - master  # dispara o deploy quando houver push na master
+      - master
 
 jobs:
   deploy:
@@ -29,8 +29,13 @@ jobs:
             echo "📦 Atualizando repositório..."
             git pull origin master
 
-            echo "🏗️ Build do frontend..."
-            cd frontend
+            echo "🏗️ Build do CEMOS..."
+            cd frontend-cemos
+            npm install --legacy-peer-deps
+            npm run build:prod
+
+            echo "🏗️ Build do Auditapro..."
+            cd ../frontend-audita
             npm install --legacy-peer-deps
             npm run build:prod
 
@@ -38,5 +43,5 @@ jobs:
             cd ..
             docker compose restart backend nginx
 
-            echo "✅ Deploy concluído!"
+            echo "✅ Deploy concluído com sucesso!"
           EOF

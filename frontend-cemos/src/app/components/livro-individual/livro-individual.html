@@ -1,0 +1,145 @@
+<div class="livro-container">
+  
+  <!-- Menu Lateral -->
+  <aside class="side-menu" [class.collapsed]="isMenuCollapsed">
+    
+    <!-- Botões do Menu -->
+    <div class="menu-toggle-container">
+      <!-- Botão de Voltar -->
+      <button 
+        *ngIf="backRoute"
+        mat-icon-button 
+        class="back-button"
+        (click)="navigateBack()"
+        [matTooltip]="'Voltar para ' + backLabel"
+        matTooltipPosition="right"
+        aria-label="Voltar">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      
+      <!-- Botão de Toggle do Menu -->
+      <button 
+        mat-icon-button 
+        class="menu-toggle-button"
+        (click)="toggleMenu()"
+        [matTooltip]="isMenuCollapsed ? 'Expandir menu' : 'Recolher menu'"
+        matTooltipPosition="right"
+        [attr.aria-label]="isMenuCollapsed ? 'Expandir menu' : 'Recolher menu'">
+        <mat-icon>{{ isMenuCollapsed ? 'menu' : 'close' }}</mat-icon>
+      </button>
+    </div>
+
+    <!-- Conteúdo do Menu (visível apenas quando expandido) -->
+    <div class="menu-content" *ngIf="!isMenuCollapsed">
+      
+      <!-- Seletor de Arquivo -->
+      <div class="file-selector" *ngIf="markdownFiles.length > 1">
+        <div class="menu-title-container">
+          <h3 class="menu-title">Arquivos</h3>
+          <button 
+            mat-icon-button 
+            class="section-toggle-button"
+            (click)="toggleFileSelector()"
+            [attr.aria-label]="isFileSelectorExpanded ? 'Recolher arquivos' : 'Expandir arquivos'">
+            <mat-icon>{{ isFileSelectorExpanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+          </button>
+        </div>
+        <mat-nav-list *ngIf="isFileSelectorExpanded">
+          <mat-list-item 
+            *ngFor="let file of markdownFiles"
+            [class.active]="selectedFile?.fileName === file.fileName"
+            (click)="selectFile(file)">
+            <mat-icon matListItemIcon>description</mat-icon>
+            <div matListItemTitle class="file-title-wrapper">
+              <span class="file-title">{{ file.title }}</span>
+            </div>
+          </mat-list-item>
+        </mat-nav-list>
+      </div>
+
+      <!-- Navegação por Headings -->
+      <div class="headings-navigation" *ngIf="headings.length > 0">
+        <div class="menu-title-container">
+          <h3 class="menu-title">Índice</h3>
+          <button 
+            mat-icon-button 
+            class="section-toggle-button"
+            (click)="toggleHeadingsNavigation()"
+            [attr.aria-label]="isHeadingsNavigationExpanded ? 'Recolher índice' : 'Expandir índice'">
+            <mat-icon>{{ isHeadingsNavigationExpanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+          </button>
+        </div>
+        
+        <div class="headings-tree" *ngIf="isHeadingsNavigationExpanded">
+          
+          <!-- Nível 1 (H1) -->
+          <ng-container *ngFor="let h1 of headings">
+            <div class="heading-item level-1">
+              
+              <div class="heading-content" (click)="navigateToHeading(h1)">
+                <mat-icon class="heading-icon">{{ getHeadingIcon(h1) }}</mat-icon>
+                <span class="heading-title">{{ h1.title }}</span>
+              </div>
+
+              <!-- Nível 2 (H2) - Filhos do H1 -->
+              <div class="heading-children" *ngIf="isExpanded(h1) && h1.children && h1.children.length > 0">
+                <ng-container *ngFor="let h2 of h1.children">
+                  <div class="heading-item level-2">
+                    
+                    <div class="heading-content" (click)="navigateToHeading(h2)">
+                      <mat-icon class="heading-icon">{{ getHeadingIcon(h2) }}</mat-icon>
+                      <span class="heading-title">{{ h2.title }}</span>
+                    </div>
+
+                    <!-- Nível 3 (H3) - Filhos do H2 -->
+                    <div class="heading-children" *ngIf="isExpanded(h2) && h2.children && h2.children.length > 0">
+                      <ng-container *ngFor="let h3 of h2.children">
+                        <div class="heading-item level-3">
+                          
+                          <div class="heading-content" (click)="navigateToHeading(h3)">
+                            <mat-icon class="heading-icon">article</mat-icon>
+                            <span class="heading-title">{{ h3.title }}</span>
+                          </div>
+
+                        </div>
+                      </ng-container>
+                    </div>
+
+                  </div>
+                </ng-container>
+              </div>
+
+            </div>
+          </ng-container>
+
+        </div>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- Área de Conteúdo -->
+  <main class="content-area" [class.expanded]="isMenuCollapsed">
+    
+    <!-- Loading Spinner -->
+    <div class="loading-container" *ngIf="isLoading">
+      <mat-spinner diameter="50"></mat-spinner>
+      <p>Carregando conteúdo...</p>
+    </div>
+
+    <!-- Conteúdo do Markdown -->
+    <div class="markdown-content" *ngIf="!isLoading && selectedFile">
+      <div class="content-wrapper" [innerHTML]="htmlContent"></div>
+    </div>
+
+    <!-- Mensagem quando não há arquivo selecionado -->
+    <div class="no-content" *ngIf="!isLoading && !selectedFile">
+      <mat-icon>description</mat-icon>
+      <p>Nenhum arquivo selecionado</p>
+      <p class="subtitle">Selecione um arquivo no menu lateral</p>
+    </div>
+
+  </main>
+
+</div>

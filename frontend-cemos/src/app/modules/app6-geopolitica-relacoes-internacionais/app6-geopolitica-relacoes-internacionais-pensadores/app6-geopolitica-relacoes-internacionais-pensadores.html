@@ -1,0 +1,66 @@
+<div class="pensadores-container">
+  <!-- Navegação de Abas -->
+  <div class="tabs-navigation">
+    <button 
+      class="tab-button" 
+      [class.active]="activeTab === 'relacoes-internacionais'"
+      (click)="setActiveTab('relacoes-internacionais')">
+      Relações Internacionais
+    </button>    
+    <button 
+      class="tab-button" 
+      [class.active]="activeTab === 'geopolitica'"
+      (click)="setActiveTab('geopolitica')">
+      Geopolítica
+    </button>
+
+    
+    <!-- Botão de Exportar PDF -->
+    <button 
+      class="export-pdf-button"
+      (click)="exportToPdf()"
+      [disabled]="isExportingPdf || (activeTab === 'geopolitica' && isLoadingGeopolitica) || (activeTab === 'relacoes-internacionais' && isLoadingRelacoesInternacionais)">
+      <mat-icon>{{ isExportingPdf ? 'hourglass_empty' : 'picture_as_pdf' }}</mat-icon>
+      <span>{{ isExportingPdf ? 'Exportando...' : 'Exportar PDF' }}</span>
+    </button>
+  </div>
+
+  <!-- Conteúdo das Abas -->
+  <div class="tab-content">
+    
+    <!-- Aba Geopolítica -->
+    <div class="tab-pane" *ngIf="activeTab === 'geopolitica'">
+      <!-- Loading indicator -->
+      <div class="loading-indicator" *ngIf="isLoadingGeopolitica">
+        <mat-spinner diameter="50"></mat-spinner>
+        <p>Carregando conteúdo de Geopolítica...</p>
+      </div>
+      
+      <!-- Conteúdo HTML renderizado -->
+      <div 
+        #geopoliticaContent
+        class="content-html markdown-content" 
+        *ngIf="geopoliticaHtml && !isLoadingGeopolitica"
+        [innerHTML]="geopoliticaHtml">
+      </div>
+    </div>
+
+    <!-- Aba Relações Internacionais -->
+    <div class="tab-pane" *ngIf="activeTab === 'relacoes-internacionais'">
+      <!-- Loading indicator -->
+      <div class="loading-indicator" *ngIf="isLoadingRelacoesInternacionais">
+        <mat-spinner diameter="50"></mat-spinner>
+        <p>Carregando conteúdo de Relações Internacionais...</p>
+      </div>
+      
+      <!-- Conteúdo HTML renderizado -->
+      <div 
+        #relacoesInternacionaisContent
+        class="content-html markdown-content" 
+        *ngIf="relacoesInternacionaisHtml && !isLoadingRelacoesInternacionais"
+        [innerHTML]="relacoesInternacionaisHtml">
+      </div>
+    </div>
+
+  </div>
+</div>

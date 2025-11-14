@@ -1,0 +1,206 @@
+// Garantir que as variáveis CSS estão disponíveis
+:root {
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+  --dracula-lighter: rgba(248, 248, 242, 0.9);
+  --dracula-darker: #21222c;
+}
+
+.bibliografia-container {
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+  min-height: 100%;
+  
+  h1 {
+    color: var(--dracula-purple);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.default-content {
+  h2 {
+    color: var(--dracula-cyan);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.topic-card {
+  background-color: var(--dracula-current-line);
+  border: 1px solid rgba(189, 147, 249, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--dracula-purple);
+    box-shadow: 0 8px 24px rgba(189, 147, 249, 0.2);
+  }
+
+  .book-cover {
+    width: 120px;
+    height: 180px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    color: var(--dracula-cyan);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  p {
+    color: var(--dracula-comment);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+}
+
+.bibliografia-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(189, 147, 249, 0.2);
+
+  h2 {
+    color: var(--dracula-purple);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .bibliografia-content {
+    background-color: var(--dracula-current-line);
+    border: 1px solid rgba(189, 147, 249, 0.2);
+    border-radius: 12px;
+
+    
+    p {
+      color: var(--dracula-foreground);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--dracula-cyan);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    
+    ul, ol {
+      color: var(--dracula-foreground);
+      padding-left: 1.5rem;
+      
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+    }
+    
+    strong {
+      color: var(--dracula-yellow);
+    }
+    
+    em {
+      color: var(--dracula-orange);
+    }
+    
+    code {
+      background-color: var(--dracula-darker);
+      color: var(--dracula-green);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    
+    blockquote {
+      border-left: 4px solid var(--dracula-purple);
+      margin: 1rem 0;
+      padding-left: 1rem;
+      color: var(--dracula-comment);
+      font-style: italic;
+    }
+  }
+
+  .loading-message {
+    text-align: center;
+    padding: 2rem;
+    color: var(--dracula-comment);
+    font-size: 1rem;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .topic-card {
+    padding: 1.5rem;
+    
+    .book-cover {
+      width: 100px;
+      height: 133px;
+    }
+    
+    h3 {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  .bibliografia-section {
+    margin-top: 2rem;
+    
+    .bibliografia-content {
+      padding: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+<div class="videos-podcasts-container">
+        <!-- Page Title + stats (moved here to match conceitos layout) -->
+      <div class="page-title-and-stats">
+        <h2>🎬 Vídeos & Podcasts</h2>
+        <div class="stats" *ngIf="!isLoading">
+          <span class="stat-item">
+            <strong>{{ getStats().totalVideos }}</strong> vídeos
+          </span>
+          <span class="stat-item">
+            <strong>{{ getStats().totalAudios }}</strong> podcasts
+          </span>
+          <span class="stat-item">
+            <strong>{{ bibliografiasMedia.length }}</strong> {{ bibliografiasMedia.length === 1 ? 'bibliografia' : 'bibliografias' }}
+          </span>
+        </div>
+      </div>
+
+  <!-- Filtros -->
+  <div class="filters-section" *ngIf="!isLoading">
+    <div class="filter-row">
+      <!-- Filtro de Bibliografia -->
+      <div class="filter-group" *ngIf="bibliografiasMedia.length > 1">
+        <label for="bibliografia-filter">📖 Bibliografia:</label>
+        <select 
+          id="bibliografia-filter"
+          [(ngModel)]="selectedBibliografiaId"
+          (ngModelChange)="onBibliografiaChange()"
+          class="filter-select">
+          <option [ngValue]="null">Todas as Bibliografias</option>
+          <option 
+            *ngFor="let bib of bibliografiasMedia" 
+            [ngValue]="bib.bibliografiaId">
+            {{ bib.bibliografiaTitulo }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Busca -->
+      <div class="filter-group">
+        <label for="search-filter">🔍 Buscar:</label>
+        <input 
+          type="text"
+          id="search-filter"
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="onSearchChange()"
+          placeholder="Buscar por título ou descrição..."
+          class="filter-input">
+      </div>
+    </div>
+
+    <!-- Botão de limpar filtros -->
+    <div class="actions-row" *ngIf="selectedBibliografiaId || searchTerm">
+      <button 
+        class="btn btn-outline"
+        (click)="resetFilters()">
+        ✖️ Limpar Filtros
+      </button>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div class="loading-container" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <p>Carregando mídias...</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs-container" *ngIf="!isLoading">
+    <div class="tabs-header">
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === TabType.VIDEOS"
+        (click)="setActiveTab(TabType.VIDEOS)">
+        🎥 Vídeos ({{ capitulosComVideo.length }})
+      </button>
+      <button 
+        class="tab-button"
+        [class.active]="activeTab === TabType.PODCASTS"
+        (click)="setActiveTab(TabType.PODCASTS)">
+        🎙️ Podcasts ({{ capitulosComAudio.length }})
+      </button>
+    </div>
+
+    <!-- Tab Content: Vídeos -->
+    <div class="tab-content" *ngIf="activeTab === TabType.VIDEOS">
+      <div class="media-grid" *ngIf="capitulosComVideo.length > 0">
+        <div 
+          *ngFor="let capitulo of capitulosComVideo; trackBy: trackByCapituloId"
+          class="media-card">
+          <div class="media-card-header">
+            <h3 class="media-title">
+              <span class="ordem-badge" *ngIf="capitulo.ordem">{{ capitulo.ordem }}.</span>
+              {{ capitulo.titulo }}
+            </h3>
+            <span class="duracao" *ngIf="capitulo.duracao">
+              ⏱️ {{ capitulo.duracao }}
+            </span>
+          </div>
+
+          <div class="media-player">
+            <video 
+              [id]="'video-' + capitulo.id"
+              [src]="capitulo.videoPath"
+              controls
+              controlsList="nodownload"
+              (play)="onVideoPlay(capitulo.id)"
+              class="video-element">
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+
+          <div class="media-card-footer" *ngIf="capitulo.descricao || getCapituloBibliografia(capitulo)">
+            <p class="media-description" *ngIf="capitulo.descricao">
+              {{ capitulo.descricao }}
+            </p>
+            <small class="media-bibliografia" *ngIf="getCapituloBibliografia(capitulo)">
+              📚 {{ getCapituloBibliografia(capitulo)?.bibliografiaTitulo }}
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty State Vídeos -->
+      <div class="empty-state" *ngIf="capitulosComVideo.length === 0">
+        <div class="empty-icon">🎥</div>
+        <h3>Nenhum vídeo disponível</h3>
+        <p *ngIf="searchTerm || selectedBibliografiaId">
+          Tente ajustar os filtros.
+        </p>
+        <p *ngIf="!searchTerm && !selectedBibliografiaId">
+          Não há vídeos cadastrados para as bibliografias selecionadas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tab Content: Podcasts -->
+    <div class="tab-content" *ngIf="activeTab === TabType.PODCASTS">
+      <div class="media-list" *ngIf="capitulosComAudio.length > 0">
+        <div 
+          *ngFor="let capitulo of capitulosComAudio; trackBy: trackByCapituloId"
+          class="audio-card">
+          <div class="audio-card-header">
+            <div class="audio-info">
+              <h3 class="audio-title">
+                <span class="ordem-badge" *ngIf="capitulo.ordem">{{ capitulo.ordem }}.</span>
+                {{ capitulo.titulo }}
+              </h3>
+              <p class="audio-description" *ngIf="capitulo.descricao">
+                {{ capitulo.descricao }}
+              </p>
+            </div>
+            <span class="duracao" *ngIf="capitulo.duracao">
+              ⏱️ {{ capitulo.duracao }}
+            </span>
+          </div>
+
+          <div class="audio-player">
+            <audio 
+              [id]="'audio-' + capitulo.id"
+              [src]="capitulo.audioPath"
+              controls
+              controlsList="nodownload"
+              (play)="onAudioPlay(capitulo.id)"
+              class="audio-element">
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+          </div>
+
+          <div class="audio-card-footer" *ngIf="getCapituloBibliografia(capitulo)">
+            <small class="audio-bibliografia">
+              📚 {{ getCapituloBibliografia(capitulo)?.bibliografiaTitulo }}
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty State Podcasts -->
+      <div class="empty-state" *ngIf="capitulosComAudio.length === 0">
+        <div class="empty-icon">🎙️</div>
+        <h3>Nenhum podcast disponível</h3>
+        <p *ngIf="searchTerm || selectedBibliografiaId">
+          Tente ajustar os filtros.
+        </p>
+        <p *ngIf="!searchTerm && !selectedBibliografiaId">
+          Não há podcasts cadastrados para as bibliografias selecionadas.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Data State -->
+  <div class="empty-state" *ngIf="!isLoading && bibliografiasMedia.length === 0">
+    <div class="empty-icon">📭</div>
+    <h3>Nenhuma mídia configurada</h3>
+    <p>Não há vídeos ou podcasts cadastrados.</p>
+  </div>
+</div>

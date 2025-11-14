@@ -1,0 +1,61 @@
+<div class="resumo-container">
+  <!-- Layout principal com sidebar -->
+  <div class="main-layout">
+    <!-- Sidebar com índice -->
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav 
+        #sidenav 
+        [mode]="getSidenavMode()" 
+        [opened]="sidenavOpen()"
+        (openedChange)="isMobile() && sidenavOpen.set($event)"
+        class="sidebar">       
+        <mat-nav-list class="toc-list">
+          <mat-list-item 
+            *ngFor="let item of getVisibleItems()" 
+            (click)="onItemClick(item)"
+            class="toc-item"
+            [class.has-children]="item.hasChildren"
+            [class.collapsed]="item.collapsed"
+            [style.padding-left]="getHeadingIndentation(item.level)">
+            <span class="toc-text" [class]="'level-' + item.level">{{ item.text }}</span>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-sidenav>
+
+      <!-- Conteúdo principal -->
+      <mat-sidenav-content class="main-content">
+        <mat-card class="content-card">
+          <!-- Loading spinner -->
+          <div class="loading-container" *ngIf="isLoading()">
+            <mat-spinner diameter="50"></mat-spinner>
+            <p>Carregando conteúdo...</p>
+          </div>
+
+          <!-- Mensagem de erro -->
+          <div class="error-container" *ngIf="error()">
+            <mat-icon color="warn">error</mat-icon>
+            <p>{{ error() }}</p>
+            <button mat-raised-button color="primary" (click)="loadContent()">
+              <mat-icon>refresh</mat-icon>
+              Tentar novamente
+            </button>
+          </div>
+
+          <!-- Conteúdo markdown renderizado -->
+          <div 
+            #contentContainer
+            class="markdown-content" 
+            *ngIf="!isLoading() && !error() && htmlContent()"
+            [innerHTML]="htmlContent()">
+          </div>
+
+          <!-- Mensagem quando não há conteúdo -->
+          <div class="no-content" *ngIf="!isLoading() && !error() && !htmlContent()">
+            <mat-icon>info</mat-icon>
+            <p>Nenhum conteúdo disponível.</p>
+          </div>
+        </mat-card>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>

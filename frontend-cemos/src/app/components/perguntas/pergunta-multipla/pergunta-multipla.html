@@ -1,0 +1,31 @@
+<!-- Pergunta Múltipla Escolha -->
+<div class="multipla-question">
+  <div class="alternativas">
+    <label class="alternativa" *ngFor="let letra of ['a', 'b', 'c', 'd']">
+      <input 
+        type="radio"
+        [name]="'multipla-' + questionId"
+        [value]="letra"
+        [(ngModel)]="userAnswer"
+      />
+      <span class="alternativa-letter">{{ letra.toUpperCase() }})</span>
+      <span class="alternativa-text" [innerHTML]="getAlternativaTextFormatted(letra)"></span>
+    </label>
+  </div>
+
+  <button 
+    class="btn btn-primary responder-btn"
+    [disabled]="userAnswer === undefined"
+    (click)="onSubmit($event)"
+  >
+    {{ isAnswered ? '🔄 Atualizar Resposta' : '📝 Responder' }}
+  </button>
+
+  <!-- Justificativa (aparece após responder) -->
+  <div *ngIf="isAnswered" class="justificativa">
+    <div>
+      <h5>✅ Resposta Correta: {{ getCorrectAnswer() }}) <span [innerHTML]="getAlternativaTextFormatted(getCorrectAnswer().toLowerCase())"></span></h5>
+      <h5>💡 Justificativa: <span [innerHTML]="getJustificativaFormatted()"></span></h5>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,247 @@
+<div class="main-container">
+    <!-- Botões de navegação (similar ao componente capa-bibliografia) -->
+  <div class="header">
+    <h2>📚 Flash Cards</h2>
+    <div class="stats" *ngIf="!isLoading">
+      <span class="stat-item">
+        <strong>{{ displayedFlashCards.length }}</strong> de <strong>{{ allFlashCards.length }}</strong> cards
+      </span>
+      <span class="stat-item">
+        <strong>{{ bibliografias.length }}</strong> {{ bibliografias.length === 1 ? 'bibliografia' : 'bibliografias' }}
+      </span>
+      <span class="stat-item">
+        <strong>{{ assuntosDisponiveis.length }}</strong> {{ assuntosDisponiveis.length === 1 ? 'assunto' : 'assuntos' }}
+      </span>
+    </div>
+  </div>
+
+
+
+  <!-- Filtros -->
+  <div class="filters-section" *ngIf="!isLoading">
+    <div class="filter-row">
+      <!-- Filtro de Bibliografia -->
+      <div class="filter-group">
+        <label for="bibliografia-filter">📖 Bibliografia:</label>
+        <select 
+          id="bibliografia-filter"
+          [(ngModel)]="selectedBibliografiaId"
+          (ngModelChange)="onBibliografiaChange()"
+          class="filter-select">
+          <option [ngValue]="null">Todas as Bibliografias</option>
+          <option 
+            *ngFor="let bib of bibliografias" 
+            [ngValue]="bib.id">
+            {{ bib.titulo }}
+            <span *ngIf="bib.flashcards_count">({{ bib.flashcards_count }} cards)</span>
+          </option>
+        </select>
+      </div>
+
+      <!-- Filtro de Assunto -->
+      <div class="filter-group">
+        <label for="assunto-filter">🏷️ Assunto:</label>
+        <select 
+          id="assunto-filter"
+          [(ngModel)]="selectedAssunto"
+          (ngModelChange)="onAssuntoChange()"
+          class="filter-select"
+          [disabled]="assuntosDisponiveis.length === 0">
+          <option value="">Todos os Assuntos</option>
+          <option 
+            *ngFor="let assunto of assuntosDisponiveis" 
+            [value]="assunto">
+            {{ assunto }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Ações -->
+    <div class="actions-row">
+      <button 
+        class="btn btn-primary"
+        (click)="loadRandomFlashCards()"
+        [disabled]="allFlashCards.length === 0">
+        🎲 Embaralhar
+      </button>
+      
+      <button 
+        class="btn btn-fullscreen"
+        (click)="openFullscreen()"
+        [disabled]="displayedFlashCards.length === 0">
+        🖥️ Tela Cheia
+      </button>
+      
+      <button 
+        class="btn btn-outline"
+        (click)="resetFilters()"
+        [disabled]="!selectedBibliografiaId && !selectedAssunto">
+        ✖️ Limpar Filtros
+      </button>
+      
+      <button 
+        *ngIf="bibliografiaPath"
+        class="btn btn-back"
+        (click)="goToBibliografia()">
+        <span class="back-arrow"></span>
+        Voltar à Bibliografia
+      </button>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div class="loading-container" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <p>Carregando flash cards...</p>
+  </div>
+
+  <!-- Cards Grid -->
+  <div *ngIf="!isLoading && displayedFlashCards.length > 0">
+    <div class="flashcards-grid">
+      <ng-container *ngFor="let card of displayedFlashCards; trackBy: trackByCardId">
+        <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
+      </ng-container>
+    </div>
+  </div>
+
+  <ng-template #flashcardTemplate let-card>
+    <div class="flashcard-wrapper">
+      <div 
+        class="flashcard"
+        [class.flipped]="card.isFlipped"
+        [class.prova-card]="card.prova"
+        (click)="flipCard(card)">
+        
+        <!-- Frente do Card (Pergunta) -->
+        <div class="flashcard-face flashcard-front">
+          <div class="card-header">
+            <div class="card-header-top">
+              <div class="card-header-left">
+                <span class="card-badge">❓</span>
+              </div>
+              <div class="card-header-center">
+                <small class="card-bibliografia">
+                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
+                </small>
+                <small class="card-assunto" *ngIf="card.assunto">
+                  ({{ card.assunto }})
+                </small>
+                <small class="flip-hint">👆 Clique para ver a resposta</small>
+              </div>
+              <div class="card-header-right">
+                <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
+                  ⭐ {{ card.ano }}
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-content">
+            <p class="card-question" [innerHTML]="processText(card.pergunta)"></p>
+          </div>
+        </div>
+
+        <!-- Verso do Card (Resposta) -->
+        <div class="flashcard-face flashcard-back">
+          <div class="card-header">
+            <div class="card-header-top">
+              <div class="card-header-left">
+                <span class="card-badge">✅</span>
+              </div>
+              <div class="card-header-center">
+                <small class="card-bibliografia">
+                  📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
+                </small>
+                <small class="card-assunto" *ngIf="card.assunto">
+                  ({{ card.assunto }})
+                </small>
+                <small class="flip-hint">👆 Clique para ver a pergunta</small>
+              </div>
+              <div class="card-header-right">
+                <span class="card-prova-badge" *ngIf="card.prova && card.ano" title="Caiu em prova">
+                  ⭐ {{ card.ano }}
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-content">
+            <p class="card-answer" [innerHTML]="processText(card.resposta)"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <!-- Mobile action bar (visível no final em telas pequenas) -->
+  <div class="mobile-action-bar" *ngIf="!isLoading && allFlashCards.length > 0" role="toolbar" aria-label="Ações rápidas">
+    <button 
+      class="btn btn-primary"
+      (click)="loadRandomFlashCards()"
+      [disabled]="allFlashCards.length === 0"
+      aria-label="Embaralhar">
+      🎲 Embaralhar
+    </button>
+    <button 
+      class="btn btn-fullscreen"
+      (click)="openFullscreen()"
+      [disabled]="displayedFlashCards.length === 0"
+      aria-label="Tela cheia">
+      🖥️ Tela Cheia
+    </button>
+  </div>
+
+
+  <!-- Empty State -->
+  <div class="empty-state" *ngIf="!isLoading && displayedFlashCards.length === 0 && allFlashCards.length > 0">
+    <div class="empty-icon">🔍</div>
+    <h3>Nenhum flash card encontrado</h3>
+    <p>Tente ajustar os filtros ou embaralhar novamente.</p>
+    <button class="btn btn-primary" (click)="resetFilters()">
+      🔄 Resetar Filtros
+    </button>
+  </div>
+
+  <!-- No Data State -->
+  <div class="empty-state" *ngIf="!isLoading && allFlashCards.length === 0">
+    <div class="empty-icon">📭</div>
+    <h3>Nenhum flash card disponível</h3>
+    <p>Não há flash cards cadastrados para as bibliografias selecionadas.</p>
+  </div>
+
+  <!-- Fullscreen Overlay -->
+  <div class="fullscreen-overlay" *ngIf="isFullscreen">
+    <div class="fullscreen-container">
+      <div class="fullscreen-header">
+        <h3>📚 Flash Cards - Modo Tela Cheia</h3>
+        <button 
+          class="btn-close-fullscreen"
+          (click)="exitFullscreen()"
+          aria-label="Fechar tela cheia">
+          ✕
+        </button>
+      </div>
+      
+      <div class="fullscreen-grid">
+        <ng-container *ngFor="let card of displayedFlashCards; trackBy: trackByCardId">
+          <ng-container *ngTemplateOutlet="flashcardTemplate; context: {$implicit: card}"></ng-container>
+        </ng-container>
+      </div>
+      
+      <div class="fullscreen-actions">
+        <button 
+          class="btn btn-primary"
+          (click)="loadRandomFlashCards()"
+          [disabled]="allFlashCards.length === 0">
+          🎲 Embaralhar
+        </button>
+        <button 
+          class="btn btn-outline"
+          (click)="exitFullscreen()">
+          ✖️ Fechar (ESC)
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

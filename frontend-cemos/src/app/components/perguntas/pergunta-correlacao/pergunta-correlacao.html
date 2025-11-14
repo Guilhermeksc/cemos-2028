@@ -1,0 +1,87 @@
+<!-- Pergunta de Correlação -->
+<div class="correlacao-question">
+  <div class="correlacao-instructions">
+    <p><strong>Correlacione os itens:</strong></p>
+  </div>
+  
+  <div class="correlacao-container">
+    <div class="coluna coluna-a">
+      <h5>Coluna A</h5>
+      <div *ngFor="let item of questionData.coluna_a; let i = index" class="correlacao-item">
+        <span class="item-number">{{ i + 1 }}.</span>
+        <span class="item-text" [innerHTML]="getColunaAItemFormatted(item)"></span>
+      </div>
+    </div>
+    
+    <div class="coluna coluna-b">
+      <h5>Coluna B</h5>
+      <div *ngFor="let item of questionData.coluna_b; let i = index" class="correlacao-item">
+        <span class="item-letter">{{ getStringFromCharCode(65 + i) }}.</span>
+        <span class="item-text" [innerHTML]="getColunaBItemFormatted(item)"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="correlacao-mapping">
+    <h6>Sua correlação:</h6>
+    <div *ngFor="let itemA of questionData.coluna_a; let i = index" 
+         class="mapping-row-radio"
+         [class.answered]="isItemAnswered(i + 1)">
+      
+      <div class="mapping-item-label">
+        <span class="mapping-label-number">{{ i + 1 }}</span>
+        <span class="mapping-item-text" [innerHTML]="getColunaAItemFormatted(itemA)"></span>
+      </div>
+
+      <div class="mapping-options">
+        <label *ngFor="let itemB of questionData.coluna_b; let j = index" 
+               class="mapping-radio-option"
+               [class.selected]="userAnswer[(i + 1).toString()] === getStringFromCharCode(65 + j)">
+          <input 
+            type="radio"
+            [name]="'correlacao-' + questionId + '-' + (i + 1)"
+            [value]="getStringFromCharCode(65 + j)"
+            [(ngModel)]="userAnswer[(i + 1).toString()]"
+            (change)="updateCorrelacao(i + 1, getStringFromCharCode(65 + j))"
+          />
+          <span class="mapping-radio-label">{{ getStringFromCharCode(65 + j) }}</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="correlacao-help" *ngIf="!isComplete()">
+    <span class="help-icon">ℹ️</span>
+    <span class="help-text">
+      Complete todas as correlações para responder. 
+      <strong>Faltam {{ getMissingCount() }} item(ns)</strong>
+    </span>
+  </div>
+
+  <button 
+    class="btn btn-primary responder-btn correlacao-responder-btn"
+    [disabled]="!isComplete()"
+    (click)="onSubmit($event)"
+    [title]="!isComplete() ? 'Complete todas as correlações para responder' : ''"
+  >
+    {{ isAnswered ? '🔄 Atualizar Resposta' : '📝 Responder' }}
+  </button>
+
+  <!-- Justificativa (aparece após responder) -->
+  <div *ngIf="isAnswered" class="justificativa">
+    <div>
+      <h5>✅ Resposta Correta:</h5>
+      <div class="correlacao-resposta">
+        <div *ngFor="let itemA of questionData.coluna_a; let i = index" 
+             class="correlacao-item-resposta">
+          <strong>{{ i + 1 }}</strong> → <strong>{{ getCorrectLetter((i + 1).toString()) }}</strong>
+        </div>
+      </div>
+    </div>
+    
+    <div class="justificativa-texto">
+      <h5>💡 Justificativa:</h5>
+      <p [innerHTML]="getJustificativaFormatted()"></p>
+    </div>
+  </div>
+</div>
