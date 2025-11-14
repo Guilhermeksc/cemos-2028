@@ -76,6 +76,17 @@ export class SideMenu {
     'Bibliografia': 'bibliografia',
   };
 
+  // Mapping from bibliografia sub-item titles to route paths
+  private readonly bibliografiaSubItemToPathMap: Record<string, string> = {
+    'Manifesto Ágil': 'manifesto-agil',
+    'Bancos de Dados': 'bancos-de-dados',
+    'Arquitetura de Inteligência de Negócio': 'arquitetura-de-inteligencia-de-negocio',
+    'Conectores e Integração com Fontes de Dados': 'conectores-e-integracao-com-fontes-de-dados',
+    'Fluxo de Manipulação de Dados': 'fluxo-de-manipulacao-de-dados',
+    'Governança e Qualidade de Dados': 'governanca-e-qualidade-de-dados',
+    'Integração com Nuvem': 'integracao-com-nuvem',
+  };
+
   constructor(
     private router: Router,
     private authService: AuthService,
@@ -167,7 +178,14 @@ export class SideMenu {
       children: [
         {
           title: 'Bibliografia',
-          children: []
+          children: [
+            'Bancos de Dados',
+            'Arquitetura de Inteligência de Negócio',
+            'Conectores e Integração com Fontes de Dados',
+            'Fluxo de Manipulação de Dados',
+            'Governança e Qualidade de Dados',
+            'Integração com Nuvem',
+          ]
         },
         'Flash Cards',
         'Perguntas',
@@ -181,7 +199,9 @@ export class SideMenu {
       children: [
         {
           title: 'Bibliografia',
-          children: []
+          children: [
+           'Manifesto Ágil',
+          ]
         },
         'Flash Cards',
         'Perguntas',
@@ -303,8 +323,11 @@ export class SideMenu {
       pathSegments.push(childPath);
 
       if (subChildTitle) {
+        // Check bibliografia sub-item map first, then childTitleToPathMap, then fallback to slug conversion
         const subChildPath = typeof subChildTitle === 'string' 
-          ? (this.childTitleToPathMap[subChildTitle] || subChildTitle.toLowerCase().replace(/\s+/g, '-'))
+          ? (this.bibliografiaSubItemToPathMap[subChildTitle] || 
+             this.childTitleToPathMap[subChildTitle] || 
+             subChildTitle.toLowerCase().replace(/\s+/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, ''))
           : subChildTitle;
         pathSegments.push(subChildPath);
       }
@@ -337,11 +360,36 @@ export class SideMenu {
     const expectedPath = `${sectionPath}/${childPath}`;
 
     if (!subChildTitle) {
-      return currentPath === expectedPath || currentPath.startsWith(expectedPath + '/');
+      // For Bibliografia (or other items with children), only mark as active if:
+      // 1. Exact match (e.g., /app7-eng-software/bibliografia)
+      // 2. OR it starts with the path but we need to check if there's actually a child route
+      // We check if the next segment after bibliografia exists
+      if (currentPath === expectedPath) {
+        return true;
+      }
+      // If path starts with expectedPath + '/', check if it's a valid child route
+      if (currentPath.startsWith(expectedPath + '/')) {
+        // Get the menu item to check if it has children
+        const menuItem = this.menuItems().find(item => item.title === sectionTitle);
+        if (menuItem) {
+          const child = menuItem.children.find(c => 
+            typeof c === 'object' && c.title === childTitle
+          );
+          // If Bibliografia has children, don't mark it as active when a child is active
+          if (typeof child === 'object' && child.children && child.children.length > 0) {
+            return false; // A child is active, so Bibliografia should not be marked as active
+          }
+        }
+        return true;
+      }
+      return false;
     }
 
+    // Check bibliografia sub-item map first, then childTitleToPathMap, then fallback to slug conversion
     const subChildPath = typeof subChildTitle === 'string'
-      ? (this.childTitleToPathMap[subChildTitle] || subChildTitle.toLowerCase().replace(/\s+/g, '-'))
+      ? (this.bibliografiaSubItemToPathMap[subChildTitle] || 
+         this.childTitleToPathMap[subChildTitle] || 
+         subChildTitle.toLowerCase().replace(/\s+/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, ''))
       : subChildTitle;
     const fullExpectedPath = `${expectedPath}/${subChildPath}`;
     return currentPath === fullExpectedPath;
@@ -351,14 +399,9 @@ export class SideMenu {
     // Toggle the subsection
     this.toggleSubSection(sectionIndex, childIndex);
     
-    // Navigate to the subsection if it has no children or if we want to navigate on click
-    const menuItem = this.menuItems()[sectionIndex];
-    const child = menuItem.children[childIndex];
-    
-    if (typeof child === 'object' && child.children && child.children.length === 0) {
-      // If it's Bibliografia with no children, navigate to it
-      this.navigate(sectionTitle, childTitle);
-    }
+    // Navigate to the subsection (Bibliografia) when clicked
+    // This allows navigation even when it has children
+    this.navigate(sectionTitle, childTitle);
   }
 
   private updateActivePath(): void {

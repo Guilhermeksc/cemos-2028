@@ -6,6 +6,7 @@ export interface RouteSegmentConfig {
   title: string;
   path: string;
   loadComponent: ComponentLoader;
+  children?: RouteSegmentConfig[];
 }
 
 export interface ModuleRouteConfig {
@@ -174,7 +175,40 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
       {
         title: 'Bibliografia',
         path: 'bibliografia',
-        loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/app6-eng-dados-bibliografia').then(m => m.App6EngDadosBibliografia)
+        loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/app6-eng-dados-bibliografia').then(m => m.App6EngDadosBibliografia
+        ),
+        children: [
+          {
+            title: 'Bancos de Dados',
+            path: 'bancos-de-dados',
+            loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/eng-banco-dados/eng-banco-dados').then(m => m.EngBancoDados)
+          }, 
+          {
+            title: 'Arquitetura de Inteligência de Negócio',
+            path: 'arquitetura-de-inteligencia-de-negocio',
+            loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/eng-arquitetura/eng-arquitetura').then(m => m.EngArquitetura)
+          },
+          {
+            title: 'Conectores e Integração com Fontes de Dados',
+            path: 'conectores-e-integracao-com-fontes-de-dados',
+            loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/eng-conectores/eng-conectores').then(m => m.EngConectores)
+          },
+          {
+            title: 'Fluxo de Manipulação de Dados',
+            path: 'fluxo-de-manipulacao-de-dados',
+            loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/eng-fluxos/eng-fluxos').then(m => m.EngFluxos)
+          },
+          {
+            title: 'Governança e Qualidade de Dados',
+            path: 'governanca-e-qualidade-de-dados',
+            loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/eng-governanca/eng-governanca').then(m => m.EngGovernanca)
+          },
+          {
+            title: 'Integração com Nuvem',
+            path: 'integracao-com-nuvem',
+            loadComponent: () => import('../modules/app6-eng-dados/app6-eng-dados-bibliografia/eng-nuvem/eng-nuvem').then(m => m.EngNuvem)
+          },
+        ]
       },
     ]
   },
@@ -201,7 +235,20 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
       {
         title: 'Bibliografia',
         path: 'bibliografia',
-        loadComponent: () => import('../modules/app7-eng-software/app7-eng-software-bibliografia/app7-eng-software-bibliografia').then(m => m.App7EngSoftwareBibliografia)
+        loadComponent: () =>
+          import('../modules/app7-eng-software/app7-eng-software-bibliografia/app7-eng-software-bibliografia').then(
+            (m) => m.App7EngSoftwareBibliografia
+          ),
+        children: [
+          {
+            title: 'Manifesto Ágil',
+            path: 'manifesto-agil',
+            loadComponent: () =>
+              import('../modules/app7-eng-software/app7-eng-software-bibliografia/manifesto-agil/manifesto-agil').then(
+                (m) => m.ManifestoAgil
+              )
+          }
+        ]
       },
     ]
   },
@@ -352,7 +399,13 @@ export const moduleRoutes: Route[] = MODULE_ROUTE_CONFIGS.map(({ path, defaultCh
     },
     ...segments.map(seg => ({
       path: seg.path,
-      loadComponent: seg.loadComponent
+      loadComponent: seg.loadComponent,
+      ...(seg.children && seg.children.length > 0 ? {
+        children: seg.children.map(child => ({
+          path: child.path,
+          loadComponent: child.loadComponent
+        }))
+      } : {})
     }))
   ]
 }));

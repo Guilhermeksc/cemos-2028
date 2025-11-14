@@ -1,0 +1,1 @@
+https://medium.com/triadedigital/produtividade-com-ia-no-desenvolvimento-de-software-quem-est%C3%A1-colhendo-os-ganhos-149412fd899e
