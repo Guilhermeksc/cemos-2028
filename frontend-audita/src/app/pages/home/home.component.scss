@@ -42,6 +42,7 @@
     align-items: center;
     gap: 8px;
     flex: 1;
+    min-width: 0; // Permite que o texto seja truncado se necessário
 
     .brazil-flag-mobile {
       height: 28px;
@@ -54,6 +55,7 @@
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 3px;
+      white-space: nowrap;
     }
 
     .subtitle {
@@ -61,6 +63,25 @@
       font-weight: 300;
       letter-spacing: 2px;
       opacity: 0.9;
+      white-space: nowrap;
+    }
+  }
+
+  .logout-button {
+    flex-shrink: 0;
+    min-width: auto;
+    padding: 0 12px;
+    
+    span {
+      @media (max-width: 360px) {
+        display: none; // Esconde o texto "Sair" em telas muito pequenas
+      }
+    }
+
+    mat-icon {
+      @media (max-width: 360px) {
+        margin: 0;
+      }
     }
   }
 
@@ -209,6 +230,17 @@ app-side-menu {
         letter-spacing: 1.5px;
       }
     }
+
+    .logout-button {
+      padding: 0 8px;
+      font-size: 0.875rem;
+
+      mat-icon {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   .menu-overlay {
@@ -221,6 +253,82 @@ app-side-menu {
 
   .mobile-content {
     padding: 16px;
+  }
+}
+
+// Mobile pequeno (menos de 480px)
+@media (max-width: 480px) {
+  .top-header {
+    padding: 0 8px;
+
+    .menu-toggle-button {
+      margin-right: 8px;
+
+      mat-icon {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .top-header-title {
+      gap: 4px;
+
+      .brazil-flag-mobile {
+        height: 20px;
+      }
+
+      .title {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+      }
+
+      .subtitle {
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .logout-button {
+      padding: 0 6px;
+      min-width: 40px;
+
+      span {
+        font-size: 0.75rem;
+      }
+
+      mat-icon {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .mobile-content {
+    padding: 12px;
+  }
+}
+
+// Mobile muito pequeno (menos de 360px)
+@media (max-width: 360px) {
+  .top-header {
+    padding: 0 6px;
+
+    .top-header-title {
+      .title {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      .subtitle {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .mobile-content {
+    padding: 10px;
   }
 }
 

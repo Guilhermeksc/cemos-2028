@@ -306,12 +306,13 @@ mat-card-actions {
 @media (max-width: 480px) {
   .login-container {
     min-height: 100dvh;
-    padding-top: calc(1rem + env(safe-area-inset-top));
-    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
-    padding-left: calc(1rem + env(safe-area-inset-left));
-    padding-right: calc(1rem + env(safe-area-inset-right));
-    padding: 1rem;
+    padding: 0.75rem;
     background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+    // Suporte para safe-area em dispositivos com notch
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
   }
 
   .gradient-overlay {
@@ -320,57 +321,130 @@ mat-card-actions {
 
   .login-wrapper {
     max-width: 100%;
+    width: 100%;
   }
 
   .login-card {
-    padding: 1.25rem;
-    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 0.875rem;
     backdrop-filter: blur(10px);
-    box-shadow: 0 16px 24px -12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.15);
+    
+    &:hover {
+      transform: none; // Remove hover effect em mobile
+    }
   }
 
   .login-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+
+    .login-title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .brazil-flag {
+      height: 32px;
+      width: auto;
+      margin-bottom: 0.5rem;
+    }
 
     .login-title {
-      font-size: 2rem;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
     }
 
     .login-subtitle {
-      font-size: 1rem;
-      letter-spacing: 0.08em;
+      font-size: 0.875rem;
+      letter-spacing: 0.05em;
     }
   }
 
   .login-description {
-    margin-bottom: 1.25rem;
-    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
   }
 
   .login-form {
-    gap: 1rem;
+    gap: 1.25rem;
   }
 
   .form-field {
     .mat-mdc-text-field-wrapper {
-      border-radius: 10px;
+      border-radius: 0.75rem;
+      font-size: 16px; // Previne zoom no iOS
+    }
+    
+    .mat-mdc-form-field-label {
+      font-size: 0.875rem;
+    }
+    
+    input {
+      font-size: 16px; // Previne zoom no iOS
     }
   }
 
+  .password-toggle {
+    font-size: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .login-button {
-    margin-top: 1rem;
-    height: 48px;
-    font-size: 0.95rem;
-    border-radius: 12px;
+    margin-top: 0.5rem;
+    height: 52px;
+    font-size: 0.9375rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.3px;
+    
+    &:hover {
+      transform: none; // Remove hover effect em mobile
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
 
     &__icon {
-      font-size: 1.1rem;
+      font-size: 1.125rem;
     }
   }
 
   .developer-credit {
-    font-size: 0.7rem;
-    padding: 0.75rem 0 0 0;
+    font-size: 0.65rem;
+    padding: 0.75rem 0.5rem 0 0.5rem;
+    line-height: 1.4;
+  }
+}
+
+// Otimizações para telas muito pequenas (menos de 360px)
+@media (max-width: 360px) {
+  .login-card {
+    padding: 1.25rem 0.875rem;
+  }
+
+  .login-header {
+    .login-title {
+      font-size: 1.5rem;
+    }
+
+    .login-subtitle {
+      font-size: 0.75rem;
+    }
+  }
+
+  .login-description {
+    font-size: 0.8125rem;
+  }
+
+  .login-button {
+    height: 48px;
+    font-size: 0.875rem;
   }
 }
 
