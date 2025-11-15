@@ -1,0 +1,685 @@
+// Estilo compatível com App6GeopoliticaRelacoesInternacionaisConceitos
+.conteudo-programatico-container {
+    background: #ffffff;
+    color: #2c3e50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    // ============= NAVEGAÇÃO DE ABAS =============
+    .tabs-navigation {
+      display: flex;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      border-bottom: 2px solid #e0e0e0;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+
+      .tab-group-wrapper {
+        position: relative;
+        flex: 1;
+        min-width: 150px;
+
+        .tab-button {
+          width: 100%;
+          background: transparent;
+          border: none;
+          color: #2c3e50;
+          padding: 1rem 1.5rem;
+          cursor: pointer;
+          font-size: 1rem;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          position: relative;
+          border-right: 1px solid #e0e0e0;
+
+          .dropdown-icon {
+            font-size: 1.2rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover {
+            background: #f5f5f5;
+            color: #000000;
+          }
+
+          &.active {
+            background: #ffffff;
+            color: #000000;
+            border-bottom: 3px solid #2c3e50;
+            font-weight: 600;
+          }
+
+          &.has-dropdown {
+            padding-right: 2rem;
+          }
+        }
+
+        // Menu Suspenso (Dropdown) - Estilo Desktop
+        .dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #ffffff;
+          border: 1px solid #e0e0e0;
+          border-top: none;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          min-width: 250px;
+          max-width: 350px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-10px);
+          transition: all 0.3s ease;
+          z-index: 200;
+          margin-top: -1px;
+
+          &.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+
+          .dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #f0f0f0;
+            color: #2c3e50;
+            font-size: 0.95rem;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            mat-icon {
+              font-size: 1.1rem;
+              width: 1.1rem;
+              height: 1.1rem;
+              color: #666666;
+            }
+
+            &:hover {
+              background: #f5f5f5;
+              color: #000000;
+
+              mat-icon {
+                color: #2c3e50;
+              }
+            }
+
+            &.active {
+              background: #e8f4f8;
+              color: #2c3e50;
+              font-weight: 600;
+              border-left: 3px solid #2c3e50;
+
+              mat-icon {
+                color: #2c3e50;
+              }
+            }
+
+            &.main-item {
+              background: #f9f9f9;
+              font-weight: 500;
+              border-bottom: 2px solid #e0e0e0;
+
+              &:hover {
+                background: #f0f0f0;
+              }
+            }
+          }
+        }
+      }
+  
+      // Botão de Exportar PDF
+      .export-pdf-button {
+        flex: 0 0 auto;
+        background: #2c3e50;
+        color: #ffffff;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        margin-left: auto;
+        margin-right: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-right: none !important;
+  
+        mat-icon {
+          font-size: 1.2rem;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+  
+        &:hover:not(:disabled) {
+          background: #1a252f;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+  
+        &:active:not(:disabled) {
+          transform: translateY(0);
+        }
+  
+        &:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+          background: #95a5a6;
+        }
+      }
+    }
+  
+    // ============= CONTEÚDO DAS ABAS =============
+    .tab-content-wrapper {
+      display: flex;
+      flex: 1;
+      gap: 2rem;
+      overflow: hidden;
+      position: relative;
+      
+      // Adiciona padding quando há sidebar visível
+      &.has-sidebar {
+        padding-right: 220px; // Espaço para a sidebar fixa (200px + 20px de margem)
+      }
+    }
+
+    .tab-content {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 2rem;
+      background: #ffffff;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
+  
+      .tab-pane {
+        min-height: 100%;
+        animation: fadeIn 0.3s ease-in-out;
+        display: none;
+
+        &.active {
+          display: block;
+        }
+
+        > div.active {
+          display: block;
+        }
+      }
+    }
+
+    // ============= SIDEBAR DE NAVEGAÇÃO =============
+    .navigation-sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      min-width: 200px;
+      height: 100vh;
+      background: #f8f9fa;
+      border-left: 1px solid #e0e0e0;
+      padding-top: 80px; // Altura da barra de navegação
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-shadow: -2px 0 8px rgba(0, 0, 0, 0.05);
+      z-index: 99; // Abaixo da barra de navegação mas acima do conteúdo
+
+      .sidebar-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 0;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #2c3e50;
+        color: #2c3e50;
+        font-weight: 600;
+        font-size: 1rem;
+
+        mat-icon {
+          font-size: 1.2rem;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+
+      .navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        .navigation-item {
+          display: block;
+          padding: 0.5rem 0.75rem;
+          color: #2c3e50;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          font-size: 0.9rem;
+          line-height: 1.4;
+
+          &.heading-level-1 {
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding-left: 0.75rem;
+            color: #000000;
+          }
+
+          &.heading-level-2 {
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding-left: 1.5rem;
+            color: #555555;
+          }
+
+          &:hover {
+            background: #e8f4f8;
+            color: #2c3e50;
+            transform: translateX(4px);
+          }
+
+          &:active {
+            background: #d0e8f0;
+          }
+        }
+      }
+
+      // Scrollbar personalizada
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+
+        &:hover {
+          background: #555;
+        }
+      }
+    }
+  
+    // ============= LOADING INDICATOR =============
+    .loading-indicator {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      gap: 1rem;
+      
+      p {
+        color: #666666;
+        font-style: italic;
+        margin: 0;
+      }
+    }
+  
+    // ============= ESTILOS MARKDOWN =============
+    .content-html.markdown-content {
+      color: #2c3e50;
+      line-height: 1.8;
+      font-size: 1rem;
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 8px;
+      overflow-x: hidden;
+      overflow-y: visible;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      
+      // Garante que elementos de mídia respeitem o container
+      img, video, iframe, embed, object {
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+  
+  
+      h1, h2, h3, h4, h5, h6 {
+        color: #2c3e50;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      h1 {
+        font-size: 2rem;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 0.5rem;
+        font-weight: 700;
+      }
+  
+      h2 {
+        font-size: 1.6rem;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 0.3rem;
+        font-weight: 600;
+      }
+  
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+  
+      p {
+        margin-bottom: 1rem;
+        color: #2c3e50;
+        text-align: justify;
+      }
+  
+      strong, b {
+        color: #000000;
+        font-weight: 600;
+      }
+  
+      em, i {
+        color: #2c3e50;
+        font-style: italic;
+      }
+  
+      blockquote {
+        border-left: 4px solid #2c3e50;
+        padding-left: 1rem;
+        margin: 1.5rem 0;
+        background: #f5f5f5;
+        border-radius: 5px;
+        font-style: italic;
+        color: #555555;
+      }
+  
+      ul, ol {
+        margin: 1rem 0;
+        padding-left: 2rem;
+      }
+  
+      li {
+        margin-bottom: 0.5rem;
+        color: #2c3e50;
+      }
+  
+      code {
+        background: #f5f5f5;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        color: #d63384;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        border: 1px solid #e0e0e0;
+      }
+  
+      pre {
+        background: #f5f5f5;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+        border: 1px solid #e0e0e0;
+  
+        code {
+          background: transparent;
+          padding: 0;
+          border: none;
+        }
+      }
+  
+      // Estilos para tabelas - Fundo branco com texto preto
+      // Usando !important para garantir que sobrescreva estilos inline quando necessário
+      table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        margin: 1.5rem 0;
+        background-color: #ffffff !important;
+        border: 2px solid #000000 !important;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+        th {
+          background-color: #ffffff !important;
+          color: #000000 !important;
+          font-weight: 600;
+          padding: 0.75rem;
+          text-align: left;
+          border-bottom: 2px solid #000000 !important;
+          border-right: 1px solid #000000 !important;
+          border-top: none !important;
+  
+          &:last-child {
+            border-right: none !important;
+          }
+        }
+  
+        td {
+          padding: 0.75rem;
+          border-bottom: 1px solid #000000 !important;
+          border-right: 1px solid #000000 !important;
+          border-top: none !important;
+          color: #000000 !important;
+          background-color: #ffffff !important;
+  
+          &:last-child {
+            border-right: none !important;
+          }
+        }
+  
+        tr {
+          background-color: #ffffff !important;
+        }
+  
+        tr:nth-child(even) {
+          background-color: #ffffff !important;
+        }
+  
+        tr:nth-child(odd) {
+          background-color: #ffffff !important;
+        }
+  
+        tr:hover {
+          background-color: #f5f5f5 !important;
+        }
+  
+        thead {
+          background-color: #ffffff !important;
+          
+          th {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+          }
+        }
+  
+        tbody {
+          background-color: #ffffff !important;
+          
+          tr {
+            background-color: #ffffff !important;
+          }
+          
+          td {
+            background-color: #ffffff !important;
+          }
+        }
+      }
+  
+      // Estilos para imagens - com !important para garantir que sobrescreva estilos inline conflitantes
+      img {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+        display: block !important;
+        margin: 1rem auto !important;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
+        object-fit: contain;
+        box-sizing: border-box;
+        
+        // Para imagens muito grandes, limita a altura também
+        @media (min-width: 768px) {
+          max-height: 80vh !important;
+        }
+        
+        // Garante que imagens não ultrapassem o container em mobile
+        @media (max-width: 767px) {
+          max-width: 100% !important;
+          max-height: 70vh !important;
+        }
+      }
+  
+      // Estilos para links
+      a {
+        color: #2c3e50;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+  
+        &:hover {
+          color: #000000;
+          text-decoration: underline;
+        }
+      }
+  
+      // Estilos para mark/highlight
+      mark {
+        background-color: #fff3cd;
+        color: #856404;
+        padding: 0.1rem 0.3rem;
+        border-radius: 3px;
+      }
+    }
+  
+    // ============= RESPONSIVIDADE =============
+    @media (max-width: 768px) {
+      .conteudo-programatico-container {
+        padding: 0;
+      }
+  
+      .tabs-navigation {
+        flex-wrap: wrap;
+        position: relative;
+
+        .tab-group-wrapper {
+          flex: 1 1 100%;
+          min-width: 100%;
+
+          .tab-button {
+            padding: 0.8rem 1rem;
+            font-size: 0.9rem;
+            border-right: none;
+            border-bottom: 1px solid #e0e0e0;
+          }
+
+          .dropdown-menu {
+            position: relative;
+            width: 100%;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid #e0e0e0;
+            margin-top: 0;
+
+            &.open {
+              transform: translateY(0);
+            }
+          }
+        }
+  
+        .export-pdf-button {
+          padding: 0.7rem 1rem;
+          font-size: 0.85rem;
+          margin-right: 0.5rem;
+          margin-left: auto;
+          order: 999;
+          width: 100%;
+          justify-content: center;
+          margin-top: 0.5rem;
+          border-top: 1px solid #e0e0e0;
+          border-radius: 0;
+        }
+      }
+
+      .tab-content-wrapper {
+        flex-direction: column;
+        gap: 0;
+      }
+  
+      .tab-content {
+        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .navigation-sidebar {
+        display: none; // Oculta sidebar em mobile
+      }
+  
+      .content-html.markdown-content {
+        padding: 1rem;
+        font-size: 0.9rem;
+        border: 1px solid #e0e0e0;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .tabs-navigation {
+        .tab-group-wrapper {
+          .tab-button {
+            padding: 0.7rem 0.8rem;
+            font-size: 0.85rem;
+          }
+        }
+  
+        .export-pdf-button {
+          padding: 0.6rem 0.8rem;
+          font-size: 0.8rem;
+        }
+      }
+  
+      .content-html.markdown-content {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+      }
+    }
+  
+    // ============= ANIMAÇÕES =============
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  

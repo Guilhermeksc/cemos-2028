@@ -1,0 +1,115 @@
+<div class="conteudo-programatico-container" (click)="closeDropdown()">
+  <!-- Navegação de Abas -->
+  <div class="tabs-navigation">
+    <!-- Tab Groups dinâmicos -->
+    <div 
+      *ngFor="let tabGroup of config?.tabGroups" 
+      class="tab-group-wrapper"
+      [class.active]="activeTabGroupId === tabGroup.id">
+      
+      <!-- Botão do Tab Group -->
+      <button 
+        class="tab-button"
+        [class.active]="activeTabGroupId === tabGroup.id"
+        [class.has-dropdown]="tabGroup.items && tabGroup.items.length > 0"
+        (click)="tabGroup.items && tabGroup.items.length > 0 ? toggleDropdown(tabGroup.id, $event) : setActiveTabGroup(tabGroup.id); $event.stopPropagation()">
+        <span>{{ tabGroup.label }}</span>
+        <mat-icon *ngIf="tabGroup.items && tabGroup.items.length > 0" class="dropdown-icon">
+          {{ openDropdownId === tabGroup.id ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}
+        </mat-icon>
+      </button>
+
+      <!-- Menu Suspenso (Dropdown) -->
+      <div 
+        *ngIf="tabGroup.items && tabGroup.items.length > 0"
+        class="dropdown-menu"
+        [class.open]="openDropdownId === tabGroup.id"
+        (click)="$event.stopPropagation()">
+        <div class="dropdown-item main-item" (click)="setActiveTabGroup(tabGroup.id)">
+          <mat-icon>description</mat-icon>
+          <span>{{ tabGroup.label }} (Principal)</span>
+        </div>
+        <div 
+          *ngFor="let item of tabGroup.items"
+          class="dropdown-item"
+          [class.active]="activeTabGroupId === tabGroup.id && activeTabItemId === item.id"
+          (click)="selectTabItem(tabGroup.id, item.id)">
+          <mat-icon>article</mat-icon>
+          <span>{{ item.label }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão de Exportar PDF -->
+    <button 
+      class="export-pdf-button"
+      (click)="exportToPdf(); $event.stopPropagation()"
+      [disabled]="isExportingPdf || isLoadingCurrent">
+      <mat-icon>{{ isExportingPdf ? 'hourglass_empty' : 'picture_as_pdf' }}</mat-icon>
+      <span>{{ isExportingPdf ? 'Exportando...' : 'Exportar PDF' }}</span>
+    </button>
+  </div>
+
+  <!-- Conteúdo das Abas -->
+  <div class="tab-content-wrapper" [class.has-sidebar]="currentHeadings.length > 0 && !isLoadingCurrent">
+    <div class="tab-content">
+      <!-- Loading indicator -->
+      <div class="loading-indicator" *ngIf="isLoadingCurrent">
+        <mat-spinner diameter="50"></mat-spinner>
+        <p>Carregando conteúdo...</p>
+      </div>
+      
+      <!-- Conteúdo Principal do Tab Group (quando nenhum sub-item está selecionado) -->
+      <div 
+        *ngFor="let tabGroup of config?.tabGroups"
+        class="tab-pane"
+        [class.active]="activeTabGroupId === tabGroup.id && !activeTabItemId">
+        <div 
+          #contentRef
+          [attr.data-content-key]="tabGroup.id"
+          class="content-html markdown-content" 
+          *ngIf="activeTabGroupId === tabGroup.id && !activeTabItemId && currentContent && !isLoadingCurrent"
+          [innerHTML]="currentContent">
+        </div>
+      </div>
+
+      <!-- Conteúdo dos Sub-itens -->
+      <div 
+        *ngFor="let tabGroup of config?.tabGroups"
+        class="tab-pane"
+        [class.active]="activeTabGroupId === tabGroup.id && activeTabItemId">
+        <div 
+          *ngFor="let item of tabGroup.items"
+          class="tab-item-content"
+          [class.active]="activeTabGroupId === tabGroup.id && activeTabItemId === item.id">
+          <div 
+            #contentRef
+            [attr.data-content-key]="tabGroup.id + '-' + item.id"
+            class="content-html markdown-content" 
+            *ngIf="activeTabGroupId === tabGroup.id && activeTabItemId === item.id && currentContent && !isLoadingCurrent"
+            [innerHTML]="currentContent">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar de Navegação -->
+    <aside class="navigation-sidebar" *ngIf="currentHeadings.length > 0 && !isLoadingCurrent">
+      <div class="sidebar-header">
+        <mat-icon>menu</mat-icon>
+        <span>Navegação</span>
+      </div>
+      <nav class="navigation-list">
+        <a 
+          *ngFor="let heading of currentHeadings"
+          [class.heading-level-1]="heading.level === 1"
+          [class.heading-level-2]="heading.level === 2"
+          class="navigation-item"
+          (click)="scrollToHeading(heading.id); $event.preventDefault()"
+          [href]="'#' + heading.id">
+          {{ heading.title }}
+        </a>
+      </nav>
+    </aside>
+  </div>
+</div>

@@ -157,7 +157,8 @@ export class LivroIndividualService {
     html = html.replace(/_(.+?)_/g, '<em>$1</em>');
 
     // Imagens (processar ANTES de links para evitar conflito)
-    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" />');
+    // Adiciona estilos inline para garantir redimensionamento correto
+    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="max-width: 100%; width: auto; height: auto; display: block; margin: 1rem auto;" />');
 
     // Links (não captura imagens porque já foram processadas)
     html = html.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank">$1</a>');
