@@ -1,9 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnDestroy, HostListener, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { LivroIndividualService } from '../../services/livro-individual.service';
+import { TabsMenuService } from '../../services/tabs-menu.service';
+import { Subject, takeUntil } from 'rxjs';
 
 // Interfaces para configuração
 export interface TabItem {
@@ -37,13 +40,19 @@ export interface NavigationHeading {
   templateUrl: './content-tcu.html',
   styleUrl: './content-tcu.scss'
 })
-export class ContentTcu implements OnInit {
+export class ContentTcu implements OnInit, OnDestroy {
   @Input() config!: ContentConfig;
+  @Input() mobileMenuOpen: boolean = false;
+  @Output() mobileMenuOpenChange = new EventEmitter<boolean>();
+
+  private readonly destroy$ = new Subject<void>();
 
   // Estado atual
   activeTabGroupId: string | null = null;
   activeTabItemId: string | null = null;
   openDropdownId: string | null = null;
+  isMobile: boolean = false;
+  private useService: boolean = false;
 
   // Armazenamento de conteúdo HTML
   contentMap: Map<string, SafeHtml> = new Map();
@@ -77,15 +86,56 @@ export class ContentTcu implements OnInit {
     return this.headingsMap.get(this.currentContentKey) || [];
   }
 
+  /**
+   * Getter para controlar o menu mobile
+   */
+  get isMobileMenuOpen(): boolean {
+    if (this.useService) {
+      return this.tabsMenuService.getCurrentValue() && this.isMobile;
+    }
+    return this.mobileMenuOpen && this.isMobile;
+  }
+
   constructor(
     private livroService: LivroIndividualService,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private breakpointObserver: BreakpointObserver,
+    private tabsMenuService: TabsMenuService,
+    private elementRef: ElementRef
   ) {}
 
   ngOnInit(): void {
     if (!this.config || !this.config.tabGroups || this.config.tabGroups.length === 0) {
       console.error('Configuração de tab groups não fornecida ou inválida');
       return;
+    }
+    
+    // Sempre tenta usar o serviço primeiro (padrão)
+    // O serviço permite comunicação entre componentes distantes
+    this.useService = true;
+    
+    // Observa breakpoints para detectar mobile (apenas Handset, não Tablet)
+    this.breakpointObserver.observe([Breakpoints.Handset])
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(result => {
+        this.isMobile = result.matches;
+        if (!this.isMobile) {
+          if (this.useService) {
+            this.tabsMenuService.closeMenu();
+          } else {
+            this.mobileMenuOpenChange.emit(false);
+          }
+        }
+      });
+    
+    // Se usar serviço, observa mudanças do serviço e registra o componente
+    if (this.useService) {
+      this.tabsMenuService.registerContentTcu();
+      this.tabsMenuService.isMenuOpen
+        .pipe(takeUntil(this.destroy$))
+        .subscribe(isOpen => {
+          // O getter isMobileMenuOpen já trata isso
+        });
     }
     
     // Carrega o conteúdo principal de cada tab group
@@ -100,6 +150,15 @@ export class ContentTcu implements OnInit {
     }
   }
 
+  ngOnDestroy(): void {
+    // Desregistra o componente se estiver usando o serviço
+    if (this.useService) {
+      this.tabsMenuService.unregisterContentTcu();
+    }
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+
   /**
    * Define o tab group ativo
    */
@@ -107,6 +166,15 @@ export class ContentTcu implements OnInit {
     this.activeTabGroupId = tabGroupId;
     this.activeTabItemId = null; // Reseta para mostrar conteúdo principal
     this.openDropdownId = null; // Fecha dropdown se estiver aberto
+    
+    // Fecha menu mobile após seleção
+    if (this.isMobile) {
+      if (this.useService) {
+        this.tabsMenuService.closeMenu();
+      } else {
+        this.mobileMenuOpenChange.emit(false);
+      }
+    }
   }
 
   /**
@@ -114,6 +182,7 @@ export class ContentTcu implements OnInit {
    */
   toggleDropdown(tabGroupId: string, event: Event): void {
     event.stopPropagation();
+    
     if (this.openDropdownId === tabGroupId) {
       // Se já está aberto, fecha e ativa o tab group
       this.openDropdownId = null;
@@ -132,6 +201,31 @@ export class ContentTcu implements OnInit {
   }
 
   /**
+   * Fecha o menu mobile quando clicar fora do componente
+   */
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event): void {
+    if (!this.isMobile || !this.isMobileMenuOpen) {
+      return;
+    }
+
+    const target = event.target as HTMLElement;
+    const clickedInside = this.elementRef.nativeElement.contains(target);
+    
+    // Verifica se o clique foi no botão do header (que está fora deste componente)
+    const isHeaderButton = target.closest('.tabs-menu-button') !== null;
+    
+    if (!clickedInside && !isHeaderButton) {
+      // Fecha o menu se o clique foi fora do componente e não foi no botão do header
+      if (this.useService) {
+        this.tabsMenuService.closeMenu();
+      } else {
+        this.mobileMenuOpenChange.emit(false);
+      }
+    }
+  }
+
+  /**
    * Seleciona um item do menu suspenso
    */
   selectTabItem(tabGroupId: string, itemId: string): void {
@@ -145,6 +239,15 @@ export class ContentTcu implements OnInit {
     
     if (item && !this.contentMap.has(`${tabGroupId}-${itemId}`)) {
       this.loadContent(`${tabGroupId}-${itemId}`, item.markdownPath);
+    }
+    
+    // Fecha menu mobile após seleção
+    if (this.isMobile) {
+      if (this.useService) {
+        this.tabsMenuService.closeMenu();
+      } else {
+        this.mobileMenuOpenChange.emit(false);
+      }
     }
   }
 
@@ -250,11 +353,37 @@ export class ContentTcu implements OnInit {
     setTimeout(() => {
       const element = document.getElementById(headingId);
       if (element) {
-        element.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start',
-          inline: 'nearest'
-        });
+        // Encontra o container de scroll (tab-content) e a barra de navegação
+        const scrollContainer = this.elementRef.nativeElement.querySelector('.tab-content');
+        const tabsNavigation = this.elementRef.nativeElement.querySelector('.tabs-navigation');
+        
+        if (scrollContainer) {
+          // Calcula o offset da barra de navegação
+          const offset = tabsNavigation ? tabsNavigation.offsetHeight : 0;
+          
+          // Obtém a posição do elemento relativa ao container de scroll
+          const containerRect = scrollContainer.getBoundingClientRect();
+          const elementRect = element.getBoundingClientRect();
+          
+          // Calcula a posição relativa dentro do container
+          const relativeTop = elementRect.top - containerRect.top + scrollContainer.scrollTop;
+          
+          // Faz o scroll dentro do container considerando o offset da barra de navegação
+          scrollContainer.scrollTo({
+            top: relativeTop - offset,
+            behavior: 'smooth'
+          });
+        } else {
+          // Fallback: se não encontrar o container, usa window scroll
+          const offset = tabsNavigation ? tabsNavigation.offsetHeight : 0;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
       }
     }, 100);
   }

@@ -1,6 +1,6 @@
 <div class="conteudo-programatico-container" (click)="closeDropdown()">
   <!-- Navegação de Abas -->
-  <div class="tabs-navigation">
+  <div class="tabs-navigation" [class.mobile-open]="isMobileMenuOpen">
     <!-- Tab Groups dinâmicos -->
     <div 
       *ngFor="let tabGroup of config?.tabGroups" 

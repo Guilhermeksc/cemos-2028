@@ -19,14 +19,30 @@
       <span class="title">TCU</span>
       <span class="subtitle">2029</span>
     </div>
-    <button 
-      mat-flat-button 
-      class="logout-button"
-      (click)="logout()"
-      aria-label="Fazer logout">
-      <mat-icon>logout</mat-icon>
-      <span>Sair</span>
-    </button>
+    <div class="header-actions">
+      <button 
+        *ngIf="showTabsMenuButton()"
+        mat-flat-button 
+        class="tabs-menu-button"
+        (click)="toggleTabsMenu()"
+        [attr.aria-expanded]="isTabsMenuOpen()"
+        aria-label="Toggle tabs menu">
+        <img 
+          src="/assets/img/svg/app.png" 
+          alt="App" 
+          class="app-icon"
+          aria-hidden="true">
+        <span>{{ isTabsMenuOpen() ? ' Menu' : ' Menu' }}</span>
+      </button>
+      <button 
+        mat-flat-button 
+        class="logout-button"
+        (click)="logout()"
+        aria-label="Fazer logout">
+        <mat-icon>logout</mat-icon>
+        <span>Sair</span>
+      </button>
+    </div>
   </header>
 
   <!-- Overlay quando menu está expandido -->

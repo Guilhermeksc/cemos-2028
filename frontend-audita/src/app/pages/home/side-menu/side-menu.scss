@@ -166,6 +166,8 @@
   max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+  width: 100%;
+  min-width: 100%;
   
   // Barra de rolagem para navegadores Webkit (Chrome, Safari, Edge)
   &::-webkit-scrollbar {
@@ -196,6 +198,8 @@
 .top-section-wrapper {
   display: block;
   flex-shrink: 0;
+  width: 100%;
+  min-width: 100%;
 }
 
 // ===== BOTÃO DE LOGOUT =====
@@ -282,15 +286,20 @@
   padding: 0;
   background: transparent;
   flex: 1;
+  width: 100%;
+  min-width: 100%;
   
   .mat-nav-list {
     padding: 0;
+    width: 100%;
   }
 }
 
 // ===== SEÇÕES PRINCIPAIS =====
 .nav-section {
   border-bottom: 1px solid var(--border-gray);
+  width: 100%;
+  min-width: 100%;
   
   &:last-child {
     border-bottom: none;
@@ -306,6 +315,9 @@
   border: none;
   transition: all var(--transition-fast);
   position: relative;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
 
   
   &:hover {
@@ -375,11 +387,16 @@
   overflow: hidden;
   border-left: 2px solid var(--light-gray);
   margin-left: 20px;
+  width: calc(100% - 20px);
+  min-width: calc(100% - 20px);
+  box-sizing: border-box;
 }
 
 // ===== SUBSEÇÕES =====
 .nav-subsection {
   border-bottom: 1px solid var(--light-gray);
+  width: 100%;
+  min-width: 100%;
   
   &:last-child {
     border-bottom: none;
@@ -391,7 +408,9 @@
   align-items: center;
   padding: 8px 16px 8px 32px;
   cursor: pointer;
-
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
   transition: all var(--transition-fast);
 
     &:hover {
@@ -437,6 +456,9 @@
   background: var(--pure-white);
   border-left: 2px solid var(--light-gray);
   margin-left: 20px;
+  width: calc(100% - 20px);
+  min-width: calc(100% - 20px);
+  box-sizing: border-box;
 }
 
 // ===== ITENS DE NAVEGAÇÃO =====
@@ -449,6 +471,9 @@
   border-bottom: 1px solid var(--light-gray);
   transition: all var(--transition-fast);
   position: relative;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
   
   &:last-child {
     border-bottom: none;
@@ -508,10 +533,12 @@
 .nav-subitem {
   padding: 8px 16px 8px 48px;
   cursor: pointer;
-
   border-bottom: 1px solid var(--light-gray);
   transition: all var(--transition-fast);
   position: relative;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
   
   &:last-child {
     border-bottom: none;

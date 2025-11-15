@@ -21,7 +21,17 @@ export class EngBancoDados {
             id: 'entidade',
             label: 'Entidade',
             markdownPath: 'entidade.md'
-          },          
+          },   
+          {
+            id: 'atributos-registros',
+            label: 'Atributos e Registros',
+            markdownPath: 'atributos-registros.md'
+          },             
+          {
+            id: 'dominio  ',
+            label: 'Domínio',
+            markdownPath: 'dominio.md'
+          },                    
           {
             id: 'dados',
             label: 'Dados',
@@ -49,6 +59,26 @@ export class EngBancoDados {
             label: 'Teoria Relacional',
             markdownPath: 'teoria-relacional.md'
           },
+          {
+            id: 'algebra-relacional',
+            label: 'Álgebra Relacional',
+            markdownPath: 'algebra-relacional.md'
+          },
+          {
+            id: 'view',
+            label: 'View, Índices e Chaves',
+            markdownPath: 'view.md'
+          },      
+          {
+            id: 'relacionamento-tabelas',
+            label: 'Relacionamento entre Tabelas',
+            markdownPath: 'relacionamento-tabelas.md'
+          }, 
+          {
+            id: 'regras-codd',
+            label: 'Regras de Codd',
+            markdownPath: 'regras-codd.md'
+          },                                       
           {
             id: 'normalizacao',
             label: 'Normalização',

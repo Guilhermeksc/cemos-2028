@@ -21,9 +21,22 @@
       border-bottom: 2px solid #e0e0e0;
       align-items: center;
       width: 100%;
+      min-width: 100%;
+      max-width: 100%;
       margin: 0;
       padding: 0;
       flex-wrap: wrap;
+      box-sizing: border-box;
+      
+      // Desktop: sempre visível
+      @media (min-width: 769px) {
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+        position: sticky !important;
+        left: auto !important;
+        right: auto !important;
+      }
 
       .tab-group-wrapper {
         position: relative;
@@ -308,7 +321,7 @@
     // ============= ESTILOS MARKDOWN =============
     .content-html.markdown-content {
       color: #2c3e50;
-      line-height: 1.8;
+      line-height: 1.15; // Ajustado para ficar mais parecido com Word (antes era 1.8)
       font-size: 1rem;
       max-width: 1300px;
       margin: 0 auto;
@@ -352,7 +365,8 @@
       }
   
       p {
-        margin-bottom: 1rem;
+        margin-bottom: 0.3rem; // Reduzido de 1rem para 0.3rem (mais parecido com Word)
+        margin-top: 0;
         color: #2c3e50;
         text-align: justify;
       }
@@ -378,13 +392,14 @@
       }
   
       ul, ol {
-        margin: 1rem 0;
+        margin: 0.5rem 0; // Reduzido de 1rem para 0.5rem
         padding-left: 2rem;
       }
   
       li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.2rem; // Reduzido de 0.5rem para 0.2rem
         color: #2c3e50;
+        line-height: 1.15; // Mantém consistência com o line-height dos parágrafos
       }
   
       code {
@@ -536,6 +551,20 @@
     }
   
     // ============= RESPONSIVIDADE =============
+    
+    // Tablet - Menu sempre visível como desktop
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .tabs-navigation {
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+        position: sticky !important;
+        left: auto !important;
+        right: auto !important;
+      }
+    }
+    
+    // Mobile
     @media (max-width: 768px) {
       .conteudo-programatico-container {
         padding: 0;
@@ -543,29 +572,73 @@
   
       .tabs-navigation {
         flex-wrap: wrap;
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+        border-bottom: none;
+        z-index: 1000;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+        &.mobile-open {
+          max-height: 100vh;
+          opacity: 1;
+          border-bottom: 2px solid #e0e0e0;
+        }
 
         .tab-group-wrapper {
           flex: 1 1 100%;
           min-width: 100%;
+          width: 100%;
 
           .tab-button {
-            padding: 0.8rem 1rem;
-            font-size: 0.9rem;
+            padding: 1rem 1.5rem;
+            font-size: 0.95rem;
             border-right: none;
             border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+            min-width: 100%;
+            justify-content: space-between;
+            text-align: left;
+            box-sizing: border-box;
+
+            .dropdown-icon {
+              margin-left: auto;
+            }
           }
 
           .dropdown-menu {
             position: relative;
             width: 100%;
+            min-width: 100%;
             box-shadow: none;
             border: none;
             border-bottom: 1px solid #e0e0e0;
             margin-top: 0;
+            transform: none;
+            opacity: 1;
+            visibility: visible;
+            display: none;
+            box-sizing: border-box;
 
             &.open {
+              display: block;
               transform: translateY(0);
+            }
+
+            .dropdown-item {
+              padding: 1rem 1.5rem;
+              font-size: 0.95rem;
+              width: 100%;
+              min-width: 100%;
+              box-sizing: border-box;
             }
           }
         }
@@ -574,6 +647,7 @@
       .tab-content-wrapper {
         flex-direction: column;
         gap: 0;
+        padding-right: 0 !important;
       }
   
       .tab-content {
@@ -589,7 +663,7 @@
       .content-html.markdown-content {
         padding: 1rem;
         font-size: 0.9rem;
-        border: 1px solid #e0e0e0;
+        border: none;
       }
     }
   
@@ -597,12 +671,23 @@
       .tabs-navigation {
         .tab-group-wrapper {
           .tab-button {
-            padding: 0.7rem 0.8rem;
-            font-size: 0.85rem;
+            padding: 0.9rem 1.2rem;
+            font-size: 0.9rem;
+          }
+
+          .dropdown-menu {
+            .dropdown-item {
+              padding: 0.9rem 1.2rem;
+              font-size: 0.9rem;
+            }
           }
         }
       }
   
+      .tab-content {
+        padding: 0.8rem;
+      }
+
       .content-html.markdown-content {
         padding: 0.8rem;
         font-size: 0.85rem;

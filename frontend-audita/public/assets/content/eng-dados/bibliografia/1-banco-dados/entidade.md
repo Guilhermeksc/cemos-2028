@@ -84,7 +84,7 @@ Esse tipo de tabela **não é uma entidade**, mas sim um **relacionamento** entr
 
 ---
 
-## ✔️ Interpretação de uma relação (como afirmação)
+### ✔️ Interpretação de uma relação (como afirmação)
 
 Um esquema de relação pode ser lido como uma **declaração lógica**.
 
@@ -102,7 +102,7 @@ Cada tupla é um **fato concreto**, uma **instância** dessa declaração.
 
 ---
 
-## ✔️ Resumo rápido
+### ✔️ Resumo rápido
 
 * **Entidade** → objeto do mundo real (vira tabela)
 * **Atributos** → características (viram colunas)

@@ -114,6 +114,15 @@ export class LivroIndividualService {
     // Converter tabelas (GFM) antes das demais transformações
     processedContent = this.parseTables(processedContent);
     
+    // Processar cores customizadas ANTES de processar negritos padrão
+    // Padrão: *v* **texto** -> texto vermelho negrito
+    // Padrão: *b* **texto** -> texto azul negrito
+    // Padrão: *vbg* **texto** -> texto preto negrito com background vermelho
+    // Exige pelo menos um espaço entre *v*/*b*/*vbg* e **
+    processedContent = processedContent.replace(/\*v\*\s+\*\*(.+?)\*\*/g, '<strong style="color:rgb(255, 0, 25);">$1</strong>');
+    processedContent = processedContent.replace(/\*b\*\s+\*\*(.+?)\*\*/g, '<strong style="color: #0066cc;">$1</strong>');
+    processedContent = processedContent.replace(/\*vbg\*\s+\*\*(.+?)\*\*/g, '<strong style="background-color: #dc3545; color: #000000; padding: 0.1rem 0.3rem; border-radius: 3px;">$1</strong>');
+    
     const lines = processedContent.split('\n');
     let html = '';
 
@@ -148,11 +157,11 @@ export class LivroIndividualService {
       html += line + '\n';
     });
 
-    // Bold
+    // Bold (processar depois das cores customizadas para não conflitar)
     html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
     html = html.replace(/__(.+?)__/g, '<strong>$1</strong>');
 
-    // Italic
+    // Italic (os marcadores *v* e *b* já foram processados acima, então não serão capturados aqui)
     html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
     html = html.replace(/_(.+?)_/g, '<em>$1</em>');
 
