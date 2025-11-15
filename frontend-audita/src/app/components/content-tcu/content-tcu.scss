@@ -149,48 +149,6 @@
           }
         }
       }
-  
-      // Botão de Exportar PDF
-      .export-pdf-button {
-        flex: 0 0 auto;
-        background: #2c3e50;
-        color: #ffffff;
-        border: none;
-        padding: 0.75rem 1.5rem;
-        margin-left: auto;
-        margin-right: 1rem;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 0.95rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        border-right: none !important;
-  
-        mat-icon {
-          font-size: 1.2rem;
-          width: 1.2rem;
-          height: 1.2rem;
-        }
-  
-        &:hover:not(:disabled) {
-          background: #1a252f;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-  
-        &:active:not(:disabled) {
-          transform: translateY(0);
-        }
-  
-        &:disabled {
-          opacity: 0.6;
-          cursor: not-allowed;
-          background: #95a5a6;
-        }
-      }
     }
   
     // ============= CONTEÚDO DAS ABAS =============
@@ -611,19 +569,6 @@
             }
           }
         }
-  
-        .export-pdf-button {
-          padding: 0.7rem 1rem;
-          font-size: 0.85rem;
-          margin-right: 0.5rem;
-          margin-left: auto;
-          order: 999;
-          width: 100%;
-          justify-content: center;
-          margin-top: 0.5rem;
-          border-top: 1px solid #e0e0e0;
-          border-radius: 0;
-        }
       }
 
       .tab-content-wrapper {
@@ -655,11 +600,6 @@
             padding: 0.7rem 0.8rem;
             font-size: 0.85rem;
           }
-        }
-  
-        .export-pdf-button {
-          padding: 0.6rem 0.8rem;
-          font-size: 0.8rem;
         }
       }
   

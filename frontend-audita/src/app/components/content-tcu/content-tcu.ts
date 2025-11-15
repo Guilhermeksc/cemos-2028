@@ -1,12 +1,9 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { LivroIndividualService } from '../../services/livro-individual.service';
-
-declare var html2pdf: any;
 
 // Interfaces para configuração
 export interface TabItem {
@@ -36,14 +33,12 @@ export interface NavigationHeading {
 
 @Component({
   selector: 'app-content-tcu',
-  imports: [CommonModule, MatProgressSpinnerModule, MatButtonModule, MatIconModule],
+  imports: [CommonModule, MatProgressSpinnerModule, MatIconModule],
   templateUrl: './content-tcu.html',
   styleUrl: './content-tcu.scss'
 })
 export class ContentTcu implements OnInit {
   @Input() config!: ContentConfig;
-
-  @ViewChildren('contentRef') contentRefs!: QueryList<ElementRef>;
 
   // Estado atual
   activeTabGroupId: string | null = null;
@@ -58,7 +53,6 @@ export class ContentTcu implements OnInit {
   
   // Estados de carregamento
   loadingMap: Map<string, boolean> = new Map();
-  isExportingPdf: boolean = false;
 
   // Propriedades computadas para melhor performance
   get currentContentKey(): string {
@@ -93,9 +87,6 @@ export class ContentTcu implements OnInit {
       console.error('Configuração de tab groups não fornecida ou inválida');
       return;
     }
-
-    // Carrega a biblioteca html2pdf dinamicamente
-    this.loadHtml2PdfLibrary();
     
     // Carrega o conteúdo principal de cada tab group
     this.config.tabGroups.forEach(tabGroup => {
@@ -106,18 +97,6 @@ export class ContentTcu implements OnInit {
     if (this.config.tabGroups.length > 0) {
       this.activeTabGroupId = this.config.tabGroups[0].id;
       this.activeTabItemId = null; // Mostra o conteúdo principal
-    }
-  }
-
-  /**
-   * Carrega a biblioteca html2pdf.js via CDN
-   */
-  private loadHtml2PdfLibrary(): void {
-    if (typeof html2pdf === 'undefined') {
-      const script = document.createElement('script');
-      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
-      script.async = true;
-      document.head.appendChild(script);
     }
   }
 
@@ -278,107 +257,6 @@ export class ContentTcu implements OnInit {
         });
       }
     }, 100);
-  }
-
-  /**
-   * Exporta o conteúdo da aba ativa para PDF
-   */
-  async exportToPdf(): Promise<void> {
-    if (this.isExportingPdf || this.isLoadingCurrent) return;
-
-    // Aguarda a biblioteca estar carregada
-    if (typeof html2pdf === 'undefined') {
-      await this.waitForHtml2Pdf();
-    }
-
-    this.isExportingPdf = true;
-
-    try {
-      // Encontra o elemento de conteúdo atual
-      const contentElement = this.contentRefs
-        .toArray()
-        .find(ref => ref.nativeElement.getAttribute('data-content-key') === this.currentContentKey)
-        ?.nativeElement;
-
-      if (!contentElement) {
-        console.error('Elemento de conteúdo não encontrado');
-        this.isExportingPdf = false;
-        return;
-      }
-
-      // Gera título do PDF
-      const tabGroup = this.getActiveTabGroup();
-      const tabItem = this.getActiveTabItem();
-      const title = tabItem 
-        ? `${tabGroup?.label} - ${tabItem.label}`
-        : tabGroup?.label || 'Documento';
-
-      // Clona o elemento para não modificar o original
-      const clonedElement = contentElement.cloneNode(true) as HTMLElement;
-      
-      // Adiciona estilos específicos para PDF
-      clonedElement.style.padding = '20px';
-      clonedElement.style.backgroundColor = '#ffffff';
-      clonedElement.style.color = '#000000';
-      clonedElement.style.fontFamily = 'Arial, sans-serif';
-      
-      // Cria um container temporário
-      const tempContainer = document.createElement('div');
-      tempContainer.style.position = 'absolute';
-      tempContainer.style.left = '-9999px';
-      tempContainer.style.width = '210mm'; // A4 width
-      tempContainer.appendChild(clonedElement);
-      document.body.appendChild(tempContainer);
-
-      // Configurações do PDF
-      const opt = {
-        margin: [10, 10, 10, 10],
-        filename: `${title}.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { 
-          scale: 2,
-          useCORS: true,
-          logging: false
-        },
-        jsPDF: { 
-          unit: 'mm', 
-          format: 'a4', 
-          orientation: 'portrait' 
-        }
-      };
-
-      // Gera e baixa o PDF
-      await html2pdf().set(opt).from(clonedElement).save();
-
-      // Remove o container temporário
-      document.body.removeChild(tempContainer);
-    } catch (error) {
-      console.error('Erro ao exportar PDF:', error);
-      alert('Erro ao exportar PDF. Por favor, tente novamente.');
-    } finally {
-      this.isExportingPdf = false;
-    }
-  }
-
-  /**
-   * Aguarda a biblioteca html2pdf estar carregada
-   */
-  private waitForHtml2Pdf(): Promise<void> {
-    return new Promise((resolve, reject) => {
-      let attempts = 0;
-      const maxAttempts = 50; // 5 segundos máximo
-
-      const checkInterval = setInterval(() => {
-        attempts++;
-        if (typeof html2pdf !== 'undefined') {
-          clearInterval(checkInterval);
-          resolve();
-        } else if (attempts >= maxAttempts) {
-          clearInterval(checkInterval);
-          reject(new Error('Timeout ao carregar biblioteca html2pdf'));
-        }
-      }, 100);
-    });
   }
 
 }

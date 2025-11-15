@@ -39,15 +39,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Botão de Exportar PDF -->
-    <button 
-      class="export-pdf-button"
-      (click)="exportToPdf(); $event.stopPropagation()"
-      [disabled]="isExportingPdf || isLoadingCurrent">
-      <mat-icon>{{ isExportingPdf ? 'hourglass_empty' : 'picture_as_pdf' }}</mat-icon>
-      <span>{{ isExportingPdf ? 'Exportando...' : 'Exportar PDF' }}</span>
-    </button>
   </div>
 
   <!-- Conteúdo das Abas -->
