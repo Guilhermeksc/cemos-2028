@@ -46,12 +46,17 @@ export class EngBancoDados {
             id: 'banco-de-dados',
             label: 'Banco de Dados',
             markdownPath: 'banco-de-dados.md'
-          },
-          {
-            id: 'sgbd',
-            label: 'SGBD',
-            markdownPath: 'sgbd.md'
-          }
+            },
+            {
+              id: 'sgbd',
+              label: 'SGBD',
+              markdownPath: 'sgbd.md'
+            },
+            {
+              id: 'dependencia-funcional',
+              label: 'Dependência Funcional',
+              markdownPath: 'dependencia-funcional.md'
+            }
         ]
       },      
       {

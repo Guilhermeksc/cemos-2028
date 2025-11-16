@@ -65,6 +65,18 @@ Notem que agora nós temos uma nova tabela com apenas dois atributos e que podem
 Vejam também que o Código **001** (correspondente ao Kobe Bryant) continua com seus dois números — assim como o Código **004** (correspondente ao Allen Iverson).
 Dessa forma, sempre que for necessário inserir, excluir, atualizar ou consultar um telefone, basta que eu saiba o código do jogador e busque na **Tabela TELEFONE**.
 
+Agora vamos resolver o problema da coluna **ENDEREÇO**.
+Nesse caso, não precisamos de uma nova tabela: basta inserir uma coluna para cada subdivisão do atributo composto **ENDEREÇO**. Vejamos:
+
+## TABELA JOGADOR
+
+| **CÓDIGO** | **NOME**       | **LOGRADOURO**                | **NÚMERO** | **BAIRRO**       | **CIDADE**     | **UF** |
+| ---------- | -------------- | ----------------------------- | ---------- | ---------------- | -------------- | ------ |
+| 001        | Kobe Bryant    | Rua Conceição de Monte Alegre | 198        | Cidade Monções   | São Paulo      | SP     |
+| 002        | Michael Jordan | Estrada dos Bandeirantes      | 6900       | Jacarepaguá      | Rio de Janeiro | RJ     |
+| 003        | LeBron James   | Avenida Portugal              | 744        | Setor Marista    | Goiânia        | GO     |
+| 004        | Allen Iverson  | Rua Mexilhão                  | 33         | Praia do Francês | Maceió         | AL     |
+
 
 Para normalizar o banco, podemos converter os atributos não atômicos em outras tabelas ou em outros campos na mesma tabela evitando repetições e campos com múltiplos valores. Ao reorganizar todos os campos não-atômicos das tabelas de um banco de dados, podemos aﬁrmar que ela atinge uma forma estrutural denominada de Primeira Forma Normal (1FN)1.
 
@@ -77,129 +89,79 @@ parte dela;
 Dependência funcional parcial: ocorre quando algum atributo não chave de uma relação depende apenas de parte da chave primária e, não, dela
 como um todo e somente ocorre quando temos uma chave primária composta.
 
+Via de regra, a **chave primária** é responsável por identificar uma tupla em uma relação, logo a chave primária é a **coluna (ou conjunto de colunas) determinante** e as outras colunas **são dependentes**.
+
+Será que isso ocorre na tabela abaixo?
+Por meio do **código de um pedido**, é possível identificar a **data** e a **hora**, mas **não é possível identificar as outras colunas** — todas elas podem ser diferentes para um mesmo código de pedido.
+
+## Tabela Venda (Markdown)
+
+| CÓDIGO PEDIDO | CÓDIGO ITEM | NOME_ITEM | DATA       | HORA  | OBSERVAÇÃO                            |
+| ------------- | ----------- | --------- | ---------- | ----- | ------------------------------------- |
+| 111           | 555         | X-Tudo    | 12/11/2020 | 15:59 | Gostaria do meu sanduíche sem picles. |
+| 111           | 666         | X-Salada  | 12/11/2020 | 15:59 | Enviem sem maionese, por favor.       |
+| 333           | 777         | X-Bacon   | 07/09/2020 | 19:20 | Sou alérgico à cebola.                |
+| 444           | 555         | X-Tudo    | 01/08/2020 | 12:10 | Talheres de plástico, por gentileza!  |
+
+
 Terceira Forma Normal (3FN): Uma tabela está na 3FN se, e somente se, estiver na 2fn e cada atributo não-chave NÃO POSSUIR DEPENDÊNCIA
 TRANSITIVA PARA CADA CHAVE CANDIDATA
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaDependência Funcional Transitiva. Essa dependência ocorre quando uma
-coluna, além de depender da chave primária da tabela, depende de outra
+
+
+Dependência Funcional Transitiva. Essa dependência ocorre quando uma coluna, além de depender da chave primária da tabela, depende de outra
 coluna (ou conjunto de colunas) dessa tabela.
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaForma Normal de Boyce-Codd (FNBC): Uma tabela está na FNBC se, e
-somente se, estiver na 3fn e, para cada dependência x -> y NÃO TRIVIAL, X
-deverá ser uma superchave, isto é, todo determinante é uma chave candidata
-Ela é basicamente uma forma normal um pouco mais forte que a 3FN. É
-importante saber que toda tabela que esteja na FNBC está na 3FN, mas nem
-toda tabela na 3FN está na FNBC.
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaAs demais formas normais são raríssimas tanto na prática do proﬁssional
-de tecnologia da informação quanto nas questões de prova. Logo,
-apresentaremos só as deﬁnições:
-Quarta Forma Normal (4FN): Uma tabela está na 4FN se, e somente se,
-estiver na 3fn e não existirem dependências multivaloradas
-Quinta Forma Normal (5FN): Uma tabela está na 5FN se, e somente se,
-estiver na 4fn e não existirem dependências de junções
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaAxiomas de Armstrong: são as propriedades das dependências funcionais
-a) Reﬂexividade Se Y ⊇ X, então X → Y : Exemplo: vamos supor o atributo X
-= {CPF, NOME} e o atributo Y = NOME. Ora, NOME (Y) está contido em
-{CPF, NOME} (X). Logo, podemos concluir que {CPF, NOME} (X) determina
-NOME (Y).
-b) Incremental/aditiva/expansibilidade Se X → Y, então XZ → YZ : Exemplo:
-vamos supor os atributos X = CPF, Y = NOME e Z = IDADE. Sabendo que
-CPF(X) determina NOME(Y), podemos concluir que {CPF, IDADE} determina
-{NOME, IDADE}. Se os mesmos atributos são inseridos à esquerda e à direita,
+
+Forma Normal de Boyce-Codd (FNBC): Uma tabela está na FNBC se, e somente se, estiver na 3fn e, para cada dependência x -> y NÃO TRIVIAL, X
+deverá ser uma superchave, isto é, todo determinante é uma chave candidata Ela é basicamente uma forma normal um pouco mais forte que a 3FN. É
+importante saber que toda tabela que esteja na FNBC está na 3FN, mas nem toda tabela na 3FN está na FNBC.
+
+As demais formas normais são raríssimas tanto na prática do proﬁssional de tecnologia da informação quanto nas questões de prova. Logo, apresentaremos só as deﬁnições:
+
+Quarta Forma Normal (4FN): Uma tabela está na 4FN se, e somente se, estiver na 3fn e não existirem dependências multivaloradas
+Quinta Forma Normal (5FN): Uma tabela está na 5FN se, e somente se, estiver na 4fn e não existirem dependências de junções
+
+Axiomas de Armstrong: são as propriedades das dependências funcionais
+
+a) Reﬂexividade Se Y ⊇ X, então X → Y : Exemplo: vamos supor o atributo X = {CPF, NOME} e o atributo Y = NOME. Ora, NOME (Y) está contido em
+{CPF, NOME} (X). Logo, podemos concluir que {CPF, NOME} (X) determina NOME (Y).
+
+b) Incremental/aditiva/expansibilidade Se X → Y, então XZ → YZ : Exemplo: vamos supor os atributos X = CPF, Y = NOME e Z = IDADE. Sabendo que
+CPF(X) determina NOME(Y), podemos concluir que {CPF, IDADE} determina {NOME, IDADE}. Se os mesmos atributos são inseridos à esquerda e à direita,
 a dependência funcional permanece igual2 .
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna Sizac) Transitividade Se X → Y e Y → Z, então X → Z: Exemplo: vamos supor o
-atributo X = CPF, o atributo Y = CEP e o atributo Z = ESTADO. Sabendo que
-CPF(X) determina CEP(Y), e que CEP(Y) determina ESTADO(Z), podemos
-concluir que CPF(X) determina ESTADO(Z). Similar à propriedade matemática
+
+c) Transitividade Se X → Y e Y → Z, então X → Z: Exemplo: vamos supor o atributo X = CPF, o atributo Y = CEP e o atributo Z = ESTADO. Sabendo que
+CPF(X) determina CEP(Y), e que CEP(Y) determina ESTADO(Z), podemos concluir que CPF(X) determina ESTADO(Z). Similar à propriedade matemática
 de transitividade.
-d) Trivialidade/autodeterminação X → X : Exemplo: como o próprio nome
-diz, essa é simplesmente a propriedade trivial de um atributo determinar-se a
-si próprio. É evidente que CPF(X) determina CPF(X) – trata-se de do axioma
-da autodeterminação.
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna Sizae) Decomposição/separação Se X → YZ, então X → Y e X → Z: Exemplo:
-vamos supor os atributos X = CPF, Y = NOME e Z = ESTADO_CIVIL. Se
-CPF(X) determina {NOME, ESTADO_CIVIL}, podemos decompor essa
-dependência funcional e aﬁrmar que CPF(X) determina NOME (Y) e CPF(X)
+
+d) Trivialidade/autodeterminação X → X : Exemplo: como o próprio nome diz, essa é simplesmente a propriedade trivial de um atributo determinar-se a
+si próprio. É evidente que CPF(X) determina CPF(X) – trata-se de do axioma da autodeterminação.
+
+e) Decomposição/separação Se X → YZ, então X → Y e X → Z: Exemplo: vamos supor os atributos X = CPF, Y = NOME e Z = ESTADO_CIVIL. Se
+CPF(X) determina {NOME, ESTADO_CIVIL}, podemos decompor essa dependência funcional e aﬁrmar que CPF(X) determina NOME (Y) e CPF(X)
 determina ESTADO_CIVIL(Z).
-f) União/reunião/combinação Se X → Y e X → Z, então X → YZ: Exemplo:
-vamos supor os atributos X = CPF, Y = NOME e Z = ESTADO_CIVIL. Se
+
+f) União/reunião/combinação Se X → Y e X → Z, então X → YZ: Exemplo: vamos supor os atributos X = CPF, Y = NOME e Z = ESTADO_CIVIL. Se
 CPF(X) determina NOME (Y) e CPF(X) determina ESTADO_CIVIL(Z), podemos
 aﬁrmar que CPF(X) determina {NOME, ESTADO_CIVIL}.
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna Sizag) Composição Se X → Y e A → B, então XA → YB: Exemplo: vamos supor os
+
+g) Composição Se X → Y e A → B, então XA → YB: Exemplo: vamos supor os
 atributos X = CPF, Y = NOME, A = CEP e B = ESTADO. Se CPF(X) determina
 NOME (Y) e CEP(A) determina ESTADO(B), podemos aﬁrmar que {CPF,CEP}
 determina {NOME,ESTADO}.
+
 h) Pseudo-transitividade Se X → Y e YZ → W, então XZ → W : Exemplo:
 vamos supor os atributos X = CPF, Y = COD_SIAPE3 , Z = MES e W =
 REMUNERACAO. Se CPF(X) determina COD_SIAPE(Y) e {COD_SIAPE,MES}
 determina REMUNERACAO(W), podemos aﬁrmar que {CPF, MES} determina
 REMUNERACAO.
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna Sizai) Acumulação Se X → Y, então XZ → Y: Exemplo: vamos supor os atributos X
+
+i) Acumulação Se X → Y, então XZ → Y: Exemplo: vamos supor os atributos X
 = CPF, Y = NOME e Z = IDADE. Se CPF(X) determina NOME(Y), podemos
 aﬁrmar que {CPF, IDADE} determina NOME. Na verdade, qualquer atributo
 inserido à esquerda continua determinando o atributo da direita.
-Informática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna SizaInformática
-Profa: Emannuelle Gouveia
-@Emannuelle Gouveia
-05490709405 - Lorenna Siza1. (FGV / SEFAZ-BA – 2022) Leia o fragmento a seguir. “Uma tabela está na
+
+
+1. (FGV / SEFAZ-BA – 2022) Leia o fragmento a seguir. “Uma tabela está na
 _____ se, e somente se, para cada _____, onde X e A são atributos simples ou
 compostos, uma das duas condições precisam ser mantidas: ou o atributo X é
 uma _____, ou o atributo A é uma chave candidata. Se o atributo A é membro
