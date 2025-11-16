@@ -121,7 +121,7 @@ export class LivroIndividualService {
     // Exige pelo menos um espaço entre *v*/*b*/*vbg* e **
     processedContent = processedContent.replace(/\*v\*\s+\*\*(.+?)\*\*/g, '<strong style="color:rgb(255, 0, 25);">$1</strong>');
     processedContent = processedContent.replace(/\*b\*\s+\*\*(.+?)\*\*/g, '<strong style="color: #0066cc;">$1</strong>');
-    processedContent = processedContent.replace(/\*vbg\*\s+\*\*(.+?)\*\*/g, '<strong style="background-color: #dc3545; color: #000000; padding: 0.1rem 0.3rem; border-radius: 3px;">$1</strong>');
+    processedContent = processedContent.replace(/\*vbg\*\s+\*\*(.+?)\*\*/g, '<strong style="background-color:rgb(235, 200, 203); color: #000000; padding: 0.1rem 0.3rem; border-radius: 3px;">$1</strong>');
     
     const lines = processedContent.split('\n');
     let html = '';

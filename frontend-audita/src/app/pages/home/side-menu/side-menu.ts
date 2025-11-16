@@ -284,11 +284,34 @@ export class SideMenu {
   toggleSection(index: number): void {
     this.menuItems.update(items => {
       const updated = [...items];
-      const wasOpen = updated[index].expanded;
+      const section = updated[index];
+      const wasOpen = section.expanded;
+      
+      // Navega para a bibliografia da seção quando clicar no header
+      this.navigateToSectionBibliografia(section.title);
+      
       updated.forEach(i => (i.expanded = false));
       updated[index].expanded = !wasOpen;
       return updated;
     });
+  }
+
+  /**
+   * Navega para a bibliografia de uma seção específica
+   */
+  navigateToSectionBibliografia(sectionTitle: string): void {
+    const sectionPath = this.titleToPathMap[sectionTitle];
+    if (!sectionPath) {
+      console.warn(`No route path found for section: ${sectionTitle}`);
+      return;
+    }
+
+    // Navega para a bibliografia da seção
+    const pathSegments: string[] = ['home', sectionPath, 'bibliografia'];
+    const pathString = `${sectionPath}/bibliografia`;
+    this.currentActivePath.set(pathString);
+    this.router.navigate(pathSegments);
+    this.itemClicked.emit();
   }
 
   toggleSubSection(sectionIndex: number, subIndex: number): void {
