@@ -95,6 +95,16 @@ export class EngBancoDados {
             markdownPath: 'normalizacao.md'
           },
           {
+            id: 'axiomas-armstrong',
+            label: 'Axiomas de Armstrong',
+            markdownPath: 'axiomas-armstrong.md'
+          },
+          {
+            id: 'questoes-relacionais',
+            label: 'Questões',
+            markdownPath: 'questoes-relacionais.md'
+          },
+          {
             id: 'modelo-entidade-relacionamento',
             label: 'Modelo Entidade Relacionamento',
             markdownPath: 'modelo-entidade-relacionamento.md'
@@ -119,6 +129,23 @@ export class EngBancoDados {
         ]
       },
       {
+        id: 'oracle-db',
+        label: 'Oracle DB',
+        mainMarkdownPath: 'oracle-db/oracle.md', 
+        items: [
+          {
+            id: 'oracle-db-tipos-dados',
+            label: 'Tipos de Dados',
+            markdownPath: 'oracle/oracle-db-tipos-dados.md'
+          },
+          {
+            id: 'oracle-db-tipos-dados',
+            label: 'Tipos de Dados',
+            markdownPath: 'oracle/oracle-db-tipos-dados.md'
+          }
+        ]
+      },
+      {
         id: 'modelagem-dados',
         label: 'Modelagem de Dados',
         mainMarkdownPath: 'modelagem_dados.md',
@@ -127,8 +154,79 @@ export class EngBancoDados {
       {
         id: 'sql',
         label: 'SQL',
-        mainMarkdownPath: 'sql.md',
-        items: []
+        mainMarkdownPath: 'sql/sql.md',
+        items: [
+          {
+            id: 'questoes-sql',
+            label: 'Questões SQL',
+            markdownPath: 'sql/questoes-sql.md'
+          },          
+          {
+            id: 'sql-tipos-dados',
+            label: 'Tipos de Dados',
+            markdownPath: 'sql/sql-tipos-dados.md'
+          },
+          {
+            id: 'sql-dcl',
+            label: 'DCL',
+            markdownPath: 'sql/sql-dcl.md'
+          },
+          {
+            id: 'sql-tcl',
+            label: 'DTL (Data Transaction Language) ou TCL (Transaction Control Language)',
+            markdownPath: 'sql/sql-tcl.md'
+          },
+          {
+            id: 'sql-ddl',
+            label: 'DDL (Data Definition Language)',
+            markdownPath: 'sql/sql-ddl.md'
+          },
+          {
+            id: 'sql-ddl-dml',
+            label: 'DDL + DML (Data Definition Language + Data Manipulation Language)',
+            markdownPath: 'sql/sql-ddl-dml.md'
+          },
+          {
+            id: 'restricoes',
+            label: 'Restrições (Constraints)',
+            markdownPath: 'sql/restricoes.md'
+          },
+          {
+            id: 'calculo-relacional',
+            label: 'Calculo Relacional',
+            markdownPath: 'sql/calculo-relacional.md'
+          },
+          {
+            id: 'clausulas-sql',
+            label: 'Clausulas SQL',
+            markdownPath: 'sql/clausulas-sql.md'
+          },
+          {
+            id: 'juncao-sql',
+            label: 'Junção SQL',
+            markdownPath: 'sql/juncao-sql.md'
+          },
+          {
+            id: 'sql-questoes',
+            label: 'Questões SQL',
+            markdownPath: 'sql/sql-questoes.md'
+          },
+          {
+            id: 'juncao-sql',
+            label: 'Junção SQL',
+            markdownPath: 'sql/juncao-sql.md'
+          },
+          {
+            id: 'sql-sintaxe',
+            label: 'Sintaxe SQL',
+            markdownPath: 'sql/sql-sintaxe.md'
+          },
+          {
+            id: 'sql-sintaxe-questoes',
+            label: 'Sintaxe SQL Questões',
+            markdownPath: 'sql/sql-sintaxe-questoes.md'
+          }                       
+        ]
       }
     ]
   };
