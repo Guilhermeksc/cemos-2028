@@ -167,13 +167,8 @@ export class EngBancoDados {
             markdownPath: 'sql/sql-tipos-dados.md'
           },
           {
-            id: 'sql-dcl',
-            label: 'DCL',
-            markdownPath: 'sql/sql-dcl.md'
-          },
-          {
             id: 'sql-tcl',
-            label: 'DTL (Data Transaction Language) ou TCL (Transaction Control Language)',
+            label: 'DTL/TCL e DCL',
             markdownPath: 'sql/sql-tcl.md'
           },
           {
@@ -182,9 +177,9 @@ export class EngBancoDados {
             markdownPath: 'sql/sql-ddl.md'
           },
           {
-            id: 'sql-ddl-dml',
-            label: 'DDL + DML (Data Definition Language + Data Manipulation Language)',
-            markdownPath: 'sql/sql-ddl-dml.md'
+            id: 'sql-dml',
+            label: 'DML (Data Manipulation Language)',
+            markdownPath: 'sql/sql-dml.md'
           },
           {
             id: 'restricoes',
@@ -206,6 +201,16 @@ export class EngBancoDados {
             label: 'Junção SQL',
             markdownPath: 'sql/juncao-sql.md'
           },
+          {
+            id: 'sql-conceitos-avancados',
+            label: 'Conceitos Avançados',
+            markdownPath: 'sql/conceitos-avancados.md'
+          },
+          {
+            id: 'sql-questoes2',
+            label: 'Questões SQL 2',
+            markdownPath: 'sql/questoes-sql2.md'
+          },          
           {
             id: 'sql-questoes',
             label: 'Questões SQL',

@@ -384,7 +384,6 @@
       blockquote {
         border-left: 4px solid #2c3e50;
         padding-left: 1rem;
-        margin: 1.5rem 0;
         background: #f5f5f5;
         border-radius: 5px;
         font-style: italic;
@@ -392,7 +391,6 @@
       }
   
       ul, ol {
-        margin: 0.5rem 0; // Reduzido de 1rem para 0.5rem
         padding-left: 2rem;
       }
   
@@ -401,28 +399,49 @@
         color: #2c3e50;
         line-height: 1.15; // Mantém consistência com o line-height dos parágrafos
       }
-  
-      code {
-        background: #f5f5f5;
-        padding: 0.2rem 0.4rem;
-        border-radius: 4px;
-        color: #d63384;
-        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-        border: 1px solid #e0e0e0;
-      }
-  
+    
       pre {
-        background: #f5f5f5;
-        padding: 1rem;
+        background: #1e1e1e;
         border-radius: 8px;
         overflow-x: auto;
-        border: 1px solid #e0e0e0;
-  
-        code {
-          background: transparent;
-          padding: 0;
-          border: none;
+        border: 1px solid #3c3c3c;
+        font-size: 0.9rem !important;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Courier New', monospace !important;
+        display: block !important;
+          
+        // Estilos específicos para código SQL
+        code.language-sql {
+          color: #d4d4d4 !important;
         }
+      }
+      
+      // Estilos para destacar palavras-chave SQL
+      // Usar seletores mais específicos para garantir que sejam aplicados
+      pre code span.sql-keyword,
+      code.language-sql span.sql-keyword {
+        color: #569cd6 !important;
+        font-weight: 600 !important;
+      }
+      
+      pre code span.sql-function,
+      code.language-sql span.sql-function {
+        color: #dcdcaa !important;
+      }
+      
+      pre code span.sql-string,
+      code.language-sql span.sql-string {
+        color: #ce9178 !important;
+      }
+      
+      pre code span.sql-number,
+      code.language-sql span.sql-number {
+        color: #b5cea8 !important;
+      }
+      
+      pre code span.sql-comment,
+      code.language-sql span.sql-comment {
+        color: #6a9955 !important;
+        font-style: italic !important;
       }
   
       // Estilos para tabelas - Fundo branco com texto preto

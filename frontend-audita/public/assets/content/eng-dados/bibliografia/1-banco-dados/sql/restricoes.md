@@ -272,10 +272,22 @@ CREATE TABLE ALUNO (
     SEXO       CHAR(1)      NOT NULL,
     CIDADE     VARCHAR(50),
     MATRICULA  INT          UNIQUE,
-    IDADE      INT          *v* **CHECK (IDADE >= 18)**
+    IDADE      INT          CHECK (IDADE >= 18)
 );
 ```
 
+
+```sql
+CREATE TABLE ALUNO (
+    NOME       VARCHAR(20)  NOT NULL,
+    CPF        INT          PRIMARY KEY,
+    SEXO       CHAR(1)      NOT NULL,
+    CIDADE     VARCHAR(50),
+    MATRICULA  INT          UNIQUE,
+    IDADE      INT          ,
+    CONSTRAINT NOME_RESTRICAO *v* **CHECK (IDADE >= 18 AND SEXO = 'F')**
+);
+```
 
 No exemplo, temos uma restrição composta, dado que limita a inserção de registros apenas àqueles que tenham IDADE >= 18 e SEXO = ‘F’. Em outras palavras, será permitido o armazenamento de registros apenas de mulheres maiores de idade.
 Informática
@@ -293,3 +305,14 @@ No exemplo abaixo, todo registro que não tenha especificado um valor para a col
 Podemos alterar uma tabela já existente:
 
 Por fim, da mesma forma que é possível adicionar um valor padrão, é também possível retirá-lo por meio da seguinte sintaxe:
+
+CREATE TABLE ALUNO (
+    NOME       VARCHAR(20)  NOT NULL,
+    CPF        INT          PRIMARY KEY,
+    SEXO       CHAR(1)      NOT NULL,
+    CIDADE     VARCHAR(50)  DEFAULT 'Brasília',
+    MATRICULA  INT          UNIQUE
+);
+
+
+significa que caso a cidade não tenha sido preenchida com nenhum valor, então o banco vai considerar **Brasília** como verdadeira

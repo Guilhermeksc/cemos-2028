@@ -111,6 +111,28 @@ export class LivroIndividualService {
       processedContent = this.processImagePaths(content, basePath);
     }
 
+    // PROTEGER BLOCOS DE CÓDIGO ANTES DE PROCESSAR OUTRAS TRANSFORMAÇÕES
+    // Armazena os blocos de código e código inline em arrays temporários
+    const codeBlocks: string[] = [];
+    const inlineCodes: string[] = [];
+    
+    // Extrair blocos de código (``` código ```)
+    // Usa placeholders únicos que não conflitam com sintaxe markdown
+    // Usa um padrão HTML comment-like que não será processado por regexes markdown
+    processedContent = processedContent.replace(/```(\w+)?\n([\s\S]+?)```/g, (match, lang, code) => {
+      const placeholder = `<!--CODEBLOCK_${codeBlocks.length}-->`;
+      codeBlocks.push(`\`\`\`${lang || ''}\n${code}\`\`\``);
+      return placeholder;
+    });
+    
+    // Extrair código inline (` código `)
+    // Usa placeholders únicos que não conflitam com sintaxe markdown
+    processedContent = processedContent.replace(/`([^`\n]+?)`/g, (match, code) => {
+      const placeholder = `<!--INLINECODE_${inlineCodes.length}-->`;
+      inlineCodes.push(`\`${code}\``);
+      return placeholder;
+    });
+
     // Converter tabelas (GFM) antes das demais transformações
     processedContent = this.parseTables(processedContent);
     
@@ -179,15 +201,64 @@ export class LivroIndividualService {
     // Listas ordenadas
     html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
 
+    // RESTAURAR E PROCESSAR BLOCOS DE CÓDIGO ANTES DE PROCESSAR PARÁGRAFOS
+    // Isso evita que os placeholders sejam envolvidos em tags <p>
+    codeBlocks.forEach((codeBlock, index) => {
+      const placeholder = `<!--CODEBLOCK_${index}-->`;
+      const match = codeBlock.match(/```(\w+)?\n([\s\S]+?)```/);
+      if (match) {
+        const lang = match[1] || '';
+        const code = match[2];
+        
+        let finalCode: string;
+        
+        if (lang.toLowerCase() === 'sql') {
+          // Para SQL, aplicar highlighting usando uma abordagem que preserva as tags
+          finalCode = this.highlightSqlWithEscaping(code);
+        } else {
+          // Para outros idiomas, apenas escapar HTML
+          finalCode = code
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+        
+        // Substituir o placeholder, removendo possíveis tags <p> ao redor
+        const placeholderEscaped = this.escapeRegex(placeholder);
+        const placeholderRegex = new RegExp(`<p>\\s*${placeholderEscaped}\\s*</p>|${placeholderEscaped}`, 'g');
+        const replacement = `<pre><code class="language-${lang}">${finalCode}</code></pre>`;
+        html = html.replace(placeholderRegex, replacement);
+      }
+    });
+    
+    // Restaurar código inline (` código `)
+    inlineCodes.forEach((inlineCode, index) => {
+      const placeholder = `<!--INLINECODE_${index}-->`;
+      const match = inlineCode.match(/`(.+?)`/);
+      if (match) {
+        const code = match[1];
+        // Escapar HTML no código inline
+        const escapedCode = code
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+        // Substituir o placeholder, removendo possíveis tags <p> ao redor
+        const placeholderEscaped = this.escapeRegex(placeholder);
+        const placeholderRegex = new RegExp(`<p>\\s*${placeholderEscaped}\\s*</p>|${placeholderEscaped}`, 'g');
+        html = html.replace(placeholderRegex, `<code>${escapedCode}</code>`);
+      }
+    });
+
     // Parágrafos (não envolve elementos de bloco HTML como tabelas, listas, códigos, etc.)
+    // Processar DEPOIS de restaurar os blocos de código
     html = html.replace(
       /^(?!<(h[1-6]|ul|ol|li|pre|code|blockquote|table|thead|tbody|tr|th|td)|<\/(ul|ol|li|pre|code|blockquote|table|thead|tbody|tr|th|td)>)(.+)$/gm,
       '<p>$3</p>'
     );
-
-    // Code blocks
-    html = html.replace(/```(\w+)?\n([\s\S]+?)```/g, '<pre><code class="language-$1">$2</code></pre>');
-    html = html.replace(/`(.+?)`/g, '<code>$1</code>');
 
     return html;
   }
@@ -288,6 +359,142 @@ export class LivroIndividualService {
     // Remove pipe inicial/final e divide
     const trimmed = line.trim().replace(/^\|/, '').replace(/\|$/, '');
     return trimmed.split('|').map(s => s.trim());
+  }
+
+  /**
+   * Escapa caracteres especiais para uso em regex
+   */
+  private escapeRegex(str: string): string {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  /**
+   * Aplica syntax highlighting básico ao código SQL com escape de HTML adequado
+   */
+  private highlightSqlWithEscaping(sql: string): string {
+    // Lista de palavras-chave SQL (case-insensitive) - ordenadas por tamanho (maior primeiro)
+    const keywords = [
+      'REFERENCES', 'CONSTRAINT', 'TRANSACTION', 'DATETIME', 'TIMESTAMP', 'VARBINARY',
+      'NVARCHAR', 'BIGINT', 'SMALLINT', 'TINYINT', 'DECIMAL', 'NUMERIC', 'EXECUTE',
+      'ROLLBACK', 'INTERSECT', 'DISTINCT', 'BETWEEN', 'EXISTS', 'OFFSET',
+      'SELECT', 'INSERT', 'UPDATE', 'DELETE', 'CREATE', 'ALTER', 'DROP', 'TABLE',
+      'DATABASE', 'INDEX', 'VIEW', 'TRIGGER', 'PRIMARY', 'FOREIGN', 'UNIQUE', 'DEFAULT',
+      'CHECK', 'INNER', 'LEFT', 'RIGHT', 'FULL', 'OUTER', 'GROUP', 'ORDER',
+      'HAVING', 'COUNT', 'CASE', 'WHEN', 'THEN', 'ELSE', 'LIKE', 'UNION', 'LIMIT',
+      'ASC', 'DESC', 'WITH', 'WHILE', 'BEGIN', 'COMMIT', 'GRANT', 'REVOKE', 'DENY',
+      'EXEC', 'DECLARE', 'VARCHAR', 'FLOAT', 'DOUBLE', 'NCHAR', 'NTEXT', 'BINARY',
+      'FROM', 'WHERE', 'INTO', 'VALUES', 'SET', 'KEY', 'NOT', 'NULL', 'AND', 'OR',
+      'AS', 'ON', 'JOIN', 'BY', 'SUM', 'AVG', 'MAX', 'MIN', 'END', 'IN', 'IS', 'ALL',
+      'TOP', 'FOR', 'VAR', 'INT', 'REAL', 'BIT', 'CHAR', 'TEXT', 'DATE', 'TIME',
+      'IMAGE', 'XML', 'JSON'
+    ];
+    
+    // Processar linha por linha
+    const lines = sql.split('\n');
+    const processedLines = lines.map(line => {
+      // Usar placeholders temporários para proteger partes do código
+      const placeholders: { [key: string]: string } = {};
+      let placeholderIndex = 0;
+      
+      // Proteger strings (entre aspas simples ou duplas)
+      let protectedLine = line.replace(/(['"])((?:\\.|(?!\1)[^\\])*?)\1/g, (match) => {
+        const key = `__PL${placeholderIndex}__`;
+        placeholders[key] = match;
+        placeholderIndex++;
+        return key;
+      });
+      
+      // Proteger comentários de linha (--)
+      protectedLine = protectedLine.replace(/--.*$/gm, (match) => {
+        const key = `__PL${placeholderIndex}__`;
+        placeholders[key] = match;
+        placeholderIndex++;
+        return key;
+      });
+      
+      // Proteger comentários de bloco (/* */)
+      protectedLine = protectedLine.replace(/\/\*[\s\S]*?\*\//g, (match) => {
+        const key = `__PL${placeholderIndex}__`;
+        placeholders[key] = match;
+        placeholderIndex++;
+        return key;
+      });
+      
+      // Destacar palavras-chave SQL (ANTES de escapar)
+      keywords.forEach(keyword => {
+        const regex = new RegExp(`\\b${this.escapeRegex(keyword)}\\b`, 'gi');
+        protectedLine = protectedLine.replace(regex, '<span class="sql-keyword">$&</span>');
+      });
+      
+      // Destacar números (ANTES de escapar, mas não dentro de placeholders)
+      protectedLine = protectedLine.replace(/\b(\d+\.?\d*)\b/g, (match) => {
+        if (!match.startsWith('__PL') && !match.endsWith('__')) {
+          return `<span class="sql-number">${match}</span>`;
+        }
+        return match;
+      });
+      
+      // Restaurar placeholders e aplicar highlighting apropriado
+      Object.keys(placeholders).forEach(key => {
+        const original = placeholders[key];
+        let replacement = original;
+        
+        // Escapar HTML do conteúdo original
+        replacement = replacement
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+        
+        // Aplicar classe apropriada
+        if (original.match(/^(['"])/)) {
+          replacement = `<span class="sql-string">${replacement}</span>`;
+        } else if (original.startsWith('--') || original.startsWith('/*')) {
+          replacement = `<span class="sql-comment">${replacement}</span>`;
+        }
+        
+        protectedLine = protectedLine.replace(key, replacement);
+      });
+      
+      // Escapar HTML restante (mas preservar tags span)
+      // Estratégia: escapar o conteúdo dentro das tags span primeiro, depois proteger as tags
+      const spanMatches: Array<{placeholder: string, tag: string}> = [];
+      let spanIndex = 0;
+      
+      // Primeiro, escapar o conteúdo dentro das tags span
+      protectedLine = protectedLine.replace(/<span class="(sql-\w+)">(.*?)<\/span>/gs, (match, className, content) => {
+        // Escapar o conteúdo dentro da tag
+        const escapedContent = content
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        return `<span class="${className}">${escapedContent}</span>`;
+      });
+      
+      // Agora proteger todas as tags span antes de escapar o resto
+      protectedLine = protectedLine.replace(/<span class="(sql-\w+)">(.*?)<\/span>/gs, (match) => {
+        const placeholder = `__SPAN_${spanIndex}__`;
+        spanMatches.push({ placeholder, tag: match });
+        spanIndex++;
+        return placeholder;
+      });
+      
+      // Escapar tudo que restou (exceto placeholders)
+      protectedLine = protectedLine
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      
+      // Restaurar tags span (elas já têm o conteúdo escapado dentro delas)
+      spanMatches.forEach(({ placeholder, tag }) => {
+        protectedLine = protectedLine.replace(placeholder, tag);
+      });
+      
+      return protectedLine;
+    });
+    
+    return processedLines.join('\n');
   }
 
   /**
