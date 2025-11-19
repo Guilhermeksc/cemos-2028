@@ -96,7 +96,7 @@
           [class.heading-level-1]="heading.level === 1"
           [class.heading-level-2]="heading.level === 2"
           class="navigation-item"
-          (click)="scrollToHeading(heading.id); $event.preventDefault()"
+          (click)="onHeadingClick(heading.id, $event)"
           [href]="'#' + heading.id">
           {{ heading.title }}
         </a>
