@@ -18,6 +18,11 @@ export class EngBancoDados {
         // mainMarkdownPath: 'conhecimentos_gerais.md',
         items: [
           {
+            id: 'metadados',
+            label: 'Metadados',
+            markdownPath: 'metadados.md'
+          },
+          {
             id: 'tuplas',
             label: 'Tuplas',
             markdownPath: 'tuplas.md'

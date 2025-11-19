@@ -193,3 +193,119 @@ Um Data Warehouse é montado por assunto, isto é, ele trata de temas específic
 **▪ Data Warehouse é não-volátil:**
 
 Um Data Warehouse é não-volátil, ou seja, os dados ficam disponíveis apenas para que os usuários realizem consultas e façam relatórios que auxiliem a tomada de decisão por parte dos gestores de uma organização, sendo somente leitura para os usuários finais de um banco de dados.
+
+▪ Data Warehouse é integrado:
+Um Data Warehouse é integrado, ou seja, os dados estão
+consistentes e uniformes. Para isso, as inconsistências são removidas e os
+conflitos de informações são consertados antes de serem inseridos ou
+carregados em um Data Warehouse, o que os torna integrados de múltiplas
+fontes diferentes de forma consistente, padronizada e uniforme.
+
+▪ Data Warehouse é histórico (variável com o tempo):
+Um Data Warehouse é histórico devido a não modificação dos
+dados o que permite recuperar dados de três, seis, doze meses ou até mesmo
+dados mais antigos de um Data Warehouse.
+
+06- (CEGÁS) Data Warehouse é um deposito de dados digitais, orientado por assunto que transforma dados operacionais em informações voltadas ao suporte à tomada de decisões estratégicas.
+
+Resposta Verdadeiro.
+
+07) (MEC – 2009) No que diz respeito ao desenvolvimento de sistemas de informação e da análise de negócios, analise a citação a seguir. "É um conjunto integrado de dados, extraídos de bancos de dados operacionais, históricos, externos e selecionados, editados e padronizados para recuperação e análise, para fornecer inteligência empresarial e nos negócios no processo de tomada de decisões gerenciais".
+
+Essa citação representa o conceito de:
+a) Data Smart.
+b) Data Mining.
+c) Data Business.
+d) Data Warehouse.
+e) Data Information.
+
+Resposta D
+
+
+08- (MPE/AC) Considere a seguinte definição: "Uma coleção de dados não-voláteis, integrados, orientados a um determinado tema e utilizados no apoio de processos de tomada de decisão. Geralmente contém componentes complementares como facilidades de extração, mineração e transformação de informação e ferramentas analíticas." Essa é a definição de:
+a) Planilha.
+b) Middleware.
+c) Data Warehouse.
+d) DBMS (Data Base Management System).
+e) Groupware.
+
+Resposta Letra C
+
+09- (MF) Um conjunto de dados produzido para oferecer suporte à tomada de decisões, sendo um repositório de dados de interesse aos gerentes, é um:
+
+a) Management dataset.
+b) Data warehouse.
+c) Data center.
+d) Major warehouse.
+e) Data wareset.
+
+Resposta Letra B
+
+10- (BAHIAGÁS) Com relação aos sistemas de Data Warehouse, assinale a alternativa correta:
+a) Um Data Warehouse deve ser orientado a produto, integrado, volátil e invariável com o tempo.
+b) Um Data Warehouse armazena dados históricos usados no processo de tomada de decisão. Este sistema integra os dados corporativos de uma empresa em um único repositório.
+c) Dados de um Data Warehouse provém de uma única fonte, não sendo necessária a padronização para uniformizar nomes ou unidades de medida.
+d) Um Data Warehouse deve ser orientado a departamento, integrado, volátil e invariável com o tempo.
+e) Um Data Warehouse cria uma visão distribuída de um banco de dados centralizado. Este tipo de sistema não permite que usuários finais executem consultas sobre sua base de dados.
+
+Resposta Letra B
+
+11- (PETROBRÁS) Data warehouse tem por característica ser:
+a) orientado a assuntos.
+b) temporário.
+c) descentralizado.
+d) focalizado em aspectos operacionais.
+e) normalizado.
+Resposta Letra A
+
+12- (INEA/RJ) Data warehouses são definidos como:
+a) um conjunto de dados integrado, orientados por assunto, variante no tempo e não volátil.
+b) um conjunto de dados integrado, orientados por departamentos, variante no tempo e não volátil.
+c) um conjunto de regras, orientadas por departamentos, invariante no tempo e não volátil.
+d) um conjunto de dados integrado, orientados por assunto, variante no tempo e volátil.
+e) um conjunto de regras, orientadas a objeto, invariante no tempo e não volátil.
+
+Resposta Letra A
+
+Tipos de Data Warehouse
+Existem basicamente três tipos de Data Warehouse:
+Enterprise Data Warehouse (EDW),
+Operational Data Store (ODS) e
+Data Mart (DM)
+
+
+![Tipos DW](datawarehouse/tipos-dw.png)
+
+▪ Enterprise Data Warehouse (EDW):
+Traduzido como Armazém de Dados Corporativos/Abrangentes/Empresariais, é um repositório central tático/estratégico que contém todas as informações de negócio de uma organização de forma acessível para toda empresa com a finalidade de suportar as análises de decisões.
+
+Seria um DW de larga escala, grande e abrangente, que é utilizado pela organização como um todo e que integra informações de diversas fontes de dados.
+
+▪ Operational Data Store (ODS):
+
+Traduzido como Armazenamento de Dados Operacionais, trata-se de um repositório intermediário de dados utilizado para relatórios operacionais e como uma fonte de dados para o Enterprise Data Warehouse (EDW). É um elemento complementar a um EDW em um cenário de suporte a decisões, e é usado para relatórios, controles e tomada de decisões operacionais, em oposição ao EDW, que é utilizado para suporte de decisões táticas e estratégicas. 
+
+▪ Data Mart (DM):
+Traduzido como Mercado de Dados, trata-se de um subconjunto de dados de um Data Warehouse, geralmente referentes a um assunto em
+especial ou diferentes níveis de sumarização, que focalizam uma ou mais áreas específicas.
+
+Seus dados são obtidos do DW de forma indexada para suportar  intensas pesquisas. 
+
+São considerados pequenos Data Warehouse, ou um subconjunto/segmentação de um, que contém dados de uma organização em geral restritos a uma unidade de negócio ou a um processo de negócio específico com a finalidade de dar suporte ao processo decisório da alta direção por meio da criação de uma visão personalizada dos dados.
+
+Principais características:
+▪ Permite um acesso mais rápido aos dados acelerando os processos de negócios;
+▪ Sendo focado em um assunto, é mais fácil e econômico implementar um Data Mart
+▪ O uso de um Data Mart é fácil, visto que ele é projetado de acordo com os requisitos de um grupo específico de usuários que trabalham em um departamento específico;
+▪ Um Data Mart é comparativamente mais adaptável que um Data Warehouse, pois uma alteração no modelo de dados pode ser fácil e rapidamente incorporada;
+▪ Em um Data Mart, os dados são particionados e segmentados, o que permite um controle de acesso em um nível mais granular.
+
+
+| TIPOS DE DATA MART | DESCRIÇÃO |
+| :--- | :--- |
+| **DEPENDENTE** | Nesse caso, um conjunto de fontes de dados operacionais são integradas em um EDW, que – por sua vez – são divididos em diversos Data Marts dependentes. |
+| **INDEPENDENTE** | Nesse caso, um conjunto de fontes de dados operacionais permitem gerar um ou mais Data Marts independentes, sem a necessidade de criar um EDW. |
+| **HÍBRIDO** | Nesse caso, um conjunto de fontes de dados operacionais podem ser tanto integradas em um EDW para posteriormente permitir a criação de Data Marts quanto podem gerá-los de maneira independente. |
+
+
+![Tipos Data Mart](datawarehouse/tipos-data-mart.png)

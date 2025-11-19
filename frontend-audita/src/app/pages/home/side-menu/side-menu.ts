@@ -102,62 +102,62 @@ export class SideMenu {
   }
 
   readonly menuItems = signal<MenuItem[]>([
-    {
-      title: 'Controle Externo',
-      icon: 'inventory_2',
-      children: [
-        {
-          title: 'Bibliografia',
-          children: []
-        },
-        'Flash Cards',
-        'Perguntas',
-        'Conceitos',
-      ],
-      expanded: false
-    },
-    {
-      title: 'Administração Pública',
-      icon: 'account_balance',
-      children: [
-        {
-          title: 'Bibliografia',
-          children: []
-        },
-        'Flash Cards',
-        'Perguntas',
-        'Conceitos',
-      ],
-      expanded: false
-    },
-    {
-      title: 'Direito Constitucional',
-      icon: 'gavel',
-      children: [
-        {
-          title: 'Bibliografia',
-          children: []
-        },
-        'Flash Cards',
-        'Perguntas',
-        'Conceitos',
-      ],
-      expanded: false
-    },
-    {
-      title: 'Direito Administrativo',
-      icon: 'balance_scale',
-      children: [
-        {
-          title: 'Bibliografia',
-          children: []
-        },
-        'Flash Cards',
-        'Perguntas',
-        'Conceitos',
-      ],
-      expanded: false
-    },
+    // {
+    //   title: 'Controle Externo',
+    //   icon: 'inventory_2',
+    //   children: [
+    //     {
+    //       title: 'Bibliografia',
+    //       children: []
+    //     },
+    //     'Flash Cards',
+    //     'Perguntas',
+    //     'Conceitos',
+    //   ],
+    //   expanded: false
+    // },
+    // {
+    //   title: 'Administração Pública',
+    //   icon: 'account_balance',
+    //   children: [
+    //     {
+    //       title: 'Bibliografia',
+    //       children: []
+    //     },
+    //     'Flash Cards',
+    //     'Perguntas',
+    //     'Conceitos',
+    //   ],
+    //   expanded: false
+    // },
+    // {
+    //   title: 'Direito Constitucional',
+    //   icon: 'gavel',
+    //   children: [
+    //     {
+    //       title: 'Bibliografia',
+    //       children: []
+    //     },
+    //     'Flash Cards',
+    //     'Perguntas',
+    //     'Conceitos',
+    //   ],
+    //   expanded: false
+    // },
+    // {
+    //   title: 'Direito Administrativo',
+    //   icon: 'balance_scale',
+    //   children: [
+    //     {
+    //       title: 'Bibliografia',
+    //       children: []
+    //     },
+    //     'Flash Cards',
+    //     'Perguntas',
+    //     'Conceitos',
+    //   ],
+    //   expanded: false
+    // },
     {
       title: 'Infraestrutura de TI',
       icon: 'memory',
