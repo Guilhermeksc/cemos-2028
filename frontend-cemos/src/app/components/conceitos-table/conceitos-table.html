@@ -10,98 +10,41 @@
     <!-- Tabela tradicional para desktop -->
     <div class="table-container d-desktop" *ngIf="conceitos.length > 0">
       <table mat-table [dataSource]="conceitos" class="conceitos-table">
-        <!-- ...existing code... (todas as colunas e linhas da tabela) -->
-        <!-- Coluna Assunto -->
-        <ng-container matColumnDef="assunto">
-          <th mat-header-cell *matHeaderCellDef class="header-cell assunto-header">
-            Assunto
-          </th>
-          <td mat-cell *matCellDef="let conceito" class="assunto-cell">
-            <div class="assunto-content">
-              <span class="assunto-text" *ngIf="conceito.assunto">
-                {{ conceito.assunto }}
-              </span>
-              <span class="no-assunto" *ngIf="!conceito.assunto">
-                Sem assunto
-              </span>
-            </div>
-          </td>
-        </ng-container>
-        <!-- ...existing code... (demais colunas) -->
+        <!-- Coluna Título (com palavra-chave e assunto integrados) -->
         <ng-container matColumnDef="titulo">
           <th mat-header-cell *matHeaderCellDef class="header-cell titulo-header">
             Título
           </th>
           <td mat-cell *matCellDef="let conceito" class="titulo-cell">
             <div class="titulo-content">
-              <span class="titulo-text">{{ conceito.titulo }}</span>
+              <div class="titulo-text">{{ conceito.titulo }}</div>
+              <div class="titulo-meta" *ngIf="conceito.palavra_chave || conceito.assunto">
+                <span class="palavra-chave-meta" *ngIf="conceito.palavra_chave">
+                  ({{ conceito.palavra_chave }})
+                </span>
+                <span class="assunto-meta" *ngIf="conceito.assunto">
+                  Assunto: {{ conceito.assunto }}
+                </span>
+              </div>
             </div>
           </td>
         </ng-container>
+        
+        <!-- Coluna Descrição -->
         <ng-container matColumnDef="descricao">
           <th mat-header-cell *matHeaderCellDef class="header-cell descricao-header">
             Descrição
           </th>
           <td mat-cell *matCellDef="let conceito" class="descricao-cell">
             <div class="descricao-content" *ngIf="hasDescricao(conceito)">
-              <!-- Exibir descrição completa na tabela (sem truncamento) -->
-              <p class="descricao-text">{{ conceito.descricao }}</p>
+              <p class="descricao-text" [innerHTML]="formatDescricao(conceito.descricao!)"></p>
             </div>
             <div class="no-descricao" *ngIf="!hasDescricao(conceito)">
               <span class="no-descricao-text">Sem descrição</span>
             </div>
           </td>
         </ng-container>
-        <ng-container matColumnDef="bibliografia" *ngIf="showBibliografia">
-          <th mat-header-cell *matHeaderCellDef class="header-cell bibliografia-header">
-            Bibliografia
-          </th>
-          <td mat-cell *matCellDef="let conceito" class="bibliografia-cell">
-            <div class="bibliografia-content">
-              <span class="bibliografia-titulo" *ngIf="conceito.bibliografia_titulo">
-                {{ conceito.bibliografia_titulo }}
-              </span>
-              <span class="bibliografia-id" *ngIf="!conceito.bibliografia_titulo">
-                Bibliografia #{{ conceito.bibliografia }}
-              </span>
-            </div>
-          </td>
-        </ng-container>
-        <ng-container matColumnDef="palavra-chave">
-          <th mat-header-cell *matHeaderCellDef class="header-cell palavra-chave-header">
-            Palavra-chave
-          </th>
-          <td mat-cell *matCellDef="let conceito" class="palavra-chave-cell">
-            <div class="palavra-chave-content">
-              <span class="palavra-chave-text" *ngIf="conceito.palavra_chave">
-                {{ conceito.palavra_chave }}
-              </span>
-              <span class="no-palavra-chave" *ngIf="!conceito.palavra_chave">
-                Sem palavra-chave
-              </span>
-            </div>
-          </td>
-        </ng-container>
-        <ng-container matColumnDef="prova">
-          <th mat-header-cell *matHeaderCellDef class="header-cell prova-header">
-            Prova
-          </th>
-          <td mat-cell *matCellDef="let conceito" class="prova-cell">
-            <div class="prova-content">
-              <mat-chip-set *ngIf="conceito.caiu_em_prova">
-                <mat-chip 
-                  [class]="conceito.ano_prova ? 'prova-chip-confirmada' : 'prova-chip-pendente'"
-                  matTooltip="{{ getCaiuEmProvaText(conceito) }}">
-                  <mat-icon matChipTrailingIcon>star</mat-icon>
-                  {{ getCaiuEmProvaText(conceito) || 'Sim' }}
-                </mat-chip>
-              </mat-chip-set>
-              <span class="no-prova" *ngIf="!conceito.caiu_em_prova">
-                <mat-icon class="no-prova-icon">remove</mat-icon>
-              </span>
-            </div>
-          </td>
-        </ng-container>
+        
         <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;" 
             class="table-row"
@@ -115,39 +58,22 @@
         <div class="conceito-card-content">
           <div class="conceito-field">
             <span class="conceito-label">Título:</span>
-            <span class="conceito-value titulo-text">{{ conceito.titulo }}</span>
-          </div>
-          <div class="conceito-field">
-            <span class="conceito-label">Palavra-chave:</span>
-            <span class="conceito-value" *ngIf="conceito.palavra_chave">{{ conceito.palavra_chave }}</span>
-            <span class="conceito-value" *ngIf="!conceito.palavra_chave">Sem palavra-chave</span>
+            <div class="conceito-value">
+              <div class="titulo-text">{{ conceito.titulo }}</div>
+              <div class="titulo-meta" *ngIf="conceito.palavra_chave || conceito.assunto">
+                <span class="palavra-chave-meta" *ngIf="conceito.palavra_chave">
+                  ({{ conceito.palavra_chave }})
+                </span>
+                <span class="assunto-meta" *ngIf="conceito.assunto">
+                  Assunto: {{ conceito.assunto }}
+                </span>
+              </div>
+            </div>
           </div>
           <div class="conceito-field">
             <span class="conceito-label">Descrição:</span>
-            <span class="conceito-value" *ngIf="hasDescricao(conceito)">{{ getTruncatedDescricao(conceito.descricao!, 200) }}</span>
+            <span class="conceito-value" *ngIf="hasDescricao(conceito)" [innerHTML]="formatDescricao(getTruncatedDescricao(conceito.descricao!, 200))"></span>
             <span class="conceito-value" *ngIf="!hasDescricao(conceito)">Sem descrição</span>
-          </div>
-          <div class="conceito-field">
-            <span class="conceito-label">Assunto:</span>
-            <span class="conceito-value" *ngIf="conceito.assunto">{{ conceito.assunto }}</span>
-            <span class="conceito-value" *ngIf="!conceito.assunto">Sem assunto</span>
-          </div>
-          <div class="conceito-field" *ngIf="showBibliografia">
-            <span class="conceito-label">Bibliografia:</span>
-            <span class="conceito-value" *ngIf="conceito.bibliografia_titulo">{{ conceito.bibliografia_titulo }}</span>
-            <span class="conceito-value" *ngIf="!conceito.bibliografia_titulo">Bibliografia #{{ conceito.bibliografia }}</span>
-          </div>
-          <div class="conceito-field">
-            <span class="conceito-label">Prova:</span>
-            <span class="conceito-value" *ngIf="conceito.caiu_em_prova">
-              <span class="prova-chip-mobile" [ngClass]="conceito.ano_prova ? 'prova-chip-confirmada' : 'prova-chip-pendente'">
-                <mat-icon>star</mat-icon>
-                {{ getCaiuEmProvaText(conceito) || 'Sim' }}
-              </span>
-            </span>
-            <span class="conceito-value" *ngIf="!conceito.caiu_em_prova">
-              <mat-icon class="no-prova-icon">remove</mat-icon>
-            </span>
           </div>
         </div>
       </div>

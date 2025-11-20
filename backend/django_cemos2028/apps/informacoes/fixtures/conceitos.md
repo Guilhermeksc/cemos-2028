@@ -1,18 +1,34 @@
-Este é o arquivo simulado em formato XLSX, apresentado como texto separado por tabulações (ou espaços) para representar as colunas solicitadas. A obra de referência é "Vingança da Geografia", baseada no contexto dos excertos fornecidos.
+# ✅ **PROMPT FINAL — CRIAÇÃO DE CONCEITOS (COM RETORNO EM MARKDOWN)**
+
+**Tarefa:**
+Criar **conceitos** no formato de tabela, seguindo **exatamente** o modelo abaixo:
 
 ```
-bibliografia_titulo	titulo	palavra_chave	assunto	descricao
-Capítulo 2 - O contexto histórico das RI contemporâneas	Tratados de Vestfália (1648)	Soberania, Integridade Territorial, Sistema de Estados, Guerra dos Trinta Anos	Fundamento do Sistema Internacional Moderno	Os tratados de 1648 encerraram a Guerra dos Trinta Anos e consolidaram o **princípio da soberania estatal** (autoridade exclusiva sobre o território e população, sem interferência externa) e a **igualdade jurídica entre Estados** [1-3].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Concepção de Soberania (Jean Bodin)	Jean Bodin, Poder Absoluto e Perpétuo, Lei Divina	Conceito de Autoridade Estatal	Desenvolvida por Jean Bodin (1530–1596) como o **“poder absoluto e perpétuo investido em uma comunidade”** [4]. A soberania é a marca distintiva do soberano, mas é limitada pela lei divina e leis constitucionais [4, 5].
-Capítulo 2 - O contexto histórico das RI contemporâneas	O Estado de Natureza (Thomas Hobbes)	Thomas Hobbes, Leviatã, Anarquia, Ordem	Origens Filosóficas do Estado	Hobbes imaginou um mundo sem autoridade governamental (estado de natureza) como **solitário, egoísta e brutal** [6]. O Leviatã (Estado unitário e centralizado) seria a solução para esse dilema, o qual é extrapolado para o sistema internacional como um **estado de anarquia** [6, 7].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Nacionalismo	Legitimidade, Revolução Francesa, Vínculo Emocional, Autodeterminação	Princípios do Século XIX	Princípio surgido das Revoluções Americana e Francesa. Caracteriza-se pela identificação de um povo com passado, idioma e costumes comuns, forjando um **vínculo emocional entre o povo e o Estado** [8]. Foi acelerado após a Primeira Guerra Mundial pelo princípio da autodeterminação [9].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Imperialismo e Colonialismo	Imperialismo, Colonialismo, Válvula de Escape, Exploração	Rivalidades Europeias e Expansão Territorial	**Imperialismo** (anexação de territórios remotos) e **Colonialismo** (estabelecimento de colonos) funcionaram como uma "válvula de escape" conveniente para as rivalidades entre Estados europeus, fornecendo recursos e status [10-12]. Lançou as bases para o duradouro ressentimento dos povos não europeus [12].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Equilíbrio de Poder (Século XIX)	Equilíbrio Simétrico, Hegemônico, Concerto da Europa, Paz	Dinâmica da Paz Europeia	Mecanismo onde os Estados forjam alianças para fazer frente a qualquer Estado hegemônico, mantendo o poder análogo (**simétrico**) e reduzindo a probabilidade de guerra [13]. Contribuiu para a **relativa paz** na Europa entre 1815 e 1854 [13, 14].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Doutrina de Contenção (Guerra Fria)	Contenção, George Kennan, Doutrina Truman, Insegurança Soviética	Política Externa dos EUA	Defendida por George Kennan, alegava que a União Soviética adotaria uma política externa agressiva por se sentir insegura, e deveria ser contida [15]. Posta em ação na **Doutrina Truman (1947)**, usando espionagem, pressão econômica e recursos militares avançados [16].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Destruição Mútua Garantida (MAD)	MAD, Dissuasão Nuclear, Impasse	Impasse da Guerra Fria / Dissuasão	Situação criada pelas armas nucleares, onde um confronto resultaria em **devastação mútua** [17]. O impasse por intimidação (dissuasão mútua) fez com que as superpotências agissem com cautela, sustentando a **"longa paz"** entre elas [17, 18].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Colapso do Sistema Colonial	Descolonização, Autodeterminação, Enfraquecimento Europeu	Mudanças Pós-Segunda Guerra Mundial	Fenômeno instigado pelo princípio da **autodeterminação nacional** (endossado pela ONU) e pela realidade do enfraquecimento econômico das potências europeias após a Segunda Guerra Mundial. Os europeus estavam mais interessados em lutar contra o comunismo do que em reter colônias [19].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Guerra Fria como Globalização do Conflito	Teatros de Terceiros, Agentes, Bipolaridade	Confrontos Indiretos	As diferenças entre EUA e URSS eram dirimidas indiretamente em **teatros de terceiros**, através de agentes (ex: Coreia do Norte vs. Coreia do Sul) [20, 21]. A "perda" de um aliado poderia alterar o equilíbrio de poder, resultando na **globalização do conflito** para todos os continentes [20].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Avanço da Tecnologia e Guerras Mundiais	Guerra de Trincheiras, Gás Venenoso, Bloqueio Naval, Armas Automáticas	Primeira Guerra Mundial	A Guerra (1914-1918) foi marcada pela degradação da **guerra de trincheiras**, uso de gases venenosos e bombardeios estratégicos [22]. A derrota russa para o Japão em 1905, ignorada pelos europeus, já revelava a importância da **moderna artilharia e armas automáticas** [23].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Ascensão do Terrorismo no Novo Milênio	Terrorismo, Al-Qaeda, Guerra ao Terror, Segurança Nacional	Eventos Pós-Guerra Fria / Século XXI	O terrorismo deixou de ser um problema de aplicação da lei para se tornar uma **questão crítica de segurança nacional** [24]. Os ataques de 11 de Setembro de 2001 (Al-Qaeda) deflagraram a **“guerra ao terror”** global comandada pelos EUA [24].
-Capítulo 2 - O contexto histórico das RI contemporâneas	Primavera Árabe (2011)	Levantes Populares, Corrupção, Ditadores, Síria	Eventos do Novo Milênio / Mudanças Sociais	Onda de manifestações desencadeada na Tunísia e que se espalhou por países árabes (Egito, Líbia, Síria) contra a crueldade e a corrupção de ditadores de longa data [25, 26]. Demonstrou o poder de jovens munidos de telefones celulares e convicção, desafiando a lógica da revolução islâmica radical [26].
+bibliografia_titulo	titulo	palavra_chave	assunto	descricao	caiu_em_prova	ano_prova
+Geopolítica e Modernidade	Método Experimental	Galileu, Bacon, Novum Organon	Filosofia da Ciência	Galileu e Francis Bacon introduzem o método experimental e sistematizam o conhecimento científico, base das ciências sociais e da geopolítica.	false	
+Geopolítica e Modernidade	Influência Geográfica	Heródoto, Hipócrates, Platão, Aristóteles	Geografia e Política	Primeiras observações sobre a influência do clima e da geografia no comportamento humano e na organização política.	false	
+Geopolítica e Modernidade	Determinismo Geográfico	Ratzel	Geografia Política	Ratzel propõe as 'Sete Leis do Expansionismo', relacionando crescimento territorial à cultura e à força do Estado.	false	
+```
+
+# 🧾 **INSTRUÇÕES ESPECÍFICAS PARA OS CONCEITOS**
+
+Cada linha deve conter:
+
+* **bibliografia_titulo:** sempre `Economia Azul`
+* **titulo:** nome do conceito
+* **palavra_chave:** termos essenciais associados ao conceito
+* **assunto:** sempre
+  **Relevância do PEM para a Economia Azul**
+* **descricao:** explicação curta e correta do conceito
+* **caiu_em_prova:** deixar em branco ou `false`
+* **ano_prova:** deixar em branco
+
+# 📌 **FORMATO OBRIGATÓRIO DO RETORNO (EM MARKDOWN)**
+
+A resposta deve ser entregue **exclusivamente em Markdown**, utilizando a seguinte estrutura de tabela, pronta para copiar e colar:
+
+```markdown
+| bibliografia_titulo | titulo | palavra_chave | assunto | descricao | caiu_em_prova | ano_prova |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Ciência Política | Exemplo de Conceito | palavra1, palavra2 | Cap. 10 – O Estado Constitucional | Descrição objetiva do conceito. | false |  |
 ```

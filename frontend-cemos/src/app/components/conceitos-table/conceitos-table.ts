@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Conceitos } from '../../interfaces/informacoes.interface';
 
 @Component({
@@ -27,36 +28,13 @@ export class ConceitosTableComponent {
   @Input() title: string = 'Conceitos';
   @Input() emptyMessage: string = 'Nenhum conceito encontrado';
 
-  // Definir as colunas da tabela
-  displayedColumns: string[] = ['titulo', 'palavra-chave', 'descricao', 'assunto', 'bibliografia', 'prova'];
+  // Definir as colunas da tabela - apenas Título e Descrição
+  displayedColumns: string[] = ['titulo', 'descricao'];
 
-  constructor() {}
+  constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
-    // Ajustar colunas baseado nas props
-    if (!this.showBibliografia) {
-      this.displayedColumns = this.displayedColumns.filter(col => col !== 'bibliografia');
-    }
-  }
-
-  /**
-   * Verifica se o conceito caiu em prova e retorna o ano
-   */
-  getCaiuEmProvaText(conceito: Conceitos): string {
-    if (conceito.caiu_em_prova && conceito.ano_prova) {
-      return `Prova ${conceito.ano_prova}`;
-    }
-    return '';
-  }
-
-  /**
-   * Retorna a classe CSS para o alerta de prova
-   */
-  getProvaAlertClass(conceito: Conceitos): string {
-    if (conceito.caiu_em_prova) {
-      return 'prova-alert';
-    }
-    return '';
+    // Não precisa mais ajustar colunas baseado em showBibliografia
   }
 
   /**
@@ -74,6 +52,29 @@ export class ConceitosTableComponent {
     return descricao.length > maxLength 
       ? descricao.substring(0, maxLength) + '...' 
       : descricao;
+  }
+
+  /**
+   * Processa a descrição convertendo texto entre asteriscos (*texto*) em negrito
+   * @param descricao Texto da descrição
+   * @returns HTML seguro com texto em negrito onde houver asteriscos
+   */
+  formatDescricao(descricao: string): SafeHtml {
+    if (!descricao) return this.sanitizer.bypassSecurityTrustHtml('');
+    
+    // Escapa HTML existente para segurança
+    const escaped = descricao
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+    
+    // Converte *texto* em <strong>texto</strong>
+    // Usa regex para encontrar padrões *texto* (não greedy para evitar conflitos)
+    const formatted = escaped.replace(/\*([^*]+)\*/g, '<strong>$1</strong>');
+    
+    return this.sanitizer.bypassSecurityTrustHtml(formatted);
   }
 
   /**

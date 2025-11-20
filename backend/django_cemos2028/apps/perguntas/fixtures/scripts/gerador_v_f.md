@@ -8,11 +8,11 @@ Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.m
 
 Instruções específicas:
 
-    bibliografia_id" será preenchido com 'Ciência Política'.
+    bibliografia_id" será preenchido com 'Economia Azul'.
 
     “paginas” será preenchido com o nome do arquivo 'Pág x ...'
 
-    “assunto” será preenchido com 'Cap. 10 – O Estado Constitucional'
+    “assunto” será preenchido com 'Relevância do PEM para a Economia Azul'
 
     “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa.
 

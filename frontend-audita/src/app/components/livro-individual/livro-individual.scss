@@ -406,7 +406,7 @@
 // CONTEÚDO MARKDOWN
 // ========================================
 // Importa estilos compartilhados de markdown
-@import '../../styles/markdown';
+@use '../../styles/markdown' as *;
 
 .markdown-content {
   padding: 0;

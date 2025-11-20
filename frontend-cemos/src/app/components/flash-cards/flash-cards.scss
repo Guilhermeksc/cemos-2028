@@ -1,3 +1,7 @@
+// ==================== FILTROS ====================
+// Importar estilos compartilhados de filtros
+@use '../../styles/filters' as *;
+
 .main-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -31,10 +35,6 @@
             }
         }
     }
-
-  // ==================== FILTROS ====================
-  // Importar estilos compartilhados de filtros
-  @import '../../styles/filters';
 
   .filters-section {
 

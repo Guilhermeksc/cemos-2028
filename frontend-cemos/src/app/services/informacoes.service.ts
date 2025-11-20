@@ -161,9 +161,78 @@ export class InformacoesService {
       if (filters.ano_prova) params = params.set('ano_prova', filters.ano_prova.toString());
       if (filters.search) params = params.set('search', filters.search);
       if (filters.ordering) params = params.set('ordering', filters.ordering);
+      if (filters.page_size) params = params.set('page_size', filters.page_size.toString());
     }
     
     return this.http.get<ApiResponse<Conceitos>>(`${this.apiUrl}/conceitos/`, { params });
+  }
+
+  /**
+   * Busca TODOS os conceitos paginados automaticamente
+   * Faz requisições sequenciais até obter todas as páginas
+   */
+  getAllConceitos(filters?: ConceitosFilters): Observable<Conceitos[]> {
+    return new Observable(observer => {
+      const allResults: Conceitos[] = [];
+      let currentPage = 1;
+      let hasMore = true;
+      const pageSize = filters?.page_size || 100;
+
+      const fetchNextPage = () => {
+        if (!hasMore) {
+          console.log(`✅ Paginação completa de conceitos: ${allResults.length} resultados obtidos`);
+          observer.next(allResults);
+          observer.complete();
+          return;
+        }
+
+        console.log(`📄 Buscando página ${currentPage} de conceitos (page_size: ${pageSize})...`);
+        
+        // Criar filtros com paginação
+        const paginatedFilters: ConceitosFilters = {
+          ...filters,
+          page_size: pageSize
+        };
+        
+        // Adicionar parâmetro de página
+        let params = new HttpParams();
+        if (paginatedFilters) {
+          if (paginatedFilters.bibliografia) params = params.set('bibliografia', paginatedFilters.bibliografia.toString());
+          if (paginatedFilters.caiu_em_prova !== undefined) params = params.set('caiu_em_prova', paginatedFilters.caiu_em_prova.toString());
+          if (paginatedFilters.ano_prova) params = params.set('ano_prova', paginatedFilters.ano_prova.toString());
+          if (paginatedFilters.search) params = params.set('search', paginatedFilters.search);
+          if (paginatedFilters.ordering) params = params.set('ordering', paginatedFilters.ordering);
+          if (paginatedFilters.page_size) params = params.set('page_size', paginatedFilters.page_size.toString());
+        }
+        params = params.set('page', currentPage.toString());
+
+        this.http.get<ApiResponse<Conceitos>>(`${this.apiUrl}/conceitos/`, { params }).subscribe({
+          next: (response) => {
+            const pageResults = response.results || [];
+            allResults.push(...pageResults);
+            
+            console.log(`📄 Página ${currentPage} de conceitos recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
+            
+            // Verificar se há mais páginas
+            if (response.next) {
+              currentPage++;
+              fetchNextPage();
+            } else {
+              hasMore = false;
+              console.log(`✅ Paginação completa de conceitos: ${allResults.length} resultados obtidos em ${currentPage} página(s)`);
+              observer.next(allResults);
+              observer.complete();
+            }
+          },
+          error: (error) => {
+            console.error(`❌ Erro ao buscar página ${currentPage} de conceitos:`, error);
+            observer.error(error);
+          }
+        });
+      };
+
+      fetchNextPage();
+    });
   }
 
   getConceito(id: number): Observable<Conceitos> {

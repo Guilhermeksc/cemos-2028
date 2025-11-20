@@ -99,6 +99,7 @@ export interface InformacoesFilters {
   bibliografia?: number;
   search?: string;
   ordering?: string;
+  page_size?: number;
 }
 
 export interface PresidentesFilters extends InformacoesFilters {

@@ -1,3 +1,7 @@
+// ==================== FILTROS ====================
+// Importar estilos compartilhados de filtros
+@use '../../styles/filters' as *;
+
 /* Layout Simplificado - Perguntas Component */
 .simulado-container-simplified {
   max-width: 1400px;
@@ -57,10 +61,6 @@
     }
   }
 }
-
-// ==================== FILTROS ====================
-// Importar estilos compartilhados de filtros
-@import '../../styles/filters';
 
 .filters-section {
   .filter-row {

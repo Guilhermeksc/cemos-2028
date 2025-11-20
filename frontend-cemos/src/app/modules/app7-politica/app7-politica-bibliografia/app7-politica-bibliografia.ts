@@ -29,47 +29,56 @@ export class App7PoliticaBibliografia implements OnInit {
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/ciencia-politica`,
-      title: 'Ciência Política',
+      title: '1. Ciência Política',
+      description: 'DIAS, Reinaldo.'
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/constituicao-brasil`,
-      title: 'Constituição da República Federativa do Brasil',
+      title: '2. Constituição da República Federativa do Brasil',
+      description: 'CF 1988.'
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/estrategia-nacional-defesa`,
+      title: '3. Estratégia Nacional de Defesa',
+      description: 'BRASIL, Ministério da Defesa. 2020.'
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/politica-nacional-defesa`,
+      title: '4. Política Nacional de Defesa',
+      description: 'BRASIL, Ministério da Defesa. 2020.'
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/lei-complementar-97`,
+      title: '5. Lei Complementar nº 97',
+      description: 'Organização, o preparo e o emprego das Forças Armadas.'
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/decreto-12481`,
+      title: '6. Decreto nº 12.481/2025',
+      description: 'Institui a Política Marítima Nacional (PMN).'
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/estrategia-nacional-defesa`,
-      title: 'Estratégia Nacional de Defesa',
+        routePath: `${this.ROUTE_BASE}/bibliografia/economia-azul`,
+      title: '7. Economia Azul - vetor para o desenvolvimento do Brasil',
+      description: 'SANTOS, Thauan.'
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/4.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/politica-nacional-defesa`,
-      title: 'Política Nacional de Defesa',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/5.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/lei-complementar-97`,
-      title: 'Lei Complementar nº 97',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/6.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/decreto-12481`,
-      title: 'Decreto nº 12.481 - Política Marítima Nacional (PMN)',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/7.jpg`,
-        routePath: `${this.ROUTE_BASE}/bibliografia/economia-azul`,
-      title: 'Economia Azul - vetor para o desenvolvimento do Brasil',
-    },
-    {
-      imagePath: `${this.ASSETS_BASE}/img/8.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/ema-323`,
-      title: 'EMA-323 - Política Naval',
+      title: '8. EMA-323/2019',
+      description: 'Política Naval'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/9.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/decreto-12363`,
-      title: 'Decreto nº 12.363 - Plano Setorial para os Recursos do Mar',
+      title: '9. Decreto nº 12.363/2025',
+      description: 'Aprova o XI Plano Setorial para os Recursos do Mar.'
     }
   ];
 

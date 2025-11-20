@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, inject } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,6 +10,8 @@ import { PerguntasService } from '../../services/perguntas.service';
 import { ConceitosTableComponent } from '../conceitos-table/conceitos-table';
 import { forkJoin } from 'rxjs';
 import { Router } from '@angular/router';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-conceitos',
@@ -18,7 +20,7 @@ import { Router } from '@angular/router';
   templateUrl: './conceitos.html',
   styleUrls: ['./conceitos.scss']
 })
-export class ConceitosComponent implements OnInit {
+export class ConceitosComponent implements OnInit, OnDestroy {
 
   // Filtros (UI)
   selectedAssunto: string = '';
@@ -43,9 +45,11 @@ export class ConceitosComponent implements OnInit {
   selectedBibliografiaId: number | null = null;
   loading: boolean = false;
   error: string | null = null;
+  isFullscreen = false;
 
   // Router injection using functional `inject` (same approach used in flash-cards.ts)
   private router = inject(Router);
+  private destroy$ = new Subject<void>();
 
   // Compatibility alias for templates that use `isLoading` (some templates expect this name)
   get isLoading(): boolean {
@@ -65,6 +69,22 @@ export class ConceitosComponent implements OnInit {
     this.computeModuleBase();
 
     this.loadData();
+
+    // Escutar eventos de fullscreen para sincronizar o estado
+    this.setupFullscreenListeners();
+  }
+
+  ngOnDestroy() {
+    // Garantir que saia do fullscreen ao destruir o componente
+    if (this.isFullscreen) {
+      this.exitFullscreen();
+    }
+    // Garantir que o overflow do body seja restaurado ao destruir o componente
+    document.body.style.overflow = '';
+    document.body.classList.remove('conceitos-fullscreen-active');
+    this.removeFullscreenListeners();
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   loadData() {
@@ -76,28 +96,35 @@ export class ConceitosComponent implements OnInit {
       ? this.perguntasService.getBibliografias({ page_size: 1000 })
       : this.perguntasService.getBibliografias({ page_size: 1000 });
 
-    const conceitosRequest = this.informacoesService.getConceitos();
+    // Usar getAllConceitos para buscar todas as páginas automaticamente
+    const conceitosRequest = this.informacoesService.getAllConceitos({ page_size: 100 });
 
     forkJoin({
       bibliografias: bibliografiasRequest,
       conceitos: conceitosRequest
     }).subscribe({
       next: (response) => {
+        // getAllConceitos retorna um array direto, não um objeto com results
+        const allConceitos = response.conceitos;
+        
         // Filtra bibliografias se IDs específicos foram fornecidos
         if (this.bibliografiaIds.length > 0) {
           this.bibliografias = response.bibliografias.results.filter(
             bib => this.bibliografiaIds.includes(bib.id)
           );
+          // Filtra conceitos apenas das bibliografias especificadas
+          this.conceitos = allConceitos.filter(conceito =>
+            this.bibliografiaIds.includes(conceito.bibliografia)
+          );
         } else {
           // Filtra apenas bibliografias que têm conceitos
-          const conceitosWithBib = response.conceitos.results.map(c => c.bibliografia);
+          const conceitosWithBib = allConceitos.map(c => c.bibliografia);
           const uniqueBibIds = [...new Set(conceitosWithBib)];
           this.bibliografias = response.bibliografias.results.filter(
             bib => uniqueBibIds.includes(bib.id)
           );
+          this.conceitos = allConceitos;
         }
-
-        this.conceitos = response.conceitos.results;
 
         // Define a primeira bibliografia como selecionada se houver alguma
         if (this.bibliografias.length > 0) {
@@ -128,11 +155,13 @@ export class ConceitosComponent implements OnInit {
     });
   }
 
-  /** Extrai assuntos únicos da lista de conceitos */
+  /** Extrai assuntos únicos da lista de conceitos (considera apenas conceitos filtrados por bibliografiaIds) */
   private extractAssuntos(bibliografiaId: number | null = null) {
     const set = new Set<string>();
+    // Usa os conceitos já filtrados por bibliografiaIds
+    const conceitosParaAnalisar = this.conceitosFiltradosPorBibliografia;
 
-    this.conceitos.forEach(c => {
+    conceitosParaAnalisar.forEach(c => {
       const matchesBib = bibliografiaId ? c.bibliografia === bibliografiaId : true;
       if (matchesBib && c.assunto && typeof c.assunto === 'string' && c.assunto.trim().length > 0) {
         set.add(c.assunto.trim());
@@ -173,8 +202,22 @@ export class ConceitosComponent implements OnInit {
     this.selectedBibliografiaId = bibliografiaId;
   }
 
+  /**
+   * Retorna os conceitos filtrados pelas bibliografias especificadas (se houver bibliografiaIds)
+   * antes de aplicar os filtros de UI (bibliografia selecionada e assunto)
+   */
+  get conceitosFiltradosPorBibliografia(): ConceitosInterface[] {
+    if (this.bibliografiaIds.length > 0) {
+      return this.conceitos.filter(conceito => 
+        this.bibliografiaIds.includes(conceito.bibliografia)
+      );
+    }
+    return this.conceitos;
+  }
+
   get filteredConceitos(): ConceitosInterface[] {
-    let list = [...this.conceitos];
+    // Começa com os conceitos já filtrados por bibliografiaIds (se aplicável)
+    let list = [...this.conceitosFiltradosPorBibliografia];
 
     if (this.selectedBibliografiaId) {
       list = list.filter(conceito => conceito.bibliografia === this.selectedBibliografiaId);
@@ -202,7 +245,7 @@ export class ConceitosComponent implements OnInit {
   }
 
   getConceptCountByBibliografia(bibliografiaId: number): number {
-    return this.conceitos.filter(conceito => conceito.bibliografia === bibliografiaId).length;
+    return this.conceitosFiltradosPorBibliografia.filter(conceito => conceito.bibliografia === bibliografiaId).length;
   }
 
   getEmptyMessage(): string {
@@ -291,5 +334,202 @@ export class ConceitosComponent implements OnInit {
     }
 
     this.router.navigate(['/home']);
-  }  
+  }
+
+  /**
+   * Configura listeners para eventos de fullscreen
+   */
+  private setupFullscreenListeners() {
+    document.addEventListener('fullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('mozfullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('MSFullscreenChange', this.handleFullscreenChange);
+  }
+
+  /**
+   * Remove listeners de fullscreen
+   */
+  private removeFullscreenListeners() {
+    document.removeEventListener('fullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('webkitfullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('mozfullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('MSFullscreenChange', this.handleFullscreenChange);
+  }
+
+  /**
+   * Handler para mudanças no estado de fullscreen
+   */
+  private handleFullscreenChange = () => {
+    const isCurrentlyFullscreen = !!(
+      document.fullscreenElement ||
+      (document as any).webkitFullscreenElement ||
+      (document as any).mozFullScreenElement ||
+      (document as any).msFullscreenElement
+    );
+
+    if (!isCurrentlyFullscreen && this.isFullscreen) {
+      // Sincronizar estado se o usuário saiu do fullscreen via ESC ou outro método
+      this.isFullscreen = false;
+      document.body.style.overflow = '';
+      document.body.classList.remove('conceitos-fullscreen-active');
+      
+      // Restaurar z-index dos sidenavs
+      const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+      sidenavs.forEach((el: Element) => {
+        (el as HTMLElement).style.zIndex = '';
+        (el as HTMLElement).style.pointerEvents = '';
+      });
+      
+      console.log('🖥️ Fullscreen desativado (via evento)');
+    }
+  }
+
+  /**
+   * Abre o modo fullscreen usando a API do navegador
+   */
+  async openFullscreen() {
+    if (this.filteredConceitos.length === 0) {
+      return;
+    }
+
+    const element = document.documentElement;
+
+    try {
+      if (element.requestFullscreen) {
+        await element.requestFullscreen();
+      } else if ((element as any).webkitRequestFullscreen) {
+        // Safari
+        await (element as any).webkitRequestFullscreen();
+      } else if ((element as any).mozRequestFullScreen) {
+        // Firefox
+        await (element as any).mozRequestFullScreen();
+      } else if ((element as any).msRequestFullscreen) {
+        // IE/Edge
+        await (element as any).msRequestFullscreen();
+      } else {
+        console.warn('⚠️ Fullscreen API não suportada neste navegador');
+        // Fallback para overlay se a API não estiver disponível
+        this.isFullscreen = true;
+        document.body.style.overflow = 'hidden';
+        document.body.classList.add('conceitos-fullscreen-active');
+        
+        // Forçar z-index baixo em todos os sidenavs do Angular Material
+        setTimeout(() => {
+          const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+          sidenavs.forEach((el: Element) => {
+            (el as HTMLElement).style.zIndex = '1';
+            (el as HTMLElement).style.pointerEvents = 'none';
+          });
+          
+          // Garantir que o overlay tenha z-index máximo
+          const overlay = document.querySelector('.fullscreen-overlay');
+          if (overlay) {
+            (overlay as HTMLElement).style.zIndex = '2147483647';
+            (overlay as HTMLElement).style.pointerEvents = 'auto';
+          }
+        }, 0);
+        return;
+      }
+
+      this.isFullscreen = true;
+      document.body.style.overflow = 'hidden';
+      // Adicionar classe ao body para aplicar estilos globais
+      document.body.classList.add('conceitos-fullscreen-active');
+      
+      // Forçar z-index baixo em todos os sidenavs do Angular Material
+      setTimeout(() => {
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '1';
+          (el as HTMLElement).style.pointerEvents = 'none';
+        });
+        
+        // Garantir que o overlay tenha z-index máximo
+        const overlay = document.querySelector('.fullscreen-overlay');
+        if (overlay) {
+          (overlay as HTMLElement).style.zIndex = '2147483647';
+          (overlay as HTMLElement).style.pointerEvents = 'auto';
+        }
+      }, 0);
+      
+      console.log('🖥️ Modo fullscreen ativado');
+    } catch (error) {
+      console.error('❌ Erro ao entrar em fullscreen:', error);
+      // Fallback para overlay em caso de erro
+      this.isFullscreen = true;
+      document.body.style.overflow = 'hidden';
+      document.body.classList.add('conceitos-fullscreen-active');
+      
+      // Forçar z-index baixo em todos os sidenavs do Angular Material
+      setTimeout(() => {
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '1';
+          (el as HTMLElement).style.pointerEvents = 'none';
+        });
+        
+        // Garantir que o overlay tenha z-index máximo
+        const overlay = document.querySelector('.fullscreen-overlay');
+        if (overlay) {
+          (overlay as HTMLElement).style.zIndex = '2147483647';
+          (overlay as HTMLElement).style.pointerEvents = 'auto';
+        }
+      }, 0);
+    }
+  }
+
+  /**
+   * Fecha o modo fullscreen
+   */
+  async closeFullscreen() {
+    try {
+      if (document.exitFullscreen) {
+        await document.exitFullscreen();
+      } else if ((document as any).webkitExitFullscreen) {
+        // Safari
+        await (document as any).webkitExitFullscreen();
+      } else if ((document as any).mozCancelFullScreen) {
+        // Firefox
+        await (document as any).mozCancelFullScreen();
+      } else if ((document as any).msExitFullscreen) {
+        // IE/Edge
+        await (document as any).msExitFullscreen();
+      } else {
+        // Fallback se não houver API
+        this.isFullscreen = false;
+        document.body.style.overflow = '';
+        document.body.classList.remove('conceitos-fullscreen-active');
+        
+        // Restaurar z-index dos sidenavs
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '';
+          (el as HTMLElement).style.pointerEvents = '';
+        });
+        return;
+      }
+
+      // O estado será atualizado pelo listener de eventos
+    } catch (error) {
+      console.error('❌ Erro ao sair do fullscreen:', error);
+      // Forçar saída mesmo em caso de erro
+      this.isFullscreen = false;
+      document.body.style.overflow = '';
+      document.body.classList.remove('conceitos-fullscreen-active');
+      
+      // Restaurar z-index dos sidenavs
+      const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+      sidenavs.forEach((el: Element) => {
+        (el as HTMLElement).style.zIndex = '';
+        (el as HTMLElement).style.pointerEvents = '';
+      });
+    }
+  }
+
+  /**
+   * Alias para closeFullscreen (usado no template)
+   */
+  exitFullscreen() {
+    this.closeFullscreen();
+  }
 }

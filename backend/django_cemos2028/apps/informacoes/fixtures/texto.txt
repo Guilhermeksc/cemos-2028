@@ -1,8 +1,3 @@
-import pandas as pd
-
-# texto copiado do markdown entre aspas triplas
-texto_md = """
-bibliografia_titulo	titulo	palavra_chave	assunto	descricao
 | bibliografia_titulo | titulo | palavra_chave | assunto | descricao | caiu_em_prova | ano_prova |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Economia Azul | Planejamento Espacial Marinho (PEM) | COI, UNESCO, Alocação, Atividades humanas, Ecológicos, Econômicos, Sociais | Relevância do PEM para a Economia Azul | Processo público de análise e alocação da distribuição espacial e temporal de atividades humanas em áreas marinhas, visando alcançar objetivos ecológicos, econômicos e sociais. | false | |
@@ -32,32 +27,3 @@ bibliografia_titulo	titulo	palavra_chave	assunto	descricao
 | Economia Azul | Migração de Atividades Econômicas | Exploração offshore, Energias renováveis, Aquicultura, Algacultura | Relevância do PEM para a Economia Azul | Tendência observada nas últimas décadas de transferência de atividades econômicas desenvolvidas majoritariamente em terra (como extração de petróleo, aquicultura) para as três dimensões do mar. | false | |
 | Economia Azul | Compromisso ONU 2030 (PEM) | Conferência dos Oceanos 2017, Ação Oceânica 19704, Implantação do PEM | Relevância do PEM para a Economia Azul | Compromisso voluntário assumido pelo Brasil na Conferência dos Oceanos da ONU em 2017 de implantar o Planejamento Espacial Marinho no país até o ano de 2030. | false | |
 | Economia Azul | Ciência Oceânica | Estudos multidisciplinares, Ciências biológicas, Ciências físicas, Engenharia | Relevância do PEM para a Economia Azul | Inclui todas as disciplinas relacionadas ao estudo do oceano, como ciências físicas, biológicas, químicas e sociais, e busca entender os complexos sistemas sociais e ecológicos. | false | |
-"""  # (adicione o restante se quiser)
-
-
-# 1) filtrar apenas linhas que começam com "|"
-linhas = [l for l in texto_md.splitlines() if l.strip().startswith("|")]
-
-# 2) remover linha de formatação ":---"
-linhas = [l for l in linhas if ":---" not in l]
-
-# 3) limpar espaços e pipes nas bordas e dividir corretamente
-def parse_linha(linha):
-    linha = linha.strip().strip("|")
-    partes = [c.strip() for c in linha.split("|")]
-    return partes
-
-dados = [parse_linha(l) for l in linhas]
-
-# 4) primeira linha = header
-header = dados[0]
-linhas_data = dados[1:]
-
-# 5) criar DataFrame
-df = pd.DataFrame(linhas_data, columns=header)
-
-
-# 5) Exporta para Excel
-df.to_excel("conceitos_economia_azul.xlsx", index=False)
-
-print("Arquivo gerado: conceitos_economia_azul.xlsx")

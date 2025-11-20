@@ -15,10 +15,10 @@ Gere perguntas que testem:
 - As alternativas devem ser plausíveis, evitando opções óbvias ou absurdas.
 - Preenchimento dos campos
 
-bibliografia_titulo: preencher com "Novas Geopolíticas".
-paginas: preencher com o título do arquivo consultado, como Cap I, II, III....
+bibliografia_titulo: preencher com "Ciência Política".
+paginas: preencher com a página do arquivo consultado, como Pág 1, 2....
 pergunta: texto completo da questão.
-assunto: "Nova (Des)Ordem"
+assunto: "Cap. 10 – O Estado Constitucional"
 alternativa_a até alternativa_d: alternativas de resposta.
 resposta_correta: letra da alternativa correta (a, b, c ou d).
 justificativa_resposta_certa: uma frase explicando o motivo da resposta correta.
@@ -29,4 +29,4 @@ Modelo de saída esperado
 
 bibliografia_titulo | paginas | assunto | pergunta | alternativa_a | alternativa_b | alternativa_c | alternativa_d | resposta_correta | justificativa_resposta_certa | caiu_em_prova | ano_prova
 |---|---|---|---|---|---|---|---|---|---|---|
-Princípios de Relações Internacionais | Cap I | Rússia | Qual teórico é considerado o fundador do Realismo nas Relações Internacionais? | Immanuel Kant | Hans Morgenthau | Alexander Wendt | Joseph Nye | b | Morgenthau é amplamente reconhecido como o formulador dos princípios clássicos do Realismo. |
+Princípios de Relações Internacionais | Pág 15 | Rússia | Qual teórico é considerado o fundador do Realismo nas Relações Internacionais? | Immanuel Kant | Hans Morgenthau | Alexander Wendt | Joseph Nye | b | Morgenthau é amplamente reconhecido como o formulador dos princípios clássicos do Realismo. |

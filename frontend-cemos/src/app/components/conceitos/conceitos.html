@@ -5,7 +5,7 @@
     <h2>{{ moduleEmoji ? (moduleEmoji + ' ') : '🧭 ' }}{{ moduleLabel || 'Conceitos' }}</h2>
     <div class="stats" *ngIf="!loading">
       <span class="stat-item">
-        <strong>{{ filteredConceitos.length }}</strong> de <strong>{{ conceitos.length }}</strong> conceitos
+        <strong>{{ filteredConceitos.length }}</strong> de <strong>{{ conceitosFiltradosPorBibliografia.length }}</strong> conceitos
       </span>
       <span class="stat-item">
         <strong>{{ bibliografias.length }}</strong> {{ bibliografias.length === 1 ? 'bibliografia' : 'bibliografias' }}
@@ -94,10 +94,16 @@
 
       <!-- Ações -->
       <div class="actions-row">
+        <button 
+          class="btn btn-fullscreen"
+          (click)="openFullscreen()"
+          [disabled]="filteredConceitos.length === 0">
+          🖥️ Tela Cheia
+        </button>
+        
         <button class="btn btn-outline" (click)="resetFilters()" [disabled]="!selectedBibliografiaId && !selectedAssunto">✖️ Limpar Filtros</button>
       </div>
-
-
+    </div>
 
     <!-- Conceitos table -->
     <app-conceitos-table 
@@ -106,5 +112,79 @@
       [showBibliografia]="bibliografias.length <= 1"
       [emptyMessage]="getEmptyMessage()">
     </app-conceitos-table>
+  </div>
+
+  <!-- Fullscreen Overlay -->
+  <div class="fullscreen-overlay" *ngIf="isFullscreen">
+    <div class="fullscreen-container">
+      <div class="fullscreen-header">
+        <h3>{{ moduleEmoji ? (moduleEmoji + ' ') : '🧭 ' }}{{ moduleLabel || 'Conceitos' }} - Modo Tela Cheia</h3>
+        <button 
+          class="btn-close-fullscreen"
+          (click)="exitFullscreen()"
+          aria-label="Fechar tela cheia">
+          ✕
+        </button>
+      </div>
+      
+      <!-- Filtros no Fullscreen -->
+      <div class="fullscreen-filters">
+        <div class="filter-row">
+          <div class="filter-group">
+            <label for="fullscreen-bibliografia-filter">📖 Bibliografia:</label>
+            <select
+              id="fullscreen-bibliografia-filter"
+              name="bibliografia"
+              [(ngModel)]="selectedBibliografiaId"
+              (ngModelChange)="onBibliografiaChange()"
+              class="filter-select">
+              <option [ngValue]="null">Todas as Bibliografias</option>
+              <option *ngFor="let bib of bibliografias" [ngValue]="bib.id">{{ bib.titulo }}</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="fullscreen-assunto-filter">🏷️ Assunto:</label>
+            <select
+              id="fullscreen-assunto-filter"
+              name="assunto"
+              [(ngModel)]="selectedAssunto"
+              (ngModelChange)="onAssuntoChange()"
+              class="filter-select"
+              [disabled]="assuntosDisponiveis.length === 0">
+              <option value="">Todos os assuntos</option>
+              <option *ngFor="let assunto of assuntosDisponiveis" [value]="assunto">{{ assunto }}</option>
+            </select>
+          </div>
+
+          <div class="filter-group filter-group-button">
+            <label>&nbsp;</label>
+            <button 
+              class="btn btn-outline" 
+              (click)="resetFilters()" 
+              [disabled]="!selectedBibliografiaId && !selectedAssunto">
+              ✖️ Limpar Filtros
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="fullscreen-content">
+        <app-conceitos-table 
+          [conceitos]="filteredConceitos"
+          [title]="''"
+          [showBibliografia]="bibliografias.length <= 1"
+          [emptyMessage]="getEmptyMessage()">
+        </app-conceitos-table>
+      </div>
+      
+      <div class="fullscreen-actions">
+        <button 
+          class="btn btn-outline"
+          (click)="exitFullscreen()">
+          ✖️ Fechar (ESC)
+        </button>
+      </div>
+    </div>
   </div>
 </div>

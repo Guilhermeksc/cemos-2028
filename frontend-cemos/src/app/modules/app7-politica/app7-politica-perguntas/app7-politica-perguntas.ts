@@ -12,7 +12,7 @@ import { Perguntas } from '../../../components/perguntas/perguntas';
 
 export class App7PoliticaPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
-  readonly bibliografiasDisponiveisIds: number[] = [9];
+  readonly bibliografiasDisponiveisIds: number[] = [9,10,11,12,13,14,15,16,17];
     
   // Rota para voltar à bibliografia
   bibliografiaPath = '/home/app7-politica/bibliografia';

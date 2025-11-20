@@ -34,7 +34,7 @@
 
   // ==================== FILTROS ====================
   // Importar estilos compartilhados de filtros
-  @import '../../styles/filters';
+  @use '../../styles/filters' as *;
 
   .filters-section {
 

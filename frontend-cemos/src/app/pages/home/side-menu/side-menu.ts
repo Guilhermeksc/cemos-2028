@@ -4,7 +4,8 @@ import { Component, EventEmitter, Output, Input, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { AuthService } from '../../../services/auth.service';
 
@@ -63,13 +64,24 @@ export class SideMenu {
   // Rastrear o item ativo atual
   currentActivePath = signal<string>('');
 
-  constructor(private router: Router, private authService: AuthService) {}
-      /**
-       * Navega para a página Home
-       */
-      navigateHome(): void {
-        this.router.navigate(['/home']);
-      }
+  constructor(private router: Router, private authService: AuthService) {
+    // Subscribe to route changes to update active path
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.updateActivePath();
+      });
+    this.updateActivePath();
+  }
+  
+  /**
+   * Navega para a página Home
+   */
+  navigateHome(): void {
+    this.currentActivePath.set('');
+    this.router.navigate(['/home']);
+    this.itemClicked.emit();
+  }
 
   readonly menuItems = signal<MenuItem[]>([
     { 
@@ -249,7 +261,11 @@ export class SideMenu {
   toggleSection(index: number): void {
     this.menuItems.update(items => {
       const updatedItems = [...items];
-      const isCurrentlyExpanded = updatedItems[index].expanded;
+      const section = updatedItems[index];
+      const isCurrentlyExpanded = section.expanded;
+      
+      // Navega para a bibliografia da seção quando clicar no header
+      this.navigateToSectionBibliografia(section.title);
       
       // Close all sections first
       updatedItems.forEach((item, i) => {
@@ -269,6 +285,55 @@ export class SideMenu {
       
       return updatedItems;
     });
+  }
+
+  /**
+   * Navega para a bibliografia de uma seção específica
+   */
+  navigateToSectionBibliografia(sectionTitle: string): void {
+    // Build path parts array
+    const pathParts = ['home'];
+    
+    // Add section path and bibliografia
+    switch (sectionTitle) {
+      case 'Intendência':
+        pathParts.push('app1-intendencia', 'bibliografia');
+        break;
+      case 'Estratégia':
+        pathParts.push('app2-estrategia', 'bibliografia');
+        break;
+      case 'Planejamento Militar':
+        pathParts.push('app3-planejamento-militar', 'bibliografia');
+        break;
+      case 'História':
+        pathParts.push('app4-historia', 'bibliografia');
+        break;
+      case 'Geopolítica e Relações Internacionais':
+        pathParts.push('app6-geopolitica-relacoes-internacionais', 'bibliografia');
+        break;
+      case 'Política':
+        pathParts.push('app7-politica', 'bibliografia');
+        break;
+      case 'Direito':
+        pathParts.push('app8-direito', 'bibliografia');
+        break;
+      case 'Economia':
+        pathParts.push('app9-economia', 'bibliografia');
+        break;
+      default:
+        console.warn(`No route path found for section: ${sectionTitle}`);
+        return;
+    }
+
+    // Set active path for highlighting
+    const pathString = pathParts.slice(1).join('/');
+    this.currentActivePath.set(pathString);
+    
+    // Navigate to the constructed path
+    this.router.navigate(pathParts);
+    
+    // Emit the itemClicked event to close drawer on mobile
+    this.itemClicked.emit();
   }
 
   toggleSubSection(sectionIndex: number, subIndex: number): void {
@@ -976,6 +1041,18 @@ export class SideMenu {
       default:
         return '';
     }
+  }
+
+  /**
+   * Atualiza o caminho ativo baseado na URL atual
+   */
+  private updateActivePath(): void {
+    const url = this.router.url;
+    // Remove '/home' prefix if present
+    const path = url.startsWith('/home') ? url.substring(5) : url;
+    // Remove leading slash
+    const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+    this.currentActivePath.set(cleanPath);
   }
 
   /**
