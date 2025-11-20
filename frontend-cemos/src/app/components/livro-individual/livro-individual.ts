@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
@@ -10,6 +10,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { LivroIndividualService } from '../../services/livro-individual.service';
 import { MarkdownFile, MarkdownHeading } from '../../interfaces/livro-individual.interface';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-livro-individual',
@@ -25,41 +27,52 @@ import { MarkdownFile, MarkdownHeading } from '../../interfaces/livro-individual
   templateUrl: './livro-individual.html',
   styleUrl: './livro-individual.scss'
 })
-export class LivroIndividual implements OnInit {
+export class LivroIndividual implements OnInit, OnDestroy {
   @Input() contentPath: string = 'assets/content'; // Pasta base dos arquivos MD
   @Input() fileNames: string[] = []; // Lista de arquivos MD a carregar
   @Input() backRoute: string = ''; // Rota de volta (ex: '/home/app6-geopolitica-relacoes-internacionais/bibliografia')
   @Input() backLabel: string = 'Bibliografia'; // Label do botão de voltar
 
-  isMenuCollapsed: boolean = false;
   isLoading: boolean = false;
-  isFileSelectorExpanded: boolean = true;
-  isHeadingsNavigationExpanded: boolean = true;
+  isFullscreen: boolean = false;
   
   markdownFiles: MarkdownFile[] = [];
   selectedFile: MarkdownFile | null = null;
   headings: MarkdownHeading[] = [];
   htmlContent: SafeHtml = '';
+  
+  private destroy$ = new Subject<void>();
 
   /**
    * Adiciona interatividade de zoom nas imagens após renderização do HTML
    */
   private enableImageZoom() {
     setTimeout(() => {
-      const wrapper = document.querySelector('.content-wrapper');
-      if (!wrapper) return;
-      const imgs = wrapper.querySelectorAll('img');
-      imgs.forEach(img => {
-        img.addEventListener('click', function () {
-          if (img.classList.contains('zoomed')) {
-            img.classList.remove('zoomed');
-          } else {
-            // Remove zoom de outras imagens
-            wrapper.querySelectorAll('img.zoomed').forEach(other => {
-              other.classList.remove('zoomed');
-            });
-            img.classList.add('zoomed');
+      // Buscar tanto no conteúdo normal quanto no fullscreen
+      const wrappers = document.querySelectorAll('.content-wrapper');
+      wrappers.forEach(wrapper => {
+        const imgs = wrapper.querySelectorAll('img');
+        imgs.forEach(img => {
+          // Verifica se já tem listener (evita duplicar)
+          if ((img as any).hasZoomListener) {
+            return;
           }
+          
+          // Marca como tendo listener
+          (img as any).hasZoomListener = true;
+          
+          // Adiciona listener
+          img.addEventListener('click', function () {
+            if (img.classList.contains('zoomed')) {
+              img.classList.remove('zoomed');
+            } else {
+              // Remove zoom de outras imagens no mesmo wrapper
+              wrapper.querySelectorAll('img.zoomed').forEach(other => {
+                other.classList.remove('zoomed');
+              });
+              img.classList.add('zoomed');
+            }
+          });
         });
       });
     }, 200);
@@ -77,6 +90,26 @@ export class LivroIndividual implements OnInit {
     if (this.fileNames.length > 0) {
       this.loadFiles();
     }
+    
+    // Escutar eventos de fullscreen para sincronizar o estado
+    this.setupFullscreenListeners();
+    
+    // Escutar tecla ESC para sair do fullscreen
+    document.addEventListener('keydown', this.handleKeyDown);
+  }
+
+  ngOnDestroy() {
+    // Garantir que saia do fullscreen ao destruir o componente
+    if (this.isFullscreen) {
+      this.exitFullscreen();
+    }
+    // Garantir que o overflow do body seja restaurado ao destruir o componente
+    document.body.style.overflow = '';
+    document.body.classList.remove('livro-fullscreen-active');
+    this.removeFullscreenListeners();
+    document.removeEventListener('keydown', this.handleKeyDown);
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   /**
@@ -121,12 +154,6 @@ export class LivroIndividual implements OnInit {
     this.enableImageZoom();
   }
 
-  /**
-   * Alterna o menu lateral
-   */
-  toggleMenu() {
-    this.isMenuCollapsed = !this.isMenuCollapsed;
-  }
 
   /**
    * Navega de volta para a rota especificada
@@ -141,19 +168,6 @@ export class LivroIndividual implements OnInit {
     }
   }
 
-  /**
-   * Alterna a seção de seletor de arquivos
-   */
-  toggleFileSelector() {
-    this.isFileSelectorExpanded = !this.isFileSelectorExpanded;
-  }
-
-  /**
-   * Alterna a seção de navegação por headings
-   */
-  toggleHeadingsNavigation() {
-    this.isHeadingsNavigationExpanded = !this.isHeadingsNavigationExpanded;
-  }
 
   /**
    * Navega para uma seção específica
@@ -271,5 +285,216 @@ export class LivroIndividual implements OnInit {
       return 'article';
     }
     return this.isExpanded(heading) ? 'expand_more' : 'chevron_right';
+  }
+
+  /**
+   * Configura listeners para eventos de fullscreen
+   */
+  private setupFullscreenListeners() {
+    document.addEventListener('fullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('mozfullscreenchange', this.handleFullscreenChange);
+    document.addEventListener('MSFullscreenChange', this.handleFullscreenChange);
+  }
+
+  /**
+   * Remove listeners de fullscreen
+   */
+  private removeFullscreenListeners() {
+    document.removeEventListener('fullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('webkitfullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('mozfullscreenchange', this.handleFullscreenChange);
+    document.removeEventListener('MSFullscreenChange', this.handleFullscreenChange);
+  }
+
+  /**
+   * Handler para mudanças no estado de fullscreen
+   */
+  private handleFullscreenChange = () => {
+    const isCurrentlyFullscreen = !!(
+      document.fullscreenElement ||
+      (document as any).webkitFullscreenElement ||
+      (document as any).mozFullScreenElement ||
+      (document as any).msFullscreenElement
+    );
+
+    if (!isCurrentlyFullscreen && this.isFullscreen) {
+      // Sincronizar estado se o usuário saiu do fullscreen via ESC ou outro método
+      this.isFullscreen = false;
+      document.body.style.overflow = '';
+      document.body.classList.remove('livro-fullscreen-active');
+      
+      // Restaurar z-index dos sidenavs
+      const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+      sidenavs.forEach((el: Element) => {
+        (el as HTMLElement).style.zIndex = '';
+        (el as HTMLElement).style.pointerEvents = '';
+      });
+      
+      console.log('🖥️ Fullscreen desativado (via evento)');
+    }
+  }
+
+  /**
+   * Handler para tecla ESC
+   */
+  private handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === 'Escape' && this.isFullscreen) {
+      this.exitFullscreen();
+    }
+  }
+
+  /**
+   * Abre o modo fullscreen usando a API do navegador
+   */
+  async openFullscreen() {
+    if (!this.selectedFile) {
+      return;
+    }
+
+    const element = document.documentElement;
+
+    try {
+      if (element.requestFullscreen) {
+        await element.requestFullscreen();
+      } else if ((element as any).webkitRequestFullscreen) {
+        // Safari
+        await (element as any).webkitRequestFullscreen();
+      } else if ((element as any).mozRequestFullScreen) {
+        // Firefox
+        await (element as any).mozRequestFullScreen();
+      } else if ((element as any).msRequestFullscreen) {
+        // IE/Edge
+        await (element as any).msRequestFullscreen();
+      } else {
+        console.warn('⚠️ Fullscreen API não suportada neste navegador');
+        // Fallback para overlay se a API não estiver disponível
+        this.isFullscreen = true;
+        document.body.style.overflow = 'hidden';
+        document.body.classList.add('livro-fullscreen-active');
+        
+        // Forçar z-index baixo em todos os sidenavs do Angular Material
+        setTimeout(() => {
+          const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+          sidenavs.forEach((el: Element) => {
+            (el as HTMLElement).style.zIndex = '1';
+            (el as HTMLElement).style.pointerEvents = 'none';
+          });
+          
+          // Garantir que o overlay tenha z-index máximo
+          const overlay = document.querySelector('.fullscreen-overlay');
+          if (overlay) {
+            (overlay as HTMLElement).style.zIndex = '2147483647';
+            (overlay as HTMLElement).style.pointerEvents = 'auto';
+          }
+        }, 0);
+        return;
+      }
+
+      this.isFullscreen = true;
+      document.body.style.overflow = 'hidden';
+      // Adicionar classe ao body para aplicar estilos globais
+      document.body.classList.add('livro-fullscreen-active');
+      
+      // Forçar z-index baixo em todos os sidenavs do Angular Material
+      setTimeout(() => {
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '1';
+          (el as HTMLElement).style.pointerEvents = 'none';
+        });
+        
+        // Garantir que o overlay tenha z-index máximo
+        const overlay = document.querySelector('.fullscreen-overlay');
+        if (overlay) {
+          (overlay as HTMLElement).style.zIndex = '2147483647';
+          (overlay as HTMLElement).style.pointerEvents = 'auto';
+        }
+      }, 0);
+      
+      // Reativar zoom nas imagens após entrar em fullscreen
+      setTimeout(() => {
+        this.enableImageZoom();
+      }, 200);
+      
+      console.log('🖥️ Modo fullscreen ativado');
+    } catch (error) {
+      console.error('❌ Erro ao entrar em fullscreen:', error);
+      // Fallback para overlay em caso de erro
+      this.isFullscreen = true;
+      document.body.style.overflow = 'hidden';
+      document.body.classList.add('livro-fullscreen-active');
+      
+      // Forçar z-index baixo em todos os sidenavs do Angular Material
+      setTimeout(() => {
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '1';
+          (el as HTMLElement).style.pointerEvents = 'none';
+        });
+        
+        // Garantir que o overlay tenha z-index máximo
+        const overlay = document.querySelector('.fullscreen-overlay');
+        if (overlay) {
+          (overlay as HTMLElement).style.zIndex = '2147483647';
+          (overlay as HTMLElement).style.pointerEvents = 'auto';
+        }
+      }, 0);
+    }
+  }
+
+  /**
+   * Fecha o modo fullscreen
+   */
+  async closeFullscreen() {
+    try {
+      if (document.exitFullscreen) {
+        await document.exitFullscreen();
+      } else if ((document as any).webkitExitFullscreen) {
+        // Safari
+        await (document as any).webkitExitFullscreen();
+      } else if ((document as any).mozCancelFullScreen) {
+        // Firefox
+        await (document as any).mozCancelFullScreen();
+      } else if ((document as any).msExitFullscreen) {
+        // IE/Edge
+        await (document as any).msExitFullscreen();
+      } else {
+        // Fallback se não houver API
+        this.isFullscreen = false;
+        document.body.style.overflow = '';
+        document.body.classList.remove('livro-fullscreen-active');
+        
+        // Restaurar z-index dos sidenavs
+        const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+        sidenavs.forEach((el: Element) => {
+          (el as HTMLElement).style.zIndex = '';
+          (el as HTMLElement).style.pointerEvents = '';
+        });
+        return;
+      }
+
+      // O estado será atualizado pelo listener de eventos
+    } catch (error) {
+      console.error('❌ Erro ao sair do fullscreen:', error);
+      // Forçar saída mesmo em caso de erro
+      this.isFullscreen = false;
+      document.body.style.overflow = '';
+      document.body.classList.remove('livro-fullscreen-active');
+      
+      // Restaurar z-index dos sidenavs
+      const sidenavs = document.querySelectorAll('.mat-sidenav, .mat-drawer, mat-sidenav, mat-drawer, .mat-sidenav-container, .mat-drawer-container');
+      sidenavs.forEach((el: Element) => {
+        (el as HTMLElement).style.zIndex = '';
+        (el as HTMLElement).style.pointerEvents = '';
+      });
+    }
+  }
+
+  /**
+   * Alias para closeFullscreen (usado no template)
+   */
+  exitFullscreen() {
+    this.closeFullscreen();
   }
 }
