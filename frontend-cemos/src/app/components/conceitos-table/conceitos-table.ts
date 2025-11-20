@@ -1,10 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatTableModule } from '@angular/material/table';
-import { MatCardModule } from '@angular/material/card';
-import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Conceitos } from '../../interfaces/informacoes.interface';
 
@@ -13,11 +9,7 @@ import { Conceitos } from '../../interfaces/informacoes.interface';
   standalone: true,
   imports: [
     CommonModule,
-    MatTableModule,
-    MatCardModule,
-    MatChipsModule,
-    MatIconModule,
-    MatTooltipModule
+    MatIconModule
   ],
   templateUrl: './conceitos-table.html',
   styleUrls: ['./conceitos-table.scss']
@@ -28,14 +20,7 @@ export class ConceitosTableComponent {
   @Input() title: string = 'Conceitos';
   @Input() emptyMessage: string = 'Nenhum conceito encontrado';
 
-  // Definir as colunas da tabela - apenas Título e Descrição
-  displayedColumns: string[] = ['titulo', 'descricao'];
-
   constructor(private sanitizer: DomSanitizer) {}
-
-  ngOnInit() {
-    // Não precisa mais ajustar colunas baseado em showBibliografia
-  }
 
   /**
    * Verifica se a descrição está disponível

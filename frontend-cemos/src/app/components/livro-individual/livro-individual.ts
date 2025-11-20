@@ -35,6 +35,8 @@ export class LivroIndividual implements OnInit, OnDestroy {
 
   isLoading: boolean = false;
   isFullscreen: boolean = false;
+  leftMenuOpen: boolean = false;
+  rightMenuOpen: boolean = false;
   
   markdownFiles: MarkdownFile[] = [];
   selectedFile: MarkdownFile | null = null;
@@ -152,6 +154,9 @@ export class LivroIndividual implements OnInit, OnDestroy {
 
     // Ativa zoom nas imagens após renderização
     this.enableImageZoom();
+    
+    // Fecha menus no mobile após seleção
+    this.closeMenusOnMobile();
   }
 
 
@@ -274,6 +279,49 @@ export class LivroIndividual implements OnInit, OnDestroy {
     } else {
       // Se não tem filhos, apenas rola
       this.scrollToSection(heading.id);
+    }
+    
+    // Fecha menu direito no mobile após navegação
+    this.closeMenusOnMobile();
+  }
+
+  /**
+   * Alterna a visibilidade do menu esquerdo
+   */
+  toggleLeftMenu() {
+    this.leftMenuOpen = !this.leftMenuOpen;
+    if (this.leftMenuOpen) {
+      this.rightMenuOpen = false; // Fecha o outro menu
+    }
+  }
+
+  /**
+   * Alterna a visibilidade do menu direito
+   */
+  toggleRightMenu() {
+    this.rightMenuOpen = !this.rightMenuOpen;
+    if (this.rightMenuOpen) {
+      this.leftMenuOpen = false; // Fecha o outro menu
+    }
+  }
+
+  /**
+   * Fecha ambos os menus no mobile
+   */
+  closeMenusOnMobile() {
+    if (window.innerWidth <= 768) {
+      this.leftMenuOpen = false;
+      this.rightMenuOpen = false;
+    }
+  }
+
+  /**
+   * Fecha menus ao clicar no overlay
+   */
+  closeMenusOnOverlayClick(event: Event) {
+    const target = event.target as HTMLElement;
+    if (target.classList.contains('menu-overlay')) {
+      this.closeMenusOnMobile();
     }
   }
 
@@ -496,5 +544,12 @@ export class LivroIndividual implements OnInit, OnDestroy {
    */
   exitFullscreen() {
     this.closeFullscreen();
+  }
+
+  /**
+   * Verifica se está em modo mobile
+   */
+  isMobile(): boolean {
+    return window.innerWidth <= 768;
   }
 }

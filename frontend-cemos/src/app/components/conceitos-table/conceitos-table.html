@@ -1,82 +1,37 @@
 <div class="main-container">
-  <mat-card class="conceitos-card">
-    <mat-card-content class="card-content">
+  <div class="conceitos-list">
     <!-- Estado vazio -->
     <div class="empty-state" *ngIf="conceitos.length === 0">
       <mat-icon class="empty-icon">description</mat-icon>
       <p class="empty-message">{{ emptyMessage }}</p>
     </div>
 
-    <!-- Tabela tradicional para desktop -->
-    <div class="table-container d-desktop" *ngIf="conceitos.length > 0">
-      <table mat-table [dataSource]="conceitos" class="conceitos-table">
-        <!-- Coluna Título (com palavra-chave e assunto integrados) -->
-        <ng-container matColumnDef="titulo">
-          <th mat-header-cell *matHeaderCellDef class="header-cell titulo-header">
-            Título
-          </th>
-          <td mat-cell *matCellDef="let conceito" class="titulo-cell">
-            <div class="titulo-content">
-              <div class="titulo-text">{{ conceito.titulo }}</div>
-              <div class="titulo-meta" *ngIf="conceito.palavra_chave || conceito.assunto">
-                <span class="palavra-chave-meta" *ngIf="conceito.palavra_chave">
-                  ({{ conceito.palavra_chave }})
-                </span>
-                <span class="assunto-meta" *ngIf="conceito.assunto">
-                  Assunto: {{ conceito.assunto }}
-                </span>
-              </div>
-            </div>
-          </td>
-        </ng-container>
-        
-        <!-- Coluna Descrição -->
-        <ng-container matColumnDef="descricao">
-          <th mat-header-cell *matHeaderCellDef class="header-cell descricao-header">
-            Descrição
-          </th>
-          <td mat-cell *matCellDef="let conceito" class="descricao-cell">
-            <div class="descricao-content" *ngIf="hasDescricao(conceito)">
-              <p class="descricao-text" [innerHTML]="formatDescricao(conceito.descricao!)"></p>
-            </div>
-            <div class="no-descricao" *ngIf="!hasDescricao(conceito)">
-              <span class="no-descricao-text">Sem descrição</span>
-            </div>
-          </td>
-        </ng-container>
-        
-        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;" 
-            class="table-row"
-            [attr.data-conceito-id]="row.id"></tr>
-      </table>
-    </div>
-
-    <!-- Cards para mobile -->
-    <div class="conceitos-cards-mobile d-mobile" *ngIf="conceitos.length > 0">
-      <div class="conceito-card-mobile" *ngFor="let conceito of conceitos; trackBy: trackByConceito">
+    <!-- Lista de cards -->
+    <div class="conceitos-cards" *ngIf="conceitos.length > 0">
+      <div class="conceito-card" *ngFor="let conceito of conceitos; trackBy: trackByConceito">
         <div class="conceito-card-content">
-          <div class="conceito-field">
-            <span class="conceito-label">Título:</span>
-            <div class="conceito-value">
-              <div class="titulo-text">{{ conceito.titulo }}</div>
-              <div class="titulo-meta" *ngIf="conceito.palavra_chave || conceito.assunto">
-                <span class="palavra-chave-meta" *ngIf="conceito.palavra_chave">
-                  ({{ conceito.palavra_chave }})
-                </span>
-                <span class="assunto-meta" *ngIf="conceito.assunto">
-                  Assunto: {{ conceito.assunto }}
-                </span>
-              </div>
-            </div>
+          <!-- Título em vermelho -->
+          <div class="titulo-text">{{ conceito.titulo }}</div>
+          
+          <!-- Palavra-chave e Assunto -->
+          <div class="titulo-meta" *ngIf="conceito.palavra_chave || conceito.assunto">
+            <span class="palavra-chave-meta" *ngIf="conceito.palavra_chave">
+              ({{ conceito.palavra_chave }})
+            </span>
+            <span class="assunto-meta" *ngIf="conceito.assunto">
+              Assunto: {{ conceito.assunto }}
+            </span>
           </div>
-          <div class="conceito-field">
-            <span class="conceito-label">Descrição:</span>
-            <span class="conceito-value" *ngIf="hasDescricao(conceito)" [innerHTML]="formatDescricao(getTruncatedDescricao(conceito.descricao!, 200))"></span>
-            <span class="conceito-value" *ngIf="!hasDescricao(conceito)">Sem descrição</span>
+          
+          <!-- Descrição -->
+          <div class="descricao-content" *ngIf="hasDescricao(conceito)">
+            <p class="descricao-text" [innerHTML]="formatDescricao(conceito.descricao!)"></p>
+          </div>
+          <div class="no-descricao" *ngIf="!hasDescricao(conceito)">
+            <span class="no-descricao-text">Sem descrição</span>
           </div>
         </div>
       </div>
     </div>
-  </mat-card-content>
-</mat-card>
+  </div>
+</div>

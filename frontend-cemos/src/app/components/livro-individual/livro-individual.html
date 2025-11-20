@@ -1,10 +1,24 @@
 <div class="livro-container">
   
+  <!-- Overlay para fechar menus no mobile -->
+  <div 
+    class="menu-overlay" 
+    *ngIf="leftMenuOpen || rightMenuOpen"
+    (click)="closeMenusOnOverlayClick($event)">
+  </div>
+
   <!-- Menu Lateral Esquerdo - Arquivos -->
-  <aside class="left-menu">
+  <aside class="left-menu" [class.menu-open]="leftMenuOpen">
     
     <!-- Header do Menu Esquerdo -->
     <div class="menu-header">
+      <!-- Botão de Fechar (Mobile) -->
+      <button 
+        class="menu-close-button mobile-only"
+        (click)="toggleLeftMenu()"
+        aria-label="Fechar menu">
+        <mat-icon>close</mat-icon>
+      </button>
       <!-- Botão de Voltar -->
       <button 
         *ngIf="backRoute"
@@ -42,13 +56,30 @@
   <!-- Área de Conteúdo Central -->
   <main class="content-area">
     
-    <!-- Botão de Tela Cheia -->
-    <div class="fullscreen-button-container" *ngIf="!isLoading && selectedFile">
+    <!-- Botões de Menu Mobile -->
+    <div class="mobile-menu-buttons" *ngIf="!isLoading">
       <button 
-        class="btn btn-fullscreen"
+        class="btn-mobile-menu"
+        (click)="toggleLeftMenu()"
+        aria-label="Abrir menu de arquivos">
+        <mat-icon>menu</mat-icon>
+        <span>Arquivos</span>
+      </button>
+      <button 
+        class="btn-mobile-menu"
+        (click)="toggleRightMenu()"
+        aria-label="Abrir menu de índice">
+        <mat-icon>list</mat-icon>
+        <span>Índice</span>
+      </button>
+      <button 
+        class="btn-mobile-menu btn-fullscreen-mobile"
+        *ngIf="selectedFile"
         (click)="openFullscreen()"
-        [disabled]="!selectedFile">
-        🖥️ Tela Cheia
+        [disabled]="!selectedFile"
+        aria-label="Tela cheia">
+        <mat-icon>fullscreen</mat-icon>
+        <span>Tela Cheia</span>
       </button>
     </div>
     
@@ -73,10 +104,17 @@
   </main>
 
   <!-- Menu Lateral Direito - Índice -->
-  <aside class="right-menu">
+  <aside class="right-menu" [class.menu-open]="rightMenuOpen">
     
     <!-- Header do Menu Direito -->
     <div class="menu-header">
+      <!-- Botão de Fechar (Mobile) -->
+      <button 
+        class="menu-close-button mobile-only"
+        (click)="toggleRightMenu()"
+        aria-label="Fechar menu">
+        <mat-icon>close</mat-icon>
+      </button>
       <!-- Espaço reservado para manter consistência visual -->
     </div>
 
@@ -139,10 +177,23 @@
 
   <!-- Fullscreen Overlay -->
   <div class="fullscreen-overlay" *ngIf="isFullscreen">
+    <!-- Overlay para fechar menus no mobile (Fullscreen) -->
+    <div 
+      class="menu-overlay" 
+      *ngIf="leftMenuOpen || rightMenuOpen"
+      (click)="closeMenusOnOverlayClick($event)">
+    </div>
     <div class="fullscreen-container">
       <!-- Menu Lateral Esquerdo - Arquivos (Fullscreen) -->
-      <aside class="left-menu fullscreen-menu">
+      <aside class="left-menu fullscreen-menu" [class.menu-open]="leftMenuOpen">
         <div class="menu-header">
+          <!-- Botão de Fechar (Mobile) -->
+          <button 
+            class="menu-close-button mobile-only"
+            (click)="toggleLeftMenu()"
+            aria-label="Fechar menu">
+            <mat-icon>close</mat-icon>
+          </button>
           <button 
             *ngIf="backRoute"
             mat-icon-button 
@@ -175,6 +226,21 @@
       <!-- Área de Conteúdo Central (Fullscreen) -->
       <main class="fullscreen-content-area">
         <div class="fullscreen-header">
+          <!-- Botões de Menu Mobile (Fullscreen) -->
+          <div class="mobile-menu-buttons fullscreen-mobile-buttons" *ngIf="!isLoading">
+            <button 
+              class="btn-mobile-menu"
+              (click)="toggleLeftMenu()"
+              aria-label="Abrir menu de arquivos">
+              <mat-icon>menu</mat-icon>
+            </button>
+            <button 
+              class="btn-mobile-menu"
+              (click)="toggleRightMenu()"
+              aria-label="Abrir menu de índice">
+              <mat-icon>list</mat-icon>
+            </button>
+          </div>
           <h3>{{ selectedFile?.title || 'Conteúdo' }} - Modo Tela Cheia</h3>
           <button 
             class="btn-close-fullscreen"
@@ -198,8 +264,15 @@
       </main>
 
       <!-- Menu Lateral Direito - Índice (Fullscreen) -->
-      <aside class="right-menu fullscreen-menu">
+      <aside class="right-menu fullscreen-menu" [class.menu-open]="rightMenuOpen">
         <div class="menu-header">
+          <!-- Botão de Fechar (Mobile) -->
+          <button 
+            class="menu-close-button mobile-only"
+            (click)="toggleRightMenu()"
+            aria-label="Fechar menu">
+            <mat-icon>close</mat-icon>
+          </button>
           <!-- Espaço reservado para manter consistência visual -->
         </div>
         <div class="menu-content">

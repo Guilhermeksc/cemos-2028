@@ -1,194 +1,153 @@
 .main-container {
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
 
-    .table-container {
-        width: 100%;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+.conceitos-list {
+  width: 100%;
+}
 
-    .conceitos-table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 1rem;
-        
-        // Definir largura das colunas
-        .titulo-cell {
-            width: 35%;
-            padding: 1rem;
-            vertical-align: top;
-        }
-        
-        .descricao-cell {
-            width: 65%;
-            padding: 1rem;
-            vertical-align: top;
-        }
-        
-        .header-cell {
-            padding: 1rem;
-        }
-    }
+// Estado vazio
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #9e9e9e;
 
-    /* Título em vermelho e negrito (aplica na tabela desktop) */
-    .titulo-content {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .empty-icon {
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
 
-    .titulo-text {
-        color: #c62828; /* vermelho mais fechado */
-        font-weight: 700;
-        font-size: 1.1rem;
-        line-height: 1.4;
-    }
+  .empty-message {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
 
-    .titulo-meta {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        margin-top: 0.25rem;
-    }
+// Lista de cards
+.conceitos-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-    .palavra-chave-meta {
-        color: #666;
-        font-size: 0.9rem;
-        font-weight: 400;
-        font-style: italic;
-    }
+.conceito-card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
 
-    .assunto-meta {
-        color: #666;
-        font-size: 0.85rem;
-        font-weight: 400;
-    }
+  &:last-child {
+    border-bottom: none;
+  }
 
-    /* Descrição: permitir quebra de linha e evitar overflow na tabela */
-    .descricao-text {
-        white-space: normal; /* permitir múltiplas linhas */
-        word-break: break-word; /* quebrar palavras longas quando necessário */
-        overflow-wrap: anywhere;
-        margin: 0; /* remover margem padrão de p */
-        line-height: 1.6; /* aumenta o espaçamento entre linhas */
-        margin-bottom: 0.5rem; /* espaço visual após a descrição */
-    }
+  &:hover {
+    background-color: #fafafa;
+  }
+}
 
-    .header-cell {
-        font-weight: 600;
-        background: #f5f5f5;
-        padding: 1rem;
-    }
+.conceito-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
 
-    .table-row {
-        transition: background 0.2s;
-    }
+// Título em vermelho e negrito
+.titulo-text {
+  color: #c62828;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+}
 
-    .table-row:hover {
-        background: #f9f9f9;
-    }
+// Meta informações (palavra-chave e assunto)
+.titulo-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
 
-    .conceitos-cards-mobile {
-        display: none;
-    }
+.palavra-chave-meta {
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
+}
 
-    // Mobile styles
-    @media (max-width: 700px) {
-        .d-desktop {
-            display: none !important;
-        }
-        .conceitos-cards-mobile {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-            margin-top: 0.5rem;
-        }
-        .conceito-card-mobile {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 1rem 1.2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.7rem;
-        }
-        .conceito-card-content {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        .conceito-field {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.4rem; /* aumenta espaço entre campos para melhor leitura */
-            font-size: 1rem;
-        }
-        .conceito-label {
-            font-weight: 600;
-            color: #3a3a3a;
-            margin-bottom: 0.1rem;
-        }
-        .conceito-value {
-            color: #222;
-            word-break: break-word;
-            
-            .titulo-text {
-                color: #c62828;
-                font-weight: 700;
-                font-size: 1.05rem;
-                margin-bottom: 0.4rem;
-            }
-            
-            .titulo-meta {
-                display: flex;
-                flex-direction: column;
-                gap: 0.2rem;
-                margin-top: 0.3rem;
-            }
-            
-            .palavra-chave-meta {
-                color: #666;
-                font-size: 0.9rem;
-                font-weight: 400;
-                font-style: italic;
-            }
-            
-            .assunto-meta {
-                color: #666;
-                font-size: 0.85rem;
-                font-weight: 400;
-            }
-        }
-        .prova-chip-mobile {
-            display: inline-flex;
-            align-items: center;
-            background: #e3f2fd;
-            color: #1976d2;
-            border-radius: 16px;
-            padding: 0.2rem 0.7rem;
-            font-size: 0.95em;
-            font-weight: 500;
-            gap: 0.3em;
-        }
-        .prova-chip-confirmada {
-            background: #c8e6c9;
-            color: #388e3c;
-        }
-        .prova-chip-pendente {
-            background: #ffe0b2;
-            color: #f57c00;
-        }
-        .no-prova-icon {
-            color: #aaa;
-            font-size: 1.2em;
-            vertical-align: middle;
-        }
-    }
+.assunto-meta {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
 
-    // Responsivo para padding
-    @media (max-width: 768px) {
-        // Estilos responsivos da tabela podem ser adicionados aqui se necessário
-    }
+// Descrição
+.descricao-content {
+  margin-top: 0.5rem;
+}
+
+.descricao-text {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  margin: 0;
+  line-height: 1.7;
+  color: #333;
+  font-size: 1rem;
+}
+
+.no-descricao {
+  margin-top: 0.5rem;
+}
+
+.no-descricao-text {
+  color: #999;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+// Responsivo
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 1rem;
+  }
+
+  .conceitos-list {
+    padding: 0;
+  }
+
+  .conceito-card {
+    padding: 1.25rem 0;
+  }
+
+  .titulo-text {
+    font-size: 1.1rem;
+  }
+
+  .titulo-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .palavra-chave-meta,
+  .assunto-meta {
+    font-size: 0.9rem;
+  }
+
+  .descricao-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }
