@@ -2,13 +2,16 @@
 
 ## Página 121
 
-9.1 - PREMISSAS PARA DESIGNAÇÃO DO OBJETIVO
-A Designação do Objetivo é baseada nas seguintes premissas, conforme o art. 57 do
-Protocolo Adicional I às Convenções de Genebra de 12 de agosto de 1949:
-“1. Na conduta das operações militares um cuidado constante deve ser tomado para
-preservar a população civil, as pessoas civis e os bens de caráter civil.
+## 9.1 - PREMISSAS PARA DESIGNAÇÃO DO OBJETIVO
+
+A Designação do Objetivo é baseada nas seguintes premissas, conforme o art. 57 do Protocolo Adicional I às Convenções de Genebra de 12 de agosto de 1949:
+
+“1. Na conduta das operações militares um cuidado constante deve ser tomado para preservar a população civil, as pessoas civis e os bens de caráter civil.
+
 2. Com respeito aos ataques, as seguintes precauções deverão ser tomadas:
+
 a) aqueles que planejem ou decidam um ataque deverão:
+
 i) fazer tudo que seja possível para verificar que os objetivos que se planeja atacar
 não são pessoas civis nem bens de caráter civil, nem gozam proteção especial, que
 se trata de objetivos militares no sentido do parágrafo 2 do Artigo 52 e que não é
