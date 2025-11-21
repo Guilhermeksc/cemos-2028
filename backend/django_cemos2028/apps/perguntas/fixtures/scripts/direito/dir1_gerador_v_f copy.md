@@ -1,6 +1,6 @@
 Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.md  para criar um banco de questões v ou f, do seguinte modo:
 
-    Criar 30 novas questões uma versão verdadeira e uma falsa coerente (invertendo o sentido ou alterando um conceito-chave).
+    Criar 3 novas questões v ou f por página da página 23, 24, 25, 26, 27 e 28  uma versão verdadeira e uma falsa coerente (invertendo o sentido ou alterando um conceito-chave).
 
     Preencher todas as colunas da tabela no formato indicado abaixo.
 

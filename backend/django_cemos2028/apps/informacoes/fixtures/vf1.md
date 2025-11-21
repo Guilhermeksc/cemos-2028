@@ -1,10 +1,5 @@
-import pandas as pd
-
-# texto copiado do markdown entre aspas triplas
-texto_md = """
-bibliografia_titulo	paginas	assunto	afirmacao_verdadeira	afirmacao_falsa justificativa_resposta_certa caiu_em_prova ano_prova
-| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | EMA-135 – Direito do Mar | Pág 11 | Cap. 1 - Divisões Legais dos oceanos e do espaço aéreo | A Convenção das Nações Unidas sobre o Direito do Mar (CNUDM) foi disponibilizada para assinatura em 1982 e entrou em vigor em 16 de novembro de 1994, definindo direitos e deveres dos Estados quanto aos espaços marítimos. | A Convenção das Nações Unidas sobre o Direito do Mar (CNUDM) foi disponibilizada para assinatura em 1994 e entrou em vigor imediatamente, apenas definindo as fronteiras terrestres dos Estados. | A CNUDM foi disponibilizada para assinatura em 1982 e entrou em vigor em 16 de novembro de 1994, definindo os direitos e deveres dos Estados quanto aos espaços marítimos. |
 | EMA-135 – Direito do Mar | Pág 11 | Cap. 1 - Divisões Legais dos oceanos e do espaço aéreo | Entre as conquistas da CNUDM com implicações militares diretas, destacam-se os conceitos de Mar Territorial (MT), Zona Contígua (ZC), Zona Econômica Exclusiva (ZEE) e Plataforma Continental (PC). | As conquistas da CNUDM com implicações militares diretas limitam-se à definição de navegação em estreitos, excluindo os conceitos de Mar Territorial, Zona Contígua, Zona Econômica Exclusiva e Plataforma Continental. | Os conceitos de Mar Territorial, Zona Contígua, Zona Econômica Exclusiva e Plataforma Continental são conquistas da Convenção com implicações militares diretas. |
 | EMA-135 – Direito do Mar | Pág 11 | Cap. 1 - Divisões Legais dos oceanos e do espaço aéreo | O conceito de Área se refere ao leito do mar, aos fundos marinhos e ao seu subsolo além dos limites de jurisdição nacional. | O conceito de Área, definido pela CNUDM, abrange exclusivamente o espaço aéreo sobrejacente ao alto-mar e as águas interiores dos Estados. | Área significa o leito do mar, os fundos marinhos, e o seu subsolo além dos limites de jurisdição nacional, conforme o artigo 1° da CNUDM. |
@@ -35,32 +30,3 @@ bibliografia_titulo	paginas	assunto	afirmacao_verdadeira	afirmacao_falsa justifi
 | EMA-135 – Direito do Mar | Pág 22 | Cap. 1 - Divisões Legais dos oceanos e do espaço aéreo | A Zona Contígua (ZC) se estende até **doze milhas náuticas (MN) além do limite exterior do Mar Territorial (MT)**, permitindo ao Estado costeiro adotar medidas de fiscalização contra infrações aduaneiras, fiscais, de imigração ou sanitárias. | A Zona Contígua (ZC) se estende por 24 MN a partir das linhas de base, e o Estado costeiro só pode fiscalizar infrações aduaneiras, sendo proibido intervir em questões fiscais ou sanitárias. | A ZC tem 12 MN além do MT (totalizando 24 MN das linhas de base) e o Estado exerce fiscalização para evitar/reprimir infrações aduaneiras, fiscais, de imigração ou sanitárias. |
 | EMA-135 – Direito do Mar | Pág 22 | Cap. 1 - Divisões Legais dos oceanos e do espaço aéreo | A Zona Econômica Exclusiva (ZEE) não deve se estender além de **duzentas milhas náuticas (MN)** das linhas de base, e nela qualquer Estado goza da liberdade de navegação e sobrevoo. | A Zona Econômica Exclusiva (ZEE) se estende até 350 MN das linhas de base, e nela o Estado costeiro pode proibir a navegação e o sobrevoo de outras nações sem seu consentimento. | A ZEE se estende no máximo até 200 MN das linhas de base, e nela vigora a liberdade de navegação e sobrevoo para outros Estados. |
 | EMA-135 – Direito do Mar | Pág 23 | Cap. 1 - Divisões Legais dos oceanos e do espaço aéreo | Na ZEE, o Estado costeiro tem direito de soberania para fins de exploração e aproveitamento, conservação e gestão dos recursos naturais, vivos ou não vivos, incluindo a produção de energia derivada da água, das correntes e dos ventos. | Na ZEE, a soberania do Estado costeiro abrange apenas os recursos vivos da massa líquida, sendo os recursos do leito e subsolo e a produção de energia eólica de domínio internacional. | O Estado costeiro exerce soberania na ZEE sobre recursos naturais vivos e não vivos, no leito, subsolo e águas sobrejacentes, além da produção de energia (água, correntes, ventos). |
-"""  # (adicione o restante se quiser)
-
-
-# 1) filtrar apenas linhas que começam com "|"
-linhas = [l for l in texto_md.splitlines() if l.strip().startswith("|")]
-
-# 2) remover linha de formatação ":---"
-linhas = [l for l in linhas if ":---" not in l]
-
-# 3) limpar espaços e pipes nas bordas e dividir corretamente
-def parse_linha(linha):
-    linha = linha.strip().strip("|")
-    partes = [c.strip() for c in linha.split("|")]
-    return partes
-
-dados = [parse_linha(l) for l in linhas]
-
-# 4) primeira linha = header
-header = dados[0]
-linhas_data = dados[1:]
-
-# 5) criar DataFrame
-df = pd.DataFrame(linhas_data, columns=header)
-
-
-# 5) Exporta para Excel
-df.to_excel("conceitos_economia_azul.xlsx", index=False)
-
-print("Arquivo gerado: conceitos_economia_azul.xlsx")
