@@ -1,6 +1,8 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, OnChanges, SimpleChanges, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Router } from '@angular/router';
 import { PerguntasService } from '../../services/perguntas.service';
 import { 
@@ -57,6 +59,8 @@ type TabType = 'completo' | 'vf' | 'multipla' | 'correlacao';
   imports: [
     CommonModule, 
     FormsModule, 
+    MatIconModule,
+    MatProgressSpinnerModule,
     PerguntaVFComponent, 
     PerguntaMultiplaComponent, 
     PerguntaCorrelacaoComponent
@@ -80,6 +84,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   selectedBibliografias: number[] = [];
   isLoading = false;
   isLoadingBibliografias = false;
+  isGeneratingPDF: boolean = false;
   
   // Filtros de bibliografia e assunto
   selectedBibliografiaId: number | null = null;
@@ -1352,6 +1357,639 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     if (this.bibliografiaPath) {
       this.router.navigate([this.bibliografiaPath]);
     }
+  }
+
+  /**
+   * Converte as questões do simulado para PDF pesquisável e faz o download
+   */
+  async downloadAsPDF() {
+    if (this.simuladoQuestions.length === 0) {
+      return;
+    }
+
+    this.isGeneratingPDF = true;
+
+    try {
+      await this.downloadAsPDFSearchable();
+    } catch (error) {
+      console.error('❌ Erro ao gerar PDF pesquisável:', error);
+      alert('Erro ao gerar PDF. Por favor, tente novamente.');
+    } finally {
+      this.isGeneratingPDF = false;
+    }
+  }
+
+  /**
+   * Gera PDF pesquisável com as questões e respostas
+   */
+  private async downloadAsPDFSearchable() {
+    if (this.simuladoQuestions.length === 0) {
+      return;
+    }
+
+    const jsPDF = (await import('jspdf')).default;
+    const pdf = new jsPDF('p', 'mm', 'a4');
+    
+    // Configurações de página
+    const pageWidth = 210; // A4 width in mm
+    const pageHeight = 297; // A4 height in mm
+    const margin = 15; // Margem reduzida
+    const maxWidth = pageWidth - (margin * 2);
+    let y = margin;
+    
+    // Remove emojis
+    const removeEmojis = (text: string): string => {
+      if (!text) return '';
+      return text
+        .replace(/[\u{1F300}-\u{1F9FF}]/gu, '')
+        .replace(/[\u{1F600}-\u{1F64F}]/gu, '')
+        .replace(/[\u{1F680}-\u{1F6FF}]/gu, '')
+        .replace(/[\u{2600}-\u{26FF}]/gu, '')
+        .replace(/[\u{2700}-\u{27BF}]/gu, '')
+        .replace(/[\u{1F900}-\u{1F9FF}]/gu, '')
+        .replace(/[\u{1FA00}-\u{1FAFF}]/gu, '')
+        .replace(/[\u{FE00}-\u{FE0F}]/gu, '')
+        .replace(/[\u{200D}]/gu, '')
+        .replace(/[\u{FE0F}]/gu, '')
+        .replace(/[ \t]+/g, ' ');
+    };
+    
+    // Interface para representar texto com estilo
+    interface TextSegment {
+      text: string;
+      bold: boolean;
+    }
+    
+    // Extrai texto com estilos de uma string (processa markdown básico: *texto* e **texto**)
+    const extractTextWithStyles = (text: string): TextSegment[] => {
+      if (!text) return [];
+      
+      const segments: TextSegment[] = [];
+      // Usa regex para encontrar padrões **texto** e *texto* (não greedy)
+      // Processa **texto** primeiro para evitar conflitos com *texto*
+      let processed = text;
+      
+      // Substitui **texto** por placeholder temporário
+      processed = processed.replace(/\*\*([^*]+)\*\*/g, (match, content) => {
+        return `__BOLD_DOUBLE__${content}__BOLD_DOUBLE_END__`;
+      });
+      
+      // Depois processa *texto* (que não está dentro de **)
+      processed = processed.replace(/\*([^*]+)\*/g, (match, content) => {
+        // Verifica se não está dentro de um placeholder de negrito duplo
+        if (!match.includes('__BOLD_DOUBLE__')) {
+          return `__BOLD_SINGLE__${content}__BOLD_SINGLE_END__`;
+        }
+        return match;
+      });
+      
+      // Agora divide o texto processado em segmentos
+      const parts = processed.split(/(__BOLD_DOUBLE__.*?__BOLD_DOUBLE_END__|__BOLD_SINGLE__.*?__BOLD_SINGLE_END__)/g);
+      
+      parts.forEach(part => {
+        if (!part) return;
+        
+        if (part.startsWith('__BOLD_DOUBLE__') && part.endsWith('__BOLD_DOUBLE_END__')) {
+          const content = part.replace('__BOLD_DOUBLE__', '').replace('__BOLD_DOUBLE_END__', '');
+          segments.push({ text: removeEmojis(content), bold: true });
+        } else if (part.startsWith('__BOLD_SINGLE__') && part.endsWith('__BOLD_SINGLE_END__')) {
+          const content = part.replace('__BOLD_SINGLE__', '').replace('__BOLD_SINGLE_END__', '');
+          segments.push({ text: removeEmojis(content), bold: true });
+        } else if (part.length > 0) {
+          segments.push({ text: removeEmojis(part), bold: false });
+        }
+      });
+      
+      return segments.length > 0 ? segments : [{ text: removeEmojis(text), bold: false }];
+    };
+    
+    // Renderiza texto com estilos em uma linha
+    const renderStyledText = (segments: TextSegment[], x: number, yPos: number, maxLineWidth: number, fontSize: number): number => {
+      let currentY = yPos;
+      const lineHeight = fontSize * 0.4;
+      
+      // Processa cada segmento, respeitando quebras de linha
+      segments.forEach(segment => {
+        // Divide por quebras de linha primeiro
+        const lines = segment.text.split('\n');
+        
+        lines.forEach((line, lineIndex) => {
+          // Se não é a primeira linha, renderiza a linha atual e pula para próxima
+          if (lineIndex > 0) {
+            currentY += lineHeight;
+            // Verifica se precisa de nova página
+            if (currentY + lineHeight > pageHeight - margin) {
+              pdf.addPage();
+              currentY = margin;
+            }
+          }
+          
+          if (!line || line.trim().length === 0) {
+            return; // Linha vazia, apenas pula
+          }
+          
+          // Processa palavras da linha
+          const parts = line.split(/(\s+)/);
+          const words: Array<{text: string, bold: boolean}> = [];
+          
+          parts.forEach(part => {
+            if (part && !/^\s+$/.test(part)) {
+              words.push({ text: part, bold: segment.bold });
+            }
+          });
+          
+          if (words.length === 0) {
+            return;
+          }
+          
+          // Agrupa palavras em linhas que cabem no espaço disponível
+          let lineWords: Array<{text: string, bold: boolean}> = [];
+          let lineWidth = 0;
+          const spaceWidth = pdf.getTextWidth(' ');
+          
+          words.forEach((word) => {
+            pdf.setFontSize(fontSize);
+            pdf.setFont('helvetica', word.bold ? 'bold' : 'normal');
+            
+            const wordWidth = pdf.getTextWidth(word.text);
+            const newLineWidth = lineWidth + (lineWords.length > 0 ? spaceWidth : 0) + wordWidth;
+            
+            // Se a palavra não cabe na linha atual, renderiza a linha anterior
+            if (newLineWidth > maxLineWidth && lineWords.length > 0) {
+              // Renderiza linha atual
+              if (currentY + lineHeight > pageHeight - margin) {
+                pdf.addPage();
+                currentY = margin;
+              }
+              
+              let xPos = x;
+              lineWords.forEach((w, idx) => {
+                pdf.setFontSize(fontSize);
+                pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
+                pdf.text(w.text, xPos, currentY);
+                xPos += pdf.getTextWidth(w.text);
+                if (idx < lineWords.length - 1) {
+                  xPos += spaceWidth;
+                }
+              });
+              currentY += lineHeight;
+              
+              // Inicia nova linha com a palavra atual
+              lineWords = [word];
+              lineWidth = wordWidth;
+            } else {
+              lineWords.push(word);
+              lineWidth = newLineWidth;
+            }
+          });
+          
+          // Renderiza a última linha se houver palavras
+          if (lineWords.length > 0) {
+            if (currentY + lineHeight > pageHeight - margin) {
+              pdf.addPage();
+              currentY = margin;
+            }
+            
+            let xPos = x;
+            lineWords.forEach((w, idx) => {
+              pdf.setFontSize(fontSize);
+              pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
+              pdf.text(w.text, xPos, currentY);
+              xPos += pdf.getTextWidth(w.text);
+              if (idx < lineWords.length - 1) {
+                xPos += spaceWidth;
+              }
+            });
+            currentY += lineHeight;
+          }
+        });
+      });
+      
+      return currentY;
+    };
+    
+    // Título do documento
+    pdf.setFontSize(14); // Reduzido de 18
+    pdf.setFont('helvetica', 'bold');
+    const tabNames: { [key: string]: string } = {
+      'completo': 'Simulado Completo',
+      'vf': 'Verdadeiro/Falso',
+      'multipla': 'Múltipla Escolha',
+      'correlacao': 'Correlação'
+    };
+    const title = removeEmojis(tabNames[this.activeTab] || 'Prova');
+    pdf.text(title, margin, y);
+    y += 6; // Reduzido de 10
+    
+    // Informações da prova
+    pdf.setFontSize(8); // Reduzido de 10
+    pdf.setFont('helvetica', 'normal');
+    const totalQuestions = this.simuladoQuestions.length;
+    const answeredQuestions = this.getTotalAnsweredQuestions();
+    const correctAnswers = this.getTotalCorrectAnswers();
+    const scorePercentage = this.getScorePercentage();
+    
+    let infoText = `Total de questões: ${totalQuestions}`;
+    if (answeredQuestions > 0) {
+      infoText += ` | Respondidas: ${answeredQuestions} | Acertos: ${correctAnswers} | Performance: ${scorePercentage.toFixed(1)}%`;
+    }
+    pdf.text(infoText, margin, y);
+    y += 5; // Reduzido de 8
+    
+    // Linha separadora
+    y += 1; // Reduzido de 2
+    pdf.setDrawColor(0, 0, 0);
+    pdf.setLineWidth(0.3); // Reduzido de 0.5
+    pdf.line(margin, y, pageWidth - margin, y);
+    y += 5; // Reduzido de 8
+    
+    // ========== PARTE 1: QUESTÕES ==========
+    pdf.setFontSize(12); // Reduzido de 16
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('QUESTÕES', margin, y);
+    y += 6; // Reduzido de 10
+    
+    this.simuladoQuestions.forEach((question, index) => {
+      // Verifica se precisa de nova página
+      if (y + 20 > pageHeight - margin) {
+        pdf.addPage();
+        y = margin;
+      }
+      
+      // Número e tipo da questão
+      pdf.setFontSize(10); // Reduzido de 12
+      pdf.setFont('helvetica', 'bold');
+      const tipoNome = question.tipo === 'vf' ? 'Verdadeiro/Falso' : 
+                       question.tipo === 'multipla' ? 'Múltipla Escolha' : 
+                       'Correlação';
+      const questaoHeader = `Questão ${index + 1} - ${tipoNome}`;
+      pdf.text(questaoHeader, margin, y);
+      y += 5; // Reduzido de 7
+      
+      // Bibliografia e páginas
+      if (question.bibliografia_titulo || question.paginas) {
+        pdf.setFontSize(7); // Reduzido de 9
+        pdf.setFont('helvetica', 'italic');
+        let metaText = '';
+        if (question.bibliografia_titulo) {
+          metaText += removeEmojis(question.bibliografia_titulo);
+        }
+        if (question.paginas) {
+          if (metaText) metaText += ' | ';
+          metaText += removeEmojis(question.paginas);
+        }
+        if (metaText) {
+          pdf.text(metaText, margin, y);
+          y += 4; // Reduzido de 5
+        }
+      }
+      
+      // Pergunta (com formatação markdown)
+      pdf.setFontSize(9); // Reduzido de 11
+      const perguntaSegments = extractTextWithStyles(question.pergunta);
+      if (perguntaSegments.length > 0) {
+        y = renderStyledText(perguntaSegments, margin, y, maxWidth, 9);
+      } else {
+        // Fallback para texto simples
+        pdf.setFont('helvetica', 'normal');
+        const perguntaText = removeEmojis(question.pergunta);
+        const perguntaLines = pdf.splitTextToSize(perguntaText, maxWidth);
+        perguntaLines.forEach((line: string) => {
+          if (y + 5 > pageHeight - margin) {
+            pdf.addPage();
+            y = margin;
+          }
+          pdf.text(line, margin, y);
+          y += 5;
+        });
+      }
+      
+      // Opções/Alternativas baseado no tipo
+      y += 2; // Reduzido de 3
+      pdf.setFontSize(8); // Reduzido de 10
+      
+      if (question.tipo === 'vf') {
+        const vfData = question.data as PerguntaVF;
+        const afirmacao = vfData.afirmacao_sorteada || vfData.afirmacao_verdadeira || '';
+        // Processa formatação markdown na afirmação
+        const afirmacaoSegments = extractTextWithStyles(afirmacao);
+        if (afirmacaoSegments.length > 0) {
+          y = renderStyledText(afirmacaoSegments, margin + 5, y, maxWidth - 10, 8);
+        } else {
+          // Fallback para texto simples
+          pdf.setFont('helvetica', 'normal');
+          const afirmacaoText = removeEmojis(afirmacao);
+          const afirmacaoLines = pdf.splitTextToSize(afirmacaoText, maxWidth - 10);
+          afirmacaoLines.forEach((line: string) => {
+            if (y + 4 > pageHeight - margin) {
+              pdf.addPage();
+              y = margin;
+            }
+            pdf.text(`  ${line}`, margin + 5, y);
+            y += 4;
+          });
+        }
+        y += 1; // Reduzido de 2
+        pdf.setFont('helvetica', 'normal');
+        pdf.text('  ( ) Verdadeiro    ( ) Falso', margin + 5, y);
+        y += 4; // Reduzido de 5
+      } else if (question.tipo === 'multipla') {
+        const multiplaData = question.data as PerguntaMultipla;
+        const alternativas = [
+          { key: 'a', text: multiplaData.alternativa_a },
+          { key: 'b', text: multiplaData.alternativa_b },
+          { key: 'c', text: multiplaData.alternativa_c },
+          { key: 'd', text: multiplaData.alternativa_d }
+        ];
+        alternativas.forEach((alt) => {
+          // Processa formatação markdown na alternativa
+          const altSegments = extractTextWithStyles(alt.text);
+          if (altSegments.length > 0) {
+            // Adiciona prefixo da alternativa ao primeiro segmento
+            const firstSegment = altSegments[0];
+            firstSegment.text = `${alt.key}) ${firstSegment.text}`;
+            y = renderStyledText(altSegments, margin + 5, y, maxWidth - 15, 8);
+            y += 1; // Espaço entre alternativas
+          } else {
+            // Fallback para texto simples
+            pdf.setFont('helvetica', 'normal');
+            const altText = removeEmojis(alt.text);
+            const altLines = pdf.splitTextToSize(altText, maxWidth - 15);
+            altLines.forEach((line: string, lineIndex: number) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              const prefix = lineIndex === 0 ? `  ${alt.key}) ` : '      ';
+              pdf.text(prefix + line, margin + 5, y);
+              y += 4;
+            });
+            y += 1; // Espaço entre alternativas
+          }
+        });
+        y += 1; // Reduzido de 2
+      } else if (question.tipo === 'correlacao') {
+        const correlacaoData = question.data as PerguntaCorrelacao;
+        if (correlacaoData.coluna_a && correlacaoData.coluna_b) {
+          pdf.text('  Coluna A:', margin + 5, y);
+          y += 4; // Reduzido de 6
+          correlacaoData.coluna_a.forEach((item, idx) => {
+            // Processa formatação markdown no item
+            const itemSegments = extractTextWithStyles(item);
+            if (itemSegments.length > 0) {
+              // Adiciona prefixo do item ao primeiro segmento
+              const firstSegment = itemSegments[0];
+              firstSegment.text = `${idx + 1}. ${firstSegment.text}`;
+              y = renderStyledText(itemSegments, margin + 5, y, maxWidth - 20, 8);
+            } else {
+              // Fallback para texto simples
+              pdf.setFont('helvetica', 'normal');
+              const itemText = removeEmojis(item);
+              const itemLines = pdf.splitTextToSize(itemText, maxWidth - 20);
+              itemLines.forEach((line: string, lineIndex: number) => {
+                if (y + 4 > pageHeight - margin) {
+                  pdf.addPage();
+                  y = margin;
+                }
+                const prefix = lineIndex === 0 ? `    ${idx + 1}. ` : '        ';
+                pdf.text(prefix + line, margin + 5, y);
+                y += 4;
+              });
+            }
+          });
+          y += 2; // Reduzido de 3
+          pdf.setFont('helvetica', 'normal');
+          pdf.text('  Coluna B:', margin + 5, y);
+          y += 4; // Reduzido de 6
+          correlacaoData.coluna_b.forEach((item, idx) => {
+            // Processa formatação markdown no item
+            const itemSegments = extractTextWithStyles(item);
+            if (itemSegments.length > 0) {
+              // Adiciona prefixo do item ao primeiro segmento
+              const firstSegment = itemSegments[0];
+              firstSegment.text = `${String.fromCharCode(65 + idx)}. ${firstSegment.text}`;
+              y = renderStyledText(itemSegments, margin + 5, y, maxWidth - 20, 8);
+            } else {
+              // Fallback para texto simples
+              pdf.setFont('helvetica', 'normal');
+              const itemText = removeEmojis(item);
+              const itemLines = pdf.splitTextToSize(itemText, maxWidth - 20);
+              itemLines.forEach((line: string, lineIndex: number) => {
+                if (y + 4 > pageHeight - margin) {
+                  pdf.addPage();
+                  y = margin;
+                }
+                const prefix = lineIndex === 0 ? `    ${String.fromCharCode(65 + idx)}. ` : '        ';
+                pdf.text(prefix + line, margin + 5, y);
+                y += 4;
+              });
+            }
+          });
+          y += 2; // Reduzido de 3
+          pdf.text('  Associe os itens da Coluna A com os da Coluna B:', margin + 5, y);
+          y += 4; // Reduzido de 5
+        }
+      }
+      
+      // Espaço entre questões
+      y += 5; // Reduzido de 8
+      
+      // Linha separadora entre questões (exceto na última)
+      if (index < this.simuladoQuestions.length - 1) {
+        pdf.setDrawColor(200, 200, 200);
+        pdf.setLineWidth(0.15); // Reduzido de 0.2
+        pdf.line(margin, y - 3, pageWidth - margin, y - 3);
+        y += 1; // Reduzido de 2
+      }
+    });
+    
+    // ========== PARTE 2: GABARITO/RESPOSTAS ==========
+    // Nova página para o gabarito
+    pdf.addPage();
+    y = margin;
+    
+    pdf.setFontSize(12); // Reduzido de 16
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('GABARITO', margin, y);
+    y += 6; // Reduzido de 10
+    
+    this.simuladoQuestions.forEach((question, index) => {
+      // Verifica se precisa de nova página
+      if (y + 15 > pageHeight - margin) {
+        pdf.addPage();
+        y = margin;
+      }
+      
+      // Número da questão
+      pdf.setFontSize(10); // Reduzido de 12
+      pdf.setFont('helvetica', 'bold');
+      pdf.text(`Questão ${index + 1}:`, margin, y);
+      y += 5; // Reduzido de 7
+      
+      // Resposta correta baseado no tipo
+      pdf.setFontSize(8); // Reduzido de 10
+      pdf.setFont('helvetica', 'normal');
+      
+      if (question.tipo === 'vf') {
+        const vfData = question.data as PerguntaVF;
+        const respostaCorreta = vfData.afirmacao_sorteada_eh_verdadeira ? 'Verdadeiro' : 'Falso';
+        pdf.text(`  Resposta correta: ${respostaCorreta}`, margin + 5, y);
+        y += 4; // Reduzido de 6
+        
+        // Justificativa se houver (com formatação markdown)
+        if (vfData.justificativa_resposta_certa) {
+          pdf.setFont('helvetica', 'italic');
+          pdf.text('  Justificativa:', margin + 5, y);
+          y += 4; // Reduzido de 5
+          const justificativaSegments = extractTextWithStyles(vfData.justificativa_resposta_certa);
+          if (justificativaSegments.length > 0) {
+            y = renderStyledText(justificativaSegments, margin + 5, y, maxWidth - 10, 8);
+          } else {
+            // Fallback para texto simples
+            pdf.setFont('helvetica', 'normal');
+            const justificativaText = removeEmojis(vfData.justificativa_resposta_certa);
+            const justificativaLines = pdf.splitTextToSize(justificativaText, maxWidth - 10);
+            justificativaLines.forEach((line: string) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(`    ${line}`, margin + 5, y);
+              y += 4;
+            });
+          }
+        }
+      } else if (question.tipo === 'multipla') {
+        const multiplaData = question.data as PerguntaMultipla;
+        pdf.text(`  Resposta correta: ${multiplaData.resposta_correta}`, margin + 5, y);
+        y += 4; // Reduzido de 6
+        
+        // Mostrar alternativa correta completa (com formatação markdown)
+        const alternativasMap: { [key: string]: string } = {
+          'a': multiplaData.alternativa_a,
+          'b': multiplaData.alternativa_b,
+          'c': multiplaData.alternativa_c,
+          'd': multiplaData.alternativa_d
+        };
+        if (alternativasMap[multiplaData.resposta_correta]) {
+          const altCorretaSegments = extractTextWithStyles(alternativasMap[multiplaData.resposta_correta]);
+          if (altCorretaSegments.length > 0) {
+            // Adiciona prefixo da alternativa ao primeiro segmento
+            const firstSegment = altCorretaSegments[0];
+            firstSegment.text = `${multiplaData.resposta_correta}) ${firstSegment.text}`;
+            y = renderStyledText(altCorretaSegments, margin + 5, y, maxWidth - 10, 8);
+          } else {
+            // Fallback para texto simples
+            pdf.setFont('helvetica', 'normal');
+            const altCorreta = removeEmojis(alternativasMap[multiplaData.resposta_correta]);
+            pdf.text(`  ${multiplaData.resposta_correta}) ${altCorreta}`, margin + 5, y);
+            y += 4;
+          }
+        }
+        
+        // Justificativa se houver (com formatação markdown)
+        if (multiplaData.justificativa_resposta_certa) {
+          pdf.setFont('helvetica', 'italic');
+          pdf.text('  Justificativa:', margin + 5, y);
+          y += 4; // Reduzido de 5
+          const justificativaSegments = extractTextWithStyles(multiplaData.justificativa_resposta_certa);
+          if (justificativaSegments.length > 0) {
+            y = renderStyledText(justificativaSegments, margin + 5, y, maxWidth - 10, 8);
+          } else {
+            // Fallback para texto simples
+            pdf.setFont('helvetica', 'normal');
+            const justificativaText = removeEmojis(multiplaData.justificativa_resposta_certa);
+            const justificativaLines = pdf.splitTextToSize(justificativaText, maxWidth - 10);
+            justificativaLines.forEach((line: string) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(`    ${line}`, margin + 5, y);
+              y += 4;
+            });
+          }
+        }
+      } else if (question.tipo === 'correlacao') {
+        const correlacaoData = question.data as PerguntaCorrelacao;
+        pdf.text('  Resposta correta:', margin + 5, y);
+        y += 4; // Reduzido de 6
+        
+        // Mostrar correlações corretas (com formatação markdown)
+        if (correlacaoData.resposta_correta && correlacaoData.coluna_a && correlacaoData.coluna_b) {
+          Object.keys(correlacaoData.resposta_correta).sort().forEach((key) => {
+            const itemIndex = parseInt(key);
+            const letterIndex = parseInt(correlacaoData.resposta_correta[key]);
+            const itemA = correlacaoData.coluna_a[itemIndex];
+            const itemB = correlacaoData.coluna_b[letterIndex];
+            
+            // Processa formatação markdown nos itens
+            const itemASegments = extractTextWithStyles(itemA);
+            const itemBSegments = extractTextWithStyles(itemB);
+            
+            // Cria texto da resposta com formatação
+            const prefix = `${itemIndex + 1} - ${String.fromCharCode(65 + letterIndex)}: `;
+            const respostaSegments: TextSegment[] = [
+              { text: prefix, bold: false },
+              ...itemASegments,
+              { text: ' → ', bold: false },
+              ...itemBSegments
+            ];
+            
+            y = renderStyledText(respostaSegments, margin + 5, y, maxWidth - 10, 8);
+          });
+        }
+        
+        // Justificativa se houver (com formatação markdown)
+        if (correlacaoData.justificativa_resposta_certa) {
+          y += 1; // Reduzido de 2
+          pdf.setFont('helvetica', 'italic');
+          pdf.text('  Justificativa:', margin + 5, y);
+          y += 4; // Reduzido de 5
+          const justificativaSegments = extractTextWithStyles(correlacaoData.justificativa_resposta_certa);
+          if (justificativaSegments.length > 0) {
+            y = renderStyledText(justificativaSegments, margin + 5, y, maxWidth - 10, 8);
+          } else {
+            // Fallback para texto simples
+            pdf.setFont('helvetica', 'normal');
+            const justificativaText = removeEmojis(correlacaoData.justificativa_resposta_certa);
+            const justificativaLines = pdf.splitTextToSize(justificativaText, maxWidth - 10);
+            justificativaLines.forEach((line: string) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(`    ${line}`, margin + 5, y);
+              y += 4;
+            });
+          }
+        }
+      }
+      
+      // Espaço entre respostas
+      y += 3; // Reduzido de 5
+    });
+    
+    // Função para remover acentos e caracteres especiais
+    const removeAccents = (str: string): string => {
+      return str
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s-]/gi, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+        .toLowerCase();
+    };
+    
+    // Gera o nome do arquivo
+    const tabName = removeAccents(tabNames[this.activeTab] || 'prova');
+    const fileName = `${tabName}-${new Date().toISOString().split('T')[0]}.pdf`;
+    
+    // Faz o download
+    pdf.save(fileName);
+    
+    console.log('✅ PDF pesquisável gerado com sucesso:', fileName);
   }
 }
 

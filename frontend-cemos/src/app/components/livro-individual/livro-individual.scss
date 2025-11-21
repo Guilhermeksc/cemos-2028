@@ -68,6 +68,46 @@
       }
     }
 
+    .fullscreen-button {
+      transition: all 0.2s ease;
+      background-color: transparent;
+
+      &:hover:not(:disabled) {
+        background-color: rgba(33, 150, 243, 0.08);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      mat-icon {
+        color: #2196f3;
+      }
+    }
+
+    .pdf-button {
+      transition: all 0.2s ease;
+      background-color: transparent;
+
+      &:hover:not(:disabled) {
+        background-color: rgba(244, 67, 54, 0.08);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      mat-icon {
+        color: #f44336;
+      }
+
+      mat-spinner {
+        margin: 0 auto;
+      }
+    }
+
     .menu-toggle-button {
       transition: all 0.2s ease;
       background-color: transparent;
@@ -935,6 +975,12 @@ body.livro-fullscreen-active {
 
 .mobile-only {
   @media (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @media (max-width: 768px) {
     display: none !important;
   }
 }

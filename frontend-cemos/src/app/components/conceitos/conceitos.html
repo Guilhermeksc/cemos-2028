@@ -101,6 +101,15 @@
           🖥️ Tela Cheia
         </button>
         
+        <button 
+          class="btn btn-pdf"
+          (click)="downloadAsPDF()"
+          [disabled]="filteredConceitos.length === 0 || isGeneratingPDF">
+          <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
+          <mat-spinner *ngIf="isGeneratingPDF" diameter="16"></mat-spinner>
+          {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
+        </button>
+        
         <button class="btn btn-outline" (click)="resetFilters()" [disabled]="!selectedBibliografiaId && !selectedAssunto">✖️ Limpar Filtros</button>
       </div>
     </div>
@@ -160,6 +169,17 @@
           <div class="filter-group filter-group-button">
             <label>&nbsp;</label>
             <button 
+              class="btn btn-pdf" 
+              (click)="downloadAsPDF()" 
+              [disabled]="filteredConceitos.length === 0 || isGeneratingPDF">
+              <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
+              <mat-spinner *ngIf="isGeneratingPDF" diameter="16"></mat-spinner>
+              {{ isGeneratingPDF ? 'Gerando...' : '📄 PDF' }}
+            </button>
+          </div>
+          <div class="filter-group filter-group-button">
+            <label>&nbsp;</label>
+            <button 
               class="btn btn-outline" 
               (click)="resetFilters()" 
               [disabled]="!selectedBibliografiaId && !selectedAssunto">
@@ -179,6 +199,14 @@
       </div>
       
       <div class="fullscreen-actions">
+        <button 
+          class="btn btn-pdf"
+          (click)="downloadAsPDF()"
+          [disabled]="filteredConceitos.length === 0 || isGeneratingPDF">
+          <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
+          <mat-spinner *ngIf="isGeneratingPDF" diameter="16"></mat-spinner>
+          {{ isGeneratingPDF ? 'Gerando PDF...' : '📄 Salvar PDF' }}
+        </button>
         <button 
           class="btn btn-outline"
           (click)="exitFullscreen()">

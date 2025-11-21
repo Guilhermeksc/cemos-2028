@@ -62,6 +62,7 @@ export class LivroIndividualService {
     const stack: { level: number; heading: MarkdownHeading }[] = [];
 
     lines.forEach((line, index) => {
+      // Regex consistente com markdownToHtml - captura #, ## ou ### seguido de espaço(s) e título
       const match = line.match(/^(#{1,3})\s+(.+)$/);
       if (match) {
         const level = match[1].length;
@@ -118,9 +119,11 @@ export class LivroIndividualService {
     let html = '';
 
     // Primeiro, processar headers com IDs consistentes
+    // IMPORTANTE: Processa na mesma ordem e com os mesmos índices que parseMarkdownHeadings
     lines.forEach((line, index) => {
       // Headers com IDs para scroll (usa o mesmo índice do parseMarkdownHeadings)
-      const h3Match = line.match(/^### (.+)$/);
+      // Regex mais flexível para capturar headings com espaços opcionais após #
+      const h3Match = line.match(/^###\s+(.+)$/);
       if (h3Match) {
         const title = h3Match[1].trim();
         const id = this.generateId(title, index);
@@ -128,7 +131,7 @@ export class LivroIndividualService {
         return;
       }
 
-      const h2Match = line.match(/^## (.+)$/);
+      const h2Match = line.match(/^##\s+(.+)$/);
       if (h2Match) {
         const title = h2Match[1].trim();
         const id = this.generateId(title, index);
@@ -136,7 +139,7 @@ export class LivroIndividualService {
         return;
       }
 
-      const h1Match = line.match(/^# (.+)$/);
+      const h1Match = line.match(/^#\s+(.+)$/);
       if (h1Match) {
         const title = h1Match[1].trim();
         const id = this.generateId(title, index);

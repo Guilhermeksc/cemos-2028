@@ -1,4 +1,5 @@
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin
 from .models import (
     PresidentesModel,
     FilosofosModel,
@@ -6,6 +7,7 @@ from .models import (
     ConceitosModel,
     HiperlinksModel
 )
+from .resources import ConceitosResource
 
 
 @admin.register(PresidentesModel)
@@ -71,7 +73,8 @@ class CronologiaAdmin(admin.ModelAdmin):
 
 
 @admin.register(ConceitosModel)
-class ConceitosAdmin(admin.ModelAdmin):
+class ConceitosAdmin(ImportExportModelAdmin):
+    resource_class = ConceitosResource
     list_display = ['titulo', 'palavra_chave', 'assunto', 'bibliografia', 'caiu_em_prova', 'ano_prova']
     list_filter = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'palavra_chave', 'assunto']
     search_fields = ['titulo', 'palavra_chave', 'assunto', 'descricao']

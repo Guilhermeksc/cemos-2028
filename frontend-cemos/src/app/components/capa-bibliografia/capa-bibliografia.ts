@@ -56,6 +56,11 @@ export class CapaBibliografia implements OnInit {
   
   // Modo de operação: 'single' (uma capa com markdown) ou 'multiple' (várias capas clicáveis)
   displayMode: 'single' | 'multiple' = 'single';
+  
+  // Tooltip customizado que segue o mouse
+  showTooltipFlag: boolean = false;
+  tooltipX: number = 0;
+  tooltipY: number = 0;
 
   constructor(
     private livroService: LivroIndividualService,
@@ -194,5 +199,32 @@ export class CapaBibliografia implements OnInit {
     console.error('Erro ao carregar imagem:', imagePath);
     const img = event.target as HTMLImageElement;
     img.style.display = 'none';
+  }
+
+  /**
+   * Mostra o tooltip ao passar o mouse sobre a capa
+   */
+  showTooltip(event: MouseEvent) {
+    this.showTooltipFlag = true;
+    this.moveTooltip(event);
+  }
+
+  /**
+   * Esconde o tooltip ao sair do mouse da capa
+   */
+  hideTooltip() {
+    this.showTooltipFlag = false;
+  }
+
+  /**
+   * Move o tooltip seguindo o cursor do mouse
+   */
+  moveTooltip(event: MouseEvent) {
+    // Offset para posicionar o tooltip ao lado do cursor
+    const offsetX = 15;
+    const offsetY = 15;
+    
+    this.tooltipX = event.clientX + offsetX;
+    this.tooltipY = event.clientY + offsetY;
   }
 }

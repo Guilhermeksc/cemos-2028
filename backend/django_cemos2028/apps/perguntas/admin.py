@@ -1,4 +1,5 @@
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin
 from .models import (
     BibliografiaModel, 
     FlashCardsModel,
@@ -6,10 +7,18 @@ from .models import (
     PerguntaVFModel, 
     PerguntaCorrelacaoModel
 )
+from .resources import (
+    BibliografiaResource,
+    FlashCardsResource,
+    PerguntaMultiplaResource,
+    PerguntaVFResource,
+    PerguntaCorrelacaoResource
+)
 
 
 @admin.register(BibliografiaModel)
-class BibliografiaAdmin(admin.ModelAdmin):
+class BibliografiaAdmin(ImportExportModelAdmin):
+    resource_class = BibliografiaResource
     list_display = ['id', 'titulo', 'autor', 'materia']
     list_filter = ['materia']
     search_fields = ['titulo', 'autor', 'materia', 'descricao']
@@ -26,7 +35,8 @@ class BibliografiaAdmin(admin.ModelAdmin):
     )
 
 @admin.register(FlashCardsModel)
-class FlashCardsAdmin(admin.ModelAdmin):
+class FlashCardsAdmin(ImportExportModelAdmin):
+    resource_class = FlashCardsResource
     list_display = ['__str__', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano']
     list_filter = ['bibliografia', 'assunto', 'prova', 'ano']
     search_fields = ['pergunta', 'resposta', 'assunto', 'bibliografia__titulo']
@@ -42,7 +52,8 @@ class FlashCardsAdmin(admin.ModelAdmin):
     )
 
 @admin.register(PerguntaMultiplaModel)
-class PerguntaMultiplaAdmin(admin.ModelAdmin):
+class PerguntaMultiplaAdmin(ImportExportModelAdmin):
+    resource_class = PerguntaMultiplaResource
     list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
     list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia', 'assunto']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto']
@@ -65,7 +76,8 @@ class PerguntaMultiplaAdmin(admin.ModelAdmin):
 
 
 @admin.register(PerguntaVFModel)
-class PerguntaVFAdmin(admin.ModelAdmin):
+class PerguntaVFAdmin(ImportExportModelAdmin):
+    resource_class = PerguntaVFResource
     list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova']
     list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'assunto']
     search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto', 'bibliografia__titulo', 'justificativa_resposta_certa']
@@ -89,7 +101,8 @@ class PerguntaVFAdmin(admin.ModelAdmin):
 
 
 @admin.register(PerguntaCorrelacaoModel)
-class PerguntaCorrelacaoAdmin(admin.ModelAdmin):
+class PerguntaCorrelacaoAdmin(ImportExportModelAdmin):
+    resource_class = PerguntaCorrelacaoResource
     list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova']
     list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'assunto']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto']

@@ -138,13 +138,23 @@
         </div>
       </div>
       
-      <button 
-        class="btn btn-secondary gerar-nova-prova-btn"
-        (click)="gerarNovaProva()"
-        [disabled]="isLoadingQuestions"
-      >
-        🔄 Gerar Nova Prova
-      </button>
+      <div class="prova-actions">
+        <button 
+          class="btn btn-pdf"
+          (click)="downloadAsPDF()"
+          [disabled]="simuladoQuestions.length === 0 || isGeneratingPDF">
+          <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
+          <mat-spinner *ngIf="isGeneratingPDF" diameter="16"></mat-spinner>
+          {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
+        </button>
+        <button 
+          class="btn btn-secondary gerar-nova-prova-btn"
+          (click)="gerarNovaProva()"
+          [disabled]="isLoadingQuestions"
+        >
+          🔄 Gerar Nova Prova
+        </button>
+      </div>
     </div>
 
     <!-- Lista de Questões -->

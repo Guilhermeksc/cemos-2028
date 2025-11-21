@@ -242,6 +242,15 @@
   margin-bottom: 15px;
   border: 1px solid var(--geopolitica-border);
   background: var(--geopolitica-light-gray);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.prova-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .prova-info h2 {
@@ -318,6 +327,44 @@
   background: var(--geopolitica-light-gray);
   border-color: var(--geopolitica-border-dark);
   color: var(--geopolitica-dark-text);
+}
+
+.btn-pdf {
+  background: white;
+  color: #000;
+  border: 2px solid #000;
+  padding: 6px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  mat-icon {
+    font-size: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  mat-spinner {
+    display: inline-block;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: #000;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* Lista de Questões */
@@ -991,6 +1038,17 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+
+  .prova-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+
+    .btn-pdf,
+    .gerar-nova-prova-btn {
+      width: 100%;
+    }
   }
   
   .prova-stats {

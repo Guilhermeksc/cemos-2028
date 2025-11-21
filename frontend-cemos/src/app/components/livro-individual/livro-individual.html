@@ -30,6 +30,31 @@
         aria-label="Voltar">
         <mat-icon>arrow_back</mat-icon>
       </button>
+      <!-- Botão de Tela Cheia (Desktop) -->
+      <button 
+        *ngIf="selectedFile"
+        mat-icon-button 
+        class="fullscreen-button desktop-only"
+        (click)="openFullscreen()"
+        [disabled]="!selectedFile"
+        [matTooltip]="'Tela Cheia'"
+        matTooltipPosition="right"
+        aria-label="Tela Cheia">
+        <mat-icon>fullscreen</mat-icon>
+      </button>
+      <!-- Botão de Download PDF (Desktop) -->
+      <button 
+        *ngIf="selectedFile"
+        mat-icon-button 
+        class="pdf-button desktop-only"
+        (click)="downloadAsPDF()"
+        [disabled]="!selectedFile || isGeneratingPDF"
+        [matTooltip]="'Baixar como PDF'"
+        matTooltipPosition="right"
+        aria-label="Baixar como PDF">
+        <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
+        <mat-spinner *ngIf="isGeneratingPDF" diameter="20"></mat-spinner>
+      </button>
     </div>
 
     <!-- Conteúdo do Menu Esquerdo -->
@@ -204,6 +229,31 @@
             aria-label="Voltar">
             <mat-icon>arrow_back</mat-icon>
           </button>
+          <!-- Botão de Tela Cheia (Desktop) -->
+          <button 
+            *ngIf="selectedFile"
+            mat-icon-button 
+            class="fullscreen-button desktop-only"
+            (click)="openFullscreen()"
+            [disabled]="!selectedFile"
+            [matTooltip]="'Tela Cheia'"
+            matTooltipPosition="right"
+            aria-label="Tela Cheia">
+            <mat-icon>fullscreen</mat-icon>
+          </button>
+          <!-- Botão de Download PDF (Desktop) -->
+          <button 
+            *ngIf="selectedFile"
+            mat-icon-button 
+            class="pdf-button desktop-only"
+            (click)="downloadAsPDF()"
+            [disabled]="!selectedFile || isGeneratingPDF"
+            [matTooltip]="'Baixar como PDF'"
+            matTooltipPosition="right"
+            aria-label="Baixar como PDF">
+            <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
+            <mat-spinner *ngIf="isGeneratingPDF" diameter="20"></mat-spinner>
+          </button>
         </div>
         <div class="menu-content">
           <div class="menu-title-container">
@@ -241,7 +291,7 @@
               <mat-icon>list</mat-icon>
             </button>
           </div>
-          <h3>{{ selectedFile?.title || 'Conteúdo' }} - Modo Tela Cheia</h3>
+          <h3>{{ selectedFile?.title || 'Conteúdo' }}</h3>
           <button 
             class="btn-close-fullscreen"
             (click)="exitFullscreen()"
@@ -254,13 +304,7 @@
           <div class="content-wrapper" [innerHTML]="htmlContent"></div>
         </div>
         
-        <div class="fullscreen-actions">
-          <button 
-            class="btn btn-outline"
-            (click)="exitFullscreen()">
-            ✖️ Fechar (ESC)
-          </button>
-        </div>
+
       </main>
 
       <!-- Menu Lateral Direito - Índice (Fullscreen) -->

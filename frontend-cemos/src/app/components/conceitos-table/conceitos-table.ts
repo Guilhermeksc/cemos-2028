@@ -41,8 +41,9 @@ export class ConceitosTableComponent {
 
   /**
    * Processa a descrição convertendo texto entre asteriscos (*texto*) em negrito
+   * e preservando quebras de linha
    * @param descricao Texto da descrição
-   * @returns HTML seguro com texto em negrito onde houver asteriscos
+   * @returns HTML seguro com texto em negrito onde houver asteriscos e quebras de linha preservadas
    */
   formatDescricao(descricao: string): SafeHtml {
     if (!descricao) return this.sanitizer.bypassSecurityTrustHtml('');
@@ -55,9 +56,12 @@ export class ConceitosTableComponent {
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#039;');
     
+    // Converte quebras de linha (\n) em <br>
+    const withLineBreaks = escaped.replace(/\n/g, '<br>');
+    
     // Converte *texto* em <strong>texto</strong>
     // Usa regex para encontrar padrões *texto* (não greedy para evitar conflitos)
-    const formatted = escaped.replace(/\*([^*]+)\*/g, '<strong>$1</strong>');
+    const formatted = withLineBreaks.replace(/\*([^*]+)\*/g, '<strong>$1</strong>');
     
     return this.sanitizer.bypassSecurityTrustHtml(formatted);
   }

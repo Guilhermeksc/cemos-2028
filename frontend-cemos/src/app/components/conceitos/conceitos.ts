@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Conceitos as ConceitosInterface } from '../../interfaces/informacoes.interface';
 import { Bibliografia } from '../../interfaces/perguntas.interface';
 import { InformacoesService } from '../../services/informacoes.service';
@@ -16,7 +17,7 @@ import { takeUntil } from 'rxjs/operators';
 @Component({
   selector: 'app-conceitos',
   standalone: true,
-  imports: [CommonModule, FormsModule, ConceitosTableComponent, MatButtonModule, MatIconModule],
+  imports: [CommonModule, FormsModule, ConceitosTableComponent, MatButtonModule, MatIconModule, MatProgressSpinnerModule],
   templateUrl: './conceitos.html',
   styleUrls: ['./conceitos.scss']
 })
@@ -46,6 +47,7 @@ export class ConceitosComponent implements OnInit, OnDestroy {
   loading: boolean = false;
   error: string | null = null;
   isFullscreen = false;
+  isGeneratingPDF: boolean = false;
 
   // Router injection using functional `inject` (same approach used in flash-cards.ts)
   private router = inject(Router);
@@ -531,5 +533,384 @@ export class ConceitosComponent implements OnInit, OnDestroy {
    */
   exitFullscreen() {
     this.closeFullscreen();
+  }
+
+  /**
+   * Converte os conceitos filtrados para PDF pesquisável e faz o download
+   */
+  async downloadAsPDF() {
+    if (this.filteredConceitos.length === 0) {
+      return;
+    }
+
+    this.isGeneratingPDF = true;
+
+    try {
+      await this.downloadAsPDFSearchable();
+    } catch (error) {
+      console.error('❌ Erro ao gerar PDF pesquisável:', error);
+      alert('Erro ao gerar PDF. Por favor, tente novamente.');
+    } finally {
+      this.isGeneratingPDF = false;
+    }
+  }
+
+  /**
+   * Gera PDF pesquisável com os conceitos filtrados
+   * Preserva estilos (negrito) e trata emojis corretamente
+   */
+  private async downloadAsPDFSearchable() {
+    if (this.filteredConceitos.length === 0) {
+      return;
+    }
+
+    const jsPDF = (await import('jspdf')).default;
+    const pdf = new jsPDF('p', 'mm', 'a4');
+    
+    // Configurações de página
+    const pageWidth = 210; // A4 width in mm
+    const pageHeight = 297; // A4 height in mm
+    const margin = 15; // Margem reduzida para usar mais espaço
+    const maxWidth = pageWidth - (margin * 2);
+    let y = margin;
+    
+    // Interface para representar texto com estilo
+    interface TextSegment {
+      text: string;
+      bold: boolean;
+      italic: boolean;
+    }
+    
+    // Remove emojis e caracteres especiais problemáticos do texto
+    const removeEmojis = (text: string): string => {
+      let cleaned = text
+        .replace(/[\u{1F300}-\u{1F9FF}]/gu, '')
+        .replace(/[\u{1F600}-\u{1F64F}]/gu, '')
+        .replace(/[\u{1F680}-\u{1F6FF}]/gu, '')
+        .replace(/[\u{2600}-\u{26FF}]/gu, '')
+        .replace(/[\u{2700}-\u{27BF}]/gu, '')
+        .replace(/[\u{1F900}-\u{1F9FF}]/gu, '')
+        .replace(/[\u{1FA00}-\u{1FAFF}]/gu, '')
+        .replace(/[\u{FE00}-\u{FE0F}]/gu, '')
+        .replace(/[\u{200D}]/gu, '')
+        .replace(/[\u{FE0F}]/gu, '');
+      
+      cleaned = cleaned.replace(/[ \t]+/g, ' ');
+      return cleaned;
+    };
+    
+    // Extrai texto com estilos de uma string (processa markdown básico)
+    const extractTextWithStyles = (text: string): TextSegment[] => {
+      if (!text) return [];
+      
+      const segments: TextSegment[] = [];
+      // Processa *texto* para negrito (não greedy para evitar conflitos)
+      // Primeiro, preserva quebras de linha substituindo temporariamente
+      const textWithPlaceholders = text.replace(/\n/g, ' \n ');
+      const parts = textWithPlaceholders.split(/(\*[^*]+\*)/g);
+      
+      parts.forEach(part => {
+        if (!part) return;
+        
+        // Restaura quebras de linha
+        const partWithBreaks = part.replace(/ \n /g, '\n');
+        
+        const boldMatch = partWithBreaks.match(/^\*(.+)\*$/);
+        if (boldMatch) {
+          const cleanText = removeEmojis(boldMatch[1]);
+          if (cleanText.trim().length > 0 || cleanText.includes('\n')) {
+            segments.push({ text: cleanText, bold: true, italic: false });
+          }
+        } else {
+          const cleanText = removeEmojis(partWithBreaks);
+          if (cleanText.trim().length > 0 || cleanText.includes('\n')) {
+            segments.push({ text: cleanText, bold: false, italic: false });
+          }
+        }
+      });
+      
+      return segments;
+    };
+    
+    // Renderiza texto com estilos em uma linha
+    const renderStyledText = (segments: TextSegment[], x: number, yPos: number, maxLineWidth: number, fontSize: number = 9): number => {
+      let currentX = x;
+      let currentY = yPos;
+      const lineHeight = fontSize * 0.4;
+      
+      // Coleta todas as palavras de todos os segmentos, respeitando quebras de linha
+      const allWords: Array<{text: string, bold: boolean, italic: boolean, isNewLine?: boolean}> = [];
+      
+      segments.forEach(segment => {
+        // Divide por quebras de linha primeiro
+        const lines = segment.text.split('\n');
+        lines.forEach((line, lineIndex) => {
+          if (lineIndex > 0) {
+            // Adiciona marcador de quebra de linha
+            allWords.push({ text: '', bold: segment.bold, italic: segment.italic, isNewLine: true });
+          }
+          
+          // Processa palavras da linha
+          const parts = line.split(/(\s+)/);
+          parts.forEach(part => {
+            if (part && !/^\s+$/.test(part)) {
+              allWords.push({ text: part, bold: segment.bold, italic: segment.italic, isNewLine: false });
+            }
+          });
+        });
+      });
+      
+      if (allWords.length === 0) {
+        return currentY;
+      }
+      
+      // Processa palavras linha por linha
+      let lineWords: Array<{text: string, bold: boolean, italic: boolean}> = [];
+      let lineWidth = 0;
+      const spaceWidth = pdf.getTextWidth(' ');
+      
+      const renderLine = (words: Array<{text: string, bold: boolean, italic: boolean}>) => {
+        if (words.length === 0) return;
+        
+        // Verifica se precisa de nova página
+        if (currentY + lineHeight > pageHeight - margin) {
+          pdf.addPage();
+          currentY = margin;
+        }
+        
+        // Renderiza palavras
+        let xPos = x;
+        words.forEach((word, index) => {
+          pdf.setFontSize(fontSize);
+          if (word.bold && word.italic) {
+            pdf.setFont('helvetica', 'bolditalic');
+          } else if (word.bold) {
+            pdf.setFont('helvetica', 'bold');
+          } else if (word.italic) {
+            pdf.setFont('helvetica', 'italic');
+          } else {
+            pdf.setFont('helvetica', 'normal');
+          }
+          
+          try {
+            pdf.text(word.text, xPos, currentY);
+            xPos += pdf.getTextWidth(word.text);
+            
+            // Adiciona espaço entre palavras (exceto após a última palavra)
+            if (index < words.length - 1) {
+              xPos += spaceWidth;
+            }
+          } catch (e) {
+            console.warn('Erro ao renderizar palavra:', word.text, e);
+          }
+        });
+        
+        currentY += lineHeight;
+      };
+      
+      // Agrupa palavras em linhas
+      allWords.forEach((word) => {
+        // Se for uma quebra de linha explícita, renderiza a linha atual e inicia nova
+        if (word.isNewLine) {
+          if (lineWords.length > 0) {
+            renderLine(lineWords);
+            lineWords = [];
+            lineWidth = 0;
+          }
+          return;
+        }
+        
+        pdf.setFontSize(fontSize);
+        if (word.bold && word.italic) {
+          pdf.setFont('helvetica', 'bolditalic');
+        } else if (word.bold) {
+          pdf.setFont('helvetica', 'bold');
+        } else if (word.italic) {
+          pdf.setFont('helvetica', 'italic');
+        } else {
+          pdf.setFont('helvetica', 'normal');
+        }
+        
+        const wordWidth = pdf.getTextWidth(word.text);
+        const newLineWidth = lineWidth + (lineWords.length > 0 ? spaceWidth : 0) + wordWidth;
+        
+        // Se a palavra não cabe na linha atual, renderiza a linha anterior
+        if (newLineWidth > maxLineWidth && lineWords.length > 0) {
+          renderLine(lineWords);
+          lineWords = [word];
+          lineWidth = wordWidth;
+        } else {
+          lineWords.push(word);
+          lineWidth = newLineWidth;
+        }
+      });
+      
+      // Renderiza a última linha
+      if (lineWords.length > 0) {
+        renderLine(lineWords);
+      }
+      
+      return currentY;
+    };
+    
+    // Título do documento
+    pdf.setFontSize(14); // Reduzido de 18
+    pdf.setFont('helvetica', 'bold');
+    const title = this.moduleLabel || 'Conceitos';
+    const titleText = removeEmojis(title);
+    pdf.text(titleText, margin, y);
+    y += 6; // Reduzido de 10
+    
+    // Informações de filtros aplicados
+    if (this.selectedBibliografia || this.selectedAssunto) {
+      pdf.setFontSize(8); // Reduzido de 10
+      pdf.setFont('helvetica', 'normal');
+      let filterInfo = 'Filtros aplicados: ';
+      if (this.selectedBibliografia) {
+        filterInfo += `Bibliografia: ${removeEmojis(this.selectedBibliografia.titulo)}`;
+      }
+      if (this.selectedAssunto) {
+        if (this.selectedBibliografia) filterInfo += ' | ';
+        filterInfo += `Assunto: ${removeEmojis(this.selectedAssunto)}`;
+      }
+      pdf.text(filterInfo, margin, y);
+      y += 5; // Reduzido de 8
+    }
+    
+    // Linha separadora
+    y += 1; // Reduzido de 2
+    pdf.setDrawColor(0, 0, 0);
+    pdf.setLineWidth(0.3); // Reduzido de 0.5
+    pdf.line(margin, y, pageWidth - margin, y);
+    y += 4; // Reduzido de 5
+    
+    // Processa cada conceito
+    this.filteredConceitos.forEach((conceito, index) => {
+      // Verifica se precisa de nova página
+      if (y + 20 > pageHeight - margin) {
+        pdf.addPage();
+        y = margin;
+      }
+      
+      // Título do conceito (em negrito e vermelho simulado com fonte maior)
+      pdf.setFontSize(11); // Reduzido de 14
+      pdf.setFont('helvetica', 'bold');
+      const tituloText = removeEmojis(conceito.titulo);
+      const tituloLines = pdf.splitTextToSize(tituloText, maxWidth);
+      tituloLines.forEach((line: string) => {
+        if (y + 5 > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+        pdf.text(line, margin, y);
+        y += 5; // Reduzido de 6
+      });
+      
+      // Meta informações (palavra-chave e assunto)
+      if (conceito.palavra_chave || conceito.assunto) {
+        pdf.setFontSize(7); // Reduzido de 9
+        pdf.setFont('helvetica', 'italic');
+        let metaText = '';
+        if (conceito.palavra_chave) {
+          metaText += `(${removeEmojis(conceito.palavra_chave)})`;
+        }
+        if (conceito.assunto) {
+          if (metaText) metaText += ' ';
+          metaText += `Assunto: ${removeEmojis(conceito.assunto)}`;
+        }
+        if (metaText) {
+          if (y + 4 > pageHeight - margin) {
+            pdf.addPage();
+            y = margin;
+          }
+          pdf.text(metaText, margin, y);
+          y += 4; // Reduzido de 5
+        }
+      }
+      
+      // Descrição
+      if (conceito.descricao && conceito.descricao.trim().length > 0) {
+        pdf.setFontSize(9); // Reduzido de 11
+        pdf.setFont('helvetica', 'normal');
+        
+        // Processa a descrição preservando formatação markdown e quebras de linha
+        const segments = extractTextWithStyles(conceito.descricao);
+        
+        if (segments.length > 0) {
+          y = renderStyledText(segments, margin, y, maxWidth, 9); // Reduzido de 11
+        } else {
+          // Fallback para texto simples
+          const descricaoText = removeEmojis(conceito.descricao);
+          // Processa quebras de linha manualmente
+          const lines = descricaoText.split('\n');
+          lines.forEach((line: string) => {
+            if (line.trim().length === 0) {
+              y += 2; // Reduzido de 3 - Espaço para linha vazia
+              return;
+            }
+            const wrappedLines = pdf.splitTextToSize(line, maxWidth);
+            wrappedLines.forEach((wrappedLine: string) => {
+              if (y + 5 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(wrappedLine, margin, y);
+              y += 5; // Reduzido de 7
+            });
+          });
+        }
+      } else {
+        pdf.setFontSize(8); // Reduzido de 10
+        pdf.setFont('helvetica', 'italic');
+        pdf.setTextColor(150, 150, 150);
+        if (y + 4 > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+        pdf.text('Sem descrição', margin, y);
+        pdf.setTextColor(0, 0, 0);
+        y += 4; // Reduzido de 5
+      }
+      
+      // Espaço entre conceitos
+      y += 5; // Reduzido de 8
+      
+      // Linha separadora entre conceitos (exceto no último)
+      if (index < this.filteredConceitos.length - 1) {
+        pdf.setDrawColor(200, 200, 200);
+        pdf.setLineWidth(0.15); // Reduzido de 0.2
+        pdf.line(margin, y - 3, pageWidth - margin, y - 3);
+        y += 1; // Reduzido de 2
+      }
+    });
+    
+    // Função para remover acentos e caracteres especiais
+    const removeAccents = (str: string): string => {
+      return str
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s-]/gi, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+        .toLowerCase();
+    };
+    
+    // Gera o nome do arquivo
+    let fileName = 'conceitos';
+    if (this.selectedBibliografia) {
+      fileName = removeAccents(this.selectedBibliografia.titulo);
+    } else if (this.moduleLabel) {
+      fileName = removeAccents(this.moduleLabel);
+    }
+    if (this.selectedAssunto) {
+      fileName += '-' + removeAccents(this.selectedAssunto);
+    }
+    fileName += '.pdf';
+    
+    // Faz o download
+    pdf.save(fileName);
+    
+    console.log('✅ PDF pesquisável gerado com sucesso:', fileName);
   }
 }

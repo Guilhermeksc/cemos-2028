@@ -12,7 +12,7 @@
         <!-- Botões de navegação abaixo das imagens -->
     <div class="navigation-buttons" *ngIf="showNavigationButtons">
       <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
-        <mat-icon>arrow_back</mat-icon> Voltar ao Home
+        <mat-icon>arrow_back</mat-icon> Voltar à Página Principal
       </button>
       <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
         <mat-icon>category</mat-icon> Conceitos
@@ -27,11 +27,7 @@
         <mat-icon>quiz</mat-icon> Perguntas
       </button>
     </div>
-
-    <!-- Texto discreto de orientação -->
-    <div class="bibliografia-hint" *ngIf="displayMode === 'multiple' && capas?.length">
-      <small>Clique na bibliografia para acessar.</small>
-    </div>    
+    
     <!-- MODO MÚLTIPLAS CAPAS: Grid de capas clicáveis -->
     <div class="capas-grid" *ngIf="displayMode === 'multiple'">
       <div 
@@ -39,6 +35,9 @@
         class="capa-card"
         role="button"
         tabindex="0"
+        (mouseenter)="showTooltip($event)"
+        (mouseleave)="hideTooltip()"
+        (mousemove)="moveTooltip($event)"
         (click)="navigateToCapa(capa)"
         (keydown.enter)="navigateToCapa(capa)"
         (keydown.space)="navigateToCapa(capa)"
@@ -89,6 +88,15 @@
   <div class="no-content" *ngIf="!isLoading && !hasContent">
     <p>Nenhum conteúdo disponível</p>
     <p class="subtitle">Configure os caminhos de imagem e/ou markdown</p>
+  </div>
+
+  <!-- Tooltip customizado que segue o mouse -->
+  <div 
+    class="custom-tooltip" 
+    *ngIf="showTooltipFlag"
+    [style.left.px]="tooltipX"
+    [style.top.px]="tooltipY">
+    Clique para acessar o conteúdo.
   </div>
 
 </div>

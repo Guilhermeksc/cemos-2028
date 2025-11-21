@@ -1,6 +1,6 @@
 # Recursos de import/export
 from import_export import resources, fields
-from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget, TextFieldWidget
+from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget
 from .models import (
     BibliografiaModel, 
     FlashCardsModel,

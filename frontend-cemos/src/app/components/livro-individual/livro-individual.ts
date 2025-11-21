@@ -37,6 +37,7 @@ export class LivroIndividual implements OnInit, OnDestroy {
   isFullscreen: boolean = false;
   leftMenuOpen: boolean = false;
   rightMenuOpen: boolean = false;
+  isGeneratingPDF: boolean = false;
   
   markdownFiles: MarkdownFile[] = [];
   selectedFile: MarkdownFile | null = null;
@@ -157,6 +158,17 @@ export class LivroIndividual implements OnInit, OnDestroy {
     
     // Fecha menus no mobile após seleção
     this.closeMenusOnMobile();
+    
+    // Scroll para o topo quando trocar de arquivo
+    setTimeout(() => {
+      const scrollContainer = this.isFullscreen 
+        ? document.querySelector('.fullscreen-content') as HTMLElement
+        : document.querySelector('.content-area') as HTMLElement;
+      
+      if (scrollContainer) {
+        scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
+      }
+    }, 100);
   }
 
 
@@ -178,24 +190,133 @@ export class LivroIndividual implements OnInit, OnDestroy {
    * Navega para uma seção específica
    */
   scrollToSection(headingId: string) {
-    setTimeout(() => {
-      const element = document.getElementById(headingId);
-      const contentArea = document.querySelector('.content-area');
+    console.log('🔍 [scrollToSection] Iniciando scroll para:', headingId);
+    
+    // Função auxiliar para tentar fazer scroll
+    const attemptScroll = (retries: number = 0) => {
+      console.log(`🔍 [scrollToSection] Tentativa ${retries + 1}/10`);
       
-      if (element && contentArea) {
-        // Scroll dentro do container .content-area
-        const elementTop = element.offsetTop;
-        contentArea.scrollTo({
-          top: elementTop - 20, // 20px de offset
-          behavior: 'smooth'
-        });
-      } else if (element) {
-        // Fallback: scroll da página inteira
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        console.warn('Elemento não encontrado:', headingId);
+      // Busca o elemento pelo ID - tenta múltiplas formas
+      let element: HTMLElement | null = null;
+      
+      // 1. Busca globalmente
+      element = document.getElementById(headingId);
+      
+      // 2. Se não encontrou, busca dentro do content-wrapper
+      if (!element) {
+        const contentWrapper = document.querySelector('.content-wrapper');
+        if (contentWrapper) {
+          element = contentWrapper.querySelector(`#${headingId}`) as HTMLElement;
+        }
       }
-    }, 100);
+      
+      // 3. Se ainda não encontrou, busca por todos os headings e compara texto
+      if (!element) {
+        const allHeadings = document.querySelectorAll('h1, h2, h3');
+        allHeadings.forEach((h) => {
+          if (h.id === headingId) {
+            element = h as HTMLElement;
+          }
+        });
+      }
+      
+      if (!element) {
+        // Lista todos os IDs de headings disponíveis para debug
+        const allHeadings = document.querySelectorAll('h1[id], h2[id], h3[id]');
+        const headingIds = Array.from(allHeadings).map(h => ({ id: h.id, text: h.textContent?.substring(0, 50) }));
+        console.log('❌ [scrollToSection] Elemento não encontrado:', headingId);
+        console.log('📋 [scrollToSection] Headings disponíveis:', headingIds);
+        
+        if (retries < 10) {
+          setTimeout(() => attemptScroll(retries + 1), 200);
+          return;
+        }
+        console.error('❌ [scrollToSection] Falha após 10 tentativas:', headingId);
+        return;
+      }
+
+      console.log('✅ [scrollToSection] Elemento encontrado:', {
+        tag: element.tagName,
+        id: element.id,
+        text: element.textContent?.substring(0, 50)
+      });
+
+      // Encontra o container de scroll correto
+      // O scroll real está em .markdown-content (não em .content-area)
+      let scrollContainer: HTMLElement | null = null;
+      
+      if (this.isFullscreen) {
+        scrollContainer = document.querySelector('.fullscreen-content') as HTMLElement;
+      } else {
+        // Primeiro tenta encontrar .markdown-content (onde o scroll realmente acontece)
+        scrollContainer = document.querySelector('.markdown-content') as HTMLElement;
+        // Fallback para .content-area se não encontrar
+        if (!scrollContainer) {
+          scrollContainer = document.querySelector('.content-area') as HTMLElement;
+        }
+      }
+      
+      console.log('📦 [scrollToSection] Container encontrado:', {
+        isFullscreen: this.isFullscreen,
+        container: scrollContainer?.className,
+        scrollTop: scrollContainer?.scrollTop,
+        scrollHeight: scrollContainer?.scrollHeight,
+        clientHeight: scrollContainer?.clientHeight
+      });
+
+      if (!scrollContainer) {
+        console.warn('⚠️ [scrollToSection] Container não encontrado, usando scrollIntoView');
+        element.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+        return;
+      }
+
+      // Usa scrollIntoView com o container como referência
+      // Primeiro, temporariamente faz o elemento ser filho direto do container para scrollIntoView funcionar
+      // Mas na verdade, vamos usar uma abordagem diferente
+      
+      // Calcula usando getBoundingClientRect que é mais confiável
+      const containerRect = scrollContainer.getBoundingClientRect();
+      const elementRect = element.getBoundingClientRect();
+      
+      // Posição atual do scroll
+      const currentScrollTop = scrollContainer.scrollTop;
+      
+      // Distância do elemento até o topo visível do container
+      const distanceFromContainerTop = elementRect.top - containerRect.top;
+      
+      // Nova posição de scroll = posição atual + distância - offset
+      const offset = 30;
+      const newScrollTop = currentScrollTop + distanceFromContainerTop - offset;
+      
+      console.log('📊 [scrollToSection] Dados de scroll:', {
+        currentScrollTop,
+        distanceFromContainerTop,
+        newScrollTop,
+        containerScrollHeight: scrollContainer.scrollHeight,
+        containerClientHeight: scrollContainer.clientHeight,
+        elementRectTop: elementRect.top,
+        containerRectTop: containerRect.top
+      });
+      
+      // Garante que não ultrapasse os limites
+      const maxScroll = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+      const finalScrollTop = Math.max(0, Math.min(newScrollTop, maxScroll));
+      
+      // Faz o scroll
+      scrollContainer.scrollTo({
+        top: finalScrollTop,
+        behavior: 'smooth'
+      });
+      
+      console.log('✅ [scrollToSection] Scroll executado para:', finalScrollTop);
+    };
+
+    // Inicia após delay para garantir renderização
+    setTimeout(() => attemptScroll(), 300);
   }
 
   /**
@@ -266,18 +387,30 @@ export class LivroIndividual implements OnInit, OnDestroy {
   navigateToHeading(heading: MarkdownHeading, event?: Event) {
     if (event) {
       event.stopPropagation();
+      event.preventDefault();
     }
+    
+    console.log('🎯 Navegando para heading:', heading);
+    console.log('🎯 Heading ID:', heading.id);
+    console.log('🎯 Heading Title:', heading.title);
+    console.log('🎯 Heading Level:', heading.level);
     
     // Se tem filhos e está expandido, apenas colapsa
     if (heading.children && heading.children.length > 0 && this.isExpanded(heading)) {
       this.toggleHeading(heading);
+      // Mesmo ao colapsar, pode querer rolar para a seção
+      setTimeout(() => this.scrollToSection(heading.id), 100);
     } else if (heading.children && heading.children.length > 0 && !this.isExpanded(heading)) {
       // Se tem filhos e não está expandido, expande
       this.toggleHeading(heading);
       // Após expandir, rola para a seção
-      setTimeout(() => this.scrollToSection(heading.id), 100);
+      setTimeout(() => {
+        console.log('⏱️ Após expandir, fazendo scroll para:', heading.id);
+        this.scrollToSection(heading.id);
+      }, 300);
     } else {
       // Se não tem filhos, apenas rola
+      console.log('📌 Fazendo scroll direto para:', heading.id);
       this.scrollToSection(heading.id);
     }
     
@@ -551,5 +684,670 @@ export class LivroIndividual implements OnInit, OnDestroy {
    */
   isMobile(): boolean {
     return window.innerWidth <= 768;
+  }
+
+  /**
+   * Converte o conteúdo markdown para PDF pesquisável e faz o download
+   * Usa método que extrai texto do HTML para garantir que seja pesquisável
+   */
+  async downloadAsPDF() {
+    if (!this.selectedFile) {
+      return;
+    }
+
+    this.isGeneratingPDF = true;
+
+    try {
+      // Usa o método que gera PDF realmente pesquisável (com texto extraído)
+      await this.downloadAsPDFSearchable();
+    } catch (error) {
+      console.error('❌ Erro ao gerar PDF pesquisável:', error);
+      alert('Erro ao gerar PDF. Por favor, tente novamente.');
+    } finally {
+      this.isGeneratingPDF = false;
+    }
+  }
+
+  /**
+   * Gera PDF pesquisável extraindo texto e estrutura do HTML
+   * Preserva estilos inline (negrito, itálico) e trata emojis corretamente
+   */
+  private async downloadAsPDFSearchable() {
+    if (!this.selectedFile) {
+      return;
+    }
+
+    const jsPDF = (await import('jspdf')).default;
+    const pdf = new jsPDF('p', 'mm', 'a4');
+    
+    const contentWrapper = document.querySelector('.content-wrapper') as HTMLElement;
+    if (!contentWrapper) {
+      throw new Error('Elemento .content-wrapper não encontrado');
+    }
+
+    // Configurações de página
+    const pageWidth = 210; // A4 width in mm
+    const pageHeight = 297; // A4 height in mm
+    const margin = 20;
+    const maxWidth = pageWidth - (margin * 2);
+    let y = margin;
+    
+    // Interface para representar texto com estilo
+    interface TextSegment {
+      text: string;
+      bold: boolean;
+      italic: boolean;
+    }
+    
+    // Remove emojis e caracteres especiais problemáticos do texto, preservando espaços
+    const removeEmojis = (text: string): string => {
+      // Remove emojis usando regex Unicode, preservando espaços
+      // Inclui: emojis, símbolos, pictogramas, flags, etc.
+      let cleaned = text
+        .replace(/[\u{1F300}-\u{1F9FF}]/gu, '') // Emojis gerais
+        .replace(/[\u{1F600}-\u{1F64F}]/gu, '') // Emoticons
+        .replace(/[\u{1F680}-\u{1F6FF}]/gu, '') // Transporte e símbolos
+        .replace(/[\u{2600}-\u{26FF}]/gu, '') // Símbolos diversos
+        .replace(/[\u{2700}-\u{27BF}]/gu, '') // Dingbats
+        .replace(/[\u{1F900}-\u{1F9FF}]/gu, '') // Suplemento de emojis
+        .replace(/[\u{1FA00}-\u{1FAFF}]/gu, '') // Suplemento estendido
+        .replace(/[\u{FE00}-\u{FE0F}]/gu, '') // Variation selectors
+        .replace(/[\u{200D}]/gu, '') // Zero width joiner
+        .replace(/[\u{FE0F}]/gu, ''); // Variation selector-16
+      
+      // Normaliza múltiplos espaços consecutivos em um único espaço
+      // Mas preserva espaços entre palavras
+      cleaned = cleaned.replace(/[ \t]+/g, ' '); // Normaliza espaços e tabs
+      
+      return cleaned;
+    };
+    
+    // Extrai texto com estilos de um elemento
+    const extractTextWithStyles = (element: HTMLElement): TextSegment[] => {
+      const segments: TextSegment[] = [];
+      
+      const processNode = (node: Node, bold: boolean = false, italic: boolean = false) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const text = node.textContent || '';
+          if (text.length > 0) {
+            // Remove emojis preservando espaços
+            // Não fazemos trim() aqui para preservar espaços no início/fim que podem ser importantes
+            const cleanText = removeEmojis(text);
+            // Só adiciona se houver conteúdo (após remover emojis)
+            if (cleanText.trim().length > 0 || text.trim().length > 0) {
+              segments.push({ text: cleanText, bold, italic });
+            }
+          }
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          const el = node as HTMLElement;
+          const tagName = el.tagName.toLowerCase();
+          
+          let newBold = bold;
+          let newItalic = italic;
+          
+          if (tagName === 'strong' || tagName === 'b') {
+            newBold = true;
+          } else if (tagName === 'em' || tagName === 'i') {
+            newItalic = true;
+          }
+          // Ignora tags <u> (sublinhado) - jsPDF não suporta nativamente
+          
+          // Processa filhos
+          Array.from(el.childNodes).forEach(child => {
+            processNode(child, newBold, newItalic);
+          });
+        }
+      };
+      
+      Array.from(element.childNodes).forEach(node => processNode(node));
+      return segments;
+    };
+    
+    // Renderiza texto com estilos em uma linha, com justificação para parágrafos
+    const renderStyledText = (segments: TextSegment[], x: number, yPos: number, maxLineWidth: number, fontSize: number = 11, justify: boolean = true): number => {
+      let currentX = x;
+      let currentY = yPos;
+      const lineHeight = fontSize * 0.4;
+      
+      // Coleta todas as palavras de todos os segmentos para processar linha por linha
+      const allWords: Array<{text: string, bold: boolean, italic: boolean}> = [];
+      
+      segments.forEach(segment => {
+        const parts = segment.text.split(/(\s+)/);
+        parts.forEach(part => {
+          if (part && !/^\s+$/.test(part)) {
+            allWords.push({ text: part, bold: segment.bold, italic: segment.italic });
+          }
+        });
+      });
+      
+      if (allWords.length === 0) {
+        return currentY;
+      }
+      
+      // Processa palavras linha por linha com justificação
+      let lineWords: Array<{text: string, bold: boolean, italic: boolean}> = [];
+      let lineWidth = 0;
+      const spaceWidth = pdf.getTextWidth(' ');
+      
+      const renderLine = (words: Array<{text: string, bold: boolean, italic: boolean}>, isLastLine: boolean = false) => {
+        if (words.length === 0) return;
+        
+        // Verifica se precisa de nova página
+        if (currentY + lineHeight > pageHeight - margin) {
+          pdf.addPage();
+          currentY = margin;
+        }
+        
+        let totalWidth = 0;
+        words.forEach(w => {
+          pdf.setFontSize(fontSize);
+          if (w.bold && w.italic) {
+            pdf.setFont('helvetica', 'bolditalic');
+          } else if (w.bold) {
+            pdf.setFont('helvetica', 'bold');
+          } else if (w.italic) {
+            pdf.setFont('helvetica', 'italic');
+          } else {
+            pdf.setFont('helvetica', 'normal');
+          }
+          totalWidth += pdf.getTextWidth(w.text);
+        });
+        
+        // Calcula espaçamento entre palavras para justificação
+        const availableWidth = maxLineWidth;
+        const textWidth = totalWidth;
+        const spacesNeeded = words.length - 1;
+        let spaceBetweenWords = spaceWidth;
+        
+        // Justifica apenas se não for a última linha e houver mais de uma palavra
+        if (justify && !isLastLine && words.length > 1 && textWidth < availableWidth) {
+          spaceBetweenWords = (availableWidth - textWidth) / spacesNeeded;
+        }
+        
+        // Renderiza palavras com espaçamento calculado
+        let xPos = x;
+        words.forEach((word, index) => {
+          pdf.setFontSize(fontSize);
+          if (word.bold && word.italic) {
+            pdf.setFont('helvetica', 'bolditalic');
+          } else if (word.bold) {
+            pdf.setFont('helvetica', 'bold');
+          } else if (word.italic) {
+            pdf.setFont('helvetica', 'italic');
+          } else {
+            pdf.setFont('helvetica', 'normal');
+          }
+          
+          try {
+            pdf.text(word.text, xPos, currentY);
+            xPos += pdf.getTextWidth(word.text);
+            
+            // Adiciona espaço entre palavras (exceto após a última palavra)
+            if (index < words.length - 1) {
+              xPos += spaceBetweenWords;
+            }
+          } catch (e) {
+            console.warn('Erro ao renderizar palavra:', word.text, e);
+          }
+        });
+        
+        currentY += lineHeight;
+      };
+      
+      // Agrupa palavras em linhas
+      allWords.forEach((word, index) => {
+        pdf.setFontSize(fontSize);
+        if (word.bold && word.italic) {
+          pdf.setFont('helvetica', 'bolditalic');
+        } else if (word.bold) {
+          pdf.setFont('helvetica', 'bold');
+        } else if (word.italic) {
+          pdf.setFont('helvetica', 'italic');
+        } else {
+          pdf.setFont('helvetica', 'normal');
+        }
+        
+        const wordWidth = pdf.getTextWidth(word.text);
+        const newLineWidth = lineWidth + (lineWords.length > 0 ? spaceWidth : 0) + wordWidth;
+        
+        // Se a palavra não cabe na linha atual, renderiza a linha anterior
+        if (newLineWidth > maxLineWidth && lineWords.length > 0) {
+          renderLine(lineWords, false);
+          lineWords = [word];
+          lineWidth = wordWidth;
+        } else {
+          lineWords.push(word);
+          lineWidth = newLineWidth;
+        }
+      });
+      
+      // Renderiza a última linha (sem justificação)
+      if (lineWords.length > 0) {
+        renderLine(lineWords, true);
+      }
+      
+      return currentY;
+    };
+    
+    // Processa elementos de bloco
+    const processBlockElement = (element: HTMLElement, level: number = 0) => {
+      const children = Array.from(element.childNodes);
+      
+      children.forEach((node) => {
+        if (y + 10 > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+
+        if (node.nodeType === Node.TEXT_NODE) {
+          const text = node.textContent?.trim();
+          if (text) {
+            // Remove emojis do texto antes de processar
+            const cleanText = removeEmojis(text);
+            if (cleanText) {
+              pdf.setFontSize(11);
+              pdf.setFont('helvetica', 'normal');
+              const lines = pdf.splitTextToSize(cleanText, maxWidth - (level * 5));
+              lines.forEach((line: string) => {
+                if (y + 7 > pageHeight - margin) {
+                  pdf.addPage();
+                  y = margin;
+                }
+                pdf.text(line, margin + (level * 5), y);
+                y += 7;
+              });
+            }
+          }
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          const el = node as HTMLElement;
+          const tagName = el.tagName.toLowerCase();
+          
+          // Processa headings
+          if (tagName === 'h1' || tagName === 'h2' || tagName === 'h3') {
+            y += 5; // Espaço antes do heading
+            const fontSize = tagName === 'h1' ? 16 : tagName === 'h2' ? 14 : 12;
+            
+            // Extrai texto com estilos e renderiza
+            const segments = extractTextWithStyles(el);
+            // Força negrito nos headings (sem justificação)
+            segments.forEach(s => s.bold = true);
+            y = renderStyledText(segments, margin + (level * 5), y, maxWidth - (level * 5), fontSize, false);
+            y += 3; // Espaço após heading
+          }
+          // Processa parágrafos com conteúdo inline (com justificação)
+          else if (tagName === 'p') {
+            // Extrai texto com estilos e renderiza com justificação
+            const segments = extractTextWithStyles(el);
+            if (segments.length > 0) {
+              y = renderStyledText(segments, margin + (level * 5), y, maxWidth - (level * 5), 11, true);
+            } else {
+              // Fallback para texto simples
+              const text = el.textContent?.trim() || '';
+              if (text) {
+                // Remove emojis do texto antes de processar
+                const cleanText = removeEmojis(text);
+                if (cleanText) {
+                  pdf.setFontSize(11);
+                  pdf.setFont('helvetica', 'normal');
+                  const lines = pdf.splitTextToSize(cleanText, maxWidth - (level * 5));
+                  lines.forEach((line: string) => {
+                    if (y + 7 > pageHeight - margin) {
+                      pdf.addPage();
+                      y = margin;
+                    }
+                    pdf.text(line, margin + (level * 5), y);
+                    y += 7;
+                  });
+                }
+              }
+            }
+            y += 3; // Espaço após parágrafo
+          }
+          // Processa listas
+          else if (tagName === 'ul' || tagName === 'ol') {
+            const listItems = el.querySelectorAll('li');
+            listItems.forEach((li, index) => {
+              const bullet = tagName === 'ul' ? '• ' : `${index + 1}. `;
+              pdf.setFontSize(11);
+              pdf.setFont('helvetica', 'normal');
+              const bulletWidth = pdf.getTextWidth(bullet);
+              
+              // Extrai texto com estilos do item (sem justificação para listas)
+              const segments = extractTextWithStyles(li as HTMLElement);
+              
+              // Adiciona bullet
+              pdf.text(bullet, margin + (level * 5), y);
+              
+              if (segments.length > 0) {
+                y = renderStyledText(segments, margin + (level * 5) + bulletWidth, y, maxWidth - (level * 5) - bulletWidth, 11, false);
+              } else {
+                const text = li.textContent?.trim() || '';
+                if (text) {
+                  // Remove emojis do texto antes de processar
+                  const cleanText = removeEmojis(text);
+                  if (cleanText) {
+                    const lines = pdf.splitTextToSize(cleanText, maxWidth - (level * 5) - bulletWidth);
+                    lines.forEach((line: string) => {
+                      if (y + 7 > pageHeight - margin) {
+                        pdf.addPage();
+                        y = margin;
+                      }
+                      pdf.text(line, margin + (level * 5) + bulletWidth, y);
+                      y += 7;
+                    });
+                  }
+                }
+              }
+              y += 2;
+            });
+          }
+          // Processa tabelas
+          else if (tagName === 'table') {
+            y = this.renderTableInPDF(pdf, el as HTMLTableElement, margin + (level * 5), y, maxWidth - (level * 5), pageHeight, margin, removeEmojis);
+          }
+          // Processa outros elementos recursivamente
+          else {
+            processBlockElement(el, level);
+          }
+        }
+      });
+    };
+
+    // Processa o conteúdo
+    processBlockElement(contentWrapper);
+
+    // Função para remover acentos e caracteres especiais
+    const removeAccents = (str: string): string => {
+      return str
+        .normalize('NFD') // Decompõe caracteres acentuados
+        .replace(/[\u0300-\u036f]/g, '') // Remove diacríticos (acentos)
+        .replace(/[^a-z0-9\s-]/gi, '') // Remove caracteres especiais, mantém espaços e hífens
+        .replace(/\s+/g, '-') // Substitui espaços por hífens
+        .replace(/-+/g, '-') // Remove hífens duplicados
+        .replace(/^-|-$/g, '') // Remove hífens no início e fim
+        .toLowerCase();
+    };
+    
+    // Gera o nome do arquivo com acentos removidos
+    const sanitizedTitle = removeAccents(this.selectedFile.title || 'documento');
+    const fileName = `${sanitizedTitle}.pdf`;
+    
+    // Faz o download
+    pdf.save(fileName);
+    
+    console.log('✅ PDF pesquisável gerado com sucesso:', fileName);
+  }
+
+  /**
+   * Renderiza uma tabela HTML no PDF preservando estrutura de colunas
+   * Otimiza largura das colunas baseado no conteúdo
+   */
+  private renderTableInPDF(
+    pdf: any,
+    table: HTMLTableElement,
+    startX: number,
+    startY: number,
+    maxWidth: number,
+    pageHeight: number,
+    margin: number,
+    removeEmojisFn: (text: string) => string
+  ): number {
+    let y = startY;
+    const cellPadding = 3;
+    const fontSize = 9; // Fonte menor para tabelas
+    const lineHeight = fontSize * 0.45;
+    
+    // Obtém cabeçalho e linhas
+    const thead = table.querySelector('thead');
+    const tbody = table.querySelector('tbody');
+    const rows: HTMLTableRowElement[] = [];
+    
+    if (thead) {
+      const headerRows = Array.from(thead.querySelectorAll('tr'));
+      rows.push(...headerRows);
+    }
+    
+    if (tbody) {
+      const bodyRows = Array.from(tbody.querySelectorAll('tr'));
+      rows.push(...bodyRows);
+    }
+    
+    if (rows.length === 0) {
+      // Se não tem thead/tbody, pega todas as linhas diretamente
+      rows.push(...Array.from(table.querySelectorAll('tr')));
+    }
+    
+    if (rows.length === 0) return y;
+    
+    // Calcula número de colunas
+    const numCols = Math.max(...rows.map(row => row.querySelectorAll('th, td').length));
+    if (numCols === 0) return y;
+    
+    // Primeira passagem: calcula largura ideal de cada coluna baseado no conteúdo
+    pdf.setFontSize(fontSize);
+    const colWidths: number[] = new Array(numCols).fill(0);
+    const minColWidth = 40; // Largura mínima por coluna (aumentada)
+    
+    rows.forEach((row, rowIndex) => {
+      const cells = Array.from(row.querySelectorAll('th, td'));
+      const isHeader = rowIndex === 0 && thead !== null;
+      
+      pdf.setFont('helvetica', isHeader ? 'bold' : 'normal');
+      
+      cells.forEach((cell, colIndex) => {
+        if (colIndex >= numCols) return;
+        
+        const cellText = removeEmojisFn(cell.textContent || '').trim();
+        // Calcula largura necessária para o texto (considerando quebra de linha)
+        const textWidth = pdf.getTextWidth(cellText);
+        // Para textos longos, estima largura baseada no número de caracteres
+        const estimatedWidth = Math.max(textWidth, cellText.length * fontSize * 0.5);
+        colWidths[colIndex] = Math.max(colWidths[colIndex], estimatedWidth + (cellPadding * 2));
+      });
+    });
+    
+    // Normaliza larguras para caber no espaço disponível
+    const totalDesiredWidth = colWidths.reduce((sum, w) => sum + Math.max(w, minColWidth), 0);
+    const availableWidth = maxWidth - (cellPadding * 2 * numCols);
+    const scaleFactor = availableWidth / totalDesiredWidth;
+    
+    // Aplica escala e garante largura mínima
+    const finalColWidths = colWidths.map(w => {
+      const scaled = Math.max(w, minColWidth) * scaleFactor;
+      return Math.max(scaled, minColWidth);
+    });
+    
+    // Ajusta para garantir que a soma seja exatamente o espaço disponível
+    const totalFinalWidth = finalColWidths.reduce((sum, w) => sum + w, 0);
+    const adjustmentFactor = availableWidth / totalFinalWidth;
+    finalColWidths.forEach((w, i) => {
+      finalColWidths[i] = w * adjustmentFactor;
+    });
+    
+    // Renderiza cada linha
+    rows.forEach((row, rowIndex) => {
+      const cells = Array.from(row.querySelectorAll('th, td'));
+      const isHeader = rowIndex === 0 && thead !== null;
+      
+      // Segunda passagem: calcula altura da linha (maior altura entre as células)
+      let maxCellHeight = lineHeight + (cellPadding * 2);
+      const cellContents: string[][] = [];
+      
+      cells.forEach((cell, colIndex) => {
+        if (colIndex >= numCols) return;
+        
+        const cellText = removeEmojisFn(cell.textContent || '').trim();
+        pdf.setFontSize(fontSize);
+        pdf.setFont('helvetica', isHeader ? 'bold' : 'normal');
+        
+        // Divide texto em múltiplas linhas baseado na largura da coluna
+        const cellWidth = finalColWidths[colIndex] - (cellPadding * 2);
+        const lines = this.splitTextWithHyphen(pdf, cellText, cellWidth, fontSize);
+        cellContents.push(lines);
+        
+        const cellHeight = (lines.length * lineHeight) + (cellPadding * 2);
+        maxCellHeight = Math.max(maxCellHeight, cellHeight);
+      });
+      
+      // Verifica se precisa de nova página
+      if (y + maxCellHeight > pageHeight - margin) {
+        pdf.addPage();
+        y = margin;
+      }
+      
+      // Renderiza células da linha (todas com a mesma altura)
+      let currentX = startX;
+      cells.forEach((cell, colIndex) => {
+        if (colIndex >= numCols) return;
+        
+        const colWidth = finalColWidths[colIndex];
+        const lines = cellContents[colIndex] || [];
+        
+        // Desenha borda da célula (todas com mesma altura)
+        pdf.setDrawColor(0, 0, 0);
+        pdf.setLineWidth(0.1);
+        pdf.rect(currentX, y, colWidth, maxCellHeight);
+        
+        // Renderiza texto da célula (centralizado verticalmente)
+        pdf.setFontSize(fontSize);
+        pdf.setFont('helvetica', isHeader ? 'bold' : 'normal');
+        
+        const textStartY = y + cellPadding + lineHeight;
+        lines.forEach((line: string, lineIndex: number) => {
+          pdf.text(line, currentX + cellPadding, textStartY + (lineIndex * lineHeight));
+        });
+        
+        currentX += colWidth;
+      });
+      
+      y += maxCellHeight;
+    });
+    
+    y += 5; // Espaço após tabela
+    return y;
+  }
+
+  /**
+   * Divide texto em linhas, evitando quebrar palavras quando possível
+   * Só quebra palavras como último recurso e tenta fazer em posições mais naturais
+   */
+  private splitTextWithHyphen(pdf: any, text: string, maxWidth: number, fontSize: number): string[] {
+    // Usa a função padrão do jsPDF que já faz quebra inteligente
+    // Ela tenta manter palavras inteiras e só quebra quando absolutamente necessário
+    const lines = pdf.splitTextToSize(text, maxWidth);
+    
+    // Se ainda houver palavras muito longas que não cabem, processa manualmente
+    const processedLines: string[] = [];
+    
+    lines.forEach((line: string) => {
+      const lineWidth = pdf.getTextWidth(line);
+      
+      if (lineWidth <= maxWidth) {
+        // Linha cabe normalmente
+        processedLines.push(line);
+      } else {
+        // Linha ainda não cabe, precisa processar palavra por palavra
+        const words = line.split(/(\s+)/);
+        let currentLine = '';
+        
+        words.forEach((word) => {
+          if (!word) return;
+          
+          // Se for espaço, adiciona à linha atual
+          if (/^\s+$/.test(word)) {
+            const testLine = currentLine + word;
+            if (pdf.getTextWidth(testLine) <= maxWidth) {
+              currentLine = testLine;
+            } else {
+              if (currentLine.trim()) {
+                processedLines.push(currentLine.trim());
+              }
+              currentLine = word;
+            }
+            return;
+          }
+          
+          // Testa se a palavra cabe na linha atual
+          const testLine = currentLine + (currentLine ? ' ' : '') + word;
+          const testWidth = pdf.getTextWidth(testLine);
+          
+          if (testWidth <= maxWidth) {
+            // Cabe na linha atual
+            currentLine = testLine;
+          } else {
+            // Não cabe, precisa quebrar
+            if (currentLine.trim()) {
+              // Salva linha atual e começa nova
+              processedLines.push(currentLine.trim());
+              currentLine = '';
+            }
+            
+            // Verifica se a palavra sozinha cabe
+            const wordWidth = pdf.getTextWidth(word);
+            if (wordWidth <= maxWidth) {
+              // Palavra cabe sozinha
+              currentLine = word;
+            } else {
+              // Palavra é muito longa, precisa quebrar
+              // Tenta encontrar um ponto de quebra mais natural (preferencialmente após vogais)
+              const hyphenWidth = pdf.getTextWidth('-');
+              const maxPrefixWidth = maxWidth - hyphenWidth;
+              
+              // Procura por vogais para quebrar de forma mais natural
+              // Preferência: após vogais, antes de consoantes
+              let bestBreakPoint = -1;
+              let bestPrefixWidth = 0;
+              
+              for (let i = Math.min(3, word.length - 2); i < word.length - 2; i++) {
+                // Prefere quebrar após vogais
+                const char = word[i].toLowerCase();
+                if (['a', 'e', 'i', 'o', 'u'].includes(char)) {
+                  const prefix = word.substring(0, i + 1);
+                  const prefixWidth = pdf.getTextWidth(prefix);
+                  
+                  if (prefixWidth <= maxPrefixWidth && prefixWidth > bestPrefixWidth) {
+                    bestBreakPoint = i + 1;
+                    bestPrefixWidth = prefixWidth;
+                  }
+                }
+              }
+              
+              // Se não encontrou ponto bom, usa o máximo que cabe
+              if (bestBreakPoint === -1) {
+                for (let i = word.length - 1; i >= 1; i--) {
+                  const prefix = word.substring(0, i);
+                  const prefixWidth = pdf.getTextWidth(prefix);
+                  
+                  if (prefixWidth <= maxPrefixWidth) {
+                    bestBreakPoint = i;
+                    bestPrefixWidth = prefixWidth;
+                    break;
+                  }
+                }
+              }
+              
+              if (bestBreakPoint > 0 && bestBreakPoint < word.length) {
+                // Quebra a palavra
+                const prefix = word.substring(0, bestBreakPoint);
+                const suffix = word.substring(bestBreakPoint);
+                processedLines.push(prefix + '-');
+                currentLine = suffix;
+              } else {
+                // Não conseguiu quebrar de forma inteligente, força
+                processedLines.push(word);
+              }
+            }
+          }
+        });
+        
+        // Adiciona última linha se houver
+        if (currentLine.trim()) {
+          processedLines.push(currentLine.trim());
+        }
+      }
+    });
+    
+    return processedLines.length > 0 ? processedLines : [''];
   }
 }
