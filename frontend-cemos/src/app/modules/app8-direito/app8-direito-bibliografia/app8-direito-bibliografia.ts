@@ -29,62 +29,65 @@ export class App8DireitoBibliografia implements OnInit {
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/ema-135`,
-      title: 'EMA-135',
+      title: '1. EMA-135',
+      description: 'Manual de Direito Internacional aplicado às Operações Navais.'      
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/lei-da-guerra`,
-      title: 'A Lei da Guerra',
+      title: '2. A Lei da Guerra',
+      description: 'Byers, Michael - Direito Internacional e o Conflito Armado.'      
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/carta-nacoes-unidas`,
-      title: 'Carta das Nações Unidas',
+      title: '3. Carta das Nações Unidas',
+      description: 'Decreto XXX'
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/4.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/feridos-enfermos`,
-      title: 'Feridos, enfermos e náufragos',
+      title: '4. Feridos, enfermos e náufragos',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/5.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-i`,
-      title: 'Protocolo I',
+      title: '5. Protocolo I',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/6.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-ii`,
-      title: 'Protocolo II',
+      title: '6. Protocolo II',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/7.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/san-remo-manual`,
-      title: 'San Remo Manual',
+      title: '7. San Remo Manual',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/8.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/cnudm`,
-      title: 'Concenção das Nações Unidas sobre o Direito do Mar',
+      title: '8.  Convenção das Nações Unidas sobre o Direito do Mar',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/9.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/entorpecentes-psicotropicos`,
-      title: 'Entorpecentes e Psicotrópicos',
+      title: '9. Entorpecentes e Psicotrópicos',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/10.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/pacto-sao-jose`,
-      title: 'Pacto de São José',
+      title: '10. Pacto de São José',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/11.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/declaracao-direitos-humanos`,
-      title: 'Declaração Universal dos Direitos Humanos',
+      title: '11. Declaração Universal dos Direitos Humanos',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/12.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/direito-tratados`,
-      title: 'Direito dos Tratados',
+      title: '12. Direito dos Tratados',
     }
   ];
 
