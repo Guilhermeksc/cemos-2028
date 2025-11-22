@@ -17,8 +17,11 @@ export class LeiDaGuerra implements OnInit {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/direito/2-lei-da-guerra';
   fileNames: string[] = [
-    // Adicione aqui os arquivos markdown do livro "A Lei da Guerra"
-    // Exemplo: 'cap1.md', 'cap2.md', etc.
+    'cap1.md',
+    'cap2.md',
+    'cap3.md',
+    'cap4.md',
+    'cap5.md',
   ];
   backRoute: string = '/home/app8-direito/bibliografia';
   backLabel: string = 'Bibliografia';
