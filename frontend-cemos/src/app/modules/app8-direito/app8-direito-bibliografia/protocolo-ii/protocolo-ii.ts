@@ -15,7 +15,7 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
 })
 export class ProtocoloII  implements OnInit {
   // Configuração do LivroIndividual
-  contentPath: string = 'assets/content/direito/5-protocolo-II';
+  contentPath: string = 'assets/content/direito/6-protocolo-II';
   fileNames: string[] = [
     '1.md'
   ];
