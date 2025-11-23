@@ -4,7 +4,7 @@
 
 ## 2.1 - STATUS DE NAVIOS DE GUERRA E DE ESTADO
 
-2.1.1 - Definição de Navio de Guerra e de Estado
+**2.1.1 - Definição de Navio de Guerra e de Estado**
 
 A Convenção das Nações Unidas sobre o Direito do Mar (CNUDM) define navio de guerra como sendo um navio pertencente às Forças Armadas de um Estado. Os navios de guerra devem:
 
@@ -14,7 +14,7 @@ c) estar guarnecido por tripulação submetida às regras da disciplina militar.
 
 Navios de Estado são aqueles que executam serviços governamentais e não comerciais, ou seja, que executam um serviço público de natureza civil, como, por exemplo, navios alfandegários, navios-faróis, navios de saúde, etc. Também são considerados navios de Estado aqueles postos a serviço de soberanos, Chefes de Estado ou representações diplomáticas. A CNUDM  consagra  a  imunidade  dos  navios  de  Estado  utilizados  para  atividades  não comerciais. Porém, à semelhança dos navios de guerra, a imunidade é afetada pela obrigação desses navios em obedecer às leis e aos regulamentos do Estado costeiro durante a passagem sobre seu Mar Territorial (MT) e pela responsabilidade internacional oriunda de eventuais danos causados pelo descumprimento dessa legislação e demais normas da CNUDM ou do Direito Internacional (DI).
 
-2.1.2 - Status Internacional
+**2.1.2 - Status Internacional**
 
 Segundo o DI, os navios de guerra encontram-se sob a jurisdição de um Estado, gozando de imunidade, mesmo quando em trânsito por mares territoriais alheios ou ancorados em portos estrangeiros. O costume internacional reconhece igual privilégio às embarcações pertencentes ao Estado e usadas para fins não comerciais, como um navio de representação. Assim,  os  atos  e  fatos  jurídicos  acontecidos  no  navio  de  guerra  estarão  sujeitos  ao ordenamento  jurídico  do  Estado  do  seu  pavilhão.  Esta  situação  jurídica,  conhecida  por princípio da extraterritorialidade, é um exemplo da aplicação da lei nacional para além do território  do  Estado.  Desta  forma,  o  navio  de  guerra  goza  de  imunidade  em  relação  à jurisdição de outros Estados. Autoridades  policiais, portuárias, sanitárias e outras, só podem entrar  a  bordo  de  um  navio  de  guerra  com  a  permissão  do  Comandante  do  navio.  O fundamento das imunidades do navio de guerra é o seu caráter representativo e o respeito mútuo dos Estados.
 
@@ -37,12 +37,9 @@ Igualmente, a Regra n º 14 do mesmo Decreto estipula: “para que um navio merc
 
 O Governo brasileiro não reconhece ao navio de guerra, empregado em atividade comercial, o gozo das isenções e regalias normalmente concedidas a este tipo de navio (Regra nº 15 do Decreto nº 56.515/1965). 
 
-A imunidade  dos  navios  de  guerra  foi  submetida  a  alguns  temperamentos  pela CNUDM: a necessidade da observância das leis e regulamentos do Estado costeiro durante a passagem  pelo  MT  e  a  responsabilidade  do  Estado  de  bandeira  pelos  eventuais  danos
-
+A imunidade  dos  navios  de  guerra  foi  submetida  a  alguns  temperamentos  pela CNUDM: a necessidade da observância das leis e regulamentos do Estado costeiro durante a passagem  pelo  MT  e  a  responsabilidade  do  Estado  de  bandeira  pelos  eventuais  danos causados ao Estado costeiro em violação àquela legislação ou a outras normas do DI. O descumprimento dessas normas pelo navio de guerra estrangeiro poderá ensejar a emissão de protesto diplomático ou de ordem, para que esse se retire imediatamente do MT do Estado costeiro.
 
 ## Página 31
-
-causados ao Estado costeiro em violação àquela legislação ou a outras normas do DI. O descumprimento dessas normas pelo navio de guerra estrangeiro poderá ensejar a emissão de protesto diplomático ou de ordem, para que esse se retire imediatamente do MT do Estado costeiro.
 
 **2.1.2.1 - Navios de guerra de propulsão nuclear**
 
@@ -89,7 +86,7 @@ Por  analogia  às  imunidades  garantidas  aos  navios  de  guerra,  nenhum  ag
 
 ## 2.3 - NAVEGAÇÃO E SOBREVOO DE ÁGUAS JURISDICIONAIS
 
-2.3.1 - Águas Interiores
+**2.3.1 - Águas Interiores****
 
 De acordo com o art. 11 da CNUDM, “as instalações portuárias permanentes mais ao largo da costa que façam parte integrante do sistema portuário são consideradas como fazendo parte da costa”, devendo ser contornadas pela linha base. Assim, a entrada em um porto implica, normalmente, a navegação em águas interiores. O acesso às águas interiores exige a permissão do Estado costeiro, por ser uma ação equivalente à entrada em seu território.
 
@@ -102,7 +99,7 @@ b) quando  linhas  de  base  retas  encerram,  como  águas  interiores,  águas
 
 Nesse último caso, de acordo com o art. 8 º, § 2°, da CNUDM, aplica-se o conceito de direito de “passagem inocente”.
 
-2.3.2 - Mar Territorial
+**2.3.2 - Mar Territorial**
 
 **a) Passagem Inocente**
 
@@ -313,7 +310,7 @@ Esses trânsitos devem ser rápidos e contínuos, e a aeronave deve abster-se de
 
 As aeronaves, inclusive as militares, gozam do direito de passagem contínua e rápida  pelo  espaço  aéreo  situado  acima  de  rotas  marítimas  arquipelágicas.  O  direito  de sobrevoo de tais rotas marítimas é essencialmente idêntico àquele da passagem em trânsito através do espaço aéreo acima de estreitos internacionais superpostos a MT.
 
-***2.5.2 - Espaço aéreo internacional**
+**2.5.2 - Espaço aéreo internacional**
 
 O espaço aéreo internacional é aquele situado acima da ZC, ZEE, alto-mar e territórios não sujeitos à soberania nacional (ex: Antártica). 
 

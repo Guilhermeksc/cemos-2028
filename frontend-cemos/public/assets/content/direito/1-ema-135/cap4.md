@@ -48,16 +48,16 @@ O art. 42 estabelece que:
 
 O direito à autodefesa, conforme mencionado no inciso 4.3.2, é garantido pelo art. 51 da Carta.
 
-4.2 - MEDIDAS NÃO MILITARES
+## 4.2 - MEDIDAS NÃO MILITARES
 
-4.2.1 - Diplomáticas
+**4.2.1 - Diplomáticas**
 
 Conforme estipulado na Carta das Nações Unidas, os Estados geralmente se apóiam em  meios  pacíficos  para  resolver  suas  diferenças  e  proteger  seus  interesses.  Medidas
 diplomáticas incluem todas as ações políticas adotadas por um Estado para influenciar o comportamento  de  outros  Estados  dentro  da  moldura  estabelecida  pelo  DI.  Elas  podem englobar a negociação, a conciliação ou a mediação, e podem ter caráter cooperativo ou coercitivo.
 
 A manifestação da opinião pública, por meio da Assembleia Geral da ONU, é o primeiro passo para coibir a ação de países agressores. Casos onde persistam situações que coloquem em perigo a paz e a segurança internacionais são apreciados pelo Conselho de Segurança. Normalmente, contudo, diferenças que surjam entre Estados são resolvidas ou acomodadas pelos processos rotineiros da via diplomática.
 
-4.2.2 – Econômicas
+**4.2.2 – Econômicas**
 
 Os Estados fazem uso com frequência de medidas econômicas para influenciar as ações de outros Estados. A atribuição do status de “Nação mais favorecida(5)” a outro país é uma medida de política econômica bastante comum. Da mesma maneira, acordos comerciais, empréstimos, investimentos, concessão de crédito e outros auxílios do gênero estão entre as muitas  medidas  econômicas  que  os  Estados  fazem  uso  para  preservar  seus  interesses nacionais.
 
@@ -102,8 +102,6 @@ As regras proibitórias do uso da força não eliminam, no entanto, o direito de
 
 ## Página 75
 
-
-
 O uso da força em autodefesa contra-ataque armado ou iminência de ataque armado se apoia em dois princípios:
 
 a) Princípio da Necessidade - estabelece que o uso da força seja feito em resposta a ato hostil atual ou iminente; e
@@ -128,6 +126,5 @@ O costume internacional estipula que uma aeronave estrangeira que entre em espa�
 
 a) todos os Estados devem evitar o uso de armas contra aeronaves civis e, no caso de interceptação de aeronave civil infratora, que as vidas do pessoal a bordo e a segurança da aeronave sejam postas em perigo;
 b) todos os Estados têm o direito de exigir da aeronave infratora que pouse em aeroporto designado e de empregar medidas consistentes com o DI para fazê-la desistir das atividades em violação da Convenção;
-c) todas as aeronaves infratoras devem cumprir as ordens recebidas e todos os Estados devem promulgar leis nacionais que tornem obrigatório este procedimento pelas aeronaves
-civis. No Brasil, a interceptação de aeronaves é regulada pela Lei n ° 7.565/1986 (Código Brasileiro de Aeronáutica), alterada pela Lei n ° 9.614/1998, e pelo Decreto n ° 5.144/2004, que  estabelece  os  procedimentos  a  serem  seguidos  com  relação  a  aeronaves  hostis  ou suspeitas de tráfico ilegal de drogas; e
+c) todas as aeronaves infratoras devem cumprir as ordens recebidas e todos os Estados devem promulgar leis nacionais que tornem obrigatório este procedimento pelas aeronaves civis. No Brasil, a interceptação de aeronaves é regulada pela Lei n ° 7.565/1986 (Código Brasileiro de Aeronáutica), alterada pela Lei n ° 9.614/1998, e pelo Decreto n ° 5.144/2004, que  estabelece  os  procedimentos  a  serem  seguidos  com  relação  a  aeronaves  hostis  ou suspeitas de tráfico ilegal de drogas; e
 d) todos os Estados devem proibir o uso de aeronaves civis para fins inconsistentes com a referida Convenção (ex: coleta de inteligência/tráfico ilícito de drogas). Essa modificação foi aprovada unanimemente em 10 de maio de 1984 e passou a vigorar em 1° de outubro de 1998, após a ratificação por 102 membros da Organização da Aviação Civil Internacional (ICAO). A mencionada Convenção não se aplica a aeronaves militares, exceto  quanto  ao  fato  de  que  devem  operar  levando  em  consideração  a  segurança  da navegação de aeronaves civis.

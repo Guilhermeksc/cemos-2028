@@ -1,4 +1,3 @@
-
 # CAPÍTULO 6 - PRINCÍPIOS E FONTES DO DIREITO INTERNACIONAL DOS CONFLITOS ARMADOS (DICA)
 
 ## Página 86
@@ -22,8 +21,7 @@ b)  permitir  que  a  missão  possa  ser  cumprida  com  mais  eficiência  e  
 
 ## Página 87
 
-Deve-se observar que o DICA não objetiva e não deve ser visto como um artifício para dar vantagem ao inimigo. De qualquer forma, vale destacar que o DICA aplica-se em todos os
-conflitos armados, internacionais e não internacionais, tendo em vista o disposto nos artigos 2º e 3º, comuns às quatro Convenções de Genebra de 1949.
+Deve-se observar que o DICA não objetiva e não deve ser visto como um artifício para dar vantagem ao inimigo. De qualquer forma, vale destacar que o DICA aplica-se em todos os conflitos armados, internacionais e não internacionais, tendo em vista o disposto nos artigos 2º e 3º, comuns às quatro Convenções de Genebra de 1949.
 
 ## 6.2 - VERTENTES DO DICA
 
@@ -33,11 +31,9 @@ No entanto, a especial preocupação da comunidade internacional de limitar os m
  
 Nesse  aspecto,  os  clássicos  “Direito  de  Genebra”  e  “Direito  de  Haia”  foram complementados  por  uma  terceira  vertente  denominada  “Direito  de  Nova  Iorque”,  em referência à sede da ONU, ou “Direito Misto”, caracterizada especialmente pelas atividades desenvolvidas no âmbito das Nações Unidas em matéria de desarmamento e limitação da proliferação de armas.
 
-É certo que os Direitos de Haia e de Nova Iorque possuem normas que tratam de armas, sendo, neste sentido, normas convergentes. Todavia, enquanto o primeiro contempla somente
-o uso das armas nas situações bélicas, o segundo tende a limitar e controlar a produção, a estocagem, a transferência e a determinar a destruição de algumas armas.
+É certo que os Direitos de Haia e de Nova Iorque possuem normas que tratam de armas, sendo, neste sentido, normas convergentes. Todavia, enquanto o primeiro contempla somente o uso das armas nas situações bélicas, o segundo tende a limitar e controlar a produção, a estocagem, a transferência e a determinar a destruição de algumas armas.
 
-É o caso da Convenção sobre a Proibição do Desenvolvimento, Produção e Estocagem de Armas Bacteriológicas (Biológicas) e à Base de Toxinas e sua Destruição, de 10 de abril de
-1972 (internalizada pelo Decreto n º 77.374/1976). Neste acordo, proíbe-se formalmente a existência daquelas armas, e não somente o seu uso em conflitos armados.
+É o caso da Convenção sobre a Proibição do Desenvolvimento, Produção e Estocagem de Armas Bacteriológicas (Biológicas) e à Base de Toxinas e sua Destruição, de 10 de abril de 1972 (internalizada pelo Decreto n º 77.374/1976). Neste acordo, proíbe-se formalmente a existência daquelas armas, e não somente o seu uso em conflitos armados.
 
 Na verdade, a distinção existente entre essas vertentes possui somente valor histórico e didático.  Todavia,  seu  estudo  é importante  para  se  verificar  o desenvolvimento  de  uma codificação harmoniosa e integrada, em um sistema único de normas jurídicas, que abrange as disposições sobre a limitação aos meios e métodos de combate, a proteção das vítimas dos conflitos e a proteção internacional dos direitos humanos nos conflitos armados, em benefício de seus destinatários.
 
@@ -49,13 +45,11 @@ De forma geral, cinco princípios regem o DICA: distinção, limitação, propor
 
 O  princípio da distinção  prevê que as partes  em conflito devem sempre, durante a condução das operações militares, distinguir entre população civil e combatentes, assim como bens de caráter  civil e objetivos militares, dirigindo suas ações unicamente contra alvos militares. Busca assegurar o respeito e a proteção da população civil e dos bens de caráter civil.
 
-Tal princípio rege, portanto, a escolha de objetivos durante a ação militar e sua estrita observância tem como decorrência evitar a condução de ataques indiscriminados que são
-proibidos,  entendidos  como  tais  aqueles  que  não  se  dirijam  contra  um  objetivo  militar determinado, ou que, devido aos métodos e meios empregados, podem atingir indistintamente objetivos militares e bens de caráter civil, ou civis. 
+Tal princípio rege, portanto, a escolha de objetivos durante a ação militar e sua estrita observância tem como decorrência evitar a condução de ataques indiscriminados que são proibidos,  entendidos  como  tais  aqueles  que  não  se  dirijam  contra  um  objetivo  militar determinado, ou que, devido aos métodos e meios empregados, podem atingir indistintamente objetivos militares e bens de caráter civil, ou civis. 
 
 Em decorrência deste princípio, não é mais aceitável a condução de bombardeiros aéreos de  altitude,  nem  o  emprego  de  armas  incendiárias,  sobre  áreas  que  mesclem  objetivos militares, bens de caráter civil e população civil.
 
-Exclui-se  dos  ataques  tidos  como  indiscriminados  aqueles  que  venham  a  causar acidentalmente perdas de vidas humanas ou ferimentos na população civil e/ou danos nos
-bens de caráter civil, que não sejam excessivos em relação à vantagem militar concreta e direta esperada. Tais perdas constituem uma ocorrência normal, na condução de ataques sobre objetivos militares, em área de concentração urbana.
+Exclui-se  dos  ataques  tidos  como  indiscriminados  aqueles  que  venham  a  causar acidentalmente perdas de vidas humanas ou ferimentos na população civil e/ou danos nos bens de caráter civil, que não sejam excessivos em relação à vantagem militar concreta e direta esperada. Tais perdas constituem uma ocorrência normal, na condução de ataques sobre objetivos militares, em área de concentração urbana.
 
 Na guerra marítima, que tem na identificação do alvo um dos seus maiores problemas, a aplicação deste princípio tende a ser mais difícil.
 
@@ -79,8 +73,7 @@ Em  particular,  cumpre  destacar  o  papel  exercido  pelo  CICV.  Nos  termos 
 
 Ressalta-se que desde 1856, com a adesão à Declaração de Paris sobre guerra marítima, o Brasil demonstra tradição em vincular-se aos tratados que digam respeito ao DICA, já tendo ratificado ou aderido a mais de quarenta atos internacionais multilaterais. 
 
-No Anexo B desta publicação, sumariza-se os atos internacionais aos quais o Brasil está vinculado. É desejável que o planejador e o operador tenham conhecimento e consultem a
-legislação aplicável por ocasião do preparo e do emprego dos meios em operações navais. 
+No Anexo B desta publicação, sumariza-se os atos internacionais aos quais o Brasil está vinculado. É desejável que o planejador e o operador tenham conhecimento e consultem a legislação aplicável por ocasião do preparo e do emprego dos meios em operações navais. 
 
 ## Página 90
 

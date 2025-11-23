@@ -103,7 +103,11 @@ def gerar_bloco_vf(df, numero_pagina):
 
         # Formatar como "V-F x - Afirmação: texto" em uma linha
         texto_afirmacao = str(row.afirmacao_verdadeira).strip()
-        linhas.append(f"V-F {i} - Afirmação: {texto_afirmacao}")
+        linhas.append(f"V-F {i} - Verdadeiro: {texto_afirmacao}")
+        
+        # Adicionar afirmação falsa com "Falso" em vermelho
+        texto_afirmacao_falsa = str(row.afirmacao_falsa).strip()
+        linhas.append(f'<font color="#FF0000"><b>Falso</b></font> - {texto_afirmacao_falsa}')
         
         # Adicionar separador discreto após cada afirmação (exceto na última)
         if i < len(filtro):
@@ -160,20 +164,23 @@ def gerar_bloco_fc(df_fc, numero_pagina):
 
 
 def montar_markdown_final(paginas, df_vf, df_fc=None):
+    print(f"[DEBUG] montar_markdown_final: processando {len(paginas)} páginas")
     output = []
+    paginas_com_vf = 0
+    paginas_com_fc = 0
+    
     for numero in sorted(paginas.keys()):
-        output.append(f"<pagina>{numero}</pagina>")  # marcador especial
-        output.append("")
-
         bloco_vf = gerar_bloco_vf(df_vf, numero)
         bloco_fc = ""
 
         if bloco_vf:
-            # aplicar estilos: V-F x em negrito, "Afirmação:" em verde negrito
+            paginas_com_vf += 1
+            print(f"[DEBUG] Página {numero}: bloco V-F com {len(bloco_vf)} caracteres")
+            # aplicar estilos: V-F x em negrito, "Verdadeiro:" em verde negrito
             bloco_vf = re.sub(r"(V-F \d+)", r"<b>\1</b>", bloco_vf)
             bloco_vf = bloco_vf.replace(
-                " - Afirmação:",
-                ' - <font color="#008000"><b>Afirmação:</b></font>'
+                " - Verdadeiro:",
+                ' - <font color="#008000"><b>Verdadeiro:</b></font>'
             )
 
             output.append(bloco_vf)
@@ -183,6 +190,8 @@ def montar_markdown_final(paginas, df_vf, df_fc=None):
         if df_fc is not None:
             bloco_fc = gerar_bloco_fc(df_fc, numero)
             if bloco_fc:
+                paginas_com_fc += 1
+                print(f"[DEBUG] Página {numero}: bloco FC com {len(bloco_fc)} caracteres")
                 output.append(bloco_fc)
                 output.append("")
 
@@ -192,15 +201,20 @@ def montar_markdown_final(paginas, df_vf, df_fc=None):
             output.append("")
 
         texto_original = paginas[numero].split("\n", 1)[1]
+        tamanho_texto = len(texto_original)
+        print(f"[DEBUG] Página {numero}: texto original com {tamanho_texto} caracteres")
         output.append(texto_original)
         output.append("")
 
-    return "\n".join(output)
+    resultado = "\n".join(output)
+    print(f"[DEBUG] montar_markdown_final: {paginas_com_vf} páginas com V-F, {paginas_com_fc} páginas com FC")
+    print(f"[DEBUG] montar_markdown_final: resultado final com {len(resultado)} caracteres")
+    return resultado
 
 def converter_markdown_para_html(texto):
     """
     Converte markdown básico para HTML que o reportlab entende.
-    Suporta: **negrito**, *itálico*, (V-F)**texto** (verde negrito), ## Título (negrito), etc.
+    Suporta: **negrito**, *itálico*, (V-F)**texto** (verde negrito), fc**texto** (azul negrito), ## Título (negrito), etc.
     Mantém emojis intactos.
     """
     # PRIMEIRO: Converter ## Título para <b>Título</b> (exceto ## Página)
@@ -217,6 +231,15 @@ def converter_markdown_para_html(texto):
     texto = re.sub(
         r'\(V-F\)\*\*([^*]+?)\*\*',
         r'<font color="#008000"><b>\1</b></font>',
+        texto
+    )
+    
+    # SEGUNDO E MEIO: Converter fc**texto** para azul negrito
+    # Isso deve ser feito ANTES de processar **texto** normal
+    # O padrão procura por "fc" seguido imediatamente por **texto**
+    texto = re.sub(
+        r'fc\*\*([^*]+?)\*\*',
+        r'<font color="#0000FF"><b>\1</b></font>',
         texto
     )
     
@@ -270,6 +293,9 @@ class LinhaTracejada(Flowable):
 
 
 def gerar_pdf(texto, caminho_pdf):
+    print(f"\n[DEBUG] Iniciando geração de PDF: {caminho_pdf}")
+    print(f"[DEBUG] Tamanho do texto recebido: {len(texto)} caracteres")
+    print(f"[DEBUG] Número de linhas no texto: {len(texto.split(chr(10)))} linhas")
 
     styles = getSampleStyleSheet()
 
@@ -284,29 +310,19 @@ def gerar_pdf(texto, caminho_pdf):
         alignment=4,  # 4 = TA_JUSTIFY (texto justificado)
     )
 
-    # estilo de página (centralizado e maior)
-    estilo_pagina = ParagraphStyle(
-        'Pagina',
-        parent=styles['Heading1'],
-        alignment=1,  # centro
-        fontSize=13,
-        leading=14,
-        spaceAfter=6,
-        spaceBefore=12,
-    )
-
     story = []
+    linhas_processadas = 0
+    linhas_vazias = 0
+    linhas_tracejadas = 0
+    linhas_separador = 0
+    linhas_paragrafo = 0
 
     for linha in texto.split("\n"):
+        linhas_processadas += 1
 
-        # 1) detectar marcador especial e formatar
-        if linha.strip().startswith("<pagina>"):
-            num = linha.replace("<pagina>", "").replace("</pagina>", "").strip()
-            story.append(Paragraph(f"<b>Página {num}</b>", estilo_pagina))
-            continue
-
-        # 2) detectar linha tracejada
+        # 1) detectar linha tracejada
         if linha.strip() == "<linha_tracejada/>":
+            linhas_tracejadas += 1
             # Criar uma linha tracejada sutil
             largura_util = A4[0] - 20 * mm  # largura da página menos margens
             linha_tracejada = LinhaTracejada(
@@ -321,6 +337,7 @@ def gerar_pdf(texto, caminho_pdf):
 
         # 2.5) detectar separador discreto para flashcards
         if linha.strip() == "<separador_fc/>":
+            linhas_separador += 1
             # Criar uma linha tracejada mais discreta para separar flashcards
             largura_util = A4[0] - 20 * mm  # largura da página menos margens
             separador_fc = LinhaTracejada(
@@ -335,13 +352,28 @@ def gerar_pdf(texto, caminho_pdf):
 
         # 3) linha vazia
         if linha.strip() == "":
+            linhas_vazias += 1
             story.append(Spacer(1, 2))
             continue
 
         # 4) converter markdown para HTML e processar texto normal
+        linhas_paragrafo += 1
         linha_html = converter_markdown_para_html(linha)
         story.append(Paragraph(linha_html, estilo_compacto))
 
+    print(f"\n[DEBUG] Estatísticas de processamento:")
+    print(f"  - Linhas processadas: {linhas_processadas}")
+    print(f"  - Linhas vazias: {linhas_vazias}")
+    print(f"  - Linhas tracejadas: {linhas_tracejadas}")
+    print(f"  - Separadores FC: {linhas_separador}")
+    print(f"  - Parágrafos: {linhas_paragrafo}")
+    print(f"  - Total de elementos no story: {len(story)}")
+    
+    if len(story) == 0:
+        print("[ERRO] Story está vazio! Nenhum conteúdo para gerar PDF.")
+        return
+
+    print(f"\n[DEBUG] Criando documento PDF...")
     doc = SimpleDocTemplate(
         str(caminho_pdf),
         pagesize=A4,
@@ -351,41 +383,80 @@ def gerar_pdf(texto, caminho_pdf):
         bottomMargin=10 * mm,
     )
 
-    doc.build(story)
+    print(f"[DEBUG] Construindo PDF...")
+    try:
+        doc.build(story)
+        print(f"[DEBUG] PDF construído com sucesso!")
+    except Exception as e:
+        print(f"[ERRO] Falha ao construir PDF: {e}")
+        import traceback
+        traceback.print_exc()
+        raise
 
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Uso: python gerar_pdf.py <x>")
-        sys.exit(1)
-
-    x = sys.argv[1]
-    base = Path(__file__).parent
+    # DIGITE O NÚMERO DO CAPÍTULO AQUI:
+    x = "9"  # ← ALTERE ESTE VALOR
+    
+    # Usar o diretório do script atual
+    base = Path(__file__).parent.resolve()
+    print(f"\n=== DIRETÓRIO DE TRABALHO: {base} ===")
 
     cap_path = base / f"cap{x}.md"
     vf_path = base / f"vf{x}.md"
     fc_path = base / f"fc{x}.md"
+    pdf_path = base / f"Cap{x}.pdf"
 
-    # *** CORREÇÃO AQUI: transformar em string ***
-    pdf_path = base / f"pdf{x}.pdf"
+    # Verificar se os arquivos necessários existem
+    if not cap_path.exists():
+        print(f"ERRO: Arquivo não encontrado: {cap_path}")
+        sys.exit(1)
+    
+    if not vf_path.exists():
+        print(f"ERRO: Arquivo não encontrado: {vf_path}")
+        sys.exit(1)
 
+    print(f"\n=== CARREGANDO CAPÍTULO DE {cap_path} ===")
     cap_conteudo = carregar_capitulo(cap_path)
+    print(f"[DEBUG] Capítulo carregado: {len(cap_conteudo)} caracteres")
+    
+    print(f"\n=== CARREGANDO V-F DE {vf_path} ===")
     df_vf = ler_tabela_markdown(vf_path)
+    print(f"[DEBUG] DataFrame V-F: {len(df_vf)} linhas, {len(df_vf.columns)} colunas")
+    if len(df_vf) > 0:
+        print(f"[DEBUG] Colunas V-F: {df_vf.columns.tolist()}")
+    
     paginas = separar_paginas_cap(cap_conteudo)
+    print(f"[DEBUG] Páginas separadas: {len(paginas)} páginas")
+    print(f"[DEBUG] Números das páginas: {sorted(paginas.keys())}")
 
     # Tentar carregar flashcards se o arquivo existir
     df_fc = None
     if fc_path.exists():
         print(f"\n=== CARREGANDO FLASHCARDS DE {fc_path} ===")
         df_fc = ler_tabela_markdown(fc_path)
+        print(f"[DEBUG] DataFrame FC: {len(df_fc)} linhas, {len(df_fc.columns)} colunas")
+        if len(df_fc) > 0:
+            print(f"[DEBUG] Colunas FC: {df_fc.columns.tolist()}")
     else:
         print(f"\n=== ARQUIVO {fc_path} NÃO ENCONTRADO. Continuando sem flashcards. ===")
 
+    print(f"\n=== MONTANDO MARKDOWN FINAL ===")
     markdown_final = montar_markdown_final(paginas, df_vf, df_fc)
+    print(f"[DEBUG] Markdown final montado: {len(markdown_final)} caracteres")
+    print(f"[DEBUG] Primeiras 500 caracteres do markdown:")
+    print(markdown_final[:500])
+    
+    print(f"\n=== GERANDO PDF ===")
     gerar_pdf(markdown_final, pdf_path)
 
-    print(f"PDF gerado com sucesso: {pdf_path}")
+    print(f"\n✅ PDF gerado com sucesso: {pdf_path}")
+    if Path(pdf_path).exists():
+        tamanho = Path(pdf_path).stat().st_size
+        print(f"[DEBUG] Tamanho do arquivo PDF: {tamanho} bytes")
+    else:
+        print(f"[ERRO] Arquivo PDF não foi criado!")
 
 
 if __name__ == "__main__":

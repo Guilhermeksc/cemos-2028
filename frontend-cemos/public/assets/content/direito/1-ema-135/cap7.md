@@ -4,13 +4,11 @@
 
 ## 7.1 - CUMPRIMENTO DO DICA
 
-Os  Estados  devem  cumprir  as  normas  do  DICA  não  só  em  virtude  de  obrigações convencionais  assumidas, mas  também porque é de seu interesse que os conflitos  sejam
-regidos por regras de conduta consistentes e mutuamente aceitas entre as partes envolvidas.
+Os  Estados  devem  cumprir  as  normas  do  DICA  não  só  em  virtude  de  obrigações convencionais  assumidas, mas  também porque é de seu interesse que os conflitos  sejam regidos por regras de conduta consistentes e mutuamente aceitas entre as partes envolvidas.
 
 A melhor garantia do respeito ao DICA e do seu efetivo cumprimento pelos Estados reside  na  norma  pacta  sunt  servanda .  Trata-se  de  princípio  em  evidência  no  Direito Internacional Público (DIP), que estabelece que os tratados constituem lei entre as partes. No DICA,  percebe-se  sua  prescrição,  por  exemplo,  nos  art.  1 º,  comuns  às  Convenções  de Genebra de 1949, e no art. 80, do Protocolo I de 1977. Por estes enunciados, fica claro que os Estados devem não só cumprir as disposições das Convenções e Protocolos, como também zelar pela sua efetiva observação pelas demais partes vinculadas.
 
-Dessa forma, os Estados possuem responsabilidade dupla na aplicação do DICA: uma individual, no sentido de adotar as medidas necessárias para cumprir as obrigações que lhes
-incumbem; outra coletiva, de velar pela fiel execução das normas pelos outros.
+Dessa forma, os Estados possuem responsabilidade dupla na aplicação do DICA: uma individual, no sentido de adotar as medidas necessárias para cumprir as obrigações que lhes incumbem; outra coletiva, de velar pela fiel execução das normas pelos outros.
 
 ## 7.2 - RESPONSABILIDADES MILITARES
 
@@ -44,8 +42,7 @@ Diante da violação do cumprimento das normas do DICA, os beligerantes dispõem
 
 a) publicar os fatos na mídia internacional de maneira a influenciar a opinião pública mundial contra o Estado transgressor;
 b) emitir protesto contra o Estado transgressor, exigindo que os responsáveis sejam punidos e/ou que seja feito pagamento de compensação;
-c) buscar a intervenção de um Estado neutro (“Potência Protetora”), particularmente com respeito à proteção de prisioneiros de guerra e outros cidadãos que tenham caído sob
-controle do Estado agressor;
+c) buscar a intervenção de um Estado neutro (“Potência Protetora”), particularmente com respeito à proteção de prisioneiros de guerra e outros cidadãos que tenham caído sob controle do Estado agressor;
 
 ## Página 93
 
@@ -59,15 +56,13 @@ Segundo as Convenções de Genebra de 1949, o tratamento de prisioneiros de guer
 
 **7.3.2 - O CICV**
 
-O CICV é uma organização humanitária imparcial, neutra e independente, sediada em Genebra, Suíça. A direção da Cruz Vermelha é constituída integralmente por cidadãos suíços,
-bem como a maioria de seus funcionários. O CICV é uma organização distinta e não deve ser confundida com as várias sociedades nacionais da Cruz Vermelha.
+O CICV é uma organização humanitária imparcial, neutra e independente, sediada em Genebra, Suíça. A direção da Cruz Vermelha é constituída integralmente por cidadãos suíços, bem como a maioria de seus funcionários. O CICV é uma organização distinta e não deve ser confundida com as várias sociedades nacionais da Cruz Vermelha.
 
 Seu principal propósito é o de prover proteção e assistência às vítimas de conflito armado. As Convenções de Genebra reconhecem o  status  especial do CICV e registram tarefas específicas que devem ser efetuadas por essa organização, tais como visita e entrevista com  prisioneiros  de  guerra,  a  atenuação  das  agruras  sofridas  pela  população  civil  dos territórios ocupados, a busca de informações sobre pessoas desaparecidas e a oferta de seus “bons ofícios” para facilitar o estabelecimento de hospitais e zonas de segurança. Seu estatuto estabelece que a organização deve se dedicar e trabalhar pela aplicação das Convenções de Genebra, assegurar a proteção de civis e militares vítimas do conflito armado e servir como intermediário neutro entre os beligerantes.
 
 **7.3.3 - Reciprocidade**
 
-Tendo em vista o disposto no artigo 1 º, comuns às quatro Convenções de Genebra, assim como no Protocolo Adicional I, a violação de uma norma do DICA por parte de um dos
-beligerantes não desobriga o outro de seu cumprimento. O conceito de reciprocidade não é aplicável às regras do DICA relativas à proteção das vítimas do conflito armado .
+Tendo em vista o disposto no artigo 1 º, comuns às quatro Convenções de Genebra, assim como no Protocolo Adicional I, a violação de uma norma do DICA por parte de um dos beligerantes não desobriga o outro de seu cumprimento. O conceito de reciprocidade não é aplicável às regras do DICA relativas à proteção das vítimas do conflito armado .
 
 ## Página 94
 
@@ -79,10 +74,10 @@ Para  o  propósito  desta  publicação,  crimes  de  guerra  são  as  infraç
 
 Atos que constituem crimes de guerra podem ser cometidos por forças armadas de um Estado beligerante ou por indivíduos pertencentes à população civil. Os Estados beligerantes,perante o DIP, têm a obrigação de punir seus cidadãos que tiverem cometido crimes de guerra e o direito de punir pessoal pertencente às forças armadas inimigas e civis inimigos que caiam sob seu controle e tenham cometido tais atos.
 
-A respeito dos crimes de guerra, vigora o princípio da “Competência Universal ou Cosmopolita”, segundo o qual todos os Estados ficam comprometidos a punir os responsáveis
-por tais delitos. Esse princípio obriga o Estado que não tenha julgado o responsável pela infração  em  seus  próprios  tribunais  a  extraditá-lo,  para  que  seja  julgado  com  todas  as garantias do devido processo judicial.
+A respeito dos crimes de guerra, vigora o princípio da “Competência Universal ou Cosmopolita”, segundo o qual todos os Estados ficam comprometidos a punir os responsáveis por tais delitos. Esse princípio obriga o Estado que não tenha julgado o responsável pela infração  em  seus  próprios  tribunais  a  extraditá-lo,  para  que  seja  julgado  com  todas  as garantias do devido processo judicial.
 
 Ressalta-se, no entanto, que a Constituição da República Federativa do Brasil, no inciso LI do art. 5 º, proíbe a extradição de brasileiros natos, permitindo, no entanto, a de naturalizados  que tenham cometido  crime comum antes da naturalização ou em caso de comprovado envolvimento em tráfico ilícito de entorpecentes e drogas afins.
+
 Haja vista que o textos constitucionais modernos possuem disposições semelhantes, o Estatuto de Roma do TPI prevê o instituto da “entrega” e o diferencia do conhecido instituto da “extradição”. O primeiro é o ato de um Estado entregar um indivíduo àquele Tribunal, nos termos do Estatuto. O segundo é ato de um Estado entregar um indivíduo a outro Estado, conforme previsto em um tratado, em uma convenção ou no direito interno. Desta forma, a proibição constitucional acima citada não se aplica ao instituto da entrega, por se tratar de figura jurídica distinta daquela tutelada na Constituição brasileira. 
 
 Por infrações graves, entendem-se os seguintes atos contra pessoas ou bens protegidos:
@@ -121,8 +116,7 @@ x) saquear uma cidade ou uma localidade, mesmo quando tomada de assalto;
 y) utilizar veneno ou armas envenenadas;
 z) utilizar gases asfixiantes, tóxicos ou outros gases ou qualquer líquido, material ou dispositivo análogo;
 aa) utilizar  balas  que  se  expandem  ou  achatam  facilmente  no  interior  do  corpo humano, tais como balas de revestimento duro que não cobre totalmente o interior ou possui incisões;
-ab) utilizar armas, projéteis, materiais e métodos de combate que, pela sua própria natureza, causem ferimentos supérfluos ou sofrimentos desnecessários ou que surtam efeitos
-indiscriminados, em violação do DI aplicável aos conflitos armados, na medida em que tais armas, projéteis, materiais e métodos de combate sejam objeto de uma proibição geral e estejam incluídos em um anexo ao Estatuto do TPI, em virtude de uma alteração aprovada em conformidade com o disposto nos artigos 121 e 123;
+ab) utilizar armas, projéteis, materiais e métodos de combate que, pela sua própria natureza, causem ferimentos supérfluos ou sofrimentos desnecessários ou que surtam efeitos indiscriminados, em violação do DI aplicável aos conflitos armados, na medida em que tais armas, projéteis, materiais e métodos de combate sejam objeto de uma proibição geral e estejam incluídos em um anexo ao Estatuto do TPI, em virtude de uma alteração aprovada em conformidade com o disposto nos artigos 121 e 123;
 ac) ultrajar a dignidade da pessoa, em particular por meio de tratamentos humilhantes e 
 
 ## Página 97
@@ -130,8 +124,7 @@ ac) ultrajar a dignidade da pessoa, em particular por meio de tratamentos humilh
 ad) cometer atos de violação, escravidão sexual, prostituição forçada, gravidez à força, tal como definida na alínea f do § 2º do artigo 7º, esterilização à força e qualquer outra forma de violência sexual que constitua também um desrespeito grave às Convenções de Genebra; 
 ae) utilizar  a  presença  de  civis  ou  de  outras  pessoas  protegidas  para  evitar  que determinados pontos, zonas ou forças militares sejam alvo de operações militares;
 af) dirigir  intencionalmente  ataques  a  edifícios,  material,  unidades  e  veículos sanitários, assim como o pessoal que esteja usando os emblemas distintivos das  Convenções de Genebra, em conformidade com o direito internacional;
-ag) provocar deliberadamente a inanição da população civil como método de guerra, privando-a dos bens indispensáveis à sua sobrevivência, impedindo, inclusive, o envio de
-socorros, tal como previsto nas Convenções de Genebra; e 
+ag) provocar deliberadamente a inanição da população civil como método de guerra, privando-a dos bens indispensáveis à sua sobrevivência, impedindo, inclusive, o envio de socorros, tal como previsto nas Convenções de Genebra; e 
 ah) recrutar ou alistar menores de quinze anos nas forças armadas nacionais ou utilizá-los para participar ativamente nas hostilidades.
 
 2) Nos conflitos armados de índole não internacional:
@@ -169,13 +162,11 @@ A sua principal característica diz respeito ao princípio da complementaridade,
 
 ## 7.5 - CONTRAVENÇÕES  DISCIPLINARES,  ILÍCITOS  PENAIS  E  JURISDIÇÃO PENAL PARA CONTINGENTES MILITARES EM OPERAÇÕES DE PAZ
 
-Nos últimos anos tem havido um crescimento na demanda de tropas para participar de operações de manutenção da paz no mundo. A despeito de estarem servindo no exterior,
-incidentes e problemas disciplinares com militares são passíveis de ocorrer. 
+Nos últimos anos tem havido um crescimento na demanda de tropas para participar de operações de manutenção da paz no mundo. A despeito de estarem servindo no exterior, incidentes e problemas disciplinares com militares são passíveis de ocorrer. 
 
 As  forças  internacionais  são  regidas  por  atos  internacionais  que  lhes  garantem imunidade de jurisdição no país onde estão hospedadas, mas isso não significa impunidade quando  houver  conduta  não  condizente  com  o  preconizado  no  DICA.  No  âmbito  das operações de paz, este ato internacional é denominado  Acordo Sobre o Status  da Força (“Status of Force Agreement ” – SOFA).
 
-Com o objetivo de estabelecer princípios e normas fundamentais do DICA aplicáveis às Forças da ONU, as quais realizam operações sob a égide das Nações Unidas, Kofi A. Annan,
-o então Secretário-Geral da ONU, promulgou, em 1999, o Boletim no 13, onde se destacam as seguintes seções:
+Com o objetivo de estabelecer princípios e normas fundamentais do DICA aplicáveis às Forças da ONU, as quais realizam operações sob a égide das Nações Unidas, Kofi A. Annan, o então Secretário-Geral da ONU, promulgou, em 1999, o Boletim no 13, onde se destacam as seguintes seções:
 
 “[Seção 4: Violação do Direito Internacional Humanitário.
 Em caso de violação do DICA, os membros militares de uma Força das Nações Unidas serão julgados nos tribunais de seus países de origem.]
@@ -189,8 +180,7 @@ Embora este boletim não seja um documento vinculante, os Estados, ao enviarem s
 
 ## Página 100
 
-É da responsabilidade dos Estados os atos ilícitos cometidos por suas tropas. Uma vez formados os contingentes da ONU, o Estado de que são oriundos mantém o direito de tomar
-medidas  disciplinares  e  exercer  jurisdição  penal,  por  atos  praticados  dentro  ou  fora  do exercício de suas funções. A imunidade de jurisdição civil é apenas para os atos praticados no exercício de suas funções.
+É da responsabilidade dos Estados os atos ilícitos cometidos por suas tropas. Uma vez formados os contingentes da ONU, o Estado de que são oriundos mantém o direito de tomar medidas  disciplinares  e  exercer  jurisdição  penal,  por  atos  praticados  dentro  ou  fora  do exercício de suas funções. A imunidade de jurisdição civil é apenas para os atos praticados no exercício de suas funções.
 
 Ressalta-se que os integrantes das Forças de Paz (ForPaz) também estão sujeitos às regras do Direito Internacional Penal. Desta forma, os assuntos criminais ocorridos na área de uma operação de paz podem ser julgados pelo TPI, respeitada a jurisdição primária dos países de origem dos elementos envolvidos.
 
