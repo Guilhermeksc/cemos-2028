@@ -1,5 +1,7 @@
 # Capítulo 1 -  DECRETO Nº 19.841, DE 22 DE OUTUBRO DE 1945.
 
+## Página 1
+
 Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em **São Francisco, a 26 de junho de 1945**, por ocasião da Conferência de Organização Internacional das Nações Unidas.
 
 ## CAPÍTULO I - PROPÓSITOS E PRINCÍPIOS
@@ -29,6 +31,8 @@ Artigo 2. A Organização e seus Membros, para a realização dos propósitos me
 6. A Organização fará com que os Estados que não são Membros das Nações Unidas ajam de acordo com esses Princípios em tudo quanto for necessário à manutenção da paz e da segurança internacionais.
 
 7. Nenhum dispositivo da presente Carta autorizará as Nações Unidas a intervirem em assuntos que dependam essencialmente da jurisdição de qualquer Estado ou obrigará os Membros a submeterem tais assuntos a uma solução, nos termos da presente Carta; este princípio, porém, não prejudicará a aplicação das medidas coercitivas constantes do Capitulo VII.
+
+## Página 2
 
 ## CAPITULO V - CONSELHO DE SEGURANÇA
 
@@ -60,6 +64,8 @@ Artigo 27. 1. Cada membro do Conselho de Segurança terá um voto.
 
 3. As decisões do Conselho de Segurança, em todos os outros assuntos, serão tomadas pelo voto afirmativo de nove membros, inclusive os votos afirmativos de todos os membros permanentes, ficando estabelecido que, nas decisões previstas no Capítulo VI e no parágrafo 3 do Artigo 52, aquele que for parte em uma controvérsia se absterá de votar.
 
+## Página 3
+
 ## CAPÍTULO VI - SOLUÇÃO PACÍFICA DE CONTROVÉRSIAS
 
 Artigo 33. 1. As partes em uma controvérsia, que possa vir a constituir uma ameaça à paz e à segurança internacionais, procurarão, antes de tudo, chegar a uma solução por negociação, inquérito, mediação, conciliação, arbitragem, solução judicial, recurso a entidades ou acordos regionais, ou a qualquer outro meio pacífico à sua escolha.
@@ -67,6 +73,8 @@ Artigo 33. 1. As partes em uma controvérsia, que possa vir a constituir uma ame
 2. O Conselho de Segurança convidará, quando julgar necessário, as referidas partes a resolver, por tais meios, suas controvérsias.
 
 Artigo 34. O Conselho de Segurança poderá investigar sobre qualquer controvérsia ou situação suscetível de provocar atritos entre as Nações ou dar origem a uma controvérsia, a fim de determinar se a continuação de tal controvérsia ou situação pode constituir ameaça à manutenção da paz e da segurança internacionais.
+
+## Página 4
 
 ## CAPÍTULO VII - AÇÃO RELATIVA A AMEAÇAS À PAZ, RUPTURA DA PAZ E ATOS DE AGRESSÃO
 
@@ -85,6 +93,8 @@ Artigo 43. 1. Todos os Membros das Nações Unidas, a fim de contribuir para a m
 3. O acôrdo ou acordos serão negociados o mais cedo possível, por iniciativa do Conselho de Segurança. Serão concluídos entre o Conselho de Segurança e Membros da Organização ou entre o Conselho de Segurança e grupos de Membros e submetidos à ratificação, pelos Estados signatários, de conformidade com seus respectivos processos constitucionais.
 
 Artigo 44. Quando o Conselho de Segurança decidir o emprego de força, deverá, antes de solicitar a um Membro nele não representado o fornecimento de forças armadas em cumprimento das obrigações assumidas em virtude do Artigo 43, convidar o referido Membro, se este assim o desejar, a participar das decisões do Conselho de Segurança relativas ao emprego de contingentes das forças armadas do dito Membro.
+
+## Página 5
 
 Artigo 45. A fim de habilitar as Nações Unidas a tomarem medidas militares urgentes, os Membros das Nações Unidas deverão manter, imediatamente utilizáveis, contingentes das forças aéreas nacionais para a execução combinada de uma ação coercitiva internacional. A potência e o grau de preparação desses contingentes, como os planos de ação combinada, serão determinados pelo Conselho de Segurança com a assistência da Comissão de Estado Maior, dentro dos limites estabelecidos no acordo ou acordos especiais a que se refere o Artigo 43.
 
