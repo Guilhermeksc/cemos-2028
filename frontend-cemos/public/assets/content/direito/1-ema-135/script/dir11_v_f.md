@@ -12,7 +12,7 @@ Instruções específicas:
 
     “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
 
-    “assunto” será preenchido com 'Cap. 9 - Designação do Objetivo'.
+    “assunto” será preenchido com 'Cap. 11 - Armas Nucleares, Químicas e Biológicas'.
     
     “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa.
 

@@ -1,5 +1,6 @@
 import re
 import sys
+import tempfile
 from pathlib import Path
 import pandas as pd
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
@@ -170,6 +171,10 @@ def montar_markdown_final(paginas, df_vf, df_fc=None):
     paginas_com_fc = 0
     
     for numero in sorted(paginas.keys()):
+        # Adicionar marcador de página no início
+        output.append(f"<pagina>{numero}</pagina>")
+        output.append("")
+        
         bloco_vf = gerar_bloco_vf(df_vf, numero)
         bloco_fc = ""
 
@@ -217,7 +222,13 @@ def converter_markdown_para_html(texto):
     Suporta: **negrito**, *itálico*, (V-F)**texto** (verde negrito), fc**texto** (azul negrito), ## Título (negrito), etc.
     Mantém emojis intactos.
     """
-    # PRIMEIRO: Converter ## Título para <b>Título</b> (exceto ## Página)
+    # PRIMEIRO: Remover tags HTML problemáticas que o reportlab não aceita
+    # Remover tags <br> e <br/> (reportlab não aceita <br> com conteúdo)
+    texto = re.sub(r'<br\s*/?>', ' ', texto, flags=re.IGNORECASE)
+    # Remover tags <para> (reportlab gerencia parágrafos automaticamente)
+    texto = re.sub(r'</?para>', '', texto, flags=re.IGNORECASE)
+    
+    # SEGUNDO: Converter ## Título para <b>Título</b> (exceto ## Página)
     # Isso deve ser feito ANTES de processar outros padrões
     texto = re.sub(
         r'^##\s+(?!Página\s+)(.+)$',
@@ -226,7 +237,7 @@ def converter_markdown_para_html(texto):
         flags=re.MULTILINE
     )
     
-    # SEGUNDO: Converter (V-F)**texto** para verde negrito
+    # TERCEIRO: Converter (V-F)**texto** para verde negrito
     # Isso deve ser feito ANTES de processar **texto** normal
     texto = re.sub(
         r'\(V-F\)\*\*([^*]+?)\*\*',
@@ -234,7 +245,7 @@ def converter_markdown_para_html(texto):
         texto
     )
     
-    # SEGUNDO E MEIO: Converter fc**texto** para azul negrito
+    # QUARTO: Converter fc**texto** para azul negrito
     # Isso deve ser feito ANTES de processar **texto** normal
     # O padrão procura por "fc" seguido imediatamente por **texto**
     texto = re.sub(
@@ -243,11 +254,11 @@ def converter_markdown_para_html(texto):
         texto
     )
     
-    # TERCEIRO: Converter **texto** para <b>texto</b> (negrito markdown normal)
+    # QUINTO: Converter **texto** para <b>texto</b> (negrito markdown normal)
     # Agora só vai pegar os **texto** que não foram processados acima
     texto = re.sub(r'\*\*([^*]+?)\*\*', r'<b>\1</b>', texto)
     
-    # QUARTO: Converter *texto* para <i>texto</i> (itálico, apenas se não for **)
+    # SEXTO: Converter *texto* para <i>texto</i> (itálico, apenas se não for **)
     texto = re.sub(r'(?<!\*)\*([^*\n]+?)\*(?!\*)', r'<i>\1</i>', texto)
     
     # Escapar apenas & que não está em entidades HTML já existentes
@@ -257,7 +268,7 @@ def converter_markdown_para_html(texto):
     
     for parte in partes:
         if parte.startswith('<') and parte.endswith('>'):
-            # Tag HTML - manter como está
+            # Tag HTML - manter como está (mas já removemos <br> e <para> acima)
             resultado.append(parte)
         elif parte.startswith('&') and parte.endswith(';'):
             # Entidade HTML já existente - manter como está
@@ -292,33 +303,26 @@ class LinhaTracejada(Flowable):
         return (self.width, self.thickness + self.spaceBefore + self.spaceAfter)
 
 
-def gerar_pdf(texto, caminho_pdf):
-    print(f"\n[DEBUG] Iniciando geração de PDF: {caminho_pdf}")
-    print(f"[DEBUG] Tamanho do texto recebido: {len(texto)} caracteres")
-    print(f"[DEBUG] Número de linhas no texto: {len(texto.split(chr(10)))} linhas")
-
-    styles = getSampleStyleSheet()
-
-    # estilo normal compacto com texto justificado
-    estilo_compacto = ParagraphStyle(
-        'Compacto',
-        parent=styles['Normal'],
-        fontSize=9,
-        leading=10,
-        spaceAfter=2,
-        spaceBefore=0,
-        alignment=4,  # 4 = TA_JUSTIFY (texto justificado)
-    )
-
+def construir_story(texto, estilo_compacto, estilo_pagina=None):
+    """Constrói o story a partir do texto markdown"""
     story = []
     linhas_processadas = 0
     linhas_vazias = 0
     linhas_tracejadas = 0
     linhas_separador = 0
     linhas_paragrafo = 0
+    linhas_pagina = 0
 
     for linha in texto.split("\n"):
         linhas_processadas += 1
+
+        # 0) detectar marcador de página e formatar
+        if linha.strip().startswith("<pagina>"):
+            linhas_pagina += 1
+            if estilo_pagina is not None:
+                num = linha.replace("<pagina>", "").replace("</pagina>", "").strip()
+                story.append(Paragraph(f"<b>Página {num}</b>", estilo_pagina))
+            continue
 
         # 1) detectar linha tracejada
         if linha.strip() == "<linha_tracejada/>":
@@ -366,12 +370,128 @@ def gerar_pdf(texto, caminho_pdf):
     print(f"  - Linhas vazias: {linhas_vazias}")
     print(f"  - Linhas tracejadas: {linhas_tracejadas}")
     print(f"  - Separadores FC: {linhas_separador}")
+    print(f"  - Títulos de página: {linhas_pagina}")
     print(f"  - Parágrafos: {linhas_paragrafo}")
     print(f"  - Total de elementos no story: {len(story)}")
     
-    if len(story) == 0:
+    return story
+
+
+def gerar_pdf(texto, caminho_pdf):
+    print(f"\n[DEBUG] Iniciando geração de PDF: {caminho_pdf}")
+    print(f"[DEBUG] Tamanho do texto recebido: {len(texto)} caracteres")
+    print(f"[DEBUG] Número de linhas no texto: {len(texto.split(chr(10)))} linhas")
+
+    styles = getSampleStyleSheet()
+
+    # estilo normal compacto com texto justificado
+    estilo_compacto = ParagraphStyle(
+        'Compacto',
+        parent=styles['Normal'],
+        fontSize=9,
+        leading=10,
+        spaceAfter=2,
+        spaceBefore=0,
+        alignment=4,  # 4 = TA_JUSTIFY (texto justificado)
+    )
+
+    # estilo de página (centralizado e maior)
+    estilo_pagina = ParagraphStyle(
+        'Pagina',
+        parent=styles['Heading1'],
+        alignment=1,  # centro
+        fontSize=13,
+        leading=14,
+        spaceAfter=6,
+        spaceBefore=12,
+    )
+
+    # Construir story para contagem de páginas
+    story_temp = construir_story(texto, estilo_compacto, estilo_pagina)
+    
+    if len(story_temp) == 0:
         print("[ERRO] Story está vazio! Nenhum conteúdo para gerar PDF.")
         return
+
+    # Primeira passagem: contar o número total de páginas
+    print(f"\n[DEBUG] Contando páginas...")
+    temp_path = None
+    total_paginas = None
+    
+    try:
+        # Criar arquivo temporário
+        temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.pdf')
+        temp_path = temp_file.name
+        temp_file.close()
+        
+        temp_doc = SimpleDocTemplate(
+            temp_path,
+            pagesize=A4,
+            leftMargin=10 * mm,
+            rightMargin=10 * mm,
+            topMargin=10 * mm,
+            bottomMargin=10 * mm,
+        )
+        temp_doc.build(story_temp)
+        
+        # Obter o número total de páginas do documento temporário
+        try:
+            from PyPDF2 import PdfReader
+            reader = PdfReader(temp_path)
+            total_paginas = len(reader.pages)
+            print(f"[DEBUG] Total de páginas detectado (PyPDF2): {total_paginas}")
+        except ImportError:
+            # Se PyPDF2 não estiver disponível, tentar contar manualmente
+            print("[DEBUG] PyPDF2 não disponível, usando método manual...")
+            with open(temp_path, 'rb') as f:
+                conteudo = f.read()
+                total_paginas = conteudo.count(b'/Type/Page')
+            print(f"[DEBUG] Total de páginas detectado (método manual): {total_paginas}")
+        except Exception as e:
+            print(f"[AVISO] Não foi possível contar páginas automaticamente: {e}")
+            total_paginas = None
+    except Exception as e:
+        print(f"[AVISO] Erro ao criar documento temporário para contagem: {e}")
+        print("[DEBUG] Continuando sem contagem de páginas...")
+        total_paginas = None
+    finally:
+        # Remover arquivo temporário após ler
+        if temp_path and Path(temp_path).exists():
+            try:
+                Path(temp_path).unlink()
+            except Exception as e:
+                print(f"[AVISO] Não foi possível remover arquivo temporário: {e}")
+
+    # Função para adicionar paginação no rodapé
+    # Usar uma lista para permitir modificação dentro da função (closure)
+    total_paginas_ref = [total_paginas]
+    
+    def adicionar_paginacao(canvas, doc):
+        """Adiciona paginação no formato '- X de N -' no rodapé"""
+        canvas.saveState()
+        
+        # Obter número da página atual
+        pagina_atual = canvas.getPageNumber()
+        
+        # Calcular posição Y do rodapé (5mm da margem inferior)
+        y_pos = 5 * mm
+        
+        # Texto da paginação
+        if total_paginas_ref[0] is not None:
+            texto_paginacao = f"- {pagina_atual} de {total_paginas_ref[0]} -"
+        else:
+            texto_paginacao = f"- {pagina_atual} -"
+        
+        # Desenhar texto centralizado
+        largura_pagina = A4[0]
+        canvas.setFont("Helvetica", 9)
+        canvas.drawCentredString(largura_pagina / 2, y_pos, texto_paginacao)
+        
+        canvas.restoreState()
+
+    # Reconstruir story para o PDF final (o story anterior foi consumido na contagem)
+    print(f"\n[DEBUG] Reconstruindo story para PDF final...")
+    story = construir_story(texto, estilo_compacto, estilo_pagina)
 
     print(f"\n[DEBUG] Criando documento PDF...")
     doc = SimpleDocTemplate(
@@ -380,12 +500,12 @@ def gerar_pdf(texto, caminho_pdf):
         leftMargin=10 * mm,
         rightMargin=10 * mm,
         topMargin=10 * mm,
-        bottomMargin=10 * mm,
+        bottomMargin=15 * mm,  # Aumentar margem inferior para espaço da paginação
     )
 
     print(f"[DEBUG] Construindo PDF...")
     try:
-        doc.build(story)
+        doc.build(story, onFirstPage=adicionar_paginacao, onLaterPages=adicionar_paginacao)
         print(f"[DEBUG] PDF construído com sucesso!")
     except Exception as e:
         print(f"[ERRO] Falha ao construir PDF: {e}")
@@ -395,14 +515,12 @@ def gerar_pdf(texto, caminho_pdf):
 
 
 
-def main():
-    # DIGITE O NÚMERO DO CAPÍTULO AQUI:
-    x = "9"  # ← ALTERE ESTE VALOR
+def processar_capitulo(x, base):
+    """Processa um único capítulo e gera seu PDF"""
+    print(f"\n{'='*60}")
+    print(f"PROCESSANDO CAPÍTULO {x}")
+    print(f"{'='*60}")
     
-    # Usar o diretório do script atual
-    base = Path(__file__).parent.resolve()
-    print(f"\n=== DIRETÓRIO DE TRABALHO: {base} ===")
-
     cap_path = base / f"cap{x}.md"
     vf_path = base / f"vf{x}.md"
     fc_path = base / f"fc{x}.md"
@@ -411,52 +529,104 @@ def main():
     # Verificar se os arquivos necessários existem
     if not cap_path.exists():
         print(f"ERRO: Arquivo não encontrado: {cap_path}")
-        sys.exit(1)
+        return False
     
     if not vf_path.exists():
         print(f"ERRO: Arquivo não encontrado: {vf_path}")
-        sys.exit(1)
+        return False
 
-    print(f"\n=== CARREGANDO CAPÍTULO DE {cap_path} ===")
-    cap_conteudo = carregar_capitulo(cap_path)
-    print(f"[DEBUG] Capítulo carregado: {len(cap_conteudo)} caracteres")
-    
-    print(f"\n=== CARREGANDO V-F DE {vf_path} ===")
-    df_vf = ler_tabela_markdown(vf_path)
-    print(f"[DEBUG] DataFrame V-F: {len(df_vf)} linhas, {len(df_vf.columns)} colunas")
-    if len(df_vf) > 0:
-        print(f"[DEBUG] Colunas V-F: {df_vf.columns.tolist()}")
-    
-    paginas = separar_paginas_cap(cap_conteudo)
-    print(f"[DEBUG] Páginas separadas: {len(paginas)} páginas")
-    print(f"[DEBUG] Números das páginas: {sorted(paginas.keys())}")
+    try:
+        print(f"\n=== CARREGANDO CAPÍTULO DE {cap_path} ===")
+        cap_conteudo = carregar_capitulo(cap_path)
+        print(f"[DEBUG] Capítulo carregado: {len(cap_conteudo)} caracteres")
+        
+        print(f"\n=== CARREGANDO V-F DE {vf_path} ===")
+        df_vf = ler_tabela_markdown(vf_path)
+        print(f"[DEBUG] DataFrame V-F: {len(df_vf)} linhas, {len(df_vf.columns)} colunas")
+        if len(df_vf) > 0:
+            print(f"[DEBUG] Colunas V-F: {df_vf.columns.tolist()}")
+        
+        paginas = separar_paginas_cap(cap_conteudo)
+        print(f"[DEBUG] Páginas separadas: {len(paginas)} páginas")
+        print(f"[DEBUG] Números das páginas: {sorted(paginas.keys())}")
 
-    # Tentar carregar flashcards se o arquivo existir
-    df_fc = None
-    if fc_path.exists():
-        print(f"\n=== CARREGANDO FLASHCARDS DE {fc_path} ===")
-        df_fc = ler_tabela_markdown(fc_path)
-        print(f"[DEBUG] DataFrame FC: {len(df_fc)} linhas, {len(df_fc.columns)} colunas")
-        if len(df_fc) > 0:
-            print(f"[DEBUG] Colunas FC: {df_fc.columns.tolist()}")
+        # Tentar carregar flashcards se o arquivo existir
+        df_fc = None
+        if fc_path.exists():
+            print(f"\n=== CARREGANDO FLASHCARDS DE {fc_path} ===")
+            df_fc = ler_tabela_markdown(fc_path)
+            print(f"[DEBUG] DataFrame FC: {len(df_fc)} linhas, {len(df_fc.columns)} colunas")
+            if len(df_fc) > 0:
+                print(f"[DEBUG] Colunas FC: {df_fc.columns.tolist()}")
+        else:
+            print(f"\n=== ARQUIVO {fc_path} NÃO ENCONTRADO. Continuando sem flashcards. ===")
+
+        print(f"\n=== MONTANDO MARKDOWN FINAL ===")
+        markdown_final = montar_markdown_final(paginas, df_vf, df_fc)
+        print(f"[DEBUG] Markdown final montado: {len(markdown_final)} caracteres")
+        print(f"[DEBUG] Primeiras 500 caracteres do markdown:")
+        print(markdown_final[:500])
+        
+        print(f"\n=== GERANDO PDF ===")
+        gerar_pdf(markdown_final, pdf_path)
+
+        print(f"\n✅ PDF gerado com sucesso: {pdf_path}")
+        if Path(pdf_path).exists():
+            tamanho = Path(pdf_path).stat().st_size
+            print(f"[DEBUG] Tamanho do arquivo PDF: {tamanho} bytes")
+            return True
+        else:
+            print(f"[ERRO] Arquivo PDF não foi criado!")
+            return False
+    except Exception as e:
+        print(f"\n[ERRO] Falha ao processar capítulo {x}: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+
+def main():
+    # DIGITE OS NÚMEROS DOS CAPÍTULOS AQUI:
+    # Pode ser uma string com números separados por vírgula: "1,2,3,4"
+    # Ou uma lista: ["1", "2", "3", "4"]
+    # Ou um único número: "14"
+    numeros_capitulos = "1,2,3,4,5,6,7,8,9,10,11,12,13,14"  # ← ALTERE ESTE VALOR
+    
+    # Usar o diretório do script atual
+    base = Path(__file__).parent.resolve()
+    print(f"\n=== DIRETÓRIO DE TRABALHO: {base} ===")
+    
+    # Processar a string de números para lista
+    if isinstance(numeros_capitulos, str):
+        # Remover espaços e dividir por vírgula
+        numeros = [x.strip() for x in numeros_capitulos.split(",") if x.strip()]
+    elif isinstance(numeros_capitulos, list):
+        numeros = [str(x).strip() for x in numeros_capitulos if str(x).strip()]
     else:
-        print(f"\n=== ARQUIVO {fc_path} NÃO ENCONTRADO. Continuando sem flashcards. ===")
-
-    print(f"\n=== MONTANDO MARKDOWN FINAL ===")
-    markdown_final = montar_markdown_final(paginas, df_vf, df_fc)
-    print(f"[DEBUG] Markdown final montado: {len(markdown_final)} caracteres")
-    print(f"[DEBUG] Primeiras 500 caracteres do markdown:")
-    print(markdown_final[:500])
+        # Se for um único número, converter para lista
+        numeros = [str(numeros_capitulos).strip()]
     
-    print(f"\n=== GERANDO PDF ===")
-    gerar_pdf(markdown_final, pdf_path)
-
-    print(f"\n✅ PDF gerado com sucesso: {pdf_path}")
-    if Path(pdf_path).exists():
-        tamanho = Path(pdf_path).stat().st_size
-        print(f"[DEBUG] Tamanho do arquivo PDF: {tamanho} bytes")
-    else:
-        print(f"[ERRO] Arquivo PDF não foi criado!")
+    print(f"\n=== PROCESSANDO {len(numeros)} CAPÍTULO(S) ===")
+    print(f"Capítulos: {', '.join(numeros)}")
+    
+    # Processar cada capítulo
+    sucessos = 0
+    falhas = 0
+    
+    for x in numeros:
+        if processar_capitulo(x, base):
+            sucessos += 1
+        else:
+            falhas += 1
+    
+    # Resumo final
+    print(f"\n{'='*60}")
+    print(f"RESUMO FINAL")
+    print(f"{'='*60}")
+    print(f"Total de capítulos processados: {len(numeros)}")
+    print(f"✅ Sucessos: {sucessos}")
+    print(f"❌ Falhas: {falhas}")
+    print(f"{'='*60}")
 
 
 if __name__ == "__main__":

@@ -20,7 +20,7 @@ c) dar-se-á aviso com a devida antecipação e por meios  eficazes, de qualquer
 
 ## Página 122
 
-Essas  premissas,  que  orientam  a  determinação  de  objetivos,  estão  relacionadas  aos princípios militares do objetivo, concentração e economia de força.
+Essas  premissas,  que  orientam  a  determinação  de  objetivos,  estão  relacionadas  aos fc**princípios militares do objetivo, concentração e economia de força**.
 
 O Direito Internacional (DI) determina que somente objetivos de importância militar devem ser atacados, e ainda permite a concentração de meios necessários para destruir esses objetivos. Ao mesmo tempo, prevê que a destruição desnecessária deve ser evitada, na medida do possível, e deve ser consistente com o cumprimento da missão e a segurança da força envolvida, devendo ser evitado o sofrimento humano desnecessário.
 
@@ -28,19 +28,19 @@ A Designação do Objetivo requer, portanto, que todas as precauções razoávei
 
 **9.1.1 - Objetivos militares**
 
-Objetivos militares, conforme o §2 ° do art. 52 do Protocolo Adicional I às Convenções de Genebra de 12 de agosto de 1949, limitam-se àqueles que por sua natureza, localização, finalidade, ou uso contribuam eficazmente à ação militar e cuja destruição parcial ou total, captura ou neutralização ofereça, nas circunstâncias do caso, vantagem militar concreta. A vantagem militar não definida pelo DI é um conceito subjetivo, podendo envolver uma grande variedade  de  considerações,  inclusive  a  segurança  da  força  atacante.  Somente  objetivos militares devem ser atacados.
+Objetivos militares, conforme o §2 ° do art. 52 do Protocolo Adicional I às Convenções de Genebra de 12 de agosto de 1949, fc**limitam-se àqueles que por sua natureza, localização, finalidade, ou uso contribuam eficazmente à ação militar e cuja destruição parcial ou total, captura ou neutralização ofereça, nas circunstâncias do caso, vantagem militar concreta**. A vantagem militar não definida pelo DI é um conceito subjetivo, podendo envolver uma grande variedade  de  considerações,  inclusive  a  segurança  da  força  atacante.  Somente  objetivos militares devem ser atacados.
 
-A título de exemplo , são alvos apropriados para um ataque efetuado a partir de meios navais,  aeronavais  e  de  fuzileiros  navais  contra  o  inimigo:  navios  de  guerra,  aeronaves militares e navios auxiliares, bases militares em terra, estaleiros de construção e reparo de navios  de  guerra,  depósitos  militares  e  armazéns, áreas  de  estocagem  de  petróleo,  óleo combustível  e  lubrificantes,  docas,  facilidades  portuárias,  portos,  pontes,  aeródromos, veículos militares, peças de artilharia, paióis de munição, concentração de tropas, pontos de concentração de embarque, linhas  de comunicações  e outros utilizados  para conduzir ou apoiar operações militares. 
+A título de exemplo , são alvos apropriados para um ataque efetuado a partir de meios navais,  aeronavais  e  de  fuzileiros  navais  contra  o  inimigo:  fc**navios  de  guerra,  aeronaves militares e navios auxiliares, bases militares em terra, estaleiros de construção e reparo de navios  de  guerra,  depósitos  militares  e  armazéns, áreas  de  estocagem  de  petróleo,  óleo combustível  e  lubrificantes,  docas,  facilidades  portuárias,  portos,  pontes,  aeródromos, veículos militares, peças de artilharia, paióis de munição, concentração de tropas, pontos de concentração de embarque, linhas  de comunicações  e outros utilizados  para conduzir ou apoiar operações militares**. 
 
 São também considerados alvos apropriados: acidentes geográficos, como passagens em desfiladeiros e montanhas, prédios e instalações que proporcionem apoio administrativo e de pessoal para operações militares e navais, ou seja, acampamentos, instalações de Comando e Controle, quartéis-generais e áreas de adestramento.
 
 ## Página 123
 
-Instalações de importância econômica, como linhas de comunicações inimigas, pátios de ferrovias, pontes, barcas, “ ferry-boats”, instalações industriais que sejam empregadas produção de material bélico e de geração de energia elétrica, podem também se constituir em alvos  para  operações  de  ataque.  Objetivos  inimigos  de  importância  econômica  que indiretamente, porém de forma efetiva, possam apoiar e sustentar o esforço de guerra do inimigo, também podem ser atacados.
+Instalações de importância econômica, como linhas de comunicações inimigas, pátios de ferrovias, pontes, barcas, “ ferry-boats”, instalações industriais que sejam empregadas produção de material bélico e de geração de energia elétrica, podem também se constituir em alvos  para  operações  de  ataque.  fc**Objetivos  inimigos  de  importância  econômica  que indiretamente, porém de forma efetiva, possam apoiar e sustentar o esforço de guerra do inimigo, também podem ser atacados**.
 
 **9.1.2 - Bens civis, pessoal civil e outras pessoas protegidas**
 
-Consistem em todas as propriedades civis e nas pessoas envolvidas em atividades que não aquelas destinadas a apoiar ou sustentar o esforço de guerra do inimigo. Ataques a instalações como diques e represas (inciso 9.5.1, alínea g) são proibidos, caso a sua destruição venha a resultar em perdas de vidas civis, desproporcionais à vantagem militar auferida.
+fc**Consistem em todas as propriedades civis e nas pessoas envolvidas em atividades que não aquelas destinadas a apoiar ou sustentar o esforço de guerra do inimigo**. Ataques a instalações como diques e represas (inciso 9.5.1, alínea g) são proibidos, caso a sua destruição venha a resultar em perdas de vidas civis, desproporcionais à vantagem militar auferida.
 
 Similarmente, é proibida a destruição intencional de alimentos, colheitas, rebanhos, depósitos de água potável e outros objetos indispensáveis à sobrevivência da população civil, com o propósito específico de negar seu uso àquela população. Bens civis, pessoal civil e outras pessoas protegidas, como membros das Forças Armadas pertencentes aos Corpos de saúde e religioso, não devem ser alvos de ataques.
 
@@ -50,8 +50,7 @@ Não é ilegal causar baixas acidentais a civis ou danos colaterais a bens civis
 
 Comandantes de força devem tomar todas as precauções consideradas razoáveis, ponderando os aspectos humanitários e aqueles relacionados à ação militar, isto é, manter as baixas civis em um mínimo e sem se descuidar do cumprimento da missão e da preservação da segurança da força envolvida.
 
-A cada momento, o Comandante deve avaliar se as baixas  acidentais e os danos colaterais são excessivos à luz de uma estimativa razoável dos fatos disponíveis naquele
-instante. 
+A cada momento, o Comandante deve avaliar se as baixas  acidentais e os danos colaterais são excessivos à luz de uma estimativa razoável dos fatos disponíveis naquele instante. 
 
 Da mesma maneira, cabe ao Comandante avaliar, com base no controle da ação planejada, se deve adotar um método alternativo de condução do ataque, de modo a reduzir as baixas civis e os danos colaterais desnecessários, caso seja exequível.
 
@@ -59,7 +58,7 @@ Da mesma maneira, cabe ao Comandante avaliar, com base no controle da ação pla
 
 **9.1.3 - Danos ambientais**
 
-Não é ilegal causar dano colateral ao meio ambiente durante um ataque realizado sobre um objetivo militar legítimo. Contudo, um comandante tem a obrigação de, na medida do possível,  evitar  danos  desnecessários,  desde  que  tal  prática  seja  consistente  com  o cumprimento da missão.
+fc**Não é ilegal causar dano colateral ao meio ambiente durante um ataque realizado sobre um objetivo militar legítimo. Contudo, um comandante tem a obrigação de, na medida do possível,  evitar  danos  desnecessários,  desde  que  tal  prática  seja  consistente  com  o cumprimento da missão.**
 
 Para esse fim, e desde que os requisitos militares o permitam, os métodos e meios de condução de ações bélicas devem ser empregados levando-se em consideração a proteção e a preservação do meio ambiente.
 
@@ -69,26 +68,25 @@ A destruição do meio ambiente de forma gratuita e desnecessária para o cumpri
 
 Como via de regra, navios de guerra de superfície podem empregar seus sistemas de armas  convencionais  para  atacar  alvos  aéreos,  de  superfície  e  submarinos  inimigos, localizados fora de território neutro.
 
-O Direito Internacional dos Conflitos Armados (DICA) aplicado à guerra de superfície tem seu enfoque voltado para a proteção de civis e outras pessoas a serem protegidas e se materializa por meio de regras que definem alvos legítimos que podem ser atacados. Para esse fim, os navios e aeronaves inimigas se inserem em uma das três categorias: navios de guerra e aeronaves militares; navios mercantes e aeronaves civis; e navios e aeronaves protegidos por motivos específicos.
+O Direito Internacional dos Conflitos Armados (DICA) aplicado à guerra de superfície tem seu enfoque voltado para a proteção de civis e outras pessoas a serem protegidas e se materializa por meio de regras que definem alvos legítimos que podem ser atacados. Para esse fim, os navios e aeronaves inimigas se inserem em fc**uma das três categorias: navios de guerra e aeronaves militares; navios mercantes e aeronaves civis; e navios e aeronaves protegidos por motivos específicos**.
 
 **9.2.1 - Navios de guerra e aeronaves militares**
 
 Navios de guerra e aeronaves militares inimigos, inclusive meios auxiliares, desde que não gozem de proteção prevista no DI, estão sujeitos a ataques, destruição, ou captura em qualquer espaço situado fora de território neutro.
 
-É proibido, contudo, designar como alvo um navio de guerra ou aeronave militar inimigo que tenha expressado de forma clara sua intenção de oferecer rendição. Uma vez que um navio de guerra inimigo tenha indicado claramente sua intenção de se render pelo ato de arriar  sua  bandeira,  ou  hastear  a  bandeira  branca,  ou  vindo  à  superfície  (no  caso  de submarino), ou parando máquinas em resposta a sinais do atacante, ou ainda embarcando a tripulação em botes salva-vidas, o ataque deve ser interrompido.
+É proibido, contudo, designar como alvo um navio de guerra ou aeronave militar inimigo que tenha expressado de forma clara sua intenção de oferecer rendição. Uma vez que um navio de guerra inimigo tenha indicado claramente sua intenção de se render pelo fc**ato de arriar  sua  bandeira,  ou  hastear  a  bandeira  branca,  ou  vindo  à  superfície  (no  caso  de submarino), ou parando máquinas em resposta a sinais do atacante, ou ainda embarcando a tripulação em botes salva-vidas, o ataque deve ser interrompido**.
 
 ## Página 125
 
-Sobre as aeronaves inimigas, a rendição no ar, em combate aéreo, não é normalmente oferecida. Contudo, se for oferecida a rendição, esta deve ser respeitada. A  oficialidade  e a guarnição de navios de guerra, aeronaves militares e navios auxiliares inimigos, capturados ou destruídos, devem ser feitos prisioneiros de guerra.
+fc**Sobre as aeronaves inimigas, a rendição no ar, em combate aéreo, não é normalmente oferecida**. Contudo, se for oferecida a rendição, esta deve ser respeitada. fc**A  oficialidade  e a guarnição de navios de guerra, aeronaves militares e navios auxiliares inimigos, capturados ou destruídos, devem ser feitos prisioneiros de guerra**.
 
-Na medida em que a situação  permita,  após cada engajamento,  todas as medidas possíveis devem ser adotadas, sem retardo, para efetuar as buscas aos náufragos, feridos e
-doentes e para o recolhimento dos mortos. O  procedimento  de  presa  não é  usado  para  navios  de  guerra  e  navios  auxiliares inimigos capturados, uma vez que a propriedade desses navios é investida imediatamente a favor do governo captor em decorrência da captura.
+Na medida em que a situação  permita,  após cada engajamento,  todas as medidas possíveis devem ser adotadas, sem retardo, para efetuar as buscas aos náufragos, feridos e doentes e para o recolhimento dos mortos. O  procedimento  de  presa  não é  usado  para  navios  de  guerra  e  navios  auxiliares inimigos capturados, uma vez que a propriedade desses navios é investida imediatamente a favor do governo captor em decorrência da captura.
 
 **9.2.2 - Navios mercantes e aeronaves civis inimigos**
 
 **a) Captura**
 
-Fora de território neutro, os navios mercantes e aeronaves civis inimigos podem ser capturados. A visita e inspeção não são necessárias, desde que seja feita a identificação positiva do status de inimigo por outros meios. Quando as circunstâncias militares impedirem o envio da guarnição de presa e a tomada de tal embarcação ou aeronave, para adjudicá-los como  presa  inimiga,  eles  poderão  ser  destruídos  depois  que todas  as  medidas  possíveis tenham sido adotadas para prover segurança aos passageiros e tripulação. Documentos  e papéis relativos à presa devem ser preservados e, se exequível, todos os pertences pessoais dos passageiros devem ser salvos.
+fc**Fora de território neutro, os navios mercantes e aeronaves civis inimigos podem ser capturados. A visita e inspeção não são necessárias, desde que seja feita a identificação positiva** do status de inimigo por outros meios. fc**Quando as circunstâncias militares impedirem o envio da guarnição de presa e a tomada de tal embarcação ou aeronave, para adjudicá-los como  presa  inimiga,  eles  poderão  ser  destruídos  depois  que todas  as  medidas  possíveis tenham sido adotadas para prover segurança aos passageiros e tripulação**. Documentos  e papéis relativos à presa devem ser preservados e, se exequível, todos os pertences pessoais dos passageiros devem ser salvos.
 
 A  destruição  de  presa  inimiga  deve  ser  prontamente  informada  aos  escalões superiores. O Comandante e a tripulação de navios mercantes e aeronaves civis capturados devem  ser feitos  prisioneiros  de guerra. Outros  cidadãos  inimigos,  a bordo de navios  e aeronaves  inimigos  capturados,  estão  sujeitos,  na  qualidade  de  passageiros,  à  disciplina imposta pelo captor.
 
@@ -96,7 +94,7 @@ Cidadãos de Estado neutro, a bordo de navio mercante ou aeronave civil inimigos
 
 **b) Destruição**
 
-Antes da II Guerra Mundial, tanto o costume internacional como o DI proibiam a destruição de navios mercantes inimigos por navios de guerra de superfície, a menos que, de antemão, a segurança dos passageiros e tripulações estivessem asseguradas. Esse requisito não se  aplicava,  contudo,  se  o  navio  mercante  oferecesse  resistência  ativa  à  captura  ou  se recusasse a parar, quando ordenado.
+fc**Antes da II Guerra Mundial, tanto o costume internacional como o DI proibiam a destruição de navios mercantes inimigos por navios de guerra de superfície, a menos que, de antemão, a segurança dos passageiros e tripulações estivessem asseguradas. Esse requisito não se  aplicava,  contudo,  se  o  navio  mercante  oferecesse  resistência  ativa  à  captura  ou  se recusasse a parar, quando ordenado.**
 
 ## Página 126
 
@@ -106,36 +104,34 @@ No entanto, durante a II Guerra Mundial, a prática de ataque e afundamento de n
 
 As  seguintes  atividades  podem  converter  os  navios  mercantes  inimigos  em objetivos militares:
 
-I)persistente recusa em parar máquinas, quando determinado a fazê-lo;
-II)resistência ativa à visita e inspeção ou captura;
-III)navegando em comboio com a proteção de navios de guerra ou aeronaves militares inimigas;
-IV)quando armados até o ponto de infligir danos a um navio de guerra. Exclui-se as armas pessoais leves para a defesa da tripulação contra piratas;
-V)quando  fazendo  parte,  ou  de  alguma  maneira  apoiando,  o  sistema  de inteligência das forças armadas inimigas;
+fc**I)persistente recusa em parar máquinas, quando determinado a fazê-lo;**
+fc**II)resistência ativa à visita e inspeção ou captura;**
+fc**III)navegando em comboio com a proteção de navios de guerra ou aeronaves militares inimigas;**
+IV)quando armados até o ponto de infligir danos a um navio de guerra. fc**Exclui-se as armas pessoais leves para a defesa da tripulação contra piratas**;
+V)quando  fazendo  parte,  ou  de  alguma  maneira  apoiando, fc**o sistema de inteligência das forças armadas inimigas**;
 VI)se atuando de alguma forma como meio auxiliar das forças armadas inimigas;
 VII)levar a cabo atos de guerra em favor do inimigo; e
 VIII)contribuir de qualquer outra efetiva à ação militar.
 
-As regras de rendição, visita e inspeção e de recolhimento de náufragos, feridos e doentes, mencionadas no inciso 9.2.1, aplicam-se também aos navios mercantes e aeronaves
-militares que possam vir a se tornar alvo de ataque e destruição.
+fc**As regras de rendição, visita e inspeção e de recolhimento de náufragos, feridos e doentes, mencionadas no inciso 9.2.1, aplicam-se também aos navios mercantes e aeronaves militares que possam vir a se tornar alvo de ataque e destruição.**
 
 **9.2.3 - Navios e aeronaves inimigos protegidos contra destruição ou captura**
 
-De acordo com o DICA, certas classes de embarcações e aeronaves inimigas, em princípio, são protegidas contra captura e destruição, desde que estejam sendo empregadas em determinadas  circunstâncias.  Esses  navios  e  aeronaves  não  devem  tomar  parte  das hostilidades e nem interferir com os movimentos de meios combatentes. Devem se submeter aos procedimentos de identificação e inspeção e ser orientados a permanecer fora de áreas perigosas.
+De acordo com o DICA, certas classes de embarcações e aeronaves inimigas, em princípio, são protegidas contra captura e destruição, desde que estejam sendo empregadas em determinadas  circunstâncias.  fc**Esses  navios  e  aeronaves  não  devem  tomar  parte  das hostilidades e nem interferir com os movimentos de meios combatentes. Devem se submeter aos procedimentos de identificação e inspeção e ser orientados a permanecer fora de áreas perigosas.**
+
+## Página 127
 
 Os seguintes navios e aeronaves gozam de proteção contra destruição e captura:
 
 a) navios e aeronaves empregados na troca de prisioneiros de guerra;
-
-## Página 127
-
-b) navios-hospitais(1),  transportes  médicos  e  aeronaves  médicas  ostentando  sinais  e marcas apropriados;
+b) navios-hospitais(1), transportes  médicos  e  aeronaves  médicas  ostentando  sinais  e marcas apropriados;
 c) balsa e botes salva-vidas;
 d) navios em missões científicas  com finalidade não militar, missões religiosas ou missões filantrópicas;
 e) navios/embarcações  empregados  no  transporte  de  bens  culturais  sob  proteção especial;
 f) navios e aeronaves aos quais tenham sido dado salvo conduto por acordo prévio entre os beligerantes;
 g) navios/embarcações concebidos ou adaptados para combaterem, exclusivamente, as contaminações acidentais no meio ambiente marinho;
 h) embarcações  pesqueiras  costeiras  e  pequenas  embarcações  empregadas  em comércio costeiro(2); e
-i) navios de passageiros no mar e aeronaves de linhas aéreas regulares em voo estão sujeitos à captura, mas não devem ser destruídos.
+fc**i) navios de passageiros no mar e aeronaves de linhas aéreas regulares em voo estão sujeitos à captura, mas não devem ser destruídos.**
 
 Embora as linhas de comunicação sejam, geralmente, consideradas alvos militares legítimos na guerra moderna, navios de passageiros no mar e aeronaves pertencentes às linhas aéreas regulares são excetuadas de destruição, a menos que no momento da interceptação estejam sendo empregados pelo inimigo para fins militares (ex.: transporte de tropas ou carga militar), ou se recusarem a responder às determinações do navio de guerra ou aeronave militar que os interceptou.
 
@@ -147,11 +143,11 @@ Se um navio ou aeronave inimigos  prestam, de alguma forma, auxílio ao esforço
 
 ## Página 128
 
-Todos  os  Estados  têm a obrigação  legal  de não procurar  tomar  qualquer tipo  de vantagem de navios e aeronaves inimigos, excetuados de destruição e captura, não devendo utilizá-los  para  fins  militares,  enquanto  persistirem  as  características  que  lhe  atribuíram proteção especial.
+fc**Todos  os  Estados  têm a obrigação  legal  de não procurar  tomar  qualquer tipo  de vantagem de navios e aeronaves inimigos, excetuados de destruição e captura, não devendo utilizá-los  para  fins  militares,  enquanto  persistirem  as  características  que  lhe  atribuíram proteção especial.**
 
 ## 9.3 - GUERRA SUBMARINA
 
-O DICA impõe aos submarinos as mesmas regras aplicadas aos navios de guerra de superfície. Submarinos podem empregar seus sistemas de armas convencionais para atacar alvos inimigos submarinos, de superfície e aéreos, quando situados fora de território neutro. 
+fc**O DICA impõe aos submarinos as mesmas regras aplicadas aos navios de guerra de superfície**. Submarinos podem empregar seus sistemas de armas convencionais para atacar alvos inimigos submarinos, de superfície e aéreos, quando situados fora de território neutro. 
 
 As regras aplicadas aos navios de guerra de superfície, relativas a navios inimigos que, de boa-fé, tenham oferecido rendição ou tenham claramente indicado a intenção de fazê-lo, também se aplicam aos submarinos. Na medida em que as exigências de caráter militar o permitam, os submarinos devem efetuar as buscas e recolher náufragos, feridos e doentes tão logo cesse o combate ou engajamento.
 
@@ -161,18 +157,17 @@ Se tais medidas, de caráter humanitário, sujeitarem o submarino a perigos adic
 
 As regras da guerra naval, relativas às operações de submarinos contra o tráfego de navios mercantes inimigos, constituem uma das áreas menos desenvolvidas do DICA.
 
-O Protocolo de Londres não faz distinção entre submarinos e navios de guerra de superfície,  com  relação  a  ataques  efetuados  contra  o  tráfego  marítimo  do  inimigo, especificando que, exceto no caso de persistente recusa em parar, quando ordenado para fazê-lo, um navio de guerra, seja ele de superfície ou submarino, não pode destruir um navio mercante inimigo, sem antes colocar os passageiros, a tripulação e a documentação dos navios em lugar seguro. Tal situação desconsidera o fato de que a eficácia do submarino, como sistema  de armas, dependa de sua capacidade  de permanecer  submerso  e oculto, e que, quando operando na superfície, fica vulnerável.
+O Protocolo de Londres não faz distinção entre submarinos e navios de guerra de superfície,  com  relação  a  ataques  efetuados  contra  o  tráfego  marítimo  do  inimigo, especificando que, exceto no caso de persistente recusa em parar, quando ordenado para fazê-lo, um navio de guerra, fc**seja ele de superfície ou submarino, não pode destruir um navio mercante inimigo, sem antes colocar os passageiros, a tripulação e a documentação dos navios em lugar seguro**. Tal situação desconsidera o fato de que a eficácia do submarino, como sistema  de armas, dependa de sua capacidade  de permanecer  submerso  e oculto, e que, quando operando na superfície, fica vulnerável.
 
 As dificuldades para se aplicar aos submarinos as mesmas restrições na determinação de alvos feita por navios de superfície refletiram-se na prática efetuada por beligerantes, durante a II Guerra Mundial, quando submarinos, de ambos os lados, atacaram e destruíram regularmente, sem aviso prévio, o tráfego marítimo do inimigo. Essa prática, a exemplo dos ataques  efetuados por navios de guerra de superfície, foi justificada como represália em resposta a atos ilegais do inimigo.
 
 ## Página 129
 
-O Brasil considera que o Protocolo de Londres de 1936, juntamente com a prática costumeira dos beligerantes  durante e após a II Guerra Mundial, causa inconveniente ao submarino ao atribuir-lhe a mesma responsabilidade, aplicável a navios de superfície, de proporcionar a segurança aos passageiros, tripulações e documentação dos navios mercantes inimigos, antes de destruí-los, a menos que se enquadre em uma das situações mencionadas na alínea b do inciso 9.2.2.
+O Brasil considera que o Protocolo de Londres de 1936, juntamente com a prática costumeira dos beligerantes  durante e após a II Guerra Mundial, fc**causa inconveniente ao submarino ao atribuir-lhe a mesma responsabilidade, aplicável a navios de superfície**, de proporcionar a segurança aos passageiros, tripulações e documentação dos navios mercantes inimigos, antes de destruí-los, a menos que se enquadre em uma das situações mencionadas na alínea b do inciso 9.2.2.
 
 **9.3.2 - Navios e aeronaves protegidos contra ação de submarino**
 
-As regras da guerra naval relativas aos navios e aeronaves inimigos, excetuados de captura ou destruição por navios de guerra de superfície, também se aplicam aos submarinos
-(inciso 9.2.3).
+As regras da guerra naval relativas aos navios e aeronaves inimigos, excetuados de captura ou destruição por navios de guerra de superfície, também se aplicam aos submarinos (inciso 9.2.3).
 
 ## 9.4 - GUERRA AÉREA NO MAR
 
@@ -186,7 +181,7 @@ As regras da guerra naval relativas aos navios e aeronaves inimigos, protegidos 
 
 ## 9.5 – BOMBARDEIO
 
-Para os efeitos  desta  publicação,  o termo  “bombardeio”  refere-se aos bombardeios navais e aéreos de alvos inimigos em terra, com armamento convencional lançados por navios e aeronaves, aí incluídos canhões, foguetes, mísseis e bombas.
+Para os efeitos  desta  publicação,  o termo  “bombardeio” fc**refere-se aos bombardeios navais e aéreos de alvos inimigos em terra, com armamento convencional lançados por navios e aeronaves, aí incluídos canhões, foguetes, mísseis e bombas**.
 
 **9.5.1 - Regras gerais**
 
@@ -196,19 +191,19 @@ O Brasil é signatário da IX Convenção de Haia (1907), relativa ao bombardeio
 
 Tais regras apoiam-se nos seguintes princípios gerais do DICA:
 
-a) é proibido aos beligerantes tornar os civis ou outras pessoas a serem protegidas alvos de ataque direto;
+fc**a) é proibido aos beligerantes tornar os civis ou outras pessoas a serem protegidas alvos de ataque direto;**
 b) o dano e o sofrimento desnecessário devem ser evitados; e
 c) é proibida a destruição gratuita de propriedades.
 
 Para tornar efetivos os conceitos previstos na Convenção, as seguintes regras, relativas ao bombardeio naval, devem ser observadas:
 
-***a) Bombardeio de bens civis**
+**a) Bombardeio de bens civis**
 
 O bombardeio de portos, cidades, habitações ou edifícios é proibido. No entanto, um objetivo militar existente em uma cidade, vila ou vilarejo pode ser bombardeado, com o mínimo de perdas de vidas humanas e recursos materiais (inciso 9.1.2). As baixas acidentais de civis ou o dano colateral a bens civis não devem ser excessivos, à luz da vantagem militar a ser auferida pelo ataque.
 
 **b) Aterrorizar**
 
-O bombardeio com propósito exclusivo de aterrorizar a população civil é proibido.
+fc**O bombardeio com propósito exclusivo de aterrorizar a população civil é proibido.**
 
 **c) Cidades não defendidas ou zonas desmilitarizadas em comum acordo**
 
@@ -230,7 +225,7 @@ Ao serem estabelecidas zonas hospitalares e zonas neutras, mediante acordo entre
 
 **f) Edificações  e monumentos dedicados às atividades de caridade, religiosas  e culturais**
 
-Edificações dedicadas às atividades de caridade, religiosas e artísticas; monumentos históricos; e outras instalações utilizadas para fins religiosos, culturais e de caridade não devem  ser  bombardeados,  desde  que  não  sejam  utilizados  para  fins  militares.  É responsabilidade  dos  habitantes  locais  marcarem  tais  edificações  e  monumentos  com  o emblema distintivo da Convenção, conforme previsto no inciso 12.9.2.
+fc**Edificações dedicadas às atividades de caridade, religiosas e artísticas; monumentos históricos; e outras instalações utilizadas para fins religiosos, culturais e de caridade não devem  ser  bombardeados,  desde  que  não  sejam  utilizados  para  fins  militares.** É responsabilidade  dos  habitantes  locais  marcarem  tais  edificações  e  monumentos  com  o emblema distintivo da Convenção, conforme previsto no inciso 12.9.2.
 
 **g) Instalações contendo forças perigosas**
 
@@ -240,4 +235,4 @@ Represas,  diques,  açudes,  usinas  nucleares  e  outras  instalações  que, 
 
 Quando a situação militar permitir, os comandantes devem envidar esforços no sentido  de  alertar  à  população  civil,  localizada  nas  proximidades  do  objetivo  militar designado, da ocorrência do bombardeio. 
 
-O alerta pode ser genérico, de modo que os meios empregados no bombardeio não sejam colocados em perigo, ou não comprometa o sucesso da missão.
+O alerta pode ser genérico, fc**de modo que os meios empregados no bombardeio não sejam colocados em perigo, ou não comprometa o sucesso da missão.**
