@@ -108,6 +108,7 @@ A CNUDM estabelece o significado de passagem inocente, aplicável à navegação
 I)  atravessar esse mar sem penetrar nas águas interiores ou fazer escala em um ancoradouro ou instalação portuária situada fora das águas interiores; ou
 
 II) dirigir-se para as águas interiores, ou delas sair, ou fazer escala num desses ancoradouros ou instalações portuárias.
+
 A passagem deverá ser contínua e rápida. Ela compreende, ainda, o parar e o fundear, mas apenas na medida em que estes constituam incidentes comuns de navegação ou tenham sido impostos por motivo de força maior ou dificuldade grave, ou tenham por fim prestar auxílio a pessoas, navios ou aeronaves em perigo ou em dificuldade grave.
 
 Estabelece ainda a CNUDM que a passagem será inocente na medida em que não seja  prejudicial  à  paz,  à  ordem  e  à  segurança  do  Estado  costeiro.  Navios  estrangeiros, incluindo navios de guerra, que exerçam o direito de passagem inocente deverão observar todas as leis e regulamentos do Estado costeiro, bem como todas as normas internacionais geralmente aceitas, relativas à segurança da navegação.

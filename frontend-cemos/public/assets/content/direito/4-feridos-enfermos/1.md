@@ -9,11 +9,11 @@ Convenção de Genebra para melhoria da sorte dos feridos e enfermos dos Exérci
 
 ## CAPÍTULO I - Disposições Gerais
 
-Artigo 1º
+**Artigo 1º**
 
 As Altas Partes Contratantes comprometem-se a respeitar e fazer respeitar, em tôdas as circunstâncias, a presente Convenção.
 
-Artigo 2º
+**Artigo 2º**
 
 Afora as disposições que devem vigorar em tempo de paz, a presente Convenção se aplicará em caso de guerra declarada ou de qualquer outro conflito armado que surja entre duas ou várias das Altas Partes Contratantes, mesmo que o estado de guerra não seja reconhecido por uma delas.
 
@@ -21,7 +21,7 @@ A Convenção se aplicará igualmente, em todos os casos de ocupação da totali
 
 Se uma das Potências em luta não fôr parte na presente Convenção, as Potências que nela são partes permanecerão, não obstante, obrigadas por ela em suas relações recíprocas. Elas ficarão, outrossim, obrigadas pela Convenção com relação a Potência em aprêço, desde que esta aceite e aplique as disposições.
 
-Artigo 3º
+**Artigo 3º**
 
 No caso de conflito armado sem caráter internacional e que surja no território de uma das Altas Partes Contratantes, cada uma das Partes em luta será obrigada a aplicar pelo menos, as seguintes disposições:
 
@@ -49,7 +49,7 @@ A aplicação das disposições precedentes não terá efeito sôbre o estatuto 
 
 ## CAPíTULO II - DOS FERIDOS E ENFERMOS
 
-Artigo 12
+**Artigo 12**
 
 Os membros das fôrças armadas e as demais pessoas mencionadas no artigo seguinte, que forem feridos ou ficarem enfermos deverão ser respeitados e protegidos em tôdas as circunstâncias.
 
@@ -61,7 +61,7 @@ As mulheres serão tratadas com tôda as atenções devidas ao seu sexo.
 
 A Parte em luta que fôr obrigada a abandonar feridos ou enfermos ao seu adversário deixará com êles, conforme o permitam as exigências militares parte de seu pessoal e de seu material sanitários para prestar-lhes assistência.
 
-Artigo 13
+**Artigo 13**
 
 A presente Convenção aplicar-se-á aos feridos e enfermos que se incluam nas seguintes categorias:
 
@@ -89,7 +89,7 @@ d) conformar-se em suas operações às leis e costumes de guerra;
 
 ## CAPÍTULO III - Das Unidades e dos Estabelecimentos Sanitários
 
-Artigo 22
+**Artigo 22**
 
 Não serão considerados como de natureza a privar uma unidade ou um estabelecimento sanitário da proteção assegurada pelo artigo 19:
 
@@ -103,7 +103,7 @@ Não serão considerados como de natureza a privar uma unidade ou um estabelecim
 
 5º o fato de se estender a civis feridos ou enfermos a atividade humanitária das unidades e estabelecimentos sanitários ou de seu pessoal.
 
-Artigo 23
+**Artigo 23**
 
 Em tempo de paz, as Altas Partes Contratantes e, depois do início das hostilidades, as Partes em luta, poderão criar em seu próprio território e, se necessário, nos territórios ocupados, zonas e localidades sanitárias, organizadas com o objetivo de pôr ao abrigo dos efeitos da guerra os feridos e enfermos, assim como o pessoal encarregado da organização e administração das referidas zonas e localidades e da assistência às pessoas nelas concentradas.
 
@@ -115,21 +115,21 @@ As Potências protetoras e o Comitê Internacional da Cruz Vermelha são convida
 
 ## CAPÍTULO IV - Do Pessoal
 
-Artigo 24
+**Artigo 24**
 
 O pessoal sanitário exclusivamente destinado à procura, ao recolhimento, ao transporte ou ao tratamento de feridos e enfermos ou à prevenção de moléstias, o pessoal exclusivamente destinado à administração das unidades e estabelecimentos sanitários, assim como os capelães adidos às fôrças armadas, serão respeitados e protegidos em tôda as circunstâncias.
 
-Artigo 25
+**Artigo 25**
 
 Os militares instruídos especialmente para serem, em caso de necessidade, empregados como enfermeiros ou padioleiros auxiliares, na procura, recolhimento, transporte ou assistência a feridos e enfermos, serão igualmente respeitados e protegidos se estiverem no desempenho destas funções no momento em que entrarem em contato com o inimigo ou caírem em seu poder.
 
-Artigo 26
+**Artigo 26**
 
 São assimilados ao pessoal mencionado no artigo 24, o pessoal das Sociedades nacionais da Cruz Vermelha e o das demais sociedades de socorros voluntários, devidamente reconhecidas e autorizadas por seus governos, que seja empregado nas mesmas funções que as do pessoal citado naquele artigo, contanto que o pessoal de tais sociedades seja submetido às leis e regulamentos militares.
 
 Cada Alta Parte Contratante notificará a outra, seja durante o tempo de paz, seja no início ou no curso das hostilidades, em todo caso antes de qualquer emprêgo efetivo, os nomes das sociedades que ela tenha autorizado a prestar, sob sua responsabilidade, seu concurso ao serviço sanitário oficial de seus exércitos.
 
-Artigo 27
+**Artigo 27**
 
 Uma sociedade reconhecida de um país neutro só poderá prestar o concurso de seu pessoal e de suas unidades sanitárias a uma das Partes em luta com o consentimento prévio de seu próprio govêrno e a autorização da Parte em luta interessada. Êste pessoal e estas unidades ficarão sob contrôle desta Parte, em luta.
 
@@ -141,7 +141,7 @@ Os membros do pessoal a que se refere a primeira alínea devem estar providos do
 
 ## Página 5
 
-Artigo 28
+**Artigo 28**
 
 O pessoal mencionado nos artigos 24 e 26 não será retido, se cair em poder da Parte adversária, senão na medida em que o estado sanitário, as necessidades espirituais e o número de prisioneiros de guerra e o exigirem.
 
@@ -157,11 +157,11 @@ No curso das hostilidades, as Partes em luta entrarão em acôrdo sôbre a subst
 
 Nenhuma das disposições precedentes eximirá a Potência detentora das obrigações que lhe incumbem com relação aos prisioneiros de guerra nos domínios sanitário e espiritual.
 
-Artigo 29
+**Artigo 29**
 
 O pessoal mencionado no artigo 25, que tenha caído em poder do inimigo, será considerado prisioneiro de guerra, mas ficará empregado em missões sanitárias na medida das necessidades.
 
-Artigo 30
+**Artigo 30**
 
 Os membros do pessoal cuja retenção não fôr indispensável em virtude do disposto no artigo 28, serão devolvidos à Parte em luta a qual pertençam desde que haja um caminho aberto para sua volta e que as condições militares o permitam.
 
@@ -171,13 +171,13 @@ Ao partirem, levarão consigo, bens pessoais, valores e instrumentos de sua prop
 
 ## Página 6
 
-Artigo 31
+**Artigo 31**
 
 A escolha do pessoal cujo retôrno à Parte em luta está prevista no artigo 30, operar-se-á com exclusão de qualquer consideração de raça, religião ou de opinião política, de preferência segundo à ordem cronológica da captura e seu estado de saúde.
 
 Desde o início das hostilidades, as Partes em luta poderão fixar, por acôrdos especiais, a percentagem do pessoal a ser retido em função do número de prisioneiros, assim como a sua distribuição pelos campos.
 
-Artigo 32
+**Artigo 32**
 
 As pessoas mencionadas no artigo 27 que tenham caído em poder da Parte adversária, não poderão ser retidas.
 
@@ -193,7 +193,7 @@ As Partes em luta garantirão, a êste pessoal, enquanto estiver em seu poder, a
 
 ## CAPÍTULO V - Dos Edifícios e do Material
 
-Artigo 33
+**Artigo 33**
 
 O material dos corpos sanitários móveis das fôrças armadas que tenham caído em poder da Parte adversária, continuará a ser reservado para os feridos e enfermos.
 
@@ -201,7 +201,7 @@ Os edifícios, o material e os depósitos dos estabelecimentos sanitários fixos
 
 Nem o material nem os depósitos a que se refere o presente artigo poderão ser destruídos intencionalmente.
 
-Artigo 34
+**Artigo 34**
 
 Os bens móveis e imóveis das sociedades de socorros que venham a gozar das vantagens da Convenção serão considerados propriedades privada.
 
@@ -211,7 +211,7 @@ O direito de requisição reconhecido aos beligerantes pelas leis e usos de guer
 
 ## CAPÍTULO VI - Dos Transportes Sanitário
 
-Artigo 35
+**Artigo 35**
 
 Os transportes de feridos e enfermos ou de material sanitário serão respeitados e protegidos do mesmo modo que os corpos sanitários móveis.
 
@@ -219,7 +219,7 @@ Quando êsses transportes ou veículos caírem em poder da Parte adversária, se
 
 O pessoal civil e todos os meios de transportes provenientes da requisição serão submetidos às regras gerais do Direito das Gentes.
 
-Artigo 36
+**Artigo 36**
 
 As aeronaves sanitárias, isto é, as aeronaves exclusivamente utilizadas para a evacuação de feridos e enfermos, assim como para o transporte do pessoal e do material sanitário, não serão objeto de ataque, devendo ser respeitadas pelos beligerantes durante os vôos que efetuarem em altitudes, horários e rotas especificamente ajustados entre todos os beligerantes interessados.
 
@@ -227,7 +227,7 @@ Exigirão ostensivamente o emblema distintivo previsto no art. 38, ao lado das c
 
 Salvo acordo em contrário, será proibido o sobrevôo do território inimigo ou ocupado pelo inimigo. As aeronaves sanitárias deverão obedecer a qualquer intimação para aterrissar. Em caso de aterrisagem assim imposta, a aeronave, com seus ocupantes, poderá prosseguir seu vôo, depois de inspeção eventual. Em caso de aterrissagem fortuita em território inimigo, ou ocupado pelo inimigo, os feridos e enfermos, assim como a tripulação da aeronave, serão tratados como prisioneiros de guerra. O pessoal sanitário será tratado de conformidade com os arts. 24 e seguintes.
 
-Artigo 37
+**Artigo 37**
 
 As aeronaves sanitárias das Partes em luta poderão ressalvado o disposto no segundo parágrafo sobrevoar o território das Potências neutras e nêle aterrissar ou amerissar em caso de necessidade ou para aí fazer escala. Deverão notificar prèviamente as Potências neutras do sobrevôo de seus territórios e obedecer a tôda intimação para aterrissar. Elas não estarão protegidas de ataques senão durante os vôos em altitude, horários e rotas especificamente estabelecidos entre as Partes em luta e as Potências neutras interessadas.
 
@@ -239,17 +239,17 @@ Os feridos ou enfêrmos desembarcados de uma aeronave sanitária, em território
 
 ## CAPÍTULO VII - Do Emblema Distintivo
 
-Artigo 38
+**Artigo 38**
 
 Em homenagem à Suíça, o sinal heráldico da cruz vermelha sôbre fundo branco formado, formado por inversões das côres federais, será mantido como emblema e sinal distintivo do serviço sanitário dos exércitos.
 
 Entretanto, para os países que já empregam como sinal distintivo, em vez da cruz vermelha, o crescente vermelho ou o leão e o sol vermelho sôbre fundo branco, êstes emblemas serão igualmente admitidos segundo o espírito da presente Convenção.
 
-Artigo 39
+**Artigo 39**
 
 Sob o contrôle da autoridade militar competente, o emblema figurará nas bandeiras, nas braçadeiras, assim como sôbre todo o material empregado pelo serviço sanitário.
 
-Artigo 40
+**Artigo 40**
 
 O pessoal a que se referem os artigos 24, 26 e 27, usará, no braço esquerdo, uma braçadeira que resista à umidade e que apresente o emblema distintivo, expedido e carimbado pela autoridade militar.
 
@@ -259,7 +259,7 @@ A carteira de identidade deverá ser uniforme em cada exército e, tanto quanto 
 
 Em nenhum caso se poderá privar o pessoal acima mencionado, nem de suas insígnias, nem da carteira de identidade, nem do direito de usar a braçadeira. Em caso de perda, êle terá direito a receber novas vias da carteira e a substituição das insígnias.
 
-Artigo 41
+**Artigo 41**
 
 O pessoal mencionado no artigo 25 usará, sòmente enquanto desempenhar funções sanitárias, uma braçadeira branca, tendo ao centro o emblema distintivo, mas de dimensões reduzidas, fornecido e carimbado pela autoridade militar.
 
@@ -267,7 +267,7 @@ Os documentos militares de identidade de que será portador êste pessoal, espec
 
 ## Página 10
 
-Artigo 42
+**Artigo 42**
 
 O pavilhão distintivo da Convenção só poderá ser içado nos corpos e nos estabelecimentos sanitários que devem ser respeitados segundo os têrmos da Convenção e unicamente com o consentimento da autoridade militar.
 
@@ -277,11 +277,11 @@ Todavia, as unidades sanitárias que caírem em poder do inimigo só hastearão 
 
 As Partes em luta tomarão, na media em que o permitirem as exigências militares, as medias necessárias para tornar claramente visíveis às fôrças inimigas terrestres, aéreas e marítimas, os emblemas distintivos que assinalam as unidades e os estabelecimentos sanitários, a fim de afastar a possibilidade de qualquer ação agressiva.
 
-Artigo 43
+**Artigo 43**
 
 Os corpos sanitários de países neutros que, nas condições previstos no art. 27, tenham sido autorizados a prestar serviços a um beligerante, deverão hastear, juntamente com o pavilhão da Convenção, a bandeira nacional dêsse beligerante, se o mesmo exercer as faculdades conferidas pelo art. 42. Salvo ordem em contrário da autoridade militar competente, poderão em qualquer circunstância hastear sua bandeira nacional, mesmo se caírem em poder da Parte adversária.
 
-Artigo 44
+**Artigo 44**
 
 O emblema da Cruz Vermelha sôbre fundo branco e as palavras "cruz vermelha" ou "cruz de Genebra" não poderão ser empregados, salvo nos casos previstos nas alíneas seguintes do presente artigo, seja em tempo de paz, seja em tempo de guerra, senão para designar ou proteger os Corpos e os estabelecimentos sanitários, o pessoal e o material protegidos por esta Convenção e pelas demais convenções internacionais que regulam matérias semelhante. O mesmo se aplica aos emblemas mencionados no art. 38, alínea 2, com relação aos países que os empregam. As sociedades nacionais da Cruz Vermelha e as demais sociedades a que se refere ao art. 26 não terão direito ao uso do emblema distintivo que confere a proteção da Convenção, senão dentro do quadro das disposições da presente alínea.
 
@@ -293,6 +293,6 @@ A título excepcional, e de acôrdo com a legislação nacional e com a autoriza
 
 ## CAPÍTULO VIII - Da execução da convenção
 
-Artigo 45
+**Artigo 45**
 
 Cada uma das Partes em luta, por intermédio de seus comandantes-chefes, providenciará quanto à execução pormenorizada dos artigos precedentes, assim quanto aos casos não previstos, de acôrdo com os princípios gerais da presente Convenção.
