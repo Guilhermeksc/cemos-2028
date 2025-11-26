@@ -855,57 +855,65 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
       
       y += 2;
       
-      // Pergunta
-      pdf.setFontSize(9);
-      pdf.setFont('helvetica', 'bold');
-      pdf.text('Pergunta:', margin + 5, y);
-      y += 4;
-      
+      // Pergunta - "P:" ao lado do texto
       pdf.setFontSize(8);
+      pdf.setFont('helvetica', 'bold');
+      const labelP = 'P:';
+      const labelPWidth = pdf.getTextWidth(labelP);
+      pdf.text(labelP, margin + 5, y);
+      
+      const perguntaStartX = margin + 5 + labelPWidth + 2;
+      const perguntaMaxWidth = maxWidth - (perguntaStartX - margin);
+      
       pdf.setFont('helvetica', 'normal');
       const perguntaSegments = extractTextWithStyles(card.pergunta || '');
       if (perguntaSegments.length > 0) {
-        y = renderStyledText(perguntaSegments, margin + 5, y, maxWidth - 10, 8);
+        y = renderStyledText(perguntaSegments, perguntaStartX, y, perguntaMaxWidth, 8);
       } else {
         const perguntaText = removeEmojis(card.pergunta || '');
-        const perguntaLines = pdf.splitTextToSize(perguntaText, maxWidth - 10);
-        perguntaLines.forEach((line: string) => {
+        const perguntaLines = pdf.splitTextToSize(perguntaText, perguntaMaxWidth);
+        perguntaLines.forEach((line: string, lineIndex: number) => {
           if (y + 4 > pageHeight - margin) {
             pdf.addPage();
             y = margin;
           }
-          pdf.text(`  ${line}`, margin + 5, y);
+          const xPos = lineIndex === 0 ? perguntaStartX : margin + 5;
+          pdf.text(line, xPos, y);
+          y += 2;
+        });
+      }
+      
+      y += 2;
+      
+      // Resposta - "R:" ao lado do texto
+      pdf.setFontSize(8);
+      pdf.setFont('helvetica', 'bold');
+      const labelR = 'R:';
+      const labelRWidth = pdf.getTextWidth(labelR);
+      pdf.text(labelR, margin + 5, y);
+      
+      const respostaStartX = margin + 5 + labelRWidth + 2;
+      const respostaMaxWidth = maxWidth - (respostaStartX - margin);
+      
+      pdf.setFont('helvetica', 'normal');
+      const respostaSegments = extractTextWithStyles(card.resposta || '');
+      if (respostaSegments.length > 0) {
+        y = renderStyledText(respostaSegments, respostaStartX, y, respostaMaxWidth, 8);
+      } else {
+        const respostaText = removeEmojis(card.resposta || '');
+        const respostaLines = pdf.splitTextToSize(respostaText, respostaMaxWidth);
+        respostaLines.forEach((line: string, lineIndex: number) => {
+          if (y + 4 > pageHeight - margin) {
+            pdf.addPage();
+            y = margin;
+          }
+          const xPos = lineIndex === 0 ? respostaStartX : margin + 5;
+          pdf.text(line, xPos, y);
           y += 2;
         });
       }
       
       y += 3;
-      
-      // Resposta
-      pdf.setFontSize(9);
-      pdf.setFont('helvetica', 'bold');
-      pdf.text('Resposta:', margin + 5, y);
-      y += 4;
-      
-      pdf.setFontSize(8);
-      pdf.setFont('helvetica', 'normal');
-      const respostaSegments = extractTextWithStyles(card.resposta || '');
-      if (respostaSegments.length > 0) {
-        y = renderStyledText(respostaSegments, margin + 5, y, maxWidth - 10, 8);
-      } else {
-        const respostaText = removeEmojis(card.resposta || '');
-        const respostaLines = pdf.splitTextToSize(respostaText, maxWidth - 10);
-        respostaLines.forEach((line: string) => {
-          if (y + 4 > pageHeight - margin) {
-            pdf.addPage();
-            y = margin;
-          }
-          pdf.text(`  ${line}`, margin + 5, y);
-          y += 2;
-        });
-      }
-      
-      y += 5;
       
       // Linha separadora entre cards (exceto na última)
       if (index < allFlashCardsForPDF.length - 1) {
