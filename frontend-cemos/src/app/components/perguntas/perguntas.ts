@@ -29,6 +29,7 @@ interface SimuladoQuestion {
   pergunta: string;
   bibliografia_titulo?: string;
   paginas?: string;
+  assunto?: string;
   data: PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
   userAnswer?: any;
   isCorrect?: boolean;
@@ -1184,6 +1185,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             pergunta: q.pergunta,
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
+            assunto: q.assunto,
             data: qComSorteio,
             uniqueKey: `vf-${q.id}`
           };
@@ -1206,6 +1208,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             pergunta: q.pergunta,
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
+            assunto: q.assunto,
             data: q,
             uniqueKey: `multipla-${q.id}`
           };
@@ -1226,6 +1229,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             pergunta: q.pergunta,
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
+            assunto: q.assunto,
             data: q,
             uniqueKey: `correlacao-${q.id}`
           };
@@ -1282,7 +1286,31 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
   // Métodos específicos para tipos de pergunta (usados pelo template)
   getVFData(question: SimuladoQuestion): PerguntaVF {
-    return question.data as PerguntaVF;
+    const vfData = question.data as PerguntaVF;
+    
+    // Remover assunto das afirmações se presente
+    if (question.assunto) {
+      const vfDataCopy = { ...vfData };
+      
+      // Remover assunto da afirmação sorteada
+      if (vfDataCopy.afirmacao_sorteada) {
+        vfDataCopy.afirmacao_sorteada = this.removeAssuntoFromText(vfDataCopy.afirmacao_sorteada, question.assunto);
+      }
+      
+      // Remover assunto da afirmação verdadeira
+      if (vfDataCopy.afirmacao_verdadeira) {
+        vfDataCopy.afirmacao_verdadeira = this.removeAssuntoFromText(vfDataCopy.afirmacao_verdadeira, question.assunto);
+      }
+      
+      // Remover assunto da afirmação falsa
+      if (vfDataCopy.afirmacao_falsa) {
+        vfDataCopy.afirmacao_falsa = this.removeAssuntoFromText(vfDataCopy.afirmacao_falsa, question.assunto);
+      }
+      
+      return vfDataCopy;
+    }
+    
+    return vfData;
   }
 
   getMultiplaData(question: SimuladoQuestion): PerguntaMultipla {
@@ -1296,6 +1324,91 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       return { coluna_a: [], coluna_b: [], resposta_correta: {} } as any;
     }
     return question.data as PerguntaCorrelacao;
+  }
+
+  /**
+   * Remove o assunto de um texto genérico (usado para perguntas e afirmações)
+   */
+  private removeAssuntoFromText(text: string, assunto: string): string {
+    if (!text || !assunto) return text;
+
+    // Normalizar ambos os textos para comparação
+    const normalize = (t: string): string => {
+      return t.trim().replace(/\s+/g, ' ').trim();
+    };
+
+    const assuntoNormalized = normalize(assunto);
+    if (!assuntoNormalized) return text;
+
+    // Dividir o texto em linhas
+    const lines = text.split(/\r?\n/);
+
+    // Verificar e remover se a primeira linha for o assunto
+    if (lines.length > 0) {
+      const firstLineNormalized = normalize(lines[0]);
+      if (firstLineNormalized === assuntoNormalized) {
+        lines.shift();
+        // Remover linhas vazias subsequentes
+        while (lines.length > 0 && lines[0].trim() === '') {
+          lines.shift();
+        }
+      }
+    }
+
+    // Verificar e remover se a última linha for o assunto
+    if (lines.length > 0) {
+      const lastLineNormalized = normalize(lines[lines.length - 1]);
+      if (lastLineNormalized === assuntoNormalized) {
+        lines.pop();
+        // Remover linhas vazias anteriores
+        while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
+          lines.pop();
+        }
+      }
+    }
+
+    // Reconstruir o texto
+    let result = lines.join('\n').trim();
+
+    // Verificação adicional: se o texto ainda começa com o assunto (sem quebra de linha)
+    const resultNormalized = normalize(result);
+    if (resultNormalized.startsWith(assuntoNormalized)) {
+      // Tentar remover o assunto do início
+      const index = result.toLowerCase().indexOf(assuntoNormalized.toLowerCase());
+      if (index === 0 || (index > 0 && /^\s*$/.test(result.substring(0, index)))) {
+        // Encontrar onde o assunto termina
+        let charCount = 0;
+        let endIndex = 0;
+
+        for (let i = 0; i < result.length && charCount < assuntoNormalized.length; i++) {
+          const char = result[i];
+          if (char !== '\n' && char !== '\r') {
+            const normalizedChar = char.toLowerCase().replace(/\s+/g, ' ');
+            if (normalizedChar !== ' ' || charCount === 0 || result[i - 1] !== ' ') {
+              charCount++;
+            }
+          }
+          endIndex = i + 1;
+        }
+
+        if (endIndex > 0) {
+          result = result.substring(endIndex).trim();
+          result = result.replace(/^[\n\r\s]+/, '');
+        }
+      }
+    }
+
+    return result || text; // Se remover tudo, retornar o original
+  }
+
+  /**
+   * Remove o assunto do texto da pergunta se ele aparecer no início ou final
+   */
+  getPerguntaSemAssunto(question: SimuladoQuestion): string {
+    if (!question.pergunta || !question.assunto) {
+      return question.pergunta;
+    }
+    return this.removeAssuntoFromText(question.pergunta, question.assunto);
   }
 
   // Cache de estatísticas para evitar recálculos
@@ -1363,10 +1476,6 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Converte as questões do simulado para PDF pesquisável e faz o download
    */
   async downloadAsPDF() {
-    if (this.simuladoQuestions.length === 0) {
-      return;
-    }
-
     this.isGeneratingPDF = true;
 
     try {
@@ -1381,11 +1490,137 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
   /**
    * Gera PDF pesquisável com as questões e respostas
+   * Busca TODAS as questões do banco para a bibliografia e assunto selecionados
    */
   private async downloadAsPDFSearchable() {
-    if (this.simuladoQuestions.length === 0) {
+    // Buscar TODAS as questões do banco para a bibliografia e assunto selecionados
+    const bibliografiasParaBuscar = this.selectedBibliografias.length > 0 
+      ? this.selectedBibliografias 
+      : (this.bibliografiaIds.length > 0 ? this.bibliografiaIds : []);
+    
+    if (bibliografiasParaBuscar.length === 0) {
+      alert('Por favor, selecione pelo menos uma bibliografia.');
       return;
     }
+
+    console.log('📚 Buscando TODAS as questões do banco para PDF:', {
+      bibliografias: bibliografiasParaBuscar,
+      assunto: this.selectedAssunto || 'Todos'
+    });
+
+    // Buscar todas as questões do banco
+    const multiplaObservables: Observable<PerguntaMultipla[]>[] = [];
+    const vfObservables: Observable<PerguntaVF[]>[] = [];
+    const correlacaoObservables: Observable<PerguntaCorrelacao[]>[] = [];
+
+    bibliografiasParaBuscar.forEach(bibliografiaId => {
+      const baseFilters: any = { bibliografia: bibliografiaId };
+      
+      // Adicionar filtro de assunto se selecionado
+      if (this.selectedAssunto && this.selectedAssunto.trim()) {
+        baseFilters.assunto = this.selectedAssunto.trim();
+      }
+      
+      // Buscar TODAS as questões de cada tipo
+      multiplaObservables.push(
+        this.perguntasService.getAllPerguntasMultipla(baseFilters as PerguntaMultiplaFilters)
+      );
+      vfObservables.push(
+        this.perguntasService.getAllPerguntasVF(baseFilters as PerguntaVFFilters)
+      );
+      correlacaoObservables.push(
+        this.perguntasService.getAllPerguntasCorrelacao(baseFilters as PerguntaFilters)
+      );
+    });
+
+    // Aguardar todas as requisições
+    const results = await forkJoin({
+      multiplas: multiplaObservables.length > 0 ? forkJoin(multiplaObservables) : Promise.resolve([]),
+      vfs: vfObservables.length > 0 ? forkJoin(vfObservables) : Promise.resolve([]),
+      correlacoes: correlacaoObservables.length > 0 ? forkJoin(correlacaoObservables) : Promise.resolve([])
+    }).pipe(takeUntil(this.destroy$)).toPromise();
+
+    if (!results) {
+      alert('Erro ao buscar questões do banco de dados.');
+      return;
+    }
+
+    // Combinar resultados de todas as bibliografias
+    const todasMultiplas: PerguntaMultipla[] = results.multiplas 
+      ? (results.multiplas as PerguntaMultipla[][]).flatMap((perguntas: PerguntaMultipla[]) => perguntas)
+      : [];
+    const todasVFs: PerguntaVF[] = results.vfs 
+      ? (results.vfs as PerguntaVF[][]).flatMap((perguntas: PerguntaVF[]) => perguntas)
+      : [];
+    const todasCorrelacoes: PerguntaCorrelacao[] = results.correlacoes 
+      ? (results.correlacoes as PerguntaCorrelacao[][]).flatMap((perguntas: PerguntaCorrelacao[]) => perguntas)
+      : [];
+
+    // Converter para SimuladoQuestion
+    const allQuestions: SimuladoQuestion[] = [];
+
+    // Converter VFs
+    todasVFs.forEach(q => {
+      const mostrarVerdadeira = Math.random() < 0.5;
+      const afirmacaoSorteada = mostrarVerdadeira ? q.afirmacao_verdadeira : q.afirmacao_falsa;
+      
+      const qComSorteio: PerguntaVF = {
+        ...q,
+        afirmacao_sorteada: afirmacaoSorteada,
+        afirmacao_sorteada_eh_verdadeira: mostrarVerdadeira
+      };
+      
+      allQuestions.push({
+        id: q.id,
+        tipo: 'vf',
+        pergunta: q.pergunta,
+        bibliografia_titulo: q.bibliografia_titulo,
+        paginas: q.paginas,
+        assunto: q.assunto,
+        data: qComSorteio,
+        uniqueKey: `vf-${q.id}`
+      });
+    });
+
+    // Converter Múltiplas
+    todasMultiplas.forEach(q => {
+      allQuestions.push({
+        id: q.id,
+        tipo: 'multipla',
+        pergunta: q.pergunta,
+        bibliografia_titulo: q.bibliografia_titulo,
+        paginas: q.paginas,
+        assunto: q.assunto,
+        data: q,
+        uniqueKey: `multipla-${q.id}`
+      });
+    });
+
+    // Converter Correlações
+    todasCorrelacoes.forEach(q => {
+      allQuestions.push({
+        id: q.id,
+        tipo: 'correlacao',
+        pergunta: q.pergunta,
+        bibliografia_titulo: q.bibliografia_titulo,
+        paginas: q.paginas,
+        assunto: q.assunto,
+        data: q,
+        uniqueKey: `correlacao-${q.id}`
+      });
+    });
+
+    if (allQuestions.length === 0) {
+      alert('Não há questões disponíveis para gerar o PDF com os filtros selecionados.');
+      return;
+    }
+
+    console.log('✅ Questões carregadas para PDF:', {
+      total: allQuestions.length,
+      vf: todasVFs.length,
+      multipla: todasMultiplas.length,
+      correlacao: todasCorrelacoes.length
+    });
 
     const jsPDF = (await import('jspdf')).default;
     const pdf = new jsPDF('p', 'mm', 'a4');
@@ -1412,6 +1647,98 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         .replace(/[\u{200D}]/gu, '')
         .replace(/[\u{FE0F}]/gu, '')
         .replace(/[ \t]+/g, ' ');
+    };
+    
+    // Trunca o assunto para no máximo 40 caracteres com "..." ao final
+    const truncateAssunto = (assunto: string): string => {
+      if (!assunto) return '';
+      const assuntoLimpo = removeEmojis(assunto);
+      if (assuntoLimpo.length <= 40) {
+        return assuntoLimpo;
+      }
+      return assuntoLimpo.substring(0, 40) + '...';
+    };
+    
+    // Remove o assunto do texto da pergunta se ele aparecer no início ou final
+    const removeAssuntoFromPergunta = (perguntaText: string, assunto?: string): string => {
+      if (!perguntaText || !assunto) return perguntaText;
+      
+      // Função auxiliar para normalizar texto (remover emojis e normalizar espaços)
+      const normalize = (text: string): string => {
+        return removeEmojis(text.trim()).replace(/\s+/g, ' ').trim();
+      };
+      
+      const assuntoNormalized = normalize(assunto);
+      if (!assuntoNormalized) return perguntaText;
+      
+      // Dividir o texto em linhas
+      const lines = perguntaText.split(/\r?\n/);
+      
+      // Verificar e remover se a primeira linha for o assunto
+      if (lines.length > 0) {
+        const firstLineNormalized = normalize(lines[0]);
+        if (firstLineNormalized === assuntoNormalized) {
+          lines.shift();
+          // Remover linhas vazias subsequentes
+          while (lines.length > 0 && lines[0].trim() === '') {
+            lines.shift();
+          }
+        }
+      }
+      
+      // Verificar e remover se a última linha for o assunto
+      if (lines.length > 0) {
+        const lastLineNormalized = normalize(lines[lines.length - 1]);
+        if (lastLineNormalized === assuntoNormalized) {
+          lines.pop();
+          // Remover linhas vazias anteriores
+          while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
+            lines.pop();
+          }
+        }
+      }
+      
+      // Reconstruir o texto
+      let result = lines.join('\n').trim();
+      
+      // Verificação adicional: se o texto ainda começa com o assunto (sem quebra de linha)
+      // Usar busca simples e direta
+      const resultStart = result.substring(0, Math.min(assuntoNormalized.length + 50, result.length));
+      const resultStartNormalized = normalize(resultStart);
+      
+      if (resultStartNormalized.startsWith(assuntoNormalized)) {
+        // Encontrar onde o assunto termina no texto original
+        // Buscar pelo assunto no texto original (case-insensitive)
+        const assuntoLower = assuntoNormalized.toLowerCase();
+        const resultLower = removeEmojis(result).toLowerCase();
+        const index = resultLower.indexOf(assuntoLower);
+        
+        if (index === 0 || (index > 0 && /^\s*$/.test(result.substring(0, index)))) {
+          // Encontrar o fim do assunto no texto original
+          let charCount = 0;
+          let endIndex = 0;
+          
+          for (let i = 0; i < result.length && charCount < assuntoNormalized.length; i++) {
+            const char = result[i];
+            const isEmoji = /[\u{1F300}-\u{1F9FF}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FAFF}\u{FE00}-\u{FE0F}\u{200D}\u{FE0F}]/u.test(char);
+            
+            if (!isEmoji) {
+              const normalizedChar = char.toLowerCase().replace(/\s+/g, ' ');
+              if (normalizedChar !== ' ' || charCount === 0 || result[i-1] !== ' ') {
+                charCount++;
+              }
+            }
+            endIndex = i + 1;
+          }
+          
+          if (endIndex > 0) {
+            result = result.substring(endIndex).trim();
+            result = result.replace(/^[\n\r\s]+/, '');
+          }
+        }
+      }
+      
+      return result || perguntaText; // Se remover tudo, retornar o original
     };
     
     // Interface para representar texto com estilo
@@ -1572,32 +1899,49 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     pdf.setFontSize(14); // Reduzido de 18
     pdf.setFont('helvetica', 'bold');
     const tabNames: { [key: string]: string } = {
-      'completo': 'Simulado Completo',
-      'vf': 'Verdadeiro/Falso',
-      'multipla': 'Múltipla Escolha',
-      'correlacao': 'Correlação'
+      'completo': 'Todas as Questões',
+      'vf': 'Todas as Questões V/F',
+      'multipla': 'Todas as Questões Múltipla Escolha',
+      'correlacao': 'Todas as Questões de Correlação'
     };
-    const title = removeEmojis(tabNames[this.activeTab] || 'Prova');
+    const title = removeEmojis(tabNames[this.activeTab] || 'Todas as Questões');
     pdf.text(title, margin, y);
     y += 6; // Reduzido de 10
     
     // Informações da prova
     pdf.setFontSize(8); // Reduzido de 10
     pdf.setFont('helvetica', 'normal');
-    const totalQuestions = this.simuladoQuestions.length;
-    const answeredQuestions = this.getTotalAnsweredQuestions();
-    const correctAnswers = this.getTotalCorrectAnswers();
-    const scorePercentage = this.getScorePercentage();
+    const totalQuestions = allQuestions.length;
+    const vfCount = allQuestions.filter(q => q.tipo === 'vf').length;
+    const multiplaCount = allQuestions.filter(q => q.tipo === 'multipla').length;
+    const correlacaoCount = allQuestions.filter(q => q.tipo === 'correlacao').length;
+    
+    // Calcular estatísticas baseadas nas questões respondidas no simulado atual
+    const answeredQuestions = allQuestions.filter(q => 
+      q.uniqueKey && this.currentTab.questionResults[q.uniqueKey]?.answered
+    ).length;
+    const correctAnswers = allQuestions.filter(q => 
+      q.uniqueKey && this.currentTab.questionResults[q.uniqueKey]?.answered && 
+      this.currentTab.questionResults[q.uniqueKey]?.isCorrect
+    ).length;
+    const scorePercentage = answeredQuestions > 0 ? (correctAnswers / answeredQuestions) * 100 : 0;
     
     let infoText = `Total de questões: ${totalQuestions}`;
+    if (vfCount > 0 || multiplaCount > 0 || correlacaoCount > 0) {
+      const parts: string[] = [];
+      if (vfCount > 0) parts.push(`V/F: ${vfCount}`);
+      if (multiplaCount > 0) parts.push(`Múltipla: ${multiplaCount}`);
+      if (correlacaoCount > 0) parts.push(`Correlação: ${correlacaoCount}`);
+      infoText += ` (${parts.join(', ')})`;
+    }
     if (answeredQuestions > 0) {
       infoText += ` | Respondidas: ${answeredQuestions} | Acertos: ${correctAnswers} | Performance: ${scorePercentage.toFixed(1)}%`;
     }
     pdf.text(infoText, margin, y);
-    y += 5; // Reduzido de 8
+    y += 3; // Reduzido de 8
     
     // Linha separadora
-    y += 1; // Reduzido de 2
+    y += 0.2; // Reduzido de 2
     pdf.setDrawColor(0, 0, 0);
     pdf.setLineWidth(0.3); // Reduzido de 0.5
     pdf.line(margin, y, pageWidth - margin, y);
@@ -1609,63 +1953,68 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     pdf.text('QUESTÕES', margin, y);
     y += 6; // Reduzido de 10
     
-    this.simuladoQuestions.forEach((question, index) => {
+    // Iterar sobre TODAS as questões do simulado atual, sem limitação
+    allQuestions.forEach((question, index) => {
       // Verifica se precisa de nova página
       if (y + 20 > pageHeight - margin) {
         pdf.addPage();
         y = margin;
       }
       
-      // Número e tipo da questão
-      pdf.setFontSize(10); // Reduzido de 12
+      // Número, tipo, bibliografia, páginas e assunto - tudo na mesma linha
+      pdf.setFontSize(9); // Tamanho reduzido para caber tudo
       pdf.setFont('helvetica', 'bold');
-      const tipoNome = question.tipo === 'vf' ? 'Verdadeiro/Falso' : 
-                       question.tipo === 'multipla' ? 'Múltipla Escolha' : 
+      const tipoNome = question.tipo === 'vf' ? 'V/F' : 
+                       question.tipo === 'multipla' ? 'Múltipla' : 
                        'Correlação';
-      const questaoHeader = `Questão ${index + 1} - ${tipoNome}`;
-      pdf.text(questaoHeader, margin, y);
-      y += 5; // Reduzido de 7
       
-      // Bibliografia e páginas
-      if (question.bibliografia_titulo || question.paginas) {
-        pdf.setFontSize(7); // Reduzido de 9
-        pdf.setFont('helvetica', 'italic');
-        let metaText = '';
-        if (question.bibliografia_titulo) {
-          metaText += removeEmojis(question.bibliografia_titulo);
-        }
-        if (question.paginas) {
-          if (metaText) metaText += ' | ';
-          metaText += removeEmojis(question.paginas);
-        }
-        if (metaText) {
-          pdf.text(metaText, margin, y);
-          y += 4; // Reduzido de 5
-        }
+      // Construir linha completa com todas as informações
+      let headerLine = `Questão ${index + 1} - ${tipoNome}`;
+      
+      // Adicionar bibliografia, páginas e assunto na mesma linha (sem emojis)
+      const metaParts: string[] = [];
+      
+      if (question.bibliografia_titulo) {
+        metaParts.push(removeEmojis(question.bibliografia_titulo));
       }
       
-      // Pergunta (com formatação markdown)
-      pdf.setFontSize(9); // Reduzido de 11
-      const perguntaSegments = extractTextWithStyles(question.pergunta);
-      if (perguntaSegments.length > 0) {
-        y = renderStyledText(perguntaSegments, margin, y, maxWidth, 9);
-      } else {
-        // Fallback para texto simples
-        pdf.setFont('helvetica', 'normal');
-        const perguntaText = removeEmojis(question.pergunta);
-        const perguntaLines = pdf.splitTextToSize(perguntaText, maxWidth);
-        perguntaLines.forEach((line: string) => {
-          if (y + 5 > pageHeight - margin) {
-            pdf.addPage();
-            y = margin;
-          }
-          pdf.text(line, margin, y);
-          y += 5;
-        });
+      if (question.paginas) {
+        const paginasText = removeEmojis(question.paginas);
+        const paginasLabel = (paginasText.includes(',') || paginasText.includes('-')) ? 'Páginas' : 'Página';
+        metaParts.push(`${paginasLabel}: ${paginasText}`);
       }
+      
+      if (question.assunto) {
+        metaParts.push(truncateAssunto(question.assunto));
+      }
+      
+      if (metaParts.length > 0) {
+        headerLine += ' | ' + metaParts.join(' | ');
+      }
+      
+      // Verificar se o texto cabe na linha, se não, dividir em duas linhas
+      pdf.setFontSize(8); // Tamanho menor para caber mais informação
+      const headerLines = pdf.splitTextToSize(headerLine, maxWidth);
+      
+      headerLines.forEach((line: string, lineIndex: number) => {
+        if (y + 4 > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+        // Primeira linha em negrito, demais em itálico
+        if (lineIndex === 0) {
+          pdf.setFont('helvetica', 'bold');
+        } else {
+          pdf.setFont('helvetica', 'italic');
+        }
+        pdf.text(line, margin, y);
+        y += 4;
+      });
+      
+      y += 0.1; // Espaço adicional após o cabeçalho
       
       // Opções/Alternativas baseado no tipo
-      y += 2; // Reduzido de 3
+      y += 0.1; // Reduzido de 3
       pdf.setFontSize(8); // Reduzido de 10
       
       if (question.tipo === 'vf') {
@@ -1686,13 +2035,13 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
               y = margin;
             }
             pdf.text(`  ${line}`, margin + 5, y);
-            y += 4;
+            y += 2;
           });
         }
-        y += 1; // Reduzido de 2
+        y += 0.1; // Reduzido de 2
         pdf.setFont('helvetica', 'normal');
         pdf.text('  ( ) Verdadeiro    ( ) Falso', margin + 5, y);
-        y += 4; // Reduzido de 5
+        y += 2; // Reduzido de 5
       } else if (question.tipo === 'multipla') {
         const multiplaData = question.data as PerguntaMultipla;
         const alternativas = [
@@ -1795,7 +2144,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       y += 5; // Reduzido de 8
       
       // Linha separadora entre questões (exceto na última)
-      if (index < this.simuladoQuestions.length - 1) {
+      if (index < allQuestions.length - 1) {
         pdf.setDrawColor(200, 200, 200);
         pdf.setLineWidth(0.15); // Reduzido de 0.2
         pdf.line(margin, y - 3, pageWidth - margin, y - 3);
@@ -1813,18 +2162,61 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     pdf.text('GABARITO', margin, y);
     y += 6; // Reduzido de 10
     
-    this.simuladoQuestions.forEach((question, index) => {
+    // Iterar sobre TODAS as questões do simulado atual no gabarito, sem limitação
+    allQuestions.forEach((question, index) => {
       // Verifica se precisa de nova página
       if (y + 15 > pageHeight - margin) {
         pdf.addPage();
         y = margin;
       }
       
-      // Número da questão
-      pdf.setFontSize(10); // Reduzido de 12
+      // Número da questão com metadados na mesma linha
+      pdf.setFontSize(8); // Tamanho menor para caber mais informação
       pdf.setFont('helvetica', 'bold');
-      pdf.text(`Questão ${index + 1}:`, margin, y);
-      y += 5; // Reduzido de 7
+      
+      // Construir linha completa com todas as informações
+      let gabaritoHeaderLine = `Questão ${index + 1}:`;
+      
+      // Adicionar bibliografia, páginas e assunto na mesma linha (sem emojis)
+      const metaParts: string[] = [];
+      
+      if (question.bibliografia_titulo) {
+        metaParts.push(removeEmojis(question.bibliografia_titulo));
+      }
+      
+      if (question.paginas) {
+        const paginasText = removeEmojis(question.paginas);
+        const paginasLabel = (paginasText.includes(',') || paginasText.includes('-')) ? 'Páginas' : 'Página';
+        metaParts.push(`${paginasLabel}: ${paginasText}`);
+      }
+      
+      if (question.assunto) {
+        metaParts.push(truncateAssunto(question.assunto));
+      }
+      
+      if (metaParts.length > 0) {
+        gabaritoHeaderLine += ' | ' + metaParts.join(' | ');
+      }
+      
+      // Verificar se o texto cabe na linha, se não, dividir em duas linhas
+      const gabaritoHeaderLines = pdf.splitTextToSize(gabaritoHeaderLine, maxWidth);
+      
+      gabaritoHeaderLines.forEach((line: string, lineIndex: number) => {
+        if (y + 4 > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+        // Primeira linha em negrito, demais em itálico
+        if (lineIndex === 0) {
+          pdf.setFont('helvetica', 'bold');
+        } else {
+          pdf.setFont('helvetica', 'italic');
+        }
+        pdf.text(line, margin, y);
+        y += 4;
+      });
+      
+      y += 2; // Espaço adicional após o cabeçalho
       
       // Resposta correta baseado no tipo
       pdf.setFontSize(8); // Reduzido de 10

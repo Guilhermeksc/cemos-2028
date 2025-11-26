@@ -89,7 +89,7 @@
         [class.active]="activeTab === 'completo'"
         (click)="setActiveTab('completo')"
       >
-        📝 Simulado Completo (15 questões)
+        📝 Simulado (10VF, 3 M, 2C)
       </button>
       <button 
         class="tab-button"
@@ -128,7 +128,7 @@
     <!-- Header da Prova -->
     <div class="prova-header">
       <div class="prova-info">
-        <h2>📝 Prova - {{ simuladoQuestions.length }} Questões</h2>
+        <h2>📝 Questões</h2>
         <div class="prova-stats">
           <span class="stat">Respondidas: {{ getTotalAnsweredQuestions() }}/{{ simuladoQuestions.length }}</span>
           <span class="stat">Acertos: {{ getTotalCorrectAnswers() }}</span>
@@ -169,20 +169,31 @@
         
         <!-- Cabeçalho da Questão -->
         <div class="questao-header">
-          <div class="questao-numero">
-            <span class="numero">{{ i + 1 }}</span>
-            <span class="tipo-badge" [class]="'tipo-' + question.tipo">
-              {{ question.tipo === 'vf' ? 'V/F' : 
-                 question.tipo === 'multipla' ? 'Múltipla' : 'Correlação' }}
+          <div class="questao-header-content">
+            <span class="questao-titulo">
+              Questão {{ i + 1 }} - 
+              <span class="tipo-badge" [class]="'tipo-' + question.tipo">
+                {{ question.tipo === 'vf' ? 'V/F' : 
+                   question.tipo === 'multipla' ? 'Múltipla' : 'Correlação' }}
+              </span>
             </span>
-          </div>
-          
-          <div class="questao-info">
+            
+            <span class="separator" *ngIf="question.bibliografia_titulo || question.paginas || question.assunto">|</span>
+            
             <span *ngIf="question.bibliografia_titulo" class="bibliografia">
               📚 {{ question.bibliografia_titulo }}
             </span>
+            
+            <span class="separator" *ngIf="question.paginas || question.assunto">|</span>
+            
             <span *ngIf="question.paginas" class="paginas">
-              📄 {{ question.paginas }}
+              📄 Página{{ (question.paginas?.includes(',') || question.paginas?.includes('-')) ? 's' : '' }}: {{ question.paginas }}
+            </span>
+            
+            <span class="separator" *ngIf="question.assunto">|</span>
+            
+            <span *ngIf="question.assunto" class="assunto">
+              🏷️ {{ question.assunto }}
             </span>
           </div>
 
@@ -199,7 +210,6 @@
 
         <!-- Conteúdo da Questão -->
         <div class="questao-content">
-          <h4 class="questao-pergunta">{{ question.pergunta }}</h4>
 
           <!-- Pergunta Verdadeiro/Falso - Componente Específico -->
           <app-pergunta-v-f

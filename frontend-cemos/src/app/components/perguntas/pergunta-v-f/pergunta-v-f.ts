@@ -22,6 +22,81 @@ export class PerguntaVF {
 
   userAnswer?: boolean;
 
+  /**
+   * Remove o assunto de um texto se ele aparecer no início ou final
+   */
+  private removeAssuntoFromText(text: string, assunto?: string): string {
+    if (!text || !assunto) return text;
+
+    // Normalizar ambos os textos para comparação
+    const normalize = (t: string): string => {
+      return t.trim().replace(/\s+/g, ' ').trim();
+    };
+
+    const assuntoNormalized = normalize(assunto);
+    if (!assuntoNormalized) return text;
+
+    // Dividir o texto em linhas
+    const lines = text.split(/\r?\n/);
+
+    // Verificar e remover se a primeira linha for o assunto
+    if (lines.length > 0) {
+      const firstLineNormalized = normalize(lines[0]);
+      if (firstLineNormalized === assuntoNormalized) {
+        lines.shift();
+        // Remover linhas vazias subsequentes
+        while (lines.length > 0 && lines[0].trim() === '') {
+          lines.shift();
+        }
+      }
+    }
+
+    // Verificar e remover se a última linha for o assunto
+    if (lines.length > 0) {
+      const lastLineNormalized = normalize(lines[lines.length - 1]);
+      if (lastLineNormalized === assuntoNormalized) {
+        lines.pop();
+        // Remover linhas vazias anteriores
+        while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
+          lines.pop();
+        }
+      }
+    }
+
+    // Reconstruir o texto
+    let result = lines.join('\n').trim();
+
+    // Verificação adicional: se o texto ainda começa com o assunto (sem quebra de linha)
+    const resultNormalized = normalize(result);
+    if (resultNormalized.startsWith(assuntoNormalized)) {
+      // Tentar remover o assunto do início
+      const index = result.toLowerCase().indexOf(assuntoNormalized.toLowerCase());
+      if (index === 0 || (index > 0 && /^\s*$/.test(result.substring(0, index)))) {
+        // Encontrar onde o assunto termina
+        let charCount = 0;
+        let endIndex = 0;
+
+        for (let i = 0; i < result.length && charCount < assuntoNormalized.length; i++) {
+          const char = result[i];
+          if (char !== '\n' && char !== '\r') {
+            const normalizedChar = char.toLowerCase().replace(/\s+/g, ' ');
+            if (normalizedChar !== ' ' || charCount === 0 || result[i - 1] !== ' ') {
+              charCount++;
+            }
+          }
+          endIndex = i + 1;
+        }
+
+        if (endIndex > 0) {
+          result = result.substring(endIndex).trim();
+          result = result.replace(/^[\n\r\s]+/, '');
+        }
+      }
+    }
+
+    return result || text; // Se remover tudo, retornar o original
+  }
+
   onSubmit(event?: Event) {
     if (event) {
       event.preventDefault();
@@ -43,8 +118,13 @@ export class PerguntaVF {
   }
   
   getAfirmacaoSorteada(): string {
-    // Retorna a afirmação que foi sorteada para exibição
-    return this.questionData.afirmacao_sorteada ?? this.questionData.afirmacao_verdadeira;
+    // Retorna a afirmação que foi sorteada para exibição (sem assunto)
+    const afirmacao = this.questionData.afirmacao_sorteada ?? this.questionData.afirmacao_verdadeira;
+    // Remover assunto se presente
+    if (this.questionData.assunto) {
+      return this.removeAssuntoFromText(afirmacao, this.questionData.assunto);
+    }
+    return afirmacao;
   }
 
   /**
@@ -96,10 +176,15 @@ export class PerguntaVF {
   }
 
   /**
-   * Processa markdown e retorna como string HTML segura para a afirmação verdadeira
+   * Processa markdown e retorna como string HTML segura para a afirmação verdadeira (sem assunto)
    */
   getAfirmacaoVerdadeiraFormatted(): SafeHtml {
-    return this.processMarkdown(this.questionData.afirmacao_verdadeira || '');
+    let afirmacao = this.questionData.afirmacao_verdadeira || '';
+    // Remover assunto se presente
+    if (this.questionData.assunto) {
+      afirmacao = this.removeAssuntoFromText(afirmacao, this.questionData.assunto);
+    }
+    return this.processMarkdown(afirmacao);
   }
 
   /**

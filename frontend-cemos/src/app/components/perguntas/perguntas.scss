@@ -404,6 +404,16 @@
   margin-bottom: 10px;
   padding-bottom: 15px;
   border-bottom: 1px solid var(--geopolitica-border);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.questao-header-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 .questao-numero {
@@ -423,6 +433,27 @@
   justify-content: center;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.questao-numero-tipo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.questao-titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--geopolitica-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.separator {
+  color: var(--geopolitica-border-dark);
+  font-weight: 300;
+  margin: 0 5px;
 }
 
 .tipo-badge {
@@ -457,15 +488,25 @@
   margin-left: 10px;
 }
 
-.questao-info .bibliografia,
-.questao-info .paginas {
+.questao-header-content .bibliografia,
+.questao-header-content .paginas,
+.questao-header-content .assunto {
   background: color-mix(in srgb, var(--geopolitica-light-gray) 50%, transparent);
-
   font-size: 0.85rem;
   color: var(--geopolitica-dark-text);
   padding: 4px 10px;
   border-radius: 12px;
   max-width: fit-content;
+  white-space: nowrap;
+}
+
+/* Ocultar assunto se aparecer em outros lugares dentro do card */
+.questao-content .assunto,
+.questao-item .assunto:not(.questao-header-content .assunto),
+.vf-question .assunto,
+.multipla-question .assunto,
+.correlacao-question .assunto {
+  display: none !important;
 }
 
 /* Status da Resposta */
