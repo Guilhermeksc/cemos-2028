@@ -1752,25 +1752,34 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       if (!text) return [];
       
       const segments: TextSegment[] = [];
-      // Usa regex para encontrar padrões **texto** e *texto* (não greedy)
-      // Processa **texto** primeiro para evitar conflitos com *texto*
       let processed = text;
       
-      // Substitui **texto** por placeholder temporário
-      processed = processed.replace(/\*\*([^*]+)\*\*/g, (match, content) => {
+      // Processa **texto** primeiro (negrito duplo) usando regex não-greedy
+      // Substitui por placeholder único que não será confundido com *texto*
+      processed = processed.replace(/\*\*([^*]+?)\*\*/g, (match, content) => {
         return `__BOLD_DOUBLE__${content}__BOLD_DOUBLE_END__`;
       });
       
-      // Depois processa *texto* (que não está dentro de **)
-      processed = processed.replace(/\*([^*]+)\*/g, (match, content) => {
-        // Verifica se não está dentro de um placeholder de negrito duplo
-        if (!match.includes('__BOLD_DOUBLE__')) {
-          return `__BOLD_SINGLE__${content}__BOLD_SINGLE_END__`;
+      // Depois processa *texto* (negrito simples), mas apenas se não estiver dentro de um placeholder
+      // Usa uma função de substituição que verifica se não está dentro de um placeholder
+      processed = processed.replace(/\*([^*\n]+?)\*/g, (match, content, offset) => {
+        // Verificar se não está dentro de um placeholder de negrito duplo
+        const beforeMatch = processed.substring(0, offset);
+        const afterMatch = processed.substring(offset + match.length);
+        
+        // Contar quantos placeholders de negrito duplo foram abertos antes deste ponto
+        const doubleBoldOpens = (beforeMatch.match(/__BOLD_DOUBLE__/g) || []).length;
+        const doubleBoldCloses = (beforeMatch.match(/__BOLD_DOUBLE_END__/g) || []).length;
+        
+        // Se há placeholders abertos sem fechar, estamos dentro de um negrito duplo
+        if (doubleBoldOpens > doubleBoldCloses) {
+          return match; // Retorna sem alterar
         }
-        return match;
+        
+        return `__BOLD_SINGLE__${content}__BOLD_SINGLE_END__`;
       });
       
-      // Agora divide o texto processado em segmentos
+      // Dividir o texto processado em segmentos mantendo a ordem e preservando espaços
       const parts = processed.split(/(__BOLD_DOUBLE__.*?__BOLD_DOUBLE_END__|__BOLD_SINGLE__.*?__BOLD_SINGLE_END__)/g);
       
       parts.forEach(part => {
@@ -1783,6 +1792,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           const content = part.replace('__BOLD_SINGLE__', '').replace('__BOLD_SINGLE_END__', '');
           segments.push({ text: removeEmojis(content), bold: true });
         } else if (part.length > 0) {
+          // Preservar o texto original incluindo espaços
           segments.push({ text: removeEmojis(part), bold: false });
         }
       });
@@ -1794,83 +1804,44 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     const renderStyledText = (segments: TextSegment[], x: number, yPos: number, maxLineWidth: number, fontSize: number): number => {
       let currentY = yPos;
       const lineHeight = fontSize * 0.4;
+      const spaceWidth = pdf.getTextWidth(' ');
       
-      // Processa cada segmento, respeitando quebras de linha
+      // Combinar todos os segmentos em uma lista contínua de palavras com seus estilos
+      // Processar cada segmento mantendo o contexto de quebra de linha
+      const allWords: Array<{text: string, bold: boolean}> = [];
+      
       segments.forEach(segment => {
-        // Divide por quebras de linha primeiro
-        const lines = segment.text.split('\n');
+        // Dividir por quebras de linha reais primeiro
+        const segmentLines = segment.text.split('\n');
         
-        lines.forEach((line, lineIndex) => {
-          // Se não é a primeira linha, renderiza a linha atual e pula para próxima
+        segmentLines.forEach((line, lineIndex) => {
           if (lineIndex > 0) {
-            currentY += lineHeight;
-            // Verifica se precisa de nova página
-            if (currentY + lineHeight > pageHeight - margin) {
-              pdf.addPage();
-              currentY = margin;
-            }
+            // Adicionar marcador de quebra de linha explícita
+            allWords.push({ text: '\n', bold: false });
           }
           
           if (!line || line.trim().length === 0) {
-            return; // Linha vazia, apenas pula
-          }
-          
-          // Processa palavras da linha
-          const parts = line.split(/(\s+)/);
-          const words: Array<{text: string, bold: boolean}> = [];
-          
-          parts.forEach(part => {
-            if (part && !/^\s+$/.test(part)) {
-              words.push({ text: part, bold: segment.bold });
-            }
-          });
-          
-          if (words.length === 0) {
             return;
           }
           
-          // Agrupa palavras em linhas que cabem no espaço disponível
-          let lineWords: Array<{text: string, bold: boolean}> = [];
-          let lineWidth = 0;
-          const spaceWidth = pdf.getTextWidth(' ');
-          
-          words.forEach((word) => {
-            pdf.setFontSize(fontSize);
-            pdf.setFont('helvetica', word.bold ? 'bold' : 'normal');
-            
-            const wordWidth = pdf.getTextWidth(word.text);
-            const newLineWidth = lineWidth + (lineWords.length > 0 ? spaceWidth : 0) + wordWidth;
-            
-            // Se a palavra não cabe na linha atual, renderiza a linha anterior
-            if (newLineWidth > maxLineWidth && lineWords.length > 0) {
-              // Renderiza linha atual
-              if (currentY + lineHeight > pageHeight - margin) {
-                pdf.addPage();
-                currentY = margin;
-              }
-              
-              let xPos = x;
-              lineWords.forEach((w, idx) => {
-                pdf.setFontSize(fontSize);
-                pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
-                pdf.text(w.text, xPos, currentY);
-                xPos += pdf.getTextWidth(w.text);
-                if (idx < lineWords.length - 1) {
-                  xPos += spaceWidth;
-                }
-              });
-              currentY += lineHeight;
-              
-              // Inicia nova linha com a palavra atual
-              lineWords = [word];
-              lineWidth = wordWidth;
-            } else {
-              lineWords.push(word);
-              lineWidth = newLineWidth;
+          // Dividir a linha em tokens (palavras e espaços) preservando tudo
+          const tokens = line.match(/\S+|\s+/g) || [];
+          tokens.forEach(token => {
+            if (token) {
+              allWords.push({ text: token, bold: segment.bold });
             }
           });
-          
-          // Renderiza a última linha se houver palavras
+        });
+      });
+      
+      // Renderizar todas as palavras de forma contínua
+      let lineWords: Array<{text: string, bold: boolean}> = [];
+      let lineWidth = 0;
+      
+      allWords.forEach((word) => {
+        // Se encontrou uma quebra de linha explícita
+        if (word.text === '\n') {
+          // Renderizar linha atual antes de quebrar
           if (lineWords.length > 0) {
             if (currentY + lineHeight > pageHeight - margin) {
               pdf.addPage();
@@ -1878,19 +1849,98 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             }
             
             let xPos = x;
-            lineWords.forEach((w, idx) => {
+            lineWords.forEach((w) => {
               pdf.setFontSize(fontSize);
               pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
               pdf.text(w.text, xPos, currentY);
               xPos += pdf.getTextWidth(w.text);
-              if (idx < lineWords.length - 1) {
-                xPos += spaceWidth;
-              }
+            });
+            currentY += lineHeight;
+            lineWords = [];
+            lineWidth = 0;
+          }
+          return;
+        }
+        
+        pdf.setFontSize(fontSize);
+        pdf.setFont('helvetica', word.bold ? 'bold' : 'normal');
+        
+        const isSpace = /^\s+$/.test(word.text);
+        const wordWidth = pdf.getTextWidth(word.text);
+        
+        // Não adicionar espaço extra - os espaços já estão nos tokens
+        const newLineWidth = lineWidth + wordWidth;
+        
+        // Se a palavra não cabe na linha atual, renderiza a linha anterior
+        if (newLineWidth > maxLineWidth && lineWords.length > 0) {
+          // Remover espaços do final da linha atual antes de renderizar
+          while (lineWords.length > 0 && /^\s+$/.test(lineWords[lineWords.length - 1].text)) {
+            const lastWord = lineWords.pop()!;
+            const removedWidth = pdf.getTextWidth(lastWord.text);
+            lineWidth -= removedWidth;
+          }
+          
+          // Recalcular largura total da linha após remover espaços
+          lineWidth = 0;
+          lineWords.forEach(w => {
+            lineWidth += pdf.getTextWidth(w.text);
+          });
+          
+          // Renderiza linha atual (se houver palavras)
+          if (lineWords.length > 0) {
+            if (currentY + lineHeight > pageHeight - margin) {
+              pdf.addPage();
+              currentY = margin;
+            }
+            
+            let xPos = x;
+            lineWords.forEach((w) => {
+              pdf.setFontSize(fontSize);
+              pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
+              pdf.text(w.text, xPos, currentY);
+              xPos += pdf.getTextWidth(w.text);
             });
             currentY += lineHeight;
           }
-        });
+          
+          // Inicia nova linha com a palavra atual (ignora espaços no início)
+          if (!isSpace) {
+            lineWords = [word];
+            lineWidth = wordWidth;
+          } else {
+            lineWords = [];
+            lineWidth = 0;
+          }
+        } else {
+          lineWords.push(word);
+          lineWidth = newLineWidth;
+        }
       });
+      
+      // Renderiza a última linha se houver palavras
+      // Remover espaços do início e fim da última linha
+      while (lineWords.length > 0 && /^\s+$/.test(lineWords[0].text)) {
+        lineWords.shift();
+      }
+      while (lineWords.length > 0 && /^\s+$/.test(lineWords[lineWords.length - 1].text)) {
+        lineWords.pop();
+      }
+      
+      if (lineWords.length > 0) {
+        if (currentY + lineHeight > pageHeight - margin) {
+          pdf.addPage();
+          currentY = margin;
+        }
+        
+        let xPos = x;
+        lineWords.forEach((w) => {
+          pdf.setFontSize(fontSize);
+          pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
+          pdf.text(w.text, xPos, currentY);
+          xPos += pdf.getTextWidth(w.text);
+        });
+        currentY += lineHeight;
+      }
       
       return currentY;
     };
@@ -2019,29 +2069,67 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       
       if (question.tipo === 'vf') {
         const vfData = question.data as PerguntaVF;
-        const afirmacao = vfData.afirmacao_sorteada || vfData.afirmacao_verdadeira || '';
-        // Processa formatação markdown na afirmação
-        const afirmacaoSegments = extractTextWithStyles(afirmacao);
-        if (afirmacaoSegments.length > 0) {
-          y = renderStyledText(afirmacaoSegments, margin + 5, y, maxWidth - 10, 8);
-        } else {
-          // Fallback para texto simples
-          pdf.setFont('helvetica', 'normal');
-          const afirmacaoText = removeEmojis(afirmacao);
-          const afirmacaoLines = pdf.splitTextToSize(afirmacaoText, maxWidth - 10);
-          afirmacaoLines.forEach((line: string) => {
-            if (y + 4 > pageHeight - margin) {
-              pdf.addPage();
-              y = margin;
-            }
-            pdf.text(`  ${line}`, margin + 5, y);
-            y += 2;
-          });
+        
+        // Criar array com ambas as afirmações
+        const afirmacoes = [
+          { texto: vfData.afirmacao_verdadeira || '', isVerdadeira: true },
+          { texto: vfData.afirmacao_falsa || '', isVerdadeira: false }
+        ];
+        
+        // Usar o ID da questão como seed para randomização determinística
+        // Isso garante que a ordem seja a mesma nas questões e no gabarito
+        const seed = question.id;
+        const shouldSwap = seed % 2 === 0;
+        if (shouldSwap) {
+          [afirmacoes[0], afirmacoes[1]] = [afirmacoes[1], afirmacoes[0]];
         }
-        y += 0.1; // Reduzido de 2
-        pdf.setFont('helvetica', 'normal');
-        pdf.text('  ( ) Verdadeiro    ( ) Falso', margin + 5, y);
-        y += 2; // Reduzido de 5
+        
+        // Armazenar a ordem para o gabarito (usando um objeto auxiliar)
+        const vfDataWithOrder = vfData as any;
+        vfDataWithOrder._afirmacoesOrder = afirmacoes.map(a => a.isVerdadeira);
+        
+        // Mostrar cada afirmação com um quadrado ao lado
+        afirmacoes.forEach((afirmacao, idx) => {
+          if (!afirmacao.texto) return;
+          
+          // Desenhar quadrado ao lado da afirmação
+          const squareSize = 3; // Tamanho do quadrado em mm
+          const squareX = margin + 5;
+          const squareY = y - 1; // Ajustar posição vertical
+          
+          pdf.setDrawColor(0, 0, 0);
+          pdf.setLineWidth(0.2);
+          pdf.rect(squareX, squareY, squareSize, squareSize);
+          
+          // Renderizar a afirmação ao lado do quadrado
+          const textStartX = squareX + squareSize + 2;
+          const afirmacaoSegments = extractTextWithStyles(afirmacao.texto);
+          
+          if (afirmacaoSegments.length > 0) {
+            y = renderStyledText(afirmacaoSegments, textStartX, y, maxWidth - (textStartX - margin), 8);
+          } else {
+            // Fallback para texto simples
+            pdf.setFont('helvetica', 'normal');
+            const afirmacaoText = removeEmojis(afirmacao.texto);
+            const afirmacaoLines = pdf.splitTextToSize(afirmacaoText, maxWidth - (textStartX - margin));
+            afirmacaoLines.forEach((line: string, lineIdx: number) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              if (lineIdx === 0) {
+                pdf.text(line, textStartX, y);
+              } else {
+                pdf.text(line, textStartX, y);
+              }
+              y += 2;
+            });
+          }
+          
+          y += 3; // Espaço entre afirmações
+        });
+        
+        y += 1; // Espaço adicional após as afirmações
       } else if (question.tipo === 'multipla') {
         const multiplaData = question.data as PerguntaMultipla;
         const alternativas = [
@@ -2224,9 +2312,57 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       
       if (question.tipo === 'vf') {
         const vfData = question.data as PerguntaVF;
-        const respostaCorreta = vfData.afirmacao_sorteada_eh_verdadeira ? 'Verdadeiro' : 'Falso';
-        pdf.text(`  Resposta correta: ${respostaCorreta}`, margin + 5, y);
-        y += 4; // Reduzido de 6
+        
+        // Recriar a mesma ordem aleatória das afirmações usando o ID da questão
+        // Usar o ID da questão como seed para garantir a mesma ordem que nas questões
+        const afirmacoesGabarito = [
+          { texto: vfData.afirmacao_verdadeira || '', isVerdadeira: true },
+          { texto: vfData.afirmacao_falsa || '', isVerdadeira: false }
+        ];
+        
+        // Usar o ID da questão como seed para randomização determinística
+        // Isso garante que a ordem seja a mesma nas questões e no gabarito
+        const seed = question.id;
+        const shouldSwap = seed % 2 === 0;
+        const afirmacoesOrdenadas = shouldSwap 
+          ? [afirmacoesGabarito[1], afirmacoesGabarito[0]]
+          : [afirmacoesGabarito[0], afirmacoesGabarito[1]];
+        
+        // Mostrar cada afirmação com indicação V ou F
+        afirmacoesOrdenadas.forEach((afirmacao) => {
+          if (!afirmacao.texto) return;
+          
+          // Indicador V ou F ao lado da afirmação
+          const label = afirmacao.isVerdadeira ? 'V' : 'F';
+          pdf.setFont('helvetica', 'bold');
+          pdf.setFontSize(8);
+          pdf.text(`  [${label}]`, margin + 5, y);
+          
+          // Renderizar a afirmação ao lado do indicador
+          const textStartX = margin + 15;
+          const afirmacaoSegments = extractTextWithStyles(afirmacao.texto);
+          
+          if (afirmacaoSegments.length > 0) {
+            y = renderStyledText(afirmacaoSegments, textStartX, y, maxWidth - (textStartX - margin), 8);
+          } else {
+            // Fallback para texto simples
+            pdf.setFont('helvetica', 'normal');
+            const afirmacaoText = removeEmojis(afirmacao.texto);
+            const afirmacaoLines = pdf.splitTextToSize(afirmacaoText, maxWidth - (textStartX - margin));
+            afirmacaoLines.forEach((line: string) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(line, textStartX, y);
+              y += 2;
+            });
+          }
+          
+          y += 3; // Espaço entre afirmações
+        });
+        
+        y += 1; // Espaço adicional
         
         // Justificativa se houver (com formatação markdown)
         if (vfData.justificativa_resposta_certa) {

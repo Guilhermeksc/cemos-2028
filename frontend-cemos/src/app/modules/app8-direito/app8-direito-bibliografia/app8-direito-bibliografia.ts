@@ -42,52 +42,61 @@ export class App8DireitoBibliografia implements OnInit {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/carta-nacoes-unidas`,
       title: '3. Carta das Nações Unidas',
-      description: 'Decreto XXX'
+      description: 'Decreto nº 19.841, de 22 de outubro de 1945.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/4.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/feridos-enfermos`,
       title: '4. Feridos, enfermos e náufragos',
+      description: 'Decreto nº 42.121, de 21 de agosto de 1957.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/5.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-i`,
-      title: '5. Protocolo I',
+      title: '5. Protocolo I, Adicional às Convenções de Genebra.',
+      description: 'Decreto nº 849, de 25 de junho de 1993.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/6.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-ii`,
-      title: '6. Protocolo II',
+      title: '6. Protocolo II, Adicional às Convenções de Genebra.',
+      description: 'Decreto nº 849, de 25 de junho de 1993.'
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/7.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/san-remo-manual`,
       title: '7. San Remo Manual',
+      description: 'International Institute of Humanitarian Law.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/8.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/cnudm`,
-      title: '8.  Convenção das Nações Unidas sobre o Direito do Mar',
+      title: '8.  Convenção das Nações Unidas sobre o Direito do Mar (CNUDM)',
+      description: 'Decreto nº 1530, de 22 de junho de 1995.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/9.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/entorpecentes-psicotropicos`,
-      title: '9. Entorpecentes e Psicotrópicos',
+      title: '9. Convenção Contra o Tráfico Ilícito de Entorpecentes e Substâncias Psicotrópicas',
+      description: 'Decreto nº 154, de 26 de junho de 1991.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/10.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/pacto-sao-jose`,
-      title: '10. Pacto de São José',
+      title: '10. Convenção Americana sobre Direitos Humanos (Pacto de São José)',
+      description: 'Decreto nº 678, de 6 de novembro de 1992.'
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/11.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/declaracao-direitos-humanos`,
       title: '11. Declaração Universal dos Direitos Humanos',
+      description: 'Declaração Universal dos Direitos Humanos.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/12.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/direito-tratados`,
-      title: '12. Direito dos Tratados',
+      title: '12. Direito dos Tratados (Convenção de Viena)',
+      description: 'Decreto nº 7.030, de 14 de dezembro de 2009.'
     }
   ];
 
