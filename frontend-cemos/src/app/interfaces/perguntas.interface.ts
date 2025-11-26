@@ -19,6 +19,7 @@ export interface FlashCards {
   assunto?: string;
   prova: boolean;
   ano?: number;
+  caveira: boolean;
 }
 
 export interface FlashCardsFilters {
@@ -27,6 +28,7 @@ export interface FlashCardsFilters {
   assunto?: string;
   prova?: boolean;
   ano?: number;
+  caveira?: boolean;
   ordering?: string;
   page?: number;
   page_size?: number;

@@ -811,117 +811,140 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     pdf.text('FLASH CARDS', margin, y);
     y += 6;
     
-    allFlashCardsForPDF.forEach((card, index) => {
-      if (y + 30 > pageHeight - margin) {
+    // Agrupar flashcards por bibliografia + assunto
+    const groupedFlashCards: { [key: string]: FlashCard[] } = {};
+    allFlashCardsForPDF.forEach((card) => {
+      const bibliografia = card.bibliografia_titulo || 'Sem bibliografia';
+      const assunto = card.assunto || 'Sem assunto';
+      const key = `${bibliografia}|${assunto}`;
+      
+      if (!groupedFlashCards[key]) {
+        groupedFlashCards[key] = [];
+      }
+      groupedFlashCards[key].push(card);
+    });
+    
+    // Contador global de flashcards
+    let globalCardNumber = 0;
+    
+    // Iterar sobre os grupos
+    Object.keys(groupedFlashCards).forEach((groupKey) => {
+      const groupCards = groupedFlashCards[groupKey];
+      const [bibliografia, assunto] = groupKey.split('|');
+      
+      // Verifica se precisa de nova página antes de adicionar o cabeçalho do grupo
+      if (y + 15 > pageHeight - margin) {
         pdf.addPage();
         y = margin;
       }
       
-      // Número do card e metadados
-      pdf.setFontSize(9);
+      // Cabeçalho do grupo: Bibliografia + Assunto
+      pdf.setFontSize(10);
       pdf.setFont('helvetica', 'bold');
-      let headerLine = `Flash Card ${index + 1}`;
+      const headerText = `${removeEmojis(bibliografia)}${assunto !== 'Sem assunto' ? ' - ' + removeEmojis(assunto) : ''}`;
+      const headerLines = pdf.splitTextToSize(headerText, maxWidth);
       
-      const metaParts: string[] = [];
-      if (card.bibliografia_titulo) {
-        metaParts.push(removeEmojis(card.bibliografia_titulo));
-      }
-      if (card.assunto) {
-        metaParts.push(removeEmojis(card.assunto));
-      }
-      if (card.prova && card.ano) {
-        metaParts.push(`⭐ Caiu em ${card.ano}`);
-      }
-      
-      if (metaParts.length > 0) {
-        headerLine += ' | ' + metaParts.join(' | ');
-      }
-      
-      pdf.setFontSize(8);
-      const headerLines = pdf.splitTextToSize(headerLine, maxWidth);
-      headerLines.forEach((line: string, lineIndex: number) => {
+      headerLines.forEach((line: string) => {
         if (y + 4 > pageHeight - margin) {
           pdf.addPage();
           y = margin;
-        }
-        if (lineIndex === 0) {
-          pdf.setFont('helvetica', 'bold');
-        } else {
-          pdf.setFont('helvetica', 'italic');
         }
         pdf.text(line, margin, y);
         y += 4;
       });
       
-      y += 2;
+      y += 2; // Espaço após o cabeçalho do grupo
       
-      // Pergunta - "P:" ao lado do texto
-      pdf.setFontSize(8);
-      pdf.setFont('helvetica', 'bold');
-      const labelP = 'P:';
-      const labelPWidth = pdf.getTextWidth(labelP);
-      pdf.text(labelP, margin + 5, y);
-      
-      const perguntaStartX = margin + 5 + labelPWidth + 2;
-      const perguntaMaxWidth = maxWidth - (perguntaStartX - margin);
-      
-      pdf.setFont('helvetica', 'normal');
-      const perguntaSegments = extractTextWithStyles(card.pergunta || '');
-      if (perguntaSegments.length > 0) {
-        y = renderStyledText(perguntaSegments, perguntaStartX, y, perguntaMaxWidth, 8);
-      } else {
-        const perguntaText = removeEmojis(card.pergunta || '');
-        const perguntaLines = pdf.splitTextToSize(perguntaText, perguntaMaxWidth);
-        perguntaLines.forEach((line: string, lineIndex: number) => {
-          if (y + 4 > pageHeight - margin) {
-            pdf.addPage();
-            y = margin;
-          }
-          const xPos = lineIndex === 0 ? perguntaStartX : margin + 5;
-          pdf.text(line, xPos, y);
-          y += 2;
-        });
-      }
-      
-      y += 2;
-      
-      // Resposta - "R:" ao lado do texto
-      pdf.setFontSize(8);
-      pdf.setFont('helvetica', 'bold');
-      const labelR = 'R:';
-      const labelRWidth = pdf.getTextWidth(labelR);
-      pdf.text(labelR, margin + 5, y);
-      
-      const respostaStartX = margin + 5 + labelRWidth + 2;
-      const respostaMaxWidth = maxWidth - (respostaStartX - margin);
-      
-      pdf.setFont('helvetica', 'normal');
-      const respostaSegments = extractTextWithStyles(card.resposta || '');
-      if (respostaSegments.length > 0) {
-        y = renderStyledText(respostaSegments, respostaStartX, y, respostaMaxWidth, 8);
-      } else {
-        const respostaText = removeEmojis(card.resposta || '');
-        const respostaLines = pdf.splitTextToSize(respostaText, respostaMaxWidth);
-        respostaLines.forEach((line: string, lineIndex: number) => {
-          if (y + 4 > pageHeight - margin) {
-            pdf.addPage();
-            y = margin;
-          }
-          const xPos = lineIndex === 0 ? respostaStartX : margin + 5;
-          pdf.text(line, xPos, y);
-          y += 2;
-        });
-      }
-      
-      y += 3;
-      
-      // Linha separadora entre cards (exceto na última)
-      if (index < allFlashCardsForPDF.length - 1) {
+      // Iterar sobre os flashcards do grupo
+      groupCards.forEach((card) => {
+        globalCardNumber++;
+        
+        // Verifica se precisa de nova página
+        if (y + 30 > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+        
+        // Número do card no canto esquerdo
+        pdf.setFontSize(8);
+        pdf.setFont('helvetica', 'bold');
+        const cardNumberText = `${globalCardNumber})`;
+        const numberWidth = pdf.getTextWidth(cardNumberText);
+        pdf.text(cardNumberText, margin, y);
+        
+        // Conteúdo do card
+        const contentStartX = margin + numberWidth + 2; // Espaço após o número
+        const contentMaxWidth = maxWidth - (contentStartX - margin);
+        
+        // Pergunta - "P:" ao lado do texto
+        pdf.setFontSize(8);
+        pdf.setFont('helvetica', 'bold');
+        const labelP = 'P:';
+        const labelPWidth = pdf.getTextWidth(labelP);
+        pdf.text(labelP, contentStartX, y);
+        
+        const perguntaStartX = contentStartX + labelPWidth + 2;
+        const perguntaMaxWidth = contentMaxWidth - (perguntaStartX - contentStartX);
+        
+        pdf.setFont('helvetica', 'normal');
+        const perguntaSegments = extractTextWithStyles(card.pergunta || '');
+        if (perguntaSegments.length > 0) {
+          y = renderStyledText(perguntaSegments, perguntaStartX, y, perguntaMaxWidth, 8);
+        } else {
+          const perguntaText = removeEmojis(card.pergunta || '');
+          const perguntaLines = pdf.splitTextToSize(perguntaText, perguntaMaxWidth);
+          perguntaLines.forEach((line: string, lineIndex: number) => {
+            if (y + 4 > pageHeight - margin) {
+              pdf.addPage();
+              y = margin;
+            }
+            const xPos = lineIndex === 0 ? perguntaStartX : contentStartX;
+            pdf.text(line, xPos, y);
+            y += 2;
+          });
+        }
+        
+        y += 2;
+        
+        // Resposta - "R:" ao lado do texto
+        pdf.setFontSize(8);
+        pdf.setFont('helvetica', 'bold');
+        const labelR = 'R:';
+        const labelRWidth = pdf.getTextWidth(labelR);
+        pdf.text(labelR, contentStartX, y);
+        
+        const respostaStartX = contentStartX + labelRWidth + 2;
+        const respostaMaxWidth = contentMaxWidth - (respostaStartX - contentStartX);
+        
+        pdf.setFont('helvetica', 'normal');
+        const respostaSegments = extractTextWithStyles(card.resposta || '');
+        if (respostaSegments.length > 0) {
+          y = renderStyledText(respostaSegments, respostaStartX, y, respostaMaxWidth, 8);
+        } else {
+          const respostaText = removeEmojis(card.resposta || '');
+          const respostaLines = pdf.splitTextToSize(respostaText, respostaMaxWidth);
+          respostaLines.forEach((line: string, lineIndex: number) => {
+            if (y + 4 > pageHeight - margin) {
+              pdf.addPage();
+              y = margin;
+            }
+            const xPos = lineIndex === 0 ? respostaStartX : contentStartX;
+            pdf.text(line, xPos, y);
+            y += 2;
+          });
+        }
+        
+        // Linha divisória logo abaixo do texto da resposta
+        // O y já está na posição após o texto (inclui lineHeight), então desenhamos a linha logo abaixo
+        y += 1; // Pequeno espaço antes da linha
         pdf.setDrawColor(200, 200, 200);
         pdf.setLineWidth(0.15);
-        pdf.line(margin, y - 3, pageWidth - margin, y - 3);
-        y += 1;
-      }
+        pdf.line(margin, y, pageWidth - margin, y);
+        y += 4; // Espaço após a linha para separar do próximo card (aumentado)
+      });
+      
+      // Espaço entre grupos
+      y += 1;
     });
     
     // Gerar nome do arquivo

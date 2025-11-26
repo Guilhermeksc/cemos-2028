@@ -120,6 +120,7 @@
         class="flashcard"
         [class.flipped]="card.isFlipped"
         [class.prova-card]="card.prova"
+        [attr.data-caveira]="card.caveira"
         (click)="flipCard(card)">
         
         <!-- Frente do Card (Pergunta) -->
@@ -128,6 +129,12 @@
             <div class="card-header-top">
               <div class="card-header-left">
                 <span class="card-badge">❓</span>
+                <img 
+                  *ngIf="card.caveira" 
+                  src="assets/img/svg/danger.svg" 
+                  alt="Caveira - Questão difícil" 
+                  class="caveira-icon"
+                  title="Questão difícil">
               </div>
               <div class="card-header-center">
                 <small class="card-bibliografia">
@@ -157,6 +164,12 @@
             <div class="card-header-top">
               <div class="card-header-left">
                 <span class="card-badge">✅</span>
+                <img 
+                  *ngIf="card.caveira" 
+                  src="assets/img/svg/danger.svg" 
+                  alt="Caveira - Questão difícil" 
+                  class="caveira-icon"
+                  title="Questão difícil">
               </div>
               <div class="card-header-center">
                 <small class="card-bibliografia">

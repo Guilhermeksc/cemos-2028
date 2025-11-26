@@ -276,6 +276,58 @@
     }
   }
 
+  // Estilo especial para cards com caveira (questões difíceis)
+  .flashcard[data-caveira="true"] {
+    .flashcard-front {
+      background: linear-gradient(135deg, #ffe5e5 0%, #fff0f0 100%);
+      border: 2px solid #ff6b6b;
+    }
+
+    .flashcard-back {
+      background: linear-gradient(135deg, #4a2020 0%, #3d2c2c 100%);
+      border: 2px solid #ff6b6b;
+    }
+
+    &:hover {
+      .flashcard-front {
+        box-shadow: 0 8px 24px rgba(247, 76, 72, 0.2);
+        border-color: #ff5252;
+      }
+
+      .flashcard-back {
+        box-shadow: 0 8px 24px rgba(247, 76, 72, 0.3);
+        border-color: #ff5252;
+      }
+    }
+  }
+
+  // Estilo combinado: prova + caveira
+  .prova-card.flashcard[data-caveira="true"] {
+    .flashcard-front {
+      background: linear-gradient(135deg, #ffe5e5 0%, #fff8e5 100%);
+      border: 3px solid #ff8c42;
+      box-shadow: 0 4px 20px rgba(255, 140, 66, 0.3);
+    }
+
+    .flashcard-back {
+      background: linear-gradient(135deg, #4a2020 0%, #3d3a20 100%);
+      border: 3px solid #ff8c42;
+      box-shadow: 0 4px 20px rgba(255, 140, 66, 0.4);
+    }
+
+    &:hover {
+      .flashcard-front {
+        box-shadow: 0 8px 28px rgba(255, 140, 66, 0.4);
+        border-color: #ff7028;
+      }
+
+      .flashcard-back {
+        box-shadow: 0 8px 28px rgba(255, 140, 66, 0.5);
+        border-color: #ff7028;
+      }
+    }
+  }
+
   .card-header {
     margin-bottom: 0.5rem;
     padding-bottom: 1rem;
@@ -310,6 +362,26 @@
       font-weight: 700;
       font-size: 1.5rem;
       white-space: nowrap;
+    }
+
+    .caveira-icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+      vertical-align: middle;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+      animation: pulse-danger 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-danger {
+      0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+      }
+      50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 4px 8px rgba(247, 76, 72, 0.4));
+      }
     }
 
     .flip-hint {
@@ -890,6 +962,12 @@ body.flashcards-fullscreen-active {
       .card-badge {
         font-size: 0.75rem;
         padding: 0.2rem 0.5rem;
+      }
+
+      .caveira-icon {
+        width: 18px;
+        height: 18px;
+        margin-left: 4px;
       }
 
       .flip-hint {

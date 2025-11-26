@@ -175,6 +175,13 @@ export class FlashCardsService {
   }
 
   /**
+   * Busca TODOS os flashcards marcados como caveira usando paginação completa
+   */
+  getFlashCardsCaveira(): Observable<FlashCards[]> {
+    return this.getAllFlashCards({ caveira: true });
+  }
+
+  /**
    * Busca TODOS os flashcards por ano usando paginação completa
    */
   getFlashCardsByAno(ano: number): Observable<FlashCards[]> {

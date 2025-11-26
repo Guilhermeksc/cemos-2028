@@ -37,8 +37,8 @@ class BibliografiaAdmin(ImportExportModelAdmin):
 @admin.register(FlashCardsModel)
 class FlashCardsAdmin(ImportExportModelAdmin):
     resource_class = FlashCardsResource
-    list_display = ['__str__', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano']
-    list_filter = ['bibliografia', 'assunto', 'prova', 'ano']
+    list_display = ['__str__', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano', 'caveira']
+    list_filter = ['bibliografia', 'assunto', 'prova', 'ano', 'caveira']
     search_fields = ['pergunta', 'resposta', 'assunto', 'bibliografia__titulo']
     ordering = ['id']
     
@@ -47,7 +47,7 @@ class FlashCardsAdmin(ImportExportModelAdmin):
             'fields': ('bibliografia', 'pergunta', 'resposta', 'assunto')
         }),
         ('Informações da Prova', {
-            'fields': ('prova', 'ano')
+            'fields': ('prova', 'ano', 'caveira')
         }),
     )
 

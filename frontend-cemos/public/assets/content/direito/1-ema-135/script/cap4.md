@@ -8,7 +8,7 @@ O Direito Internacional Público destina-se a reger juridicamente as relações 
 
 Assim, os tradicionais conceitos, em nível absoluto, de “paz” e “guerra” não mais se aplicam aos conflitos armados modernos, destacando-se as insurgências e os atos de terrorismo.
 
-Hoje, o uso da força entre Estados está proibido por uma regra imperativa de Direito Internacional1.  Exceções  a  esta  proibição  são  permitidas  nos  casos  de  legítima  defesa (autodefesa) individual ou coletiva2, medidas  de restabelecimento  ou manutenção da paz adotadas pelo Conselho de Segurança3 e exercício do direito de autodeterminação dos povos (guerras de libertação nacional)(4). 
+Hoje, o uso da força entre Estados está proibido por uma regra imperativa de Direito Internacional (Artigo 2°, parágrafo 4°, da Carta das Nações Unidas).  Exceções  a  esta  proibição  são  permitidas  nos  casos  de  legítima  defesa (autodefesa) individual ou coletiva (Artigo 51 da Carta das Nações Unidas), medidas  de restabelecimento  ou manutenção da paz adotadas pelo Conselho de Segurança (Capítulo VII da Carta das Nações Unidas). e exercício do direito de autodeterminação dos povos (guerras de libertação nacional)(4). 
 
 Para  os  propósitos  desta  publicação,  contudo,  a  condução  de  hostilidades  armadas envolvendo  forças  brasileiras,  independentemente  do seu caráter,  intensidade  ou duração serão abordadas na Parte 2 - O Direito e a Guerra Naval.
 
@@ -70,8 +70,7 @@ Exemplos  de  medidas  econômicas  coercitivas  utilizadas  para  modificar  o 
 
 **4.2.3 - Judiciais**
 
-Os Estados podem buscar a solução de suas controvérsias, em tempo de paz, por meio de medidas judiciais, apresentadas em tribunais nacionais ou internacionais. Um Estado ou
-seus cidadãos podem levantar uma questão legal contra quaisquer outros Estados, em seus próprios tribunais nacionais, desde que tenha competência para julgar o tema da controvérsia (ex:  se  a  ação  é  dirigida  contra  a  propriedade  de  país  estrangeiro  localizado  dentro  da jurisdição  territorial  do  tribunal)  e  desde  que  o  Estado  estrangeiro  não  interponha  uma reivindicação válida de imunidade à jurisdição local.
+Os Estados podem buscar a solução de suas controvérsias, em tempo de paz, por meio de medidas judiciais, apresentadas em tribunais nacionais ou internacionais. Um Estado ou seus cidadãos podem levantar uma questão legal contra quaisquer outros Estados, em seus próprios tribunais nacionais, desde que tenha competência para julgar o tema da controvérsia (ex:  se  a  ação  é  dirigida  contra  a  propriedade  de  país  estrangeiro  localizado  dentro  da jurisdição  territorial  do  tribunal)  e  desde  que  o  Estado  estrangeiro  não  interponha  uma reivindicação válida de imunidade à jurisdição local.
 
 Os  Estados  podem,  igualmente,  submeter  suas  disputas  à  Corte  Internacional  de Justiça. O art. 92 da Carta das Nações Unidas estabelece que a Corte Internacional de Justiça é o principal órgão judiciário das Nações Unidas. Nenhum Estado pode trazer outro diante da Corte sem o consentimento deste último. O consentimento  pode ser genérico e dado de antemão, ou pode ser dado com referência a uma controvérsia específica. Os Estados têm a opção de submeter suas disputas em tribunais estabelecidos ad hoc(6), ou em quaisquer outros tribunais acordados entre as partes.
 

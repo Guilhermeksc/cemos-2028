@@ -39,6 +39,7 @@ class FlashCardsModel(models.Model):
         verbose_name="Ano da Prova",
         validators=[MinValueValidator(2000), MaxValueValidator(2100)]
     )
+    caveira = models.BooleanField(default=False, verbose_name="Caveira")
     
     class Meta:
         verbose_name = "Flash Cards"

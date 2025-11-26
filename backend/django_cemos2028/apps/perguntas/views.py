@@ -111,9 +111,9 @@ class FlashCardsViewSet(viewsets.ModelViewSet):
     queryset = FlashCardsModel.objects.select_related('bibliografia').all()
     serializer_class = FlashCardsSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['bibliografia', 'assunto', 'prova', 'ano']
+    filterset_fields = ['bibliografia', 'assunto', 'prova', 'ano', 'caveira']
     search_fields = ['pergunta', 'resposta', 'assunto', 'bibliografia__titulo']
-    ordering_fields = ['id', 'bibliografia__titulo', 'assunto', 'prova', 'ano']
+    ordering_fields = ['id', 'bibliografia__titulo', 'assunto', 'prova', 'ano', 'caveira']
     ordering = ['id']
     
     def get_serializer_class(self):

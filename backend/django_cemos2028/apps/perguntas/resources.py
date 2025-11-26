@@ -33,8 +33,8 @@ class FlashCardsResource(resources.ModelResource):
 
     class Meta:
         model = FlashCardsModel
-        fields = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano')
-        export_order = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano')
+        fields = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano', 'caveira')
+        export_order = ('id', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano', 'caveira')
         import_id_fields = ('id',)
         skip_unchanged = True
         report_skipped = True

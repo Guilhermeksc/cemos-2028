@@ -157,6 +157,18 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 prova_str = str(prova_val).lower().strip()
                                 prova_bool = prova_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
                             
+                            # Converter caveira para boolean (aceita múltiplos formatos)
+                            caveira_val = row.get('caveira', False)
+                            if pd.isna(caveira_val):
+                                caveira_bool = False
+                            elif isinstance(caveira_val, bool):
+                                caveira_bool = caveira_val
+                            elif isinstance(caveira_val, (int, float)):
+                                caveira_bool = bool(caveira_val)
+                            else:
+                                caveira_str = str(caveira_val).lower().strip()
+                                caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
                             obj, created = FlashCardsModel.objects.update_or_create(
                                 bibliografia=bibliografia,
                                 pergunta=_as_clean_str(row['pergunta']),
@@ -164,7 +176,8 @@ def load_fixtures_perguntas(sender, **kwargs):
                                     'resposta': _as_clean_str(row['resposta']),
                                     'assunto': _as_clean_str(row.get('assunto')),
                                     'prova': prova_bool,
-                                    'ano': _as_int(row.get('ano'))
+                                    'ano': _as_int(row.get('ano')),
+                                    'caveira': caveira_bool
                                 }
                             )
                             if created:
