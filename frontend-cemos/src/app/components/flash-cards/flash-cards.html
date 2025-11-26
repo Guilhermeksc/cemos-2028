@@ -74,6 +74,15 @@
       </button>
       
       <button 
+        class="btn btn-pdf"
+        (click)="downloadAsPDF()"
+        [disabled]="allFlashCards.length === 0 || isGeneratingPDF">
+        <span *ngIf="!isGeneratingPDF">📄</span>
+        <span *ngIf="isGeneratingPDF" class="spinner-small"></span>
+        {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
+      </button>
+      
+      <button 
         class="btn btn-outline"
         (click)="resetFilters()"
         [disabled]="!selectedBibliografiaId && !selectedAssunto">
@@ -184,6 +193,15 @@
       🎲 Embaralhar
     </button>
     <button 
+      class="btn btn-pdf"
+      (click)="downloadAsPDF()"
+      [disabled]="allFlashCards.length === 0 || isGeneratingPDF"
+      aria-label="Salvar PDF">
+      <span *ngIf="!isGeneratingPDF">📄</span>
+      <span *ngIf="isGeneratingPDF" class="spinner-small"></span>
+      {{ isGeneratingPDF ? 'Gerando...' : 'PDF' }}
+    </button>
+    <button 
       class="btn btn-fullscreen"
       (click)="openFullscreen()"
       [disabled]="displayedFlashCards.length === 0"
@@ -235,6 +253,14 @@
           (click)="loadRandomFlashCards()"
           [disabled]="allFlashCards.length === 0">
           🎲 Embaralhar
+        </button>
+        <button 
+          class="btn btn-pdf"
+          (click)="downloadAsPDF()"
+          [disabled]="allFlashCards.length === 0 || isGeneratingPDF">
+          <span *ngIf="!isGeneratingPDF">📄</span>
+          <span *ngIf="isGeneratingPDF" class="spinner-small"></span>
+          {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
         </button>
         <button 
           class="btn btn-outline"

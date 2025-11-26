@@ -82,6 +82,7 @@
         &.btn-primary,
         &.btn-outline,
         &.btn-fullscreen,
+        &.btn-pdf,
         &.btn-back {
           background: white;
           color: #000;
@@ -92,6 +93,23 @@
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        &.btn-pdf {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+
+          .spinner-small {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #000;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
           }
         }
 
@@ -659,7 +677,8 @@ body.flashcards-fullscreen-active {
 
       // Padronização: todos os botões branco/preto
       &.btn-primary,
-      &.btn-outline {
+      &.btn-outline,
+      &.btn-pdf {
         background: white;
         color: #000;
         border: 2px solid #000;
@@ -669,6 +688,23 @@ body.flashcards-fullscreen-active {
           color: white;
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+        }
+      }
+
+      &.btn-pdf {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .spinner-small {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border: 2px solid #f3f3f3;
+          border-top: 2px solid #000;
+          border-radius: 50%;
+          animation: spin 0.8s linear infinite;
         }
       }
     }
@@ -910,6 +946,23 @@ body.flashcards-fullscreen-active {
       /* Esconder botão Tela Cheia em mobile */
       &.btn-fullscreen {
         display: none;
+      }
+
+      &.btn-pdf {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .spinner-small {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border: 2px solid #f3f3f3;
+          border-top: 2px solid #000;
+          border-radius: 50%;
+          animation: spin 0.8s linear infinite;
+        }
       }
     }
 

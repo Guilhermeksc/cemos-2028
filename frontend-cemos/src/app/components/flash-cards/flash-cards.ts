@@ -36,6 +36,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   allFlashCards: FlashCard[] = [];
   displayedFlashCards: FlashCardDisplay[] = [];
   isFullscreen = false;
+  isGeneratingPDF: boolean = false;
   
   // Filtros
   selectedBibliografiaId: number | null = null;
@@ -522,6 +523,417 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     if (this.bibliografiaPath) {
       this.router.navigate([this.bibliografiaPath]);
     }
+  }
+
+  /**
+   * Converte os flash cards para PDF pesquisável e faz o download
+   */
+  async downloadAsPDF() {
+    this.isGeneratingPDF = true;
+
+    try {
+      await this.downloadAsPDFSearchable();
+    } catch (error) {
+      console.error('❌ Erro ao gerar PDF pesquisável:', error);
+      alert('Erro ao gerar PDF. Por favor, tente novamente.');
+    } finally {
+      this.isGeneratingPDF = false;
+    }
+  }
+
+  /**
+   * Gera PDF pesquisável com os flash cards
+   * Busca TODOS os flash cards do banco para a bibliografia e assunto selecionados
+   */
+  private async downloadAsPDFSearchable() {
+    // Determinar bibliografias para buscar
+    const bibliografiasParaBuscar = this.selectedBibliografiaId 
+      ? [this.selectedBibliografiaId]
+      : (this.bibliografiaIds.length > 0 ? this.bibliografiaIds : []);
+    
+    if (bibliografiasParaBuscar.length === 0) {
+      alert('Por favor, selecione pelo menos uma bibliografia.');
+      return;
+    }
+
+    console.log('📚 Buscando TODOS os flash cards do banco para PDF:', {
+      bibliografias: bibliografiasParaBuscar,
+      assunto: this.selectedAssunto || 'Todos'
+    });
+
+    // Buscar todos os flash cards do banco
+    const requests = bibliografiasParaBuscar.map(id => {
+      const filters: any = { bibliografia: id };
+      if (this.selectedAssunto && this.selectedAssunto.trim()) {
+        filters.assunto = this.selectedAssunto.trim();
+      }
+      return this.flashcardsService.getAllFlashCards(filters);
+    });
+
+    // Aguardar todas as requisições
+    const results = await forkJoin(requests).pipe(takeUntil(this.destroy$)).toPromise();
+
+    if (!results || results.length === 0) {
+      alert('Não há flash cards disponíveis para gerar o PDF com os filtros selecionados.');
+      return;
+    }
+
+    // Combinar resultados de todas as bibliografias
+    const allFlashCardsForPDF = results.flat();
+
+    if (allFlashCardsForPDF.length === 0) {
+      alert('Não há flash cards disponíveis para gerar o PDF com os filtros selecionados.');
+      return;
+    }
+
+    console.log('✅ Flash cards carregados para PDF:', {
+      total: allFlashCardsForPDF.length,
+      bibliografias: bibliografiasParaBuscar
+    });
+
+    const jsPDF = (await import('jspdf')).default;
+    const pdf = new jsPDF('p', 'mm', 'a4');
+    
+    // Configurações de página
+    const pageWidth = 210; // A4 width in mm
+    const pageHeight = 297; // A4 height in mm
+    const margin = 15;
+    const maxWidth = pageWidth - (margin * 2);
+    let y = margin;
+    
+    // Remove emojis
+    const removeEmojis = (text: string): string => {
+      if (!text) return '';
+      return text
+        .replace(/[\u{1F300}-\u{1F9FF}]/gu, '')
+        .replace(/[\u{1F600}-\u{1F64F}]/gu, '')
+        .replace(/[\u{1F680}-\u{1F6FF}]/gu, '')
+        .replace(/[\u{2600}-\u{26FF}]/gu, '')
+        .replace(/[\u{2700}-\u{27BF}]/gu, '')
+        .replace(/[\u{1F900}-\u{1F9FF}]/gu, '')
+        .replace(/[\u{1FA00}-\u{1FAFF}]/gu, '')
+        .replace(/[\u{FE00}-\u{FE0F}]/gu, '')
+        .replace(/[\u{200D}]/gu, '')
+        .replace(/[\u{FE0F}]/gu, '')
+        .replace(/[ \t]+/g, ' ');
+    };
+    
+    // Extrai texto com estilos de uma string (processa markdown básico: *texto* e **texto**)
+    interface TextSegment {
+      text: string;
+      bold: boolean;
+    }
+    
+    const extractTextWithStyles = (text: string): TextSegment[] => {
+      if (!text) return [];
+      
+      const segments: TextSegment[] = [];
+      let processed = text;
+      
+      // Processa **texto** primeiro (negrito duplo)
+      processed = processed.replace(/\*\*([^*]+?)\*\*/g, (match, content) => {
+        return `__BOLD_DOUBLE__${content}__BOLD_DOUBLE_END__`;
+      });
+      
+      // Depois processa *texto* (negrito simples)
+      processed = processed.replace(/\*([^*\n]+?)\*/g, (match, content, offset) => {
+        const beforeMatch = processed.substring(0, offset);
+        const doubleBoldOpens = (beforeMatch.match(/__BOLD_DOUBLE__/g) || []).length;
+        const doubleBoldCloses = (beforeMatch.match(/__BOLD_DOUBLE_END__/g) || []).length;
+        
+        if (doubleBoldOpens > doubleBoldCloses) {
+          return match;
+        }
+        
+        return `__BOLD_SINGLE__${content}__BOLD_SINGLE_END__`;
+      });
+      
+      const parts = processed.split(/(__BOLD_DOUBLE__.*?__BOLD_DOUBLE_END__|__BOLD_SINGLE__.*?__BOLD_SINGLE_END__)/g);
+      
+      parts.forEach(part => {
+        if (!part) return;
+        
+        if (part.startsWith('__BOLD_DOUBLE__') && part.endsWith('__BOLD_DOUBLE_END__')) {
+          const content = part.replace('__BOLD_DOUBLE__', '').replace('__BOLD_DOUBLE_END__', '');
+          segments.push({ text: removeEmojis(content), bold: true });
+        } else if (part.startsWith('__BOLD_SINGLE__') && part.endsWith('__BOLD_SINGLE_END__')) {
+          const content = part.replace('__BOLD_SINGLE__', '').replace('__BOLD_SINGLE_END__', '');
+          segments.push({ text: removeEmojis(content), bold: true });
+        } else if (part.length > 0) {
+          segments.push({ text: removeEmojis(part), bold: false });
+        }
+      });
+      
+      return segments.length > 0 ? segments : [{ text: removeEmojis(text), bold: false }];
+    };
+    
+    // Renderiza texto com estilos
+    const renderStyledText = (segments: TextSegment[], x: number, yPos: number, maxLineWidth: number, fontSize: number): number => {
+      let currentY = yPos;
+      const lineHeight = fontSize * 0.4;
+      const spaceWidth = pdf.getTextWidth(' ');
+      
+      const allWords: Array<{text: string, bold: boolean}> = [];
+      
+      segments.forEach(segment => {
+        const segmentLines = segment.text.split('\n');
+        
+        segmentLines.forEach((line, lineIndex) => {
+          if (lineIndex > 0) {
+            allWords.push({ text: '\n', bold: false });
+          }
+          
+          if (!line || line.trim().length === 0) {
+            return;
+          }
+          
+          const tokens = line.match(/\S+|\s+/g) || [];
+          tokens.forEach(token => {
+            if (token) {
+              allWords.push({ text: token, bold: segment.bold });
+            }
+          });
+        });
+      });
+      
+      let lineWords: Array<{text: string, bold: boolean}> = [];
+      let lineWidth = 0;
+      
+      allWords.forEach((word) => {
+        if (word.text === '\n') {
+          if (lineWords.length > 0) {
+            if (currentY + lineHeight > pageHeight - margin) {
+              pdf.addPage();
+              currentY = margin;
+            }
+            
+            let xPos = x;
+            lineWords.forEach((w) => {
+              pdf.setFontSize(fontSize);
+              pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
+              pdf.text(w.text, xPos, currentY);
+              xPos += pdf.getTextWidth(w.text);
+            });
+            currentY += lineHeight;
+            lineWords = [];
+            lineWidth = 0;
+          }
+          return;
+        }
+        
+        pdf.setFontSize(fontSize);
+        pdf.setFont('helvetica', word.bold ? 'bold' : 'normal');
+        
+        const isSpace = /^\s+$/.test(word.text);
+        const wordWidth = pdf.getTextWidth(word.text);
+        const newLineWidth = lineWidth + wordWidth;
+        
+        if (newLineWidth > maxLineWidth && lineWords.length > 0 && !isSpace) {
+          if (currentY + lineHeight > pageHeight - margin) {
+            pdf.addPage();
+            currentY = margin;
+          }
+          
+          let xPos = x;
+          lineWords.forEach((w) => {
+            pdf.setFontSize(fontSize);
+            pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
+            pdf.text(w.text, xPos, currentY);
+            xPos += pdf.getTextWidth(w.text);
+          });
+          currentY += lineHeight;
+          
+          if (!isSpace) {
+            lineWords = [word];
+            lineWidth = wordWidth;
+          } else {
+            lineWords = [];
+            lineWidth = 0;
+          }
+        } else {
+          lineWords.push(word);
+          lineWidth = newLineWidth;
+        }
+      });
+      
+      if (lineWords.length > 0) {
+        if (currentY + lineHeight > pageHeight - margin) {
+          pdf.addPage();
+          currentY = margin;
+        }
+        
+        let xPos = x;
+        lineWords.forEach((w) => {
+          pdf.setFontSize(fontSize);
+          pdf.setFont('helvetica', w.bold ? 'bold' : 'normal');
+          pdf.text(w.text, xPos, currentY);
+          xPos += pdf.getTextWidth(w.text);
+        });
+        currentY += lineHeight;
+      }
+      
+      return currentY;
+    };
+    
+    // Título do documento
+    pdf.setFontSize(14);
+    pdf.setFont('helvetica', 'bold');
+    const title = removeEmojis('Flash Cards');
+    pdf.text(title, margin, y);
+    y += 6;
+    
+    // Informações
+    pdf.setFontSize(8);
+    pdf.setFont('helvetica', 'normal');
+    const totalCards = allFlashCardsForPDF.length;
+    const bibliografiaNome = this.selectedBibliografiaId 
+      ? this.getBibliografiaNome(this.selectedBibliografiaId)
+      : 'Todas as Bibliografias';
+    
+    let infoText = `Total de flash cards: ${totalCards}`;
+    infoText += ` | Bibliografia: ${removeEmojis(bibliografiaNome)}`;
+    if (this.selectedAssunto) {
+      infoText += ` | Assunto: ${removeEmojis(this.selectedAssunto)}`;
+    }
+    pdf.text(infoText, margin, y);
+    y += 3;
+    
+    // Linha separadora
+    y += 0.2;
+    pdf.setDrawColor(0, 0, 0);
+    pdf.setLineWidth(0.3);
+    pdf.line(margin, y, pageWidth - margin, y);
+    y += 5;
+    
+    // Flash Cards
+    pdf.setFontSize(12);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('FLASH CARDS', margin, y);
+    y += 6;
+    
+    allFlashCardsForPDF.forEach((card, index) => {
+      if (y + 30 > pageHeight - margin) {
+        pdf.addPage();
+        y = margin;
+      }
+      
+      // Número do card e metadados
+      pdf.setFontSize(9);
+      pdf.setFont('helvetica', 'bold');
+      let headerLine = `Flash Card ${index + 1}`;
+      
+      const metaParts: string[] = [];
+      if (card.bibliografia_titulo) {
+        metaParts.push(removeEmojis(card.bibliografia_titulo));
+      }
+      if (card.assunto) {
+        metaParts.push(removeEmojis(card.assunto));
+      }
+      if (card.prova && card.ano) {
+        metaParts.push(`⭐ Caiu em ${card.ano}`);
+      }
+      
+      if (metaParts.length > 0) {
+        headerLine += ' | ' + metaParts.join(' | ');
+      }
+      
+      pdf.setFontSize(8);
+      const headerLines = pdf.splitTextToSize(headerLine, maxWidth);
+      headerLines.forEach((line: string, lineIndex: number) => {
+        if (y + 4 > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+        if (lineIndex === 0) {
+          pdf.setFont('helvetica', 'bold');
+        } else {
+          pdf.setFont('helvetica', 'italic');
+        }
+        pdf.text(line, margin, y);
+        y += 4;
+      });
+      
+      y += 2;
+      
+      // Pergunta
+      pdf.setFontSize(9);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('Pergunta:', margin + 5, y);
+      y += 4;
+      
+      pdf.setFontSize(8);
+      pdf.setFont('helvetica', 'normal');
+      const perguntaSegments = extractTextWithStyles(card.pergunta || '');
+      if (perguntaSegments.length > 0) {
+        y = renderStyledText(perguntaSegments, margin + 5, y, maxWidth - 10, 8);
+      } else {
+        const perguntaText = removeEmojis(card.pergunta || '');
+        const perguntaLines = pdf.splitTextToSize(perguntaText, maxWidth - 10);
+        perguntaLines.forEach((line: string) => {
+          if (y + 4 > pageHeight - margin) {
+            pdf.addPage();
+            y = margin;
+          }
+          pdf.text(`  ${line}`, margin + 5, y);
+          y += 2;
+        });
+      }
+      
+      y += 3;
+      
+      // Resposta
+      pdf.setFontSize(9);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('Resposta:', margin + 5, y);
+      y += 4;
+      
+      pdf.setFontSize(8);
+      pdf.setFont('helvetica', 'normal');
+      const respostaSegments = extractTextWithStyles(card.resposta || '');
+      if (respostaSegments.length > 0) {
+        y = renderStyledText(respostaSegments, margin + 5, y, maxWidth - 10, 8);
+      } else {
+        const respostaText = removeEmojis(card.resposta || '');
+        const respostaLines = pdf.splitTextToSize(respostaText, maxWidth - 10);
+        respostaLines.forEach((line: string) => {
+          if (y + 4 > pageHeight - margin) {
+            pdf.addPage();
+            y = margin;
+          }
+          pdf.text(`  ${line}`, margin + 5, y);
+          y += 2;
+        });
+      }
+      
+      y += 5;
+      
+      // Linha separadora entre cards (exceto na última)
+      if (index < allFlashCardsForPDF.length - 1) {
+        pdf.setDrawColor(200, 200, 200);
+        pdf.setLineWidth(0.15);
+        pdf.line(margin, y - 3, pageWidth - margin, y - 3);
+        y += 1;
+      }
+    });
+    
+    // Gerar nome do arquivo
+    const removeAccents = (str: string): string => {
+      return str
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s-]/gi, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+        .toLowerCase();
+    };
+    
+    const fileName = `flash-cards-${new Date().toISOString().split('T')[0]}.pdf`;
+    
+    // Fazer o download
+    pdf.save(fileName);
+    
+    console.log('✅ PDF pesquisável gerado com sucesso:', fileName);
   }
 
   /**
