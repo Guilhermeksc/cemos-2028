@@ -45,6 +45,7 @@ export class CapaBibliografia implements OnInit {
   }
   // Novas propriedades para múltiplas capas
   @Input() capas: CapaConfig[] = []; // Array de capas com imagem e rota
+  @Input() selectedCapa: CapaConfig | null = null; // Capa selecionada para modo single (opcional)
   
   // Propriedades antigas (mantidas para compatibilidade)
   @Input() imagePath: string = ''; // Ex: 'assets/content/geopolitica-ri/img/vinganca-geografia.jpg'

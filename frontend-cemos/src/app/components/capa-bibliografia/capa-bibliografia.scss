@@ -106,11 +106,45 @@
         }
       }
 
-      .capa-image-wrapper {
+        .capa-image-wrapper {
         position: relative;
         width: 100%;
         padding-top: 140%; // Ratio 1:1.4 (típico de capas de livros)
         overflow: hidden;
+
+        // Indicador de Consulta
+        .consulta-indicator {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 10;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem;
+          pointer-events: none;
+          color: white;
+          font-size: 0.85rem;
+          font-weight: 600;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+
+          mat-icon {
+            font-size: 1.1rem;
+            width: 1.1rem;
+            height: 1.1rem;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));
+          }
+
+          &.com-consulta {
+            background-color: rgba(76, 175, 80, 0.7);
+          }
+
+          &.sem-consulta {
+            background-color: rgba(244, 67, 54, 0.7);
+          }
+        }
 
         .capa-image {
           position: absolute;
@@ -158,12 +192,48 @@
   // Container da Imagem (Modo Single)
   .image-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    // Indicador de Consulta (modo single)
+    .consulta-indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      pointer-events: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+
+      mat-icon {
+        font-size: 1.2rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));
+      }
+
+      &.com-consulta {
+        background-color: rgba(76, 175, 80, 0.7);
+      }
+
+      &.sem-consulta {
+        background-color: rgba(244, 67, 54, 0.7);
+      }
+    }
 
     .capa-image {
       max-width: 100%;

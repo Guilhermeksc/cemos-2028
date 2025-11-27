@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeiMobilizacaoNacional } from './lei-mobilizacao-nacional';
+import { Lei12598 } from './lei12598';
 
-describe('LeiMobilizacaoNacional', () => {
-  let component: LeiMobilizacaoNacional;
-  let fixture: ComponentFixture<LeiMobilizacaoNacional>;
+describe('Lei12598', () => {
+  let component: Lei12598;
+  let fixture: ComponentFixture<Lei12598>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LeiMobilizacaoNacional]
+      imports: [Lei12598]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LeiMobilizacaoNacional);
+    fixture = TestBed.createComponent(Lei12598);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

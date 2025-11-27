@@ -6,21 +6,21 @@
 
  2. BRASIL. Marinha do Brasil. Estado-Maior da Armada. **EMA-400 - Manual de Logística da Marinha**, 2ª Revisão, Mod. 2, 2003. (📌cap. 1-5 e 7-8.)
 
- 3. BRASIL. Marinha do Brasil. Estado-Maior da Armada. **EMA-401 – Manual de Mobilização Marítima**. Rev.3, Brasília, 2023.
+(Difícil) 3. BRASIL. Marinha do Brasil. Estado-Maior da Armada. **EMA-401 – Manual de Mobilização Marítima**. Rev.3, Brasília, 2023.
 
- 4. BRASIL. Ministério da Defesa. **MD-41-M-01 - Doutrina de Mobilização Militar**, 3ª Edição, 2024.
+(Difícil)  4. BRASIL. Ministério da Defesa. **MD-41-M-01 - Doutrina de Mobilização Militar**, 3ª Edição, 2024.
 
- 5. BRASIL. Ministério da Defesa. **MD-41-M-02 - Manual de Mobilização Militar**, 2ª Edição, 2022.
+(Difícil) 5. BRASIL. Ministério da Defesa. **MD-41-M-02 - Manual de Mobilização Militar**, 2ª Edição, 2022.
 
- 6. BRASIL. Ministério da Defesa. **MD-41-M-03 - Manual para o Planejamento da Mobilização** Militar, 1ª Edição, 2021.
+(Difícil) 6. BRASIL. Ministério da Defesa. **MD-41-M-03 - Manual para o Planejamento da Mobilização** Militar, 1ª Edição, 2021.
 
- 7. BRASIL. **Lei nº 11.631/2007 – Lei de Mobilização Nacional** e Sistema Nacional de Mobilização.
+(Difícil)7. BRASIL. **Lei nº 11.631/2007 – Lei de Mobilização Nacional** e Sistema Nacional de Mobilização.
 
- 8. BRASIL. **Decreto nº 6.592/2008** – Regulamenta a Lei de Mobilização Nacional e o Sistema Nacional de Mobilização.
+(Difícil) 8. BRASIL. **Decreto nº 6.592/2008** – Regulamenta a Lei de Mobilização Nacional e o Sistema Nacional de Mobilização.
 
  9. BRASIL. Marinha do Brasil. Estado-Maior da Armada. **EMA-420** – Diretrizes para Gestão dos **Sistemas de Defesa** e Embarcações de Apoio, 3ª Revisão, 2025. (📌cap. 1 e 3).
 
- 10. BRASIL. Marinha do Brasil. Diretoria-Geral do Material da Marinha. **DGMM-0130 - Manual do Apoio Logístico Integrado**, 2013. (📌cap. 1 a 2 e 8 a 9).
+(Difícil) 10. BRASIL. Marinha do Brasil. Diretoria-Geral do Material da Marinha. **DGMM-0130 - Manual do Apoio Logístico Integrado**, 2013. (📌cap. 1 a 2 e 8 a 9).
 
  11. BRASIL. Ministério da Defesa. **MD40-M-01** - Manual de Boas Práticas para a **Gestão do Ciclo de Vida de Sistemas de Defesa**, 1º Ed. 2019.
 
@@ -56,7 +56,7 @@
 
  27. BRASIL. Tribunal de Contas da União. Instrução Normativa nº 98, de 27 de novembro de 2024. Dispõe sobre a instauração, a organização e o encaminhamento ao Tribunal de Contas da União dos processos de tomada de contas especial.
 
- 28. BRASIL. Ministério da Transparência e Controladoria-Geral da União. Instrução Normativa nº 3, de 9 de junho de 2017. Aprova o Referencial Técnico da Atividade de Auditoria Interna Governamental do Poder Executivo Federal.
+(Difícil) 28. BRASIL. Ministério da Transparência e Controladoria-Geral da União. Instrução Normativa nº 3, de 9 de junho de 2017. Aprova o Referencial Técnico da Atividade de Auditoria Interna Governamental do Poder Executivo Federal.
 
  29. BRASIL. Marinha do Brasil. Secretaria-Geral da Marinha. SGM-107 - Normas Gerais de Administração, 9ª Revisão, 2024. cap. 1, 3, 4, 5, 7, 8 e 9.
 

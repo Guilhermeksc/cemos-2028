@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { App3PlanejamentoMilitarBibliografia } from './app3-planejamento-militar-bibliografia/app3-planejamento-militar-bibliografia';
+import { App3PlanejamentoMilitarBibliografia } from './app3-planejamento-militar-bibliografia';
 
 describe('App3PlanejamentoMilitarBibliografia', () => {
   let component: App3PlanejamentoMilitarBibliografia;

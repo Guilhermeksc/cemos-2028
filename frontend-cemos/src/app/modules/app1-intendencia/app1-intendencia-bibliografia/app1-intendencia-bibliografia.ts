@@ -29,63 +29,234 @@ export class App1IntendenciaBibliografia implements OnInit {
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/cadeias-suprimentos-logistica`,
-      title: 'Cadeias de Suprimentos e Logística',
+      title: '1. Administração de Cadeias de Suprimentos e Logística',
+      description: 'CORRÊA, Henrique L.',
+      permite_consulta: false
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/ema-400`,
-      title: 'EMA-400 - Logística da Marinha',
+      title: '2. EMA-400',
+      description: 'Manual de Logística da Marinha',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/ema-401`,
+      title: '3. EMA-401',
+      description: 'Manual de Mobilização Marítima',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/feridos-enfermos`,
+      title: '4. MD-41-M-01',
+      description: 'Doutrina de Mobilização Militar',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-i`,
+      title: '5. MD-41-M-02',
+      description: 'Manual de Mobilização Militar',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-ii`,
+      title: '6. MD-41-M-03',
+      description: 'Manual para o Planejamento da Mobilização Militar',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/san-remo-manual`,
+      title: '7. Lei nº 11.631/2007',
+      description: 'Lei de Mobilização Nacional',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/cnudm`,
+      title: '8. Decreto nº 6.592/2008',
+      description: 'Regulamenta a Lei de Mobilização Nacional',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/entorpecentes-psicotropicos`,
+      title: '9. EMA-420',
+      description: 'Sistemas de Defesa',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/pacto-sao-jose`,
+      title: '10. DGMM-0130',
+      description: 'Manual do Apoio Logístico Integrado',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/declaracao-direitos-humanos`,
+      title: '11. MD-40-M-01',
+      description: 'Manual de Boas Práticas para a Gestão do Ciclo de Vida de Sistemas de Defesa',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/direito-tratados`,
+      title: '12. MD-44-M-02',
+      description: 'Manual de Boas Práticas de Custo do Ciclo de Vida de Sistemas de Defesa',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/cadeias-suprimentos-logistica`,
+      title: '13. SGM-201',
+      description: 'Normas para Execução do Abastecimento',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/ema-400`,
+      title: '14.  Decreto nº 7.970/2013',
+      description: 'Regulamenta a Lei nº 12.598/2012 e estabelece normas especiais para a compra, contratação e desenvolvimento de produtos e sistemas de defesa',
+      permite_consulta: true
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/ema-401`,
-      title: 'EMA-401 - Mobilização Marítima',
+      title: '15. Lei nº 12.598/2012',
+      description: 'Estabelece normas especiais para a compra, contratação e desenvolvimento de produtos e sistemas de defesa',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/4.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/feridos-enfermos`,
-      title: 'Feridos, enfermos e náufragos',
+      title: '16. Lei nº 14.133/2021',
+      description: 'Lei de Licitações e Contratos Administrativos',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/5.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-i`,
-      title: 'Protocolo I',
+      title: '17.  Portaria 280/2019',
+      description: 'Aprova as Normas de Compensação Tecnológica, Industrial e Comercial (Offset)',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/6.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-ii`,
-      title: 'Protocolo II',
+      title: '18.  Portaria 223/2016',
+      description: 'Aprova as Diretrizes para a Compensação Comercial, Industrial e Tecnológica (“OFFSET”)',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/7.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/san-remo-manual`,
-      title: 'San Remo Manual',
+      title: '19.  Portaria 899/2005',
+      description: 'Aprova a Política Nacional da Indústria de Defesa',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/8.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/cnudm`,
-      title: 'Concenção das Nações Unidas sobre o Direito do Mar',
+      title: '20.  Portaria 586/2006',
+      description: 'Aprova as Ações Estratégicas para a Política Nacional da Indústria de Defesa',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/9.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/entorpecentes-psicotropicos`,
-      title: 'Entorpecentes e Psicotrópicos',
+      title: '21.  Portaria 15/2018',
+      description: 'Aprova a Política de Obtenção de Produtos de Defesa (POBPRODE)',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/10.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/pacto-sao-jose`,
-      title: 'Pacto de São José',
+      title: '22.  Portaria 3.662/2021',
+      description: 'Estabelece a Política de Compensação Tecnológica, Industrial e Comercial do Ministério da Defesa - PComTIC Defesa',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/11.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/declaracao-direitos-humanos`,
-      title: 'Declaração Universal dos Direitos Humanos',
+      title: '23. SGM-301',
+      description: 'Normas sobre Administração Financeira e Contabilidade na MB',
+      permite_consulta: true
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/12.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/direito-tratados`,
-      title: 'Direito dos Tratados',
-    }
+      title: '24. MTO',
+      description: 'Manual Técnico de Orçamento',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/protocolo-ii`,
+      title: '25. SGM-601',
+      description: 'Normas sobre Auditoria, Análise e Apresentação de Contas na Marinha',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/san-remo-manual`,
+      title: '26. SGM-602',
+      description: 'Normas sobre Ressarcimento ao Erário',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/cnudm`,
+      title: '27. IN 98/2024',
+      description: 'Instrução Normativa sobre a instauração, a organização e o encaminhamento ao Tribunal de Contas da União dos processos de tomada de contas especial',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/entorpecentes-psicotropicos`,
+      title: '28. IN 3/2017',
+      description: 'Instrução Normativa sobre a instauração, a organização e o encaminhamento ao Tribunal de Contas da União dos processos de tomada de contas especial',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/pacto-sao-jose`,
+      title: '29. SGM-107',
+      description: 'Normas Gerais de Administração',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/declaracao-direitos-humanos`,
+      title: '30. SGM-401',
+      description: 'Normas para a Gestão do Plano Diretor',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/direito-tratados`,
+      title: '31. EMA-020',
+      description: 'Normas de Governança da Marinha',
+      permite_consulta: true
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/declaracao-direitos-humanos`,
+      title: '32. EMA-301',
+      description: 'Fundamentos Doutrinários da Marinha',
+      permite_consulta: false
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/direito-tratados`,
+      title: '33. EMA-305',
+      description: 'Doutrina Militar Naval',
+      permite_consulta: false
+    },
   ];
 
   /** 🔹 Markdown e controle de exibição */

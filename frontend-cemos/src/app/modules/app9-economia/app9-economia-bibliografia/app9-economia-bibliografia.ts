@@ -29,17 +29,20 @@ export class App9EconomiaBibliografia implements OnInit {
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/tratado-de-estrategia`,
-      title: 'COUTAU-BÉGARIE. Tratado de Estratégia',
+      title: '1. Economia Brasileira Contemporânea',
+      description: 'GREMAUD, Amaury Patrick.'
     },
     {
-      imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/2.png`,
       routePath: `${this.ROUTE_BASE}/bibliografia/estrategias-maritimas`,
-      title: 'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex',
+      title: '2. Economia Micro e Macro – Teoria, Exercícios e Casos.',
+      description: 'VASCONCELLOS, Marco Antônio Sandoval.'
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/ema-310-estrategia`,
-      title: 'EMA-310 - Estratégia de Defesa Marítima',
+      title: '3. Economia Azul - vetor para o desenvolvimento do Brasil',
+      description: 'SANTOS, Thauan.',
     }
   ];
 

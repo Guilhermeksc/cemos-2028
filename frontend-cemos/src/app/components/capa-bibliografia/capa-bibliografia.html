@@ -45,6 +45,12 @@
         [attr.data-route]="capa.routePath">
       
         <div class="capa-image-wrapper">
+          <!-- Indicador de Consulta no topo -->
+          <div class="consulta-indicator" *ngIf="capa.permite_consulta !== undefined" [class.com-consulta]="capa.permite_consulta" [class.sem-consulta]="!capa.permite_consulta">
+            <mat-icon>{{ capa.permite_consulta ? 'check_circle' : 'cancel' }}</mat-icon>
+            <span>{{ capa.permite_consulta ? 'Com Consulta' : 'Sem Consulta' }}</span>
+          </div>
+          
           <img 
             [src]="getImageUrl(capa.imagePath)" 
             [alt]="capa.title || 'Capa da Bibliografia'"
@@ -66,6 +72,12 @@
 
     <!-- MODO SINGLE: Imagem única com markdown -->
     <div class="image-container" *ngIf="displayMode === 'single' && imagePath">
+      <!-- Indicador de Consulta no topo (modo single) -->
+      <div class="consulta-indicator" *ngIf="selectedCapa && selectedCapa.permite_consulta !== undefined" [class.com-consulta]="selectedCapa.permite_consulta" [class.sem-consulta]="!selectedCapa.permite_consulta">
+        <mat-icon>{{ selectedCapa.permite_consulta ? 'check_circle' : 'cancel' }}</mat-icon>
+        <span>{{ selectedCapa.permite_consulta ? 'Com Consulta' : 'Sem Consulta' }}</span>
+      </div>
+      
       <img 
         [src]="getImageUrl(imagePath)" 
         [alt]="'Capa da Bibliografia'"

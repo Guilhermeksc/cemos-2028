@@ -34,7 +34,7 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
             title: 'Cadeias de Suprimentos e Logística',
             path: 'cadeias-suprimentos-logistica',
             loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/cadeias-suprimentos-logistica/cadeias-suprimentos-logistica').then(
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/1-cadeias-suprimentos-logistica/cadeias-suprimentos-logistica').then(
                 (m) => m.CadeiasSuprimentosLogistica
               )
           },
@@ -42,7 +42,7 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
             title: 'EMA-400 - Logística da Marinha',
             path: 'ema-400',
             loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/ema-400/ema-400').then(
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/2-ema-400/ema-400').then(
                 (m) => m.Ema400
               )
           },
@@ -50,7 +50,7 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
             title: 'EMA-401 - Mobilização Marítima',
             path: 'ema-401',
             loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/ema-401/ema-401').then(
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/3-ema-401/ema-401').then(
                 (m) => m.Ema401
               )
           },
@@ -58,10 +58,154 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
             title: 'MD-41-M-01 - Doutrina de Mobilização Militar',
             path: 'md-41-m-01',
             loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/md-41-m-01/md-41-m-01').then(
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/4-md-41-m-01/md-41-m-01').then(
                 (m) => m.Md41M01
               )
-          }
+          },
+          {
+            title: 'MD-41-M-02 - Manual de Mobilização Militar',
+            path: 'md-41-m-02',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/5-md-41-m-02/md-41-m-02').then(
+                (m) => m.Md41M02
+              )
+          },
+          {
+            title: 'MD-41-M-03 - Manual para o Planejamento da Mobilização Militar',
+            path: 'md-41-m-03',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/6-md-41-m-03/md-41-m-03').then(
+                (m) => m.Md41M03
+              )
+            },
+            {
+            title: 'Lei nº 11.631/2007 - Lei de Mobilização Nacional',
+            path: 'lei-11631',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/7-lei11631/lei11631').then(
+                (m) => m.Lei11631
+              )
+          },
+          {
+            title: 'Decreto nº 6.592/2008 - Regulamenta a Lei de Mobilização Nacional',
+            path: 'lei-6592',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/8-decreto6592/decreto6592').then(
+                (m) => m.Decreto6592
+              )
+          },
+          {
+            title: 'EMA-420 - Diretrizes para Gestão dos Sistemas de Defesa e Embarcações de Apoio',
+            path: 'ema-420',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/9-ema-420/ema-420').then(
+                (m) => m.Ema420
+              )
+          },
+          {
+            title: 'DGMM-0130 - Manual do Apoio Logístico Integrado',
+            path: 'dgmm-0130',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/10-dgmm-0130/dgmm-0130').then(
+                (m) => m.Dgmm0130
+              )
+          },
+          {
+            title: 'MD-40-M-01 - Manual de Boas Práticas para a Gestão do Ciclo de Vida de Sistemas de Defesa',
+            path: 'md40-m-01',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/11-md-40-m-01/md-40-m-01').then(
+                (m) => m.Md40M01
+              )
+          },
+          {
+            title: 'MD-40-M-02 - Manual de Boas Práticas de Custo do Ciclo de Vida de Sistemas de Defesa',
+            path: 'md40-m-02',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/12-md-40-m-02/md-40-m-02').then(
+                (m) => m.Md40M02
+              )
+          },
+          {
+            title: 'SGM-201 - Normas para Execução do Abastecimento',
+            path: 'sgm-201',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/13-sgm201/sgm201').then(
+                (m) => m.Sgm201
+              )
+          },
+          {
+            title: 'Decreto nº 7.970/2013 - Regulamenta a Lei nº 12.598/2012 e estabelece normas especiais para a compra, contratação e desenvolvimento de produtos e sistemas de defesa',
+            path: 'decreto-7970',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/14-decreto7970/decreto7970').then(
+                (m) => m.Decreto7970
+              )
+          },
+          {
+            title: 'Lei nº 12.598/2012 - Estabelece normas especiais para a compra, contratação e desenvolvimento de produtos e sistemas de defesa',
+            path: 'lei-12598',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/15-lei12598/lei12598').then(
+                (m) => m.Lei12598
+              )
+          },
+          {
+            title: 'Lei nº 14.133/2021 - Lei de Licitações e Contratos Administrativos',
+            path: 'lei-14133',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/16-lei14133/lei14133').then(
+                (m) => m.Lei14133
+              )
+          },
+          {
+            title: 'Portaria nº 280/2019 - Aprova as Normas de Compensação Tecnológica, Industrial e Comercial (Offset)',
+            path: 'portaria-280',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/17-portaria280/portaria280').then(
+                (m) => m.Portaria280
+              )
+          },
+          {
+            title: 'Portaria nº 223/2016 - Aprova as Diretrizes para a Compensação Comercial, Industrial e Tecnológica (“OFFSET”)',
+            path: 'portaria-223',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/18-portaria223/portaria223').then(
+                (m) => m.Portaria223
+              )
+          },
+          {
+            title: 'Portaria nº 899/2005 - Aprova a Política Nacional da Indústria de Defesa',
+            path: 'portaria-899',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/19-portaria899/portaria899').then(
+                (m) => m.Portaria899
+              )
+          },
+          {
+            title: 'Portaria nº 586/2006 - Aprova as Ações Estratégicas para a Política Nacional da Indústria de Defesa',
+            path: 'portaria-586',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/20-portaria586/portaria586').then(
+                (m) => m.Portaria586
+              )
+          },
+          {
+            title: 'Portaria nº 15/2018 - Aprova a Política de Obtenção de Produtos de Defesa (POBPRODE)',
+            path: 'portaria-15',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/21-portaria15/portaria15').then(
+                (m) => m.Portaria15
+              )
+          },
+          {
+            title: 'Portaria nº 3.662/2021 - Estabelece a Política de Compensação Tecnológica, Industrial e Comercial do Ministério da Defesa - PComTIC Defesa',
+            path: 'portaria-3662',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/22-portaria3662/portaria3662').then(
+                (m) => m.Portaria3662
+              )
+          },
         ]
       },
       {

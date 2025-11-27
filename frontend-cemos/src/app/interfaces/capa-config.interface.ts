@@ -31,5 +31,12 @@ export interface CapaConfig {
    * @example 'Robert D. Kaplan'
    */
   description?: string;
+
+  /**
+   * Indica se permite consulta durante prova/exame (opcional)
+   * Se true: mostra "Com Consulta" em verde com ícone de check
+   * Se false: mostra "Sem Consulta" em vermelho com ícone X
+   */
+  permite_consulta?: boolean;
 }
 

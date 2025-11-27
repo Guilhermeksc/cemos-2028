@@ -206,15 +206,6 @@
       🎲 Embaralhar
     </button>
     <button 
-      class="btn btn-pdf"
-      (click)="downloadAsPDF()"
-      [disabled]="allFlashCards.length === 0 || isGeneratingPDF"
-      aria-label="Salvar PDF">
-      <span *ngIf="!isGeneratingPDF">📄</span>
-      <span *ngIf="isGeneratingPDF" class="spinner-small"></span>
-      {{ isGeneratingPDF ? 'Gerando...' : 'PDF' }}
-    </button>
-    <button 
       class="btn btn-fullscreen"
       (click)="openFullscreen()"
       [disabled]="displayedFlashCards.length === 0"
@@ -245,7 +236,7 @@
   <div class="fullscreen-overlay" *ngIf="isFullscreen">
     <div class="fullscreen-container">
       <div class="fullscreen-header">
-        <h3>📚 Flash Cards - Modo Tela Cheia</h3>
+        <h3>📚 Flash Cards</h3>
         <button 
           class="btn-close-fullscreen"
           (click)="exitFullscreen()"
@@ -266,14 +257,6 @@
           (click)="loadRandomFlashCards()"
           [disabled]="allFlashCards.length === 0">
           🎲 Embaralhar
-        </button>
-        <button 
-          class="btn btn-pdf"
-          (click)="downloadAsPDF()"
-          [disabled]="allFlashCards.length === 0 || isGeneratingPDF">
-          <span *ngIf="!isGeneratingPDF">📄</span>
-          <span *ngIf="isGeneratingPDF" class="spinner-small"></span>
-          {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
         </button>
         <button 
           class="btn btn-outline"

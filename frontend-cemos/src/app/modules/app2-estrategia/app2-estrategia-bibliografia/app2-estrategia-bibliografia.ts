@@ -29,7 +29,8 @@ export class App2EstrategiaBibliografia implements OnInit {
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/tratado-de-estrategia`,
-      title: 'COUTAU-BÉGARIE. Tratado de Estratégia',
+      title: '1. Tratado de Estratégia',
+      description: 'COUTAU-BÉGARIE.',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
