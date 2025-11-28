@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnDestroy, inject } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy, OnChanges, SimpleChanges, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -20,9 +20,10 @@ interface FlashCardDisplay extends FlashCard {
   templateUrl: './flash-cards.html',
   styleUrl: './flash-cards.scss'
 })
-export class FlashCardsComponent implements OnInit, OnDestroy {
+export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
   @Input() bibliografiaIds: number[] = [];
   @Input() bibliografiaPath?: string; // Rota para voltar à bibliografia
+  @Input() title?: string; // Título opcional para adicionar ao cabeçalho
   
   private flashcardsService = inject(FlashCardsService);
   private perguntasService = inject(PerguntasService);
@@ -46,9 +47,20 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
   // Configuração
   maxCardsToShow = 6;
 
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['title']) {
+      console.log('📝 Título alterado:', {
+        previousValue: changes['title'].previousValue,
+        currentValue: changes['title'].currentValue,
+        firstChange: changes['title'].firstChange
+      });
+    }
+  }
+
   ngOnInit() {
     console.log('🎴 Flash Cards Component inicializado');
     console.log('📚 Bibliografia IDs recebidos:', this.bibliografiaIds);
+    console.log('📝 Título recebido:', this.title);
     
     if (this.bibliografiaIds.length > 0) {
       this.loadData();

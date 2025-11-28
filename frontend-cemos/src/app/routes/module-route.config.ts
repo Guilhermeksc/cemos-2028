@@ -209,13 +209,13 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         ]
       },
       {
-        title: 'Mídia',
-        path: 'media',
+        title: 'Flash Cards',
+        path: 'flash-cards',
         loadComponent: () =>
-          import('../modules/app1-intendencia/app1-intendencia-media/app1-intendencia-media').then(
-            (m) => m.App1IntendenciaMedia
-          )
-      },
+          import(
+            '../modules/app1-intendencia/app1-intendencia-flashcards/app1-intendencia-flashcards'
+          ).then((m) => m.App1IntendenciaFlashcards)
+      },         
       {
         title: 'Perguntas',
         path: 'perguntas',
@@ -224,14 +224,6 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
             '../modules/app1-intendencia/app1-intendencia-perguntas/app1-intendencia-perguntas'
           ).then((m) => m.App1IntendenciaPerguntas)
       },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import('../modules/app1-intendencia/app1-intendencia-resumo/app1-intendencia-resumo').then(
-            (m) => m.App1IntendenciaResumo
-          )
-      }
     ]
   },
   {
@@ -274,13 +266,13 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         ]
       },
       {
-        title: 'Mídia',
-        path: 'media',
+        title: 'Flash Cards',
+        path: 'flash-cards',
         loadComponent: () =>
-          import('../modules/app2-estrategia/app2-estrategia-media/app2-estrategia-media').then(
-            (m) => m.App2EstrategiaMedia
-          )
-      },
+          import(
+            '../modules/app2-estrategia/app2-estrategia-flashcards/app2-estrategia-flashcards'
+          ).then((m) => m.App2EstrategiaFlashcards)
+      }, 
       {
         title: 'Perguntas',
         path: 'perguntas',
@@ -338,6 +330,14 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           }
         ]
       },
+      {
+        title: 'Flash Cards',
+        path: 'flash-cards',
+        loadComponent: () =>
+          import(
+            '../modules/app3-planejamento-militar/app3-planejamento-militar-flashcards/app3-planejamento-militar-flashcards'
+          ).then((m) => m.App3PlanejamentoMilitarFlashcards)
+      },      
       {
         title: 'Mídia',
         path: 'media',
@@ -820,13 +820,13 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         ]
       },
       {
-        title: 'Mídia',
-        path: 'media',
+        title: 'Flash Cards',
+        path: 'flash-cards',
         loadComponent: () =>
-          import('../modules/app9-economia/app9-economia-media/app9-economia-media').then(
-            (m) => m.App9EconomiaMedia
-          )
-      },
+          import(
+            '../modules/app9-economia/app9-economia-flashcards/app9-economia-flashcards'
+          ).then((m) => m.App9EconomiaFlashcards)
+      }, 
       {
         title: 'Perguntas',
         path: 'perguntas',

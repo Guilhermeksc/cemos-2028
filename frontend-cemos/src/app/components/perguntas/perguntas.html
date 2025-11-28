@@ -187,7 +187,7 @@
             <span class="separator" *ngIf="question.paginas || question.assunto">|</span>
             
             <span *ngIf="question.paginas" class="paginas">
-              📄 Página{{ (question.paginas?.includes(',') || question.paginas?.includes('-')) ? 's' : '' }}: {{ question.paginas }}
+              📄 Página{{ (question.paginas.includes(',') || question.paginas.includes('-')) ? 's' : '' }}: {{ question.paginas }}
             </span>
             
             <span class="separator" *ngIf="question.assunto">|</span>

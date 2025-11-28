@@ -145,9 +145,8 @@ export class SideMenu {
             'MD-40-M-02 - Manual de Mobilização Militar',
           ]
         },
-        'Mídia',
-        'Perguntas',
-        'Resumo',    
+        'Flash Cards',
+        'Perguntas',    
       ],
       expanded: false
     },
@@ -163,7 +162,7 @@ export class SideMenu {
             'EMA-310 - Estratégia de Defesa Marítima',
           ]
         },
-        'Mídia',
+        'Flash Cards',
         'Perguntas',
         'Resumo',    
       ],
@@ -250,9 +249,8 @@ export class SideMenu {
             'Economia Azul',
           ]
         },
-        'Mídia',
+        'Flash Cards',
         'Perguntas',
-        'Resumo',    
       ],
       expanded: false
     }
@@ -440,14 +438,11 @@ export class SideMenu {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
-            case 'Mídia':
-              pathParts.push('media');
+            case 'Flash Cards':
+              pathParts.push('flash-cards');
               break;
             case 'Perguntas':
               pathParts.push('perguntas');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
               break;
           }
         }
@@ -474,15 +469,12 @@ export class SideMenu {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
-            case 'Mídia':
-              pathParts.push('media');
-              break;
+            case 'Flash Cards':
+              pathParts.push('flash-cards');
+              break;  
             case 'Perguntas':
               pathParts.push('perguntas');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
-              break;
+              break;  
           }
         }
         break;
@@ -750,14 +742,11 @@ export class SideMenu {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
-            case 'Mídia':
-              pathParts.push('media');
+            case 'Flash Cards':
+              pathParts.push('flash-cards');
               break;
             case 'Perguntas':
               pathParts.push('perguntas');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
               break;
           }
         }
