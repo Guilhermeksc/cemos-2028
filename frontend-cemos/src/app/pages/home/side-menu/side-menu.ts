@@ -164,7 +164,6 @@ export class SideMenu {
         },
         'Flash Cards',
         'Perguntas',
-        'Resumo',    
       ],
       expanded: false
     },
@@ -180,9 +179,8 @@ export class SideMenu {
             'MD30-M-01 - Doutrina de Operações Conjuntas',
           ]
         },
-        'Mídia',
+        'Flash Cards',
         'Perguntas',
-        'Resumo',    
       ],
       expanded: false
     },
@@ -540,14 +538,8 @@ export class SideMenu {
             case 'Flash Cards':
               pathParts.push('flash-cards');
               break;                
-            case 'Mídia':
-              pathParts.push('media');
-              break;
             case 'Perguntas':
               pathParts.push('perguntas');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
               break;
           }
         }
@@ -585,9 +577,6 @@ export class SideMenu {
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
               break;
             case 'Teóricos':
               pathParts.push('teoricos');
@@ -643,9 +632,6 @@ export class SideMenu {
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
               break;
             case 'Teóricos':
               pathParts.push('teoricos');
@@ -710,9 +696,6 @@ export class SideMenu {
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
-              break;
-            case 'Resumo':
-              pathParts.push('resumo');
               break;
             case 'Teóricos':
               pathParts.push('teoricos');
@@ -801,9 +784,6 @@ export class SideMenu {
         case 'Bibliografia':
           pathParts.push('bibliografia');
           break;
-        case 'Mídia':
-          pathParts.push('media');
-          break;
         case 'Flash Cards':
           pathParts.push('flash-cards');
           break;
@@ -815,9 +795,6 @@ export class SideMenu {
           break;
         case 'Teóricos':
           pathParts.push('teoricos');
-          break;
-        case 'Resumo':
-          pathParts.push('resumo');
           break;
       }
     }

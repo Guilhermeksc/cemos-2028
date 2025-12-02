@@ -38,7 +38,7 @@ Ao tornar-se uma influência decisiva em ambos os lados da cortina de ferro, o p
 
 No fim daquele ano, aconteceu na Polônia uma campanha contra os agitadores. Em uma noite de muita neve, milhares de líderes e simpatizantes do Solidariedade foram presos pelo exército polonês. A lei marcial foi promulgada, passando a valer nas cidades e na zona rural. Estações de rádio e jornais foram censurados. A dissidência no país foi controlada, mas não eliminada.
 
-`Ào se tornar uma influência decisiva em ambos os lados da cortina de ferro, o papa João Paulo II acabou virando alvo político.`
+`Ao se tornar uma influência decisiva em ambos os lados da cortina de ferro, o papa João Paulo II acabou virando alvo político.`
 
 Nesse período delicado, o novo presidente norte-americano, Ronald Reagan, começou a testar o relacionamento entre as duas superpotências. Filho de um vendedor de sapatos de Illinois, Reagan era conhecido pelos filmes que havia feito em Hollywood e pelo primeiro casamento, com a atriz Jane Wyman. Ele levou para Washington seu estojo de maquiagem e sua dicção de ator. Protestante de tendência conservadora, Reagan reafirmava os velhos valores norte-americanos no momento em que estes eram corroídos pelos jovens radicais da contracultura. Sua política combinava dois ingredientes que não se misturavam muito bem: impostos mais baixos e maiores investimentos na defesa do país. Propôs gastos pesados no projeto que chamou de Iniciativa Estratégica de Defesa, também conhecido como Guerra nas Estrelas. De acordo com o plano de Reagan, as armas norte-americanas, prontas em solo, no mar e no espaço, poderiam interceptar qualquer ataque de mísseis russos.
 

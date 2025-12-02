@@ -15,4 +15,7 @@ export class App8DireitoFlashcards {
   // Rota para voltar à bibliografia
   bibliografiaPath = '/home/app8-direito/bibliografia';
 
+  // Título opcional para o componente flash-cards
+  title = 'Direito';
+
 }

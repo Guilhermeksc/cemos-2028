@@ -30,7 +30,7 @@ export class App3PlanejamentoMilitarBibliografia implements OnInit {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/lei-97-1999`,
       title: '1. Organização, Preparo e Emprego das Forças Armadas',
-      description: 'Lei nº 9.797/1999',
+      description: 'Lei nº 97/1999',
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
