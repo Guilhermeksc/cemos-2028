@@ -666,14 +666,22 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
       bibliografias: bibliografiasParaBuscar
     });
 
-    // Carregar imagem danger.svg para usar nos cards com caveira
+    // Carregar imagens para usar nos cards
     const dangerImagePath = 'assets/img/svg/danger.svg';
+    const starImagePath = 'assets/img/svg/star.svg';
     const dangerImageBase64 = await this.loadImageAsBase64(dangerImagePath);
+    const starImageBase64 = await this.loadImageAsBase64(starImagePath);
     
     if (dangerImageBase64) {
       console.log('✅ Imagem danger.svg carregada com sucesso');
     } else {
       console.warn('⚠️ Imagem danger.svg não pôde ser carregada, cards com caveira não terão ícone');
+    }
+    
+    if (starImageBase64) {
+      console.log('✅ Imagem star.svg carregada com sucesso');
+    } else {
+      console.warn('⚠️ Imagem star.svg não pôde ser carregada, cards com prova não terão ícone');
     }
 
     const jsPDF = (await import('jspdf')).default;
@@ -960,29 +968,82 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
         const numberWidth = pdf.getTextWidth(cardNumberText);
         pdf.text(cardNumberText, marginLeft, y);
         
-        // Adicionar imagem danger.svg se o card tiver caveira === true
+        // Adicionar imagens conforme os flags do card
         let imageWidth = 0;
         const imageSize = 3; // Tamanho da imagem em mm
         const imageSpacing = 1; // Espaço entre número e imagem
+        const imageVerticalSpacing = 0.5; // Espaço vertical entre imagens quando ambas estão presentes
         
-        if (card.caveira && dangerImageBase64) {
+        // Posição X inicial para as imagens
+        const imageStartX = marginLeft + numberWidth + imageSpacing;
+        let currentImageX = imageStartX;
+        
+        // Se ambos estão presentes: star em cima, danger embaixo
+        if (card.prova && card.caveira && starImageBase64 && dangerImageBase64) {
           try {
-            // Posicionar imagem ao lado do número
-            const imageX = marginLeft + numberWidth + imageSpacing;
-            const imageY = y - imageSize * 0.7; // Ajustar posição vertical para alinhar com o texto
+            // Star em cima (alinhada com o texto)
+            const starY = y - imageSize * 0.7;
+            pdf.addImage(
+              starImageBase64,
+              'PNG',
+              currentImageX,
+              starY,
+              imageSize,
+              imageSize
+            );
             
+            // Danger embaixo (logo abaixo da star)
+            const dangerY = starY + imageSize + imageVerticalSpacing;
             pdf.addImage(
               dangerImageBase64,
-              'PNG', // jsPDF trata SVG como PNG quando em base64
-              imageX,
-              imageY,
+              'PNG',
+              currentImageX,
+              dangerY,
               imageSize,
               imageSize
             );
             
             imageWidth = imageSize + imageSpacing;
           } catch (error) {
-            console.error('❌ Erro ao adicionar imagem danger.svg ao PDF:', error);
+            console.error('❌ Erro ao adicionar imagens star.svg e danger.svg ao PDF:', error);
+          }
+        } else {
+          // Apenas star (prova === true)
+          if (card.prova && starImageBase64) {
+            try {
+              const imageY = y - imageSize * 0.7;
+              pdf.addImage(
+                starImageBase64,
+                'PNG',
+                currentImageX,
+                imageY,
+                imageSize,
+                imageSize
+              );
+              
+              imageWidth = imageSize + imageSpacing;
+            } catch (error) {
+              console.error('❌ Erro ao adicionar imagem star.svg ao PDF:', error);
+            }
+          }
+          
+          // Apenas danger (caveira === true)
+          if (card.caveira && dangerImageBase64) {
+            try {
+              const imageY = y - imageSize * 0.7;
+              pdf.addImage(
+                dangerImageBase64,
+                'PNG',
+                currentImageX,
+                imageY,
+                imageSize,
+                imageSize
+              );
+              
+              imageWidth = imageSize + imageSpacing;
+            } catch (error) {
+              console.error('❌ Erro ao adicionar imagem danger.svg ao PDF:', error);
+            }
           }
         }
         
@@ -1050,11 +1111,11 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
         
         // Linha divisória logo abaixo do texto da resposta
         // O y já está na posição após o texto (inclui lineHeight), então desenhamos a linha logo abaixo
-        y += 1; // Pequeno espaço antes da linha
+        y += 0.5; // Espaço mínimo antes da linha
         pdf.setDrawColor(200, 200, 200);
         pdf.setLineWidth(0.15);
         pdf.line(marginLeft, y, pageWidth - marginRight, y);
-        y += 4; // Espaço após a linha para separar do próximo card (aumentado)
+        y += 3; // Espaço após a linha para separar do próximo card
       });
       
       // Espaço entre grupos
