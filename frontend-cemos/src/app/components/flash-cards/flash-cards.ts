@@ -554,6 +554,69 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   /**
+   * Carrega uma imagem SVG e converte para PNG base64 para uso no PDF
+   * jsPDF funciona melhor com PNG, então convertemos SVG para PNG usando canvas
+   */
+  private async loadImageAsBase64(imagePath: string): Promise<string | null> {
+    try {
+      const response = await fetch(imagePath);
+      if (!response.ok) {
+        console.warn(`⚠️ Não foi possível carregar a imagem: ${imagePath}`);
+        return null;
+      }
+      
+      const svgText = await response.text();
+      
+      // Criar um canvas para converter SVG para PNG
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        const svgBlob = new Blob([svgText], { type: 'image/svg+xml;charset=utf-8' });
+        const url = URL.createObjectURL(svgBlob);
+        
+        img.onload = () => {
+          try {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            if (!ctx) {
+              reject(new Error('Não foi possível criar contexto do canvas'));
+              return;
+            }
+            
+            // Definir tamanho do canvas (pode ajustar conforme necessário)
+            canvas.width = 512; // Tamanho base do SVG
+            canvas.height = 512;
+            
+            // Desenhar SVG no canvas
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            
+            // Converter para PNG base64
+            const pngBase64 = canvas.toDataURL('image/png');
+            
+            // Limpar URL do objeto
+            URL.revokeObjectURL(url);
+            
+            resolve(pngBase64);
+          } catch (error) {
+            URL.revokeObjectURL(url);
+            reject(error);
+          }
+        };
+        
+        img.onerror = () => {
+          URL.revokeObjectURL(url);
+          reject(new Error('Erro ao carregar imagem SVG'));
+        };
+        
+        img.src = url;
+      });
+    } catch (error) {
+      console.error(`❌ Erro ao carregar imagem ${imagePath}:`, error);
+      return null;
+    }
+  }
+
+  /**
    * Gera PDF pesquisável com os flash cards
    * Busca TODOS os flash cards do banco para a bibliografia e assunto selecionados
    */
@@ -603,15 +666,28 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
       bibliografias: bibliografiasParaBuscar
     });
 
+    // Carregar imagem danger.svg para usar nos cards com caveira
+    const dangerImagePath = 'assets/img/svg/danger.svg';
+    const dangerImageBase64 = await this.loadImageAsBase64(dangerImagePath);
+    
+    if (dangerImageBase64) {
+      console.log('✅ Imagem danger.svg carregada com sucesso');
+    } else {
+      console.warn('⚠️ Imagem danger.svg não pôde ser carregada, cards com caveira não terão ícone');
+    }
+
     const jsPDF = (await import('jspdf')).default;
     const pdf = new jsPDF('p', 'mm', 'a4');
     
     // Configurações de página
     const pageWidth = 210; // A4 width in mm
     const pageHeight = 297; // A4 height in mm
-    const margin = 15;
-    const maxWidth = pageWidth - (margin * 2);
-    let y = margin;
+    const marginLeft = 15; // Margem esquerda (mantida como estava)
+    const marginTop = 8; // Margem superior reduzida para usar mais espaço
+    const marginRight = 8; // Margem direita reduzida para usar mais espaço
+    const bottomMargin = 1; // Margem inferior mínima para usar máximo espaço até o final da página
+    const maxWidth = pageWidth - marginLeft - marginRight;
+    let y = marginTop;
     
     // Remove emojis
     const removeEmojis = (text: string): string => {
@@ -714,9 +790,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
       allWords.forEach((word) => {
         if (word.text === '\n') {
           if (lineWords.length > 0) {
-            if (currentY + lineHeight > pageHeight - margin) {
+            if (currentY + lineHeight > pageHeight - bottomMargin) {
               pdf.addPage();
-              currentY = margin;
+              currentY = marginTop;
             }
             
             let xPos = x;
@@ -741,9 +817,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
         const newLineWidth = lineWidth + wordWidth;
         
         if (newLineWidth > maxLineWidth && lineWords.length > 0 && !isSpace) {
-          if (currentY + lineHeight > pageHeight - margin) {
+          if (currentY + lineHeight > pageHeight - bottomMargin) {
             pdf.addPage();
-            currentY = margin;
+            currentY = marginTop;
           }
           
           let xPos = x;
@@ -769,9 +845,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
       });
       
       if (lineWords.length > 0) {
-        if (currentY + lineHeight > pageHeight - margin) {
+        if (currentY + lineHeight > pageHeight - bottomMargin) {
           pdf.addPage();
-          currentY = margin;
+          currentY = marginTop;
         }
         
         let xPos = x;
@@ -791,7 +867,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
     pdf.setFontSize(14);
     pdf.setFont('helvetica', 'bold');
     const title = removeEmojis('Flash Cards');
-    pdf.text(title, margin, y);
+    pdf.text(title, marginLeft, y);
     y += 6;
     
     // Informações
@@ -807,21 +883,21 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
     if (this.selectedAssunto) {
       infoText += ` | Assunto: ${removeEmojis(this.selectedAssunto)}`;
     }
-    pdf.text(infoText, margin, y);
+    pdf.text(infoText, marginLeft, y);
     y += 3;
     
     // Linha separadora
     y += 0.2;
     pdf.setDrawColor(0, 0, 0);
     pdf.setLineWidth(0.3);
-    pdf.line(margin, y, pageWidth - margin, y);
+    pdf.line(marginLeft, y, pageWidth - marginRight, y);
     y += 5;
     
-    // Flash Cards
-    pdf.setFontSize(12);
-    pdf.setFont('helvetica', 'bold');
-    pdf.text('FLASH CARDS', margin, y);
-    y += 6;
+    // // Flash Cards
+    // pdf.setFontSize(12);
+    // pdf.setFont('helvetica', 'bold');
+    // // pdf.text('FLASH CARDS', margin, y);
+    // y += 6;
     
     // Agrupar flashcards por bibliografia + assunto
     const groupedFlashCards: { [key: string]: FlashCard[] } = {};
@@ -845,9 +921,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
       const [bibliografia, assunto] = groupKey.split('|');
       
       // Verifica se precisa de nova página antes de adicionar o cabeçalho do grupo
-      if (y + 15 > pageHeight - margin) {
+      if (y + 15 > pageHeight - bottomMargin) {
         pdf.addPage();
-        y = margin;
+        y = marginTop;
       }
       
       // Cabeçalho do grupo: Bibliografia + Assunto
@@ -857,11 +933,11 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
       const headerLines = pdf.splitTextToSize(headerText, maxWidth);
       
       headerLines.forEach((line: string) => {
-        if (y + 4 > pageHeight - margin) {
+        if (y + 4 > pageHeight - bottomMargin) {
           pdf.addPage();
-          y = margin;
+          y = marginTop;
         }
-        pdf.text(line, margin, y);
+        pdf.text(line, marginLeft, y);
         y += 4;
       });
       
@@ -872,9 +948,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
         globalCardNumber++;
         
         // Verifica se precisa de nova página
-        if (y + 30 > pageHeight - margin) {
+        if (y + 30 > pageHeight - bottomMargin) {
           pdf.addPage();
-          y = margin;
+          y = marginTop;
         }
         
         // Número do card no canto esquerdo
@@ -882,11 +958,37 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
         pdf.setFont('helvetica', 'bold');
         const cardNumberText = `${globalCardNumber})`;
         const numberWidth = pdf.getTextWidth(cardNumberText);
-        pdf.text(cardNumberText, margin, y);
+        pdf.text(cardNumberText, marginLeft, y);
         
-        // Conteúdo do card
-        const contentStartX = margin + numberWidth + 2; // Espaço após o número
-        const contentMaxWidth = maxWidth - (contentStartX - margin);
+        // Adicionar imagem danger.svg se o card tiver caveira === true
+        let imageWidth = 0;
+        const imageSize = 3; // Tamanho da imagem em mm
+        const imageSpacing = 1; // Espaço entre número e imagem
+        
+        if (card.caveira && dangerImageBase64) {
+          try {
+            // Posicionar imagem ao lado do número
+            const imageX = marginLeft + numberWidth + imageSpacing;
+            const imageY = y - imageSize * 0.7; // Ajustar posição vertical para alinhar com o texto
+            
+            pdf.addImage(
+              dangerImageBase64,
+              'PNG', // jsPDF trata SVG como PNG quando em base64
+              imageX,
+              imageY,
+              imageSize,
+              imageSize
+            );
+            
+            imageWidth = imageSize + imageSpacing;
+          } catch (error) {
+            console.error('❌ Erro ao adicionar imagem danger.svg ao PDF:', error);
+          }
+        }
+        
+        // Conteúdo do card (ajustar posição inicial considerando a imagem)
+        const contentStartX = marginLeft + numberWidth + imageWidth + (imageWidth > 0 ? imageSpacing : 2); // Espaço após o número e imagem
+        const contentMaxWidth = maxWidth - (contentStartX - marginLeft);
         
         // Pergunta - "P:" ao lado do texto
         pdf.setFontSize(8);
@@ -906,9 +1008,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
           const perguntaText = removeEmojis(card.pergunta || '');
           const perguntaLines = pdf.splitTextToSize(perguntaText, perguntaMaxWidth);
           perguntaLines.forEach((line: string, lineIndex: number) => {
-            if (y + 4 > pageHeight - margin) {
+            if (y + 4 > pageHeight - bottomMargin) {
               pdf.addPage();
-              y = margin;
+              y = marginTop;
             }
             const xPos = lineIndex === 0 ? perguntaStartX : contentStartX;
             pdf.text(line, xPos, y);
@@ -936,9 +1038,9 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
           const respostaText = removeEmojis(card.resposta || '');
           const respostaLines = pdf.splitTextToSize(respostaText, respostaMaxWidth);
           respostaLines.forEach((line: string, lineIndex: number) => {
-            if (y + 4 > pageHeight - margin) {
+            if (y + 4 > pageHeight - bottomMargin) {
               pdf.addPage();
-              y = margin;
+              y = marginTop;
             }
             const xPos = lineIndex === 0 ? respostaStartX : contentStartX;
             pdf.text(line, xPos, y);
@@ -951,7 +1053,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
         y += 1; // Pequeno espaço antes da linha
         pdf.setDrawColor(200, 200, 200);
         pdf.setLineWidth(0.15);
-        pdf.line(margin, y, pageWidth - margin, y);
+        pdf.line(marginLeft, y, pageWidth - marginRight, y);
         y += 4; // Espaço após a linha para separar do próximo card (aumentado)
       });
       
