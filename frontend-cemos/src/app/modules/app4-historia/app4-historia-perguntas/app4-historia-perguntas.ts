@@ -7,7 +7,7 @@ import { Perguntas } from '../../../components/perguntas/perguntas';
   standalone: true,
   imports: [CommonModule, Perguntas],
   templateUrl: './app4-historia-perguntas.html',
-  styleUrl: './app4-historia-perguntas.css'
+  styleUrl: './app4-historia-perguntas.scss'
 })
 export class App4HistoriaPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo

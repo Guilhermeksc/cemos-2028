@@ -337,14 +337,6 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import(
             '../modules/app3-planejamento-militar/app3-planejamento-militar-flashcards/app3-planejamento-militar-flashcards'
           ).then((m) => m.App3PlanejamentoMilitarFlashcards)
-      },      
-      {
-        title: 'Mídia',
-        path: 'media',
-        loadComponent: () =>
-          import(
-            '../modules/app3-planejamento-militar/app3-planejamento-militar-media/app3-planejamento-militar-media'
-          ).then((m) => m.App3PlanejamentoMilitarMedia)
       },
       {
         title: 'Perguntas',
@@ -353,14 +345,6 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import(
             '../modules/app3-planejamento-militar/app3-planejamento-militar-perguntas/app3-planejamento-militar-perguntas'
           ).then((m) => m.App3PlanejamentoMilitarPerguntas)
-      },
-      {
-        title: 'Resumo',
-        path: 'resumo',
-        loadComponent: () =>
-          import(
-            '../modules/app3-planejamento-militar/app3-planejamento-militar-resumo/app3-planejamento-militar-resumo'
-          ).then((m) => m.App3PlanejamentoMilitarResumo)
       }
     ]
   },
