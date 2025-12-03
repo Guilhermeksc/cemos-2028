@@ -25,7 +25,7 @@ Afirmando que as matérias não reguladas pela presente Convenção continuarão
 
 Acordaram o seguinte:
 
-## PARTE I- INTRODUÇÃO
+# PARTE I- INTRODUÇÃO
 
 **ARTIGO 1 - Termos utilizados e âmbito de aplicação**
 
