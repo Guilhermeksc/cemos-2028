@@ -1,0 +1,14 @@
+| bibliografia_id | pergunta | resposta | prova | páginas | assunto |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 25 | Qual é a extensão mínima garantida da plataforma continental, mesmo que o bordo exterior da margem continental não atinja essa distância? | Até uma distância de 200 milhas marítimas das linhas de base. | | Pág 22 | Parte VI |
+| 25 | Quais são os dois critérios limites máximos para a extensão da plataforma continental além das 200 milhas? | Não deve exceder 350 milhas marítimas das linhas de base ou 100 milhas marítimas da isóbata de 2500 metros. | | Pág 22 | Parte VI |
+| 25 | A margem continental inclui os grandes fundos oceânicos e suas cristas? | Não, compreende o prolongamento submerso da massa terrestre (plataforma, talude e elevação), excluindo os grandes fundos oceânicos. | | Pág 22 | Parte VI |
+| 25 | Os direitos do Estado costeiro sobre a plataforma continental dependem de ocupação efetiva ou declaração expressa? | Não, são independentes da sua ocupação, real ou fictícia, ou de qualquer declaração expressa. | | Pág 23 | Parte VI |
+| 25 | O que define as "espécies sedentárias" incluídas nos recursos naturais da plataforma continental? | Organismos que, no período de captura, estão imóveis no leito ou subsolo ou só se movem em constante contato físico com eles. | | Pág 23 | Parte VI |
+| 25 | O exercício dos direitos do Estado costeiro sobre a plataforma continental afeta o regime jurídico das águas sobrejacentes? | Não afeta o regime jurídico das águas sobrejacentes nem do espaço aéreo acima dessas águas. | | Pág 23 | Parte VI |
+| 25 | Quem detém o direito exclusivo de autorizar e regulamentar perfurações na plataforma continental? | O Estado costeiro. | | Pág 24 | Parte VI |
+| 25 | O que o Estado costeiro deve fazer em relação ao aproveitamento de recursos não vivos da plataforma além das 200 milhas? | Deve efetuar pagamentos ou contribuições em espécie anuais à Autoridade Internacional. | | Pág 24 | Parte VI |
+| 25 | Qual é a taxa máxima de contribuição sobre a produção na plataforma continental além das 200 milhas e quando ela é atingida? | A taxa é de 7%, atingida no décimo segundo ano de produção e mantida daí por diante. | | Pág 24 | Parte VI |
+| 25 | Onde devem ser depositadas as cartas ou listas de coordenadas que definem os limites exteriores da plataforma continental? | Junto do Secretário Geral das Nações Unidas e junto do Secretário Geral da Autoridade. | | Pág 25 | Parte VI |
+| 25 | O direito do Estado costeiro de escavar túneis no subsolo é limitado pela profundidade das águas? | Não, esse direito independe da profundidade das águas no local considerado. | | Pág 25 | Parte VI |
+| 25 | Qual é o objetivo da delimitação da plataforma continental entre Estados com costas adjacentes ou frente a frente? | Chegar a uma solução equitativa, mediante acordo de conformidade com o direito internacional. | | Pág 25 | Parte VI |
