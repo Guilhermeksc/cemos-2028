@@ -655,153 +655,39 @@ O debate está em curso, e elementos ligados ao relacionamento do homem com a na
 
 Figura 3.10 Brasil: emissões de gases de efeito estufa diretos, por fonte de emissão (GT CO2 eg).
 
-3.000.000 a
-
-2.500.000 — A
-
-> 009.000 PN HEIN
-
-pp / , CA AA RO 1.000.000 [NO NO
-
-500.000 — 0 1990 1993 1996 1999 2002 2005 2008 2011 2014 — Total — Processos Industriais e Uso de Produtos (IPPU) Agropecuária -—— Uso da Terra, Mudança do Uso da Terra e Florestas (LULUCF)
-
-— Resíduos
-
-Fonte: IBGE-ODS.
-
-Tabela 3.9 Brasil: taxa de reciclagem nacional por toneladas de material reciclado
-
-(milhões de toneladas) —- 2020
-
-Brasil 66,64 1,07 0,29 1,35 2 Norte 5/28, 0,03 0 0,03 0,6 Nordest 18,95 0,12 0,01 0,13 0,7 e Sudeste 29,04 0,46 0,09 0,55 1,9
-
----
 
 ## Página 23
 
 Fonte: IBGE e Ministério do Desenvolvimento Regional.
 
-Tabela 3.10 Brasil: eficiência energética e proporção de energia renovável (2012-2021)
-
-2012 41,8 0,092 2013 40,5 0,093 2014 39,4 0,096 2015 41,3 0,097 2016 43,5 0,097 2017 43,2 0,097 2018 45,5 0,094 2019 46,1 0,095 2020 48,4 0,096 2021 44,8 =
-
-Fonte: IBGE e EPE.
-
 Os ODS são uma coleção de metas globais, estabelecidas pelas Nações Unidas, que constituiem uma espécie de continuidade dos objetivos do milênio, também conhecidos como Agenda 2030. Os debates em torno dessa agenda iniciam-se na chamada RIO+20, em 2012, onde se acordou um documento intitulado “O futuro que queremos”. Em 2015, foram estabelecidas 17 metas, ou 17 ODS, conforme Quadro 3.2.
 
-Quadro 3.2 Objetivos do Desenvolvimento Sustentável 01 Erradicação da pobreza acabar com a pobreza em todas as suas formas, em todos os lugares. 02 Fome zero e agricultura sustentável acabar com a fome, alcançar a segurança alimentar e
+Quadro 3.2 Objetivos do Desenvolvimento Sustentável 
 
-melhoria da nutrição e promover a agricultura sustentável.
+| Nº | Objetivo (ODS)                                 | Descrição                                                                                                                                                |
+|----|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 01 | Erradicação da pobreza                         | acabar com a pobreza em todas as suas formas, em todos os lugares.                                                                                        |
+| 02 | Fome zero e agricultura sustentável            | acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável.                                            |
+| 03 | Saúde e bem-estar                              | assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.                                                                         |
+| 04 | Educação de qualidade                          | assegurar a educação inclusiva, e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.                         |
+| 05 | Igualdade de gênero                            | alcançar a igualdade de gênero e empoderar todas as mulheres e meninas.                                                                                   |
+| 06 | Água limpa e saneamento                        | garantir disponibilidade e manejo sustentável da água e saneamento para todos.                                                                             |
+| 07 | Energia limpa e acessível                      | garantir acesso à energia barata, confiável, sustentável e renovável para todos.                                                                          |
+| 08 | Trabalho decente e crescimento econômico       | promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo, e trabalho decente para todos.                           |
+| 09 | Inovação em infraestrutura                     | construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável e fomentar a inovação.                                           |
+| 10 | Redução das desigualdades                      | reduzir as desigualdades dentro dos países e entre eles.                                                                                                  |
+| 11 | Cidades e comunidades sustentáveis             | tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis.                                                             |
+| 12 | Consumo e produção responsáveis                | assegurar padrões de produção e de consumo sustentáveis.                                                                                                  |
+| 13 | Ação contra a mudança global do clima          | tomar medidas urgentes para combater a mudança climática e seus impactos.                                                                                 |
+| 14 | Vida na água                                   | conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável.                                           |
+| 15 | Vida terrestre                                 | proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres; gerir de forma sustentável as florestas; combater a desertificação; deter e reverter a degradação da Terra e deter a perda da biodiversidade. |
+| 16 | Paz, justiça e instituições eficazes           | promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis. |
+| 17 | Parcerias e meios de implementação             | fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável.                                                   |
 
----
-
-## Página 24
-
-04
-
-05
-
-06
-
-07
-
-08
-
-09
-
-10
-
-e
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-Saúde e bem-estar
-
-Educação de qualidade
-
-Igualdade de gênero
-
-Água limpa e saneamento
-
-Energia limpa e acessível
-
-Trabalho decente e crescimento
-
-econômico
-
-Inovação em infraestrutura
-
-Redução das desigualdades
-
-Cidades e comunidades sustentáveis
-
-Consumo e produção responsáveis
-
-Ação contra a mudança global do
-
-clima
-
-Vida na água
-
-Vida terrestre
-
-Paz, justiça e instituições eficazes
-
-Parcerias e meios de implementação
-
-assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.
-
-assegurar a educação inclusiva, e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.
-
-alcançar a igualdade de gênero e empoderar todas as mulheres e meninas.
-
-garantir disponibilidade e manejo sustentável da água e saneamento para todos.
-
-garantir acesso à energia barata, confiável, sustentável e renovável para todos.
-
-promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo, e trabalho decente
-
-para todos.
-
-construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável e fomentar a inovação
-
-reduzir as desigualdades dentro dos países e entre eles.
-
-tornar as cidades e os assentamentos humanos inclusivos,
-
-seguros, resilientes e sustentáveis. assegurar padrões de produção e de consumo sustentáveis.
-
-tomar medidas urgentes para combater a mudança climática e seus impactos.
-
-conservação e uso sustentável dos oceanos, dos mares e
-
-dos recursos marinhos para o desenvolvimento sustentável.
-
-proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a
-
-degradação da Terra e deter a perda da biodiversidade.
-
-promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso a justiça para todos e construir instituições eficazes,
-
-responsáveis e inclusivas em todos os níveis.
-
-fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável.
-
----
 
 ## Página 25
 
-CONCEITOS-CHAVE
+### CONCEITOS-CHAVE
 
 Crescimento econômico
 
@@ -839,36 +725,24 @@ Produto per capita
 
 Teoria do Bolo
 
-Q1.
+### Questões
 
-Q2. Q3. Q4. Qs. Q6.
+1. Por que um país com um PIB maior que o outro pode ser considerado menos desenvolvido?
 
-Por que um país com um PIB maior que o outro pode ser considerado menos
+2. Descreva a evolução dos principais indicadores sociais brasileiros.
 
-desenvolvido?
+3. O que ocorreu com a distribuição de renda no Brasil nas últimas quatro décadas?
 
-Descreva a evolução dos principais indicadores sociais brasileiros.
+4. O que ocorreu com a pobreza no Brasil na última década?
 
-O que ocorreu com a distribuição de renda no Brasil nas últimas quatro décadas? O que ocorreu com a pobreza no Brasil na última década?
+5. O que é desenvolvimento sustentável?
 
-O que é desenvolvimento sustentável?
+6; Quais são, no seu entendimento, os ODS mais difíceis de serem alcançados pelo Brasil? Por quê?
 
-Quais são, no seu entendimento, os ODS mais difíceis de serem alcançados pelo Brasil? Por quê?
-
----
 
 ## Página 26
 
-[a
+### Tema para debate 
 
-=
+T1. Como você definiria a atual situação do desenvolvimento brasileiro do ponto de vista de sua sustentabilidade e da participação do povo brasileiro em sua definição?
 
-Ti. Como você definiria a atual situação do desenvolvimento brasileiro do ponto de vista de sua sustentabilidade e da participação do povo brasileiro em sua definição?
-
-Muitas vezes, utiliza-se o conceito de PNB per capita. Na verdade, pode-se utilizar qualquer dos conceitos descritos no Capítulo 2. Ver ONU/PNUD (2000).
-
-O trabalho foi realizado por Pedro Souza, Marcos Hecksher e Rafael Osorio “Um país na contramão: a pobreza no Brasil nos últimos dez anos” (IPEA, 2022). Os pesquisadores se valeram de dados de rendimentos efetivos do trabalho e das demais fontes obtidas a partir de pesquisa domiciliar (PNAD Contínua do IBGE). As duas linhas de elegibilidade ao Programa Auxílio Brasil (PAB), em dezembro de 2021, foram estabelecidas em R$ 210 e R$ 105 mensais por pessoa. As linhas de $1,90, $3,20 e $5,50 por dia em dólares internacionais (PPC$) correspondem, respectivamente, a R$ 173, R$ 292 e R$ 502 por mês.
-
-IPEA/PNUD (1996:2.3).
-
----

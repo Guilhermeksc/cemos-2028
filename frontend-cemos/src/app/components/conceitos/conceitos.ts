@@ -570,9 +570,12 @@ export class ConceitosComponent implements OnInit, OnDestroy {
     // Configurações de página
     const pageWidth = 210; // A4 width in mm
     const pageHeight = 297; // A4 height in mm
-    const margin = 15; // Margem reduzida para usar mais espaço
-    const maxWidth = pageWidth - (margin * 2);
-    let y = margin;
+    const marginLeft = 15; // Margem esquerda (mantida como estava)
+    const marginRight = 5; // Margem direita reduzida até próximo do limite
+    const marginTop = 12; // Margem superior aumentada um pouco
+    const marginBottom = 5; // Margem inferior reduzida até próximo do limite
+    const maxWidth = pageWidth - marginLeft - marginRight;
+    let y = marginTop;
     
     // Interface para representar texto com estilo
     interface TextSegment {
@@ -673,9 +676,9 @@ export class ConceitosComponent implements OnInit, OnDestroy {
         if (words.length === 0) return;
         
         // Verifica se precisa de nova página
-        if (currentY + lineHeight > pageHeight - margin) {
+        if (currentY + lineHeight > pageHeight - marginBottom) {
           pdf.addPage();
-          currentY = margin;
+          currentY = marginTop;
         }
         
         // Renderiza palavras
@@ -753,12 +756,172 @@ export class ConceitosComponent implements OnInit, OnDestroy {
       return currentY;
     };
     
+    // Função para renderizar título e descrição na mesma linha, separados por hífen
+    const renderTituloDescricao = (titulo: string, descricao: string, x: number, yPos: number, maxLineWidth: number, fontSize: number = 9, numero?: number): number => {
+      let currentX = x;
+      let currentY = yPos;
+      const lineHeight = fontSize * 0.4;
+      
+      // Remove emojis e prepara textos
+      const tituloText = removeEmojis(titulo);
+      const descricaoText = descricao ? removeEmojis(descricao) : '';
+      
+      // Adiciona número no início se fornecido
+      const prefixoNumero = numero !== undefined ? `${numero}. ` : '';
+      
+      // Se não há descrição, renderiza apenas o número e título
+      if (!descricaoText || descricaoText.trim().length === 0) {
+        pdf.setFontSize(fontSize);
+        pdf.setFont('helvetica', 'bold');
+        const textoCompleto = prefixoNumero + tituloText;
+        const tituloLines = pdf.splitTextToSize(textoCompleto, maxLineWidth);
+        tituloLines.forEach((line: string) => {
+          if (currentY + lineHeight > pageHeight - marginBottom) {
+            pdf.addPage();
+            currentY = marginTop;
+          }
+          pdf.text(line, x, currentY);
+          currentY += lineHeight;
+        });
+        return currentY;
+      }
+      
+      // Processa a descrição preservando formatação markdown básica
+      const descricaoSegments = extractTextWithStyles(descricaoText);
+      
+      // Divide o título em palavras, incluindo o número se houver
+      // O número já vem no formato "1. " então vamos preservá-lo como está
+      const tituloComNumero = prefixoNumero + tituloText;
+      const tituloWords = tituloComNumero.split(/(\s+)/).filter(part => part && !/^\s+$/.test(part));
+      
+      // Prepara palavras da descrição, tratando quebras de linha
+      const descricaoWords: Array<{text: string, bold: boolean, italic: boolean, isNewLine?: boolean}> = [];
+      descricaoSegments.forEach(segment => {
+        // Divide por quebras de linha primeiro
+        const lines = segment.text.split('\n');
+        lines.forEach((line, lineIndex) => {
+          if (lineIndex > 0) {
+            // Adiciona marcador de quebra de linha
+            descricaoWords.push({ text: '', bold: segment.bold, italic: segment.italic, isNewLine: true });
+          }
+          
+          // Processa palavras da linha
+          const words = line.split(/(\s+)/);
+          words.forEach(word => {
+            if (word && !/^\s+$/.test(word)) {
+              descricaoWords.push({ text: word, bold: segment.bold, italic: segment.italic, isNewLine: false });
+            }
+          });
+        });
+      });
+      
+      // Combina título + " - " + descrição
+      const allWords: Array<{text: string, bold: boolean, italic: boolean, isNewLine?: boolean}> = [];
+      
+      // Adiciona palavras do título (todas em negrito, incluindo o número)
+      tituloWords.forEach(word => {
+        allWords.push({ text: word, bold: true, italic: false, isNewLine: false });
+      });
+      
+      // Adiciona separador " - " apenas na primeira linha
+      allWords.push({ text: '-', bold: false, italic: false, isNewLine: false });
+      
+      // Adiciona palavras da descrição (com seus estilos)
+      descricaoWords.forEach(word => {
+        allWords.push(word);
+      });
+      
+      // Renderiza linha por linha
+      let lineWords: Array<{text: string, bold: boolean, italic: boolean}> = [];
+      let lineWidth = 0;
+      const spaceWidth = pdf.getTextWidth(' ');
+      
+      const renderLine = (words: Array<{text: string, bold: boolean, italic: boolean}>) => {
+        if (words.length === 0) return;
+        
+        if (currentY + lineHeight > pageHeight - marginBottom) {
+          pdf.addPage();
+          currentY = marginTop;
+        }
+        
+        let xPos = x;
+        words.forEach((word, index) => {
+          pdf.setFontSize(fontSize);
+          if (word.bold && word.italic) {
+            pdf.setFont('helvetica', 'bolditalic');
+          } else if (word.bold) {
+            pdf.setFont('helvetica', 'bold');
+          } else if (word.italic) {
+            pdf.setFont('helvetica', 'italic');
+          } else {
+            pdf.setFont('helvetica', 'normal');
+          }
+          
+          try {
+            pdf.text(word.text, xPos, currentY);
+            xPos += pdf.getTextWidth(word.text);
+            
+            if (index < words.length - 1) {
+              xPos += spaceWidth;
+            }
+          } catch (e) {
+            console.warn('Erro ao renderizar palavra:', word.text, e);
+          }
+        });
+        
+        currentY += lineHeight;
+      };
+      
+      // Agrupa palavras em linhas
+      allWords.forEach((word) => {
+        // Se for uma quebra de linha explícita, renderiza a linha atual e inicia nova
+        if (word.isNewLine) {
+          if (lineWords.length > 0) {
+            renderLine(lineWords);
+            lineWords = [];
+            lineWidth = 0;
+          }
+          return;
+        }
+        
+        pdf.setFontSize(fontSize);
+        if (word.bold && word.italic) {
+          pdf.setFont('helvetica', 'bolditalic');
+        } else if (word.bold) {
+          pdf.setFont('helvetica', 'bold');
+        } else if (word.italic) {
+          pdf.setFont('helvetica', 'italic');
+        } else {
+          pdf.setFont('helvetica', 'normal');
+        }
+        
+        const wordWidth = pdf.getTextWidth(word.text);
+        const newLineWidth = lineWidth + (lineWords.length > 0 ? spaceWidth : 0) + wordWidth;
+        
+        // Se a palavra não cabe na linha atual, renderiza a linha anterior
+        if (newLineWidth > maxLineWidth && lineWords.length > 0) {
+          renderLine(lineWords);
+          lineWords = [word];
+          lineWidth = wordWidth;
+        } else {
+          lineWords.push(word);
+          lineWidth = newLineWidth;
+        }
+      });
+      
+      if (lineWords.length > 0) {
+        renderLine(lineWords);
+      }
+      
+      return currentY;
+    };
+    
     // Título do documento
     pdf.setFontSize(14); // Reduzido de 18
     pdf.setFont('helvetica', 'bold');
     const title = this.moduleLabel || 'Conceitos';
     const titleText = removeEmojis(title);
-    pdf.text(titleText, margin, y);
+    pdf.text(titleText, marginLeft, y);
     y += 6; // Reduzido de 10
     
     // Informações de filtros aplicados
@@ -773,116 +936,138 @@ export class ConceitosComponent implements OnInit, OnDestroy {
         if (this.selectedBibliografia) filterInfo += ' | ';
         filterInfo += `Assunto: ${removeEmojis(this.selectedAssunto)}`;
       }
-      pdf.text(filterInfo, margin, y);
-      y += 5; // Reduzido de 8
+      pdf.text(filterInfo, marginLeft, y);
+      y += 3; // Reduzido de 8
     }
     
-    // Linha separadora
-    y += 1; // Reduzido de 2
-    pdf.setDrawColor(0, 0, 0);
-    pdf.setLineWidth(0.3); // Reduzido de 0.5
-    pdf.line(margin, y, pageWidth - margin, y);
-    y += 4; // Reduzido de 5
+    // Espaço entre filtros e primeiro assunto
+    y += 6;
     
-    // Processa cada conceito
-    this.filteredConceitos.forEach((conceito, index) => {
-      // Verifica se precisa de nova página
-      if (y + 20 > pageHeight - margin) {
-        pdf.addPage();
-        y = margin;
-      }
-      
-      // Título do conceito (em negrito e vermelho simulado com fonte maior)
-      pdf.setFontSize(11); // Reduzido de 14
-      pdf.setFont('helvetica', 'bold');
-      const tituloText = removeEmojis(conceito.titulo);
-      const tituloLines = pdf.splitTextToSize(tituloText, maxWidth);
-      tituloLines.forEach((line: string) => {
-        if (y + 5 > pageHeight - margin) {
-          pdf.addPage();
-          y = margin;
+    // Agrupa conceitos por assunto
+    const conceitosPorAssunto = new Map<string, ConceitosInterface[]>();
+    const conceitosSemAssunto: ConceitosInterface[] = [];
+    
+    this.filteredConceitos.forEach(conceito => {
+      const assunto = conceito.assunto?.trim() || '';
+      if (assunto) {
+        if (!conceitosPorAssunto.has(assunto)) {
+          conceitosPorAssunto.set(assunto, []);
         }
-        pdf.text(line, margin, y);
-        y += 5; // Reduzido de 6
-      });
-      
-      // Meta informações (palavra-chave e assunto)
-      if (conceito.palavra_chave || conceito.assunto) {
-        pdf.setFontSize(7); // Reduzido de 9
-        pdf.setFont('helvetica', 'italic');
-        let metaText = '';
-        if (conceito.palavra_chave) {
-          metaText += `(${removeEmojis(conceito.palavra_chave)})`;
-        }
-        if (conceito.assunto) {
-          if (metaText) metaText += ' ';
-          metaText += `Assunto: ${removeEmojis(conceito.assunto)}`;
-        }
-        if (metaText) {
-          if (y + 4 > pageHeight - margin) {
-            pdf.addPage();
-            y = margin;
-          }
-          pdf.text(metaText, margin, y);
-          y += 4; // Reduzido de 5
-        }
-      }
-      
-      // Descrição
-      if (conceito.descricao && conceito.descricao.trim().length > 0) {
-        pdf.setFontSize(9); // Reduzido de 11
-        pdf.setFont('helvetica', 'normal');
-        
-        // Processa a descrição preservando formatação markdown e quebras de linha
-        const segments = extractTextWithStyles(conceito.descricao);
-        
-        if (segments.length > 0) {
-          y = renderStyledText(segments, margin, y, maxWidth, 9); // Reduzido de 11
-        } else {
-          // Fallback para texto simples
-          const descricaoText = removeEmojis(conceito.descricao);
-          // Processa quebras de linha manualmente
-          const lines = descricaoText.split('\n');
-          lines.forEach((line: string) => {
-            if (line.trim().length === 0) {
-              y += 2; // Reduzido de 3 - Espaço para linha vazia
-              return;
-            }
-            const wrappedLines = pdf.splitTextToSize(line, maxWidth);
-            wrappedLines.forEach((wrappedLine: string) => {
-              if (y + 5 > pageHeight - margin) {
-                pdf.addPage();
-                y = margin;
-              }
-              pdf.text(wrappedLine, margin, y);
-              y += 5; // Reduzido de 7
-            });
-          });
-        }
+        conceitosPorAssunto.get(assunto)!.push(conceito);
       } else {
-        pdf.setFontSize(8); // Reduzido de 10
-        pdf.setFont('helvetica', 'italic');
-        pdf.setTextColor(150, 150, 150);
-        if (y + 4 > pageHeight - margin) {
-          pdf.addPage();
-          y = margin;
-        }
-        pdf.text('Sem descrição', margin, y);
-        pdf.setTextColor(0, 0, 0);
-        y += 4; // Reduzido de 5
-      }
-      
-      // Espaço entre conceitos
-      y += 5; // Reduzido de 8
-      
-      // Linha separadora entre conceitos (exceto no último)
-      if (index < this.filteredConceitos.length - 1) {
-        pdf.setDrawColor(200, 200, 200);
-        pdf.setLineWidth(0.15); // Reduzido de 0.2
-        pdf.line(margin, y - 3, pageWidth - margin, y - 3);
-        y += 1; // Reduzido de 2
+        conceitosSemAssunto.push(conceito);
       }
     });
+    
+    // Ordena os assuntos alfabeticamente
+    const assuntosOrdenados = Array.from(conceitosPorAssunto.keys()).sort();
+    
+      // Contador incremental para numerar os conceitos
+    let conceitoNumero = 1;
+    
+    // Processa cada grupo de assunto
+    assuntosOrdenados.forEach((assunto, assuntoIndex) => {
+      const conceitosDoAssunto = conceitosPorAssunto.get(assunto)!;
+      
+      // Verifica se precisa de nova página antes de adicionar o título do assunto
+      if (y + 15 > pageHeight - marginBottom) {
+        pdf.addPage();
+        y = marginTop;
+      }
+      
+      // Título do assunto (em negrito, maior e centralizado)
+      pdf.setFontSize(12); // Tamanho maior para o título do assunto
+      pdf.setFont('helvetica', 'bold');
+      const assuntoText = removeEmojis(assunto);
+      const assuntoLines = pdf.splitTextToSize(assuntoText, maxWidth);
+      assuntoLines.forEach((line: string) => {
+        if (y + 6 > pageHeight - marginBottom) {
+          pdf.addPage();
+          y = marginTop;
+        }
+        pdf.text(line, pageWidth / 2, y, { align: 'center' });
+        y += 6;
+      });
+      
+      // Espaço após o título do assunto (sem linha separadora)
+      y += 4;
+      
+      // Processa cada conceito do assunto
+      conceitosDoAssunto.forEach((conceito, conceitoIndex) => {
+        // Verifica se precisa de nova página
+        if (y + 20 > pageHeight - marginBottom) {
+          pdf.addPage();
+          y = marginTop;
+        }
+        
+        // Título e descrição na mesma linha, separados por hífen, com número incremental
+        y = renderTituloDescricao(
+          conceito.titulo,
+          conceito.descricao || '',
+          marginLeft,
+          y,
+          maxWidth,
+          9, // Mesmo tamanho de fonte para título e descrição
+          conceitoNumero // Número incremental
+        );
+        
+        // Incrementa o contador para o próximo conceito
+        conceitoNumero++;
+        
+        // Espaço mínimo entre conceitos
+        y += 1;
+      });
+      
+      // Espaço maior entre assuntos diferentes (exceto no último)
+      if (assuntoIndex < assuntosOrdenados.length - 1 || conceitosSemAssunto.length > 0) {
+        y += 8; // Espaço maior entre seções de assunto
+      }
+    });
+    
+    // Processa conceitos sem assunto (se houver)
+    if (conceitosSemAssunto.length > 0) {
+      // Verifica se precisa de nova página antes de adicionar o título
+      if (y + 15 > pageHeight - marginBottom) {
+        pdf.addPage();
+        y = marginTop;
+      }
+      
+      // Título para conceitos sem assunto (centralizado)
+      pdf.setFontSize(12);
+      pdf.setFont('helvetica', 'bold');
+      const semAssuntoText = 'Sem Assunto';
+      pdf.text(semAssuntoText, pageWidth / 2, y, { align: 'center' });
+      y += 6;
+      
+      // Espaço após o título (sem linha separadora)
+      y += 4;
+      
+      // Processa cada conceito sem assunto
+      conceitosSemAssunto.forEach((conceito, conceitoIndex) => {
+        // Verifica se precisa de nova página
+        if (y + 20 > pageHeight - marginBottom) {
+          pdf.addPage();
+          y = marginTop;
+        }
+        
+        // Título e descrição na mesma linha, separados por hífen, com número incremental
+        y = renderTituloDescricao(
+          conceito.titulo,
+          conceito.descricao || '',
+          marginLeft,
+          y,
+          maxWidth,
+          9, // Mesmo tamanho de fonte para título e descrição
+          conceitoNumero // Número incremental
+        );
+        
+        // Incrementa o contador para o próximo conceito
+        conceitoNumero++;
+        
+        // Espaço mínimo entre conceitos
+        y += 1;
+      });
+    }
     
     // Função para remover acentos e caracteres especiais
     const removeAccents = (str: string): string => {

@@ -820,12 +820,12 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           )
       },
       {
-        title: 'Resumo',
-        path: 'resumo',
+        title: 'Conceitos',
+        path: 'conceitos',
         loadComponent: () =>
-          import('../modules/app9-economia/app9-economia-resumo/app9-economia-resumo').then(
-            (m) => m.App9EconomiaResumo
-          )
+          import(
+            '../modules/app9-economia/app9-economia-conceitos/app9-economia-conceitos'
+          ).then((m) => m.App9EconomiaConceitos)
       }
     ]
   }

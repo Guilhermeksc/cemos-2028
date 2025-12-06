@@ -2,7 +2,7 @@
 
 # 1 Aspectos Demográficos
 
-Muitas vezes, quando se estuda a economia de um país, deixam-se de lado as questões relativas à evolução de sua população. Essas questões, no entanto, são bastante importantes. Por um lado, a população de um país representa seu potencial de consumidores; por outro, parte dessa população, a chamada população economicamente ativa ou população na força de trabalho, representa os potenciais trabalhadores/produtores do país. Antes de discutirmos os indicadores demográficos, vamos analisar a relação entre crescimento populacional e desenvolvimento econômico.
+Muitas vezes, quando se estuda a economia de um país, deixam-se de lado as questões relativas à evolução de sua população. Essas questões, no entanto, são bastante importantes. Por um lado, a população de um país representa seu potencial de consumidores; por outro, parte dessa população, a chamada **população economicamente ativa** ou **população na força de trabalho**[1], representa os potenciais trabalhadores/produtores do país. Antes de discutirmos os indicadores demográficos, vamos analisar a relação entre crescimento populacional e desenvolvimento econômico.
 
 ## 1.1 CRESCIMENTO POPULACIONAL E DESENVOLVIMENTO ECONÔMICO
 
@@ -16,16 +16,70 @@ Por outro lado, os críticos dessa corrente ressaltam que, quando os neomalthusi
 
 Outro aspecto que liga questões demográficas à economia de um país é sua composição etária. Alterações na composição etária dessa população têm importantes implicações sobre o país. Países com população jovem direcionam parte de suas preocupações para aspectos pediátricos e incorrem em gastos relativamente mais elevados, por exemplo, com a construção de creches e escolas, enquanto países com população mais avançada dedicam parte significativa de suas atenções e de seus recursos à previdência social.
 
-Alterações na distribuição etária da população, componentes maiores ou menores da população em idade mais jovem ou mais avançada, têm efeitos macroeconômicos, pois as pessoas alteram seu comportamento econômico dependendo de sua idade. De acordo com a teoria do ciclo de vida, as pessoas consomem ao longo de toda a sua vida, porém não geram renda nos primeiros anos de vida e diminuem muito, em média, a geração de renda em idades mais avançadas. Isso pode ser observado no gráfico da Figura 1.1.
+Alterações na distribuição etária da população, componentes maiores ou menores da população em idade mais jovem ou mais avançada, têm efeitos macroeconômicos, pois as pessoas alteram seu comportamento econômico dependendo de sua idade. De acordo com a **teoria do ciclo de vida**, as pessoas consomem ao longo de toda a sua vida, porém não geram renda nos primeiros anos de vida e diminuem muito, em média, a geração de renda em idades mais avançadas. Isso pode ser observado no gráfico da Figura 1.1.
 
 Na fase anterior ao ponto A, mesmo que se gere renda, esta é inferior às necessidades de consumo — o mesmo ocorre depois do ponto B. Entre A e B, produz-se e gera-se mais renda do que consome. Nessa fase da vida, gera-se produção, que é transferida para os indivíduos das outras fases. Assim, dependendo de como a população de um país está distribuída entre as diferentes fases do ciclo de vida, ou ao redor de que idade se situam os pontos A e B de uma população, essa distribuição populacional tem diferentes consequências econômicas, como veremos, em termos, por exemplo, de geração de poupança e de necessidades de transferências de renda intergeracionais.
-
 
 ## Página 3
 
 Geralmente, esses pontos no Brasil tendem a ser relativamente próximos, de modo que a área formada entre as duas curvas e entre os pontos A e B é, quando comparada à de outros países, relativamente pequena no Brasil, trazendo, assim, dificuldades em termos de geração de renda e sustentação de jovens e, principalmente, idosos, dado que também o segmento e a área posterior ao ponto B têm crescido no país.
 
 Figura 1.1 Renda e consumo ao longo do ciclo de vida.
+
+## 📌 Gráfico convertido para Markdown
+
+```markdown
+**Figura 1.1 – Renda e consumo ao longo do ciclo de vida**
+
+Eixo vertical: Renda e consumo (0 a 30)  
+Eixo horizontal: Idade (0 a 85 anos)
+
+Curvas:
+- **Linha preta**: Consumo  
+- **Linha cinza**: Geração de renda
+
+Descrição gráfica aproximada em texto:
+
+Idade | Consumo (linha preta) | Geração de renda (linha cinza)
+----- | ---------------------- | -------------------------------
+0–10  | 5                     | ~0  
+10–20 | 5→8                   | 0→10  
+20–30 | 8→10                  | 10→22  
+30–40 | 10→10,5               | 22→26 (pico)  
+40–50 | ~10,5                 | 26→20  
+50–60 | 10,5→10               | 20→10  
+60–70 | 10→9                  | 10→5  
+70–85 | ~9→10                 | 5→0  
+
+Pontos relevantes:  
+- **A**: início da fase em que a renda supera o consumo (~20 anos).  
+- **B**: fim dessa fase, quando o consumo volta a ser maior que a renda (~60 anos).  
+```
+
+---
+
+## 📘 Explicação do gráfico
+
+O gráfico ilustra a **teoria do ciclo de vida**, mostrando como a renda e o consumo das pessoas evoluem ao longo dos anos.
+
+### 🔹 Infância e adolescência (0 a ~20 anos)
+
+* O **consumo é constante e moderado**, pois mantém necessidades básicas.
+* A **geração de renda é nula ou muito baixa**, já que a pessoa ainda não está no mercado de trabalho.
+* Nesse período, há **dependência total** de outras gerações.
+
+### 🔹 Vida adulta produtiva (entre os pontos A e B – aproximadamente 20 a 60 anos)
+
+* A **renda cresce rapidamente**, atinge seu pico por volta dos 40 anos e depois começa a cair.
+* O **consumo cresce pouco**, mantendo-se relativamente estável durante toda a fase adulta.
+* É a fase na qual o indivíduo **gera mais renda do que consome**, formando a base de poupança e sustentando jovens e idosos.
+
+### 🔹 Idade avançada (após o ponto B – ~60 anos)
+
+* A **renda diminui acentuadamente**, em função da aposentadoria e da redução da capacidade laboral.
+* O **consumo permanece estável**, ainda que com eventuais demandas adicionais (como saúde).
+* O consumo volta a **superar a renda**, exigindo financiamento via previdência, poupança acumulada ou transferências intergeracionais.
+
 
 ## 1.2 DEMOGRAFIA: ELEMENTOS BÁSICOS
 
@@ -82,8 +136,6 @@ A fertilidade, que não é vista apenas como uma questão biológica, dadas as p
 
 i. pelas condições socioculturais de cada sociedade, como a religião e os valores morais/ filosóficos, as relações familiares, as regras legais e morais associadas ao casamento, à herança etc.;
 
----
-
 ## Página 6
 
 
@@ -109,9 +161,43 @@ No entanto, a partir da década iniciada em 1930, há um “fechamento” da pop
 
 Figura 1.2 Transição demográfica.
 
-— Natalidade - - Mortalidade
+O gráfico representa as três fases clássicas da **transição demográfica**, mostrando a evolução histórica das **taxas de natalidade** (linha contínua) e **mortalidade** (linha tracejada) ao longo do tempo.
 
-Taxa de natalidade e taxa de mortalidade
+### **Fase A — Regime demográfico tradicional**
+
+* Tanto a natalidade quanto a mortalidade são **altas**.
+* O crescimento populacional é **baixo**, pois muitos nascimentos são compensados por muitos óbitos.
+* Essa etapa é típica de sociedades pré-industriais, com baixa tecnologia médica e forte vulnerabilidade a doenças e epidemias.
+
+### **Fase B — Queda da mortalidade**
+
+* A mortalidade começa a **cair rapidamente** devido a:
+
+  * melhorias sanitárias;
+  * avanço da medicina;
+  * vacinação;
+  * maior acesso a alimentos e infraestrutura.
+* A natalidade **permanece alta** por algum tempo.
+* O resultado é um **aumento acelerado da população**, pois nascem muitas pessoas e morrem cada vez menos.
+
+### **Fase C — Queda da natalidade**
+
+* A natalidade também começa a **declinar**, influenciada por:
+
+  * urbanização;
+  * entrada da mulher no mercado de trabalho;
+  * acesso a métodos contraceptivos;
+  * mudanças culturais e educacionais.
+* A mortalidade segue baixa e estável.
+* O crescimento populacional torna-se **baixo** ou até **negativo**, dependendo da intensidade da queda da fecundidade.
+
+
+### **Síntese**
+
+O gráfico mostra que a transição demográfica ocorre quando uma sociedade passa de um padrão de **altas taxas de natalidade e mortalidade** (A) para um regime de **baixas taxas de ambas** (C). A fase intermediária (B) é marcada por forte crescimento populacional devido à queda da mortalidade antes da redução da natalidade.
+
+Se desejar, posso converter o gráfico para Markdown ou criar um resumo em estilo de estudo para concursos.
+
 
 A partir dos anos 1940, o Brasil vive um período considerado de “transição demográfica”. Conforme apresentado na Figura 1.2, essa transição faz-se entre uma situação inicial “A”, em que há elevadas taxas de natalidade e mortalidade, para outra situação “C”, em que essas taxas são mais baixas. O declínio nas taxas, porém, não se faz em conjunto; inicialmente, há a queda das taxas de mortalidade e só depois é que as taxas de natalidade declinam, como pode ser observado no instante “B”. Entre a situação inicial e a final, há substancial elevação da taxa de crescimento da população, pois, enquanto o número de óbitos declina, os nascimentos continuam elevados. O crescimento populacional reduz-se apenas quando a taxa de natalidade também entra em declínio.
 
@@ -203,8 +289,6 @@ Retornando à questão da transição demográfica, o declínio da mortalidade e
 
 Entretanto, a partir dos anos 1960, e especialmente das décadas seguintes, a queda da mortalidade passa a ser acompanhada por fortes quedas na taxa de natalidade. Isso fez com que o crescimento da população se reduzisse drasticamente, entrando-se, assim, no período final da transição demográfica brasileira (situação “C”) e, em princípio, afastando o perigo da explosão demográfica. Pelo gráfico da Figura 1.5, vemos o declínio das taxas de fecundidade, que é generalizado dentro do país, havendo, inclusive, uma convergência dos indicadores regionais. Outro aspecto interessante que pode ser observado nos gráficos das Figuras 1.5 e 1.6 é que a queda da fecundidade não é apenas generalizada regionalmente, mas também ocorre entre as diferentes faixas socioeconômicas e de educação, mesmo que ainda persistam diferenças importantes. De modo geral, essa queda pode ser explicada por dois aspectos:
 
----
-
 ## Página 14
 
 i. aentrada da mulher no mercado de trabalho, que fez com que os “custos” de oportunidade de se ter um filho crescessem fortemente;
@@ -216,7 +300,73 @@ Figura 1.5 Evolução das taxas de fecundidade: Brasil e regiões - 1940-2013.
 Figura 1.6 Brasil: taxa de fecundidade segundo quintis de renda e anos de estudo —- 1992 x 2011. 
 Fonte: IPEA (2012).
 
+## Análise do gráfico — Taxas de fecundidade por quintis de renda e anos de estudo (1992 × 2011)
+
+O gráfico compara a **taxa de fecundidade** em dois momentos — **1992** (barras claras) e **2011** (barras escuras) — distribuindo os dados por **quintis de renda** (da população mais pobre para a mais rica) e por **nível de escolaridade**.
+
 ---
+
+## 1. **Redução geral da fecundidade**
+
+Em todas as categorias (renda e escolaridade), observa-se uma **queda significativa da fecundidade entre 1992 e 2011**.
+Isso confirma a tendência nacional de declínio da taxa de natalidade ao longo das últimas décadas.
+
+---
+
+## 2. **Análise por quintis de renda**
+
+| Quintil         | 1992 | 2011 | Interpretação                                           |
+| --------------- | ---- | ---- | ------------------------------------------------------- |
+| 1º (mais pobre) | ~4,7 | ~3,6 | Apesar da queda, ainda é o grupo com maior fecundidade. |
+| 2º              | ~3,3 | ~2,3 | Redução expressiva.                                     |
+| 3º              | ~2,4 | ~1,6 | Aproxima-se do nível de reposição populacional.         |
+| 4º              | ~1,8 | ~1,1 | Fecundidade baixa.                                      |
+| 5º (mais rico)  | ~1,4 | ~0,9 | A fecundidade já está abaixo da taxa de reposição.      |
+
+### **Conclusão sobre renda**
+
+* Quanto **menor a renda**, **maior a fecundidade**, mas com queda ao longo do tempo.
+* Os quintis superiores mostram fecundidade **bem abaixo de 2 filhos por mulher**, contribuindo para o envelhecimento populacional.
+
+## 3. **Análise por anos de estudo**
+
+| Escolaridade | 1992 | 2011 | Interpretação                                                      |
+| ------------ | ---- | ---- | ------------------------------------------------------------------ |
+| 0 a 4 anos   | ~3,4 | ~2,3 | A escolaridade baixa mantém a fecundidade mais alta.               |
+| 5 a 8 anos   | ~2,4 | ~2,1 | Queda modesta; ainda relativamente elevada.                        |
+| 9 a 11 anos  | ~1,8 | ~1,7 | Estabilização próxima ao nível de reposição.                       |
+| 12 anos ou + | ~1,8 | ~1,3 | Educação elevada está fortemente associada à fecundidade reduzida. |
+
+### **Conclusão sobre escolaridade**
+
+A fecundidade **diminui quanto maior o nível de educação**, reforçando a correlação entre:
+
+* maior escolaridade,
+* maior inserção no mercado de trabalho,
+* maior acesso à informação e métodos contraceptivos.
+
+---
+
+## 4. **Síntese interpretativa**
+
+O gráfico evidencia três fenômenos importantes:
+
+### 🔹 **1. Convergência demográfica**
+
+Todos os grupos — pobres, ricos, mais ou menos escolarizados — apresentaram redução da fecundidade entre 1992 e 2011.
+
+### 🔹 **2. Persistência das desigualdades**
+
+Apesar da queda geral, **os mais pobres e os menos escolarizados ainda têm fecundidade mais alta**.
+
+### 🔹 **3. Brasil abaixo da taxa de reposição**
+
+Vários grupos (especialmente os mais ricos e mais escolarizados) já estão **bem abaixo da taxa de reposição (≈ 2,1 filhos)**, acelerando:
+
+* o envelhecimento populacional,
+* a redução futura da população economicamente ativa,
+* desafios previdenciários e de saúde pública.
+
 
 ## Página 15
 
@@ -259,13 +409,143 @@ Tabela 1.4 Brasil: distribuição da população por grupo de idades — 1940-20
 
 Outra maneira de se observar essa evolução é por meio das pirâmides populacionais nos gráficos das Figuras 1.7 a 1.10. Nessas pirâmides, a porcentagem de cada faixa da população é representada pelas barras da pirâmide, dividida em duas partes: de um lado, os homens, e de outro, as mulheres. Pode-se perceber que a pirâmide de 1980 tem uma base larga, indicando uma porcentagem alta da participação dos jovens no total da população. Com o tempo, essa base vai se estreitando: inicialmente, o meio da pirâmide se alarga, passando para um formato de tonel, indicando o crescimento da participação das pessoas em idade intermediária no total da população. Finalmente, na Figura 1.10 (a projeção da população brasileira para 2050) o topo amplifica-se, demonstrando a forte ampliação da população em idade mais avançada e a inversão da pirâmide. Nota-se, ainda, um crescimento maior das mulheres, indicando uma tendência de que ocorra uma “feminilização do envelhecimento”.
 
-Figura 1.7 Pirâmide etária brasileira — 1980.
+## **Análise das pirâmides etárias brasileiras — 1980, 2000, 2020 e projeção para 2050**
+
+As quatro pirâmides revelam, de forma clara, a *transição demográfica acelerada* do Brasil, com forte redução da fecundidade, aumento da longevidade e envelhecimento populacional.
+
+Segue uma análise estruturada por período.
+
+---
+
+# **1. Pirâmide Etária — 1980**
+
+**Formato:** pirâmide clássica, base larga e topo estreito.
+
+### **Principais características**
+
+* **Altíssima proporção de crianças (0–14 anos)**, indicando fecundidade elevada.
+* **População jovem predominante.**
+* **Topo muito estreito**, sinalizando baixa expectativa de vida e alta mortalidade na velhice.
+* Padrão típico de país em **pleno processo de transição demográfica**.
+
+### **Interpretação**
+
+* Forte pressão sobre educação infantil e serviços materno-infantis.
+* Grande contingente futuro entrando no mercado de trabalho.
+* Previdência ainda não pressionada.
+
+---
+
+# **2. Pirâmide Etária — 2000**
+
+**Formato:** ainda triangular, mas com base visivelmente mais estreita.
+
+### **Principais características**
+
+* **Redução significativa da fecundidade**, estreitando a base.
+* Crescimento da população **de 20 a 40 anos**, sugerindo um país entrando no “bônus demográfico”.
+* Aumento da população idosa começa a aparecer, mas ainda discreto.
+
+### **Interpretação**
+
+* População economicamente ativa crescendo.
+* O país começa a colher ganhos econômicos do bônus demográfico.
+* Primeiros sinais de envelhecimento estrutural.
+
+---
+
+# **3. Pirâmide Etária — 2020**
+
+**Formato:** corpo mais largo e base estreita; aparência de “tonel”.
+
+### **Principais características**
+
+* **Base pequena (0–14 anos)** devido à fecundidade abaixo da reposição.
+* **Maior concentração entre 25–45 anos**, refletindo pico da população em idade produtiva.
+* **Idosos (65+) aumentando**, mas ainda sem ultrapassar os grupos intermediários.
+
+### **Interpretação**
+
+* Últimos anos do bônus demográfico.
+* Pressão crescente sobre saúde e previdência começa a se manifestar.
+* Menor entrada de jovens no mercado de trabalho.
+
+---
+
+# **4. Pirâmide Etária — projeção para 2050**
+
+**Formato:** pirâmide invertida; topo mais largo que a base.
+
+### **Principais características**
+
+* **Forte expansão dos grupos acima de 60 anos**, com grande peso relativo.
+* **População de 80+ muito maior** que em décadas anteriores.
+* **Base extremamente estreita**, indicando baixíssima fecundidade e envelhecimento acelerado.
+* Predomínio de mulheres nos grupos mais idosos, refletindo maior longevidade feminina.
+
+### **Interpretação**
+
+* Estrutura etária semelhante à de países envelhecidos, como Japão e Itália.
+* Forte pressão sobre:
+
+  * previdência,
+  * sistemas de saúde,
+  * políticas de cuidados prolongados.
+* Redução da população economicamente ativa.
+* Possível necessidade de políticas imigratórias e estímulo à natalidade.
+
+---
+
+# **Síntese da evolução 1980 → 2050**
+
+| Ano      | Formato                    | Mensagem central                                   |
+| -------- | -------------------------- | -------------------------------------------------- |
+| **1980** | Base larga                 | País jovem, fecundidade alta.                      |
+| **2000** | Base menos larga           | Rumo ao bônus demográfico.                         |
+| **2020** | Corpo largo, base estreita | Pico do bônus demográfico; baixa natalidade.       |
+| **2050** | Pirâmide invertida         | Envelhecimento intenso e desafios previdenciários. |
+
+---
+
+# **Conclusão Geral**
+
+Os gráficos evidenciam uma **transformação profunda** na estrutura populacional brasileira.
+O país passa de uma sociedade jovem (1980) para uma sociedade envelhecida (2050).
+
+Essa transição implica desafios estratégicos:
+
+* reorganização dos sistemas de saúde e previdência;
+* políticas para ampliar a produtividade laboral;
+* necessidade de incentivo à natalidade ou à imigração qualificada;
+* adaptação urbana e habitacional à população idosa.
+
 
 ## Página 21
 
 Esse processo de envelhecimento também pode ser observado pelo crescimento do índice de envelhecimento do IBGE, isto é, a relação entre a população com mais de 65 anos e a população com menos de 15. Essa passa de 6,4% em 1960, para 16,8% em 2000, e já 30,8% em 2010.
 
 Figura 1.11 Dinâmica populacional brasileira.
+
+# Figura – Índice de envelhecimento e razão de dependência (1980–2050)
+
+| Ano  | Índice de envelhecimento | Razão de dependência |
+|------|---------------------------|------------------------|
+| 2050 | 70  | 190 |
+| 2040 | 55  | 160 |
+| 2030 | 45  | 130 |
+| 2020 | 35  | 55  |
+| 2010 | 25  | 50  |
+| 2000 | 15  | 60  |
+| 1991 | 10  | 70  |
+| 1980 | 7   | 75  |
+
+> *Valores numéricos aproximados com base na leitura visual do gráfico.*
+
+**Legenda:**  
+- **Índice de envelhecimento:** proporção de idosos (65+) em relação aos jovens (0–14).  
+- **Razão de dependência:** relação entre população dependente (0–14 e 65+) e população em idade ativa (15–64).
+
+
 
 ## Página 22
 

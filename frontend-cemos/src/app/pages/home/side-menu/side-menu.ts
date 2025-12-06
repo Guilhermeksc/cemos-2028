@@ -249,6 +249,7 @@ export class SideMenu {
         },
         'Flash Cards',
         'Perguntas',
+        'Conceitos',
       ],
       expanded: false
     }
@@ -731,6 +732,9 @@ export class SideMenu {
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
+            case 'Conceitos':
+              pathParts.push('conceitos');
+              break;              
           }
         }
         break;

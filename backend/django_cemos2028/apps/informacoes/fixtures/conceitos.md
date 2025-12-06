@@ -1,34 +1,51 @@
-# ✅ **PROMPT FINAL — CRIAÇÃO DE CONCEITOS (COM RETORNO EM MARKDOWN)**
-
 **Tarefa:**
-Criar **conceitos** no formato de tabela, seguindo **exatamente** o modelo abaixo:
+Criar **conceitos** no formato de tabela com base em CONCEITOS-CHAVE, seguindo **exatamente** o modelo abaixo:
 
 ```
 bibliografia_titulo	titulo	palavra_chave	assunto	descricao	caiu_em_prova	ano_prova
 Geopolítica e Modernidade	Método Experimental	Galileu, Bacon, Novum Organon	Filosofia da Ciência	Galileu e Francis Bacon introduzem o método experimental e sistematizam o conhecimento científico, base das ciências sociais e da geopolítica.	false	
-Geopolítica e Modernidade	Influência Geográfica	Heródoto, Hipócrates, Platão, Aristóteles	Geografia e Política	Primeiras observações sobre a influência do clima e da geografia no comportamento humano e na organização política.	false	
-Geopolítica e Modernidade	Determinismo Geográfico	Ratzel	Geografia Política	Ratzel propõe as 'Sete Leis do Expansionismo', relacionando crescimento territorial à cultura e à força do Estado.	false	
 ```
-
-# 🧾 **INSTRUÇÕES ESPECÍFICAS PARA OS CONCEITOS**
-
+# INSTRUÇÕES ESPECÍFICAS 
 Cada linha deve conter:
 
-* **bibliografia_titulo:** sempre `Economia Azul`
+* **bibliografia_titulo:** sempre `Economia Brasileira Contemporânea`
 * **titulo:** nome do conceito
 * **palavra_chave:** termos essenciais associados ao conceito
-* **assunto:** sempre
-  **Relevância do PEM para a Economia Azul**
+* **assunto:** "Cap. 8 - Política Fiscal"
 * **descricao:** explicação curta e correta do conceito
 * **caiu_em_prova:** deixar em branco ou `false`
 * **ano_prova:** deixar em branco
 
-# 📌 **FORMATO OBRIGATÓRIO DO RETORNO (EM MARKDOWN)**
-
-A resposta deve ser entregue **exclusivamente em Markdown**, utilizando a seguinte estrutura de tabela, pronta para copiar e colar:
+# 📌 **FORMATO DO RETORNO EM MARKDOWN)**
 
 ```markdown
 | bibliografia_titulo | titulo | palavra_chave | assunto | descricao | caiu_em_prova | ano_prova |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Ciência Política | Exemplo de Conceito | palavra1, palavra2 | Cap. 10 – O Estado Constitucional | Descrição objetiva do conceito. | false |  |
 ```
+
+## CONCEITOS-CHAVE
+Bens públicos
+Carga tributária bruta e líquida
+Déficit primário
+Déficit público
+Despesas correntes x transferências do governo 
+Economias de escala
+Equivalência ricardiana
+Estabilizadores automáticos
+Execução orçamentária
+Externalidades (economias externas)
+Função alocativa, distributiva e estabilizadora do governo 
+Impostos diretos x impostos indiretos
+Impostos específicos x impostos ad valorem
+Impostos progressivos, regressivos e neutros
+Necessidade de Financiamento do Setor Público não financeiro (NFSP)
+NFSP conceito nominal x NFSP conceito operacional
+Política econômica
+Política fiscal
+Política fiscal compensatória
+Política fiscal contracionista e expansionista
+Políticas keynesianas
+Poupança do governo em conta- corrente
+Regime de Caixa x Regime de Competência
+Subsídio
