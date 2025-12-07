@@ -11,12 +11,12 @@ Cada linha deve conter:
 * **bibliografia_titulo:** sempre `Economia Brasileira Contemporânea`
 * **titulo:** nome do conceito
 * **palavra_chave:** termos essenciais associados ao conceito
-* **assunto:** "Cap. 8 - Política Fiscal"
+* **assunto:** "Cap. 19 - Alterações na Presença do Estado no Desenvolvimento Brasileiro"
 * **descricao:** explicação curta e correta do conceito
-* **caiu_em_prova:** deixar em branco ou `false`
+* **caiu_em_prova:** `false`
 * **ano_prova:** deixar em branco
 
-# 📌 **FORMATO DO RETORNO EM MARKDOWN)**
+# FORMATO DO RETORNO EM MARKDOWN
 
 ```markdown
 | bibliografia_titulo | titulo | palavra_chave | assunto | descricao | caiu_em_prova | ano_prova |
@@ -25,27 +25,29 @@ Cada linha deve conter:
 ```
 
 ## CONCEITOS-CHAVE
+
 Bens públicos
-Carga tributária bruta e líquida
-Déficit primário
-Déficit público
-Despesas correntes x transferências do governo 
-Economias de escala
-Equivalência ricardiana
-Estabilizadores automáticos
-Execução orçamentária
-Externalidades (economias externas)
-Função alocativa, distributiva e estabilizadora do governo 
-Impostos diretos x impostos indiretos
-Impostos específicos x impostos ad valorem
-Impostos progressivos, regressivos e neutros
-Necessidade de Financiamento do Setor Público não financeiro (NFSP)
-NFSP conceito nominal x NFSP conceito operacional
-Política econômica
-Política fiscal
-Política fiscal compensatória
-Política fiscal contracionista e expansionista
-Políticas keynesianas
-Poupança do governo em conta- corrente
-Regime de Caixa x Regime de Competência
-Subsídio
+
+Estado condutor
+
+Estado financiador
+
+Estado produtor
+
+Estado regulamentador
+
+Estatização
+
+Garantia de juros
+
+Lei de Responsabilidade Fiscal
+
+Política de defesa do café
+
+Privatização
+
+Programa Nacional de Desestatização
+
+Regulamentação x desregulamentação
+
+Serviços públicos

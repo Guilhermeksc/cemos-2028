@@ -10,7 +10,7 @@ import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards
 })
 export class App9EconomiaFlashcards {
 
-  bibliografiaIds: number[] = [18];
+  bibliografiaIds: number[] = [30, 31, 32];
 
   // Rota para voltar à bibliografia
   bibliografiaPath = '/home/app9-economia/bibliografia';

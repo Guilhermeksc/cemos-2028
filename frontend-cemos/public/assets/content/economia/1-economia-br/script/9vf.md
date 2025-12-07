@@ -8,11 +8,11 @@ Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.m
 
 Instruções específicas:
 
-    bibliografia_id" será preenchido com 'Lei da Guerra'.
+    bibliografia_id" será preenchido com 'Economia Brasileira Contemporânea'.
 
     “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
 
-    “assunto” será preenchido com 'Cap. 4 - O “direito inerente” de legítima defesa'.
+    “assunto” será preenchido com 'Cap. 9 - Política Monetária'.
     
     “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa.
 

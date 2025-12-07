@@ -80,7 +80,7 @@ def main():
     # Pode ser uma string com nomes separados por vírgula: "fc1,fc2,fc3"
     # Ou uma lista: ["fc1", "fc2", "vf1"]
     # Ou um único nome: "fc1"
-    nomes_arquivos = ["fc1", "fc2", "fc3", "fc4", "fc6", "vf1", "vf2", "vf3", "vf4", "vf6"]
+    nomes_arquivos = ["fc1", "fc2", "fc3", "fc5", "fc6", "fc7", "fc8", "fc9", "fc10", "fc19", "vf1", "vf2", "vf3", "vf5", "vf6", "vf7", "vf8", "vf9", "vf10", "vf19"]
     
     base = Path(__file__).parent.resolve()
     print(f"\n=== DIRETÓRIO DE TRABALHO: {base} ===")

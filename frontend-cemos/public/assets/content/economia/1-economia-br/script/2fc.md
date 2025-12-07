@@ -6,7 +6,7 @@ Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.m
 
 Instruções específicas:
 
-    bibliografia_id" será preenchido com '19'.
+    bibliografia_id" será preenchido com '30'.
 
     pergunta será preenchido com a pergunta contextualizada.
 
@@ -16,7 +16,7 @@ Instruções específicas:
 
     “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
     
-    assunto deve ser 'Cap. 2 - Alcance ampliado do Conselho de Segurança'.
+    assunto deve ser 'Cap. 2 – Contabilidade Nacional: Agregados Macroeconômicos'.
 
 Exemplo de saída esperada:
 

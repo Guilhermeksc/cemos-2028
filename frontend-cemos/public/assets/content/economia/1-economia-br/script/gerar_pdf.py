@@ -590,7 +590,7 @@ def main():
     # Pode ser uma string com números separados por vírgula: "1,2,3,4"
     # Ou uma lista: ["1", "2", "3", "4"]
     # Ou um único número: "14"
-    numeros_capitulos = "1,2,3,4,6"  # ← ALTERE ESTE VALOR
+    numeros_capitulos = "1,2,3,5,6"  # ← ALTERE ESTE VALOR
     
     # Usar o diretório do script atual
     base = Path(__file__).parent.resolve()

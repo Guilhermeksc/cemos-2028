@@ -26,11 +26,11 @@ export class App9EconomiaConceitos {
   emptyMessage = 'Nenhum conceito de Geopolítica e RI encontrado. Adicione conceitos relacionados às matérias para visualizá-los aqui.';
   
   // Configurações do header
-  moduleLabel = 'Geopolítica e Relações Internacionais';
+  moduleLabel = 'Economia';
   moduleEmoji = '🌍';
 
   // Paths para navegação entre módulos
-  private readonly ROUTE_BASE = '/home/app6-geopolitica-relacoes-internacionais';
+  private readonly ROUTE_BASE = '/home/app9-economia';
   
   flashcardsPath = `${this.ROUTE_BASE}/flash-cards`;
   perguntasPath = `${this.ROUTE_BASE}/perguntas`;
