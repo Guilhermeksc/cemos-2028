@@ -1474,6 +1474,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
   /**
    * Converte as questões do simulado para PDF pesquisável e faz o download
+   * Gera 3 PDFs separados: um para V/F, um para Múltipla Escolha e um para Correlação
    */
   async downloadAsPDF() {
     this.isGeneratingPDF = true;
@@ -1491,6 +1492,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   /**
    * Gera PDF pesquisável com as questões e respostas
    * Busca TODAS as questões do banco para a bibliografia e assunto selecionados
+   * Gera 3 PDFs separados: um para cada tipo de questão
    */
   private async downloadAsPDFSearchable() {
     // Buscar TODAS as questões do banco para a bibliografia e assunto selecionados
@@ -1622,6 +1624,40 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       correlacao: todasCorrelacoes.length
     });
 
+    if (allQuestions.length === 0) {
+      alert('Não há questões disponíveis para gerar o PDF com os filtros selecionados.');
+      return;
+    }
+
+    // Gerar PDFs separados para cada tipo de questão
+    const vfQuestions = allQuestions.filter(q => q.tipo === 'vf');
+    const multiplaQuestions = allQuestions.filter(q => q.tipo === 'multipla');
+    const correlacaoQuestions = allQuestions.filter(q => q.tipo === 'correlacao');
+
+    // Gerar PDF para questões V/F
+    if (vfQuestions.length > 0) {
+      await this.generatePDFForQuestionType('vf', vfQuestions, todasVFs);
+    }
+
+    // Gerar PDF para questões de Múltipla Escolha
+    if (multiplaQuestions.length > 0) {
+      await this.generatePDFForQuestionType('multipla', multiplaQuestions, todasMultiplas);
+    }
+
+    // Gerar PDF para questões de Correlação
+    if (correlacaoQuestions.length > 0) {
+      await this.generatePDFForQuestionType('correlacao', correlacaoQuestions, todasCorrelacoes);
+    }
+  }
+
+  /**
+   * Gera PDF pesquisável para um tipo específico de questão
+   */
+  private async generatePDFForQuestionType(
+    questionType: 'vf' | 'multipla' | 'correlacao',
+    questions: SimuladoQuestion[],
+    rawQuestions: (PerguntaVF | PerguntaMultipla | PerguntaCorrelacao)[]
+  ) {
     const jsPDF = (await import('jspdf')).default;
     const pdf = new jsPDF('p', 'mm', 'a4');
     
@@ -1945,45 +1981,35 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       return currentY;
     };
     
-    // Título do documento
+    // Título do documento baseado no tipo
     pdf.setFontSize(14); // Reduzido de 18
     pdf.setFont('helvetica', 'bold');
-    const tabNames: { [key: string]: string } = {
-      'completo': 'Todas as Questões',
-      'vf': 'Todas as Questões V/F',
-      'multipla': 'Todas as Questões Múltipla Escolha',
-      'correlacao': 'Todas as Questões de Correlação'
+    const typeTitles: { [key: string]: string } = {
+      'vf': 'Questões Verdadeiro/Falso',
+      'multipla': 'Questões Múltipla Escolha',
+      'correlacao': 'Questões de Correlação'
     };
-    const title = removeEmojis(tabNames[this.activeTab] || 'Todas as Questões');
+    const title = removeEmojis(typeTitles[questionType] || 'Questões');
     pdf.text(title, margin, y);
     y += 6; // Reduzido de 10
     
     // Informações da prova
     pdf.setFontSize(8); // Reduzido de 10
     pdf.setFont('helvetica', 'normal');
-    const totalQuestions = allQuestions.length;
-    const vfCount = allQuestions.filter(q => q.tipo === 'vf').length;
-    const multiplaCount = allQuestions.filter(q => q.tipo === 'multipla').length;
-    const correlacaoCount = allQuestions.filter(q => q.tipo === 'correlacao').length;
+    const totalQuestions = questions.length;
     
     // Calcular estatísticas baseadas nas questões respondidas no simulado atual
-    const answeredQuestions = allQuestions.filter(q => 
+    const answeredQuestions = questions.filter((q: SimuladoQuestion) => 
       q.uniqueKey && this.currentTab.questionResults[q.uniqueKey]?.answered
     ).length;
-    const correctAnswers = allQuestions.filter(q => 
+    const correctAnswers = questions.filter((q: SimuladoQuestion) => 
       q.uniqueKey && this.currentTab.questionResults[q.uniqueKey]?.answered && 
       this.currentTab.questionResults[q.uniqueKey]?.isCorrect
     ).length;
     const scorePercentage = answeredQuestions > 0 ? (correctAnswers / answeredQuestions) * 100 : 0;
     
     let infoText = `Total de questões: ${totalQuestions}`;
-    if (vfCount > 0 || multiplaCount > 0 || correlacaoCount > 0) {
-      const parts: string[] = [];
-      if (vfCount > 0) parts.push(`V/F: ${vfCount}`);
-      if (multiplaCount > 0) parts.push(`Múltipla: ${multiplaCount}`);
-      if (correlacaoCount > 0) parts.push(`Correlação: ${correlacaoCount}`);
-      infoText += ` (${parts.join(', ')})`;
-    }
+    
     if (answeredQuestions > 0) {
       infoText += ` | Respondidas: ${answeredQuestions} | Acertos: ${correctAnswers} | Performance: ${scorePercentage.toFixed(1)}%`;
     }
@@ -2005,7 +2031,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     
     // Agrupar questões por bibliografia + assunto
     const groupedQuestions: { [key: string]: SimuladoQuestion[] } = {};
-    allQuestions.forEach((question) => {
+    questions.forEach((question) => {
       const bibliografia = question.bibliografia_titulo || 'Sem bibliografia';
       const assunto = question.assunto || 'Sem assunto';
       const key = `${bibliografia}|${assunto}`;
@@ -2142,6 +2168,30 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           });
         } else if (question.tipo === 'multipla') {
           const multiplaData = question.data as PerguntaMultipla;
+          
+          // Exibir a pergunta primeiro
+          const perguntaText = removeAssuntoFromPergunta(question.pergunta || multiplaData.pergunta, question.assunto);
+          const perguntaSegments = extractTextWithStyles(perguntaText);
+          
+          if (perguntaSegments.length > 0) {
+            pdf.setFont('helvetica', 'normal');
+            y = renderStyledText(perguntaSegments, contentStartX, y, contentMaxWidth, 8);
+            y += 3; // Espaço após a pergunta
+          } else {
+            pdf.setFont('helvetica', 'normal');
+            const perguntaClean = removeEmojis(perguntaText);
+            const perguntaLines = pdf.splitTextToSize(perguntaClean, contentMaxWidth);
+            perguntaLines.forEach((line: string) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(line, contentStartX, y);
+              y += 4;
+            });
+            y += 3; // Espaço após a pergunta
+          }
+          
           const alternativas = [
             { key: 'a', text: multiplaData.alternativa_a },
             { key: 'b', text: multiplaData.alternativa_b },
@@ -2174,6 +2224,30 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           // Sem espaço extra após as alternativas
         } else if (question.tipo === 'correlacao') {
           const correlacaoData = question.data as PerguntaCorrelacao;
+          
+          // Exibir a pergunta primeiro
+          const perguntaText = removeAssuntoFromPergunta(question.pergunta || correlacaoData.pergunta, question.assunto);
+          const perguntaSegments = extractTextWithStyles(perguntaText);
+          
+          if (perguntaSegments.length > 0) {
+            pdf.setFont('helvetica', 'normal');
+            y = renderStyledText(perguntaSegments, contentStartX, y, contentMaxWidth, 8);
+            y += 3; // Espaço após a pergunta
+          } else {
+            pdf.setFont('helvetica', 'normal');
+            const perguntaClean = removeEmojis(perguntaText);
+            const perguntaLines = pdf.splitTextToSize(perguntaClean, contentMaxWidth);
+            perguntaLines.forEach((line: string) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(line, contentStartX, y);
+              y += 4;
+            });
+            y += 3; // Espaço após a pergunta
+          }
+          
           if (correlacaoData.coluna_a && correlacaoData.coluna_b) {
             pdf.setFont('helvetica', 'normal');
             pdf.text('Coluna A:', contentStartX, y);
@@ -2252,7 +2326,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     
     // Agrupar questões por bibliografia + assunto (mesmo agrupamento das questões)
     const groupedQuestionsGabarito: { [key: string]: SimuladoQuestion[] } = {};
-    allQuestions.forEach((question) => {
+    questions.forEach((question) => {
       const bibliografia = question.bibliografia_titulo || 'Sem bibliografia';
       const assunto = question.assunto || 'Sem assunto';
       const key = `${bibliografia}|${assunto}`;
@@ -2367,28 +2441,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           }
         } else if (question.tipo === 'multipla') {
           const multiplaData = question.data as PerguntaMultipla;
-          pdf.text(`Resposta correta: ${multiplaData.resposta_correta}`, contentStartX, y);
-          y += 4;
           
-          const alternativasMap: { [key: string]: string } = {
-            'a': multiplaData.alternativa_a,
-            'b': multiplaData.alternativa_b,
-            'c': multiplaData.alternativa_c,
-            'd': multiplaData.alternativa_d
-          };
-          if (alternativasMap[multiplaData.resposta_correta]) {
-            const altCorretaSegments = extractTextWithStyles(alternativasMap[multiplaData.resposta_correta]);
-            if (altCorretaSegments.length > 0) {
-              const firstSegment = altCorretaSegments[0];
-              firstSegment.text = `${multiplaData.resposta_correta}) ${firstSegment.text}`;
-              y = renderStyledText(altCorretaSegments, contentStartX, y, contentMaxWidth, 8);
-            } else {
-              pdf.setFont('helvetica', 'normal');
-              const altCorreta = removeEmojis(alternativasMap[multiplaData.resposta_correta]);
-              pdf.text(`${multiplaData.resposta_correta}) ${altCorreta}`, contentStartX, y);
-              y += 4;
-            }
-          }
+          // Apenas a letra da resposta correta (sem pergunta e sem alternativa completa)
+          pdf.text(`Resposta correta: ${multiplaData.resposta_correta.toUpperCase()}`, contentStartX, y);
+          y += 4;
           
           if (multiplaData.justificativa_resposta_certa) {
             pdf.setFont('helvetica', 'italic');
@@ -2413,6 +2469,30 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           }
         } else if (question.tipo === 'correlacao') {
           const correlacaoData = question.data as PerguntaCorrelacao;
+          
+          // Exibir a pergunta primeiro
+          const perguntaText = removeAssuntoFromPergunta(question.pergunta || correlacaoData.pergunta, question.assunto);
+          const perguntaSegments = extractTextWithStyles(perguntaText);
+          
+          if (perguntaSegments.length > 0) {
+            pdf.setFont('helvetica', 'normal');
+            y = renderStyledText(perguntaSegments, contentStartX, y, contentMaxWidth, 8);
+            y += 3; // Espaço após a pergunta
+          } else {
+            pdf.setFont('helvetica', 'normal');
+            const perguntaClean = removeEmojis(perguntaText);
+            const perguntaLines = pdf.splitTextToSize(perguntaClean, contentMaxWidth);
+            perguntaLines.forEach((line: string) => {
+              if (y + 4 > pageHeight - margin) {
+                pdf.addPage();
+                y = margin;
+              }
+              pdf.text(line, contentStartX, y);
+              y += 4;
+            });
+            y += 3; // Espaço após a pergunta
+          }
+          
           pdf.text('Resposta correta:', contentStartX, y);
           y += 4;
           
@@ -2482,14 +2562,19 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         .toLowerCase();
     };
     
-    // Gera o nome do arquivo
-    const tabName = removeAccents(tabNames[this.activeTab] || 'prova');
-    const fileName = `${tabName}-${new Date().toISOString().split('T')[0]}.pdf`;
+    // Gera o nome do arquivo baseado no tipo
+    const typeFileNames: { [key: string]: string } = {
+      'vf': 'questoes-verdadeiro-falso',
+      'multipla': 'questoes-multipla-escolha',
+      'correlacao': 'questoes-correlacao'
+    };
+    const baseFileName = removeAccents(typeFileNames[questionType] || 'questoes');
+    const fileName = `${baseFileName}-${new Date().toISOString().split('T')[0]}.pdf`;
     
     // Faz o download
     pdf.save(fileName);
     
-    console.log('✅ PDF pesquisável gerado com sucesso:', fileName);
+    console.log(`✅ PDF pesquisável gerado com sucesso para ${questionType}:`, fileName);
   }
 }
 

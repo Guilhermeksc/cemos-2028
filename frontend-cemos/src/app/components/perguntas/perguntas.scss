@@ -148,7 +148,7 @@
 }
 
 .tabs-content {
-  padding: 20px;
+  padding: 1px;
   border-top: 2px solid var(--geopolitica-border);
   min-height: 200px;
   background: white;
@@ -498,6 +498,10 @@
   border-radius: 12px;
   max-width: fit-content;
   white-space: nowrap;
+  
+  /* Em telas grandes, não truncar */
+  overflow: visible;
+  text-overflow: clip;
 }
 
 /* Ocultar assunto se aparecer em outros lugares dentro do card */
@@ -554,7 +558,7 @@
   background: color-mix(in srgb, var(--geopolitica-light-gray) 50%, transparent);
   /* Ou, fallback para transparência mais ampla: */
   /* background: rgba(241, 245, 249, 0.8); */
-  padding: 2px;
+
   border-radius: 8px;
   margin-bottom: 2px;
 }
@@ -572,7 +576,7 @@
   align-items: center;
   gap: 10px;
   padding: 6px 10px;
-  border: 2px solid var(--geopolitica-border);
+
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1212,6 +1216,17 @@
     padding: 3px 8px;
   }
 
+  /* Truncar bibliografia e assunto em smartphones */
+  .questao-header-content .bibliografia,
+  .questao-header-content .assunto {
+    max-width: 24ch; /* Emoji (~3ch) + espaço + 20 caracteres de texto */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .answer-status {
     text-align: left;
   }
@@ -1349,5 +1364,16 @@
   .questao-info .paginas {
     font-size: 0.7rem;
     padding: 2px 6px;
+  }
+
+  /* Truncar bibliografia e assunto em smartphones muito pequenos */
+  .questao-header-content .bibliografia,
+  .questao-header-content .assunto {
+    max-width: 24ch; /* Emoji (~3ch) + espaço + 20 caracteres de texto */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
   }
 }

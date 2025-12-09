@@ -1,5 +1,9 @@
 <!-- Pergunta Múltipla Escolha -->
 <div class="multipla-question">
+  <div class="pergunta">
+    <p><strong>Pergunta: </strong> <span [innerHTML]="getPerguntaFormatted()"></span></p>
+  </div>
+  
   <div class="alternativas">
     <label class="alternativa" *ngFor="let letra of ['a', 'b', 'c', 'd']">
       <input 

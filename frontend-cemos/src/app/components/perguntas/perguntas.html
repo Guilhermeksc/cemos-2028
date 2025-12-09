@@ -171,7 +171,7 @@
         <div class="questao-header">
           <div class="questao-header-content">
             <span class="questao-titulo">
-              Questão {{ i + 1 }} - 
+              Questão {{ i + 1 }} 
               <span class="tipo-badge" [class]="'tipo-' + question.tipo">
                 {{ question.tipo === 'vf' ? 'V/F' : 
                    question.tipo === 'multipla' ? 'Múltipla' : 'Correlação' }}
@@ -187,7 +187,7 @@
             <span class="separator" *ngIf="question.paginas || question.assunto">|</span>
             
             <span *ngIf="question.paginas" class="paginas">
-              📄 Página{{ (question.paginas.includes(',') || question.paginas.includes('-')) ? 's' : '' }}: {{ question.paginas }}
+              📄 {{ question.paginas }}
             </span>
             
             <span class="separator" *ngIf="question.assunto">|</span>

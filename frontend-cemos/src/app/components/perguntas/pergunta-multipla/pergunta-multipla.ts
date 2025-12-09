@@ -99,6 +99,13 @@ export class PerguntaMultipla {
   }
 
   /**
+   * Processa markdown e retorna como string HTML segura para a pergunta
+   */
+  getPerguntaFormatted(): SafeHtml {
+    return this.processMarkdown(this.questionData.pergunta || '');
+  }
+
+  /**
    * Processa markdown e retorna como string HTML segura para a justificativa
    */
   getJustificativaFormatted(): SafeHtml {
