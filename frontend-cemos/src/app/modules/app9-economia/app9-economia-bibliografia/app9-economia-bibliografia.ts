@@ -21,28 +21,30 @@ export class App9EconomiaBibliografia implements OnInit {
   /** 🔹 Subrotas */
   public conceitosPath = `${this.ROUTE_BASE}/conceitos`;
   public flashcardsPath = `${this.ROUTE_BASE}/flash-cards`;
-  public mediaPath = `${this.ROUTE_BASE}/media`;
   public perguntasPath = `${this.ROUTE_BASE}/perguntas`;
 
   /** 🔹 Configuração das capas */
   public capas: CapaConfig[] = [
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/tratado-de-estrategia`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/economia-brasileira`,
       title: '1. Economia Brasileira Contemporânea',
-      description: 'GREMAUD, Amaury Patrick.'
+      description: 'GREMAUD, Amaury Patrick.',
+      permite_consulta: false
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/2.png`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/estrategias-maritimas`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/economia-micro-macro`,
       title: '2. Economia Micro e Macro – Teoria, Exercícios e Casos.',
-      description: 'VASCONCELLOS, Marco Antônio Sandoval.'
+      description: 'VASCONCELLOS, Marco Antônio Sandoval.',
+      permite_consulta: false
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/ema-310-estrategia`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/economia-azul-2`,
       title: '3. Economia Azul - vetor para o desenvolvimento do Brasil',
       description: 'SANTOS, Thauan.',
+      permite_consulta: false
     }
   ];
 

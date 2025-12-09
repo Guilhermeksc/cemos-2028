@@ -3,16 +3,16 @@
 ## Bibliografia
 
 **BLAINEY**, Geoffrey. Uma breve história do século XX. São Paulo: Editora Fundamento Educacional, 2ª Edição, 2010. 
-📌Exceto cap. 2, 8, 17, 20-22, 25 e 27.
+📌 Exceto cap. 2, 8, 17, 20-22, 25 e 27.
 
 **VIDIGAL**, Armando A. F.; ALVES DE ALMEIDA, Francisco E. (org.). Guerra no Mar: batalhas e campanhas navais que mudaram a história. Rio de Janeiro: Record, 1ª Edição, 2009. 
-📌cap. 12 ao 15.
+📌 cap. 12 ao 15.
 
 **MAGNOLI**, Demétrio (org.). História das Guerras. São Paulo: Contexto, 3ª Edição, 2006. 
-📌pp. 391 a 477.
+📌 pp. 391 a 477.
 
 **ABREU**, Guilherme Mattos de; BARBOSA JUNIOR, Ilques (et al.). Marinha do Brasil: uma síntese histórica. Rio de Janeiro: Serviço de Documentação da Marinha, 2018. 
-📌Cap. IX ao XIII.
+📌 Cap. IX ao XIII.
 
 ## Propósito
 Avaliar os conhecimentos, a capacidade crítica e o poder de análise e de síntese dos candidatos com relação a:

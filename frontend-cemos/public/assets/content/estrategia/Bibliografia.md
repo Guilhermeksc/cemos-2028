@@ -26,7 +26,7 @@
  📌 Cap. 6 (pp. 159 a 219). 
 
  3. BRASIL. Marinha do Brasil. Estado-Maior da Armada. **EMA-310 - Estratégia de Defesa Marítima.**. 1ª Edição, Brasília, 2023. 
- Cap. 1, 2 e 3.
+ 📌 Cap. 1, 2 e 3.
 
 
 ## Propósito

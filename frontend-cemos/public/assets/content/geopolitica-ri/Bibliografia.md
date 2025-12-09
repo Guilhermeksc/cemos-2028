@@ -5,15 +5,15 @@
 ### <mark>a) Geopolítica</mark>
 
 **KAPLAN**, Robert. A Vingança da Geografia: a construção do mundo geopolítico a partir da perspectiva geográfica. Rio de Janeiro: Elsevier, 2013. 
-📌cap. X (A Rússia e o Heartland Independente), 
-📌cap. XI (A Geografia do Poder Chinês), e 
-📌cap. XII (O Dilema Geográfico da Índia).
+📌 Cap. X (A Rússia e o Heartland Independente), 
+📌 Cap. XI (A Geografia do Poder Chinês), e 
+📌 Cap. XII (O Dilema Geográfico da Índia).
 
 **MATTOS**, Carlos de Meira. Geopolítica e Modernidade – Geopolítica Brasileira. Rio de Janeiro: Biblioteca do Exército, 2002. 
-📌Pág. 15 a 148.
+📌 Pág. 15 a 148.
 
 **VESENTINI**, José W. Novas Geopolíticas. São Paulo: Contexto, 3ª Edição, 2004. 
-📌Pág. 31 a 114.
+📌 Pág. 31 a 114.
 
 ### <mark>b) Relações Internacionais</mark>
 

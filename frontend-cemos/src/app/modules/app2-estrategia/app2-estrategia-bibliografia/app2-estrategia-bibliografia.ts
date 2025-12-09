@@ -31,16 +31,21 @@ export class App2EstrategiaBibliografia implements OnInit {
       routePath: `${this.ROUTE_BASE}/bibliografia/tratado-de-estrategia`,
       title: '1. Tratado de Estratégia',
       description: 'COUTAU-BÉGARIE.',
+      permite_consulta: false
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/2.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/estrategias-maritimas`,
-      title: 'WEDIN. Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex',
+      title: 'Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex',
+      description: 'WEDIN, Lars.',
+      permite_consulta: false      
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/ema-310-estrategia`,
-      title: 'EMA-310 - Estratégia de Defesa Marítima',
+      title: 'EMA-310',
+      description: 'Estratégia de Defesa Marítima',
+      permite_consulta: false      
     }
   ];
 

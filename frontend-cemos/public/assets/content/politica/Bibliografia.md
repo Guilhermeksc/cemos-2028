@@ -2,27 +2,26 @@
 
 ## Bibliografia
 
-**❌ = Sem consulta**
 **✅ = Com consulta**
 
 ---
 
- ❌ 1. DIAS, Reinaldo. **Ciência Política.** São Paulo: Editora Atlas, 2ª edição, 2013. 
-        Cap. 1 – itens 1.1 a 1.4; 
-        Cap. 2;
-        Cap. 3 – itens 3.1, 3.4 a 3.11;
-        Cap. 4 – itens 4.1 a 4.3, 4.6 a 4.12 e 4.14;
-        Cap. 5; 
-        Cap. 6 – itens 6.1 a 6.3 e 6.5 a 6.7;
-        Cap. 7 – itens 7.1 a 7.4; 
-        Cap. 8 – itens 8.1 a 8.6 e 8.9; e 
-        Cap. 10 – itens 10.1 e 10.5 a 10.9.
+ 1. DIAS, Reinaldo. **Ciência Política.** São Paulo: Editora Atlas, 2ª edição, 2013. 
+        📌 Cap. 1 – itens 1.1 a 1.4; 
+        📌 Cap. 2;
+        📌 Cap. 3 – itens 3.1, 3.4 a 3.11;
+        📌 Cap. 4 – itens 4.1 a 4.3, 4.6 a 4.12 e 4.14;
+        📌 Cap. 5; 
+        📌 Cap. 6 – itens 6.1 a 6.3 e 6.5 a 6.7;
+        📌 Cap. 7 – itens 7.1 a 7.4; 
+        📌 Cap. 8 – itens 8.1 a 8.6 e 8.9; e 
+        📌 Cap. 10 – itens 10.1 e 10.5 a 10.9.
  ---
 
  ✅ 2. BRASIL. Constituição (1988). **Constituição da República Federativa do Brasil**. Brasília, DF: Presidência da República, [2016]. 
-Título III – art. 18 a 22, 25 a 32 e 34 a 38; 
-Título IV – art. 44 a 92, 95 a 99, 101 a 110, 118 a 124 e 127 a 135;
-Título V – art. 136 a 144.
+📌 Título III – art. 18 a 22, 25 a 32 e 34 a 38; 
+📌 Título IV – art. 44 a 92, 95 a 99, 101 a 110, 118 a 124 e 127 a 135;
+📌 Título V – art. 136 a 144.
  ---
 
  ✅ 3. BRASIL. Ministério da Defesa. **Estratégia Nacional de Defesa**, 2020. 2020a. 
@@ -37,7 +36,7 @@ Título V – art. 136 a 144.
  ✅ 6. BRASIL. **Decreto nº 12.481**, de 2 de junho de 2025. **Institui a Política Marítima Nacional (PMN)**.
 ---
  
- ❌ 7. SANTOS, Thauan et al. **Economia Azul: vetor para o desenvolvimento do Brasil**. São Paulo: Editora Essencial Ideal, 1ª Edição, 2022, cap. 12.
+ 7. SANTOS, Thauan et al. **Economia Azul: vetor para o desenvolvimento do Brasil**. São Paulo: Editora Essencial Ideal, 1ª Edição, 2022, cap. 12.
 ---
  
  ✅ 8. BRASIL. Marinha do Brasil. Estado-Maior da Armada. **EMA-323 - Política Naval**, 2019.

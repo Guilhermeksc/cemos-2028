@@ -259,6 +259,17 @@
           🚀 Gerar Prova
         </button>
       </div>
+
+      <!-- Botão Gerar Nova Prova ao final (visível apenas em smartphones) -->
+      <div *ngIf="simuladoQuestions.length > 0" class="gerar-nova-prova-mobile">
+        <button 
+          class="btn btn-secondary gerar-nova-prova-btn"
+          (click)="gerarNovaProva()"
+          [disabled]="isLoadingQuestions"
+        >
+          🔄 Gerar Nova Prova
+        </button>
+      </div>
     </div>
   </div>
 

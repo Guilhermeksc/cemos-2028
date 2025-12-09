@@ -21,7 +21,6 @@ export class App7PoliticaBibliografia implements OnInit {
   /** 🔹 Subrotas */
   public conceitosPath = `${this.ROUTE_BASE}/conceitos`;
   public flashcardsPath = `${this.ROUTE_BASE}/flash-cards`;
-  public mediaPath = `${this.ROUTE_BASE}/media`;
   public perguntasPath = `${this.ROUTE_BASE}/perguntas`;
 
   /** 🔹 Configuração das capas */

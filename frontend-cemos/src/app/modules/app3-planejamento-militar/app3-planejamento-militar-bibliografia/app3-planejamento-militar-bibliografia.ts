@@ -30,18 +30,21 @@ export class App3PlanejamentoMilitarBibliografia implements OnInit {
       routePath: `${this.ROUTE_BASE}/bibliografia/lei-97-1999`,
       title: '1. Organização, Preparo e Emprego das Forças Armadas',
       description: 'Lei nº 97/1999',
+      permite_consulta: false
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/decreto-7276`,
       title: '2. Estrutura Militar de Defesa',
       description: 'Decreto 7.276/2010',
+      permite_consulta: false
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/md30-m-01`,
       title: '3. Doutrina de Operações Conjuntas',
       description: 'MD30-M-01',
+      permite_consulta: false
     }
   ];
 

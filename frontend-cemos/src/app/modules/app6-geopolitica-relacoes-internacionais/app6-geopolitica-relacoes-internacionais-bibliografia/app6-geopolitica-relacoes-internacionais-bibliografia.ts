@@ -23,25 +23,29 @@ export class App6GeopoliticaRelacoesInternacionaisBibliografia implements OnInit
       imagePath: 'assets/content/geopolitica-ri/img/vinganca-geografia.jpg',
       routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/vinganca-geografia',
       title: 'A Vingança da Geografia',
-      description: 'Robert D. Kaplan'
+      description: 'Robert D. Kaplan',
+      permite_consulta: false
     },
     {
       imagePath: 'assets/content/geopolitica-ri/img/geopolitica-modernidade.jpg',
       routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/geopolitica-modernidade',
       title: 'Geopolítica e Modernidade',
-      description: 'Agnew, Mitchell e Toal'
+      description: 'Agnew, Mitchell e Toal',
+      permite_consulta: false
     },
     {
       imagePath: 'assets/content/geopolitica-ri/img/novas-geopoliticas.jpg',
       routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/novas-geopoliticas',
       title: 'Novas Geopolíticas',
-      description: 'Paulo Fagundes Visentini'
+      description: 'Paulo Fagundes Visentini',
+      permite_consulta: false
     },
     {
       imagePath: 'assets/content/geopolitica-ri/img/principios-ri.jpg',
       routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/principios-ri',
       title: 'Princípios de Relações Internacionais',
-      description: 'Karen A. Mingst'
+      description: 'Karen A. Mingst',
+      permite_consulta: false
     }
   ];
 

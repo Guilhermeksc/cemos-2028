@@ -21,25 +21,29 @@ export class App4HistoriaBibliografia implements OnInit {
       imagePath: 'assets/content/historia/img/breve_historia.jpg',
       routePath: '/home/app4-historia/bibliografia/breve-historia',
       title: 'Breve História',
-      description: 'H. G. Wells'
+      description: 'BLAINEY, Geoffrey.',
+      permite_consulta: false
     },
     {
       imagePath: 'assets/content/historia/img/guerra_no_mar.jpg',
       routePath: '/home/app4-historia/bibliografia/guerra-no-mar',
       title: 'Guerra no Mar',
-      description: 'H. G. Wells'
+      description: 'VIDIGAL, Armando A. F.; ALVES DE ALMEIDA, Francisco E. (org.)',
+      permite_consulta: false
     },
     {
       imagePath: '/assets/content/historia/img/historia_das_guerras.jpg',
       routePath: '/home/app4-historia/bibliografia/historia-das-guerras',
       title: 'História das Guerras',
-      description: 'H. G. Wells'
+      description: 'MAGNOLI, Demétrio (org.)',
+      permite_consulta: false
     },
     {
       imagePath: 'assets/content/historia/img/sintese_historica.jpg',
       routePath: '/home/app4-historia/bibliografia/sintese-historica',
       title: 'Síntese Histórica',
-      description: 'H. G. Wells'
+      description: 'ABREU, Guilherme Mattos de; BARBOSA JUNIOR, Ilques (et al.).',
+      permite_consulta: false
     }
   ];
 
