@@ -26,7 +26,7 @@ export class App9EconomiaBibliografia implements OnInit {
   /** 🔹 Configuração das capas */
   public capas: CapaConfig[] = [
     {
-      imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
+      imagePath: `${this.ASSETS_BASE}/img/4.jpg`,
       routePath: `${this.ROUTE_BASE}/bibliografia/economia-brasileira`,
       title: '1. Economia Brasileira Contemporânea',
       description: 'GREMAUD, Amaury Patrick.',

@@ -1,6 +1,6 @@
 ## Página 1
 
-# Capítulo 6 Consumo
+# Capítulo 6 - Consumo
 
 O **consumo** corresponde à parcela da renda destinada à aquisição de bens e serviços para a satisfação das necessidades dos indivíduos. Para tal, eles adquirem vários tipos de bens, que podem ser classificados em três categorias:
 

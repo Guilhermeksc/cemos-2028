@@ -1,6 +1,6 @@
 ## Página 1
 
-# 1 Aspectos Demográficos
+# Capítulo 1 - Aspectos Demográficos
 
 Muitas vezes, quando se estuda a economia de um país, deixam-se de lado as questões relativas à evolução de sua população. Essas questões, no entanto, são bastante importantes. Por um lado, a população de um país representa seu potencial de consumidores; por outro, parte dessa população, a chamada **população economicamente ativa** ou **população na força de trabalho**[1], representa os potenciais trabalhadores/produtores do país. Antes de discutirmos os indicadores demográficos, vamos analisar a relação entre crescimento populacional e desenvolvimento econômico.
 

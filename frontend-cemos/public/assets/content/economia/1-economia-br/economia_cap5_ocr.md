@@ -1,6 +1,6 @@
 ## Página 1
 
-> Inflação
+# Capítulo 5 - Inflação
 
 Um último aspecto a ser analisado nesta parte descritiva sobre a economia é a inflação, que, junto com o desemprego, compõe os problemas ditos fundamentais da macroeconomia. O Brasil enfrentou dificuldades bastante graves ligadas à inflação, especialmente nas décadas de 1980 e 1990, quando os índices inflacionários se mantiveram persistentemente em patamares elevados. Na Figura 5.1, vemos essa inflação extremamente elevada, o que fez com que a média anual da inflação naquelas décadas fosse de mais de 500%, motivo pelo qual muitos analistas diziam que vivíamos uma hiperinflação. Dada a construção da Figura 5.1, mal conseguimos perceber o comportamento da inflação antes e depois deste período. Na Figura 5.2, tomamos apenas a inflação desde o ano 2000. A média das taxas de inflação entre aquele ano e 2022 passou a ser mais moderada, de “apenas” 5,8%, com variações importantes, sendo que em 2002, 2017 e 2021 esteve próxima dos 10%.
 

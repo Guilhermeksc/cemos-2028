@@ -1,6 +1,6 @@
 ## Página 1
 
-# Capítulo 3 Desenvolvimento e Distribuição de Renda
+# Capítulo 3 - Desenvolvimento e Distribuição de Renda
 
 No Capítulo 2, examinou-se o conceito de produto, que é o principal indicador para se medir o crescimento econômico de um país. A partir dele, vê-se que, à exceção das últimas duas décadas, o Brasil cresceu a taxas elevadas e, em termos internacionais, pode ser considerado um dos maiores países do mundo, já que possui uma das maiores produções do planeta. Por que não se considera, então, o Brasil um país desenvolvido? Afinal, o Brasil possui uma produção maior que a de países considerados do Primeiro Mundo, como o Canadá e a Suíça. Essas questões serão tratadas neste capítulo.
 
