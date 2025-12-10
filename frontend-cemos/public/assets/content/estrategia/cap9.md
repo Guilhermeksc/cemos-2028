@@ -1,134 +1,54 @@
-## Página 435
+## Página 455
 
 **Cap. 9 (pp. 455 a 471)**
 
-# Capítulo 8 - A estratégia marítima teórica
+# Capítulo 9 - A estratégia marítima clássica
 
-## SUBSEÇÃO IV – O PENSAMENTO NAVAL CONTEMPORÂNEO
+## 323 – Marinha e material
 
-## 302 – Mahan
-A estratégia marítima clássica
-323 – Marinha e material
-Arma complexa, a marinha depende mais do que o exército de seu material, o que foi
-resumido em uma observação do Marechal Foch: “Nós da força terrestre temos armas para
-equipar nossos homens: vós marinheiros tendes homens para armar vossos navios”. É isto
-que faz do meio marítimo o ambiente preferido das grandes transformações militares. A inovação
-não se impõe automaticamente (reflitamos simplesmente com as resistências apresentadas ao
-submarino e, posteriormente, ao porta-aviões), mas, logo que uma potência a adote, os demais
-países devem segui-la, sob pena de ficarem ultrapassados. A passagem da galera ao navio
-transcorre de forma muito rápida (a galera é relegada ao grau de acessório em algumas décadas),
-enquanto que a difusão da artilharia somente modificará a fisionomia da batalha ao final de
-vários séculos. Da mesma forma, o encouraçado monocalibre (dreadnought) se generaliza em
-poucos anos, entre 1905 e 1914, ao passo que a metralhadora, que já existia durante a guerra
-franco-alemã de 1870, será ainda largamente subestimada em 1914.
-Esta primazia aparente do material conduz, de fato, ao primado das idéias (os navios
-são construídos em função de doutrinas estratégicas e um erro fundamental de concepção
-não se recupera), bem como à importância da prática e da qualificação dos homens. Não se
-improvisa uma marinha.
-324 – A galera, o navio, o submarino: a evolução técnica
-Desde o segundo milênio a.C., os egípcios e os cretenses formaram marinhas de guerra
-com navios especializados (infra no 475). Mas esses eram frágeis (os pentécontores*) e pouco
-numerosos: uma das primeiras batalhas navais das quais se tem registro, no século VIII a.C.
-opôs 12 navios tirenses** a 18 (?) navios assírios1. Somente no século VII a.C. aparece a
-trirreme, primeiro navio exclusivamente concebido para o combate2 e apenas no século V a.C.
-* Embarcação típica do séc. VII-VI a.C. com 25 remos por bordo, 35 m de comprimento, 5 de boca, 2 mastros, 1 vela grande
-e 1 pequena, 170 remadores, 13 marinheiros, 10 combatentes, um estado-maior de 7 pessoas. Navegava a velocidades de
-35 nós a remo, 5-8 nós a vela. Era frágil, ruim de mar, mas fácil de manobrar - NT.
+Arma complexa, a marinha depende mais do que o exército de seu material, o que foi resumido em uma observação do Marechal Foch: “Nós da força terrestre temos armas para equipar nossos homens: vós marinheiros tendes homens para armar vossos navios”. É isto que faz do meio marítimo o ambiente preferido das grandes transformações militares. A inovação não se impõe automaticamente (reflitamos simplesmente com as resistências apresentadas ao submarino e, posteriormente, ao porta-aviões), mas, logo que uma potência a adote, os demais países devem segui-la, sob pena de ficarem ultrapassados. A passagem da galera ao navio transcorre de forma muito rápida (a galera é relegada ao grau de acessório em algumas décadas), enquanto que a difusão da artilharia somente modificará a fisionomia da batalha ao final de vários séculos. Da mesma forma, o encouraçado monocalibre (dreadnought) se generaliza em poucos anos, entre 1905 e 1914, ao passo que a metralhadora, que já existia durante a guerra franco-alemã de 1870, será ainda largamente subestimada em 1914.
+
+Esta primazia aparente do material conduz, de fato, ao primado das idéias (os navios são construídos em função de doutrinas estratégicas e um erro fundamental de concepção não se recupera), bem como à importância da prática e da qualificação dos homens. Não se improvisa uma marinha.
+
+## 324 – A galera, o navio, o submarino: a evolução técnica
+
+Desde o segundo milênio a.C., os egípcios e os cretenses formaram marinhas de guerra com navios especializados (infra no 475). Mas esses eram frágeis (os pentécontores*) e pouco numerosos: uma das primeiras batalhas navais das quais se tem registro, no século VIII a.C. opôs 12 navios tirenses** a 18 (?) navios assírios1. Somente no século VII a.C. aparece a trirreme, primeiro navio exclusivamente concebido para o combate2 e apenas no século V a.C. as cidades gregas passam a dispor de esquadras organizadas, numerosas (50 trirremes atenienses antes da Primeira Guerra Médica, 200 antes da Segunda, graças ao programa de Temístocles) e capazes de realizar operações estratégicas.
+
+* Embarcação típica do séc. VII-VI a.C. com 25 remos por bordo, 35 m de comprimento, 5 de boca, 2 mastros, 1 vela grande e 1 pequena, 170 remadores, 13 marinheiros, 10 combatentes, um estado-maior de 7 pessoas. Navegava a velocidades de 35 nós a remo, 5-8 nós a vela. Era frágil, ruim de mar, mas fácil de manobrar - NT. 
+
 ** de Tiro – Porto da Fenícia – NT.
-1
-René Rebuffat, “Une bataille navale au VIIIe siècle”, Semitica, 1976.
-2
-H.T. Wallinga, Ships and Sea Power before the Great Persian War. The Ancestry of the Trireme, Leiden, Brill, 1993.Tratado de Estratégia
-as cidades gregas passam a dispor de esquadras organizadas, numerosas (50 trirremes
-atenienses antes da Primeira Guerra Médica, 200 antes da Segunda, graças ao programa de
-Temístocles) e capazes de realizar operações estratégicas.
-Desde a antiguidade, assiste-se a uma especialização dos navios3: liburnas leves para
-o esclarecimento e a caça aos piratas e, para o combate, navios de médio porte (trirremes,
-depois quinquirremes na época helenística) e pesados (polyènes, até o monstruoso
-tessaracontère de Ptolomeu Filadelfo com 40 (?) fileiras de remos: 4000 remadores e 2000
-soldados e marinheiros; este monstro jamais navegou).
-No tempo da marinha a vela, os navios são divididos em cinco categorias (segundo o
-número de canhões embarcados) e acompanhados de fragatas e corvetas, que são destinadas
-ao corso, ao esclarecimento, à escolta...
-Na era do vapor, a diversificação se acentua: os capital ships são encouraçados,
-pesadamente armados e protegidos, concebidos para o combate; os cruzadores de batalha,
-mais rápidos e com menos couraça4, precedem a esquadra; os cruzadores são destinados à
-guerra anti-superfície, contra os corsários ou os navios de menor porte; os torpedeiros e os
-contratorpedeiros protegem os capital ships e o tráfego marítimo contra as ameaças submarina
-e aérea.
-A Segunda Guerra mundial, confirmando e ampliando os ensinamentos da Primeira,
-vai trazer uma nova transformação que consumará a decadência do encouraçado, desacreditado
-diante de seus adversários submarino e aéreo. Ele será progressivamente relegado à categoria
-de bateria flutuante, contudo extremamente precioso durante os desembarques anfíbios: a
-contra-ofensiva da divisão “Herman Goering” na Sicília será contida in extremis nas praias
-pelos canhões navais.
-325 – O choque, a manobra, o fogo: a evolução tática
-A trirreme permite conceber táticas elaboradas, das quais se encontram os primeiros
-registros na batalha de Ladé (494 a.C.). Ela combina a manobra (com os remadores, ela pode
-atingir velocidades de combate elevadas) que pode ser envolvente (o périplous)5 ou frontal (o
-diekplous)6, o choque (ela dispõe de um esporão e de ganchos para a abordagem; os romanos
-incorporam o corvo, passarela móvel que facilita a abordagem) e o fogo (com armas de
-lançamento bastante diversas: balistas, pierriers*, potes flamejantes...)7. A natureza do navio
-de guerra não vai variar durante dois milênios: Lepanto (1571) será a última grande batalha de
-galeras. Superadas pelos navios de linha de borda alta, as galeras se manterão exclusivamente
-em mares estreitos e impregnados de alto-fundos: as encontraremos ainda no Báltico no início
-do século XIX.
-3
-Cf. os trabalhos de Lionel Casson, notadamente Ships and Seamanship in the Ancient World, Princeton, Princeton
-University Press, 2ª ed. 1986.
-4
-Conhece-se a má sorte dos cruzadores de batalha do Almirante Beatty na Jutlândia. Apesar da destruição voluntária dos
-arquivos referentes a esse evento, mostrou-se recentemente que as explosões do Invincible, Indefatigable e do Queen Mary
-não foram devidas a um vício de construção, mas à imprudência dos artilheiros que colocaram as cargas explosivas fora
-dos paióis blindados para incrementar a cadência de tiro. Nicholas A. Lambert, “Our Bloody”
-5
-O “périplous” consiste em cercar o adversário e comprimi-lo mais e mais, de maneira a fazê-lo perder toda organização,
-Michel Reddé, Maré nostrum, p. 334.
-6
-O “diekplous”, “manobra mais clássica, consiste em colocar os navios em linha de frente, lançar-se sobre o adversário,
-formado da mesma maneira, atravessar o dispositivo e retornar rapidamente pela popa, para destruir a retaguarda”,
-Michel Reddé, id.
-* Canhão pequeno, utilizado sobre uma embarcação de bordo, que, apesar do nome, lançava projetis (bolas) de ferro. A
-embarcação era lançada ao mar e se constituía em mais um recurso de combate.
-7
-Jean Pagès, Recherches sur la guerre navale dans l’Antiquité, fornece um inventário completo.
-456A estratégia marítima clássica
-A partir do século XVI, a aparição do navio de borda alta armado com canhões conduz
-a uma transformação decisiva: o choque cede lugar ao fogo. Os navios não são mais do que
-baterias flutuantes de mobilidade muito reduzida, condenando os combates navais a não
-serem mais do que meros combates de artilharia (relativamente ineficazes como resultado da
-resistência dos navios8) entre esquadras dispostas em coluna (“Linhas de Batalha”), única
-formatura adaptada a tal meio, porquanto os adversários possuem forças comparáveis. A
-passagem do navio a vela ao encouraçado a vapor, tão importante no aspecto da manobra (os
-navios escapam enfim à implacável restrição do vento e ao risco de permanecer em calmaria
-durante dias, às vezes semanas), não coloca em questão o primado da potência de fogo. O
-choque faz uma reaparição sem maiores conseqüências nos anos 1860, por causa das
-repercussões da Batalha de Lissa e da impotência temporária da artilharia em face dos
-progressos da blindagem9. Todos os navios de linha são equipados com um esporão até o
-início do século XX, mas a experiência das guerras chileno-peruana (1881), sino-japonesa
-(1894) e russo-japonesa (1904-1905) confirma a restauração do fogo. Simplesmente, este
-último não se personifica somente na artilharia, ele se torna multiforme, com a mina, depois
-o torpedo, à espera da bomba (lançada por aviões) e enfim o míssil, meios novos que fazem
-ressurgir a cada aparição o debate sobre o futuro dos grandes navios de superfície.
-326 – A evolução estratégica
-A guerra no mar tem, desde sua origem, se revestido de formas diversas. O combate
-entre esquadras organizadas era uma modalidade entre outras. Na Antiguidade, a esquadra
-ateniense tinha três missões fundamentais: “a proteção do litoral da Ática, a destruição de
-forças navais inimigas, que deveria assegurar aos atenienses o domínio do mar, e, enfim, o
-ataque ao litoral inimigo”10. Portanto, uma missão defensiva e duas missões ofensivas, uma
-relativa ao estabelecimento do domínio do mar e outra à sua exploração. Em paralelo à guerra
-de esquadras, dimensão puramente militar da guerra naval, viu-se desenvolver rapidamente
-uma guerra de corso, com finalidade econômica, a qual se ampara principalmente na iniciativa
-privada, sancionada pelo Estado, que fornece as cartas de corso11. Esses dois gêneros
-coexistiram, como em terra a guerra convencional e a guerrilha, mas com duas diferenças:
-1. no mar, a guerra de esquadras não exclui a guerra de corso, as duas podem se
-desenrolar simultaneamente no mesmo teatro, diferentemente daquilo que se passa em terra,
-onde a guerra convencional restringe a guerrilha em áreas da retaguarda ou em zonas pouco
-acessíveis;
-2. a guerra de corso sempre foi considerada, até sua abolição no século XIX12, um
-gênero lícito para um Estado, ao passo que a guerrilha terrestre é geralmente a atuação de
-combatentes irregulares, não-investidos de uma autoridade ou de uma delegação oficial do
-Estado13.
+
+Desde a antiguidade, assiste-se a uma especialização dos navios3: liburnas leves para o esclarecimento e a caça aos piratas e, para o combate, navios de médio porte (trirremes, depois quinquirremes na época helenística) e pesados (polyènes, até o monstruoso tessaracontère de Ptolomeu Filadelfo com 40 (?) fileiras de remos: 4000 remadores e 2000 soldados e marinheiros; este monstro jamais navegou).
+
+No tempo da marinha a vela, os navios são divididos em cinco categorias (segundo o número de canhões embarcados) e acompanhados de fragatas e corvetas, que são destinadas ao corso, ao esclarecimento, à escolta...
+
+Na era do vapor, a diversificação se acentua: os capital ships são encouraçados, pesadamente armados e protegidos, concebidos para o combate; os cruzadores de batalha, mais rápidos e com menos couraça[4], precedem a esquadra; os cruzadores são destinados à guerra anti-superfície, contra os corsários ou os navios de menor porte; os torpedeiros e os contratorpedeiros protegem os capital ships e o tráfego marítimo contra as ameaças submarina e aérea.
+
+A Segunda Guerra mundial, confirmando e ampliando os ensinamentos da Primeira, vai trazer uma nova transformação que consumará a decadência do encouraçado, desacreditado diante de seus adversários submarino e aéreo. Ele será progressivamente relegado à categoria de bateria flutuante, contudo extremamente precioso durante os desembarques anfíbios: a contra-ofensiva da divisão “Herman Goering” na Sicília será contida in extremis nas praias pelos canhões navais.
+
+[4] Conhece-se a má sorte dos cruzadores de batalha do Almirante Beatty na Jutlândia. Apesar da destruição voluntária dos arquivos referentes a esse evento, mostrou-se recentemente que as explosões do Invincible, Indefatigable e do Queen Mary não foram devidas a um vício de construção, mas à imprudência dos artilheiros que colocaram as cargas explosivas fora dos paióis blindados para incrementar a cadência de tiro. Nicholas A. Lambert, “Our Bloody”
+
+## Página 456
+
+## 325 – O choque, a manobra, o fogo: a evolução tática
+
+A trirreme permite conceber táticas elaboradas, das quais se encontram os primeiros registros na batalha de Ladé (494 a.C.). Ela combina a manobra (com os remadores, ela pode atingir velocidades de combate elevadas) que pode ser envolvente (o périplous)[5] ou frontal (o diekplous)6, o choque (ela dispõe de um esporão e de ganchos para a abordagem; os romanos incorporam o corvo, passarela móvel que facilita a abordagem) e o fogo (com armas de lançamento bastante diversas: balistas, pierriers*, potes flamejantes...)7. A natureza do navio de guerra não vai variar durante dois milênios: Lepanto (1571) será a última grande batalha de galeras. Superadas pelos navios de linha de borda alta, as galeras se manterão exclusivamente em mares estreitos e impregnados de alto-fundos: as encontraremos ainda no Báltico no início do século XIX.
+
+[5] O “périplous” consiste em cercar o adversário e comprimi-lo mais e mais, de maneira a fazê-lo perder toda organização, Michel Reddé, Maré nostrum, p. 334.
+6 O “diekplous”, “manobra mais clássica, consiste em colocar os navios em linha de frente, lançar-se sobre o adversário, formado da mesma maneira, atravessar o dispositivo e retornar rapidamente pela popa, para destruir a retaguarda”, Michel Reddé, id.
+
+*pierriers = Canhão pequeno, utilizado sobre uma embarcação de bordo, que, apesar do nome, lançava projetis (bolas) de ferro. A embarcação era lançada ao mar e se constituía em mais um recurso de combate.
+
+A partir do século XVI, a aparição do navio de borda alta armado com canhões conduz a uma transformação decisiva: o choque cede lugar ao fogo. Os navios não são mais do que baterias flutuantes de mobilidade muito reduzida, condenando os combates navais a não serem mais do que meros combates de artilharia (relativamente ineficazes como resultado da resistência dos navios8) entre esquadras dispostas em coluna (“Linhas de Batalha”), única formatura adaptada a tal meio, porquanto os adversários possuem forças comparáveis. A passagem do navio a vela ao encouraçado a vapor, tão importante no aspecto da manobra (os navios escapam enfim à implacável restrição do vento e ao risco de permanecer em calmaria durante dias, às vezes semanas), não coloca em questão o primado da potência de fogo. O choque faz uma reaparição sem maiores conseqüências nos anos 1860, por causa das repercussões da Batalha de Lissa e da impotência temporária da artilharia em face dos progressos da blindagem9. Todos os navios de linha são equipados com um esporão até o início do século XX, mas a experiência das guerras chileno-peruana (1881), sino-japonesa (1894) e russo-japonesa (1904-1905) confirma a restauração do fogo. Simplesmente, este último não se personifica somente na artilharia, ele se torna multiforme, com a mina, depois o torpedo, à espera da bomba (lançada por aviões) e enfim o míssil, meios novos que fazem ressurgir a cada aparição o debate sobre o futuro dos grandes navios de superfície.
+
+## Página 457
+
+## 326 – A evolução estratégica
+
+A guerra no mar tem, desde sua origem, se revestido de formas diversas. O combate entre esquadras organizadas era uma modalidade entre outras. Na Antiguidade, a esquadra ateniense tinha três missões fundamentais: “a proteção do litoral da Ática, a destruição de forças navais inimigas, que deveria assegurar aos atenienses o domínio do mar, e, enfim, o ataque ao litoral inimigo”10. Portanto, uma missão defensiva e duas missões ofensivas, uma relativa ao estabelecimento do domínio do mar e outra à sua exploração. Em paralelo à guerra de esquadras, dimensão puramente militar da guerra naval, viu-se desenvolver rapidamente uma guerra de corso, com finalidade econômica, a qual se ampara principalmente na iniciativa privada, sancionada pelo Estado, que fornece as cartas de corso11. Esses dois gêneros coexistiram, como em terra a guerra convencional e a guerrilha, mas com duas diferenças:
+
+1. no mar, a guerra de esquadras não exclui a guerra de corso, as duas podem se desenrolar simultaneamente no mesmo teatro, diferentemente daquilo que se passa em terra, onde a guerra convencional restringe a guerrilha em áreas da retaguarda ou em zonas pouco acessíveis;
+2. a guerra de corso sempre foi considerada, até sua abolição no século XIX12, um gênero lícito para um Estado, ao passo que a guerrilha terrestre é geralmente a atuação de combatentes irregulares, não-investidos de uma autoridade ou de uma delegação oficial do Estado13.
 8
 Durante a guerra da independência americana, pontihada de múltiplas batalhas, um único navio afundou em combate ou,
 mais exatamente, incendiado pelos britânicos, vários dias após a batalha de Chesapeake, porque foi considerado
@@ -158,6 +78,9 @@ XVIII, Bigot de Morogues afirmava que “não há situações decisivas no mar, 
 quais dependa inteiramente o fim da guerra”14. Discutida várias vezes, esta bipolaridade só foi
 teorizada finalmente no século XX por dois grandes pensadores, o Almirante Castex e Bernard
 Brodie.
+
+## Página 458
+
 SEÇÃO I – A DIMENSÃO MILITAR: A GUERRA ENTRE FORÇAS
 ORGANIZADAS
 327 – As escolhas estratégicas
@@ -197,6 +120,8 @@ ofensiva, a concentração, a liberdade de ação... É em nome desses princípi
 corso é condenada por eles como sendo um substituto ineficaz, e que a proteção do tráfego,
 da mesma maneira, é depreciada, a fim de que ela não imobilize mais do que uma pequena
 parcela das forças...
+
+## Página 459
 329 – A releitura da história
 Esta concepção clássica foi criada por Mahan e por seus sucessores como modelo
 universalmente válido. Mas sua validade está sujeita à cautela. A estratégia marítima variou
@@ -259,6 +184,8 @@ meia dúzia de navios franceses, geralmente reduzidos ao estado de pontões. Mas
 da esquadra do Almirante Villaret-Joyeuse não foi em vão: o imenso comboio de grãos vindo
 dos Estados Unidos pôde passar e chegar a Brest sem dificuldades21. A vitória britânica é
 puramente tática, e ela se faz acompanhar por um fracasso estratégico flagrante.
+
+## Página 460
 331 – As condições da batalha decisiva
 Evidentemente, não se trata de passar de um extremo a outro e de fazer da batalha
 um episódio sem importância. As batalhas decisivas existem, Trafalgar é um bom exemplo
@@ -303,6 +230,9 @@ total, em uma batalha decisiva..., da frota menos numerosa, não conduz necessar
 certeza da derrota...(o vencedor) deve ainda confrontar em suas operações os meios marítimos
 insidiosos e as forças aéreas que, por sua vez, não tenham sido vencidas”24. O foco sobre a
 batalha não deve conduzir a negligenciar as outras dimensões da guerra no mar.
+
+## Página 461
+
 SUBSEÇÃO II – AS OUTRAS FORMAS MILITARES
 332 – O bloqueio
 Logo que o partido mais fraco recuse a batalha e se encerre em seus portos, a potência
@@ -345,6 +275,9 @@ pouco. As perdas britânicas, mais elevadas, permitem a ele reivindicar um suces
 24
 Oscar Di Giamberardino, L’Art de la guerre sur mer, p. 225.
 461Tratado de Estratégia
+
+## Página 462
+
 334 – A esquadra em potência
 As ofensivas de pequeno vulto supõem uma certa audácia da parte do lado mais fraco
 que se considera em posição de inferioridade. Frequentemente, ele hesita em montar operações
@@ -424,6 +357,9 @@ guerra: para o mais fraco, a defesa costeira é o postigo defensivo de uma estra
 aspecto ofensivo é a guerra de corso; a guerra costeira pode igualmente ser, como nas
 concepções do Almira nt e Aube, o meio de afas tar um blo queio aprox imado e,
 consequentemente, assegurar a saída da força de alto-mar em boas condições.
+
+## Página 463
+
 SEÇÃO II – A DIMENSÃO ECONÔMICA: A GUERRA DAS
 COMUNICAÇÕES
 336 – A dimensão específica da guerra no mar
@@ -459,6 +395,9 @@ por Roma, as esquadras conservam sua razão de ser, principalmente para proteger
 contra as ações de piratas33. Na Idade Média, esta tradição será perdida, exceto por algumas
 tentativas isoladas e geralmente de curta duração34. As esquadras permanentes reaparecerão
 realmente no final da Idade Média.
+
+## Página 464
+
 337 – O corso clássico
 A idéia básica da guerra de corso tradicional é de renunciar a disputar, com aquele que
 possui poder marítimo, sua supremacia, por causa do balanço de forças extremamente desigual.
@@ -522,7 +461,11 @@ sua supremacia, ela não tem mais nada a conquistar no mar. Esta defensiva estra
 comportar aplicações táticas ofensivas, com o ataque às bases de corsários como os ingleses
 tentaram, sem grande sucesso, contra Dunquerque durante a guerra da Sucessão espanhola.
 Mas esta solução é freqüentemente difícil na prática e o procedimento defensivo se impõe.
+
+## Página 465
+
 338 – A defesa do tráfego
+
 Durante séculos, o procedimento usual, unanimemente admitido, foi a formação de
 comboios. Encontramos indiscutíveis traços de comboios desde a Antiguidade39. Eles
 ressurgem ao fim da Idade Média e serão empregados até o século XIX. Eles são frequentemente
@@ -556,6 +499,9 @@ a subavaliar suas presas, por razões fiscais evidentes. Cf; Patrick Villiers, �
 39
 Jean Pagès, Recherches sur la guerre navale antique, ch. IV.
 465Tratado de Estratégia
+
+## Página 466
+
 339 – A transformação da guerra de corso na época contemporânea
 A antiga guerra de corso, que não era mais do que uma “martingale” (“uma jogada”),
 segundo a expressão desdenhosa de Castex, vai se tornar uma componente significativa da
@@ -582,6 +528,9 @@ superfície e assegura-lhe uma imunidade quase absoluta durante a Primeira Guerr
 Em seguida, essa vantagem irá decrescer em razão do progresso dos meios da guerra anti-
 submarino, mas permanecerá maior do que aquela dos corsários de superfície, os quais
 desempenharão um papel apenas marginal.
+
+## Página 467
+
 340 – A guerra submarina entre as duas guerras mundiais
 Nenhum Almirantado havia destinado o submarino a tal tarefa antes de 1914, tão
 exclusivo era o enfoque sobre a dimensão militar, e, consequentemente, sobre as esquadras
@@ -657,6 +606,9 @@ submarinos alemães conhecem uma nova derrota na segunda batalha do Atlântico44
 Almirante Castex, Théories stratégiques, IV, p. 322.
 Guy Malbosc, La Bataille de l’Atlantique, Paris, Économica, Campagnes et stratégies, 1995.
 467Tratado de Estratégia
+
+## Página 468
+
 341 – A natureza da guerra submarina.
 A opinião dominante deseja ver nisso uma nova prova da impossibilidade de uma
 guerra submarina decisiva. Para o Almirante Ruge, “mais uma vez, a guerra submarina, não
@@ -720,6 +672,9 @@ que se compreendia pelo termo domínio do mar, na velha linguagem
 da estratégia, tornou-se em um certo sentido divisível, e as autoridades
 navais se vêem a distinguir entre o domínio da superfície e o domínio
 submarino do mar50.”
+
+## Página 469
+
 342. O bloqueio comercial
 A guerra das comunicações não é naturalmente somente defensiva para a potência
 dominante, ela é igualmente ofensiva com o estabelecimento de um bloqueio comercial que
