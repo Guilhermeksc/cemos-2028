@@ -713,7 +713,7 @@ Figura 7 — estrutura do EMC
 (o) estabelecer ligações com os órgãos de Inteligência envolvidos na operação;
 (p) coordenar com as Seções de Pessoal e com a de Logística e Mobilização a seleção e controle da mão de obra civil;
 (q) coordenar com as seções D-1 e D-4 e D-9 as atividades relacionadas a prisioneiros de guerra, internados, deslocados e refugiados;
-(r) confeccionar o Anexo de Inteligência ao Plano Operacional e seus apêndices, conforme modelo constante do volume Il;
+(r) confeccionar o Anexo de Inteligência ao Plano Operacional e seus apêndices, conforme modelo constante do volume II;
 (s) coordenar as atividades de meteorologia e oceanografia (METOC) entre os elementos de Meteorologia dos dos demais EM;
 (t) assessorar as demais seções do EMCj com informações de meteorologia e oceanografia; e
 (u) planejar, em coordenação com a Subseção de Guerra Cibernética da Seção de Operações, a produção de conhecimento proveniente da fonte cibernética; e
