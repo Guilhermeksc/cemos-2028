@@ -1,1 +1,13 @@
-<p>app2-estrategia-perguntas works!</p>
+<!-- Módulo de Perguntas - Geopolítica e Relações Internacionais -->
+<div class="geopolitica-perguntas-container">
+    <!-- Componente de Perguntas -->
+    <div class="perguntas-wrapper">
+      <app-perguntas
+        [bibliografiaIds]="bibliografiasDisponiveisIds"
+        [bibliografiaPath]="bibliografiaPath"
+        (simuladoStarted)="onSimuladoStarted()"
+      ></app-perguntas>
+    </div>
+  
+  </div>
+  

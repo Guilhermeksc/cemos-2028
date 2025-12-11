@@ -10,10 +10,10 @@ import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards
 })
 export class App2EstrategiaFlashcards {
 
-  bibliografiaIds: number[] = [18];
+  bibliografiaIds: number[] = [33, 34, 35];
 
   // Rota para voltar à bibliografia
-  bibliografiaPath = '/home/app9-economia/bibliografia';
+  bibliografiaPath = '/home/app2-estrategia/bibliografia';
 
   // Título opcional para o componente flash-cards
   title = 'Estratégia';
