@@ -161,6 +161,7 @@
           color: #000000;
           font-size: 1rem;
           font-weight: 700;
+          // Cor padrão (azul) - pode ser sobrescrita via ngStyle
           background-color: rgba(173, 216, 230, 0.85);
         }
 
@@ -268,6 +269,7 @@
       color: #000000;
       font-size: 1.1rem;
       font-weight: 700;
+      // Cor padrão (azul) - pode ser sobrescrita via ngStyle
       background-color: rgba(173, 216, 230, 0.85);
     }
 

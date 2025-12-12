@@ -1,7 +1,5 @@
 ## Página 1
 
-MINISTÉRIO DA DEFESA DOUTRINA DE MOBILIZAÇÃO MILITAR
-
 # MD-41-M-01 - Doutrina de Mobilização Militar
 
 ## Página 13

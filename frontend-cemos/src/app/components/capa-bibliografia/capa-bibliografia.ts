@@ -52,6 +52,7 @@ export class CapaBibliografia implements OnInit {
   @Input() markdownPath: string = ''; // Ex: 'assets/content/geopolitica-ri/Bibliografia.md'
   @Input() basePath: string = ''; // Ex: 'assets/content/geopolitica-ri'
   @Input() bloco?: string; // Nome do bloco (opcional) - aparece abaixo do indicador de consulta
+  @Input() blocoColor?: number | string; // Cor de fundo do bloco (opcional) - número de 1 a 10 ou nome da cor
   
   isLoading: boolean = false;
   htmlContent: SafeHtml = '';
@@ -228,5 +229,62 @@ export class CapaBibliografia implements OnInit {
     
     this.tooltipX = event.clientX + offsetX;
     this.tooltipY = event.clientY + offsetY;
+  }
+
+  /**
+   * Retorna a cor de fundo do indicador de bloco baseado no parâmetro fornecido
+   * Aceita número de 1 a 10 ou nome da cor
+   * @param color Número (1-10) ou nome da cor (azul, rosa, verde, amarelo, lavanda, pêssego, mint, coral, lilás, turquesa)
+   * @returns String com rgba da cor pastel com transparência
+   */
+  getBlocoColor(color?: number | string): string {
+    // Se não especificado, retorna azul padrão
+    if (!color) {
+      return 'rgba(173, 216, 230, 0.85)'; // Azul padrão
+    }
+
+    // Mapeamento de nomes de cores para números
+    const colorMap: { [key: string]: number } = {
+      'azul': 1,
+      'rosa': 2,
+      'verde': 3,
+      'amarelo': 4,
+      'lavanda': 5,
+      'pessego': 6,
+      'mint': 7,
+      'coral': 8,
+      'lilas': 9,
+      'turquesa': 10
+    };
+
+    // Converte nome para número se necessário
+    let colorNumber: number;
+    if (typeof color === 'string') {
+      const normalizedColor = color.toLowerCase().trim();
+      colorNumber = colorMap[normalizedColor] || 1; // Default para azul se não encontrado
+    } else {
+      colorNumber = color;
+    }
+
+    // Valida e ajusta o número para o range 1-10
+    if (colorNumber < 1 || colorNumber > 10) {
+      colorNumber = 1; // Default para azul se fora do range
+    }
+
+    // Paleta de 10 cores pastéis com transparência
+    const pastelColors: { [key: number]: string } = {
+      1: 'rgba(173, 216, 230, 0.85)',  // Azul claro (light blue)
+      2: 'rgba(255, 182, 193, 0.85)',  // Rosa claro (light pink)
+      3: 'rgba(144, 238, 144, 0.85)',  // Verde claro (light green)
+      4: 'rgba(255, 255, 153, 0.85)',  // Amarelo claro (light yellow)
+      5: 'rgba(230, 230, 250, 0.85)',  // Lavanda (lavender)
+      6: 'rgba(255, 218, 185, 0.85)',  // Pêssego (peach)
+      7: 'rgba(189, 252, 201, 0.85)',  // Mint verde (mint green)
+      8: 'rgba(255, 127, 80, 0.85)',   // Coral (coral)
+      9: 'rgba(221, 160, 221, 0.85)',  // Lilás (plum)
+      10: 'rgba(175, 238, 238, 0.85)'  // Turquesa (turquoise)
+    };
+
+    return pastelColors[colorNumber] || pastelColors[1];
   }
 }

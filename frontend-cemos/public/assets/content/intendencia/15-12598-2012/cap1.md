@@ -1,6 +1,6 @@
-## Página 1
-
 # LEI Nº 12.598, DE 21 DE MARÇO DE 2012.
+
+## Página 1
 
 Estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e de sistemas de defesa; dispõe sobre regras de incentivo à área estratégica de defesa; altera a Lei nº 12.249, de 11 de junho de 2010; e dá outras providências.
 
@@ -264,7 +264,7 @@ Art. 11. Os benefícios de que tratam os arts. 9º , 9º-A, 9º-B e 10 poderão 
 
 Art. 12. As operações de exportação de Prode realizadas pelas EED poderão receber a cobertura de garantia do Seguro de Crédito à Exportação, por intermédio do Fundo de Garantia à Exportação - FGE, a que se refere a Lei nº 9.818, de 23 de agosto de 1999, compreendidas as garantias prestadas pela União em operações de seguro de crédito interno para a produção de PED.
 
-## CAPÍTULO IV - DISPOSIÇÕES FINAIS
+### CAPÍTULO IV - DISPOSIÇÕES FINAIS
 
 Art. 13. O disposto nesta Lei não exclui o controle e as restrições à importação, à exportação, à fabricação, à comercialização e à utilização de produtos controlados.
 

@@ -112,18 +112,18 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           },
           {
             title: 'MD-40-M-01 - Manual de Boas Práticas para a Gestão do Ciclo de Vida de Sistemas de Defesa',
-            path: 'md40-m-01',
+            path: 'md-40-m-01',
             loadComponent: () =>
               import('../modules/app1-intendencia/app1-intendencia-bibliografia/11-md-40-m-01/md-40-m-01').then(
                 (m) => m.Md40M01
               )
           },
           {
-            title: 'MD-40-M-02 - Manual de Boas Práticas de Custo do Ciclo de Vida de Sistemas de Defesa',
-            path: 'md40-m-02',
+            title: 'MD-44-M-02 - Manual de Boas Práticas de Custo do Ciclo de Vida de Sistemas de Defesa',
+            path: 'md-44-m-02',
             loadComponent: () =>
-              import('../modules/app1-intendencia/app1-intendencia-bibliografia/12-md-40-m-02/md-40-m-02').then(
-                (m) => m.Md40M02
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/12-md-44-m-02/md-44-m-02').then(
+                (m) => m.Md44M02
               )
           },
           {
@@ -206,6 +206,94 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
                 (m) => m.Portaria3662
               )
           },
+          {
+            title: 'SGM-301 - Normas para Execução do Abastecimento',
+            path: 'sgm-301',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/23-sgm301/sgm301').then(
+                (m) => m.Sgm301
+              )
+          },
+          {
+            title: 'MTO - Manual Técnico de Orçamento',
+            path: 'mto',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/24-mto/mto').then(
+                (m) => m.Mto
+              )
+          },
+          {
+            title: 'SGM-601 - Normas sobre Auditoria, Análise e Apresentação de Contas na Marinha',
+            path: 'sgm-601',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/25-sgm601/sgm601').then(
+                (m) => m.Sgm601
+              )
+          },
+          {
+            title: 'SGM-602 - Normas sobre Ressarcimento ao Erário',
+            path: 'sgm-602',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/26-sgm602/sgm602').then(
+                (m) => m.Sgm602
+              )
+          },
+          {
+            title: 'IN-98 - Instrução Normativa sobre a instauração, a organização e o encaminhamento ao Tribunal de Contas da União dos processos de tomada de contas especial',
+            path: 'in-98',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/27-in98/in98').then(
+                (m) => m.In98
+              )
+          },
+          {
+            title: 'IN-3 - Instrução Normativa sobre a instauração, a organização e o encaminhamento ao Tribunal de Contas da União dos processos de tomada de contas especial',
+            path: 'in-3',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/28-in3/in3').then(
+                (m) => m.In3
+              )
+          },
+          {
+            title: 'SGM-107 - Normas sobre Excelência de Gestão',
+            path: 'sgm-107',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/29-sgm107/sgm107').then(
+                (m) => m.Sgm107
+              )
+          },
+          {
+            title: 'SGM-401 - Normas para a Gestão do Plano Diretor',
+            path: 'sgm-401',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/30-sgm401/sgm401').then(
+                (m) => m.Sgm401
+              )
+          },
+          {
+            title: 'EMA-020 - Normas de Governança da Marinha',
+            path: 'ema-020',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/31-ema020/ema020').then(
+                (m) => m.Ema020
+              )
+          },
+          {
+            title: 'EMA-301 - Fundamentos Doutrinários da Marinha',
+            path: 'ema-301',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/32-ema301/ema301').then(
+                (m) => m.Ema301
+              )
+          },
+          {
+            title: 'EMA-305 - Doutrina Militar Naval',
+            path: 'ema-305',
+            loadComponent: () =>
+              import('../modules/app1-intendencia/app1-intendencia-bibliografia/33-ema305/ema305').then(
+                (m) => m.Ema305
+              )
+          }
         ]
       },
       {

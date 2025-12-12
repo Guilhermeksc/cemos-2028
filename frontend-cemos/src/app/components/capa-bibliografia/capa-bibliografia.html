@@ -52,7 +52,7 @@
           </div>
           
           <!-- Indicador de Bloco abaixo do indicador de consulta -->
-          <div class="bloco-indicator" *ngIf="capa.bloco">
+          <div class="bloco-indicator" *ngIf="capa.bloco" [style.background-color]="getBlocoColor(capa.blocoColor)">
             <span>{{ capa.bloco }}</span>
           </div>
           
@@ -84,7 +84,7 @@
       </div>
       
       <!-- Indicador de Bloco abaixo do indicador de consulta (modo single) -->
-      <div class="bloco-indicator" *ngIf="selectedCapa?.bloco || bloco">
+      <div class="bloco-indicator" *ngIf="selectedCapa?.bloco || bloco" [style.background-color]="getBlocoColor(selectedCapa?.blocoColor || blocoColor)">
         <span>{{ selectedCapa?.bloco || bloco }}</span>
       </div>
       

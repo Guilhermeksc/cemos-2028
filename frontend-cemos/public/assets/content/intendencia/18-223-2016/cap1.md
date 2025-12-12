@@ -1,0 +1,71 @@
+# PORTARIA Nº 223/MB, DE 25 DE JULHO DE 2016
+
+## Página 1
+
+Aprova as Diretrizes para a Compensação Comercial, Industrial e Tecnológica (Offset) na Marinha do Brasil.
+
+**O COMANDANTE DA MARINHA**, no uso das atribuições que lhe conferem os art. 4º e 19 da Lei Complementar nº 97, de 9 de junho de 1999, alterada pela Lei Complementar nº 136, de 25 de agosto de 2010, resolve:
+
+**Art. 1º** Aprovar as Diretrizes para *Offset* na Marinha do Brasil, que a esta acompanham.
+
+**Art. 2º** Atribuir ao EMA a emissão das Normas para funcionamento da estrutura de *Offset* na Marinha do Brasil e supervisão da implementação das Diretrizes aprovadas.
+
+**Art. 3º** Esta Portaria entra em vigor na presente data.
+
+**Art. 4º** Revoga-se a Portaria no 59, de 18 de fevereiro de 2010.
+
+**DIRETRIZES PARA A COMPENSAÇÃO COMERCIAL, INDUSTRIAL E TECNOLÓGICA (Offset) NA MARINHA DO BRASIL**
+
+**PREFÁCIO**
+
+A Marinha do Brasil (MB), no desempenho da sua missão de preparo e emprego do Poder Naval, a fim de contribuir para a defesa da Pátria e em consonância ao preconizado na Política de Compensação Comercial, Industrial e Tecnológica do Ministério da Defesa e no atual quadro legal sobre o tema, possui a responsabilidade de estimular continuamente o aprimoramento tecnológico e o desenvolvimento da Indústria Naval Brasileira, de modo integrado e compatível com a situação econômica do País, como uma forma de contribuir para consecução dos objetivos nacionais.
+
+A busca incessante da eficiência produtiva fez com que o Governo Brasileiro adotasse uma política industrial acoplada a uma política coerente de comércio exterior. O ponto focal dessa política consiste em aumentar a exposição do produto brasileiro no mercado internacional, forçando, assim, a elevação dos padrões de qualidade e de produtividade e, consequentemente, a competitividade da indústria nacional, criando alternativas comerciais para sua participação em um mercado comum internacional.
+
+Dentre essas alternativas, tem sido largamente praticada, por vários países, a negociação de alguma forma de compensação por parte do fornecedor como condição para importação de bens e serviços.
+
+Essa prática compensatória, comumente chamada de *Offset*, tem-se demonstrado um instrumento eficaz das políticas de desenvolvimento industrial e de comércio exterior, no sentido de gerar benefícios de natureza tecnológica, industrial e comercial para o país comprador além de concorrer para o seu desenvolvimento, particularmente nas áreas de Ciência e Tecnologia, Industrial e Comercial de produtos de defesa.
+
+Em face dessas premissas e dada a velocidade crescente da evolução tecnológica em todos os setores, incluindo o Setor Naval, a MB passa a adotar como política, dentro de sua esfera de ação, a obtenção de reciprocidade de fornecedores estrangeiros de bens e serviços, com vista ao desenvolvimento e à modernização tecnológica do setor naval brasileiro.
+
+## Página 2
+
+### 1 - ORIENTAÇÕES GERAIS PARA COMPENSAÇÃO NA MB
+
+**1.1 – Objetivos das diretrizes de *Offset* na Marinha**
+
+a) promover o crescimento dos níveis tecnológico e qualitativo dos setores de interesse da Força e da Base Industrial de Defesa (BID), por meio de aquisição de novas tecnologias e da modernização de métodos e processos de produção visando ao atingimento do estado da arte;
+
+b) ampliar a quantidade e a capacidade das empresas nacionais na fabricação e manutenção de produtos do setor naval, visando a minimizar a dependência tecnológica em relação ao mercado externo nesse setor e ampliar o poder de mobilização nacional;
+
+c) possibilitar a capacitação, o desenvolvimento e a especialização dos recursos humanos do pessoal da MB, bem como dos setores da BID de interesse da Força;
+
+d) concorrer para a criação de novas oportunidades de emprego de alto nível no mercado tecnológico de interesse da Força; e
+
+e) obter recursos externos, diretos e indiretos, de toda ordem, para beneficiar a MB e contribuir para incrementar o nível de capacitação tecnológica e industrial da BID.
+
+## Página 3
+
+**1.2 - Diretrizes gerais de *Offset* na Marinha**
+
+Visando alcançar os objetivos das Diretrizes de *Offset*, faz-se necessário implementar as seguintes ações que orientarão os procedimentos a serem adotados:
+
+a) estabelecer Normas Internas específicas, efetuando o detalhamento do processo relacionado às atividades de compensação;
+
+b) utilizar o poder de compra da MB, no âmbito da atividade militar naval, para a negociação de práticas compensatórias;
+
+c) explicitar ao fornecedor o propósito do Acordo de Compensação (AC) desde o início das negociações, bem como em todo e qualquer documento referente ao processo de aquisição;
+
+d) incentivar, nos AC, a efetiva participação de empresas nacionais, com a finalidade de aumentar a produção autóctone de bens e serviços afetos ao objeto da aquisição;
+
+e) priorizar a transferência de tecnologia, visando à elevação do nível de capacitação dos recursos humanos relacionados à BID;
+
+f) incentivar, durante as negociações de qualquer aquisição junto aos fornecedores externos, investimentos que promovam o desenvolvimento da BID nos setores de interesse da MB;
+
+g) incrementar a capacidade da MB de gerar fomento, mediante a interação com os demais órgãos do Governo e entidades financiadoras, visando ao desenvolvimento industrial e à absorção de novas tecnologias, em consonância com as diretrizes da Política Industrial e de Comércio Exterior do Governo Brasileiro;
+
+h) promover o desenvolvimento e a participação dos setores da BID de interesse da MB por ocasião da celebração de AC, visando a permitir o aproveitamento de oportunidades tecnológicas, industriais e comerciais decorrentes;
+
+i) buscar a obtenção da máxima nacionalização, seja na produção, manutenção ou operação dos bens e serviços objetos da negociação; e
+
+j) manter o estímulo continuado à BID, conscientizando, assessorando, fomentando e abrindo a possibilidade de sua participação competitiva nas oportunidades comerciais, industriais e tecnológicas decorrentes da implementação dessas diretrizes.

@@ -1,6 +1,6 @@
-## Página 1
-
 # DECRETO Nº 7.970, DE 28 DE MARÇO DE 2013
+
+## Página 1
 
 Regulamenta dispositivos da Lei nº 12.598, de 22 de março de 2012, que estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e sistemas de defesa, e dá outras providências.
 

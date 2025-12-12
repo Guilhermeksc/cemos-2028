@@ -45,5 +45,13 @@ export interface CapaConfig {
    * @example 'Bloco 1'
    */
   bloco?: string;
+
+  /**
+   * Cor de fundo do indicador de bloco (opcional)
+   * Aceita número de 1 a 10 ou nome da cor (azul, rosa, verde, amarelo, lavanda, pêssego, mint, coral, lilás, turquesa)
+   * Se não especificado, usa azul como padrão
+   * @example 1 ou 'azul' ou 'rosa'
+   */
+  blocoColor?: number | string;
 }
 
