@@ -170,20 +170,6 @@
                     <span class="heading-title">{{ h2.title }}</span>
                   </div>
 
-                  <!-- Nível 3 (H3) - Filhos do H2 -->
-                  <div class="heading-children" *ngIf="isExpanded(h2) && h2.children && h2.children.length > 0">
-                    <ng-container *ngFor="let h3 of h2.children">
-                      <div class="heading-item level-3">
-                        
-                        <div class="heading-content" (click)="navigateToHeading(h3)">
-                          <mat-icon class="heading-icon">article</mat-icon>
-                          <span class="heading-title">{{ h3.title }}</span>
-                        </div>
-
-                      </div>
-                    </ng-container>
-                  </div>
-
                 </div>
               </ng-container>
             </div>
@@ -336,16 +322,6 @@
                       <div class="heading-content" (click)="navigateToHeading(h2)">
                         <mat-icon class="heading-icon">{{ getHeadingIcon(h2) }}</mat-icon>
                         <span class="heading-title">{{ h2.title }}</span>
-                      </div>
-                      <div class="heading-children" *ngIf="isExpanded(h2) && h2.children && h2.children.length > 0">
-                        <ng-container *ngFor="let h3 of h2.children">
-                          <div class="heading-item level-3">
-                            <div class="heading-content" (click)="navigateToHeading(h3)">
-                              <mat-icon class="heading-icon">article</mat-icon>
-                              <span class="heading-title">{{ h3.title }}</span>
-                            </div>
-                          </div>
-                        </ng-container>
                       </div>
                     </div>
                   </ng-container>

@@ -1,6 +1,8 @@
 # CAPÍTULO 4 - FUNÇÕES LOGÍSTICAS
 
-4.1 - GENERALIDADES
+## Página 1
+
+### 4.1 - GENERALIDADES
 
 O processo logístico de atendimento às forças e OM da MB, no que se refere a pessoal, material e serviços, tendo em vista as fases básicas do ciclo logístico - determinação de necessidades, obtenção e distribuição - implica na execução de várias atividades funcionais. 
 
@@ -18,7 +20,9 @@ O vulto e a importância das funções logísticas podem propiciar o estabelecim
 
 A reunião de atividades funcionais em funções logísticas tem o propósito de facilitar a organização, o planejamento, a execução e o controle do apoio logístico. Cabe, ainda, reconhecer que muitas vezes elas se interrelacionam ou se complementam.
 
-4.2 - SUPRIMENTO
+## Página 2
+
+### 4.2 - SUPRIMENTO
 
 4.2.1 - Conceito
 
@@ -27,6 +31,8 @@ A reunião de atividades funcionais em funções logísticas tem o propósito de
 Na MB, a função logística Suprimento, juntamente com parte da função logística Transporte, integra-se ao conceito mais abrangente de Abastecimento, cujo propósito é promover o fluxo adequado do material necessário, desde as fontes de obtenção até as OM consumidoras. O problema a ser solucionado pelo Abastecimento na MB consiste em saber “QUE” material é necessário (qualidade ou tipo), “QUANTO” é necessário (quantidade), “QUANDO” deve ser provido (tempo) e “ONDE” deve estar disponível (local). As respostas a essas perguntas, obtidas em grande parte pelo desempenho da função logística Suprimento e em menor escala pela função Transporte, tornam possível promover a obtenção e fazer a distribuição, satisfazendo a necessidade do usuário.
 
 Portanto, na MB, Abastecimento é o conjunto de atividades que tem o propósito de prever e prover, para as forças e demais OM da MB, o material necessário a mantê-las em condições de plena eficiência. Assim, o Abastecimento proporciona um fluxo adequado do material necessário, desde as fontes de obtenção até as OM consumidoras, abrangendo a função logística Suprimento e parte da função logística Transporte, além de relacionar-se, estreitamente, com a função logística Manutenção.
+
+## Página 3
 
 4.2.2 - Atividades da Função Logística Suprimento
 
@@ -44,6 +50,8 @@ e) inspeção;
 f) determinação técnica de necessidades; e
 g) orientação técnica.
 
+## Página 4
+
 As atividades gerenciais são de natureza administrativa, executoras da provisão do material necessário às forças e às OM, por intermédio da manutenção do fluxo de suprimento desde as fontes de obtenção até o consumidor, propósito maior do abastecimento. São desenvolvidas com base nos padrões fixados pelas atividades técnicas e segundo os dados de planejamento ou previsão por elas produzidas. São executadas sobre quaisquer categorias de material, independente de sua natureza.
 
 As atividades gerenciais são as seguintes:
@@ -58,6 +66,8 @@ VII) armazenagem;
 VIII) tráfego de carga;
 IX) fornecimento; e
 X) destinação de excessos.
+
+## Página 5
 
 4.2.3 - Sistema de Abastecimento da Marinha (SAbM)
 
@@ -83,6 +93,8 @@ As peculiaridades técnicas e gerenciais do material em uso na Marinha identific
 
 A Jurisdição do Material é estabelecida pela DGMM, em coordenação com a SGM.
 
+## Página 6
+
 ### 4.3 - MANUTENÇÃO
 
 4.3.1 - Conceito
@@ -96,6 +108,8 @@ A manutenção planejada é aquela executada de forma sistemática e programada,
 A manutenção não planejada é aquela necessária à restauração das especificações técnicas do material, ou software, defeituoso, ou avariado, de modo inesperado.
 
 As atividades de manutenção de material e de software são tratadas de forma diferenciada e constam, respectivamente, em publicações próprias para cada caso: EMA-420 - Normas para Logística de Material e EMA-416 - Doutrina de Tecnologia da Informação da Marinha.
+
+## Página 7
 
 4.3.2 - Considerações Gerais
 
@@ -115,6 +129,8 @@ f) As Organizações Militares Prestadoras de Serviços (OMPS) e as Diretorias E
 
 g) A manutenção deve ser tratada como uma função logística estratégica, pois o seu desempenho afetará diretamente o desempenho das forças.
 
+## Página 8
+
 4.3.3 - Atividades da Função Logística Manutenção relativas ao Material
 
 As atividades da função logística Manutenção relativas ao material são:
@@ -133,6 +149,8 @@ A manutenção preditiva, conjunto de controles diagnósticos baseados em parâm
 
 A determinação do ponto preditivo, a partir do qual uma queda de desempenho e/ou a probabilidade de o equipamento falhar assumem valores indesejáveis, tanto no aspecto técnico, quanto no econômico, provocará uma intervenção de manutenção corretiva planejada, com o objetivo de eliminar a causa do problema identificado.
 
+## Página 9
+
 c) Manutenção Modificadora
 
 A manutenção modificadora consiste nas ações de manutenção destinadas a adequar o equipamento às necessidades ditadas pelas exigências operacionais ou ainda para otimizar os trabalhos da própria manutenção. É classificada como planejada.
@@ -146,6 +164,8 @@ I) A manutenção corretiva planejada é a correção do desempenho menor que o 
 A manutenção corretiva também pode ser planejada por meio dos índices de manutenção Tempo Médio Entre Falhas (TMEF ou MTBF) e Tempo Médio Para Reparo (TMPR ou MTTR); e
 
 II) A manutenção corretiva não planejada é a correção da falha, ocorrida de maneira aleatória, quando não há tempo para a preparação do serviço, o que, normalmente, implica em elevação de custos de manutenção e maiores prejuízos para as operações.
+
+## Página 10
 
 4.3.4 - Atividades da Função Logística Manutenção relativas ao Software As atividades da função logística Manutenção específica para software, baseadas na norma ISSO/IEC 14764, são:
 
@@ -168,6 +188,8 @@ d) Manutenção adaptativa
 e) Manutenção evolutiva
 
 É a modificação de um software destinada a aprimorar seu desempenho, buscando otimizá-lo ou aumentar a facilidade de sua manutenção (manutenibilidade), com alteração ou não de suas características originais. Normalmente, é uma manutenção não essencial, a curto e médio prazo.
+
+## Página 11
 
 4.3.5 - Escalão de Manutenção
 
@@ -192,7 +214,9 @@ IV) Manutenção de 4º escalão - Compreende as ações de manutenção cujos r
 
 d) Cabe ressaltar que não existe a obrigatoriedade de vinculação entre as atividades logísticas da função logística Manutenção e os escalões de manutenção.
 
-4.4 - SALVAMENTO
+## Página 12
+
+### 4.4 - SALVAMENTO
 
 4.4.1 - Conceito
 
@@ -213,6 +237,8 @@ e) Reboque - Consiste na locomoção de um meio que está impossibilitado de faz
 f) Desencalhe ou Reflutuação de Meios - Consiste nas ações realizadas para liberar um meio flutuante que se encontra impossibilitado de locomoção, por encalhe ou afundamento.
 
 g) Resgate de Recursos Materiais, Cargas ou Itens Específicos, Acidentados ou Avariados - Consiste nas ações desencadeadas para transportar esses meios ou itens do local da ocorrência para uma área de manutenção ou outro local desejado.
+
+## Página 13
 
 ### 4.5 - SAÚDE
 
@@ -240,6 +266,8 @@ d) Medicina Preventiva
 
 É a atividade destinada a preservar a saúde física e mental dos recursos humanos, por meio de diagnósticos precoces, associados ao pronto tratamento, e de um conjunto de medidas profiláticas que, quando bem executadas, reduzirão custos com evacuação e hospitalização.
 
+## Página 14
+
 As seguintes tarefas enquadram-se na medicina preventiva:
 
 I) saneamento: conjunto de medidas destinadas a tornar uma área habitável;
@@ -266,6 +294,8 @@ V) tratamento ambulatorial – atendimento de doentes e feridos, sem internaçã
 VI) apoio odontológico: ações necessárias à assistência odontológica ao elemento humano; e
 VII) apoio laboratorial: ações necessárias à análise de material biológico com finalidade diagnóstica.
 
+## Página 15
+
 4.5.3 - Medicina Operativa
 
 É o ramo da medicina militar cujo propósito é o de assistir o homem em operações em ambiente crítico ou de combate. Fundamenta-se em princípios, técnicas e conhecimentos estabelecidos pela medicina geral, adaptando-os às peculiaridades da MB. Quando diz respeito especificamente de apoio às operações anfíbias, ou às operações de superfície, é conhecida, respectivamente, como medicina de operações anfíbias e medicina de ações de superfície.
@@ -278,7 +308,9 @@ b) Órgão de Direção Setorial – Diretoria-Geral do Pessoal da Marinha;
 c) Órgão de Supervisão Técnica – Diretoria de Saúde da Marinha; e
 d) Órgãos de Execução – organizações hospitalares e serviços de saúde das OM.
 
-4.6 - RECURSOS HUMANOS
+## Página 16
+
+### 4.6 - RECURSOS HUMANOS
 
 Os conceitos referentes à função logística Recursos Humanos, estão aqui descritos de maneira básica. Para fim de aplicação prática, a gestão administrativa da Força de Trabalho (FT) da MB, está detalhada no EMA-134 - Manual de Gestão Administrativa da Marinha.
 
@@ -287,6 +319,8 @@ Os conceitos referentes à função logística Recursos Humanos, estão aqui des
 É o conjunto de atividades relacionadas com o gerenciamento da FT necessária ao emprego das forças navais, aeronavais e de fuzileiros navais e ao funcionamento das OM da MB.
 
 Considerando os princípios da logística previstos neste Manual, a função logística Recursos Humanos abrange todas as atividades inerentes à gestão da FT, não se limitando ao desempenho das atividades características das fases básicas da logística, tendo em vista que a particularidade de tratar com recursos humanos implica na realização de um conjunto de ações que a torna extremamente complexa, além de crítica, em qualquer planejamento logístico.
+
+## Página 17
 
 4.6.2 - Atividades da Função Logística Recursos Humanos
 
@@ -333,6 +367,8 @@ VIII) serviço de banho;
 IX) serviço de lavanderia; e
 X) sepultamento.
 
+## Página 18
+
 4.6.3 - Outras atividades envolvendo pessoal e que não fazem parte da função logística Recursos Humanos As atividades referentes à justiça e disciplina, aos prisioneiros de guerra e aos civis internados não fazem parte da função logística Recursos Humanos.
 
 4.6.4 - Sistema de Pessoal da Marinha
@@ -346,6 +382,8 @@ d) Coordenação Setorial - exercida pelo Órgão de Direção Geral (ODG), pelo
 e) Coordenação Técnica - exercida pelas Organizações Militares Orientadoras Técnicas (OMOT);
 f) Gerência Executiva - exercida pela Diretoria do Pessoal Militar da Marinha (DPMM), Órgão Central de Gestão da FT (OCG); pelo Comando do Pessoal de Fuzileiros Navais (CPesFN), pela Diretoria do Pessoal Civil da Marinha (DPCvM) e pela Diretoria de Ensino da Marinha (DEnsM), Órgãos de Gestão da FT (OG); e
 g) Gerência local da FT - exercida por todas as OM.
+
+## Página 19
 
 ### 4.7 - TRANSPORTE
 
@@ -388,6 +426,8 @@ Consiste no estabelecimento de medidas de coordenação e de controle sobre o mo
 
 Visa, fundamentalmente, evitar custos elevados, perdas de tempo, desencontros, desgastes e interferências que prejudiquem a chegada em seu destino, do material ou pessoal, no tempo definido para atender às necessidades requeridas.
 
+## Página 20
+
 ### 4.8 - ENGENHARIA
 
 4.8.1 - Conceito
@@ -404,6 +444,8 @@ III) bases;
 IV) obstáculos, abrigos e trabalhos de camuflagem; e
 V) instalações diversas.
 b) Desde o planejamento, até a execução, sob o enfoque da função logística Engenharia, deverá ser considerada, sempre que possível, a máxima utilização da infra-estrutura e das instalações existentes, bem como as disponibilidades em materiais, equipamentos e mão-de-obra.
+
+## Página 21
 
 4.8.3 - Atividades da Função Logística Engenharia São atividades da função logística Engenharia:
 a) Construção
@@ -436,6 +478,8 @@ A avaliação consiste no levantamento e análise de informações técnicas de 
 O planejamento e a execução de obras e serviços referentes às atividades da função logística Engenharia serão desenvolvidas de acordo com o Sistema do Plano Diretor (SPD).
 
 Essas obras e serviços podem ser caracterizados como de investimento ou de manutenção. São consideradas como de investimento a construção, a ampliação, a restauração e a desobstrução de portos e rios, e como de manutenção a reparação e a conservação. As demais atividades serão caracterizadas em decorrência do vulto das obras e serviços necessários.
+
+## Página 22
 
 ### 4.9 - RESPONSABILIDADES SOBRE AS FUNÇÕES LOGÍSTICAS
 

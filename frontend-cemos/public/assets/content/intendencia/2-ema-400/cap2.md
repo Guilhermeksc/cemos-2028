@@ -1,5 +1,7 @@
 # CAPÍTULO 2 - CONCEITOS BÁSICOS
 
+## Página 1
+
 ### 2.1 - O PROBLEMA LOGÍSTICO
 
 Da definição de logística deduz-se que qualquer problema logístico pode ser resumido na necessidade de proporcionar às forças os recursos requeridos, em determinadas circunstâncias. Além disso, os recursos proporcionados devem ser os necessários em quantidade e qualidade, providos no tempo e lugar adequados, de modo a satisfazer às exigências contidas nos planos de operações.
@@ -17,6 +19,8 @@ O esforço logístico para solucionar um problema logístico é desenvolvido em 
 - o Comando ou a Direção, que determina o modo de resolver o problema;
 - as Funções Logísticas, as quais formam um conjunto de ações correlatas que  concorrem para a solução do problema; e
 - o Ciclo Logístico, constituído pela ordenação das ações que serão desenvolvidas, englobando uma ou mais funções.
+
+## Página 2
 
 ### 2.3 - FUNÇÕES LOGÍSTICAS
 
@@ -42,6 +46,8 @@ As atividades devem ser ordenadas de modo a se estabelecer, com lógica, um cami
 
 Este caminho é definido como ciclo logístico.
 
+## Página 3
+
 ### 2.4 - RECURSOS LOGÍSTICOS
 
 De um modo amplo, a logística prevê e provê os recursos de que necessitam as Forças Armadas, os quais são agrupados em três categorias que congregam funções logísticas correlatas.
@@ -63,6 +69,8 @@ Os meios navais, aeronavais e de fuzileiros navais, seus efetivos e organizaçõ
 A estrutura organizacional da logística naval compõe o Sistema de Apoio Logístico, conceituado como “- o conjunto de organizações e recursos logísticos que, operando desde o tempo de paz, deverá estar em condições de atender às necessidades das forças navais em situação de conflito”.
 
 A existência de necessidades a satisfazer é uma forte razão para a criação de um Sistema de Apoio Logístico, que deverá estar inteiramente voltado para o atendimento dos usuários, sempre mais interessados no resultado (EFICÁCIA) do que no processo (EFICIÊNCIA).
+
+## Página 4
 
 ### 2.6 - CICLO LOGÍSTICO
 
@@ -98,6 +106,8 @@ A obtenção representa a logística de produção, com seu caráter econômico,
 
 Os responsáveis pela solução de um problema logístico, de qualquer natureza, executarão, seqüencialmente, as três fases básicas, por meio das várias atividades que, em conjunto, representam o esforço logístico.
 
+## Página 5
+
 ### 2.7 - PRINCÍPIOS BÁSICOS
 
 Os princípios básicos constituem um conjunto de preceitos que devem ser observados no planejamento e na execução das atividades logísticas. São eles:
@@ -113,6 +123,8 @@ Os princípios básicos constituem um conjunto de preceitos que devem ser observ
 2.7.5 - Economia de Meios - é a busca do máximo rendimento, por intermédio do emprego eficiente, racional e judicioso dos meios disponíveis. Não implica na economia excessiva, mas na distribuição adequada dos meios disponíveis, elegendo-se como prioritário o apoio na área da ação principal.
 
 2.7.6 - Flexibilidade - é a possibilidade de adoção de soluções alternativas ante a mudança de circunstâncias.
+
+## Página 6
 
 2.7.7 - Interdependência - é a dependência recíproca que o planejamento logístico mantém com o planejamento operacional nos níveis estratégico e tático.
 

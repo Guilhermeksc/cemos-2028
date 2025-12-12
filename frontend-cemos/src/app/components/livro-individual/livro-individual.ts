@@ -136,11 +136,35 @@ export class LivroIndividual implements OnInit, OnDestroy {
   }
 
   /**
+   * Filtra headings para mostrar apenas até o nível 2 (##)
+   * Remove headings de nível 3 (###) ou superior
+   */
+  private filterHeadingsToLevel2(headings: MarkdownHeading[]): MarkdownHeading[] {
+    return headings.map(h1 => {
+      const filteredH1 = { ...h1 };
+      if (filteredH1.children) {
+        // Mantém apenas os filhos de nível 2, removendo os de nível 3 ou superior
+        filteredH1.children = filteredH1.children
+          .filter(h2 => h2.level === 2)
+          .map(h2 => {
+            // Remove os children de H2 (que seriam H3)
+            const filteredH2 = { ...h2 };
+            filteredH2.children = [];
+            return filteredH2;
+          });
+      }
+      return filteredH1;
+    });
+  }
+
+  /**
    * Seleciona um arquivo para visualização
    */
   selectFile(file: MarkdownFile) {
     this.selectedFile = file;
-    this.headings = this.livroService.parseMarkdownHeadings(file.content);
+    const allHeadings = this.livroService.parseMarkdownHeadings(file.content);
+    // Filtra para mostrar apenas até o nível 2 (##)
+    this.headings = this.filterHeadingsToLevel2(allHeadings);
     this.htmlContent = this.sanitizer.bypassSecurityTrustHtml(
       this.livroService.markdownToHtml(file.content, file.basePath)
     );

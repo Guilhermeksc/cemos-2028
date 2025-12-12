@@ -1,5 +1,7 @@
 # CAPÍTULO 1 - CONSIDERAÇÕES GERAIS
 
+## Página 1
+
 ### 1.1 - ANTECEDENTES HISTÓRICOS
 
 Foi na prática da guerra que a logística encontrou seus ensinamentos. Das lições retiradas das vitórias, derrotas, erros e acertos decorreram as normas e princípios que a constituem.
@@ -27,6 +29,8 @@ A verdadeira tomada de consciência da logística como ciência teve sua origem 
 
 O Alte HENRY ECCLES, em 1945, ao encontrar a obra de THORPE, empoeirada nas estantes da biblioteca da Escola de Guerra Naval, em Newport, comentou que, se os EUA seguissem seus ensinamentos teriam economizado milhões de dólares na condução da 2ª Guerra Mundial. ECCLES, Chefe da Divisão de Logística do Almirante NIMITZ, na campanha do Pacífico, foi um dos primeiros estudiosos da logística, sendo considerado como o “pai da logística moderna”.
 
+## Página 2
+
 ### 1.2 - DEFINIÇÕES ATUAIS
 
 Não existe uma definição de logística categoricamente estabelecida e aceita universalmente pois, sendo uma atividade de reconhecimento relativamente recente, está sujeita a constante evolução.
@@ -40,6 +44,8 @@ A MB adota a seguinte definição:
 “Logística é a componente da arte da guerra que tem como propósito obter e distribuir às Forças Armadas os recursos de pessoal, material e serviços em quantidade, qualidade, momento e lugar por elas determinados, satisfazendo as necessidades na preparação e na execução de suas operações exigidas pela guerra”. Em que pese a existência de algumas peculiaridades em cada Força, podemos definir a logística naval como:
 
 “O ramo da logística militar concernente aos meios, efetivos e organizações de comando, controle, comunicações e apoio empregados pela Marinha para atender às necessidades das forças navais”.
+
+## Página 3
 
 ### 1.3 - CLASSIFICAÇÃO DA LOGÍSTICA
 
@@ -63,6 +69,8 @@ A logística pura ou teórica consiste em uma investigação científica para o 
 
 A logística aplicada é o emprego dos princípios da logística pura na resolução prática dos problemas logísticos, em razão da doutrina estabelecida.
 
+## Página 4
+
 ### 1.5 - LOGÍSTICA NACIONAL OU DE ALTO NÍVEL
 
 A logística nacional ou de alto nível trata e estuda os problemas logísticos impostos pela política nacional.
@@ -85,6 +93,8 @@ Quando o poder nacional e a transformação do potencial nacional são incapazes
 
 Delineia-se, assim, a logística internacional, definida como “o processo, a nível internacional, de prever e prover bens e serviços para o apoio de forças militares e da economia civil de nações aliadas, em consonância com os tratados e acordos estabelecidos”. Trata-se, pois, de uma transferência de recursos de um poder nacional para outro, completando aqueles que são escassos ou inexistentes em um país.
 
+## Página 5
+
 ### 1.6 - LOGÍSTICA MILITAR
 
 É a que trata de proporcionar recursos às Forças Armadas e se baseia em estimativas de necessidades que permitem a atuação das forças operativas.
@@ -101,7 +111,9 @@ A logística de consumo ocupa-se da distribuição, de acordo com as necessidade
 
 Não existe uma linha demarcatória rígida entre as duas classificações logísticas.
 
-1.8 - RELACIONAMENTO DA LOGÍSTICA COM A ESTRATÉGIA E A TÁTICA
+## Página 6
+
+### 1.8 - RELACIONAMENTO DA LOGÍSTICA COM A ESTRATÉGIA E A TÁTICA
 
 Os problemas decorrentes de um conflito trazem em seu bojo uma mistura de considerações e elementos políticos, estratégicos, táticos e logísticos, sendo afetados, de diferentes formas, por considerações e fatores não militares. Assim, em situações de conflito, cabe ao Comando agir, decidir com base na identificação dos elementos presentes e aplicar a dosagem adequada de cada elemento. Nos níveis mais elevados, a superposição desses elementos é maior e sua aplicação é mais complexa.
 
@@ -122,6 +134,8 @@ Estes fatores militares têm algo muito importante que determina o seu inter-rel
 Cabe ao Comando efetuar o balanço adequado da estratégia, da tática e da logística, admitindo uma temporária prevalência de qualquer uma delas sobre as outras em função das circunstâncias.
 
 O aspecto logístico é de importância capital em todas as fases de um conflito e orienta, em grande parte, a estratégia a seguir. Nenhum plano estratégico pode ser considerado válido enquanto não se comprove sua possibilidade sob o ponto de vista da logística. O sucesso de uma operação militar depende fundamentalmente da logística. Se a estratégia não pode ser estabelecida sem o correspondente planejamento logístico para o seu apoio, o reverso desse relacionamento também é verdadeiro.
+
+## Página 7
 
 ### 1.9 - OUTRAS RELAÇÕES DA LOGÍSTICA
 

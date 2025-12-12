@@ -51,6 +51,11 @@
             <span>{{ capa.permite_consulta ? 'Com Consulta' : 'Sem Consulta' }}</span>
           </div>
           
+          <!-- Indicador de Bloco abaixo do indicador de consulta -->
+          <div class="bloco-indicator" *ngIf="capa.bloco">
+            <span>{{ capa.bloco }}</span>
+          </div>
+          
           <img 
             [src]="getImageUrl(capa.imagePath)" 
             [alt]="capa.title || 'Capa da Bibliografia'"
@@ -76,6 +81,11 @@
       <div class="consulta-indicator" *ngIf="selectedCapa && selectedCapa.permite_consulta !== undefined" [class.com-consulta]="selectedCapa.permite_consulta" [class.sem-consulta]="!selectedCapa.permite_consulta">
         <mat-icon>{{ selectedCapa.permite_consulta ? 'check_circle' : 'cancel' }}</mat-icon>
         <span>{{ selectedCapa.permite_consulta ? 'Com Consulta' : 'Sem Consulta' }}</span>
+      </div>
+      
+      <!-- Indicador de Bloco abaixo do indicador de consulta (modo single) -->
+      <div class="bloco-indicator" *ngIf="selectedCapa?.bloco || bloco">
+        <span>{{ selectedCapa?.bloco || bloco }}</span>
       </div>
       
       <img 

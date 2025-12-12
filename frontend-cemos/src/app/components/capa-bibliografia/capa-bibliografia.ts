@@ -51,6 +51,7 @@ export class CapaBibliografia implements OnInit {
   @Input() imagePath: string = ''; // Ex: 'assets/content/geopolitica-ri/img/vinganca-geografia.jpg'
   @Input() markdownPath: string = ''; // Ex: 'assets/content/geopolitica-ri/Bibliografia.md'
   @Input() basePath: string = ''; // Ex: 'assets/content/geopolitica-ri'
+  @Input() bloco?: string; // Nome do bloco (opcional) - aparece abaixo do indicador de consulta
   
   isLoading: boolean = false;
   htmlContent: SafeHtml = '';

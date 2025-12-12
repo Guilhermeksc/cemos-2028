@@ -1,11 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { SubMenu, SubMenuItem } from '../../../../components/sub-menu/sub-menu';
+import { ContentService } from '../../../../services/content.service';
+import { BibliografiaCompleta } from '../../../../components/bibliografia-completa/bibliografia-completa';
+import { BibliografiaCompletaData } from '../../../../interfaces/bibliografia-completa.interface';
+import { LivroIndividual } from '../../../../components/livro-individual/livro-individual';
 
 @Component({
   selector: 'app-ema-400',
-  imports: [],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    LivroIndividual
+  ],
   templateUrl: './ema-400.html',
-  styleUrl: './ema-400.scss'
+  styleUrl: './ema-400.scss',
+  encapsulation: ViewEncapsulation.None
 })
-export class Ema400 {
+export class Ema400 implements OnInit {
+// Configuração do LivroIndividual
+contentPath: string = 'assets/content/intendencia/2-ema-400';
+fileNames: string[] = [
+  'cap1.md',
+  'cap2.md',
+  'cap3.md',
+  'cap4.md',
+  'cap5.md',
+  'cap7.md',
+  'cap8.md',
+];
+backRoute: string = '/home/app1-intendencia/bibliografia';
+backLabel: string = 'Bibliografia';
 
+ngOnInit() {
+  // Inicialização do componente
+}
 }

@@ -2300,18 +2300,33 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             });
             y += 2;
             pdf.text('Associe os itens da Coluna A com os da Coluna B:', contentStartX, y);
-            // Sem espaço extra - a linha divisória virá logo após
+            // Adicionar espaço após questões de correlação
+            y += 2; // Espaço após a questão de correlação
           }
         }
         
         // Espaço entre questões (sem linha divisória)
         if (questionIndex < groupQuestions.length - 1) {
           y += 2; // Pequeno espaço entre questões
+        } else {
+          // Se é a última questão do grupo, adicionar espaço extra antes do próximo grupo
+          // Isso evita que o título do próximo grupo fique em cima do final da questão anterior
+          if (question.tipo === 'correlacao') {
+            y += 4; // Espaço extra após última questão de correlação do grupo
+          } else {
+            y += 2; // Espaço extra após última questão de outros tipos
+          }
         }
       });
       
-      // Espaço entre grupos (reduzido)
-      y += 1;
+      // Espaço entre grupos (aumentado para evitar sobreposição)
+      // Verificar se precisa de nova página antes do próximo grupo
+      if (y + 20 > pageHeight - margin) {
+        pdf.addPage();
+        y = margin;
+      } else {
+        y += 3; // Espaço entre grupos
+      }
     });
     
     // ========== PARTE 2: GABARITO/RESPOSTAS ==========

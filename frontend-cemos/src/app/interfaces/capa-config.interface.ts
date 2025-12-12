@@ -38,5 +38,12 @@ export interface CapaConfig {
    * Se false: mostra "Sem Consulta" em vermelho com ícone X
    */
   permite_consulta?: boolean;
+
+  /**
+   * Nome do bloco (opcional)
+   * Aparece abaixo do indicador de consulta com fundo branco transparente e texto preto
+   * @example 'Bloco 1'
+   */
+  bloco?: string;
 }
 

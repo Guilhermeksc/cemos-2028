@@ -1,5 +1,7 @@
 # CAPÍTULO 3 - CICLO LOGÍSTICO
 
+## Página 1
+
 ### 3.1 - GENERALIDADES
 
 O ciclo logístico, descrito no capítulo 2, é o processo pelo qual se desenvolve a logística. Identifica-se, no ciclo, as fases básicas, denominadas:
@@ -8,7 +10,7 @@ O ciclo logístico, descrito no capítulo 2, é o processo pelo qual se desenvol
 - OBTENÇÃO; e
 - DISTRIBUIÇÃO.
 
-3.2 - DETERMINAÇÃO DE NECESSIDADES
+### 3.2 - DETERMINAÇÃO DE NECESSIDADES
 
 A determinação de necessidades constitui-se a fase básica mais importante do ciclo logístico por servir de fundamento às demais e, consequentemente, influir, decisivamente, na resolução do problema logístico.
 
@@ -23,6 +25,8 @@ De posse desses dados, será possível realizar esta fase básica respondendo à
 - ONDE SERÁ NECESSÁRIO? Indicando o local onde deve ser satisfeita a necessidade; e
 - O QUE É MAIS IMPORTANTE? Apontando a prioridade a ser atribuída a cada necessidade.
 
+## Página 2
+
 3.2.1 - Bases para a Determinação de Necessidades As necessidades decorrem das análises executadas pelas forças dos recursos apropriados à realização de suas missões.
 
 As missões nascem dos planos, estratégicos ou operativos, em função do nível em que se trabalha.
@@ -33,7 +37,9 @@ Portanto, o ponto de partida para a determinação de necessidades deve consider
 
 Desse modo, sendo a determinação de necessidades o fundamento para a resolução de todo o problema logístico, é preciso que sua formulação se realize com a máxima exatidão de cálculo.
 
-3.3 - OBTENÇÃO
+## Página 3
+
+### 3.3 - OBTENÇÃO
 
 A obtenção é a segunda fase básica do ciclo logístico, situada entre a determinação de necessidades, a qual deve atender, e a distribuição, que trabalha com o que foi obtido.
 
@@ -52,6 +58,8 @@ Deduz-se, assim, o primeiro princípio da obtenção:
 “Nada deve ser obtido se não for previamente definido como necessário pelo Comando”.
 
 A violação deste simples e elementar princípio pode provocar desajustes no processo do ciclo logístico, com conseqüências danosas à economia de esforços, já que, ao se obter aquilo cuja necessidade não foi definida, são gastos recursos, normalmente limitados, aumentando-se as dificuldades para obtenção do que é realmente necessário.
+
+## Página 4
 
 A tarefa básica da obtenção é assunto da competência das OM componentes do Sistema de Apoio Logístico e possui características variáveis segundo o nível onde é executada.
 
@@ -72,6 +80,8 @@ Os recursos financeiros, normalmente disponíveis sob a forma de créditos, repr
 
 Os recursos materiais representam a fonte de obtenção para os níveis de Comandos Operativos, consistindo, em cada nível, na acumulação efetuada no nível superior.
 
+## Página 5
+
 O volume de todos os recursos disponíveis é o que fixa o limite da obtenção, determinando a exeqüibilidade logística dos planos operativos. Daí decorre a conveniência de que o Comando tenha conhecimento do volume de recursos postos à sua disposição para satisfazer as suas necessidades.
 
 Do ponto de vista operativo, podem ser distinguidas duas categorias de recursos: reais e potenciais.
@@ -86,6 +96,8 @@ Quando se trata de recursos materiais, para que se possa levar a efeito a transf
 
 As atividades técnico-industriais são as correspondentes à produção física para atender às necessidades de material das forças. São atividades exercidas nos altos escalões da logística militar e da logística nacional, não abrangendo portanto a logística operativa.
 
+## Página 6
+
 As atividades financeiras correspondem à aquisição e têm seu campo de ação nos níveis mais elevados das organizações militares, embora possam se estender até os níveis inferiores.
 
 As atividades orgânicas são as que exercem o controle e a direção sobre as outras duas e nelas é fixada a atenção do processo logístico operativo.
@@ -99,6 +111,8 @@ Um dos requisitos mais importantes da fase de obtenção é o estabelecimento de
 São, também, de importância os prazos de aquisição, pois condicionam o início da fase básica seguinte e influenciam os níveis requeridos de acumulação que serão efetivados na época correta.
 
 Estabelecer prioridades e observar prazos são decorrências da escassez de tempo e de disponibilidades. Constitui, assim, uma atividade muito delicada a ser desempenhada pelo Comando.
+
+## Página 7
 
 3.3.2 - Etapas da Obtenção
 
@@ -119,6 +133,8 @@ O acompanhamento constitui a gerência da aquisição, ou seja, o controle do cu
 
 O recebimento exige a conferência quantitativa e qualitativa do que foi adquirido. Essa etapa, que encerra a fase de obtenção, é o elo que faz a ligação desta fase básica da logística com a seguinte, a distribuição. Trata da entrada do material ou do pessoal no ponto de acumulação ou da conclusão do serviço contratado.
 
+## Página 8
+
 3.3.3 – Métodos de Obtenção
 
 A obtenção dar-se-á, dentre outros, por intermédio de um dos seguintes métodos, conforme disposições legais em vigor:
@@ -138,10 +154,11 @@ A obtenção dar-se-á, dentre outros, por intermédio de um dos seguintes méto
 
 A obtenção do pessoal necessário dar-se-á, dentre outros, por intermédio de um dos seguintes métodos: movimentação de pessoal, treinamento, concurso, formação, convocação, mobilização, contratação e recrutamento.
 
+## Página 9
+
 ### 3.4 - DISTRIBUIÇÃO
 
-A distribuição é definida como “a ação de fazer chegar, oportuna e eficazmente, aos utilizadores, os recursos logísticos fixados pela determinação de necessidades e viabilizados na fase de obtenção”.
-Esta fase completa o ciclo logístico e possibilita a produção do resultado desejado.
+A distribuição é definida como “a ação de fazer chegar, oportuna e eficazmente, aos utilizadores, os recursos logísticos fixados pela determinação de necessidades e viabilizados na fase de obtenção”. Esta fase completa o ciclo logístico e possibilita a produção do resultado desejado.
 
 3.4.1 - Princípios e Características
 
@@ -162,6 +179,8 @@ Os Órgãos de Apoio, integrantes desse sistema , são, dentre outros, os seguin
 - Grupos de Apoio Móvel ou Bases Flutuantes: conjunto destinado a prestar apoio logístico aos meios navais nas proximidades das áreas de operações.
 
 - Grupo de Reabastecimento no Mar: constituído por navios com características apropriadas a prover, na área de operações, os suprimentos necessários a uma força em deslocamento, com o propósito de ampliar a sua capacidade de permanência em ação.
+
+## Página 10
 
 3.4.2 - Processamento da Distribuição
 

@@ -282,11 +282,11 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           )
       },
       {
-        title: 'Resumo',
-        path: 'resumo',
+        title: 'Conceitos',
+        path: 'conceitos',
         loadComponent: () =>
-          import('../modules/app2-estrategia/app2-estrategia-resumo/app2-estrategia-resumo').then(
-            (m) => m.App2EstrategiaResumo
+          import('../modules/app2-estrategia/app2-estrategia-conceitos/app2-estrategia-conceitos').then(
+            (m) => m.App2EstrategiaConceitos
           )
       }
     ]
