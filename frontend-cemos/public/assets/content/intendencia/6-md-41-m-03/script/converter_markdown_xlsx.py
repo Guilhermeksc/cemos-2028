@@ -80,9 +80,9 @@ def main():
     # Pode ser uma string com nomes separados por vírgula: "fc1,fc2,fc3"
     # Ou uma lista: ["fc1", "fc2", "vf1"]
     # Ou um único nome: "fc1"
-    nomes_arquivos = ["fc1", "fc2", "fc3", "fc4", "fc5", "fc8", "fc9", "fc10", "fc11", "fc12", "fc14", "fc15", "fc16", "fc17", 
-    "vf1", "vf2", "vf3", "vf4", "vf5", "vf8", "vf9", "vf10", "vf11", "vf12", "vf14", "vf15", "vf16", "vf17",
-    "m1", "m2", "m3", "m4", "m5", "m8", "m9", "m10", "m11", "m12", "m14", "m15", "m16", "m17"]
+    nomes_arquivos = ["fcanexo", "fc1", "fc2", "fc3", "fc4", "fc5", "fc8", "fc6", "fc7", "fc9", "fc10", "fc11", "fc12", "fc14", "fc15", "fc16", "fc17", 
+    "vfanexo", "vf1", "vf2", "vf3", "vf4", "vf5", "vf6", "vf7", "vf8", "vf9", "vf10", "vf11", "vf12", "vf14", "vf15", "vf16", "vf17",
+    "manexo", "m1", "m2", "m3", "m4", "m5", "m6", "m7", "m8", "m9", "m10", "m11", "m12", "m14", "m15", "m16", "m17"]
     
     base = Path(__file__).parent.resolve()
     print(f"\n=== DIRETÓRIO DE TRABALHO: {base} ===")
