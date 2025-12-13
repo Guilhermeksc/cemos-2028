@@ -1,7 +1,6 @@
+# Capítulo 4 - Planejamento da Mobilização Marítima
 
 ## Página 43
-
-# CAPÍTULO 4 PLANEJAMENTO DA MOBILIZAÇÃO MARÍTIMA
 
 ### 4.1. CONSIDERAÇÕES INICIAIS
 

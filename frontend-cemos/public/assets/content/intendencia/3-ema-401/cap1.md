@@ -1,4 +1,4 @@
-# CAPÍTULO 1 -  DISPOSIÇÕES GERAIS
+# Capítulo 1 - Disposições Gerais
 
 ## Página 1
 

@@ -1,6 +1,6 @@
-## Página 39
+# Capítulo 3 - Desmobilização
 
-# CAPÍTULO 3 - DESMOBILIZAÇÃO
+## Página 39
 
 3.1. FASES DA DESMOBILIZAÇÃO
 

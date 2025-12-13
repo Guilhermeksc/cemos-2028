@@ -1,4 +1,4 @@
-# CAPÍTULO 2 - O SISTEMA DE MOBILIZAÇÃO MARÍTIMA - SIMOMAR
+# Capítulo 2 - O Sistema de Mobilização Marítima - SIMOMAR
 
 ## Página 27
 
@@ -10,7 +10,9 @@ Assim, o SIMOMAR foi concebido para funcionar de forma que cada ODS gerencie den
 
 O Sistema de Informações Gerenciais de Logística e Mobilização de Defesa (SIGLMD), conhecido como Sistema APOLO, é um software de integração de dados e informações logísticas das FA que contém um módulo dedicado à Mobilização, qual seja o Módulo de Empresas Mobilizáveis (MODEMOB).
 
-### 2.2. O SISTEMA DE MOBILIZAÇÃO MARÍTIMA 2.2.1. Atribuição do Sistema
+### 2.2. O SISTEMA DE MOBILIZAÇÃO MARÍTIMA 
+
+2.2.1. Atribuição do Sistema
 
 O SIMOMAR tem como atribuição planejar, coordenar e executar as atividades relativas à Mobilização Marítima, compatibilizando-a com as atividades rotineiras desenvolvidas pela MB e prevendo a ativação do Sistema de Mobilização Militar (SISMOMIL) e do Sistema Nacional de Mobilização (SINAMOB).
 
