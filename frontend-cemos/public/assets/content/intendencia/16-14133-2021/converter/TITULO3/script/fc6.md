@@ -1,0 +1,8 @@
+| bibliografia_id | pergunta | resposta | prova | páginas | assunto |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 41 | A quem se aplica o Manual de Mobilização Militar (MD41-M-02)? | Aplica-se ao Ministério da Defesa (MD) e às Forças Singulares, conforme o item 6.1.1. |  | Pág. 41 | Cap. 6 - Disposições Finais |
+| 41 | Qual é a recomendação sobre os órgãos que devem conduzir os processos de Desmobilização? | É desejável que os processos de Desmobilização sejam conduzidos pelos mesmos órgãos encarregados da Mobilização, conforme o item 6.2.1. |  | Pág. 41 | Cap. 6 - Disposições Finais |
+| 41 | Quem é responsável por planejar exercícios de mobilização para treinar e capacitar a estrutura de elaboração dos Planos? | O EMCFA, por meio da CHELOG, conforme o item 6.2.3. |  | Pág. 41 | Cap. 6 - Disposições Finais |
+| 41 | O manual de Mobilização poderá sofrer revisões em virtude da aprovação de quais normas e planos? | Em virtude da aprovação das normas do Planejamento Baseado em Capacidades (PBC) e do Plano de Articulação e de Equipamento de Defesa (PAED), conforme o item 6.4.2. |  | Pág. 42 | Cap. 6 - Disposições Finais |
+| 41 | Para qual autoridade devem ser encaminhadas as sugestões para o aperfeiçoamento do documento? | Devem ser encaminhadas ao Estado-Maior Conjunto das Forças Armadas (EMCFA), conforme o item 6.4.3. |  | Pág. 42 | Cap. 6 - Disposições Finais |
+| 41 | O que prevê o Anexo V listado nas Disposições Finais do manual? | Prevê o Modelo de Listas de Carências, conforme a lista de ANEXOS da página 42. |  | Pág. 42 | Cap. 6 - Disposições Finais |

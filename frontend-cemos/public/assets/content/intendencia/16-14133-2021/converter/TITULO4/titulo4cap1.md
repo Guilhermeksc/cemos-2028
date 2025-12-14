@@ -1,0 +1,120 @@
+## Página 65
+
+# TÍTULO IV DAS IRREGULARIDADES 
+
+### CAPÍTULO I DAS INFRAÇÕES E SANÇÕES ADMINISTRATIVAS 
+
+Art. 155. O licitante ou o contratado será responsabilizado administrativamente pelas seguintes infrações: 
+
+I - dar causa à inexecução parcial do contrato;
+
+II - dar causa à inexecução parcial do contrato que cause grave dano à Administração, ao funcionamento dos serviços públicos ou ao interesse coletivo;
+
+III - dar causa à inexecução total do contrato;
+
+IV - deixar de entregar a documentação exigida para o certame;
+
+V - não manter a proposta, salvo em decorrência de fato superveniente devidamente justificado;
+
+VI - não celebrar o contrato ou não entregar a documentação exigida para a contratação, quando convocado dentro do prazo de validade de sua proposta;
+
+VII - ensejar o retardamento da execução ou da entrega do objeto da licitação sem motivo justificado;
+
+VIII - apresentar declaração ou documentação falsa exigida para o certame ou prestar declaração falsa durante a licitação ou a execução do contrato;
+
+IX - fraudar a licitação ou praticar ato fraudulento na execução do contrato; 
+
+X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza; 
+
+XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação;
+
+XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846, de 1º de agosto de 2018.
+
+Art. 156. Serão aplicadas ao responsável pelas infrações administrativas previstas nesta Lei as seguintes sanções:
+
+I - advertência;
+
+II - multa;
+
+III - impedimento de licitar e contratar;
+
+IV - declaração de inidoneidade para licitar ou contratar.
+
+§ 1º Na aplicação das sanções serão considerados:
+
+I- a natureza e a gravidade da infração cometida;
+
+II - as peculiaridades do caso concreto;
+
+III - as circunstâncias agravantes ou atenuantes;
+
+IV - os danos que dela provierem para a Administração Pública;
+
+V - a implantação ou o aperfeiçoamento de programa de integridade, conforme normas e orientações dos órgãos de controle.
+
+§ 2º A sanção prevista no inciso I do caput deste artigo será aplicada exclusivamente pela infração administrativa prevista no inciso I do caput do art. 155 desta Lei, quando não se justificar a imposição de penalidade mais grave.
+
+§ 3º A sanção prevista no inciso II do caput deste artigo, calculada na forma do edital ou do contrato, não poderá ser inferior a 0,5% (cinco décimos por cento) nem superior a 30% (trinta por cento) do valor do contrato licitado ou celebrado com contratação direta e será aplicada ao responsável por qualquer das infrações administrativas previstas no art. 155 desta Lei.
+
+§ 4º A sanção prevista no inciso III do caput deste artigo será aplicada ao responsável pelas infrações administrativas previstas nos incisos Il, III, IV, V, Vl e Vll do caput do art. 155 desta Lei, quando não se justificar a imposição de penalidade mais grave, e impedirá o responsável de licitar ou contratar no âmbito da Administração Pública direta e indireta do ente federativo que tiver aplicado a sanção, pelo prazo máximo de 3 (três) anos.
+
+§ 5º A sanção prevista no inciso IV do caput deste artigo será aplicada ao responsável pelas infrações administrativas previstas nos incisos VIII, IX, X, XL e XIl do caput do art. 155 desta Lei, bem como pelas infrações administrativas previstas nos incisos II, II, IV, VY, Vl e VII do caput do referido artigo que justifiquem a imposição de penalidade mais grave que a sanção referida no § 4º deste artigo, e impedirá o responsável de licitar ou contratar no âmbito da Administração Pública direta e indireta de todos os entes federativos, pelo prazo mínimo de 3 (três) anos e máximo de 6 (seis) anos.
+
+§ 6º A sanção estabelecida no inciso IV do caput deste artigo será precedida de análise jurídica e observará as seguintes regras:
+
+## Página 66
+
+I - quando aplicada por órgão do Poder Executivo, será de competência exclusiva de ministro de Estado, de secretário estadual ou de secretário municipal e, quando aplicada por autarquia ou fundação, será de competência exclusiva da autoridade máxima da entidade;
+
+II - quando aplicada por órgãos dos Poderes Legislativo e Judiciário, pelo Ministério Público e pela Defensoria Pública no desempenho da função administrativa, será de competência exclusiva de autoridade de nível hierárquico equivalente às autoridades referidas no inciso I deste parágrafo, na forma de regulamento.
+
+§ 7º As sanções previstas nos incisos I, II e IV do caput deste artigo poderão ser aplicadas cumulativamente com a prevista no inciso II do caput deste artigo.
+
+§ 8º Se a multa aplicada e as indenizações cabíveis forem superiores ao valor de pagamento eventualmente devido pela Administração ao contratado, além da perda desse valor, a diferença será descontada da garantia prestada ou será cobrada judicialmente.
+
+§ 9º A aplicação das sanções previstas no caput deste artigo não exclui, em hipótese alguma, a obrigação de reparação integral do dano causado à Administração Pública.
+
+Art. 157. Na aplicação da sanção prevista no inciso II do caput do art. 156 desta Lei, será facultada a defesa do interessado no prazo de 15 (quinze) dias úteis, contado da data de sua intimação.
+
+Art. 158. A aplicação das sanções previstas nos incisos III e IV do caput do art. 156 desta Lei requererá a instauração de processo de responsabilização, a ser conduzido por comissão composta de 2 (dois) ou mais servidores estáveis, que avaliará fatos e circunstâncias conhecidos e intimará o licitante ou o contratado para, no prazo de 15 (quinze) dias úteis, contado da data de intimação, apresentar defesa escrita e especificar as provas que pretenda produzir.
+
+§ 1º Em órgão ou entidade da Administração Pública cujo quadro funcional não seja formado de servidores estatutários, a comissão a que se refere o caput deste artigo será composta de 2 (dois) ou mais empregados públicos pertencentes aos seus quadros permanentes, preferencialmente com, no mínimo, 3 (três) anos de tempo de serviço no órgão ou entidade.
+
+§ 2º Na hipótese de deferimento de pedido de produção de novas provas ou de juntada de provas julgadas indispensáveis pela comissão, o licitante ou o contratado poderá apresentar alegações finais no prazo de 15 (quinze) dias úteis, contado da data da intimação.
+
+§ 3º Serão indeferidas pela comissão, mediante decisão fundamentada, provas ilícitas, impertinentes, desnecessárias, protelatórias ou intempestivas.
+
+§ 4º A prescrição ocorrerá em 5 (cinco) anos, contados da ciência da infração pela Administração, e será: I - interrompida pela instauração do processo de responsabilização a que se refere o caput deste artigo;
+
+II - suspensa pela celebração de acordo de leniência previsto na Lei nº 12.846, de 1º de agosto de 2013;
+
+III - suspensa por decisão judicial que inviabilize a conclusão da apuração administrativa.
+
+Art. 159. Os atos previstos como infrações administrativas nesta Lei ou em outras leis de licitações e contratos da Administração Pública que também sejam tipificados como atos lesivos na Lei nº 12.846, de 1º de agosto de 2013, serão apurados e julgados conjuntamente, nos mesmos autos, observados o rito procedimental e a autoridade competente definidos na referida Lei.
+
+Parágrafo único. (VETADO).
+
+Art. 160. A personalidade jurídica poderá ser desconsiderada sempre que utilizada com abuso do direito para facilitar, encobrir ou dissimular a prática dos atos ilícitos previstos nesta Lei ou para provocar confusão patrimonial, e, nesse caso, todos os efeitos das sanções aplicadas à pessoa jurídica serão estendidos aos seus administradores e sócios com poderes de administração, a pessoa jurídica sucessora ou a empresa do mesmo ramo com relação de coligação ou controle, de fato ou de direito, com o sancionado, observados, em todos os casos, o contraditório, a ampla defesa e a obrigatoriedade de análise jurídica prévia.
+
+Art. 161. Os órgãos e entidades dos Poderes Executivo, Legislativo e Judiciário de todos os entes federativos deverão, no prazo máximo 15 (quinze) dias úteis, contado da data de aplicação da sanção, informar e manter atualizados os dados relativos às sanções por eles aplicadas, para fins de publicidade no Cadastro Nacional de Empresas Inidôneas e Suspensas (Ceis) e no Cadastro Nacional de Empresas Punidas (Cnep), instituídos no âmbito do Poder Executivo federal.
+
+## Página 67
+
+Parágrafo único. Para fins de aplicação das sanções previstas nos incisos I, II, III e IV do caput do art. 156 desta Lei, o Poder Executivo regulamentará a forma de cômputo e as consequências da soma de diversas sanções aplicadas a uma mesma empresa e derivadas de contratos distintos.
+
+Art. 162. O atraso injustificado na execução do contrato sujeitará o contratado a multa de mora, na forma prevista em edital ou em contrato.
+
+Parágrafo único. A aplicação de multa de mora não impedirá que a Administração a converta em compensatória e promova a extinção unilateral do contrato com a aplicação cumulada de outras sanções previstas nesta Lei.
+
+Art. 163. É admitida a reabilitação do licitante ou contratado perante a própria autoridade que aplicou a penalidade, exigidos, cumulativamente:
+
+I - reparação integral do dano causado à Administração Pública; II - pagamento da multa;
+
+III - transcurso do prazo mínimo de 1 (um) ano da aplicação da penalidade, no caso de impedimento de licitar e contratar, ou de 3 (três) anos da aplicação da penalidade, no caso de declaração de inidoneidade;
+
+IV - cumprimento das condições de reabilitação definidas no ato punitivo;
+
+V - análise jurídica prévia, com posicionamento conclusivo quanto ao cumprimento dos requisitos definidos neste artigo.
+
+Parágrafo único. A sanção pelas infrações previstas nos incisos VIII e XIl do caput do art. 155 desta Lei exigirá, como condição de reabilitação do licitante ou contratado, a implantação ou aperfeiçoamento de programa de integridade pelo responsável. (Regulamento)
+

@@ -1,0 +1,55 @@
+## Página 30
+
+### CAPÍTULO V DO JULGAMENTO
+
+Art. 59. Serão desclassificadas as propostas que:
+
+I - contiverem vícios insanáveis;
+
+II - não obedecerem às especificações técnicas pormenorizadas no edital;
+
+III - apresentarem preços inexequíveis ou permanecerem acima do orçamento estimado para a contratação;
+
+IV - não tiverem sua exequibilidade demonstrada, quando exigido pela Administração;
+
+V - apresentarem desconformidade com quaisquer outras exigências do edital, desde que insanável.
+
+§ 1º A verificação da conformidade das propostas poderá ser feita exclusivamente em relação à proposta mais bem classificada.
+
+§ 2º A Administração poderá realizar diligências para aferir a exequibilidade das propostas ou exigir dos licitantes que ela seja demonstrada, conforme disposto no inciso IV do caput deste artigo.
+
+§ 3º No caso de obras e serviços de engenharia e arquitetura, para efeito de avaliação da exequibilidade e de sobrepreço, serão considerados o preço global, os quantitativos e os preços unitários tidos como relevantes, observado o critério de aceitabilidade de preços unitário e global a ser fixado no edital, conforme as especificidades do mercado correspondente.
+
+§ 4º No caso de obras e serviços de engenharia, serão consideradas inexequíveis as propostas cujos valores forem inferiores a 75% (setenta e cinco por cento) do valor orçado pela Administração.
+
+§ 5º Nas contratações de obras e serviços de engenharia, será exigida garantia adicional do licitante vencedor cuja proposta for inferior a 85% (oitenta e cinco por cento) do valor orçado pela Administração, equivalente à diferença entre este último e o valor da proposta, sem prejuízo das demais garantias exigíveis de acordo com esta Lei.
+
+## Página 31
+
+Art. 60. Em caso de empate entre duas ou mais propostas, serão utilizados os seguintes critérios de desempate, nesta ordem:
+
+I - disputa final, hipótese em que os licitantes empatados poderão apresentar nova proposta em ato contínuo à classificação;
+
+II - avaliação do desempenho contratual prévio dos licitantes, para a qual deverão preferencialmente ser utilizados registros cadastrais para efeito de atesto de cumprimento de obrigações previstos nesta Lei;
+
+III - desenvolvimento pelo licitante de ações de equidade entre homens e mulheres no ambiente de trabalho, conforme regulamento; (Vide Decreto nº 11.430, de 2023) Vigência
+
+IV - desenvolvimento pelo licitante de programa de integridade, conforme orientações dos órgãos de controle.
+
+§ 1º Em igualdade de condições, se não houver desempate, será assegurada preferência, sucessivamente, aos bens e serviços produzidos ou prestados por:
+
+I - empresas estabelecidas no território do Estado ou do Distrito Federal do órgão ou entidade da Administração Pública estadual ou distrital licitante ou, no caso de licitação realizada por órgão ou entidade de Município, no território do Estado em que este se localize;
+
+II - empresas brasileiras;
+
+III - empresas que invistam em pesquisa e no desenvolvimento de tecnologia no País;
+
+IV - empresas que comprovem a prática de mitigação, nos termos da Lei nº 12.187, de 29 de dezembro de 2009
+
+§ 2º As regras previstas no caput deste artigo não prejudicarão a aplicação do disposto no art. 44 da Lei Complementar nº 123, de 14 de dezembro de 2006.
+
+Art. 61. Definido o resultado do julgamento, a Administração poderá negociar condições mais vantajosas com o primeiro colocado.
+
+§ 1º A negociação poderá ser feita com os demais licitantes, segundo a ordem de classificação inicialmente estabelecida, quando o primeiro colocado, mesmo após a negociação, for desclassificado em razão de sua proposta permanecer acima do preço máximo definido pela Administração.
+
+§ 2º A negociação será conduzida por agente de contratação ou comissão de contratação, na forma de regulamento, e, depois de concluída, terá seu resultado divulgado a todos os licitantes e anexado aos autos do processo licitatório.
