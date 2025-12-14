@@ -9,7 +9,7 @@ Sua tarefa é ler o arquivo cap.md para criar um banco de questões v ou f, do s
 | bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
 
 3. Regras de preenchimento das colunas
-    bibliografia_id" será 'Lei nº 11.631/2007 - Lei de Mobilização Nacional'.
+    bibliografia_id" será 'Lei nº 11.631/2007'.
     “paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
     “assunto” será preenchido com 'Lei de Mobilização Nacional'.
     “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira.
