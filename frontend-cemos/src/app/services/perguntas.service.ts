@@ -1,10 +1,9 @@
 
-import { Injectable, inject } from '@angular/core';
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { environment } from '../environments/environment';
-import { AuthService } from './auth.service';
 import {
   Bibliografia,
   BibliografiaFilters,
@@ -26,7 +25,6 @@ import {
 })
 export class PerguntasService {
   private readonly apiUrl = `${environment.apiUrl}/perguntas/api`;
-  private authService = inject(AuthService);
   
   // BehaviorSubjects para cache e estado
   private bibliografias$ = new BehaviorSubject<Bibliografia[]>([]);
@@ -384,14 +382,8 @@ export class PerguntasService {
   // ==================== RASTREAMENTO DE RESPOSTAS ====================
 
   /**
-   * Retorna headers com autenticação
-   */
-  private getAuthHeaders(): HttpHeaders {
-    return this.authService.getAuthHeaders();
-  }
-
-  /**
    * Registra uma resposta do usuário
+   * Nota: O token de autenticação é adicionado automaticamente pelo AuthInterceptor
    */
   registrarResposta(data: {
     pergunta_id: number;
@@ -403,28 +395,27 @@ export class PerguntasService {
   }): Observable<{ id: number; acertou: boolean; message: string }> {
     return this.http.post<{ id: number; acertou: boolean; message: string }>(
       `${this.apiUrl}/respostas-usuario/registrar_resposta/`,
-      data,
-      { headers: this.getAuthHeaders() }
+      data
     );
   }
 
   /**
    * Obtém estatísticas do usuário logado
+   * Nota: O token de autenticação é adicionado automaticamente pelo AuthInterceptor
    */
   getEstatisticasUsuario(): Observable<any> {
     return this.http.get<any>(
-      `${this.apiUrl}/respostas-usuario/estatisticas_usuario/`,
-      { headers: this.getAuthHeaders() }
+      `${this.apiUrl}/respostas-usuario/estatisticas_usuario/`
     );
   }
 
   /**
    * Obtém ranking geral (apenas para admin)
+   * Nota: O token de autenticação é adicionado automaticamente pelo AuthInterceptor
    */
   getRankingGeral(): Observable<any> {
     return this.http.get<any>(
-      `${this.apiUrl}/respostas-usuario/ranking_geral/`,
-      { headers: this.getAuthHeaders() }
+      `${this.apiUrl}/respostas-usuario/ranking_geral/`
     );
   }
 
@@ -433,6 +424,7 @@ export class PerguntasService {
    * @param acertou - Filtrar por acertou (true) ou errou (false). Se não especificado, retorna todas.
    * @param page - Número da página
    * @param page_size - Tamanho da página
+   * Nota: O token de autenticação é adicionado automaticamente pelo AuthInterceptor
    */
   getMinhasRespostas(acertou?: boolean, page: number = 1, page_size: number = 50): Observable<any> {
     let url = `${this.apiUrl}/respostas-usuario/minhas_respostas/?page=${page}&page_size=${page_size}`;
@@ -441,7 +433,7 @@ export class PerguntasService {
       url += `&acertou=${acertou}`;
     }
     
-    return this.http.get<any>(url, { headers: this.getAuthHeaders() });
+    return this.http.get<any>(url);
   }
 
 }

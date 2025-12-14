@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { environment } from '../environments/environment';
 
@@ -101,26 +101,15 @@ export class AuthService {
   }
 
   /**
-   * Retorna headers com autenticação
-   */
-  getAuthHeaders(): HttpHeaders {
-    const token = this.getToken();
-    if (token) {
-      return new HttpHeaders({
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json'
-      });
-    }
-    return new HttpHeaders({
-      'Content-Type': 'application/json'
-    });
-  }
-
-  /**
    * Atualiza token usando refresh token
    */
   refreshToken(): Observable<{ access: string }> {
     const refreshToken = localStorage.getItem('refreshToken');
+    if (!refreshToken) {
+      return new Observable(observer => {
+        observer.error(new Error('No refresh token available'));
+      });
+    }
     return this.http.post<{ access: string }>(`${this.apiUrl}/token/refresh/`, {
       refresh: refreshToken
     });
