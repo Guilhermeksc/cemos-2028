@@ -1,9 +1,10 @@
 
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { Injectable, inject } from '@angular/core';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { environment } from '../environments/environment';
+import { AuthService } from './auth.service';
 import {
   Bibliografia,
   BibliografiaFilters,
@@ -25,6 +26,7 @@ import {
 })
 export class PerguntasService {
   private readonly apiUrl = `${environment.apiUrl}/perguntas/api`;
+  private authService = inject(AuthService);
   
   // BehaviorSubjects para cache e estado
   private bibliografias$ = new BehaviorSubject<Bibliografia[]>([]);
@@ -377,6 +379,52 @@ export class PerguntasService {
       }
       return acc;
     }, {} as { [ano: string]: number });
+  }
+
+  // ==================== RASTREAMENTO DE RESPOSTAS ====================
+
+  /**
+   * Retorna headers com autenticação
+   */
+  private getAuthHeaders(): HttpHeaders {
+    return this.authService.getAuthHeaders();
+  }
+
+  /**
+   * Registra uma resposta do usuário
+   */
+  registrarResposta(data: {
+    pergunta_id: number;
+    pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
+    resposta_usuario: any;
+    bibliografia_id?: number;
+    assunto?: string;
+  }): Observable<{ id: number; acertou: boolean; message: string }> {
+    return this.http.post<{ id: number; acertou: boolean; message: string }>(
+      `${this.apiUrl}/respostas-usuario/registrar_resposta/`,
+      data,
+      { headers: this.getAuthHeaders() }
+    );
+  }
+
+  /**
+   * Obtém estatísticas do usuário logado
+   */
+  getEstatisticasUsuario(): Observable<any> {
+    return this.http.get<any>(
+      `${this.apiUrl}/respostas-usuario/estatisticas_usuario/`,
+      { headers: this.getAuthHeaders() }
+    );
+  }
+
+  /**
+   * Obtém ranking geral (apenas para admin)
+   */
+  getRankingGeral(): Observable<any> {
+    return this.http.get<any>(
+      `${this.apiUrl}/respostas-usuario/ranking_geral/`,
+      { headers: this.getAuthHeaders() }
+    );
   }
 
 }

@@ -5,7 +5,8 @@ from .models import (
     FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
-    PerguntaCorrelacaoModel
+    PerguntaCorrelacaoModel,
+    RespostaUsuario
 )
 from .resources import (
     BibliografiaResource,
@@ -123,3 +124,13 @@ class PerguntaCorrelacaoAdmin(ImportExportModelAdmin):
     )
     
     readonly_fields = ['tipo']
+
+
+@admin.register(RespostaUsuario)
+class RespostaUsuarioAdmin(admin.ModelAdmin):
+    list_display = ['usuario', 'pergunta_tipo', 'pergunta_id', 'acertou', 'timestamp', 'bibliografia_id', 'assunto']
+    list_filter = ['pergunta_tipo', 'acertou', 'timestamp', 'bibliografia_id', 'assunto']
+    search_fields = ['usuario__username', 'pergunta_id', 'assunto']
+    readonly_fields = ['timestamp']
+    date_hierarchy = 'timestamp'
+    ordering = ['-timestamp']

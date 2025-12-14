@@ -4,7 +4,8 @@ from .models import (
     FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
-    PerguntaCorrelacaoModel
+    PerguntaCorrelacaoModel,
+    RespostaUsuario
 )
 
 
@@ -176,3 +177,40 @@ class FlashCardsCreateUpdateSerializer(FlashCardsSerializer):
     """Serializer específico para criação e edição de flash cards"""
     class Meta(FlashCardsSerializer.Meta):
         fields = ['bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano', 'caveira']
+
+
+class RespostaUsuarioSerializer(serializers.ModelSerializer):
+    usuario_username = serializers.CharField(source='usuario.username', read_only=True)
+    
+    class Meta:
+        model = RespostaUsuario
+        fields = [
+            'id',
+            'usuario',
+            'usuario_username',
+            'pergunta_id',
+            'pergunta_tipo',
+            'resposta_usuario',
+            'acertou',
+            'timestamp',
+            'bibliografia_id',
+            'assunto'
+        ]
+        read_only_fields = ['id', 'timestamp']
+
+class RespostaUsuarioCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RespostaUsuario
+        fields = [
+            'pergunta_id',
+            'pergunta_tipo',
+            'resposta_usuario',
+            'acertou',
+            'bibliografia_id',
+            'assunto'
+        ]
+    
+    def create(self, validated_data):
+        # O usuário é automaticamente definido pelo request.user
+        validated_data['usuario'] = self.context['request'].user
+        return super().create(validated_data)

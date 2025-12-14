@@ -168,7 +168,7 @@ Manual Técnico de Orçamento - MTO 2026 ISSOF 22 Versão e?
 
 4.2. CLASSIFICAÇÃO DA DESPESA POR ESFERA ORÇAMENTÁRIA
 
-A esfera tem por finalidade identificar se a despesa pertence ao Orçamento Fiscal (F), da Seguridade Social (S) ou de Investimento das Empresas Estatais (|), conforme disposto no 8 5º do art. 165 da CF. Na LOA, o classificador de esfera é identificado com as letras “F”, “S” ou “|”. Na base de dados do SIOP, o campo destinado à esfera orçamentária é composto de dois dígitos e será associado à ação orçamentária:
+A esfera tem por finalidade identificar se a despesa pertence ao Orçamento Fiscal (F), da Seguridade Social (S) ou de Investimento das Empresas Estatais ( l), conforme disposto no 8 5º do art. 165 da CF. Na LOA, o classificador de esfera é identificado com as letras “F”, “S” ou “|”. Na base de dados do SIOP, o campo destinado à esfera orçamentária é composto de dois dígitos e será associado à ação orçamentária:
 
 CÓDIGO | ESFERA ORÇAMENTÁRIA
 

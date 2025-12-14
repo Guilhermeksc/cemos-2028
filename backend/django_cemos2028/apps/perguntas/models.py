@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django_cemos2028.apps.core.users.models import Usuario
 
 
 class BibliografiaModel(models.Model):
@@ -152,3 +153,70 @@ class PerguntaCorrelacaoModel(PerguntasBaseModel):
     def save(self, *args, **kwargs):
         self.tipo = 'correlacao'
         super().save(*args, **kwargs)
+
+
+class RespostaUsuario(models.Model):
+    """
+    Modelo para armazenar respostas dos usuários às questões
+    """
+    TIPO_CHOICES = [
+        ('multipla', 'Múltipla Escolha'),
+        ('vf', 'Verdadeiro ou Falso'),
+        ('correlacao', 'Correlação'),
+    ]
+    
+    usuario = models.ForeignKey(
+        Usuario,
+        on_delete=models.CASCADE,
+        related_name='respostas',
+        verbose_name="Usuário"
+    )
+    
+    # Identificação da questão
+    pergunta_id = models.IntegerField(verbose_name="ID da Pergunta")
+    pergunta_tipo = models.CharField(
+        max_length=20,
+        choices=TIPO_CHOICES,
+        verbose_name="Tipo da Pergunta"
+    )
+    
+    # Resposta do usuário (armazenada como JSON para flexibilidade)
+    resposta_usuario = models.JSONField(verbose_name="Resposta do Usuário")
+    
+    # Resultado
+    acertou = models.BooleanField(verbose_name="Acertou")
+    
+    # Metadados
+    timestamp = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name="Data/Hora da Resposta"
+    )
+    
+    # Informações adicionais para estatísticas
+    bibliografia_id = models.IntegerField(
+        null=True,
+        blank=True,
+        verbose_name="ID da Bibliografia"
+    )
+    assunto = models.CharField(
+        max_length=100,
+        null=True,
+        blank=True,
+        verbose_name="Assunto"
+    )
+    
+    class Meta:
+        verbose_name = "Resposta do Usuário"
+        verbose_name_plural = "Respostas dos Usuários"
+        ordering = ['-timestamp']
+        # Índice composto para consultas eficientes
+        indexes = [
+            models.Index(fields=['usuario', 'pergunta_tipo', 'pergunta_id']),
+            models.Index(fields=['usuario', 'acertou']),
+            models.Index(fields=['usuario', 'timestamp']),
+        ]
+        # Evitar duplicatas: um usuário pode responder a mesma questão múltiplas vezes
+        # Mas cada resposta deve ser registrada separadamente
+    
+    def __str__(self):
+        return f"{self.usuario.username} - {self.get_pergunta_tipo_display()} #{self.pergunta_id} - {'✓' if self.acertou else '✗'}"

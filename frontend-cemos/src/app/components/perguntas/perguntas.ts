@@ -731,8 +731,54 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       questionResults_ESTADO: currentTab.questionResults
     });
 
+    // ✅ NOVO: Registrar resposta no backend
+    this.registrarRespostaNoBackend(question, answer);
+
     // Forçar detecção de mudanças
     this.cdr.detectChanges();
+  }
+
+  /**
+   * Registra a resposta do usuário no backend
+   */
+  private registrarRespostaNoBackend(question: SimuladoQuestion, answer: any): void {
+    // Extrair bibliografia_id e assunto da questão
+    let bibliografiaId: number | undefined;
+    let assunto: string | undefined;
+
+    if (question.data) {
+      // Para todos os tipos de questão, bibliografia está em data.bibliografia (que é o ID)
+      if ('bibliografia' in question.data) {
+        bibliografiaId = question.data.bibliografia as number;
+      }
+      // Assunto pode estar em data.assunto
+      if ('assunto' in question.data) {
+        assunto = question.data.assunto as string | undefined;
+      }
+    }
+
+    // Se não encontrou assunto em data, tenta em question.assunto
+    if (!assunto && question.assunto) {
+      assunto = question.assunto;
+    }
+
+    const data = {
+      pergunta_id: question.id,
+      pergunta_tipo: question.tipo,
+      resposta_usuario: answer,
+      bibliografia_id: bibliografiaId,
+      assunto: assunto
+    };
+
+    this.perguntasService.registrarResposta(data).subscribe({
+      next: (response) => {
+        console.log('✅ Resposta registrada no backend:', response);
+      },
+      error: (error) => {
+        console.error('❌ Erro ao registrar resposta no backend:', error);
+        // Não bloquear o fluxo se houver erro no registro
+      }
+    });
   }
 
   private checkAnswer(question: SimuladoQuestion, answer: any): boolean {

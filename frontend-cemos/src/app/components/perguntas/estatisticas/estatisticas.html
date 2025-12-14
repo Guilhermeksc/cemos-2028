@@ -1,0 +1,166 @@
+<div class="estatisticas-container">
+  <h2>Minhas Estatísticas</h2>
+  
+  <div *ngIf="isLoading" class="loading">
+    <p>Carregando estatísticas...</p>
+  </div>
+  
+  <div *ngIf="estatisticasUsuario && !isLoading" class="stats-content">
+    <!-- Cards de Estatísticas Gerais -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>Total de Respostas</h3>
+        <p class="stat-value">{{ estatisticasUsuario.total_respostas }}</p>
+      </div>
+      
+      <div class="stat-card success">
+        <h3>Acertos</h3>
+        <p class="stat-value">{{ estatisticasUsuario.total_acertos }}</p>
+      </div>
+      
+      <div class="stat-card error">
+        <h3>Erros</h3>
+        <p class="stat-value">{{ estatisticasUsuario.total_erros }}</p>
+      </div>
+      
+      <div class="stat-card">
+        <h3>Taxa de Acerto</h3>
+        <p class="stat-value">{{ estatisticasUsuario.taxa_acerto }}%</p>
+      </div>
+    </div>
+
+    <!-- Estatísticas por Tipo de Questão -->
+    <div class="stats-section" *ngIf="estatisticasUsuario.por_tipo && estatisticasUsuario.por_tipo.length > 0">
+      <h3>Por Tipo de Questão</h3>
+      <div class="table-container">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Total</th>
+              <th>Acertos</th>
+              <th>Erros</th>
+              <th>Taxa de Acerto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of estatisticasUsuario.por_tipo">
+              <td>{{ item.pergunta_tipo === 'multipla' ? 'Múltipla Escolha' : item.pergunta_tipo === 'vf' ? 'Verdadeiro/Falso' : 'Correlação' }}</td>
+              <td>{{ item.total }}</td>
+              <td class="success-text">{{ item.acertos }}</td>
+              <td class="error-text">{{ item.erros }}</td>
+              <td>{{ calcularTaxaAcerto(item.acertos, item.total) }}%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Estatísticas por Bibliografia -->
+    <div class="stats-section" *ngIf="estatisticasUsuario.por_bibliografia && estatisticasUsuario.por_bibliografia.length > 0">
+      <h3>Por Bibliografia</h3>
+      <div class="table-container">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Bibliografia ID</th>
+              <th>Total</th>
+              <th>Acertos</th>
+              <th>Erros</th>
+              <th>Taxa de Acerto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of estatisticasUsuario.por_bibliografia">
+              <td>{{ item.bibliografia_id }}</td>
+              <td>{{ item.total }}</td>
+              <td class="success-text">{{ item.acertos }}</td>
+              <td class="error-text">{{ item.erros }}</td>
+              <td>{{ calcularTaxaAcerto(item.acertos, item.total) }}%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Estatísticas por Assunto -->
+    <div class="stats-section" *ngIf="estatisticasUsuario.por_assunto && estatisticasUsuario.por_assunto.length > 0">
+      <h3>Por Assunto</h3>
+      <div class="table-container">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Assunto</th>
+              <th>Total</th>
+              <th>Acertos</th>
+              <th>Erros</th>
+              <th>Taxa de Acerto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of estatisticasUsuario.por_assunto">
+              <td>{{ item.assunto || 'Sem assunto' }}</td>
+              <td>{{ item.total }}</td>
+              <td class="success-text">{{ item.acertos }}</td>
+              <td class="error-text">{{ item.erros }}</td>
+              <td>{{ calcularTaxaAcerto(item.acertos, item.total) }}%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ranking Geral (apenas para admin) -->
+  <div *ngIf="isAdmin && rankingGeral" class="ranking-section">
+    <h2>Ranking Geral</h2>
+    
+    <div class="stats-section" *ngIf="rankingGeral.estatisticas_gerais">
+      <h3>Estatísticas Gerais do Sistema</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>Total de Usuários</h4>
+          <p class="stat-value">{{ rankingGeral.estatisticas_gerais.total_usuarios }}</p>
+        </div>
+        <div class="stat-card">
+          <h4>Total de Respostas</h4>
+          <p class="stat-value">{{ rankingGeral.estatisticas_gerais.total_respostas }}</p>
+        </div>
+        <div class="stat-card">
+          <h4>Total de Acertos</h4>
+          <p class="stat-value">{{ rankingGeral.estatisticas_gerais.total_acertos }}</p>
+        </div>
+        <div class="stat-card">
+          <h4>Taxa de Acerto Geral</h4>
+          <p class="stat-value">{{ rankingGeral.estatisticas_gerais.taxa_acerto_geral }}%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-section" *ngIf="rankingGeral.ranking && rankingGeral.ranking.length > 0">
+      <h3>Ranking de Usuários</h3>
+      <div class="table-container">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th>Posição</th>
+              <th>Usuário</th>
+              <th>Acertos</th>
+              <th>Total</th>
+              <th>Taxa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of rankingGeral.ranking; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ item.username }}</td>
+              <td class="success-text">{{ item.total_acertos }}</td>
+              <td>{{ item.total_respostas }}</td>
+              <td>{{ item.taxa_acerto }}%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
