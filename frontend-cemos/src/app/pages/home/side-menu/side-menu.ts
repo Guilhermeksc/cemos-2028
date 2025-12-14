@@ -1,6 +1,6 @@
 // ...existing code...
 import { NgFor, NgIf } from '@angular/common';
-import { Component, EventEmitter, Output, Input, signal } from '@angular/core';
+import { Component, EventEmitter, Output, Input, signal, OnInit, OnDestroy } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
@@ -8,6 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { AuthService } from '../../../services/auth.service';
+import { Subscription } from 'rxjs';
 
 interface MenuItem {
   title: string;
@@ -57,12 +58,17 @@ interface SubSubMenuItem {
     ])
   ]
 })
-export class SideMenu {
+export class SideMenu implements OnInit, OnDestroy {
   @Input() isTopMenuMode: boolean = false;
   @Output() itemClicked = new EventEmitter<void>();
   
   // Rastrear o item ativo atual
   currentActivePath = signal<string>('');
+  
+  // Nome do usuário logado
+  currentUsername = signal<string>('');
+  
+  private userSubscription?: Subscription;
 
   constructor(private router: Router, private authService: AuthService) {
     // Subscribe to route changes to update active path
@@ -72,6 +78,20 @@ export class SideMenu {
         this.updateActivePath();
       });
     this.updateActivePath();
+  }
+  
+  ngOnInit(): void {
+    // Subscribe ao usuário atual para obter o username
+    this.userSubscription = this.authService.currentUser$.subscribe(user => {
+      this.currentUsername.set(user?.username || '');
+    });
+  }
+  
+  ngOnDestroy(): void {
+    // Limpar subscription ao destruir o componente
+    if (this.userSubscription) {
+      this.userSubscription.unsubscribe();
+    }
   }
   
   /**

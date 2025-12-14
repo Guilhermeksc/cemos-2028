@@ -198,6 +198,38 @@
   flex-shrink: 0;
 }
 
+// ===== INFORMAÇÃO DO USUÁRIO =====
+.user-info-container {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-gray);
+  background: var(--off-white);
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-gray);
+    
+    .user-icon {
+      color: var(--medium-gray);
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .user-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--dark-gray);
+      letter-spacing: 0.3px;
+      text-transform: capitalize;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
 // ===== BOTÃO DE LOGOUT =====
 .logout-container {
   padding: 2px;

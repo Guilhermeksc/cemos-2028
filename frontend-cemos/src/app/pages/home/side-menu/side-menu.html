@@ -1,5 +1,13 @@
 <!-- Container agrupador -->
 <div class="top-section-wrapper">
+  <!-- Informação do usuário logado - Apenas para desktop (sidebar) -->
+  <div class="user-info-container" *ngIf="!isTopMenuMode && currentUsername()">
+    <div class="user-info">
+      <mat-icon class="user-icon">account_circle</mat-icon>
+      <span class="user-name">{{ currentUsername() }}</span>
+    </div>
+  </div>
+  
   <!-- Botão de Logout - Apenas para desktop (sidebar) -->
   <div class="logout-container" *ngIf="!isTopMenuMode">
     <button 
