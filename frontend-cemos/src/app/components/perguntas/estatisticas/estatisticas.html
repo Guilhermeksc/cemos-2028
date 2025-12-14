@@ -1,34 +1,125 @@
 <div class="estatisticas-container">
-  <h2>Minhas Estatísticas</h2>
-  
-  <div *ngIf="isLoading" class="loading">
-    <p>Carregando estatísticas...</p>
+  <!-- Header com Estatísticas Gerais -->
+  <div class="header">
+    <h2>
+      <mat-icon class="header-icon">bar_chart</mat-icon>
+      Estatísticas
+    </h2>
+    
+    <div *ngIf="isLoading" class="loading">
+      <p>Carregando estatísticas...</p>
+    </div>
+    
+    <!-- Stats similar ao flash-cards -->
+    <div *ngIf="estatisticasUsuario && !isLoading" class="stats">
+      <span class="stat-item">
+        <strong>{{ estatisticasUsuario.total_respostas }}</strong> respostas
+      </span>
+      <span class="stat-item success">
+        <strong>{{ estatisticasUsuario.total_acertos }}</strong> acertos
+      </span>
+      <span class="stat-item error">
+        <strong>{{ estatisticasUsuario.total_erros }}</strong> erros
+      </span>
+      <span class="stat-item">
+        Taxa: <strong>{{ estatisticasUsuario.taxa_acerto }}%</strong>
+      </span>
+    </div>
   </div>
   
-  <div *ngIf="estatisticasUsuario && !isLoading" class="stats-content">
-    <!-- Cards de Estatísticas Gerais -->
-    <div class="stats-grid">
-      <div class="stat-card">
-        <h3>Total de Respostas</h3>
-        <p class="stat-value">{{ estatisticasUsuario.total_respostas }}</p>
-      </div>
-      
-      <div class="stat-card success">
-        <h3>Acertos</h3>
-        <p class="stat-value">{{ estatisticasUsuario.total_acertos }}</p>
-      </div>
-      
-      <div class="stat-card error">
-        <h3>Erros</h3>
-        <p class="stat-value">{{ estatisticasUsuario.total_erros }}</p>
-      </div>
-      
-      <div class="stat-card">
-        <h3>Taxa de Acerto</h3>
-        <p class="stat-value">{{ estatisticasUsuario.taxa_acerto }}%</p>
+  <!-- Estatísticas por Matéria -->
+  <div class="materias-section">
+    <h2>Estatísticas por Matéria</h2>
+    
+    <div *ngIf="isLoadingMaterias" class="loading">
+      <p>Carregando estatísticas por matéria...</p>
+    </div>
+    
+    <div *ngIf="!isLoadingMaterias && materiasEstatisticas.length > 0" class="materias-list">
+    
+      <div 
+        *ngFor="let materiaStat of materiasEstatisticas; let i = index" 
+        class="materia-card"
+        [class.expanded]="materiaStat.expanded">
+        
+        <!-- Cabeçalho da Matéria -->
+        <div class="materia-header" (click)="toggleMateria(i)">
+          <div class="materia-info">
+            <mat-icon class="expand-icon">{{ materiaStat.expanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+            <h3>{{ materiaStat.materia }}</h3>
+            <span class="bibliografias-count">({{ materiaStat.bibliografias.length }} bibliografias)</span>
+          </div>
+          <div class="materia-stats-summary">
+            <div class="stat-badge">
+              <span class="stat-label">Total:</span>
+              <span class="stat-value">{{ materiaStat.estatisticas.total }}</span>
+            </div>
+            <div class="stat-badge success">
+              <span class="stat-label">Acertos:</span>
+              <span class="stat-value">{{ materiaStat.estatisticas.acertos }}</span>
+            </div>
+            <div class="stat-badge error">
+              <span class="stat-label">Erros:</span>
+              <span class="stat-value">{{ materiaStat.estatisticas.erros }}</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-label">Taxa:</span>
+              <span class="stat-value">{{ materiaStat.estatisticas.taxa_acerto }}%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo Expandido - Bibliografias -->
+        <div class="materia-content" *ngIf="materiaStat.expanded">
+          <div class="bibliografias-list">
+            <div 
+              *ngFor="let bibliografia of materiaStat.bibliografias" 
+              class="bibliografia-item">
+              
+              <div class="bibliografia-header">
+                <div class="bibliografia-info">
+                  <h4>{{ bibliografia.titulo }}</h4>
+                  <p class="bibliografia-meta" *ngIf="bibliografia.autor">
+                    <span class="autor">{{ bibliografia.autor }}</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="bibliografia-stats" *ngIf="getEstatisticasBibliografia(bibliografia.id)">
+                <div class="stat-item">
+                  <span class="stat-label">Total:</span>
+                  <span class="stat-value">{{ getEstatisticasBibliografia(bibliografia.id).total }}</span>
+                </div>
+                <div class="stat-item success">
+                  <span class="stat-label">Acertos:</span>
+                  <span class="stat-value">{{ getEstatisticasBibliografia(bibliografia.id).acertos }}</span>
+                </div>
+                <div class="stat-item error">
+                  <span class="stat-label">Erros:</span>
+                  <span class="stat-value">{{ getEstatisticasBibliografia(bibliografia.id).erros }}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Taxa:</span>
+                  <span class="stat-value">
+                    {{ calcularTaxaAcerto(
+                      getEstatisticasBibliografia(bibliografia.id).acertos,
+                      getEstatisticasBibliografia(bibliografia.id).total
+                    ) }}%
+                  </span>
+                </div>
+              </div>
+              <div class="no-stats" *ngIf="!getEstatisticasBibliografia(bibliografia.id)">
+                <p>Nenhuma resposta registrada para esta bibliografia</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
+  </div>
+  
+  <!-- Estatísticas Detalhadas -->
+  <div *ngIf="estatisticasUsuario && !isLoading" class="stats-content">
     <!-- Estatísticas por Tipo de Questão -->
     <div class="stats-section" *ngIf="estatisticasUsuario.por_tipo && estatisticasUsuario.por_tipo.length > 0">
       <h3>Por Tipo de Questão</h3>
@@ -108,6 +199,140 @@
           </tbody>
         </table>
       </div>
+    </div>
+  </div>
+
+  <!-- Visualização de Questões Acertadas/Erradas -->
+  <div class="questoes-section">
+    <h2>Minhas Questões</h2>
+    
+    <div class="filtros-questoes">
+      <button 
+        class="filtro-btn"
+        [class.active]="filtroQuestoes === 'todas'"
+        (click)="carregarQuestoes('todas')">
+        Todas
+      </button>
+      <button 
+        class="filtro-btn success"
+        [class.active]="filtroQuestoes === 'acertadas'"
+        (click)="carregarQuestoes('acertadas')">
+        <mat-icon>check_circle</mat-icon>
+        Acertadas ({{ estatisticasUsuario?.total_acertos || 0 }})
+      </button>
+      <button 
+        class="filtro-btn error"
+        [class.active]="filtroQuestoes === 'erradas'"
+        (click)="carregarQuestoes('erradas')">
+        <mat-icon>cancel</mat-icon>
+        Erradas ({{ estatisticasUsuario?.total_erros || 0 }})
+      </button>
+    </div>
+
+    <div *ngIf="isLoadingQuestoes" class="loading">
+      <p>Carregando questões...</p>
+    </div>
+
+    <div *ngIf="!isLoadingQuestoes && getQuestoesAtuais().length > 0" class="questoes-list">
+      <div 
+        *ngFor="let item of getQuestoesAtuais(); let i = index" 
+        class="questao-item"
+        [class.acertada]="item.resposta.acertou"
+        [class.errada]="!item.resposta.acertou">
+        
+        <div class="questao-header">
+          <div class="questao-status">
+            <mat-icon *ngIf="item.resposta.acertou" class="status-icon success">check_circle</mat-icon>
+            <mat-icon *ngIf="!item.resposta.acertou" class="status-icon error">cancel</mat-icon>
+            <span class="questao-numero">Questão #{{ item.questao?.id || item.resposta.pergunta_id }}</span>
+            <span class="questao-tipo">{{ item.resposta.pergunta_tipo === 'multipla' ? 'Múltipla Escolha' : item.resposta.pergunta_tipo === 'vf' ? 'Verdadeiro/Falso' : 'Correlação' }}</span>
+          </div>
+          <div class="questao-meta">
+            <span *ngIf="item.questao?.bibliografia_titulo" class="bibliografia">{{ item.questao.bibliografia_titulo }}</span>
+            <span *ngIf="item.questao?.assunto" class="assunto">{{ item.questao.assunto }}</span>
+            <span class="data">{{ item.resposta.timestamp | date:'dd/MM/yyyy HH:mm' }}</span>
+          </div>
+        </div>
+
+        <div class="questao-content" *ngIf="item.questao">
+          <div class="questao-texto">
+            <h4>Pergunta:</h4>
+            <p>{{ item.questao.pergunta }}</p>
+          </div>
+
+          <!-- Múltipla Escolha -->
+          <div *ngIf="item.questao.tipo === 'multipla'" class="questao-alternativas">
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'a'">
+              <strong>A)</strong> {{ item.questao.alternativa_a }}
+            </div>
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'b'">
+              <strong>B)</strong> {{ item.questao.alternativa_b }}
+            </div>
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'c'">
+              <strong>C)</strong> {{ item.questao.alternativa_c }}
+            </div>
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'd'">
+              <strong>D)</strong> {{ item.questao.alternativa_d }}
+            </div>
+          </div>
+
+          <!-- Verdadeiro/Falso -->
+          <div *ngIf="item.questao.tipo === 'vf'" class="questao-vf">
+            <div class="afirmacao-verdadeira" *ngIf="item.questao.afirmacao_verdadeira">
+              <strong>Afirmação Verdadeira:</strong> {{ item.questao.afirmacao_verdadeira }}
+            </div>
+            <div class="afirmacao-falsa" *ngIf="item.questao.afirmacao_falsa">
+              <strong>Afirmação Falsa:</strong> {{ item.questao.afirmacao_falsa }}
+            </div>
+          </div>
+
+          <!-- Correlação -->
+          <div *ngIf="item.questao.tipo === 'correlacao'" class="questao-correlacao">
+            <div class="colunas">
+              <div class="coluna">
+                <h5>Coluna A:</h5>
+                <ul>
+                  <li *ngFor="let item of item.questao.coluna_a; let i = index">{{ i + 1 }}. {{ item }}</li>
+                </ul>
+              </div>
+              <div class="coluna">
+                <h5>Coluna B:</h5>
+                <ul>
+                  <li *ngFor="let item of item.questao.coluna_b; let i = index">{{ getLetraColunaB(i) }}. {{ item }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="questao-respostas">
+            <div class="resposta-item">
+              <span class="resposta-label">Sua Resposta:</span>
+              <span class="resposta-valor" [class.errada]="!item.resposta.acertou">
+                {{ formatarRespostaUsuario(item.resposta.resposta_usuario, item.resposta.pergunta_tipo) }}
+              </span>
+            </div>
+            <div class="resposta-item">
+              <span class="resposta-label">Resposta Correta:</span>
+              <span class="resposta-valor correta">
+                {{ formatarRespostaCorreta(item.questao) }}
+              </span>
+            </div>
+          </div>
+
+          <div class="questao-justificativa" *ngIf="item.questao.justificativa_resposta_certa">
+            <h5>Justificativa:</h5>
+            <p>{{ item.questao.justificativa_resposta_certa }}</p>
+          </div>
+        </div>
+
+        <div class="questao-erro" *ngIf="!item.questao || item.questao.erro">
+          <p>Erro ao carregar detalhes da questão: {{ item.questao?.erro || 'Questão não encontrada' }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="!isLoadingQuestoes && getQuestoesAtuais().length === 0" class="no-questoes">
+      <p>Nenhuma questão encontrada para este filtro.</p>
     </div>
   </div>
 

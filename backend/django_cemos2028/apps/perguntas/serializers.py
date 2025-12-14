@@ -199,18 +199,26 @@ class RespostaUsuarioSerializer(serializers.ModelSerializer):
         read_only_fields = ['id', 'timestamp']
 
 class RespostaUsuarioCreateSerializer(serializers.ModelSerializer):
+    afirmacao_sorteada_eh_verdadeira = serializers.BooleanField(required=False, allow_null=True, write_only=True)
+    acertou = serializers.BooleanField(required=False, write_only=True)
+    
     class Meta:
         model = RespostaUsuario
         fields = [
             'pergunta_id',
             'pergunta_tipo',
             'resposta_usuario',
-            'acertou',
             'bibliografia_id',
-            'assunto'
+            'assunto',
+            'afirmacao_sorteada_eh_verdadeira',
+            'acertou'  # Incluído mas será ignorado se não vier do cliente
         ]
     
     def create(self, validated_data):
+        # Remover campo auxiliar antes de salvar (não é um campo do modelo)
+        validated_data.pop('afirmacao_sorteada_eh_verdadeira', None)
         # O usuário é automaticamente definido pelo request.user
         validated_data['usuario'] = self.context['request'].user
+        # acertou será definido na view antes de chamar create()
+        # Se não estiver em validated_data, será None e causará erro, então garantimos que está
         return super().create(validated_data)

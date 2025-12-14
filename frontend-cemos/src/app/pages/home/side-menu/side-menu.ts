@@ -103,6 +103,15 @@ export class SideMenu implements OnInit, OnDestroy {
     this.itemClicked.emit();
   }
 
+  /**
+   * Navega para a página de Estatísticas
+   */
+  navigateEstatisticas(): void {
+    this.currentActivePath.set('estatisticas');
+    this.router.navigate(['/home/estatisticas']);
+    this.itemClicked.emit();
+  }
+
   readonly menuItems = signal<MenuItem[]>([
     { 
       title: 'História', 

@@ -16,6 +16,10 @@ export const routes: Routes = [
         path: '', 
         loadComponent: () => import('./pages/home/home-landing/home-landing.component').then((m) => m.HomeLandingComponent)
       },
+      {
+        path: 'estatisticas',
+        loadComponent: () => import('./components/perguntas/estatisticas/estatisticas').then((m) => m.EstatisticasComponent)
+      },
       ...moduleRoutes
     ]
   },

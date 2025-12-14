@@ -1,15 +1,19 @@
+
 <!-- Container agrupador -->
 <div class="top-section-wrapper">
-  <!-- Informação do usuário logado - Apenas para desktop (sidebar) -->
-  <div class="user-info-container" *ngIf="!isTopMenuMode && currentUsername()">
-    <div class="user-info">
+  
+  <!-- Informação do usuário e botões - Apenas para desktop (sidebar) -->
+  <div class="user-actions-container" *ngIf="!isTopMenuMode && currentUsername()">
+    <div 
+      class="user-info"
+      [class.active]="currentActivePath() === 'estatisticas'"
+      (click)="navigateEstatisticas()"
+      role="button"
+      tabindex="0"
+      aria-label="Ver estatísticas do usuário">
       <mat-icon class="user-icon">account_circle</mat-icon>
       <span class="user-name">{{ currentUsername() }}</span>
     </div>
-  </div>
-  
-  <!-- Botão de Logout - Apenas para desktop (sidebar) -->
-  <div class="logout-container" *ngIf="!isTopMenuMode">
     <button 
       mat-flat-button 
       class="logout-button"
@@ -19,6 +23,7 @@
       <span>Sair</span>
     </button>
   </div>
+
 
 <!-- Imagem do Brasil - Apenas para desktop (sidebar) -->
 <div class="brazil-image-container" *ngIf="!isTopMenuMode">
@@ -38,8 +43,10 @@
   </div>
 
 </div>
-<mat-nav-list class="nav-list">
-  <div class="nav-section" *ngFor="let item of menuItems(); let i = index">
+
+<div class="sidebar-content-wrapper">
+  <mat-nav-list class="nav-list">
+    <div class="nav-section" *ngFor="let item of menuItems(); let i = index">
     <!-- Cabeçalho da seção clicável -->
     <div 
       class="nav-section-header"
@@ -129,6 +136,5 @@
       </ng-container>
     </div>
   </div>
-</mat-nav-list>
-
+  </mat-nav-list>
 

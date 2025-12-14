@@ -399,6 +399,7 @@ export class PerguntasService {
     resposta_usuario: any;
     bibliografia_id?: number;
     assunto?: string;
+    afirmacao_sorteada_eh_verdadeira?: boolean; // Apenas para questões VF
   }): Observable<{ id: number; acertou: boolean; message: string }> {
     return this.http.post<{ id: number; acertou: boolean; message: string }>(
       `${this.apiUrl}/respostas-usuario/registrar_resposta/`,
@@ -425,6 +426,22 @@ export class PerguntasService {
       `${this.apiUrl}/respostas-usuario/ranking_geral/`,
       { headers: this.getAuthHeaders() }
     );
+  }
+
+  /**
+   * Obtém respostas do usuário com detalhes das questões
+   * @param acertou - Filtrar por acertou (true) ou errou (false). Se não especificado, retorna todas.
+   * @param page - Número da página
+   * @param page_size - Tamanho da página
+   */
+  getMinhasRespostas(acertou?: boolean, page: number = 1, page_size: number = 50): Observable<any> {
+    let url = `${this.apiUrl}/respostas-usuario/minhas_respostas/?page=${page}&page_size=${page_size}`;
+    
+    if (acertou !== undefined) {
+      url += `&acertou=${acertou}`;
+    }
+    
+    return this.http.get<any>(url, { headers: this.getAuthHeaders() });
   }
 
 }

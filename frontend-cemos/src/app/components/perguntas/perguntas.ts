@@ -745,6 +745,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     // Extrair bibliografia_id e assunto da questão
     let bibliografiaId: number | undefined;
     let assunto: string | undefined;
+    let afirmacaoSorteadaEhVerdadeira: boolean | undefined;
 
     if (question.data) {
       // Para todos os tipos de questão, bibliografia está em data.bibliografia (que é o ID)
@@ -755,6 +756,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       if ('assunto' in question.data) {
         assunto = question.data.assunto as string | undefined;
       }
+      // Para questões VF, precisamos saber qual afirmação foi sorteada
+      if (question.tipo === 'vf' && 'afirmacao_sorteada_eh_verdadeira' in question.data) {
+        afirmacaoSorteadaEhVerdadeira = (question.data as any).afirmacao_sorteada_eh_verdadeira;
+      }
     }
 
     // Se não encontrou assunto em data, tenta em question.assunto
@@ -762,7 +767,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       assunto = question.assunto;
     }
 
-    const data = {
+    const data: any = {
       pergunta_id: question.id,
       pergunta_tipo: question.tipo,
       resposta_usuario: answer,
@@ -770,12 +775,29 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       assunto: assunto
     };
 
+    // Adicionar informação sobre qual afirmação foi sorteada para questões VF
+    if (question.tipo === 'vf' && afirmacaoSorteadaEhVerdadeira !== undefined) {
+      data.afirmacao_sorteada_eh_verdadeira = afirmacaoSorteadaEhVerdadeira;
+    }
+
+    console.log('📤 Enviando resposta para o backend:', {
+      pergunta_id: data.pergunta_id,
+      pergunta_tipo: data.pergunta_tipo,
+      resposta_usuario: data.resposta_usuario,
+      bibliografia_id: data.bibliografia_id,
+      assunto: data.assunto,
+      afirmacao_sorteada_eh_verdadeira: data.afirmacao_sorteada_eh_verdadeira
+    });
+
     this.perguntasService.registrarResposta(data).subscribe({
       next: (response) => {
         console.log('✅ Resposta registrada no backend:', response);
       },
       error: (error) => {
         console.error('❌ Erro ao registrar resposta no backend:', error);
+        if (error.error) {
+          console.error('Detalhes do erro:', error.error);
+        }
         // Não bloquear o fluxo se houver erro no registro
       }
     });

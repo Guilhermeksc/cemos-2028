@@ -210,24 +210,38 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
             "pergunta_tipo": "multipla",  // ou "vf" ou "correlacao"
             "resposta_usuario": "a",  // ou true/false para VF, ou objeto para correlação
             "bibliografia_id": 1,  // opcional
-            "assunto": "Logística"  // opcional
+            "assunto": "Logística",  // opcional
+            "afirmacao_sorteada_eh_verdadeira": true  // opcional, apenas para VF
         }
         """
+        import logging
+        logger = logging.getLogger(__name__)
+        
+        logger.info(f"📥 Registrando resposta - Usuário: {request.user.username}, Dados: {request.data}")
+        
         serializer = RespostaUsuarioCreateSerializer(
             data=request.data,
             context={'request': request}
         )
         
         if serializer.is_valid():
+            # Extrair informação sobre afirmação sorteada para VF
+            afirmacao_sorteada_eh_verdadeira = request.data.get('afirmacao_sorteada_eh_verdadeira')
+            
             # Verificar se a resposta está correta
             acertou = self._verificar_resposta(
                 serializer.validated_data['pergunta_id'],
                 serializer.validated_data['pergunta_tipo'],
-                serializer.validated_data['resposta_usuario']
+                serializer.validated_data['resposta_usuario'],
+                afirmacao_sorteada_eh_verdadeira
             )
+            
+            logger.info(f"✅ Verificação: Pergunta {serializer.validated_data['pergunta_id']} ({serializer.validated_data['pergunta_tipo']}) - Resposta: {serializer.validated_data['resposta_usuario']} - Acertou: {acertou}")
             
             serializer.validated_data['acertou'] = acertou
             resposta = serializer.save()
+            
+            logger.info(f"💾 Resposta salva - ID: {resposta.id}, Usuário: {resposta.usuario.username}, Acertou: {resposta.acertou}")
             
             return Response({
                 'id': resposta.id,
@@ -235,9 +249,10 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                 'message': 'Resposta registrada com sucesso'
             }, status=status.HTTP_201_CREATED)
         
+        logger.error(f"❌ Erro de validação: {serializer.errors}")
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-    def _verificar_resposta(self, pergunta_id, pergunta_tipo, resposta_usuario):
+    def _verificar_resposta(self, pergunta_id, pergunta_tipo, resposta_usuario, afirmacao_sorteada_eh_verdadeira=None):
         """
         Verifica se a resposta do usuário está correta
         """
@@ -251,8 +266,16 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
         elif pergunta_tipo == 'vf':
             try:
                 pergunta = PerguntaVFModel.objects.get(id=pergunta_id)
-                # A resposta correta é sempre True (verdadeiro)
-                resposta_correta = True
+                # A resposta correta depende de qual afirmação foi sorteada
+                # Se afirmacao_sorteada_eh_verdadeira é True, a resposta correta é True (Verdadeiro)
+                # Se afirmacao_sorteada_eh_verdadeira é False, a resposta correta é False (Falso)
+                # Se não foi informado, assume True (comportamento padrão)
+                if afirmacao_sorteada_eh_verdadeira is not None:
+                    resposta_correta = afirmacao_sorteada_eh_verdadeira
+                else:
+                    # Comportamento padrão: sempre True (assumindo que sempre mostra afirmação verdadeira)
+                    resposta_correta = True
+                
                 return resposta_usuario == resposta_correta
             except PerguntaVFModel.DoesNotExist:
                 return False
@@ -338,6 +361,95 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
             'por_bibliografia': list(por_bibliografia),
             'por_assunto': list(por_assunto),
             'ultimas_respostas': RespostaUsuarioSerializer(ultimas_respostas, many=True).data
+        })
+    
+    @action(detail=False, methods=['get'])
+    def minhas_respostas(self, request):
+        """
+        Retorna todas as respostas do usuário com opção de filtrar por acertou/errou
+        GET /api/respostas-usuario/minhas_respostas/?acertou=true ou ?acertou=false
+        """
+        usuario = request.user
+        acertou_param = request.query_params.get('acertou')
+        
+        queryset = RespostaUsuario.objects.filter(usuario=usuario).select_related('usuario').order_by('-timestamp')
+        
+        # Filtrar por acertou/errou se especificado
+        if acertou_param is not None:
+            acertou_value = acertou_param.lower() == 'true'
+            queryset = queryset.filter(acertou=acertou_value)
+        
+        # Paginação
+        page_size = int(request.query_params.get('page_size', 50))
+        page = int(request.query_params.get('page', 1))
+        
+        start = (page - 1) * page_size
+        end = start + page_size
+        
+        respostas = queryset[start:end]
+        total = queryset.count()
+        
+        # Buscar detalhes das questões
+        respostas_com_detalhes = []
+        for resposta in respostas:
+            detalhes = {
+                'resposta': RespostaUsuarioSerializer(resposta).data,
+                'questao': None
+            }
+            
+            # Buscar detalhes da questão baseado no tipo
+            try:
+                if resposta.pergunta_tipo == 'multipla':
+                    pergunta = PerguntaMultiplaModel.objects.get(id=resposta.pergunta_id)
+                    detalhes['questao'] = {
+                        'id': pergunta.id,
+                        'tipo': 'multipla',
+                        'pergunta': pergunta.pergunta,
+                        'alternativa_a': pergunta.alternativa_a,
+                        'alternativa_b': pergunta.alternativa_b,
+                        'alternativa_c': pergunta.alternativa_c,
+                        'alternativa_d': pergunta.alternativa_d,
+                        'resposta_correta': pergunta.resposta_correta,
+                        'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
+                        'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
+                        'assunto': pergunta.assunto
+                    }
+                elif resposta.pergunta_tipo == 'vf':
+                    pergunta = PerguntaVFModel.objects.get(id=resposta.pergunta_id)
+                    detalhes['questao'] = {
+                        'id': pergunta.id,
+                        'tipo': 'vf',
+                        'pergunta': pergunta.pergunta,
+                        'afirmacao_verdadeira': pergunta.afirmacao_verdadeira,
+                        'afirmacao_falsa': pergunta.afirmacao_falsa,
+                        'resposta_correta': True,  # Sempre True para VF
+                        'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
+                        'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
+                        'assunto': pergunta.assunto
+                    }
+                elif resposta.pergunta_tipo == 'correlacao':
+                    pergunta = PerguntaCorrelacaoModel.objects.get(id=resposta.pergunta_id)
+                    detalhes['questao'] = {
+                        'id': pergunta.id,
+                        'tipo': 'correlacao',
+                        'pergunta': pergunta.pergunta,
+                        'coluna_a': pergunta.coluna_a,
+                        'coluna_b': pergunta.coluna_b,
+                        'resposta_correta': pergunta.resposta_correta,
+                        'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
+                        'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
+                        'assunto': pergunta.assunto
+                    }
+            except Exception as e:
+                detalhes['questao'] = {'erro': f'Questão não encontrada: {str(e)}'}
+            
+            respostas_com_detalhes.append(detalhes)
+        
+        return Response({
+            'count': total,
+            'page': page,
+            'page_size': page_size,
+            'results': respostas_com_detalhes
         })
     
     @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
