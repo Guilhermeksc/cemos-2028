@@ -97,6 +97,7 @@ def create_default_admin(sender, **kwargs):
             print("ℹ️  Usuário 'adam' já existe. Nenhuma ação necessária.")
 
         # Lista de novos usuários a serem criados
+        # Nota: usernames podem ter até 20 caracteres
         novos_usuarios = [
             'baiense',
             'bruno',

@@ -20,7 +20,7 @@ class UsuarioManager(BaseUserManager):
 
 class Usuario(AbstractUser):
     username = None  # remove o campo padrão
-    username = models.CharField("username", max_length=8, unique=True)
+    username = models.CharField("username", max_length=20, unique=True)
     perfil = models.CharField("Perfil", max_length=50, choices=[
         ("admin", "Administrador"),
         ("consulta", "Consulta"),
