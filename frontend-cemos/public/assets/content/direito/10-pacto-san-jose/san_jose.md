@@ -1,6 +1,6 @@
 ## Página 1
 
-CONVENÇÃO AMERICANA SOBRE DIREITOS HUMANOS
+# CONVENÇÃO AMERICANA SOBRE DIREITOS HUMANOS
 
 (Assinada na Conferência Especializada Interamericana sobre Direitos Humanos, San José, Costa Rica, em 22 de novembro de 1969)
 

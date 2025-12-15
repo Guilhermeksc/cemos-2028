@@ -1,6 +1,6 @@
 ## Página 2
 
-INTRODUÇÃO 02
+# INTRODUÇÃO 02
 
 A Declaração Universal dos Direitos Humanos representa um dos momentos mais decisivos da história. Pela primeira vez, o mundo reconheceu formalmente que toda pessoa, independentemente de origem, credo, raça, gênero ou condição social, possui direitos inalienáveis. Mais do que um documento simbólico, a Declaração estabeleceu um novo paradigma: os direitos humanos não são uma concessão dos Estados, mas um compromisso irrenunciável da comunidade internacional para garantir a dignidade, a liberdade e a justiça para todas as pessoas.
 

@@ -1,15 +1,10 @@
+# Cap. 2 - Orientações Estratégicas de Preparo e Emprego
 
 ## Página 29
 
-OSTENSIVO EMA-310
+### 2.1. DEFINIÇÕES
 
-CAPÍTULO 2 ORIENTAÇÕES ESTRATÉGICAS DE PREPARO E EMPREGO
-
-2.1. DEFINIÇÕES
-
-Inicialmente, é preciso mostrar o entendimento de Preparo e Emprego para o nível estratégico. O Preparo e o Emprego do Poder Naval são referenciados na Missão da MB e servem para organizar as Diretrizes Estratégicas que realizam a conexão entre o Conceito Estratégico e o Dimensionamento de Força e sua utilização. As Diretrizes Estratégicas de Preparo e Emprego são pautadas pelas instruções deste Capítulo e devem apontar as metas e medidas necessárias para orientar a elaboração e atualização do Plano de Configuração de Força (PCF). As Diretrizes Estratégicas de Preparo e Emprego, com suas metas e medidas,
-
-serão detalhadas no PCF e seguirão o modelo abaixo:
+Inicialmente, é preciso mostrar o entendimento de Preparo e Emprego para o nível estratégico. O Preparo e o Emprego do Poder Naval são referenciados na Missão da MB e servem para organizar as Diretrizes Estratégicas que realizam a conexão entre o Conceito Estratégico e o Dimensionamento de Força e sua utilização. As Diretrizes Estratégicas de Preparo e Emprego são pautadas pelas instruções deste Capítulo e devem apontar as metas e medidas necessárias para orientar a elaboração e atualização do Plano de Configuração de Força (PCF). As Diretrizes Estratégicas de Preparo e Emprego, com suas metas e medidas, serão detalhadas no PCF e seguirão o modelo abaixo:
 
 Quadro 2: Modelo de Diretrizes de Preparo e Emprego
 

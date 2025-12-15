@@ -17,7 +17,7 @@ export class ProtocoloII  implements OnInit {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/direito/6-protocolo-II';
   fileNames: string[] = [
-    '1.md'
+    'protocolo-II.md'
   ];
   backRoute: string = '/home/app8-direito/bibliografia';
   backLabel: string = 'Bibliografia';
