@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
+import { Component, Input, Output, EventEmitter, inject, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
@@ -11,7 +11,7 @@ import { PerguntaCorrelacao as PerguntaCorrelacaoInterface } from '../../../inte
   templateUrl: './pergunta-correlacao.html',
   styleUrl: '../perguntas.scss'
 })
-export class PerguntaCorrelacao {
+export class PerguntaCorrelacao implements OnInit, OnChanges {
   private sanitizer = inject(DomSanitizer);
 
   @Input() questionId!: number;
@@ -21,6 +21,38 @@ export class PerguntaCorrelacao {
   @Output() answerSubmitted = new EventEmitter<{ questionId: number, answer: any }>();
 
   userAnswer: { [key: string]: string } = {};
+
+  ngOnInit() {
+    console.log('🔗 Componente PerguntaCorrelacao ngOnInit:', {
+      questionId: this.questionId,
+      tem_questionData: !!this.questionData,
+      questionData_tipo: this.questionData?.tipo,
+      coluna_a_length: this.questionData?.coluna_a?.length,
+      coluna_b_length: this.questionData?.coluna_b?.length,
+      coluna_a: this.questionData?.coluna_a,
+      coluna_b: this.questionData?.coluna_b,
+      isAnswered: this.isAnswered,
+      isCorrect: this.isCorrect,
+      condicao_renderizacao: !!(this.questionData && this.questionData.coluna_a && this.questionData.coluna_b && this.questionData.coluna_a.length > 0 && this.questionData.coluna_b.length > 0)
+    });
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['questionData']) {
+      console.log('🔗 Componente PerguntaCorrelacao ngOnChanges - questionData mudou:', {
+        questionId: this.questionId,
+        tem_questionData: !!this.questionData,
+        questionData_tipo: this.questionData?.tipo,
+        coluna_a_length: this.questionData?.coluna_a?.length,
+        coluna_b_length: this.questionData?.coluna_b?.length,
+        coluna_a: this.questionData?.coluna_a,
+        coluna_b: this.questionData?.coluna_b,
+        previousValue: changes['questionData'].previousValue,
+        currentValue: changes['questionData'].currentValue,
+        condicao_renderizacao: !!(this.questionData && this.questionData.coluna_a && this.questionData.coluna_b && this.questionData.coluna_a.length > 0 && this.questionData.coluna_b.length > 0)
+      });
+    }
+  }
 
   updateCorrelacao(itemNumber: number, selectedLetter: string) {
     if (selectedLetter) {
@@ -143,6 +175,13 @@ export class PerguntaCorrelacao {
    */
   getColunaBItemFormatted(item: string): SafeHtml {
     return this.processMarkdown(item);
+  }
+
+  /**
+   * Processa markdown e retorna como string HTML segura para a pergunta
+   */
+  getPerguntaFormatted(): SafeHtml {
+    return this.processMarkdown(this.questionData.pergunta || '');
   }
 
   /**

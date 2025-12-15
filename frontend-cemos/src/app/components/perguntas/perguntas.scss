@@ -649,6 +649,23 @@
 }
 
 /* Pergunta Correlação */
+.correlacao-question .pergunta {
+  background: color-mix(in srgb, var(--geopolitica-light-gray) 50%, transparent);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.correlacao-question .pergunta p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--geopolitica-dark);
+}
+
+.correlacao-question .pergunta strong {
+  color: var(--geopolitica-dark-text);
+}
+
 .correlacao-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

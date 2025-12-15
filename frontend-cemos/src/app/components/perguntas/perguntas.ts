@@ -1290,6 +1290,20 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           });
         });
 
+        console.log('🔗 Processando questões de correlação:', {
+          total_selecionadas: selectedCorrelacoes.length,
+          questoes: selectedCorrelacoes.map(q => ({
+            id: q.id,
+            tipo: q.tipo,
+            bibliografia: q.bibliografia,
+            bibliografia_titulo: q.bibliografia_titulo,
+            tem_coluna_a: !!q.coluna_a,
+            tem_coluna_b: !!q.coluna_b,
+            coluna_a_length: q.coluna_a?.length,
+            coluna_b_length: q.coluna_b?.length
+          }))
+        });
+
         selectedCorrelacoes.forEach(q => {
           const simuladoQ: SimuladoQuestion = {
             id: q.id,
@@ -1311,7 +1325,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             pergunta_preview: simuladoQ.pergunta.substring(0, 30) + '...',
             coluna_a_length: q.coluna_a?.length,
             coluna_b_length: q.coluna_b?.length,
-            resposta_correta: q.resposta_correta
+            resposta_correta: q.resposta_correta,
+            uniqueKey: simuladoQ.uniqueKey
           });
         });
 
@@ -1386,12 +1401,31 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   }
 
   getCorrelacaoData(question: SimuladoQuestion): PerguntaCorrelacao {
+    console.log('🔍 getCorrelacaoData chamado:', {
+      question_id: question.id,
+      question_tipo: question.tipo,
+      tem_data: !!question.data,
+      data_tipo: (question.data as any)?.tipo,
+      data_keys: question.data ? Object.keys(question.data) : []
+    });
+
     if (question.tipo !== 'correlacao') {
       console.warn('⚠️ getCorrelacaoData chamado para questão não-correlação:', question.tipo);
       // Retornar um objeto vazio que não vai quebrar o template
       return { coluna_a: [], coluna_b: [], resposta_correta: {} } as any;
     }
-    return question.data as PerguntaCorrelacao;
+    
+    const data = question.data as PerguntaCorrelacao;
+    console.log('✅ Dados de correlação retornados:', {
+      id: data.id,
+      tem_coluna_a: !!data.coluna_a,
+      tem_coluna_b: !!data.coluna_b,
+      coluna_a_length: data.coluna_a?.length,
+      coluna_b_length: data.coluna_b?.length,
+      resposta_correta_keys: Object.keys(data.resposta_correta || {})
+    });
+    
+    return data;
   }
 
   /**
