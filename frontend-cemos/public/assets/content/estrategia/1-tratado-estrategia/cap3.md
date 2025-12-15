@@ -1,8 +1,8 @@
+# Capítulo 3 - A estratégia enquanto ciência
+
 ## Página 165
 
 **Cap. 3 (pp. 165 a 173)**
-
-# Capítulo 3 - A estratégia enquanto ciência
 
 Bülow e o Arquiduque Charles marcam a transição entre o Antigo Regime militar e a estratégia moderna. Do primeiro, conserva-se a aversão pelas batalhas. Bülow repete: “Os combates dos nossos dias não decidem mais nada...Ninguém trava mais batalhas...É preciso ter cometido um erro para ter a necessidade de travar uma batalha” 190. Quanto ao segundo, obtêm-se o seu conceito de base e os seus primeiros tratados sistematizados. Quanto a esse aspecto, eles desempenharam um papel importante e exerceram uma grande influência. A de Von Bülow foi relativamente passageira, embora ele tenha conservado discípulos notáveis até os anos 1830, notadamente o General bávaro Xylander e o General russo Okounieff. A influência do arquiduque Charles será mais duradoura. Na Prússia, o General von Valentini nele se inspira para fazer sua obra Die Lehre von Kriege (1820). A sua forte influência permanece por completo na Áustria até a derrota em Sadowa em 1866. Ele é constantemente reeditado até o final do século XIX. Na Itália, ele será bastante lido até os anos 1850, mas, na segunda metade do século, ele será ofuscado por Jomini e Clausewitz, ao ponto de ser somente conhecido pelos historiadores.
 

@@ -1,8 +1,8 @@
+## Capítulo 17 - Geoestratégia espacial
+
 ## Página 653
 
 **Cap. 17 (pp. 654 a 664)**
-
-## Capítulo 17 - Geoestratégia espacial
 
 ### SEÇÃO I – CARACTERÍSTICAS DO AMBIENTE ESPACIAL
 

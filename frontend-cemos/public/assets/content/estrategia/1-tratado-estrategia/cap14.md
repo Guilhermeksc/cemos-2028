@@ -1,8 +1,8 @@
+## Capítulo 14 Os fatores da Geoestratégia
+
 ## Página 573
 
 **Cap. 14 (pp. 573 a 612)**
-
-## Capítulo 14 Os fatores da Geoestratégia
 
 ### 429. Fatores estáticos e fatores dinâmicos
 

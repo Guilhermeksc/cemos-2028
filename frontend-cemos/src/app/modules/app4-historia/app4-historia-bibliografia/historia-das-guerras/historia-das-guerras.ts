@@ -15,7 +15,7 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
 })
 export class HistoriaDasGuerras implements OnInit {
   // Configuração do LivroIndividual
-  contentPath: string = 'assets/content/historia/historias-guerras';
+  contentPath: string = 'assets/content/historia/historia-guerras';
   fileNames: string[] = [
     'cap1.md',
     'cap2.md',

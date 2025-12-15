@@ -1,4 +1,6 @@
-## Capítulo 12 - A Batalha do Atlântico. A luta pelo domínio dos mares durante a Segunda Guerra Mundial - PROF. DR. FRANCISCO CARLOS TEIXEIRA DA SILVA
+# Capítulo 12 - A Batalha do Atlântico. A luta pelo domínio dos mares durante a Segunda Guerra Mundial - PROF. DR. FRANCISCO CARLOS TEIXEIRA DA SILVA
+
+### A luta pelo domínio dos mares durante a Segunda Guerra Mundial - PROF. DR. FRANCISCO CARLOS TEIXEIRA DA SILVA
 
 A Batalha do Atlântico foi o mais importante evento bélico da Segunda Guerra Mundial. E isso já era assim definido antes mesmo do seu desfecho pelos homens diretamente responsáveis por sua condução estratégica. O próprio premier Winston Churchill, em sua "História da Segunda Guerra Mundial"; afirmou que a Batalha do Atlântico foi o momento em que mais temeu pela sorte do Império Britânico e nada o assustou mais do que o denominado "perigo dos submarinos". Da mesma forma, sob ataque direto do Japão, no Pacífico, o presidente Franklin D. Roosevelt manteve o claro objetivo de vencer "primeiro, a Alemanha!": concentrando seus esforços no reforço do Atlântico. Tratava-se, na concepção estratégica americana, de evitar, a qualquer custo, o estabelecimento do domínio alemão no oceano Atlântico, em virtude de uma possível derrota inglesa. Esse era, de longe, o risco mais imediato para a América. A relevância da Batalha do Atlântico se torna assim evidente.
 

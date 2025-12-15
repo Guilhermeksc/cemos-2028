@@ -1,4 +1,4 @@
-## CAPÍTULO 13 - A BATALHA NAVAL DE MIDWAY - PROF. DR. WILLIAMS GONÇALVES
+# Capítulo 13 - A Batalha Naval de Midway - Prof. Dr. Williams GonçalvesWILLIAMS GONÇALVES
 
 A luta pela conquista da pequena ilha de Midway, situada no centro do oceano Pacífico, constituiu uma das principais batalhas aeronavais da história. Plantada justamente "na metade do caminho" dos territórios dos Estados Unidos e do Japão, Midway foi objeto de encarniçada disputa entre suas respectivas forças navais. Para os comandos navais dos dois países o controle sobre a ilha representava uma enorme vantagem estratégica. Aquele que obtivesse o controle sobre a ilha estaria em condições de decidir a guerra em seu favor, como de fato veio a acontecer.
 

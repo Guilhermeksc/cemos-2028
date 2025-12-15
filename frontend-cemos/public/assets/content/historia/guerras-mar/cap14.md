@@ -1,4 +1,6 @@
-## CAPÍTULO 14 - A Batalha do Golfo de Leyte (Páginas 66-93) / ALMIRANTE HÉLIO LEÔNCIO MARTINS
+# Capítulo 14 - A Batalha do Golfo de Leyte
+
+### A Batalha do Golfo de Leyte (Páginas 66-93) / ALMIRANTE HÉLIO LEÔNCIO MARTINS
 
 ### Antecedentes
 

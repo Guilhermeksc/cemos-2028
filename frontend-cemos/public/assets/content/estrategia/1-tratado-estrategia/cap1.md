@@ -1,8 +1,8 @@
+# Capítulo 1 - A estratégia enquanto conceito
+
 ## Página 51
 
 **Cap. 1 (pp. 52 a 72)**
-
-# Capítulo 1 - A estratégia enquanto conceito
 
 ## 17 – Etimologia da estratégia
 

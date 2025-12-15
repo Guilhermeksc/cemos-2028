@@ -1,6 +1,6 @@
-## Página 205
-
 # Capítulo 4 - A estratégia enquanto método
+
+## Página 205
 
 ## 143 – As escolas estratégicas
 

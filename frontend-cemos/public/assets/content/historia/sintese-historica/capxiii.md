@@ -1,5 +1,6 @@
+# Cap. XIII Marinha do Brasil no Século XXI
 
-# CAPÍTULO XIII MARINHA DO BRASIL NO SÉCULO XXI - AE ILQUES BARBOSA JUNIOR
+### AE ILQUES BARBOSA JUNIOR
 
 Na atualidade, a evolução do Poder Naval impõe, mais do que em outros períodos da história, a existência, em diversos níveis, de líderes efetivos e assessores experientes. Tal característica decorre da dinâmica e complexidade das relações internacionais e, sobretudo, de uma crescente influência da tecnologia da informação nas atividades da civilização humana, o que inclui as situações de conflito.
 

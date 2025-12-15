@@ -1,4 +1,6 @@
-# CAPÍTILO X - A PARTICIPAÇÃO DA MARINHA DO BRASIL NA SEGUNDA GUERRA MUNDIAL - CF PIERRE PAULO DA CUNHA CASTRO
+# Cap. X - A participação da Marinha do Brasil na segunda Guerra Mundial
+
+### CF PIERRE PAULO DA CUNHA CASTRO
 
 **A atuação da Marinha do Brasil na Segunda Guerra Mundial ocorreu na campanha que entrou para a história como a "Batalha do Atlântico': O objetivo dessa campanha era a manutenção das linhas de comunicação marítimas entre o continente americano, a Europa e a costa ocidental da África.** Os Aliados buscavam sustentar o contínuo abastecimento das tropas que lutavam no Norte da África e na Europa ocidental, enquanto as Marinhas e Forças Aéreas nazifascistas tentavam negar o uso do oceano às Marinhas de Guerra e, principalmente, aos navios mercantes aliados. Primeiro, com o emprego de seus navios de guerra e da aviação baseada em terra e, depois, por meio da crescente utilização dos submarinos.
 

@@ -1,8 +1,8 @@
+## Capítulo 11 - O Pensamento Estratégico Aéreo
+
 ## Página 493
 
 **Cap. 11 (pp. 495 a 514)**
-
-## Capítulo 11 - O Pensamento Estratégico Aéreo
 
 ### 356. O paradigma intermitente do poder aéreo
 

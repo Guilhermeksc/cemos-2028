@@ -1,8 +1,8 @@
+# Capítulo 8 - A estratégia marítima teórica
+
 ## Página 435
 
 **Cap. 8 (pp. 435 a 443)**
-
-# Capítulo 8 - A estratégia marítima teórica
 
 ## SUBSEÇÃO IV – O PENSAMENTO NAVAL CONTEMPORÂNEO
 

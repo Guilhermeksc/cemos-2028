@@ -1,4 +1,6 @@
-# CAPÍTULO XI - A MARINHA EM APOIO À POLÍTICA EXTERNA BRASILEIRA CA (RM1) GUILHERME MATTOS DE ABREU
+# Cap. XI - A Marinha em apoio à política externa brasileira
+
+### CA (RM1) GUILHERME MATTOS DE ABREU
 
 **Certa vez, ouvimos de um diplomata chinês: "Militares e diplomatas são parceiros de toda hora! São como se fossem as duas mãos de um mesmo corpo!" No entanto, esta relação nem sempre é percebida, por se conferir ênfase ao discurso "política externa sem seguranfa ou defesa" onde os formuladores imaginam escudar-se na fórmula "soft power" (poder suave ou brando), ainda que a história e o acompanhamento do noticiário no dia a dia indiquem que, infelizmente, os conflitos façam parte da realidade humana e assim continuarão por muito tempo.**
 

@@ -1,8 +1,8 @@
+# Capítulo 5 - A estratégia como arte
+
 ## Página 293
 
 **Cap. 5 (pp. 293 a 301)**
-
-# Capítulo 5 - A estratégia como arte
 
 ## 208 – Os métodos fundamentais
 

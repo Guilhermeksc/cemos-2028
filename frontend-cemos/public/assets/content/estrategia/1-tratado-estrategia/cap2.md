@@ -1,8 +1,8 @@
+# Capítulo 2 - A estratégia enquanto categoria do conflito
+
 ## Página 89
 
 **Cap. 2 (pp. 89 a 107)**
-
-# Capítulo 2 - A estratégia enquanto categoria do conflito
 
 ## 47 – A utilidade de uma classificação
 

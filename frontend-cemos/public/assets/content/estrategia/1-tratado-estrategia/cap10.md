@@ -1,8 +1,8 @@
+## Capítulo 10 - A Estratégia Marítima Contemporânea
+
 ## Página 473
 
 **Cap. 10 (pp. 473 a 491)**
-
-## Capítulo 10 - A Estratégia Marítima Contemporânea
 
 ## 344. As transformações da estratégia marítima
 

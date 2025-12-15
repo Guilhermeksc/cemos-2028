@@ -1,4 +1,6 @@
-# CAPÍTULO XII DO CARVÃO AO PETRÓLEO E À ENERGIA NUCLEAR: A MARINHA SE TRANSFORMA - CMG (RM1) WILLIAM DE SOUSA MOREIRA
+# Cap. XII Do carvão ao petróleo e à energia nuclear: A Marinha se transforma
+
+### CMG (RM1) WILLIAM DE SOUSA MOREIRA
 
 **O século XX" irrompeu navegando a 32 nós (59,2km/h). Essa fora a velocidade desenvolvida por um pequeno navio, o Turbinia, na parada naval britânica de 1897, por ocasião do jubileu de Diamante da Rainha Vitória. O impacto sobre o público que testemunhava aquela efeméride prenunciava uma era de desenvolvimentos que impulsionaria as aventuras humanas no mar.**
 

@@ -1,8 +1,8 @@
+## Capítulo 16 - Geoestratégia Aérea
+
 ## Página 645
 
 **Cap. 16 (pp. 645 a 649)**
-
-## Capítulo 16 - Geoestratégia Aérea
 
 ### SEÇÃO II – AR, TERRA E MAR
 
