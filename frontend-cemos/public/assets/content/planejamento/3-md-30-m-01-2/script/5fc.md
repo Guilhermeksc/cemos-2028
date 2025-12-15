@@ -10,7 +10,7 @@ Todas as colunas devem ser preenchidas, mesmo que com string vazia ("").
 
 Instruções específicas:
 
-    bibliografia_id" será preenchido com '41'.
+    bibliografia_id" será preenchido com '72'.
 
     pergunta será preenchido com a pergunta contextualizada.
 
@@ -21,7 +21,7 @@ Instruções específicas:
 
     “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
     
-    “assunto” será preenchido com 'Cap. 5 - Plano Setorial de Mobilização Militar'.
+“assunto” será preenchido com 'Cap. V - Exame de Situação Operacional'.
 
 Exemplo de saída esperada:
 
