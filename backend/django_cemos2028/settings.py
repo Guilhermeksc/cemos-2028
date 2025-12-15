@@ -201,3 +201,8 @@ STATIC_ROOT = '/app/static'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Personalização do Django Admin
+ADMIN_SITE_HEADER = "Administração do Sistema de apoio ao Cemos"
+ADMIN_SITE_TITLE = "Administração do Sistema de apoio ao Cemos"
+ADMIN_SITE_INDEX_TITLE = "Painel de Administração"
