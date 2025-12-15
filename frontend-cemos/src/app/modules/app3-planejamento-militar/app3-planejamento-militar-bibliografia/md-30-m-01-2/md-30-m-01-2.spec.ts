@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { App7PoliticaMedia } from './app7-politica-media/app7-politica-media';
+import { Md30M012 } from './md-30-m-01-2';
 
-describe('App7PoliticaMedia', () => {
-  let component: App7PoliticaMedia;
-  let fixture: ComponentFixture<App7PoliticaMedia>;
-
+describe('Md30M012', () => {
+  let component: Md30M012;
+  let fixture: ComponentFixture<Md30M012>;
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App7PoliticaMedia]
+      imports: [Md30M012]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(App7PoliticaMedia);
+    fixture = TestBed.createComponent(Md30M012);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

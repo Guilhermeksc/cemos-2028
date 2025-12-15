@@ -27,7 +27,7 @@ export class App3PlanejamentoMilitarBibliografia implements OnInit {
   public capas: CapaConfig[] = [
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/lei-97-1999`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/lei-97`,
       title: '1. Organização, Preparo e Emprego das Forças Armadas',
       description: 'Lei nº 97/1999',
       permite_consulta: false
@@ -41,9 +41,16 @@ export class App3PlanejamentoMilitarBibliografia implements OnInit {
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/md30-m-01`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/md-30-m-01`,
       title: '3. Doutrina de Operações Conjuntas',
-      description: 'MD30-M-01',
+      description: 'MD30-M-01 (1º Volume)',
+      permite_consulta: false
+    },
+    {
+      imagePath: `${this.ASSETS_BASE}/img/1.jpg`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/md-30-m-01-2`,
+      title: '3. Doutrina de Operações Conjuntas',
+      description: 'MD30-M-01 (2º Volume)',
       permite_consulta: false
     }
   ];

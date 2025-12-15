@@ -296,7 +296,7 @@ a) Listas classificadas quanto ao grau de sigilo
 
 1) Lista de Necessidades Inicial (LNI), referente ao planejamento estratégico, contém as necessidades levantadas por ocasião do Exame de Situação Estratégico e será consolidada pelos representantes da Subchefia de Integração Logística (SUBILOG) integrantes da Equipe Delta (Logística e Mobilização) do Grupo de Planejamento;
 
-2) Lista de Necessidades Complementar (LNC), referente ao planejamento operacional, contém as necessidades levantadas pelos EMCj dos Comandos Operacionais ativados (Cmdo Op ativados) por ocasião do planejamento operacional e será consolidada pela Seção D-4 (Logística e Mobilização) daquele EMC);
+2) Lista de Necessidades Complementar (LNC), referente ao planejamento operacional, contém as necessidades levantadas pelos EMCj dos Comandos Operacionais ativados (Cmdo Op ativados) por ocasião do planejamento operacional e será consolidada pela Seção D-4 (Logística e Mobilização) daquele EMCj;
 
 3) Lista de Necessidades Suplementar (LNS), referente ao planejamento tático, contém as necessidades levantadas pelas Forças Componentes (F Cte) por ocasião do planejamento tático e será consolidada pelos Comandos Logísticos (C Log) dos Cmdo Op ativados;
 

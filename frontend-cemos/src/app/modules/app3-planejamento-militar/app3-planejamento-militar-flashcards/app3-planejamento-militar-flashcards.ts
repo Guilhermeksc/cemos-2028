@@ -10,8 +10,8 @@ import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards
   styleUrl: './app3-planejamento-militar-flashcards.scss'
 })
 export class App3PlanejamentoMilitarFlashcards {
-  // IDs das bibliografias de Geopolítica e Relações Internacionais
-  bibliografiaIds: number[] = [1, 2, 3, 4];
+  // IDs das bibliografias de Planejamento Militar
+  bibliografiaIds: number[] = [69, 70, 71];
 
   // Rota para voltar à bibliografia
   bibliografiaPath = '/home/app3-planejamento-militar/bibliografia';

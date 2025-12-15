@@ -415,6 +415,14 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
               import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/md-30-m-01/md-30-m-01').then(
                 (m) => m.Md30M01
               )
+          },
+          {
+            title: 'MD30-M-01 (2º Volume) - Doutrina de Operações Conjuntas',
+            path: 'md-30-m-01-2',
+            loadComponent: () =>
+              import('../modules/app3-planejamento-militar/app3-planejamento-militar-bibliografia/md-30-m-01-2/md-30-m-01-2').then(
+                (m) => m.Md30M012
+              )
           }
         ]
       },
@@ -433,7 +441,15 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import(
             '../modules/app3-planejamento-militar/app3-planejamento-militar-perguntas/app3-planejamento-militar-perguntas'
           ).then((m) => m.App3PlanejamentoMilitarPerguntas)
-      }
+      },
+      {
+        title: 'Conceitos',
+        path: 'conceitos',
+        loadComponent: () =>
+          import('../modules/app3-planejamento-militar/app3-planejamento-militar-conceitos/app3-planejamento-militar-conceitos').then(
+            (m) => m.App3PlanejamentoMilitarConceitos
+          )
+      },
     ]
   },
   {

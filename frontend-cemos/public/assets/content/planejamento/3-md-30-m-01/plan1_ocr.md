@@ -418,7 +418,7 @@ E o espaço geográfico necessário à condução de operações militares, que 
 
 ## Página 43
 
-3.4.2 Tendo como referência o PEECFA, o Comandante Operacional e seu EMC; delinearão sua atuação com o intuito de alcançar os objetivos políticos e estratégicos estabelecidos, a fim de contribuir para a consecução do Estado Final Desejado Operacional.
+3.4.2 Tendo como referência o PEECFA, o Comandante Operacional e seu EMCj delinearão sua atuação com o intuito de alcançar os objetivos políticos e estratégicos estabelecidos, a fim de contribuir para a consecução do Estado Final Desejado Operacional.
 
 3.4.3 Como Estado Final Desejado (EFD), entende-se como a situação política ou militar a ser alcançada ao final das operações e que indica se o efeito desejado foi alcançado.
 
@@ -437,7 +437,7 @@ E o espaço geográfico necessário à condução de operações militares, que 
 
 3.4.8 Ainda será de responsabilidade do Com TO a coordenação das operações militares com as agências civis governamentais (operações interagências) e, naquilo que couber, com Organizações Não-Governamentais (ONG), presentes na área do Comando Operacional, em ambiente interagências.
 
-3.4.9 Os conflitos atuais privilegiam as Operações de Informação e as atividades de Assuntos Civis, o que não exclui que o Comando Operacional integre ao seu EMC; representantes dos componentes não-militares da operação. Cada situação deve ser analisada individualmente, visando apenas à obtenção dos efeitos desejados com maior eficiência e no menor espaço de tempo possível.
+3.4.9 Os conflitos atuais privilegiam as Operações de Informação e as atividades de Assuntos Civis, o que não exclui que o Comando Operacional integre ao seu EMCj representantes dos componentes não-militares da operação. Cada situação deve ser analisada individualmente, visando apenas à obtenção dos efeitos desejados com maior eficiência e no menor espaço de tempo possível.
 
 3.4.10 A fim de iludir as forças oponentes em relação aos planejamentos, são adotadas medidas e ações de dissimulação nos níveis estratégico, operacional e tático. A dissimulação pode ser obtida pelo emprego da guerra eletrônica, desinformação, operações psicológicas, defesa cibernética e ações diversionárias (demonstrações e fintas), entre outras.
 
@@ -597,9 +597,9 @@ f) quando contribuir para os efeitos associados aos Pontos Decisivos.
 
 ## 5.1 Organização
 
-5.1.1 O EMC; deverá ser organizado em função das características e demandas da operação para a qual foi ativado o Comando Operacional Conjunto, de forma a gerenciar os aspectos indispensáveis ao cumprimento da missão e valendo-se da flexibilidade quanto a necessidade da existência de mais ou menos seções, constituindo-se numa prerrogativa do Comandante Operacional.
+5.1.1 O EMCj deverá ser organizado em função das características e demandas da operação para a qual foi ativado o Comando Operacional Conjunto, de forma a gerenciar os aspectos indispensáveis ao cumprimento da missão e valendo-se da flexibilidade quanto a necessidade da existência de mais ou menos seções, constituindo-se numa prerrogativa do Comandante Operacional.
 
-5.1.2 O EMC; será constituído pela chefia do estado-maior e, em princípio, pelas seguintes seções:
+5.1.2 O EMCj será constituído pela chefia do estado-maior e, em princípio, pelas seguintes seções:
 
 a) D-1: 1ª Seção (Pessoal);
 b) D-2: 2ª Seção (Inteligência);
@@ -612,11 +612,11 @@ h) D-8: 8º Seção (Operações de Informação);
 i) D-9: 9º Seção (Assuntos Civis); e
 j) D-10: 10º Seção (Administração Financeira).
 
-5.1.3 O Chefe do EMC; será proposto ao CEMCFA pelo comandante operacional, devendo este atentar para a predominância das operações no TO/A Op.
+5.1.3 O Chefe do EMCj será proposto ao CEMCFA pelo comandante operacional, devendo este atentar para a predominância das operações no TO/A Op.
 
-5.1.4 As seções do EMC; deverão ser constituídas, basicamente, por: um chefe, possuidor do curso de Estado-Maior das FS, adjuntos pertencentes a cada uma das FA envolvidas na operação e praças necessárias à realização das atividades da seção. E desejável que haja, pelo menos, um oficial por Força Singular participante em cada seção. Os Chefes das 2º, 3º e 5º Seções deverão ser oficiais da FS que caracteriza a predominância das operações no TO/A Op.
+5.1.4 As seções do EMCj deverão ser constituídas, basicamente, por: um chefe, possuidor do curso de Estado-Maior das FS, adjuntos pertencentes a cada uma das FA envolvidas na operação e praças necessárias à realização das atividades da seção. E desejável que haja, pelo menos, um oficial por Força Singular participante em cada seção. Os Chefes das 2º, 3º e 5º Seções deverão ser oficiais da FS que caracteriza a predominância das operações no TO/A Op.
 
-5.1.4.1 Nos casos de adestramentos, os chefes das seções do EMC; deverão ser oficiais das Forças Armadas, designados segundo solicitação do Comandante Operacional ao EMCFA e que participarão de todas as fases de planejamento/execução. Sempre que possível, o Comandante deverá buscar o equilíbrio no número de chefes de seção entre as Forças Singulares, a fim de que possa ser assessorado de forma mais adequada quanto aos aspectos de emprego de cada FS.
+5.1.4.1 Nos casos de adestramentos, os chefes das seções do EMCj deverão ser oficiais das Forças Armadas, designados segundo solicitação do Comandante Operacional ao EMCFA e que participarão de todas as fases de planejamento/execução. Sempre que possível, o Comandante deverá buscar o equilíbrio no número de chefes de seção entre as Forças Singulares, a fim de que possa ser assessorado de forma mais adequada quanto aos aspectos de emprego de cada FS.
 
 5.1.4.2 A assessoria jurídica do Com TO/A Op será uma subseção da 3º seção do EMC, que ficará com o encargo de atender às solicitações do comandante operacional em outras questões, além daquelas, referentes às operações.
 
@@ -654,7 +654,7 @@ Figura 7 — estrutura do EMC
 
 ## 5.3 Principais Competências e Atribuições
 
-5.3.1 O Chefe do EMC; possui as seguintes atribuições:
+5.3.1 O Chefe do EMCj possui as seguintes atribuições:
 
 (a) assessorar o Comandante e o Subcomandante;
 (b) participar do processo de planejamento conjunto desde a concepção inicial das operações, coordenando a elaboração dos planos decorrentes;
@@ -666,10 +666,10 @@ Figura 7 — estrutura do EMC
 
 5.3.2 Às seções do EMCj compete:
 
-(a) assessorar o Comandante, o Ch EMC; e o Subcomandante, quando for o caso, para a tomada de decisões em todas as fases da operação/campanha;
+(a) assessorar o Comandante, o Ch EMCj e o Subcomandante, quando for o caso, para a tomada de decisões em todas as fases da operação/campanha;
 (b) participar do processo de planejamento desde a concepção inicial das operações, elaborando os planos decorrentes;
 (c) estabelecer normas, supervisionar e coordenar todas as atividades atinentes às seções;
-(d) zelar pela observância dos aspectos doutrinários conjuntos, propondo ao Ch EMC; os ajustes adequados; e
+(d) zelar pela observância dos aspectos doutrinários conjuntos, propondo ao Ch EMCj os ajustes adequados; e
 (e) tratar os assuntos de suas respectivas áreas com os órgãos militares e civis, incluindo os EM das F Cte, desde que autorizado pelo Cmt Op.
 
 5.3.3 O Chefe da Seção de Pessoal (D-1) possui as seguintes atribuições:
@@ -681,7 +681,7 @@ Figura 7 — estrutura do EMC
 (e) estabelecer estimativas e controlar as perdas em combate;
 (f) propor medidas para manter elevado o moral do pessoal;
 (g) selecionar, planejar e coordenar a utilização das áreas de recuperação e centros de recreação;
-(h) tratar dos assuntos relativos à disciplina e à justiça militar, dentro da esfera do EMC;;
+(h) tratar dos assuntos relativos à disciplina e à justiça militar, dentro da esfera do EMCj;
 (i) preparar e distribuir boletins, ordens e planos inerentes à atividade do pessoal;
 (j) elaborar normas, planejar e controlar a utilização de mão de obra civil, em coordenação com as Seções D-2, D-4 e D-9;
 (k) organizar e controlar o histórico do pessoal e da organização militar;
@@ -734,7 +734,7 @@ Figura 7 — estrutura do EMC
 (i) zelar pelo registro e consolidação dos dados necessários à manutenção da consciência situacional por parte do Cmt Op;
 (j) supervisionar e coordenar o andamento das operações, utilizando os recursos do centro de operações do C Op;
 (k) elaborar e propor ao Ch EMCj, em coordenação com a Seção de Planejamento, a Ordem de Coordenação Preliminar (O Coor Prel);
-(l) consolidar o Sumário de Situação do C Op, com base nas informações recebidas dos escalões subordinados e das demais seções do EMCj, submetendo-o à apreciação do Ch EMC; ou do S Cmt Op, conforme o caso, e transmitindo-o ao escalão superior conforme as diretrizes estabelecidas pelo Cmt Op;
+(l) consolidar o Sumário de Situação do C Op, com base nas informações recebidas dos escalões subordinados e das demais seções do EMCj, submetendo-o à apreciação do Ch EMCj ou do S Cmt Op, conforme o caso, e transmitindo-o ao escalão superior conforme as diretrizes estabelecidas pelo Cmt Op;
 (m) ficar em condições de prestar o assessoramento jurídico no tocante às operações correntes e futuras;
 (n) elaborar e propor ao Comandante, em coordenação com a seção de Planejamento, e com a participação de especialistas da área jurídica, as Regras de Engajamento para a operação, bem como sua atualização/modificação quando se fizer necessário;
 (o) ativar a Subseção de Guerra Cibernética (SGC) em sua estrutura e organização, a fim de coordenar o emprego da capacidade cibernética nas operações; e
@@ -772,7 +772,7 @@ Figura 7 — estrutura do EMC
 (e) consolidar a Lista Integrada de Alvos (LIA) e a Lista Integrada e Priorizada de Alvos (LIPA), em coordenação com as demais seções, particularmente as seções de Operações e de Inteligência;
 (f) elaborar o rascunho das matrizes de sincronização da operação/campanha durante o confronto, consolidando-a até o final da etapa da Elaboração de Planos e Ordens;
 (g) avaliar a campanha com base nas medidas e indicadores estabelecidos, durante a etapa do controle da operação planejada;
-(h) assessorar o Ch EMC; no acompanhamento e condução das reuniões diárias previstas para o EMCj;
+(h) assessorar o Ch EMCj no acompanhamento e condução das reuniões diárias previstas para o EMCj;
 (i) acompanhar o desenvolvimento das operações correntes, utilizando ferramentas adequadas e realizar o planejamento das operações futuras, baseado em suas análises prospectivas e nas diretrizes do comando;
 (j) em coordenação com a Seção de Operações, propor as alterações no planejamento das operações que, porventura, se façam necessárias, visando ao cumprimento da missão;
 (k) assessorar quanto ao acompanhamento da dimensão informacional, a fim de criar condições de executar o planejamento das operações futuras;
@@ -838,7 +838,7 @@ Figura 7 — estrutura do EMC
 
 5.3.12 O Chefe da Seção de Administração Financeira (D-10) possui as seguintes atribuições:
 
-(a) assessorar o Cmt Op, S Cmt, quando for o caso, e o chefe do EMC; nos assuntos relativos à administração orçamentária e financeira;
+(a) assessorar o Cmt Op, S Cmt, quando for o caso, e o chefe do EMCj nos assuntos relativos à administração orçamentária e financeira;
 (b) realizar, em coordenação com o D-4, o levantamento, ainda que estimados, dos recursos orçamentários decorrentes das Listas de Necessidades das Seções do EMCj, bem como de todos os custos envolvidos na operação;
 (c) realizar a programação orçamentária e financeira no âmbito do C Op, compatibilizando os recursos recebidos com as despesas previstas;
 (d) com base na programação orçamentária e financeira, propor ao Cmt Op a distribuição às F Cte dos recursos disponíveis;
@@ -856,7 +856,7 @@ Figura 7 — estrutura do EMC
 
 5.4.3 Ativado um Comando Operacional para adestramento ou para emprego real, as seções de EM serão estruturadas, a fim de assumirem o planejamento e o controle das operações.
 
-5.4.4 A estruturação das Seções do EMC; é uma atribuição do Comandante Operacional, que deverá constitui-lo segundo a necessidade da operação que irá desenvolver. A fim de facilitar a composição inicial do EMCj, o Comandante poderá valer-se da estrutura sugerida nos seguintes anexos deste volume:
+5.4.4 A estruturação das Seções do EMCj é uma atribuição do Comandante Operacional, que deverá constitui-lo segundo a necessidade da operação que irá desenvolver. A fim de facilitar a composição inicial do EMCj, o Comandante poderá valer-se da estrutura sugerida nos seguintes anexos deste volume:
 
 (a) Anexo A (Pessoal: D-1); 
 (b) Anexo B (Inteligência: D-2); 
@@ -1150,7 +1150,7 @@ A ZD possui cinco elementos principais, cada um representando uma força ou coma
 (a) assessorar o Cmt C Log Cte quanto à necessidade da cooperação e, se necessário, da mobilização dos órgãos civis (governamentais, não-governamentais e privados), assim como para reduzir a interferência dos mesmos no cumprimento das missões atribuídas ao C Log Cte pelo Cmt Op;
 (b) propor ao Ch CCOL os assuntos de sua área de atuação a serem incluídos no Plano de Operações Logísticas do C Log Cte, particularmente no que se refere aos assuntos civis, mobilização e desmobilização;
 (c) propor ao CCOL os assuntos referentes à sua área de atuação a serem incluídos no Sumário Diário de Situação do C Log Cte;
-(d) coordenar com o Ch D-9 do EMC; o andamento das atividades de assuntos civis sob encargo do C Log Cte, particularmente no que se refere aos civis sob a administração militar (refugiados, evacuados não-combatentes, civis internados e outros);
+(d) coordenar com o Ch D-9 do EMCj o andamento das atividades de assuntos civis sob encargo do C Log Cte, particularmente no que se refere aos civis sob a administração militar (refugiados, evacuados não-combatentes, civis internados e outros);
 (e) em coordenação com o CCOL, levantar as necessidades de mobilização de recursos logísticos não passíveis de serem obtidos na ARP, encaminhando-as à D-4;
 (f) em coordenação com o CCRH, levantar as necessidades de mobilização de RH não passíveis de atendimento no âmbito da ARP, encaminhando-as à D-4. Essas necessidades de mobilização de RH e recursos logísticos deverão constar na LNS do C Log Cte;
 (g) propor medidas para a proteção do meio ambiente e para a mitigação de danos decorrentes das operações militares na ARP, em coordenação com órgãos civis encarregados, em conformidade com as diretrizes do Cmt Op;
@@ -1201,7 +1201,7 @@ Centro de Coordenação Civil-Militar (C³M)
 (b) realizar a ligação com as autoridades judiciárias, das funções essenciais da justiça e da polícia judiciária, existentes na área de responsabilidade do C Log Cte;
 (c) elaborar estudos e pareceres de natureza jurídica relativos às diversas áreas de atuação do €C Log Cte;
 (d) cooperar na elaboração de atos normativos e administrativos expedidos pelo Cmdo do C Log Cte;
-(e) coordenar com a D-3 do EMC; o andamento das atividades de assuntos jurídicos sob encargo do C Log Cte; e
+(e) coordenar com a D-3 do EMCj o andamento das atividades de assuntos jurídicos sob encargo do C Log Cte; e
 (f) elaborar o Anexo de Assessoria Jurídica ao Plano de Operações Logísticas do € Log Cte.
 
 10.5.12.5.4 Grupo de Mobilização de Recursos Logísticos, com as seguintes competências:
@@ -1275,11 +1275,11 @@ Centro de Coordenação Civil-Militar (C³M)
 
 11.4.1 Percepção precisa dos fatores e condições que afetam a execução da tarefa durante um período determinado de tempo, permitindo ou proporcionando ao seu decisor, estar ciente do que se passa ao seu redor e assim ter condições de focar o pensamento à frente do objetivo. E a perfeita sintonia entre a situação percebida e a situação real.
 
-11.4.2 Forma-se a partir do compartilhamento de informações entre as seções do EMC; e destas com as F Cte. O compartilhamento é realizado por intermédio da estrutura de Inteligência do Comando Operacional (C Op) ativado pelos eventos de tomada de decisão, pelos documentos operacionais e pelo acesso compartilhado às informações disponibilizadas na rede de C² do C Op.
+11.4.2 Forma-se a partir do compartilhamento de informações entre as seções do EMCj e destas com as F Cte. O compartilhamento é realizado por intermédio da estrutura de Inteligência do Comando Operacional (C Op) ativado pelos eventos de tomada de decisão, pelos documentos operacionais e pelo acesso compartilhado às informações disponibilizadas na rede de C² do C Op.
 
 11.4.3 A estrutura de Inteligência possui mecanismos estabelecidos para coleta, busca, análise e disseminação de informações sobre o oponente, o terreno e as condições meteorológicas, em assessoramento ao Cmt Op. As informações de interesse operacional são disponibilizadas nos sistemas de informação do SISMC².
 
-11.4.4 Os eventos de coordenação e de tomada de decisão, além de gerarem documentos operacionais e constituírem fóruns para tomada de decisões, possibilitam que representantes das diversas seções do EMC; e das F Cte compartilhem entre si informações inerentes às suas respectivas atividades. Esse compartilhamento cria as condições para a formação da consciência situacional, na medida em que intenções, restrições e possibilidades de cada área são comunicadas aos demais elementos do C Op.
+11.4.4 Os eventos de coordenação e de tomada de decisão, além de gerarem documentos operacionais e constituírem fóruns para tomada de decisões, possibilitam que representantes das diversas seções do EMCj e das F Cte compartilhem entre si informações inerentes às suas respectivas atividades. Esse compartilhamento cria as condições para a formação da consciência situacional, na medida em que intenções, restrições e possibilidades de cada área são comunicadas aos demais elementos do C Op.
 
 11.4.5 Os documentos operacionais sincronizam as atividades do C Op. As ordens permitem que cada F Cte adquira consciência situacional sobre as atividades das demais Forças, além de uma mesma visão sobre a intenção do Cmt Op. Os relatórios servem para que o C Op conheça o resultado das ordens emitidas e possa dar continuidade ao Ciclo de C2.
 

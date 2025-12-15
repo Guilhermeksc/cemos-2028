@@ -160,7 +160,8 @@ export class LivroIndividualService {
     html = html.replace(/_(.+?)_/g, '<em>$1</em>');
 
     // Imagens (processar ANTES de links para evitar conflito)
-    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" />');
+    // Adiciona atributos para garantir dimensionamento correto
+    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" loading="lazy" style="max-width: 100%; height: auto; object-fit: contain;" />');
 
     // Links (não captura imagens porque já foram processadas)
     html = html.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank">$1</a>');

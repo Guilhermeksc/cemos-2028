@@ -227,6 +227,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 
 
   &::-webkit-scrollbar {
@@ -343,13 +344,16 @@
   flex: 1;
   padding: 0;
   overflow-y: auto;
+  overflow-x: hidden;
 
   .content-wrapper {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
     padding: 40px 60px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
+    box-sizing: border-box;
 
     // Aplica os estilos compartilhados
     @include markdown-content-styles;
@@ -359,6 +363,7 @@
       display: block;
       margin: 32px auto;
       max-width: 100%;
+      width: auto;
       height: auto;
       box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -366,6 +371,17 @@
       cursor: zoom-in;
       font-size: 1em;
       text-align: center;
+      object-fit: contain;
+      box-sizing: border-box;
+      
+      // Garante que imagens não ultrapassem o container em qualquer situação
+      @media (min-width: 769px) {
+        max-height: 80vh;
+      }
+      
+      @media (max-width: 768px) {
+        max-height: 70vh;
+      }
     }
 
     img.zoomed {
@@ -376,6 +392,12 @@
       max-width: 100%;
       max-height: 95vh;
       position: relative;
+      // Garante que mesmo com zoom, a imagem não ultrapasse o container
+      transform-origin: center center;
+      // Limita o tamanho máximo mesmo com scale
+      width: auto;
+      height: auto;
+      object-fit: contain;
     }
   }
 }
@@ -719,11 +741,13 @@
 .fullscreen-content {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 2rem;
   min-height: 0;
   background: white;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 
   &::-webkit-scrollbar {
     width: 10px;
@@ -748,6 +772,9 @@
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    box-sizing: border-box;
 
     // Aplica os estilos compartilhados
     @include markdown-content-styles;
@@ -757,6 +784,7 @@
       display: block;
       margin: 32px auto;
       max-width: 100%;
+      width: auto;
       height: auto;
       box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -764,6 +792,17 @@
       cursor: zoom-in;
       font-size: 1em;
       text-align: center;
+      object-fit: contain;
+      box-sizing: border-box;
+      
+      // Garante que imagens não ultrapassem o container em qualquer situação
+      @media (min-width: 769px) {
+        max-height: 80vh;
+      }
+      
+      @media (max-width: 768px) {
+        max-height: 70vh;
+      }
     }
 
     img.zoomed {
@@ -774,6 +813,12 @@
       max-width: 100%;
       max-height: 95vh;
       position: relative;
+      // Garante que mesmo com zoom, a imagem não ultrapasse o container
+      transform-origin: center center;
+      // Limita o tamanho máximo mesmo com scale
+      width: auto;
+      height: auto;
+      object-fit: contain;
     }
   }
 }

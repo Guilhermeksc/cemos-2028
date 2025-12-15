@@ -48,6 +48,7 @@ export class LivroIndividual implements OnInit, OnDestroy {
 
   /**
    * Adiciona interatividade de zoom nas imagens após renderização do HTML
+   * E garante que as imagens sejam dimensionadas corretamente
    */
   private enableImageZoom() {
     setTimeout(() => {
@@ -56,6 +57,16 @@ export class LivroIndividual implements OnInit, OnDestroy {
       wrappers.forEach(wrapper => {
         const imgs = wrapper.querySelectorAll('img');
         imgs.forEach(img => {
+          // Garante que a imagem seja dimensionada corretamente
+          this.adjustImageSize(img as HTMLImageElement);
+          
+          // Adiciona listener para ajustar tamanho quando a imagem carregar
+          if (!img.complete) {
+            img.addEventListener('load', () => {
+              this.adjustImageSize(img as HTMLImageElement);
+            });
+          }
+          
           // Verifica se já tem listener (evita duplicar)
           if ((img as any).hasZoomListener) {
             return;
@@ -64,7 +75,7 @@ export class LivroIndividual implements OnInit, OnDestroy {
           // Marca como tendo listener
           (img as any).hasZoomListener = true;
           
-          // Adiciona listener
+          // Adiciona listener de zoom
           img.addEventListener('click', function () {
             if (img.classList.contains('zoomed')) {
               img.classList.remove('zoomed');
@@ -79,6 +90,30 @@ export class LivroIndividual implements OnInit, OnDestroy {
         });
       });
     }, 200);
+  }
+
+  /**
+   * Ajusta o tamanho da imagem para garantir que não ultrapasse o container
+   */
+  private adjustImageSize(img: HTMLImageElement) {
+    const wrapper = img.closest('.content-wrapper') as HTMLElement;
+    if (!wrapper) return;
+    
+    const wrapperWidth = wrapper.clientWidth;
+    const wrapperPadding = 120; // 60px de cada lado no desktop
+    const maxAvailableWidth = wrapperWidth - wrapperPadding;
+    
+    // Garante que a imagem não ultrapasse a largura disponível
+    if (img.naturalWidth > maxAvailableWidth) {
+      img.style.maxWidth = '100%';
+      img.style.width = 'auto';
+      img.style.height = 'auto';
+    }
+    
+    // Garante que a imagem tenha object-fit: contain
+    if (!img.style.objectFit) {
+      img.style.objectFit = 'contain';
+    }
   }
   
   expandedHeadings: Set<string> = new Set();

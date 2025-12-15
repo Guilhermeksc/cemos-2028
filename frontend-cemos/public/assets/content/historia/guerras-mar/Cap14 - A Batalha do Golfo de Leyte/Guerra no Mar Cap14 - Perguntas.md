@@ -32,7 +32,7 @@ Speaker 2: Conduziu operações duríssimas para neutralizar a ameaça no flanco
 Speaker 1: Sobre o próximo passo, em que Nimitz e MacArthur divergiam?
 Speaker 2: A Marinha cogitava contornar as Filipinas e apoiar-se na costa chinesa; MacArthur defendia libertar as Filipinas por segurança, logística e por um compromisso moral (“Eu voltarei!”).
 
-Speaker 1: Quem arbitrou a decisão e quando?
+Speaker 1: Quem Árbitrou a decisão e quando?
 Speaker 2: O presidente Roosevelt, em Pearl Harbor (16 de julho), ouvindo ambos e levando o consenso à conferência de Quebec (“Octógono”).
 
 Speaker 1: Qual foi a decisão final?

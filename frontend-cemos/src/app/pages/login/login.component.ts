@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -33,6 +33,7 @@ export class LoginComponent {
 
   constructor(
     private readonly router: Router,
+    private readonly route: ActivatedRoute,
     private readonly formBuilder: FormBuilder,
     private readonly authService: AuthService,
     private readonly snackBar: MatSnackBar
@@ -63,8 +64,11 @@ export class LoginComponent {
             panelClass: ['success-snackbar']
           });
           
-          // Navega para home
-          this.router.navigate(['/home']);
+          // Obtém a URL de retorno dos query params ou usa /home como padrão
+          const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/home';
+          
+          // Navega para a URL de retorno ou home
+          this.router.navigateByUrl(returnUrl);
         },
         error: (error) => {
           console.error('Erro no login:', error);
