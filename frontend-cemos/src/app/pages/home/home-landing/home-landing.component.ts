@@ -1,4 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -18,8 +19,9 @@ import { AuthService } from '../../../services/auth.service';
 })
 export class HomeLandingComponent {
   private authService = inject(AuthService);
+  private currentUserSig = toSignal(this.authService.currentUser$, { initialValue: null });
 
-  currentUsername = computed(() => this.authService.currentUserSig()?.username || 'Usuário');
+  currentUsername = computed(() => this.currentUserSig()?.username || 'Usuário');
 
   constructor(private router: Router) {}
 
