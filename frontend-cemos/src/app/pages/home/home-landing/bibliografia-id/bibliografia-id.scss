@@ -5,6 +5,19 @@
   max-width: 1200px;
   margin: 0 auto;
 
+  .top-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+  }
+
   .bibliografia-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -43,56 +56,38 @@
   gap: 1.25rem;
 }
 
-.materia-card {
+.tree-card {
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
 
-  mat-card-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
+.materia-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.25rem;
+  font-weight: 600;
+  color: #1a237e;
+}
 
-    mat-card-title {
-      color: inherit;
-      font-size: 1.2rem;
-    }
-  }
+.materia-name {
+  font-size: 1rem;
+}
 
-  mat-card-content {
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-    }
+.leaf-id {
+  font-weight: 700;
+  color: #1a237e;
+  margin-right: 0.5rem;
+}
 
-    li {
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid #eaeaea;
+.leaf-text {
+  color: #424242;
+}
 
-      &:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
+.toggle-icon {
+  color: #1a237e;
+}
 
-      .titulo {
-        font-weight: 700;
-        color: #1a237e;
-        margin-bottom: 0.2rem;
-      }
-
-      .autor {
-        font-weight: 500;
-        color: #424242;
-        margin-bottom: 0.35rem;
-      }
-
-      .descricao {
-        margin: 0;
-        color: #555;
-        line-height: 1.5;
-      }
-    }
-  }
+.hidden {
+  display: none;
 }

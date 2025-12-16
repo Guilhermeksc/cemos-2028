@@ -1,5 +1,10 @@
 .calendar-section {
   margin-top: 3rem;
+  .top-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
 
   .calendar-card {
     border-radius: 12px;
@@ -189,4 +194,3 @@
     }
   }
 }
-

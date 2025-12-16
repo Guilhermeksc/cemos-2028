@@ -1,6 +1,12 @@
 .estatistica-section {
   padding: 1.5rem 1rem;
 
+  .top-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
   .estatistica-header {
     text-align: center;
     margin-bottom: 1rem;

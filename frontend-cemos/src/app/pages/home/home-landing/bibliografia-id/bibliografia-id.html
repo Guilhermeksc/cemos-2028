@@ -1,4 +1,11 @@
 <section class="bibliografia-section">
+  <div class="top-actions">
+    <button mat-stroked-button color="primary" (click)="navigateToBibliografia()">
+      <mat-icon>menu_book</mat-icon>
+      Bibliografia
+    </button>
+  </div>
+
   <header class="bibliografia-header">
     <h1>Bibliografia ID</h1>
     <p>Visualize rapidamente toda a bibliografia organizada por matéria.</p>
@@ -7,20 +14,29 @@
   <div *ngIf="isLoading" class="status-message">Carregando bibliografia...</div>
   <div *ngIf="!isLoading && errorMessage" class="status-message error">{{ errorMessage }}</div>
 
-  <div class="materia-grid" *ngIf="!isLoading && !errorMessage">
-    <mat-card class="materia-card" *ngFor="let materia of bibliografias">
-      <mat-card-header>
-        <mat-card-title>{{ materia.materia }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <ul>
-          <li *ngFor="let item of materia.itens">
-            <div class="titulo">{{ item.titulo }}</div>
-            <div class="autor">{{ item.autor }}</div>
-            <p class="descricao">{{ item.descricao }}</p>
-          </li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-  </div>
+  <mat-card class="tree-card" *ngIf="!isLoading && !errorMessage">
+    <mat-card-content>
+      <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+          <button mat-icon-button disabled></button>
+          <span class="leaf-id">ID: {{ node.id }}</span>
+          <span class="leaf-text">{{ node.name }}</span>
+        </mat-tree-node>
+
+        <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+          <div class="materia-row" matTreeNodeToggle>
+            <button mat-icon-button [attr.aria-label]="'toggle ' + node.name">
+              <mat-icon class="toggle-icon">
+                {{ treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right' }}
+              </mat-icon>
+            </button>
+            <span class="materia-name">{{ node.name }}</span>
+          </div>
+          <div [class.hidden]="!treeControl.isExpanded(node)">
+            <ng-container matTreeNodeOutlet></ng-container>
+          </div>
+        </mat-nested-tree-node>
+      </mat-tree>
+    </mat-card-content>
+  </mat-card>
 </section>
