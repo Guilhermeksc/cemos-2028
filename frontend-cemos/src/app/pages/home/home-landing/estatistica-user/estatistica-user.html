@@ -1,13 +1,8 @@
 <section class="estatistica-section">
-  <div class="top-actions">
-    <button mat-button color="primary" (click)="navigateHome()">
-      <mat-icon>arrow_back</mat-icon>
-      Voltar para Home
+  <div class="navigation-buttons">
+    <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
+      <mat-icon>arrow_back</mat-icon> Voltar à Página Principal
     </button>
   </div>
-  <header class="estatistica-header">
-    <h1>Estatísticas</h1>
-    <p>Acompanhe seu desempenho consolidado.</p>
-  </header>
   <app-estatisticas></app-estatisticas>
 </section>
