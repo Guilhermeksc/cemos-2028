@@ -36,7 +36,6 @@ Reconhecendo também a importância de fortalecer e intensificar os meios juríd
 
 Interessadas em concluir uma convenção internacional, que seja um instrumento completo, eficaz e operativo, especificamente dirigido contra o tráfico ilícito, levando em conta os diversos aspectos nos tratados vigentes, no âmbito dos entorpecentes e das substâncias psicotrópicas.
 
-
 ## Página 3
 
 **ARTIGO 2 Alcance da Presente Convenção**
