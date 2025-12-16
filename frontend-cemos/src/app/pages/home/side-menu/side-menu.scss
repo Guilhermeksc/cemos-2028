@@ -223,6 +223,7 @@
   display: flex;
   flex-direction: row; // Linha horizontal
   align-items: center;
+  justify-content: center; // Centraliza o botão dentro do side-menu
   gap: 8px;
   flex-shrink: 0; // Não encolhe
   margin-top: auto; // Empurra para a parte inferior
