@@ -1,0 +1,450 @@
+{
+  "Direito": [
+    {
+      "id": 18,
+      "titulo": "EMA-135 – Direito do Mar",
+      "autor": "BRASIL. Marinha do Brasil.",
+      "descricao": "Ciência Política."
+    },
+    {
+      "id": 19,
+      "titulo": "Lei da Guerra",
+      "autor": "BYERS, Michael. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 20,
+      "titulo": "Decreto nº 19.841 – Carta das Nações Unidas.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 21,
+      "titulo": "Decreto nº 42.121 – Feridos, Enfermos e Náufragos.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 22,
+      "titulo": "Decreto nº 849/1993 – Protocolo I.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 23,
+      "titulo": "Decreto nº 849/1993 – Protocolo II.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 24,
+      "titulo": "San Remo Manual.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 25,
+      "titulo": "Decreto nº 1533/1995 - CNUDM.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 26,
+      "titulo": "Decreto nº 154/1991 - Entorpecentes e  Psicotrópicos.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 27,
+      "titulo": "Decreto nº 678/1992 - Pacto de São José",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 28,
+      "titulo": "Declaração Universal dos Direitos Humanos.",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    },
+    {
+      "id": 29,
+      "titulo": "Decreto nº 7.030/2009 - Convenção de Viena",
+      "autor": "BRASIL. ",
+      "descricao": "Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em São Francisco, a 26 de junho de 1945"
+    }
+  ],
+  "Economia": [
+    {
+      "id": 30,
+      "titulo": "Economia Brasileira Contemporânea",
+      "autor": "GREMAUD, Amaury Patrick et al.",
+      "descricao": "GREMAUD, Amaury Patrick et al. Economia Brasileira Contemporânea. São Paulo: Editora Atlas, 9ª Edição. 2024. "
+    },
+    {
+      "id": 31,
+      "titulo": "Economia Micro e Macro",
+      "autor": "VASCONCELLOS, Marco Antônio Sandoval et al.",
+      "descricao": "VASCONCELLOS, Marco Antônio Sandoval et al. Economia Micro e Macro – Teoria, Exercícios e Casos. São Paulo: Editora Atlas, 7ª Edição. 2023. "
+    },
+    {
+      "id": 32,
+      "titulo": "Economia Azul 2",
+      "autor": "SANTOS, Thauan et al.",
+      "descricao": "Economia Azul: vetor para o desenvolvimento do Brasil."
+    }
+  ],
+  "Estratégia": [
+    {
+      "id": 33,
+      "titulo": "Tratado de Estratégia",
+      "autor": "COUTAU-BÉGARIE, Hervé.",
+      "descricao": "Rio de Janeiro: Escola de Guerra Naval, 2010. "
+    },
+    {
+      "id": 34,
+      "titulo": "A contribuição do Almirante Castex",
+      "autor": "WEDIN, Lars.",
+      "descricao": "Estratégias Marítimas no Século XXI: A contribuição do Almirante Castex."
+    },
+    {
+      "id": 35,
+      "titulo": "EMA-310 - Estratégia de Defesa Marítima",
+      "autor": "BRASIL. ",
+      "descricao": "1ª Edição, Brasília, 2023. "
+    }
+  ],
+  "Geopolítica e Relações Internacionais": [
+    {
+      "id": 1,
+      "titulo": "Geopolítica e Modernidade",
+      "autor": "MATTOS, Carlos de Meira.",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    },
+    {
+      "id": 2,
+      "titulo": "Vingança da Geografia",
+      "autor": "KAPLAN, Robert.",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    },
+    {
+      "id": 3,
+      "titulo": "Novas Geopolíticas",
+      "autor": "VESENTINI, José W.",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    },
+    {
+      "id": 4,
+      "titulo": "Princípios de Relações Internacionais",
+      "autor": "MINGST, Karen A.",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    }
+  ],
+  "História": [
+    {
+      "id": 5,
+      "titulo": "Uma breve história do século XX",
+      "autor": "BLAINEY, Geoffrey.",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    },
+    {
+      "id": 6,
+      "titulo": "Guerra no Mar",
+      "autor": "VIDIGAL, Armando A.",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    },
+    {
+      "id": 7,
+      "titulo": "História das Guerras",
+      "autor": "MAGNOLI, Demétrio",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    },
+    {
+      "id": 8,
+      "titulo": "Marinha do Brasil: uma síntese histórica",
+      "autor": "ABREU, Guilherme Mattos de",
+      "descricao": "Análise geopolítica da Rússia, explorando sua geografia, história imperial e desafios contemporâneos."
+    }
+  ],
+  "Intendência": [
+    {
+      "id": 36,
+      "titulo": "Administração de Cadeias de Suprimentos e Logística",
+      "autor": "CORRÊA, Henrique L.",
+      "descricao": "São Paulo: Atlas, 2019. (cap. 1 a 5, 8 a 12)."
+    },
+    {
+      "id": 37,
+      "titulo": "EMA-400",
+      "autor": "BRASIL. ",
+      "descricao": "2ª Revisão, Mod. 2, 2003. (cap. 1-5 e 7-8)"
+    },
+    {
+      "id": 38,
+      "titulo": "EMA-401 ",
+      "autor": "BRASIL. ",
+      "descricao": "Rev.3, 2023."
+    },
+    {
+      "id": 39,
+      "titulo": "MD-41-M-01",
+      "autor": "BRASIL. ",
+      "descricao": "3ª Edição, 2024"
+    },
+    {
+      "id": 40,
+      "titulo": "MD-41-M-02",
+      "autor": "BRASIL. ",
+      "descricao": "2ª Edição, 2022"
+    },
+    {
+      "id": 41,
+      "titulo": "MD-41-M-03",
+      "autor": "BRASIL. ",
+      "descricao": "1ª Edição, 2021"
+    },
+    {
+      "id": 42,
+      "titulo": "Lei nº 11.631/2007",
+      "autor": "BRASIL. ",
+      "descricao": "Lei de Mobilização Nacional e Sistema Nacional de Mobilização."
+    },
+    {
+      "id": 43,
+      "titulo": "Decreto nº 6.592/2008",
+      "autor": "BRASIL. ",
+      "descricao": "Regulamenta a Lei de Mobilização Nacional e o Sistema Nacional de Mobilização."
+    },
+    {
+      "id": 44,
+      "titulo": "EMA-420 – Sistemas de Defesa",
+      "autor": "BRASIL. ",
+      "descricao": "3ª Revisão, 2025. (cap. 1 e 3)"
+    },
+    {
+      "id": 45,
+      "titulo": "DGMM-0130 - Manual do Apoio Logístico Integrado",
+      "autor": "BRASIL. ",
+      "descricao": "2013. (cap. 1 a 2 e 8 a 9)."
+    },
+    {
+      "id": 46,
+      "titulo": "MD40-M-01",
+      "autor": "BRASIL. ",
+      "descricao": 2019
+    },
+    {
+      "id": 47,
+      "titulo": "MD44-M-02",
+      "autor": "BRASIL. ",
+      "descricao": 2023
+    },
+    {
+      "id": 48,
+      "titulo": "SGM-201 – Abastecimento",
+      "autor": "BRASIL. ",
+      "descricao": "7ª Revisão, 2020. cap. 1, 6, 7, 13, 15 e 16"
+    },
+    {
+      "id": 49,
+      "titulo": "Decreto nº 7.970",
+      "autor": "BRASIL. ",
+      "descricao": "Regulamenta dispositivos da Lei nº 12.598, de 22 de março de 2012, que estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e sistemas de defesa, e dá outras providências."
+    },
+    {
+      "id": 50,
+      "titulo": "Lei nº 12.598",
+      "autor": "BRASIL. ",
+      "descricao": "Estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e de sistemas de defesa e dispõe sobre regras de incentivo à área estratégica de defesa."
+    },
+    {
+      "id": 51,
+      "titulo": "Lei nº 14.133",
+      "autor": "BRASIL. ",
+      "descricao": "Lei de Licitações e Contratos Administrativos."
+    },
+    {
+      "id": 52,
+      "titulo": "Portaria nº 280/2019 – Offset",
+      "autor": "BRASIL. ",
+      "descricao": "Aprova as Normas de Compensação Tecnológica, Industrial e Comercial (Offset) na Marinha do Brasil."
+    },
+    {
+      "id": 53,
+      "titulo": "Portaria nº 223/2016 – Offset",
+      "autor": "BRASIL. ",
+      "descricao": "Aprova as Diretrizes para a Compensação Comercial, Industrial e Tecnológica (“OFFSET”) da Marinha do Brasil. "
+    },
+    {
+      "id": 54,
+      "titulo": "Portaria Normativa nº 899/2005",
+      "autor": "BRASIL. ",
+      "descricao": "Aprova a Política Nacional da Indústria de Defesa – PNID."
+    },
+    {
+      "id": 55,
+      "titulo": "Portaria Normativa nº 586/2006",
+      "autor": "BRASIL. ",
+      "descricao": "Aprova as Ações Estratégicas para a Política Nacional da Indústria de Defesa."
+    },
+    {
+      "id": 56,
+      "titulo": "Portaria Normativa nº 15/2018",
+      "autor": "BRASIL. ",
+      "descricao": "Aprova a Política de Obtenção de Produtos de Defesa (POBPRODE) para a administração central do Ministério da Defesa e para as Forças Armadas."
+    },
+    {
+      "id": 57,
+      "titulo": "Portaria Normativa nº 3.662/2021",
+      "autor": "BRASIL. ",
+      "descricao": "Estabelece a Política de Compensação Tecnológica, Industrial e Comercial do Ministério da Defesa - PComTIC Defesa."
+    },
+    {
+      "id": 58,
+      "titulo": "SGM-301 – Administração Financeira e Contabilidade",
+      "autor": "BRASIL. ",
+      "descricao": "9ª Revisão, 2023. cap. 1, 3, e 4."
+    },
+    {
+      "id": 59,
+      "titulo": "Manual Técnico de Orçamento (MTO)",
+      "autor": "BRASIL. ",
+      "descricao": "2ª versão, Edição 2026. Cap. 1 a 6; e 8."
+    },
+    {
+      "id": 60,
+      "titulo": "SGM-601 – Auditoria",
+      "autor": "BRASIL. ",
+      "descricao": "6ª Revisão, 2024. cap. 1 a 5."
+    },
+    {
+      "id": 61,
+      "titulo": "SGM-602 – Ressarcimento ao Erário",
+      "autor": "BRASIL. ",
+      "descricao": "1ª Edição, 2024. cap. 8."
+    },
+    {
+      "id": 62,
+      "titulo": "Instrução Normativa nº 98",
+      "autor": "BRASIL. ",
+      "descricao": "Dispõe sobre a instauração, a organização e o encaminhamento ao Tribunal de Contas da União dos processos de tomada de contas especial."
+    },
+    {
+      "id": 63,
+      "titulo": "Instrução Normativa nº 3/2017",
+      "autor": "BRASIL. ",
+      "descricao": "Aprova o Referencial Técnico da Atividade de Auditoria Interna Governamental do Poder Executivo Federal."
+    },
+    {
+      "id": 64,
+      "titulo": "SGM-107 – Administração",
+      "autor": "BRASIL. ",
+      "descricao": "9ª Revisão, 2024. cap. 1, 3, 4, 5, 7, 8 e 9."
+    },
+    {
+      "id": 65,
+      "titulo": "SGM-401 – Plano Diretor",
+      "autor": "BRASIL. ",
+      "descricao": "3ª Revisão, 2024. cap. 1, 2, 3, 5, 6, 7 e 8."
+    },
+    {
+      "id": 66,
+      "titulo": "EMA-020 – Governança",
+      "autor": "BRASIL. ",
+      "descricao": "1ª Edição, 2025. cap. 2, 3 e 4."
+    },
+    {
+      "id": 67,
+      "titulo": "EMA-301 – FDM",
+      "autor": "BRASIL. ",
+      "descricao": "1ª Edição, 2023. (cap. 1 e 2)."
+    },
+    {
+      "id": 68,
+      "titulo": "EMA-305 (Mod.1) – Doutrina Militar Naval",
+      "autor": "BRASIL. ",
+      "descricao": "2017. (cap. 3 a 5)"
+    }
+  ],
+  "Planejamento Militar": [
+    {
+      "id": 69,
+      "titulo": "Lei Complementar nº 97 – Planejamento",
+      "autor": "BRASIL. ",
+      "descricao": "Dispõe sobre as normas gerais para a organização, o preparo e o emprego das Forças Armadas. Art. 15 a 18."
+    },
+    {
+      "id": 70,
+      "titulo": "Decreto nº 7.276",
+      "autor": "BRASIL. ",
+      "descricao": "Dispõe sobre a Estrutura Militar de Defesa."
+    },
+    {
+      "id": 71,
+      "titulo": "Portaria Normativa nº 84/GM-MD 1º Vol",
+      "autor": "BRASIL. ",
+      "descricao": "Dispõe sobre a \"Doutrina de Operações Conjuntas\"MD30-M-01"
+    },
+    {
+      "id": 72,
+      "titulo": "Portaria Normativa nº 84/GM-MD 2º Vol",
+      "autor": "BRASIL. ",
+      "descricao": "Dispõe sobre a \"Doutrina de Operações Conjuntas\"MD30-M-01 – 2 Vol"
+    }
+  ],
+  "Política": [
+    {
+      "id": 9,
+      "titulo": "Ciência Política",
+      "autor": "DIAS, Reinaldo. ",
+      "descricao": "Ciência Política."
+    },
+    {
+      "id": 10,
+      "titulo": "Constituição da República Federativa do Brasil.",
+      "autor": "BRASIL. Constituição (1988).",
+      "descricao": "Ciência Política."
+    },
+    {
+      "id": 11,
+      "titulo": "Estratégia Nacional de Defesa",
+      "autor": "BRASIL. Ministério da Defesa.",
+      "descricao": "Ciência Política."
+    },
+    {
+      "id": 12,
+      "titulo": "Política Nacional de Defesa",
+      "autor": "BRASIL. Ministério da Defesa.",
+      "descricao": "Ciência Política."
+    },
+    {
+      "id": 13,
+      "titulo": "Lei Complementar nº 97",
+      "autor": "BRASIL. ",
+      "descricao": "Dispõe sobre as normas gerais para a organização, o preparo e o emprego das Forças Armadas."
+    },
+    {
+      "id": 14,
+      "titulo": "Decreto nº 12.481 – PMN",
+      "autor": "BRASIL. ",
+      "descricao": "Institui a Política Marítima Nacional (PMN)."
+    },
+    {
+      "id": 15,
+      "titulo": "Economia Azul",
+      "autor": "SANTOS, Thauan et al.",
+      "descricao": "Economia Azul: vetor para o desenvolvimento do Brasil."
+    },
+    {
+      "id": 16,
+      "titulo": "EMA-323 - Política Naval",
+      "autor": "BRASIL. Marinha do Brasil.",
+      "descricao": "Ciência Política."
+    },
+    {
+      "id": 17,
+      "titulo": "Decreto nº 12.363 – Recursos do Mar.",
+      "autor": "BRASIL. ",
+      "descricao": "Aprova o XI Plano Setorial para os Recursos do Mar."
+    }
+  ]
+}

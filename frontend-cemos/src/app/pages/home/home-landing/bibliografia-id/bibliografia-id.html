@@ -1,0 +1,26 @@
+<section class="bibliografia-section">
+  <header class="bibliografia-header">
+    <h1>Bibliografia ID</h1>
+    <p>Visualize rapidamente toda a bibliografia organizada por matéria.</p>
+  </header>
+
+  <div *ngIf="isLoading" class="status-message">Carregando bibliografia...</div>
+  <div *ngIf="!isLoading && errorMessage" class="status-message error">{{ errorMessage }}</div>
+
+  <div class="materia-grid" *ngIf="!isLoading && !errorMessage">
+    <mat-card class="materia-card" *ngFor="let materia of bibliografias">
+      <mat-card-header>
+        <mat-card-title>{{ materia.materia }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li *ngFor="let item of materia.itens">
+            <div class="titulo">{{ item.titulo }}</div>
+            <div class="autor">{{ item.autor }}</div>
+            <p class="descricao">{{ item.descricao }}</p>
+          </li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

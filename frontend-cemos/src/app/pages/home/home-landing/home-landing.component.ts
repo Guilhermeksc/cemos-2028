@@ -21,5 +21,16 @@ export class HomeLandingComponent {
   navigateTo(path: string[]): void {
     this.router.navigate(['home', ...path]);
   }
-}
 
+  navigateBibliografiaId(): void {
+    this.router.navigate(['/home/bibliografia-id']);
+  }
+
+  navigateCronograma(): void {
+    this.router.navigate(['/home/cronograma']);
+  }
+
+  navigateEstatisticas(): void {
+    this.router.navigate(['/home/estatisticas']);
+  }
+}

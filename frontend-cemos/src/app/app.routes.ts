@@ -22,7 +22,15 @@ export const routes: Routes = [
       },
       {
         path: 'estatisticas',
-        loadComponent: () => import('./components/perguntas/estatisticas/estatisticas').then((m) => m.EstatisticasComponent)
+        loadComponent: () => import('./pages/home/home-landing/estatistica-user/estatistica-user').then((m) => m.EstatisticaUser)
+      },
+      {
+        path: 'bibliografia-id',
+        loadComponent: () => import('./pages/home/home-landing/bibliografia-id/bibliografia-id').then((m) => m.BibliografiaId)
+      },
+      {
+        path: 'cronograma',
+        loadComponent: () => import('./pages/home/home-landing/cronograma/cronograma').then((m) => m.Cronograma)
       },
       ...moduleRoutes
     ]
