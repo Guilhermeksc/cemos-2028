@@ -24,7 +24,7 @@ export class Cnudm implements OnInit {
     'parteV.md',
     'parteVI.md',
     'parteVII.md',
-    'parteVIII-IX-X',
+    'parteVIII-IX-X.md',
     'parteXI.md',
     'parteXII.md',
     'parteXIII.md',

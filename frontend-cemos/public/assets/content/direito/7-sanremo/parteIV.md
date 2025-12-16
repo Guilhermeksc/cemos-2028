@@ -1,6 +1,6 @@
-## Parte IV: Métodos e meios de Guerra no Mar
+# Parte IV: Métodos e meios de Guerra no Mar
  
-## SEÇÃO I: MEIOS DE GUERRA
+### SEÇÃO I: MEIOS DE GUERRA
 
 ## Página 14
 
@@ -44,7 +44,7 @@
  
 **92. Estados neutros não cometem ato incompatível com as leis da neutralidade ao remover minas lançadas em violação ao direito internacional.**
  
-## SEÇÃO II: MÉTODOS DE GUERRA  
+### SEÇÃO II: MÉTODOS DE GUERRA  
  
 **Bloqueio**  
  
@@ -96,7 +96,7 @@
  
 108. Nada nesta Seção deve ser interpretado como uma limitação ao direito beligerante consuetudinário de controlar navios e aeronaves neutros nas imediações de operações navais.
  
-## SEÇÃO III: ENGANAÇÃO, ESTRATAGEMAS DE GUERRA E PERFÍDIA 
+### SEÇÃO III: ENGANAÇÃO, ESTRATAGEMAS DE GUERRA E PERFÍDIA 
  
 109. Aeronaves militares e auxiliares estão proibidas, em qualquer circunstância, de fingir status isento, civil ou neutro.
  
@@ -110,8 +110,6 @@
 (g) embarcações envolvidas no transporte de bens culturais sob proteção especial.
  
 111. Perfídia é proibida. Ações que buscam conquistar a confiança do adversário para levá-lo a acreditar que tem direito à proteção, ou obrigação de concedê-la, conforme as regras do direito internacional aplicáveis em conflitos armados, com a intenção de trair essa confiança, constituem perfídia. Atos perfidiosos incluem lançar um ataque fingindo:
-
-## Página 17
 
 (a) status isento, civil, neutro ou protegido pelas Nações Unidas;
 (b) rendição ou situação de emergência, por exemplo, enviando um sinal de socorro ou fazendo a tripulação embarcar em botes salva-vidas.

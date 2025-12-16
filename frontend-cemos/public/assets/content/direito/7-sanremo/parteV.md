@@ -1,6 +1,8 @@
 # Parte V: Medidas curtas de ataque: Interceptação, Visita, Pesquisa, Diversão e Captura
+
+## Página 17
  
-## SEÇÃO I: DETERMINAÇÃO DO CARÁTER INIMIGO DE NAVIOS E AERONAVES
+### SEÇÃO I: DETERMINAÇÃO DO CARÁTER INIMIGO DE NAVIOS E AERONAVES
  
 112. O fato de um navio mercante hastear a bandeira de um Estado inimigo, ou de uma aeronave civil ostentar as marcas de um Estado inimigo, constitui prova conclusiva de seu caráter inimigo. 
 
@@ -14,7 +16,7 @@
  
 117. O caráter inimigo pode ser determinado por registro, propriedade, carta patente ou outros critérios.  
  
-## SEÇÃO II: VISITA E BUSCA DE NAVIOS MERCANTES  
+### SEÇÃO II: VISITA E BUSCA DE NAVIOS MERCANTES  
  
 **Regras básicas**  
  
@@ -45,7 +47,7 @@
  
 124. Para eliminar a necessidade de visita e busca, incentiva-se que Estados neutros adotem medidas de controle e procedimentos de certificação razoáveis para assegurar que seus navios mercantes não estejam transportando contrabando.
  
-## SEÇÃO III: INTERCEPÇÃO, VISITA E BUSCA  DE AERON VES CIVIS  
+### SEÇÃO III: INTERCEPÇÃO, VISITA E BUSCA  DE AERON VES CIVIS  
  
 **Regras básicas**
  No exercício de seus direitos legais em um conflito armado internacional no mar, aeronaves militares beligerantes têm o direito de interceptar aeronaves civis fora do espaço aéreo neutro quando houver fundamentos razoáveis para suspeitar que estão sujeitas à captura. Se, após a interceptação, ainda existirem fundamentos razoáveis para suspeitar que uma aeronave civil está sujeita à captura, as aeronaves militares beligerantes têm o direito de ordenar que a aeronave civil siga para um aeródromo beligerante para fins de visita e busca, desde que esse aeródromo seja seguro para o tipo de aeronave envolvida e razoavelmente acessível. Se não houver aeródromo beligerante seguro e razoavelmente acessível para visita e busca, uma aeronave civil pode ser desviada de seu destino declarado. 
@@ -82,7 +84,7 @@
  
 134. Para eliminar a necessidade de visita e busca, incentiva-se que Estados neutros adotem medidas de controle e procedimentos de certificação razoáveis para assegurar que suas aeronaves civis não estejam transportando contrabando. 
  
-## SEÇÃO IV: CAPTURA DE NAVIOS E MERCADORIAS INIMIGOS  
+### SEÇÃO IV: CAPTURA DE NAVIOS E MERCADORIAS INIMIGOS  
  
 135. Sujeito às disposições do parágrafo 136, navios inimigos — sejam mercantes ou de outro tipo — e os bens a bordo desses navios podem ser capturados fora das águas neutras. O exercício prévio de visita e busca não é exigido.
 
@@ -116,7 +118,7 @@
  
 140. É proibida no mar a destruição de navios de passageiros inimigos que transportem apenas passageiros civis. Para garantir a segurança desses passageiros, tais navios devem ser desviados para uma área ou porto apropriado para completar a captura.
  
-## SEÇÃO V: CAPTURA DE AERONAVES E BENS CIVIS INIMIGOS
+### SEÇÃO V: CAPTURA DE AERONAVES E BENS CIVIS INIMIGOS
 
 ## Página 21
 
@@ -139,7 +141,7 @@
  
 145. Se a captura for realizada, deve-se garantir a segurança dos passageiros e da tripulação, bem como a proteção de seus pertences pessoais. Os documentos e papéis relacionados ao prêmio também devem ser salvaguardados.  
  
-## SEÇÃO VI: CAPTURA DE NAVIOS MERCANTES NEUTROS E BENS
+### SEÇÃO VI: CAPTURA DE NAVIOS MERCANTES NEUTROS E BENS
  
 146. Navios mercantes neutros estão sujeitos à captura fora das águas neutras se estiverem envolvidos em qualquer uma das atividades mencionadas no parágrafo 67 ou se for determinado, como resultado de visita e busca ou por outros meios, que eles:
 
@@ -183,7 +185,7 @@ A destruição estará sujeita à adjudicação.
  
 152. É proibida no mar a destruição de navios de passageiros neutros capturados que transportem passageiros civis. Para garantir a segurança dos passageiros, tais navios devem ser desviados para um porto apropriado para completar a captura prevista no parágrafo 146.
  
-## SEÇÃO VII: CAPTURA DE AERONAVES E BENS CIVIS NEUTROS 
+### SEÇÃO VII: CAPTURA DE AERONAVES E BENS CIVIS NEUTROS 
  
 153. Aeronaves civis neutras estão sujeitas à captura fora do espaço aéreo neutro se estiverem envolvidas em qualquer das atividades mencionadas no parágrafo 70 ou se for determinado, como resultado de visita e busca ou por qualquer outro meio, que elas:
 
@@ -195,7 +197,6 @@ A destruição estará sujeita à adjudicação.
 (f) estão envolvidas em violação de bloqueio.
  
 ## Página 23
-
 
 154. Os bens a bordo de aeronaves civis neutras estão sujeitos à captura apenas se forem contrabando.
  

@@ -1,4 +1,4 @@
-# PARTE VIII, IX e X
+# Parte VIII, IX e X
 
 ## Página 33
 

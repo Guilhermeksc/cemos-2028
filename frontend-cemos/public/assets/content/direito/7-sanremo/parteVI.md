@@ -1,6 +1,6 @@
-# Página 23
-
 # Parte VI: Pessoas protegidas, transportes médicos e aeronaves médicas
+
+# Página 23
 
 **REGRAS GERAIS**
  
@@ -10,7 +10,7 @@
  
 ## Página 24
 
-## SEÇÃO I: PESSOAS PROTEGIDAS  
+### SEÇÃO I: PESSOAS PROTEGIDAS  
  
 161. Pessoas a bordo de navios e aeronaves que tenham caído sob o poder de um beligerante ou de um neutro devem ser respeitadas e protegidas. Enquanto estiverem no mar e, posteriormente, até a determinação de seu status, estarão sujeitas à jurisdição do Estado que exerce poder sobre elas.
  
@@ -38,7 +38,7 @@
  
 168. Pessoas que tenham caído sob o poder de um Estado neutro devem ser tratadas de acordo com as Convenções de Haia V e XIII de 1907 e a Segunda Convenção de Genebra de 1949.  
  
-## SEÇÃO II: TRANSPORTE MÉDICO  
+### SEÇÃO II: TRANSPORTE MÉDICO  
  
 169. Para garantir a máxima proteção aos navios-hospital desde o início das hostilidades, os Estados podem, previamente, fazer uma notificação geral das características de seus navios-hospital, conforme especificado no Artigo 22 da Segunda Convenção de Genebra de 1949. Tal notificação deve incluir todas as informações disponíveis sobre os meios pelos quais o navio pode ser identificado.
  
@@ -52,7 +52,7 @@
 
 ## Página 25
 
-## SEÇÃO III: AERONAVES MÉDICAS 
+### SEÇÃO III: AERONAVES MÉDICAS 
  
 174. As aeronaves médicas devem ser protegidas e respeitadas conforme especificado nas disposições deste documento.
  

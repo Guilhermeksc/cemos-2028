@@ -2,7 +2,7 @@
 
 ## Página 5
 
-## SEÇÃO I: ÁGUAS INTERNAS, MAR TERRITORIAL E ÁGUAS ARQUIPELÁGICAS  
+### SEÇÃO I: ÁGUAS INTERNAS, MAR TERRITORIAL E ÁGUAS ARQUIPELÁGICAS  
  
 14. Águas neutras consistem nas águas internas, no mar territorial e, quando aplicável, nas águas arquipelágicas dos Estados neutros. O espaço aéreo neutro consiste no espaço aéreo sobre as águas neutras e sobre o território terrestre de Estados neutros.
  
@@ -31,7 +31,7 @@
  
 22. Caso um Estado beligerante viole o regime das águas neutras, conforme estabelecido neste documento, o Estado neutro é obrigado a tomar as medidas necessárias para pôr fim à violação. Se o Estado neutro não encerrar a violação de suas águas neutras por um beligerante, o beligerante oponente deve notificar o Estado neutro e conceder-lhe um prazo razoável para encerrar a violação. Se a violação da neutralidade do Estado pelo beligerante constituir uma ameaça séria e imediata à segurança do beligerante oponente e a violação não for encerrada, este poderá, na ausência de alternativa viável e tempestiva, usar a força estritamente necessária para responder à ameaça decorrente da violação.
 
-## SEÇÃO II: ESTREITOS  INTERNACIONAIS E ROTAS MARÍTIMAS ARQUIPELÁGICAS  
+### SEÇÃO II: ESTREITOS  INTERNACIONAIS E ROTAS MARÍTIMAS ARQUIPELÁGICAS  
  
 **Regras gerais**  
  
@@ -63,13 +63,13 @@
  
 33. O **direito de passagem inocente não passível de suspensão**, atribuído a certos **estreitos internacionais** pelo direito internacional, não pode ser suspenso em tempo de conflito armado.
  
-## SEÇÃO III: ZONA ECONÔMICA EXCLUSIVA E PLAFORMA CONTINENTAL  
+### SEÇÃO III: ZONA ECONÔMICA EXCLUSIVA E PLAFORMA CONTINENTAL  
  
 34. Se ações hostis forem conduzidas dentro da zona econômica exclusiva ou sobre a plataforma continental de um Estado neutro, os Estados beligerantes deverão, além de observar as demais regras aplicáveis da lei de conflitos armados  no mar, respeito pelos direitos e deveres do Estado costeiro, entre outros, pela exploração e explotação dos recursos econômicos recursos da zona econômica exclusiva e da plataforma continental e proteção e preservação do meio ambiente  marinho. Devem, em especial, ter atenção as  ilhas artificiais ,instalações, estruturas e zonas de segurança artificiais estabelecidos por Estados neutros na zona econômica exclusiva e na plataforma continental.  
  
 35. Caso um beligerante considere necessário lançar minas na zona econômica exclusiva ou na plataforma continental de um Estado neutro, deverá notificar esse Estado e assegurar, entre outros aspectos, que o tamanho do campo minado e o tipo de minas utilizadas não coloquem em perigo ilhas artificiais, instalações e estruturas, nem interfere no seu acesso, e deve evitar, na medida do possível, interferências na exploração ou explotação da zona pelo Estado neutro. Deve-se considerar também a proteção e preservação do meio marinho.  
  
-## SEÇÃO IV: ALTO-MAR E LEITO MARINHO ALÉM DA JURISDIÇÃO NACIONAL
+### SEÇÃO IV: ALTO-MAR E LEITO MARINHO ALÉM DA JURISDIÇÃO NACIONAL
  
 36. As ações hostis em alto mar serão conduzidas com a devida consideração  para o exercício p or Estados neutros de direitos de  exploração e exploração dos recursos naturais do leito do mar e do fundo do oceano e seu subsolo, além de jurisdição nacional.  
  

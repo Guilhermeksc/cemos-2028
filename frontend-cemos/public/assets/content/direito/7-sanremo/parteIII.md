@@ -1,8 +1,8 @@
-## Parte III: Regras Básicas e Discriminação do Alvo
+# Parte III: Regras Básicas e Discriminação do Alvo
 
 ## Página 8
 
-## SEÇÃO I: REGRAS BÁSICAS  
+### SEÇÃO I: REGRAS BÁSICAS  
  
 38. Em qualquer conflito armado, o direito das partes em conflito de escolher métodos ou meios de guerra não é ilimitado.
  
@@ -24,7 +24,7 @@
  
 45. Os navios de superfície, submarinos e aeronaves estão sujeitos aos mesmos princípios e regras.  
  
-## SEÇÃO II: PRECAUÇÕES EM ATAQUE  
+### SEÇÃO II: PRECAUÇÕES EM ATAQUE  
  
 46. Com relação aos ataques, devem ser tomadas as seguintes precauções:  
 (a) aqueles que planejam, decidem ou executam um ataque devem tomar todas as medidas viáveis para reunir informações que auxiliem a determinar se objetos que não são objetivos militares estão presentes na área do ataque;
@@ -36,7 +36,7 @@ A Seção VI desta Parte fornece precauções adicionais em relação a aeronave
 
 ## Página 9
 
-## SEÇÃO III: NAVIOS INIMIGOS E AERONAVES ISENTOS DE ATAQUE  
+### SEÇÃO III: NAVIOS INIMIGOS E AERONAVES ISENTOS DE ATAQUE  
  
 Classes de navios isentos de ataque  
  
@@ -54,7 +54,7 @@ Classes de navios isentos de ataque
 (i) navios que tenham se rendido;
 (j) balsas salva-vidas e botes salva-vidas.
  
-Condições de isenção  
+**Condições de isenção**  
  
 48. Os navios listados no parágrafo 47 são isentos de ataque somente se: 
 (a) estiverem sendo empregados de forma inocente em sua função normal;
@@ -136,7 +136,7 @@ Nos demais casos, aeronaves médicas operam por sua própria conta e risco.
  
 58. Em caso de dúvida sobre se um navio ou aeronave isento de ataque está sendo utilizado para contribuir efetivamente para uma ação militar, presume-se que não esteja sendo assim utilizado.
  
-## SEÇÃO IV: OUTROS NAVIOS INIMIGOS E AERONAVES  
+### SEÇÃO IV: OUTROS NAVIOS INIMIGOS E AERONAVES  
  
 **Navios mercantes inimigos**  
  
@@ -177,7 +177,7 @@ Nos demais casos, aeronaves médicas operam por sua própria conta e risco.
  
 66. Eles podem ser atacados, desde que respeitadas as regras básicas nos parágrafos 38–46.
  
-## SEÇÃO V: NAVIOS MERCANTES NEUTROS E AERONAVES CIVIS 
+### SEÇÃO V: NAVIOS MERCANTES NEUTROS E AERONAVES CIVIS 
  
 **Navios mercantes neutros**
  
@@ -208,7 +208,7 @@ Nos demais casos, aeronaves médicas operam por sua própria conta e risco.
  
 71. Qualquer ataque a essas aeronaves está sujeito às regras básicas dos parágrafos 38–46.
  
-## SEÇÃO VI: PRECAUÇÕES RELATIVAS AERONAVES CIVIS  
+### SEÇÃO VI: PRECAUÇÕES RELATIVAS AERONAVES CIVIS  
  
 72. Aeronaves civis devem evitar áreas de atividade militar potencialmente perigosa.
  

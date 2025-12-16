@@ -35,7 +35,7 @@ O texto autêntico do manual é em inglês.
 
 6. As regras estabelecidas neste documento e quaisquer outras regras de direito internacional humanitário aplicam-se igualmente a todas as partes do conflito. A aplicação igualitária dessas regras a todas as partes não é afetada pela responsabilidade internacional que qualquer delas possa ter incorrido pelo desencadeamento do conflito. 
  
-## SEÇÃO III: CONFLITOS ARMADOS NOS QUAIS O CONSELHO DE SEGURANÇA TENHA AGIDO
+### SEÇÃO III: CONFLITOS ARMADOS NOS QUAIS O CONSELHO DE SEGURANÇA TENHA AGIDO
  
 7. Não obstante qualquer regra contida neste documento ou em outro lugar sobre o direito de neutralidade, quando o Conselho de Segurança, agindo de acordo com seus poderes sob o Capítulo VII da Carta das Nações Unidas, identificar uma ou mais partes de um conflito armado como responsáveis pelo uso da força em violação do direito internacional, os Estados neutros:
 (a) são obrigados a não prestar assistência, exceto assistência humanitária, a esse Estado; e
@@ -45,7 +45,7 @@ O texto autêntico do manual é em inglês.
  
 9. Sem prejuízo do parágrafo 7, quando o Conselho de Segurança tiver decidido usar força, ou autorizar o uso da força por um Estado ou Estados específicos, as regras estabelecidas neste documento e quaisquer outras regras de direito internacional humanitário aplicáveis a conflitos armados no mar aplicar-se-ão a todas as partes de qualquer conflito que possa daí resultar.
  
-## SEÇÃO IV: ÁREAS DE GUERRA NAVAL  
+### SEÇÃO IV: ÁREAS DE GUERRA NAVAL  
  
 10. Sem prejuízo de outras regras aplicáveis do direito dos conflitos armados no mar contidas neste documento ou em outro lugar, ações hostis por forças navais podem ser conduzidas em, sobre ou acima de:
 (a) o mar territorial e as águas interiores, os territórios terrestres, a zona econômica exclusiva e a plataforma continental e, quando aplicável, as águas arquipelágicas dos Estados beligerantes;
@@ -60,7 +60,7 @@ O texto autêntico do manual é em inglês.
  
 12. Ao realizar operações em áreas onde Estados neutros gozam de direitos soberanos, jurisdição ou outros direitos previstos pelo direito internacional geral, os beligerantes devem respeitar devidamente os direitos e deveres legítimos desses Estados neutros.
  
-## SEÇÃO V: DEFINIÇÕES  
+### SEÇÃO V: DEFINIÇÕES  
  
 13. Para os fins deste documento:  
 (a) **direito internacional humanitário** significa regras internacionais, estabelecidas por tratados ou costume, que limitam o direito das partes em conflito de utilizar métodos ou meios de guerra de sua escolha, ou que protegem Estados não participantes do conflito, ou pessoas e bens que são, ou podem ser, afetados pelo conflito;
