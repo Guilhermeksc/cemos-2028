@@ -164,11 +164,19 @@
 }
 
 .section-title {
-  margin: 0 0 1.5rem 0;
-  font-size: 1.8rem;
+  margin: 0 0 0.35rem 0;
+  font-size: 2rem;
   color: #1a237e;
   text-align: center;
   letter-spacing: 1px;
+}
+
+.section-subtitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.35rem;
+  color: #4a4a4a;
+  text-align: center;
+  font-weight: 600;
 }
 
 .divider {

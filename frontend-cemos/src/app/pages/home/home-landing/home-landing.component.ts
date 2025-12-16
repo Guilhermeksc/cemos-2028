@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
+import { AuthService } from '../../../services/auth.service';
 
 @Component({
   selector: 'app-home-landing',
@@ -16,6 +17,10 @@ import { Router } from '@angular/router';
   styleUrl: './home-landing.component.scss'
 })
 export class HomeLandingComponent {
+  private authService = inject(AuthService);
+
+  currentUsername = computed(() => this.authService.currentUserSig()?.username || 'Usuário');
+
   constructor(private router: Router) {}
 
   navigateTo(path: string[]): void {

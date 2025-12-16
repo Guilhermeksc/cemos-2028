@@ -4,16 +4,6 @@
   
   <!-- Informação do usuário e botões - Apenas para desktop (sidebar) -->
   <div class="user-actions-container" *ngIf="!isTopMenuMode && currentUsername()">
-    <div 
-      class="user-info"
-      [class.active]="currentActivePath() === 'estatisticas'"
-      (click)="navigateEstatisticas()"
-      role="button"
-      tabindex="0"
-      aria-label="Ver estatísticas do usuário">
-      <mat-icon class="user-icon">account_circle</mat-icon>
-      <span class="user-name">{{ currentUsername() }}</span>
-    </div>
     <button 
       mat-flat-button 
       class="logout-button"
@@ -137,4 +127,3 @@
     </div>
   </div>
   </mat-nav-list>
-
