@@ -1,5 +1,7 @@
 <div class="landing-container">
-  <h2 class="section-title">Bem vindo {{ currentUsername() }}!</h2>
+  <div class="page-header">
+    <h2 class="section-title">Bem vindo {{ currentUsername() }}!</h2>
+  </div>
   
   <div class="modules-grid">
     <mat-card class="module-card" (click)="navigateTo(['app1-intendencia', 'bibliografia'])">
@@ -92,7 +94,6 @@
       </div>
       <div class="tool-content">
         <h3>Bibliografia ID</h3>
-        <p>Bibliografia organizada por ID.</p>
       </div>
     </mat-card>
 
@@ -102,7 +103,6 @@
       </div>
       <div class="tool-content">
         <h3>Cronograma</h3>
-        <p>Planejamento de estudos.</p>
       </div>
     </mat-card>
 
@@ -112,7 +112,6 @@
       </div>
       <div class="tool-content">
         <h3>Estatísticas</h3>
-        <p>Monitore seu desempenho com base nas questões respondidas.</p>
       </div>
     </mat-card>
   </div>
