@@ -16,7 +16,7 @@ export class Cronograma {
 
   constructor(private router: Router) {}
 
-  navigateToBibliografia(): void {
-    this.router.navigate(['/home/bibliografia-id']);
+  navigateHome(): void {
+    this.router.navigate(['/home']);
   }
 }

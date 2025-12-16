@@ -68,7 +68,7 @@ export class BibliografiaId implements OnInit {
 
   hasChild = (_: number, node: BibliografiaNode) => !!node.children && node.children.length > 0;
 
-  navigateToBibliografia(): void {
-    this.router.navigate(['/home/bibliografia-id']);
+  navigateHome(): void {
+    this.router.navigate(['/home']);
   }
 }
