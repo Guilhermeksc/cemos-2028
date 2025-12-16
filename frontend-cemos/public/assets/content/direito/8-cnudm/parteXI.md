@@ -1,8 +1,8 @@
+# Parte XI - A Área
+
 ## Página 35
 
-## PARTE XI - A ÁREA
-
-## SEÇÃO 1. DISPOSIÇÕES GERAIS
+### SEÇÃO 1. DISPOSIÇÕES GERAIS
 
 **ARTIGO 133 - Termos utilizados**
 Para efeitos da presente Parte:
@@ -20,7 +20,7 @@ b) os recursos, uma vez extraídos da Área, são denominados ‘minerais’.
 
 Nem a presente Parte nem quaisquer direitos concedidos ou exercidos nos termos da mesma afetam o regime  jurídico das águas sobrejacentes à Área ou o do espaço aéreo dessas águas.
 
-## SEÇÃO 2. PRINCIPIOS QUE REGEM A ÁREA
+### SEÇÃO 2. PRINCIPIOS QUE REGEM A ÁREA
 
 **ARTIGO 136 - Patrimônio comum da humanidade**
 A Área e seus recursos são patrimônio comum da humanidade.
@@ -108,7 +108,7 @@ A participação efetiva dos Estados em desenvolvimento nas atividades na Área 
 
 Todos os objetos de caráter arqueológico e histórico achados na Área serão conservados ou deles se disporá em  benefício da humanidade em geral, tendo particularmente em conta os direitos preferenciais do Estado ou país  de origem, do Estado de origem cultural ou do Estado de origem histórica e arqueológica.
 
-## SEÇÃO 3. APROVEITAMENTO DOS RECURSOS DA ÁREA
+### SEÇÃO 3. APROVEITAMENTO DOS RECURSOS DA ÁREA
 
 **ARTIGO 150 - Políticas Gerais relativas às atividades na Área**
 
@@ -190,9 +190,9 @@ f) se o sistema permitiu a distribuição equitativa de benefícios resultantes 
 4. Se, cinco anos após o seu início, não tiver chegado a acordo sobre o sistema de exploração e aproveitamento  dos recursos da Área, a Conferência de Revisão pode, nos doze meses seguintes, por maioria de três quartos  dos Estados Partes, decidir a adoção e apresentação aos Estados Partes para ratificação ou adesão das  emendas que mudem ou modifiquem o sistema que julgue necessárias e apropriadas. Tais emendas entrarão  em vigor para todos os Estados Partes doze meses após o depósito dos instrumentos de ratificação ou de  adesão de dois terços dos Estados Partes.
 5. As emendas adotadas pela Conferência de Revisão, de conformidade com o presente artigo, não afetam os  direitos adquiridos em virtude de contratos existentes.
 
-## SEÇÃO 4. AUTORIDADE
+### SEÇÃO 4. AUTORIDADE
 
-## SUBSEÇÃO A. DISPOSIÇÕES GERAIS
+### SUBSEÇÃO A. DISPOSIÇÕES GERAIS
 
 **ARTIGO 156 - Criação da Autoridade**
 1. É  criada a Autoridade Internacional dos Fundos Marinhos que funcionará de conformidade com a presente  Parte.
@@ -217,7 +217,7 @@ f) se o sistema permitiu a distribuição equitativa de benefícios resultantes 
 3. Podem ser criados, de conformidade com a presente Parte, os órgãos subsidiários considerados necessários.
 4. Compete a cada um dos órgãos principais da Autoridade e à Empresa exercer os poderes e funções que lhes  são conferidos. No exercício de tais poderes e funções, cada órgão deve abster-se de tomar qualquer medida  que possa prejudicar ou impedir o exercício dos poderes e funções específicos conferidos a um outro órgão.
 
-## SUBSEÇÃO B. A ASSEMBLÉIA
+### SUBSEÇÃO B. A ASSEMBLÉIA
 
 **ARTIGO 159 - Composição, procedimento e votação**
 
@@ -261,6 +261,7 @@ k) examinar os problemas de caráter geral relacionados com as atividades na Ár
 l) estabelecer, por recomendação do Conselho baseada no parecer da Comissão de Planejamento Econômico,  um sistema de compensação ou adorar outras medidas de assistência para o reajuste econômico de  conformidade com o parágrafo 10º do artigo151;
 m) suspender o exercício de direitos e privilégios inerentes À qualidade de membro, nos termos do artigo 185;
 n) examinar qualquer questão ou assunto no âmbito de competência da Autoridade e decidir, de forma  compatível com a distribuição de poderes e funções entre os órgãos da Autoridade, qual destes órgãos se deve  ocupar de qualquer questão ou assunto que não seja expressamente atribuído a um órgão em particular. 
+
 SUBSEÇÃO C. O CONSELHO
 
 ## Página 45
@@ -386,44 +387,57 @@ n) calcular o teto de produção e, em nome da Autoridade, emitir autorizações
 3. No desempenho das suas funções de supervisão e inspeção, os membros da Comissão serão acompanhados  por um representante desse Estado ou parte interessada, a pedido de qualquer Estado Parte ou de outra parte  interessada.
 
 
-## SUBSEÇÃO D. O SECRETARIADO
+### SUBSEÇÃO D. O SECRETARIADO
 
 **ARTIGO 166 - O Secretariado**
-1. O Secretariado da Autoridade compreende um Secretário Geral e o pessoal de que a Autoridade possa  necessitar.
-2. O Secretário Geral será eleito pela Assembléia para um mandato de quatro anos, dentre os candidatos  propostos pelo Conselho e podendo ser reeleito.
-3. O Secretário Geral será o mais alto funcionário administrativo da Autoridade e, nessa qualidade, participará  em todas as reuniões da Assembléia, do Conselho e de qualquer órgão subsidiário, e desempenhará as demais  funções administrativas de que for incumbido por esses órgãos.
-4. O Secretário Geral apresentará à Assembléia um relatório anual sobre as atividades da Autoridade.
+ 1. O Secretariado da Autoridade compreende um Secretário Geral e o pessoal de que a Autoridade possa necessitar.
+
+ 2. O Secretário Geral será eleito pela Assembléia para um mandato de quatro anos, dentre os candidatos propostos pelo Conselho e podendo ser reeleito.
+
+ 3. O Secretário Geral será o mais alto funcionário administrativo da Autoridade e, nessa qualidade, participará  em todas as reuniões da Assembléia, do Conselho e de qualquer órgão subsidiário, e desempenhará as demais  funções administrativas de que for incumbido por esses órgãos.
+ 
+ 4. O Secretário Geral apresentará à Assembléia um relatório anual sobre as atividades da Autoridade.
 
 **ARTIGO 167 - O pessoal da Autoridade**
-1. O pessoal da Autoridade é composto de funcionários qualificados nos domínios cientifico e técnico, e demais  pessoal necessário ao desempenho das funções administrativas da Autoridade.
-2. A consideração dominante ao recrutar e contratar o pessoal e ao determinar as suas condições de emprego  será a necessidade de assegurar o mais alto grau de eficiência, competência e integridade. Ressalvada esta  consideração, ter-se-á em devida conta a importância de recrutar o pessoal numa base geográfica tão ampla  quanto possível.
-3. O pessoal é nomeado pelo Secretário Geral. As modalidades e condições de nomeação, remuneração e  demissão do pessoal devem ser conformes com as normas, regulamentos e procedimentos da Autoridade.
+ 1. O pessoal da Autoridade é composto de funcionários qualificados nos domínios cientifico e técnico, e demais  pessoal necessário ao desempenho das funções administrativas da Autoridade.
+ 
+ 2. A consideração dominante ao recrutar e contratar o pessoal e ao determinar as suas condições de emprego  será a necessidade de assegurar o mais alto grau de eficiência, competência e integridade. Ressalvada esta  consideração, ter-se-á em devida conta a importância de recrutar o pessoal numa base geográfica tão ampla  quanto possível.
+ 
+ 3. O pessoal é nomeado pelo Secretário Geral. As modalidades e condições de nomeação, remuneração e  demissão do pessoal devem ser conformes com as normas, regulamentos e procedimentos da Autoridade.
 
 ## Página 51
 
 **ARTIGO 168 - Caráter internacional do Secretariado**
 
-1. No cumprimento dos seus deveres, o Secretário Geral e o pessoal da Autoridade não solicitarão nem  receberão instruções de qualquer governo nem de nenhuma outra fonte estranha à Autoridade. Abster-se-ão de  qualquer ato que possa afetar a sua condição de funcionários internacionais, responsáveis unicamente perante  a Autoridade. Todo o Estado Parte compromete-se a respeitar o caráter exclusivamente internacional das  funções do Secretário Geral e do pessoal e a não procurar influenciá-los no desempenho das suas funções.  Qualquer não-cumprimento, por parte de um funcionário, das suas responsabilidades será submetido a um  tribunal administrativo apropriado, como previsto nas normas, regulamentos e procedimentos da Autoridade.
-2. O Secretário Geral e o pessoal não devem ter interesses financeiros em quaisquer atividades relacionadas  com a exploração e aproveitamento na Área. Sob reserva das suas responsabilidades perante a Autoridade, não  revelarão, mesmo após o termo das suas funções, qualquer segredo industrial, qualquer dado que seja  propriedade industrial e que seja transferido para a Autoridade de conformidade com o artigo 14 do Anexo III,  bem como qualquer outra informação confidencial que chegue ao seu conhecimento em virtude do desempenho  das suas funções.
-3. O não-cumprimento, por parte de um funcionário da Autoridade, das demais obrigações enunciadas no  parágrafo 2º, deve ser, a pedido de um Estado Parte, ou de uma pessoa física ou jurídica patrocinada por um  Estado Parte nos termos da alínea b) do parágrafo 2º do artigo 153 e lesados por tal não-cumprimento,  submetido pela Autoridade contra o funcionário em causa perante um tribunal designado pelas normas,  regulamentos e procedimentos da Autoridade. A parte lesada terá direito de participar no processo. Se o  tribunal o recomendar o Secretário Geral demitirá o funcionário em causa.
-4. As normas, regulamentos e procedimentos da Autoridade incluirão as disposições necessárias para a  aplicação do presente artigo.
+ 1. No cumprimento dos seus deveres, o Secretário Geral e o pessoal da Autoridade não solicitarão nem  receberão instruções de qualquer governo nem de nenhuma outra fonte estranha à Autoridade. Abster-se-ão de  qualquer ato que possa afetar a sua condição de funcionários internacionais, responsáveis unicamente perante  a Autoridade. Todo o Estado Parte compromete-se a respeitar o caráter exclusivamente internacional das  funções do Secretário Geral e do pessoal e a não procurar influenciá-los no desempenho das suas funções.  Qualquer não-cumprimento, por parte de um funcionário, das suas responsabilidades será submetido a um  tribunal administrativo apropriado, como previsto nas normas, regulamentos e procedimentos da Autoridade.
+ 
+ 2. O Secretário Geral e o pessoal não devem ter interesses financeiros em quaisquer atividades relacionadas  com a exploração e aproveitamento na Área. Sob reserva das suas responsabilidades perante a Autoridade, não  revelarão, mesmo após o termo das suas funções, qualquer segredo industrial, qualquer dado que seja  propriedade industrial e que seja transferido para a Autoridade de conformidade com o artigo 14 do Anexo III,  bem como qualquer outra informação confidencial que chegue ao seu conhecimento em virtude do desempenho  das suas funções.
+ 
+ 3. O não-cumprimento, por parte de um funcionário da Autoridade, das demais obrigações enunciadas no  parágrafo 2º, deve ser, a pedido de um Estado Parte, ou de uma pessoa física ou jurídica patrocinada por um  Estado Parte nos termos da alínea b) do parágrafo 2º do artigo 153 e lesados por tal não-cumprimento,  submetido pela Autoridade contra o funcionário em causa perante um tribunal designado pelas normas,  regulamentos e procedimentos da Autoridade. A parte lesada terá direito de participar no processo. Se o  tribunal o recomendar o Secretário Geral demitirá o funcionário em causa.
+ 
+ 4. As normas, regulamentos e procedimentos da Autoridade incluirão as disposições necessárias para a  aplicação do presente artigo.
 
 **ARTIGO 169 - Consulta e cooperação com as organizações internacionais e não-governamentais**
 
-1. O Secretário Geral concluirá, nos assuntos da competência da Autoridade e com a aprovação do Conselho,  ajustes apropriados para consulta e cooperação com as organizações internacionais e não-governamentais  reconhecidas pelo Conselho Econômico e Social das Nações Unidas.
-2. Qualquer organização com a qual o Secretário Geral tiver concluído um ajuste, nos termos do parágrafo 1º,  pode designar representantes para assistirem como observadores às reuniões dos órgãos da Autoridade, de  conformidade com o regulamento interno destes órgãos. Serão estabelecidos procedimentos para que essas  organizações dêem a conhecer a sua opinião nos casos apropriados.
-3. O Secretário Geral pode distribuir aos Estados Partes relatórios escritos, apresentados pelas organizações  não-governamentais referidas no parágrafo 1º, sobre os assuntos que sejam da sua competência especial ou se  relacionem com o trabalho da Autoridade.
+ 1. O Secretário Geral concluirá, nos assuntos da competência da Autoridade e com a aprovação do Conselho, ajustes apropriados para consulta e cooperação com as organizações internacionais e não-governamentais  reconhecidas pelo Conselho Econômico e Social das Nações Unidas.
+ 
+ 2. Qualquer organização com a qual o Secretário Geral tiver concluído um ajuste, nos termos do parágrafo 1º,  pode designar representantes para assistirem como observadores às reuniões dos órgãos da Autoridade, de  conformidade com o regulamento interno destes órgãos. Serão estabelecidos procedimentos para que essas  organizações dêem a conhecer a sua opinião nos casos apropriados.
+ 
+ 3. O Secretário Geral pode distribuir aos Estados Partes relatórios escritos, apresentados pelas organizações  não-governamentais referidas no parágrafo 1º, sobre os assuntos que sejam da sua competência especial ou se  relacionem com o trabalho da Autoridade.
 
-## SUBSEÇÃO E. A EMPRESA
+### SUBSEÇÃO E. A EMPRESA
 
 **ARTIGO 170 - A Empresa**
 
-1. A Empresa é o órgão da Autoridade que realizará diretamente as atividades na Área, em aplicação da alínea  a) do parágrafo 2º do artigo 153, bem como o transporte, o processamento e a comercialização dos minerais  extraídos da Área.
-2. No quadro da personalidade jurídica internacional da Autoridade, a Empresa terá a capacidade jurídica  prevista no Estatuto que figura no Anexo IV. A Empresa agirá de conformidade com a presente Convenção e  com as normas, regulamentos e procedimentos da Autoridade, bem como com as políticas gerais estabelecidas  pela Assembléia e estará sujeita às diretrizes e ao controle do Conselho.
-3. A Empresa terá a sua instalação principal na sede da Autoridade.
-4. A Empresa será dotada, de conformidade com o parágrafo 2º do artigo 173 e o artigo 11 do Anexo IV, dos  fundos necessários ao desempenho das suas funções e receberá a tecnologia prevista no artigo 144 e nas  demais disposições pertinentes da presente Convenção.
+ 1. A Empresa é o órgão da Autoridade que realizará diretamente as atividades na Área, em aplicação da alínea  a) do parágrafo 2º do artigo 153, bem como o transporte, o processamento e a comercialização dos minerais  extraídos da Área.
 
-## SUBSEÇÃO F. RECURSOS FINANCEIROS DA AUTORIDADE
+ 2. No quadro da personalidade jurídica internacional da Autoridade, a Empresa terá a capacidade jurídica  prevista no Estatuto que figura no Anexo IV. A Empresa agirá de conformidade com a presente Convenção e  com as normas, regulamentos e procedimentos da Autoridade, bem como com as políticas gerais estabelecidas  pela Assembléia e estará sujeita às diretrizes e ao controle do Conselho.
+
+ 3. A Empresa terá a sua instalação principal na sede da Autoridade.
+
+ 4. A Empresa será dotada, de conformidade com o parágrafo 2º do artigo 173 e o artigo 11 do Anexo IV, dos  fundos necessários ao desempenho das suas funções e receberá a tecnologia prevista no artigo 144 e nas  demais disposições pertinentes da presente Convenção.
+
+### SUBSEÇÃO F. RECURSOS FINANCEIROS DA AUTORIDADE
 
 **ARTIGO 171 - Recursos financeiros da Autoridade**
 
@@ -444,23 +458,23 @@ O Secretário Geral preparará o projeto de orçamento anual da Autoridade e sub
 
 **ARTIGO 173 - Despesas da Autoridade**
 
-1. As contribuições referidas na alínea a) do artigo 171 serão depositadas numa conta especial para satisfazer  as despesas administrativas da Autoridade, até que ela disponha de fundos suficientes provenientes de outras  fontes para cobrir essas despesas.
-2. Os fundos da Autoridade destinar-se-ão, em primeiro lugar, a cobrir as despesas administrativas. À exceção  das contribuições referidas na alínea a) do artigo 171, os fundos restantes depois de cobertas as despesas  administrativas poderão, inter alia:
-a) ser distribuídos de conformidade com o artigo 140 e com a alínea g) do parágrafo 2º do artigo 160;
-b) ser utilizados para proporcionar fundos à Empresa, de conformidade com o parágrafo 4º do artigo 170;
-c) ser utilizados para compensar os Estados em desenvolvimento de conformidade com o parágrafo 4º do artigo  151 e com a alínea 1) do parágrafo 2º do artigo 160.
+ 1. As contribuições referidas na alínea a) do artigo 171 serão depositadas numa conta especial para satisfazer  as despesas administrativas da Autoridade, até que ela disponha de fundos suficientes provenientes de outras  fontes para cobrir essas despesas.
+ 2. Os fundos da Autoridade destinar-se-ão, em primeiro lugar, a cobrir as despesas administrativas. À exceção  das contribuições referidas na alínea a) do artigo 171, os fundos restantes depois de cobertas as despesas  administrativas poderão, inter alia:
+ a) ser distribuídos de conformidade com o artigo 140 e com a alínea g) do parágrafo 2º do artigo 160;
+ b) ser utilizados para proporcionar fundos à Empresa, de conformidade com o parágrafo 4º do artigo 170;
+ c) ser utilizados para compensar os Estados em desenvolvimento de conformidade com o parágrafo 4º do artigo  151 e com a alínea 1) do parágrafo 2º do artigo 160.
 
 **ARTIGO 174 - Capacidade da Autoridade para contrair empréstimos**
 
-1. A Autoridade tem capacidade para contrair empréstimos. 
-2. A Assembléia fixará os limites da capacidade da Autoridade para contrair empréstimos, no regulamento  financeiro que adotará de conformidade com a alínea f) do parágrafo 2º do artigo 160.
-3. O Conselho exercerá o poder de contrair os empréstimos da autoridade.
-4. Os Estados Partes não serão responsáveis pelas dívidas da Autoridade.
+ 1. A Autoridade tem capacidade para contrair empréstimos. 
+ 2. A Assembléia fixará os limites da capacidade da Autoridade para contrair empréstimos, no regulamento  financeiro que adotará de conformidade com a alínea f) do parágrafo 2º do artigo 160.
+ 3. O Conselho exercerá o poder de contrair os empréstimos da autoridade.
+ 4. Os Estados Partes não serão responsáveis pelas dívidas da Autoridade.
 
 **ARTIGO 175 - Verificação anual das contas**
 Os registros, livros e contas da Autoridade, inclusive os relatórios financeiros anuais, serão verificados todos os  anos por um auditor independente designado pela Assembléia.
 
-## SUBSEÇÃO G. ESTATUTO JURÍDICO, PRIVILÉGIOS E IMUNIDADES
+### SUBSEÇÃO G. ESTATUTO JURÍDICO, PRIVILÉGIOS E IMUNIDADES
 
 ## Página 53
 
@@ -486,9 +500,11 @@ Os bens e haveres da Autoridade estão isentos de qualquer tipo de restrições,
 
 **ARTIGO 181 - Arquivos e comunicações oficiais da Autoridade**
 
-1. Os arquivos da Autoridade são invioláveis, onde quer que se encontrem.
-2. Os dados que sejam propriedade industrial, os dados que constituam segredo industrial e as informações  análogas, bem como os processos do pessoal não são colocados em arquivos acessíveis ao público.
-3. No que se refere às comunicações oficiais, cada Estado Parte concederá à Autoridade um tratamento não  menos favorável do que o concedido por esse Estado a outras organizações internacionais.
+ 1. Os arquivos da Autoridade são invioláveis, onde quer que se encontrem.
+ 
+ 2. Os dados que sejam propriedade industrial, os dados que constituam segredo industrial e as informações  análogas, bem como os processos do pessoal não são colocados em arquivos acessíveis ao público.
+ 
+ 3. No que se refere às comunicações oficiais, cada Estado Parte concederá à Autoridade um tratamento não  menos favorável do que o concedido por esse Estado a outras organizações internacionais.
 
 **ARTIGO 182 - Privilégios e imunidades de pessoas ligadas à Autoridade**
 
@@ -496,15 +512,16 @@ Os representantes dos Estados Partes que assistam a reuniões da Assembléia, do
 a) de imunidade de jurisdição e de execução no que respeita a atos praticados no exercício das suas funções,  salvo na medida em que o Estado que representam ou a Autoridade, conforme o caso, renuncie expressamente  a esta imunidade num caso particular;
 b) não sendo nacionais desse Estado Parte, das mesmas isenções relativas a restrições de imigração, a  formalidade de inscrição de estrangeiros e a obrigações do serviço nacional, das mesmas facilidades em  matéria de restrições cambiais e do mesmo tratamento no que respeita a facilidades de viagem que esse  Estado conceder aos representantes, funcionários e empregados de categoria equivalente de outros Estados  Partes.
 
-**Artigo 183 - Isenção de impostos e de direitos alfandegários**
-1. No âmbito das suas atividades oficiais, a Autoridade, seus haveres, bens e rendimentos bem como as suas  operações e transações autorizadas pela presente Convenção ficarão isentos de qualquer imposto direto e os  bens importados ou exportados pela Autoridade para seu uso oficial ficarão isentos de qualquer direito  aduaneiro. A Autoridade não reivindicará isenção de taxas correspondentes a encargos por serviços prestados.
-
 ## Página 54
 
-2. Quando a compra de bens ou serviços de um valor considerável, necessários às atividades oficiais da  Autoridade, for efetuada por esta, ou em seu nome, e quando o preço de tais bens ou serviços incluir impostos  ou direitos, os Estados Partes tomarão, na medida do possível, as medidas apropriadas para conceder a isenção  de tais impostos ou direitos ou para assegurar o seu reembolso. As mercadorias importadas ou adquiridas sob o  regime de isenção previsto no presente artigo não devem ser vendidas nem de outro modo alienadas no  território do Estado Parte que tiver concedido a isenção, exceto em condições acordadas com esse Estado  Parte.
-3. Os Estado Partes não cobrarão direta ou indiretamente nenhum imposto sobre os vencimentos, emolumentos  ou outros pagamentos feitos pela Autoridade ao Secretário Geral e aos funcionários da Autoridade, bem como  aos peritos que realizem missões para a Autoridade, que não sejam nacionais desses Estados.
+**Artigo 183 - Isenção de impostos e de direitos alfandegários**
+ 1. No âmbito das suas atividades oficiais, a Autoridade, seus haveres, bens e rendimentos bem como as suas  operações e transações autorizadas pela presente Convenção ficarão isentos de qualquer imposto direto e os  bens importados ou exportados pela Autoridade para seu uso oficial ficarão isentos de qualquer direito  aduaneiro. A Autoridade não reivindicará isenção de taxas correspondentes a encargos por serviços prestados.
+ 
+ 2. Quando a compra de bens ou serviços de um valor considerável, necessários às atividades oficiais da  Autoridade, for efetuada por esta, ou em seu nome, e quando o preço de tais bens ou serviços incluir impostos  ou direitos, os Estados Partes tomarão, na medida do possível, as medidas apropriadas para conceder a isenção  de tais impostos ou direitos ou para assegurar o seu reembolso. As mercadorias importadas ou adquiridas sob o  regime de isenção previsto no presente artigo não devem ser vendidas nem de outro modo alienadas no  território do Estado Parte que tiver concedido a isenção, exceto em condições acordadas com esse Estado  Parte.
+ 
+ 3. Os Estado Partes não cobrarão direta ou indiretamente nenhum imposto sobre os vencimentos, emolumentos  ou outros pagamentos feitos pela Autoridade ao Secretário Geral e aos funcionários da Autoridade, bem como  aos peritos que realizem missões para a Autoridade, que não sejam nacionais desses Estados.
 
-## SUBSEÇÃO H. SUSPENSÃO DO EXERCÍCIO DE DIREITOS E DE PRIVILÉGIOS DOS MEMBROS
+### SUBSEÇÃO H. SUSPENSÃO DO EXERCÍCIO DE DIREITOS E DE PRIVILÉGIOS DOS MEMBROS
 
 **ARTIGO 184 - Suspensão do exercício do direito de voto**
 
@@ -515,8 +532,7 @@ Qualquer Estado Parte, que esteja em atraso no pagamento das suas contribuiçõe
 1. Qualquer Estado Parte, que tenha violado grave e persistentemente as disposições da presente Parte poderá,  por recomendação do Conselho, ser suspenso pela Assembléia do exercício de direitos e privilégios inerentes à  qualidade de membro.
 2. Nenhuma decisão pode ser tomada nos termos do parágrafo 1º, até que a Câmara de Controvérsias dos  Fundos Marinhos tenha determinado que um Estado Parte violou grave e persistentemente as disposições da  presente Parte.
 
-
-## SEÇÃO 5. SOLUÇÃO DE CONTROVÉRSIAS E PARECERES CONSULTIVOS
+### SEÇÃO 5. SOLUÇÃO DE CONTROVÉRSIAS E PARECERES CONSULTIVOS
 
 **ARTIGO 186 - Câmara de Controvérsias dos Fundos Marinhos do Tribunal Internacional do Direito do Mar**
 O estabelecimento da Câmara de Controvérsias dos Fundos Marinhos e o modo como exercerá a sua  competência serão regidos pelas disposições da presente seção, da Parte XV e do Anexo VI.

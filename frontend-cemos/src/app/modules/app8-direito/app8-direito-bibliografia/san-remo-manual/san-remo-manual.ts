@@ -17,7 +17,12 @@ export class SanRemoManual implements OnInit {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/direito/7-sanremo';
   fileNames: string[] = [
-    '1.md'
+    'parteI.md',
+    'parteII.md',
+    'parteIII.md',
+    'parteIV.md',
+    'parteV.md',
+    'parteVI.md'
   ];
   backRoute: string = '/home/app8-direito/bibliografia';
   backLabel: string = 'Bibliografia';

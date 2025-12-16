@@ -1,13 +1,15 @@
+# PARTE VIII, IX e X
+
 ## Página 33
 
-# PARTE VIII - REGIME DAS ILHAS
+### PARTE VIII - REGIME DAS ILHAS
 
 **ARTIGO 121 - Regime das ilhas**
 1. Uma ilha é uma formação natural de terra, rodeada de água, que fica a descoberto na preia-mar.
 2. Salvo o disposto no parágrafo 3º, o mar territorial, a zona contígua, a zona econômica exclusiva e a  plataforma continental de uma ilha serão determinados de conformidade com as disposições da presente  Convenção aplicáveis a outras formações terrestres.
 3. Os rochedos que, por si próprios, não se prestam à habitação humana ou a vida econômica não devem ter  zona econômica exclusiva nem plataforma continental.
 
-## PARTE IX - MARES FECHADOS OU SEMIFECHADOS
+### PARTE IX - MARES FECHADOS OU SEMIFECHADOS
 
 **ARTIGO 122 - Definição**
 
@@ -20,8 +22,7 @@ b) coordenar o exercício dos seus direitos e o cumprimento dos seus deveres no 
 c) coordenar suas políticas de investigação científica e empreender, quando apropriado, programas conjuntos  de investigação científica na área;
 d) convidar, quando apropriado, outros Estados interessados ou organizações, internacionais a cooperar com  eles na aplicação das disposições do presente artigo.
 
-
-## PARTE X - DIREITO DE ACESSO AO MAR E A PARTIR DO MAR DOS ESTADOS SEM LITORAL E LIBERDADE DE TRÂNSITO
+### PARTE X - DIREITO DE ACESSO AO MAR E A PARTIR DO MAR DOS ESTADOS SEM LITORAL E LIBERDADE DE TRÂNSITO
 
 **ARTIGO 124 - Termos utilizados**
 1. Para efeitos da presente Convenção:

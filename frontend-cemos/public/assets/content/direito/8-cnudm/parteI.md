@@ -1,6 +1,6 @@
 ## Página 2
 
-# PARTE I - INTRODUÇÃO
+# Parte I - Introdução
 
 **ARTIGO 1 - Termos utilizados e âmbito de aplicação**
 

@@ -1,8 +1,8 @@
+# Parte II - Mar Territorial e Zona Contígua
+
 ## Página 3
 
-## PARTE II - MAR TERRITORIAL E ZONA CONTÍGUA
-
-SEÇÃO 1. DISPOSIÇÕES GERAIS
+### SEÇÃO 1. DISPOSIÇÕES GERAIS
 
 **ARTIGO 2 - Regime jurídico do mar territorial, seu espaço aéreoSobrejacente, leito e subsolo**
 
@@ -12,7 +12,7 @@ SEÇÃO 1. DISPOSIÇÕES GERAIS
 
 3. A soberania sobre o mar territorial é exercida de conformidade com a presente Convenção e as demais  normas de direito internacional.
  
-SEÇÃO 2. LIMITES DO MAR TERRITORIAL
+### SEÇÃO 2. LIMITES DO MAR TERRITORIAL
 
 **ARTIGO 3 - Largura do mar territorial**
 

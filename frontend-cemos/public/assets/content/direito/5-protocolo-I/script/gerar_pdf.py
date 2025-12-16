@@ -67,18 +67,11 @@ def separar_paginas_cap(conteudo):
     partes = re.split(pattern, conteudo)
     paginas = {}
 
-    # Se encontrou divisões de página explícitas
-    if len(partes) > 1:
-        for i in range(1, len(partes), 3):
-            cabecalho = partes[i]       # "## Página NN"
-            numero = partes[i+1]        # "NN"
-            texto = partes[i+2]         # conteúdo
-            paginas[int(numero)] = cabecalho + "\n" + texto.strip()
-    else:
-        # Se não encontrou divisões, tratar todo o conteúdo como página 1
-        print("[DEBUG] Nenhuma divisão '## Página X' encontrada. Tratando todo o conteúdo como página 1.")
-        paginas[1] = "## Página 1\n" + conteudo.strip()
-    
+    for i in range(1, len(partes), 3):
+        cabecalho = partes[i]       # "## Página NN"
+        numero = partes[i+1]        # "NN"
+        texto = partes[i+2]         # conteúdo
+        paginas[int(numero)] = cabecalho + "\n" + texto.strip()
     return paginas
 
 def gerar_bloco_vf(df, numero_pagina):
@@ -212,20 +205,11 @@ def montar_markdown_final(paginas, df_vf, df_fc=None):
             output.append("<linha_tracejada/>")
             output.append("")
 
-        # Extrair texto original (remover cabeçalho "## Página X" se existir)
-        texto_pagina = paginas[numero]
-        partes_texto = texto_pagina.split("\n", 1)
-        if len(partes_texto) > 1:
-            texto_original = partes_texto[1]
-        else:
-            # Se não houver quebra de linha, usar todo o texto (remover apenas o cabeçalho se existir)
-            texto_original = re.sub(r'^##\s+Página\s+\d+\s*\n?', '', texto_pagina, flags=re.MULTILINE)
-        
+        texto_original = paginas[numero].split("\n", 1)[1]
         tamanho_texto = len(texto_original)
         print(f"[DEBUG] Página {numero}: texto original com {tamanho_texto} caracteres")
-        if texto_original.strip():  # Só adicionar se houver conteúdo
-            output.append(texto_original)
-            output.append("")
+        output.append(texto_original)
+        output.append("")
 
     resultado = "\n".join(output)
     print(f"[DEBUG] montar_markdown_final: {paginas_com_vf} páginas com V-F, {paginas_com_fc} páginas com FC")
@@ -606,7 +590,7 @@ def main():
     # Pode ser uma string com números separados por vírgula: "1,2,3,4"
     # Ou uma lista: ["1", "2", "3", "4"]
     # Ou um único número: "14"
-    numeros_capitulos = "1"  # ← ALTERE ESTE VALOR
+    numeros_capitulos = "1,2,3,5,6"  # ← ALTERE ESTE VALOR
     
     # Usar o diretório do script atual
     base = Path(__file__).parent.resolve()

@@ -1,13 +1,15 @@
+# Parte XVI - Desenvolvimento e Transferência de Tecnologia Marinha
+
 ## Página 74
 
-## PARTE XVI - DESENVOLVIMENTO E TRANSFERÊNCIA DE TECNOLOGIA MARINHA
-
-## SEÇÃO 1. DISPOSIÇÕES GERAIS
+### SEÇÃO 1. DISPOSIÇÕES GERAIS
 
 **ARTIGO 266 - Promoção do desenvolvimento e da transferência de tecnologia marinha**
-1. Os Estados, diretamente ou por intermédio das organizações internacionais competentes, devem cooperar,  na medida das suas capacidades, para promover ativamente o desenvolvimento e a transferência da ciência e  da tecnologia marinhas segundo modalidades e condições equitativas e razoáveis.
-2. Os Estados devem promover o desenvolvimento da capacidade científica e tecnológica marinha dos Estados  que necessitem e solicitem assistência técnica neste domínio, particularmente os Estados em desenvolvimento,  incluindo os Estados sem litoral e aqueles em situação geográfica desfavorecida, no que se refere à exploração,  aproveitamento, conservação e gestão dos recursos marinhos, à proteção e preservação do meio marinho, à  investigação científica marinha e outras atividades no meio marinho compatíveis com a presente Convenção,  tendo em vista acelerar o desenvolvimento econômico social dos Estados em desenvolvimento.
-3. Os Estados devem procurar favorecer condições econômicas e jurídicas propícias à transferência de  tecnologia marinha, numa base equitativa, em benefício de todas as partes interessadas.
+ 1. Os Estados, diretamente ou por intermédio das organizações internacionais competentes, devem cooperar,  na medida das suas capacidades, para promover ativamente o desenvolvimento e a transferência da ciência e  da tecnologia marinhas segundo modalidades e condições equitativas e razoáveis.
+ 
+ 2. Os Estados devem promover o desenvolvimento da capacidade científica e tecnológica marinha dos Estados  que necessitem e solicitem assistência técnica neste domínio, particularmente os Estados em desenvolvimento,  incluindo os Estados sem litoral e aqueles em situação geográfica desfavorecida, no que se refere à exploração,  aproveitamento, conservação e gestão dos recursos marinhos, à proteção e preservação do meio marinho, à  investigação científica marinha e outras atividades no meio marinho compatíveis com a presente Convenção,  tendo em vista acelerar o desenvolvimento econômico social dos Estados em desenvolvimento.
+ 
+ 3. Os Estados devem procurar favorecer condições econômicas e jurídicas propícias à transferência de  tecnologia marinha, numa base equitativa, em benefício de todas as partes interessadas.
 
 **ARTIGO 267 - Proteção dos interesses legítimos**
 
@@ -30,7 +32,7 @@ d) promover o intercâmbio de cientistas e peritos em tecnologia e outras matér
 e) realizar projetos e promover empresas conjuntas e outras formas de cooperação bilateral e multilateral.
 
 
-## SEÇÃO 2 COOPERAÇÃO INTERNACIONAL
+### SEÇÃO 2 COOPERAÇÃO INTERNACIONAL
 
 **ARTIGO 270 - Formas de cooperação internacional**
 A cooperação internacional para o desenvolvimento e a transferência de tecnologia marinha deve ser efetuada,  quando praticável e apropriado, através de programas bilaterais, regionais ou multilaterais existentes, bem  como através de programas ampliados e de novos programas para facilitar a investigação científica marinha, a  transferência de tecnologia marinha, particularmente em novos domínios e o financiamento internacional  apropriado da investigação e desenvolvimento dos oceanos.
@@ -53,16 +55,18 @@ b) a documentação técnica relativa ao equipamento, maquinaria, dispositivos e
 c) sejam tomadas pela Autoridade disposições apropriadas para facilitar a aquisição de assistência técnica no  domínio da tecnologia marinha pelos Estados que dela necessitem e a solicitem, em particular os Estados em  desenvolvimento, bem como a aquisição pelos seus nacionais dos conhecimentos técnicos e especializados  necessários, incluindo a formação profissional;
 d) seja prestada aos Estados a assistência técnica de que necessitem e solicitem nesse domínio, em especial  aos Estados em desenvolvimento, bem como assistência na aquisição de equipamento, instalações, processos e  outros conhecimentos técnicos necessários, mediante qualquer ajuste financeiro previsto na presente  Convenção.
 
-## SEÇÃO 3. CENTROS NACIONAIS E REGIONAIS DE INVESTIGAÇÃO CIENTÍFICA E TECNOLÓGICA MARINHA
+### SEÇÃO 3. CENTROS NACIONAIS E REGIONAIS DE INVESTIGAÇÃO CIENTÍFICA E TECNOLÓGICA MARINHA
 
 **ARTIGO 275 - Estabelecimento de centros nacionais**
 
-1. Os Estados devem promover, diretamente ou por intermédio das organizações internacionais competentes e  da Autoridade, o estabelecimento, em especial nos Estados costeiros em desenvolvimento, de centros nacionais  de investigação científica e tecnológica marinha bem como o reforço de centros nacionais existentes, a fim de  estimular e impulsionar a realização de investigação científica marinha pelos Estados costeiros em  desenvolvimento e de aumentar a sua capacidade nacional para utilizar e preservar os seus recursos marinhos  em seu próprio benefício econômico.
-2. Os Estados devem prestar, por intermédio das organizações internacionais competentes e da autoridade,  apoio adequado para facilitar o estabelecimento e o reforço de tais centros nacionais, a fim de fornecerem  serviços de formação avançada, e equipamento e conhecimentos práticos e técnicos necessários, bem como  peritos técnicos, aos Estados que necessitem e solicitem tal assistência.
+ 1. Os Estados devem promover, diretamente ou por intermédio das organizações internacionais competentes e  da Autoridade, o estabelecimento, em especial nos Estados costeiros em desenvolvimento, de centros nacionais  de investigação científica e tecnológica marinha bem como o reforço de centros nacionais existentes, a fim de  estimular e impulsionar a realização de investigação científica marinha pelos Estados costeiros em  desenvolvimento e de aumentar a sua capacidade nacional para utilizar e preservar os seus recursos marinhos  em seu próprio benefício econômico.
+ 
+ 2. Os Estados devem prestar, por intermédio das organizações internacionais competentes e da autoridade,  apoio adequado para facilitar o estabelecimento e o reforço de tais centros nacionais, a fim de fornecerem  serviços de formação avançada, e equipamento e conhecimentos práticos e técnicos necessários, bem como  peritos técnicos, aos Estados que necessitem e solicitem tal assistência.
 
 **ARTIGO 276 - Estabelecimento de centros regionais**
-1. Os Estados devem promover, em coordenação com as organizações internacionais competentes, com a  Autoridade e com instituições nacionais de investigação científica e tecnológica marinha, o estabelecimento de  centros regionais de investigação científica e tecnológica marinha, em especial nos Estados em  desenvolvimento, a fim de estimular e impulsionar a realização de investigação científica marinha pelos Estados  em desenvolvimento e de favorecer a transferência de tecnologia marinha.
-2. Todos os Estados de uma região devem cooperar com os respectivos centros regionais a fim de assegurarem  a realização mais eficaz dos seus objetivos.
+ 1. Os Estados devem promover, em coordenação com as organizações internacionais competentes, com a  Autoridade e com instituições nacionais de investigação científica e tecnológica marinha, o estabelecimento de  centros regionais de investigação científica e tecnológica marinha, em especial nos Estados em  desenvolvimento, a fim de estimular e impulsionar a realização de investigação científica marinha pelos Estados  em desenvolvimento e de favorecer a transferência de tecnologia marinha.
+ 
+ 2. Todos os Estados de uma região devem cooperar com os respectivos centros regionais a fim de assegurarem  a realização mais eficaz dos seus objetivos.
 
 ## Página 76
 
@@ -78,7 +82,7 @@ g) divulgação das políticas nacionais sobre transferência de tecnologia mari
 h) compilação e sistematização de informações sobre comercialização de tecnologia e sobre os contratos e  outros ajustes relativos a patentes;
 i) cooperação técnica com outros Estados da região.
 
-## SEÇÃO 4. COOPERAÇÃO ENTRE ORGANIZAÇÕES INTERNACIONAIS
+### SEÇÃO 4. COOPERAÇÃO ENTRE ORGANIZAÇÕES INTERNACIONAIS
 
 **ARTIGO 278 - Cooperação entre organizações internacionais**
 As organizações internacionais competentes mencionadas na presente Parte e na Parte XIII devem tomar todas  as medidas apropriadas para assegurarem, diretamente ou em estreita cooperação entre si, o cumprimento  efetivo das funções e responsabilidades decorrentes da presente Parte.
