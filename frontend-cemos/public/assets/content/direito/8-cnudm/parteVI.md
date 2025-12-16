@@ -1,6 +1,6 @@
-## Página 22
+# Parte VI - Plataforma Continental
 
-# PARTE VI - PLATAFORMA CONTINENTAL
+## Página 22
 
 **ARTIGO 76 - Definição da Plataforma Continental**
 

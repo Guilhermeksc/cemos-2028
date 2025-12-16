@@ -71,7 +71,6 @@ Os ancoradouros utilizados habitualmente para carga, descarga e fundeio de navio
 
 1. Um ‘baixio a descoberto’ é uma extensão natural de terra rodeada de água, que, na baixa-mar, fica acima do  nível do mar, mas que submerge na preia-mar. Quando um ‘baixio a descoberto’ se encontre, total ou  parcialmente, a uma distância do continente ou de uma ilha que não exceda a largura do mar territorial, a linha  de baixa-mar desse baixio pode ser utilizada como linha de base para medir a largura do mar territorial.
 
-
 ## Página 5
 
 2. Quando um ‘baixio a descoberto’ estiver, na totalidade, situado a uma distância do continente ou de uma ilha  superior à largura do mar territorial, não possui mar territorial próprio.
@@ -89,9 +88,9 @@ Quando as costas de dois Estados são adjacentes ou se encontram situadas frente
 1. As linhas de base para medir a largura do mar territorial, determinadas de conformidade com os artigos 7, 9  e 10, ou os limites delas decorrentes, e as linhas de delimitação traçadas de conformidade com os artigos 12 e  15 figurarão em cartas de escala ou escalas adequadas para a determinação da sua posição. Essas cartas  poderão ser substituídas por listas de coordenadas geográficas de pontos em que conste especificamente a sua  origem geodésica.
 2. O Estado costeiro dará a devida publicidade a tais cartas ou listas de coordenadas geográficas e depositará  um exemplar de cada carta ou lista junto do Secretário Geral das Nações Unidas.
 
-## SEÇÃO 3. PASSAGEM INOCENTE PELO MAR TERRITORIAL
+### SEÇÃO 3. PASSAGEM INOCENTE PELO MAR TERRITORIAL
 
-## SUBSEÇÃO A. NORMAS APLICÁVEIS A TODOS OS NAVIOS
+### SUBSEÇÃO A. NORMAS APLICÁVEIS A TODOS OS NAVIOS
 
 **ARTIGO 17 - Direito de passagem inocente**
 
@@ -177,7 +176,7 @@ b) fazer discriminação de direito ou de fato contra navios de determinado Esta
 1. Não podem ser impostas taxas a navios estrangeiros só com fundamento na sua passagem pelo mar  territorial.
 2. Não podem ser impostas taxas a um navio estrangeiro que passe pelo mar territorial a não ser como  remuneração de determinados serviços prestados a esse navio. Estas taxas devem ser impostas sem  discriminação.
 
-## SUBSEÇÃO B. NORMAS APLICÁVEIS A NAVIOS MERCANTES E NAVIOS DE ESTADO UTILIZADOS PARA FINS  COMERCIAIS
+### SUBSEÇÃO B. NORMAS APLICÁVEIS A NAVIOS MERCANTES E NAVIOS DE ESTADO UTILIZADOS PARA FINS  COMERCIAIS
 
 **ARTIGO 27 - Jurisdição penal a bordo de navio estrangeiro**
 

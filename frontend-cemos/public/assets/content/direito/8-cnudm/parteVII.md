@@ -1,8 +1,8 @@
+# Parte VII - Alto Mar
+
 ## Página 25
 
-# PARTE VII ALTO MAR
-
-## SEÇÃO 1. DISPOSIÇÕES GERAIS
+### SEÇÃO 1. DISPOSIÇÕES GERAIS
 
 **ARTIGO 86 - Âmbito de aplicação da presente Parte**
 
@@ -61,13 +61,12 @@ c) utilização de sinais, manutenção de comunicações e prevenção de abalr
 4. Tais medidas devem incluir as que sejam necessárias para assegurar que:
 a) cada navio, antes do seu registro e posteriormente, a intervalos apropriados, seja examinado por um  inspetor de navios devidamente qualificado e leve a bordo as cartas, as publicações marítimas e o equipamento  e os instrumentos de navegação apropriados à segurança da navegação do navio;
 b) cada navio esteja confiado a um capitão e a oficiais devidamente qualificados, em particular no que se refere  à manobra, à navegação, às comunicações e à condução de máquinas, e a competência e o número dos  tripulantes sejam os apropriados para o tipo, tamanho, máquinas e equipamento do navio;
-
-## Página 27
-
 c) o capitão, os oficiais e, na medida do necessário, a tripulação conheçam perfeitamente e observem os  regulamentos internacionais aplicáveis, que se refiram à segurança da vida no mar, à prevenção de  abalroamentos, à prevenção, redução e controle da poluição marinha e à manutenção de rádio comunicações.
 5. Ao tomar as medidas a que se referem os parágrafos 3º e 4º, todo Estado deve agir de conformidade com os  regulamentos, procedimentos e práticas internacionais geralmente aceitos, e fazer o necessário para garantir a  sua observância.
 6. Todo Estado que tenha motivos sérios para acreditar que a jurisdição e o controle apropriados sobre um  navio não foram exercidos pode comunicar os fatos ao Estado de bandeira. Ao receber tal comunicação, o  Estado de bandeira investigará o assunto e, se for o caso, deve tomar todas as medidas necessárias para  corrigir a situação.
 7. Todo Estado deve ordenar a abertura de um inquérito, efetuado por ou perante uma pessoa ou pessoas  devidamente qualificadas, em relação a qualquer acidente marítimo ou incidente de navegação no alto mar,  que envolva um navio arvorando a sua bandeira e no qual tenham perdido a vida ou sofrido ferimentos graves  nacionais de outro Estado, ou se tenham provocado danos graves a navios ou a instalações de outro Estado, ou  se tenham provocado danos graves a navios ou a instalações de outro Estado ou ao meio marinho. O Estado de  bandeira e o outro Estado devem cooperar na realização de qualquer investigação que este último efetue em  relação a esse acidente marítimo ou incidente de navegação.
+
+## Página 27
 
 **ARTIGO 95 - Imunidade dos navios de guerra no alto mar**
 Os navios de guerra no alto mar gozam de completa imunidade de jurisdição relativamente a qualquer outro  Estado que não seja o da sua bandeira.
@@ -86,10 +85,9 @@ Os navios pertencentes a um Estado ou por ele operados e utilizados unicamente e
 a) preste assistência a qualquer pessoa encontrada no mar em perigo de desaparecer;
 b) se dirija, tão depressa quanto possível, em socorro de pessoas em perigo, desde que esteja informado de  que necessitam de assistência e sempre que tenha uma possibilidade razoável de fazê-lo;
 c) preste, em caso de abalroamento, assistência ao outro navio, à sua tripulação, e aos passageiros e, quando  possível, comunique ao outro navio o nome do seu próprio navio, o porto de registro e o porto mais próximo  em que fará escala.
+2. Todo Estado costeiro deve promover o estabelecimento, o funcionamento e a manutenção de um adequado e  eficaz serviço de busca e salvamento para garantir a segurança marítima e aérea, e, quando as circunstâncias o  exigirem, cooperar para esse fim com os Estados vizinhos por meio de ajustes regionais de cooperação mútua.
 
 ## Página 28
-
-2. Todo Estado costeiro deve promover o estabelecimento, o funcionamento e a manutenção de um adequado e  eficaz serviço de busca e salvamento para garantir a segurança marítima e aérea, e, quando as circunstâncias o  exigirem, cooperar para esse fim com os Estados vizinhos por meio de ajustes regionais de cooperação mútua.
 
 **ARTIGO 99 - Proibição do transporte de escravos**
 
@@ -171,12 +169,11 @@ e) o navio tem, na realidade, a mesma nacionalidade que o navio de guerra, embor
 6. Quando a perseguição for efetuada por uma aeronave:
 a) aplicam-se, mutatis mutandis, as disposições dos parágrafos 1º e 4º;
 b) a aeronave que tenha dado a ordem de parar deve continuar ativamente a perseguição do navio até que um  navio ou uma outra aeronave do Estado costeiro, alertado pela primeira aeronave, chegue ao local e continue a  perseguição, a não ser que a aeronave possa por si só apresar o navio. Para justificar o apresamento de um  navio fora do mar territorial, não basta que a aeronave o tenha descoberto a cometer uma infração, ou que  seja suspeito de a ter cometido, é também necessário que lhe tenha sido dada ordem para parar e que tenha  sido empreendida a perseguição sem interrupção pela própria aeronave ou por outras aeronaves ou navios.
-
-
-## Página 31
 7. Quando um navio for apresado num lugar submetido à jurisdição de um Estado escoltado até um porto desse  Estado para investigação pelas autoridades competentes, não se pode pretender que seja posto em liberdade pelo simples fato de o navio e a sua escolta terem atravessado parte de uma zona econômica exclusiva ou do  alto mar, se as circunstâncias a isso obrigarem.
 
 8. Quando um navio for parado ou apresado fora do mar territorial em circunstâncias que não justifiquem o  exercício do direito de perseguição, deve ser indenizado por qualquer perda ou dano que possa ter sofrido em  conseqüência disso.
+
+## Página 31
 
 **ARTIGO 112 - Direito de colocação de cabos e dutos submarinos**
 1. Todos os Estados têm o direito de colocar cabos e dutos submarinos no leito do alto mar além da plataforma  continental.
@@ -191,14 +188,14 @@ Todo Estado deve adotar as leis e regulamentos necessários para que pessoas sob
 **ARTIGO 115 - Indenização por perdas ocorridas para evitar danificações a um cabo ou duto submarinos**
 Todo Estado deve adotar as leis e regulamentos necessários para que os proprietários de navios que possam  provar ter perdido uma âncora, uma rede ou qualquer outro aparelho de pesca para evitar danificações a um  cabo ou um duto submarino sejam indenizados pelo proprietário do cabo ou do duto submarino, desde que o  proprietário do navio tenha tomado previamente todas as medidas de precaução razoáveis.
 
-
-## SEÇÃO 2. CONSERVAÇÃO E GESTÃO DOS RECURSOS VIVOS DO ALTO MAR
+### SEÇÃO 2. CONSERVAÇÃO E GESTÃO DOS RECURSOS VIVOS DO ALTO MAR
 
 **ARTIGO 116 - Direito de pesca no alto mar**
 Todos os Estados tem direito a que os seus nacionais se dediquem à pesca no alto mar, nos termos:
 a) das suas obrigações convencionais;
 b) dos direitos e deveres bem como dos interesses dos Estados costeiros previstos, inter alia, no parágrafo 2º  do artigo 63 e nos artigos 64 a 67; e
 c) das disposições da presente seção.
+
 **ARTIGO 117 - Dever dos Estados de tomar em relação aos seus nacionaismedidas para a conservação dos recursos vivos do alto mar**
 Todos os Estados têm o dever de tomar ou de cooperar com outros Estados para tomar as medidas que, em  relação ao seus respectivos nacionais, possam ser necessárias para a conservação dos recursos vivos do alto  mar.
 

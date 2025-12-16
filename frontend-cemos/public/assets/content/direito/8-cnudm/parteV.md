@@ -1,4 +1,4 @@
-# PARTE V - ZONA ECONÔMICA EXCLUSIVA
+# Parte V - Zona Econômica Exclusiva
 
 ## Página 16
 

@@ -1,4 +1,4 @@
-# PARTE XII - PROTEÇÃO E PRESERVAÇÃO DO MEIO MARINHO
+# Parte XII - Proteção e Preservação do Meio Ambiente
 
 ## Página 56
 
@@ -198,7 +198,6 @@ A execução das regras, normas, e procedimentos internacionais estabelecidos, d
  7. Os Estados de bandeira devem informar imediatamente o Estado solicitante e a organização internacional  competente das medidas tomadas e do resultado obtido. Tal informação deve ser posta à disposição de todos  os Estados.
  8. As sanções previstas nas leis e regulamentos dos Estados para as embarcações que arvorem a sua bandeira  devem ser suficientemente severas para desencorajar as infrações, independentemente do local em que  tenham sido cometidas.
 
-
 ## Página 63
 
 **ARTIGO 218 - Execução pelo Estado do Porto**
@@ -293,9 +292,10 @@ Os Estados serão responsáveis por perdas ou danos que lhes sejam imputáveis, 
 **ARTIGO 233 - Garantias relativas aos estreitos utilizados para a navegação internacional**
 Nenhuma das disposições das seções 5, 6 e 7 afeta o regime jurídico dos estreitos utilizados para a navegação  internacional. Contudo, se um navio estrangeiro que não os mencionados na seção 10 cometer uma infração às  leis e regulamentos mencionados nas alíneas a) e b) do parágrafo 1º do artigo 42 que cause ou ameace causar  danos graves ao meio marinho dos estreitos, os Estados ribeirinhos dos estreitos podem tomar todas as  medidas de execução apropriadas e, em tal caso, devem respeitar, mutatis mutandis, as disposições da  presente seção.
 
-## SEÇÃO 8. ÁREAS COBERTAS DE GELO
+### SEÇÃO 8. ÁREAS COBERTAS DE GELO
 
 **ARTIGO 234 - Áreas cobertas de gelo**
+
 Os Estados tem o direito de adotar e aplicar leis e regulamentos não discriminatórios para prevenir, reduzir e  controlar a poluição do meio marinho proveniente de embarcações na áreas cobertas de gelo dentro dos limites  da zona econômica exclusiva, quando condições de clima particularmente rigorosas e a presença de gelo sobre  tais áreas durante a maior parte do ano criem obstruções ou perigos excepcionais para a navegação, e a  poluição do meio marinho possa causar danos graves ao equilíbrio ecológico ou alterá-lo de modo irreversível.  Tais leis e regulamentos devem ter em devida conta a navegação e a proteção e preservação do meio marinho  com base nos melhores dados científicos de que se disponha.
 
 ### SEÇÃO 9 RESPONSABILIDADE
@@ -303,6 +303,7 @@ Os Estados tem o direito de adotar e aplicar leis e regulamentos não discrimina
 ## Página 67
 
 **ARTIGO 235 - Responsabilidade**
+
  1. Os Estados devem zelar pelo cumprimento das suas obrigações internacionais relativas à proteção e  preservação do meio marinho. Serão responsáveis de conformidade com o direito internacional.
  
  2. Os Estados devem assegurar através do seu direito interno meios de recurso que permitam obter uma  indenização pronta e adequada ou outra reparação pelos danos resultantes da poluição do meio marinho por  pessoas físicas ou jurídicas, sob sua jurisdição.
