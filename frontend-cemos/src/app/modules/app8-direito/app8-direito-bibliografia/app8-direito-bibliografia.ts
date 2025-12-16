@@ -105,7 +105,7 @@ export class App8DireitoBibliografia implements OnInit {
     },
     {
       imagePath: `${this.ASSETS_BASE}/img/3.jpg`,
-      routePath: `${this.ROUTE_BASE}/bibliografia/direito-tratados`,
+      routePath: `${this.ROUTE_BASE}/bibliografia/declaracao-direito-tratados`,
       title: '12. Direito dos Tratados (Convenção de Viena)',
       description: 'Decreto nº 7.030, de 14 de dezembro de 2009.',
       permite_consulta: false
