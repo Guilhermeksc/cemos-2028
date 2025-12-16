@@ -1,6 +1,6 @@
-## Página 1
-
 # Capítulo 2 -  Contabilidade Nacional: Agregados Macroeconômicos
+
+## Página 1
 
 Diferentemente da microeconomia, que trabalha com mercados isolados, a macroeconomia estuda todos os mercados em conjunto. Várias dificuldades colocam-se nesse sentido. Quando se analisa um mercado específico, determina-se, por exemplo, qual foi a quantidade produzida e vendida de sapatos e qual foi o preço. Todavia, se o objeto da macroeconomia é a totalidade dos mercados, como se faz para saber qual foi o total produzido e vendido e a que preço? O problema vem do fato de que uma sociedade produz sapatos, automóveis, café, soja, enfim, milhões de mercadorias. Para avaliar-se a riqueza da sociedade, isto é, a quantidade de bens de que dispõe, deverse-ia explicitar o quanto foi produzido de cada uma das milhões de mercadorias, o que seria não operacional e não ilustrativo para o analista. Torna-se necessário buscar medidas que permitam de forma simplificada mostrar o quanto a economia produziu, vendeu etc.
 
@@ -8,7 +8,7 @@ Assim, para que as análises macroeconômicas pudessem avançar, foi necessário
 
 Neste capítulo, serão apresentados os principais agregados macroeconômicos e como mensurálos. Os conceitos básicos trabalhados são os de produto, renda e dispêndio. Espera-se que ao final do capítulo o leitor entenda como se chega a esses valores e os itens que os compõem.
 
-## 2.1 DEFINIÇÃO DE PRODUTO?
+### 2.1 DEFINIÇÃO DE PRODUTO?
 
 A economia estuda a alocação de recursos escassos para fins ilimitados, ou seja, como obter o máximo de satisfação para os indivíduos a partir de um estoque dado de recursos. Para satisfazer suas necessidades, o homem envolve-se em um ato de produção. Produção é a atividade social que visa adaptar a natureza para o desenvolvimento de bens e serviços que permitam a satisfação das necessidades humanas. No ato de produção, existe a combinação de uma série de elementos chamados de fatores de produção. Fatores de produção são os recursos utilizados na produção de bens e serviços. Normalmente, costuma-se separar os recursos em três grandes áreas: terra, capital e trabalho.
 
@@ -38,9 +38,7 @@ Os **fatores de produção** são os recursos utilizados na produção de bens e
 
 O **produto** é a soma daquilo que foi produzido em um país durante determinado período.
 
-O ((crescimento econômico(()) de um país em determinado período é definido como o aumento do produto naquele período, ou seja, a elevação na produção de bens e serviços que satisfaçam às necessidades humanas.
-
----
+O crescimento econômico de um país em determinado período é definido como o aumento do produto naquele período, ou seja, a elevação na produção de bens e serviços que satisfaçam às necessidades humanas.
 
 ## Página 3
 
@@ -62,13 +60,11 @@ Pelo exposto, percebe-se que existem duas maneiras alternativas de medir o produ
 
 Veja o seguinte exemplo hipotético: um país onde o único bem consumido por seus habitantes seja o pão. Para produzir o pão, contudo, o país também produz a farinha e o trigo. Supondo também que o custo de produção do trigo seja nulo, a produção é feita de acordo com o seguinte esquema:
 
-```
 | Produto  | Valor do Produto | Insumos | Valor Adicionado |
 |----------|------------------|---------|-------------------|
 | Trigo    | 10               | 0       | 10                |
 | Farinha  | 15               | 10      | 5                 |
 | Pão      | 20               | 15      | 5                 |
-```
 
 ## Página 4
 
@@ -80,7 +76,7 @@ Assim, chega-se ao conceito final de Produto. Dentro de um país, este vem a ser
 
 **PIBpm** é o valor monetário de venda dos produtos finais produzidos dentro de um país em determinado período.
 
-## 2.2 PRODUTO, RENDA E DISPÊNDIO
+### 2.2 PRODUTO, RENDA E DISPÊNDIO
 
 Existem duas outras maneiras de medir o produto, além das discutidas na seção anterior. Podem ser denominadas **“ótica do dispêndio”** e **“ótica da renda”**. De acordo com elas, é possível medir o produto, respectivamente:
 
@@ -112,7 +108,6 @@ Esse processo está exemplificado na Figura 2.1.
 
 Figura 2.1 Fluxo circular da renda I.
 
-```
 O diagrama representa o fluxo circular de renda em uma economia simples, composta por famílias e empresas.
 
 1. Famílias fornecem às empresas os fatores de produção, tais como:
@@ -136,7 +131,6 @@ Assim, forma-se um ciclo contínuo:
 Fatores de produção → Empresas → Bens e serviços → Famílias → Consumo → Empresas,
 
 enquanto a renda flui em sentido inverso para remunerar os fatores fornecidos.
-```
 
 Nesse caso, em que só se produzem bens de consumo, o valor dessa produção (o produto) é igual à renda, que é igual ao valor do consumo, já que este é o único componente da demanda e que todos os bens são consumidos (não há acúmulo de estoques). Assim, tem-se:
 
@@ -147,7 +141,7 @@ Em que:
 Y = o produto nacional;
 C = o consumo agregado.
 
-## 2.3 INVESTIMENTO E DEPRECIAÇÃO
+### 2.3 INVESTIMENTO E DEPRECIAÇÃO
 
 Pode-se tornar o sistema cada vez mais complexo. Suponha-se, agora, que nem toda a produção visa atender ao consumo, mas uma parcela direciona-se para investimento (1). Por **investimento**, entende-se a **aquisição de bens de produção, bens de capital ou intermediários, que visam aumentar a oferta de produtos no periodo seguinte**. Assim, toda compra de máquinas e equipamentos, edifícios ou mesmo o acúmulo de estoques é considerado investimento.
 
@@ -233,7 +227,7 @@ Com isso, como o produto é igual a C + I, quando se considera o IB, está-se me
 
 PILpm = PIBpm - Depreciação
 
-## 2.4 GOVERNO
+### 2.4 GOVERNO
 
 Para completar as entidades que participam da atividade econômica de um país, faltam ainda mais dois agentes, além das empresas e das famílias: o governo e o resto do mundo. Por **governo** entendem-se apenas as funções típicas de governo (administração direta, judiciário, legislativo, provisão de segurança nacional etc.). As **empresas estatais** que oferecem bens e serviços no mercado aparecem classificadas na entidade “empresas”, não governo. O governo tem por função prover os chamados “bens públicos”, o que é feito por meio da arrecadação de impostos.
 
@@ -300,7 +294,7 @@ Dg=Sp-lp
 
 Percebe-se, portanto, que, sempre que houver um déficit público, isto é, Ig > Sg, ou seja, o governo gastar mais do que recebe, deve haver um excesso de poupança no setor privado para financiar o governo, isto é, Sp > Ip.
 
-## 2.5 RESTO DO MUNDO
+### 2.5 RESTO DO MUNDO
 
 Finalmente, a última entidade a ser introduzida é o Resto do Mundo. O **Resto do Mundo** é aqui definido como todos os agentes (famílias, empresas, governos) de outros países que transacionam com os residentes do país. O conceito de residente difere da nacionalidade, refere-se aos agentes que estão estabelecidos (residem) no país, independentemente de sua nacionalidade. Assim, um turista brasileiro no exterior é residente (no Brasil), um turista estrangeiro no Brasil é não residente (no Brasil). A filial de uma multinacional no Brasil é residente, seus proprietários que moram no exterior são não residentes.
 
@@ -338,7 +332,7 @@ Sg = Renda Líquida do Setor Público (impostos diretos + impostos indiretos + o
 
 Se = Renda Líquida Enviada ao Exterior (Exportações - Importações)
 
-## 2.6 MEDIDAS DE PRODUTO
+### 2.6 MEDIDAS DE PRODUTO
 
 Pela explanação da seção anterior, vimos que sempre se verifica a identidade entre produto, renda e dispêndio e, como consequência, a igualdade entre poupança e investimento. Um cuidado que deve ser tomado para chegar-se a essas igualdades é confirmar se está se medindo a mesma coisa. Como dissemos, podem-se utilizar diferentes medidas de produto: interno ou nacional, preços de mercado ou custo de fatores, bruto ou líquido. Para se verificar a igualdade entre produto, renda e dispêndio, deve-se sempre utilizar o mesmo conceito. Assim, por exemplo, se for utilizado o conceito de Produto Interno, do lado da renda deve-se incorporar a Renda Líquida Enviada ao Exterior. Caso se esteja medindo o Produto Bruto, do lado do dispêndio deve-se considerar o IB e do lado da Renda a depreciação deve ser considerada uma fonte de renda. O Quadro 2.1 resume as transformações possíveis em termos de medidas.
 
@@ -347,8 +341,6 @@ Quadro 2.1 Transformações possíveis em termos de medida do produto
 Medida original Transformação Medida resultante Bruto Menos depreciação Líquido Preços de mercado menos impostos indiretos mais subsídios Custos de fatores Interno Menos renda líquida enviada ao exterior Nacional
 
 Para fechar-se as medidas de produto e de renda, pode-se definir a chamada Renda Nacional (RN) como o produto nacional líquido a custo de fatores. A partir desta, pode-se ainda definir a Renda Pessoal (RP) como igual à Renda Nacional - lucros retidos pelas empresas - impostos diretos sobre empresas - outras receitas do governo + transferências governamentais (aposentadorias, seguro-desemprego, assistência etc.). Por fim, tem-se a Renda Pessoal Disponível (RPD) = Renda Pessoal - impostos diretos sobre famílias.
-
----
 
 ## Página 14
 
@@ -366,7 +358,7 @@ RP = RN - lucros retidos — impostos diretos sobre empresas — outras receitas
 
 RPD = RP — impostos diretos sobre famílias
 
-## 2.7 PRODUTO REAL E PRODUTO NOMINAL
+### 2.7 PRODUTO REAL E PRODUTO NOMINAL
 
 Um último conceito a ser discutido é a diferença entre produto real e nominal. Como dito antes, o produto é medido em termos monetários, pois é a forma que se possui para reduzir os diversos bens e serviços da economia a um denominador comum e, com isso, agregá-los. O problema é que a moeda está sujeita a oscilações de valor ao longo do tempo. Isto é, na presença de processos inflacionários, o poder de compra da moeda corrói-se em função da elevação do nível geral de preços; já em processos deflacionários, ocorre o contrário.
 
@@ -504,11 +496,9 @@ Tabela 2.1 Países selecionados: componentes do PIB - ótica da demanda 2021
 
 Fonte: dados básicos do Banco Mundial.
 
----
-
 ## Página 17
 
-## 2.8 CONSIDERAÇÕES FINAIS
+### 2.8 CONSIDERAÇÕES FINAIS
 
 O objetivo deste capítulo era apresentar ao leitor os principais agregados macroeconômicos, formas de medi-los e os diversos atores envolvidos no funcionamento da economia (famílias, empresas, governo e resto do mundo). Essa conceituação é necessária para que o leitor se familiarize com alguns termos e conceitos econômicos de modo que possa, nos próximos capítulos, entender como a economia se comporta e analisar a evolução da economia brasileira.
 
@@ -547,7 +537,7 @@ Na Tabela 2.2, apresentamos a classificação para alguns países selecionados e
 
 Tabela 2.2 PIB em dólares correntes e em dólares PPP em 2021
 
-# Tabela 2.2 – PIB em dólares correntes e em dólares PPP em 2021  
+### Tabela 2.2 – PIB em dólares correntes e em dólares PPP em 2021  
 Total de 197 países
 
 | Países        | PIB Nominal – PIB Total (US$ bilhões) | Ranking | PIB Nominal – PIB per capita (US$ bilhões) | Ranking | PIB PPP – PIB Total (US$ bilhões) | Ranking | PIB PPP – PIB per capita (US$ bilhões) | Ranking |

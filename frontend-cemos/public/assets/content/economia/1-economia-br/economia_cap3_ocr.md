@@ -1,10 +1,10 @@
-## Página 1
-
 # Capítulo 3 - Desenvolvimento e Distribuição de Renda
+
+## Página 1
 
 No Capítulo 2, examinou-se o conceito de produto, que é o principal indicador para se medir o crescimento econômico de um país. A partir dele, vê-se que, à exceção das últimas duas décadas, o Brasil cresceu a taxas elevadas e, em termos internacionais, pode ser considerado um dos maiores países do mundo, já que possui uma das maiores produções do planeta. Por que não se considera, então, o Brasil um país desenvolvido? Afinal, o Brasil possui uma produção maior que a de países considerados do Primeiro Mundo, como o Canadá e a Suíça. Essas questões serão tratadas neste capítulo.
 
-## 3.1 CONCEITO DE DESENVOLVIMENTO
+### 3.1 CONCEITO DE DESENVOLVIMENTO
 
 O problema está no conceito de desenvolvimento. Muitas vezes, confunde-se crescimento econômico com desenvolvimento econômico, que não são a mesma coisa. O primeiro, crescimento econômico, é a ampliação quantitativa da produção, ou seja, de produtos e serviços que atendam às necessidades humanas. Já o conceito de desenvolvimento é um conceito mais amplo, que, inclusive, engloba o de crescimento econômico. Dentro desse conceito, o importante não é apenas a magnitude da expansão da produção representada pela evolução do Produto Interno Bruto (PIB), mas também a natureza e a qualidade desse crescimento. Quando se diz que um país é desenvolvido, o que se quer ressaltar é que as condições de vida da população daquele país são boas, e quando se diz que um país é subdesenvolvido, há referência ao fato de que a proporção significativa da população residente naquele país tem condições de vida insuficientes ou consumo sofríveis.
 
@@ -14,7 +14,7 @@ Certamente, o que se entende por boa ou má qualidade de vida é algo bastante r
 
 ## Página 2
 
-## 3.2 PRODUTO PER CAPITA
+### 3.2 PRODUTO PER CAPITA
 
 Como foi dito, em geral, aceita-se que o crescimento econômico esteja englobado no conceito de desenvolvimento econômico. Se o conceito de crescimento procura refletir a produção de bens que visam atender às vontades humanas, logicamente, quanto maior a quantidade de bens produzidos, maior a possibilidade de as pessoas satisfazerem suas necessidades; portanto, melhores devem ser as condições de existência dessas pessoas. Assim, quanto maior o país em termos econômicos (PIB do país), maiores são as chances de a população desse país viver bem.
 
@@ -27,8 +27,6 @@ Assim, quanto maior o PIB per capita[1] de um país, mais desenvolvido pode ser 
 No Brasil, historicamente, nota-se evolução positiva da produção per capita. Até a década de 1980, a não ser em alguns anos em meados da década de 1960, o PIB per capita brasileiro cresceu a taxas bastante razoáveis (ver Figura 3.1). Da década de 1980 até os dias atuais, observa-se uma oscilação maior, fruto dos problemas enfrentados nesse período. Esse crescimento do PIB per capita é um dos indicadores que levaram o Brasil a ser classificado como país em desenvolvimento e situar-se no chamado bloco intermediário, ou seja, não é um país com elevada produção per capita, porém há vários países com renda média inferior à brasileira.[2]
 
 Deve-se notar, porém, que o conceito de PIB per capita é na verdade uma média, representando a renda média da população de um país. Isso não quer dizer que todas as pessoas daquele país tenham a mesma renda, ou o mesmo acesso aos produtos e serviços. A renda per capita da população dispersase em torno dessa média. Há pessoas que têm renda maior, outras menor; em geral, muitas pessoas com renda menor e poucas pessoas com renda maior.
-
----
 
 ## Página 3
 
@@ -65,13 +63,11 @@ Fonte: Ipeadata.
 
 Se o desenvolvimento econômico de um país é definido pela qualidade de vida de seus habitantes, não se pode examinar apenas o crescimento da produção de bens desse país. Além disso, o conceito de PIB per capita, apesar de já ser um avanço, também precisa ser complementado com outros elementos. Por um lado, deve-se analisar os chamados aspectos distributivos da renda nesse país; por outro, há que se levar em conta os chamados indicadores sociais desse país.
 
-## 3.3 INDICADORES SOCIAIS
+## Página 4
+
+### 3.3 INDICADORES SOCIAIS
 
 Os indicadores sociais fornecem informações que dizem respeito diretamente à qualidade de vida da população de um país, como a esperança de vida da população ao nascer, médicos e leitos hospitalares por habitante, acesso à água potável etc. Há outros indicadores sociais, especialmente os relacionados com a educação, como a taxa de alfabetização ou a quantidade média de anos na escola, que permitem examinar as condições de qualificação e, portanto, de oportunidade no mercado de trabalho da população do país.
-
----
-
-## Página 4
 
 Três aspectos podem ser destacados com relação a esses índices no Brasil.
 
@@ -103,10 +99,7 @@ Tabela 3.2 Brasil e regiões: indicadores de condições domiciliares de saneame
 | Sudeste       | 91,3                                                        | 80,5                                                   |
 | Sul           | 91,0                                                        | 47,4                                                   |
 
-
 Fonte: IBGE.
-
----
 
 ## Página 5
 
@@ -129,8 +122,6 @@ A interpretação das barras mostra a seguinte distribuição:
 O gráfico evidencia que as maiores parcelas da população concentram-se nas faixas de **baixa renda**, especialmente até **1/2 salário-mínimo**. À medida que o rendimento aumenta, a proporção de pessoas nessas categorias diminui substancialmente, revelando forte desigualdade na distribuição de renda.
 
 Fonte: IBGE.
-
----
 
 ## Página 6
 
@@ -166,7 +157,6 @@ Tabela 3.4 Indicadores sociais: países e anos selecionados
 
 
 Fonte: UNDP.
-
 
 ## Página 7
 
@@ -238,16 +228,13 @@ Figura 3.3 Brasil: evolução IDH - 1980-2021.
 | 2020 | 0,758 |
 | 2021 | 0,754 |
 
-
----
-
 ## Página 9
 
 Esse mesmo indicador tem sido usado para comparar as diferenças entre estados e regiões no Brasil, denominado Índice de Desenvolvimento Humano Municipal (IDHM), com a média dos municípios de cada estado. Chamam a atenção as desigualdades existentes no Brasil: em 2021, enquanto apenas dois estados brasileiros, São Paulo e Distrito Federal, chegam próximo aos índices de países de muito alto padrão de desenvolvimento, outros oito estados apresentam IDHM equivalente a países de médio desenvolvimento.
 
 Tabela 3.6 Brasil: IDHM — estados brasileiros — anos selecionados
 
-# Tabela 3.6 – Brasil: IDHM – estados brasileiros – anos selecionados
+### Tabela 3.6 – Brasil: IDHM – estados brasileiros – anos selecionados
 
 | Região / Estado      | 1991  | 2000  | 2010  | 2021  |
 |----------------------|-------|-------|-------|-------|
@@ -293,7 +280,7 @@ Fonte: Atlas Brasil, Programa das Nações Unidas para o Desenvolvimento (PNUD).
 
 ## Página 10
 
-## 3.4 DISTRIBUIÇÃO DE RENDA NO BRASIL
+### 3.4 DISTRIBUIÇÃO DE RENDA NO BRASIL
 
 Como foi dito anteriormente, deve-se também levar em consideração a distribuição de renda na análise do desenvolvimento de um país; ou seja, a maneira como os frutos do crescimento são partilhados pela população.
 
@@ -301,7 +288,7 @@ A distribuição de renda pode ser vista de vários ângulos. Por um lado, tem-s
 
 Figura 3.4 Brasil: distribuição setorial e regional do PIB 2020.
 
-## **Distribuição do PIB por setor**
+### **Distribuição do PIB por setor**
 
 ```markdown
 | Setor        | Participação (%) |
@@ -311,7 +298,7 @@ Figura 3.4 Brasil: distribuição setorial e regional do PIB 2020.
 | Serviços     | 71                |
 ```
 
-## **Distribuição regional do PIB**
+### **Distribuição regional do PIB**
 
 ```markdown
 | Região         | Participação (%) |
@@ -425,7 +412,6 @@ Na Tabela 3.8, temos dados do **Índice de Gini**, um indicador bastante utiliza
 
 Fonte: WDI e Banco Mundial (WB).
 
-
 ## Página 14
 
 ### Boxe 3.2 — Índice de Gini e Curva de Lorenz
@@ -435,7 +421,6 @@ O Índice de Gini é um instrumento utilizado para se auferir o grau de concentr
 Assim, na Figura 3.6 o ponto C indica que os 20% da população mais pobre possuem 4% da renda e o ponto D indica que 80% da população possuem 45% da renda. Quando a renda é perfeitamente distribuída, isto é, quando 20% da população possuem 20% da renda, 80% possuem 80%, a Curva de Lorenz é exatamente a reta que liga os pontos A e B. Assim, quanto mais próxima a Curva de Lorenz dessa reta, mais bem distribuída é a renda do país, e quanto mais essa curva se aproxima da curva AOB, mais mal distribuída é a renda do país.
 
 O Índice de Gini relaciona a área entre a Curva de Lorenz e a reta AB com a área do triângulo AOB; este índice, portanto, varia entre O (quando a Curva de Lorenz e a reta AB são as mesmas — nenhuma concentração) e 1 (a da Curva de Lorenz é a mesma da curva AOB - concentração total). Quanto maior a área entre a Curva de Lorenz e a reta AB, maior é o Índice de Gini e, portanto, maior é a concentração de renda.
-
 
 ## Página 15
 
@@ -480,8 +465,6 @@ A Curva de Lorenz permite calcular o **Índice de Gini**, medida que sintetiza o
 
 * Quanto **maior a área** entre a curva e a linha de igualdade perfeita,
 * **maior o valor do Gini** e, portanto, maior a desigualdade.
-
-
 
 Historicamente, a evolução perversa da distribuição de renda é particularmente importante para os dados de 1970 e 1990; porém, deve-se ressaltar a diferença entre as duas situações; na primeira, a piora na distribuição de renda é acompanhada por um aumento na renda das pessoas (o PIB per capita cresceu, e a renda média de cada uma das faixas também cresceu); o que ocorreu foi que os mais ricos tiveram maiores aumentos de renda que os mais pobres, que também tiveram aumento de renda. Já em 1990, a situação é diferente, pois houve concentração de renda em um momento em que o PIB per capita caía, isto é, a média dos rendimentos das pessoas diminuiu em termos reais. Na verdade, apenas os mais ricos tiveram algum aumento real de renda; no restante da sociedade, houve queda real.
 
@@ -626,7 +609,7 @@ Fonte: OPHI.
 
 Este tipo de indicador de pobreza permite às políticas públicas concentrarem-se de modo mais efetivo nas dimensões importantes que tornam determinado conjunto populacional mais vulnerável ou carente. Vários indicadores com formatos um pouco diferentes estão sendo desenvolvidos em diferentes instituições e muitos destes estão relacionados com os **Objetivos de Desenvolvimento Sustentável (ODS)** estabelecidos pelas Nações Unidas e focados em uma concepção de desenvolvimento que inclui diferentes dimensões, além da meramente econômica.
 
-## 3.6 DESENVOLVIMENTO: EQUITATIVO, SUSTENTADO E PARTICIPATIVO
+### 3.6 DESENVOLVIMENTO: EQUITATIVO, SUSTENTADO E PARTICIPATIVO
 
 Até aqui, percebe-se que o conceito de desenvolvimento envolve aspectos que vão além da ideia de crescimento econômico. É importante levar em consideração a forma como esse crescimento ocorre e como os frutos desse crescimento revertem para uma melhora na qualidade de vida das pessoas. Assim, considerações que envolvem o conceito de **equidade** foram até aqui incorporadas. Valendo-se das definições utilizadas no relatório sobre o desenvolvimento brasileiro realizado pelo IPEA e pelas Nações Unidas, conclui-se que a equidade é:
 

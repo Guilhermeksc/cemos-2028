@@ -1,10 +1,10 @@
-## Página 1
-
 # Capítulo 1 - Aspectos Demográficos
+
+## Página 1
 
 Muitas vezes, quando se estuda a economia de um país, deixam-se de lado as questões relativas à evolução de sua população. Essas questões, no entanto, são bastante importantes. Por um lado, a população de um país representa seu potencial de consumidores; por outro, parte dessa população, a chamada **população economicamente ativa** ou **população na força de trabalho**[1], representa os potenciais trabalhadores/produtores do país. Antes de discutirmos os indicadores demográficos, vamos analisar a relação entre crescimento populacional e desenvolvimento econômico.
 
-## 1.1 CRESCIMENTO POPULACIONAL E DESENVOLVIMENTO ECONÔMICO
+### 1.1 CRESCIMENTO POPULACIONAL E DESENVOLVIMENTO ECONÔMICO
 
 As relações entre crescimento populacional e desenvolvimento econômico são bastante controversas dentro da teoria econômica. Por um lado, há a corrente dita neomalthusiana, que tem sua inspiração nas ideias do clérigo inglês Thomas Malthus (1766-1834). Segundo esse autor, a humanidade tem tendência à pobreza e à fome, pois a população tem propensão a crescer muito mais rapidamente que a produção de alimentos.
 
@@ -26,9 +26,6 @@ Geralmente, esses pontos no Brasil tendem a ser relativamente próximos, de modo
 
 Figura 1.1 Renda e consumo ao longo do ciclo de vida.
 
-## 📌 Gráfico convertido para Markdown
-
-```markdown
 **Figura 1.1 – Renda e consumo ao longo do ciclo de vida**
 
 Eixo vertical: Renda e consumo (0 a 30)  
@@ -54,11 +51,8 @@ Idade | Consumo (linha preta) | Geração de renda (linha cinza)
 Pontos relevantes:  
 - **A**: início da fase em que a renda supera o consumo (~20 anos).  
 - **B**: fim dessa fase, quando o consumo volta a ser maior que a renda (~60 anos).  
-```
 
----
-
-## 📘 Explicação do gráfico
+### 📘 Explicação do gráfico
 
 O gráfico ilustra a **teoria do ciclo de vida**, mostrando como a renda e o consumo das pessoas evoluem ao longo dos anos.
 
@@ -80,8 +74,7 @@ O gráfico ilustra a **teoria do ciclo de vida**, mostrando como a renda e o con
 * O **consumo permanece estável**, ainda que com eventuais demandas adicionais (como saúde).
 * O consumo volta a **superar a renda**, exigindo financiamento via previdência, poupança acumulada ou transferências intergeracionais.
 
-
-## 1.2 DEMOGRAFIA: ELEMENTOS BÁSICOS
+### 1.2 DEMOGRAFIA: ELEMENTOS BÁSICOS
 
 Em geral, os dados populacionais são obtidos por meio dos chamados Censos Demográficos, realizados no Brasil em 1872, 1890, 1900, 1920 e, desde 1940, realizados de 10 em 10 anos, com exceção daquele realizado em 1991 e não em 1990, e o mais recente de 2022, em vez de 2020.
 
@@ -151,7 +144,7 @@ Devem-se separar as migrações internas das migrações externas. As migraçõe
 
 Quando o crescimento populacional é fortemente influenciado pela entrada de imigrantes em um país, dizemos que a população desse país é aberta. Já uma população é fechada quando seu crescimento depende apenas do chamado crescimento vegetativo, isto é, apenas da diferença entre nascimentos e óbitos.
 
-## 1.3 TRANSIÇÃO DEMOGRÁFICA BRASILEIRA
+### 1.3 TRANSIÇÃO DEMOGRÁFICA BRASILEIRA
 
 No Brasil, a evolução da população ao longo do século XX e início do século XXI, levando-se em conta os elementos anteriores, apresentou algumas mudanças importantes. No início do século, o Brasil possuía uma população considerada aberta, isto é, as migrações externas em direção ao Brasil ainda eram significativas, especialmente de italianos e portugueses, mas também de espanhóis e japoneses. Parte do crescimento populacional brasileiro, até a década de 1930, é explicada por essa entrada de estrangeiros no país. Na última década do século XIX, 30% do crescimento da população brasileira se devia à entrada de imigrantes no país.? O crescimento vegetativo, isto é, a diferença entre nascimentos e óbitos, explicava o restante do crescimento populacional. Deve-se ressaltar que, nesse período, tanto a taxa de natalidade quanto a taxa de mortalidade eram bastante elevadas, sendo a primeira superior à segunda.
 
@@ -228,32 +221,23 @@ Tabela 1.2 Esperança de vida da população brasileira: Brasil e regiões - 193
 | **Sul**        | 50,1 | 53,3 | 60,3 | 60,3 | 67   | 65,3 | 68,7 | 72,7 | 75,9 | 78,7 |
 | **Centro-oeste** | 48,3 | 51   | 56,4 | 56   | 64,7 | 63,5 | 67,8 | 71,8 | 73,8 | 76,2 |
 
-
 ## Página 9
-
 
 Os dados de expectativa de vida compõem as chamadas tábuas de mortalidade, que são instrumentos importantes, especialmente nas questões atuariais. Uma tábua de mortalidade indica, para cada ano que uma pessoa viveu, quantos anos espera-se que ela ainda viva. Assim, na Figura 1.3 vemos que, ao nascer, espera-se que um homem viva em média até os 73,6 anos e uma mulher até os 80,5 anos. Mas, quando essa mulher (ou homem) atingir 40 anos com vida, espera-se que ela ainda viva mais 42,5 anos, ou seja, a expectativa de vida dessa mulher passa a ser de 82,5 anos (e o homem, de 77,4 anos). Se essa mulher atingir os 60 anos, espera-se que ela viva até os 84,7 anos (e o homem até os 81 anos). Esses dados são fundamentais, por exemplo, para se estimarem os gastos futuros com a previdência.
 
 Figura 1.3 Brasil: expectativa de vida condicionada à idade.
 
----
-
 ## Página 10
-
 
 Um elemento histórico fundamental no declínio das taxas de mortalidade é a mortalidade infantil ou na infância. A taxa de mortalidade na infância refere-se à quantidade de mortes de crianças até cinco anos a cada grupo de 1.000 nascidas vidas e a taxa de mortalidade infantil é a quantidade de crianças falecidas durante o primeiro ano de vida, dentro de um grupo de 1.000 recém-nascidos. Pelo gráfico da Figura 1.4, percebe-se que houve uma queda significativa tanto da mortalidade na infância quanto infantil nos últimos 80 anos, caindo de quase de 140 óbitos de menores de 1 ano para cada 1.000 nascidos vivos, para menos de 20 na primeira década do século XXI. E, se pensarmos nas mais de 212 crianças de até cinco anos que faleceram para cada 1.000 crianças, quase 200 vidas foram salvas a cada 1.000 neste mesmo período de tempo. Não deve ser esquecido, porém, que, apesar da queda, a mortalidade infantil brasileira ainda é considerada elevada em nível internacional. A taxa de mortalidade infantil no Brasil é, atualmente, de 12 a cada mil, ainda acima dos países desenvolvidos, onde essa taxa é inferior a sete a cada mil.
 
 Figura 1.4 Brasil: taxas de mortalidade infantil e na infância —- 1940-2019.
 
----
-
 ## Página 11
 
-Boxe 1.1 - A pandemia de Covid-19 e a demografia no Brasil
+### Boxe 1.1 - A pandemia de Covid-19 e a demografia no Brasil
 
 Todo o mundo, e o Brasil em particular, foi fortemente afetado por uma pandemia no início de 2020, a Covid-19. Já ocorreram outras pandemias que afetaram a economia e a demografia nos países, e talvez a que guarde alguma semelhança com a pandemia da Covid-19 tenha sido a chamada gripe espanhola, que atingiu o Brasil no final de 1918 e que também teve dimensões mundiais, com forte letalidade. No caso da Covid-19, os números mundiais são enormes e os do Brasil não ficam atrás. Entre janeiro de 2020 e fevereiro de 2023, foram contabilizados praticamente 760 milhões de casos e, principalmente, 6,9 milhões de mortes em todo o mundo. O Brasil, com 689.000 óbitos, representa mais de 10% de todos os óbitos que ocorreram no mundo e, em termos absolutos, como vemos na Tabela 1.3, foi o segundo país com maior número de mortes (e o sexto com maior número de casos). Em termos relativos, os óbitos indicam uma taxa de mais de 3.200 mortes por milhão de habitantes, o que coloca o Brasil na 212 posição entre os piores, ou os mais afetados, próximo a Itália, na Europa, e ao Chile, na América do Sul. Dada a nítida má gestão da crise epidêmica pelo governo federal no Brasil, esses números poderiam ter sido piores, não fosse a ampla adesão da população à vacinação. Mesmo que tardiamente, mais de 88% da população elegível tinham, no início de 2023, recebido algum tipo de vacinação, e 82%, um protocolo inicial completo de vacinação (duas doses).
-
----
 
 ## Página 12
 
@@ -291,7 +275,7 @@ Entretanto, a partir dos anos 1960, e especialmente das décadas seguintes, a qu
 
 ## Página 14
 
-i. aentrada da mulher no mercado de trabalho, que fez com que os “custos” de oportunidade de se ter um filho crescessem fortemente;
+i. a entrada da mulher no mercado de trabalho, que fez com que os “custos” de oportunidade de se ter um filho crescessem fortemente;
 
 ii. a grande proliferação de cuidados e métodos contraceptivos e a dissociação entre a sexualidade e a reprodução.
 
@@ -300,20 +284,16 @@ Figura 1.5 Evolução das taxas de fecundidade: Brasil e regiões - 1940-2013.
 Figura 1.6 Brasil: taxa de fecundidade segundo quintis de renda e anos de estudo —- 1992 x 2011. 
 Fonte: IPEA (2012).
 
-## Análise do gráfico — Taxas de fecundidade por quintis de renda e anos de estudo (1992 × 2011)
+### Análise do gráfico — Taxas de fecundidade por quintis de renda e anos de estudo (1992 × 2011)
 
 O gráfico compara a **taxa de fecundidade** em dois momentos — **1992** (barras claras) e **2011** (barras escuras) — distribuindo os dados por **quintis de renda** (da população mais pobre para a mais rica) e por **nível de escolaridade**.
 
----
-
-## 1. **Redução geral da fecundidade**
+**1. Redução geral da fecundidade**
 
 Em todas as categorias (renda e escolaridade), observa-se uma **queda significativa da fecundidade entre 1992 e 2011**.
 Isso confirma a tendência nacional de declínio da taxa de natalidade ao longo das últimas décadas.
 
----
-
-## 2. **Análise por quintis de renda**
+**2. Análise por quintis de renda**
 
 | Quintil         | 1992 | 2011 | Interpretação                                           |
 | --------------- | ---- | ---- | ------------------------------------------------------- |
@@ -328,7 +308,7 @@ Isso confirma a tendência nacional de declínio da taxa de natalidade ao longo 
 * Quanto **menor a renda**, **maior a fecundidade**, mas com queda ao longo do tempo.
 * Os quintis superiores mostram fecundidade **bem abaixo de 2 filhos por mulher**, contribuindo para o envelhecimento populacional.
 
-## 3. **Análise por anos de estudo**
+**3. Análise por anos de estudo**
 
 | Escolaridade | 1992 | 2011 | Interpretação                                                      |
 | ------------ | ---- | ---- | ------------------------------------------------------------------ |
@@ -345,9 +325,7 @@ A fecundidade **diminui quanto maior o nível de educação**, reforçando a cor
 * maior inserção no mercado de trabalho,
 * maior acesso à informação e métodos contraceptivos.
 
----
-
-## 4. **Síntese interpretativa**
+**4. Síntese interpretativa**
 
 O gráfico evidencia três fenômenos importantes:
 
@@ -378,7 +356,7 @@ Apesar de estar nascendo cada vez menos gente, ainda temos uma taxa de crescimen
 
 Se, porém, as taxas atuais de fecundidade forem mantidas abaixo da taxa de reposição, a tendência é que a população brasileira se estabilize e passe a cair em algum momento.
 
-## 1.4 ESTRUTURA ETÁRIA
+### 1.4 ESTRUTURA ETÁRIA
 
 Outro efeito importante da queda da fecundidade é sobre a estrutura etária da população. Esse é um efeito que ocorre de modo lento e defasado, atingindo primeiro os grupos etários mais jovens, mas o que se verifica nos últimos anos é um processo de envelhecimento dessa população. Antes da redução da fecundidade, o Brasil era considerado um país essencialmente jovem. Como pode ser observado pela Tabela 1.4, em 1960 mais de 30% de sua população era composta por pessoas com menos de 10 anos, e apenas 1,5% dos residentes no Brasil tinha mais de 70 anos. Nos últimos 30 anos, a situação está se modificando: em 2021, menos de 15% tinham menos de 10 anos (metade da proporção dos anos 40), e mais de 6% da população possui mais de 70 anos (a proporção foi multiplicada por quatro).
 
@@ -409,81 +387,73 @@ Tabela 1.4 Brasil: distribuição da população por grupo de idades — 1940-20
 
 Outra maneira de se observar essa evolução é por meio das pirâmides populacionais nos gráficos das Figuras 1.7 a 1.10. Nessas pirâmides, a porcentagem de cada faixa da população é representada pelas barras da pirâmide, dividida em duas partes: de um lado, os homens, e de outro, as mulheres. Pode-se perceber que a pirâmide de 1980 tem uma base larga, indicando uma porcentagem alta da participação dos jovens no total da população. Com o tempo, essa base vai se estreitando: inicialmente, o meio da pirâmide se alarga, passando para um formato de tonel, indicando o crescimento da participação das pessoas em idade intermediária no total da população. Finalmente, na Figura 1.10 (a projeção da população brasileira para 2050) o topo amplifica-se, demonstrando a forte ampliação da população em idade mais avançada e a inversão da pirâmide. Nota-se, ainda, um crescimento maior das mulheres, indicando uma tendência de que ocorra uma “feminilização do envelhecimento”.
 
-## **Análise das pirâmides etárias brasileiras — 1980, 2000, 2020 e projeção para 2050**
+### **Análise das pirâmides etárias brasileiras — 1980, 2000, 2020 e projeção para 2050**
 
 As quatro pirâmides revelam, de forma clara, a *transição demográfica acelerada* do Brasil, com forte redução da fecundidade, aumento da longevidade e envelhecimento populacional.
 
 Segue uma análise estruturada por período.
 
----
-
-# **1. Pirâmide Etária — 1980**
+**1. Pirâmide Etária — 1980**
 
 **Formato:** pirâmide clássica, base larga e topo estreito.
 
-### **Principais características**
+**Principais características**
 
 * **Altíssima proporção de crianças (0–14 anos)**, indicando fecundidade elevada.
 * **População jovem predominante.**
 * **Topo muito estreito**, sinalizando baixa expectativa de vida e alta mortalidade na velhice.
 * Padrão típico de país em **pleno processo de transição demográfica**.
 
-### **Interpretação**
+**Interpretação**
 
 * Forte pressão sobre educação infantil e serviços materno-infantis.
 * Grande contingente futuro entrando no mercado de trabalho.
 * Previdência ainda não pressionada.
 
----
-
-# **2. Pirâmide Etária — 2000**
+**2. Pirâmide Etária — 2000**
 
 **Formato:** ainda triangular, mas com base visivelmente mais estreita.
 
-### **Principais características**
+**Principais características**
 
 * **Redução significativa da fecundidade**, estreitando a base.
 * Crescimento da população **de 20 a 40 anos**, sugerindo um país entrando no “bônus demográfico”.
 * Aumento da população idosa começa a aparecer, mas ainda discreto.
 
-### **Interpretação**
+**Interpretação**
 
 * População economicamente ativa crescendo.
 * O país começa a colher ganhos econômicos do bônus demográfico.
 * Primeiros sinais de envelhecimento estrutural.
 
----
-
-# **3. Pirâmide Etária — 2020**
+**3. Pirâmide Etária — 2020**
 
 **Formato:** corpo mais largo e base estreita; aparência de “tonel”.
 
-### **Principais características**
+**Principais características**
 
 * **Base pequena (0–14 anos)** devido à fecundidade abaixo da reposição.
 * **Maior concentração entre 25–45 anos**, refletindo pico da população em idade produtiva.
 * **Idosos (65+) aumentando**, mas ainda sem ultrapassar os grupos intermediários.
 
-### **Interpretação**
+**Interpretação**
 
 * Últimos anos do bônus demográfico.
 * Pressão crescente sobre saúde e previdência começa a se manifestar.
 * Menor entrada de jovens no mercado de trabalho.
 
----
-
-# **4. Pirâmide Etária — projeção para 2050**
+**4. Pirâmide Etária — projeção para 2050**
 
 **Formato:** pirâmide invertida; topo mais largo que a base.
 
-### **Principais características**
+**Principais características**
 
 * **Forte expansão dos grupos acima de 60 anos**, com grande peso relativo.
 * **População de 80+ muito maior** que em décadas anteriores.
 * **Base extremamente estreita**, indicando baixíssima fecundidade e envelhecimento acelerado.
 * Predomínio de mulheres nos grupos mais idosos, refletindo maior longevidade feminina.
 
-### **Interpretação**
+**Interpretação**
 
 * Estrutura etária semelhante à de países envelhecidos, como Japão e Itália.
 * Forte pressão sobre:
@@ -494,9 +464,7 @@ Segue uma análise estruturada por período.
 * Redução da população economicamente ativa.
 * Possível necessidade de políticas imigratórias e estímulo à natalidade.
 
----
-
-# **Síntese da evolução 1980 → 2050**
+**Síntese da evolução 1980 → 2050**
 
 | Ano      | Formato                    | Mensagem central                                   |
 | -------- | -------------------------- | -------------------------------------------------- |
@@ -505,9 +473,7 @@ Segue uma análise estruturada por período.
 | **2020** | Corpo largo, base estreita | Pico do bônus demográfico; baixa natalidade.       |
 | **2050** | Pirâmide invertida         | Envelhecimento intenso e desafios previdenciários. |
 
----
-
-# **Conclusão Geral**
+**Conclusão Geral**
 
 Os gráficos evidenciam uma **transformação profunda** na estrutura populacional brasileira.
 O país passa de uma sociedade jovem (1980) para uma sociedade envelhecida (2050).
@@ -518,7 +484,6 @@ Essa transição implica desafios estratégicos:
 * políticas para ampliar a produtividade laboral;
 * necessidade de incentivo à natalidade ou à imigração qualificada;
 * adaptação urbana e habitacional à população idosa.
-
 
 ## Página 21
 
@@ -545,8 +510,6 @@ Figura 1.11 Dinâmica populacional brasileira.
 - **Índice de envelhecimento:** proporção de idosos (65+) em relação aos jovens (0–14).  
 - **Razão de dependência:** relação entre população dependente (0–14 e 65+) e população em idade ativa (15–64).
 
-
-
 ## Página 22
 
 Essas modificações ocorrem com certo vagar, mas têm impactos importantes sobre a economia brasileira, que se farão sentir no decorrer dos próximos anos. Por um lado, espera-se um alívio no que tange aos cuidados que se deve ter em relação à infância e adolescência. Apesar de ser um contingente grande de pessoas, a população entre O e quatro anos já apresenta uma tendência de queda que deve se elevar nas próximas décadas, o que significa alívio na demanda pela quantidade dos serviços de saúde materno-infantil.
@@ -565,7 +528,7 @@ A razão de dependência é a relação entre os dependentes e a população em 
 
 A janela demográfica ou bônus demográfico é um período quando a proporção de pessoas em idade ativa ainda é alta e permite uma razão de dependência baixa. Esse período é propício ao desenvolvimento econômico, pois existem mais possibilidades de geração de renda, poupança, devendo, portanto, ser aproveitado para a realização de investimento físico e em capital humano, acumulando capital e riqueza para enfrentar uma fase mais à frente, em que a razão de dependência volta a subir, pressionada pelo vigoroso crescimento da população em idade mais avançada, que traz consigo custos significativos e exige políticas públicas mais sofisticadas. No Brasil, esse bônus demográfico, que se encerrou no fim da segunda década do século XXI, aparentemente não foi amplamente aproveitado.
 
-## 1.5 -MIGRAÇÕES INTERNAS E URBANIZAÇÃO
+### 1.5 -MIGRAÇÕES INTERNAS E URBANIZAÇÃO
 
 Em termos setoriais e regionais, também se observa um processo de transição demográfica. Os dados apontados anteriormente indicam diminuição tanto da mortalidade como da fecundidade em todas as regiões. Apesar de existirem diferenças regionais importantes, a transição demográfica é global dentro do Brasil.
 
@@ -592,8 +555,6 @@ No período recente, porém, esse tipo de urbanização tem diminuído, apontand
 ## Página 26
 
 Assim, a tendência é de continuidade do processo de urbanização da economia brasileira, porém com menor intensidade e, provavelmente, ampliando o surgimento de novas regiões metropolitanas ao longo de todo o país.
-
-## Página 28
 
 Ver Santos, Levy e Szmrecsányi (1980) e Milone (1991).
 
