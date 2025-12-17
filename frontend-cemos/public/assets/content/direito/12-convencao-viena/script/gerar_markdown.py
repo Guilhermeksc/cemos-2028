@@ -4,16 +4,17 @@ BASE_DIR = Path(__file__).parent
 BASE_DIR.mkdir(parents=True, exist_ok=True)
 
 parametros_base = {
-    "parte1":   {"numero": 1, "assunto": "Parte I: Disposições Gerais"},
-    "parte2":  {"numero": 2, "assunto": "Parte II: Regiões de Operações"},
-    "parte3": {"numero": 3, "assunto": "Parte III: Regras Básicas e Discriminação do Alvo"},
-    "parte4":  {"numero": 4, "assunto": "Parte IV: Métodos e meios de Guerra no Mar"},
-    "parte5":   {"numero": 5, "assunto": "Parte V: Medidas curtas de ataque"},
-    "parte6":  {"numero": 6, "assunto": "Parte VI: Pessoas protegidas, transportes médicos e aeronaves médicas"},
+    "parte1":   {"numero": 1, "assunto": "Parte I - Introdução"},
+    "parte2":  {"numero": 2, "assunto": "Parte II - Conclusão e Entrada em Vigor de Tratados"},
+    "parte3": {"numero": 3, "assunto": "Parte III - Observância, Aplicação e Interpretação de Tratados"},
+    "parte4":  {"numero": 4, "assunto": "Parte IV - Emenda e Modificação de Tratados"},
+    "parte5":   {"numero": 5, "assunto": "Parte V - Nulidade, Extinção e Suspensão da Execução de Tratados"},
+    "parte6":  {"numero": 6, "assunto": "Parte VI e VII - Disposições Diversas e Depositários, Notificações, Correções e Registro"},
+    "parte8":  {"numero": 7, "assunto": "Parte VIII - Disposições Finais"},
 }
 
-id_base = "24"
-bibliografia_titulo = "San Remo Manual."
+id_base = "29"
+bibliografia_titulo = "Decreto nº 7.030/2009 - Convenção de Viena"
 
 def conteudo_c(assunto: str) -> str:
     return f"""Sua tarefa é ler integralmente o conteúdo do arquivo cap.md e criar um banco de questões de correlação entre colunas, no formato de associação lógica, conforme as instruções abaixo.

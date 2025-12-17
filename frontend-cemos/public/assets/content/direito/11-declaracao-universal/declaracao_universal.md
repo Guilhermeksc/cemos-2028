@@ -36,7 +36,6 @@ A Assembleia Geral proclama a presente Declaração Universal dos Direitos Human
 
 Adotado e proclamado pela Assembleia Geral em sua resolução 217 A (Ill) de 10 de dezembro de 1948.
 
-
 ## Página 4
 
 **Artigo I**
@@ -63,9 +62,6 @@ Ninguém será mantido em escravidão ou servidão; o tráfico de pessoas escrav
 
 Ninguém será submetido à tortura nem a tratamento ou castigo cruel, desumano ou degradante.
 
-
-## Página 6
-
 **Artigo VI**
 
 Todo ser humano tem o direito de ser, — em todos os lugares, reconhecido q como pessoa perante a lei.
@@ -78,13 +74,9 @@ Todas as pessoas são iguais perante a lei e têm direito, sem qualquer distinç
 
 Toda pessoa tem direito a receber dos tribunais nacionais competentes recurso efetivo para os atos que violem os direitos fundamentais que lhe sejam reconhecidos pela constituição ou pela lei.
 
-## Página 7
-
 **Artigo IX**
 
 Ninguém será sujeito arbitrariamente a prisão, detenção ou exílio.
-
-## Página 8
 
 **Artigo XI**
 
@@ -92,7 +84,7 @@ Ninguém será sujeito arbitrariamente a prisão, detenção ou exílio.
 
 2. Ninguém poderá ser culpado por qualquer ação ou omissão que, no momento, não constituam delito perante o direito nacional ou internacional. Também não será imposta pena mais forte do que aquela que, no momento da prática, seja aplicável ao ato delituoso.
 
-## Página 9
+## Página 6
 
 **Artigo XII**
 
@@ -103,8 +95,6 @@ Ninguém será sujeito a interferências em sua vida privada, em sua família, e
 1. Todo ser humano tem direito à liberdade de movimento e residência dentro das fronteiras de cada Estado.
 
 2. Todo ser humano tem o direito de deixar qualquer país, inclusive o próprio, e a este regressar.
-
-## Página 10
 
 **Artigo XIV**
 
@@ -118,8 +108,6 @@ Ninguém será sujeito a interferências em sua vida privada, em sua família, e
 
 2. Ninguém será arbitrariamente privado de sua nacionalidade, nem do direito de mudar de nacionalidade.
 
-## Página 11
-
 **Artigo XVI**
 
 1. Todas as pessoas em maioridade, sem qualquer restrição de raça, nacionalidade ou religião, têm o direito de contrair o matrimônio e fundar uma família. Gozam de iguais direitos em relação ao casamento, sua duração e sua dissolução.
@@ -127,8 +115,6 @@ Ninguém será sujeito a interferências em sua vida privada, em sua família, e
 2. O casamento não será válido senão com o livre e pleno consentimento dos noivos.
 
 3. A família é o núcleo natural e fundamental da sociedade e tem direito à proteção da sociedade e do Estado.
-
-## Página 12
 
 **Artigo XVII**
 
@@ -150,7 +136,7 @@ Todo ser humano tem direito à liberdade de opinião e expressão; este direito 
 
 2. Ninguém pode ser obrigado a fazer parte de uma associação.
 
-## Página 13
+## Página 7
 
 **Artigo XXI**
 
@@ -159,8 +145,6 @@ Todo ser humano tem direito à liberdade de opinião e expressão; este direito 
 2. Todo ser humano tem igual direito de acesso ao serviço público do seu país.
 
 3. A vontade do povo será a base da autoridade do governo; esta vontade será expressa em eleições periódicas e legítimas, por sufrágio universal, por voto secreto ou processo equivalente que assegure a liberdade de voto.
-
-## Página 14
 
 **Artigo XXII**
 
@@ -176,8 +160,6 @@ Todo ser humano, como membro da sociedade, tem direito à segurança social e à
 
 4. Todo ser humano tem direito a organizar sindicatos e neles ingressar para proteção de seus interesses.
 
-## Página 15
-
 **Artigo XXIV**
 
 Todo ser humano tem direito a repouso e lazer, inclusive à limitação razoável das horas de trabalho e férias periódicas remuneradas.
@@ -189,7 +171,7 @@ Todo ser humano tem direito a repouso e lazer, inclusive à limitação razoáve
 2. A maternidade e a infância têm direito a cuidados e assistência especiais. Todas as crianças, nascidas dentro ou fora do matrimônio, gozarão da
 mesma proteção social.
 
-## Página 16
+## Página 8
 
 **Artigo XXVI**
 
@@ -198,8 +180,6 @@ mesma proteção social.
 2. A educação será orientada no sentido do pleno desenvolvimento da personalidade humana e do fortalecimento do respeito pelos direitos humanos e pelas liberdades fundamentais. A educação promoverá a compreensão, a tolerância e a amizade entre todas as nações e grupos raciais ou religiosos, e deve desenvolver as atividades da ONU em prol da manutenção da paz.
 
 3. Os pais têm prioridade de direito na escolha do tipo de educação que será fornecida a seus filhos.
-
-## Página 17
 
 **Artigo XXVII**
 
@@ -211,7 +191,6 @@ mesma proteção social.
 
 Todo ser humano tem direito a uma ordem social e internacional em que os direitos e liberdades estabelecidos na presente Declaração possam ser plenamente realizados.
 
-## Página 18
 
 **Artigo XXIX**
 

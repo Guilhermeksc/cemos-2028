@@ -1,4 +1,4 @@
-### PARTE III - Observância, Aplicação e Interpretação de Tratados
+### Parte III - Observância, Aplicação e Interpretação de Tratados
 
 ## Página 7
 

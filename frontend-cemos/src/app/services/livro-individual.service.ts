@@ -102,6 +102,203 @@ export class LivroIndividualService {
   }
 
   /**
+   * Processa listas não ordenadas no HTML, agrupando itens consecutivos em tags <ul>
+   */
+  private processUnorderedLists(html: string): string {
+    const lines = html.split('\n');
+    const result: string[] = [];
+    let currentList: string[] = [];
+    let inUnorderedList = false;
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const trimmedLine = line.trim();
+      
+      // Ignora linhas vazias, headers HTML e outras tags HTML já processadas
+      // Também ignora linhas que já contêm tags de lista (<li>, <ol>, <ul>)
+      if (trimmedLine === '' || 
+          trimmedLine.startsWith('<h') || 
+          trimmedLine.startsWith('<table') ||
+          trimmedLine.startsWith('</table') ||
+          trimmedLine.startsWith('<ul') ||
+          trimmedLine.startsWith('</ul') ||
+          trimmedLine.startsWith('<ol') ||
+          trimmedLine.startsWith('</ol') ||
+          trimmedLine.startsWith('<li>') ||
+          trimmedLine.includes('<li>') ||
+          trimmedLine.includes('</li>')) {
+        // Se estávamos em uma lista, fecha ela
+        if (inUnorderedList) {
+          if (currentList.length > 0) {
+            result.push(`<ul>${currentList.join('\n')}</ul>`);
+          }
+          currentList = [];
+          inUnorderedList = false;
+        }
+        result.push(line);
+        continue;
+      }
+
+      // Verifica se a linha é um item de lista não ordenada (hífen seguido de espaço)
+      // Aceita espaços opcionais no início da linha
+      const unorderedListMatch = line.match(/^\s*\- (.+)$/);
+      
+      if (unorderedListMatch) {
+        // É um item de lista não ordenada
+        if (!inUnorderedList) {
+          // Inicia uma nova lista não ordenada
+          inUnorderedList = true;
+          currentList = [];
+        }
+        currentList.push(`<li>${unorderedListMatch[1]}</li>`);
+      } else {
+        // Não é um item de lista não ordenada
+        if (inUnorderedList) {
+          // Fecha a lista não ordenada atual
+          if (currentList.length > 0) {
+            result.push(`<ul>${currentList.join('\n')}</ul>`);
+          }
+          currentList = [];
+          inUnorderedList = false;
+        }
+        result.push(line);
+      }
+    }
+
+    // Se ainda há uma lista aberta ao final, fechá-la
+    if (inUnorderedList && currentList.length > 0) {
+      result.push(`<ul>${currentList.join('\n')}</ul>`);
+    }
+
+    return result.join('\n');
+  }
+
+  /**
+   * Processa listas ordenadas no HTML, agrupando itens consecutivos em tags <ol>
+   * O conteúdo adicional após o item da lista é adicionado como texto normal (sem indentação)
+   * para manter o alinhamento à esquerda, mas a lista permanece contínua para preservar a numeração
+   */
+  private processOrderedLists(html: string): string {
+    const lines = html.split('\n');
+    const result: string[] = [];
+    let currentList: string[] = [];
+    let inOrderedList = false;
+    let currentItemFirstLine: string = ''; // Primeira linha do item (fica dentro do <li>)
+    let currentItemAdditionalContent: string[] = []; // Conteúdo adicional (fica fora do <li>, sem indentação)
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const trimmedLine = line.trim();
+      
+      // Ignora headers HTML e outras tags HTML já processadas
+      if (trimmedLine.startsWith('<h') || 
+          trimmedLine.startsWith('<table') ||
+          trimmedLine.startsWith('</table') ||
+          trimmedLine.startsWith('<ul') ||
+          trimmedLine.startsWith('</ul') ||
+          trimmedLine.startsWith('<ol') ||
+          trimmedLine.startsWith('</ol')) {
+        // Se estávamos em uma lista, fecha ela antes de processar outras tags
+        if (inOrderedList) {
+          // Adiciona o último item se houver conteúdo pendente
+          if (currentItemFirstLine) {
+            let itemHtml = `<li>${currentItemFirstLine}`;
+            // Adiciona conteúdo adicional dentro do <li> mas em um div sem indentação
+            // Usa margin-left negativo para compensar o padding padrão do <li>
+            if (currentItemAdditionalContent.length > 0) {
+              const additionalContent = currentItemAdditionalContent.filter(l => l !== '').join('\n');
+              if (additionalContent) {
+                itemHtml += `<div style="margin-left: -2em; padding-left: 0; text-indent: 0;">${additionalContent}</div>`;
+              }
+            }
+            itemHtml += `</li>`;
+            currentList.push(itemHtml);
+            currentItemFirstLine = '';
+            currentItemAdditionalContent = [];
+          }
+          if (currentList.length > 0) {
+            result.push(`<ol>${currentList.join('\n')}</ol>`);
+          }
+          currentList = [];
+          inOrderedList = false;
+        }
+        result.push(line);
+        continue;
+      }
+
+      // Verifica se a linha é um item de lista ordenada (número seguido de ponto e espaço)
+      // Aceita espaços opcionais no início da linha
+      const orderedListMatch = line.match(/^\s*(\d+)\. (.+)$/);
+      
+      if (orderedListMatch) {
+        // É um item de lista ordenada
+        if (inOrderedList) {
+          // Se já estávamos em uma lista, fecha o item anterior antes de iniciar o novo
+          if (currentItemFirstLine) {
+            let itemHtml = `<li>${currentItemFirstLine}`;
+            // Adiciona conteúdo adicional dentro do <li> mas em um div sem indentação
+            // Usa margin-left negativo para compensar o padding padrão do <li>
+            if (currentItemAdditionalContent.length > 0) {
+              const additionalContent = currentItemAdditionalContent.filter(l => l !== '').join('\n');
+              if (additionalContent) {
+                itemHtml += `<div style="margin-left: -2em; padding-left: 0; text-indent: 0;">${additionalContent}</div>`;
+              }
+            }
+            itemHtml += `</li>`;
+            currentList.push(itemHtml);
+            currentItemFirstLine = '';
+            currentItemAdditionalContent = [];
+          }
+        } else {
+          // Inicia uma nova lista ordenada
+          inOrderedList = true;
+          currentList = [];
+        }
+        // Inicia o conteúdo do novo item (apenas a primeira linha dentro do <li>)
+        currentItemFirstLine = orderedListMatch[2];
+        currentItemAdditionalContent = [];
+      } else {
+        // Não é um item de lista ordenada
+        if (inOrderedList) {
+          // Estamos dentro de uma lista, adiciona a linha ao conteúdo adicional (fora do <li>)
+          if (trimmedLine === '') {
+            // Linha vazia - adiciona como quebra de linha
+            currentItemAdditionalContent.push('');
+          } else {
+            // Linha com conteúdo - adiciona ao conteúdo adicional (será renderizado sem indentação)
+            currentItemAdditionalContent.push(line);
+          }
+        } else {
+          // Não estamos em uma lista, adiciona a linha normalmente
+          result.push(line);
+        }
+      }
+    }
+
+    // Se ainda há uma lista aberta ao final, fechá-la
+    if (inOrderedList) {
+      // Adiciona o último item se houver conteúdo pendente
+      if (currentItemFirstLine) {
+        let itemHtml = `<li>${currentItemFirstLine}`;
+        // Adiciona conteúdo adicional dentro do <li> mas em um div sem indentação
+        if (currentItemAdditionalContent.length > 0) {
+          const additionalContent = currentItemAdditionalContent.filter(l => l !== '').join('\n');
+          if (additionalContent) {
+            itemHtml += `<div style="margin-left: 0; padding-left: 0;">${additionalContent}</div>`;
+          }
+        }
+        itemHtml += `</li>`;
+        currentList.push(itemHtml);
+      }
+      if (currentList.length > 0) {
+        result.push(`<ol>${currentList.join('\n')}</ol>`);
+      }
+    }
+
+    return result.join('\n');
+  }
+
+  /**
    * Converte Markdown para HTML básico
    */
   markdownToHtml(content: string, basePath?: string): string {
@@ -151,6 +348,9 @@ export class LivroIndividualService {
       html += line + '\n';
     });
 
+    // Processar listas ordenadas primeiro (antes de outras transformações para manter a estrutura)
+    html = this.processOrderedLists(html);
+
     // Bold
     html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
     html = html.replace(/__(.+?)__/g, '<strong>$1</strong>');
@@ -166,12 +366,8 @@ export class LivroIndividualService {
     // Links (não captura imagens porque já foram processadas)
     html = html.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank">$1</a>');
 
-    // Listas não ordenadas
-    html = html.replace(/^\- (.+)$/gm, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
-
-    // Listas ordenadas
-    html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+    // Processar listas não ordenadas (após listas ordenadas para evitar conflitos)
+    html = this.processUnorderedLists(html);
 
     // Parágrafos (não envolve elementos de bloco HTML como tabelas, listas, códigos, etc.)
     html = html.replace(

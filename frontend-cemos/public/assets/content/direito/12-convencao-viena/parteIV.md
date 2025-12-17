@@ -1,5 +1,5 @@
 
-### PARTE IV Emenda e Modificação de Tratados
+### Parte IV Emenda e Modificação de Tratados
 
 ## Página 9
 

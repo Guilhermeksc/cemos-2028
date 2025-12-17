@@ -1,11 +1,10 @@
+### Parte VIII - Disposições Finais
 
-### PARTE VIII Disposições Finais
+## Página 18
 
 **Artigo 81 Assinatura**
 
 A presente Convenção ficará aberta à assinatura de todos. os Estados Membros das Nações Unidas ou de qualquer das agências especializadas ou da Agência Internacional de Energia Atômica, assim como de todas as partes no Estatuto da Corte Internacional de Justiça e de qualquer outro Estado convidado pela Assembléia Geral das Nações Unidas a tornar-se parte na Convenção, da seguinte maneira: até 30 de novembro de 1969, no Ministério Federal dos Negócios Estrangeiros da República da Áustria e, posteriormente, até 30 de abril de 1970, na sede das Nações Unidas em Nova York.
-
-## Página 18
 
 **Artigo 82 Ratificação**
 

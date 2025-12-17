@@ -1,4 +1,4 @@
-### PARTE II - Conclusão e Entrada em Vigor de Tratados
+### Parte II - Conclusão e Entrada em Vigor de Tratados
 
 ## Página 3
 
