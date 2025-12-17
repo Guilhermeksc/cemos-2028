@@ -74,6 +74,8 @@ O gráfico ilustra a **teoria do ciclo de vida**, mostrando como a renda e o con
 * O **consumo permanece estável**, ainda que com eventuais demandas adicionais (como saúde).
 * O consumo volta a **superar a renda**, exigindo financiamento via previdência, poupança acumulada ou transferências intergeracionais.
 
+![figura1](figura1.png)
+
 ### 1.2 DEMOGRAFIA: ELEMENTOS BÁSICOS
 
 Em geral, os dados populacionais são obtidos por meio dos chamados Censos Demográficos, realizados no Brasil em 1872, 1890, 1900, 1920 e, desde 1940, realizados de 10 em 10 anos, com exceção daquele realizado em 1991 e não em 1990, e o mais recente de 2022, em vez de 2020.
@@ -100,6 +102,9 @@ Tabela 1.1 Taxa média anual de crescimento da população residente no Brasil e
 Fonte: IBGE.
 
 O crescimento populacional de uma região ou de um país deve-se a uma combinação de três fatores básicos: a mortalidade, a natalidade e o saldo migratório (diferença entre as pessoas que saem e entram definitivamente na região).
+
+
+![tabela1](tabela1.png)
 
 Podemos definir:
 
