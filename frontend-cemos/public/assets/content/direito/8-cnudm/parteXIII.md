@@ -1,6 +1,6 @@
 ## Página 68
 
-# PARTE XIII - INVESTIGAÇÃO CIENTÍFICA MARINHA
+# Parte XIII - Investigação Científica Marinha
 
 ## SEÇÃO 1. DISPOSIÇÕES GERAIS
 

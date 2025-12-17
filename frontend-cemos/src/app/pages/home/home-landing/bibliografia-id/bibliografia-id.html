@@ -5,10 +5,6 @@
     </button>
   </div>
 
-  <header class="bibliografia-header">
-    <h1>Bibliografia ID</h1>
-  </header>
-
   <div *ngIf="isLoading" class="status-message">Carregando bibliografia...</div>
   <div *ngIf="!isLoading && errorMessage" class="status-message error">{{ errorMessage }}</div>
 
@@ -28,7 +24,10 @@
                 {{ treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right' }}
               </mat-icon>
             </button>
-            <span class="materia-name">{{ node.name }}</span>
+            <span class="materia-name">
+              <span class="materia-text">{{ node.name }}</span>
+              <span class="materia-count">[{{ getBibliografiaCount(node) }} {{ getBibliografiaCount(node) === 1 ? 'bibliografia' : 'bibliografias' }}]</span>
+            </span>
           </div>
           <div [class.hidden]="!treeControl.isExpanded(node)">
             <ng-container matTreeNodeOutlet></ng-container>

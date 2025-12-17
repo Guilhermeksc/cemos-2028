@@ -1,4 +1,4 @@
-# Parte III - Estreitos Utilizados para a Navegeção Internacional
+# Parte III - Estreitos Utilizados para a Navegação Internacional
 
 ## Página 10
 

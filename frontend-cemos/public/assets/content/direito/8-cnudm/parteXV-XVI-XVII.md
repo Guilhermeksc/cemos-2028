@@ -1,6 +1,6 @@
-## Página 76
+# Parte XV - Solução de Controvérsias
 
-# PARTE XV - SOLUÇÃO DE CONTROVÉRSIAS
+## Página 76
 
 ## SEÇÃO 1. DISPOSIÇÕES GERAIS
 

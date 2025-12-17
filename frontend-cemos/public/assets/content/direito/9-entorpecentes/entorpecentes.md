@@ -1,4 +1,4 @@
-# CONVENÇÃO CONTRA O TRÁFICO ILÍCITO DE ENTORPECENTES E DE SUBSTÂNCIAS PSICOTRÓPICAS 
+# Convenção contra o tráfico ilícito de entorpecentes e de substâncias psicotrópicas
 
 ## Página 1
 
