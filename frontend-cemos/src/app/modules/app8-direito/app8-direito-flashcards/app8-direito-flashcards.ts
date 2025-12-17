@@ -10,7 +10,7 @@ import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards
 })
 export class App8DireitoFlashcards {
 
-  bibliografiaIds: number[] = [18, 25];
+  bibliografiaIds: number[] = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
 
   // Rota para voltar à bibliografia
   bibliografiaPath = '/home/app8-direito/bibliografia';
