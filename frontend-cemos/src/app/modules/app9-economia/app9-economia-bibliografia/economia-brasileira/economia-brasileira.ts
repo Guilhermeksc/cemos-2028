@@ -18,9 +18,13 @@ export class EconomiaBrasileira implements OnInit {
   contentPath: string = 'assets/content/economia/1-economia-br';
   fileNames: string[] = [
     'economia_cap1_ocr.md',
+    'cap1q.md',
     'economia_cap2_ocr.md',
+    'cap2q.md',
     'economia_cap3_ocr.md',
+    'cap3q.md',
     'economia_cap5_ocr.md',
+    'cap5q.md',
     'economia_cap6_ocr.md',
     'economia_cap7_ocr.md',
     'economia_cap8_ocr.md',
