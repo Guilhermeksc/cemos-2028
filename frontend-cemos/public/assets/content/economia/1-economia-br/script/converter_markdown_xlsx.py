@@ -66,13 +66,13 @@ def extrair_prefixo(nome: str) -> str:
 def main():
     nomes_arquivos = [
         "fcanexo", "fc1", "fc2", "fc3", "fc4", "fc5", "fc6", "fc7", "fc8", "fc9",
-        "fc10", "fc11", "fc12", "fc14", "fc15", "fc16", "fc17",
+        "fc10", "fc11", "fc12", "fc14", "fc15", "fc16", "fc17", "fc18", "fc19",
         "vfanexo", "vf1", "vf2", "vf3", "vf4", "vf5", "vf6", "vf7", "vf8", "vf9",
-        "vf10", "vf11", "vf12", "vf14", "vf15", "vf16", "vf17",
+        "vf10", "vf11", "vf12", "vf14", "vf15", "vf16", "vf17", "vf18", "vf19",
         "manexo", "m1", "m2", "m3", "m4", "m5", "m6", "m7", "m8", "m9",
-        "m10", "m11", "m12", "m14", "m15", "m16", "m17",
+        "m10", "m11", "m12", "m14", "m15", "m16", "m17", "m18", "m19",
         "canexo", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9",
-        "c10", "c11", "c12", "c14", "c15", "c16", "c17",
+        "c10", "c11", "c12", "c14", "c15", "c16", "c17", "c18", "c19",
     ]
 
     base = Path(__file__).parent.resolve()

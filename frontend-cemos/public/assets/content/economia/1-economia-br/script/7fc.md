@@ -16,7 +16,7 @@ Instruções específicas:
 
     “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
     
-    assunto deve ser 'Cap. 7 - Investimento'.
+assunto deve ser exatamente 'Cap. 7 – Investimento'.
 
 Exemplo de saída esperada:
 
