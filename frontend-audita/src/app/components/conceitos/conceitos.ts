@@ -8,13 +8,14 @@ import { Bibliografia } from '../../interfaces/perguntas.interface';
 import { InformacoesService } from '../../services/informacoes.service';
 import { PerguntasService } from '../../services/perguntas.service';
 import { ConceitosTableComponent } from '../conceitos-table/conceitos-table';
+import { LoadingSpinner } from '../loading-spinner/loading-spinner';
 import { forkJoin } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-conceitos',
   standalone: true,
-  imports: [CommonModule, FormsModule, ConceitosTableComponent, MatButtonModule, MatIconModule],
+  imports: [CommonModule, FormsModule, ConceitosTableComponent, MatButtonModule, MatIconModule, LoadingSpinner],
   templateUrl: './conceitos.html',
   styleUrls: ['./conceitos.scss']
 })

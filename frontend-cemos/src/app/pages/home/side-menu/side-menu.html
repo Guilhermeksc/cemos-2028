@@ -15,22 +15,20 @@
   </div>
 
 
-<!-- Imagem do Brasil - Apenas para desktop (sidebar) -->
-<div class="brazil-image-container" *ngIf="!isTopMenuMode">
-  <img 
-    src="/assets/img/svg/brazil.png" 
-    alt="Bandeira do Brasil" 
-    class="brazil-image"
-    aria-hidden="true">
-</div>
-
-  <!-- Header - Apenas para desktop (sidebar) -->
-  <div class="header-link" *ngIf="!isTopMenuMode" (click)="navigateHome()" tabindex="0" role="link" aria-label="Ir para Home">
-    <div class="header-container">
-      <span class="header-title">CEMOS</span>
-      <span class="header-subtitle">2028</span>
-    </div>
+<!-- Imagem do Brasil e Header - Apenas para desktop (sidebar) -->
+<div class="header-link" *ngIf="!isTopMenuMode" (click)="navigateHome()" tabindex="0" role="link" aria-label="Ir para Home">
+  <div class="brazil-image-container">
+    <img 
+      src="/assets/img/svg/brazil.png" 
+      alt="Bandeira do Brasil" 
+      class="brazil-image"
+      aria-hidden="true">
   </div>
+  <div class="header-container">
+    <span class="header-title">CEMOS</span>
+    <span class="header-subtitle">2028</span>
+  </div>
+</div>
 
 </div>
 

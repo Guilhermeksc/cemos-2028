@@ -37,10 +37,7 @@
   </nav>
 
   <!-- Loading state -->
-  <div class="loading-state" *ngIf="loading">
-    <div class="spinner"></div>
-    <p class="loading-text">Carregando conceitos...</p>
-  </div>
+  <app-loading-spinner *ngIf="loading" message="Carregando conceitos..."></app-loading-spinner>
 
   <!-- Error state -->
   <div class="error-state" *ngIf="error && !loading">

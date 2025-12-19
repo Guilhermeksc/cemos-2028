@@ -57,9 +57,9 @@
           <option value="">Todos os Assuntos</option>
           <option 
             *ngFor="let assunto of assuntosDisponiveis" 
-            [value]="assunto"
+            [value]="assunto.nome"
           >
-            {{ assunto }}
+            {{ assunto.nome }} ({{ assunto.quantidade }}) - [{{ assunto.bibliografiaTitulo }}]
           </option>
         </select>
       </div>
@@ -89,7 +89,7 @@
         [class.active]="activeTab === 'completo'"
         (click)="setActiveTab('completo')"
       >
-        📝 Simulado (10VF, 4M, 1C)
+        📝 Simulado (10VF, 6M, 4C)
       </button>
       <button 
         class="tab-button"
@@ -117,10 +117,7 @@
     <!-- Conteúdo do Tab -->
     <div class="tabs-content">
       <!-- Loading das Questões -->
-      <div *ngIf="isLoadingQuestions" class="loading-questions">
-        <div class="loading-spinner"></div>
-        <p>Carregando prova...</p>
-      </div>
+      <app-loading-spinner *ngIf="isLoadingQuestions" message="Carregando prova..."></app-loading-spinner>
 
       <!-- Prova Carregada -->
       <div *ngIf="questionsLoaded && !isLoadingQuestions" class="prova-loaded">

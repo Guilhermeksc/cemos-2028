@@ -91,10 +91,7 @@
   </div>
 
   <!-- Loading -->
-  <div class="loading-container" *ngIf="isLoading">
-    <div class="spinner"></div>
-    <p>Carregando flash cards...</p>
-  </div>
+  <app-loading-spinner *ngIf="isLoading" message="Carregando flash cards..."></app-loading-spinner>
 
   <!-- Cards Grid -->
   <div *ngIf="!isLoading && displayedFlashCards.length > 0">

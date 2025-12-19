@@ -498,10 +498,10 @@ export class LivroIndividual implements OnInit, OnDestroy {
   }
 
   /**
-   * Fecha ambos os menus no mobile
+   * Fecha ambos os menus no mobile/tablet
    */
   closeMenusOnMobile() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1024) {
       this.leftMenuOpen = false;
       this.rightMenuOpen = false;
     }
@@ -739,10 +739,10 @@ export class LivroIndividual implements OnInit, OnDestroy {
   }
 
   /**
-   * Verifica se está em modo mobile
+   * Verifica se está em modo mobile/tablet
    */
   isMobile(): boolean {
-    return window.innerWidth <= 768;
+    return window.innerWidth <= 1024;
   }
 
   /**

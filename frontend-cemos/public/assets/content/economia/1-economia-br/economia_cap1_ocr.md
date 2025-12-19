@@ -2,19 +2,19 @@
 
 ## Página 1
 
-Muitas vezes, quando se estuda a economia de um país, deixam-se de lado as questões relativas à evolução de sua população. Essas questões, no entanto, são bastante importantes. Por um lado, a população de um país representa seu potencial de consumidores; por outro, parte dessa população, a chamada **população economicamente ativa** ou **população na força de trabalho**[1], representa os potenciais trabalhadores/produtores do país. Antes de discutirmos os indicadores demográficos, vamos analisar a relação entre crescimento populacional e desenvolvimento econômico.
+Muitas vezes, quando se estuda a economia de um país, deixam-se de lado as questões relativas à evolução de sua população. Essas questões, no entanto, são bastante importantes. Por um lado, a população de um país representa seu potencial de consumidores; por outro, parte dessa população, a chamada **população economicamente ativa** ou **população na força de trabalho**, representa os potenciais trabalhadores/produtores do país📌. Antes de discutirmos os indicadores demográficos, vamos analisar a relação entre crescimento populacional e desenvolvimento econômico.
 
 ### 1.1 CRESCIMENTO POPULACIONAL E DESENVOLVIMENTO ECONÔMICO
 
-As relações entre crescimento populacional e desenvolvimento econômico são bastante controversas dentro da teoria econômica. Por um lado, há a corrente dita neomalthusiana, que tem sua inspiração nas ideias do clérigo inglês Thomas Malthus (1766-1834). Segundo esse autor, a humanidade tem tendência à pobreza e à fome, pois a população tem propensão a crescer muito mais rapidamente que a produção de alimentos.
+As relações entre crescimento populacional e desenvolvimento econômico são bastante controversas dentro da teoria econômica. Por um lado, há a corrente dita neomalthusiana, que tem sua inspiração nas ideias do clérigo inglês Thomas Malthus (1766-1834). Segundo esse autor, a humanidade tem tendência à pobreza e à fome, pois a população tem propensão a crescer muito mais rapidamente que a produção de alimentos📌.
 
 ## Página 2
 
 Assim, segundo os neomalthusianos, quando a população cresce muito, especialmente a população trabalhadora, há tendência de empobrecimento e de piora nas condições de vida dessa população, dado que a produção e a oferta de empregos não são capazes de crescer a taxas muito grandes. Além disso, quando o crescimento se faz em função da expansão da força de trabalho e não de investimentos em capital, há importante limitação no progresso tecnológico dessa sociedade. Por fim, o elevado crescimento populacional também provoca rápido esgotamento dos recursos naturais, o que é extremamente problemático quando esses recursos não são renováveis. Assim, fazse necessário, segundo essa corrente, a disseminação de políticas de limitação da natalidade para evitar os problemas mencionados.
 
-Por outro lado, os críticos dessa corrente ressaltam que, quando os neomalthusianos preveem a fome e o empobrecimento, eles não levam em consideração o progresso tecnológico, que faz com que o crescimento da renda e especialmente da oferta de alimentos possa ser feito a taxas bastante elevadas. Além disso, também procuram ressaltar os aspectos positivos, no que tange ao desenvolvimento econômico, quando se tem uma população grande e crescente. As empresas, ao produzirem para um mercado maior, podem utilizar plantas maiores e mais sofisticadas com custos médios de produção relativamente menores, ou seja, têm ganhos de escala ou de tamanho, o que seria extremamente benéfico para a sociedade.
+Por outro lado, os críticos dessa corrente ressaltam que, quando os neomalthusianos preveem a fome e o empobrecimento, **eles não levam em consideração o progresso tecnológico**📌, que faz com que o crescimento da renda e especialmente da oferta de alimentos possa ser feito a taxas bastante elevadas. Além disso, também procuram ressaltar os aspectos positivos, no que tange ao desenvolvimento econômico, quando se tem uma população grande e crescente. As empresas, ao produzirem para um mercado maior, podem utilizar plantas maiores e mais sofisticadas com custos médios de produção relativamente menores, ou seja, têm ganhos de escala ou de tamanho, o que seria extremamente benéfico para a sociedade.
 
-Outro aspecto que liga questões demográficas à economia de um país é sua composição etária. Alterações na composição etária dessa população têm importantes implicações sobre o país. Países com população jovem direcionam parte de suas preocupações para aspectos pediátricos e incorrem em gastos relativamente mais elevados, por exemplo, com a construção de creches e escolas, enquanto países com população mais avançada dedicam parte significativa de suas atenções e de seus recursos à previdência social.
+Outro aspecto que liga questões demográficas à economia de um país é sua composição etária. Alterações na composição etária dessa população têm importantes implicações sobre o país. 📌Países com população jovem direcionam parte de suas preocupações para aspectos pediátricos e incorrem em gastos relativamente mais elevados, por exemplo, com a construção de creches e escolas, enquanto países com população mais avançada dedicam parte significativa de suas atenções e de seus recursos à previdência social.
 
 Alterações na distribuição etária da população, componentes maiores ou menores da população em idade mais jovem ou mais avançada, têm efeitos macroeconômicos, pois as pessoas alteram seu comportamento econômico dependendo de sua idade. De acordo com a **teoria do ciclo de vida**, as pessoas consomem ao longo de toda a sua vida, porém não geram renda nos primeiros anos de vida e diminuem muito, em média, a geração de renda em idades mais avançadas. Isso pode ser observado no gráfico da Figura 1.1.
 
@@ -24,33 +24,7 @@ Na fase anterior ao ponto A, mesmo que se gere renda, esta é inferior às neces
 
 Geralmente, esses pontos no Brasil tendem a ser relativamente próximos, de modo que a área formada entre as duas curvas e entre os pontos A e B é, quando comparada à de outros países, relativamente pequena no Brasil, trazendo, assim, dificuldades em termos de geração de renda e sustentação de jovens e, principalmente, idosos, dado que também o segmento e a área posterior ao ponto B têm crescido no país.
 
-Figura 1.1 Renda e consumo ao longo do ciclo de vida.
-
-**Figura 1.1 – Renda e consumo ao longo do ciclo de vida**
-
-Eixo vertical: Renda e consumo (0 a 30)  
-Eixo horizontal: Idade (0 a 85 anos)
-
-Curvas:
-- **Linha preta**: Consumo  
-- **Linha cinza**: Geração de renda
-
-Descrição gráfica aproximada em texto:
-
-Idade | Consumo (linha preta) | Geração de renda (linha cinza)
------ | ---------------------- | -------------------------------
-0–10  | 5                     | ~0  
-10–20 | 5→8                   | 0→10  
-20–30 | 8→10                  | 10→22  
-30–40 | 10→10,5               | 22→26 (pico)  
-40–50 | ~10,5                 | 26→20  
-50–60 | 10,5→10               | 20→10  
-60–70 | 10→9                  | 10→5  
-70–85 | ~9→10                 | 5→0  
-
-Pontos relevantes:  
-- **A**: início da fase em que a renda supera o consumo (~20 anos).  
-- **B**: fim dessa fase, quando o consumo volta a ser maior que a renda (~60 anos).  
+![figura](figura1-1.png)
 
 ### 📘 Explicação do gráfico
 
@@ -58,65 +32,54 @@ O gráfico ilustra a **teoria do ciclo de vida**, mostrando como a renda e o con
 
 ### 🔹 Infância e adolescência (0 a ~20 anos)
 
-* O **consumo é constante e moderado**, pois mantém necessidades básicas.
-* A **geração de renda é nula ou muito baixa**, já que a pessoa ainda não está no mercado de trabalho.
-* Nesse período, há **dependência total** de outras gerações.
+O **consumo é constante e moderado**, pois mantém necessidades básicas.
+
+A **geração de renda é nula ou muito baixa**, já que a pessoa ainda não está no mercado de trabalho.
+
+Nesse período, há **dependência total** de outras gerações.
 
 ### 🔹 Vida adulta produtiva (entre os pontos A e B – aproximadamente 20 a 60 anos)
 
-* A **renda cresce rapidamente**, atinge seu pico por volta dos 40 anos e depois começa a cair.
-* O **consumo cresce pouco**, mantendo-se relativamente estável durante toda a fase adulta.
-* É a fase na qual o indivíduo **gera mais renda do que consome**, formando a base de poupança e sustentando jovens e idosos.
+A **renda cresce rapidamente**, atinge seu pico por volta dos 40 anos e depois começa a cair.
+
+O **consumo cresce pouco**, mantendo-se relativamente estável durante toda a fase adulta.
+
+É a fase na qual o indivíduo **gera mais renda do que consome**, formando a base de poupança e sustentando jovens e idosos.
 
 ### 🔹 Idade avançada (após o ponto B – ~60 anos)
 
-* A **renda diminui acentuadamente**, em função da aposentadoria e da redução da capacidade laboral.
-* O **consumo permanece estável**, ainda que com eventuais demandas adicionais (como saúde).
-* O consumo volta a **superar a renda**, exigindo financiamento via previdência, poupança acumulada ou transferências intergeracionais.
+A **renda diminui acentuadamente**, em função da aposentadoria e da redução da capacidade laboral.
 
-![figura1](figura1.png)
+O **consumo permanece estável**, ainda que com eventuais demandas adicionais (como saúde).
+
+O consumo volta a **superar a renda**, exigindo financiamento via previdência, poupança acumulada ou transferências intergeracionais.
 
 ### 1.2 DEMOGRAFIA: ELEMENTOS BÁSICOS
 
 Em geral, os dados populacionais são obtidos por meio dos chamados Censos Demográficos, realizados no Brasil em 1872, 1890, 1900, 1920 e, desde 1940, realizados de 10 em 10 anos, com exceção daquele realizado em 1991 e não em 1990, e o mais recente de 2022, em vez de 2020.
 
-Como foi visto na introdução desta parte (Figura 1.1), o Brasil é um dos países mais populosos do mundo. Durante muitos anos, especialmente nas décadas de 1960 e 1970, viveu-se a expectativa de uma explosão demográfica, afirmando-se que a população brasileira poderia chegar a 220 milhões de habitantes no ano 2000 se as taxas de crescimento da população daquela época (décadas de 1960 e 1970), de quase 3% ao ano, fossem mantidas. Naquele momento, era comum associar-se às previsões de explosão demográfica seus aspectos negativos, como a provável falta de alimentos e a tendência ao empobrecimento.
+Como foi visto na introdução desta parte (Figura 1.1), o Brasil é um dos países mais populosos do mundo. Durante muitos anos, especialmente nas décadas de 1960 e 1970, viveu-se a expectativa de uma **explosão demográfica**, afirmando-se que a população brasileira poderia chegar a 220 milhões de habitantes no ano 2000 se as taxas de crescimento da população daquela época (décadas de 1960 e 1970), de quase 3% ao ano, fossem mantidas. Naquele momento, era comum associar-se às previsões de explosão demográfica seus aspectos negativos, como a provável falta de alimentos e a tendência ao empobrecimento📌.
 
 ## Página 4
 
 Apesar de muitas pessoas acreditarem que o Brasil ainda atravessa uma fase de grande expansão populacional, na realidade verifica-se atualmente forte tendência de queda no ritmo de crescimento da população do país, como vemos na Tabela 1.1. A população em 2022, que atingiu 208 milhões de habitantes, está bem longe das estimativas pessimistas dos anos 1970. O crescimento populacional da primeira década do século XXI foi de apenas 0,83% ao ano, afastando, assim, os temores relacionados com a explosão demográfica. Surgiram, porém, novas questões, como veremos adiante.
 
-Tabela 1.1 Taxa média anual de crescimento da população residente no Brasil e regiões - 1900-2022 (%)
-
-| Região        | 1900/1920 | 1920/1940 | 1940/1960 | 1960/1970 | 1970/1980 | 1980/1991 | 1991/2000 | 2000/2010 | 2010/2022 |
-|--------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| Brasil       | 2,86      | 1,50      | 2,39      | 2,89      | 2,48      | 1,93      | 1,64      | 1,17      | 0,71      |
-| Norte*       | 3,70      | 0,08      | 2,29      | 3,47      | 5,02      | 3,85*     | 2,86      | 2,09      | 0,98      |
-| Nordeste     | 2,58      | 1,26      | 2,27      | 2,40      | 2,16      | 1,83      | 1,31      | 1,07      | 0,35      |
-| Sudeste      | 2,82      | 1,49      | 2,14      | 2,67      | 2,64      | 1,77      | 1,62      | 1,05      | 0,70      |
-| Sul          | 3,45      | 2,45      | 3,25      | 3,45      | 1,44      | 1,38      | 1,43      | 0,87      | 0,78      |
-| Centro-Oeste | 3,61      | 2,56      | 3,41      | 5,60      | 4,05      | 3,01      | 2,39      | 1,91      | 1,34      |
-
-* Passa a incluir o estado do Tocantins, antes na Região Centro-Oeste.
- 
-Fonte: IBGE.
-
 O crescimento populacional de uma região ou de um país deve-se a uma combinação de três fatores básicos: a mortalidade, a natalidade e o saldo migratório (diferença entre as pessoas que saem e entram definitivamente na região).
-
 
 ![tabela1](tabela1.png)
 
-Podemos definir:
-
-Taxa de crescimento populacional = Taxa de natalidade — Taxa de mortalidade + Taxa de migração
 
 ## Página 5
+
+Podemos definir:
+
+**Taxa de crescimento populacional = Taxa de natalidade — Taxa de mortalidade + Taxa de migração**
 
 Em que: taxa de natalidade = nascimentos/população; taxa de mortalidade = óbitos/população;
 
 taxa de migração = saldo migratório/população.
 
-Vários são os elementos que podem afetar esses três fatores.²
+Vários são os elementos que podem afetar esses três fatores.
 
 A taxa de mortalidade, que, antes da pandemia, vinha diminuindo em todo o mundo, e deve retomar sua tendência, é afetada:
 
@@ -130,18 +93,17 @@ iv. por aspectos culturais que influem na alimentação, na educação etc.
 
 Com relação à taxa de natalidade, que também vem diminuindo, as explicações são mais controversas. Normalmente, utiliza-se mais o conceito de fecundidade do que propriamente o de natalidade. Enquanto a taxa de natalidade é a relação entre os nascimentos e a população total, a taxa de fecundidade é a relação entre os nascimentos e o número de mulheres em idade fértil (dos 15 aos 44 anos).
 
-A fertilidade, que não é vista apenas como uma questão biológica, dadas as possibilidades de se evitar a concepção, é afetada:
-
-i. pelas condições socioculturais de cada sociedade, como a religião e os valores morais/ filosóficos, as relações familiares, as regras legais e morais associadas ao casamento, à herança etc.;
-
 ## Página 6
 
+A fertilidade, que não é vista apenas como uma questão biológica, dadas as possibilidades de se evitar a concepção, é afetada:
 
-ii. por aspectos econômicos. Se há algumas décadas ter filhos era uma coisa importante, pois isso garantiria o futuro dos pais (assistência na velhice, crescimento do rendimento total da família no médio prazo), atualmente os filhos também representam custos para os pais, não apenas custos materiais com alimentação, saúde etc., mas também custos em termos de mobilidade social e de oportunidade no mercado de trabalho, especialmente para as mães. Esses custos são levados em consideração quando da decisão de se ter filhos;
+i. pelas condições socioculturais de cada sociedade, como a religião e os valores morais/filosóficos, as relações familiares, as regras legais e morais associadas ao casamento, à herança etc.;
 
-iii. por aspectos informacionais relativos ao conhecimento (e ao acesso) das mulheres a métodos contraceptivos.
+ii. por aspectos econômicos. Se há algumas décadas ter filhos era uma coisa importante, pois isso garantiria o futuro dos pais (assistência na velhice, crescimento do rendimento total da família no médio prazo), **atualmente os filhos também representam custos para os pais**, não apenas custos materiais com alimentação, saúde etc., mas também custos em termos de **mobilidade social** e de **oportunidade no mercado de trabalho, especialmente para as mães**📌. Esses custos são levados em consideração quando da decisão de se ter filhos;
 
-Por fim, as migrações causadas por deslocamentos populacionais de uma região à outra. Essas envolvem, por um lado, as chamadas “forças de expulsão”, que procuram dar conta dos motivos que levam as pessoas a abandonarem sua região de origem, e, por outro, as “forças de atração”, que explicam a escolha da região de destino, ou seja, do novo local de residência dos migrantes.
+iii. por aspectos informacionais relativos ao conhecimento (e ao acesso) das mulheres a **métodos contraceptivos**📌.
+
+Por fim, as migrações causadas por deslocamentos populacionais de uma região à outra. Essas envolvem, por um lado, as chamadas **“forças de expulsão”**, que procuram dar conta dos motivos que levam as pessoas a abandonarem sua região de origem, e, por outro, as **“forças de atração”**, que explicam a escolha da região de destino, ou seja, do novo local de residência dos migrantes.
 
 Diversas podem ser as razões para os movimentos migratórios: militares, culturais e socioeconômicas. Estas últimas, em geral, estão associadas a questões relativas à oportunidade de melhores condições de vida, quando as possibilidades de emprego e de rendimentos no local de origem mostrem-se inferiores às condições do local de destino, levando em consideração, nessa avaliação, os custos da própria migração (as despesas da viagem, o abandono dos parentes etc.).
 
@@ -157,47 +119,53 @@ No Brasil, a evolução da população ao longo do século XX e início do sécu
 
 No entanto, a partir da década iniciada em 1930, há um “fechamento” da população brasileira, isto é, as migrações externas com destino ao Brasil diminuem e o crescimento populacional passa a depender apenas do crescimento vegetativo, ou seja, da diferença entre nascimentos e falecimentos. Note-se que as migrações internas continuam existindo dentro do país; estas, porém, não afetam a população total do Brasil, mas apenas sua distribuição regional.
 
+![figura](figura1-2.png)
+
 Figura 1.2 Transição demográfica.
 
 O gráfico representa as três fases clássicas da **transição demográfica**, mostrando a evolução histórica das **taxas de natalidade** (linha contínua) e **mortalidade** (linha tracejada) ao longo do tempo.
 
 ### **Fase A — Regime demográfico tradicional**
 
-* Tanto a natalidade quanto a mortalidade são **altas**.
-* O crescimento populacional é **baixo**, pois muitos nascimentos são compensados por muitos óbitos.
-* Essa etapa é típica de sociedades pré-industriais, com baixa tecnologia médica e forte vulnerabilidade a doenças e epidemias.
+Tanto a natalidade quanto a mortalidade são **altas**.
+
+O crescimento populacional é **baixo**, pois muitos nascimentos são compensados por muitos óbitos.
+
+Essa etapa é típica de sociedades pré-industriais, com baixa tecnologia médica e forte vulnerabilidade a doenças e epidemias.
 
 ### **Fase B — Queda da mortalidade**
 
-* A mortalidade começa a **cair rapidamente** devido a:
+A mortalidade começa a **cair rapidamente** devido a:
 
-  * melhorias sanitárias;
-  * avanço da medicina;
-  * vacinação;
-  * maior acesso a alimentos e infraestrutura.
-* A natalidade **permanece alta** por algum tempo.
-* O resultado é um **aumento acelerado da população**, pois nascem muitas pessoas e morrem cada vez menos.
+melhorias sanitárias;
+avanço da medicina;
+vacinação;
+maior acesso a alimentos e infraestrutura.
+
+A natalidade **permanece alta** por algum tempo.
+
+O resultado é um **aumento acelerado da população**, pois nascem muitas pessoas e morrem cada vez menos.
 
 ### **Fase C — Queda da natalidade**
 
-* A natalidade também começa a **declinar**, influenciada por:
+A natalidade também começa a **declinar**, influenciada por:
 
-  * urbanização;
-  * entrada da mulher no mercado de trabalho;
-  * acesso a métodos contraceptivos;
-  * mudanças culturais e educacionais.
-* A mortalidade segue baixa e estável.
-* O crescimento populacional torna-se **baixo** ou até **negativo**, dependendo da intensidade da queda da fecundidade.
+urbanização;
+entrada da mulher no mercado de trabalho;
+acesso a métodos contraceptivos;
+mudanças culturais e educacionais.
 
+A mortalidade segue baixa e estável.
 
-### **Síntese**
+O crescimento populacional torna-se **baixo** ou até **negativo**, dependendo da intensidade da queda da fecundidade.
+
+### Síntese
 
 O gráfico mostra que a transição demográfica ocorre quando uma sociedade passa de um padrão de **altas taxas de natalidade e mortalidade** (A) para um regime de **baixas taxas de ambas** (C). A fase intermediária (B) é marcada por forte crescimento populacional devido à queda da mortalidade antes da redução da natalidade.
 
 Se desejar, posso converter o gráfico para Markdown ou criar um resumo em estilo de estudo para concursos.
 
-
-A partir dos anos 1940, o Brasil vive um período considerado de “transição demográfica”. Conforme apresentado na Figura 1.2, essa transição faz-se entre uma situação inicial “A”, em que há elevadas taxas de natalidade e mortalidade, para outra situação “C”, em que essas taxas são mais baixas. O declínio nas taxas, porém, não se faz em conjunto; inicialmente, há a queda das taxas de mortalidade e só depois é que as taxas de natalidade declinam, como pode ser observado no instante “B”. Entre a situação inicial e a final, há substancial elevação da taxa de crescimento da população, pois, enquanto o número de óbitos declina, os nascimentos continuam elevados. O crescimento populacional reduz-se apenas quando a taxa de natalidade também entra em declínio.
+A partir dos anos 1940, o Brasil vive um período considerado de **“transição demográfica”**. Conforme apresentado na Figura 1.2, essa transição faz-se entre uma situação inicial “A”, em que há elevadas taxas de natalidade e mortalidade, para outra situação “C”, em que essas taxas são mais baixas. O declínio nas taxas, porém, não se faz em conjunto; inicialmente, há a queda das taxas de mortalidade e só depois é que as taxas de natalidade declinam, como pode ser observado no instante “B”. Entre a situação inicial e a final, há substancial elevação da taxa de crescimento da população, pois, enquanto o número de óbitos declina, os nascimentos continuam elevados. O crescimento populacional reduz-se apenas quando a taxa de natalidade também entra em declínio.
 
 ## Página 8
 
@@ -230,13 +198,13 @@ Tabela 1.2 Esperança de vida da população brasileira: Brasil e regiões - 193
 
 Os dados de expectativa de vida compõem as chamadas tábuas de mortalidade, que são instrumentos importantes, especialmente nas questões atuariais. Uma tábua de mortalidade indica, para cada ano que uma pessoa viveu, quantos anos espera-se que ela ainda viva. Assim, na Figura 1.3 vemos que, ao nascer, espera-se que um homem viva em média até os 73,6 anos e uma mulher até os 80,5 anos. Mas, quando essa mulher (ou homem) atingir 40 anos com vida, espera-se que ela ainda viva mais 42,5 anos, ou seja, a expectativa de vida dessa mulher passa a ser de 82,5 anos (e o homem, de 77,4 anos). Se essa mulher atingir os 60 anos, espera-se que ela viva até os 84,7 anos (e o homem até os 81 anos). Esses dados são fundamentais, por exemplo, para se estimarem os gastos futuros com a previdência.
 
-Figura 1.3 Brasil: expectativa de vida condicionada à idade.
+![figura](figura1-3.png)
 
 ## Página 10
 
 Um elemento histórico fundamental no declínio das taxas de mortalidade é a mortalidade infantil ou na infância. A taxa de mortalidade na infância refere-se à quantidade de mortes de crianças até cinco anos a cada grupo de 1.000 nascidas vidas e a taxa de mortalidade infantil é a quantidade de crianças falecidas durante o primeiro ano de vida, dentro de um grupo de 1.000 recém-nascidos. Pelo gráfico da Figura 1.4, percebe-se que houve uma queda significativa tanto da mortalidade na infância quanto infantil nos últimos 80 anos, caindo de quase de 140 óbitos de menores de 1 ano para cada 1.000 nascidos vivos, para menos de 20 na primeira década do século XXI. E, se pensarmos nas mais de 212 crianças de até cinco anos que faleceram para cada 1.000 crianças, quase 200 vidas foram salvas a cada 1.000 neste mesmo período de tempo. Não deve ser esquecido, porém, que, apesar da queda, a mortalidade infantil brasileira ainda é considerada elevada em nível internacional. A taxa de mortalidade infantil no Brasil é, atualmente, de 12 a cada mil, ainda acima dos países desenvolvidos, onde essa taxa é inferior a sete a cada mil.
 
-Figura 1.4 Brasil: taxas de mortalidade infantil e na infância —- 1940-2019.
+![figura](figura1-4.png)
 
 ## Página 11
 
@@ -284,9 +252,13 @@ i. a entrada da mulher no mercado de trabalho, que fez com que os “custos” d
 
 ii. a grande proliferação de cuidados e métodos contraceptivos e a dissociação entre a sexualidade e a reprodução.
 
+![figura](figura1-5.png)
+
 Figura 1.5 Evolução das taxas de fecundidade: Brasil e regiões - 1940-2013.
 
-Figura 1.6 Brasil: taxa de fecundidade segundo quintis de renda e anos de estudo —- 1992 x 2011. 
+![figura](figura1-6.png)
+
+Figura 1.6 Brasil: taxa de fecundidade segundo quintis de renda e anos de estudo - 1992 x 2011. 
 Fonte: IPEA (2012).
 
 ### Análise do gráfico — Taxas de fecundidade por quintis de renda e anos de estudo (1992 × 2011)
@@ -398,22 +370,26 @@ As quatro pirâmides revelam, de forma clara, a *transição demográfica aceler
 
 Segue uma análise estruturada por período.
 
+![1980](1980.png)
+
 **1. Pirâmide Etária — 1980**
 
 **Formato:** pirâmide clássica, base larga e topo estreito.
 
 **Principais características**
 
-* **Altíssima proporção de crianças (0–14 anos)**, indicando fecundidade elevada.
-* **População jovem predominante.**
-* **Topo muito estreito**, sinalizando baixa expectativa de vida e alta mortalidade na velhice.
-* Padrão típico de país em **pleno processo de transição demográfica**.
+**Altíssima proporção de crianças (0–14 anos)**, indicando fecundidade elevada.
+**População jovem predominante.**
+**Topo muito estreito**, sinalizando baixa expectativa de vida e alta mortalidade na velhice.
+Padrão típico de país em **pleno processo de transição demográfica**.
 
 **Interpretação**
 
-* Forte pressão sobre educação infantil e serviços materno-infantis.
-* Grande contingente futuro entrando no mercado de trabalho.
-* Previdência ainda não pressionada.
+Forte pressão sobre educação infantil e serviços materno-infantis.
+Grande contingente futuro entrando no mercado de trabalho.
+Previdência ainda não pressionada.
+
+![2000](2000.png)
 
 **2. Pirâmide Etária — 2000**
 
@@ -421,15 +397,17 @@ Segue uma análise estruturada por período.
 
 **Principais características**
 
-* **Redução significativa da fecundidade**, estreitando a base.
-* Crescimento da população **de 20 a 40 anos**, sugerindo um país entrando no “bônus demográfico”.
-* Aumento da população idosa começa a aparecer, mas ainda discreto.
+**Redução significativa da fecundidade**, estreitando a base.
+Crescimento da população **de 20 a 40 anos**, sugerindo um país entrando no “bônus demográfico”.
+Aumento da população idosa começa a aparecer, mas ainda discreto.
 
 **Interpretação**
 
-* População economicamente ativa crescendo.
-* O país começa a colher ganhos econômicos do bônus demográfico.
-* Primeiros sinais de envelhecimento estrutural.
+População economicamente ativa crescendo.
+O país começa a colher ganhos econômicos do bônus demográfico.
+Primeiros sinais de envelhecimento estrutural.
+
+![2020](2020.png)
 
 **3. Pirâmide Etária — 2020**
 
@@ -437,15 +415,17 @@ Segue uma análise estruturada por período.
 
 **Principais características**
 
-* **Base pequena (0–14 anos)** devido à fecundidade abaixo da reposição.
-* **Maior concentração entre 25–45 anos**, refletindo pico da população em idade produtiva.
-* **Idosos (65+) aumentando**, mas ainda sem ultrapassar os grupos intermediários.
+**Base pequena (0–14 anos)** devido à fecundidade abaixo da reposição.
+**Maior concentração entre 25–45 anos**, refletindo pico da população em idade produtiva.
+**Idosos (65+) aumentando**, mas ainda sem ultrapassar os grupos intermediários.
 
 **Interpretação**
 
-* Últimos anos do bônus demográfico.
-* Pressão crescente sobre saúde e previdência começa a se manifestar.
-* Menor entrada de jovens no mercado de trabalho.
+Últimos anos do bônus demográfico.
+Pressão crescente sobre saúde e previdência começa a se manifestar.
+Menor entrada de jovens no mercado de trabalho.
+
+![2050](2050.png)
 
 **4. Pirâmide Etária — projeção para 2050**
 
@@ -453,21 +433,17 @@ Segue uma análise estruturada por período.
 
 **Principais características**
 
-* **Forte expansão dos grupos acima de 60 anos**, com grande peso relativo.
-* **População de 80+ muito maior** que em décadas anteriores.
-* **Base extremamente estreita**, indicando baixíssima fecundidade e envelhecimento acelerado.
-* Predomínio de mulheres nos grupos mais idosos, refletindo maior longevidade feminina.
+**Forte expansão dos grupos acima de 60 anos**, com grande peso relativo.
+**População de 80+ muito maior** que em décadas anteriores.
+**Base extremamente estreita**, indicando baixíssima fecundidade e envelhecimento acelerado.
+Predomínio de mulheres nos grupos mais idosos, refletindo maior longevidade feminina.
 
 **Interpretação**
 
-* Estrutura etária semelhante à de países envelhecidos, como Japão e Itália.
-* Forte pressão sobre:
-
-  * previdência,
-  * sistemas de saúde,
-  * políticas de cuidados prolongados.
-* Redução da população economicamente ativa.
-* Possível necessidade de políticas imigratórias e estímulo à natalidade.
+Estrutura etária semelhante à de países envelhecidos, como Japão e Itália.
+Forte pressão sobre: previdência,sistemas de saúde, políticas de cuidados prolongados.
+Redução da população economicamente ativa.
+Possível necessidade de políticas imigratórias e estímulo à natalidade.
 
 **Síntese da evolução 1980 → 2050**
 
@@ -485,14 +461,16 @@ O país passa de uma sociedade jovem (1980) para uma sociedade envelhecida (2050
 
 Essa transição implica desafios estratégicos:
 
-* reorganização dos sistemas de saúde e previdência;
-* políticas para ampliar a produtividade laboral;
-* necessidade de incentivo à natalidade ou à imigração qualificada;
-* adaptação urbana e habitacional à população idosa.
+- reorganização dos sistemas de saúde e previdência;
+- políticas para ampliar a produtividade laboral;
+- necessidade de incentivo à natalidade ou à imigração qualificada;
+- adaptação urbana e habitacional à população idosa.
 
 ## Página 21
 
 Esse processo de envelhecimento também pode ser observado pelo crescimento do índice de envelhecimento do IBGE, isto é, a relação entre a população com mais de 65 anos e a população com menos de 15. Essa passa de 6,4% em 1960, para 16,8% em 2000, e já 30,8% em 2010.
+
+![figura](figura1-11.png)
 
 Figura 1.11 Dinâmica populacional brasileira.
 
@@ -541,6 +519,8 @@ Em termos setoriais e regionais, também se observa um processo de transição d
 
 As variações na distribuição populacional entre regiões, que pode ser observada na Figura 1.12, devem-se, em parte, às diferenças de taxas de natalidade e mortalidade das regiões, mas principalmente às migrações que ocorreram dentro do país. O principal fluxo migratório que caracterizou a economia brasileira durante o século XX foi o chamado êxodo rural, isto é, a saída (ou a expulsão) das pessoas do campo em direção às cidades, diminuindo-se, assim, a população rural e crescendo a urbana (Tabela 1.3, na introdução desta parte do livro). Entre 1950 e 1990, estima-se que mais de 40 milhões de pessoas deixaram o campo em direção à cidade.
 
+![figura](figura1-12.png)
+
 Figura 1.12 Brasil: distribuição da população por regiões - 1940-2022.
 
 Esse êxodo rural, decorrente do processo de industrialização da economia brasileira, fezse simultaneamente com um movimento migratório dirigido à Região Centro-sul do país. Essa migração já ocorria nas primeiras décadas do século XX, no chamado período cafeeiro da economia brasileira, mas foi reforçada no processo de industrialização, dado que este se fez de modo bastante concentrado regionalmente.
@@ -560,13 +540,3 @@ No período recente, porém, esse tipo de urbanização tem diminuído, apontand
 ## Página 26
 
 Assim, a tendência é de continuidade do processo de urbanização da economia brasileira, porém com menor intensidade e, provavelmente, ampliando o surgimento de novas regiões metropolitanas ao longo de todo o país.
-
-Ver Santos, Levy e Szmrecsányi (1980) e Milone (1991).
-
-Ver dados no Capítulo 12, na Parte III deste livro.
-
-Covid-19 é abreviação de Coronavírus 2019. O vírus denomina-se SARS-CoV-2, a Síndrome Respiratória Aguda Grave (ou Severa), do inglês Severe Acute Respiratory Syndrome Coronavirus 2.
-
-Dados do Banco Mundial para 1995.
-
-Ver IPEA (1997).

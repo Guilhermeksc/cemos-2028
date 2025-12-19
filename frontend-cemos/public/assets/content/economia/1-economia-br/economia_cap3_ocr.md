@@ -34,32 +34,33 @@ Quando se fala em desenvolvimento, esses aspectos são importantes. Mesmo com um
 
 ### Figura 3.1 Brasil: evolução do PIB per capita e sua taxa de crescimento - 1947-2020.
 
+![figura](figura3-1.png)
+
+Fonte: Ipeadata.
+
 **Explicação do gráfico: evolução do PIB per capita e da taxa de crescimento do Brasil (1947–2020)**
 
 O gráfico mostra a trajetória do **PIB per capita brasileiro**, medido em dólares constantes de 2020, desde 1947 até 2020, juntamente com sua **taxa real de crescimento anual**. Ele combina duas informações:
-
-1. A **linha contínua**, que representa o índice do PIB per capita (com base 1947 = 100).
-2. As **barras verticais**, que indicam a taxa real de crescimento do PIB per capita em cada ano.
 
 **Evolução geral do PIB per capita**
 
 A linha de tendência revela que, apesar das oscilações econômicas, o Brasil apresentou **crescimento de longo prazo do PIB per capita** ao longo das décadas:
 
-* **1947–1980:** O movimento predominante é de expansão, com aumentos expressivos, especialmente entre o final dos anos 1950 e meados dos anos 1970. Essa fase inclui o período do *Milagre Econômico*, quando o crescimento foi muito acima da média histórica.
-* **Década de 1980:** Observa-se forte instabilidade e baixo crescimento, com variações negativas em anos consecutivos — reflexo da *crise da dívida*, alta inflação e recessões.
-* **1990–2000:** Há retomada do crescimento, mas ainda marcada por volatilidade, especialmente até a estabilização econômica promovida pelo Plano Real.
-* **2000–2010:** O crescimento volta a ser mais consistente, com aumento importante do PIB per capita.
-* **2014–2020:** O gráfico indica novo período prolongado de queda e recuperação lenta, refletindo a recessão de 2014–2016 e, posteriormente, o impacto da pandemia em 2020.
+**1947–1980:** O movimento predominante é de expansão, com aumentos expressivos, especialmente entre o final dos anos 1950 e meados dos anos 1970. Essa fase inclui o período do *Milagre Econômico*, quando o crescimento foi muito acima da média histórica.
+**Década de 1980:** Observa-se forte instabilidade e baixo crescimento, com variações negativas em anos consecutivos — reflexo da *crise da dívida*, alta inflação e recessões.
+**1990–2000:** Há retomada do crescimento, mas ainda marcada por volatilidade, especialmente até a estabilização econômica promovida pelo Plano Real.
+**2000–2010:** O crescimento volta a ser mais consistente, com aumento importante do PIB per capita.
+**2014–2020:** O gráfico indica novo período prolongado de queda e recuperação lenta, refletindo a recessão de 2014–2016 e, posteriormente, o impacto da pandemia em 2020.
 
 **Taxa de crescimento**
 
 As barras verticais mostram que:
 
-* O crescimento do PIB per capita brasileiro é **muito volátil**, alternando frequentemente entre taxas positivas e negativas.
-* Picos elevados de crescimento aparecem no final dos anos 1960 e início dos anos 1970.
-* Vários períodos exibem crescimento negativo, como nos anos 1981–1983, durante parte dos anos 1990, na recessão de 2015–2016 e novamente em 2020.
+O crescimento do PIB per capita brasileiro é **muito volátil**, alternando frequentemente entre taxas positivas e negativas.
 
-Fonte: Ipeadata.
+Picos elevados de crescimento aparecem no final dos anos 1960 e início dos anos 1970.
+
+Vários períodos exibem crescimento negativo, como nos anos 1981–1983, durante parte dos anos 1990, na recessão de 2015–2016 e novamente em 2020.
 
 Se o desenvolvimento econômico de um país é definido pela qualidade de vida de seus habitantes, não se pode examinar apenas o crescimento da produção de bens desse país. Além disso, o conceito de PIB per capita, apesar de já ser um avanço, também precisa ser complementado com outros elementos. Por um lado, deve-se analisar os chamados aspectos distributivos da renda nesse país; por outro, há que se levar em conta os chamados indicadores sociais desse país.
 
@@ -104,6 +105,8 @@ Fonte: IBGE.
 ## Página 5
 
 Do mesmo modo, ao dividir-se a população por nível de renda, também podem ser percebidas fortes desigualdades (Tabela 3.3 e Figura 3.2). Em 2013, entre as famílias com renda per capita de até 1/4 de salário-mínimo apenas 36,8% residiam em domicílios adequados. Essa porcentagem sobe para 79% quando se consideram famílias com mais de cinco salários-mínimos. Com relação à educação, muito embora tenha havido progresso significativo nas últimas décadas, essas desigualdades também se verificam, já que em famílias que têm rendimento mensal per capita de até 1/4 de salário-mínimo, a taxa de analfabetismo é da ordem de 1,4%; essa porcentagem não chega a 0,2% nas famílias que têm rendimento mensal per capita superior a dois salários-mínimos.
+
+![figura](figura3-2.png)
 
 Figura 3.2 Percentual de pessoas que não sabem ler nem escrever, por faixa de renda - 2013.
 
@@ -152,8 +155,8 @@ Tabela 3.4 Indicadores sociais: países e anos selecionados
 | México      | 74,8                                  | 10,9                                   | 59                                    | 57                                                                  | 8,5                                    | 84                                                                     |
 | Suíça       | 84,3                                  | 3,1                                    | 5                                     | 100                                                                 | 12,2                                   | 99                                                                     |
 
-\* Taxa de mortalidade por 1.000 nascidos vivos.  
-\** Taxa de mortalidade por 100.000 nascidos vivos.
+* Taxa de mortalidade por 1.000 nascidos vivos.  
+** Taxa de mortalidade por 100.000 nascidos vivos.
 
 
 Fonte: UNDP.
@@ -211,6 +214,8 @@ Fonte: Relatório PNUD Desenvolvimento Humano, 2022.
 
 O IDH do Brasil em 2021, igual a 0,754, é o 87º entre 191 países, o que coloca o país entre os de desenvolvimento humano alto, sendo um pouco maior que a média mundial (0,732), e situa-se exatamente na média dos países da América Latina e Caribe (0,754), bem abaixo da média dos países da OCDE (0,899). Em termos evolutivos, o Brasil apresentou crescimento significativo nas últimas décadas, com queda no IDH apenas de 2020 em diante.
 
+![figura](figura3-3.png)
+
 Figura 3.3 Brasil: evolução IDH - 1980-2021.
 
 | Ano  | IDH   |
@@ -248,7 +253,6 @@ Tabela 3.6 Brasil: IDHM — estados brasileiros — anos selecionados
 | Rio Grande do Norte  | 0,428 | 0,552 | 0,684 | 0,728 |
 | Sergipe              | 0,408 | 0,518 | 0,665 | 0,702 |
 | Bahia                | 0,386 | 0,512 | 0,660 | 0,691 |
-
 | **Região Norte**     |       |       |       |       |
 | Roraima              | 0,459 | 0,598 | 0,707 | 0,699 |
 | Acre                 | 0,402 | 0,517 | 0,663 | 0,710 |
@@ -257,18 +261,15 @@ Tabela 3.6 Brasil: IDHM — estados brasileiros — anos selecionados
 | Rondônia             | 0,407 | 0,537 | 0,690 | 0,700 |
 | Amazonas             | 0,430 | 0,515 | 0,674 | 0,700 |
 | Amapá                | 0,472 | 0,577 | 0,708 | 0,688 |
-
-| **Região Centro-Oeste** |   |   |   |   |
+| **Região Centro-Oeste** |    |       |       |       |
 | Goiás                | 0,487 | 0,615 | 0,735 | 0,737 |
 | Mato Grosso          | 0,449 | 0,601 | 0,725 | 0,736 |
 | Mato Grosso do Sul   | 0,488 | 0,613 | 0,729 | 0,742 |
 | Distrito Federal     | 0,616 | 0,725 | 0,824 | 0,814 |
-
 | **Região Sul**       |       |       |       |       |
 | Santa Catarina       | 0,543 | 0,674 | 0,774 | 0,792 |
 | Paraná               | 0,507 | 0,650 | 0,749 | 0,769 |
 | Rio Grande do Sul    | 0,542 | 0,676 | 0,746 | 0,771 |
-
 | **Região Sudeste**   |       |       |       |       |
 | Minas Gerais         | 0,478 | 0,624 | 0,731 | 0,774 |
 | Rio de Janeiro       | 0,573 | 0,664 | 0,761 | 0,762 |
@@ -286,30 +287,7 @@ Como foi dito anteriormente, deve-se também levar em consideração a distribui
 
 A distribuição de renda pode ser vista de vários ângulos. Por um lado, tem-se a chamada **distribuição setorial da renda**, ou seja, a **participação de cada setor da economia no produto**. A **distribuição regional da renda** procura mostrar qual a participação de cada uma das regiões brasileiras na renda global do país. No gráfico da Figura 3.4, vemos a importância do setor de serviços na renda brasileira e também a concentração da renda na Região Sudeste. Essa concentração evidencia-se ainda mais ao compararmos esses dados com a divisão territorial ou com a repartição da população por região.
 
-Figura 3.4 Brasil: distribuição setorial e regional do PIB 2020.
-
-### **Distribuição do PIB por setor**
-
-```markdown
-| Setor        | Participação (%) |
-|--------------|-------------------|
-| Agricultura  | 7                 |
-| Indústria    | 23                |
-| Serviços     | 71                |
-```
-
-### **Distribuição regional do PIB**
-
-```markdown
-| Região         | Participação (%) |
-|----------------|-------------------|
-| Norte          | 6,3               |
-| Nordeste       | 14,2              |
-| Centro-Oeste   | 10,4              |
-| Sudeste        | 51,9              |
-| Sul            | 17,2              |
-```
-
+![figura](figura3-4.png)
 
 ## Página 11
 
@@ -327,33 +305,7 @@ iv. **o excedente operacional bruto**: que é o saldo resultante do valor adicio
 
 A evolução dessa divisão no período recente é apresentada no gráfico da Figura 3.5. Vemos que o total de salários e contribuições sociais pagos em 2020 correspondiam a aproximadamente 42% das rendas pagas naquele ano. Esse número cresceu entre os anos 2005 e 2015, passando a decair a partir de então. Caminho inverso apresentou o excedente operacional bruto. 
 
-Figura 3.5 Brasil: distribuição funcional da renda — 2000-2020 (% do total).
-
-| Ano | Remuneração dos empregados | Rendimento misto bruto | Excedente operacional bruto | Impostos (subsídios) sobre a produção e importação |
-|-----|-----------------------------|--------------------------|------------------------------|------------------------------------------------------|
-| 2000 | ~38% | ~32% | ~16% | ~14% |
-| 2001 | ~38% | ~32% | ~17% | ~13% |
-| 2002 | ~39% | ~32% | ~16% | ~13% |
-| 2003 | ~39% | ~31% | ~17% | ~13% |
-| 2004 | ~40% | ~31% | ~17% | ~12% |
-| 2005 | ~40% | ~31% | ~17% | ~12% |
-| 2006 | ~41% | ~31% | ~16% | ~12% |
-| 2007 | ~42% | ~32% | ~16% | ~11% |
-| 2008 | ~43% | ~32% | ~16% | ~11% |
-| 2009 | ~45% | ~31% | ~16% | ~11% |
-| 2010 | ~44% | ~32% | ~16% | ~11% |
-| 2011 | ~44% | ~32% | ~15% | ~11% |
-| 2012 | ~44% | ~31% | ~15% | ~11% |
-| 2013 | ~45% | ~31% | ~15% | ~11% |
-| 2014 | ~45% | ~31% | ~14% | ~10% |
-| 2015 | ~45% | ~30% | ~14% | ~11% |
-| 2016 | ~44% | ~30% | ~14% | ~11% |
-| 2017 | ~44% | ~31% | ~14% | ~11% |
-| 2018 | ~43% | ~32% | ~14% | ~11% |
-| 2019 | ~43% | ~33% | ~14% | ~10% |
-| 2020 | ~42% | ~35% | ~13% | ~10% |
-
-Fonte: dados básicos do IBGE SCN.
+![figura](figura3-5.png)
 
 ## Página 12
 
@@ -373,9 +325,9 @@ Tabela 3.7 Brasil: distribuição dos rendimentos da população economicamente 
 | 10% mais ricos                                    | 39,6  | 46,7  | 51,0  | 49,7  | 47,6   | 45,3   | 41,4    | 40,5    | 41,7    | 41,9    |
 | 1% mais rico                                      | 13,8  | 14,8  | 18,2  | 14,6  | 13,6   | 13,5   | 12,1    | 11,6    | 12,4    | 12,4    |
 
-\* Censo.  
-\** PNAD.  
-\*** PNAD contínua.
+* Censo.  
+** PNAD.  
+*** PNAD contínua.
 
 Fonte: dados básicos do IBGE.
 
@@ -424,52 +376,11 @@ O Índice de Gini relaciona a área entre a Curva de Lorenz e a reta AB com a á
 
 ## Página 15
 
-### Figura 3.6 Curva de Lorenz.
-
-A imagem apresenta a **Curva de Lorenz**, instrumento clássico para medir e visualizar a **desigualdade de renda** de uma população. O gráfico compara a distribuição real da renda com uma situação hipotética de perfeita igualdade.
-
-O eixo horizontal representa a **porcentagem acumulada da população**, ordenada dos mais pobres para os mais ricos, indo de **0% a 100%**. O eixo vertical mostra a **porcentagem acumulada da renda total** apropriada por essa população.
-
-**Linha diagonal (A–B): Igualdade perfeita**
-
-A linha tracejada que liga o ponto **A (0%, 0%)** ao ponto **B (100%, 100%)** representa a **linha de igualdade perfeita**.
-
-* Cada fração da população receberia exatamente a mesma fração da renda.
-* Por exemplo, 20% da população teria 20% da renda; 80% teria 80%, e assim por diante.
-
-**Curva de Lorenz (linha contínua)**
-
-A linha curva contínua mostra **como a renda está distribuída na realidade**.
-
-* Ela sempre fica **abaixo** da linha de igualdade perfeita, indicando desigualdade.
-* Quanto mais distante da diagonal, **maior a desigualdade**.
-
-**Interpretação dos pontos marcados**
-
-* O ponto **C**, situado próximo ao eixo horizontal, indica que, por exemplo, os **20% mais pobres** acumulam apenas **cerca de 4% da renda total**.
-* O ponto **D**, localizado próximo a 80% da população acumulada, mostra que **80% das pessoas** concentram somente **aproximadamente 45% da renda**.
-
-O restante (55%) está nas mãos dos 20% mais ricos.
-
-**O que isso revela?**
-
-A curva evidencia que:
-
-* Uma pequena parcela da população detém grande parte da renda total.
-* A maioria da população acumula apenas uma fração reduzida da renda.
-* Existe desigualdade significativa na distribuição, uma vez que a curva se afasta bastante da diagonal.
-
-**Ligação com o Índice de Gini**
-
-A Curva de Lorenz permite calcular o **Índice de Gini**, medida que sintetiza o grau de desigualdade.
-
-* Quanto **maior a área** entre a curva e a linha de igualdade perfeita,
-* **maior o valor do Gini** e, portanto, maior a desigualdade.
+![figura](figura3-6.png)
 
 Historicamente, a evolução perversa da distribuição de renda é particularmente importante para os dados de 1970 e 1990; porém, deve-se ressaltar a diferença entre as duas situações; na primeira, a piora na distribuição de renda é acompanhada por um aumento na renda das pessoas (o PIB per capita cresceu, e a renda média de cada uma das faixas também cresceu); o que ocorreu foi que os mais ricos tiveram maiores aumentos de renda que os mais pobres, que também tiveram aumento de renda. Já em 1990, a situação é diferente, pois houve concentração de renda em um momento em que o PIB per capita caía, isto é, a média dos rendimentos das pessoas diminuiu em termos reais. Na verdade, apenas os mais ricos tiveram algum aumento real de renda; no restante da sociedade, houve queda real.
 
 Embora a distribuição de renda tenha se tornado menos heterogênea ao longo dos últimos anos, ainda temos alto índice de desigualdade de renda. Vários fatores explicam esse quadro. Entre eles, há as condicionantes históricas, que não podem ser esquecidas. Durante 300 anos, houve escravismo no país e, quando os escravos foram finalmente libertados, sua situação socioeconômica era precária. Na colônia, as terras foram distribuídas em grandes latifúndios, aos quais poucos tiveram acesso, e isso não foi reformulado depois da Independência ou da Proclamação da República, de modo que, mesmo em anos recentes, a estrutura agrária brasileira tem permanecido fortemente concentrada. Como outro fator, o próprio processo de industrialização por substituição de importação tem um cunho concentrador, à medida que foram adotadas tecnologias que utilizavam mais intensivamente o fator capital em vez da mão de obra, isso em um país onde a intensidade relativa da mão de obra é superior à do capital. Desse modo, a absorção e a remuneração da mão de obra (maioria da população) foram substancialmente inferiores àquelas dos detentores do capital.
-
 
 ## Página 16
 
@@ -481,57 +392,12 @@ Depois do Plano Real, o quadro apresentou melhora, pois a queda da inflação si
 
 Isso não ocorreu sem debates, pois no período pagavam-se taxas de juros bastante vultuosas, e a remuneração do capital também se elevou. Assim, é nesse período que se passa a buscar novas informações sobre a renda das diferentes classes, pois as pesquisas domiciliares poderiam subestimar as rendas dos mais ricos, comprometendo, assim, a confiabilidade dos indicadores. Novas informações apareceram, como pode ser visto nas tabelas e nos gráficos apresentados a seguir, especialmente incorporando dados da Receita Federal e das contas nacionais. Com os novos dados, algo se modificou: a desigualdade é maior que a medida anteriormente, e o comportamento foi mais suave, mas, assim mesmo, de melhora.
 
-## Página 17
-
 Houve ligeira piora dos indicadores no final da década passada, os quais passaram a ter comportamento errático durante a pandemia, como pode ser observado na Figura 3.7. 
 
-### Figura 3.7 Brasil: evolução da distribuição da renda — Índice de Gini (WB) e Razão 10/50 (WID) - 1981-2021.
+![figura](figura3-7.png)
 
-```markdown
-**Evolução do Índice de Gini (WB) e da Razão R10/50 (WID) — Brasil (1984–2021)**
+## Página 17
 
-- **Índice de Gini (WB):** representado por barras verticais cinzas, variando aproximadamente entre 0,59 e 0,52 ao longo da série histórica.
-- **R10/50 (WID):** representado por uma linha escura, variando aproximadamente entre 0,37 e 0,27 no período.
-
-**Legenda**
-- **Índice de Gini (WB):** mede a desigualdade geral da renda (0 = perfeita igualdade; 1 = máxima desigualdade).
-- **R10/50 (WID):** razão entre a renda dos 10% mais ricos e dos 50% intermediários.
-
-Intervalo temporal: Período exibido: **1984 a 2021**.
-
-Escalas:
-- Eixo esquerdo: Índice de Gini (0,40 a 0,65).
-- Eixo direito: Razão R10/50 (0,15 a 0,40).
-```
-
-O gráfico apresenta a evolução da **desigualdade de renda no Brasil** entre **1984 e 2021**, utilizando dois indicadores complementares:
-
-**(a) Índice de Gini (WB)**
-
-Representado pelas barras cinzas, mostra oscilações da desigualdade total:
-
-* **Anos 1980 e início dos 1990:** desigualdade elevada, com valores de Gini próximos a **0,60**.
-* **1995 a 2003:** pequena variação, com manutenção de alta desigualdade.
-* **2003 a 2014:** período de **redução consistente**, atingindo valores próximos de **0,52–0,53**, refletindo melhorias distributivas.
-* **2015 em diante:** leve aumento e estabilização, indicando interrupção da trajetória de queda.
-
-**(b) Razão R10/50 (WID)**
-
-A linha escura mostra o quanto os **10% mais ricos** ganham em relação aos **50% intermediários**:
-
-* Entre 1984 e 2002, os valores eram altos, com picos próximos a **0,36–0,38**, indicando forte concentração nos grupos superiores.
-* De 2003 a 2014, há **redução acentuada**, chegando perto de **0,27**, sinalizando diminuição da desigualdade entre classes média e alta.
-* Após 2015, observa-se certa **volatilidade e aumento**, sugerindo piora distributiva recente.
-
-## **Interpretação geral**
-
-Ambos os indicadores mostram que:
-
-* O Brasil manteve **desigualdade estruturalmente alta** em todo o período.
-* Houve um **período claro de queda** da desigualdade entre **2003 e 2014**.
-* Nos anos mais recentes, especialmente após 2015, a desigualdade **voltou a subir ou deixou de cair**, dependendo do indicador.
-
-Fonte: dados do World Bank e WID.
 
 ## 3.5 POBREZA
 
@@ -544,6 +410,8 @@ Existem várias maneiras de se definir a pobreza em função do tipo de indicado
 ## Página 18
 
 Quando se define um indicador preciso e um valor mínimo para este, está-se definindo a chamada **linha de pobreza**, considerando-se pobres todos os que se situem abaixo dessa linha. Várias possibilidades existem nas definições da linha de pobreza. Durante muito tempo, o mais comum era se estabelecer uma linha de pobreza em termos monetários, em termos de renda mínima que as pessoas deveriam ter para não estar em estado de carência ou de pobreza. Alguns autores referemse a uma **linha de indigência**, e não de pobreza, quando tratam do acesso à renda básica, isto é, ao mínimo necessário para suprir as necessidades alimentares. Muitas linhas monetárias de pobreza, indigência, extrema pobreza foram estabelecidas a partir do valor de cestas mínimas de consumo que podem variar entre as diferentes regiões. O Instituto de Pesquisa Econômica Aplicada (IPEA) calculou essas cestas desde meados da década de 1970 e por muito tempo foram utilizadas para definir a pobreza no Brasil. Conforme vemos na Figura 3.8, que retrata a pobreza e a extrema pobreza, com base em cestas de consumo, no início da década de 1980, em uma das maiores crises econômicas que o país passou, a pobreza afligia quase metade da população brasileira. Na virada do século, estimava-se o número de pobres brasileiros em mais de 50 milhões, o que à época representava mais de 1/3 da população. De acordo com os dados da Figura 3.8, verifica-se, contudo, que o número de pobres caiu mais rapidamente ao longo dos primeiros anos do século XXI, sendo que nos primeiros anos da segunda década do século XXI tínhamos menos de 15% da população em estado de pobreza, algo próximo a 28 milhões de pessoas.
+
+![figura](figura3-8.png)
 
 Figura 3.8 Brasil: índices de pobreza e extrema pobreza com base em cesta de consumo - 1976-2012.
 
@@ -571,6 +439,8 @@ Mesmo estabelecendo a pobreza com base na renda, vários outros indicadores são
 ## Página 19
 
 A Figura 3.9 mostra o comportamento dessas linhas para o Brasil na última década. A estimativa foi realizada por pesquisadores do IPEA, que mostram certa retomada da pobreza, apesar de algumas oscilações, nos últimos anos.
+
+![figura](figura3-9.png)
 
 Figura 3.9 Brasil: pobreza - diversos indicadores - 2012-2021.
 
@@ -638,10 +508,9 @@ O debate está em curso, e elementos ligados ao relacionamento do homem com a na
 
 Figura 3.10 Brasil: emissões de gases de efeito estufa diretos, por fonte de emissão (GT CO2 eg).
 
+![figura](figura3-10.png)
 
 ## Página 23
-
-Fonte: IBGE e Ministério do Desenvolvimento Regional.
 
 Os ODS são uma coleção de metas globais, estabelecidas pelas Nações Unidas, que constituiem uma espécie de continuidade dos objetivos do milênio, também conhecidos como Agenda 2030. Os debates em torno dessa agenda iniciam-se na chamada RIO+20, em 2012, onde se acordou um documento intitulado “O futuro que queremos”. Em 2015, foram estabelecidas 17 metas, ou 17 ODS, conforme Quadro 3.2.
 

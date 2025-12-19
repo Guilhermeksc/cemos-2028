@@ -4,13 +4,15 @@
 
 Diferentemente da microeconomia, que trabalha com mercados isolados, a macroeconomia estuda todos os mercados em conjunto. Várias dificuldades colocam-se nesse sentido. Quando se analisa um mercado específico, determina-se, por exemplo, qual foi a quantidade produzida e vendida de sapatos e qual foi o preço. Todavia, se o objeto da macroeconomia é a totalidade dos mercados, como se faz para saber qual foi o total produzido e vendido e a que preço? O problema vem do fato de que uma sociedade produz sapatos, automóveis, café, soja, enfim, milhões de mercadorias. Para avaliar-se a riqueza da sociedade, isto é, a quantidade de bens de que dispõe, deverse-ia explicitar o quanto foi produzido de cada uma das milhões de mercadorias, o que seria não operacional e não ilustrativo para o analista. Torna-se necessário buscar medidas que permitam de forma simplificada mostrar o quanto a economia produziu, vendeu etc.
 
-Assim, para que as análises macroeconômicas pudessem avançar, foi necessário o desenvolvimento de **um instrumental que permita mensurar a totalidade das atividades econômicas**. Esse instrumento recebeu o nome de **Contabilidade Nacional**, cuja evolução devese aos trabalhos do inglês Richard Stone (1913-1991), Prêmio Nobel 1984, e o russo naturalizado norte-americano Simon Kuznets (1901-1985), Prêmio Nobel 1971, ainda antes da Segunda Guerra Mundial.1 A partir do desenvolvimento dessa técnica de mensuração, baseada no método contábil de partidas dobradas, houve grande avanço da teoria econômica, uma vez que se tornaram possíveis os testes empíricos e uma análise qualitativa mais consubstanciada.
+Assim, para que as análises macroeconômicas pudessem avançar, foi necessário o desenvolvimento de **um instrumental que permita mensurar a totalidade das atividades econômicas**. Esse instrumento recebeu o nome de **Contabilidade Nacional**, cuja evolução devese aos trabalhos do inglês Richard Stone (1913-1991), Prêmio Nobel 1984, e o russo naturalizado norte-americano Simon Kuznets (1901-1985), Prêmio Nobel 1971, ainda antes da Segunda Guerra Mundial[1]. A partir do desenvolvimento dessa técnica de mensuração, baseada no **método contábil de partidas dobradas**, houve grande avanço da teoria econômica, uma vez que se tornaram possíveis os **testes empíricos**📌 e uma análise qualitativa mais consubstanciada.
+
+*[1] Deve ser destacada também a contribuição de Wassily W. Leontief (1905-1989), Prêmio Nobel 1973, russo naturalizado norte-americano, que criou a Matriz Insumo-Produto ou Matriz de Relações Intersetoriais, sistema contábil de dupla entrada, no qual são consideradas tanto as vendas como as compras de cada setor para os demais setores. Enquanto o Sistema de Contas Nacionais considera apenas os bens e serviços finais, a Matriz de Leontief mede tanto as transações com bens e serviços finais, como bens e serviços intermediários, que são os insumos que entram na composição dos bens e serviços finais.*
 
 Neste capítulo, serão apresentados os principais agregados macroeconômicos e como mensurálos. Os conceitos básicos trabalhados são os de produto, renda e dispêndio. Espera-se que ao final do capítulo o leitor entenda como se chega a esses valores e os itens que os compõem.
 
-### 2.1 DEFINIÇÃO DE PRODUTO?
+### 2.1 DEFINIÇÃO DE PRODUTO
 
-A economia estuda a alocação de recursos escassos para fins ilimitados, ou seja, como obter o máximo de satisfação para os indivíduos a partir de um estoque dado de recursos. Para satisfazer suas necessidades, o homem envolve-se em um ato de produção. Produção é a atividade social que visa adaptar a natureza para o desenvolvimento de bens e serviços que permitam a satisfação das necessidades humanas. No ato de produção, existe a combinação de uma série de elementos chamados de fatores de produção. Fatores de produção são os recursos utilizados na produção de bens e serviços. Normalmente, costuma-se separar os recursos em três grandes áreas: terra, capital e trabalho.
+A economia estuda a alocação de recursos escassos para fins ilimitados, ou seja, como obter o máximo de satisfação para os indivíduos a partir de um estoque dado de recursos. Para satisfazer suas necessidades, o homem envolve-se em um ato de produção. **Produção** é a atividade social que visa adaptar a natureza para o desenvolvimento de bens e serviços que permitam a satisfação das necessidades humanas. No ato de produção, existe a combinação de uma série de elementos chamados de fatores de produção. **Fatores de produção** são os recursos utilizados na produção de bens e serviços. Normalmente, costuma-se separar os recursos em três grandes áreas: terra, capital e trabalho.
 
 ## Página 2
 
@@ -18,7 +20,7 @@ A produção é a principal atividade econômica a ser medida, uma vez que refle
 
 ### Boxe 2.1 - Fluxos e estoques
 
-Na economia, trabalha-se com variáveis tipo fluxo, que correspondem aquelas atividades econômicas contínuas, ininterruptas, e como tal devem ser medidas em determinado período, e com variáveis tipo estoque, que correspondem a magnitudes medidas em dado instante do tempo. Um exemplo clássico para diferenciar fluxo e estoque é o da caixa-d'água: fluxo corresponde à entrada e saída de água na caixa em determinado período, por exemplo, 10 litros/minuto; estoque corresponde à quantidade disponível de água na caixa em determinado momento, por exemplo, 200 litros. Percebe-se que a relação entre fluxo e estoque é de que todo estoque é alimentado por um fluxo, e, assim, a diferença entre o valor do estoque em dois momentos do tempo fornece o valor do fluxo que alimenta aquele estoque nesse período de tempo.
+Na economia, trabalha-se com **variáveis tipo fluxo**, que correspondem aquelas atividades econômicas contínuas, ininterruptas, e como tal devem ser medidas em determinado período, e com **variáveis tipo estoque**, que correspondem a magnitudes medidas em dado instante do tempo. Um exemplo clássico para diferenciar fluxo e estoque é o da caixa-d'água: fluxo corresponde à entrada e saída de água na caixa em determinado período, por exemplo, 10 litros/minuto; estoque corresponde à quantidade disponível de água na caixa em determinado momento, por exemplo, 200 litros. Percebe-se que a relação entre fluxo e estoque é de que todo estoque é alimentado por um fluxo, e, assim, a diferença entre o valor do estoque em dois momentos do tempo fornece o valor do fluxo que alimenta aquele estoque nesse período de tempo.
 
 Alguns exemplos de variáveis fluxos e estoques em economia são:
 
@@ -26,7 +28,9 @@ Alguns exemplos de variáveis fluxos e estoques em economia são:
 
 **Estoques:** população, capital (K), dívida externa, dívida interna, estoque de moeda, ativos financeiros, riqueza etc.
 
-Exemplos de relação entre fluxos e estoques: a. Kt- Kt- 1 = It = Investimento agregado no período (t) — (t —1)
+Exemplos de relação entre fluxos e estoques:
+
+a. Kt - (Kt-1) = It = Investimento agregado no período (t) — (t —1)
 
 b. Dívida Pública (t) — Dívida Pública (t — 1) = Déficit Público em um dado momento (t)
 
@@ -54,9 +58,12 @@ Se for incluído no produto tanto o valor do aço como o valor dos automóveis, 
 
 Entretanto, também é possível contabilizar o produto por meio do chamado valor adicionado, considerando em cada etapa da cadeia produtiva aquilo que foi acrescido (adicionado) ao valor dos bens intermediários.
 
-**Valor adicionado**: valor que foi, em cada etapa da cadeia produtiva, acrescido (adicionado) ao valor das matérias-primas utilizadas.
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**Valor adicionado**: valor que foi, em cada etapa da cadeia produtiva, acrescido (adicionado) ao valor das matérias-primas utilizadas.</blockquote>
 
-Pelo exposto, percebe-se que existem duas maneiras alternativas de medir o produto: pelo valor dos bens finais, ou pela agregação dos valores adicionados (valor do produto menos valor dos insumos) em cada etapa produtiva.
+Pelo exposto, percebe-se que existem duas maneiras alternativas de medir o produto:
+
+[1] **pelo valor dos bens finais**, ou
+[2] pela agregação dos **valores adicionados** (valor do produto menos valor dos insumos) **em cada etapa produtiva**.
 
 Veja o seguinte exemplo hipotético: um país onde o único bem consumido por seus habitantes seja o pão. Para produzir o pão, contudo, o país também produz a farinha e o trigo. Supondo também que o custo de produção do trigo seja nulo, a produção é feita de acordo com o seguinte esquema:
 
@@ -74,21 +81,31 @@ Entretanto, está-se contando duas vezes a farinha (por ela mesma e pela partici
 
 Assim, chega-se ao conceito final de Produto. Dentro de um país, este vem a ser o **Produto Interno Bruto a preços de mercado (PIBpm)**, ou seja, o valor monetário de venda dos produtos finais produzidos dentro do país em determinado período.[3] É por meio desse indicador que se avalia o desempenho de uma economia. A soma do valor dos bens finais ou a soma do valor adicionado em cada etapa do processo produtivo necessariamente será a mesma. Essa maneira de medir o valor do produto é chamada de **“ótica do produto”**.
 
-**PIBpm** é o valor monetário de venda dos produtos finais produzidos dentro de um país em determinado período.
+[3]. Algumas dificuldades de medição do Produto Interno Bruto (PIB) que se colocam são: (i) o mesmo bem pode ser utilizado como bem intermediário e bem final. O açúcar, por exemplo, utilizado para adoçar o café em casa, é um bem final, já o açúcar utilizado em uma fábrica de refrigerantes no processo produtivo é um bem intermediário; (ii) nem tudo que é produzido se direciona ao mercado; por exemplo, um agricultor leva uma parcela de sua produção ao mercado para obter outros bens de que necessita, mas outra parcela ele pode utilizar para alimentar sua família (produção de subsistência), não sendo medida monetariamente; (iii) alguns serviços devem ser imputados no PIB; por exemplo, um indivíduo que mora de aluguel está pagando um preço pelo serviço de moradia (esse valor entra no PIB), mas o indivíduo que mora em casa própria e não paga aluguel também está consumindo um serviço de moradia e, como tal, o valor deste deve ser imputado no PIB. Há várias outras dificuldades, como diferenciar a atividade da dona de casa e da empregada doméstica; carro adquirido por uma família e por uma empresa etc. Outro ponto, como já foi dito, é que não é uma característica do produto que o define como bem final, mas sua utilização. Uma empresa, por exemplo, adquiriu aço para produzir automóvel, mas chegou o final do ano, o automóvel ainda não havia sido produzido e o aço estava no estoque. No ano seguinte, será considerado produto apenas a diferença entre o valor do automóvel e o do aço (bem intermediário), mas na medida do produto deste ano o aço é um bem final, foi comprado para ficar em estoque, logo entra no cômputo do produto.
+
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**PIBpm** é o valor monetário de venda dos produtos finais produzidos dentro de um país em determinado período.</blockquote>
 
 ### 2.2 PRODUTO, RENDA E DISPÊNDIO
 
 Existem duas outras maneiras de medir o produto, além das discutidas na seção anterior. Podem ser denominadas **“ótica do dispêndio”** e **“ótica da renda”**. De acordo com elas, é possível medir o produto, respectivamente:
 
-ii por meio do dispêndio ou da demanda (compras finais);
+i. por meio do dispêndio ou da demanda (compras finais);
 
 ii. por meio da renda gerada no processo produtivo.
 
-O conceito de dispêndio refere-se aos possíveis destinos do produto, isto é, por quem e para que são adquiridos. Como será detalhado adiante, os principais destinos do produto são o consumo e o investimento. O primeiro refere-se aos bens e serviços adquiridos pelos indivíduos para a satisfação de suas necessidades. Pode ser dividido em **consumo pessoal** (das famílias), que se refere aos bens e serviços adquiridos voluntariamente no mercado, e **consumo público** (do governo), que se refere aos bens e serviços oferecidos de forma “gratuita”* pelo governo para os indivíduos, e são consumidos coletivamente, como a iluminação das ruas, a educação e saúde pública, a segurança nacional, os serviços do Legislativo, o desenvolvimento tecnológico nos órgãos de pesquisa públicos etc. O **investimento**, como detalharemos mais adiante, relaciona-se com a aquisição de mercadorias para ampliar a produção futura, e corresponde ao aumento do estoque de capital físico (máquinas, edifícios etc.) e à variação dos estoques (matérias-primas, produtos acabados etc.).
+O conceito de dispêndio refere-se aos possíveis destinos do produto, isto é, por quem e para que são adquiridos. Como será detalhado adiante, os principais destinos do produto são o consumo e o investimento. O primeiro refere-se aos bens e serviços adquiridos pelos indivíduos para a satisfação de suas necessidades. Pode ser dividido em **consumo pessoal** (das famílias), que se refere aos bens e serviços adquiridos voluntariamente no mercado, e **consumo público** (do governo), que se refere aos bens e serviços oferecidos de forma “gratuita”* pelo governo para os indivíduos, e são consumidos coletivamente, como a iluminação das ruas, a educação e saúde pública, a segurança nacional, os serviços do Legislativo, o desenvolvimento tecnológico nos órgãos de pesquisa públicos etc.
+
+O **investimento**, como detalharemos mais adiante, relaciona-se com a aquisição de mercadorias para ampliar a produção futura, e corresponde ao aumento do estoque de capital físico (máquinas, edifícios etc.) e à variação dos estoques (matérias-primas, produtos acabados etc.).
 
 ## Página 5
 
-A soma do consumo (público e privado) e o investimento é definida como **absorção interna**. Essa não corresponde ao produto, por dois motivos: (i) parcela do produto gerado não é adquirida pelas famílias (consumo privado), empresas (investimento) e governo (consumo público), mas é vendida para outros países - **Exportações**; e (ii) parcela dos bens consumidos e investidos não foi produzida no país, mas foram adquiridos do exterior - **Importações**. Assim, para medir o produto pela ótica do dispêndio, deve-se considerar a soma de todos os elementos de dispêndio (consumo, investimento, exportações), subtraindo-se a parcela do dispêndio feita com produtos vindos do exterior (importações). A igualdade entre produto e dispêndio vem, portanto, do próprio conceito de dispêndio, que inclui todos os destinos possíveis do produto.
+A soma do consumo (público e privado) e o investimento é definida como **absorção interna**. Essa não corresponde ao produto, por dois motivos: 
+
+(i) parcela do produto gerado não é adquirida pelas famílias (consumo privado), empresas (investimento) e governo (consumo público), mas é vendida para outros países - **Exportações**; e
+
+(ii) parcela dos bens consumidos e investidos não foi produzida no país, mas foram adquiridos do exterior - **Importações**. 
+
+Assim, para medir o produto pela ótica do dispêndio, deve-se considerar a soma de todos os elementos de dispêndio (consumo, investimento, exportações), subtraindo-se a parcela do dispêndio feita com produtos vindos do exterior (importações). A igualdade entre produto e dispêndio vem, portanto, do próprio conceito de dispêndio, que inclui todos os destinos possíveis do produto.
 
 Já o **conceito de renda refere-se à remuneração dos fatores de produção envolvidos no processo produtivo**. Os tipos de remuneração são: salários pagos ao fator trabalho, juros que remuneram o capital de empréstimo, aluguéis pagos aos proprietários dos bens de capital (edifícios, máquinas etc.), lucros que remuneram o capital produtivo (capital de risco). A igualdade entre produto e renda decorre do fato de que o valor adicionado em cada etapa produtiva corresponde à remuneração dos fatores envolvidos naquela etapa. Lembre-se de que o valor adicionado corresponde à diferença entre o valor de uma mercadoria menos o valor das matérias-primas, com o que essa diferença corresponde à remuneração dos agentes envolvidos nesta etapa. Como o produto corresponde à soma do valor adicionado, logo, corresponde à soma das remunerações. Assim, temos a igualdade entre produto e renda.
 
@@ -106,54 +123,57 @@ Percebe-se a existência de dois mercados na economia: **o mercado de bens finai
 
 Esse processo está exemplificado na Figura 2.1.
 
+![figura](figura2-1.png)
+
 Figura 2.1 Fluxo circular da renda I.
 
 O diagrama representa o fluxo circular de renda em uma economia simples, composta por famílias e empresas.
 
-1. Famílias fornecem às empresas os fatores de produção, tais como:
-- trabalho (salários),
-- capital (juros),
-- terra (aluguéis),
-- capacidade empresarial (lucros).
+1- Famílias fornecem às empresas os fatores de produção, tais como:
+ - trabalho (salários),
+ - capital (juros),
+ - terra (aluguéis),
+ - capacidade empresarial (lucros).
+ 
+2- Em troca desses fatores, as famílias recebem renda, que assume a forma de:
+ - salários,
+ - juros,
+ - aluguéis,
+ - lucros.
 
-2. Em troca desses fatores, as famílias recebem renda, que assume a forma de:
-salários,
-juros,
-aluguéis,
-lucros.
+3- As empresas, utilizando os fatores de produção recebidos, produzem bens e serviços (produtos).
 
-3. As empresas, utilizando os fatores de produção recebidos, produzem bens e serviços (produtos).
-
-4. As famílias, por sua vez, utilizam sua renda para realizar compras, ou seja, demanda/consumo, adquirindo os bens e serviços produzidos pelas empresas.
+4- As famílias, por sua vez, utilizam sua renda para realizar compras, ou seja, demanda/consumo, adquirindo os bens e serviços produzidos pelas empresas.
 
 Assim, forma-se um ciclo contínuo:
 
-Fatores de produção → Empresas → Bens e serviços → Famílias → Consumo → Empresas,
-
-enquanto a renda flui em sentido inverso para remunerar os fatores fornecidos.
+Fatores de produção → Empresas → Bens e serviços → Famílias → Consumo → Empresas, enquanto a renda flui em sentido inverso para remunerar os fatores fornecidos.
 
 Nesse caso, em que só se produzem bens de consumo, o valor dessa produção (o produto) é igual à renda, que é igual ao valor do consumo, já que este é o único componente da demanda e que todos os bens são consumidos (não há acúmulo de estoques). Assim, tem-se:
 
-Y = C = Remuneração dos Fatores (Renda) (1)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**Y = C = Remuneração dos Fatores (Renda)**
 
 Em que: 
 
 Y = o produto nacional;
-C = o consumo agregado.
+C = o consumo agregado.</blockquote>
+
 
 ### 2.3 INVESTIMENTO E DEPRECIAÇÃO
 
-Pode-se tornar o sistema cada vez mais complexo. Suponha-se, agora, que nem toda a produção visa atender ao consumo, mas uma parcela direciona-se para investimento (1). Por **investimento**, entende-se a **aquisição de bens de produção, bens de capital ou intermediários, que visam aumentar a oferta de produtos no periodo seguinte**. Assim, toda compra de máquinas e equipamentos, edifícios ou mesmo o acúmulo de estoques é considerado investimento.
+Pode-se tornar o sistema cada vez mais complexo. Suponha-se, agora, que nem toda a produção visa atender ao consumo, mas uma parcela direciona-se para investimento. Por **investimento**, entende-se a **aquisição de bens de produção, bens de capital ou intermediários, que visam aumentar a oferta de produtos no periodo seguinte**. Assim, toda compra de máquinas e equipamentos, edifícios ou mesmo o acúmulo de estoques é considerado investimento.
 
 Nesse caso, suponha-se a existência de dois tipos de empresas, uma produtora de bens de consumo (setor II) e uma produtora de bens de capital (setor 1), que produz bens para investimento.
 
 ## Página 7
 
-Agora, as famílias trabalhando, alugando suas terras e seu capital, obtêm renda de ambas as empresas, porém adquirem apenas bens de consumo, sendo a oferta de bens de capital do setor I adquirida pelas empresas do setor II. Para que o investimento ocorra, nem toda renda da economia pode ser consumida, pois, caso contrário, não haveria recursos para realizar os investimentos. Assim, uma parcela da renda das famílias deve ser poupada, entendendo como **poupança (S)[5] a parcela da renda não consumida pelas famílias em dado período**.
+Agora, as famílias trabalhando, alugando suas terras e seu capital, obtêm renda de ambas as empresas, porém adquirem apenas bens de consumo, sendo a oferta de bens de capital do setor I adquirida pelas empresas do setor II. Para que o investimento ocorra, nem toda renda da economia pode ser consumida, pois, caso contrário, não haveria recursos para realizar os investimentos. Assim, uma parcela da renda das famílias deve ser poupada, entendendo como **poupança ("S" - do inglês saving) a parcela da renda não consumida pelas famílias em dado período**.
 
 Essa poupança deve ser transferida para as empresas do setor II, de modo que estas possam adquirir os bens de capital do setor I. Caso não ocorra essa transferência, não haverá a venda dos bens de capital. Nesse ponto, introduz-se um novo agente no sistema econômico, o Sistema Financeiro, cuja principal função é captar os recursos dos poupadores para transferi-los aos investidores. Seu papel, assim, é o de alocar recursos entre tomadores e emprestadores, viabilizando o financiamento do investimento. 
 
 Esse processo pode ser exemplificado pelo fluxo apresentado na Figura 2.2. 
+
+![figura](figura2-2.png)
 
 Figura 2.2 Fluxo circular da renda II.
 
@@ -202,20 +222,22 @@ Além disso:
 
 O **investimento** conecta Empresas II às Empresas I, pois consiste na aquisição de bens de capital por parte das Empresas I.
 
-
 Percebe-se, pelo exposto, que as famílias têm dois destinos para sua renda: consumir ou poupar; assim, substitui-se agora a equação (1) pela (3):
 
-Y = C + S (3)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+**Y = C + S (3)**</blockquote>
 
 ## Página 8
 
 Por outro lado, existem dois tipos de gastos (compras - demanda) na economia: Consumo e Investimento, ou seja, a demanda agregada (DA) é:
 
-DA = C + I (4)
+**DA = C + I (4)**
 
 Como se viu que a renda é igual à demanda, isto é, (3) = (4), temos outra identidade em termos macroeconômicos:
 
-Investimento (I) = Poupança (S) (5)
+4. Não significa que os bens são gratuitos, já que são financiados por meio de impostos; são os chamados “bens públicos”, que os indivíduos não revelam diretamente o quanto estão dispostos a pagar por eles (ver Seção 2.4).
+
+**Investimento (I) = Poupança (S)**
 
 Ao considerar-se a existência de investimento, cabe introduzir um novo elemento: a depreciação. Os bens de capital (máquinas e equipamentos, edifícios etc.) não são, em geral, consumidos em um único período produtivo, mas ao longo de vários períodos, e são desgastados a cada uso, chegando um determinado momento em que devem ser repostos.
 
@@ -374,6 +396,8 @@ A partir do produto real, pode-se observar mais de perto a evolução (crescimen
 
 Pelo gráfico da Figura 2.3, pode-se observar a evolução da produção brasileira desde 1950 em termos reais (sem levar em conta o aumento dos preços). A Figura 2.4 mostra as taxas reais anuais de crescimento do PIBpm. O país cresceu a taxas bastante elevadas durante praticamente 30 anos (com algumas exceções, 1956, 1963, 1965). Nas décadas de 1980 e 1990, porém, a situação mostrou-se mais instável; em alguns anos (1981, 1983, 1988, 1990, 1992), chega-se a ter crescimento negativo, isto é, anos de **recessão**. A partir do Plano Real, em 1994, as taxas de crescimento, embora ainda oscilantes, são positivas, com exceção de 2009 (crise do Lehman Brothers). No período mais recente, porém, há uma queda do crescimento com momentos recessivos na crise do impeachment do governo Dilma-Temer (2014 e 2015) e uma nova recessão durante a pandemia de Covid-19 (2020). As diversas fases do comportamento do PIB brasileiro serão detalhadas ao longo deste livro.
 
+![figura](figura2-3.png)
+
 ### Figura 2.3 Brasil: evolução do PIBpm real - 1950-2022.
 
 **Descrição explicativa do gráfico**
@@ -415,6 +439,8 @@ O eixo horizontal mostra os anos de **1950 a 2022**, enquanto o eixo vertical ap
 * Em 2021 e 2022, há recuperação, mas o nível permanece abaixo da tendência pré-pandemia.
 
 Fonte: dados básicos do IBGE (índice 2010 = 100). 
+
+![figura](figura2-4.png)
 
 ### Figura 2.4 Brasil: taxa de crescimento do PIBpm real - 1950-2022.
 
@@ -467,7 +493,6 @@ O eixo vertical mostra a **taxa de crescimento anual do PIB** (em %), variando a
 * Em 2021, ocorre recuperação significativa, ainda que acompanhada de nova desaceleração em 2022.
 
 Fonte: dados básicos do IBGE.
-
 
 ## Página 16
 
@@ -575,15 +600,8 @@ Em termos per capita, China e Índia, assim como o Brasil, Rússia, Indonésia, 
 
 Portanto, para compararmos o tamanho das economias dos países, utilizamos valores em termos de poder de compra (PIB em dólares PPP). Agora, evidentemente, para as transações internacionais, tanto comerciais como financeiras, interessam os dólares correntes, que é como empresas e países consideram em seus resultados financeiros.
 
-1. Deve ser destacada também a contribuição de Wassily W. Leontief (1905-1989), Prêmio Nobel 1973, russo naturalizado norte-americano, que criou a Matriz Insumo-Produto ou Matriz de Relações Intersetoriais, sistema contábil de dupla entrada, no qual são consideradas tanto as vendas como as compras de cada setor para os demais setores. Enquanto o Sistema de Contas Nacionais considera apenas os bens e serviços finais, a Matriz de Leontief mede tanto as transações com bens e serviços finais, como bens e serviços intermediários, que são os insumos que entram na composição dos bens e serviços finais.
-
 2. Para uma análise mais detalhada das formas de medida e dos conceitos dos agregados macroeconômicos, ver Paulani e Braga (2020).
 
-3. Algumas dificuldades de medição do Produto Interno Bruto (PIB) que se colocam são: (i) o mesmo bem pode ser utilizado como bem intermediário e bem final. O açúcar, por exemplo, utilizado para adoçar o café em casa, é um bem final, já o açúcar utilizado em uma fábrica de refrigerantes no processo produtivo é um bem intermediário; (ii) nem tudo que é produzido se direciona ao mercado; por exemplo, um agricultor leva uma parcela de sua produção ao mercado para obter outros bens de que necessita, mas outra parcela ele pode utilizar para alimentar sua família (produção de subsistência), não sendo medida monetariamente; (iii) alguns serviços devem ser imputados no PIB; por exemplo, um indivíduo que mora de aluguel está pagando um preço pelo serviço de moradia (esse valor entra no PIB), mas o indivíduo que mora em casa própria e não paga aluguel também está consumindo um serviço de moradia e, como tal, o valor deste deve ser imputado no PIB. Há várias outras dificuldades, como diferenciar a atividade da dona de casa e da empregada doméstica; carro adquirido por uma família e por uma empresa etc. Outro ponto, como já foi dito, é que não é uma característica do produto que o define como bem final, mas sua utilização. Uma empresa, por exemplo, adquiriu aço para produzir automóvel, mas chegou o final do ano, o automóvel ainda não havia sido produzido e o aço estava no estoque. No ano seguinte, será considerado produto apenas a diferença entre o valor do automóvel e o do aço (bem intermediário), mas na medida do produto deste ano o aço é um bem final, foi comprado para ficar em estoque, logo entra no cômputo do produto.
-
-4. Não significa que os bens são gratuitos, já que são financiados por meio de impostos; são os chamados “bens públicos”, que os indivíduos não revelam diretamente o quanto estão dispostos a pagar por eles (ver Seção 2.4).
-
-5. S do inglês saving.
 
 6. O governo ainda possui outras fontes de recursos denominadas em Contabilidade Nacional Outras Receitas Governamentais (ORG), que correspondem aos ganhos de aluguéis do governo, dividendos das empresas estatais etc. Nessa conta, inserem-se com sinal negativo os pagamentos de juros da dívida externa do setor público.
 

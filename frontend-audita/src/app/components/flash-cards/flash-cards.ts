@@ -8,6 +8,7 @@ import { PerguntasService } from '../../services/perguntas.service';
 import { FlashCards as FlashCard, Bibliografia } from '../../interfaces/perguntas.interface';
 import { Subject, forkJoin } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { LoadingSpinner } from '../loading-spinner/loading-spinner';
 
 interface FlashCardDisplay extends FlashCard {
   isFlipped: boolean;
@@ -16,7 +17,7 @@ interface FlashCardDisplay extends FlashCard {
 @Component({
   selector: 'app-flash-cards',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, LoadingSpinner],
   templateUrl: './flash-cards.html',
   styleUrl: './flash-cards.scss'
 })

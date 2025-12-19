@@ -22,6 +22,7 @@ import { takeUntil, map } from 'rxjs/operators';
 import { PerguntaVF as PerguntaVFComponent } from './pergunta-v-f/pergunta-v-f';
 import { PerguntaMultipla as PerguntaMultiplaComponent } from './pergunta-multipla/pergunta-multipla';
 import { PerguntaCorrelacao as PerguntaCorrelacaoComponent } from './pergunta-correlacao/pergunta-correlacao';
+import { LoadingSpinner } from '../loading-spinner/loading-spinner';
 
 interface SimuladoQuestion {
   id: number;
@@ -54,6 +55,13 @@ interface TabState {
 
 type TabType = 'completo' | 'vf' | 'multipla' | 'correlacao';
 
+interface AssuntoComContagem {
+  nome: string;
+  quantidade: number;
+  bibliografiaTitulo: string;
+  bibliografiaId: number;
+}
+
 @Component({
   selector: 'app-perguntas',
   standalone: true,
@@ -64,7 +72,8 @@ type TabType = 'completo' | 'vf' | 'multipla' | 'correlacao';
     MatProgressSpinnerModule,
     PerguntaVFComponent, 
     PerguntaMultiplaComponent, 
-    PerguntaCorrelacaoComponent
+    PerguntaCorrelacaoComponent,
+    LoadingSpinner
   ],
   templateUrl: './perguntas.html',
   styleUrl: './perguntas.scss'
@@ -89,7 +98,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   
   // Filtros de bibliografia e assunto
   selectedBibliografiaId: number | null = null;
-  assuntosDisponiveis: string[] = [];
+  assuntosDisponiveis: AssuntoComContagem[] = [];
   selectedAssunto: string = '';
   
   // Cache de todas as questões para extrair assuntos (SEM filtro de assunto)
@@ -109,8 +118,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       simuladoConfig: {
         bibliografias: [],
         questoesVF: 10,
-        questoesMultipla: 4,
-        questoesCorrelacao: 1
+        questoesMultipla: 6,
+        questoesCorrelacao: 4
       }
     },
     vf: {
@@ -419,22 +428,52 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
   /**
    * Extrai assuntos únicos das questões carregadas (usa cache completo, não filtrado)
+   * Agora inclui a contagem de questões por assunto e a bibliografia
+   * Agrupa por combinação assunto-bibliografia
    */
   private extractAssuntos() {
-    const assuntosSet = new Set<string>();
-    
     // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos disponíveis
     const cacheToUse = this.allQuestionsCacheComplete.length > 0 
       ? this.allQuestionsCacheComplete 
       : this.allQuestionsCache;
     
+    // Mapear assuntos com suas contagens, agrupando por assunto e bibliografia
+    // Chave: "assunto|bibliografiaId"
+    const assuntosMap = new Map<string, { quantidade: number; bibliografiaTitulo: string; bibliografiaId: number }>();
+    
     cacheToUse.forEach(question => {
-      if (question.assunto && question.assunto.trim()) {
-        assuntosSet.add(question.assunto.trim());
+      if (question.assunto && question.assunto.trim() && question.bibliografia) {
+        const assunto = question.assunto.trim();
+        const bibliografiaId = question.bibliografia;
+        const bibliografiaTitulo = question.bibliografia_titulo || `Bibliografia ${bibliografiaId}`;
+        const chave = `${assunto}|${bibliografiaId}`;
+        
+        if (assuntosMap.has(chave)) {
+          assuntosMap.get(chave)!.quantidade++;
+        } else {
+          assuntosMap.set(chave, {
+            quantidade: 1,
+            bibliografiaTitulo,
+            bibliografiaId
+          });
+        }
       }
     });
 
-    this.assuntosDisponiveis = Array.from(assuntosSet).sort();
+    // Converter para array de objetos com nome, quantidade e bibliografia, ordenado por nome e bibliografia
+    this.assuntosDisponiveis = Array.from(assuntosMap.entries())
+      .map(([chave, dados]) => ({
+        nome: chave.split('|')[0],
+        quantidade: dados.quantidade,
+        bibliografiaTitulo: dados.bibliografiaTitulo,
+        bibliografiaId: dados.bibliografiaId
+      }))
+      .sort((a, b) => {
+        // Ordenar primeiro por nome do assunto, depois por título da bibliografia
+        const nomeCompare = a.nome.localeCompare(b.nome);
+        if (nomeCompare !== 0) return nomeCompare;
+        return a.bibliografiaTitulo.localeCompare(b.bibliografiaTitulo);
+      });
     
     console.log('🏷️ Assuntos disponíveis (do cache completo):', this.assuntosDisponiveis);
   }
@@ -443,6 +482,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Atualiza assuntos disponíveis baseado na bibliografia selecionada
    * IMPORTANTE: Sempre usa o cache completo (sem filtro de assunto) para garantir
    * que todos os assuntos da bibliografia estejam visíveis
+   * Agora inclui a contagem de questões por assunto e a bibliografia
+   * Agrupa por combinação assunto-bibliografia
    */
   private updateAssuntosDisponiveis() {
     // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos
@@ -456,14 +497,38 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         q.bibliografia === this.selectedBibliografiaId
       );
       
-      const assuntosSet = new Set<string>();
+      // Mapear assuntos com suas contagens, agrupando por assunto e bibliografia
+      // Chave: "assunto|bibliografiaId"
+      const assuntosMap = new Map<string, { quantidade: number; bibliografiaTitulo: string; bibliografiaId: number }>();
+      
       questionsFromBibliografia.forEach(q => {
-        if (q.assunto && q.assunto.trim()) {
-          assuntosSet.add(q.assunto.trim());
+        if (q.assunto && q.assunto.trim() && q.bibliografia) {
+          const assunto = q.assunto.trim();
+          const bibliografiaId = q.bibliografia;
+          const bibliografiaTitulo = q.bibliografia_titulo || `Bibliografia ${bibliografiaId}`;
+          const chave = `${assunto}|${bibliografiaId}`;
+          
+          if (assuntosMap.has(chave)) {
+            assuntosMap.get(chave)!.quantidade++;
+          } else {
+            assuntosMap.set(chave, {
+              quantidade: 1,
+              bibliografiaTitulo,
+              bibliografiaId
+            });
+          }
         }
       });
       
-      this.assuntosDisponiveis = Array.from(assuntosSet).sort();
+      // Converter para array de objetos com nome, quantidade e bibliografia, ordenado por nome
+      this.assuntosDisponiveis = Array.from(assuntosMap.entries())
+        .map(([chave, dados]) => ({
+          nome: chave.split('|')[0],
+          quantidade: dados.quantidade,
+          bibliografiaTitulo: dados.bibliografiaTitulo,
+          bibliografiaId: dados.bibliografiaId
+        }))
+        .sort((a, b) => a.nome.localeCompare(b.nome));
     } else {
       // Se "Todas" foi selecionado, mostrar todos os assuntos do cache completo
       this.extractAssuntos();
