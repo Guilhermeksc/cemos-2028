@@ -4,7 +4,8 @@ export interface Bibliografia {
   id: number;
   titulo: string;
   autor?: string;
-  materia?: string;
+  materia?: number; // ID da ForeignKey para MateriaModel
+  materia_nome?: string; // Nome da matéria (read-only, vem do backend)
   descricao?: string;
   perguntas_count?: number;
   flashcards_count?: number;
@@ -115,7 +116,7 @@ export type Pergunta = PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
 export interface BibliografiaFilters {
   search?: string;
   autor?: string;
-  materia?: string;
+  materia?: number; // ID da matéria (ForeignKey)
   ordering?: string;
   page?: number;
   page_size?: number;

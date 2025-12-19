@@ -1,5 +1,7 @@
 # CAPÍTULO 5 REVOLTA EM PETROGRADO, PAZ EM PARIS (Páginas 65-78)
 
+## Página 1
+
 No final de 1916, muitas das forças em guerra passavam por um momento de descontentamento tão generalizado que havia a possibilidade de motins. O número de baixas aumentava, as trincheiras no inverno tornavam-se abomináveis e uma vitória absoluta já não parecia ao alcance de nenhuma das partes. O moral baixo das forças armadas contaminava a população civil, e as cartas escritas pelos soldados - mesmo quando censuradas - aumentavam ainda mais as dúvidas em seus lares. O primeiro exército a desintegrar-se poderia determinar o resultado da guerra.
 
 ### AS REVOLUÇÕES
@@ -10,6 +12,8 @@ O enfraquecimento do exército agravava a terrível atmosfera de medo e desconte
 
 A família real, foco tradicional da lealdade, desapontou os legalistas. O czar Nicolau II, comandante-chefe das forças armadas, perdia a popularidade a passos largos. Sua mulher, Alexandra, a czarina, também cada vez menos popular, era cativa voluntária do carismático monge Rasputin, cujos poderes curativos pareciam surtir efeito sobre o filho dela. Nas cidades, os suprimentos de comida e combustível eram irregulares. No final de 1916, levantes ocorridos nas indústrias eram frequentes.
 
+## Página 2
+
 Com tantos homens no front, a quebra na rotina das atividades econômicas diárias tornou-se aguda. A inflação crescia muito mais do que os salários. Entre 1913 e 1917, o preço da farinha triplicou, o do sal quintuplicou e o da manteiga aumentou mais de oito vezes. Muitas famílias passavam ainda mais fome do que nos períodos de paz, em parte porque as estradas de ferro não davam conta de carregar, ao mesmo tempo, comida e suprimentos de guerra.
 
 Era comum ver longas filas de donas de casa, empregadas e crianças esperando sob neve e granizo no lado de fora das padarias, na esperança de comprar pão. A comida era também escassa na Alemanha e na Grã-Bretanha, mas esses países haviam sabiamente delineado sistemas de racionamento que incluíam todos os cidadãos. A Rússia era diferente. Habilidosa no racionamento da liberdade, a nação foi incapaz de lidar com a tarefa mais simples de racionar farinha e açúcar de modo que todos pudessem ter sua parte. A inaptidão administrativa em muitas esferas da vida nacional causava descontentamento.
@@ -18,11 +22,15 @@ O czar tentou suprimir os sinais da revolução retirando oficiais e soldados le
 
 O líder dos bolcheviques, o intelectual conhecido como Lenin - pseudônimo adotado em 1901 - estava exilado, tendo vivido por períodos variados na Inglaterra, na França, na Áustria e na Suíça. Forte e elegante, era um homem de altura pouco abaixo da média, com testa larga, queixo firme e talento para discursos vigorosos. Lenin traçou estratégias astutas para seu partido e tirou vantagem das poucas oportunidades que se lhe apresentaram. Porém ainda não ousava retornar à Rússia em carne e osso.
 
+## Página 3
+
 Por fim, em abril de 1917, com o dinheiro e a bênção oficial da Alemanha, Lenin e alguns companheiros viajaram em um vagão ferroviário protegido, deixando o exílio na Suíça, passando pela guerra na Alemanha, atravessando os Bálcãs em uma balsa até a Finlândia russa e chegando de trem a São Petersburgo, onde foram recepcionados alegremente pelos bolcheviques. Liderando as manobras políticas, Lenin trabalhou diligentemente para fundar o que chamava de "uma ditadura revolucionário-democrática do proletariado e da classe camponesa". Seu desejo era realizar uma revolução em seu país natal, para depois estendê-la a outros países. Prosseguir com a guerra não era de seu interesse: na verdade, ele a via como uma distração perigosa. Por isso, o governo alemão secretamente lhe dera dinheiro e o mandara para casa: o sucesso de Lenin serviria a seus propósitos.
 
 Kerensky, o ministro da Guerra do novo governo, esperava que um último apelo ao patriotismo russo resultasse em vitórias no front oriental. Até mesmo viajou de automóvel com o general Brusiloff pelas linhas de combate, na esperança de incentivar os soldados russos a repelir o inimigo em uma última ofensiva triunfante. O contra-ataque russo falhou. Os alemães avançaram, encontrando cada vez menos resistência. Muitos soldados russos simplesmente se desfizeram de seus rifles. Muitos nem sequer possuíam um rifle.
 
 Na França e na Grã-Bretanha, havia a preocupação de que os bolcheviques pudessem tomar o controle e retirar as forças russas da guerra. Mas talvez a balança pudesse ser desequilibrada se os judeus russos, em grande número e alguns dos quais poderosos dentro dos novos movimentos políticos, fossem convencidos a continuar lutando contra a Alemanha. Uma oferta tentadora foi feita. Em 2 de novembro de 1917, pouco antes de os bolcheviques tomarem o poder, o secretário do Exterior britânico Arthur Balfour declarou que, depois que a guerra terminasse, seu país apoiaria a criação de uma nova pátria judaica na Palestina. Delegados judeus foram enviados a São Petersburgo para anunciar o que mais tarde viria a ser conhecido como Declaração Balfour. O Oriente Médio jamais seria o mesmo, pois Balfour cumpriu a promessa.
+
+## Página 4
 
 O comandante das forças russas não conseguiu controlar os bolcheviques e outros agitadores, que, em seus dias de maior eficácia, praticamente tomaram as ruas da capital. Lenin, que durante o tumulto retirara-se para um esconderijo na Finlândia, preparou-se para aproveitar o caos que havia ajudado a criar. Retornou a São Petersburgo disfarçado, com a barba cortada e uma peruca cobrindo a calvície. Na noite de 6 de novembro, escreveu uma mensagem urgente aos camaradas mais experientes: "Precisamos a todo custo, na noite de hoje, tomar o governo."
 
@@ -34,6 +42,8 @@ Embora ele tivesse vencido, o perigo de um contra-ataque por parte de seus inimi
 
 Lenin estava determinado a tirar a Rússia da guerra. Queria paz, para poder construir uma sociedade revolucionária que inspirasse os socialistas de toda a Europa. Ainda assim, a assinatura de um tratado de paz com a Alemanha e a Turquia, em março de 1918, na cidade de Brest-Litovsk, no oeste da Rússia, representou um golpe humilhante para os patriotas russos. Partes do território do país passaram às mãos da Alemanha, da Romênia e da Turquia. Por algum tempo, até mesmo a Ucrânia e a Geórgia foram perdidas, embora tenham sido mais tarde retomadas. Logo a Polônia, a Finlândia e as três províncias bálticas de Letônia, Estônia e Lituânia se tornaram nações independentes. O fato de uma vasta extensão de áreas produtoras de grãos ter saído do domínio de Lenin agravou a escassez de comida na nova terra dos experimentos.
 
+## Página 5
+
 ### OS NORTE-AMERICANOS DESEQUILIBRAM A BALANÇA
 
 A revolução na Rússia agradou à Alemanha. A notícia de que um de seus três principais oponentes havia deposto armas era a mais animadora que se ouvia em Berlim, desde 1914. A paz no leste permitiria que um enorme número de soldados alemães se deslocasse para o front ocidental. Lá, finalmente poderiam vencer a França, onde o entusiasmo inicial pela guerra vinha se esgotando.
@@ -41,6 +51,8 @@ A revolução na Rússia agradou à Alemanha. A notícia de que um de seus três
 Naqueles meses de tumulto na Rússia, outra incerteza dizia respeito à neutralidade dos Estados Unidos. Seu presidente, Woodrow Wilson, era imprevisível. Muito talentoso, Wilson era filho de um clérigo presbiteriano e de uma mãe devotada que, assim como suas duas filhas mais velhas, dedicava cuidados um tanto exagerados ao garoto. Cresceu nos estados do sul durante e após a Guerra Civil norte-americana, mas seu talento não foi detectado prontamente, devido a doenças que tivera durante a infância. Na Princeton University, deu sinais de originalidade (característica que os examinadores nem sempre reconhecem), mas nenhuma amostra de brilhantismo. Quase foi advogado em Atlanta, na Geórgia, retornando porém como professor a sua antiga universidade, onde assumiu em 1902 o cargo de reitor. Pregador leigo, quase seguindo os passos do pai, Wilson demonstrava fluência, sinceridade, empatia e um leve nervosismo que, disfarçando a confiança suprema em suas opiniões, atraía os ouvintes. Como democrata, tornou-se governador de New Jersey em 1910. Menos de dois anos mais tarde, venceu a corrida presidencial dos Estados Unidos. Na política, havia subido como um foguete, como ele às vezes mencionava, guiado por Deus.
 
 Em 1916, Wilson novamente disputou e venceu as eleições presidenciais. Tentou manter seu país neutro na guerra, mas não resistiu às frequentes provocações da Alemanha. Em abril de 1917, o Congresso concordou em declarar guerra contra os alemães. O exército norte-americano era pequeno e foi necessário treinar muitos recrutas. No começo de 1918, que acabaria sendo o último ano da guerra, apenas 175 mil soldados haviam chegado à França.
+
+## Página 6
 
 A Alemanha ainda podia vencer o conflito. Após os russos terem apelado por paz, o país transferiu soldados do front leste para o oeste, onde lançou uma ofensiva feroz que chegou a 70 quilômetros de Paris e então parou. Depois disso, suas chances de vitória foram se extinguindo lentamente. Talvez nenhum fator isolado tenha colaborado tanto para convencer os alemães de que a guerra estava perdida quanto um exército norte-americano que então totalizava 1,5 milhão de soldados.
 
@@ -50,6 +62,8 @@ Em setembro de 1918, os aliados da Alemanha decidiram que estavam fartos. A Bulg
 
 A Alemanha estava sozinha. Seus soldados ainda lutavam bravamente no front ocidental, mas nos primeiros dez dias de novembro de 1918 a vida civil na Alemanha se despedaçava diante de tensões, privações e desesperança. No porto de Kiel, marinheiros alemães se amotinavam; na Bavária, ocorreu uma revolução socialista bem-sucedida; em Berlim, o imperador Wilhelm II abdicou. Em 11 de novembro - um dia de ignomínia para a Alemanha, porém desejado havia muito por outros países - um armistício foi assinado.
 
+## Página 7
+
 ### A BATALHA NAS NEGOCIAÇÕES DE PAZ
 
 A paz havia chegado, mas o que isso significava? Todas as nações a desejavam, cada uma em seus termos. Mais de um ano antes do fim da guerra, os planos de paz começaram a surgir. Em agosto de 1917, o papa Bento XV esperava que as fronteiras voltassem a ser as mesmas que existiam antes dos conflitos. Em janeiro de 1918, o presidente Wilson apresentou em Washington seus Catorze Pontos (e uma piadinha da época dizia que só um professor exigiria tantos pontos assim). Wilson queria um parlamento mundial permanente e uma Liga das Nações que pacificasse e sanasse problemas. A ideia não era originalmente sua, mas ele lhe deu força. Queria uma paz branda, e não cruel, para o perdedor.
@@ -57,6 +71,8 @@ A paz havia chegado, mas o que isso significava? Todas as nações a desejavam, 
 Oito meses mais tarde, na casa de ópera de Nova York, com milhares de rostos ansiosos diante de si e o fim da guerra quase à vista, Wilson apresentou uma opinião que certamente não impressionou os franceses. Deixando implícito que a França, em especial, deveria perdoar e esquecer, defendeu um tratado de paz em que houvesse cle­ mência. Conclamou as grandes nações vitoriosas a, uma vez terminada a guerra, oferecer "justiça imparcial" e rejeitar o egoísmo econômico. Por alguns meses, aos olhos de centenas de milhões de pessoas, ele pareceu falar em nome de quase todos os povos do mundo e até mesmo dos muitos soldados que jaziam silenciosos em seus túmulos.
 
 Um mês após o fim da guerra, o presidente partiu para a Europa. Louvado como o estadista que distribuía remédio para um mundo doente, foi bem recebido na França e depois na Inglaterra, mesmo por aqueles que não entendiam perfeitamente o conflito entre aquela mensagem e suas próprias atitudes. Ao chegar a Roma e Milão, Wilson viu cartazes que diziam "Boas-vindas ao deus da paz". Quando, por fim, o poderoso líder chegou à conferência de Paris, era como se um halo brilhasse em torno de sua cabeça. Esse halo, no entanto, não era visível para outros grandes estadistas.Clemenceau, a voz da França, então com 77 anos de idade, apesar de tratar o visitante de maneira cortês e mesmo afetuosa, achava que a mensagem de Wilson nada tinha a dizer ao povo sofrido da França.
+
+## Página 8
 
 Líderes das nações vencedoras, reunidos em Paris para longas dis­cussões, estavam menos interessados do que Wilson em sua ideia de uma paz justa e boa. Tendo carregado o fardo e sofrido as dores de uma guerra longa, queriam uma compensação consistente da Alemanha e da Áustria. Em Paris, os vencedores queriam dividir a área central da Alemanha, o que acabaram fazendo. E desejavam tomar todas as suas colônias, o que também fizeram. Tendo confiscado sua marinha e dispersado seu exército, impuseram uma imensa multa à Alemanha, chamada de reparação, como reembolso de parte dos custos da guerra. Como, em 1871, a Alemanha tinha imposto uma paz cruel à derrotada França, esse novo tratado de paz assinado em Versalhes em 1919 repe­tia o mesmo espírito punitivo. A pena de 1919, no entanto, foi ainda mais severa.
 
@@ -66,17 +82,23 @@ O tratado de paz insistia - de maneira não muito lógica nem justa - em que a A
 
 A Europa se alegrava com a paz, mas esta era diferente da que havia antes de 1914. A guerra tinha desfeito as ligações de comércio, destruído milhares de vilarejos rurais, devastado extensas áreas de pasto e plantações, matado milhões de cabeças de gado, avariado centenas de ferrovias e pontes e afundado mais navios cargueiros do que existiam no mundo em 1900. Os problemas se manifestavam em todas as facetas do dia a dia, especialmente no Leste Europeu. Em 1919, o leite era tão escasso nas cidades que crianças pequenas morriam e a alimentação da maior parte das pessoas não continha gordura. Em muitos distritos, não se semeava. No primeiro inverno pós-guerra, muitas pessoas não possuíam botas nem sapatos e não conseguiam comprar carvão para seus fogões, uma vez que pouco transporte era feito nas ferrovias danificadas. Essas foram observações extensivamente registradas pelo diretor britânico de auxílio humanitário, sir William Goode, que trabalhou no Leste Europeu em 1919. Ele percebeu o contraste entre "os ricos nervosos e os pobres esfomeados", especialmente em Viena.
 
+## Página 9
+
 Ao mesmo tempo, outro mal ainda mais devastador ocorria. Um novo surto de gripe, iniciado nos campos de batalha da França em 1918, espalhou-se pelo mundo. Atingiu até mesmo grupos de aborígines, em lugares remotos da Austrália, e assentámentos nas selvas africanas e sul-americanas. Matou milhões de pessoas na Índia. Apareceu em navios em alto-mar. Chamada de gripe espanhola, fez mais vítimas do que a Primeira Guerra Mundial.
 
 Um tratado de paz desenhado a muitas mãos - e punhos também - é inevitavelmente um labirinto de meios-termos e um conflito de princípios. Uma vez assinado o tratado em Versalhes, Wilson teve de convencer os próprios compatriotas a acatá-lo. Teve de persuadir a população de que a Liga das Nações, prestes a ser constituída, seria benéfica para os Estados Unidos tanto quanto para a Europa e o resto do mundo. Aos olhos de uma nação com forte tradição de isolacionismo, orgulhosa de haver crescido graças principalmente aos próprios esforços e desejosa de permanecer dona de seu nariz, a liga parecia um tanto ameaçadora.
 
 Wilson voltou para casa confiante de que seu país seria o mais influente na Liga das Nações. A opinião pública em geral estava com ele, e 33 governadores o apoiavam, mas os céticos se multiplicavam. Ele não era mais o rei em sua terra, tendo perdido o controle do senado e do congresso. Viajando de trem pelo país, apertando mãos estendidas desde as cidades atlânticas até o porto de San Diego, no Pacífico, dirigindo-se inflamadamente às milhares de pessoas que se reuniam em seus discursos ao ar livre, Wilson se esgotou. Os músculos de seu rosto começaram a se contrair em espasmos. Em 2 de outubro de 1919, de volta a Washington, sofreu um derrame que lhe deixou o lado esquerdo do corpo paralisado. Sua segunda mulh r, Edith, assumiu muitas das responsabilidades cívicas do inarido, até que, cerca de um ano mais tarde, o mandato chegou ao fim. O legado de Wilson foi uma Liga das Nações da qual seu país se recusou a participar.
 
+## Página 10
+
 A liga, cujo primeiro encontro se deu em 1920, parecia ser o farol do mundo. Seu objetivo era prevenir guerras e impor a justiça social. Pretendia proteger os povos que viviam sob o domínio europeu, acabar com os resquícios da escravidão e suavizar o fardo dos que trabalhavam duro todos os dias. Era como um parlamento com duas câmaras: uma pequena e poderosa, que se reunia com mais frequência, e uma assembleia geral de todas as nações participàntes, que se encontrava anualmente.
 
 O conselho inaugural era compostb de quatro membros regulares - Grã-Bretanha, França, Itália e Japão-, complementado pelos representantes eleitos dentre os componentes da assembleia. A ausência de Estados Unidos, China, União Soviética e Alemanha foi um rude golpe no prestígio e na influência do conselho. Dois desses quatro países estavam ausentes simplesmente porque os derrotados na guerra não tinham o direito de participar da nova liga. Além disso, os participantes da assembleia não representavam o mundo todo, sendo esta composta predominantemente por países europeus e suas antigas colônias de além-mar. O Império Britânico se destacava particularmente, pois os 29 membros iniciais da liga incluíam Grã Bretanha, Canadá, Austrália, Nova Zelândia, África do Sul e a Índia britânica.
 
 A liga tinha como objetivo solucionar desavenças que, do contrário, poderiam resultar em guerra. Iniciahpente, essa meta parecia atingível. Os finlandeses e os suecos, que disputavam algumas ilhas bálticas, concordaram que a liga deveria resolver o problema e, consequentemente, aceitaram que tais ilhas fossem anexadas à Finlândia. A questão mais preocupante era se as grandes potências aceitariam tais decisões. A Itália de Mussolini deu a resposta esclarecedora: em uma disputa pela ilha grega de Corfu, em 1923, o país inicialmente desconsiderou a sentença da liga.
+
+## Página 11
 
 ### UM BALANÇO DA GRANDE GUERRA
 
@@ -85,6 +107,8 @@ As listas de vítimas eram quase infinitas: Os sérvios foram os que mais sofrer
 **A Primeira Guerra enfraqueceu a Europa, cortando várias artédias do gigante econômico e político do mundo.**
 
 A guerra enfraqueceu a Europa. O gigante econômico e político do mundo teve diversas de suas artérias cortadas. Mesmo os vencedores perderam financeiramente. A Grã-Bretanha, que concedera a maior parte dos empréstimos em 1914, entregou boa parte de sua supremacia financeira aos Estados Unidos, até então em débito com países europeus. A Europa se mutilou empunhando o machado.
+
+## Página 12
 
 Os Estados Unidos foram o grande beneficiário financeiro: suas indústrias cresceram enquanto os competidores europeus estavam absorvidos pelas batalhas. O Japão também se beneficiou: pela primeira vez em muitos séculos, um país do Leste Asiático foi saudado como líder mundial. Na conferência de paz de Paris, o Japão tomou assento entre os cinco grandes. Seus ganhos territoriais foram pequenos. O país também lutou para inserir uma cláusula na Convenção da Liga das Nações que prometesse tratamento justo a todos os cidadãos estrangeiros que vivessem em qualquer das nações participantes.
 

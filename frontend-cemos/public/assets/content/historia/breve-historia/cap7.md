@@ -1,5 +1,7 @@
 # CAPÍTULO 7 O VELHO SULTÃO E O JOVEM TURCO (Páginas 91 a 98)
 
+## Página 1
+
 A Rússia e a Turquia eram inimigas implacáveis havia muito tempo, mas depois da Primeira Guerra Mundial seguiram novos caminhos com determinação semelhante. Usando a derrota e as adversidades para se reformular, esses países tentaram apagar grande parte de seu passado. Embora a jovem União Soviética fosse uma ideia interessante, a Turquia também fez uma das experiências mais corajosas da história do mundo islâmico. Seu novo soldado líder tentou tirar o véu islâmico da vida turca.
 
 Desses dois experimentos, o da Rússia foi por algum tempo o mais influente. Apontando o coletivismo e o materialismo como caminho para o futuro, conquistou uma legião de admiradores em todo o mundo. A longo prazo, porém, talvez os eventos na Turquia tenham sido mais significativos. Lá, o Islã foi domado, mas não derrotado. No final do século era o Islã, e não o comunismo, que demonstrava maior vigor.
@@ -7,6 +9,8 @@ Desses dois experimentos, o da Rússia foi por algum tempo o mais influente. Apo
 O Império Otomano era vasto em 1900, alcançando três continentes. Embora não mais dominasse completamente o norte da África e a região dos Bálcãs, continuava a ser a força predominante na Ásia Menor, governando a maior parte das cidades que figuram no Velho e no Novo Testamento. O império estava sob o domínio do sultão, cujo prestígio era ainda maior pelo fato de ser também o califa, ou seja, o representante do profeta Maomé. A cidade sagrada de Meca localizava-se em seu império e, para facilitar a peregrinação anual, uma grande ferrovia estava sendo construída do Mar Mediterrâneo até Medina, com o auxílio de moedas e cédulas doadas por fiéis de muitos países.
 
 Em termos de religiões e etnias, o império era diversificado em 1900. Constantinopla, com seu horizonte pontilhado de mesquitas, minaretes e cúpulas, tinha uma população de 1 milhão de pessoas, mas somente a metade era muçulmana. O comércio do movimentado porto de Esmirna era dominado por gregos. Salônica, o grande porto otomano do outro lado do Mar Egeu, mostrava-se como a única cidade importante da Europa onde os judeus constituíam o maior grupo étnico. Outra minoria expressiva dentro do império era a dos armênios cristãos, comerciantes experientes. Mas o mais numeroso grupo de estrangeiros dentro desse império compacto eram os. árabes. Chegan­ do aos 6 milhões de pessoas, viviam distantes de Constantinopla e certamente não se consideravam turcos.
+
+## Página 2
 
 ### A ASCENSÃO DO JOVEM TURCO
 
@@ -20,17 +24,23 @@ Quando o major Mustafá contava com 20 e pouco anos, o Império Otomano lutava p
 
 Ele nutria a esperança de um dia poder modernizar a Turquia, uma ambição que surgiu quando conheceu o homem que se tornaria o sultão. Em 1917, prestes a partir em uma delegação com destino à Alemanha para tratar da guerra, Mustafá notou a chegada de um delegado de modos polidos que ele não conhecia: "Ele fechou os olhos e pareceu mergulhado em pensamentos." No ano seguinte, o homem ausente e misterioso se tornou o sultão Mehmed VI. Quando o novo sultão não conseguiu demonstrar a liderança de que um império derrotado precisava e permitiu que os vitoriosos aliados ocupassem Constantinopla e outras regiões importantes do país, Mustafá Kemal assumiu o poder.
 
+## Página 3
+
 Como líder do Movimento Nacionalista Turco, formado em 1919, Mustafá tentou recuperar o controle do país. Expulsou as forças gregas que, com o apoio da Grã-Bretanha, da França e dos Estados Unidos, haviam ocupado o movimentado porto de Esmirna e grandes áreas do interior. Ele era outra vez o herói nacional. Sua campanha foi tão rápida e cruel que 180 mil gregos e armênios deixaram a Ásia Menor, refugiando-se na Grécia. Suas táticas eram tão inteligentes que, em setembro de 1922, seu exército realmente parecia capaz de retomar o Estreito de Dardanelos e até de invadir a Península de Gallipoli.
 
 Surpresos com o rumo dos acontecimentos, os aliados tinham de decidir se lutariam mais uma vez na guerra que haviam vencido pouco tempo antes. Em Londres, durante um encontro urgente do gabinete britânico, o primeiro-ministro Lloyd George confidenciou: "É inconcebível permitirmos que os turcos tomem a Península de Gallipoli. Devemos lutar para evitar que isso aconteça." Os reforços britânicos logo estavam a caminho - navios de guerra, cruzadores, uma esquadra de submarinos e uma flotilha de destroyers -, além de navios de transporte de tropas que vinham de Gibraltar, de Malta, do Egito e da própria Grã-Bretanha, bem como aeronaves do Egito. Por algumas semanas, a guerra pareceu provável.
 
 Os aliados, vitoriosos no longo combate contra a Turquia, estavam então divididos. A França havia desistido definitivamente de lutar; a Grã-Bretanha hesitava. As negociações começaram e o determinado Mustafá Kemal conseguiu quase tudo o que queria. O território de Gallipoli pertencia novamente à Turquia e os aliados retiraram seu exército de Constantinopla.
 
+## Página 4
+
 O triunfo da Turquia foi um momento fatídico para Grã-Bretanha e França. Quando derrotada, a Alemanha faria o que a derrotada Turquia fez: empregar a determinação, o patriotismo e a força das armas para suprimir as punições impostas após a Primeira Guerra Mundial. Havia dois governos na Turquia durante o mês de triunfo: um formalmente chefiado pelo tímido sultão Mehmed VI, na ocupada cidade de Constantinopla, e outro liderado pelo agressivo Mustafá Kemal, na cidade livre do interior, Ancara. Mais uma vez, foi Kemal quem tomou a iniciativa. Pediu ao sultão para demitir os ministros que havia nomeado em Istambul. Quando o sultão se recusou a fazer isso, a assembleia nacional se reuniu em Ancara, em 1° de novembro, e determinou, com apenas um voto contrário, que a Turquia devia tornar-se uma república. Na verdade, a assembleia foi além, depondo o sultão.
 
 O último sultão partiu de sua terra natal em um navio de guerra britânico, o HMS Malaya, por acaso também o nome de uma ilha islâmica. Por algum tempo, viveu em Meca, a cidade sagrada que nenhum sultão anterior havia considerado digna de uma visita. Passou seus últimos dias com três de suas esposas no resort italiano de San Remo, onde morreu de apoplexia em maio de 1926.
 
 A longínqua Ancara foi confirmada como capital da nova república da Turquia. A cidade havia sido escolhida por Kemal como capital temporária em 1920, em parte por ficar bem distante do mar, o que não permitiria o ataque dos gregos ou de qualquer outro invasor. Ancara ficava exposta ao vento no inverno, enquanto nas noites de verão uma nuvem de mosquitos da malária surgia do pântano próximo à estação de trem. Elll 1925, a cidade estava melhor. Havia rumores sobre a construção de uma central telefônica e de uma estação de rádio que poderiam servir a aproximadamente 50 mil habitantes. Ao mesmo tempo, algumas embaixadas, embora relutantes, transferiam para lá o pessoal antes sediado na antiga e adorável capital à beira-mar.
+
+## Página 5
 
 ### A CRUZADA CONTRA O BARRETE E O VÉU ...
 
@@ -42,9 +52,13 @@ O líder não entrou pessoalmente nas mesquitas para refazer os rituais e as pre
 
 Nos dez anos após a expulsão do califa, a Turquia progressivamente arrumou a casa. O relógio mudou, e o dia solar dos muçulmanos, que marcava o tempo a partir do nascer do sol, foi substituído pelo dia que se iniciava à meia-noite. Os numerais internacionais foram adotados, o alfabeto latino chegou e os sobrenomes se tornaram obrigatórios. Constantinopla, um nome grego, foi alterado para Istambul, e Angora foi oficialmente confirmada como Ancara.
 
+## Página 6
+
 A condição das mulheres melhorou, embora mais rapidamente nas cidades do que nas fazendas e mais em público do que na vida privada. O direito de um homem se divorciar de uma das esposas deu lugar a uma lei de divórcio semelhante à adotada na Suíça. As filhas adquiriram os mesmos direitos dos filhos na herança dos bens da família. As mulheres obtiveram o direito ao voto nas eleições parlamentares e 18 delas conquistaram um lugar na nova assembleia de 1935, no mesmo tempo em que as primeiras mulheres chegavam ao cargo de juíza. Aconteceram os primeiros concursos para escolha da rainha da beleza da Turquia, e uma moça foi coroada em meio aos sinais de desaprovação das mulheres mais velhas, que ainda usavam véu. Aos olhos de alguns críticos moderados, a condição feminina havia piorado no exato momento em que parecia melhorar.
 
 Tendo quase transformado a vida social, Kemal tentava restabelecer a economia. Gabava-se de que o país possuía então mais de mil tratores movidos a gasolina. Mas, em 1925, esse era um número humilhante quando comparado às centenas de milhares de cavalos, burros, mulas, bois e até homens e mulheres que puxavam arados e charretes. Mesmo nas cidades, em lojas e bazares, tudo era tão moroso quanto nos últimos anos do Império Otomano. Alguns visitantes juravam que o comércio havia se tornado menos vigoroso porque muitos dos gregos, judeus, armênios e outros espertos homens de negócios das cidades do velho império não estavam mais lá.
+
+## Página 7
 
 De pensamento dinâmico, Kemal era ditatorial em uma grande variedade de assuntos e situações. As vezes, lançava "um tremendo olhar que trazia abaixo toda a sua testa, como se houvesse uma nuvem carregada sobre suas sobrancelhas". E era esse olhar que ele usava cada vez mais para governar a nação. Cidadãos talentosos eram forçados a se exilar. Inimigos já não recebiam mais permissão para deixar o país, sendo alguns julgados e executados. Partidos políticos que pudessem incomodar eram erradicados. O pai da pátria admirava a ideia ocidental de parlamentos e assembleias nacionais, desde que pudesse escolher quem participaria deles. Ele era mais do que um presidente. Perto do fim, vendo a si mesmo como a nação, adotou o nome de Atatürk (pai dos turcos). Poucos líderes fizeram mais do que ele para transformar um pais.
 

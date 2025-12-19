@@ -1,11 +1,16 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 import { PerguntasService } from '../../../services/perguntas.service';
 import { AuthService } from '../../../services/auth.service';
 import { Bibliografia } from '../../../interfaces/perguntas.interface';
 import { first } from 'rxjs/operators';
 import { forkJoin } from 'rxjs';
+import { MinhasEstatisticas } from './minhas-estatisticas/minhas-estatisticas';
+import { EstatisticasGerais } from './estatisticas-gerais/estatisticas-gerais';
 
 interface MateriaEstatisticas {
   materia: string;
@@ -23,18 +28,21 @@ interface MateriaEstatisticas {
 @Component({
   selector: 'app-estatisticas',
   standalone: true,
-  imports: [CommonModule, MatIconModule],
+  imports: [CommonModule, MatIconModule, MatTabsModule, MatButtonModule, MinhasEstatisticas, EstatisticasGerais],
   templateUrl: './estatisticas.html',
   styleUrl: './estatisticas.scss'
 })
 export class EstatisticasComponent implements OnInit {
   private perguntasService = inject(PerguntasService);
   private authService = inject(AuthService);
+  private router = inject(Router);
 
   estatisticasUsuario: any = null;
   rankingGeral: any = null;
+  estatisticasGeraisErros: any = null;
   isLoading = false;
   isAdmin = false;
+  isResetting = false;
   
   // Mapeamento de matérias para IDs de bibliografias
   materiasConfig: { [key: string]: number[] } = {
@@ -68,6 +76,7 @@ export class EstatisticasComponent implements OnInit {
       
       if (this.isAdmin) {
         this.carregarRankingGeral();
+        this.carregarEstatisticasGeraisErros();
       }
     });
   }
@@ -101,6 +110,75 @@ export class EstatisticasComponent implements OnInit {
       }
     });
   }
+
+  carregarEstatisticasGeraisErros() {
+    this.perguntasService.getEstatisticasGeraisErros().subscribe({
+      next: (data) => {
+        this.estatisticasGeraisErros = data;
+      },
+      error: (error) => {
+        console.error('Erro ao carregar estatísticas gerais de erros:', error);
+      }
+    });
+  }
+
+  resetarEstatisticas() {
+    // Resetar todas as estatísticas
+    const mensagem = `Tem certeza que deseja resetar todas as suas estatísticas?\n\nTodas as suas respostas serão deletadas, mas as questões erradas serão preservadas para estatísticas gerais.`;
+    
+    if (!confirm(mensagem)) {
+      return;
+    }
+
+    this.isResetting = true;
+    this.perguntasService.resetarEstatisticas().subscribe({
+      next: (response) => {
+        alert(`Estatísticas resetadas com sucesso!\n\n${response.total_respostas_deletadas} respostas deletadas\n${response.questoes_erradas_preservadas} questões erradas preservadas`);
+        // Recarregar estatísticas
+        this.carregarEstatisticasUsuario();
+        this.carregarEstatisticasPorMateria();
+        this.questoesAcertadas = [];
+        this.questoesErradas = [];
+        this.isResetting = false;
+      },
+      error: (error) => {
+        console.error('Erro ao resetar estatísticas:', error);
+        alert('Erro ao resetar estatísticas. Tente novamente.');
+        this.isResetting = false;
+      }
+    });
+  }
+
+  resetarEstatisticasMateria(bibliografiaIds: number[]) {
+    if (!bibliografiaIds || bibliografiaIds.length === 0) {
+      return;
+    }
+
+    const mensagem = `Tem certeza que deseja resetar as estatísticas desta matéria?\n\nTodas as respostas relacionadas a esta matéria serão deletadas, mas as questões erradas serão preservadas para estatísticas gerais.`;
+    
+    if (!confirm(mensagem)) {
+      return;
+    }
+
+    this.isResetting = true;
+    this.perguntasService.resetarEstatisticas(undefined, bibliografiaIds).subscribe({
+      next: (response) => {
+        alert(`Estatísticas da matéria resetadas com sucesso!\n\n${response.total_respostas_deletadas} respostas deletadas\n${response.questoes_erradas_preservadas} questões erradas preservadas`);
+        // Recarregar estatísticas
+        this.carregarEstatisticasUsuario();
+        this.carregarEstatisticasPorMateria();
+        this.questoesAcertadas = [];
+        this.questoesErradas = [];
+        this.isResetting = false;
+      },
+      error: (error) => {
+        console.error('Erro ao resetar estatísticas da matéria:', error);
+        alert('Erro ao resetar estatísticas. Tente novamente.');
+        this.isResetting = false;
+      }
+    });
+  }
+
 
   calcularTaxaAcerto(acertos: number, total: number): number {
     if (total === 0) return 0;
@@ -304,5 +382,18 @@ export class EstatisticasComponent implements OnInit {
    */
   getLetraColunaB(index: number): string {
     return String.fromCharCode(65 + index); // A, B, C...
+  }
+
+  getMateriaPorBibliografiaId(bibliografiaId: number): string {
+    for (const materiaStat of this.materiasEstatisticas) {
+      if (materiaStat.bibliografiaIds.includes(bibliografiaId)) {
+        return materiaStat.materia;
+      }
+    }
+    return 'Desconhecida';
+  }
+
+  navigateHome(): void {
+    this.router.navigate(['/home']);
   }
 }

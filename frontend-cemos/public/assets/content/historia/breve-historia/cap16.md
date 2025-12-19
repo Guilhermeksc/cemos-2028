@@ -1,10 +1,14 @@
 # CAPÍTULO 16 A FLECHA FLAMEJANTE E OS VENTOS DA MUDANÇA (Páginas 179-192)
 
+## Página 1
+
 A população dos grandes países europeus se orgulhava de suas colônias. Era algo que lhes conferia prestígio, principalmente no início do século 20. Apareciam, pela primeira vez, os mapas coloridos nas salas de aula, e as crianças britânicas se alegravam ao ver boa parte do mundo pintada com o vermelho de seu país. Alemanha e Itália, que se juntaram tardiamente à corrida da colonização, sentiam-se ludibriadas de alguma forma por não participar da divisão de terras – consideravam as colônias mais um problema do que um prêmio. Richard Cobden, um defensor britânico do livre-comércio, uma vez perguntou o que aconteceria "se a França tomasse o controle completo da África". Ele mesmo respondeu que isso não prejudicaria ninguém, "a não ser a própria França". Certamente algumas colônias representavam vantagem econômica, mas muitas eram uma perda total.
 
 Algo que atesta isso é o fato de, às vésperas da Segunda Guerra Mundial, a Alemanha ter estado em vantagem militar por não possuir nenhuma colônia, enquanto Grã-Bretanha e França ficavam imobilizadas graças às tantas que controlavam. Uma potência colonialista requer uma grande marinha, o que consome recursos financeiros. A manutenção do poder nos mares devorou o dinheiro que poderia ter sido empregado em aeronaves. A estratégia de defender as colônias ao sul e ao norte do Equador também levou à dispersão de forças: algumas tropas permaneciam na Europa, embora fossem necessárias em outros lugares, e vice-versa Grã-Bretanha e França haviam enfrentado crises em 1940 em parte porque ambas tentavam estender seus recursos militares a todo o mundo colonial. O violento ataque de Hitler provou quão perigosamente esses recursos estavam dispersos.
 
 Em 1945, a opinião pública começou a pender contra a necessidade de existirem impérios ultramarinos. Dois grandes centros vitoriosos da guerra, Moscou e Washington, opunham-se a esses impérios, embora não por completo. Se houvesse possibilidade de uma colônia se tornar independente e cair na órbita de influência da União Soviética, os norte-americanos não se mostravam tão dispostos a ajudar tal processo de independência. Os soviéticos tinham um ponto de vista parecido. Ao mesmo tempo, três países colonialistas - Grã-Bretanha, França e Holanda - estavam esgotados pela guerra e incapazes de defender militarmente qualquer uma de suas colônias. Além disso, os britânicos já haviam prometido independência à Índia. A questão difícil era: quando e em que termos?
+
+## Página 2
 
 ### UMA BÚSSOLA PARA A ÍNDIA
 
@@ -16,7 +20,9 @@ As opiniões políticas de Gandhi eram uma espécie de colcha de retalhos em que
 
 Filho do Império Britânico, Gandhi assumiu tal condição e ao mesmo tempo lutou contra ela. Durante a Primeira Guerra Mundial, de volta à Índia, ofereceu-se como chefe de recrutamento entre a população indiana. Mais tarde, devolveria suas medalhas de guerra britânicas.
 
-`Filho do Império Britânico, Gandhi assumiu tal condição e ao mesmo tempo lutou contra ela.`
+**Filho do Império Britânico, Gandhi assumiu tal condição e ao mesmo tempo lutou contra ela.**
+
+## Página 3
 
 A Grã-Bretanha queria garantir certa autonomia à Índia, mas sem se retirar completamente. Gandhi procurou estimular a saída definitiva dos colonizadores. O Congresso Nacional Indiano, principal fórum de protesto, pretendia firmar um compromisso com os líderes ingleses, mas Gandhi agiu de outra maneira: pediu aos britânicos que abandonassem a Índia calma e rapidamente. Suas armas eram a resistência passiva e o convencimento moral. Ao ser detido por suas atividades pacíficas, mas subversivas, foi tranquilamente para a prisão.
 
@@ -26,9 +32,13 @@ Uma vez que a marcha deveria durar mais de três semanas, Gandhi cuidou para que
 
 A resistência passiva somente é possível diante de um governo que possua certo nível de paciência e tolerância. Gandhi pouco teria conseguido se um frio ditador estivesse no comando da Índia. Stalin e Hitler teriam ordenado sua prisão ou execução. Aquela face risonha e a tranquila voz da razão não mais apareceriam nos jornais nem nos noticiários.
 
+## Página 4
+
 O governo britânico desejava fazer concessões à Índia muito antes de tê-las feito a outras colônias, tanto asiáticas quanto africanas. O país era muito grande e importante e o futuro do Império Britânico poderia ser ameaçado se os indianos iniciassem, como em 1857, um motim. Em 1917, as revoluções russas despertaram temores de que a Índia também pudesse se rebelar e a Grã-Bretanha começou a apoiar a criação de instituições independentes em solo indiano. Dois anos mais tarde, uma delegação indiana oficial votou na Conferência de Paz em Paris. Um segundo e decisivo passo, em 1935, foi dividir a maior parte da Índia em 11 províncias autônomas, cada uma com seu parlamento. A política externa continuou em grande parte nas mãos dos britânicos, enquanto os assuntos domésticos ficaram por conta dos indianos. Tal concessão, embora insuficiente para a maioria dos hindus, era excessiva para os muçulmanos, uma minoria na maior parte das 11 províncias. Eles acreditavam cada vez mais que seu futuro não estava em uma Índia unida, mas na nova nação do Paquistão, formada pela junção das poucas regiões em que eram maioria.
 
 A Segunda Guerra Mundial deu à Índia e à vizinha Birmânia um grande poder de barganha, uma vez que os britânicos precisavam de sua lealdade. No perigoso ano de 1940, o Partido Trabalhista Britânico afirmou que "os povos colonizados de todo o mundo devem estabelecer o mais rapidamente possível um governo próprio". Essa atitude foi reforçada um ano mais tarde, quando os Estados Unidos entraram na guerra. Sua hostilidade em relação ao conceito de colônia europeia - algo que eles próprios haviam sido - aumentava a probabilidade de a Índia se tornar independente ao fim do conflito mundial. Roosevelt afirmou, em conversas privadas, que queria uma Índia livre. Churchill discordou.
+
+## Página 5
 
 ### A DIVISÃO DA ÍNDIA
 
@@ -38,9 +48,11 @@ A Índia se tornou independente em 15 de agosto de 1947, separando-se em duas na
 
 Quinze dias após a proclamação da independência, Gandhi, já envelhecido, começou um jejum na esperança de alcançar o entendimento entre os dois povos e suas nações. Ele, que sempre declarara querer viver até os 125 anos, já não tinha esse desejo. Um ano mais tarde, morreu nas mãos de um assassino pertencente a um grupo radical hindu. O tributo público a ele prestado foi ao mesmo tempo majestoso e humilde, tendo ocorrido no parlamento de Nova Délhi, em 2 de fevereiro de 1948. Jawaharlal Nehru, o primeiro-ministro da nova Índia, declarou: "Uma glória partiu. O sol que aquecia e iluminava nossas vidas se pôs. Agora, trememos de frio e de medo. Contudo, ele não permitiria que nos sentíssemos dessa maneira." Segundo Nehru, Gandhi foi "um homem de Deus".
 
-`A criação de duas nações separadas na antiga Índia britânica foi um ponto decisivo na história da Ásia.`
+**A criação de duas nações separadas na antiga Índia britânica foi um ponto decisivo na história da Ásia.**
 
 A transformação da antiga Índia britânica em duas nações separadas foi um ponto decisivo na história da Ásia. Um de seus efeitos é pouco comentado mesmo hoje em dia. A potencial influência da Índia subcontinental foi drasticamente reduzida pela divisão. Se houvesse uma só índia que congregasse tanto hindus quanto muçulmanos, então, no fim do século, sua população se aproximaria da casa de 1,3 bilhão de pessoas - maior até do que a da China. A nova Índia foi governada durante dezessete anos por um político que se sentiria em casa na Câmara dos Comuns. De família instruída, originária da Caxemira, Jawaharlal Nehru havia frequentado a Harrow School, em Londres, como Churchill, e a Cambridge University, antes de mergulhar na política indiana. Como líder da mais populosa democracia do mundo, inicialmente tentou seguir o caminho pacífico de Gandhi, instaurando negociações e convocando conferências. Por fim, decidiu-se por outro modo de ação. A Índia teve uma breve contenda com a China ao longo da fronteira em comum. As rivalidades que haviam atormentado a Europa tornavam-se visíveis na Ásia.
+
+## Página 6
 
 ### O MÁGICO DA INDONÉSIA
 
@@ -50,6 +62,8 @@ O líder dos indonésios, o enérgico presidente Sukarno, estava decidido. Para 
 
 No início, o mágico Sukarno, um mestre no uso das palavras, governou seus 90 milhões de compatriotas com sucesso. Sob seu encanto, um discreto sentimento de patriotismo começou a unir o país, formado por numerosos grupos étnicos. Ele liderou campanhas para diminuir as doenças tropicais, especialmente a bouba e a malária. Administrando uma das muitas nações joyens onde mais de 80% da população não sabiam ler nem escrever, iniciou decididamente a luta para aumentar os índices de alfabetização.
 
+## Página 7
+
 Sukarno convocou as primeiras eleições do país em 1955. Como os quatro partidos concorrentes - entre eles o comunista e o muçulmano - receberam um expressivo número de votos, ele percebeu que a democracia não lhe daria o resultado de que seu partido necessitava. Então, dispensou-a - ele sabia o que o povo queria. Quando a população e os ministros corruptos do governo pediam mais dinheiro, Sukarno mandava imprimir mais para eles. Como resultado, os preços aumentavam semana após semana e, em poucos anos, tinham sido multiplicados centenas de vezes. O presidente contraiu empréstimos, primeiro dos Estados Unidos, depois da Rússia e da China.
 
 No estrangeiro, Sukarno começou a fazer não apenas amigos, mas também inimigos. No início da década de 1960, suas tropas tiveram uma rápida escaramuça com a vizinha Malásia (federação de ex-colônias britânicas) e seus soldados e burocratas tomaram o lado oeste da Nova Guiné das mãos do antigo inimigo, a Holanda. Na capital da Indonésia, Jacarta, os círculos mais próximos do poder começaram a conspirar uns contra os outros. Seis generais foram torturados e assassinados, e várias centenas de milhares de civis, muitos dos quais chineses, foram massacrados. O glorioso reinado de Sukarno - fundador do que hoje é a quarta nação mais populosa do mundo - praticamente havia acabado. Em 1965, as forças armadas tomaram o poder.
@@ -57,6 +71,8 @@ No estrangeiro, Sukarno começou a fazer não apenas amigos, mas também inimigo
 Muitas vezes chamado de "revolta contra o Ocidente", o movimento pela emancipação das colônias foi também uma revolta dentro do Ocidente, onde as opiniões a respeito destas divergiam bastante. Milhões de famílias britânicas, portuguesas, francesas, espanholas e holandesas - especialmente aquelas cujos parentes e amigos haviam morado nas colônias - queriam que o império colonial continuasse. Os grupos e partidos políticos que clamavam pelo fim do império também eram fortes. Seu apoio ajudou muitos dos líderes coloniais que, quando jovens, haviam estudado na Grã-Bretanha, na França, em Praga ou mesmo em Moscou. Alguns desses estudantes, ao viverem em capitais de potências imperialistas, tinham sido auxiliados por cristãos, marxistas ou outros grupos.
 
 John Kenneth Galbraith escreveu: "Todos os grandes líderes têm demonstrado uma característica em comum: a disposição de enfrentar sem rodeios a maior preocupação de seu povo. Isso representa quase toda a essência da liderança." Na África, surgiram líderes extraordinários com tal característica: Gamai Adbel Nasser, do Egito; Jomo ("Flecha Flamejante") Kenyatta, do Quênia; dr. Hastings Banda, de Niassalândia e Malawi; Kwame Nkrumah, de Gana; Patrice Lumumba, do Congo; e Leopold Senghor, o socialista da África oriental e ex-seminarista que se tornou o primeiro presidente do Senegal. Muitos estavam de tal maneira obcecados pela conquista da independência que quase nada além disso importava. Eles pouco pensavam no que fariam caso essa independência chegasse.
+
+## Página 8
 
 ### OS VENTOS DA MUDANÇA
 
@@ -68,9 +84,11 @@ A minoria branca, que compunha um quinto da população total em meados do sécu
 
 A ideia da supremacia branca permeou a política nacional, especialmente depois de 1948. Sob as novas leis, os brancos só podiam casar-se com outros brancos. Contavam-se entre seus privilégios frequentar as boas universidades, como Witwatersrand, Stellenbosch e Cape Town; exercer a maior parte das profissões especializadas; adquirir propriedades e administrar negócios, bem como residir em determinados bairros e cidades. Aos sul-africanos não brancos cabia uma pequena representação no parlamento, que se reunia na Cidade do Cabo, e mesmo tal representação era cada vez menor. Em 1960, o primeiro-ministro britânico Harold Macmillan advertiu os líderes sul-africanos quanto ao fortalecimento da consciência daquela nação e quanto aos "eventos da mudança" que sopravam através do continente - mas o alerta não foi registrado.
 
-`A ideia da supremacia branca permeou a política nacional africana, especialmente depois de 1948.`
+**A ideia da supremacia branca permeou a política nacional africana, especialmente depois de 1948.**
 
 O Congresso Nacional Africano negro foi abolido. Um dos líderes africanos, o advogado Nelson Mandela, respondeu por tentativa de sabotagem e ataque armado. Em Johannesburgo, o braço militar secreto de seu partido político, Lança da Nação, adquiria mais armamentos. Mandela foi preso, julgado e, em junho de 1964, condenado à prisão perpétua. Mais tarde, acabou sendo libertado e veio a se tornar líder do país.
+
+## Página 9
 
 ### O DECLÍNIO DO IMPÉRIO
 
@@ -82,6 +100,8 @@ A população da Indochina, por sua vez, insatisfeita com a ocupação japonesa,
 
 O conjunto de colônias na África era valorizado pelos líderes franceses também por causa de sua enorme extensão - ia desde o extremo do Mediterrâneo até o Saara, cruzando o Equador e chegando à costa do Atlântico, abrangendo uma área quase igual à da China. Mesmo os espaços desabitados significavam uma vantagem na era do átomo - os franceses viriam a testar sua primeira bomba nuclear no deserto, em 1960. Outras partes do território eram muito valorizadas por oferecer um amplo destino que podia ser ocupado por cidadãos franceses. A Argélia, que ficava de frente para a costa sul da França, abrigava mais franceses do que qualquer outra colônia.
 
+## Página 10
+
 A Argélia era tratada como uma colônia especial, e alguns políticos da França desejavam que se tornasse parte permanente do país. Nos dois grandes portos argelinos, Algiers e Oran, a maioria dos habitantes possuía ascendência francesa. De acordo com um escritor da década de 1920, a parte mais nova de Algiers "pode fazer os viajantes acreditarem que ainda estão na Europa, a não ser pela multidão de rostos escuros". Após a Segunda Guerra Mundial, a população da Argélia estava dividida: alguns queriam permanecer com a França; outros desejavam a independência.
 
 Houve luta. A disputa dividiu a nação francesa, fazendo o general De Gaulle voltar ao poder. Em 1962, a questão sobre a independência da Argélia foi resolvida por um referendo votado na França e em todas as suas colônias. Por 18 milhões contra 2 milhões, a Argélia passou a ser livre. A França tentou continuar a ser uma potência global, oferecendo a suas colônias um bom lugar em uma federação ou comunidade francesa. Em 1960, o número de pessoas que formavam essa comunidade quase igualava o número de habitantes da França.
@@ -90,7 +110,9 @@ A Grã-Bretanha teria conseguido manter muito de seu império, ao menos em tese,
 
 O Império Britânico durara quatro séculos. A rapidez com que se dissolvia parecia incrível para quem acompanhava o processo de fora, embora não fosse esse o pensamento de africanos, asiáticos e outros que apreciavam a perspectiva de independência nacional. Durante tal declínio, em pontos específicos do globo, os eventos marítimos muitas vezes foram mais influentes do que aqueles acontecidos em grandes extensões de terra. A perda do Canal de Suez, em 195, foi devastadora. A decisão, em 1971, de retirar as forças navais de Cingapura foi muito mais importante do que a perda de grandes territórios na África.
 
-`A ruptura com a europa criou um sentimento de trinfo nas terras libertas da África e da Ásia, mas foi comum que tal alegria durasse pouco.`
+**A ruptura com a europa criou um sentimento de trinfo nas terras libertas da África e da Ásia, mas foi comum que tal alegria durasse pouco.**
+
+## Página 11
 
 A Grã-Bretanha e a França mantiveram poucas possessões ultramarinas, algumas bastante longínquas, como as Ilhas Falkland, Hong Kong e o Taiti. Quase todas as colônias holandesas e espanholas já se haviam emancipado, e a Bélgica tinha perdido a única que possuía. Portugal, ao contrário das outras potências coloniais, mantinha praticamente todos os domínios desde o início do século. Tinha Macau, uma pequena porta de entrada para o sul da China; continuava a dominar metade do Timor, não muito distante da costa da Austrália; e controlava grandes regiões do oeste e leste africanos, por conta dos milhares de combatentes que lá estavam. Uma nação democrática tinha mais possibilidade de libertar suas colônias do que outra sob regime autoritário, e Portugal, que acabou experimentando uma revolução democrática em meados da década de 1970, rapidamente perdeu seu império.
 

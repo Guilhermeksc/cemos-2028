@@ -10,7 +10,8 @@ from .models import (
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel,
-    RespostaUsuario
+    RespostaUsuario,
+    QuestaoErradaAnonima
 )
 from .serializers import (
     BibliografiaSerializer,
@@ -25,7 +26,8 @@ from .serializers import (
     PerguntaCorrelacaoCreateUpdateSerializer,
     PerguntaResumoSerializer,
     RespostaUsuarioSerializer,
-    RespostaUsuarioCreateSerializer
+    RespostaUsuarioCreateSerializer,
+    QuestaoErradaAnonimaSerializer
 )
 
 
@@ -35,7 +37,7 @@ class BibliografiaViewSet(viewsets.ModelViewSet):
     serializer_class = BibliografiaSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['autor', 'materia']
-    search_fields = ['titulo', 'autor', 'materia', 'descricao']
+    search_fields = ['titulo', 'autor', 'materia__materia', 'descricao']
     ordering_fields = ['id', 'titulo', 'autor', 'materia']
     ordering = ['id']
     
@@ -240,6 +242,16 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
             
             serializer.validated_data['acertou'] = acertou
             resposta = serializer.save()
+            
+            # Se o usuário errou, registrar também na tabela anônima
+            if not acertou:
+                QuestaoErradaAnonima.objects.create(
+                    pergunta_id=resposta.pergunta_id,
+                    pergunta_tipo=resposta.pergunta_tipo,
+                    bibliografia_id=resposta.bibliografia_id,
+                    assunto=resposta.assunto
+                )
+                logger.info(f"📊 Questão errada registrada na tabela anônima - Pergunta ID: {resposta.pergunta_id}")
             
             logger.info(f"💾 Resposta salva - ID: {resposta.id}, Usuário: {resposta.usuario.username}, Acertou: {resposta.acertou}")
             
@@ -452,7 +464,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
             'results': respostas_com_detalhes
         })
     
-    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
+    @action(detail=False, methods=['get'])
     def ranking_geral(self, request):
         """
         Retorna ranking geral de todos os usuários (apenas para admin)
@@ -514,4 +526,195 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
             },
             'questoes_mais_acertadas': list(questoes_mais_acertadas),
             'questoes_mais_erradas': list(questoes_mais_erradas)
+        })
+    
+    @action(detail=False, methods=['post'], url_path='resetar_estatisticas')
+    def resetar_estatisticas(self, request):
+        """
+        Reseta estatísticas do usuário logado
+        IMPORTANTE: O usuário só pode resetar suas próprias estatísticas.
+        O campo 'usuario' é sempre definido como request.user, ignorando qualquer
+        tentativa de passar um usuario_id diferente no body da requisição.
+        
+        Se bibliografia_ids (lista) for fornecido, reseta apenas dessas bibliografias
+        Se bibliografia_id (único) for fornecido, reseta apenas dessa bibliografia
+        Caso contrário, reseta todas as estatísticas
+        Preserva questões erradas na tabela anônima antes de deletar
+        
+        POST /api/respostas-usuario/resetar_estatisticas/
+        Body opcional: { "bibliografia_id": 1 } ou { "bibliografia_ids": [1, 2, 3] }
+        """
+        # SEMPRE usar o usuário autenticado da requisição
+        # Ignorar qualquer tentativa de passar usuario_id no body
+        usuario = request.user
+        
+        # Validar que o usuário está autenticado (já garantido por IsAuthenticated, mas reforçando)
+        if not usuario or not usuario.is_authenticated:
+            return Response(
+                {'error': 'Usuário não autenticado'},
+                status=status.HTTP_401_UNAUTHORIZED
+            )
+        
+        bibliografia_ids = request.data.get('bibliografia_ids', [])
+        bibliografia_id = request.data.get('bibliografia_id')
+        
+        # Construir filtros base - SEMPRE filtrar por usuario=request.user
+        # Isso garante que o usuário só pode resetar suas próprias respostas
+        filtros_respostas = {'usuario': usuario}
+        
+        # Se bibliografia_ids (lista) foi fornecido, usar lista
+        if bibliografia_ids:
+            try:
+                # Garantir que é uma lista
+                if not isinstance(bibliografia_ids, list):
+                    bibliografia_ids = [bibliografia_ids]
+                # Converter para inteiros
+                bibliografia_ids = [int(bid) for bid in bibliografia_ids]
+                filtros_respostas['bibliografia_id__in'] = bibliografia_ids
+            except (ValueError, TypeError) as e:
+                return Response(
+                    {'error': f'bibliografia_ids deve ser uma lista de números válidos: {str(e)}'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+        # Se bibliografia_id (único) foi fornecido, usar único
+        elif bibliografia_id is not None:
+            try:
+                bibliografia_id = int(bibliografia_id)
+                filtros_respostas['bibliografia_id'] = bibliografia_id
+            except (ValueError, TypeError):
+                return Response(
+                    {'error': 'bibliografia_id deve ser um número válido'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+        
+        # Buscar respostas erradas do usuário (filtradas por bibliografia se especificado)
+        respostas_erradas = RespostaUsuario.objects.filter(
+            **filtros_respostas,
+            acertou=False
+        )
+        
+        # Contar quantas questões erradas serão preservadas
+        total_erros_preservados = respostas_erradas.count()
+        
+        # Registrar questões erradas na tabela anônima (se ainda não estiverem lá)
+        # Nota: Não verificamos duplicatas porque queremos contar cada erro de cada usuário
+        questoes_anonimas_criadas = 0
+        for resposta in respostas_erradas:
+            # Criar registro anônimo para cada erro
+            QuestaoErradaAnonima.objects.create(
+                pergunta_id=resposta.pergunta_id,
+                pergunta_tipo=resposta.pergunta_tipo,
+                bibliografia_id=resposta.bibliografia_id,
+                assunto=resposta.assunto
+            )
+            questoes_anonimas_criadas += 1
+        
+        # Deletar respostas do usuário (filtradas por bibliografia se especificado)
+        total_deletadas = RespostaUsuario.objects.filter(**filtros_respostas).count()
+        RespostaUsuario.objects.filter(**filtros_respostas).delete()
+        
+        mensagem = 'Estatísticas resetadas com sucesso'
+        if bibliografia_ids:
+            mensagem = f'Estatísticas de {len(bibliografia_ids)} bibliografia(s) resetadas com sucesso'
+        elif bibliografia_id is not None:
+            mensagem = f'Estatísticas da bibliografia {bibliografia_id} resetadas com sucesso'
+        
+        return Response({
+            'message': mensagem,
+            'total_respostas_deletadas': total_deletadas,
+            'questoes_erradas_preservadas': questoes_anonimas_criadas
+        }, status=status.HTTP_200_OK)
+    
+    @action(detail=False, methods=['get'], url_path='estatisticas_gerais_erros')
+    def estatisticas_gerais_erros(self, request):
+        """
+        Retorna estatísticas gerais de questões erradas por matéria (apenas para admin)
+        GET /api/respostas-usuario/estatisticas_gerais_erros/
+        """
+        if not request.user.is_staff:
+            return Response(
+                {'error': 'Acesso negado. Apenas administradores podem visualizar estas estatísticas.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        # Agrupar por bibliografia_id e contar erros
+        erros_por_bibliografia = QuestaoErradaAnonima.objects.filter(
+            bibliografia_id__isnull=False
+        ).values('bibliografia_id').annotate(
+            total_erros=Count('id')
+        ).order_by('-total_erros')
+        
+        # Buscar informações das bibliografias
+        bibliografias_info = {}
+        for item in erros_por_bibliografia:
+            try:
+                bibliografia = BibliografiaModel.objects.get(id=item['bibliografia_id'])
+                bibliografias_info[item['bibliografia_id']] = {
+                    'id': bibliografia.id,
+                    'titulo': bibliografia.titulo,
+                    'materia': bibliografia.materia.materia if bibliografia.materia else None,
+                    'autor': bibliografia.autor
+                }
+            except BibliografiaModel.DoesNotExist:
+                bibliografias_info[item['bibliografia_id']] = {
+                    'id': item['bibliografia_id'],
+                    'titulo': 'Bibliografia não encontrada',
+                    'materia': None,
+                    'autor': None
+                }
+        
+        # Agrupar por matéria
+        erros_por_materia = {}
+        for item in erros_por_bibliografia:
+            bibliografia_id = item['bibliografia_id']
+            bibliografia = bibliografias_info.get(bibliografia_id, {})
+            materia = bibliografia.get('materia') or 'Sem matéria'
+            
+            if materia not in erros_por_materia:
+                erros_por_materia[materia] = {
+                    'materia': materia,
+                    'total_erros': 0,
+                    'bibliografias': []
+                }
+            
+            erros_por_materia[materia]['total_erros'] += item['total_erros']
+            erros_por_materia[materia]['bibliografias'].append({
+                'bibliografia_id': bibliografia_id,
+                'titulo': bibliografia.get('titulo', 'Desconhecido'),
+                'autor': bibliografia.get('autor'),
+                'total_erros': item['total_erros']
+            })
+        
+        # Ordenar por total de erros (decrescente)
+        ranking_materias = sorted(
+            erros_por_materia.values(),
+            key=lambda x: x['total_erros'],
+            reverse=True
+        )
+        
+        # Estatísticas gerais
+        total_erros_geral = QuestaoErradaAnonima.objects.count()
+        total_bibliografias_com_erros = erros_por_bibliografia.count()
+        total_materias_com_erros = len(erros_por_materia)
+        
+        # Erros por tipo de questão
+        erros_por_tipo = QuestaoErradaAnonima.objects.values('pergunta_tipo').annotate(
+            total=Count('id')
+        ).order_by('-total')
+        
+        return Response({
+            'estatisticas_gerais': {
+                'total_erros': total_erros_geral,
+                'total_bibliografias_com_erros': total_bibliografias_com_erros,
+                'total_materias_com_erros': total_materias_com_erros
+            },
+            'ranking_materias': ranking_materias,
+            'erros_por_tipo': list(erros_por_tipo),
+            'erros_por_bibliografia': [
+                {
+                    **item,
+                    'bibliografia': bibliografias_info.get(item['bibliografia_id'], {})
+                }
+                for item in erros_por_bibliografia[:50]  # Top 50 bibliografias
+            ]
         })

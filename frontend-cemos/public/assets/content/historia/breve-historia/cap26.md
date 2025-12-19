@@ -1,10 +1,14 @@
 # CAPÍTULO 26 A LUA DO ISLÃ BRILHA OUTRA VEZ (Páginas 293-302)
 
+## Página 1
+
 A Lua, após décadas de escuridão, brilhava mais uma vez sobre países muçulmanos. Na década de 1960, nações que pouco tempo antes haviam se tornado independentes desfraldavam cada vez mais a bandeira na qual se via a Lua crescente e a sombra verde do Islã. Os primeiros triunfos aconteceram no Paquistão, lar da maioria dos muçulmanos indianos, e na república da Indonésia, onde se concentrava a maior população muçulmana do mundo. Nasser, no Egito, e Sukarno, na Indonésia, representavam a nova convicção que se fazia visível em alguns países islâmicos. Apenas vinte e cinco anos antes, quase todas os países islâmicos haviam estado sob o domínio da Europa cristã.
 
 Pela primeira vez em quinhentos anos, as nações islâmicas ocupavam uma posição de barganha em regiões importantes. Tais nações jamais haviam sido exploradoras diligentes de minérios, mas, por acaso, os países que se haviam convertido ao islamismo mais de mil anos antes possuíam a maioria dos campos de petróleo conhecidos. Os ocidentais encontraram o petróleo e os islâmicos se regozijaram, ficando com grande parte dos rendimentos. O Oriente Médio, a África do Norte, a Nigéria e a Indonésia possuíam, ao todo, mais da metade das reservas mundiais de petróleo. Ao mesmo tempo, o rápido declínio no nível das reservas dos Estados Unidos, até então principal produtor do mundo, beneficiou ainda mais os países islâmicos. Outra mudança abarrotou os cofres muçulmanos: na década de 1960, o petróleo se tornava a principal fonte de energia, ultrapassando o carvão.
 
 Em 1973, os principais produtores de petróleo, liderados pelos árabes, aumentaram vertiginosamente o preço do produto, além de impedirem que fosse levado para nações que apoiavam Israel. Com o petróleo atingindo preços recordes, o Oriente Médio foi inundado pelos lucros. Magnatas árabes se tornaram proprietários de algumas das mansões inglesas outrora habitadas por seus antigos dominadores. Muçulmanos começaram a fazer parte da lista das familias mais ricas do mundo. O Islã se espalhara entre os países mais pobres do globo, mas, pela primeira vez, em séculos, também estava presente em alguns dos mais ricos.
+
+## Página 2
 
 ### DIVERGÊNCIAS ENTRE MUÇULMANOS E CRISTÃOS
 
@@ -14,7 +18,7 @@ Nos cem anos que se seguiram, as nações cristãs se tornaram mais seculares. O
 
 Nas décadas seguintes, o Islã vicejou. Hábil em conservar seus fiéis, empenhava-se em atrair mais partidários. As crianças muçulmanas abraçavam a religião dos pais - e as famílias costumavam ser numerosas. Em 1893, os muçulmanos representavam cerca de 12% da população global; exatamente um século mais tarde, esse índice havia chegado aos 18%. Era a segunda religião em número de fiéis, maior que o número de hinduístas e budistas somados. Os cristãos ainda eram mais numerosos, com um terço da população do planeta, mas sua liderança estava sob ameaça.
 
-`Ao longo do século, as concepções islâmicas e cristãs se afastaram cada vez mais uma das outras. O Islã deplorava as rápidas mudanças do ocidente, e o ocidente, a lentidão das mudanças no Islã.`
+**Ao longo do século, as concepções islâmicas e cristãs se afastaram cada vez mais uma das outras. O Islã deplorava as rápidas mudanças do ocidente, e o ocidente, a lentidão das mudanças no Islã.**
 
 A resistência do Islã em seus países tradicionais foi ajudada pelo êxito alcançado em outras terras. Os muçulmanos espalharam sua fé por meio de movimentos migratórios. Em 1900, os viajantes que visitavam as cidades em efervescência - Paris, Chicago, Buenos Aires ou Dunedin - encontravam sinagogas com facilidade, mas nenhuma mesquita. Nos Estados Unidos, os muçulmanos eram raros, mas, no final do século, sua população crescia mais rapidamente que a dos judeus. Ao mesmo tempo, em várias cidades inglesas, as mesquitas atraíam tantos fiéis quanto as igrejas cristãs. Em Paris, enquanto as igrejas católicas permaneciam em silêncio, as mesquitas estavam lotadas.
 

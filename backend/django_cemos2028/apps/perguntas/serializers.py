@@ -1,22 +1,25 @@
 from rest_framework import serializers
 from .models import (
     BibliografiaModel,
+    MateriaModel,
     FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel,
-    RespostaUsuario
+    RespostaUsuario,
+    QuestaoErradaAnonima
 )
 
 
 class BibliografiaSerializer(serializers.ModelSerializer):
     perguntas_count = serializers.SerializerMethodField()
     flashcards_count = serializers.SerializerMethodField()
+    materia_nome = serializers.CharField(source='materia.materia', read_only=True, allow_null=True)
     
     class Meta:
         model = BibliografiaModel
         fields = [
-            'id', 'titulo', 'autor', 'materia', 'descricao',
+            'id', 'titulo', 'autor', 'materia', 'materia_nome', 'descricao',
             'perguntas_count', 'flashcards_count'
         ]
         read_only_fields = ['id']
@@ -222,3 +225,19 @@ class RespostaUsuarioCreateSerializer(serializers.ModelSerializer):
         # acertou será definido na view antes de chamar create()
         # Se não estiver em validated_data, será None e causará erro, então garantimos que está
         return super().create(validated_data)
+
+
+class QuestaoErradaAnonimaSerializer(serializers.ModelSerializer):
+    """Serializer para questões erradas anônimas"""
+    
+    class Meta:
+        model = QuestaoErradaAnonima
+        fields = [
+            'id',
+            'pergunta_id',
+            'pergunta_tipo',
+            'bibliografia_id',
+            'assunto',
+            'timestamp'
+        ]
+        read_only_fields = ['id', 'timestamp']

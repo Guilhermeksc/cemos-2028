@@ -2,6 +2,7 @@
 from import_export import resources, fields
 from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget
 from .models import (
+    MateriaModel,
     BibliografiaModel, 
     FlashCardsModel,
     PerguntaMultiplaModel, 
@@ -11,6 +12,12 @@ from .models import (
 
 
 class BibliografiaResource(resources.ModelResource):
+    materia = fields.Field(
+        column_name='materia',
+        attribute='materia',
+        widget=ForeignKeyWidget(MateriaModel, 'materia')
+    )
+    
     class Meta:
         model = BibliografiaModel
         fields = ('id', 'titulo', 'autor', 'materia', 'descricao')

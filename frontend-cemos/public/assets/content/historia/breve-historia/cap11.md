@@ -1,5 +1,7 @@
 # CAPÍTULO 11 A ASCENSÃO DE HITLER (Páginas 125-133)
 
+## Página 1
+
 A Alemanha, mais do que talvez qualquer outra nação da Europa, sofreu com a depressão mundial. O país estava completamente aberto a novas soluções políticas. Poderiam o comunismo, o socialismo ou o capitalismo oferecer uma resposta ou havia uma solução caseira?
 
 A nação havia passado por um período de caos anteriormente. Após o fim da guerra, o imperador se exilou na Holanda, as colônias alemãs foram divididas entre os países vitoriosos, quase toda a marinha de guerra estava no fundo do mar e boa parte da marinha mercante havia sido confiscada. Com o Tratado de Versalhes, partes do território alemão foram retalhadas e transferidas para França, Polônia, Tchecoslováquia, Dinamarca, Bélgica e Cidade Livre de Danzig. Vultosas somas de dinheiro e grandes quantidades de mercadorias tiveram de ser pagas pela Alemanha aos vitoriosos, mas nem tudo foi cumprido. Na pequena e elegante cidade de Weimar, que substituía temporariamente Berlim como capital, os membros do parlamento não se sentiam donos da situação. Em várias cidades, os comunistas eram fortes e, encorajados pelo que se passava na União Soviética, procuravam maneiras de iniciar um golpe. Seus rivais, também alertas, eram agressivos. Na nova democracia, a bala competia com o voto.
@@ -8,6 +10,8 @@ Os encontros e desencontros políticos na Alemanha tinham muitas complexidades e
 
 Muitos alemães ainda desejavam um líder forte, um homem de ação que se sobrepusesse ao debate dos políticos e o silenciasse, caso fosse necessário. Por fim, esse líder chegou. Doze anos mais tarde, entretanto, grande parte dos alemães, ao observar sua pátria destroçada, acabou concluindo que ele não era o milagreiro tão desejado.
 
+## Página 2
+
 ### A CABEÇA DE HITLER
 
 Adolf Hitler era austríaco, da cidade de Braunau, onde o pai trabalhava como funcionário da alfândega. Pelos padrões daquela época, Hitler teve oportunidades de educação acima da média. Chegou a Viena, aos 16 anos de idade, para estudar belas-artes. Após anos como pintor de pouca expressão, mudou-se para Munique, onde, no início da guerra, alistou-se no exército. Combatendo no front oriental, ficou incapacitado pela exposição ao gás e foi condecorado por bravura sua tarefa era das mais arriscadas: levar mensagens em meio às balas, às granadas que explodiam, ao barulho e à fumaça. A camaradagem reinante nas trincheiras o reconfortava e a derrota final da Alemanha o deixou consternado. Até mais do que os outros soldados, sentiu-se traído pelos líderes da nação e - de acordo com seu julgamento irracional - pelos judeus.
@@ -15,6 +19,8 @@ Adolf Hitler era austríaco, da cidade de Braunau, onde o pai trabalhava como fu
 Esse ex-cabo apresentou o próprio nome àqueles que continuavam à procura de um novo líder para a Alemanha. Chegando ao topo de um pequeno grupo bávaro que logo adotaria a denominação de Partido Trabalhista Nacional Socialista Alemão, Hitler falava apaixonadamente sobre as preocupações da Alemanha, para grupos que o ouviam nas ruas. Os membros do partido estavam extremamente dispostos a enfrentar em público os comunistas, mais bem preparados. Depois de tentar derrubar o governo da Baviera, Hitler foi parar na prisão, onde se dedicou a elaborar soluções para os problemas da Alemanha e a redigir suas memórias e um manifesto, publicados sob o título de Mein Kampf (Minha Luta), obra lida por somente alguns milhares de pessoas logo após sua publicação, em 1925.
 
 O partido nazista de Hitler ainda ocupava uma posição inferior na que era praticamente a segunda divisão da política alemã e, em sucessivas eleições para o Reichstag, alcançou somente uma pequena fração do total de votos, ficando muito atrás dos socialistas e dos comunistas. Hitler continuava a ser o inimigo implacável do comunismo, regime que ele preferia chamar de "conspiração judaico-bolchevique". Sua promessa constante era a de que tornaria a Alemanha grande novamente.
+
+## Página 3
 
 Exceto pelas ideias enfáticas e pelos discursos estridentes, inicialmente Hitler não se comportou como um líder populista. Sua aparência disciplinada - o cabelo, preto e liso, estava sempre penteado com esmero - e sua conversa despretensiosa em ocasiões privadas faziam-no parecer um indivíduo reservado. Havia algo de espartano em seu modo de vida. Não bebia, nem fumava e evitava carne. Nacionalista, apreciava as florestas e montanhas da Alemanha, bem como os mais apaixonados compositores germânicos, dos quais o preferido era Wagner. Não sentia necessidade de viajar para o exterior. A Alemanha era seu mundo.
 
@@ -25,6 +31,8 @@ O partido nazista de Hitler teria permanecido em segundo plano na política, nã
 Quando a depressão mundial se instalou, a Alemanha foi outra vez atingida - inclusive por si mesma -, desta vez mais duramente do que qualquer outro grande país. Em 1932, a produção industrial alemã correspondia a apenas 60% da registrada em 1929, o último ano de prosperidade. Em Berlim, Dresden e outras grandes cidades, cenas de pessoas vestindo farrapos, recolhendo gravetos para servir de lenha ou revirando latas de lixo provavelmente eram mais frequentes naquela ocasião do que em qualquer outra, em um período de cem anos. A nação registrou a impressionante taxa de desemprego de 30%, enquanto na Inglaterra tal taxa era de 22%.
 
 Hitler ofereceu patriotismo e ações firmes. As pessoas então correram para se filiar a seu partido, cujo número de membros saltou para cerca de 200 mil, dos quais metade fazia questão de desfilar vestindo a camisa marrom que o simbolizava. Nas eleições de 1932 - poucos tiveram tantas eleções -, Hitler alcançou a surpreendente marca de 18% da votação. Em outra eleição no mesmo ano, conseguiu 37% dos votos, fazendo do partido nazista o maior de todos. Em janeiro de 1933, foi convidado para o cargo de chanceler - primeiro-ministro, na verdade - cm um governo de coalizão. Em agosto de 1934, com a morte do já bastante idoso presidente da república, Hitler foi eleito com 88% dos votos para o posto que combinava os cargos de chanceler e presidente. Durante essa eleição, o uso que fez do rádio, dos alto-falantes, das proeis ões à luz de archotes, dos slogans, das faixas e de toda a orquestra da propaganda foi fantástico.
+
+## Página 4
 
 ### A MORTE DA DEMOCRACIA ALEMÃ
 
@@ -38,6 +46,8 @@ A prosperidade instalou-se entre os milhões de crianças, mulheres e homens ale
 
 O governo alemão gastava muito, enquanto outros país continuavam a economizar o dinheiro público. A construção de um rodovias pavimentadas, o reflorestamento e a edificação de moradias nas cidades geravam empregos. Enquanto isso, o rearmamento continuava. Mesmo antes de Hitler chegar ao poder, as forças armadas alemãs, proibidas pelo Tratado de Versalhes de exercitar sua pouca força, usavam secretamente o território soviético para testes de armamentos e treinos táticos. Hitler passou a rearmar o país abertamente logo recompondo a marinha de guerra, a força aérea e o exército num época em que as democracias eram impedidas pelos próprios eleitores de fazerem o mesmo. Os problemas pplíticos e as privações econômica da Europa davam a Hitler a oportunidade de desmantelar o Tratado de Versalhes de 1919 - e ele o fez à força. As maiores nações europeias, voltadas para as angústias econômicas de seus povos, não deram atenção suficiente à ameaça que o ditador representava.
 
+## Página 5
+
 Hitler agiu, como sempre, de modo decidido. Em 16 de março de 1935, simplesmente anunciou que o Tratado de Versalhe, que restringia o tamanho do exército alemão, já não era mais válido e que o governo tinha a intenção de formar um contingente de de cerca de meio milhão de homens, excedendo em muito o número de soldados franceses. Três meses mais tarde, Hitler convenceu a Grâ-Bretanha a deixá-lo reconstruir a marinha alemã até o tamanho limite de um terço da marinha britânica.
 
 A harmonia entre políticos britânicos e franceses e a concordância  de opinião entre os povo das duas nações nunca foi tão importante quanto em 1935, mas raramente pareceu tão distante. Se os dois principais vencedores europeus da Primeira Guerra Mundial tivessem agido rapidamente e com firmeza, poderiam ter ameaçado Hitler com uma invasão imediata, enquanto seu exército ainda recrutava homens. Ele não teria tido escolha a não ser recuar. No ano seguinte, muito confiante, o ditador deu outro passo: enviou seu exército bastante aumentado para reocupar a Renânia. Em 1938, esse exército entrou na Áustria - que, sendo país de língua alemã, não parecia capaz de oferecer grande resistência - e também na Tchecoslováquia. Como um boxeador, Hitler calculava seus golpes cuidadosamente.
@@ -46,6 +56,8 @@ Infelizmente, França e Grã-Bretanha não eram aliados naturais. Sua inimizade 
 
 Com sua oposição ao rearmamento, a opinião pública de muitos países da Europa Ocidental provou-se uma aliada involuntária de Hitler, pois, embora eloquente ao expressar sua hostilidade contra a guerra, não entendia bem os efeitos de suas ações. Em meados da década de 1930, para que houvesse tranquilidade internacional, era urgentemente necessária uma cruzada pela paz na Alemanha, e não na Grã-Bretanha e na França. Entretanto, em terras germânicas, infelizmente, tal cruzada estava fora de questão, pois teria sido rechaçada sem piedade.
 
+## Página 6
+
 ### A SITUAÇÃO DE JUDEUS E CIGANOS
 
 Em 1900, a maior parte dos judeus vivia nas regiões central e leste da Europa, especialmente na Rússia e no Império Austro-Húngaro, sendo porém minoria até mesmo nesses lugares. Muitos se vestiam de maneira característica e o dia de veneração deles era preferencialmente o sábado, não o domingo. Em uma época de nacionalismos, eram diferentess e costumavam ver-se assim.
@@ -53,6 +65,8 @@ Em 1900, a maior parte dos judeus vivia nas regiões central e leste da Europa, 
 Na Europa como um todo, não havia outra minoria étnica de tanto sucesso nas universidades, na Música, na Literatura, na Medicina, no Direito e nos negócios. Na Alemanha, para onde migraram de regiões mais ao leste, eram especialmente bem-sucedidos. Lá, o antissemitismo era menos notável. Os judeus alemães permaneciam como um minoria bastante reduzida - menos de 1 milhão - e eram atuante na vida nacional. Haviam servido nas forças armadas durante a Primeira Guerra Mundial, contribuíam para boas causas e esforçavam-se para ser assimilados pela maioria.
 
 Hitler atacou os judeus em seu livro Mein Kampf, mas entre suas inúmeras frases de ódio não havia nenhuma ordem precisa para que fossem exterminados. De fato, os judeus que viviam na Alemanha provavelmente se sentiam seguros no mês em que Hitler alcançou o poder, pois controlavam ou administravam muitas instituições importantes. Uma grande parte de três influentes jornais alemães pertencia a judeus. O clube de futebol FC Bayern, campeão de 1932, depositava sua confiança em um técnico e em um presidente judeus. Mas nos seis anos seguintes, à medida que as políticas e os discursos do governo tornavam cada vez mais antissemitas, a maioria dos judeu deixou a Alemanha, abandonando seus bens. Muitos alemães permanecera, solidários a eles e tal solidariedade foi denunciada nos folheto nazistas impressos no ano de 1938. Nessa época, os decretos de Hitler contra ss judeus já estavam plenamente ativos.
+
+## Página 7
 
 De acordo com tais decretos, os judeus não eram mais considerados cidadãos alemães e até os passaportes deles foram carimbados com um. Não tinham permissão para casar com mulheres ou homens nascidos na Alemanha. As vésperas da guerra, não podiam possuir automóveis nem exercer suas profissões, tampouco ir a cinema ou a outros lugares de entretenimento público.
 

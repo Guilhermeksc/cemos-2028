@@ -1,10 +1,14 @@
 # CAPÍTULO 1 UMA AURORA RESPLANDECENTE
 
+## Página 1
+
 O nascer do século 20 foi como uma aurora resplandecente. O nível de expectativa era inédito. Tanto havia sido conquistado no século anterior que parecia sensato acreditar que dali em diante os êxitos do mundo em muito superariam os desastres.
 
 O século que nascia representava uma promessa especial para os povos europeus, quer habitassem o Velho Mundo ou as longínquas terras colonizadas. Seus filhos poderiam esperar uma educação melhor do que nunca, e o trabalho de crianças de 10 anos em tempo integral, em fazendas e oficinas, já não parecia normal. A vida melhorava, a fome diminuía, as pessoas viviam mais. Os conflitos entre as principais nações da Europa pareciam se extinguir, embora tropas numerosas ainda desfilassem em feriados nacionais. Democracia e liberdade se es­palhavam. No entanto, a maior parte de tais benefícios atingia apenas um quarto da população mundial e não parecia provável que chegasse à África, à Ásia ou às remotas ilhas do Pacífico.
 
 O século se iniciava de modo promissor e ao mesmo tempo perigoso. A aurora de 1901 se anunciava esplendorosa, mas nuvens negras, em lenta caminhada, pairavam acima da luz.
+
+## Página 2 
 
 ### A EUROPA EM PLENO AUGE: OS VASTOS IMPÉRIOS
 
@@ -15,6 +19,8 @@ O Império Britânico, o maior conhecido pelo mundo até então, ainda não havi
 **No início do século 20, a vida melhorava e as pessoas viviam mais.**
 
 Em evolução - portanto desordenado -, esse império contrastava com todos os anteriores. Em algumas colônias, os representantes britânicos eram extremamente poderosos, enquanto em outras não passa­vam de imponentes figuras decorativas. No Egito, os oficiais britânicos de maior patente tomavam as decisões, mas permitiam que altivos paxás continuassem a fumar suas cigarrilhas em suntuosos escritórios, em uma demonstração de prestígio. Por outro lado, Canadá, Austrália e Nova Zelândia dispunham de grande autonomia, e seus parlamentos representavam mais fielmente o povo do que o parlamento britânico. Em termos de política internacional, porém, não eram independentes. No entanto, a mãe dos parlamentos, às margens do Tâmisa, considerando os acontecimentos que levaram à independência das colônias americanas no século 18, de vez em quando se permitia ser desafiada ou ignorada por essas colônias, quando se tratava de questões de política externa de importância vital para elas, que cada vez mais financiavam os próprios exército e marinha, embora aceitassem a liderança britânica em caso de guerra. Em situação diametralmente oposta, estavam as colônias da África e da Ásia, que não possuíam parlamento, juízes locais ou oficiais de alta patente e dependiam em grande parte, em termos econômicos, da Grã-Bretanha.
+
+## Página 3
 
 O crescimento do Império Russo se deu de forma tão acelerada que ficou difícil diferenciar, nos mapas, a velha Rússia do novo império. O Império Russo se estendeu desde o Mar Báltico até o Oceano Pacífico. De tão vasto, em uma extremidade fazia fronteira com a Turquia e a Pérsia, enquanto na outra encontrava a divisa da Coreia. Em tamanho, somente o Império Britânico o excedia.
 
@@ -36,6 +42,8 @@ A China, pródiga em recursos, parecia adormecida, enquanto diplomatas e negocia
 
 Tais impérios europeus pareciam poderosos em 1900 e continuavam ávidos por expansão. Tudo entraria em colapso ao longo do século.
 
+## Página 4
+
 ### A ASCENSÃO DA BANDEIRA ESTRELADA
 
 Os europeus mais atentos - uma minoria - previram as consequên­cias para a Europa do papel exercido pelos Estados Unidos, tanto política quanto militarmente. Por volta de 1900, o país chegava à marca de 80 milhões de habitantes, cerca de 20 milhões a mais do que a Alemanha. Na produção de aço - o barômetro econômico da época-, era o líder mundial. Em outros produtos, de tabaco a minerais, era o maior ou o segundo maior produtor. Às vésperas da Primeira Guerra Mundial, seus produtos manufaturados alcançavam a quantidade total produzida pela Grã-Bretanha, Alemanha e França juntas.
@@ -47,6 +55,8 @@ Lá também surgiam novas palavras e expressões. Lá se encontra­ vam os mais 
 Os Estados Unidos haviam se tornado um império, embora os cidadãos, em sua maioria, não se sentissem donos dele. O país possuía o Alasca, negociado com a Rússia no ano de 1867; possuía o Havaí; havia derrotado a Espanha numa rápida guerra, conquistando temporariamente Cuba e as Filipinas, e aumentava a marinha de guerra, a fim de acompanhar sua expansão territorial. Um dos emocionantes eventos de 1908 foi a viagem de uma grande esquadra desarmada para as distantes costas do Pacífico, onde seus marinheiros marcharam à vontade pelas ruas - diferentemente da formalidade europeia -, para deleite das multidões. Essa elegante esquadra, de proporções até então inéditas no Oceano Pacífico, foi uma espécie de aviso ao Japão, no entender de alguns observadores. Em 1914, a marinha de guerra norte-americana já era a terceira maior do mundo, contrastando com o diminuto exército.
 
 Os Estados Unidos, que tinham até então preferido viver em isola­mento - a ponto de seus esportes favoritos, como o beisebol e o futebol americano, terem sido inventados lá mesmo - começaram a olhar para fora. Iniciava-se o planejamento do Canal do Panamá, que colocaria a América do Norte no centro da rota de comércio global. Em 1900, o país enviou tropas para o norte da China, a fim de se juntarem a outros exércitos de diversas nações e assim restabelecer a ordem após a Rebelião dos Boxers, de cunho antiocidental e anticristão. Cinco anos mais tarde, em seu próprio território, a nação liderou as delicadas discussões que puseram termo à guerra entre Rússia e Japão.
+
+## Página 5
 
 ### MONARCAS E ANARQUISTAS
 
@@ -68,6 +78,8 @@ O popular rei Humberto, da Itália, quase foi assassinado em Roma, no ano de 189
 
 O terrorismo é uma velha atividade que aparece, desaparece e re­ aparece. Quando uma nova onda de terrorismo atingiu a Europa e o Oriente Médio durante a segunda metade do século 20, os anarquis­ tas, com suas pistolas e facas, já haviam desaparecido da memória das pessoas.
 
+## Página 6
+
 ### OS SINOS DAS IGREJAS SERÃO SILENCIADOS?
 
 Igrejas, mesquitas, templos, pagodes e sinagogas tinham importância vital para a vida cotidiana, ainda que ocasionalmente estivessem sob ataque. Praticamente a cada segundo, em algum lugar, queimavam-se incensos, acendiam-se velas ou tocavam-se sinos. Ao meio-dia ou antes do culto divino, o toque dos sinos era uma das melodias mais difundidas pela Europa - mais do que é hoje. Os ocidentais que chegavam ao Oriente achavam que os sinos dos templos, com seu toque lento e suave, criavam uma atmosfera diferente daquela que existia em suas terras. Um dos mais conhecidos poemas da época, Mandalay, em que Rudyard Kipling fala da cidade de mesmo nome, descreve o som do velho pagode birmanês: "Pois o vento sopra nas palmeiras, e os sinos do templo anunciam." Mesmo os mais austeros protestantes, que evitavam decididamente os sinos e as velas, seguiam rituais, inclusive o de agradecer a Deus antes de cada refeição.
@@ -78,11 +90,15 @@ O budismo e o cristianismo, religiões mundiais com maior número de adeptos, co
 
 No início do século, o cristianismo parecia mais ávido do que o Islã por espalhar a sua mensagem - este se encontrava politicamente enfraquecido e os cristãos ocupavam a maioria das regiões islâmi­ cas. Os Países Baixos controlavam Java e Sumatra; a Grã-Bretanha dominava as áreas muçulmanas da Índia e os estados malaios; e os cristãos russos detinham o poder nas regiões islâmicas das planí­ cies e montanhas da Ásia Central, com exceção do Afeganistão. No norte da África, as regiões islâmicas eram, em sua maioria, colônias da França, da Grã-Bretanha ou da Espanha. Os muçulmanos mais ardorosos sentiam-se um tanto humilhados por verem sua pátria do­minada pelos cristãos, o domingo ser estabelecido como dia oficial de veneração e bebidas alcoólicas serem vendidas livremente. O Império Otomano, com base em Constantinopla, permanecia como o único defensor poderoso do Islã, dominando boa parte da Ásia Menor, a Península Arábica, um pedaço modesto do norte da África e os Bálcãs. A Primeira Guerra Mundial despedaçaria esse império.
 
+## Página 7
+
 Milhares de congregações cristãs da América do Norte, da Eu­ropa, da Nova Zelândia e de outros lugares financiavam pelotões de missionários - mulheres e homens - que partiam para outras terras com o objetivo de instalar, sob um governo colonial, igrejas e, talvez, um hospital e uma escola. A conversão podia atingir uma ilha inteira ou toda uma região, mas nas populosas China e Índia os convertidos, ainda que numerosos, não passavam de uma pequena parcela. Os missionários se sacrificavam. Albert Schweitzer, uma autoridade mundial nas composições para órgão de autoria de J. S. Bach, deixou muita coisa para trás e viajou da Alsácia até o Gabão, em 1913, para viver como médico missionário em meio aos africanos ocidentais.
 
 As religiões mais importantes tiveram de enfrentar inimigos poderosos. Um deles foi a ciência, quase uma religião rival, capaz de empreender os próprios milagres. Alguns teólogos, usando as então mais recentes habilidades linguísticas, arqueológicas e científicas, questionavam a correção literal da Bíblia, inclusive a criação do mundo no prazo de uma semana. Muitos cristãos mais instruídos sentiram a fé vacilar. Queriam continuar crendo, mas seu intelecto dizia não. William Ewart Gladstone, estudioso da Bíblia e durante muito tempo primeiro-ministro britânico, declarou que essa perda da fé religiosa era "a mais indizível calamidade que poderia abater-se sobre um homem ou sobre uma nação". A tal calamidade, chamada por alguns de "a morte de Deus", tornava-se frequente nos círculos de mais alto nível de instrução.
 
 Os papas deram pouca atenção às novas bandeiras que proclama­ vam as virtudes da ciência, do socialismo e do livre debate teológico, e a opinião desses líderes religiosos continuou a ter bastante peso em questões internacionais. Em tempos de paz, o papa Leão XIII era pro­ vavelmente a pessoa mais influente do mundo. Quando, porém, uma guerra envolvia grandes potências, qualquer peça poderosa de artilharia influía mais do que ele, pois os países católicos tinham deixado de ser dominantes. Três grandes potências econômicas - os Estados Unidos, a Grã-Bretanha e a Alemanha- abrigavam um número maior de protestantes do que de católicos.
+
+## Página 8
 
 ### AO BALANÇAR DO BERÇO
 
@@ -93,6 +109,8 @@ Quase da mesma idade era "Bertie", criança obrigada a usar talas nas pernas par
 Nos braços dos pais ou brincando nas ruas, estavam os futuros líde­res de outras nações ainda não criadas: Tito, da Iugoslávia, e Kenyatta, do Quênia. Três compositores - Oscar Hammerstein II, em Nova York, Paul Hindemith, na Alemanha, e Kirsten Flagstad, na Noruega - logo começariam a frequentar a escola, enquanto a canadense Mary Pick­ ford, que se tornaria uma das primeiras estrelas de cinema, já era uma criança prodígio, na opinião apaixonada de seus pais. Na China, Mao Tse-Tung, filho de fazendeiro, então com 7 anos de idade, se tornaria um poderosíssimo líder comunista e acabaria com o conceito de fazen­ das particulares. Outros que seriam proeminentes líderes asiáticos - o imperador Hirohito, do Japão, e o presidente Sukarno, da Indonésia - nasceram em 1901, ano que, em uma atmosfera intelectual talvez mais capaz de lidar com números do que a nossa, foi considerado o primeiro do novo século.
 
 Nenhuma dessas crianças era capaz de perceber aonde a combinação dos eventos mundiais ou os riscos da guerra e da paz poderiam levá-las. As estatísticas mostravam que a maioria delas não viajaria muito no decorrer da vida. Era comum que a maior parte das pessoas morresse na pequena região, no povoado ou até mesmo na casa em que havia nascido.
+
+## Página 9
 
 No ano de 1900, a maioria das crianças em idade escolar não frequentou a escola nem mesmo por uma semana. Sua colaboração era necessária nos campos, nas matas, nas casas ou mesmo em minas subterrâneas. Sem essa força de trabalho, os padrões de vida na África e na Ásia seriam ainda mais baixos. O Japão talvez fosse o único país asiático onde o trabalho infantil não era comum, mas na Índia e na China a maior parte dos meninos e das meninas trabalhava durante o dia - de fato, o censo hindu de 1911 apontou que somente 1% das mulheres do país sabia ler e escrever. De maneira geral, os países com um padrão de vida mais alto foram os primeiros a instituir a frequên­cia escolar obrigatória. A educação compulsória acabou por abolir o trabalho infantil que durava o dia inteiro, todos os dias.
 

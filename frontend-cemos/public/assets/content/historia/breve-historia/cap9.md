@@ -1,5 +1,7 @@
 # CAPÍTULO 9 UM PERCUSSIONISTA ITALIANO (Páginas 111-117)
 
+## Página 1
+
 A Itália mesclava o sofisticado ao primitivo. Em Roma, havia corais encantadores, hábeis cirurgiões, teólogos dedicados e a nobre arquitetura de muitas épocas; em Milão estavam competentes engenheiros e artesãos e a aclamada casa de ópera. Mas no campo a maior parte do povo era pobre. As vésperas da Primeira Guerra Mundial, a família italiana típica era rural e seu padrão de vida assemelhava-se mais ao do norte da África do que ao das famílias alemãs. Em 1910, nas cidades, a lei ainda permitia que crianças de 9 anos trabalhassem em fábricas.
 
 ### SURGE MUSSOLINI
@@ -14,6 +16,8 @@ Havia um forte tambor nacionalista esperando para ser tocado por um político em
 
 Depois da guerra, o problema econômico foi ressaltado por uma inquietação política. Em 1920, o país estava à beira de uma revolução. No porto adriático de Ancona, um batalhão do exército amotinou. Greves paralisaram ferrovias, linhas de bonde e estações de energia elétrica. Os problemas foram agravados pela severa, embora curta, depressão pós-guerra que se abateu sobre quase todos os países da Europa. A ocasião era propícia à ascensão de Mussolini.
 
+## Página 2
+
 ### OS CAMISAS-NEGRAS DE ROMA
 
 Benito Mussolini convenceu os italianos de que podia fazer algo para resolver os problemas da pátria. E por algum tempo de fato conseguiu. Seu pai era ferreiro e também um revolucionário. Assim, deu ao filho o nome de uma figura revolucionária, Benito Juarez, o libertado do México. Sua mãe, Rosa, era a professora do povoado, uma católica devota que não queria revolução alguma. O jovem Benito, puxando um pouco ao pai e um pouco à mãe, queria ser professor e revolucionário. No início do século 20, após ser recusado como professor em diversas cidades, foi viver na Suíça.
@@ -21,6 +25,8 @@ Benito Mussolini convenceu os italianos de que podia fazer algo para resolver os
 Talentoso com as palavras, tanto as escritas quanto as pronunciadas do alto das tribunas, Mussolini voltou à Itália para ser editor de jornais radicais: em Forli, sua cidade natal, cuja publicação se chamava Luta de Classes, e em Trento, perto da fronteira com a Áustria. Suas opiniões lhe renderam algum tempo na prisão. Por fim, foi convidado a assumir a editaria do Avanti, jornal oficial dos socialistas. Quando a Primeira Guerra Mundial eclodiu, ele desafiou a posição dos socialistas - que queriam a neutralidade - e defendeu que a Itália tomasse parte na guerra contra os povos de língua alemã, os quais considerava inimigos naturais, uma vez que ocupavam parte do nordeste da Itália. Após a entrada do país na guerra, serviu como soldado nas geladas montanhas do norte, perto da fronteira austríaca. Em 1917, foi ferido pela explosão de uma granada. Seu período como soldado foi útil para a política muitos veteranos de guerra acreditavam que, quando Mussolini falava em público, falava em nome deles.
 
 Combativo e ambicioso, o líder fundou o Partido Fascista, em Milão, em março de 1919, quatro meses depois do fim da guerra. De pequena participação no violento cenário político e ativo principalmente no norte da Itália, o partido pedia ordem no caos civil, no mesmo tempo em que contribuía para a existência desse caos; denunciava o alto nível de desemprego e desejava auxiliar os trabalhadores, mas não por meio de sindicatos trabalhistas; prometia ainda refrear o individualismo capitalista. Em lugar de corporações, sindicatos, universidades e um parlamento fortes, defendia o poder do estado como uma instituição que impõe, julga e inspira. O fascismo acreditava mais na nação do que no internacionalismo.
+
+## Página 3
 
 Além de confiar no poder das palavras, Mussolini acreditava na força bruta. De fato, fasces - origem do nome do partido - era um feixe de varas que simbolizava a autoridade na era romana. Ele estava ansioso, como vários outros líderes de grupos políticos rivais, para criar uma força armada própria que crescesse cada vez mais. Na Itália, era fácil comprar armas de fogo em lojas e em um curto período de 1921 - ano de desordem civil - um decreto do governo permitiu que aproximadamente 900 mil italianos comprassem armas de fogo. Os fascistas de Mussolini, vestindo suas camisas negras, feriam adversários, tomavam o controle de repartições públicas e dispersavam reuniões de grupos políticos rivais. Em algumas cidades, os camisas-negras enfrentaram socialistas armados; em outras, a polícia. Inicialmente urbano, o partido conseguiu novos membros na zona rural, graças à sua visível simpatia pelos esforçados trabalhadores do campo.
 
@@ -34,6 +40,8 @@ Mussolini estava em Milão quando recebeu o telegrama convocando-o a ir a Roma. 
 
 Nas eleições nacionais de 1924, os fascistas aproveitaram todos os recursos do estado para aumentar sua votação, enquanto seus adversários, desesperadamente divididos, não recorreram nem mesmo ao bom senso. Os fascistas obtiveram 403 das 599 vagas. Mais tarde, foram abolidas as eleições, que, conforme a explicação de Mussolini, não eram mais necessárias ao país. As jovens e aparentemente fortes raízes da democracia foram arrancadas. Mas a própria democracia, pode-se dizer, ajudou a destruir a si mesma.
 
+## Página 4
+
 ### LUZES E SOMBRAS NA ITÁLIA
 
 A Itália se tornou assunto na Europa. Uma multidão de visitantes fazia o julgamento daquilo que Mussolini havia alcançado em seus primeiros anos. Embora muitos se impressionassem, os democratas se aterrorizavam com o que viam ou ouviam: o banimento de partidos rivais e a deportação de dissidentes políticos para ilhas que serviam de prisão, sem o benefício de um julgamento. Também lamentavam a proibição de greves, a interferência nas universidades e a censura dos meios de comunicação. Jornais, livros, programas de rádio e até anúncios eram censurados. Os descontentes com os rumos da política praticamente só podiam expressar-se com segurança na privacidade do lar ou no confessionário. O governo de partido único caminhava de mãos dadas com um conjunto de ideias oficiais.
@@ -41,6 +49,8 @@ A Itália se tornou assunto na Europa. Uma multidão de visitantes fazia o julga
 Os barulhentos tambores de Mussolini fascinaram e depois repeliram Arturo Toscanini, um dos grandes maestros do mundo e regente da casa de ópera La Scala. Após a guerra, como muitos italianos patriotas, Toscanini era simpático a Mussolini, tanto que, em Milão, no ano de 1919, foi candidato ao parlamento pelo partido fascista. Desiludindo-se aos poucos, o maestro protestou usando sua batuta e se recusando a conduzir a apresentação do hino fascista em um dos eventos musicais mais esperados do século 20, a estréia de Turandot. A vingança era inevitável. Em Bolonha, em 14 de março de 1931, ao entrar em um teatro onde regeria a orquestra, ele e sua mulher foram atacados por fascistas. Três meses mais tarde, Toscanini deixou o país.
 
 Muitos turistas não notavam as ameaças e intimidações que permeavam a vida pública e intelectual dos italianos. Outros argumentavam que era preferível que os fascistas, e não os comunistas, colocassem a Itália em uma camisa de força. Além disso, durante os primeiros anos do regime de Mussolini, o país havia se recuperado. As mudanças não ocorriam apenas lá - um reflorescimento nacional aconteceu na Finlândia e em vários outros países europeus -, mas era impressionante como a Itália havia praticamente emergido do caos. A vida econômica se fortalecia. O desemprego se mostrava menos ameaçador, as greves se tornaram raras e os funcionários públicos eram menos suscetíveis ao suborno. No sul, a Máfia estava sob controle. Muitos turistas tinham a certeza de que, pela primeira vez, os notórios trens italianos não chegavam atrasados às estações - afirmação um tanto exagerada, mas a verdade é que pelo menos eles chegavam.
+
+## Página 5
 
 A Itália lançava mão de políticas que muitos dos antigos fascistas jamais haviam previsto. No congresso do partido em Florença, em agosto de 1919, alguns membros queriam confiscar as propriedades de certas ordens religiosas. Uma década mais tarde, sua posição havia mudado. Mussolini assinou um tratado que faria do Vaticano, o lar do papa, uma nação independente.
 

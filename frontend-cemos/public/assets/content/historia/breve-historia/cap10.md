@@ -1,10 +1,14 @@
 # CAPÍTULO 10 UMA DEPRESSÃO MUNDIAL (Páginas 118-124)
 
+## Página 1
+
 A Primeira Guerra Mundial enfraqueceu de tal maneira a Europa que a participação do continente no total da população global e na economia caiu consideravelmente. O centro das finanças mudou-se para os Estados Unidos - o dínamo da atividade econômica. Pela primeira vez, os principais países europeus dependiam parcialmente de Nova York, que no papel de centro financeiro era naturalmente menos experiente do que Londres no enfrentamento de crises. Infelizmente, a crise financeira que estourou em Nova York no ano de 1929 foi mais séria do que qualquer outra enfrentada por Londres.
 
 Embora os Estados Unidos apresentassem vulnerabilidades econômicas na década de 1920, a maior parte das nações europeias foi assolada por outras muito mais graves. Era preciso pagar pela guerra. A dívida nacional da Grã-Bretanha e da Alemanha aumentou 11 vezes, e a da França e a da Itália, 6. A Europa foi vítima de outra doença financeira logo após a guerra. Em um cenário de incerteza, os preços subiam descontroladamente. Em 1922, os preços na Áustria aumentaram 14 mil vezes. Na Polônia, a alta foi de 2,5 milhões de vezes e na Rússia, de 4 bilhões de vezes. Um ano mais tarde, a Alemanha quebrou até mesmo esses recordes astronômicos. Embora o nome técnico disso seja inflação, tratava-se, na verdade, de um caos completo.
 
 Outra ruptura da década de 1920 pode ser facilmente compreendida pelos europeus de hoje, já que são testemunhas da situação contrária, pois a criação da União Europeia, ao abrandar as fronteiras nacionais, permitiu que o comércio e os investimentos corressem livremente por boa parte da Europa, proporcionando prosperidade crescente. O oposto aconteceu após o fim da guerra, em 1918. A Europa tinha então um grupo de novos países cujas fronteiras haviam sido demarcadas, chegando a incríveis 20 mil quilômetros de linhas divisórias. Novas nações impunham tarifas e inauguravam aduanas que antes não existiam. Portos se separaram do interior, linhas férreas foram interrompidas e moinhos de farinha não estavam mais ligados a suas fontes de grãos. Na Europa circulavam 27 moedas diferentes, enquanto às vésperas da guerra o total era de apenas 14.
+
+## Página 2
 
 ### PÂNICO EM WALL STREET
 
@@ -16,6 +20,8 @@ No período de algumas semanas, as ações norte-americanas se valorizaram um po
 
 **No início do século 20, o Brasil era considerado um gigante adormecido que um dia poderia despertar.**
 
+## Página 3
+
 A maioria das pessoas parou de comprar produtos que não considerava essenciais. Novos carros não eram facilmente vendidos e a indústria automobilística em Detroit e em Turim passou a comprar menos aço e borracha. Assim, fornecedores demitiram trabalhadores, as mulheres pararam de comprar novas roupas para a família e a demanda por lã, algodão e couro diminuiu em cidades e fábricas a milhares de quilômetros de distância. Nos feriados, os resorts em praias da África do Sul e na Riviera, bem como em montanhas no Japão e na Suíça, tinham apenas metade da ocupação.
 
 A crise, muito mais do que a guerra mundial, deu a impressão de que o mundo todo era um só lugar e de que não havia - nem mesmo aos pés dos Andes ou nas baías do Rio de Janeiro - como escapar dos efeitos do gigantesco acontecimento no Hemisfério Norte.
@@ -23,6 +29,8 @@ A crise, muito mais do que a guerra mundial, deu a impressão de que o mundo tod
 No início do século 20, o Brasil era considerado um gigante adormecido que um dia despertaria. Abrangendo cerca da metade do território da América do Sul e abrigando quase a metade de sua população, o país possuía as maiores áreas do mundo com seringueiras - uma commodity vital às vésperas da era dos automóveis - e também era o principal fornecedor de diamantes, até o surgimento do garimpo de Kimberley, na África do Sul. Com a denominação oficial de Estados Unidos do Brasil, era rico em recursos, mas geralmente incapaz de explorá-los adequadamente. Seu principal rival era a Argentina, um país próspero. A maioria dos viajantes que aportava no Rio de Janeiro e depois seguia para Buenos Aires costumava preferir a capital argentina em todos os aspectos, com exceção da paisagem. A cidade portenha era uma das 15 maiores do mundo, com um teatro e uma catedral católica imponentes.
 
 Quando a guerra mundial irrompeu, em 1914, os países sul-americanos independentes nada fizeram. A maioria prosperou durante o conflito e nenhum sofreu danos severos. Da depressão mundial, entretanto, a América do Sul não conseguiu escapar.
+
+## Página 4
 
 ### DESEMPREGO - UMA DOENÇA GLOBAL
 
@@ -34,6 +42,8 @@ A depressão logo atingiu a China. O mercado de exportação da seda, um artigo 
 
 Por que a vida econômica mundial estava praticamente congelada? Essa depressão era pior do que qualquer outra ocorrida no passado em parte por haver muitas pessoas que vendiam produtos e serviços umas para as outras. Quinhentos anos antes, quando a principal tarefa de um povoado - e a maioria dos europeus vivia em povoados - era produzir comida, combustível e roupas para suprir as próprias necessidades, havia pouco comércio externo. Assim, uma desarticulação comercial nacional ou internacional não poderia causar muitos estragos. Em 1930, porém, mais da metade da população mundial dependia direta ou indiretamente do comércio, portanto um colapso colocava em risco o emprego e o padrão de vida da maioria. Embora houvesse um fórum para cooperação política- a Liga das Nações-, nenhum fórum contribuía para a cooperação econômica.
 
+## Página 5
+
 ### OS REFLEXOS SOBRE A POLÍTICA
 
 A política foi afetada pela turbulência econômica. No ano de 1930, o primeiro-ministro Hamaguchi, do Japão, foi assassinado; Gandhi lançou uma campanha de desobediência civil na Índia, então sob domínio britânico; os curdos se rebelaram ao longo das fronteiras da Pérsia e da Turquia; os Etíopes deram início a uma revolta contra seu imperador; judeus e árabes combateram na Palestina. Em todos os lugares, as pessoas apelavam para a força. Em um discurso proferido em Florença, Mussolini admitiu que as palavras têm sua beleza, mas "os rifles, as metralhadoras, os navios, os aviões e os canhões são ainda mais belos". Enquanto isso, na Finlândia, os fascistas tentavam dar um golpe, e na Polônia líderes radicais eram mandados para a prisão.
@@ -41,6 +51,8 @@ A política foi afetada pela turbulência econômica. No ano de 1930, o primeiro
 Na América Latina, em 1930 e 1931, longas greves, marchas pelas ruas e protestos violentos eram frequentes, levando à derrubada do partido que ocupava o poder em 11 de seus 20 países. Em 1931, o Japão invadiu e conquistou a Manchúria - um prelúdio de sua invasão à China seis anos mais tarde. Em 1932, revoluções armadas surgiam na América do Sul. Bolívia e Paraguai entraram em guerra, e o Peru lutava contra a Colômbia - uma disputa que a desafortunada Liga das Nações foi convidada a resolver. Mesmo em nações relativamente estáveis havia disputas dramáticas. Em 1933, os australianos do oeste tentaram se separar da Austrália - e uma ampla maioria votou a favor disso.
 
 O capitalismo estava em desordem, condenado em vários círculos como uma desgraça econômica e moral. John Maynard, Keynes, o gênio de Cambridge, que tanto faria para fortalecer e recondicionar o capitalismo, declarou em 1936: "É fato que o mundo não vai tolerar por muito tempo o desemprego", o qual era, em sua opinião, um elemento e uma parcela do "capitalismo individualista dos dias atuais. O sistema econômico que outrora havia operado milagres não podia mais dar trabalho para dezenas de milhões de pessoas que o buscavam. Como resultado, o comunismo passou a desfrutar de grande prestígio.
+
+## Página 6
 
 Durante a depressão, a União Soviética forneceu empregos, embora com salários baixos e muitos riscos, a quem quisesse e também a quem não quisesse. Vários russos finalmente voltaram para casa após um exílio autoimposto: o famoso compositor Prokofiev foi calorosamente recebido e ali permaneceu. Os russos que retornavam logo encontravam ocupação. Embora soubessem que não havia inatividade em seu país, não percebiam quanto trabalho era feito, às escondidas, por multidões de prisioneiros políticos.
 

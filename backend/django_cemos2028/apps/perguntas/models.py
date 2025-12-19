@@ -3,11 +3,31 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django_cemos2028.apps.core.users.models import Usuario
 
 
+class MateriaModel(models.Model):
+    id = models.IntegerField(primary_key=True, unique=True, verbose_name="ID")
+    materia = models.CharField(max_length=100, unique=True, verbose_name="Matéria")
+    
+    class Meta:
+        verbose_name = "Matéria"
+        verbose_name_plural = "Matérias"
+        ordering = ['materia']
+    
+    def __str__(self):
+        return self.materia
+
+
 class BibliografiaModel(models.Model):
     id = models.IntegerField(primary_key=True, unique=True, verbose_name="ID")
     titulo = models.CharField(max_length=255, verbose_name="Título")
     autor = models.CharField(max_length=255, blank=True, null=True, verbose_name="Autor")
-    materia = models.CharField(max_length=100, blank=True, null=True, verbose_name="Matéria")
+    materia = models.ForeignKey(
+        MateriaModel,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        verbose_name="Matéria",
+        related_name="bibliografias"
+    )
     descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
     
     class Meta:
@@ -20,7 +40,7 @@ class BibliografiaModel(models.Model):
         if self.autor:
             parts.append(f"- {self.autor}")
         if self.materia:
-            parts.append(f"({self.materia})")
+            parts.append(f"({self.materia.materia})")
         return " ".join(parts)
 
 class FlashCardsModel(models.Model):
@@ -220,3 +240,59 @@ class RespostaUsuario(models.Model):
     
     def __str__(self):
         return f"{self.usuario.username} - {self.get_pergunta_tipo_display()} #{self.pergunta_id} - {'✓' if self.acertou else '✗'}"
+
+
+class QuestaoErradaAnonima(models.Model):
+    """
+    Modelo para armazenar questões erradas de forma anônima (sem informação do usuário)
+    Usado para estatísticas gerais e ranking de matérias com mais erros
+    """
+    TIPO_CHOICES = [
+        ('multipla', 'Múltipla Escolha'),
+        ('vf', 'Verdadeiro ou Falso'),
+        ('correlacao', 'Correlação'),
+    ]
+    
+    # Identificação da questão
+    pergunta_id = models.IntegerField(verbose_name="ID da Pergunta")
+    pergunta_tipo = models.CharField(
+        max_length=20,
+        choices=TIPO_CHOICES,
+        verbose_name="Tipo da Pergunta"
+    )
+    
+    # Informações para estatísticas
+    bibliografia_id = models.IntegerField(
+        null=True,
+        blank=True,
+        verbose_name="ID da Bibliografia"
+    )
+    assunto = models.CharField(
+        max_length=100,
+        null=True,
+        blank=True,
+        verbose_name="Assunto"
+    )
+    
+    # Metadados
+    timestamp = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name="Data/Hora do Erro"
+    )
+    
+    class Meta:
+        verbose_name = "Questão Errada Anônima"
+        verbose_name_plural = "Questões Erradas Anônimas"
+        ordering = ['-timestamp']
+        # Índices para consultas eficientes
+        indexes = [
+            models.Index(fields=['pergunta_tipo', 'pergunta_id']),
+            models.Index(fields=['bibliografia_id']),
+            models.Index(fields=['assunto']),
+            models.Index(fields=['timestamp']),
+        ]
+        # Evitar duplicatas: uma mesma questão pode ser registrada múltiplas vezes
+        # (cada erro de cada usuário é registrado separadamente)
+    
+    def __str__(self):
+        return f"Questão #{self.pergunta_id} ({self.get_pergunta_tipo_display()}) - Errada"

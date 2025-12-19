@@ -36,7 +36,7 @@ export class BibliografiaIdService {
         const grouped: { [materia: string]: BibliografiaItem[] } = {};
         
         response.results.forEach(bib => {
-          const materia = bib.materia || 'Sem Matéria';
+          const materia = bib.materia_nome || 'Sem Matéria';
           if (!grouped[materia]) {
             grouped[materia] = [];
           }
@@ -45,7 +45,7 @@ export class BibliografiaIdService {
             id: bib.id,
             titulo: bib.titulo,
             autor: bib.autor || '',
-            materia: bib.materia || '',
+            materia: bib.materia_nome || '',
             descricao: bib.descricao || ''
           });
         });
@@ -70,7 +70,7 @@ export class BibliografiaIdService {
         id: bib.id,
         titulo: bib.titulo,
         autor: bib.autor || '',
-        materia: bib.materia || '',
+        materia: bib.materia_nome || '',
         descricao: bib.descricao || ''
       }))
     );

@@ -1,8 +1,12 @@
 # CAPÍTULO 18 AS NAVES DA VINGANÇA (Páginas 202-211)
 
+## Página 1
+
 Em 1903 - ano do primeiro voo de avião-, um professor russo chamado Konstantin Tsiolkovsky terminou de escrever um livro bastante perspicaz, cujo título era A Exploração do Espaço Cósmico. De acordo com seus cálculos, um foguete que usasse combustível líquido poderia subir alto o bastante para entrar em órbita ao redor da Terra. Durante os vinte anos que separaram a duas guerras mundiais, cientistas amadores e profissionais de vário países lançaram foguetes, muitos dos quais podiam ser facilmente carregados até os locais de lançamento. Alguns explodiram ante de decolar, outros não conseguiram subir, mas houve os que atingiram alturas consideráveis.
 
 Hitler incentivava esse tipo de teste, sob o comando de Walter R. Dornberger, em Peenemünde, uma aldeia costeira alemã no litoral do Báltico. Lá, foguetes cada vez maiores eram construídos no final da década de 1930. Em alguns testes, um míssil balístico de longo alcance era lançado de uma estrutura alta, parecida com os trampolin de piscina daquela época. Por volta de 1942, os veículos espaciais mais avançados viajavam a mais de 5 mil quilômetros por hora, uma velocidade supersônica que fazia o mais rápido dos aviões parecer uma tartaruga. Tratava-se de uma arma nova, capaz talvez de assegurar a vitória a Hitler, enquanto o exército alemão continuava a avançar em território russo e os japoneses estendiam seu império militar quase até a costa australiana.
+
+## Página 2
 
 ### UMA REGATA DE FOGUETES
 
@@ -12,6 +16,8 @@ Quando a guerra se virou contra a Alemanha, a nova arma ofereceu ao país a chan
 
 Chamados de armas da vingança - mais tarde viriam a ser produzidos às centenas -, os foguetes foram transportados para locais de lançamento no Mar do Norte e apontados contra a Grã-Bretanha. Apareceram sobre o sul da Inglaterra à noite, logo depois do Dia D, em 1944. "Posso vê-los claramente, pois são luminosos como pequenos barcos em uma regata", escreveu um espectador em seu diário. Os foguetes do tipo V-1, bastante simples, barulhentos e visíveis do solo, eram impelidos por um mecanismo de pistão que se desligava ao aproximar-se do alvo. Os maiores e revolucionários V-2 levavam uma ogiva que pesava aproximadamente uma tonelada. Paralelamente, os alemães produziam um míssil guiado do tipo ar-ar para ataques-relâmpago contra bombardeiros inimigos. A guerra acabou antes da conclusão desses projetos, que pareciam quase tão sensacionais quanto a secreta arma atômica em produção no outro extremo do Atlântico.
 
+## Página 3
+
 Durante as primeiras semanas de maio de 1945, o exército soviético alcançou a base de foguetes alemã no Mar Báltico, abandonada pouco tempo antes. Muitas das altas torres de teste continuavam em pé. As tropas soviéticas também foram as primeiras a encontrar a fábrica subterrânea do V-2, onde descobriram equipamentos, componentes de foguetes, plantas e esboços. Capturaram trabalhadores habilidosos, mas somente alguns especialistas.
 
 Por outro lado, uma equipe de 116 especialistas alemães, com seus dois líderes, caiu nas mãos dos norte-americanos - de fato, preferiam ser capturados por eles, e não pelos russos. Um dos chefes, Wernher von Braun, de apenas 33 anos de idade, era o cientista de foguetes mais experiente do mundo. Pela fotografia tirada logo após sua captura, via-se que tinha estatura mediana e cara de menino, parecendo um astro de cinema de segunda grandeza. De fato, podia ser chamado de astro, uma vez que sua equipe era considerada por alguns cientistas norte-americanos como um dos principais troféus da vitória na Segunda Guerra Mundial.
@@ -19,6 +25,8 @@ Por outro lado, uma equipe de 116 especialistas alemães, com seus dois líderes
 A captura de Von Braun, de sua equipe e de seus planos secretos pelos norte-americanos durante os últimos dias da guerra foi um golpe decisivo nas esperanças dos russos, que estavam muito atrás na pesquisa de foguetes. Na verdade, haviam conquistado boa reputação nessa ciência antes da guerra, mas Stalin cancelara os experimentos. No período 1937-38, o expurgo maciço de militares considerados traidores em potencial incluía até mesmo cientistas de foguetes; alguns foram assassinados; outros, deportados para a Sibéria. Enquanto Von Braun rumava para o sucesso no litoral do Báltico, o melhor projetista de foguetes da Rússia, Sergei P. Korolev, trabalhava nas minas de ouro de Kolyma, na Sibéria. Ao ser solto, Korolev recebeu permissão para reintegrar-se ao programa de foguetes, novamente ativado. Ainda que fosse vigiado por guardas durante o trabalho, estava no comando de um importante projeto.
 
 O aprisionamento da maioria dos cientistas alemães por parte dos norte-americanos fez Stalin se apressar. Em segredo, sob a coordenação de Korolev, os soviéticos aperfeiçoaram as mais importantes práticas de engenharia, até que, por fim, surgiu uma versão russa do V-2. Em 1949, os russos realizavam testes de voo com uma tripulação de cães e coelhos, filmados no interior das estreitas cápsulas.
+
+## Página 4
 
 Em 4 de outubro de 1957, uma pequena nave russa sem piloto atingiu uma altura superior a 800 quilômetros. Com o nome de Sputnik I e pesando mais ou menos o mesmo que um homem adulto, completou a órbita ao redor da Terra em noventa e cinco minutos e os sons de seus dois transmissores foram captados por radioamadores. Tais sons foram ouvidos com desânimo em Washington.
 
@@ -28,17 +36,21 @@ O programa norte-americano, mesmo contando com a ajuda de Von Braun, havia ficad
 
 As tensões entre Moscou e Washington aumentavam e diminuíam. Havia calmarias agradáveis seguidas por semanas de ansiedade, quando um conflito nuclear parecia prestes a irromper. As naves espaciais eram nervosamente consideradas uma vantagem no caso de uma guerra atômica. Europeus, russos e norte-americanos sabiam que seriam os primeiros alvos desse tipo de arma, mas mesmo povos distantes, que provavelmente não estariam na mira, compartilhavam da mesma tensão. Kwame Nkrumah, líder da jovem nação de Gana, reclamou, em 1958, que a África independente poderia ter seu brilhante futuro destruído por uma guerra termonuclear entre superpotências. "A maior questão dos nossos dias é saber com certeza se haverá um amanhã", declarou.
 
+## Página 5
+
 ### VIAGEM AO ESPAÇO
 
 A União Soviética liderava as primeiras tentativas de alcançar a Lua. Em janeiro de 1959, seu veículo não tripulado, o Luna I, chegou perto. Seu irmão mais novo, no final daquele mesmo ano, conseguiu atingir o satélite e lá se despedaçou. Um terceiro veículo da mesma linhagem foi até a órbita lunar e fotografou o lado que sempre estivera oculto para os observadores da Terra.
 
-`Em meados do século 20, a ambição de enviar uma pessoa para o espaço sideral era compartilhada por russos e norte-americanos.`
+**Em meados do século 20, a ambição de enviar uma pessoa para o espaço sideral era compartilhada por russos e norte-americanos.**
 
 Eram triunfos celebrados por toda a União Soviética. Os jornais os noticiavam; programas de rádio os comentavam até o limite do que era seguro revelar; professores em milhares de salas de aula explicavam algumas das teorias relacionadas às pesquisas espaciais. Tudo isso promovia ainda mais as glórias do comunismo. Com baixa taxa de alfabetização na época da revolução bolchevique de 1917, a Rússia agora contava com uma rede de escolas de educação infantil, ensino fundamental, médio e técnico, além de diversas universidades, espalhadas por seu vasto território e habilitadas - com um pouco de ajuda externa - a preparar o caminho científico para a incrível jornada espacial.
 
 A ambição de enviar uma pessoa para o espaço sideral fascinava russos e norte-americanos. Os perigos eram evidentes. Se a nave não conseguisse uma tremenda aceleração para atingir a velocidade necessária - dez vezes maior do que a do futuro avião Concorde -, a gravidade terrestre agiria, privando-a do impulso e fazendo seus passageiros se precipitarem para a morte certa. Uma vez no ar, o veículo enfrentaria outro perigo: temperaturas extremamente altas e extremamente baixas. Um lado seria aquecido pelos raios do Sol até a temperatura de 120°C, enquanto o outro seria resfriado até muito abaixo de zero.
 
 Mesmo quando o astronauta - a palavra era nova - estivesse a meros 80 quilômetros acima do globo, sobreviveria somente graças a um complicado traje espacial. As chances de que durante o voo ele sofresse uma versão aérea do enjoo marítimo eram altas. Além disso, o coração e os músculos corriam o risco de ficar um pouco menores por causa da pressão, e os ossos, de perderem cálcio e se tornarem quebradiços. Por causa da falta de peso, seria necessário amarrá-lo, de modo que tivesse estabilidade suficiente para comer e dormir. E mais: a comida não ficaria no prato, nem a bebida no copo. Além disso, se migalhas e restos de comida ficassem flutuando na cabine, poderiam - sob determinadas circunstâncias - penetrar nos delicados instrumentos. Uma das principais providências era preparar todos os alimentos em pequenos cubos e cobri-los com gelatina.
+
+## Página 6
 
 Em ambas as nações, os cientistas lutavam contra centenas de dúvidas e desafios, mas os soviéticos permaneciam na dianteira, além de serem os mais ousados. No início de 1961, vários astronautas russos, treinados em completo segredo, estavam prontos para dar uma volta em torno da Terra. O escolhido, Yury Gagarin, de 27 anos de idade, filho de um carpinteiro, havia sido criado em uma fazenda coletiva. Sua nave espacial, um veículo complexo, era bastante leve. Chamado de Vostok I, foi lançado em 12 de abril de 1961, às 9h07, horário de Moscou.
 
@@ -48,9 +60,11 @@ Um mês após a viagem espacial de Gagarin, os Estados Unidos anunciaram que, at
 
 Um foguete que servisse de propulsor para uma nave espacial poderia fazer o mesmo com um míssil carregando uma ogiva nuclear. A ciência dos foguetes, bem como a precisão e a velocidade dos mísseis, havia avançado muito desde o fim das experiências na Alemanha hitlerista. Em 1960, mais e mais locais de lançamento de mísseis norte-americanos, situados não muito distantes da União Soviética, estavam prontos para empreender um ataque nuclear, se necessário. Alguns desses locais tinham como alvo as grandes cidades russas. A União Soviética ainda não podia lançar um míssil que chegasse ao distante país norte-americano, mas seus alvos eram Paris, Londres, Munique e outras importantes localidades de países aliados dos Estados Unidos. Washington e São Francisco, por sua vez, podiam ser atingidas pelos mísseis lançados por submarinos.
 
-`Um foguete que servisse de propulsor para uma nave espacial também poderia fazer o mesmo com um míssel carregando uma ogiva nuclear.`
+**Um foguete que servisse de propulsor para uma nave espacial também poderia fazer o mesmo com um míssel carregando uma ogiva nuclear.**
 
 As duas superpotências eram impérios armados, conscientes de que seus vastos territórios vinham se tornando vulneráveis. Gastavam muito em armamentos. Formavam e deixavam de prontidão suas tropas em partes cada vez mais numerosas do mundo. E organizavam batalhões de espiões. Estavam envolvidas em sérias e contínuas disputas: uma corrida armamentista nuclear, uma guerra de propaganda para conquistar as mentes e os corações dos povos do mundo, uma luta para atrair os votos das nações independentes nas Nações Unidas e uma espetacular competição pelo espaço sideral.
+
+## Página 7
 
 O surgimento de um novo líder foi o bastante para modificar o panorama. O último sucessor de Stalin, Nikita Khrushchov, era filho de um camponês. Quando caminhava pela neve, com casacos pesados e de chapéu, parecia um grande urso e, quando se encontrava com uma delegação de estrangeiros era capaz de distribuir abraços carinhosos e de responder perguntas com uma risada sonora. Além de sua cordialidade pessoal, podia, em algumas ocasiões, mostrar uma franqueza inédita, como denunciar em público os terríveis expurgos que Stalin havia realizado em nome do comunismo. O fato de que o próprio Khrushchov havia tomado parte em várias dessas ações, assegurando-se de que o assassinato de prisioneiros russos fosse de fato eficiente, ainda não era de conhecimento do público.
 
@@ -59,6 +73,8 @@ Ao contrário de Stalin, ele desejava ir além do bloco comunista para provar os
 O medo da espionagem era um dos fatores que impediam essas visitas. Após viajar oficialmente para a União Soviética durante o rigoroso inverno de fevereiro de 1959, Harold Macmillan, primeiro-ministro britânico, concluiu que era arriscado conversar até mesmo com o embaixador de seu país em Moscou. Uma tenda de proteção foi erguida dentro da embaixada britânica na esperança de que pelo menos os microfones russos escondidos fossem despistados. Macmillan foi alertado para o fato de que, em limusines russas oficiais, poderia ser vigiado por uma escuta. 
 
 Uma nova era de espionagem teve início quando satélites, sobrevoando a Terra a grandes alturas, começaram a fotografar bases e territórios inimigos. Gary Powers, a serviço da Central Intelligence Agency, a CIA, decolou secretamente do Paquistão para fazer um longo voo sobre a União Soviética em direção a um campo de aviação aliado na Noruega. Seu jato sobrevoava os Urais em 1° de maio de 1960, quando foi detectado pelos russos e abatido. Ele saltou de paraquedas em segurança e, ao ser capturado, não teve como negar seu envolvimento em uma missão secreta com a qual Washington dizia não ter nenhuma ligação. O piloto foi sentenciado a dez anos de prisão, mas ganhou a liberdade mais cedo - foi trocado por um agente soviético.
+
+## Página 8
 
 ### O AMEAÇADOR MURO DE BERLIM
 

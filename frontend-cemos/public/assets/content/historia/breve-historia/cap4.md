@@ -1,5 +1,7 @@
 # CAPÍTULO 4 A GUERRA DAS GUERRAS (Página 50-65)
 
+## Página 1
+
 A Primeira Guerra Mundial, o evento mais significativo do século, não foi apenas traumática enquanto durou, mas tam­bém teve efeitos profundos: ajudou a impulsionar a Revolução Russa; configurou-se como uma das causas da depressão financeira dos anos 1930, o maior baque econômico na história até então; estimulou, direta e indiretamente, a ascensão de Hitler e da Alemanha nazista, ajudando a provocar a Segunda Grande Guerra; acabou com o apogeu da Europa Ocidental e seu domínio mundial; e também acelerou a as­ censão dos Estados Unidos e da União Soviética. Durante esse período, um estadista britânico elaborou um plano para a Palestina que ainda hoje provoca tensões no Oriente Médio.
 
 **Boa parte da inventividade do século foi estimulada pelas necessidaeds geradas pelas duas grandes guerras.**
@@ -8,6 +10,8 @@ Boa parte da inventividade do século, incluindo as aeronaves que percorriam lon
 
 Ainda que a guerra de 1914 houvesse sido evitada, teriam aconte­cido conflitos posteriores, talvez com vencedores diferentes, alterando o mapa político do mundo atual. Mas o curso que a Primeira Guerra Mundial tomou teve efeitos marcantes. A maneira como se prolongou e espalhou, contrariando as expectativas, bem como o ódio e a raiva que provocou e os vencedores específicos que teve - tudo isso deixou cicatrizes profundas naquela geração e na seguinte.
 
+## Página 2
+
 ### O CRONOGRAMA DA GUERRA
 
 Os combates começaram em 1914, com uma mistura estranha de otimismo e pessimismo. Antevia-se que a perda de vidas poderia ser grande, mas em compensação o conflito seria breve. Tal previsão, am­plamente disseminada, surgiu em parte pelo fato de todas as últimas guerras ocorridas na Europa terem sido rápidas. O último conflito europeu envolvendo duas potências - França e Prússia, iniciado em 1870 - fora praticamente vencido dentro de poucos meses com a ajuda de ferrovias, do telégrafo e de armas modernas. A crença de que a nova contenda terminaria antes do Natal, ou ao menos logo depois, foi acentuada pela sensação de que nem as pessoas nem os sofisticados sistemas bancário e financeiro aguentariam sustentar uma guerra longa. Previa-se que a crescente escassez de comida e material bélico estimularia os líderes nacionais a buscar a paz.
@@ -15,6 +19,8 @@ Os combates começaram em 1914, com uma mistura estranha de otimismo e pessimism
 Como se esperava que o resultado fosse determinado pelas primeiras batalhas, os diversos aliados precisavam estar prontos para auxiliar uns aos outros em curto prazo. O breve espaço de tempo entre a declaração de guerra e o envio dos exércitos à fronteira e das esquadras ao mar é considerado por alguns historiadores como mais uma causa do conflito. Entretanto, na verdade, tal cronograma foi resultado da crença de que o embate era quase inevitável e de que seria curto: os retardatários pagariam um alto preço, sendo subjugados antes que tivessem tempo de se preparar. A guerra começou em 28 de julho de 1914 com um pe­queno conflito entre a Áustria e a Sérvia - sendo os sérvios os supostos culpados. Nos sete dias seguintes, aliados se juntaram aos dois países. A Alemanha lutou ao lado da Áustria; França, Rússia e Grã-Bretanha formaram outra aliança. Em uma semana, cinco grandes potências e diversas outras menores estavam lutando ou prestes a lutar, desde o Mar do Norte até as planícies da Polônia e as montanhas da Hungria, enquanto as batalhas navais aconteciam em lugares longínquos, como o Mar da China, a extremidade fria da América do Sul e os portos das ilhas tropicais do Pacífico.
 
 Países que eram meros espectadores escolhiam cuidadosamente o momento apropriado para consolidar sua posição. Deveriam entrar naquela que já era chamada de Grande Guerra ou manter-se neutros? No primeiro mês depois da eclosão do conflito, o Japão se posicionou contra a Alemanha, empregando o melhor de sua marinha, mas recu­sando o envio de um exército para a Europa. Em novembro de 1914, os turcos se juntaram ao lado alemão e, no mês de maio seguinte, a Itália - para surpresa de muitos - aliou-se ao outro lado. Outras nações foram aos poucos aderindo à guerra, algumas tendo adiado a decisão até 1918. Quanto mais numerosos os países que se juntavam à luta, mais difícil se tornava a tarefa de reunir todos eles em uma negociação de paz.
+
+## Página 3
 
 Na primeira semana, arroubos de nacionalismo estavam em efervescência, excedendo as expectativas. Em centenas de vilarejos, ocorreram encontros para incitação ao nacionalismo. No primeiro domingo, os sinos das igrejas badalaram incontáveis vezes e sacerdotes pregaram sermões patrióticos. A eclosão da guerra foi louvada por um historiador alemão como um momento "da mais profunda alegria", enquanto o jovem poeta inglês Rupert Brooke escreveu:
 
@@ -28,11 +34,15 @@ Minorias étnicas que esperavam ficar neutras acabaram imersas em uma onda públ
 
 A unidade nacional desabrochou na França dividida. A impren­sa francesa, tal como a da maior parte dos países livres, aceitou a censura da verdade pelo bem da unidade nacional e da necessidade de repelir as investidas dos alemães. Na França, a realidade não era nada agradável. O exército tinha pouca munição para suas grandes armas de fogo. O atendimento médico aos feridos era lento. Soldados franceses, sangrando ou envoltos em ataduras, eram levados em macas para vagões de trem utilizados anteriormente no transporte de gado bovino e cavalos. Os alemães avançaram tão velozmente pela Bélgica e pelo norte da França que a tomada de Paris parecia bastante provável. Entretanto, no campo de batalha do norte da França, os soldados franceses, auxiliados por tropas britânicas, resistiram firmemente. Paris estava a salvo.
 
+## Página 4
+
 Os exércitos rivais então se atacavam no front ocidental (francês) sem que nenhuma das partes obtivesse uma vitória decisiva. O avanço rápido da Alemanha nas primeiras semanas de luta foi ficando cada vez mais lento até parar. As hostes oponentes cavavam trincheiras e faziam delas seus escudos. Terreno - algumas centenas de metros ou até menos - era adquirido a um custo enorme de mortos e feridos, pois o exército contrário era capaz de descarregar maciçamente seu poder de fogo sobre as tropas que avançavam. Os feridos eram logo substituídos e parecia que os exércitos conseguiriam manter suas trincheiras quase indefinidamente. Essa foi uma das razões para o prolongamento da guerra muito além do esperado.
 
 As tropas, já numerosas quando o conflito começou, tomaram-se ainda maiores. Em 1914, a maior parte das nações europeias obrigava quase todos os seus homens jovens e de meia-idade a passar por um treinamento militar. Em guerras anteriores, havia sido impossível enviar exércitos muito grandes para o campo de batalha, pois a ta­refa de cultivar e comprar a comida e depois transportá-la para os acampamentos estava além da capacidade da maior parte das nações. Em 1914, no entanto, economias mais produtivas possibilitavam que grande quantidade de homens fosse destinada ao exército e que boa parte das mulheres fosse transferida de outros tipos de trabalho para as fábricas de munições. Enquanto nas guerras napoleônicas um país podia dispor de no máximo 12% de seu "produto nacional", naquele momento as principais nações podiam chegar a gastar quase 50% dele na guerra. As modificações dos cem anos anteriores, que melhoraram o aproveitamento de energia e mão de obra, permitiram que, nos meses iniciais do conflito, enormes quantidades de pessoas desempenhassem as tarefas de produzir e manejar armas.
 
 O número de mortos e feridos nos primeiros quatro meses de guerra foi muito mais alto do que o esperado. Dia após dia, milhares de parentes de soldados consternavam-se ao receber as notificações de morte, levadas por um mensageiro dos telégrafos, um carteiro, um pastor ou um padre. As famílias cujos filhos ainda lutavam no front sentiam-se ameaçadas. Soldados cujas vidas haviam sido poupadas em 1914 corriam ainda mais riscos em 1915, pois o fogo das artilharias e o matraquear das metralhadoras haviam se tornado ainda mais mortais.
+
+## Página 5
 
 ### GALLIPOLI - UM PRÊMIO DESAPARECIDO
 
@@ -41,6 +51,8 @@ A guerra foi marcada por momentos decisivos e oportunidades perdidas ou aproveit
 Os alemães, percebendo a importância dessa rota marítima, tenta­ ram controlá-la, buscando aliar-se à Turquia. Menos de uma semana antes da guerra, os dois países assinaram secretamente uma aliança militar. Uma vez que o Império Turco ficava bem ao sul e quase alcan­ çava a margem norte do Canal de Suez, essa era outra rota marítima crucial que os alemães poderiam tomar.
 
 O Estreito de Dardanelos também era vital para a Rússia, que não podia usar o Mar Báltico, cuja saída era controlada por navios e submarinos alemães. O Mar Negro era, portanto, essencial para a marinha e os navios cargueiros russos, os quais levavam os grãos que alimentariam alguns de seus aliados ocidentais. Cada vez mais, conforme a guerra avançava, a Rússia precisava de armas e munições de seus aliados ocidentais, mas como poderia transportá-los? Certamente era possível ir da longínqua costa do Pacífico ao centro da Rússia, mas a ligação era feita pela ferrovia mais longa do mundo, com um trilho único na maior parte do caminho. O porto de Vladivostok, no Oceano Pacífico, ponto final da ferrovia, começou a receber cargas importadas de arame farpado, munição e outros materiais essenciais, que esperavam locomotivas para serem transportados até a distante linha do front russo, onde a munição já escasseava.
+
+## Página 6
 
 A Rússia estava semiestrangulada por sua geografia peculiar, bem como pelo fato de a marinha alemã controlar a foz do Báltico e, com a ajuda da Turquia, o Mar Negro. Mesmo São Petersburgo, com suas inúmeras chaminés altas, sofreu com o bloqueio marítimo e a escassez de carvão. Os líderes da Revolução Russa, três anos mais tarde, seriam ajudados pela desarticulação econômica gerada pelo longo bloqueio de guerra.
 
@@ -52,6 +64,8 @@ A Grã-Bretanha, com toda sua força naval, começou a considerar a ideia de ocu
 
 Os turcos se assustaram. Parecia muito provável que o avanço naval fosse seguido de uma invasão por terra e por isso decidiram inicialmente transferir a capital de Constantinopla para o terminal ferroviário de Ankara, no interior do país. Em janeiro de 1915, apenas duas divisões turcas guardavam o Estreito de Dardanelos, mas em abril já havia seis divisões de prontidão, e os fortes haviam sido reforçados.
 
+## Página 7
+
 Finalmente, em 25 de abril de 1915, um domingo, as forças britânicas, francesas, australianas e neozelandesas chegaram às praias da Península de Gallipoli e montaram uma perigosa base de operações perto do Estreito de Dardanelos. O número de mortos e feridos foi grande. A luta logo chegou a um impasse. Britânicos e franceses enviaram reforços que, se tivessem chegado antes, poderiam ter ajudado a conquistar o terreno. Enquanto isso, o exército russo havia se reunido no porto de Odessa, no Mar Negro, em prontidão para um ataque independente a Constantinopla. Esse exército acabou sendo deslocado dali.
 
 Os turcos estavam sob grande pressão. Atacados pelas forças anglo-francesas perto do estreito, também enfrentavam a ameaça de um pesado regimento russo próximo às montanhas do Cáucaso. Em 27 de maio de 1915, apenas um mês após a invasão de Gallipoli, o governo turco concluiu que seu país também abrigava um inimigo interno perigoso. Decidiu deportar os armênios cristãos, exceto os que viviam nas cidades portuárias de Constantinopla e Izmir, onde a sobrevivência era mais fácil. Os deportados, lentamente e carregando os poucos pertences que podiam, foram enviados da Anatólia para o deserto sírio. No caminho, homens, mulheres e crianças foram assassinados por soldados e civis turcos, e muitos outros morreram de doenças e fome. O número de armênios turcos mortos é geralmente estimado em 600 mil, mas alguns historiadores, aumentando o número para 1 milhão, chegam a falar em genocídio.
@@ -59,6 +73,8 @@ Os turcos estavam sob grande pressão. Atacados pelas forças anglo-francesas pe
 Depois de lutar contra os turcos em uma faixa de praias e colinas próximas ao mar, os britânicos e franceses concluíram que a vitória no Estreito de Dardanelos era impossível. Perto do fim do ano, noite após noite, seus soldados foram silenciosamente retirados dali e enviados para outros lugares. Gallipoli finalmente foi abandonada, lá permanecendo apenas as fortificações turcas e os túmulos.
 
 Se os aliados tivessem tido sucesso em tomar o estreito e Constantinopla, poderiam ter mandado comboios semanais de suprimentos para os mal-armados russos. O resultado da guerra para a Rússia poderia ter sido diferente. Mas essa reviravolta em potencial não se realizou.
+
+## Página 8
 
 ### UM RIO TINGIDO DE SANGUE
 
@@ -70,6 +86,8 @@ Logo depois do nascer do sol do dia 1º de julho de 1916, o ataque britânico te
 
 A batalha do Somme durou mais de quatro meses. Ondas de soldados emergiam das trincheiras, e os ataques se repetiam. As armas ribombavam, e o número de mortos e feridos aumentava. A batalha terminou formalmente em 18 de novembro de 1916. O número de baixas por parte dos ingleses foi contabilizado em 419.654, mas somando franceses e alemães, mortos e feridos chegava quase a 1 milhão. E o total poderia ter sido mais alto, não fosse o fato de a munição ter praticamente acabado em certos dias.
 
+## Página 9
+
 O resultado da guerra dependia parcialmente do que as fábricas de munição podiam oferecer. A Alemanha, no momento em que o conflito eclodiu, era a maior produtora europeia de produtos químicos, máquinas operatrizes e uma série de itens, de rolamentos a velas de ignição e munições ópticas. A Grã-Bretanha e a França, incapazes de igualar-se ao poderio industrial de sua rival, precisavam importar muitos produtos dos Estados Unidos. Sem os suprimentos norte-americanos, a Grã-Bretanha e a França teriam perdido a guerra no primeiro ano. Mais do que qualquer conflito anterior, a Primeira Guerra Mundial seria vencida em indústrias, usinas siderúrgicas, minas de carvão, fábricas de material bélico e estaleiros. A Alemanha passou a interceptar navios cargueiros que transportavam material bélico norte-americano para a Europa. Construiu um número cada vez maior de submarinos grandes, em formato de charuto, equipados com motores a diesel e capazes de viajar incógnitos, surpreendendo o inimigo: podiam lançar torpedos mortais sobre navios próximos, que não tinham tempo de alterar a rota. Em setembro de 1914, no mar entre a Inglaterra e a Holanda, três cruzadores britânicos que navegavam enfileirados, com apenas 3 milhas de distância entre si, foram surpreendidos pelo submarino alemão U9. Os três cruzadores foram afundados por torpedos, e o número de mortos foi quase igual ao do acidente com o gigantesco transatlântico Titanic, que, dois anos antes, havia colidido com um iceberg.
 
 Com a intensificação do ritmo de produção dos estaleiros alemães, submarinos novos apareciam no leste do Oceano Atlântico, no Mar do Norte e mesmo no Mediterrâneo. Embarcações para transporte de passageiros ou de carga, mais do que os navios de guerra britânicos, eram seu principal alvo. Dois torpedos foram lançados contra o transatlântico Lusitania quando este se aproximava da costa sul da Irlanda - já no fim da viagem -, procedente dos Estados Unidos. Naquela tarde de 7 de maio de 1915, os tombadilhos estavam lotados. O comandante alemão assistiu, de seu submarino, ao grande transatlântico desaparecer lentamente. Naquela noite, morreram 1.198 pessoas, entre mulheres, homens e crianças.
@@ -79,6 +97,8 @@ Houve intensos protestos em todo o mundo. A partir de então, os alemães decidi
 Em terra, doenças aumentavam as baixas. Epidemias de Tifo chegaram ao Leste Europeu. Talvez pela primeira vez em uma guerra, enfermidades nervosas de difícil tratamento - popularmente conhecidas como traumas de guerra se disseminaram. Cinquenta anos mais tarde, em asilos e hospitais de cidades como Auckland, Salzburgo e São Francisco, ainda viviam homens cujas memórias haviam sido apagadas por traumas de guerra. Depois que o gás começou a ser usado como arma, lançado dentro de tubos, centenas de milhares de pessoas foram afetadas por outras doenças.
 
 A disenteria amebiana, embora comum no norte da África, não tinha assolado a Europa até o verão de 1915, quando se espalhou pelas trincheiras de Gallipoli. A maior parte dos soldados britânicos que lá se encontravam foi infectada, pois a doença se espalhava através das moscas. Realmente, "a disenteria foi um dos fatores decisivos no fracasso da campanha de Gallipoli", escreveu o tenente-coronel Arthur F. Hurst, especialista em Medicina. A disenteria bacilar - transportada das latrinas para as pessoas também através de moscas - era comum no verão no leste da Prússia, na ampla linha de frente oriental e também nas batalhas travadas mais tarde no calor de Salônica, Mesopotâmia e Palestina. Na Macedônia, no verão de 1916, quase todos os soldados sofreram com as nuvens de mosquitos da malária. Nos quatro anos da Primeira Guerra Mundial, para cada quatro soldados mortos por balas, estilhaços ou explosivos de alta potência, um soldado morria por doença.
+
+## Página 10
 
 ### O DILEMA DAS NAÇÕES NEUTRAS
 

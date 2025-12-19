@@ -1,5 +1,7 @@
 # CAPÍTULO 3 UMA TEMPESTADE DE MUDANÇAS
 
+## Página 1
+
 O futuro estava sendo moldado por inventores experientes. No início da Revolução Industrial, durante o período do vapor, os inventores célebres normalmente eram escoceses ou ingleses. Na segunda era inventiva, entre 1850 e a Primeira Guerra Mundial, predominaram os norte-americanos. Surgiram nos Estados Unidos, após 1850, a central de energia elétrica, as redes de transmis­são de eletricidade, o gramofone, o telefone, o filme de celuloide e a câmera de baixo custo, o arranha-céu com estrutura de aço, o elevador, as técnicas de extração e refino de petróleo, o avião e o incrível metal leve chamado alumínio. Da Europa continental vieram, no mesmo período, a transmissão por ondas de rádio, o raio X, explosivos capa­zes de destruir rochas, o motor de combustão interna, vários tipos de rifles e metralhadoras, além de uma série de melhorias em máquinas, dispositivos e fórmulas que já existiam.
 
 Muitos desses avanços costumam ser atribuídos à figura de um grande e único inventor, uma pessoa obsessiva que trabalhava sozinha. Na verdade, a maioria das invenções depende de diversos criadores e teóricos. O "grande inventor" costuma aproveitar as descobertas daqueles que os antecederam. No entanto, é comum os historiadores esquecerem tais contribuições.
@@ -12,6 +14,8 @@ Observadores atentos de todo o mundo maravilhavam-se com essa tempestade de muda
 
 Ondas inovadoras se chocavam contra conceitos preexistentes. Cada vez mais, europeus ouviam as palavras de ordem dos socialistas e anarquistas, os clamores das mulheres por direitos iguais e as queixas das minorias étnicas, enquanto ideias ocidentais abalavam a subjugada Ásia. Os ateus proclamavam que Deus estava morto, ou que Sua morte não demoraria a ocorrer, ou mesmo que Ele jamais estivera vivo. Tais medos e esperanças seriam profundamente afetados pela Primeira Guerra Mundial. De fato, alguns desses elementos formaram o pano de fundo do conflito.
 
+## Página 2
+
 ### UMA ÉPOCA DE APERTOS DE MÃO
 
 Os primeiros anos do século 20 marcaram uma época notável de apertos de mão internacionais. O mundo parecia menor. O telégrafo, por terra ou submarino, aproximou as principais cidades de praticamente todas as partes do mundo. Partindo de Londres ou Liverpool, era possível embarcar a cada quinzena ou a cada mês em navios com destino à maioria dos grandes portos. Linhas férreas de longa distância uniam as longínquas regiões da Europa, embora deixassem Atenas de fora. Ferrovias cruzavam a América do Norte de costa a costa. A Transiberiana unia Moscou à Sibéria e chegava perto das praias do Lago Baikal, que, de início, podia ser atravessado por locomotivas e vagões de passageiros com o auxílio de balsas. Por volta de 1900, até mesmo a África e a América do Sul possuíam longas ferrovias que se interligavam, formando linhas intercontinentais.
@@ -22,6 +26,8 @@ Outras cidades longínquas surgiam como resposta aos sinais da economia globaliz
 
 A viagem para outros países, a negócios ou a passeio, virou uma indústria. Quando criminosos também começaram a cruzar fronteiras ou desembarcar em portos estrangeiros, passou a haver motivo para fiscalizar passaportes e outros papéis de viagem, mas naquela época de boa vontade global o passaporte costumava ser considerado supérfluo. Tantos países haviam abolido o documento que às vésperas da Primeira Guerra Mundial era uma raridade encontrá-lo - algo que mudaria com o conflito. Surgiram os traveler's checks - emitidos pela primeira vez pela American Express, em 1891 - e os turistas achavam milagroso que um pedaço de papel com alguns enfeites, uma vez assinado, fosse capaz de pagar a conta do hotel. Os primeiros cartões de crédito apa­ receram somente em 1950.
 
+## Página 3
+
 Havia uma série de conferências internacionais para todos os tipos de profissões e atividades: funcionários dos correios, ativistas pela paz, estatísticos, cientistas, meteorologistas, militares, socialistas, linguis tas e missionários. Pactos internacionais, mesmo os que tratavam de armamentos, foram firmados. Em 1899, em Haia, o czar da Rússia convocou uma conferência para tratar de guerra e paz, e um de seus êxitos foi proibir o uso de armas em balões aéreos. Outros sinais incomuns de harmonia entre nações e doutrinas se faziam notar. Em 1910, o recém-empossado prefeito de Roma era Ernesto Nathan, nascido na Inglaterra, um maçom seguramente não católico.
 
 **O fato de o mundo estar se tornando menor não significava que necessariamente ficava mais amigável.**
@@ -30,11 +36,15 @@ As então mais recentes tecnologias de comunicação costumavam ser aclamadas co
 
 Havia também a crença, difundida durante os primeiros anos do século, de que a rede mundial de comércio e de ideias estava prolongando o período de paz entre as grandes potências. Muitos europeus, ao avaliarem as condições do mundo em 1900, consideravam-se afor­tunados. Tinham vivido - mesmo os que estavam por volta dos 80 anos de idade - em um período de relativa paz entre as nações. Muitos pensavam que essa tranquilidade continuaria. Tais esperanças, entretanto, diminuíam à medida que aumentavam os gastos com navios de guerra e com o exército.
 
+## Página 4
+
 Quase sempre havia uma guerra sendo travada em algum lugar do mundo, mas grande parte das batalhas acontecia em pequena escala e as baixas costumavam ser poucas, restringindo-se apenas aos combatentes. A Europa já tinha esgotado sua cota de conflitos internacionais nos noventa anos que se seguiram às guerras napoleônicas. Rússia e Turquia se enfrentavam uma vez a cada geração, como se fosse um torneio esportivo. Alemanha, França e Império Austro-Húngaro, Por sua vez, participaram de uma série de guerras breves entre os anos de 1859 e 1871 - a Cruz Vermelha surgiu como efeito indireto de um desses embates. Os Bálcãs também passaram por conflitos curtos, com uma torrente de lutas logo antes da Primeira Guerra Mundial.
 
 Em meio a tantos combates e afirmações de patriotismo, os euro­peus conquistaram o direito de se orgulhar: entre 1815 e 1914, não enfrentaram nenhuma guerra generalizada - o tipo que costumava ser o mais devastador. Somente uma vez, na Guerra da Crimeia, durante a década de 1850, houve mais de três grandes nações envolvidas. França e Grã-Bretanha tomaram partido da Turquia, enquanto a Rússia permaneceu sozinha durante os confrontos. Embora não tenha sido uma grande guerra, durou três anos. Outro motivo de esperança nos anos 1900 era o fato de os conflitos internacionais da Europa estarem se tornando mais breves do que os ocorridos um século antes. Esperava­-se que as batalhas entre as grandes nações europeias não durassem muito. Previa-se que a Alemanha, como em 1870, se especializaria em guerras curtas, usando suas ferrovias, seus telégrafos e os mais moder­ nos canhões e metralhadoras de modo que, ao empregar toda sua força de ataque, o inimigo nem sequer tivesse tempo de vestir o uniforme. A tecnologia moderna, assim parecia, tornaria os embates mais curtos, especialmente aqueles travados entre nações industrializadas.
 
 A guerra mais importante acontecida entre 1900 e 1914 foi a que envolveu Rússia e Japão, ambos determinados a expandir seus domí­nios às frias regiões do nordeste da Ásia. Esse breve conflito estourou na Manchúria em 8 de fevereiro de 1904 e foi o início de profundas mudanças políticas, praticamente acelerando a revolução popular de esquerda na Rússia, também mostrou que a época da Ásia Oriental, esquecida havia muito tempo, poderia voltar. Além disso, a luta levantou outra questão significativa: se uma guerra breve, travada longe da Europa, tinha o poder de mudar tanta coisa, o que uma grande guerra no coração da Europa poderia causar?
+
+## Página 5
 
 ### A ASCENSÃO DO SOCIALISMO
 
@@ -46,9 +56,13 @@ O socialismo se aproveitou de uma crescente percepção das injustiças, bem com
 
 Embora os intelectuais dos Estados Unidos não tivessem o mesmo ardor dos europeus pela mentalidade coletivista, começaram a atacar os capitalistas mais poderosos. Jornalistas conhecidos como muck­-rakers (sensacionalistas) investiram contra grandes empresas e conse­guiram atingi-las. Washington aprovou leis antitruste na tentativa de controlar os monopólios privados, especialmente visíveis nos negócios de petróleo, aço e estradas de ferro. Um partido trabalhista jamais se tornaria grande nos Estados Unidos, mas quem poderia prever isso em 1900? Os norte-americanos estavam bastante adiantados no que dizia respeito à importância conferida à igualdade. Sua busca por oportu­nidades econômicas e sua opção pelo individualismo, além do fato de terem abolido a figura de reis e baronetes na revolução da década de 1770, tinha funcionado como um caminho próprio rumo à igualdade, muito tempo antes que se ouvisse a marcha dos socialistas europeus.
 
+## Página 6
+
 Nessa época, o socialismo, ou o meio-socialismo, não contava com uma maioria de partidários em nenhum país. Era forte o bastante para que, na França de 1899, um de seus partidários, *Alexandre Millerand*, fosse convidado a fazer parte do gabinete francês e, na Austrália, para que um partido trabalhista do tipo "radical moderado" se mantivesse no poder por pouco tempo em 1904 e voltasse a ele com frequência após 1908. Nas eleições alemãs de 1912, um em cada três eleitores optou por votar em um partido socialista. O clamor pelas reformas sociais se comparava a um exército com muitos regimentos - alguns marchavam para a extrema esquerda, outros se moviam para a direita, a fim de defender a existência de propriedades privadas, desde que fossem pequenas.
 
 Acreditava-se que o socialismo poderia chegar ao poder apenas por via pacífica, e não pela revolução armada. Mesmo em 1848, o ano das revoluções, os agitadores e manifestantes que ocuparam brevemente as ruas de cidades em regiões tão distantes umas das outras quanto a Si­cília e o norte da Alemanha falharam quase em sua totalidade. Houve uma sangrenta - e malfadada - revolução em Paris no ano de 1871. O mesmo aconteceu com uma tentativa de revolução na Rússia em 1905. Se perguntassem a observadores políticos em que nação do mundo haveria o primeiro esboço de regime socialista, uma resposta comum em 1910 seria: na Nova Zelândia. Lá, o governo administrava muitas indústrias e quase todas as estradas de ferro, além de pagar pensões para os idosos e proporcionar educação gratuita. Em alguns setores, o governo havia estipulado um salário mínimo, reduzido o número de horas de trabalho e determinado a decisão compulsória de questões trabalhistas. Era proibida a existência de grandes propriedades rurais, e o comércio de álcool era rigorosamente regulamentado. Esse tipo de lei animava os socialistas que visitavam o país. "A Nova Zelândia é pro­ vavelmente um lugar mais apropriado para a tentativa de um regime socialista do que qualquer outro país no mundo", escreveu um especia­ lista canadense em socialismo. Ele achava a Rússia menos preparada para tal experimento. Lá, "na ausência de um governo democrático, as perspectivas do socialismo são duvidosas", afirmou.
+
+## Página 7
 
 ### QUEM MERECE VOTAR?
 
@@ -59,6 +73,8 @@ A Rússia, o mais populoso país da Europa, não possuía parlamento até a cria
 Os sinais de que a democracia iria se expandir eram singular­mente favoráveis, mesmo na China. Quando, em 1908, a impera­triz, figura de comando do país e viúva do imperador, morreu, o príncipe que a sucedeu, então um menino, não conseguiu preservar a decadente dinastia Manchu, abdicando após um período de qua­ tro anos. Apresentava-se, assim, uma oportunidade para os jovens nacionalistas chineses que, educados em sua maioria no Ocidente ou no Japão, admiravam os Estados Unidos e suas instituições democráticas. Seu líder era o dr. Sun Yatsen, um cantonês cristão educado no Havaí, pertencente aos Estados Unidos, e em Hong Kong, dominada pelos britânicos. O jovem médico e seus colegas, depois de ajudarem a derrubar os Manchus, tentaram instalar uma democracia. No entanto, uma democracia, para ser verdadeira, precisa de uma tradição de debates, da introdução das liberda­ des civis e de algum senso de deveres cívicos. A primeira eleição nacional da China, acontecida em 1913, foi vencida pelos jovens reformadores, mas também veio a ser a última. Yuan Shih-Kai, um general ambicioso, logo dissolveu o parlamento. Após abandonar os velhos imperadores divinos, a China acabou submetendo-se a uma sucessão de comandantes militares.
 
 Não era apenas na China que o direito de livre expressão, essencial em uma democracia, era considerado perigoso. Para três em cada quatro povos do mundo, as liberdades civis eram frágeis ou precárias durante os primeiros anos do século 20. Mesmo na Europa, muitos dos grandes impérios mostravam forte relutância em garantir liberdades pessoais. Os camponeses russos necessitavam de um passaporte para poder viajar dentro do próprio país. Os milhões de judeus russos quase uma nação dentro de outra - somente podiam realizar seus cultos nas zonas restritas que lhes cabiam. A alternativa de emigrar para os Estados Unidos era cada vez mais escolhida. Vista de fora, a Rússia parecia altamente civilizada, sendo uma referência em literatu­ra, música, balé e outras artes, mas apenas alguns tinham o direito a essa civilização.
+
+## Página 8
 
 ### A ALA FEMININA
 
@@ -73,6 +89,8 @@ Na China e na Índia, os direitos das mulheres, com poucas exceções, eram quas
 **Na China e na Índia, por volta de 1900, os direitos das mulheres eram quase invisíveis**
 
 No leste da Ásia, em 1900, era comum que três gerações vivessem na mesma casa. Na Coreia, pelo menos nove entre dez mulheres se casavam com um homem escolhido pelos pais. Até 1960, as leis da Coreia do Sul estipulavam que moças com menos de 23 e rapazes com menos de 27 anos de idade deviam pedir a permissão dos pais para casar-se. Considerando o mundo como um todo, pode-se dizer que as novas atitudes europeias em relação ao patrimônio das mulheres, ao casamento e às crianças é que eram exceções em 1900.
+
+## Página 9
 
 ### CONFLITOS ÉTNICOS
 

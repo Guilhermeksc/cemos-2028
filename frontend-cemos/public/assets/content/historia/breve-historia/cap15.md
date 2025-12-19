@@ -1,5 +1,7 @@
 # CAPÍTULO 15 CAI O PANO  (Páginas 166-178)
 
+## Página 1
+
 A mais devastadora guerra da história mundial havia ocorrido. O número de militares e civis mortos, mesmo em contagem parcial, era maior do que o da Primeira Guerra. A destruição de casas, escolas, igrejas, sinagogas, estradas, pontes, ferrovias, portos fábricas, escritórios, aviões, navios, bem como outros equipamento uso militar em tantos países rivalizava, em seu total, com a devastação causada por todos os desastres naturais ao longo do século anterior. A capacidade global de produzir alimentos a curto prazo fora reduzida, uma vez que muitas terras próprias para cultivo estavam danificadas, animais de criação haviam sido mortos e moinhos de farinha, cervejarias e panificadoras estavam em destroços. A comida continuou escassa por muito tempo após o fim da guerra.
 
 O mapa do mundo, drasticamente refeito com a Primeira Guerra Mundial, não passou por mudanças tão bruscas com a Segunda guerra. Quase todas as colônias europeias foram mantidas. Entretanto, nos anos seguintes, os dramáticos efeitos dos movimentos de libertação, foram sentidos na Índia, na Indonésia e em muitas regiões do Terceiro Mundo. As três grandes nações europeias - Grã-Bretanha, Alemanha e França - ficaram permanentemente enfraquecidas. A Grã-Bretanha estava financeira e industrialmente exausta. Nunca antes o vencedor de uma grande guerra havia ficado tão desgastado.
@@ -9,6 +11,8 @@ As grandes potências eram então apenas duas: os Estados Unidos e a União Sovi
 Inicialmente, houve uma esperança de que essas grandes potências fossem mantidas sob controle por uma nova versão da Liga das Nações. A primeira tentativa havia falhado; a segunda deveria funcionar. O principal incentivador da nova liga foram os Estados Unidos, que tinham ajudado a fundar a liga original, abandonando-a depois. Stalin e Churchill não se mostraram muito entusiasmados, mas Roosevelt parecia determinado. Entretanto, o presidente americano morreu pouco tempo antes da conferência que deu início à Organização das Nações Unidas.
 
 Em 25 de abril de 1945, no grande salão de reuniões de São Francisco, encontraram-se 850 representantes, entre eles cinco primeiros-ministros e 37 ministros das Relações Exteriores. Foi um encontro de vencedores - os perdedores se juntariam ao grupo mais tarde-, e mesmo eles estavam divididos. A União Soviética não se daria por satisfeita com a nova ONU se suas repúblicas-satélite não pudessem igualmente se tornar membros. A França também não ficaria contente se não obtivesse um lugar no Conselho de Segurança, ao lado das outras quatro grandes nações - União Soviética, Estados Unidos, Grã-Bretanha e China -, com as mesmas prerrogativas. Mesmo entre os pequenos países ocorriam disputas. Uma reclamação frequentemente ouvida era a de que as nações da América Latina, que pouco haviam contribuído para a vitória, respondiam por uma soma considerável de votos.
+
+## Página 2
 
 ### ATRÁS DA CORTINA DE FERRO
 
@@ -20,9 +24,11 @@ Moscou apertava com firmeza o laço em volta do Leste Europeu. A crítica séria
 
 A maioria dos intelectuais percebeu que não havia futuro para ideias independentes, exceto em Agricultura, Matemática, Física, Engenharia e outras áreas menos politizadas. A maioria dos escritores obedeceu. Os que mantiveram a independência só escreviam na privacidade de seus quartos, mas ninguém ousava publicar nada. Proprietários de empresas privadas, de qualquer tamanho, tinham pouco futuro - alguns eram declarados inimigos do povo e tinham sorte em continuar vivos. As fábricas, minas e lojas estatizadas, além das fazendas coletivas e de outros empreendimentos públicos, dominavam a economia, embora entre as curiosas exceções estivessem as pequenas fazendas particulares, cuja existência acabou sendo permitida em toda a Polônia.
 
-`Após a Segunda Guerra, apesar da opressão do partido único, a vida no leste europeu voltou ao seu curso. A marioria das pessoas tinha acesso a moradia, comida e hospitais.`
+**Após a Segunda Guerra, apesar da opressão do partido único, a vida no leste europeu voltou ao seu curso. A marioria das pessoas tinha acesso a moradia, comida e hospitais.**
 
 Apesar da opressão do partido único, a vida cotidiana no Leste Europeu voltou ao seu curso. Depois que a economia completou o lento retorno à normalidade, a maior parte das pessoas conseguiu moradia (embora bem pequena), acesso a médicos e hospitais, férias remuneradas, cerveja e tabaco. Possivelmente, aqueles que estavam na parte de baixo da pirâmide social possuíam mais bens materiais do que seus avós haviam possuído quando tinham a mesma idade.
+
+## Página 3
 
 ### GUERRA FRIA OU PAZ QUENTE?
 
@@ -32,11 +38,15 @@ A divisão econômica foi acompanhada pela divisão política. Logo, havia duas 
 
 Berlim, a antiga capital da velha e unida Alemanha, era um território pequeno e isolado dentro da zona soviética. Dependia do petróleo e dos alimentos que vinham de fora e estava vulnerável à pressão de Moscou, que inesperadamente, em 1947, ordenou o bloqueio das linhas férreas, das estradas e dos canais por onde a maioria dos suprimentos da Alemanha Ocidental chegava à cidade. Britânicos e americanos reagiram, usando o caro expediente de enviar suprimentos por via aérea. Cerca de cem aviões chegavam por dia, muitos com carregamentos de carvão. Por mais de um ano, o transporte aéreo continuou. Encontrou-se uma solução sem que fosse preciso iniciar um novo conflito. Por meio de um acordo, a cidade de Berlim foi dividida em duas zonas opostas: uma ocidental e outra comunista. Essa divisão de toda a Alemanha e também de Berlim não havia sido planejada pelos vitoriosos no fim da guerra - ela simplesmente aconteceu.
 
+## Página 4
+
 Cunhou-se uma expressão para descrever a divisão política econômica na Europa e, especificamente, na Alemanha. Costumava-se dizer que uma "cortina de ferro", separava países democrático de países comunistas. Embora Winston Churchill não fosse o autor da expressão, foi ele quem a popularizou. Em 1920, Ethel Snowden, ao viajar para São Petersburgo com uma delegação do Partido Trabalhista britânico, escreveu que eles finalmente estavam "atrás da cortina de ferro". Após ficar esquecido por um quarto de século, o incisivo termo foi revivido por Churchill. Em 1946, durante um discurso proferido em uma pequena universidade norte-americana, ele lançou para o mundo a expressão, que logo estaria gravada em milhões de mentes.
 
 Outra expressão que acompanharia aquela como uma irmã siamesa é guerra fria. "Não vamos nos enganar", escreveu o financista americano Bernard Baruch, em 1947, "hoje estamos em meio a uma guerra fria". Entretanto, somente o uso imaginativo da palavra guerra poderia descrever apropriadamente as relações entre os Estados Unidos e a União Soviética - que se assemelhavam mais a uma quente e tensa paz. A frase caiu no gosto do público e passou a retratar o clima de toda uma época. Essas expressões gêmeas, guerra fria e cortina de ferro, foram lançadas por homens na casa dos 70 anos de idade, que morreram muito antes que a fenda tão vividamente por eles descrita começasse a desaparecer.
 
 A extensão da cortina de ferro, lamentada por Churchill, ainda não era precisa. Acabou por se estender do Báltico até o Mar Negro, como um grande inchaço por todo o Adriático. Duas nações adriáticas, a Iugoslávia e a Albânia, tornaram-se comunistas por meio de eleições livres. A Iugoslávia não rezava pela cartilha de Stalin e foi expulsa da liga soviética de nações afins, o Cominform, em 1948. A Albânia acabou rompendo com Moscou ao tornar-se aliada da China comunista.
+
+## Página 5
 
 ### A BOMBA DO DOUTOR SAKHAROV
 
@@ -46,6 +56,8 @@ Um jovem físico chamado Andrei Sakharov liderou a pesquisa nuclear russa. Fruto
 
 A maioria das pessoas bem-informadas do Ocidente achava que ainda veria outra grande guerra, com o emprego de armas atômicas. Mas em meio a toda a melancolia havia também otimistas. A União Soviética tinha sua cota de esperançosos, incentivados pela teoria marxista, a qual prometia uma inevitável vitória do bem sobre o mal. A forte posição do comunismo no mundo, alguns anos após a Segunda Guerra Mundial, desafiava os ocidentais que criticavam o regime. A União Soviética possuía forças militares muito superiores, controlava um extenso território na Europa e na Ásia e sua ideologia guiava revolucionários em países e colônias da Europa, Ásia e América do Sul. O comunismo ainda alcançaria muitos triunfos, e a China era apontada como o local da próxima vitória.
 
+## Página 6
+
 ### A LONGA MARCHA DA CHINA
 
 No começo do século, a China possuía todos os ingredientes possíveis para uma revolução política. Era um país rural, pobre, com um governo de péssima qualidade e exercia no mundo um papel de pouca importância, mesmo que ideias estrangeiras estivessem minando algumas de suas tradições. Possuía, após 1910, um círculo cada vez maior de críticos patriotas e pretensos políticos. Para eles, a notícia da vitória dos bolcheviques em São Petersburgo, em 1917, foi como um deslumbrante raio de luz.
@@ -54,17 +66,23 @@ Um dos que ficaram deslumbrados foi Mao Tsé-tung. Filho de um proprietário de 
 
 Durante muitos anos, a União Soviética estivera menos interessada no Partido Comunista Chinês do que no predominante Partido Nacionalista, o Kuomintang. Partido moderado, liderado pelo dr. Sun Yat-sen, o Kuomintang se espelhava no Partido Comunista Russo e tinha exército próprio. Durante algum tempo, o recém-criado partido comunista e os poderosos nacionalistas atuaram em conjunto. A aliança foi rompida em 1927. O novo líder dos nacionalistas, o jovem general Chiang Kai-shek, obteve apoio financeiro de alguns cidadãos ricos de Xangai, concordando em expulsar da cidade os comunistas mais destacados e os líderes dos sindicatos trabalhistas. Em abril de 1927, em Xangai, muitos foram assassinados.
 
+## Página 7
+
 Forçados a se refugiar nas montanhas, os líderes comunistas conseguiram obter o controle de seis territórios independentes ao longo do Rio Yang-tse. Em 1933, a região em que Mao se encontrava, nas montanhas perto da fronteira da sua província natal, Hunan, tornou-se o quartel-general do então ilegal Partido Comunista Chinês. Dois anos mais tarde, Mao seria seu líder nacional. Os heterogêneos exércitos dessas zonas comunistas independentes continuavam a crescer.
 
 Ao general Chiang Kai-shek não restava alternativa senão atacar os comunistas. Seus exércitos, com a colaboração de instrutores e conselheiros alemães, forçaram a retirada dos soldados vermelhos para longe da costa. No final de 1935, Mao liderou seu exército e seus leais seguidores em uma longa e tortuosa marcha em direção ao noroeste da China, o que salvou os comunistas. Sua nova e isolada fortaleza no norte da província de Shaanxi era inconquistável. O povoado de Paoan, ornamentado com bandeiras vermelhas estampadas com a foice e o martelo, era seu campo de treinamento e planejamento. Lá, Mao vivia em uma caverna, tendo como luxo uma janela de vidro por onde entrava um pouco da luz do dia. Uma sentinela guardava a trilha de terra batida que levava ao esconderijo, uma vez que o líder tinha a cabeça a prêmio.
 
 Quando os japoneses invadiram a China, em 1937, nacionalistas e comunistas concordaram em unir esforços contra o inimigo comum. Uma vez que o governo estava sob controle dos nacionalistas, era com eles que a população mais contava, mas tal esperança foi em vão. Os nacionalistas não possuíam o mesmo talento para a organização demonstrado por Mao. Faltava a seus oficiais a dedicação dos comunistas, além de parecerem um tanto indiferentes em relação ao invasor. No fim, o governo nacionalista fugiu para a isolada cidade de Chungking, no oeste, deixando que os japoneses assumissem o controle da metade leste do país.
 
+## Página 8
+
 Naquele território tumultuado pela guerra, o comunismo espalhava sua mensagem. "Pode-se avistar a nova China surgindo no horizonte", Mao proclamou em 1942. Ele era o líder vigoroso pelo qual ansiava uma nação desejosa de se ver livre de influências estrangeiras e de seu passado. Mao levava as grandiosas teorias marxistas para o nível realista dos campos de arroz. Poeta, possuía talento para criar slogans e frases de efeito. Tigre de papel era uma das suas expressões favoritas: certa vez, declarou com desdém que a bomba atômica era um tigre de papel usado pelos americanos para amedrontar os pobres chineses - embora tenha mudado um pouco esse discurso quando a China desenvolveu uma arma atômica, em 1964.
 
 No fim da Segunda Guerra Mundial, os invasores japoneses retornaram para casa. Nacionalistas e comunistas, após uma difícil trégua, estavam prontos para retomar sua contenda. Em outubro de 1949, para desgosto dos norte-americanos, os comunistas venceram. Mao finalmente se estabeleceu no poder em Pequim, cidade na qual, trinta anos antes, havia sido um humilde arrumador de livros. Seu inimigo mortal, o general Chiang Kai-shek, instituiu uma república chinesa própria na ilha de Taiwan.
 
 A vitória do comunismo na China provocou calafrios em vários líderes ocidentais. Um pedaço do território comunista estendia-se desde o Mediterrâneo e o Mar Negro até as costas do Oceano Pacífico, passando pelo Mar Cáspio, pelas estepes siberianas, pelo Deserto da Mongólia e pelas montanhas tibetanas, as quais se tornaram a primeira conquista de território estrangeiro de Mao Tsé-tung após sua vitória total em casa. Nessa área vermelha, distribuída pela Ásia e pela Europa, vivia aproximadamente um terço da população mundial. Seria esse território o trampolim para uma expansão ainda maior? Tal medo - ou esperança - se espalhava por muitas partes do mundo, e não menos na Coreia.
+
+## Página 9
 
 ### A GUERRA DA COREIA
 
@@ -75,6 +93,8 @@ Os coreanos haviam recebido dos vitoriosos aliados a promessa de independência 
 Seria aquele o prelúdio de outras invasões comunistas em territórios vulneráveis que se estendiam da Grécia até Hong Kong? A invasão da Coreia provocou uma intensa angústia nas nações ocidentais. O Conselho de Segurança fez uma reunião de emergência em Nova York. O representante russo havia abandonado a organização alguns meses antes, em protesto, e continuava ausente. Assim, a União Soviética não pôde exercer seu direito de veto contra a enfática resolução que planejava restituir o legítimo governo de Seul. A velha Liga das Nações nunca havia empreendido ação que envolvesse forças armadas. As Nações Unidas, porém, diante da crise na Coreia, acabaram optando por uma operação militar.
 
 As forças das Nações Unidas, compostas por 16 países e lideradas pelo general Douglas MacArthur, logo dominaram o espaço aéreo. Em terra, entretanto, o inimigo era forte. Os exércitos da ONU eram visivelmente menos numerosos, em especial após a chegada, em novembro de 1950, de tropas chinesas em auxílio dos invasores norte-coreanos. No fim, a participação de forças chinesas era tamanha - suas perdas chegaram a um total de 900 mil homens - que a condição da Coreia do Sul se tornou desesperadora. Após três anos, um armistício foi assinado. Coube uma região aos coreanos do norte e outra aos coreanos do sul. Uma nova cortina de ferro separou a península e, até o fim do século, essa cortina continuava firme em seu lugar.
+
+## Página 10
 
 ### UMA MUDANÇA NO MAPA
 

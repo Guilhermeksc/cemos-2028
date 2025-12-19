@@ -1,0 +1,264 @@
+<div class="estatisticas-gerais-container">
+  <!-- Estatísticas Gerais do Sistema -->
+  <div *ngIf="rankingGeral && rankingGeral.estatisticas_gerais" class="stats-section">
+    <h2>Estatísticas Gerais do Sistema</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h4>Total de Usuários</h4>
+        <p class="stat-value">{{ rankingGeral.estatisticas_gerais.total_usuarios }}</p>
+      </div>
+      <div class="stat-card">
+        <h4>Total de Respostas</h4>
+        <p class="stat-value">{{ rankingGeral.estatisticas_gerais.total_respostas }}</p>
+      </div>
+      <div class="stat-card">
+        <h4>Total de Acertos</h4>
+        <p class="stat-value">{{ rankingGeral.estatisticas_gerais.total_acertos }}</p>
+      </div>
+      <div class="stat-card">
+        <h4>Taxa de Acerto Geral</h4>
+        <p class="stat-value">{{ rankingGeral.estatisticas_gerais.taxa_acerto_geral }}%</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards de Matérias com Percentual de Acerto Geral -->
+  <div class="materias-cards-section" *ngIf="estatisticasGeraisErros && estatisticasGeraisErros.ranking_materias">
+    <h2>Estatísticas por Matéria</h2>
+    
+    <div class="materias-cards-grid">
+      <div 
+        *ngFor="let materiaStat of getEstatisticasPorMateria()" 
+        class="materia-card">
+        
+        <div class="card-header">
+          <div class="card-title-section">
+            <h3>{{ materiaStat.materia }}</h3>
+            <span class="bibliografias-count">({{ materiaStat.bibliografias.length }} bibliografias)</span>
+          </div>
+        </div>
+
+        <div class="card-stats">
+          <div class="stat-main">
+            <!-- Mensagem quando não há respostas -->
+            <div *ngIf="materiaStat.totalRespostas === 0" class="percentual-acerto no-data">
+              <mat-icon class="no-data-icon">info</mat-icon>
+              <span class="no-data-text">Nenhuma questão respondida</span>
+            </div>
+            
+            <!-- Percentual com barra de progresso -->
+            <div *ngIf="materiaStat.totalRespostas > 0" class="percentual-acerto" 
+                 [ngClass]="getPercentualClass(materiaStat.taxaAcerto || 0, materiaStat.totalRespostas)">
+              <div class="percent-content">
+                <span class="percent-value">{{ materiaStat.taxaAcerto || 0 }}%</span>
+                <span class="percent-label">taxa de acerto</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" 
+                     [style.background]="getProgressBarColor(materiaStat.taxaAcerto || 0, materiaStat.totalRespostas)"
+                     [style.width.%]="materiaStat.taxaAcerto || 0">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-details">
+            <div class="stat-badge" *ngIf="materiaStat.totalRespostas > 0">
+              <span class="stat-label">Total:</span>
+              <span class="stat-value">{{ materiaStat.totalRespostas }}</span>
+            </div>
+            <div class="stat-badge success" *ngIf="materiaStat.totalAcertos > 0">
+              <span class="stat-label">Acertos:</span>
+              <span class="stat-value">{{ materiaStat.totalAcertos }}</span>
+            </div>
+            <div class="stat-badge error">
+              <span class="stat-label">Erros:</span>
+              <span class="stat-value">{{ materiaStat.totalErros }}</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-label">Bibliografias:</span>
+              <span class="stat-value">{{ materiaStat.bibliografias.length }}</span>
+            </div>
+          </div>
+
+          <button 
+            class="btn-ver-detalhes"
+            (click)="abrirModalMateria(materiaStat, $event)">
+            <mat-icon>visibility</mat-icon>
+            Ver Detalhes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Detalhes da Matéria -->
+  <div *ngIf="mostrarModalMateria && materiaSelecionada" class="modal-overlay" (click)="fecharModalMateria()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ materiaSelecionada.materia }}</h2>
+        <button class="modal-close" (click)="fecharModalMateria()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-stats-summary">
+          <div class="summary-item" *ngIf="materiaSelecionada.totalRespostas > 0">
+            <span class="summary-label">Total de Respostas:</span>
+            <span class="summary-value">{{ materiaSelecionada.totalRespostas }}</span>
+          </div>
+          <div class="summary-item success" *ngIf="materiaSelecionada.totalAcertos > 0">
+            <span class="summary-label">Acertos:</span>
+            <span class="summary-value">{{ materiaSelecionada.totalAcertos }}</span>
+          </div>
+          <div class="summary-item error">
+            <span class="summary-label">Erros:</span>
+            <span class="summary-value">{{ materiaSelecionada.totalErros }}</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Taxa de Acerto:</span>
+            <span class="summary-value">{{ materiaSelecionada.taxaAcerto || 0 }}%</span>
+          </div>
+        </div>
+
+        <h3>Bibliografias</h3>
+        <div class="bibliografias-list">
+          <div 
+            *ngFor="let bibliografia of materiaSelecionada.bibliografias" 
+            class="bibliografia-item">
+            
+            <div class="bibliografia-header">
+              <div class="bibliografia-info">
+                <h4>{{ bibliografia.titulo || 'Bibliografia ' + bibliografia.id }}</h4>
+              </div>
+            </div>
+
+            <div class="bibliografia-stats">
+              <div class="stat-item error">
+                <span class="stat-label">Total de Erros:</span>
+                <span class="stat-value">{{ bibliografia.total_erros || 0 }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ranking de Usuários -->
+  <div class="stats-section" *ngIf="rankingGeral && rankingGeral.ranking && rankingGeral.ranking.length > 0">
+    <h2>Ranking de Usuários</h2>
+    <div class="table-container">
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th>Posição</th>
+            <th>Usuário</th>
+            <th>Acertos</th>
+            <th>Total</th>
+            <th>Taxa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of rankingGeral.ranking; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ item.username }}</td>
+            <td class="success-text">{{ item.total_acertos }}</td>
+            <td>{{ item.total_respostas }}</td>
+            <td>{{ item.taxa_acerto }}%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Estatísticas Gerais de Erros -->
+  <div *ngIf="estatisticasGeraisErros" class="estatisticas-erros-section">
+    <h2>Ranking de Matérias com Mais Erros</h2>
+    
+    <div class="stats-section" *ngIf="estatisticasGeraisErros.estatisticas_gerais">
+      <h3>Estatísticas Gerais</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>Total de Erros</h4>
+          <p class="stat-value">{{ estatisticasGeraisErros.estatisticas_gerais.total_erros }}</p>
+        </div>
+        <div class="stat-card">
+          <h4>Bibliografias com Erros</h4>
+          <p class="stat-value">{{ estatisticasGeraisErros.estatisticas_gerais.total_bibliografias_com_erros }}</p>
+        </div>
+        <div class="stat-card">
+          <h4>Matérias com Erros</h4>
+          <p class="stat-value">{{ estatisticasGeraisErros.estatisticas_gerais.total_materias_com_erros }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-section" *ngIf="estatisticasGeraisErros.ranking_materias && estatisticasGeraisErros.ranking_materias.length > 0">
+      <h3>Ranking por Matéria</h3>
+      <div class="table-container">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th>Posição</th>
+              <th>Matéria</th>
+              <th>Total de Erros</th>
+              <th>Bibliografias</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let materia of estatisticasGeraisErros.ranking_materias; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td><strong>{{ materia.materia }}</strong></td>
+              <td class="error-text">{{ materia.total_erros }}</td>
+              <td>{{ materia.bibliografias.length }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="stats-section" *ngIf="estatisticasGeraisErros.erros_por_tipo && estatisticasGeraisErros.erros_por_tipo.length > 0">
+      <h3>Erros por Tipo de Questão</h3>
+      <div class="table-container">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Total de Erros</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of estatisticasGeraisErros.erros_por_tipo">
+              <td>{{ item.pergunta_tipo === 'multipla' ? 'Múltipla Escolha' : item.pergunta_tipo === 'vf' ? 'Verdadeiro/Falso' : 'Correlação' }}</td>
+              <td class="error-text">{{ item.total }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="stats-section" *ngIf="estatisticasGeraisErros.erros_por_bibliografia && estatisticasGeraisErros.erros_por_bibliografia.length > 0">
+      <h3>Top Bibliografias com Mais Erros</h3>
+      <div class="table-container">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Bibliografia</th>
+              <th>Matéria</th>
+              <th>Total de Erros</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of estatisticasGeraisErros.erros_por_bibliografia">
+              <td>{{ item.bibliografia?.titulo || 'Desconhecida' }}</td>
+              <td>{{ item.bibliografia?.materia_nome || 'Sem matéria' }}</td>
+              <td class="error-text">{{ item.total_erros }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,10 +1,14 @@
 # CAPÍTULO 23 RAIOS E TROVÕES EM MOSCOU E VARSÓVIA (Páginas 258-266)
 
+## Página 1
+
 A conquista da Lua foi memorável para os Estados Unidos e para o presidente Richard Nixon. Poucos países haviam experimentado um triunfo tão importante. Mas os norte-americanos estavam espalhados além dos limites de suas capacidades, operando bases, quartéis e campos de aviação em vários países. Os custos da Guerra do Vietnã eram altos demais e a perda de vidas só de combatentes americanos, chegava a 57 mil. As dispendiosas atividades da nação, fossem no espaço sideral, no Vietnã ou no limites de suas fronteiras, não poderiam ser sustentadas por muito tempo. Um acordo de paz era a única solução.
 
 Em 1973, os Estados Unidos assinaram um cessar-fogo Vietnã do Norte, dispondo-se a retirar as tropas que tinham enviadodo à região, onde seu prestígio militar havia sofrido um revés. Ao sair daquele país, os norte-americanos libertavam a si mesmos.
 
 O Vietnã foi a última grande vitória dos comunistas ao longo da Guerra Fria. Os líderes russos no Kremlin, assim como os comandantes das forças armadas, os almirantes dos submarinos nucleares e os astronautas soviéticos, nem imaginavam que viriam a uma imensa derrota em casa. A queda do comunismo era inimaginável para os líderes dos seis países-satélite, o quais, em Varsóvia ou em Praga, em Budapeste ou em Bucareste, em Berlim Oriental ou em Sofia, perfilavam-se quando os tanques imponentes, os pelotões em marcha e os aviões a jato desfilavam pelas bases militares a cada aniversário da Revolução Bolchevique.
+
+## Página 2
 
 ### PRIVILIÉGIOS EM UM PAÍS COMUNISTA
 
@@ -14,15 +18,21 @@ Algumas centenas de funcionários, porém, estavam confortavelmente instalados b
 
 Na década de 1970, os cidadãos comuns moravam em apartamentos apertados e abarrotados. Pão e batata formavam boa parte da dieta e nem sempre havia frutas e vegetais frescos, mesmo no verão. Existia uma economia paralela. No início da década, um jornal russo denunciava que um em cada três carros particulares usava gasolina "emprestada" dos tanques e bombas estatais. De cada quatro goles de vodca que se bebia na Rússia, um vinha do mercado negro. As faltas ao trabalho eram frequentes. A apatia estava em alta, e o moral, em baixa. Mesmo assim, o chefe de estado, Leonid Brejnev, não acreditava que seu país estivesse estagnado. A União Soviética ainda disputava com os Estados Unidos o posto de nação mais poderosa do mundo, competia vigorosamente na corrida espacial e, de alguma forma, dava o melhor de si na disputa armamentista.
 
+## Página 3
+
 Brejnev era temível e ficou cada vez mais, já que seu período de permanência no Kremlin foi longo. Esteve no comando pelo segundo maior período entre todos os líderes soviéticos - algo em torno de dezoito anos - e, por vários motivos, podia ser considerado o homem mais poderoso do mundo naquela época. Tal poder vinha, em parte, de sua longevidade. Ele presenciou o mandato de cinco presidente norte-americanos, a maioria deles sem sequer uma parcela da experiência de Brejnev em lidar com situações delicadas e arriscar-se até o limite.
 
 Durante os primeiros anos de Brejnev no comando, a corrida armamentista tornava-se perigosa para a paz mundial. As duas super potências aumentavam seu poder de destruição. Os submarino nucleares podiam ficar escondidos nas profundezas do oceano, sem serem detectados por sonares; capazes de disparar mísseis, ameaçavam distantes cidades inimigas. Além disso, havia os mísseis intercontinentais, disparados do solo e cuja capacidade de atingir alvos longínquos aumentava ano a ano. No início da década de 1970, podiam viajar mais de 3 mil quilômetros e logo essa distância aumentou para mais de 8 mil quilômetros. Por fim, não haveria cidade nos Estados Unidos ou na União Soviética, por mais remota que fosse sua localização, que tivesse a salvo de um ataque repentino de mísseis carregadcos de ogivas termonucleares.
 
 O custo da corrida armamentista era uma razão forte o suficiente para refreá-la. Ambos os lados reconheciam isso, mas seria que um país pudesse confiar no que o outro faria? Um tratado assinado em 26 de maio de 1972, limitando o número de mísseis de cada um dos lados, fossem eles lançados de bases terrestres ou de submarinos. Outro acordo foi estabelecido em Viena em junho de 1979. Brejnev tinha negociado vigorosamente com quatro presidentes norte-americanos e isso causou uma forte impressão, em alguns círculos de Washington, de que os Estados Unidos estavam perdendo algumas vantagens militares conquistadas graças a enormes gastos e pesquisas.
 
+## Página 4
+
 A União Soviética, atenta à rede de bases militares de Washington pelo mundo, aproveitava as oportunidades de expansão, aumentando seu poderio ao redor das duas principais passagens do Oriente Médio: o Mar Vermelho e o Golfo Pérsico. Com o colapso do Império Português na África, uma vasta área do território de Angola, no sudoeste africano, foi tomada por um governo marxista, com o apoio de soldados de Cuba. Em 1979, na Ásia Central, soldados soviéticos entraram no Afeganistão para ajudar um dos lados da guerra civil.
 
 Durante os últimos anos do governo Brejnev, o comunismo parecia vigoroso. A União Soviética e a China eram seus baluartes e o regime também era forte em Cuba, na Coreia do Norte, na Albânia, na Romênia e nos instáveis postos às margens do Mar Vermelho. Mas havia um ponto negativo muito visível: o Camboja. Situado a oeste do Vietnã, fora governado de forma autoritária pelo príncipe Sihanouk até 1975, quando os comunistas locais tomaram o controle. Liderados por Pol Pot, um ex-professor, e apoiados pela China, livraram a nação de todos aqueles que pareciam indesejáveis. Além disso, um enorme número de pessoas morreu por conta da exaustão, da fome e da doenças. Milhares, incluindo muitos comunistas leais, foram interrogados e executados. No fim do regime, em 1978, o número de mortos chegava perto dos 2 milhões, ou seja, 20% da população do país.
+
+## Página 5
 
 ### TEMPESTADES NO LESTE EUROPEU
 
@@ -32,17 +42,23 @@ Em 1978, um cardeal de origem polonesa concorreu ao supremo ofício do papado - 
 
 O novo papa se preocupava com os problemas e descontentamento de sua terra natal. Durante o primeiro ano de ofício, voltou à Polônia e, ao descer as escadas do avião, fez uma eloquente afirmação: "Beijei o solo da Polônia, onde cresci; terra de onde, de acordo com o insondáveis desígnios da Providência, Deus me chamou para o trono de Pedro em Roma." Uma gigantesca multidão, estimada em 2 milhões de pessoas, reuniu-se ao longo da rota entre o aeroporto e Varsóvia. A permitir tais liberdades para dissidentes, a Polônia se diferenciava de outros países comunistas.
 
+## Página 6
+
 Se havia uma igreja relativamente independente, talvez o país também pudesse criar um sindicato autônomo. Surgiu assim, em 1980, o Movimento Solidariedade. Seu líder era Lech Walesa, um eletricista, católico desempregado que antes trabalhava no estaleiro de Gdansk, uma das gigantescas empresas comunistas que surgiram na costa sul do Báltico. O Movimento Solidariedade recrutava milhares de membros e reivindicava o direito à greve - algo que não existia em países comunistas. Durante um breve período, o solidariedade desafiou a autoridade do regime comunista em Varsóvia e mesmo em Moscou.
 
 Ao tornar-se uma influência decisiva em ambos os lados da cortina de ferro, o papa acabou virando alvo político. Em maio de 1981, no Vaticano, enquanto caminhava em meio à multidão, foi vítima de um atentado malsucedido. Usando uma arma semiautomática, um turco disparou contra o líder religioso. O mais significativo, entretanto, foi o fato de o criminoso ter contado com cúmplices búlgaros, além de ter recebido apoio e dinheiro do governo comunista da Bulgária. Alguns historiadores suspeitam que o ataque também foi apoiado por agências governamentais soviéticas, embora isso nunca tenha sido comprovado.
 
 No fim daquele ano, aconteceu na Polônia uma campanha contra os agitadores. Em uma noite de muita neve, milhares de líderes e simpatizantes do Solidariedade foram presos pelo exército polonês. A lei marcial foi promulgada, passando a valer nas cidades e na zona rural. Estações de rádio e jornais foram censurados. A dissidência no país foi controlada, mas não eliminada.
 
-`Ao se tornar uma influência decisiva em ambos os lados da cortina de ferro, o papa João Paulo II acabou virando alvo político.`
+**Ao se tornar uma influência decisiva em ambos os lados da cortina de ferro, o papa João Paulo II acabou virando alvo político.**
+
+## Página 7
 
 Nesse período delicado, o novo presidente norte-americano, Ronald Reagan, começou a testar o relacionamento entre as duas superpotências. Filho de um vendedor de sapatos de Illinois, Reagan era conhecido pelos filmes que havia feito em Hollywood e pelo primeiro casamento, com a atriz Jane Wyman. Ele levou para Washington seu estojo de maquiagem e sua dicção de ator. Protestante de tendência conservadora, Reagan reafirmava os velhos valores norte-americanos no momento em que estes eram corroídos pelos jovens radicais da contracultura. Sua política combinava dois ingredientes que não se misturavam muito bem: impostos mais baixos e maiores investimentos na defesa do país. Propôs gastos pesados no projeto que chamou de Iniciativa Estratégica de Defesa, também conhecido como Guerra nas Estrelas. De acordo com o plano de Reagan, as armas norte-americanas, prontas em solo, no mar e no espaço, poderiam interceptar qualquer ataque de mísseis russos.
 
 Brejnev morreu em novembro de 1982. Sua experiência e determinação fizeram falta. Além disso, seus sucessores imediatos não duraram, permitindo que a iniciativa e o senso de comando passassem para os Estados Unidos.
+
+## Página 8
 
 ### O HOMEM DA PERESTROIKA (REESTRUTURAÇÃO)
 
@@ -51,6 +67,8 @@ Mikhail Gorbachev chegou ao poder em março de 1985, após seu três predecessor
 A senhora Raisa Gorbachev primava pela delicadeza e pelo estilo - qualidades raramente encontradas nas robustas e modestas esposas d líderes do passado. Além disso, tinha inclinações intelectuais - filosofia era seu campo de estudo. Embora não fosse costume soviético que as mulheres aparecessem nos palanques durante as grandes ocasiões a senhora Gorbachev rompeu esse tabu, despertando comentários críticos em todo o país. Ao vê-la na televisão, o presidente Reagan teve impressão de que Raisa Gorbachev talvez fosse uma pessoa religiosa. Na verdade, ela era, tal como o marido, diferente.
 
 Quando Gorbachev se tornou chefe de estado, sua preocupa economia. A taxa de crescimento e o índice de inovações da nação eram insuficientes e muitos empregados preferiam beber uma boa vodca a se esforçar para aprender o que havia de novo em sua profissão. Gorbachev percebeu que uma economia tão morosa dificilmente poderia financiar uma grande empreitada militar - um exército para travar árduos combates no Afeganistão, tropas numerosas dentro das fronteiras, outro exército para manter guarda no Leste Europeu, enormes forças navais e aéreas, bem como todos os gigantescos gastos para tentar fazer frente à Guerra nas Estrelas de Reagan. Após uma excursão pelo país, condenando o alcoolismo e a corrupção, Gorbachev anunciou que havia chegado o tempo da perestroika, ou seja, da reestruturação.
+
+## Página 9
 
 Gorbachev via vantagens em reunir-se com Reagan, uma vez que estava ansioso para diminuir os gastos com armamentos, consciente de que o arsenal nuclear já existente tinha o poder de "erradicar toda a vida do planeta". No entanto, providenciar uma reunião de cúpula não era fácil. Havia mais de seis anos que nenhuma acontecia. Gorbachev e Reagan se encontraram em 19 de novembro de 1985, na cidade de Genebra. Reagan acreditava que Gorbachev estava realmente disposto a "reduzir os gastos com a defesa, que estagnavam a economia soviética". Os dois homens - com vinte anos de diferença na idade e ainda mais desiguais quanto à ideologia - tiveram primeiramente uma conversa privada que durou uma hora. Gorbachev considerou Reagan um dinossauro político, uma relíquia de tempos passados, enquanto Reagan viu em Gorbachev um urso russo que rangia os dentes. Ao longo do dia, chegaram a uma harmonia cautelosa. Gorbachev declarou: "Apertamos as mãos como amigos." Foi um dos mais decisivos encontros na história do século 20.
 

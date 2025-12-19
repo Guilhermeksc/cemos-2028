@@ -1,10 +1,14 @@
 # CAPÍTULO 12 UMA SEGUNDA GUERRA MUNDIAL (Páginas 134-144)
 
+## Página 1
+
 Os generais alemães previam que não conseguiriam travar uma guerra longa. Embora rico em carvão, o país não contava com poços de petróleo. Sem colônias, não podia produzir durante a guerra, borracha, estanho e outras mercadorias que vinham principalmente das regiões dos trópicos. Matéria-prima vital tinha sido acumulada inteligentemente, mas o estoque de alguns metais - cobre , ferro, magnésio e chumbo - duraria apenas nove meses. O país estava pouco preparado para uma guerra prolongada, uma vez que ficaria rapidamente sem munição e petróleo, sendo então forçado a negociar a paz em termos desfavoráveis.
 
 Essa situação precária era de fato o desejo dos vitoriosos aliados quando impuseram o rigoroso tratado de paz à Alemanha em 1919. Tal tratado, no entanto, teve o efeito contrário, convencendo o país de que, ao planejar a próxima guerra, deveria obter vitórias rápidas e decisivas durante a primeira fase, para que pudesse apoderar-se de suprimentos vitais do inimigo.
 
 O tratado de paz ao fim da Primeira Guerra Mundial também não teve o efeito esperado porque privou a Alemanha e a Rússia do que ambas ainda consideravam ser seu por direito. Em 1939, as duas nações, achando-se prejudicadas, estavam prontas para recuperar territórios à força. Embora ideologicamente distantes e cultivando uma profunda animosidade, combinaram secretamente invadir a Polônia e dividi-la entre si. Quando veio a público, o pacto deixou atônitos muitos líderes europeus. Era o equivalente, em nossa época, a um acordo secreto assinado por Israel e seus vizinhos muçulmanos para declarar guerra a um país não considerado inimigo e repartir seu território.
+
+## Página 2
 
 ### POLÔNIA E FRANÇA CAEM
 
@@ -14,6 +18,8 @@ Orgulhosa de sua língua, de sua literatura e de suas tradições, a Polônia de
 
 Em 1° de setembro de 1939, Hitler invadiu a Polônia e quinze dias depois tropas russas marchavam sobre o território para completar a conquista. A Rússia foi além e tentou retomar a parte da Finlândia que lhe pertencia antes das revoluções de 1917. Os finlandeses combateram corajosamente no gelo e na neve, mas por fim resolveram admitir derrota e acabaram conseguindo termos que estavam longe de ser destrosos. Grã-Bretanha, França, Canadá, Austrália e Nova Zelândia eram oponentes de Hitler desde o início, mas não influenciaram em nada primeiros eventos da guerra. Preferiram esperar. E Hitler agiu.
 
+## Página 3
+
 Quando a primavera de 1940 despertou na Europa Ocidental, as condições eram propícias para que o rápido exército e a hábil força aérea de Hitler aumentassem suas conquistas. Confiando na superioridade dessa força aérea e na surpresa, Hitler começou a tomar parte da Europa, pedaço a pedaço. Dinamarca e Noruega caíram em abril, Holanda e Bélgica, em maio. A próxima seria a França. Pela primeira vez, Hitler teria de combater uma grande nação tão bem-armada, ao menos no papel, quanto a Alemanha. Se o poderio militar do aliado da França, a Grã-Bretanha, fosse colocado na balança da guerra, ela penderia para o lado francês.
 
 Nos altos círculos de Paris, a visão otimista era de que o exército Hitler não conseguiria avançar mais do que alguns quilômetros em território francês. A maioria dos líderes franceses previa que seria uma repetição da Primeira Guerra Mundial, defensiva e sem saída. Em 1940, a França depositava suas esperanças em uma fortaleza para resistir à Alemanha. Chamada de Linha Maginot, era um muro de concreto, com depósitos e arsenais subterrânos, linhas férreas conectadas e galerias onde exércitos inteiros podiam abrigar-se. Foi a mais extensa e a mais cara fileira de fortes na história das Guerras.
@@ -21,6 +27,8 @@ Nos altos círculos de Paris, a visão otimista era de que o exército Hitler n�
 Os alemães não se lançaram contra o concreto da Linha Marginot. Eles simplesmente tomaram um desvio e entraram na França, com seus tanques e carros de combate, por uma porta lateral entreaberta, as florestas pouco guarnecidas da região de Ardenas. A poderosa Linha Maginot logo foi abandonada, tornando-se um museu sem visitantes, a contar a história das guerras.
 
 Como a Grã-Bretanha demorou a enviar ajuda, os franceses inicialmente se defenderam socinhoz. Em seu território, deveriam oferecer resistência ao invasor alemão, mas a cada momento eram superados taticamente. Em uma ou duas semanas, as divisões motorizadas do exército de Hitler atravessaram as fazendas francesas, onde, durante os quatro anos da guerra anterior, os combates haviam se concentrado, em um beco sem saída mortal. Os alemães praticamente pularam por cima do velho front ocidental e se aproximaram de Paris. À frente deles, muitas vezes bloqueando as estradas, movia-se uma vasta coluna de refugiados franceses, rumando rapidamente para o sul, com seus pertences empacotados às pressas e depositados em carroças, caminhões, automóveis e mesmo em bicicletas, carrinhos de bebê e carrinhos de mão.
+
+## Página 4
 
 ### OS DIAS GLORIOSOS DE CHURCHILL
 
@@ -34,11 +42,15 @@ Sempre haverá discussões sobre o papel de Churchill no planejamento do ataque 
 
 **Churchill previa que hitler iniciaria uma nova guerra se chegasse ao poder, porém tais avisos só foram levados a sério após a eclosão do conflito.**
 
+## Página 5
+
 No final de maio, o exército britânico na França, em perigo por causa do rápido avanço alemão, teve de ser resgatado. Aproximadamente 900 embarcações britânicas, grandes e pequenas, com a cobertura da força aérea, fizeram a evacuação das tropa nas praias perto de Dunquerque porto havia sido bombardeado pela força aérea alemã até se tornar inutilizável. Mais de 340 mil soldados britânicos, franceses e belgas foram salvos nas cercanias de Dunquerqu outros 200 mil soldados aliados foram recolhidos por navios britânicos de Cherburgo e de portos franceses mais ao leste. Se todos esse homens tivessem sido aprisionados, o moral britânico e sua capacidade de defender o litoral poderiam ter sofrido um dano irreparável.
 
 Em 14 de junho de 1940, apenas dez dias depois das últimas retiradas de Dunquerque, os primeiros soldados alemães se preparavam para entrar em Paris, então uma cidade fantasma que havia se despedido dos seus cidadãos, os quais rumavam para o sul, fugindo das retumbantes tropas alemãs. Os líderes do governo francês já se haviam retirado em pensamento antes mesmo de efetivamente deixarem a cidade. Em 17 de junho, um correspondente norte-americano, ao chegar à capital ocupada pelos pelos alemães, resumiu o estado de espírito predominante: "Percebo aqui a completa ruptura da sociedade francesa." Disse ainda que a dramática cadeia de eventos era "quase monstruosa demais para nela acreditarmos." Cinco dias depois, os franceses estavam prontos para assinar a rendição formal.
 
 Uma das mais antigas democracias do mundo, a França defendia tal regime como naturalmente superior a outras formas de governo. Às vésperas da queda do país, entretanto, sólidas evidências apontavam aquela democracia como uma das causas do próprio fracasso. Os eleitores franceses, e aqueles que os conduziam, haviam se recusado a fazer os sacrifícios necessários para conferir à nação defesas mais fortes. O país enfrentava grandes divisões internas. Os primeiros-ministros eram trocados com demasiada frequência. A França foi o primeiro país democrático a entrar em colapso durante o curso de uma guerra. O armistício foi assinado por um representante francês no fim da tarde de 22 de junho, em uma floresta francesa. Hitler esteve presente na primeira parte da cerimônia. Depois foi passear, admirando-se com a elegância de Paris, prestando homenagens a Napoleão em seu túmulo, inspecionando cuidadosamente a Ópera, que chamava de "o mais belo teatro do mundo", e visitando os velhos campos de batalha da Primeira Guerra Mundial, antes de retornar à Alemanha. Sentia-se orgulhoso. A França havia caído tão facilmente que a Grã-Bretanha provavelmente imploraria a paz.
+
+## Página 6
 
 ### A BATALHA PELA GRÃ-BRETANHA
 
@@ -48,11 +60,15 @@ Com 3 mil aeronaves à disposição, os alemães estavam em vantagem. Em 8 de ag
 
 Ao longo dos registros históricos, centenas de cidades haviam sido sitiadas e, nos últimos séculos, muitas foram severamente danificadas pela ação de artilharia, mas aquela era a primeira guerra em que o coração de uma grande metrópole podia ser atacado diretamente do céu. No Natal, grande parte da velha cidade - igrejas, bancos, monumentos e construções antigas - estava destruída total ou parcialmente. A questão mais importante era saber se o ânimo dos civis resistiria à devastação e ao perigo que a noite trazia. Como demonstrado na Rússia em 1917 e na Alemanha em 1918, o colapso do moral dentro dos lares podia ser tão destrutivo quanto o colapso no campo de batalha.
 
+## Página 7
+
 Naqueles dias sombrios de 1940, pessoas que observavam Churchill trabalhando fizeram dele uma descrição incomum, mas estranhamente tranquilizadora. Ao acordar, ele se sentava na beira da cama, vestindo um roupão vermelho e, fumando um charuto, recolhia as últimas notícias da guerra e as mensagens militares depositadas em uma caixa ou ditava respostas para serem datilografadas em máquina manual pela secretária, que ocupava uma mesa próxima. Aos pés da cama, sossegadamente, ficava o gato negro de Churchill, Nelson, batizado em homenagem ao herói da marinha britânica do século anterior. O primeiro-ministro era um estadista determinado a defender uma civilização que corria um perigo sem precedentes. Em meio às trevas, ele espalhava luz e um sentimento de força interior: "Não são dias sombrios os que enfrentamos; são dias magníficos - os melhores que nossa nação já viveu." Ali estava um grande homem vivendo seu ano mais glorioso, conforme se perceberia mais tarde.
 
 Churchill considerava Hitler tremendamente favorecido, tanto pela sorte como por um exército e uma força aérea altamente profissionais. Quase toda a Europa Ocidental estava em poder da Alemanha, exceto por alguns países, como Espanha, Portugal, Irlanda, Suíça e Suécia, nações mais ou menos neutras, mas que só poderiam assim permanecer se Hitler consentisse - e seus líderes sabiam disso. Cautelosas, tentavam não demonstrar qualquer hostilidade contra o líder nazista. A neutralidade sueca era particularmente falsa, uma vez que o país permitia que as tropas alemãs cruzassem seu território, além de continuar a ser um ativo exportador de minério de ferro para a Alemanha hitlerista.
 
 A extensa costa e as ilhas do Mediterrâneo eram o próximo alvo de Hitler. Os alemães invadiram a Grécia e, em abril de 1941, tomaram a cidade de Atenas. No fim de maio, a ilha grega de Creta estava quase totalmente ocupada, após os ousados saltos dos paraquedistas alemães. Grandes forças militares da Itália e da Alemanha encontravam-se reunidas no norte da África e Churchill temia que o Egito fosse o próximo país a cair nas mãos de Hitler. Se isso acontecesse, o Canal de Suez, que disponibilizava um atalho vital entre a Europa e a Ásia, também estaria sob controle alemão. E, se esse canal estivesse perdido, a Grã-Bretanha somente poderia enviar reforços - urgentemente necessários na Índia, em Cingapura, na Birmânia, em Hong Kong e em outras colônias - por uma longa rota oceânica que passava pelo extremo da África do Sul antes de chegar ao Oceano Índico.
+
+## Página 8
 
 ### A GUERRA CHEGA A RÚSSIA
 
@@ -62,11 +78,15 @@ A faixa de nações enfraquecidas e, em sua maioria, novas, perto da fronteira o
 
 Muito confiantes, as tropas de Hitler iniciaram, em 22 de junho de 1941, a invasão da União Soviética. Durante os primeiros meses, Hitler parecia próximo de conseguir o que pretendia, uma vez que seu exército encontrava poucos obstáculos. O porto de Leningrado foi o mais difícil deles, pois se preparou para um cerco demorado, erguendo barreiras a fim de bloquear o avanço dos tanques inimigos e manter sob controle o exército alemão e o finlandês. A sitiada Leningrado, mês após mês, sobreviveu graças ao racionamento de comida. Em um ano, 650 mil vidas foram perdidas por causa de epidemias, fome e bombas disparadas pela artilharia alemã. Contudo, durante o cerco, tais perdas praticamente se tornaram um benefício público, pois reduziram o número de bocas a serem alimentadas.
 
+## Página 9
+
 Civis e militares se mantinham firmes. Durante o verão de 1943, espaços abertos, quintais e jardins públicos formavam um mosaico de plantações de batata e repolho, permitindo o aumento da porção diária de comida. Durante os primeiros meses da invasão, Hitler estava exultante. Os soldados alemães haviam conquistado uma grande área do território inimigo antes que chegasse o terrível inverno. De que importava a resistência de Leningrado se as forças alemãs estavam próximas de Moscou, a cidade mais importante?
 
 De forma surpreendente, a nação alemã não explorou por completo sua superioridade militar. Enquanto o exército lutava e sofria em solo estrangeiro, os civis descansavam em solo pátrio, aproveitando uma espécie de vida confortável em tempos de paz. Um indício do excesso de confiança de Hitler era sua recusa em usar todos os hábeis trabalhadores capturados. Ele tinha sob seu comando talvez 6 milhões de judeus em toda a Europa, mas durante a primeira fase da guerra utilizou-os apenas como trabalhadores subalternos ou braçais e, mesmo assim em escala limitada. No início de 1942, havia firmemente decidido exterminar os judeus não apenas na Alemanha, mas em todos os países ocupados por suas tropas. De várias partes da Europa, especialmente da Polônia, judeus eram enviados em trens de carga aos campos de concentração, onde a maioria era morta com  eficiência fria e sistemática. Na parte ocidental da Rússia e na Ucrânia, centenas de milhares de judeus foram executados pelas tropas alemãs. Ciganos também eram enviados para campos de trabalhos forçados e, pelo menos 250 mil deles, foram mortos. Na lista de vítimas, estavam também os homossexuais.
 
 Tais acontecimentos, talvez os mais bárbaros da história moderna, foram chamados pelos líderes alemães de Solução Final. Somente mais tarde o nome Holocausto veio a ser usado.
+
+## Página 10
 
 ### O DILEMA DE TÓQUIO
 

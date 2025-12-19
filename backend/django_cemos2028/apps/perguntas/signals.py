@@ -5,7 +5,7 @@ from django.conf import settings
 from django.db import transaction
 from django.db.models.signals import post_migrate
 from django.dispatch import receiver
-from .models import BibliografiaModel, FlashCardsModel, PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
+from .models import MateriaModel, BibliografiaModel, FlashCardsModel, PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
 
 logger = logging.getLogger(__name__)
 
@@ -109,25 +109,98 @@ def load_fixtures_perguntas(sender, **kwargs):
 
     try:
         with transaction.atomic():
-            # 1. Bibliografias
-            df = load_fixture('bibliografias.xlsx', ['id', 'titulo', 'autor', 'materia', 'descricao'])
-            if df is not None:
+            # 1. Matérias (carregar de arquivo de fixtures)
+            df_materias = load_fixture('materias.xlsx', ['id', 'materia'])
+            materias_carregadas = set()
+            
+            if df_materias is not None:
+                logger.info("📄 Processando matérias do arquivo materias.xlsx...")
+                loaded_count = 0
+                for idx, row in df_materias.iterrows():
+                    if _require_fields(row, ['id', 'materia'], 'materias', idx, ['materia']):
+                        materia_id = _as_int(row.get('id'))
+                        materia_nome = _as_clean_str(row.get('materia'))
+                        
+                        if materia_id is None:
+                            logger.warning(f"⚠️ ID de matéria inválido na linha {idx}")
+                            continue
+                        
+                        if not materia_nome:
+                            logger.warning(f"⚠️ Nome de matéria vazio na linha {idx}")
+                            continue
+                        
+                        materia_obj, created = MateriaModel.objects.update_or_create(
+                            id=materia_id,
+                            defaults={
+                                'materia': materia_nome
+                            }
+                        )
+                        materias_carregadas.add(materia_nome)
+                        if created:
+                            loaded_count += 1
+                            logger.info(f"✅ Criada matéria ID {materia_id}: {materia_obj.materia}")
+                        else:
+                            logger.debug(f"ℹ️ Matéria ID {materia_id} atualizada: {materia_obj.materia}")
+                logger.info(f"📊 Total de matérias carregadas do arquivo: {loaded_count} (total processadas: {len(materias_carregadas)})")
+            else:
+                logger.info("⚠️ Arquivo materias.xlsx não encontrado. Tentando extrair matérias de bibliografias.xlsx...")
+            
+            # 2. Bibliografias (e extrair matérias se não foram carregadas de arquivo separado)
+            df_bibliografias = load_fixture('bibliografias.xlsx', ['id', 'titulo', 'autor', 'materia', 'descricao'])
+            if df_bibliografias is not None:
+                # Se não carregou matérias de arquivo separado, extrair do arquivo de bibliografias
+                if not materias_carregadas:
+                    materias_unicas = df_bibliografias['materia'].dropna().unique()
+                    logger.info("📄 Extraindo matérias do arquivo bibliografias.xlsx...")
+                    for materia_nome in materias_unicas:
+                        materia_str = _as_clean_str(materia_nome)
+                        if materia_str:
+                            materia_obj, created = MateriaModel.objects.get_or_create(
+                                materia=materia_str
+                            )
+                            if created:
+                                logger.info(f"✅ Criada matéria extraída: {materia_obj.materia}")
+            
+            # 3. Bibliografias
+            if df_bibliografias is not None:
                 logger.info("📄 Processando bibliografias...")
-                for idx, row in df.iterrows():
+                for idx, row in df_bibliografias.iterrows():
                     if _require_fields(row, ['id', 'titulo'], 'bibliografias', idx, ['titulo', 'autor', 'materia', 'descricao']):
+                        materia_valor = row.get('materia')
+                        materia_obj = None
+                        if materia_valor is not None and not pd.isna(materia_valor):
+                            try:
+                                # Tentar buscar por ID primeiro (se for numérico)
+                                materia_id = _as_int(materia_valor)
+                                if materia_id is not None:
+                                    try:
+                                        materia_obj = MateriaModel.objects.get(id=materia_id)
+                                    except MateriaModel.DoesNotExist:
+                                        logger.warning(f"⚠️ Matéria ID '{materia_id}' não encontrada para bibliografia ID {row.get('id')}")
+                                else:
+                                    # Se não for numérico, buscar por nome
+                                    materia_nome = _as_clean_str(materia_valor)
+                                    if materia_nome:
+                                        try:
+                                            materia_obj = MateriaModel.objects.get(materia=materia_nome)
+                                        except MateriaModel.DoesNotExist:
+                                            logger.warning(f"⚠️ Matéria '{materia_nome}' não encontrada para bibliografia ID {row.get('id')}")
+                            except Exception as e:
+                                logger.warning(f"⚠️ Erro ao buscar matéria '{materia_valor}' para bibliografia ID {row.get('id')}: {e}")
+                        
                         obj, created = BibliografiaModel.objects.update_or_create(
                             id=_as_int(row['id']),
                             defaults={
                                 'titulo': _as_clean_str(row['titulo']),
                                 'autor': _as_clean_str(row.get('autor')),
-                                'materia': _as_clean_str(row.get('materia')),
+                                'materia': materia_obj,
                                 'descricao': _as_clean_str(row.get('descricao'))
                             }
                         )
                         if created:
                             logger.info(f"✅ Criada bibliografia: {obj.titulo}")
 
-            # 2. Flash Cards
+            # 4. Flash Cards
             df = load_fixture('flashcards.xlsx', ['bibliografia_id', 'pergunta', 'resposta', 'assunto'])
             if df is not None:
                 logger.info("📄 Processando flash cards...")
@@ -190,7 +263,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 
                 logger.info(f"📊 Total de flash cards carregados: {loaded_count}")
 
-            # 3. Perguntas Múltipla Escolha
+            # 5. Perguntas Múltipla Escolha
             df = load_fixture('perguntas_multipla.xlsx', [
                 'bibliografia_titulo', 'paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 
                 'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa'
@@ -234,7 +307,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 
                 logger.info(f"📊 Total de perguntas múltipla carregadas: {loaded_count}")
 
-            # 4. Perguntas Verdadeiro/Falso
+            # 6. Perguntas Verdadeiro/Falso
             df = load_fixture('perguntas_vf.xlsx', [
                 'bibliografia_titulo', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
             ])
@@ -283,7 +356,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                 
                 logger.info(f"📊 Total de perguntas V/F carregadas: {loaded_count}")
 
-            # 5. Perguntas de Correlação
+            # 7. Perguntas de Correlação
             df = load_fixture('perguntas_correlacao.xlsx', [
                 'bibliografia_titulo', 'paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
             ])

@@ -436,4 +436,32 @@ export class PerguntasService {
     return this.http.get<any>(url);
   }
 
+  /**
+   * Reseta todas as estatísticas do usuário logado
+   * Preserva questões erradas na tabela anônima antes de deletar
+   * Nota: O token de autenticação é adicionado automaticamente pelo AuthInterceptor
+   */
+  resetarEstatisticas(bibliografiaId?: number, bibliografiaIds?: number[]): Observable<{ message: string; total_respostas_deletadas: number; questoes_erradas_preservadas: number }> {
+    const body: any = {};
+    if (bibliografiaIds && bibliografiaIds.length > 0) {
+      body.bibliografia_ids = bibliografiaIds;
+    } else if (bibliografiaId !== undefined) {
+      body.bibliografia_id = bibliografiaId;
+    }
+    return this.http.post<{ message: string; total_respostas_deletadas: number; questoes_erradas_preservadas: number }>(
+      `${this.apiUrl}/respostas-usuario/resetar_estatisticas/`,
+      body
+    );
+  }
+
+  /**
+   * Obtém estatísticas gerais de questões erradas por matéria (apenas para admin)
+   * Nota: O token de autenticação é adicionado automaticamente pelo AuthInterceptor
+   */
+  getEstatisticasGeraisErros(): Observable<any> {
+    return this.http.get<any>(
+      `${this.apiUrl}/respostas-usuario/estatisticas_gerais_erros/`
+    );
+  }
+
 }

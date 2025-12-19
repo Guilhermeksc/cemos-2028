@@ -1,6 +1,7 @@
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 from .models import (
+    MateriaModel,
     BibliografiaModel, 
     FlashCardsModel,
     PerguntaMultiplaModel, 
@@ -17,12 +18,19 @@ from .resources import (
 )
 
 
+@admin.register(MateriaModel)
+class MateriaAdmin(admin.ModelAdmin):
+    list_display = ['id', 'materia']
+    search_fields = ['materia']
+    ordering = ['materia']
+
+
 @admin.register(BibliografiaModel)
 class BibliografiaAdmin(ImportExportModelAdmin):
     resource_class = BibliografiaResource
     list_display = ['id', 'titulo', 'autor', 'materia']
     list_filter = ['materia']
-    search_fields = ['titulo', 'autor', 'materia', 'descricao']
+    search_fields = ['titulo', 'autor', 'materia__materia', 'descricao']
     ordering = ['id']
     
     fieldsets = (
