@@ -474,7 +474,7 @@ Esse processo de envelhecimento também pode ser observado pelo crescimento do �
 
 Figura 1.11 Dinâmica populacional brasileira.
 
-# Figura – Índice de envelhecimento e razão de dependência (1980–2050)
+### Figura – Índice de envelhecimento e razão de dependência (1980–2050)
 
 | Ano  | Índice de envelhecimento | Razão de dependência |
 |------|---------------------------|------------------------|

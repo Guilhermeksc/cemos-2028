@@ -4,7 +4,7 @@
 
 Neste capítulo, procurar-se-á acompanhar as mudanças que a atuação do Estado no Brasil sofreu ao longo do tempo, destacando as recentes alterações ocorridas, especialmente as reformas no sistema de controle da administração pública e, principalmente, o movimento de privatização. A nova configuração do Estado brasileiro, que ao menos tem a pretensão de ser um Estado regulador, será também examinada no próximo capítulo; por outro lado, os aspectos relativos à tributação e ao problema federativo já foram examinados no Capítulo 8.
 
-## 19.1 ATUAÇÃO DO ESTADO AO LONGO DO DESENVOLVIMENTO ECONÔMICO BRASILEIRO
+### 19.1 ATUAÇÃO DO ESTADO AO LONGO DO DESENVOLVIMENTO ECONÔMICO BRASILEIRO
 
 Pode-se observar indiretamente nos capítulos da Parte III como a ação do Estado foi importante no desenvolvimento econômico brasileiro. Será feito a seguir um breve retrospecto dessa atuação.
 
@@ -34,7 +34,7 @@ Essa intervenção governamental, crescente ao longo da República Velha (no ent
 
 ## Página 4
 
-## 19.1.2 O Estado no processo de industrialização
+### 19.1.2 O Estado no processo de industrialização
 
 A presença do Estado no processo de industrialização brasileiro é mais evidente. Nos anos 1930, como foi visto no Capítulo 14, houve ampliação da política de defesa do café, que, além de estocar, chegou a queimar boa parte do produto produzido no Brasil. Contudo, além desse tipo de política - de defesa da economia nacional diante da crise externa e da superprodução de café -, houve também uma mudança no sentido de buscar maior atenção e utilização dos mecanismos disponíveis nos anos 1930, com intuito de fomentar as atividades de cunho doméstico.
 
@@ -98,7 +98,7 @@ Quanto ao Estado produtor, este foi deveras ampliado no período com a implanta�
 
 ## Página 10
 
-## 19.2 ALTERAÇÕES OCORRIDAS NAS ÚLTIMAS DÉCADAS
+### 19.2 ALTERAÇÕES OCORRIDAS NAS ÚLTIMAS DÉCADAS
 
 De modo geral, pode-se dizer que as reformas promovidas na gestão estatal nos últimos anos foram o desmonte de boa parte da institucionalidade construída desde os anos 1930. Tomando novamente os espaços de atuação anteriormente destacados, vê-se que os papéis de Estado condutor, regulamentador e, especialmente, produtor foram fortemente modificados.
 
@@ -195,7 +195,7 @@ Seguem as tabelas convertidas para **Markdown**, mantendo a estrutura e os valor
 
 ---
 
-## **Tabela 19.1 — Processo de privatização: um resumo (US$ milhões)**
+### **Tabela 19.1 — Processo de privatização: um resumo (US$ milhões)**
 
 ### **Parte 1**
 
@@ -219,7 +219,7 @@ Seguem as tabelas convertidas para **Markdown**, mantendo a estrutura e os valor
 
 ---
 
-## **Resultado geral das privatizações – consolidado 1990–2005 (US$ bilhões)**
+### **Resultado geral das privatizações – consolidado 1990–2005 (US$ bilhões)**
 
 | Categoria               | Período   | Nº empresas | Valor arrecadado | Dívidas transferidas | Total |
 | ----------------------- | --------- | ----------- | ---------------- | -------------------- | ----- |

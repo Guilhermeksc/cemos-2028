@@ -1,6 +1,6 @@
-## Página 1
-
 # Capítulo 6 - Consumo
+
+## Página 1
 
 O **consumo** corresponde à parcela da renda destinada à aquisição de bens e serviços para a satisfação das necessidades dos indivíduos. Para tal, eles adquirem vários tipos de bens, que podem ser classificados em três categorias:
 
@@ -24,7 +24,7 @@ A poupança agregada é definida como a parcela da renda disponível não consum
 
 Vários são os determinantes do consumo e, portanto, da poupança. Neste capítulo, serão analisadas as variáveis que influenciam as decisões de consumo e poupança, como renda, riqueza e taxa de juros, entre outras. Ao longo da análise, serão feitas também referências a diferentes teorias que analisaram o consumo. O objetivo é que, ao final do capítulo, o leitor tenha condições de avaliar como as diferentes variáveis podem impactar as decisões de consumo e poupança.
 
-## 6.1 CONSUMO E NÍVEL DE RENDA
+### 6.1 CONSUMO E NÍVEL DE RENDA
 
 Pode-se dizer que o nível de consumo depende da renda e, como corolário, a poupança também, uma vez que ambos se referem a alocações da renda disponível por parte das famílias.
 
@@ -42,7 +42,7 @@ Outro ponto a ser destacado com relação ao consumo é que, em geral, os indiv�
 
 Ainda conforme a teoria keynesiana, a renda disponível corrente (ou seja, a renda do próprio período) é o principal determinante do consumo. Contudo, outros fatores também devem ser considerados, uma vez que a decisão de consumo dos indivíduos pode não se basear em decisões que envolvem um único período, mas, sim, refletir uma escolha intertemporal, em que ele visa maximizar seu nível de consumo ao longo de toda a vida. Assim, níveis de riqueza e taxa de juros tendem também a afetar as decisões de consumo e poupança. Ao estender-se o período de tempo considerado na decisão de consumo, as expectativas sobre o futuro passam a desempenhar papel central no nível de consumo corrente.
 
-## 6.2 CONSUMO E RIQUEZA
+### 6.2 CONSUMO E RIQUEZA
 
 Pense no seguinte exemplo: suponha duas famílias com o mesmo nível de renda. Uma delas já possui automóvel, casa e já pagou um plano previdenciário (possui ativos financeiros para a aposentadoria), ao passo que a outra não possui propriedade nenhuma. Apesar de as duas possuírem o mesmo nível de renda, a primeira possui uma riqueza acumulada que lhe dá garantias no que tange ao futuro, enquanto a segunda, não. Assim, a primeira pode consumir mais e preocupar-se menos com o futuro (podendo consumir toda a renda corrente), enquanto a segunda ainda terá que poupar para garantir sua renda futura. Desse modo, para um dado nível de renda, tende a consumir mais quem possuir maior riqueza.
 
@@ -96,7 +96,7 @@ A transferência de renda dos ativos para os inativos pode dar-se segundo dois r
 
 Em geral, alega-se que os sistemas públicos baseados no SRS desestimulam a poupança, pois os indivíduos terão um benefício garantido, independentemente de suas contribuições (efeito carona). Esse desestímulo seria tanto maior quanto maior for a renda garantida na aposentadoria pelo Estado. Já os sistemas individualizados baseados no RC estimulariam a poupança pelo fato de o benefício estar associado às contribuições (poupança) dos indivíduos, não havendo transferências ou possibilidade do efeito carona. Essa é uma questão bastante controversa, não existindo consenso na literatura.
 
-## 6.3 CONSUMO E TAXA DE JUROS
+### 6.3 CONSUMO E TAXA DE JUROS
 
 Se considerarmos a decisão de consumo como uma escolha intertemporal, isto é, que o indivíduo, ao decidir quanto consumir hoje, não leva em consideração apenas a renda e o consumo corrente, mas traça um plano de consumo para toda a vida, deve-se introduzir na análise dos determinantes do consumo outra variável relevante: a taxa de juros.
 
@@ -124,7 +124,7 @@ Desse modo, por um lado, o aumento das taxas de juros pode diminuir o consumo, e
 
 Outro efeito, que será discutido adiante, é o impacto causado por variações nas taxas de juros sobre a poupança pública. Se o governo de determinado país for muito endividado, um aumento da taxa de juros tende a elevar o déficit público por meio dos maiores gastos com o pagamento dos juros da dívida, com consequente diminuição do volume de poupança pública. Esse efeito pode mais que compensar um possível aumento da poupança privada, gerando um resultado negativo sobre a poupança total (pública e privada).
 
-## 6.4 CONSUMO E SISTEMA FINANCEIRO
+### 6.4 CONSUMO E SISTEMA FINANCEIRO
 
 Ao introduzir a taxa de juros e a riqueza como variáveis explicativas, fala-se de aplicações financeiras e de empréstimos e, portanto, do sistema financeiro. O grau de desenvolvimento do sistema financeiro, que envolve sua organização e suas regras, também tende a afetar o nível de consumo e poupança.
 
@@ -146,15 +146,11 @@ Essa relação entre o crédito ao consumidor e o nível de consumo pode ser exe
 
 ## Página 10
 
-## 6.5 CONSIDERAÇÕES FINAIS
+### 6.5 CONSIDERAÇÕES FINAIS
 
 O objetivo deste capítulo foi analisar os determinantes do consumo agregado. Partimos de uma formulação simples, baseada na teoria keynesiana, em que a renda corrente era o principal determinante. Em seguida, incorporamos vários outros fatores que podem afetar as decisões de consumo e poupança dos indivíduos, como a taxa de juros, a riqueza, as expectativas e o quadro institucional vigente, entre outras. A importância de se estudar o consumo decorre de sua grande participação na demanda agregada.
 
 Um fato que chama a atenção é a relativa estabilidade do consumo associado à renda. Observando-se séries históricas, não se verificam grandes flutuações na participação do consumo na renda em nível mundial. O consumo tende a ser relativamente estável ao longo do tempo e a renda corrente parece ser seu principal determinante, o que pode ser explicado tanto pela existência de imperfeições no mercado financeiro (restrição ao crédito) como pela impossibilidade de os agentes fazerem previsões acuradas sobre o comportamento de sua renda ao longo da vida.
-
-
-
-
 
 ## Página 11
 

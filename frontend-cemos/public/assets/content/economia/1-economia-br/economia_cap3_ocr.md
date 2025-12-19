@@ -8,7 +8,7 @@ No Capítulo 2, examinou-se o conceito de produto, que é o principal indicador 
 
 O problema está no conceito de desenvolvimento. Muitas vezes, confunde-se crescimento econômico com desenvolvimento econômico, que não são a mesma coisa. O primeiro, crescimento econômico, é a ampliação quantitativa da produção, ou seja, de produtos e serviços que atendam às necessidades humanas. Já o conceito de desenvolvimento é um conceito mais amplo, que, inclusive, engloba o de crescimento econômico. Dentro desse conceito, o importante não é apenas a magnitude da expansão da produção representada pela evolução do Produto Interno Bruto (PIB), mas também a natureza e a qualidade desse crescimento. Quando se diz que um país é desenvolvido, o que se quer ressaltar é que as condições de vida da população daquele país são boas, e quando se diz que um país é subdesenvolvido, há referência ao fato de que a proporção significativa da população residente naquele país tem condições de vida insuficientes ou consumo sofríveis.
 
-A ideia de **desenvolvimento econômico** está associada às condições de vida da população ou à qualidade de vida dos residentes no país.
+<blockquote style="background: linear-gradient(135deg, rgba(4, 221, 250, 0.23), rgba(0, 38, 255, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">A ideia de **desenvolvimento econômico** está associada às condições de vida da população ou à qualidade de vida dos residentes no país.</blockquote>
 
 Certamente, o que se entende por boa ou má qualidade de vida é algo bastante relativo e varia entre as diferentes culturas e ao longo do tempo. Isso quer dizer que há grandes dificuldades para se medir o desenvolvimento de um país, dado que o conceito de desenvolvimento não é algo claramente definido. Algumas aproximações, porém, podem ser feitas.
 
@@ -18,9 +18,9 @@ Certamente, o que se entende por boa ou má qualidade de vida é algo bastante r
 
 Como foi dito, em geral, aceita-se que o crescimento econômico esteja englobado no conceito de desenvolvimento econômico. Se o conceito de crescimento procura refletir a produção de bens que visam atender às vontades humanas, logicamente, quanto maior a quantidade de bens produzidos, maior a possibilidade de as pessoas satisfazerem suas necessidades; portanto, melhores devem ser as condições de existência dessas pessoas. Assim, quanto maior o país em termos econômicos (PIB do país), maiores são as chances de a população desse país viver bem.
 
-Entretanto, a produção de um país como a Suíça, que tem menos de sete milhões de habitantes, não precisa ser tão grande quanto a produção do Brasil, que tem mais de 200 milhões de habitantes. A produção suíça pode ser muito inferior à brasileira e mesmo assim sua população poderá ter, individualmente, acesso a uma quantidade de bens superior à brasileira, e será, portanto, considerada mais desenvolvida. Nesse sentido, uma primeira aproximação para se quantificar o grau de desenvolvimento de um país é a utilização do conceito de produto per capita, que nada mais é do que a produção do país dividida pelo número de habitantes desse país.
+Entretanto, a produção de um país como a Suíça, que tem menos de sete milhões de habitantes, não precisa ser tão grande quanto a produção do Brasil, que tem mais de 200 milhões de habitantes. A produção suíça pode ser muito inferior à brasileira e mesmo assim sua população poderá ter, individualmente, acesso a uma quantidade de bens superior à brasileira, e será, portanto, considerada mais desenvolvida. Nesse sentido, uma primeira aproximação para se quantificar o grau de desenvolvimento de um país é a utilização do conceito de **produto per capita**, que nada mais é do que a produção do país dividida pelo número de habitantes desse país.
 
-PIB per capita = PIB dividido pela população
+<blockquote style="background: linear-gradient(135deg, rgba(4, 221, 250, 0.23), rgba(0, 38, 255, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**PIB per capita = PIB dividido pela população**</blockquote>
 
 Assim, quanto maior o PIB per capita[1] de um país, mais desenvolvido pode ser considerado o país. No exemplo citado, a Suíça teve uma produção, em 2022, de aproximadamente US$ 750 bilhões, inferior, portanto, à do Brasil, que foi de mais de US$ 1,895 trilhão; como, porém, a população suíça é nitidamente inferior à brasileira, cada um dos suíços teve, em média, acesso a aproximadamente US$ 84,5 mil de renda naquele ano (PIB = 750 bilhões, divididos pela população total de 8,7 milhões de habitantes), enquanto no Brasil esse número ficou próximo aos US$ 9 mil. Daqui se pode começar a entender por que a Suíça é considerada um país mais desenvolvido que o Brasil, pois seu PIB per capita é maior que o brasileiro, o que significa que a renda média da população suíça é maior que a brasileira, ou, ainda, que o acesso médio de cada um dos suíços a bens é superior ao dos brasileiros.
 
@@ -169,11 +169,11 @@ Unindo-se o conceito de produto per capita com os indicadores sociais, têm-se m
 
 O IDH é um índice que vai de zero a um, sendo que, quanto mais próximo da unidade, mais desenvolvido é considerado o país. Ele é uma média geométrica de três indicadores:
 
-1. um indicador de renda: a renda nacional bruta per capita em dólares PPP (dólares ajustados pelo poder de compra dos países);
+[1] um indicador de renda: a renda nacional bruta per capita em dólares PPP (dólares ajustados pelo poder de compra dos países);
 
-2. um indicador que procure captar a saúde da população. Na verdade, é um indicador de longevidade: a expectativa de vida da população ao nascer; e
+[2] um indicador que procure captar a saúde da população. Na verdade, é um indicador de longevidade: a expectativa de vida da população ao nascer; e
 
-3. um indicador que retrate as condições de educação da população. Esse indicador é uma média ponderada de dois outros indicadores: média dos anos de estudo da população adulta (25 anos ou mais), e anos de escolaridade esperada (expectativa de vida escolar, ou tempo que uma criança ficará matriculada, se os padrões atuais se mantiverem ao longo de sua vida escolar).
+[3] um indicador que retrate as condições de educação da população. Esse indicador é uma média ponderada de dois outros indicadores: média dos anos de estudo da população adulta (25 anos ou mais), e anos de escolaridade esperada (expectativa de vida escolar, ou tempo que uma criança ficará matriculada, se os padrões atuais se mantiverem ao longo de sua vida escolar).
 
 A partir desse índice, foi construído um ranking e, assim, em 2021, 191 países foram divididos em quatro grupos. Com um valor acima de 0,800, foram classificados 66 países com um índice considerado “muito alto”; entre 0,700 e 0,799, 53 países com um índice “alto”; entre 0,550 e 0,699, 37 países com um IDH “médio” e abaixo de 0,550, 33 países com um índice de “baixo” desenvolvimento humano. Na Tabela 3.5, selecionamos alguns países, com sua posição no ranking de 2021. A primeira posição é ocupada pela Suíça (0,962), e a última pelo Sudão do Sul (0,385).
 
@@ -398,8 +398,7 @@ Houve ligeira piora dos indicadores no final da década passada, os quais passar
 
 ## Página 17
 
-
-## 3.5 POBREZA
+### 3.5 POBREZA
 
 Na Seção 3.4, analisou-se a posição relativa dos rendimentos entre os indivíduos de dado país. Nesse ponto, afirma-se que, mesmo com uma piora nos indicadores de distribuição de renda (aumento do Índice de Gini), é possível que todos os indivíduos estejam individualmente em posição melhor. Quando todas as faixas têm aumento de renda, toda a população se torna menos pobre, mas, se as faixas superiores têm aumento de renda relativamente maior que o das faixas inferiores, apesar de todos estarem mais ricos, a concentração de renda piora.
 

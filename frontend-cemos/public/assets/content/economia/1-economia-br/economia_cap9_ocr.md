@@ -1,6 +1,6 @@
-## Página 1
-
 # Capítulo 9 - Política Monetária
+
+## Página 1
 
 Como discutido anteriormente, o governo pode, por meio dos instrumentos de política econômica, influenciar o desempenho da economia. No Capítulo 8, foram apresentados alguns elementos da chamada política fiscal, que influencia a demanda agregada e o produto da economia pela arrecadação de impostos e pela execução do gasto público. Neste capítulo, será discutida a política monetária, que, diferentemente da política fiscal, influencia o produto de forma indireta, por meio das intervenções no mercado monetário e financeiro.
 
@@ -8,7 +8,7 @@ Por **política monetária** entende-se a atuação do Banco Central (Bacen) em 
 
 ## Página 2
 
-## 9.1 FUNÇÕES E TIPOS DE MOEDA
+### 9.1 FUNÇÕES E TIPOS DE MOEDA
 
 A importância da moeda para a vida das pessoas e sua influência sobre a economia fazem com que esta seja um dos principais assuntos de estudos econômicos. Entender como esta afeta o sistema econômico é um tema bastante controverso em Economia.
 
@@ -68,7 +68,7 @@ iii. **papel-moeda** ou **moeda fiduciária**: notas de papel e moedas emitidas 
 
 ## Página 6
 
-## 9.2 - DEMANDA POR MOEDA
+### 9.2 - DEMANDA POR MOEDA
 
 Com base nas funções da moeda, pode-se começar a analisar os motivos que levam os indivíduos a demandarem moeda.
 
@@ -162,7 +162,7 @@ Para corrigir os problemas decorrentes da inflação, de tempos em tempos, recor
 
 ## Página 12
 
-## 9.3 OFERTA DE MOEDA
+### 9.3 OFERTA DE MOEDA
 
 O **Bacen é o órgão responsável pela emissão de moeda nacional**, tendo como principal responsabilidade zelar pela estabilidade do sistema monetário de uma economia.
 
@@ -290,7 +290,7 @@ Nota: valores correntes, em R$ milhões; média dos dias úteis do mês.
 
 Tabela 9.2 Estoque de M1 a M4 (R$ milhões)
 
-# Tabela 9.2 — Estoque de M1 a M4 (R$ milhões)
+### Tabela 9.2 — Estoque de M1 a M4 (R$ milhões)
 
 | Período | M1 | M2 | M3 | M4 |
 |---------|----------------|----------------|----------------|----------------|
@@ -323,7 +323,7 @@ Fonte: Bacen.
 
 ## Página 18
 
-## 9.4 FUNÇÕES DO BACEN E INSTRUMENTOS DE CONTROLE MONETÁRIO
+### 9.4 FUNÇÕES DO BACEN E INSTRUMENTOS DE CONTROLE MONETÁRIO
 
 Conforme mencionado anteriormente, o Bacen é o órgão responsável pela condução da política monetária mediante a utilização dos instrumentos disponíveis para controlar a oferta de moeda no país. As funções dos bancos centrais variam de país para país, bem como sua autonomia para executar a política monetária.
 
@@ -395,7 +395,7 @@ Quando o Bacen compra títulos no mercado, aumentam os depósitos no sistema ban
 
 Quanto aos recursos externos, entra-se em outro aspecto da política monetária. No Brasil, o Bacen é também o depositário (“administrador”) das reservas internacionais. Como as reservas internacionais fazem parte do ativo do Bacen, deve haver, portanto, elevação do passivo quando este adquire divisas. Assim, tudo o mais mantido constante, ao ampliar as reservas internacionais, o Bacen emite moeda doméstica, ampliando o seu passivo monetário. Assim, intervenções do Bacen no mercado cambial podem influenciar o volume de reservas internacionais e, com isso, a oferta de moeda doméstica.
 
-## 9.5 TAXA DEJUROS
+### 9.5 TAXA DEJUROS
 
 A taxa de juros é, com certeza, uma das variáveis mais acompanhadas na economia. Conforme discutido anteriormente, seu comportamento influencia as decisões de consumo dos indivíduos, as decisões de investimento das empresas e a magnitude do déficit público, entre outras variáveis. Como será discutido no Capítulo 10, a taxa de juros também afeta o fluxo de recursos externos para a economia e o valor da taxa de câmbio. Assim, percebe-se a importância dessa variável sobre o comportamento da economia. No entanto, o que é a taxa de juros? Como ela é determinada?
 

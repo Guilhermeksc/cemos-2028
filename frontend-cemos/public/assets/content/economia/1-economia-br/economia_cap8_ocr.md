@@ -1,6 +1,6 @@
-## Página 1
-
 # Capítulo 8 - Política Fiscal
+
+## Página 1
 
 Pode-se definir **política econômica** como a intervenção do governo na economia com o objetivo de manter níveis elevados de emprego e de crescimento econômico com estabilidade de preços. As principais formas de política econômica são a política fiscal e a política monetária. Neste capítulo, será discutida a primeira delas.
 
@@ -12,7 +12,7 @@ Este capítulo está dividido em cinco seções. Na Seção 8.1, discutem-se as 
 
 ## Página 2
 
-# 8.1 - FUNÇÕES DO GOVERNO
+### 8.1 - FUNÇÕES DO GOVERNO
 
 Em termos teóricos, há três funções principais para o setor público: a função alocativa, a função distributiva e a função estabilizadora.
 
@@ -32,7 +32,7 @@ Do ponto de vista de nossa análise, trataremos principalmente da **função est
 
 ## Página 4
 
-## 8.2 GASTOS PÚBLICOS
+### 8.2 GASTOS PÚBLICOS
 
 Conforme discutido anteriormente, os gastos públicos correspondem a um dos principais instrumentos da política fiscal. Sabe-se, contudo, que há grande diversidade de gastos executados pelo governo de forma geral.
 
@@ -60,8 +60,7 @@ Tabela 8.1 Despesas primárias do Governo Central: Brasil - R$ milhões - valore
 | Juros Nominais                               | -150.114   | -3,79%     | -282.976   | -5,94%     | -216.635   | -3,20%     | -491.611   | -6,63%     | -266.657   | -3,50%     |
 | Resultado Nominal do Governo Central        | -82.631    | -2,09%     | -160.725   | -3,38%     | -79.663    | -1,18%     | -635.980   | -8,57%     | -1.011.923 | -13,30%    |
 
-
-## 8.3 ARRECADAÇÃO TRIBUTÁRIA
+### 8.3 ARRECADAÇÃO TRIBUTÁRIA
 
 Assim como ocorre com os gastos, há vários tipos de recursos que são arrecadados pelo governo, como impostos, taxas e contribuições, entre outros.
 
@@ -132,7 +131,6 @@ Fonte: Secretaria do Tesouro Nacional.
 O sistema brasileiro é bastante complexo tanto em função do grande número de impostos que incidem sobre os mais diversos fatos geradores (ato econômico que gera o pagamento do imposto), como em função da estrutura, pois envolve diversas isenções, alíquotas diferentes e relacionamento entre as diferentes esferas de governo (União, Estados e Municípios) etc.
 
 Conforme discutido anteriormente, o IPI e o ICMS são impostos que incidem sobre a circulação de mercadorias. Os dois são do tipo valor adicionado, isto é, o imposto é recolhido apenas sobre o valor agregado ao bem em cada etapa produtiva (ou seja, o indivíduo tem como crédito o imposto anteriormente recolhido)[8] de modo a evitar o acúmulo de impostos a cada etapa de circulação das mercadorias.
-
 
 ## Página 10
 
@@ -316,7 +314,7 @@ Resumo do comportamento da série
 Com base nas discussões anteriores, percebe-se que o sistema tributário brasileiro oferece ampla capacidade de arrecadação ao Estado. Contudo, este se mostra bastante complexo, com grande quantidade de impostos, que, inclusive, incidem sobre a mesma base tributária, problemas de repartição e coordenação entre as esferas de governo e regressividade do sistema, entre 
 outros fatores, que justificam a busca por sua reforma.
 
-## 8.4 DÉFICIT PÚBLICO E DÍVIDA PÚBLICA
+### 8.4 DÉFICIT PÚBLICO E DÍVIDA PÚBLICA
 
 O total de impostos arrecadados no país corresponde à chamada **carga tributária bruta**. A diferença entre a carga tributária bruta e as transferências governamentais (juros sobre a dívida pública, subsídios e gastos com assistência e previdência social) é a **carga tributária líquida**. É com base nesta que o governo pode financiar seus gastos correntes (consumo do governo). A diferença entre a receita líquida e o consumo do governo determina a **poupança do governo em conta-corrente**.
 

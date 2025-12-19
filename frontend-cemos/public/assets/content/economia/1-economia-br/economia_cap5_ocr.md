@@ -1,6 +1,6 @@
-## Página 1
-
 # Capítulo 5 - Inflação
+
+## Página 1
 
 Um último aspecto a ser analisado nesta parte descritiva sobre a economia é a inflação, que, junto com o desemprego, compõe os problemas ditos fundamentais da macroeconomia. O Brasil enfrentou dificuldades bastante graves ligadas à inflação, especialmente nas décadas de 1980 e 1990, quando os índices inflacionários se mantiveram persistentemente em patamares elevados. Na Figura 5.1, vemos essa inflação extremamente elevada, o que fez com que a média anual da inflação naquelas décadas fosse de mais de 500%, motivo pelo qual muitos analistas diziam que vivíamos uma hiperinflação. Dada a construção da Figura 5.1, mal conseguimos perceber o comportamento da inflação antes e depois deste período. Na Figura 5.2, tomamos apenas a inflação desde o ano 2000. A média das taxas de inflação entre aquele ano e 2022 passou a ser mais moderada, de “apenas” 5,8%, com variações importantes, sendo que em 2002, 2017 e 2021 esteve próxima dos 10%.
 
@@ -57,7 +57,7 @@ Figura 5.2 Inflação no Brasil 2000-2022
 
 ## Página 3
 
-## 5.1 INFLAÇÃO E ALGUNS CONCEITOS RELACIONADOS
+### 5.1 INFLAÇÃO E ALGUNS CONCEITOS RELACIONADOS
 
 A inflação é definida como um aumento generalizado e contínuo dos preços. Quando, ao contrário, ocorre baixa generalizada e contínua dos preços, tem-se o conceito inverso ao de inflação: a deflação.
 
@@ -73,21 +73,21 @@ Dependendo do tamanho da inflação, pode-se dizer que é moderada ou que ocorre
 
 Figura 5.3 Conceitos relativos à inflação.
 
-## 1. Deflação
+### 1. Deflação
 
 Nos primeiros valores do eixo horizontal (aprox. 7 a 12), a linha desce **abaixo de zero**, indicando que os preços **caem ao longo do tempo**.
 
 * É a **variação negativa do nível geral de preços**.
 * Os consumidores ganham poder de compra, mas a economia pode sofrer retração, pois empresas tendem a investir menos.
 
-## 2. Inflação
+### 2. Inflação
 
 Após o período de deflação, os valores retornam para cima de zero (aprox. 13 a 23).
 
 * Aqui os preços **sobem**, mas de forma **estável**, em níveis moderados.
 * Representa o conceito tradicional de **inflação**: aumento generalizado e contínuo do nível de preços.
 
-## 3. Aceleração inflacionária
+### 3. Aceleração inflacionária
 
 Entre os valores 20 e 30, observa-se que os preços **continuam subindo**, mas agora em um ritmo **cada vez maior**.
 
@@ -97,7 +97,7 @@ Entre os valores 20 e 30, observa-se que os preços **continuam subindo**, mas a
 * O capítulo destaca que isso envolve “preços subindo e subindo cada vez mais” .
 
 
-## 4. Hiperinflação
+### 4. Hiperinflação
 
 Nos últimos valores (aprox. 30 a 35), a curva se torna **extremamente inclinada**, quase vertical.
 
@@ -113,7 +113,7 @@ Nos últimos valores (aprox. 30 a 35), a curva se torna **extremamente inclinada
 | Linha inclinando para cima progressivamente | **Aceleração inflacionária** | Preços sobem e aumentam cada vez mais rápido.                 |
 | Curva quase vertical                        | **Hiperinflação**            | Perda acelerada do valor da moeda; sistema de preços colapsa. |
 
-## 5.2 TIPOS DE INFLAÇÃO
+### 5.2 TIPOS DE INFLAÇÃO
 
 Ao buscar as causas da inflação, se encontram dois tipos básicos: inflação de demanda e inflação de custos.
 
@@ -149,7 +149,7 @@ Os mecanismos de indexação podem ser formais ou informais. Esses mecanismos at
 
 ## Página 6
 
-## 5.3 CONSEQUÊNCIAS DA INFLAÇÃO
+### 5.3 CONSEQUÊNCIAS DA INFLAÇÃO
 
 Várias são as consequências advindas de taxas elevadas de inflação.
 

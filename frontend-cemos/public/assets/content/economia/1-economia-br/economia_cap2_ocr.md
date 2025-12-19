@@ -258,7 +258,7 @@ ii. **impostos indiretos, que incidem sobre a mercadoria a ser vendida**: são r
 
 Os impostos indiretos fazem com que o preço de mercado seja maior do que o custo de produção de uma mercadoria, ou seja, nem toda a receita com a venda da mercadoria corresponde à remuneração dos envolvidos na produção. Alguns bens não pagam impostos indiretos, e podem, inclusive, receber um subsídio para sua produção. O **subsídio** corresponde ao pagamento pelo governo de parte dos custos de produção, fazendo com que o preço pelo qual o bem é vendido (preço de mercado) seja menor que o custo de produção; nesse caso, o subsídio funciona como um **imposto indireto negativo**📌.
 
-Com o governo, pode-se chegar a outra medida de produto, o **Produto Interno Bruto a custos de fatores (PIBcf)**; este corresponde ao PIBpm menos os impostos indiretos mais os subsídios concedidos.
+Com o governo, pode-se chegar a outra medida de produto, o **Produto Interno Bruto a custos de fatores (PIBcf)**; este corresponde ao **PIBpm** menos os **impostos indiretos** mais os **subsídios concedidos**📌.
 
 <blockquote style="background: linear-gradient(135deg, rgba(4, 221, 250, 0.23), rgba(0, 38, 255, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**PIBcf = PIBpm - impostos indiretos + subsídios concedidos**</blockquote>
 
@@ -328,7 +328,7 @@ Os tipos de transações que ocorrem com o Resto do Mundo são:
 
 i. **com bens e serviços (não incluídos os serviços de fatores de produção): exportações**, que correspondem à venda de parte de nossa produção para o exterior, e que se constituem em um elemento de demanda por produção interna; e **importações**, que são aquisições de produção estrangeira para oferecer internamente;
 
-i. **com fatores de produção**: as empresas sediadas no país podem utilizar trabalho e capital vindos do resto do mundo, e como tal devem pagar pela utilização desses fatores, ou seja, devem enviar renda para fora. As famílias residentes no país podem também vender trabalho e capital para entidades situadas no exterior, e como tal recebem uma renda do exterior. Assim, pode-se definir a chamada **renda líquida enviada ao exterior** como a diferença entre aquilo que é pago por fatores de produção externos utilizados internamente e aquilo que é recebido do exterior por fatores de produção nacionais empregados em outros países.
+i. **com fatores de produção**: as empresas sediadas no país podem utilizar trabalho e capital vindos do resto do mundo, e como tal devem pagar pela utilização desses fatores, ou seja, devem enviar renda para fora. As famílias residentes no país podem também vender trabalho e capital para entidades situadas no exterior, e como tal recebem uma renda do exterior. Assim, pode-se definir a chamada **renda líquida enviada ao exterior** como a diferença entre aquilo que é **pago por fatores de produção externos** utilizados internamente e aquilo que é **recebido do exterior por fatores de produção nacionais** empregados em outros países📌.
 
 Percebe-se, portanto, que nem todo produto gerado internamente é adquirido por residentes (existem as exportações), nem todo produto adquirido por residentes é feito no país (existem as importações). Outro ponto importante é que nem toda renda gerada no país destina-se aos residentes. Uma parcela é utilizada para pagar fatores de produção estrangeiros (**renda enviada ao exterior**), assim como os fatores de produção nacionais recebem remuneração por serviços prestados no exterior (**renda recebida do exterior**).
 
@@ -341,6 +341,8 @@ A introdução do Resto do Mundo traz algumas alterações nas identidades macro
 <blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">Y+M=C+I+G+X ou Y=C+I+G+(X-M) (13)</blockquote>
 
 Note-se que Y, sob a ótica da renda, engloba agora a Renda Líquida Enviada ao Exterior. Desse modo, tanto as exportações (X) como as importações (M) referem-se às transações com bens e serviços, excluídos os fatores de produção. A diferença entre a renda líquida enviada ao exterior e o saldo das exportações e importações de bens e serviços não fatores[8] é a chamada **poupança externa (Se)**.
+
+[8] A renda líquida enviada ao exterior representa o pagamento dos serviços de fatores, enquanto os serviços não fatores referem-se aos pagamentos a outros serviços externos, como fretes, seguros, viagens internacionais, royalties.
 
 ## Página 13
 
@@ -608,4 +610,4 @@ Portanto, para compararmos o tamanho das economias dos países, utilizamos valor
 
 7. Deve-se observar, porém, que essa equação corresponde ao seguinte: Y = salários + lucros + juros + aluguéis + impostos indiretos — subsídios, enquanto a renda familiar (Yf) corresponde apenas aos quatro primeiros itens mais as transferências do governo. Assim: Yf= C+ Sp + Td.
 
-8. A renda líquida enviada ao exterior representa o pagamento dos serviços de fatores, enquanto os serviços não fatores referem-se aos pagamentos a outros serviços externos, como fretes, seguros, viagens internacionais, royalties.
+

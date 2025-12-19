@@ -1,6 +1,6 @@
-## Página 1
-
 # Capítulo 10 - Setor Externo
+
+## Página 1
 
 Até o momento, tratamos da determinação do produto considerando apenas as transações domésticas, ou seja, aquelas que ocorrem dentro do país. Contudo, ao menos do ponto de vista econômico, o mundo apresentase cada vez mais interligado, seja por meio dos fluxos comerciais, seja por meio dos fluxos financeiros. De modo geral, as relações econômicas internacionais têm posição fundamental para a maioria dos países, inclusive o Brasil. As importações representam parcela significativa do que é consumido pelos agentes de determinado país, ao passo que as exportações constituem componente importante da demanda agregada.
 
@@ -12,7 +12,7 @@ Em segundo lugar, a economia internacional procura estudar os impactos macroecon
 
 Neste capítulo, serão analisadas, basicamente, as questões macroeconômicas das relações entre os países. Em capítulos posteriores, serão detalhados outros aspectos importantes relacionados com as questões externas e a inserção do Brasil no contexto internacional. A Seção 10.1 apresenta a estrutura do balanço de pagamentos, ao passo que a Seção 10.2 analisa o mercado cambial e os tipos de regimes cambiais existentes. As considerações finais do capítulo são apresentadas, por sua vez, na Seção 10.3. Por último, espera-se que o leitor tenha entendido os principais tipos de relação econômica entre os países, como estes afetam o desempenho econômico e como este é impactado por diferentes regimes cambiais.
 
-## 10.1 BALANÇO DE PAGAMENTOS
+### 10.1 BALANÇO DE PAGAMENTOS
 
 Um país realiza diversas transações com o resto do mundo. Essas envolvem a compra e venda de bens e serviços e a compra e venda de ativos, entre outros. A introdução do setor externo traz uma série de diferenças para a análise que vinha sendo desenvolvida até o momento. A oferta agregada do país, por exemplo, deixa de ser composta apenas por produtos feitos internamente e passa a contar com bens e serviços produzidos no exterior. A compra de produtos domésticos, por sua vez, deixa de ser realizada apenas por residentes, passando a ser feita também por não residentes. A dotação de recursos/fatores de produção nacionais deixa de ser um entrave à expansão do produto, pois se pode contar com fatores de produção (capital e trabalho) estrangeiros para ampliar a produção doméstica. A poupança interna deixa de ser a única fonte para financiar os investimentos, pois o país pode recorrer à poupança externa, assim como a poupança interna não precisa mais necessariamente ser aplicada no país, podendo ser investida no exterior.
 
@@ -706,7 +706,6 @@ Nesse momento, sua produção pode mudar de país e situar-se em países menos d
 
 ## Página 36
 
-
 ## 5. DEBATE SOBRE AS VANTAGENS DA LIBERALIZAÇÃO DO COMÉRCIO EXTERNO
 
 Dentro das novas teorias de comércio internacional, existem novas visões acerca da vantagem do comércio internacional, além da tradicional teoria das vantagens comparativas. Por um lado, supondo que o consumidor valoriza a **diversidade de opções de consumo**, inegavelmente o comércio internacional abre uma gama muito variada de produtos, o que traz ganhos de bem-estar para a coletividade. Por outro lado, os **ganhos de eficiência e de escala** também são ressaltados. Os primeiros referem-se aos ganhos advindos do processo de concorrência quando existe a liberalização do comércio, o que forçaria as empresas a adotarem estruturas de custo adequadas, ampliarem as buscas por melhor produtividade. A eficiência também adviria da diminuição de atividades paralelas, como o contrabando e o tráfico de influências, que existem quando da vigência de estruturas do comércio fechadas. Essa é a base para a defesa da **abertura comercial** como mecanismo indutor de um ajuste produtivo das empresas, e serve também de sustentação para os efeitos benéficos que ela traria em um processo de estabilização. Os ganhos de escala são aqueles provenientes do ajuste tecnológico das empresas em direção a volumes de produção com custos unitários inferiores.
@@ -714,8 +713,6 @@ Dentro das novas teorias de comércio internacional, existem novas visões acerc
 A defesa de uma política de cunho mais **protecionista** baseia-se no fato de que os mercados estão longe de se aproximarem da concorrência perfeita, que é a base sobre a qual as teorias que ressaltam as vantagens do comércio se estabelecem. Nesse sentido, a existência de **externalidades positivas** decorrente de investimentos em P&D leva a acreditar que, com uma economia aberta, os investimentos nacionais são inferiores aos desejados, sendo, assim, possível melhorar a situação do país com a proteção a alguns setores. Essa, na verdade, é a retomada de um antigo argumento de defesa de políticas de controle do comércio: a **defesa da indústria nascente**, que fora muito utilizada na própria economia brasileira ao longo do processo de industrialização.
 
 A possibilidade de rendimentos crescentes de escala, por sua vez, leva a **situações monopólicas** no comércio internacional. Essa situação poderia ter como consequência a perda dos benefícios levantados no parágrafo anterior. Do mesmo modo, o fato de existirem custos elevados de aprendizado na produção de novos produtos confere vantagens às empresas que primeiro se estabeleceram no mercado, impondo barreiras à entrada de novas empresas, configurando uma posição de força no mercado. Tal posição pode não ser benéfica para os países consumidores do produto.
-
----
 
 ### **Quadro 10.2 — Abertura comercial × protecionismo**
 

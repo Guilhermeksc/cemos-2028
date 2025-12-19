@@ -1,6 +1,6 @@
-## Página 1
-
 # Capítulo 7 - Investimento
+
+## Página 1
 
 O investimento corresponde à aquisição de bens de capital, máquinas, equipamentos, edifícios e estoques, com o objetivo de aumentar a capacidade de produção futura. Desse modo, constituise em um elo entre o curto e o longo prazos, uma vez que, por um lado, eleva a demanda agregada no momento em que ocorre, mas, por outro, eleva a oferta agregada ao ampliar o estoque de capital e, consequentemente, a capacidade de produção da economia no longo prazo. Deve-se notar que o conceito de investimento não deve ser confundido com o de aplicação financeira, que corresponde a uma forma de alocação da poupança dos agentes.
 
@@ -12,10 +12,9 @@ Um ponto importante é que, empiricamente, o investimento costuma ser muito mais
 
 Neste capítulo, pretende-se discutir os determinantes do investimento. Será abordado como as expectativas, a taxa de juros e o próprio comportamento da atividade econômica, entre outros, afetam as decisões de investimento por parte dos empresários. Além disso, será considerada a importância do financiamento para o investimento e como essa variável impacta o comportamento da economia.
 
-
 ## Página 2
 
-## 7.1 DECISÃO DE INVESTIR: EXPECTATIVAS E TAXA DE JUROS
+### 7.1 DECISÃO DE INVESTIR: EXPECTATIVAS E TAXA DE JUROS
 
 O principal fator a influenciar a decisão de investir é o retorno esperado do investimento, que, por sua vez, depende do fluxo de receita futura que o indivíduo espera receber do investimento, comparativamente aos gastos incorridos em sua execução.
 
@@ -133,7 +132,7 @@ Como se observa na Figura 7.2, que ilustra a Formação Bruta de Capital Fixo (s
 
 ## Página 6
 
-## 7.2 - INVESTIMENTO E POUPANÇA
+### 7.2 - INVESTIMENTO E POUPANÇA
 
 Até o momento, analisou-se apenas como a taxa de juros e o retorno esperado afetam as decisões de investimento. Como destacado anteriormente, o investimento amplia a demanda agregada a curto prazo, estimulando a produção e a geração de renda, mas também eleva a capacidade de produção da economia a longo prazo. Assim, tanto a curto como a longo prazo, observa-se uma relação direta entre investimento e crescimento econômico.
 
@@ -143,7 +142,7 @@ A resposta a essa questão depende de como a economia está operando com relaç�
 
 Muitos modelos econômicos são divididos em modelos de longo prazo, nos quais se considera o pleno emprego dos fatores, e modelos de curto prazo, que consideram a possibilidade de desemprego. Será analisada a relação entre investimento, crescimento e poupança considerando essas duas possibilidades.
 
-## 7.3 - FINANCIAMENTO E INVESTIMENTO
+### 7.3 - FINANCIAMENTO E INVESTIMENTO
 
 Um ponto de crucial importância na análise do investimento é o financiamento. A análise tradicional sobre os determinantes do investimento, em geral, supõe a existência de mercados financeiros perfeitos, ou seja, bastaria identificar os projetos de investimento que possuam a maior expectativa de retorno e o mercado faria com que os recursos fossem canalizados para esses projetos. Assim, a forma de financiamento não afetaria as decisões de investimento e todos os projetos cujo retorno esperado superassem a taxa de juros de mercado seriam executados.
 
@@ -197,8 +196,6 @@ No Brasil, historicamente, não se verifica nem um caso nem outro. O predomínio
 
 Dessa maneira, a institucionalidade existente no país desestimula o financiamento de longo prazo.
 
----
-
 ## Página 10
 
 Na Seção 7.2, discutimos a relação entre o volume de poupança da economia e o volume de investimentos. **A existência de poupança não garante por si só a realização do investimento, mas sua ausência pode impedir sua realização**.
@@ -211,11 +208,11 @@ A inexistência de condições financeiras adequadas pode inviabilizar o investi
 
 Esse quadro passou por mudanças importantes ao longo das últimas décadas, com o maior crescimento do mercado de capitais e de títulos privados possibilitado, entre outros, pela estabilização da economia ocorrida a partir de metade da década de 1990. Além disso, o processo de privatização e o fortalecimento das empresas nacionais com os amplos processos de fusões e reestruturação patrimonial das empresas nacionais ampliaram os ofertantes potenciais de títulos nesses mercados.
 
-## 7.4 CONSIDERAÇÕES FINAIS
+## Página 11
+
+### 7.4 CONSIDERAÇÕES FINAIS
 
 Neste capítulo, foram analisados os principais fatores que influenciam as decisões de investimento, como o investimento afeta a dinâmica da economia tanto no curto como no longo prazo, e a relação entre financiamento e investimento.
-
-## Página 11
 
 As características das decisões de investimento fazem com que grande parte das flutuações econômicas decorra de variações no investimento e os fatores que influenciam o investimento tendem a fazer com que este seja extremamente instável. Como visto, o investimento depende do estado de expectativas dos agentes com relação ao futuro, do nível da taxa de juros e da existência de condições adequadas de financiamento, entre outros fatores. As expectativas podem ser bastante voláteis, podendo alterar-se rapidamente de “ondas de otimismo” para pessimismo, e a taxa de juros, por sua vez, pode oscilar tanto pelos efeitos de políticas monetárias como por alterações nas expectativas dos agentes. Finalmente, a existência de linhas adequadas de financiamento depende do nível de poupança, das expectativas dos agentes, que definem como ela será aplicada, da política monetária e financeira do governo e do quadro institucional/estrutural do país.
 
