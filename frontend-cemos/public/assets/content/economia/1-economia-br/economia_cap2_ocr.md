@@ -14,6 +14,10 @@ Neste capítulo, serão apresentados os principais agregados macroeconômicos e 
 
 A economia estuda a alocação de recursos escassos para fins ilimitados, ou seja, como obter o máximo de satisfação para os indivíduos a partir de um estoque dado de recursos. Para satisfazer suas necessidades, o homem envolve-se em um ato de produção. **Produção** é a atividade social que visa adaptar a natureza para o desenvolvimento de bens e serviços que permitam a satisfação das necessidades humanas. No ato de produção, existe a combinação de uma série de elementos chamados de fatores de produção. **Fatores de produção** são os recursos utilizados na produção de bens e serviços. Normalmente, costuma-se separar os recursos em três grandes áreas: terra, capital e trabalho.
 
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**T**erra = Terras agrícolas, Minério de ferro, Petróleo, Gás natural, Água (rios, aquíferos), Florestas (madeira), Carvão mineral.
+**C**apital = Máquinas industriais, Equipamentos agrícolas, Edifícios e fábricas, Veículos de transporte de carga, Infraestrutura (portos, estradas, usinas), Tecnologia produtiva (hardware industrial).
+**T**rabalho = Operários industriais, Agricultores, Engenheiros, Professores, Médicos, etc.</blockquote>
+
 ## Página 2
 
 A produção é a principal atividade econômica a ser medida, uma vez que refletirá a capacidade de satisfação das necessidades dos membros da sociedade. Assim, o primeiro passo para avaliar-se o desempenho de um país é medir seu produto. Este corresponde à soma daquilo que foi produzido em um país durante determinado período. Trata-se, portanto, de um fluxo, por ser medido em dado período.
@@ -24,9 +28,8 @@ Na economia, trabalha-se com **variáveis tipo fluxo**, que correspondem aquelas
 
 Alguns exemplos de variáveis fluxos e estoques em economia são:
 
-**Fluxos:** produto, renda, consumo, poupança, investimento, gastos públicos, arrecadação de impostos, déficit público, exportações, importações, déficit em transações correntes etc.
-
-**Estoques:** população, capital (K), dívida externa, dívida interna, estoque de moeda, ativos financeiros, riqueza etc.
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**Fluxos:** produto, renda, consumo, poupança, investimento, gastos públicos, arrecadação de impostos, déficit público, exportações, importações, déficit em transações correntes etc.
+**Estoques:** população, capital (K), dívida externa, dívida interna, estoque de moeda, ativos financeiros, riqueza etc.</blockquote>
 
 Exemplos de relação entre fluxos e estoques:
 
@@ -36,11 +39,9 @@ b. Dívida Pública (t) — Dívida Pública (t — 1) = Déficit Público em um
 
 A partir do produto, podemos avaliar o **crescimento econômico** de um país, que, em determinado período, é definido como o aumento do produto naquele período, ou seja, a elevação na produção de bens e serviços que satisfaçam às necessidades humanas.
 
-A **produção** é a atividade social que visa adaptar a natureza para a criação de bens e serviços que permitam a satisfação das necessidades humanas. 
-
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">A **produção** é a atividade social que visa adaptar a natureza para a criação de bens e serviços que permitam a satisfação das necessidades humanas.
 Os **fatores de produção** são os recursos utilizados na produção de bens e serviços. 
-
-O **produto** é a soma daquilo que foi produzido em um país durante determinado período.
+O **produto** é a soma daquilo que foi produzido em um país durante determinado período.</blockquote>
 
 O crescimento econômico de um país em determinado período é definido como o aumento do produto naquele período, ou seja, a elevação na produção de bens e serviços que satisfaçam às necessidades humanas.
 
@@ -81,7 +82,7 @@ Entretanto, está-se contando duas vezes a farinha (por ela mesma e pela partici
 
 Assim, chega-se ao conceito final de Produto. Dentro de um país, este vem a ser o **Produto Interno Bruto a preços de mercado (PIBpm)**, ou seja, o valor monetário de venda dos produtos finais produzidos dentro do país em determinado período.[3] É por meio desse indicador que se avalia o desempenho de uma economia. A soma do valor dos bens finais ou a soma do valor adicionado em cada etapa do processo produtivo necessariamente será a mesma. Essa maneira de medir o valor do produto é chamada de **“ótica do produto”**.
 
-[3]. Algumas dificuldades de medição do Produto Interno Bruto (PIB) que se colocam são: (i) o mesmo bem pode ser utilizado como bem intermediário e bem final. O açúcar, por exemplo, utilizado para adoçar o café em casa, é um bem final, já o açúcar utilizado em uma fábrica de refrigerantes no processo produtivo é um bem intermediário; (ii) nem tudo que é produzido se direciona ao mercado; por exemplo, um agricultor leva uma parcela de sua produção ao mercado para obter outros bens de que necessita, mas outra parcela ele pode utilizar para alimentar sua família (produção de subsistência), não sendo medida monetariamente; (iii) alguns serviços devem ser imputados no PIB; por exemplo, um indivíduo que mora de aluguel está pagando um preço pelo serviço de moradia (esse valor entra no PIB), mas o indivíduo que mora em casa própria e não paga aluguel também está consumindo um serviço de moradia e, como tal, o valor deste deve ser imputado no PIB. Há várias outras dificuldades, como diferenciar a atividade da dona de casa e da empregada doméstica; carro adquirido por uma família e por uma empresa etc. Outro ponto, como já foi dito, é que não é uma característica do produto que o define como bem final, mas sua utilização. Uma empresa, por exemplo, adquiriu aço para produzir automóvel, mas chegou o final do ano, o automóvel ainda não havia sido produzido e o aço estava no estoque. No ano seguinte, será considerado produto apenas a diferença entre o valor do automóvel e o do aço (bem intermediário), mas na medida do produto deste ano o aço é um bem final, foi comprado para ficar em estoque, logo entra no cômputo do produto.
+*[3]. Algumas dificuldades de medição do Produto Interno Bruto (PIB) que se colocam são: (i) ***o mesmo bem pode ser utilizado como bem intermediário e bem final***. O açúcar, por exemplo, utilizado para adoçar o café em casa, é um bem final, já o açúcar utilizado em uma fábrica de refrigerantes no processo produtivo é um bem intermediário; (ii) nem tudo que é produzido se direciona ao mercado; por exemplo, um agricultor leva uma parcela de sua produção ao mercado para obter outros bens de que necessita, mas outra parcela ele pode utilizar para alimentar sua família (produção de subsistência), não sendo medida monetariamente; (iii) alguns serviços devem ser imputados no PIB; por exemplo, um indivíduo que mora de aluguel está pagando um preço pelo serviço de moradia (esse valor entra no PIB), mas o indivíduo que mora em casa própria e não paga aluguel também está consumindo um serviço de moradia e, como tal, o valor deste deve ser imputado no PIB. Há várias outras dificuldades, como diferenciar a atividade da dona de casa e da empregada doméstica; carro adquirido por uma família e por uma empresa etc. Outro ponto, como já foi dito, é que não é uma característica do produto que o define como bem final, mas sua utilização. Uma empresa, por exemplo, adquiriu aço para produzir automóvel, mas chegou o final do ano, o automóvel ainda não havia sido produzido e o aço estava no estoque. No ano seguinte, será considerado produto apenas a diferença entre o valor do automóvel e o do aço (bem intermediário), mas na medida do produto deste ano o aço é um bem final, foi comprado para ficar em estoque, logo entra no cômputo do produto.*
 
 <blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**PIBpm** é o valor monetário de venda dos produtos finais produzidos dentro de um país em determinado período.</blockquote>
 
@@ -93,7 +94,9 @@ i. por meio do dispêndio ou da demanda (compras finais);
 
 ii. por meio da renda gerada no processo produtivo.
 
-O conceito de dispêndio refere-se aos possíveis destinos do produto, isto é, por quem e para que são adquiridos. Como será detalhado adiante, os principais destinos do produto são o consumo e o investimento. O primeiro refere-se aos bens e serviços adquiridos pelos indivíduos para a satisfação de suas necessidades. Pode ser dividido em **consumo pessoal** (das famílias), que se refere aos bens e serviços adquiridos voluntariamente no mercado, e **consumo público** (do governo), que se refere aos bens e serviços oferecidos de forma “gratuita”* pelo governo para os indivíduos, e são consumidos coletivamente, como a iluminação das ruas, a educação e saúde pública, a segurança nacional, os serviços do Legislativo, o desenvolvimento tecnológico nos órgãos de pesquisa públicos etc.
+O conceito de dispêndio refere-se aos possíveis destinos do produto, isto é, por quem e para que são adquiridos. Como será detalhado adiante, os principais destinos do produto são o consumo e o investimento. O primeiro refere-se aos bens e serviços adquiridos pelos indivíduos para a satisfação de suas necessidades. Pode ser dividido em **consumo pessoal** (das famílias), que se refere aos bens e serviços adquiridos voluntariamente no mercado, e **consumo público** (do governo), que se refere aos bens e serviços oferecidos de forma “gratuita”[4] pelo governo para os indivíduos, e são consumidos coletivamente, como a iluminação das ruas, a educação e saúde pública, a segurança nacional, os serviços do Legislativo, o desenvolvimento tecnológico nos órgãos de pesquisa públicos etc.
+
+*[4] Não significa que os bens são gratuitos, já que são financiados por meio de impostos; são os chamados “bens públicos”, que os indivíduos não revelam diretamente o quanto estão dispostos a pagar por eles (ver Seção 2.4).*
 
 O **investimento**, como detalharemos mais adiante, relaciona-se com a aquisição de mercadorias para ampliar a produção futura, e corresponde ao aumento do estoque de capital físico (máquinas, edifícios etc.) e à variação dos estoques (matérias-primas, produtos acabados etc.).
 
@@ -111,7 +114,7 @@ Já o **conceito de renda refere-se à remuneração dos fatores de produção e
 
 Portanto, verificam-se as seguintes identidades:
 
-**PRODUTO (Valor agregado) = DEMANDA FINAL (Dispêndio = Consumo + Investimento + Exportações - Importações) = RENDA (salários + lucros + juros + aluguéis).**
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**PRODUTO (Valor agregado) = DEMANDA FINAL (Dispêndio = Consumo + Investimento + Exportações - Importações) = RENDA (salários + lucros + juros + aluguéis).**</blockquote>
 
 Para verificar como se compõem esses conceitos, é ilustrado o funcionamento do sistema econômico em diversas situações. Inicialmente, considere-se uma economia que não se relaciona com o exterior e não tem governo, isto é, existem apenas dois agentes na economia: famílias e empresas. Na sequência, incorpora-se o governo e, finalmente, introduz-se o resto do mundo (o exterior).
 
@@ -125,15 +128,12 @@ Esse processo está exemplificado na Figura 2.1.
 
 ![figura](figura2-1.png)
 
-Figura 2.1 Fluxo circular da renda I.
-
 O diagrama representa o fluxo circular de renda em uma economia simples, composta por famílias e empresas.
 
 1- Famílias fornecem às empresas os fatores de produção, tais como:
- - trabalho (salários),
- - capital (juros),
- - terra (aluguéis),
- - capacidade empresarial (lucros).
+ - trabalho;
+ - capital; e
+ - terra.
  
 2- Em troca desses fatores, as famílias recebem renda, que assume a forma de:
  - salários,
@@ -145,16 +145,10 @@ O diagrama representa o fluxo circular de renda em uma economia simples, compost
 
 4- As famílias, por sua vez, utilizam sua renda para realizar compras, ou seja, demanda/consumo, adquirindo os bens e serviços produzidos pelas empresas.
 
-Assim, forma-se um ciclo contínuo:
-
-Fatores de produção → Empresas → Bens e serviços → Famílias → Consumo → Empresas, enquanto a renda flui em sentido inverso para remunerar os fatores fornecidos.
-
 Nesse caso, em que só se produzem bens de consumo, o valor dessa produção (o produto) é igual à renda, que é igual ao valor do consumo, já que este é o único componente da demanda e que todos os bens são consumidos (não há acúmulo de estoques). Assim, tem-se:
 
-<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**Y = C = Remuneração dos Fatores (Renda)**
-
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">**Y = C = Remuneração dos Fatores (Renda)** (Equação 1)
 Em que: 
-
 Y = o produto nacional;
 C = o consumo agregado.</blockquote>
 
@@ -169,41 +163,39 @@ Nesse caso, suponha-se a existência de dois tipos de empresas, uma produtora de
 
 Agora, as famílias trabalhando, alugando suas terras e seu capital, obtêm renda de ambas as empresas, porém adquirem apenas bens de consumo, sendo a oferta de bens de capital do setor I adquirida pelas empresas do setor II. Para que o investimento ocorra, nem toda renda da economia pode ser consumida, pois, caso contrário, não haveria recursos para realizar os investimentos. Assim, uma parcela da renda das famílias deve ser poupada, entendendo como **poupança ("S" - do inglês saving) a parcela da renda não consumida pelas famílias em dado período**.
 
-Essa poupança deve ser transferida para as empresas do setor II, de modo que estas possam adquirir os bens de capital do setor I. Caso não ocorra essa transferência, não haverá a venda dos bens de capital. Nesse ponto, introduz-se um novo agente no sistema econômico, o Sistema Financeiro, cuja principal função é captar os recursos dos poupadores para transferi-los aos investidores. Seu papel, assim, é o de alocar recursos entre tomadores e emprestadores, viabilizando o financiamento do investimento. 
+Essa poupança deve ser transferida para as empresas do setor II, de modo que estas possam adquirir os bens de capital do setor I. Caso não ocorra essa transferência, não haverá a venda dos bens de capital. Nesse ponto, introduz-se um novo agente no sistema econômico, o **Sistema Financeiro**, **cuja principal função é captar os recursos dos poupadores para transferi-los aos investidores**📌. Seu papel, assim, é o de alocar recursos entre tomadores e emprestadores, viabilizando o financiamento do investimento. 
 
 Esse processo pode ser exemplificado pelo fluxo apresentado na Figura 2.2. 
 
 ![figura](figura2-2.png)
 
-Figura 2.2 Fluxo circular da renda II.
-
 O esquema ilustra uma versão ampliada do **fluxo circular de renda**, incorporando o papel do **sistema financeiro**, a divisão entre **empresas produtoras de bens de consumo (Empresas I)** e **empresas produtoras de bens de capital (Empresas II)**, além do processo de **poupança**, **empréstimos** e **investimento**.
 
 ### 1. Famílias
 
-As **famílias** fornecem **fatores de produção** (trabalho, terra, capital e capacidade empresarial) para as empresas I e II.
+As **famílias** fornecem **fatores de produção** (trabalho, terra e capital) para as empresas I e II.
 Em troca, recebem **renda**, composta por salários, aluguéis, juros e lucros.
 
 Com essa renda:
 
-* Parte é destinada ao **consumo**, adquirindo **bens e serviços** produzidos pelas Empresas I.
-* Outra parte é destinada à **poupança**, que é transferida ao **sistema financeiro**, convertendo-se em ativos financeiros.
+Parte é destinada ao **consumo**, adquirindo **bens e serviços** produzidos pelas Empresas I.
+Outra parte é destinada à **poupança**, que é transferida ao **sistema financeiro**, convertendo-se em ativos financeiros.
 
 ### 2. Sistema Financeiro
 
 O **sistema financeiro** recebe a **poupança das famílias** e a transforma em **empréstimos** para as empresas.
 
-* As **Empresas II**, quando necessitam expandir a produção de bens de capital, recorrem ao sistema financeiro, gerando **dívida**.
-* Esses empréstimos são utilizados para **investimento**.
+As **Empresas II**, quando necessitam expandir a produção de bens de capital, recorrem ao sistema financeiro, gerando **dívida**.
+Esses empréstimos são utilizados para **investimento**.
 
 ### 3. Empresas I (produtoras de bens de consumo)
 
 As **Empresas I**:
 
-* Recebem os fatores de produção das famílias.
-* Pagam renda às famílias.
-* Produzem **bens e serviços** destinados ao consumo das famílias.
-* Demandam **bens de capital**, adquiridos das Empresas II, para manter ou ampliar sua capacidade produtiva.
+Recebem os fatores de produção das famílias.
+Pagam renda às famílias.
+Produzem **bens e serviços** destinados ao consumo das famílias.
+Demandam **bens de capital**, adquiridos das Empresas II, para manter ou ampliar sua capacidade produtiva.
 
 ### 4. Empresas II (produtoras de bens de capital)
 
@@ -212,11 +204,8 @@ Esses bens permitem que as Empresas I ampliem sua capacidade de produção.
 
 Além disso:
 
-* Empresas II também contratam fatores de produção das famílias, pagando renda correspondente.
-* Parte de sua expansão decorre de **investimentos** financiados por:
-
-  * empréstimos do sistema financeiro;
-  * recursos internos originados de sua própria renda.
+Empresas II também contratam fatores de produção das famílias, pagando renda correspondente.
+Parte de sua expansão decorre de **investimentos** financiados por, **empréstimos do sistema financeiro** e  **recursos internos originados de sua própria renda.**
 
 ### 5. Investimento
 
@@ -224,36 +213,33 @@ O **investimento** conecta Empresas II às Empresas I, pois consiste na aquisiç
 
 Percebe-se, pelo exposto, que as famílias têm dois destinos para sua renda: consumir ou poupar; assim, substitui-se agora a equação (1) pela (3):
 
-<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
-**Y = C + S (3)**</blockquote>
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**Y = C + S (Equação 3)**</blockquote>
 
 ## Página 8
 
 Por outro lado, existem dois tipos de gastos (compras - demanda) na economia: Consumo e Investimento, ou seja, a demanda agregada (DA) é:
 
-**DA = C + I (4)**
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**DA = C + I (Equação 4)**</blockquote>
 
 Como se viu que a renda é igual à demanda, isto é, (3) = (4), temos outra identidade em termos macroeconômicos:
 
-4. Não significa que os bens são gratuitos, já que são financiados por meio de impostos; são os chamados “bens públicos”, que os indivíduos não revelam diretamente o quanto estão dispostos a pagar por eles (ver Seção 2.4).
-
-**Investimento (I) = Poupança (S)**
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**Investimento (I) = Poupança (S)**</blockquote>
 
 Ao considerar-se a existência de investimento, cabe introduzir um novo elemento: a depreciação. Os bens de capital (máquinas e equipamentos, edifícios etc.) não são, em geral, consumidos em um único período produtivo, mas ao longo de vários períodos, e são desgastados a cada uso, chegando um determinado momento em que devem ser repostos.
 
 A **depreciação** corresponde à parcela dos bens de capital consumida a cada período produtivo. Assim, nem toda nova produção de bens de capital corresponde a um novo investimento, pois uma parcela do aumento da capacidade produtiva deve repor aquilo que foi depreciado. É preciso, então, diferenciar o **Investimento Bruto (IB)** e o **Investimento Líquido (IL)**, sendo que:
 
-IL = IB — Depreciação
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**IL = IB — Depreciação**</blockquote>
 
 Com isso, como o produto é igual a C + I, quando se considera o IB, está-se medindo o Produto Interno Bruto (PIB) a preços de mercado; se se considerar apenas o IL, medir-se-á o Produto Interno Líquido (PIL) a preços de mercado.
 
-PILpm = PIBpm - Depreciação
+<blockquote style="background: linear-gradient(135deg, rgba(4, 221, 250, 0.23), rgba(0, 38, 255, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**PILpm = PIBpm - Depreciação**</blockquote>
+
+## Página 9
 
 ### 2.4 GOVERNO
 
-Para completar as entidades que participam da atividade econômica de um país, faltam ainda mais dois agentes, além das empresas e das famílias: o governo e o resto do mundo. Por **governo** entendem-se apenas as funções típicas de governo (administração direta, judiciário, legislativo, provisão de segurança nacional etc.). As **empresas estatais** que oferecem bens e serviços no mercado aparecem classificadas na entidade “empresas”, não governo. O governo tem por função prover os chamados “bens públicos”, o que é feito por meio da arrecadação de impostos.
-
-## Página 9
+Para completar as entidades que participam da atividade econômica de um país, faltam ainda mais dois agentes, além das empresas e das famílias: o governo e o resto do mundo. Por **governo** entendem-se apenas as funções típicas de governo (administração direta, judiciário, legislativo, provisão de segurança nacional etc.). As **empresas estatais** que oferecem bens e serviços no mercado aparecem classificadas na entidade “empresas”, não governo. O governo tem por função prover os chamados **“bens públicos”**, o que é feito por meio da arrecadação de impostos.
 
 Por **“bens públicos”** entendem-se os bens que não podem ser providos pelo mecanismo de mercado, como a justiça, a segurança nacional etc. O que caracteriza esse tipo de bem é o fato de seu consumo ser **não rival** e **não excludente**, ou seja, o consumo do bem por uma pessoa não impede o consumo desse mesmo bem por outra pessoa. Em função dessas características, os indivíduos não revelam o quanto estão dispostos a pagar para adquirir esses bens, ou seja, as pessoas ficam esperando outros pagarem para consumirem os bens; com isso, geralmente, ninguém pagaria e não haveria a oferta desses bens. Por essa razão, esses bens ou serviços são mais eficientemente ofertados a partir da provisão pública, e seu financiamento deve dar-se compulsoriamente, por meio dos impostos. No caso dos bens públicos, é difícil determinar seu preço no mercado, e o valor de sua produção, em geral, é medido por meio dos custos de produção do governo.
 
@@ -265,56 +251,72 @@ i. **impostos diretos, que incidem diretamente sobre o agente que os recolhe**: 
 
 ii. **impostos indiretos, que incidem sobre a mercadoria a ser vendida**: são recolhidos pelas empresas, mas são pagos, em última instância, pelo consumidor, uma vez que são embutidos no preço das mercadorias, como ICMS e o IPI.
 
-Os impostos indiretos fazem com que o preço de mercado seja maior do que o custo de produção de uma mercadoria, ou seja, nem toda a receita com a venda da mercadoria corresponde à remuneração dos envolvidos na produção. Alguns bens não pagam impostos indiretos, e podem, inclusive, receber um subsídio para sua produção. O **subsídio** corresponde ao pagamento pelo governo de parte dos custos de produção, fazendo com que o preço pelo qual o bem é vendido (preço de mercado) seja menor que o custo de produção; nesse caso, o subsídio funciona como um imposto indireto negativo.
+| Tipo de imposto    | Exemplos              |
+| ------------------ | --------------------- |
+| Impostos diretos   | IRPF, IRPJ, IPTU, ITR |
+| Impostos indiretos | ICMS, IPI             |
+
+Os impostos indiretos fazem com que o preço de mercado seja maior do que o custo de produção de uma mercadoria, ou seja, nem toda a receita com a venda da mercadoria corresponde à remuneração dos envolvidos na produção. Alguns bens não pagam impostos indiretos, e podem, inclusive, receber um subsídio para sua produção. O **subsídio** corresponde ao pagamento pelo governo de parte dos custos de produção, fazendo com que o preço pelo qual o bem é vendido (preço de mercado) seja menor que o custo de produção; nesse caso, o subsídio funciona como um **imposto indireto negativo**📌.
 
 Com o governo, pode-se chegar a outra medida de produto, o **Produto Interno Bruto a custos de fatores (PIBcf)**; este corresponde ao PIBpm menos os impostos indiretos mais os subsídios concedidos.
 
-PIBcf = PIBpm - impostos indiretos + subsídios concedidos
+<blockquote style="background: linear-gradient(135deg, rgba(4, 221, 250, 0.23), rgba(0, 38, 255, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**PIBcf = PIBpm - impostos indiretos + subsídios concedidos**</blockquote>
+
+
+| Critério                      | **PIB a preços de mercado (PIBpm)**                      | **PIB a custos de fatores (PIBcf)**                             |
+| ----------------------------- | -------------------------------------------------------- | --------------------------------------------------------------- |
+| Conceito                      | Valor da produção final aos preços pagos pelo consumidor | Valor da produção segundo a remuneração dos fatores de produção |
+| Ótica principal               | Produto / dispêndio                                      | Renda                                                           |
+| Inclui impostos indiretos     | Sim                                                      | Não                                                             |
+| Inclui subsídios              | Não (embutidos no preço)                                 | Sim                                                             |
+| Fórmula                       | PIBpm = C + I + G + (X − M)                              | PIBcf = PIBpm − impostos indiretos + subsídios                  |
 
 ## Página 10
 
 Assim, com a introdução do governo, acrescenta-se outro destino para a renda, que é o pagamento de **impostos (T)**, e um novo elemento de demanda, que são os **gastos públicos (G)**. Com relação aos impostos, deve-se notar que o valor dos impostos indiretos está embutido nos elementos de dispêndio (consumo, investimento), pois compõe o preço do produto final. Mas esse valor do imposto recebido pelas empresas incluído no preço de venda das mercadorias não é repassado às famílias (como remuneração dos fatores), mas arrecadado pelo governo. A outra categoria de impostos, os diretos, é uma dedução da renda das famílias e do lucro das empresas; isto é, esses agentes recebem uma renda bruta dada pelos salários, juros, lucros e aluguéis, mas uma parcela desta renda é transferida ao governo na forma de impostos diretos. Note-se, porém, que o governo também realiza transferências de renda para esses agentes. O governo paga aposentadorias, pensões, seguro-desemprego, juros sobre a dívida pública em posse desses agentes etc. Essas **transferências do governo** ampliam a renda desses agentes, podendo ser consideradas um imposto direto negativo, assim como os subsídios no caso dos impostos indiretos, como demonstrado anteriormente.[6]
 
+*[6] O governo ainda possui outras fontes de recursos denominadas em Contabilidade Nacional Outras Receitas Governamentais (ORG), que correspondem aos ganhos de aluguéis do governo, dividendos das empresas estatais etc. Nessa conta, inserem-se com sinal negativo os pagamentos de juros da dívida externa do setor público.*
+
 Outro ponto que deve ser destacado diz respeito aos gastos públicos. Com a definição de governo utilizada, os gastos considerados referem-se ao **consumo do governo**, e os investimentos públicos são computados juntamente com os demais investimentos.
 
-Pode-se definir T como a **renda líquida do setor público**, que corresponde à soma dos impostos diretos (Td) e indiretos (Ti) deduzidos os subsídios (Q) e as transferências (R). Assim:
+Pode-se definir **imposto T (T de 'Tax')** como a **renda líquida do setor público**, que corresponde à soma dos impostos diretos (Td) e indiretos (Ti) deduzidos os subsídios (Q) e as **transferências R (R de 'redistribution')**. Assim:
 
-T = (Td-R) + (Ti-Q)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">T = (Td - R) + (Ti - Q)</blockquote>
 
 Assim, do lado dos indivíduos (famílias), tem-se que a renda familiar (salários + juros + lucros + aluguéis) destina-se ao consumo pessoal (C), ao pagamento de impostos diretos (Td) e à **poupança pessoal (Sp)**. Note-se que na renda dos indivíduos agora se incorporam as transferências feitas pelo governo (R). Para manter-se compatível com a análise do produto e do dispêndio, considerar-se-á como **renda total** a renda familiar mais a soma dos impostos indiretos líquidos (Y = renda familiar mais impostos indiretos menos subsídios) e também serão somados os impostos indiretos líquidos ao lado do destino da renda familiar, de modo a usar-se o conceito de renda líquida do governo (T). Assim, tem-se:?
 
-Y=C+Sp+T (6)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">Y = C + Sp + T (Equação 6)</blockquote>
 
 Do lado do dispêndio, tem-se agora, além do consumo pessoal (C) e do investimento (1), que considera tanto os investimentos das empresas (Ip) como o investimento do governo (Ig), o consumo do governo (G). Tem-se, então:
 
-DA=C+I+G (7)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">DA = C + I + G (Equação 7)</blockquote>
 
 de (6) = (7), segue que:
 
-Sp+(T-R)=I+G (8)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">Sp + (T - R) = I + G (Equação 8)</blockquote>
 
 Rearranjando (8), tem-se:
 
-I-Sp=(T-R)-G (9)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">I - Sp = (T - R) - G (Equação 9)</blockquote>
 
 ## Página 11
-O lado direito desta equação corresponde à chamada **poupança pública (Sg)**. Assim, continua sendo válida a identidade entre poupança e investimento, só que agora se considera tanto a poupança pessoal (Sp) como a poupança pública (Sg).
 
-I=Sp+Sg (10)
+O lado direito desta equação corresponde à chamada **poupança pública (Sg)**. Assim, continua sendo válida a identidade entre poupança e investimento, só que agora se considera tanto a **poupança pessoal (Sp)** como a **poupança pública (Sg)**.
+
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">I = Sp + Sg (Equação 10)</blockquote>
+
 
 Note-se que a poupança pública não corresponde ao conceito de déficit público, que equivale à diferença entre o total de gastos do governo (consumo e investimento) e a arrecadação. O conceito de **déficit público (Dg)** corresponde à diferença entre o investimento público (Ig) e a poupança pública (Sg).
 
-Dg = Ig - Sg (11)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">Dg = Ig - Sg (11)</blockquote>
 
 Tomando-se a equação (10), tem-se:
 
-Ip+Ig=Sp+Sg
-
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">Ip+Ig=Sp+Sg
 Ig-Sg=Sp-Ip
+Dg=Sp-lp</blockquote>
 
-Dg=Sp-lp
-
-Percebe-se, portanto, que, sempre que houver um déficit público, isto é, Ig > Sg, ou seja, o governo gastar mais do que recebe, deve haver um excesso de poupança no setor privado para financiar o governo, isto é, Sp > Ip.
+Percebe-se, portanto, que, sempre que houver um déficit público, isto é, Ig > Sg, ou seja, **o governo gastar mais do que recebe, deve haver um excesso de poupança no setor privado para financiar o governo, isto é, Sp > Ip**.
 
 ### 2.5 RESTO DO MUNDO
 
@@ -332,11 +334,11 @@ Percebe-se, portanto, que nem todo produto gerado internamente é adquirido por 
 
 Com o Resto do Mundo, pode-se chegar a uma nova conceituação de produto: o **Produto Nacional Bruto a custos de fatores (PNBcf)**. Este refere-se à diferença entre o PIBcfe a renda líquida enviada ao exterior. No caso brasileiro, a renda líquida enviada ao exterior é positiva, principalmente em função do pagamento dos juros internacionais da dívida externa, dos lucros remetidos ao exterior, do pagamento de royalties e assistência técnica pagos aos estrangeiros. Nesse sentido, no caso brasileiro, diferentemente de outros países, tais como os Estados Unidos e a Alemanha, o PIBcf é maior que o PNBcf.
 
-PNBcf = PIBcf - Renda líquida enviada ao exterior
+<blockquote style="background: linear-gradient(135deg, rgba(4, 221, 250, 0.23), rgba(0, 38, 255, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">**PNBcf = PIBcf - Renda líquida enviada ao exterior**</blockquote>
 
 A introdução do Resto do Mundo traz algumas alterações nas identidades macroeconômicas. A oferta agregada é agora composta da produção interna (Y) mais as importações (M). A demanda agregada passa a ser constituída também pelas exportações (X), ou seja, demanda do Resto do Mundo pelo produto do país em questão. Assim, tem-se:
 
-Y+M=C+I+G+X ou Y=C+I+G+(X-M) (13)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">Y+M=C+I+G+X ou Y=C+I+G+(X-M) (13)</blockquote>
 
 Note-se que Y, sob a ótica da renda, engloba agora a Renda Líquida Enviada ao Exterior. Desse modo, tanto as exportações (X) como as importações (M) referem-se às transações com bens e serviços, excluídos os fatores de produção. A diferença entre a renda líquida enviada ao exterior e o saldo das exportações e importações de bens e serviços não fatores[8] é a chamada **poupança externa (Se)**.
 
@@ -344,7 +346,7 @@ Note-se que Y, sob a ótica da renda, engloba agora a Renda Líquida Enviada ao 
 
 A poupança agregada passa a ser a soma entre as poupanças do setor privado, do setor público e a externa. Consequentemente, a identidade macroeconômica entre poupança e investimento transforma-se em:
 
-I = Sp + Sg + Se (14)
+<blockquote style="background: linear-gradient(135deg, rgba(255, 184, 108, 0.1), rgba(255, 121, 198, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px;">I = Sp + Sg + Se (14)</blockquote>
 
 Ou seja, a identidade (14) diz que o investimento agora pode ser financiado tanto com poupança privada como com poupança pública, como com poupança externa. A poupança de cada um dos agentes é dada pela diferença entre sua renda líquida e seu consumo. Assim, tem-se:
 
@@ -366,7 +368,7 @@ Para fechar-se as medidas de produto e de renda, pode-se definir a chamada Renda
 
 ## Página 14
 
-PIBpm = valor monetário de venda dos produtos finais produzidos dentro de um país em determinado período 
+<blockquote style="background: linear-gradient(135deg, rgba(4, 221, 250, 0.23), rgba(0, 38, 255, 0.1)); border-left: 5px solidrgb(0, 17, 255); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">PIBpm = valor monetário de venda dos produtos finais produzidos dentro de um país em determinado período 
 
 PILpm = PIBpm - depreciação
 
@@ -378,7 +380,7 @@ RN = PNLcf
 
 RP = RN - lucros retidos — impostos diretos sobre empresas — outras receitas do governo + transferências governamentais
 
-RPD = RP — impostos diretos sobre famílias
+RPD = RP — impostos diretos sobre famílias</blockquote>
 
 ### 2.7 PRODUTO REAL E PRODUTO NOMINAL
 
@@ -406,37 +408,37 @@ O eixo horizontal mostra os anos de **1950 a 2022**, enquanto o eixo vertical ap
 
 **1950–1973: Crescimento contínuo e “Milagre Econômico”**
 
-* O PIB cresce de forma constante desde os anos 1950.
-* Entre **1968 e 1973**, ocorre o chamado **Milagre Econômico** e o **II Plano Nacional de Desenvolvimento (II PND)**, quando o crescimento se acelera de maneira intensa, elevando significativamente o nível de produção.
+O PIB cresce de forma constante desde os anos 1950.
+Entre **1968 e 1973**, ocorre o chamado **Milagre Econômico** e o **II Plano Nacional de Desenvolvimento (II PND)**, quando o crescimento se acelera de maneira intensa, elevando significativamente o nível de produção.
 
 **Início dos anos 1980: Crise da dívida**
 
-* A curva perde força e apresenta virtual estagnação.
-* A **Crise da Dívida Externa** (1980–1983) interrompe o dinamismo econômico, refletindo forte desaceleração do PIB.
+A curva perde força e apresenta virtual estagnação.
+A **Crise da Dívida Externa** (1980–1983) interrompe o dinamismo econômico, refletindo forte desaceleração do PIB.
 
 **Início dos anos 1990: Hiperinflação e Plano Collor**
 
-* O período mostra baixo crescimento e instabilidade.
-* O **Plano Collor** (1990) aparece no gráfico como um marco que coincide com nova queda e estagnação do PIB.
+O período mostra baixo crescimento e instabilidade.
+O **Plano Collor** (1990) aparece no gráfico como um marco que coincide com nova queda e estagnação do PIB.
 
 **A partir de 1994: Plano Real**
 
-* Com o **Plano Real**, a economia retoma trajetória de expansão.
-* O PIB cresce de forma mais estável até o fim dos anos 2000.
+Com o **Plano Real**, a economia retoma trajetória de expansão.
+O PIB cresce de forma mais estável até o fim dos anos 2000.
 
 **2008–2009: Crise Financeira Global (Crise Lehman)**
 
-* Observa-se uma desaceleração brusca em 2009, efeito da crise mundial deflagrada pela quebra do Lehman Brothers.
-* Após a queda, o PIB volta a subir, mas com menor intensidade do que no início dos anos 2000.
+Observa-se uma desaceleração brusca em 2009, efeito da crise mundial deflagrada pela quebra do Lehman Brothers.
+Após a queda, o PIB volta a subir, mas com menor intensidade do que no início dos anos 2000.
 
 **2014–2016: Recessão brasileira**
 
-* Ainda que não explicitamente rotulada na imagem, vê-se queda acentuada no período, refletindo a maior recessão da história recente do país.
+Ainda que não explicitamente rotulada na imagem, vê-se queda acentuada no período, refletindo a maior recessão da história recente do país.
 
 **2020: Pandemia da Covid-19**
 
-* O gráfico mostra forte contração do PIB em 2020.
-* Em 2021 e 2022, há recuperação, mas o nível permanece abaixo da tendência pré-pandemia.
+O gráfico mostra forte contração do PIB em 2020.
+Em 2021 e 2022, há recuperação, mas o nível permanece abaixo da tendência pré-pandemia.
 
 Fonte: dados básicos do IBGE (índice 2010 = 100). 
 
@@ -450,47 +452,47 @@ O eixo vertical mostra a **taxa de crescimento anual do PIB** (em %), variando a
 
 **1950–1960: Crescimento moderado com oscilações**
 
-* A economia cresce entre 3% e 8% ao ano, ainda que com certa volatilidade.
-* Destaca-se o **Plano de Metas** (governo Juscelino Kubitschek, 1956–1961), que impulsiona taxas de dois dígitos em alguns anos.
+A economia cresce entre 3% e 8% ao ano, ainda que com certa volatilidade.
+Destaca-se o **Plano de Metas** (governo Juscelino Kubitschek, 1956–1961), que impulsiona taxas de dois dígitos em alguns anos.
 
 **1968–1973: Milagre Econômico**
 
-* O gráfico evidencia picos expressivos, com crescimento anual superior a 10%.
-* Esse é o período de maior aceleração do PIB na série histórica recente.
+O gráfico evidencia picos expressivos, com crescimento anual superior a 10%.
+Esse é o período de maior aceleração do PIB na série histórica recente.
 
 **1974–1979: II Plano Nacional de Desenvolvimento (II PND)**
 
-* Ainda há crescimento elevado, porém menor que o do “Milagre”.
-* A linha mostra oscilações, mas permanece em nível positivo e relativamente alto.
+Ainda há crescimento elevado, porém menor que o do “Milagre”.
+A linha mostra oscilações, mas permanece em nível positivo e relativamente alto.
 
 **Início dos anos 1980: Crise da Dívida**
 
-* O gráfico cai drasticamente, chegando a valores próximos ou abaixo de –2,5%.
-* A economia brasileira entra em forte recessão, reflexo da crise da dívida externa e da escalada inflacionária.
+O gráfico cai drasticamente, chegando a valores próximos ou abaixo de –2,5%.
+A economia brasileira entra em forte recessão, reflexo da crise da dívida externa e da escalada inflacionária.
 
 **Início dos anos 1990: Plano Collor e recessões**
 
-* O crescimento se torna irregular e negativo em certos anos.
-* O **Plano Collor** coincide com uma queda acentuada, refletindo instabilidade macroeconômica, hiperinflação e contração da atividade.
+O crescimento se torna irregular e negativo em certos anos.
+O **Plano Collor** coincide com uma queda acentuada, refletindo instabilidade macroeconômica, hiperinflação e contração da atividade.
 
 **1994 em diante: Estabilização com o Plano Real**
 
-* Após 1994, o comportamento da série melhora, com crescimento mais estável, embora sem retornos elevados como nas décadas de 1960–1970.
-* A economia alterna anos de avanço moderado com quedas pontuais.
+Após 1994, o comportamento da série melhora, com crescimento mais estável, embora sem retornos elevados como nas décadas de 1960–1970.
+A economia alterna anos de avanço moderado com quedas pontuais.
 
 **2008–2009: Crise Global (Crise Lehman)**
 
-* Nota-se uma queda abrupta em 2009, seguida de recuperação rápida em 2010, quando o PIB volta a crescer intensamente.
+Nota-se uma queda abrupta em 2009, seguida de recuperação rápida em 2010, quando o PIB volta a crescer intensamente.
 
 **2014–2016: Grande recessão brasileira**
 
-* A linha mergulha novamente, alcançando valores muito negativos.
-* Trata-se da pior recessão das últimas décadas, apesar de não estar explicitamente rotulada na figura.
+A linha mergulha novamente, alcançando valores muito negativos.
+Trata-se da pior recessão das últimas décadas, apesar de não estar explicitamente rotulada na figura.
 
 **2020: Pandemia de Covid-19**
 
-* O gráfico registra forte contração, refletindo o impacto da pandemia sobre a atividade econômica.
-* Em 2021, ocorre recuperação significativa, ainda que acompanhada de nova desaceleração em 2022.
+O gráfico registra forte contração, refletindo o impacto da pandemia sobre a atividade econômica.
+Em 2021, ocorre recuperação significativa, ainda que acompanhada de nova desaceleração em 2022.
 
 Fonte: dados básicos do IBGE.
 
@@ -535,7 +537,9 @@ O objetivo deste capítulo era apresentar ao leitor os principais agregados macr
 
 Para comparações internacionais, costumamos utilizar o PIB em dólares de todos os países, mas não o PIB em dólares correntes, porque ele é muito afetado pela política cambial de cada país, e normalmente não reflete o real poder de compra do dólar, na comparação entre os países. Uma desvalorização cambial, por exemplo, reduz o PIB em dólares de imediato, não significando que o país ficou repentinamente mais pobre. Com a desvalorização do real, importamos menos, viajamos menos, mas não perdemos poder de compra internamente (nossos rendimentos não se alteraram), e, sim, o poder de compra externo, em vista da alteração da política cambial.
 
-Para sanar esse problema, exclusivamente para comparações internacionais, a ONU criou o conceito de **Purchasing Power Parity (PIBppp)** ou **Paridade do Poder de Compra (PIBppc)**, inspirado no Índice Big Mac da revista The Economist, que coleta o preço do Big Mac em mais de 100 países.[10] No PIBppp, todos os países têm a mesma base de referência, que são os preços em dólares de todas as mercadorias e serviços nos Estados Unidos. Os preços das mercadorias dos Estados Unidos são multiplicados pelas diferentes quantidades produzidas de cada país, da seguinte maneira:
+Para sanar esse problema, exclusivamente para comparações internacionais, a ONU criou o conceito de **Purchasing Power Parity (PIBppp)** ou **Paridade do Poder de Compra (PIBppc)**, inspirado no **Índice Big Mac da revista The Economist**, que coleta o preço do Big Mac em mais de 100 países.[10] No PIBppp, todos os países têm a mesma base de referência, que são os preços em dólares de todas as mercadorias e serviços nos Estados Unidos. Os preços das mercadorias dos Estados Unidos são multiplicados pelas diferentes quantidades produzidas de cada país, da seguinte maneira:
+
+*[10] O conceito de Paridade do Poder de Compra deriva do conceito econômico conhecido como Lei do Preço Único, onde se supõe que o preço de um bem ou serviço terá o mesmo preço em todos os países, independentemente de fatores como custos de transporte, barreiras à entrada de empresas etc. Supõe implicitamente mercados perfeitamente competitivos: se, por alguma razão, um dos bens ou serviços fosse vendido mais barato em qualquer país, sua demanda aumentaria, elevando seus preços, até que todos os países voltassem a praticar os mesmos preços. Se os países produzem um bem idêntico, o preço desse bem deveria ser o mesmo no mundo todo, não importando o país. Apesar de partir de premissas teóricas, tem a vantagem de, em comparações internacionais, eliminar as diferenças entre políticas cambiais entre países.*
 
 ## Página 20
 
@@ -600,15 +604,8 @@ Em termos per capita, China e Índia, assim como o Brasil, Rússia, Indonésia, 
 
 Portanto, para compararmos o tamanho das economias dos países, utilizamos valores em termos de poder de compra (PIB em dólares PPP). Agora, evidentemente, para as transações internacionais, tanto comerciais como financeiras, interessam os dólares correntes, que é como empresas e países consideram em seus resultados financeiros.
 
-2. Para uma análise mais detalhada das formas de medida e dos conceitos dos agregados macroeconômicos, ver Paulani e Braga (2020).
 
-
-6. O governo ainda possui outras fontes de recursos denominadas em Contabilidade Nacional Outras Receitas Governamentais (ORG), que correspondem aos ganhos de aluguéis do governo, dividendos das empresas estatais etc. Nessa conta, inserem-se com sinal negativo os pagamentos de juros da dívida externa do setor público.
 
 7. Deve-se observar, porém, que essa equação corresponde ao seguinte: Y = salários + lucros + juros + aluguéis + impostos indiretos — subsídios, enquanto a renda familiar (Yf) corresponde apenas aos quatro primeiros itens mais as transferências do governo. Assim: Yf= C+ Sp + Td.
 
 8. A renda líquida enviada ao exterior representa o pagamento dos serviços de fatores, enquanto os serviços não fatores referem-se aos pagamentos a outros serviços externos, como fretes, seguros, viagens internacionais, royalties.
-
-9. Ver o Capítulo 5, que discutirá inflação e índices de preços.
-
-10. O conceito de Paridade do Poder de Compra deriva do conceito econômico conhecido como Lei do Preço Único, onde se supõe que o preço de um bem ou serviço terá o mesmo preço em todos os países, independentemente de fatores como custos de transporte, barreiras à entrada de empresas etc. Supõe implicitamente mercados perfeitamente competitivos: se, por alguma razão, um dos bens ou serviços fosse vendido mais barato em qualquer país, sua demanda aumentaria, elevando seus preços, até que todos os países voltassem a praticar os mesmos preços. Se os países produzem um bem idêntico, o preço desse bem deveria ser o mesmo no mundo todo, não importando o país. Apesar de partir de premissas teóricas, tem a vantagem de, em comparações internacionais, eliminar as diferenças entre políticas cambiais entre países.

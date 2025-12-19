@@ -18,7 +18,6 @@ Instruções específicas:
     
     assunto deve ser "Cap. 1 - Introdução à Ciência Política".
 
-
 Exemplo de saída esperada:
 
 bibliografia_id	pergunta	resposta	prova	ano	assunto
