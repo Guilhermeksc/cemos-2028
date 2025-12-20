@@ -24,7 +24,16 @@
     
     <!-- Body -->
     <div class="janela-body">
-      <ng-content></ng-content>
+      <!-- Spinner de carregamento -->
+      <div *ngIf="isLoading" class="janela-loading-overlay">
+        <div class="janela-spinner-container">
+          <div class="janela-spinner"></div>
+          <p class="janela-spinner-message">Processando...</p>
+        </div>
+      </div>
+      <div [class.loading-content]="isLoading">
+        <ng-content></ng-content>
+      </div>
     </div>
     
     <!-- Footer com Botões -->

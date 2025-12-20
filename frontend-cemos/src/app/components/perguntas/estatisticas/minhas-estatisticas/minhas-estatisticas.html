@@ -1,4 +1,12 @@
 <div class="minhas-estatisticas-container">
+  <!-- Spinner de carregamento durante reset -->
+  <div *ngIf="isResetting" class="loading-overlay">
+    <div class="spinner-container">
+      <div class="spinner"></div>
+      <p class="spinner-message">Resetando estatísticas...</p>
+    </div>
+  </div>
+
   <!-- Componente de Detalhes da Matéria -->
   <app-info-materia-estatistica
     *ngIf="mostrarDetalhesMateria && materiaSelecionada"
@@ -9,8 +17,11 @@
   <!-- Cards de Matérias com Percentual de Acerto -->
   <div *ngIf="!mostrarDetalhesMateria" class="materias-cards-section">
     
-    <div *ngIf="isLoadingMaterias" class="loading">
-      <p>Carregando estatísticas por matéria...</p>
+    <div *ngIf="isLoadingMaterias" class="loading-materias">
+      <div class="spinner-container-inline">
+        <div class="spinner-inline"></div>
+        <p>Carregando estatísticas por matéria...</p>
+      </div>
     </div>
     
     <div *ngIf="!isLoadingMaterias && materiasEstatisticas.length > 0" class="materias-cards-grid">

@@ -2,7 +2,7 @@
   <div class="page-header">
     <h2 class="section-title">Bem vindo {{ currentUsername() }}!</h2>
     <div class="tools-grid">
-      <mat-card class="tool-card" (click)="navigateBibliografiaId()">
+      <mat-card *ngIf="isAdmin()" class="tool-card" (click)="navigateBibliografiaId()">
         <div class="tool-icon">
           <img src="/assets/img/svg/pilha-de-livros.svg" alt="Bibliografia ID">
         </div>
@@ -11,7 +11,7 @@
         </div>
       </mat-card>
 
-      <mat-card class="tool-card" (click)="navigateCronograma()">
+      <mat-card *ngIf="isAdmin()" class="tool-card" (click)="navigateCronograma()">
         <div class="tool-icon">
           <img src="/assets/img/svg/calendar.svg" alt="Cronograma">
         </div>

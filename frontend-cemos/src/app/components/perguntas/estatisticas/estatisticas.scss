@@ -45,13 +45,14 @@
         transition: color 0.3s ease, transform 0.3s ease !important;
         display: inline-block !important;
         pointer-events: none;
+        font-size: 1.5rem !important;
       }
     }
 
     ::ng-deep .tab-icon,
     ::ng-deep img.tab-icon {
-      width: 28px !important;
-      height: 28px !important;
+      width: 40px !important;
+      height: 40px !important;
       display: inline-block !important;
       flex-shrink: 0 !important;
       transition: transform 0.3s ease !important;

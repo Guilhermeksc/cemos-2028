@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 10000;
   padding: 1rem;
   animation: fadeIn 0.3s ease;
   backdrop-filter: blur(2px);
@@ -108,6 +108,56 @@
   overflow-y: auto;
   flex: 1;
   min-height: 0;
+  position: relative;
+
+  .janela-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    border-radius: 12px;
+    opacity: 1;
+    animation: none;
+
+    .janela-spinner-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .janela-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #e9ecef;
+        border-top: 4px solid #667eea;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      .janela-spinner-message {
+        margin: 0;
+        color: #333;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .loading-content {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
   // Estilos para conteúdo comum
   p {

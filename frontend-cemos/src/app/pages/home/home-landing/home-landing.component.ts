@@ -1,5 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,6 +11,7 @@ import { AuthService } from '../../../services/auth.service';
   selector: 'app-home-landing',
   standalone: true,
   imports: [
+    CommonModule,
     MatCardModule,
     MatIconModule,
     MatButtonModule
@@ -22,6 +24,7 @@ export class HomeLandingComponent {
   private currentUserSig = toSignal(this.authService.currentUser$, { initialValue: null });
 
   currentUsername = computed(() => this.currentUserSig()?.username || 'Usuário');
+  isAdmin = computed(() => this.currentUserSig()?.perfil === 'admin' || false);
 
   constructor(private router: Router) {}
 
