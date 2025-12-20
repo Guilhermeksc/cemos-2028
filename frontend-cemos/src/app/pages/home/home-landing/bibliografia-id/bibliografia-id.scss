@@ -1,35 +1,5 @@
 @use 'sass:color';
 
-.bibliografia-section {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  .bibliografia-header {
-    text-align: center;
-    margin-bottom: 2rem;
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #1a237e;
-    }
-
-    p {
-      margin: 0.5rem 0 0 0;
-      color: #555;
-      font-size: 1rem;
-    }
-  }
-}
-
-.navigation-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
 
 @media (max-width: 600px) {
   .navigation-buttons {

@@ -1,21 +1,13 @@
 <div class="estatisticas-container">
-  <!-- Header com Estatísticas Gerais -->
-  <div class="header">
-    <button 
-      mat-stroked-button 
-      color="primary" 
-      (click)="navigateHome()" 
-      aria-label="Voltar para Home"
-      class="back-button">
-      <mat-icon>arrow_back</mat-icon>
-      Voltar à Página Principal
-    </button>
-
-  </div>
-
   <!-- Tabs para Minhas Estatísticas e Estatísticas Gerais -->
   <mat-tab-group class="estatisticas-tabs">
-    <mat-tab label="Minhas Estatísticas">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div class="tab-label-content">
+          <img src="/assets/img/svg/statistcs.svg" alt="Estatísticas" class="tab-icon" />
+          <span>Minhas Estatísticas</span>
+        </div>
+      </ng-template>
       <ng-template matTabContent>
         <app-minhas-estatisticas
           [estatisticasUsuario]="estatisticasUsuario"
@@ -23,19 +15,19 @@
           [isResetting]="isResetting"
           [materiasEstatisticas]="materiasEstatisticas"
           [isLoadingMaterias]="isLoadingMaterias"
-          [questoesAcertadas]="questoesAcertadas"
-          [questoesErradas]="questoesErradas"
-          [isLoadingQuestoes]="isLoadingQuestoes"
-          [filtroQuestoes]="filtroQuestoes"
           (resetarEstatisticas)="resetarEstatisticas()"
-          (resetarEstatisticasMateria)="resetarEstatisticasMateria($event)"
-          (carregarQuestoes)="carregarQuestoes($event)"
-          (toggleMateria)="toggleMateria($event)">
+          (resetarEstatisticasMateria)="resetarEstatisticasMateria($event)">
         </app-minhas-estatisticas>
       </ng-template>
     </mat-tab>
     
-    <mat-tab label="Estatísticas Gerais" *ngIf="isAdmin">
+    <mat-tab *ngIf="isAdmin">
+      <ng-template mat-tab-label>
+        <div class="tab-label-content">
+          <img src="/assets/img/svg/benchmark.svg" alt="Benchmark" class="tab-icon" />
+          <span>Estatísticas Gerais</span>
+        </div>
+      </ng-template>
       <ng-template matTabContent>
         <app-estatisticas-gerais
           [rankingGeral]="rankingGeral"
@@ -45,4 +37,15 @@
       </ng-template>
     </mat-tab>
   </mat-tab-group>
+
+  <!-- Janela Genérica para Confirmações -->
+  <app-janela-generica
+    [titulo]="tituloJanela"
+    [mostrar]="mostrarJanelaConfirmacao"
+    [botoes]="botoesJanela"
+    [isLoading]="isResetting"
+    [maxWidth]="'500px'"
+    (fechar)="fecharJanelaConfirmacao()">
+    <div [innerHTML]="formatarMensagemComQuebrasDeLinha(mensagemJanela)"></div>
+  </app-janela-generica>
 </div>

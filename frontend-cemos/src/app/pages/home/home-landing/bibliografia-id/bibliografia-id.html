@@ -1,10 +1,4 @@
 <section class="bibliografia-section">
-  <div class="navigation-buttons">
-    <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
-      <mat-icon>arrow_back</mat-icon> Voltar à Página Principal
-    </button>
-  </div>
-
   <div *ngIf="isLoading" class="status-message">Carregando bibliografia...</div>
   <div *ngIf="!isLoading && errorMessage" class="status-message error">{{ errorMessage }}</div>
 

@@ -11,6 +11,7 @@ import { first } from 'rxjs/operators';
 import { forkJoin } from 'rxjs';
 import { MinhasEstatisticas } from './minhas-estatisticas/minhas-estatisticas';
 import { EstatisticasGerais } from './estatisticas-gerais/estatisticas-gerais';
+import { JanelaGenerica, BotaoJanela } from '../../janela-generica/janela-generica';
 
 interface MateriaEstatisticas {
   materia: string;
@@ -28,7 +29,7 @@ interface MateriaEstatisticas {
 @Component({
   selector: 'app-estatisticas',
   standalone: true,
-  imports: [CommonModule, MatIconModule, MatTabsModule, MatButtonModule, MinhasEstatisticas, EstatisticasGerais],
+  imports: [CommonModule, MatIconModule, MatTabsModule, MatButtonModule, MinhasEstatisticas, EstatisticasGerais, JanelaGenerica],
   templateUrl: './estatisticas.html',
   styleUrl: './estatisticas.scss'
 })
@@ -59,13 +60,13 @@ export class EstatisticasComponent implements OnInit {
   materiasEstatisticas: MateriaEstatisticas[] = [];
   isLoadingMaterias = false;
 
-  // Visualização de questões
-  questoesAcertadas: any[] = [];
-  questoesErradas: any[] = [];
-  isLoadingQuestoes = false;
-  filtroQuestoes: 'todas' | 'acertadas' | 'erradas' = 'todas';
-  paginaQuestoes = 1;
-  totalQuestoes = 0;
+  // Janela genérica para confirmação
+  mostrarJanelaConfirmacao = false;
+  tituloJanela = '';
+  mensagemJanela = '';
+  botoesJanela: BotaoJanela[] = [];
+  tipoReset: 'todas' | 'materia' | null = null;
+  bibliografiaIdsParaReset: number[] = [];
 
   ngOnInit() {
     // Obter valor atual do usuário do Observable
@@ -88,10 +89,6 @@ export class EstatisticasComponent implements OnInit {
       next: (data) => {
         this.estatisticasUsuario = data;
         this.isLoading = false;
-        // Carregar questões acertadas após carregar estatísticas
-        if (data.total_acertos > 0) {
-          this.carregarQuestoes('acertadas');
-        }
       },
       error: (error) => {
         console.error('Erro ao carregar estatísticas:', error);
@@ -123,27 +120,42 @@ export class EstatisticasComponent implements OnInit {
   }
 
   resetarEstatisticas() {
-    // Resetar todas as estatísticas
-    const mensagem = `Tem certeza que deseja resetar todas as suas estatísticas?\n\nTodas as suas respostas serão deletadas, mas as questões erradas serão preservadas para estatísticas gerais.`;
-    
-    if (!confirm(mensagem)) {
-      return;
-    }
+    this.tipoReset = 'todas';
+    this.tituloJanela = 'Resetar Todas as Estatísticas';
+    this.mensagemJanela = 'Tem certeza que deseja resetar todas as suas estatísticas?\n\nTodas as suas respostas serão deletadas, mas as questões erradas serão preservadas para estatísticas gerais.';
+    this.botoesJanela = [
+      {
+        texto: 'Cancelar',
+        tipo: 'secondary',
+        acao: () => this.fecharJanelaConfirmacao()
+      },
+      {
+        texto: 'Confirmar',
+        tipo: 'danger',
+        acao: () => this.confirmarResetEstatisticas()
+      }
+    ];
+    this.mostrarJanelaConfirmacao = true;
+  }
 
+  confirmarResetEstatisticas() {
     this.isResetting = true;
     this.perguntasService.resetarEstatisticas().subscribe({
       next: (response) => {
-        alert(`Estatísticas resetadas com sucesso!\n\n${response.total_respostas_deletadas} respostas deletadas\n${response.questoes_erradas_preservadas} questões erradas preservadas`);
+        this.fecharJanelaConfirmacao();
+        this.mostrarJanelaSucesso(
+          'Estatísticas Resetadas',
+          `Estatísticas resetadas com sucesso!\n\n${response.total_respostas_deletadas} respostas deletadas\n${response.questoes_erradas_preservadas} questões erradas preservadas`
+        );
         // Recarregar estatísticas
         this.carregarEstatisticasUsuario();
         this.carregarEstatisticasPorMateria();
-        this.questoesAcertadas = [];
-        this.questoesErradas = [];
         this.isResetting = false;
       },
       error: (error) => {
         console.error('Erro ao resetar estatísticas:', error);
-        alert('Erro ao resetar estatísticas. Tente novamente.');
+        this.fecharJanelaConfirmacao();
+        this.mostrarJanelaErro('Erro ao resetar estatísticas. Tente novamente.');
         this.isResetting = false;
       }
     });
@@ -154,29 +166,119 @@ export class EstatisticasComponent implements OnInit {
       return;
     }
 
-    const mensagem = `Tem certeza que deseja resetar as estatísticas desta matéria?\n\nTodas as respostas relacionadas a esta matéria serão deletadas, mas as questões erradas serão preservadas para estatísticas gerais.`;
-    
-    if (!confirm(mensagem)) {
-      return;
-    }
+    // Encontrar o nome da matéria a partir dos bibliografiaIds
+    const nomeMateria = this.obterNomeMateriaPorBibliografiaIds(bibliografiaIds);
 
+    this.tipoReset = 'materia';
+    this.bibliografiaIdsParaReset = bibliografiaIds;
+    this.tituloJanela = `Resetar Estatísticas da Matéria ${nomeMateria ? nomeMateria : ''}`.trim();
+    this.mensagemJanela = 'Tem certeza que deseja resetar as estatísticas desta matéria?\n\nTodas as respostas relacionadas a esta matéria serão deletadas do perfil do usuário no Banco de Dados.';
+    this.botoesJanela = [
+      {
+        texto: 'Cancelar',
+        tipo: 'secondary',
+        acao: () => this.fecharJanelaConfirmacao()
+      },
+      {
+        texto: 'Confirmar',
+        tipo: 'danger',
+        acao: () => this.confirmarResetEstatisticasMateria()
+      }
+    ];
+    this.mostrarJanelaConfirmacao = true;
+  }
+
+  confirmarResetEstatisticasMateria() {
     this.isResetting = true;
-    this.perguntasService.resetarEstatisticas(undefined, bibliografiaIds).subscribe({
+    this.perguntasService.resetarEstatisticas(undefined, this.bibliografiaIdsParaReset).subscribe({
       next: (response) => {
-        alert(`Estatísticas da matéria resetadas com sucesso!\n\n${response.total_respostas_deletadas} respostas deletadas\n${response.questoes_erradas_preservadas} questões erradas preservadas`);
+        this.fecharJanelaConfirmacao();
+        this.mostrarJanelaSucesso(
+          'Estatísticas Resetadas',
+          `Estatísticas da matéria resetadas com sucesso!\n\n${response.total_respostas_deletadas} respostas deletadas\n${response.questoes_erradas_preservadas} questões erradas preservadas`
+        );
         // Recarregar estatísticas
         this.carregarEstatisticasUsuario();
         this.carregarEstatisticasPorMateria();
-        this.questoesAcertadas = [];
-        this.questoesErradas = [];
         this.isResetting = false;
       },
       error: (error) => {
         console.error('Erro ao resetar estatísticas da matéria:', error);
-        alert('Erro ao resetar estatísticas. Tente novamente.');
+        this.fecharJanelaConfirmacao();
+        this.mostrarJanelaErro('Erro ao resetar estatísticas. Tente novamente.');
         this.isResetting = false;
       }
     });
+  }
+
+  fecharJanelaConfirmacao() {
+    this.mostrarJanelaConfirmacao = false;
+    this.tipoReset = null;
+    this.bibliografiaIdsParaReset = [];
+  }
+
+  mostrarJanelaSucesso(titulo: string, mensagem: string) {
+    this.tituloJanela = titulo;
+    this.mensagemJanela = mensagem;
+    this.botoesJanela = [
+      {
+        texto: 'OK',
+        tipo: 'primary',
+        acao: () => this.fecharJanelaConfirmacao()
+      }
+    ];
+    this.mostrarJanelaConfirmacao = true;
+  }
+
+  mostrarJanelaErro(mensagem: string) {
+    this.tituloJanela = 'Erro';
+    this.mensagemJanela = mensagem;
+    this.botoesJanela = [
+      {
+        texto: 'OK',
+        tipo: 'primary',
+        acao: () => this.fecharJanelaConfirmacao()
+      }
+    ];
+    this.mostrarJanelaConfirmacao = true;
+  }
+
+  /**
+   * Converte quebras de linha (\n) em tags <br> para exibição no HTML
+   */
+  formatarMensagemComQuebrasDeLinha(mensagem: string): string {
+    if (!mensagem) return '';
+    return mensagem.replace(/\n/g, '<br>');
+  }
+
+  /**
+   * Obtém o nome da matéria a partir dos IDs de bibliografia
+   */
+  obterNomeMateriaPorBibliografiaIds(bibliografiaIds: number[]): string {
+    if (!bibliografiaIds || bibliografiaIds.length === 0) {
+      return '';
+    }
+
+    // Verificar se todos os IDs pertencem à mesma matéria
+    for (const [materia, ids] of Object.entries(this.materiasConfig)) {
+      // Verificar se todos os bibliografiaIds estão na lista desta matéria
+      const todosPertencem = bibliografiaIds.every(id => ids.includes(id));
+      if (todosPertencem) {
+        return materia;
+      }
+    }
+
+    // Se não encontrou uma matéria específica, tentar encontrar pela primeira bibliografia
+    if (bibliografiaIds.length > 0) {
+      const primeiroId = bibliografiaIds[0];
+      for (const [materia, ids] of Object.entries(this.materiasConfig)) {
+        if (ids.includes(primeiroId)) {
+          return materia;
+        }
+      }
+    }
+
+    return '';
   }
 
 
@@ -274,115 +376,6 @@ export class EstatisticasComponent implements OnInit {
     }
   }
 
-  /**
-   * Alterna expansão de uma matéria
-   */
-  toggleMateria(index: number) {
-    this.materiasEstatisticas[index].expanded = !this.materiasEstatisticas[index].expanded;
-  }
-
-  /**
-   * Obtém estatísticas de uma bibliografia específica
-   */
-  getEstatisticasBibliografia(bibliografiaId: number): any {
-    if (!this.estatisticasUsuario || !this.estatisticasUsuario.por_bibliografia) {
-      return null;
-    }
-    
-    return this.estatisticasUsuario.por_bibliografia.find(
-      (bib: any) => bib.bibliografia_id === bibliografiaId
-    );
-  }
-
-  /**
-   * Carrega questões acertadas ou erradas
-   */
-  carregarQuestoes(filtro: 'todas' | 'acertadas' | 'erradas' = 'todas') {
-    this.filtroQuestoes = filtro;
-    this.isLoadingQuestoes = true;
-    
-    const acertou = filtro === 'acertadas' ? true : filtro === 'erradas' ? false : undefined;
-    
-    this.perguntasService.getMinhasRespostas(acertou, this.paginaQuestoes, 50).subscribe({
-      next: (response) => {
-        if (filtro === 'acertadas') {
-          this.questoesAcertadas = response.results || [];
-        } else if (filtro === 'erradas') {
-          this.questoesErradas = response.results || [];
-        }
-        this.totalQuestoes = response.count || 0;
-        this.isLoadingQuestoes = false;
-      },
-      error: (error) => {
-        console.error('Erro ao carregar questões:', error);
-        this.isLoadingQuestoes = false;
-      }
-    });
-  }
-
-  /**
-   * Obtém questões baseado no filtro atual
-   */
-  getQuestoesAtuais(): any[] {
-    if (this.filtroQuestoes === 'acertadas') {
-      return this.questoesAcertadas;
-    } else if (this.filtroQuestoes === 'erradas') {
-      return this.questoesErradas;
-    }
-    return [];
-  }
-
-  /**
-   * Formata resposta do usuário para exibição
-   */
-  formatarRespostaUsuario(resposta: any, tipo: string): string {
-    if (tipo === 'multipla') {
-      return resposta.toUpperCase();
-    } else if (tipo === 'vf') {
-      return resposta ? 'Verdadeiro' : 'Falso';
-    } else if (tipo === 'correlacao') {
-      // Converter formato do backend para exibição
-      const pares: string[] = [];
-      for (const [key, value] of Object.entries(resposta)) {
-        const itemIndex = parseInt(key) + 1;
-        const letterIndex = parseInt(value as string);
-        const letter = String.fromCharCode(65 + letterIndex); // A, B, C...
-        pares.push(`${itemIndex} → ${letter}`);
-      }
-      return pares.join(', ');
-    }
-    return String(resposta);
-  }
-
-  /**
-   * Formata resposta correta para exibição
-   */
-  formatarRespostaCorreta(questao: any): string {
-    if (!questao) return 'N/A';
-    
-    if (questao.tipo === 'multipla') {
-      return questao.resposta_correta.toUpperCase();
-    } else if (questao.tipo === 'vf') {
-      return 'Verdadeiro';
-    } else if (questao.tipo === 'correlacao') {
-      const pares: string[] = [];
-      for (const [key, value] of Object.entries(questao.resposta_correta)) {
-        const itemIndex = parseInt(key) + 1;
-        const letterIndex = parseInt(value as string);
-        const letter = String.fromCharCode(65 + letterIndex); // A, B, C...
-        pares.push(`${itemIndex} → ${letter}`);
-      }
-      return pares.join(', ');
-    }
-    return String(questao.resposta_correta);
-  }
-
-  /**
-   * Retorna letra da coluna B baseado no índice
-   */
-  getLetraColunaB(index: number): string {
-    return String.fromCharCode(65 + index); // A, B, C...
-  }
 
   getMateriaPorBibliografiaId(bibliografiaId: number): string {
     for (const materiaStat of this.materiasEstatisticas) {

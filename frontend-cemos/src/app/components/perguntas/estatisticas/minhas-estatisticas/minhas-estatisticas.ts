@@ -1,7 +1,8 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { Bibliografia } from '../../../../interfaces/perguntas.interface';
+import { InfoMateriaEstatistica } from './info-materia-estatistica/info-materia-estatistica';
 
 interface MateriaEstatisticas {
   materia: string;
@@ -19,94 +20,28 @@ interface MateriaEstatisticas {
 @Component({
   selector: 'app-minhas-estatisticas',
   standalone: true,
-  imports: [CommonModule, MatIconModule],
+  imports: [CommonModule, MatIconModule, InfoMateriaEstatistica],
   templateUrl: './minhas-estatisticas.html',
   styleUrl: './minhas-estatisticas.scss'
 })
-export class MinhasEstatisticas {
+export class MinhasEstatisticas implements OnDestroy {
   @Input() estatisticasUsuario: any = null;
   @Input() isLoading = false;
   @Input() isResetting = false;
   @Input() materiasEstatisticas: MateriaEstatisticas[] = [];
   @Input() isLoadingMaterias = false;
-  @Input() questoesAcertadas: any[] = [];
-  @Input() questoesErradas: any[] = [];
-  @Input() isLoadingQuestoes = false;
-  @Input() filtroQuestoes: 'todas' | 'acertadas' | 'erradas' = 'todas';
 
   @Output() resetarEstatisticas = new EventEmitter<void>();
   @Output() resetarEstatisticasMateria = new EventEmitter<number[]>();
-  @Output() carregarQuestoes = new EventEmitter<'todas' | 'acertadas' | 'erradas'>();
-  @Output() toggleMateria = new EventEmitter<number>();
 
   materiaSelecionada: MateriaEstatisticas | null = null;
-  mostrarModalMateria = false;
+  mostrarDetalhesMateria = false;
 
-  calcularTaxaAcerto(acertos: number, total: number): number {
-    if (total === 0) return 0;
-    return Math.round((acertos / total) * 100 * 100) / 100;
-  }
-
-  getEstatisticasBibliografia(bibliografiaId: number): any {
-    if (!this.estatisticasUsuario || !this.estatisticasUsuario.por_bibliografia) {
-      return null;
-    }
-    
-    return this.estatisticasUsuario.por_bibliografia.find(
-      (bib: any) => bib.bibliografia_id === bibliografiaId
-    );
-  }
-
-  getQuestoesAtuais(): any[] {
-    if (this.filtroQuestoes === 'acertadas') {
-      return this.questoesAcertadas;
-    } else if (this.filtroQuestoes === 'erradas') {
-      return this.questoesErradas;
-    }
-    return [];
-  }
-
-  formatarRespostaUsuario(resposta: any, tipo: string): string {
-    if (tipo === 'multipla') {
-      return resposta.toUpperCase();
-    } else if (tipo === 'vf') {
-      return resposta ? 'Verdadeiro' : 'Falso';
-    } else if (tipo === 'correlacao') {
-      const pares: string[] = [];
-      for (const [key, value] of Object.entries(resposta)) {
-        const itemIndex = parseInt(key) + 1;
-        const letterIndex = parseInt(value as string);
-        const letter = String.fromCharCode(65 + letterIndex);
-        pares.push(`${itemIndex} → ${letter}`);
-      }
-      return pares.join(', ');
-    }
-    return String(resposta);
-  }
-
-  formatarRespostaCorreta(questao: any): string {
-    if (!questao) return 'N/A';
-    
-    if (questao.tipo === 'multipla') {
-      return questao.resposta_correta.toUpperCase();
-    } else if (questao.tipo === 'vf') {
-      return 'Verdadeiro';
-    } else if (questao.tipo === 'correlacao') {
-      const pares: string[] = [];
-      for (const [key, value] of Object.entries(questao.resposta_correta)) {
-        const itemIndex = parseInt(key) + 1;
-        const letterIndex = parseInt(value as string);
-        const letter = String.fromCharCode(65 + letterIndex);
-        pares.push(`${itemIndex} → ${letter}`);
-      }
-      return pares.join(', ');
-    }
-    return String(questao.resposta_correta);
-  }
-
-  getLetraColunaB(index: number): string {
-    return String.fromCharCode(65 + index);
-  }
+  // Tooltip customizado que segue o mouse
+  showTooltipFlag: boolean = false;
+  tooltipX: number = 0;
+  tooltipY: number = 0;
+  tooltipTimeout: any = null;
 
   onResetarEstatisticas() {
     this.resetarEstatisticas.emit();
@@ -121,23 +56,101 @@ export class MinhasEstatisticas {
     this.resetarEstatisticasMateria.emit(materiaStat.bibliografiaIds);
   }
 
-  onCarregarQuestoes(filtro: 'todas' | 'acertadas' | 'erradas') {
-    this.carregarQuestoes.emit(filtro);
-  }
-
-  onToggleMateria(index: number) {
-    this.toggleMateria.emit(index);
-  }
-
-  abrirModalMateria(materiaStat: MateriaEstatisticas, event: Event) {
-    event.stopPropagation();
+  abrirDetalhesMateria(materiaStat: MateriaEstatisticas, event: Event) {
+    // Não fazer stopPropagation aqui para permitir que o clique no card funcione
+    // O stopPropagation será feito apenas no botão de resetar
     this.materiaSelecionada = materiaStat;
-    this.mostrarModalMateria = true;
+    this.mostrarDetalhesMateria = true;
   }
 
-  fecharModalMateria() {
-    this.mostrarModalMateria = false;
+  fecharDetalhesMateria() {
+    this.mostrarDetalhesMateria = false;
     this.materiaSelecionada = null;
+  }
+
+  /**
+   * Obtém o ícone da matéria
+   */
+  getMateriaIcon(materia: string): string {
+    const icons: { [key: string]: string } = {
+      'Intendência': 'inventory_2',
+      'Estratégia': 'route',
+      'Planejamento Militar': 'military_tech',
+      'História': 'history_edu',
+      'Geopolítica e Relações Internacionais': 'public',
+      'Política': 'account_balance',
+      'Direito': 'gavel',
+      'Economia': 'show_chart'
+    };
+    return icons[materia] || 'school';
+  }
+
+  /**
+   * Obtém o índice da cor baseado no nome da matéria
+   */
+  getMateriaColorIndex(materia: string): number {
+    const colorMap: { [key: string]: number } = {
+      'Intendência': 0,
+      'Estratégia': 1,
+      'Política': 2,
+      'Planejamento Militar': 3,
+      'Economia': 4,
+      'História': 5,
+      'Direito': 6,
+      'Geopolítica e Relações Internacionais': 7
+    };
+    return colorMap[materia] ?? 0;
+  }
+
+  /**
+   * Mostra o tooltip ao passar o mouse sobre o card (com delay de 0.5s)
+   */
+  showTooltip(event: MouseEvent) {
+    // Limpa qualquer timeout anterior
+    if (this.tooltipTimeout) {
+      clearTimeout(this.tooltipTimeout);
+    }
+    
+    // Atualiza a posição do tooltip enquanto aguarda
+    this.moveTooltip(event);
+    
+    // Define um timeout de 0.5 segundos antes de mostrar
+    this.tooltipTimeout = setTimeout(() => {
+      this.showTooltipFlag = true;
+      this.moveTooltip(event);
+    }, 500);
+  }
+
+  /**
+   * Esconde o tooltip ao sair do mouse do card
+   */
+  hideTooltip() {
+    // Cancela o timeout se ainda não foi executado
+    if (this.tooltipTimeout) {
+      clearTimeout(this.tooltipTimeout);
+      this.tooltipTimeout = null;
+    }
+    this.showTooltipFlag = false;
+  }
+
+  /**
+   * Move o tooltip seguindo o cursor do mouse
+   */
+  moveTooltip(event: MouseEvent) {
+    // Offset para posicionar o tooltip ao lado do cursor
+    const offsetX = 15;
+    const offsetY = -10;
+    this.tooltipX = event.clientX + offsetX;
+    this.tooltipY = event.clientY + offsetY;
+  }
+
+  /**
+   * Limpa o timeout ao destruir o componente
+   */
+  ngOnDestroy() {
+    if (this.tooltipTimeout) {
+      clearTimeout(this.tooltipTimeout);
+    }
   }
 
   /**

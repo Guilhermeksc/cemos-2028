@@ -1,13 +1,4 @@
 .calendar-section {
-  margin-top: 3rem;
-  .navigation-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-
   @media (max-width: 600px) {
     .navigation-buttons {
       flex-direction: column;

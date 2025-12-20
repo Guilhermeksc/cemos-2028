@@ -1,0 +1,241 @@
+<div class="info-materia-container">
+  <!-- Título com degradê, ícone e botão voltar -->
+  <div class="title-section" [style.background]="getMateriaGradient()">
+    <button class="btn-voltar" (click)="onVoltar()">
+      <mat-icon>arrow_back</mat-icon>
+      <span>Voltar</span>
+    </button>
+    <mat-icon class="materia-icon">{{ getMateriaIcon() }}</mat-icon>
+    <h2 class="materia-title">{{ materiaEstatistica.materia }}</h2>
+  </div>
+
+  <!-- Loading -->
+  <div *ngIf="isLoading" class="loading">
+    <p>Carregando estatísticas...</p>
+  </div>
+
+  <!-- Resumo de Estatísticas -->
+  <div *ngIf="!isLoading" class="stats-summary">
+    <div class="summary-card">
+      <div class="summary-label">Total de Respostas</div>
+      <div class="summary-value">{{ materiaEstatistica.estatisticas.total }}</div>
+    </div>
+    <div class="summary-card success">
+      <div class="summary-label">Acertos</div>
+      <div class="summary-value">{{ materiaEstatistica.estatisticas.acertos }}</div>
+    </div>
+    <div class="summary-card error">
+      <div class="summary-label">Erros</div>
+      <div class="summary-value">{{ materiaEstatistica.estatisticas.erros }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Taxa de Acerto</div>
+      <div class="summary-value">{{ materiaEstatistica.estatisticas.taxa_acerto }}%</div>
+    </div>
+  </div>
+
+  <!-- Estatísticas por Tipo de Questão -->
+  <div *ngIf="!isLoading && estatisticasPorTipo.length > 0" class="stats-section">
+    <h3>Estatísticas por Tipo de Questão</h3>
+    <div class="table-container">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Total</th>
+            <th>Acertos</th>
+            <th>Erros</th>
+            <th>Taxa de Acerto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of estatisticasPorTipo">
+            <td>{{ item.pergunta_tipo === 'multipla' ? 'Múltipla Escolha' : item.pergunta_tipo === 'vf' ? 'Verdadeiro/Falso' : 'Correlação' }}</td>
+            <td>{{ item.total }}</td>
+            <td class="success-text">{{ item.acertos }}</td>
+            <td class="error-text">{{ item.erros }}</td>
+            <td>{{ calcularTaxaAcerto(item.acertos, item.total) }}%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Estatísticas por Bibliografia -->
+  <div *ngIf="!isLoading && estatisticasPorBibliografia.length > 0" class="stats-section">
+    <h3>Estatísticas por Bibliografia</h3>
+    <div class="table-container">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Bibliografia</th>
+            <th>Total</th>
+            <th>Acertos</th>
+            <th>Erros</th>
+            <th>Taxa de Acerto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of estatisticasPorBibliografia">
+            <td>{{ getBibliografiaNome(item.bibliografia_id) }}</td>
+            <td>{{ item.total }}</td>
+            <td class="success-text">{{ item.acertos }}</td>
+            <td class="error-text">{{ item.erros }}</td>
+            <td>{{ calcularTaxaAcerto(item.acertos, item.total) }}%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Estatísticas por Assunto -->
+  <div *ngIf="!isLoading && estatisticasPorAssunto.length > 0" class="stats-section">
+    <h3>Estatísticas por Assunto</h3>
+    <div class="table-container">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Assunto</th>
+            <th>Total</th>
+            <th>Acertos</th>
+            <th>Erros</th>
+            <th>Taxa de Acerto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of estatisticasPorAssunto">
+            <td>{{ item.assunto || 'Sem assunto' }}</td>
+            <td>{{ item.total }}</td>
+            <td class="success-text">{{ item.acertos }}</td>
+            <td class="error-text">{{ item.erros }}</td>
+            <td>{{ calcularTaxaAcerto(item.acertos, item.total) }}%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Questões Erradas -->
+  <div *ngIf="!isLoading" class="questoes-section">
+    <div class="questoes-header">
+      <h3>Questões Erradas</h3>
+      <button 
+        class="btn-toggle-questoes"
+        [class.active]="mostrarQuestoesErradas"
+        (click)="carregarQuestoesErradas()">
+        <mat-icon>{{ mostrarQuestoesErradas ? 'expand_less' : 'expand_more' }}</mat-icon>
+        <span>{{ mostrarQuestoesErradas ? 'Ocultar' : 'Mostrar' }} Questões Erradas</span>
+        <span *ngIf="materiaEstatistica.estatisticas.erros > 0" class="badge">
+          ({{ materiaEstatistica.estatisticas.erros }})
+        </span>
+      </button>
+    </div>
+
+    <div *ngIf="isLoadingQuestoes" class="loading">
+      <p>Carregando questões erradas...</p>
+    </div>
+
+    <div *ngIf="mostrarQuestoesErradas && !isLoadingQuestoes && questoesErradas.length > 0" class="questoes-list">
+      <div class="questoes-info">
+        <p>Mostrando {{ questoesErradas.length }} de {{ materiaEstatistica.estatisticas.erros }} questões erradas</p>
+      </div>
+      
+      <div 
+        *ngFor="let item of questoesErradas; let i = index" 
+        class="questao-item errada">
+        
+        <div class="questao-header">
+          <div class="questao-status">
+            <mat-icon class="status-icon error">cancel</mat-icon>
+            <span class="questao-numero">Questão #{{ item.questao?.id || item.resposta.pergunta_id }}</span>
+            <span class="questao-tipo">{{ item.resposta.pergunta_tipo === 'multipla' ? 'Múltipla Escolha' : item.resposta.pergunta_tipo === 'vf' ? 'Verdadeiro/Falso' : 'Correlação' }}</span>
+          </div>
+          <div class="questao-meta">
+            <span *ngIf="item.questao?.bibliografia_titulo" class="bibliografia">{{ item.questao.bibliografia_titulo }}</span>
+            <span *ngIf="item.questao?.assunto" class="assunto">{{ item.questao.assunto }}</span>
+            <span class="data">{{ item.resposta.timestamp | date:'dd/MM/yyyy HH:mm' }}</span>
+          </div>
+        </div>
+
+        <div class="questao-content" *ngIf="item.questao">
+          <div class="questao-texto">
+            <h4>Pergunta:</h4>
+            <p>{{ item.questao.pergunta }}</p>
+          </div>
+
+          <!-- Múltipla Escolha -->
+          <div *ngIf="item.questao.tipo === 'multipla'" class="questao-alternativas">
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'a'">
+              <strong>A)</strong> {{ item.questao.alternativa_a }}
+            </div>
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'b'">
+              <strong>B)</strong> {{ item.questao.alternativa_b }}
+            </div>
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'c'">
+              <strong>C)</strong> {{ item.questao.alternativa_c }}
+            </div>
+            <div class="alternativa" [class.correta]="item.questao.resposta_correta === 'd'">
+              <strong>D)</strong> {{ item.questao.alternativa_d }}
+            </div>
+          </div>
+
+          <!-- Verdadeiro/Falso -->
+          <div *ngIf="item.questao.tipo === 'vf'" class="questao-vf">
+            <div class="afirmacao-verdadeira" *ngIf="item.questao.afirmacao_verdadeira">
+              <strong>Afirmação Verdadeira:</strong> {{ item.questao.afirmacao_verdadeira }}
+            </div>
+            <div class="afirmacao-falsa" *ngIf="item.questao.afirmacao_falsa">
+              <strong>Afirmação Falsa:</strong> {{ item.questao.afirmacao_falsa }}
+            </div>
+          </div>
+
+          <!-- Correlação -->
+          <div *ngIf="item.questao.tipo === 'correlacao'" class="questao-correlacao">
+            <div class="colunas">
+              <div class="coluna">
+                <h5>Coluna A:</h5>
+                <ul>
+                  <li *ngFor="let itemCol of item.questao.coluna_a; let i = index">{{ i + 1 }}. {{ itemCol }}</li>
+                </ul>
+              </div>
+              <div class="coluna">
+                <h5>Coluna B:</h5>
+                <ul>
+                  <li *ngFor="let itemCol of item.questao.coluna_b; let i = index">{{ getLetraColunaB(i) }}. {{ itemCol }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="questao-respostas">
+            <div class="resposta-item">
+              <span class="resposta-label">Sua Resposta:</span>
+              <span class="resposta-valor errada">
+                {{ formatarRespostaUsuario(item.resposta.resposta_usuario, item.resposta.pergunta_tipo) }}
+              </span>
+            </div>
+            <div class="resposta-item">
+              <span class="resposta-label">Resposta Correta:</span>
+              <span class="resposta-valor correta">
+                {{ formatarRespostaCorreta(item.questao) }}
+              </span>
+            </div>
+          </div>
+
+          <div class="questao-justificativa" *ngIf="item.questao.justificativa_resposta_certa">
+            <h5>Justificativa:</h5>
+            <p>{{ item.questao.justificativa_resposta_certa }}</p>
+          </div>
+        </div>
+
+        <div class="questao-erro" *ngIf="!item.questao || item.questao.erro">
+          <p>Erro ao carregar detalhes da questão: {{ item.questao?.erro || 'Questão não encontrada' }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="mostrarQuestoesErradas && !isLoadingQuestoes && questoesErradas.length === 0" class="no-questoes">
+      <p>Nenhuma questão errada encontrada para esta matéria.</p>
+    </div>
+  </div>
+</div>

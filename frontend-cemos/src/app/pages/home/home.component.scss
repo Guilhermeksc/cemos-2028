@@ -229,11 +229,9 @@ app-side-menu {
   .top-header {
     padding: 0 24px;
   }
-
   .mobile-content {
-    padding: 24px;
+    padding: 5px;
   }
-
   .top-menu-container {
     max-height: calc(100vh - var(--header-height) - 80px);
   }
