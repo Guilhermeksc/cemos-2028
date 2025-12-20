@@ -1,7 +1,7 @@
 <div class="landing-container">
   <div class="page-header">
     <h2 class="section-title">Bem vindo {{ currentUsername() }}!</h2>
-    <div class="tools-grid">
+    <div class="tools-grid" [class.no-admin]="!isAdmin()">
       <mat-card *ngIf="isAdmin()" class="tool-card" (click)="navigateBibliografiaId()">
         <div class="tool-icon">
           <img src="/assets/img/svg/pilha-de-livros.svg" alt="Bibliografia ID">

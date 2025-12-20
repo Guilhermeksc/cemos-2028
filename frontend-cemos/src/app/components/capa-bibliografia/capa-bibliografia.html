@@ -12,19 +12,28 @@
         <!-- Botões de navegação abaixo das imagens -->
     <div class="navigation-buttons" *ngIf="showNavigationButtons">
       <button mat-stroked-button color="primary" (click)="navigateHome()" aria-label="Voltar para Home">
-        <mat-icon>arrow_back</mat-icon> Voltar à Página Principal
+        <span class="button-content">
+          <mat-icon class="button-icon">arrow_back</mat-icon>
+          <span class="button-text">Voltar à Página Principal</span>
+        </span>
       </button>
       <button mat-stroked-button (click)="navigateTo(conceitosPath)" *ngIf="conceitosPath">
-        <mat-icon>category</mat-icon> Conceitos
+        <span class="button-content">
+          <mat-icon class="button-icon">category</mat-icon>
+          <span class="button-text">Conceitos</span>
+        </span>
       </button>
       <button mat-stroked-button (click)="navigateTo(flashcardsPath)" *ngIf="flashcardsPath">
-        <mat-icon>style</mat-icon> Flashcards
-      </button>
-      <button mat-stroked-button (click)="navigateTo(mediaPath)" *ngIf="mediaPath">
-        <mat-icon>play_circle</mat-icon> Media
+        <span class="button-content">
+          <mat-icon class="button-icon">style</mat-icon>
+          <span class="button-text">Flashcards</span>
+        </span>
       </button>
       <button mat-stroked-button (click)="navigateTo(perguntasPath)" *ngIf="perguntasPath">
-        <mat-icon>quiz</mat-icon> Perguntas
+        <span class="button-content">
+          <mat-icon class="button-icon">quiz</mat-icon>
+          <span class="button-text">Perguntas</span>
+        </span>
       </button>
     </div>
     
