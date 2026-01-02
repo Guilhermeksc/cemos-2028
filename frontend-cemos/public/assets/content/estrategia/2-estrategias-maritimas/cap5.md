@@ -1,6 +1,6 @@
-## Página 107
-
 # Capítulo 5 - Em busca de uma estratégia marítima
+
+## Página 107
 
 ### Introdução
 

@@ -1,6 +1,6 @@
-## Página 25
-
 # Capítulo 1 -  O almirante Castex, estratego marítimo
+
+## Página 25
 
 Há alguns anos, durante uma visita ao Fórum antigo de Roma, escutei dois americanos exclamarem: “Isso é história? São apenas ruínas!”
 
