@@ -1,10 +1,10 @@
-## Capítulo 10 - A Estratégia Marítima Contemporânea
+# Capítulo 10 - A Estratégia Marítima Contemporânea
 
 ## Página 473
 
 **Cap. 10 (pp. 473 a 491)**
 
-## 344. As transformações da estratégia marítima
+### 344. As transformações da estratégia marítima
 
 A estratégia marítima não escapou, evidentemente, às reviravoltas que se sucederam ao aparecimento da arma nuclear. Na verdade, ela foi atingida com mais intensidade do que a estratégia terrestre ou a estratégia aérea, uma vez que para ela não foram somente os equipamentos e o contexto geral que mudaram, mas também o emprego do meio propriamente dito.
 
