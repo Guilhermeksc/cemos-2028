@@ -1,4 +1,4 @@
-# CAPÍTULO 19 A ILHA EXPLOSIVA E O NAVIO FANTASMA (Páginas 212-221)
+# Capítulo 19 - A ilha explosiva e o navio fantasma
 
 ## Página 1
 

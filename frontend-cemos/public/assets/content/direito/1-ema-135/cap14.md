@@ -1,4 +1,4 @@
-# CAPÍTULO 14 - REGRAS DE ENGAJAMENTO (RE)
+# Capítulo 14 - Regras de Engajamento (RE)
 
 ## Página 165
 

@@ -1,4 +1,4 @@
-# CAPÍTULO 13 - MEDIDAS DE DESPISTAMENTO DURANTE O CONFLITO ARMADO
+# Capítulo 13 - Medidas de despistamento durante o conflito armado
 
 ## Página 160
 

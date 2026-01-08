@@ -1,7 +1,7 @@
 
 ## Página 9
 
-### CAPÍTULO IV - DOS AGENTES PÚBLICOS
+### Capítulo IV - DOS AGENTES PÚBLICOS
 
 Art. 7º Caberá à autoridade máxima do órgão ou da entidade, ou a quem as normas de organização administrativa indicarem, promover gestão por competências e designar agentes públicos para o desempenho das funções essenciais à execução desta Lei que preencham os seguintes requisitos:
 

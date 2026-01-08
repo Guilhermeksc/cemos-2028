@@ -1,7 +1,7 @@
 
 ## Página 57
 
-### CAPÍTULO VII DA ALTERAÇÃO DOS CONTRATOS E DOS PREÇOS
+### Capítulo VII DA ALTERAÇÃO DOS CONTRATOS E DOS PREÇOS
 
 Art. 124. Os contratos regidos por esta Lei poderão ser alterados, com as devidas justificativas, nos seguintes casos:
 

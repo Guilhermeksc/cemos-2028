@@ -1,4 +1,4 @@
-# CAPÍTULO V - Plano Setorial de Mobilização Militar
+# Capítulo V - Plano Setorial de Mobilização Militar
 
 ## Página 37
 

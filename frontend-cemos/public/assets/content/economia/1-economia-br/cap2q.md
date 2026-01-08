@@ -1,4 +1,4 @@
-# Questões do capítulo 2
+# Questões do Capítulo 2
 
 ### Q1. O que é um problema de dupla contagem do produto de um país? Dê um exemplo de como isso acontece.
 

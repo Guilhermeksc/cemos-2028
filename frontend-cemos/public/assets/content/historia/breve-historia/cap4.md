@@ -1,4 +1,4 @@
-# CAPÍTULO 4 A GUERRA DAS GUERRAS (Página 50-65)
+# Capítulo 4 - A Guerra das Guerras
 
 ## Página 1
 

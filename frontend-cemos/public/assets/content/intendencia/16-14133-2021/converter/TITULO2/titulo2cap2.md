@@ -1,6 +1,6 @@
 ## Página 13
 
-### CAPÍTULO II - DA FASE PREPARATÓRIA 
+### Capítulo II - DA FASE PREPARATÓRIA 
 
 ### Seção I Da Instrução do Processo Licitatório
 

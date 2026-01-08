@@ -1,7 +1,7 @@
 
 ## Página 23
 
-# CAPÍTULO III - Mobilização Industrial
+# Capítulo III - Mobilização Industrial
 
 ### 3.1 Considerações Iniciais
 

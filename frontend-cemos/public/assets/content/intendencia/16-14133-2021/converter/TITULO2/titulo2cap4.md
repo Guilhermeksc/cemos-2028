@@ -1,7 +1,7 @@
 
 ## Página 29
 
-### CAPÍTULO IV DA APRESENTAÇÃO DE PROPOSTAS E LANCES
+### Capítulo IV DA APRESENTAÇÃO DE PROPOSTAS E LANCES
 
 Art. 55. Os prazos mínimos para apresentação de propostas e lances, contados a partir da data de divulgação do edital de licitação, são de:
 

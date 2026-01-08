@@ -1,4 +1,4 @@
-# Questões do capítulo 3
+# Questões do Capítulo 3
 
 ### Q1. Por que um país com um PIB maior que o outro pode ser considerado menos desenvolvido? 
 

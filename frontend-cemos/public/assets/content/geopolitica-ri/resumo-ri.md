@@ -353,7 +353,7 @@ Esses conceitos, desenvolvidos dentro de um contexto histórico específico, con
 III - PERSPECTIVAS CONCORRENTES DAS RELAÇÕES INTERNACIONAIS
 CAP 3 - PERSPECTIVAS CONCORRENTES: COMO PENSAR AS RI EM TERMOS TEÓRICOS
 O Pensamento Teórico
-Como a teoria pode nos ajudar a entender a lógica das relações internacionais? Neste capítulo usaremos o exemplo da Guerra do Iraque, em 2003, para explorar as principais teorias de relações internacionais e o modo como cada uma explica os eventos políticos.
+Como a teoria pode nos ajudar a entender a lógica das relações internacionais? Neste Capítulo usaremos o exemplo da Guerra do Iraque, em 2003, para explorar as principais teorias de relações internacionais e o modo como cada uma explica os eventos políticos.
 A comunidade internacional estava preocupada com o comportamento de Saddam Hussein, com as armas do Iraque e com a possibilidade de Saddam estar dando suporte às atividades de terroristas internacionais, sobretudo após a expulsão dos inspetores de armas da ONU do país, em 1998. Após os atentados terroristas ao território americano em 11 de setembro de 2001, essa preocupação tornou-se urgente.
  
 O exame desse histórico mostra que os Estados Unidos foram motivados por diversos fatores: arrependimento por não ter expulsado Saddam na Guerra do Golfo em 1991; a possibilidade de o regime possuir armas de destruição em massa; o receio de que o regime de Saddam estivesse envolvido em terrorismo tanto em âmbito interno quanto internacional; a necessidade de estabilidade em uma região rica em petróleo; e a esperança de que um Iraque democrático viesse a se tornar a pedra angular de uma nova ordem democrática liberal no Oriente Médio.
@@ -804,7 +804,7 @@ Resumo: Do sistema internacional ao Estado
 De todas as abordagens teóricas, a realista e a radical são as que dão maior atenção ao nível de análise do sistema internacional.
 Para os realistas, a característica que define o sistema internacional é a polaridade. Para os radicais, é a estratificação. Tanto para realistas quanto para radicais, o sistema internacional restringe o comportamento do Estado. De modo geral, os realistas consideram positivas tais restrições, dependendo da distribuição de poder, enquanto para os radicais elas são negativas, na medida em que impedem que Estados em depressão econômica obtenham igualdade e justiça. Os liberais veem o sistema internacional de um ponto de vista mais neutro, como uma arena e um processo para interação.
 Os construtivistas adotam uma abordagem evolutiva, enfatizando o modo como as mudanças nas normas e ideias modelam o sistema, e não veem grande diferenciação entre os sistemas internacional e interno, menosprezando a importância dada à estrutura do sistema internacional.
-Estados e responsáveis pelas decisões relacionadas com a política externa agem dentro dos limites do sistema internacional. No próximo capítulo estudaremos o Estado, os desafios por ele enfrentados e modelos de tomada de decisões na esfera estatal.
+Estados e responsáveis pelas decisões relacionadas com a política externa agem dentro dos limites do sistema internacional. No próximo Capítulo estudaremos o Estado, os desafios por ele enfrentados e modelos de tomada de decisões na esfera estatal.
 RESUMO GERAL – SI COMO NÍVEL DE ANÁLISE
 	REALISMO /
 NEORREALISMO	LIBERALISMO /
@@ -1162,7 +1162,7 @@ Política Externa	Internos na maioria	Externos na maioria	Externos (internos coo
 
 VI - O ESTADO E AS ORGANIZAÇÕES INTERGOVERNAMENTAIS, OUTRAS ORGANIZAÇÕES REGIONAIS E ORGANIZAÇÕES NÃO GOVERNAMENTAIS
 
-CAPÍTULO 7 - ORGANIZAÇÕES INTERGOVERNAMENTAIS, DIREITO INTERNACIONAL E ORGANIZAÇÕES NÃO GORVERNAMENTAIS
+Capítulo 7 - ORGANIZAÇÕES INTERGOVERNAMENTAIS, DIREITO INTERNACIONAL E ORGANIZAÇÕES NÃO GORVERNAMENTAIS
 (Livro pág. 165 a 187; 191 a197)
 Organizações Intergovernamentais (OIG)
 A criação das OIG
@@ -1575,7 +1575,7 @@ Contudo, uma nova tendência vem se consolidando: a TERCEIRIZAÇÃO DA SEGURANÇ
 Seus funcionários (soldados), os mercenários do século XXI, vêm de todo o mundo, da Ucrânia a Fiji, da Austrália ao Chile. Muitos são ex-militares do governo. Servem em locais que vão de Serra Leoa ao Sri Lanka, da Bósnia à República Democrática do Congo, do Iraque ao Afeganistão.
 O uso de robôs semi-inteligentes ou teleguiados na guerra, como no caso dos drones anteriormente discutidos, é outra forma de “terceirização”, com benefícios e riscos semelhantes aos da contratação de segurança privada: as baixas não serão seres humanos que estão representando o Estado como cidadãos.
 Até este momento, os problemas logísticos, legais e éticos decorrentes de cada tipo de terceirização (segurança privada e robôs) permanecem obscuros. No apagar das luzes do século XX, ocorreu outra mudança com relação a quem ou o que deve ser protegido. Os conceitos cambiantes de segurança e de quem deve ser protegido têm sido um tema-chave no discurso construtivista. A obrigação - na verdade, a responsabilidade - dos Estados e da comunidade internacional de proteger os seres humanos, mesmo que isso signifique intervenção nas questões de outro Estado, é a norma da intervenção humanitária.
-Mas do que o indivíduo deve ser protegido? Será que proteção inclui mais do que violência física normalmente associada a conflitos interestatais, guerras civis, genocídios, armas nucleares e terrorismo, como discutido neste capítulo? Será que o conceito de segurança deve ser ampliado? Em 2004, o Painel de Alto Nível das Nações Unidas sobre Ameaças, Desafios e Mudança incorporou novas ameaças ao que denomina de SEGURANÇA HUMANA, expressão cada vez mais usada, desde o início dos anos 1990. Será que os indivíduos devem ser protegidos de doenças infecciosas e da degradação ambiental, dos efeitos nocivos da globalização econômica ou da pobreza?
+Mas do que o indivíduo deve ser protegido? Será que proteção inclui mais do que violência física normalmente associada a conflitos interestatais, guerras civis, genocídios, armas nucleares e terrorismo, como discutido neste Capítulo? Será que o conceito de segurança deve ser ampliado? Em 2004, o Painel de Alto Nível das Nações Unidas sobre Ameaças, Desafios e Mudança incorporou novas ameaças ao que denomina de SEGURANÇA HUMANA, expressão cada vez mais usada, desde o início dos anos 1990. Será que os indivíduos devem ser protegidos de doenças infecciosas e da degradação ambiental, dos efeitos nocivos da globalização econômica ou da pobreza?
 
 XI – O CONTEXTO HISTÓRICO DAS RELAÇÕES INTERNACIONAIS
 (Cap. 7 do Livro Economia Azul. Santos, Thauan)

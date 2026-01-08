@@ -1,4 +1,4 @@
-# CAPÍTULO 2 - STATUS INTERNACIONAL E NORMAS DE NAVEGAÇÃO PARA NAVIOS DE GUERRA, DE ESTADO, AERONAVES MILITARES E PÚBLICAS
+# Capítulo 2 - Status internacional e normas de navegação para navios de guerra e aeronaves militares
 
 ## Página 29
 

@@ -1,4 +1,4 @@
-# CAPÍTULO 8 - O DIREITO DA NEUTRALIDADE
+# Capítulo 8 - O Direito da Neutralidade
 
 ## Página 101
 

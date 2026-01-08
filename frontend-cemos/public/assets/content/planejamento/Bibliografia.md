@@ -18,7 +18,7 @@ Capítulo VII (exceto itens 7.7, 7.8, 7.9 e 7.10),
 Capítulo VIII (somente item 8.1), X (art. 10.5.12), 
 Capítulo XI (11.1 a 11.7) e XIV (14.2.5).
 
-O conteúdo dos anexos existentes na publicação e relativos aos capítulos listados não está incluído na matéria; e
+O conteúdo dos anexos existentes na publicação e relativos aos Capítulos listados não está incluído na matéria; e
 
 **b) 2º Volume**
 Capítulo II (somente item 2.1),
@@ -27,7 +27,7 @@ Capítulo V,
 Capítulo VI,
 Capítulo VII e 
 anexo D (pp. 199 a 213).
-Com exceção do anexo D, o conteúdo dos demais anexos existentes na publicação e relativos aos capítulos listados não está incluído na matéria.
+Com exceção do anexo D, o conteúdo dos demais anexos existentes na publicação e relativos aos Capítulos listados não está incluído na matéria.
 
 
 ## Propósito

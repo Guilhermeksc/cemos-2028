@@ -124,7 +124,7 @@ frontend/public/assets/content/geopolitica-ri/vinganca-geografia/
 
 ![Mapa do Heartland de Mackinder](img/resumo/heartland.jpg)
 
-Texto do capítulo...
+Texto do Capítulo...
 ```
 
 **Processamento**:

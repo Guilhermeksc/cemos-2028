@@ -1,6 +1,6 @@
 # Capítulo VII - Síntese de Setenta Anos de Pensamento Geopolítico Brasileiro
 
-Vamos sintetizar o pensamento geopolítico dos autores historiados no capítulo anterior, tendo em vista apontar a sua característica pre-monitória da Política Nacional.
+Vamos sintetizar o pensamento geopolítico dos autores historiados no Capítulo anterior, tendo em vista apontar a sua característica pre-monitória da Política Nacional.
 
 Na época colonial, vimos a visão estrutural da geopolítica brasileira esboçada no Tratado de Tordesilhas, como nos mostrou o diplomata e escri­tor José Osvaldo de Meira Penna. O historiador seiscentista Gabriel Soares de Sousa (1578) , aqui chegando, traduziu o seu deslumbramento na idéia de Império, "será um dos estados do Mundo"; Alexandre de Gusmão, brasi­leiro a serviço da diplomacia lusa, conseguiu inserir no Tratado de Madri (1750) os dispositivos que legitimaram as conquistas dos bandeirantes paulistas e nortistas.
 

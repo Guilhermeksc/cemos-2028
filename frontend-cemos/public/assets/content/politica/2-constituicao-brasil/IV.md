@@ -2,7 +2,7 @@ Título IV – art. 44 a 92, 95 a 99, 101 a 110, 118 a 124 e 127 a 135;
 
 # TÍTULO IV - DA ORGANIZAÇÃO DOS PODERES
 
-## CAPÍTULO I - DO PODER LEGISLATIVO
+## Capítulo I - DO PODER LEGISLATIVO
 
 **Seção I - DO CONGRESSO NACIONAL**
 
@@ -548,7 +548,7 @@ IV - apoiar o controle externo no exercício de sua missão institucional.
 
 Parágrafo único. As Constituições estaduais disporão sobre os Tribunais de Contas respectivos, que serão integrados por sete Conselheiros.
 
-## CAPÍTULO II - DO PODER EXECUTIVO
+## Capítulo II - DO PODER EXECUTIVO
 
 **Seção I - DO PRESIDENTE E DO VICE-PRESIDENTE DA REPÚBLICA**
 
@@ -764,7 +764,7 @@ IV - estudar, propor e acompanhar o desenvolvimento de iniciativas necessárias 
 
 § 2º A lei regulará a organização e o funcionamento do Conselho de Defesa Nacional. (Vide Lei nº 8.183, de 1991)
 
-## CAPÍTULO III - DO PODER JUDICIÁRIO
+## Capítulo III - DO PODER JUDICIÁRIO
 
 Seção I - DISPOSIÇÕES GERAIS
 
@@ -1273,7 +1273,7 @@ II - dois, por escolha paritária, dentre juízes auditores e membros do Minist�
 
 Parágrafo único. A lei disporá sobre a organização, o funcionamento e a competência da Justiça Militar.
 
-CAPÍTULO IV
+Capítulo IV
 
 DAS FUNÇÕES ESSENCIAIS À JUSTIÇA
 

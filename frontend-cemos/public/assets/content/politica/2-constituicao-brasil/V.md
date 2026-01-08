@@ -2,7 +2,7 @@ Título V – art. 136 a 144.
 
 # TÍTULO V - DA DEFESA DO ESTADO E DAS INSTITUIÇÕES DEMOCRÁTICAS
 
-## CAPÍTULO I - DO ESTADO DE DEFESA E DO ESTADO DE SÍTIO
+## Capítulo I - DO ESTADO DE DEFESA E DO ESTADO DE SÍTIO
 
 **Seção I - DO ESTADO DE DEFESA**
 
@@ -86,7 +86,7 @@ Parágrafo único. Não se inclui nas restrições do inciso III a difusão de p
 
 Parágrafo único. Logo que cesse o estado de defesa ou o estado de sítio, as medidas aplicadas em sua vigência serão relatadas pelo Presidente da República, em mensagem ao Congresso Nacional, com especificação e justificação das providências adotadas, com relação nominal dos atingidos e indicação das restrições aplicadas.
 
-## CAPÍTULO II - DAS FORÇAS ARMADAS
+## Capítulo II - DAS FORÇAS ARMADAS
 
 ⚖️  **Art. 142. As Forças Armadas, constituídas pela Marinha, pelo Exército e pela Aeronáutica, são instituições nacionais permanentes e regulares, organizadas com base na hierarquia e na disciplina, sob a autoridade suprema do Presidente da República, e destinam-se à defesa da Pátria, à garantia dos poderes constitucionais e, por iniciativa de qualquer destes, da lei e da ordem.
 
@@ -122,7 +122,7 @@ X - a lei disporá sobre o ingresso nas Forças Armadas, os limites de idade, a 
 
 § 2º As mulheres e os eclesiásticos ficam isentos do serviço militar obrigatório em tempo de paz, sujeitos, porém, a outros encargos que a lei lhes atribuir.         (Regulamento)
 
-## CAPÍTULO III - DA SEGURANÇA PÚBLICA
+## Capítulo III - DA SEGURANÇA PÚBLICA
 
 ⚖️  **Art. 144. A segurança pública, dever do Estado, direito e responsabilidade de todos, é exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio, através dos seguintes órgãos:
 

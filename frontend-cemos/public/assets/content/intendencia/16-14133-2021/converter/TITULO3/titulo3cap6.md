@@ -1,7 +1,7 @@
 
 ## Página 55
 
-### CAPÍTULO VI DA EXECUÇÃO DOS CONTRATOS
+### Capítulo VI DA EXECUÇÃO DOS CONTRATOS
 
 Art. 115. O contrato deverá ser executado fielmente pelas partes, de acordo com as cláusulas avençadas e as normas desta Lei, e cada parte responderá pelas consequências de sua inexecução total ou parcial.
 

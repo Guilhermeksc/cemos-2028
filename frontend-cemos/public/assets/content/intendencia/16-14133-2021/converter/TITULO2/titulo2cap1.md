@@ -2,7 +2,7 @@
 
 # TÍTULO II DAS LICITAÇÕES
 
-### CAPÍTULO I - DO PROCESSO LICITATÓRIO 
+### Capítulo I - DO PROCESSO LICITATÓRIO 
 
 Art. 11. O processo licitatório tem por objetivos:
 

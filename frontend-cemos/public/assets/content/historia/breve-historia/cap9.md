@@ -1,4 +1,4 @@
-# CAPÍTULO 9 UM PERCUSSIONISTA ITALIANO (Páginas 111-117)
+# Capítulo 9 - Um percussionista Italiano
 
 ## Página 1
 

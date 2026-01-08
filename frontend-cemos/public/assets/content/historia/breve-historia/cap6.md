@@ -1,4 +1,4 @@
-# CAPÍTULO 6 UTOPIA E PESADELO (Páginas 78-91)
+# Capítulo 6 - Utopia e Pesadelo
 
 ## Página 1
 

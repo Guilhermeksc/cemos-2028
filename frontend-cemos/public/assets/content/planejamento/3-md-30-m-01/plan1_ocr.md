@@ -2,7 +2,7 @@
 
 ## Página 19
 
-# CAPÍTULO II - CONCEPÇÃO DE PREPARO E EMPREGO CONJUNTO
+# Capítulo II - CONCEPÇÃO DE PREPARO E EMPREGO CONJUNTO
 
 ### 2.1 Considerações Iniciais
 
@@ -349,7 +349,7 @@ d) planejar e executar a defesa e o controle de danos de instalações sob sua r
 
 ## Página 41
 
-# MD30-M-01 CAPÍTULO III - OPERAÇÕES CONJUNTAS DAS FORÇAS ARMADAS
+# MD30-M-01 Capítulo III - OPERAÇÕES CONJUNTAS DAS FORÇAS ARMADAS
 
 ## 3.1 Considerações Iniciais
 
@@ -457,7 +457,7 @@ E o espaço geográfico necessário à condução de operações militares, que 
 
 ## Página 45
 
-# MD30-M-01 CAPÍTULO IV - COMANDO OPERACIONAL CONJUNTO
+# MD30-M-01 Capítulo IV - COMANDO OPERACIONAL CONJUNTO
 
 ## 4.1 Estrutura
 
@@ -593,7 +593,7 @@ f) quando contribuir para os efeitos associados aos Pontos Decisivos.
 
 ## Página 51
 
-# MD30-M-01 CAPÍTULO V - ESTADO-MAIOR CONJUNTO
+# MD30-M-01 Capítulo V - ESTADO-MAIOR CONJUNTO
 
 ## 5.1 Organização
 
@@ -646,7 +646,7 @@ Figura 7 — estrutura do EMC
 (i) Reunião de Aprovação da Ordem de Coordenação (O Coor); e 
 (j) Reuniões Eventuais.
 
-5.2.2.1 o detalhamanto das reuniões é abordado no capítulo 7 do volume dois desta publicação.
+5.2.2.1 o detalhamanto das reuniões é abordado no Capítulo 7 do volume dois desta publicação.
 
 5.2.3 O objetivo principal dessas reuniões é viabilizar a tomada de decisões que resultem em ações a serem executadas pelas F Cte e que requeiram coordenação. Esses eventos podem ser realizados em sua totalidade ou em parte, dependendo da necessidade do Cmt Op e da envergadura da operação.
 
@@ -871,7 +871,7 @@ Figura 7 — estrutura do EMC
 
 ## Página 61
 
-# MD30-M-01 CAPÍTULO VI - COMANDO DE OPERAÇÕES AEROESPACIAIS
+# MD30-M-01 Capítulo VI - COMANDO DE OPERAÇÕES AEROESPACIAIS
 
 ## 6.1 Considerações Iniciais
 
@@ -908,7 +908,7 @@ O Comando de Operações Aeroespaciais (COMAE) tem por missão empregar o Poder 
 
 6.2.6.1 Como Órgão Central, o COMAE é responsável pela orientação normativa dos elos do SISDABRA.
 
-6.2.6.2 Como Comando Operacional, o COMAE é um Comando Conjunto permanentemente ativado, diretamente subordinado: ao Comandante Supremo quando em situação de conflito e ao Comandante da Aeronáutica em tempo de paz. Em ambas as situações, a subordinação é via MD. Vide figura 6 no capítulo IV.
+6.2.6.2 Como Comando Operacional, o COMAE é um Comando Conjunto permanentemente ativado, diretamente subordinado: ao Comandante Supremo quando em situação de conflito e ao Comandante da Aeronáutica em tempo de paz. Em ambas as situações, a subordinação é via MD. Vide figura 6 no Capítulo IV.
 
 6.2.7 A ação de comando do COMAE, sobre os elementos alocados ao SISDABRA, se faz mediante o controle operacional, fundamentado na autoridade para empregar operacionalmente esses meios em missões ou tarefas específicas e limitadas, excluindo a autoridade logística e administrativa.
 
@@ -940,7 +940,7 @@ O Comando de Operações Aeroespaciais (COMAE) tem por missão empregar o Poder 
 
 ## Página 67
 
-# MD30-M-01 CAPÍTULO VII - COMANDO DE ZONA DE DEFESA
+# MD30-M-01 Capítulo VII - COMANDO DE ZONA DE DEFESA
 
 7.1 Considerações Iniciais
 
@@ -1117,7 +1117,7 @@ A ZD possui cinco elementos principais, cada um representando uma força ou coma
 
 ## Página 77
 
-# MD30-M-01 CAPÍTULO VIII - COMANDO DE DEFESA CIBERNÉTICA
+# MD30-M-01 Capítulo VIII - COMANDO DE DEFESA CIBERNÉTICA
 
 ## 8.1 Considerações Iniciais
 
@@ -1133,7 +1133,7 @@ A ZD possui cinco elementos principais, cada um representando uma força ou coma
 
 ## Página 119
 
-# MD30-M-01 CAPÍTULO X - LOGÍSTICA E MOBILIZAÇÃO NAS OPERAÇÕES CONJUNTAS
+# MD30-M-01 Capítulo X - LOGÍSTICA E MOBILIZAÇÃO NAS OPERAÇÕES CONJUNTAS
 
 ## Página 135
 
@@ -1229,7 +1229,7 @@ Centro de Coordenação Civil-Militar (C³M)
 
 ## Página 161
 
-# MD30-M-01 CAPÍTULO XI - COMANDO E CONTROLE
+# MD30-M-01 Capítulo XI - COMANDO E CONTROLE
 
 ## 11.1 Considerações iniciais
 
@@ -1414,7 +1414,7 @@ MD30-M-01 11.7 Composição da Estrutura de C² do Comando Operacional
 
 ## Página 193
 
-# MD30-M-01 CAPÍTULO XIV - AS OPERAÇÕES DE INFORMAÇÃO NAS OPERAÇÕES CONJUNTAS
+# MD30-M-01 Capítulo XIV - AS OPERAÇÕES DE INFORMAÇÃO NAS OPERAÇÕES CONJUNTAS
 
 ## Página 200
 

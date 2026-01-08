@@ -6,7 +6,10 @@ from django.db import transaction
 from django.db.models.signals import post_migrate
 from django.dispatch import receiver
 from .models import PresidentesModel, FilosofosModel, CronologiaModel, ConceitosModel, HiperlinksModel
-from django_cemos2028.apps.perguntas.models import BibliografiaModel
+from django_cemos2028.apps.bibliografia.models import (
+    BibliografiaModel,
+    CapitulosBibliografiaModel,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -45,6 +48,34 @@ def _as_clean_str(v):
             except Exception:
                 pass
         return s or None
+
+
+def _get_bibliografia(row_value, ctx, row_index):
+    bibliografia_id = _as_int(row_value)
+    if bibliografia_id is None:
+        logger.warning(f"⚠️ ID de bibliografia inválido em {ctx} (linha {row_index}): {row_value}")
+        return None
+    try:
+        return BibliografiaModel.objects.get(id=bibliografia_id)
+    except BibliografiaModel.DoesNotExist:
+        logger.warning(f"⚠️ Bibliografia ID {bibliografia_id} não encontrada em {ctx} (linha {row_index})")
+        return None
+
+
+def _get_capitulo(row_value, bibliografia=None, ctx=None, row_index=None):
+    capitulo_id = _as_int(row_value)
+    if capitulo_id is None:
+        return None
+    try:
+        capitulo = CapitulosBibliografiaModel.objects.get(id=capitulo_id)
+        if bibliografia and capitulo.bibliografia_id != bibliografia.id:
+            logger.warning(
+                f"⚠️ Capítulo {capitulo_id} não pertence à bibliografia {bibliografia.id} em {ctx} (linha {row_index})"
+            )
+        return capitulo
+    except CapitulosBibliografiaModel.DoesNotExist:
+        logger.warning(f"⚠️ Capítulo ID {capitulo_id} não encontrado em {ctx} (linha {row_index})")
+        return None
 
 
 def _require_fields(row, cols, ctx, row_index=None, string_fields=None):
@@ -111,13 +142,21 @@ def load_fixtures_informacoes(sender, **kwargs):
     try:
         with transaction.atomic():
             # PRESIDENTES
-            df = load_fixture('presidentes.xlsx', ['bibliografia_titulo', 'periodo_presidencial', 'presidente'])
+            df = load_fixture('presidentes.xlsx', ['bibliografia_id', 'periodo_presidencial', 'presidente'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'periodo_presidencial', 'presidente'], 'presidentes', idx, string_fields=['bibliografia_titulo', 'periodo_presidencial', 'presidente']):
+                    if not _require_fields(
+                        row,
+                        ['bibliografia_id', 'periodo_presidencial', 'presidente'],
+                        'presidentes',
+                        idx,
+                        string_fields=['periodo_presidencial', 'presidente']
+                    ):
                         continue
                     try:
-                        bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
+                        bibliografia = _get_bibliografia(row['bibliografia_id'], 'presidentes', idx)
+                        if bibliografia is None:
+                            continue
                         PresidentesModel.objects.update_or_create(
                             bibliografia=bibliografia,
                             presidente=_as_clean_str(row['presidente']),
@@ -128,18 +167,26 @@ def load_fixtures_informacoes(sender, **kwargs):
                                 'imagem_caminho': _as_clean_str(row.get('imagem_caminho'))
                             }
                         )
-                    except BibliografiaModel.DoesNotExist:
-                        logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']}")
+                    except Exception as exc:
+                        logger.error(f"❌ Erro ao processar presidente (linha {idx}): {exc}")
 
 
             # FILÓSOFOS
-            df = load_fixture('filosofos.xlsx', ['bibliografia_titulo', 'periodo_filosofico', 'nome'])
+            df = load_fixture('filosofos.xlsx', ['bibliografia_id', 'periodo_filosofico', 'nome'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'periodo_filosofico', 'nome'], 'filosofos', idx, string_fields=['bibliografia_titulo', 'periodo_filosofico', 'nome']):
+                    if not _require_fields(
+                        row,
+                        ['bibliografia_id', 'periodo_filosofico', 'nome'],
+                        'filosofos',
+                        idx,
+                        string_fields=['periodo_filosofico', 'nome']
+                    ):
                         continue
                     try:
-                        bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
+                        bibliografia = _get_bibliografia(row['bibliografia_id'], 'filosofos', idx)
+                        if bibliografia is None:
+                            continue
                         FilosofosModel.objects.update_or_create(
                             bibliografia=bibliografia,
                             nome=_as_clean_str(row['nome']),
@@ -149,18 +196,26 @@ def load_fixtures_informacoes(sender, **kwargs):
                                 'imagem_caminho': _as_clean_str(row.get('imagem_caminho'))
                             }
                         )
-                    except BibliografiaModel.DoesNotExist:
-                        logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']}")
+                    except Exception as exc:
+                        logger.error(f"❌ Erro ao processar filósofo (linha {idx}): {exc}")
 
 
             # CRONOLOGIA
-            df = load_fixture('cronologia.xlsx', ['bibliografia_titulo', 'evento_conflito', 'periodo'])
+            df = load_fixture('cronologia.xlsx', ['bibliografia_id', 'evento_conflito', 'periodo'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'evento_conflito', 'periodo'], 'cronologia', idx, string_fields=['bibliografia_titulo', 'evento_conflito', 'periodo']):
+                    if not _require_fields(
+                        row,
+                        ['bibliografia_id', 'evento_conflito', 'periodo'],
+                        'cronologia',
+                        idx,
+                        string_fields=['evento_conflito', 'periodo']
+                    ):
                         continue
                     try:
-                        bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
+                        bibliografia = _get_bibliografia(row['bibliografia_id'], 'cronologia', idx)
+                        if bibliografia is None:
+                            continue
                         CronologiaModel.objects.update_or_create(
                             bibliografia=bibliografia,
                             evento_conflito=_as_clean_str(row['evento_conflito']),
@@ -171,49 +226,39 @@ def load_fixtures_informacoes(sender, **kwargs):
                                 'consequencias': _as_clean_str(row.get('consequencias'))
                             }
                         )
-                    except BibliografiaModel.DoesNotExist:
-                        logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']}")
+                    except Exception as exc:
+                        logger.error(f"❌ Erro ao processar cronologia (linha {idx}): {exc}")
 
             # CONCEITOS
-            df = load_fixture('conceitos.xlsx', ['bibliografia_titulo', 'titulo'])
+            df = load_fixture('conceitos.xlsx', ['bibliografia_id', 'titulo'])
             if df is not None:
                 for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'titulo'], 'conceitos', idx, string_fields=['bibliografia_titulo', 'titulo']):
+                    if not _require_fields(
+                        row,
+                        ['bibliografia_id', 'titulo'],
+                        'conceitos',
+                        idx,
+                        string_fields=['titulo']
+                    ):
                         continue
                     try:
-                        bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
+                        bibliografia = _get_bibliografia(row['bibliografia_id'], 'conceitos', idx)
+                        if bibliografia is None:
+                            continue
+                        assunto = _get_capitulo(row.get('assunto'), bibliografia, 'conceitos', idx)
                         ConceitosModel.objects.update_or_create(
                             bibliografia=bibliografia,
                             titulo=_as_clean_str(row['titulo']),
                             defaults={
                                 'palavra_chave': _as_clean_str(row.get('palavra_chave')),
-                                'assunto': _as_clean_str(row.get('assunto')),
+                                'assunto': assunto,
                                 'descricao': _as_clean_str(row.get('descricao')),
                                 'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
                                 'ano_prova': _as_int(row.get('ano_prova'))
                             }
                         )
-                    except BibliografiaModel.DoesNotExist:
-                        logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']}")
-
-            # HIPERLINKS
-            df = load_fixture('hiperlinks.xlsx', ['bibliografia_titulo', 'tipo', 'url'])
-            if df is not None:
-                for idx, row in df.iterrows():
-                    if not _require_fields(row, ['bibliografia_titulo', 'tipo', 'url'], 'hiperlinks', idx, string_fields=['bibliografia_titulo', 'tipo', 'url']):
-                        continue
-                    try:
-                        bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
-                        HiperlinksModel.objects.update_or_create(
-                            bibliografia=bibliografia,
-                            url=_as_clean_str(row['url']),
-                            defaults={
-                                'tipo': _as_clean_str(row['tipo']).lower(),
-                                'descricao': _as_clean_str(row.get('descricao'))
-                            }
-                        )
-                    except BibliografiaModel.DoesNotExist:
-                        logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']}")
+                    except Exception as exc:
+                        logger.error(f"❌ Erro ao processar conceito (linha {idx}): {exc}")
 
         logger.info("✅ Fixtures carregadas com sucesso!")
 

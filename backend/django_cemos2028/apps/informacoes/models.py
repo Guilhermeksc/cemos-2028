@@ -1,5 +1,8 @@
 from django.db import models
-from django_cemos2028.apps.perguntas.models import BibliografiaModel
+from django_cemos2028.apps.bibliografia.models import (
+    BibliografiaModel,
+    CapitulosBibliografiaModel,
+)
 
 
 class PresidentesModel(models.Model):
@@ -77,7 +80,14 @@ class ConceitosModel(models.Model):
     )
     titulo = models.CharField(max_length=255, verbose_name="Título")
     palavra_chave = models.CharField(max_length=255, blank=True, null=True, verbose_name="Palavra-chave")
-    assunto = models.CharField(max_length=255, blank=True, null=True, verbose_name="Assunto")
+    assunto = models.ForeignKey(
+        CapitulosBibliografiaModel,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        verbose_name="Assunto",
+        related_name="+",
+    )
     descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
     caiu_em_prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
     ano_prova = models.IntegerField(blank=True, null=True, verbose_name="Ano da Prova")

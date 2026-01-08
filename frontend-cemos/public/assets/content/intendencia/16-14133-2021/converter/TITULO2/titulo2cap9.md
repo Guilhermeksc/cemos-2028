@@ -1,5 +1,5 @@
 
-### CAPÍTULO IX - DAS ALIENAÇÕES
+### Capítulo IX - DAS ALIENAÇÕES
 
 Art. 76. A alienação de bens da Administração Pública, subordinada à existência de interesse público devidamente justificado, será precedida de avaliação e obedecerá às seguintes normas:
 

@@ -6,7 +6,7 @@ Aprova a Política de Obtenção de Produtos de Defesa - POBPRODE para a adminis
 
 O MINISTRO DE ESTADO DA DEFESA, Interino, no uso das atribuições que lhe confere o Decreto, de 26 de fevereiro de 2018, os incisos I e II do parágrafo único do art. 87 da Constituição Federal, tendo em vista o disposto na Lei nº 12.598, de 21 de março de 2012, na alínea "d" do inciso VII do art. 37, e no inciso IV do art. 38 do Anexo I do Decreto nº 8.978, de 1º de fevereiro de 2017, e considerando o que consta do Processo Administrativo nº 60314.000379/2017-01, resolve:
 
-### CAPÍTULO I - DISPOSIÇÕES INICIAIS
+### Capítulo I - DISPOSIÇÕES INICIAIS
 
 Art. 1º Fica aprovada a Política de Obtenção de Produtos de Defesa - POBPRODE para a administração central do Ministério da Defesa e para as Forças Armadas, nos termos desta Portaria Normativa.
 
@@ -20,7 +20,7 @@ Art. 5º A POBPRODE é o documento de mais alto nível para nortear o fluxo orde
 
 ## Página 2 
 
-### CAPÍTULO II - DEFINIÇÕES
+### Capítulo II - DEFINIÇÕES
 
 Art. 7º Para os fins desta Política adotam-se, além das definições contidas na Lei nº 12.598, de 21 de março de 2012, as seguintes:
 
@@ -39,7 +39,7 @@ VII - obtenção de produtos de defesa: sistemática para se obter um PRODE, de 
 
 ## Página 3 
 
-### CAPÍTULO III - OBJETIVOS
+### Capítulo III - OBJETIVOS
 
 Art. 8º O objetivo desta Política é assegurar que as obtenções de PRODE estejam alinhadas com os interesses estratégicos nacionais previstos na Estratégia Nacional de Defesa - END, na Política Nacional de Defesa - PND e no Livro Branco da Defesa Nacional - LBDN.
 
@@ -55,7 +55,7 @@ IV - capacitação dos recursos humanos envolvidos na obtenção; e
 
 V - fomento à BID.
 
-### CAPÍTULO IV - OBTENÇÃO BASEADA EM CAPACIDADES MILITARES
+### Capítulo IV - OBTENÇÃO BASEADA EM CAPACIDADES MILITARES
 
 Art. 10. Constituem orientações estratégicas quanto à obtenção baseada em capacidades militares:
 
@@ -69,7 +69,7 @@ IV - promover ações, quando necessário, que concorram para o estabelecimento 
 
 ## Página 4
 
-### CAPÍTULO V - ABRANGÊNCIA DA SISTEMÁTICA DE OBTENÇÃO
+### Capítulo V - ABRANGÊNCIA DA SISTEMÁTICA DE OBTENÇÃO
 
 Art. 11. Constituem orientações estratégicas quanto à abrangência da obtenção de PRODE:
 
@@ -87,7 +87,7 @@ IV - encerrar a obtenção com a entrega do PRODE ao Ministério da Defesa ou à
 
 ## Página 5
 
-### CAPÍTULO VI - OBTENÇÃO CONJUNTA
+### Capítulo VI - OBTENÇÃO CONJUNTA
 
 Art. 12. Com relação à obtenção conjunta de PRODE de interesse do Ministério da Defesa e das Forças Armadas, deverá ser implantada uma sistemática padronizada, mediante a elaboração de uma diretriz de obtenção conjunta.
 
@@ -113,7 +113,7 @@ IV - designação da Força Singular executora do processo de seleção.
 
 ## Página 6
 
-### CAPÍTULO VII - CAPACITAÇÃO DOS RECURSOS HUMANOS
+### Capítulo VII - CAPACITAÇÃO DOS RECURSOS HUMANOS
 
 Art. 15. Constituem orientações estratégicas quanto à capacitação dos recursos humanos envolvidos na obtenção:
 
@@ -123,7 +123,7 @@ II - preparar as Forças Armadas para atuarem em conjunto na obtenção de bens 
 
 III - atuar, quando necessário, junto aos segmentos governamentais, acadêmicos e industriais, a fim de permitir a troca de informações e o desenvolvimento de competências específicas.
 
-### CAPÍTULO VIII - FOMENTO À BASE INDUSTRIAL DE DEFESA
+### Capítulo VIII - FOMENTO À BASE INDUSTRIAL DE DEFESA
 
 Art. 16. Constituem orientações estratégicas quanto ao fomento à BID:
 
@@ -135,6 +135,6 @@ III - contribuir para o fortalecimento da BID, a fim de que esta conquiste auton
 
 IV - estimular, nas obtenções, a participação de médias, pequenas e microempresas, a título de fomento, nos termos da Lei Complementar nº 123, de 14 de dezembro de 2006.
 
-### CAPÍTULO IX - DISPOSIÇÕES FINAIS
+### Capítulo IX - DISPOSIÇÕES FINAIS
 
 Art. 17. Esta Portaria Normativa entra em vigor na data de sua publicação.

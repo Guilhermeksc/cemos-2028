@@ -1,47 +1,10 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django_cemos2028.apps.core.users.models import Usuario
-
-
-class MateriaModel(models.Model):
-    id = models.IntegerField(primary_key=True, unique=True, verbose_name="ID")
-    materia = models.CharField(max_length=100, unique=True, verbose_name="Matéria")
-    
-    class Meta:
-        verbose_name = "Matéria"
-        verbose_name_plural = "Matérias"
-        ordering = ['materia']
-    
-    def __str__(self):
-        return self.materia
-
-
-class BibliografiaModel(models.Model):
-    id = models.IntegerField(primary_key=True, unique=True, verbose_name="ID")
-    titulo = models.CharField(max_length=255, verbose_name="Título")
-    autor = models.CharField(max_length=255, blank=True, null=True, verbose_name="Autor")
-    materia = models.ForeignKey(
-        MateriaModel,
-        on_delete=models.SET_NULL,
-        blank=True,
-        null=True,
-        verbose_name="Matéria",
-        related_name="bibliografias"
-    )
-    descricao = models.TextField(blank=True, null=True, verbose_name="Descrição")
-    
-    class Meta:
-        verbose_name = "Bibliografia"
-        verbose_name_plural = "Bibliografias"
-        ordering = ['id']
-    
-    def __str__(self):
-        parts = [self.titulo]
-        if self.autor:
-            parts.append(f"- {self.autor}")
-        if self.materia:
-            parts.append(f"({self.materia.materia})")
-        return " ".join(parts)
+from django_cemos2028.apps.bibliografia.models import (
+    BibliografiaModel,
+    CapitulosBibliografiaModel,
+)
 
 class FlashCardsModel(models.Model):
     bibliografia = models.ForeignKey(
@@ -52,7 +15,14 @@ class FlashCardsModel(models.Model):
     )
     pergunta = models.TextField(verbose_name="Pergunta")
     resposta = models.TextField(verbose_name="Resposta")
-    assunto = models.CharField(max_length=100, blank=True, null=True, verbose_name="Assunto")
+    assunto = models.ForeignKey(
+        CapitulosBibliografiaModel,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        verbose_name="Assunto",
+        related_name="+",
+    )
     prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
     ano = models.IntegerField(
         blank=True, 
@@ -84,7 +54,14 @@ class PerguntasBaseModel(models.Model):
         related_name="+"
     )
     paginas = models.CharField(max_length=100, blank=True, null=True, verbose_name="Páginas")
-    assunto = models.CharField(max_length=100, blank=True, null=True, verbose_name="Assunto")
+    assunto = models.ForeignKey(
+        CapitulosBibliografiaModel,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        verbose_name="Assunto",
+        related_name="+",
+    )
     caiu_em_prova = models.BooleanField(default=False, verbose_name="Caiu em Prova")
     ano_prova = models.IntegerField(
         blank=True, 
@@ -218,11 +195,13 @@ class RespostaUsuario(models.Model):
         blank=True,
         verbose_name="ID da Bibliografia"
     )
-    assunto = models.CharField(
-        max_length=100,
+    assunto = models.ForeignKey(
+        CapitulosBibliografiaModel,
+        on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        verbose_name="Assunto"
+        verbose_name="Assunto",
+        related_name="+",
     )
     
     class Meta:
@@ -267,11 +246,13 @@ class QuestaoErradaAnonima(models.Model):
         blank=True,
         verbose_name="ID da Bibliografia"
     )
-    assunto = models.CharField(
-        max_length=100,
+    assunto = models.ForeignKey(
+        CapitulosBibliografiaModel,
+        on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        verbose_name="Assunto"
+        verbose_name="Assunto",
+        related_name="+",
     )
     
     # Metadados

@@ -1412,7 +1412,7 @@ M LTécnico d mtoo | 2026 ZSOF
 
 proceder o acompanhamento das entregas, visando à prestação de contas para a sociedade e à transparência das ações governamentais.
 
-Adicionalmente, em cumprimento ao Acórdão nº 562/2023 do Tribunal de Contas da União (TCU), as despesas realizadas em subtítulos com abrangência nacional devem, obrigatoriamente, ser regionalizadas na captação de final de exercício no módulo de Acompanhamento Físico-Financeiro do Orçamento do SIOP, ou a justificativa para a não regionalização deve ser apresentada. Mais informações sobre o assunto podem ser obtidas no capítulo 8.
+Adicionalmente, em cumprimento ao Acórdão nº 562/2023 do Tribunal de Contas da União (TCU), as despesas realizadas em subtítulos com abrangência nacional devem, obrigatoriamente, ser regionalizadas na captação de final de exercício no módulo de Acompanhamento Físico-Financeiro do Orçamento do SIOP, ou a justificativa para a não regionalização deve ser apresentada. Mais informações sobre o assunto podem ser obtidas no Capítulo 8.
 
 4.5.4.1. Atributos do subtítulo a) Localização Geográfica, Codificação e o campo “Complemento”
 

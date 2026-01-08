@@ -1,5 +1,5 @@
 
-### CAPÍTULO X DOS INSTRUMENTOS AUXILIARES 
+### Capítulo X DOS INSTRUMENTOS AUXILIARES 
 
 ### Seção I Dos Procedimentos Auxiliares
 

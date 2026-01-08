@@ -1,4 +1,4 @@
-# CAPÍTULO 1 UMA AURORA RESPLANDECENTE
+# Capítulo 1 - Uma Aurora Resplandecente
 
 ## Página 1
 

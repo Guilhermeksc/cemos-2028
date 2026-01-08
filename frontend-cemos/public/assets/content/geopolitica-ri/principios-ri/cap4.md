@@ -227,7 +227,7 @@ Os embates entre essas diversas sociedades internacionais persistem. O cientista
 
 De todas as abordagens teóricas, a realista e a radical são as que dão maior atenção ao nível de análise do sistema internacional. Para os realistas, a característica que define o sistema internacional é a polaridade; para os radicais, a estratificação. Em ambas as perspectivas, o sistema internacional restringe o comportamento do Estado. De modo geral, os realistas consideram positivas tais restrições, dependendo da distribuição de poder, enquanto para os radicais elas são negativas, na medida em que impedem que Estados em depressão econômica obtenham igualdade e justiça. Os liberais veem o sistema internacional de um ponto de vista mais neutro, como uma arena e um processo para interação. Já os construtivistas adotam uma abordagem evolutiva, enfatizando o modo como as mudanças nas normas e ideias modelam o sistema, e não veem grande diferenciação entre os sistemas internacional e interno, menosprezando a importância dada à estrutura do sistema internacional.
 
-Estados e responsáveis pelas decisões relacionadas com a política externa agem dentro dos limites do sistema internacional. No próximo capítulo estudaremos o Estado, os desafios por ele enfrentados e modelos de tomada de decisões na esfera estatal.
+Estados e responsáveis pelas decisões relacionadas com a política externa agem dentro dos limites do sistema internacional. No próximo Capítulo estudaremos o Estado, os desafios por ele enfrentados e modelos de tomada de decisões na esfera estatal.
 
 ## Para reflexão 
 1. O sistema internacional é análogo aos sistemas físicos ou biológicos? Que similaridades há entre eles? E que diferenças?

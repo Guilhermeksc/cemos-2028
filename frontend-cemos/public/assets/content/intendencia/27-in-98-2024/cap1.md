@@ -22,7 +22,7 @@ RESOLVE:
 
 ## Página 2
 
-### CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+### Capítulo I - DAS DISPOSIÇÕES PRELIMINARES
 
 Art. 1º A instauração, a organização e o encaminhamento dos processos de tomada de contas especial ao Tribunal de Contas da União obedecerão ao disposto nesta Instrução Normativa.
 
@@ -36,7 +36,7 @@ Parágrafo único. Na hipótese de ocorrência de graves irregularidades ou ileg
 
 ## Página 3
 
-### CAPÍTULO II - DA INSTAURAÇÃO
+### Capítulo II - DA INSTAURAÇÃO
 
 Art. 4º Esgotadas as medidas administrativas de que trata o art. 3º, sem a elisão do dano, e subsistindo os pressupostos a que se refere o art. 5º desta Instrução Normativa, a autoridade competente deve providenciar a imediata instauração de tomada de contas especial, mediante a autuação de processo específico.
 
@@ -252,7 +252,7 @@ Parágrafo único. O sucessor poderá se eximir da responsabilidade sobre a o
 
 ## Página 11
 
-### CAPÍTULO III - DA ORGANIZAÇÃO
+### Capítulo III - DA ORGANIZAÇÃO
 
 Art. 18	. O processo de tomada de contas especial será composto pelos seguintes documentos:
 
@@ -316,7 +316,7 @@ d) as parcelas ressarcidas e as respectivas datas de recolhimento.
 
 ## Página 12
 
-### CAPÍTULO IV - DO ENCAMINHAMENTO
+### Capítulo IV - DO ENCAMINHAMENTO
 
 Art. 19	.  A tomada de contas especial deve ser encaminhada ao Tribunal de Contas da União em até 180 dias após a sua instauração.
 
@@ -364,7 +364,7 @@ Art. 23	.  O processo de tomada de contas especial deve ser constituído e encam
 
 ## Página 13
 
-### CAPÍTULO VI -  DA SOLUÇÃO CONSENSUAL
+### Capítulo VI -  DA SOLUÇÃO CONSENSUAL
 
 Art. 24	. Nos casos em que o dano preliminar apurado tiver por fundamento a inexecução parcial do objeto ou a execução total do objeto sem o alcance de funcionalidade adequada, em havendo boa-fé, poderá ser avaliada a adoção de solução consensual entre os órgãos e entidades repassadoras e os receptores de repasses públicos federais, pessoas físicas ou jurídicas, no âmbito das medidas administrativas prévias. 
 
@@ -380,7 +380,7 @@ Art. 24	. Nos casos em que o dano preliminar apurado tiver por fundamento a inex
 
 ## Página 14
 
-### CAPÍTULO VII - DAS DISPOSIÇÕES GERAIS E TRANSITÓRIAS
+### Capítulo VII - DAS DISPOSIÇÕES GERAIS E TRANSITÓRIAS
 
 Art. 25	. A autoridade competente deve:
 

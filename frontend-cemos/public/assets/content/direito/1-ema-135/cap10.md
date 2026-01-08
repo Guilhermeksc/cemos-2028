@@ -1,5 +1,5 @@
 
-# CAPÍTULO 10 - SISTEMAS DE ARMAS CONVENCIONAIS
+# Capítulo 10 - Sistemas de armas convencionais
 
 ## Página 132
 
@@ -9,7 +9,7 @@ Alguns poucos instrumentos de guerra são sempre ilegais, independente do modo c
 
 Há, ainda, aqueles que podem ser ilegais, dependendo do modo como são empregados, como ocorre com as minas navais de contato derivantes, que podem colocar em perigo tanto à navegação inimiga quanto à neutra, tornando-se, assim, ilegais. Finalmente, qualquer arma pode ter seu emprego considerado ilegal, sempre que for dirigida contra civis ou outras pessoas e propriedades que gozem de um status de imunidade ou proteção.
 
-Este  capítulo  tem  como  propósito  abordar  as  principais  considerações  legais, pertinentes ao emprego de armas convencionais e seus sistemas. Como já visto, um dos princípios fundamentais do Direito Internacional dos Conflitos Armados (DICA) é considerar limitado o direito dos Estados beligerantes escolher os métodos ou os meios de guerrearem. (art. 22 da II Convenção de Haia) Por esse princípio, fica proibido o emprego de armas, de materiais  e  de  métodos  concebidos  para  provocar  danos  ou  sofrimentos  desnecessários (art. 8º, § 2º, alínea b, inciso XX, do Estatuto do Tribunal Penal Internacional - ETPI, Roma, 17JUL1998). Outra consideração diz respeito às armas que, por sua própria natureza, são incapazes  de  serem  empregadas  especificamente  contra  objetivos  militares.  Tais  armas, devido aos seus efeitos indiscriminados, são proibidas, por submeterem civis e outras pessoas a serem protegidas aos mesmos riscos dos combatentes.
+Este  Capítulo  tem  como  propósito  abordar  as  principais  considerações  legais, pertinentes ao emprego de armas convencionais e seus sistemas. Como já visto, um dos princípios fundamentais do Direito Internacional dos Conflitos Armados (DICA) é considerar limitado o direito dos Estados beligerantes escolher os métodos ou os meios de guerrearem. (art. 22 da II Convenção de Haia) Por esse princípio, fica proibido o emprego de armas, de materiais  e  de  métodos  concebidos  para  provocar  danos  ou  sofrimentos  desnecessários (art. 8º, § 2º, alínea b, inciso XX, do Estatuto do Tribunal Penal Internacional - ETPI, Roma, 17JUL1998). Outra consideração diz respeito às armas que, por sua própria natureza, são incapazes  de  serem  empregadas  especificamente  contra  objetivos  militares.  Tais  armas, devido aos seus efeitos indiscriminados, são proibidas, por submeterem civis e outras pessoas a serem protegidas aos mesmos riscos dos combatentes.
 
 De particular interesse para os meios navais, aeronavais e de fuzileiros navais são as regras do DICA pertinentes às minas navais, às minas terrestres, aos torpedos, às armas de fragmentação,  às  armas  incendiárias,  às  armas  dotadas  de  dispositivos  de  retardo,  aos dispositivos de energia direcional e aos sistemas de armas com alcance além do horizonte.
 

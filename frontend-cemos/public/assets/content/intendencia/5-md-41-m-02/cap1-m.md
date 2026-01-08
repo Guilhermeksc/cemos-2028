@@ -1,8 +1,8 @@
 ## Página 13
 
-# CAPÍTULO II - Fundamentos Básicos
+# Capítulo II - Fundamentos Básicos
 
-###  CAPÍTULO 1 - INTRODUÇÃO
+###  Capítulo 1 - INTRODUÇÃO
 
 1.1 Finalidade
 
@@ -14,7 +14,7 @@ Na medida em que orienta tais processos no âmbito do MD e das FS, esta publica�
 
 ## Página 15
 
-### CAPÍTULO II - FUNDAMENTOS BÁSICOS
+### Capítulo II - FUNDAMENTOS BÁSICOS
 
 ### 2.1 A Logística e a Mobilização
 

@@ -120,7 +120,7 @@ Componente: VingancaGeografia
     ↓
 Renderiza: <app-livro-individual>
     ↓
-Exibe: Menu lateral com capítulos + Conteúdo do capítulo selecionado
+Exibe: Menu lateral com Capítulos + Conteúdo do Capítulo selecionado
 ```
 
 ## ⚙️ Configuração das Rotas
@@ -167,11 +167,11 @@ As rotas estão configuradas em `module-route.config.ts`:
 **Usado em**: Item PAI (Bibliografia)
 
 ### 📖 `livro-individual`
-**Responsabilidade**: Exibir conteúdo completo de um livro com navegação por capítulos
+**Responsabilidade**: Exibir conteúdo completo de um livro com navegação por Capítulos
 
 **Inputs**:
 - `contentPath`: Pasta com os arquivos .md
-- `fileNames`: Array com nomes dos arquivos (capítulos)
+- `fileNames`: Array com nomes dos arquivos (Capítulos)
 
 **Usado em**: Itens FILHOS (cada livro)
 
@@ -256,7 +256,7 @@ frontend/public/assets/content/geopolitica-ri/
 2. Se os arquivos .md estão no array `fileNames`
 3. Se os nomes dos arquivos estão corretos (case-sensitive)
 
-### Problema: Imagens não aparecem nos capítulos
+### Problema: Imagens não aparecem nos Capítulos
 **Solução**: Verifique se as imagens estão em:
 ```
 assets/content/geopolitica-ri/[nome-do-livro]/img/

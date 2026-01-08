@@ -1,7 +1,7 @@
 
 ## Página 60
 
-### CAPÍTULO VIII DAS HIPÓTESES DE EXTINÇÃO DOS CONTRATOS
+### Capítulo VIII DAS HIPÓTESES DE EXTINÇÃO DOS CONTRATOS
 
 Art. 137. Constituirão motivos para extinção do contrato, a qual deverá ser formalmente motivada nos autos do processo, assegurados o contraditório e a ampla defesa, as seguintes situações:
 

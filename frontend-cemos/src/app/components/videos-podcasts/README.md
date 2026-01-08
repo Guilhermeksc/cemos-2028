@@ -128,15 +128,15 @@ interface BibliografiaMedia {
   bibliografiaId: number;        // ID da bibliografia
   bibliografiaTitulo?: string;   // Nome da bibliografia
   caminho: string;               // Caminho variado (ex: 'geopolitica/modulo1')
-  capitulos: Capitulo[];         // Lista de capítulos
+  capitulos: Capitulo[];         // Lista de Capítulos
 }
 ```
 
 ### Capitulo
 ```typescript
 interface Capitulo {
-  id: number;            // ID único do capítulo
-  titulo: string;        // Título do capítulo
+  id: number;            // ID único do Capítulo
+  titulo: string;        // Título do Capítulo
   descricao?: string;    // Descrição opcional
   videoPath?: string;    // Nome do arquivo de vídeo (MP4)
   audioPath?: string;    // Nome do arquivo de áudio (MP3/WAV)
@@ -178,16 +178,16 @@ construirCaminhoMidia(caminho: string, tipo: MediaType, nomeArquivo: string): st
 // Obter caminhos base
 obterCaminhosBiblografia(caminho: string): MediaPaths
 
-// Carregar capítulos processados
+// Carregar Capítulos processados
 carregarCapitulos(bibliografiaMedia: BibliografiaMedia): Observable<Capitulo[]>
 
 // Carregar múltiplas bibliografias
 carregarBibliografiasMedia(bibliografias: BibliografiaMedia[]): Observable<BibliografiaMedia[]>
 
-// Filtrar capítulos
+// Filtrar Capítulos
 filtrarCapitulos(capitulos: Capitulo[], searchTerm: string): Capitulo[]
 
-// Ordenar capítulos
+// Ordenar Capítulos
 ordenarCapitulos(capitulos: Capitulo[], ordenarPor: 'ordem' | 'titulo'): Capitulo[]
 
 // Obter estatísticas

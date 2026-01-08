@@ -1,7 +1,7 @@
 
 ## Página 64
 
-### CAPÍTULO XI DA NULIDADE DOS CONTRATOS
+### Capítulo XI DA NULIDADE DOS CONTRATOS
 
 Art. 147. Constatada irregularidade no procedimento licitatório ou na execução contratual, caso não seja possível o saneamento, a decisão sobre a suspensão da execução ou sobre a declaração de nulidade do contrato somente será adotada na hipótese em que se revelar medida de interesse público, com avaliação, entre outros, dos seguintes aspectos:
 

@@ -1,4 +1,4 @@
-# CAPÍTULO 5 - O DIREITO INTERNACIONAL PÚBLICO APLICADO EM TEMPO DE PAZ
+# Capítulo 5 - O direito internacional público aplicado em tempo de paz
 
 ## Página 77
 
@@ -48,8 +48,8 @@ A Assembleia Geral é constituída por todos os membros das Nações Unidas, sen
 O Conselho de Segurança é constituído por quinze membros das Nações Unidas. Cinco membros permanentes: China, Rússia, Reino Unido, Estados Unidos da América e França. Os outros dez membros são eleitos pela Assembleia Geral, por um período de dois anos. Além de diversas  outras  atribuições,  compete  ao  referido  Conselho  manter  a  paz  e  a  segurança internacionais por meio de diversas ações previstas nos Capítulos VI – “Solução Pacífica de Controvérsias” – e VII – “Ação Relativa  a Ameaças  à Paz, Ruptura da Paz e Atos de Agressão” - da Carta.
 
 O Capítulo  VI  estabelece  uma  série  de  medidas  ou  métodos  de  natureza  pacífica, destinados a evitar que as controvérsias entre Estados se transformem em guerra.
-O Capítulo  VII  prevê  medidas  adicionais  para  garantir  o  cumprimento  das determinações  do  Conselho  de  Segurança,  para  estabelecer  ações  de  imposição  ou  para
-recorrer inclusive ao uso da força para assegurar o retorno à paz e à estabilidade. O Conselho de Segurança pode adotar medidas militares para manter ou restaurar a paz e segurança internacionais. Mesmo que tais ações venham a ser tomadas, normalmente, após todos os meios pacíficos terem falhado, o fato de poderem vir a ser conduzidas é essencial para dar credibilidade às Nações Unidas como mantenedores da segurança internacional.
+
+O Capítulo  VII  prevê  medidas  adicionais  para  garantir  o  cumprimento  das determinações  do  Conselho  de  Segurança,  para  estabelecer  ações  de  imposição  ou  para recorrer inclusive ao uso da força para assegurar o retorno à paz e à estabilidade. O Conselho de Segurança pode adotar medidas militares para manter ou restaurar a paz e segurança internacionais. Mesmo que tais ações venham a ser tomadas, normalmente, após todos os meios pacíficos terem falhado, o fato de poderem vir a ser conduzidas é essencial para dar credibilidade às Nações Unidas como mantenedores da segurança internacional.
 
 ## Página 80
 
@@ -69,8 +69,7 @@ Consiste, em geral, em simples medidas legislativas ou administrativas. O aument
 
 **5.5.3 - A represália**
 
-É uma medida coercitiva, derrogatória das regras ordinárias do direito das gentes, tomada por um Estado em consequência de atos ilícitos praticados, em seu prejuízo, por outro
-Estado e destinada a impor a este, por meio de um dano, o respeito ao direito.
+É uma medida coercitiva, derrogatória das regras ordinárias do direito das gentes, tomada por um Estado em consequência de atos ilícitos praticados, em seu prejuízo, por outro Estado e destinada a impor a este, por meio de um dano, o respeito ao direito.
 
 ## Página 81
 
@@ -103,8 +102,7 @@ Pode ter em vista impedir a entrada e saída dos navios pertencentes a nacionais
 O DIP não reconhece, em princípio, a legalidade dessa última forma de bloqueio, pois, sendo uma das formas de represália, ele não pode atingir terceiros e, nesse caso, deve se
 limitar aos navios pertencentes a nacionais do Estado bloqueado. Outras duas condições são necessárias para atestar a legalidade do bloqueio pacífico:
 a) que  o  bloqueio  seja  declarado  e  notificado  oficialmente  e  mantido  por  força suficiente; e
-b) que os navios violadores  de tal bloqueio sejam submetidos  apenas a sequestro (apreensão), devendo, após a cessação do bloqueio, ser restituídos, com suas cargas, a seus
-proprietários, mas sem direito a indenização alguma.
+b) que os navios violadores  de tal bloqueio sejam submetidos  apenas a sequestro (apreensão), devendo, após a cessação do bloqueio, ser restituídos, com suas cargas, a seus proprietários, mas sem direito a indenização alguma.
 
 ## 5.6 - O USO DA FORÇA NO DIREITO INTERNACIONAL PÚBLICO
 
@@ -146,8 +144,7 @@ Uma vez aprovada pelas Nações Unidas a ação militar, os Estados-membros deve
 
 ## 5.7 - OPERAÇÕES DE PAZ CONDUZIDAS PELA ONU
  
-As  missões  promovidas  pelas  Nações  Unidas  incluem  uma  mistura  complexa  de objetivos militares, diplomáticos, políticos e humanitários, em ambientes anárquicos e de
-elevado risco. A ONU consagra o uso de vários instrumentos para se atingir os objetivos almejados.
+As  missões  promovidas  pelas  Nações  Unidas  incluem  uma  mistura  complexa  de objetivos militares, diplomáticos, políticos e humanitários, em ambientes anárquicos e de elevado risco. A ONU consagra o uso de vários instrumentos para se atingir os objetivos almejados.
 
 **5.7.1 - Diplomacia Preventiva**
 

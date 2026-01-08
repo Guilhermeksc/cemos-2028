@@ -1,4 +1,4 @@
-# CAPÍTULO VI - Disposições Finais
+# Capítulo VI - Disposições Finais
 
 ## Página 41
 

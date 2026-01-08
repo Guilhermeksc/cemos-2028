@@ -1,7 +1,7 @@
 
 ## Página 54
 
-### CAPÍTULO V DA DURAÇÃO DOS CONTRATOS
+### Capítulo V DA DURAÇÃO DOS CONTRATOS
 
 Art. 105. A duração dos contratos regidos por esta Lei será a prevista em edital, e deverão ser observadas, no momento da contratação e a cada exercício financeiro, a disponibilidade de créditos orçamentários, bem como a previsão no plano plurianual, quando ultrapassar 1 (um) exercício financeiro.
 

@@ -2,7 +2,7 @@
 
 # TÍTULO V DISPOSIÇÕES GERAIS
 
-### CAPÍTULO I DO PORTAL NACIONAL DE CONTRATAÇÕES PÚBLICAS (PNCP)
+### Capítulo I DO PORTAL NACIONAL DE CONTRATAÇÕES PÚBLICAS (PNCP)
 
 Art. 174. É criado o Portal Nacional de Contratações Públicas (PNCP), sítio eletrônico oficial destinado à:
 
@@ -83,7 +83,7 @@ II - disponibilizar a versão física dos documentos em suas repartições, veda
 ## Página 72
 
 ### 
-CAPÍTULO II DAS ALTERAÇÕES LEGISLATIVAS
+Capítulo II DAS ALTERAÇÕES LEGISLATIVAS
 
 Art. 177. O caput do art. 1.048 da Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), passa a vigorar acrescido do seguinte inciso IV:
 
@@ -95,7 +95,7 @@ IV - em que se discuta a aplicação do disposto nas normas gerais de licitaçã
 
 Art. 178. O Título XI da Parte Especial do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), passa a vigorar acrescido do seguinte Capítulo II-B:
 
-“CAPÍTULO II-B DOS CRIMES EM LICITAÇÕES E CONTRATOS ADMINISTRATIVOS Contratação direta ilegal
+“Capítulo II-B DOS CRIMES EM LICITAÇÕES E CONTRATOS ADMINISTRATIVOS Contratação direta ilegal
 
 Art. 337-E. Admitir, possibilitar ou dar causa à contratação direta fora das hipóteses previstas em lei:
 
@@ -201,7 +201,7 @@ Art. 180. O caput do art. 10 da Lei nº 11.079, de 30 de dezembro de 2004, passa
 
 “Art. 10. A contratação de parceria público-privada será precedida de licitação na modalidade concorrência ou diálogo competitivo, estando a abertura do processo licitatório condicionada a:
 
-CAPÍTULO III DISPOSIÇÕES TRANSITÓRIAS E FINAIS
+Capítulo III DISPOSIÇÕES TRANSITÓRIAS E FINAIS
 
 Art. 181. Os entes federativos instituirão centrais de compras, com o objetivo de realizar compras em grande escala, para atender a diversos órgãos e entidades sob sua competência e atingir as finalidades desta Lei.
 

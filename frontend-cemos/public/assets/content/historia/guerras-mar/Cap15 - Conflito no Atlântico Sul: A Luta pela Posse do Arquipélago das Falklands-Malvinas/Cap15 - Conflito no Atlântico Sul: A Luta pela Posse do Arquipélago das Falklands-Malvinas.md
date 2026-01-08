@@ -1,5 +1,5 @@
 
-## CAPÍTULO 15 - Conflito no Atlântico Sul: A Luta pela Posse do Arquipélago das Falklands-Malvinas 1 (Páginas 94-127)  ALMIRANTE ARMANDO AMORIM FERREIRA VIDIGAL
+## Capítulo 15 - Conflito no Atlântico Sul: A Luta pela Posse do Arquipélago das Falklands-Malvinas 1 (Páginas 94-127)  ALMIRANTE ARMANDO AMORIM FERREIRA VIDIGAL
 
 "Se as ilhas forem invadidas, eu saberei exatamente o que nós teremos de fazer - expulsá-los." Margaret Thatcher
 

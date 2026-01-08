@@ -123,7 +123,7 @@ URL: http://localhost:4200/home/app6-geopolitica-relacoes-internacionais/bibliog
 2. ✅ `showCapa = false` (porque URL NÃO termina com `/bibliografia`)
 3. ✅ `capa-bibliografia` é ocultada
 4. ✅ `<router-outlet>` renderiza o componente `VingancaGeografia`
-5. ✅ Exibe o `livro-individual` com os capítulos do livro
+5. ✅ Exibe o `livro-individual` com os Capítulos do livro
 
 ## 📊 Estrutura de Rotas Resultante
 
@@ -162,8 +162,8 @@ URL: http://localhost:4200/home/app6-geopolitica-relacoes-internacionais/bibliog
    - ✅ URL: `http://localhost:4200/home/app6-geopolitica-relacoes-internacionais/bibliografia/vinganca-geografia`
    - ✅ Capa da bibliografia é OCULTADA
    - ✅ Componente `livro-individual` é exibido
-   - ✅ Menu lateral com capítulos visível
-   - ✅ Conteúdo do primeiro capítulo carregado
+   - ✅ Menu lateral com Capítulos visível
+   - ✅ Conteúdo do primeiro Capítulo carregado
 
 ### Teste 3: Voltar para o Item PAI
 

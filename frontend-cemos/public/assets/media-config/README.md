@@ -116,11 +116,11 @@ C:\Users\guilh\projeto\www\midias\
 - `bibliografiaId` (obrigatório): ID único da bibliografia
 - `bibliografiaTitulo` (opcional): Título da bibliografia
 - `caminho` (obrigatório): Caminho relativo dentro de mediasBasePath (use `\\` para Windows em dev)
-- `capitulos` (obrigatório): Array de capítulos
+- `capitulos` (obrigatório): Array de Capítulos
 
 ### Capítulo
-- `id` (obrigatório): ID único do capítulo
-- `titulo` (obrigatório): Título do capítulo
+- `id` (obrigatório): ID único do Capítulo
+- `titulo` (obrigatório): Título do Capítulo
 - `descricao` (opcional): Descrição detalhada
 - `videoPath` (opcional): Nome do arquivo de vídeo (MP4)
 - `audioPath` (opcional): Nome do arquivo de áudio (MP3/WAV)
@@ -138,7 +138,7 @@ C:\Users\guilh\projeto\www\midias\
    - Produção (Linux): Será convertido automaticamente para `/`
 
 4. **Campos opcionais**: 
-   - Um capítulo pode ter só vídeo, só áudio, ou ambos
+   - Um Capítulo pode ter só vídeo, só áudio, ou ambos
    - `descricao` e `duracao` são opcionais mas recomendados
 
 5. **Formato de vídeo**: Recomendado MP4 (H.264) para compatibilidade
@@ -148,7 +148,7 @@ C:\Users\guilh\projeto\www\midias\
 
 1. **Copie os arquivos** para o diretório correto no servidor
 2. **Edite o arquivo JSON** correspondente
-3. **Adicione a entrada** do novo capítulo
+3. **Adicione a entrada** do novo Capítulo
 4. **Salve o arquivo**
 5. **Recarregue a página** da aplicação
 

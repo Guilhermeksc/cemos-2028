@@ -6,7 +6,7 @@ Diferentemente da microeconomia, que trabalha com mercados isolados, a macroecon
 
 Assim, para que as análises macroeconômicas pudessem avançar, foi necessário o desenvolvimento de **um instrumental que permita mensurar a totalidade das atividades econômicas**. Esse instrumento recebeu o nome de **Contabilidade Nacional**, cuja evolução devese aos trabalhos do inglês Richard Stone (1913-1991), Prêmio Nobel 1984, e o russo naturalizado norte-americano Simon Kuznets (1901-1985), Prêmio Nobel 1971, ainda antes da Segunda Guerra Mundial.1 A partir do desenvolvimento dessa técnica de mensuração, baseada no método contábil de partidas dobradas, houve grande avanço da teoria econômica, uma vez que se tornaram possíveis os testes empíricos e uma análise qualitativa mais consubstanciada.
 
-Neste capítulo, serão apresentados os principais agregados macroeconômicos e como mensurálos. Os conceitos básicos trabalhados são os de produto, renda e dispêndio. Espera-se que ao final do capítulo o leitor entenda como se chega a esses valores e os itens que os compõem.
+Neste Capítulo, serão apresentados os principais agregados macroeconômicos e como mensurálos. Os conceitos básicos trabalhados são os de produto, renda e dispêndio. Espera-se que ao final do Capítulo o leitor entenda como se chega a esses valores e os itens que os compõem.
 
 ## 2.1 DEFINIÇÃO DE PRODUTO?
 
@@ -510,7 +510,7 @@ Fonte: dados básicos do Banco Mundial.
 
 ## 2.8 CONSIDERAÇÕES FINAIS
 
-O objetivo deste capítulo era apresentar ao leitor os principais agregados macroeconômicos, formas de medi-los e os diversos atores envolvidos no funcionamento da economia (famílias, empresas, governo e resto do mundo). Essa conceituação é necessária para que o leitor se familiarize com alguns termos e conceitos econômicos de modo que possa, nos próximos capítulos, entender como a economia se comporta e analisar a evolução da economia brasileira.
+O objetivo deste Capítulo era apresentar ao leitor os principais agregados macroeconômicos, formas de medi-los e os diversos atores envolvidos no funcionamento da economia (famílias, empresas, governo e resto do mundo). Essa conceituação é necessária para que o leitor se familiarize com alguns termos e conceitos econômicos de modo que possa, nos próximos Capítulos, entender como a economia se comporta e analisar a evolução da economia brasileira.
 
 ## Página 19
 

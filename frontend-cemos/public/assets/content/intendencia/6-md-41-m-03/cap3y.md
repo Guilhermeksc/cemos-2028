@@ -1,4 +1,4 @@
-# CAPÍTULO III - Planos de Mobilização das Forças Singulares
+# Capítulo III - Planos de Mobilização das Forças Singulares
 
 ## Página 25
 

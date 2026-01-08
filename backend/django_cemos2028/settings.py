@@ -53,8 +53,10 @@ INSTALLED_APPS = [
     'django_cemos2028.apps.core.auth',
     'django_cemos2028.apps.core.users',
     # Módulos
+    'django_cemos2028.apps.bibliografia',
     'django_cemos2028.apps.perguntas',
     'django_cemos2028.apps.informacoes',
+    'django_cemos2028.apps.revisao',
 ]
 
 MIDDLEWARE = [

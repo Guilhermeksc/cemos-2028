@@ -50,6 +50,7 @@ export class PerguntasService {
 
   /**
    * Lista todas as bibliografias com filtros opcionais
+   * NOTA: Usa o endpoint do app bibliografia, não do app perguntas
    */
   getBibliografias(filters?: BibliografiaFilters): Observable<PaginatedResponse<Bibliografia>> {
     this.loadingBibliografias$.next(true);
@@ -63,7 +64,9 @@ export class PerguntasService {
       });
     }
 
-    return this.http.get<PaginatedResponse<Bibliografia>>(`${this.apiUrl}/bibliografias/`, { params })
+    // Usar endpoint do app bibliografia: /api/bibliografia/api/bibliografias/
+    const bibliografiaApiUrl = `${environment.apiUrl}/bibliografia/api`;
+    return this.http.get<PaginatedResponse<Bibliografia>>(`${bibliografiaApiUrl}/bibliografias/`, { params })
       .pipe(
         tap(response => {
           this.bibliografias$.next(response.results);
@@ -76,7 +79,9 @@ export class PerguntasService {
    * Busca uma bibliografia específica por ID
    */
   getBibliografia(id: number): Observable<Bibliografia> {
-    return this.http.get<Bibliografia>(`${this.apiUrl}/bibliografias/${id}/`);
+    // Usar endpoint do app bibliografia: /api/bibliografia/api/bibliografias/
+    const bibliografiaApiUrl = `${environment.apiUrl}/bibliografia/api`;
+    return this.http.get<Bibliografia>(`${bibliografiaApiUrl}/bibliografias/${id}/`);
   }
 
   /**
@@ -464,4 +469,25 @@ export class PerguntasService {
     );
   }
 
+  // ==================== MATÉRIAS ====================
+
+  /**
+   * Lista todas as matérias disponíveis
+   * NOTA: Usa o endpoint do app bibliografia, não do app perguntas
+   * O backend retorna uma resposta paginada, então precisamos extrair os resultados
+   */
+  getMaterias(): Observable<Array<{ id: number; nome: string }>> {
+    // Usar endpoint do app bibliografia: /api/bibliografia/api/materias/
+    const bibliografiaApiUrl = `${environment.apiUrl}/bibliografia/api`;
+    return this.http.get<PaginatedResponse<{ id: number; materia: string }>>(`${bibliografiaApiUrl}/materias/`).pipe(
+      map(response => {
+        // Converter de PaginatedResponse para array simples
+        // O backend retorna { id, materia }, mas o frontend espera { id, nome }
+        return (response.results || []).map(m => ({
+          id: m.id,
+          nome: m.materia
+        }));
+      })
+    );
+  }
 }

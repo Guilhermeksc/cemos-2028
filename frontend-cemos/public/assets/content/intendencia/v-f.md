@@ -23,7 +23,7 @@ A saída deve ser obrigatoriamente uma tabela Markdown, seguindo exatamente as c
 
     “assunto” será preenchido com 'Cap. 5 - O Direito Internacional público aplicado em tempo de paz'
 
-    “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa. Deve estar fiel ao texto da lei ou do capítulo consultado.
+    “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa. Deve estar fiel ao texto da lei ou do Capítulo consultado.
 
     “afirmacao_falsa” deve conter a frase que será julgada como verdadeira ou falsa.
     

@@ -1,6 +1,6 @@
 # MARINHA DO BRASIL: UMA SÍNTESE HISTÓRICA J,
 
-# CAPÍTULO IX - A MARINHA DO BRASIL NA PRIMEIRA GEURRA MUNDIAL - CMG (RM1) FRANCISCO EDUADRO ALVES DE ALMEIDA
+# Capítulo IX - A MARINHA DO BRASIL NA PRIMEIRA GEURRA MUNDIAL - CMG (RM1) FRANCISCO EDUADRO ALVES DE ALMEIDA
 
 No dia 28 de junho de 1914, em Sarajevo, o herdeiro do trono do Império Austro-Húngaro, o Arquiduque Francisco Ferdinando e sua mulher Sofia foram assassinados por um nacionalista de origem sérvia, provocando uma sequência de eventos que culminaram na chamada Grande Guerra, posteriormente chamada de Primeira Guerra Mundial.
 
@@ -312,7 +312,7 @@ A sexta conclusão, e que reúne todas as anteriores, foi a percepção da neces
 
 E, por fim, a guerra no mar mostrou que, no caso do Brasil, em um conflito generalizado, as linhas de comunicação serão os alvos prioritários. Assim aconte ceu em 1917 e em 1942. O Brasil é dependente do comércio marítimo, e não pode estar despreparado mais uma vez. Essa constatação é estratégica e histórica. 
 
-# CAPÍTULO XI - A MAINHA EM APOIO À POLÍTICA EXTERNA BRASILEIRA CA (RM1) GUILHERME MATTOS DE ABREU
+# Capítulo XI - A MAINHA EM APOIO À POLÍTICA EXTERNA BRASILEIRA CA (RM1) GUILHERME MATTOS DE ABREU
 
 **Certa vez, ouvimos de um diplomata chinês: "Militares e diplomatas são parceiros de toda hora! São como se fossem as duas mãos de um mesmo corpo!" No entanto, esta relação nem sempre é percebida, por se conferir ênfase ao discurso "política externa sem seguranfa ou defesa" onde os formuladores imaginam escudar-se na fórmula "soft power" (poder suave ou brando), ainda que a história e o acompanhamento do noticiário no dia a dia indiquem que, infelizmente, os conflitos façam parte da realidade humana e assim continuarão por muito tempo.**
 
@@ -346,7 +346,7 @@ c) Instrumentos Militares
 
 Exceto no caso dos denominados Instrumentos Militares Emergentes, os Instrumentos Militares são aqueles que implicam uso ou ameaça de uso de força, tanto compelindo quanto em violência declarada.
 
-Detalhar a atuação, instrumento por instrumento, excederia o espaço disponível para este capítulo. Assim, a argumentação a seguir limitar-se- á àqueles aspectos relacionados à Marinha.
+Detalhar a atuação, instrumento por instrumento, excederia o espaço disponível para este Capítulo. Assim, a argumentação a seguir limitar-se- á àqueles aspectos relacionados à Marinha.
 
 ## A DIPLOMACIA
 
@@ -396,7 +396,7 @@ O estudo da trajetória dos estagiários e alunos que participaram desses cursos
 
 ## DIPLOMACIA MILITAR
 
-Neste capítulo, adotou-se a expressão Diplomacia Militar para englobar as ações em que se mobilizem meios militares, impliquem ou não emprego de força ou ameaça do uso de força. Esses meios podem ser utilizados de diferentes maneiras, como, por exemplo, aplicando-os em diversas tarefas de apoio ou de representação (estas últimas, tradicionalmente associadas à expressão "mostrar a bandeira", constituem o exemplo mais tradicional de emprego de Forças Navais, em situação de normalidade); ou posicionando-os de modo a negociar a partir de uma situação de força, por ocasião de uma crise (o que pode ser atendido pela realização de exercícios em áreas de interesse). Assim, a Diplomacia Militar pode estar enquadrada como Instrumento Político-Militar e como Instrumento Militar.
+Neste Capítulo, adotou-se a expressão Diplomacia Militar para englobar as ações em que se mobilizem meios militares, impliquem ou não emprego de força ou ameaça do uso de força. Esses meios podem ser utilizados de diferentes maneiras, como, por exemplo, aplicando-os em diversas tarefas de apoio ou de representação (estas últimas, tradicionalmente associadas à expressão "mostrar a bandeira", constituem o exemplo mais tradicional de emprego de Forças Navais, em situação de normalidade); ou posicionando-os de modo a negociar a partir de uma situação de força, por ocasião de uma crise (o que pode ser atendido pela realização de exercícios em áreas de interesse). Assim, a Diplomacia Militar pode estar enquadrada como Instrumento Político-Militar e como Instrumento Militar.
 
 Tanto como Instrumento Político-Militar como Instrumento Militar, historicamente, a Diplomacia Naval é a que tem maior tradição, por seus predicados. Isto porque, ao contrário das limitações que sofrem as outras Forças Armadas, as Forças Navais são os únicos dispositivos militares capazes de atuar com significativa liberdade em tempo de paz, pois os navios de guerra, a despeito de todo armamento que dispõem, podem visitar portos estrangeiros sem provocar comoção. Característica que diversos governos aproveitam para empregar politicamente as suas Marinhas.
 
@@ -533,7 +533,7 @@ O nosso Brasil merece que reflitamos sobre tais demandas!
 
 ## A GUERRA DA LAGOSTA E A DIPLOMACIA NAVAL
 
-Citada como exemplo em várias passagens deste capítulo, torna-se oportuno ampliar alguns tópicos relacionados à Guerra da Lagosta (1963), ocasião em que o Brasil impediu que barcos franceses continuassem capturando lagostas em nossa plataforma continental. Trata-se de uma crise razoavelmente conhecida, mas que, ainda assim, mereceria um estudo integrado, uma vez que as diver sas abordagens encontradas são setoriais. Com isso, não se consegue apreender e harmonizar, em justa medida, todos os aspectos do tema, que envolve desentro samento entre órgãos do Governo e percepções equivocadas. Destaca-se que foi um confronto relacionado a um tema ambiental, possivelmente, o primeiro com essa característica em que o Brasil se envolveu.
+Citada como exemplo em várias passagens deste Capítulo, torna-se oportuno ampliar alguns tópicos relacionados à Guerra da Lagosta (1963), ocasião em que o Brasil impediu que barcos franceses continuassem capturando lagostas em nossa plataforma continental. Trata-se de uma crise razoavelmente conhecida, mas que, ainda assim, mereceria um estudo integrado, uma vez que as diver sas abordagens encontradas são setoriais. Com isso, não se consegue apreender e harmonizar, em justa medida, todos os aspectos do tema, que envolve desentro samento entre órgãos do Governo e percepções equivocadas. Destaca-se que foi um confronto relacionado a um tema ambiental, possivelmente, o primeiro com essa característica em que o Brasil se envolveu.
 
 Afinal, o nosso País dispôs-se ao enfrentamento bélico, não só para preservar um recurso econômico, mas também, à luz dos argumentos empregados, para proteger da destruição a lagosta e a biota de seu habitat, que pescadores franceses já teriam dizimado em outras áreas devido às técnicas de captura que empregavam.
 
@@ -585,7 +585,7 @@ Notas
 
 16. O Presidente De Gaulle determinara à Marinha "que desse toda a garantia necessária para que os lagosteiros bretões (região costeira da França) fizessem uso de seu legítimo direito de pescar, como e onde vinham fazendo" (CORREA, 2000).
 
-# CAPÍTULO XII DO CARVÃO AO PETRÓLEO E À ENERGIA NUCLEAR: A MARINHA SE TRANSFORMA - CMG (RM1) WILLIAM DE SOUSA MOREIRA
+# Capítulo XII DO CARVÃO AO PETRÓLEO E À ENERGIA NUCLEAR: A MARINHA SE TRANSFORMA - CMG (RM1) WILLIAM DE SOUSA MOREIRA
 
 **O século XX" irrompeu navEgando a 32 nós (59,2km/h). Essa fora a velocidade desenvolvida por um pequeno navio, o Turbinia, na parada naval britânica de 1897, por ocasião do jubileu de Diamante da Rainha Vitória. O impacto sobre o público que testemunhava aquela efeméride prenunciava uma era de desenvolvimentos que impulsionaria as aventuras humanas no mar.**
 
@@ -746,13 +746,13 @@ Acompanhar a evolução das tecnologias navais é um desafio crescente, especial
 
 Assim, convém lembrar que o Poder Naval ganha concretude em sua base humana e material, normalmente composta por meios navais, aeronavais e de fuzileiros navais intensivos em tecnologias, essas sujeitas à evolução ou à obsolescência. O futuro de uma Marinha depende, pois, de vários fatores, em especial, da Base Industrial de Defesa e da capacidade científico-tecnológica nativas que lhe servem de alicerce. Esse conjunto depende, por sua vez, do pensamento político-estratégico predominante, da valoração e dos estímulos que recebe, da infraestrutura de pesquisa e desenvolvimento, do grau de independência tecnológica conquistado, da formação e qualificação do pessoal e, sobretudo, da mentalidade marítima da nação e da determinação em superar óbices e buscar soluções inovadoras.
 
-# CAPÍTULO XIII MARINHA DO BRASIL NO SÉCULO XXI - AE ILQUES BARBOSA JUNIOR
+# Capítulo XIII MARINHA DO BRASIL NO SÉCULO XXI - AE ILQUES BARBOSA JUNIOR
 
 Na atualidade, a evolução do Poder Naval impõe, mais do que em outros períodos da história, a existência, em diversos níveis, de líderes efetivos e assessores experientes. Tal característica decorre da dinâmica e complexidade das relações internacionais e, sobretudo, de uma crescente influência da tecnologia da informação nas atividades da civilização humana, o que inclui as situações de conflito.
 
 A dinâmica e a complexidade das relações internacionais e do ambiente interno indicam que na Era do Conhecimento os desafios serão permanentes e alcançarão magnitude crescente. Assim, para a identificação das capacidades previstas em uma Marinha equivalente à estatura político-estratégica do Brasil, analisaremos os múltiplos desafios que se apresentam na atual navegação da nossa Marinha. De início, o desafio mais importante será aquele voltado para a identificação e capacitação de líderes e assessores. Na época do Google, como mencionado, devemos identificar e capacitar líderes em todos os níveis hierárquicos, considerando, além dos conhecimentos científicos, tecnológicos e da área das ciências sociais e humanas, o estudo aprofundado da Ética e da Rosa das Virtudes.
 
-Para os demais, como "auxílios à navegação" da análise que efetuaremos, vamos segmentar os desafios, considerando aspectos culturais, estratégicos, estruturais, Ciência/Tecnologia/Inovação e Engenharia e os orçamentários. Ao término do capítulo, faremos as Considerações Finais.
+Para os demais, como "auxílios à navegação" da análise que efetuaremos, vamos segmentar os desafios, considerando aspectos culturais, estratégicos, estruturais, Ciência/Tecnologia/Inovação e Engenharia e os orçamentários. Ao término do Capítulo, faremos as Considerações Finais.
 
 Por oportuno, destacamos que os desafios apresentam interações; devendo ser admitida alguma dificuldade em delimitar, com exatidão, a causa ou efeito ou, em outras palavras, as consequências do equacionamento, ou não, de um determinado aspecto de um dos desafios nas capacidades pretendidas pela Marinha do Brasil.
 

@@ -2,7 +2,7 @@
 
 # TÍTULO III DOS CONTRATOS ADMINISTRATIVOS 
 
-### CAPÍTULO I DA FORMALIZAÇÃO DOS CONTRATOS
+### Capítulo I DA FORMALIZAÇÃO DOS CONTRATOS
 
 Art. 89. Os contratos de que trata esta Lei regular-se-ão pelas suas cláusulas e pelos preceitos de direito público, e a eles serão aplicados, supletivamente, os princípios da teoria geral dos contratos e as disposições de direito privado.
 
@@ -146,7 +146,7 @@ II - compras com entrega imediata e integral dos bens adquiridos e dos quais nã
 
 ## Página 52
 
-### CAPÍTULO II DAS GARANTIAS
+### Capítulo II DAS GARANTIAS
 
 Art. 96. A critério da autoridade competente, em cada caso, poderá ser exigida, mediante previsão no edital, prestação de garantia nas contratações de obras, serviços e fornecimentos.
 
@@ -204,7 +204,7 @@ I - caso a seguradora execute e conclua o objeto do contrato, estará isenta da 
 
 II - caso a seguradora não assuma a execução do contrato, pagará a integralidade da importância segurada indicada na apólice.
 
-### CAPÍTULO III DA ALOCAÇÃO DE RISCOS
+### Capítulo III DA ALOCAÇÃO DE RISCOS
 
 Art. 103. O contrato poderá identificar os riscos contratuais previstos e presumíveis e prever matriz de alocação de riscos, alocando-os entre contratante e contratado, mediante indicação daqueles a serem assumidos pelo setor público ou pelo setor privado ou daqueles a serem compartilhados.
 
@@ -226,7 +226,7 @@ II - ao aumento ou à redução, por legislação superveniente, dos tributos di
 
 ## Página 54
 
-### CAPÍTULO IV DAS PRERROGATIVAS DA ADMINISTRAÇÃO
+### Capítulo IV DAS PRERROGATIVAS DA ADMINISTRAÇÃO
 
 Art. 104. O regime jurídico dos contratos instituído por esta Lei confere à Administração, em relação a eles, as prerrogativas de:
 
@@ -244,7 +244,7 @@ b) necessidade de acautelar apuração administrativa de faltas contratuais pelo
 
 § 2º Na hipótese prevista no inciso I do caput deste artigo, as cláusulas econômico-financeiras do contrato deverão ser revistas para que se mantenha o equilíbrio contratual.
 
-### CAPÍTULO V DA DURAÇÃO DOS CONTRATOS
+### Capítulo V DA DURAÇÃO DOS CONTRATOS
 
 Art. 105. A duração dos contratos regidos por esta Lei será a prevista em edital, e deverão ser observadas, no momento da contratação e a cada exercício financeiro, a disponibilidade de créditos orçamentários, bem como a previsão no plano plurianual, quando ultrapassar 1 (um) exercício financeiro.
 
@@ -290,7 +290,7 @@ Art. 113. O contrato firmado sob o regime de fornecimento e prestação de servi
 
 Art. 114. O contrato que previr a operação continuada de sistemas estruturantes de tecnologia da informação poderá ter vigência máxima de 15 (quinze) anos.
 
-### CAPÍTULO VI DA EXECUÇÃO DOS CONTRATOS
+### Capítulo VI DA EXECUÇÃO DOS CONTRATOS
 
 Art. 115. O contrato deverá ser executado fielmente pelas partes, de acordo com as cláusulas avençadas e as normas desta Lei, e cada parte responderá pelas consequências de sua inexecução total ou parcial.
 
@@ -370,7 +370,7 @@ Art. 123. A Administração terá o dever de explicitamente emitir decisão sobr
 
 Parágrafo único. Salvo disposição legal ou cláusula contratual que estabeleça prazo específico, concluída a instrução do requerimento, a Administração terá o prazo de 1 (um) mês para decidir, admitida a prorrogação motivada por igual período.
 
-### CAPÍTULO VII DA ALTERAÇÃO DOS CONTRATOS E DOS PREÇOS
+### Capítulo VII DA ALTERAÇÃO DOS CONTRATOS E DOS PREÇOS
 
 Art. 124. Os contratos regidos por esta Lei poderão ser alterados, com as devidas justificativas, nos seguintes casos:
 
@@ -456,7 +456,7 @@ III - alterações na razão ou na denominação social do contratado; IV - empe
 
 ## Página 60
 
-### CAPÍTULO VIII DAS HIPÓTESES DE EXTINÇÃO DOS CONTRATOS
+### Capítulo VIII DAS HIPÓTESES DE EXTINÇÃO DOS CONTRATOS
 
 Art. 137. Constituirão motivos para extinção do contrato, a qual deverá ser formalmente motivada nos autos do processo, assegurados o contraditório e a ampla defesa, as seguintes situações:
 
@@ -540,7 +540,7 @@ IV - retenção dos créditos decorrentes do contrato até o limite dos prejuíz
 
 § 2º Na hipótese do inciso II do caput deste artigo, o ato deverá ser precedido de autorização expressa do ministro de Estado, do secretário estadual ou do secretário municipal competente, conforme o caso.
 
-### CAPÍTULO IX DO RECEBIMENTO DO OBJETO DO CONTRATO
+### Capítulo IX DO RECEBIMENTO DO OBJETO DO CONTRATO
 
 Art. 140. O objeto do contrato será recebido: I - em se tratando de obras e serviços:
 
@@ -568,7 +568,7 @@ b) definitivamente, por servidor ou comissão designada pela autoridade competen
 
 § 6º Em se tratando de obra, o recebimento definitivo pela Administração não eximirá o contratado, pelo prazo mínimo de 5 (cinco) anos, admitida a previsão de prazo de garantia superior no edital e no contrato, da responsabilidade objetiva pela solidez e pela segurança dos materiais e dos serviços executados e pela funcionalidade da construção, da reforma, da recuperação ou da ampliação do bem imóvel, e, em caso de vício, defeito ou incorreção identificados, o contratado ficará responsável pela reparação, pela correção, pela reconstrução ou pela substituição necessárias.
 
-### CAPÍTULO X DOS PAGAMENTOS
+### Capítulo X DOS PAGAMENTOS
 
 Art. 141. No dever de pagamento pela Administração, será observada a ordem cronológica para cada fonte diferenciada de recursos, subdividida nas seguintes categorias de contratos:
 
@@ -620,7 +620,7 @@ Art. 145. Não será permitido pagamento antecipado, parcial ou total, relativo 
 
 Art. 146. No ato de liquidação da despesa, os serviços de contabilidade comunicarão aos órgãos da administração tributária as características da despesa e os valores pagos, conforme o disposto no art. 63 da Lei nº 4.320, de 17 de março de 1964.
 
-### CAPÍTULO XI DA NULIDADE DOS CONTRATOS
+### Capítulo XI DA NULIDADE DOS CONTRATOS
 
 Art. 147. Constatada irregularidade no procedimento licitatório ou na execução contratual, caso não seja possível o saneamento, a decisão sobre a suspensão da execução ou sobre a declaração de nulidade do contrato somente será adotada na hipótese em que se revelar medida de interesse público, com avaliação, entre outros, dos seguintes aspectos:
 
@@ -660,7 +660,7 @@ Art. 149. A nulidade não exonerará a Administração do dever de indenizar o c
 
 Art. 150. Nenhuma contratação será feita sem a caracterização adequada de seu objeto e sem a indicação dos créditos orçamentários para pagamento das parcelas contratuais vincendas no exercício em que for realizada a contratação, sob pena de nulidade do ato e de responsabilização de quem lhe tiver dado causa.
 
-### CAPÍTULO XII DOS MEIOS ALTERNATIVOS DE RESOLUÇÃO DE CONTROVÉRSIAS
+### Capítulo XII DOS MEIOS ALTERNATIVOS DE RESOLUÇÃO DE CONTROVÉRSIAS
 
 Art. 151. Nas contratações regidas por esta Lei, poderão ser utilizados meios alternativos de prevenção e resolução de controvérsias, notadamente a conciliação, a mediação, o comitê de resolução de disputas e a arbitragem.
 

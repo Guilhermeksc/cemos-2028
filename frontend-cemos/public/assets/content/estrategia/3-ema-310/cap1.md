@@ -1,4 +1,4 @@
-# Cap. 1 - Conceito Estretégico
+# Cap. 1 - Conceito Estratégico
 
 ## Página 9
 

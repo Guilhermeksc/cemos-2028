@@ -156,7 +156,7 @@ Após a definição das carências, os setores responsáveis buscarão as formas
 
 Como soluções diferentes, naturalmente, terão custos diferentes, no campo “custo estimado” deverão constar os custos estimados de todas as soluções propostas. Para a apresentação do custo total da LC, deverá ser apresentada a faixa de preço que englobe o custo mínimo e o máximo.
 
-Cada ODS que tiver carências identificadas deverá confeccionar um Plano de Mobilização do setor, seguindo as orientações e o Modelo para Planos de Mobilização das Forças Singulares, que consta no capítulo Ill do manual MD41-M-03, com especial atenção às sugestões de ações a serem planejadas para as Fases de Preparo e Execução da Mobilização e para a Desmobilização, de forma a possibilitar que as soluções propostas para as carências possam ser concretizadas em caso de necessidade. A LC deverá ser um anexo do Plano de Mobilização do setor.
+Cada ODS que tiver carências identificadas deverá confeccionar um Plano de Mobilização do setor, seguindo as orientações e o Modelo para Planos de Mobilização das Forças Singulares, que consta no Capítulo Ill do manual MD41-M-03, com especial atenção às sugestões de ações a serem planejadas para as Fases de Preparo e Execução da Mobilização e para a Desmobilização, de forma a possibilitar que as soluções propostas para as carências possam ser concretizadas em caso de necessidade. A LC deverá ser um anexo do Plano de Mobilização do setor.
 
 Para a elaboração das sugestões de ações a serem planejadas para a Fase de Preparo da Mobilização, as seguintes possibilidades podem ser avaliadas, dentre outras:
 

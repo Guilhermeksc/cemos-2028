@@ -1,4 +1,4 @@
-# CAPÍTULO 2 - CONCEITOS BÁSICOS
+# Capítulo 2 - CONCEITOS BÁSICOS
 
 ## Página 1
 

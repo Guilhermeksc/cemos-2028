@@ -8,7 +8,7 @@ A estratégia naval constitui a estratégia de ação da estratégia marítima. 
 
 Em seguida, a partir do desenvolvimento citado, chegaremos ao coração do tema. Este fará com que seja necessário evocar ao início o objetivo principal da guerra naval: o domínio do mar e seu equivalente “castexiano”, o controle das linhas de comunicações marítimas. Isto nos conduzirá naturalmente a discutir “a tripartição castexiana” dos modos de ação: a luta entre forças organizadas, o ataque e a defesa das linhas de comunicações (no mar) e, por último, as operações do mar contra a terra.
 
-Abordaremos, então, a diplomacia naval. Aqui, será necessário abandonar Castex uma vez que ele discorreu muito pouco sobre tal assunto extremamente importante. Debateremos, também, sobre a questão da boa ordem no mar e dos aspectos da tecnologia naval. Em seguida, chegar-se-á a uma análise da manobra estratégica, um dos grandes temas “castexianos”. Robustecidos por estes conhecimentos, nós, por tal razão, voltaremos às cinco missões estratégicas apresentadas no capítulo precedente.
+Abordaremos, então, a diplomacia naval. Aqui, será necessário abandonar Castex uma vez que ele discorreu muito pouco sobre tal assunto extremamente importante. Debateremos, também, sobre a questão da boa ordem no mar e dos aspectos da tecnologia naval. Em seguida, chegar-se-á a uma análise da manobra estratégica, um dos grandes temas “castexianos”. Robustecidos por estes conhecimentos, nós, por tal razão, voltaremos às cinco missões estratégicas apresentadas no Capítulo precedente.
 
 ## Página 160
 
@@ -50,7 +50,7 @@ Um exemplo recente de ponto de apoio é a ilha italiana de Solenzara, onde estav
 
 Castex conclui: “O que importa, não são as posições [pontos de apoio] propriamente ditas, mas a força que pode daí sair e apoiarse sobre elas. Isto é o único elemento que, em verdade, “comanda” qualquer coisa. Tanto as posições, como a própria geografia são apenas realmente interessantes de acordo com a dimensão que contribuem para as operações da força em movimento e onde elas aí interferem para facilitar as ações. São as operações, claramente, que pautam os combates. Esta apreciação permanece válida, ou quase, plenamente.
 
-Realmente, a geografia, hoje em dia, tomou uma importância que Castex não poderia prever, uma vez que a “territorialização” e a “infraestruturação” do mar reforçaram o seu papel na estratégia marítima contemporânea. É graças aos seus pontos de apoio alémmar que a França possui a segunda maior zona econômica exclusiva (ZEE) do mundo. Todas as riquezas, sobre as quais foram feitos comentários no capítulo 4, são sob tal ponto de vista consequências da geografia. O antigo provérbio marítimo segundo o qual “o mundo é composto de 70% de mar, e o resto serve somente para atracar um navio” é cada vez mais verdadeiro!
+Realmente, a geografia, hoje em dia, tomou uma importância que Castex não poderia prever, uma vez que a “territorialização” e a “infraestruturação” do mar reforçaram o seu papel na estratégia marítima contemporânea. É graças aos seus pontos de apoio alémmar que a França possui a segunda maior zona econômica exclusiva (ZEE) do mundo. Todas as riquezas, sobre as quais foram feitos comentários no Capítulo 4, são sob tal ponto de vista consequências da geografia. O antigo provérbio marítimo segundo o qual “o mundo é composto de 70% de mar, e o resto serve somente para atracar um navio” é cada vez mais verdadeiro!
 
 Entretanto, para a estratégia de ação, para a estratégia naval, a conclusão de Castex é sempre pertinente. O homem do mar deve realmente pensar em termos de fluxos e não em termos de posições geográficas. Não é o estreito de Ormuz que é importante por si mesmo, mas o fluxo que o atravessa.
 
@@ -440,7 +440,7 @@ Tudo isto muda, dentro de uma certa medida, a natureza da estratégia naval. Nó
 
 ### A diplomacia naval
 
-Tratamos brevemente no capítulo 5 da diplomacia naval e a sua gramática estratégica. Agora, vamos nos debruçar sobre o seu nível operacional. Em princípio, ela se emprega unicamente no domínio virtual.
+Tratamos brevemente no Capítulo 5 da diplomacia naval e a sua gramática estratégica. Agora, vamos nos debruçar sobre o seu nível operacional. Em princípio, ela se emprega unicamente no domínio virtual.
 
 Coutau-Bégarie propõe uma tipologia para a diplomacia naval. Uma primeira categoria compreende as missões permanentes e as missões em situação de crise. As missões permanentes compreendem.
 

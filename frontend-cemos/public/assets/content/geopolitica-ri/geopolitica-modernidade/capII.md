@@ -6,7 +6,7 @@ Pág 29
 
 Afirmamos que a Geopolítica é um ramo da Ciência Política que se formou pela interação dinâmica de três ramos de conhecimento: a <u>**Geografia** (espaço físico), a **Política** (aplicação do Poder à arte de governar) e a **História** (experiência humana).</u>
 
-Neste capítulo vamos tratar da contribuição do espaço físico nes­ta tríade.
+Neste Capítulo vamos tratar da contribuição do espaço físico nes­ta tríade.
 
 Conceituamos sinteticamente a Geopolítica como a aplicação da política aos espaços geográficos, sob a inspiração da História.
 

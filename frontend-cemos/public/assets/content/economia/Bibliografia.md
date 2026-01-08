@@ -17,7 +17,7 @@
  2. **VASCONCELLOS**, Marco Antônio Sandoval et al. **Economia Micro e Macro** – Teoria, Exercícios e Casos. São Paulo: Editora Atlas, 7ª Edição. 2023. 
  📌 Cap. 13, 
  📌 Cap. 14 e 
- 📌 Cap. 15 (apenas as seções “Entenda na Prática” dos respectivos capítulos);
+ 📌 Cap. 15 (apenas as seções “Entenda na Prática” dos respectivos Capítulos);
  
  3. **SANTOS**, Thauan et al. **Economia Azul**: vetor para o desenvolvimento do Brasil. São Paulo: Editora Essencial Idea, 1ª Edição, 2022.
  📌 Cap. 1.

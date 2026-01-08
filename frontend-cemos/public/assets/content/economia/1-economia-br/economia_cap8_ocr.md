@@ -2,13 +2,13 @@
 
 ## Página 1
 
-Pode-se definir **política econômica** como a intervenção do governo na economia com o objetivo de manter níveis elevados de emprego e de crescimento econômico com estabilidade de preços. As principais formas de política econômica são a política fiscal e a política monetária. Neste capítulo, será discutida a primeira delas.
+Pode-se definir **política econômica** como a intervenção do governo na economia com o objetivo de manter níveis elevados de emprego e de crescimento econômico com estabilidade de preços. As principais formas de política econômica são a política fiscal e a política monetária. Neste Capítulo, será discutida a primeira delas.
 
 Por **política fiscal** entende-se a atuação do governo no que diz respeito à arrecadação de impostos e à execução dos gastos públicos. Estes afetam o nível de demanda agregada da economia, uma vez que a arrecadação de impostos afeta o nível de demanda por influenciar renda disponível que os indivíduos poderão destinar para consumo e poupança. Dado um nível de renda, quanto maiores os impostos, menor será a renda disponível e, portanto, o consumo. Os gastos públicos, por sua vez, são um elemento de demanda agregada tal que quanto maior o gasto público, maior a demanda agregada, estimulando o aumento do produto.
 
 Assim, se a economia apresentar tendência de queda no nível de atividade econômica, o governo pode tentar estimulá-la diminuindo os impostos e/ou elevando os seus gastos. Pode ocorrer o inverso caso o objetivo seja uma política anti-inflacionária que vise diminuir o nível de atividade.[1]
 
-Este capítulo está dividido em cinco seções. Na Seção 8.1, discutem-se as funções do governo em uma economia de mercado. Nas Seções 8.2 e 8.3, são apresentadas as estruturas de gastos e de arrecadação na economia brasileira. Na Seção 8.4, é conceituado o déficit público e discutido o seu financiamento. O impacto da política fiscal sobre a renda e outras variáveis econômicas será discutido na Seção 8.5.
+Este Capítulo está dividido em cinco seções. Na Seção 8.1, discutem-se as funções do governo em uma economia de mercado. Nas Seções 8.2 e 8.3, são apresentadas as estruturas de gastos e de arrecadação na economia brasileira. Na Seção 8.4, é conceituado o déficit público e discutido o seu financiamento. O impacto da política fiscal sobre a renda e outras variáveis econômicas será discutido na Seção 8.5.
 
 ## Página 2
 

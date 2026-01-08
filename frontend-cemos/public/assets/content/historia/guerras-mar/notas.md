@@ -35,7 +35,7 @@ princípio de 1912 conseguiu-se repor a flutuar os restos do navio, que foi rebo
 cado para o alto-mar e afundado" (http://pt.wikipedia.org/wiki/USS_Maine). 
 C, 339 
 ) 
-3 páginas restantes no capítulo 
+3 páginas restantes no Capítulo 
 388de 508 
 Guerra no mar 
 8. Arthur Zimmermann, subsecretário dos Negócios Estrangeiros do império 

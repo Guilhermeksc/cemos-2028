@@ -1,12 +1,12 @@
 ## Página 1
 
-# Caítulo 19 - Alterações na Presença do Estado no Desenvolvimento Brasileiro
+# Capítulo 19 - Alterações na Presença do Estado no Desenvolvimento Brasileiro
 
-Neste capítulo, procurar-se-á acompanhar as mudanças que a atuação do Estado no Brasil sofreu ao longo do tempo, destacando as recentes alterações ocorridas, especialmente as reformas no sistema de controle da administração pública e, principalmente, o movimento de privatização. A nova configuração do Estado brasileiro, que ao menos tem a pretensão de ser um Estado regulador, será também examinada no próximo capítulo; por outro lado, os aspectos relativos à tributação e ao problema federativo já foram examinados no Capítulo 8.
+Neste Capítulo, procurar-se-á acompanhar as mudanças que a atuação do Estado no Brasil sofreu ao longo do tempo, destacando as recentes alterações ocorridas, especialmente as reformas no sistema de controle da administração pública e, principalmente, o movimento de privatização. A nova configuração do Estado brasileiro, que ao menos tem a pretensão de ser um Estado regulador, será também examinada no próximo Capítulo; por outro lado, os aspectos relativos à tributação e ao problema federativo já foram examinados no Capítulo 8.
 
 ## 19.1 ATUAÇÃO DO ESTADO AO LONGO DO DESENVOLVIMENTO ECONÔMICO BRASILEIRO
 
-Pode-se observar indiretamente nos capítulos da Parte III como a ação do Estado foi importante no desenvolvimento econômico brasileiro. Será feito a seguir um breve retrospecto dessa atuação.
+Pode-se observar indiretamente nos Capítulos da Parte III como a ação do Estado foi importante no desenvolvimento econômico brasileiro. Será feito a seguir um breve retrospecto dessa atuação.
 
 ### 19.1.1 Fase agroexportadora
 

@@ -94,7 +94,7 @@ Entre os valores 20 e 30, observa-se que os preços **continuam subindo**, mas a
 * A curva não só está acima de zero, como **fica mais inclinada**.
 * Isso significa que a inflação **não é mais constante**; ela está **se acelerando**.
 * É o que ocorre quando um ano registra inflação maior que o anterior, e o seguinte maior que este, e assim por diante.
-* O capítulo destaca que isso envolve “preços subindo e subindo cada vez mais” .
+* O Capítulo destaca que isso envolve “preços subindo e subindo cada vez mais” .
 
 
 ## 4. Hiperinflação

@@ -230,7 +230,7 @@ f) que não tenha sido enviada em missão oficial como membro de suas Forças Ar
 
 ## SEÇÃO I - PROTEÇÃO GERAL CONTRA OS EFEITOS DAS HOSTILIDADES
 
-## CAPÍTULO I - NORMA FUNDAMENTAL E CAMPO DE APLICAÇÃO
+## Capítulo I - NORMA FUNDAMENTAL E CAMPO DE APLICAÇÃO
 
 **ARTIGO 48 - Norma Fundamental**
 
@@ -248,7 +248,7 @@ A fim de garantir respeito e proteção a população civil e aos bens de carát
 
 ## Página 10 
 
-## CAPÍTULO II - PESSOAS CIVIS E POPULAÇÃO
+## Capítulo II - PESSOAS CIVIS E POPULAÇÃO
 
 **ARTIGO 50 - Definição de pessoas civis e de população civil**
 
@@ -290,7 +290,7 @@ b) os ataques quando se pode prever que causarão incidentalmente mortos e ferim
 
 ## Página 11
 
-## CAPÍTULO III - BENS DE CARÁTER CIVIL
+## Capítulo III - BENS DE CARÁTER CIVIL
 
 **ARTIGO 52 - Proteção geral dos bens de caráter civil**
 
@@ -360,7 +360,7 @@ c) para outros objetivos militares localizados nessas obras ou instalações, ou
 
 ## Página 14
 
-## CAPÍTULO IV - MEDIDAS DE PRECAUÇÃO
+## Capítulo IV - MEDIDAS DE PRECAUÇÃO
 
 **ARTIGO 57 - Precauções no ataque**
 
@@ -398,7 +398,7 @@ c) tomarão todas as demais precauções necessárias para proteger contra os pe
 
 ## Página 15
 
-## CAPÍTULO V - LOCALIDADES E ZONAS SOB PROTEÇÃO ESPECIAL
+## Capítulo V - LOCALIDADES E ZONAS SOB PROTEÇÃO ESPECIAL
 
 **ARTIGO 59 - Localidades não defendidas****
 

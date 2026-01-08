@@ -2,35 +2,26 @@
 from import_export import resources, fields
 from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget
 from .models import (
-    MateriaModel,
-    BibliografiaModel, 
     FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel
 )
-
-
-class BibliografiaResource(resources.ModelResource):
-    materia = fields.Field(
-        column_name='materia',
-        attribute='materia',
-        widget=ForeignKeyWidget(MateriaModel, 'materia')
-    )
-    
-    class Meta:
-        model = BibliografiaModel
-        fields = ('id', 'titulo', 'autor', 'materia', 'descricao')
-        export_order = ('id', 'titulo', 'autor', 'materia', 'descricao')
-        import_id_fields = ('id',)
-        skip_unchanged = True
-        report_skipped = True
+from django_cemos2028.apps.bibliografia.models import (
+    BibliografiaModel,
+    CapitulosBibliografiaModel,
+)
 
 class FlashCardsResource(resources.ModelResource):
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
-        widget=ForeignKeyWidget(BibliografiaModel, 'titulo')
+        widget=ForeignKeyWidget(BibliografiaModel, 'id')
+    )
+    assunto = fields.Field(
+        column_name='assunto',
+        attribute='assunto',
+        widget=ForeignKeyWidget(CapitulosBibliografiaModel, 'id')
     )
     prova = fields.Field(
         column_name='prova',
@@ -50,7 +41,12 @@ class PerguntaMultiplaResource(resources.ModelResource):
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
-        widget=ForeignKeyWidget(BibliografiaModel, 'titulo')
+        widget=ForeignKeyWidget(BibliografiaModel, 'id')
+    )
+    assunto = fields.Field(
+        column_name='assunto',
+        attribute='assunto',
+        widget=ForeignKeyWidget(CapitulosBibliografiaModel, 'id')
     )
     caiu_em_prova = fields.Field(
         column_name='caiu_em_prova',
@@ -79,7 +75,12 @@ class PerguntaVFResource(resources.ModelResource):
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
-        widget=ForeignKeyWidget(BibliografiaModel, 'titulo')
+        widget=ForeignKeyWidget(BibliografiaModel, 'id')
+    )
+    assunto = fields.Field(
+        column_name='assunto',
+        attribute='assunto',
+        widget=ForeignKeyWidget(CapitulosBibliografiaModel, 'id')
     )
     caiu_em_prova = fields.Field(
         column_name='caiu_em_prova',
@@ -106,7 +107,12 @@ class PerguntaCorrelacaoResource(resources.ModelResource):
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
-        widget=ForeignKeyWidget(BibliografiaModel, 'titulo')
+        widget=ForeignKeyWidget(BibliografiaModel, 'id')
+    )
+    assunto = fields.Field(
+        column_name='assunto',
+        attribute='assunto',
+        widget=ForeignKeyWidget(CapitulosBibliografiaModel, 'id')
     )
     caiu_em_prova = fields.Field(
         column_name='caiu_em_prova',

@@ -130,7 +130,7 @@ Todas as cores seguem a paleta do tema Dracula:
 
 Atualmente implementado em:
 - `app4-historia-bibliografia` (seção de bibliografia)
-- `breve-historia` (conteúdo dos capítulos)
+- `breve-historia` (conteúdo dos Capítulos)
 
 ## Extensibilidade
 

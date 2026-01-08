@@ -1,7 +1,7 @@
 MINISTÉRIO DA DEFESA MD44-M-02
 MANUAL DE BOAS PRÁTICAS DE CUSTOS DO CICLO DE VIDA DE SISTEMAS DE DEFESA
 
-CAPÍTULO I
+Capítulo I
 
 INTRODUÇÃO
 
@@ -102,7 +102,7 @@ CEP – 70049-900
 adl1.emcfa@defesa.gov.br
 MD44-M-02
 15/69
-CAPÍTULO II
+Capítulo II
 CONCEITOS BÁSICOS
 2.1 Fases do Ciclo de Vida de Sistemas de Defesa
 2.1.1 O CV de SD pode ser decomposto em seis fases: Concepção, Desenvolvimento, Produção,
@@ -257,7 +257,7 @@ b) exista uma compreensão completa do histórico destes dados; e
 c) seja realizada uma avaliação da relação dos dados de custo e de desempenho.
 MD44-M-02
 21/69
-CAPÍTULO III
+Capítulo III
 PROCESSO PARA O GERENCIAMENTO DO CUSTO DO CICLO DE VIDA
 3.1 Diretrizes Gerais
 3.1.1 O CCV de um SD é estimado para suprir o déficit de informação de um tomador de decisão
@@ -564,14 +564,14 @@ e) avaliação e registro das lições aprendidas à medida que o programa avan�
 visando avaliar a qualidade da estimativa e a sua evolução no programa.
 MD44-M-02
 33/69
-CAPÍTULO IV
+Capítulo IV
 MÉTODOS PARA ESTIMATIVA DO CUSTO DE CICLO DE VIDA
 4.1 Desenvolvimento de Estimativas
 4.1.1 O desenvolvimento de estimativas confiáveis de CCV é vital para o processo de tomada de
-decisão e para o desenvolvimento de um planejamento realista. O propósito deste capítulo é
+decisão e para o desenvolvimento de um planejamento realista. O propósito deste Capítulo é
 fornecer boas práticas que auxiliem os estimadores de custo no desenvolvimento de estimativas
 confiáveis de CCV.
-4.1.2 As referências para este capítulo são as publicações:
+4.1.2 As referências para este Capítulo são as publicações:
 a) GAO Cost Guide (guia publicado pelo U.S. Government Accountability Office - GAO); e
 b) ALCCP-1.1 NATO Life Cycle Costs Common Methodology (Manual publicado pela OTAN).
 4.1.3 Importância e desafios nas estimativas de CCV.
@@ -1151,13 +1151,13 @@ MD44-M-02
 51/69
 Tabela 10 –
 Disponibilidade de dados para seleção de métodos
-4.2.11 A Figura 5 expõe os quatro métodos apresentados no capítulo e a fase do GCV em que,
+4.2.11 A Figura 5 expõe os quatro métodos apresentados no Capítulo e a fase do GCV em que,
 geralmente, resultam em estimativas de melhor qualidade.
 Figura 5 – Métodos recomendados para as fases de GCV
 de custos) costumam ser coletados por especialistas.
 MD44-M-02
 52/69
-CAPÍTULO V
+Capítulo V
 GESTÃO DO CONHECIMENTO APLICADO A CUSTOS DE CICLO DE VIDA
 5.1 Qualificação de pessoal envolvido na gestão de Custos de Ciclo de Vida
 5.1.1 A qualificação técnica do pessoal envolvido com a gestão de CCV dependerá da função e da

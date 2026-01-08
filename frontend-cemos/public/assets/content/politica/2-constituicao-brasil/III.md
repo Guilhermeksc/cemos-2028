@@ -2,7 +2,7 @@ Título III – art. 18 a 22, 25 a 32 e 34 a 38;
 
 # TÍTULO III -  DA ORGANIZAÇÃO DO ESTADO
 
-## CAPÍTULO I - DA ORGANIZAÇÃO POLÍTICO-ADMINISTRATIVA
+## Capítulo I - DA ORGANIZAÇÃO POLÍTICO-ADMINISTRATIVA
 
 ⚖️ **Art. 18.** A organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios, todos autônomos, nos termos desta Constituição.
 
@@ -22,7 +22,7 @@ Título III – art. 18 a 22, 25 a 32 e 34 a 38;
 
 ✨ III - criar distinções entre brasileiros ou preferências entre si.
 
-## CAPÍTULO II - DA UNIÃO
+## Capítulo II - DA UNIÃO
 
 ⚖️ **Art. 20.** São bens da União:
 
@@ -192,7 +192,7 @@ XXX - proteção e tratamento de dados pessoais. (⚠️Incluído pela Emenda Co
 
 Parágrafo único. Lei complementar poderá autorizar os Estados a legislar sobre questões específicas das matérias relacionadas neste artigo. 
 
-## CAPÍTULO III - DOS ESTADOS FEDERADOS
+## Capítulo III - DOS ESTADOS FEDERADOS
 
 ⚖️ **Art. 25.** Os Estados organizam-se e regem-se pelas Constituições e leis que adotarem, observados os princípios desta Constituição.
 
@@ -228,7 +228,7 @@ IV - as terras devolutas não compreendidas entre as da União.
 
 § 2º Os subsídios do Governador, do Vice-Governador e dos Secretários de Estado serão fixados por lei de iniciativa da Assembléia Legislativa, observado o que dispõem os arts. 37, XI, 39, § 4º, 150, II, 153, III, e 153, § 2º, I.         (Incluído pela Emenda Constitucional nº 19, de 1998)
 
-## CAPÍTULO IV - Dos Municípios
+## Capítulo IV - Dos Municípios
 
 ⚖️ **Art. 29.** O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará, atendidos os princípios estabelecidos nesta Constituição, na Constituição do respectivo Estado e os seguintes preceitos:
 
@@ -380,7 +380,7 @@ IX - promover a proteção do patrimônio histórico-cultural local, observada a
 
 § 4º É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais.
 
-## CAPÍTULO V - DO DISTRITO FEDERAL E DOS TERRITÓRIOS
+## Capítulo V - DO DISTRITO FEDERAL E DOS TERRITÓRIOS
 
 **Seção I - DO DISTRITO FEDERAL**
 
@@ -394,7 +394,7 @@ IX - promover a proteção do patrimônio histórico-cultural local, observada a
 
 § 4º Lei federal disporá sobre a utilização, pelo Governo do Distrito Federal, da polícia civil, da polícia penal, da polícia militar e do corpo de bombeiros militar. (Redação dada pela Emenda Constitucional nº 104, de 2019)
 
-## CAPÍTULO VI - DA INTERVENÇÃO
+## Capítulo VI - DA INTERVENÇÃO
 
 ⚖️ **Art. 34.** A União não intervirá nos Estados nem no Distrito Federal, exceto para:
 
@@ -454,7 +454,7 @@ IV - de provimento, pelo Superior Tribunal de Justiça, de representação do Pr
 
 § 4º Cessados os motivos da intervenção, as autoridades afastadas de seus cargos a estes voltarão, salvo impedimento legal.
 
-## CAPÍTULO VII - DA ADMINISTRAÇÃO PÚBLICA
+## Capítulo VII - DA ADMINISTRAÇÃO PÚBLICA
 
 ⚖️ **Art. 37.** A administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos princípios de legalidade, impessoalidade, moralidade, publicidade e eficiência e, também, ao seguinte: (Redação dada pela Emenda Constitucional nº 19, de 1998)
 

@@ -32,7 +32,7 @@ Durante muito tempo, o ideal de Douhet pareceu ser uma quimera, até que os gran
 
 ### 383. Tática e estratégia
 
-O estudo das características do meio aéreo (ver adiante o capítulo XVI) põe em evidência os aspectos da homogeneidade física e do encurtamento das distâncias no meio aéreo, com as consequências estratégicas daí advindas: a negação da fratura radical entre terra e mar, da distinção tradicional entre teatros de operações e retaguardas, entre civis e combatentes. 
+O estudo das características do meio aéreo (ver adiante o Capítulo XVI) põe em evidência os aspectos da homogeneidade física e do encurtamento das distâncias no meio aéreo, com as consequências estratégicas daí advindas: a negação da fratura radical entre terra e mar, da distinção tradicional entre teatros de operações e retaguardas, entre civis e combatentes. 
 
 Em compensação, longe de abolir a distinção entre tática e estratégia, o aspecto aéreo lhe deu uma nova dimensão. As missões táticas são as que participam das operações de superfície, as missões estratégicas são as que visam objetivos além do teatro de operações. 
 

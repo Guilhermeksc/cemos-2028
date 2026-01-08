@@ -1,4 +1,4 @@
-# CAPÍTULO 13 DE PEARL HARBOR À QUEDA DE BERLIM (Páginas 145-158)
+# Capítulo 13 - De Pearl Harbor à queda de Berlim
 
 ## Página 1
 

@@ -1,4 +1,4 @@
-CAPÍTULO X – A PARTICIPAÇÃO DA MARINHA DO BRASIL NA SEGUNDA GUERRA MUNDIAL
+Capítulo X – A PARTICIPAÇÃO DA MARINHA DO BRASIL NA SEGUNDA GUERRA MUNDIAL
 TÓPICO: MISSÃO E CONTEXTO
 
 Speaker 1: Qual foi a principal missão da Marinha do Brasil na Segunda Guerra Mundial?

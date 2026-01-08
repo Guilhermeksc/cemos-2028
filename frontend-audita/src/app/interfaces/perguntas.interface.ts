@@ -4,7 +4,8 @@ export interface Bibliografia {
   id: number;
   titulo: string;
   autor?: string;
-  materia?: string;
+  materia?: number; // ID da matéria (ForeignKey)
+  materia_nome?: string; // Nome da matéria (read-only, para exibição)
   descricao?: string;
   perguntas_count?: number;
   flashcards_count?: number;
@@ -16,7 +17,8 @@ export interface FlashCards {
   bibliografia_titulo?: string;
   pergunta: string;
   resposta: string;
-  assunto?: string;
+  assunto?: number | null; // ID do capítulo (ForeignKey)
+  assunto_titulo?: string | null; // Título do capítulo (read-only, para exibição)
   prova: boolean;
   ano?: number;
 }
@@ -24,7 +26,7 @@ export interface FlashCards {
 export interface FlashCardsFilters {
   search?: string;
   bibliografia?: number;
-  assunto?: string;
+  assunto?: number; // ID do capítulo (ForeignKey)
   prova?: boolean;
   ano?: number;
   ordering?: string;
@@ -34,7 +36,7 @@ export interface FlashCardsFilters {
 
 export interface EstatisticasFlashCards {
   total_flashcards: number;
-  flashcards_por_assunto: { [assunto: string]: number };
+  flashcards_por_assunto: { [assunto: string]: number }; // Usa assunto_titulo como chave
   flashcards_por_bibliografia: { [bibliografia: string]: number };
   flashcards_que_cairam_prova: number;
   flashcards_por_ano: { [ano: string]: number };
@@ -47,7 +49,8 @@ export interface PerguntaBase {
   bibliografia: number;
   bibliografia_titulo?: string;
   paginas?: string;
-  assunto?: string;
+  assunto?: number | null; // ID do capítulo (ForeignKey)
+  assunto_titulo?: string | null; // Título do capítulo (read-only, para exibição)
   caiu_em_prova: boolean;
   ano_prova?: number;
   pergunta: string;
@@ -101,7 +104,8 @@ export interface PerguntaResumo {
   bibliografia_titulo: string;
   pergunta: string;
   paginas?: string;
-  assunto?: string;
+  assunto?: number | null; // ID do capítulo (ForeignKey)
+  assunto_titulo?: string | null; // Título do capítulo (read-only, para exibição)
   caiu_em_prova: boolean;
   ano_prova?: number;
 }
@@ -113,7 +117,7 @@ export type Pergunta = PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
 export interface BibliografiaFilters {
   search?: string;
   autor?: string;
-  materia?: string;
+  materia?: number; // ID da matéria (ForeignKey)
   ordering?: string;
   page?: number;
   page_size?: number;
@@ -122,7 +126,7 @@ export interface BibliografiaFilters {
 export interface PerguntaFilters {
   search?: string;
   bibliografia?: number;
-  assunto?: string;
+  assunto?: number; // ID do capítulo (ForeignKey)
   caiu_em_prova?: boolean;
   ano_prova?: number;
   ordering?: string;

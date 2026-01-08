@@ -1,7 +1,7 @@
 
 # Parte III - Disposições Gerais e Transitórias
 
-## CAPÍTULO X ASSINATURA, RATIFICAÇÃO, RESERVA, EMENDA, PROTOCOLO E DENÚNCIA
+## Capítulo X ASSINATURA, RATIFICAÇÃO, RESERVA, EMENDA, PROTOCOLO E DENÚNCIA
 
 **Artigo 74**
 
@@ -35,7 +35,7 @@ Esta Convenção só pode ser objeto de reservas em conformidade com as disposi�
 
 2. Tal denúncia não terá o efeito de desligar o Estado Parte interessado das obrigações contidas nesta Convenção, no que diz respeito a qualquer ato que, podendo constituir violação dessas obrigações, houver sido cometido por ele anteriormente à data na qual a denúncia produzir efeito.
 
-## CAPÍTULO XI | DISPOSIÇÕES TRANSITÓRIAS
+## Capítulo XI | DISPOSIÇÕES TRANSITÓRIAS
 
 ### Seção 1 — Comissão Interamericana de Direitos Humanos 
 

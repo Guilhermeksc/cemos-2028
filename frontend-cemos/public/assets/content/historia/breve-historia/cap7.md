@@ -1,4 +1,4 @@
-# CAPÍTULO 7 O VELHO SULTÃO E O JOVEM TURCO (Páginas 91 a 98)
+# Capítulo 7 - O Velho Sultão e o Jovem Turco
 
 ## Página 1
 

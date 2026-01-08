@@ -1,4 +1,4 @@
-# CAPÍTULO 5 REVOLTA EM PETROGRADO, PAZ EM PARIS (Páginas 65-78)
+# Capítulo 5 - Revolta em petrogrado, paz em Paris
 
 ## Página 1
 

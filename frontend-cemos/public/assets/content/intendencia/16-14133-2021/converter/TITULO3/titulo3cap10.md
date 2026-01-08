@@ -1,7 +1,7 @@
 
 ## Página 62
 
-### CAPÍTULO X DOS PAGAMENTOS
+### Capítulo X DOS PAGAMENTOS
 
 Art. 141. No dever de pagamento pela Administração, será observada a ordem cronológica para cada fonte diferenciada de recursos, subdividida nas seguintes categorias de contratos:
 

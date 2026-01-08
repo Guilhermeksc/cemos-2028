@@ -6,7 +6,7 @@ Na atualidade, a evolução do Poder Naval impõe, mais do que em outros períod
 
 A dinâmica e a complexidade das relações internacionais e do ambiente interno indicam que na Era do Conhecimento os desafios serão permanentes e alcançarão magnitude crescente. Assim, para a identificação das capacidades previstas em uma Marinha equivalente à estatura político-estratégica do Brasil, analisaremos os múltiplos desafios que se apresentam na atual navegação da nossa Marinha. De início, o desafio mais importante será aquele voltado para a identificação e capacitação de líderes e assessores. Na época do Google, como mencionado, devemos identificar e capacitar líderes em todos os níveis hierárquicos, considerando, além dos conhecimentos científicos, tecnológicos e da área das ciências sociais e humanas, o estudo aprofundado da Ética e da Rosa das Virtudes.
 
-Para os demais, como "auxílios à navegação" da análise que efetuaremos, vamos segmentar os desafios, considerando aspectos culturais, estratégicos, estruturais, Ciência/Tecnologia/Inovação e Engenharia e os orçamentários. Ao término do capítulo, faremos as Considerações Finais.
+Para os demais, como "auxílios à navegação" da análise que efetuaremos, vamos segmentar os desafios, considerando aspectos culturais, estratégicos, estruturais, Ciência/Tecnologia/Inovação e Engenharia e os orçamentários. Ao término do Capítulo, faremos as Considerações Finais.
 
 Por oportuno, destacamos que os desafios apresentam interações; devendo ser admitida alguma dificuldade em delimitar, com exatidão, a causa ou efeito ou, em outras palavras, as consequências do equacionamento, ou não, de um determinado aspecto de um dos desafios nas capacidades pretendidas pela Marinha do Brasil.
 

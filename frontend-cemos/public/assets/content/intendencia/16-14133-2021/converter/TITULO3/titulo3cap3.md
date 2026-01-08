@@ -1,7 +1,7 @@
 
 ## Página 53
 
-### CAPÍTULO III DA ALOCAÇÃO DE RISCOS
+### Capítulo III DA ALOCAÇÃO DE RISCOS
 
 Art. 103. O contrato poderá identificar os riscos contratuais previstos e presumíveis e prever matriz de alocação de riscos, alocando-os entre contratante e contratado, mediante indicação daqueles a serem assumidos pelo setor público ou pelo setor privado ou daqueles a serem compartilhados.
 

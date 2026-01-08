@@ -1,7 +1,5 @@
 from rest_framework import serializers
 from .models import (
-    BibliografiaModel,
-    MateriaModel,
     FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
@@ -11,41 +9,15 @@ from .models import (
 )
 
 
-class BibliografiaSerializer(serializers.ModelSerializer):
-    perguntas_count = serializers.SerializerMethodField()
-    flashcards_count = serializers.SerializerMethodField()
-    materia_nome = serializers.CharField(source='materia.materia', read_only=True, allow_null=True)
-    
-    class Meta:
-        model = BibliografiaModel
-        fields = [
-            'id', 'titulo', 'autor', 'materia', 'materia_nome', 'descricao',
-            'perguntas_count', 'flashcards_count'
-        ]
-        read_only_fields = ['id']
-    
-    def get_perguntas_count(self, obj):
-        """Retorna o número total de perguntas desta bibliografia"""
-        from .models import PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
-        count = 0
-        count += PerguntaMultiplaModel.objects.filter(bibliografia=obj).count()
-        count += PerguntaVFModel.objects.filter(bibliografia=obj).count()
-        count += PerguntaCorrelacaoModel.objects.filter(bibliografia=obj).count()
-        return count
-    
-    def get_flashcards_count(self, obj):
-        """Retorna o número total de flashcards desta bibliografia"""
-        return FlashCardsModel.objects.filter(bibliografia=obj).count()
-
-
 class FlashCardsSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
+    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = FlashCardsModel
         fields = [
             'id', 'bibliografia', 'bibliografia_titulo', 
-            'pergunta', 'resposta', 'assunto', 'prova', 'ano', 'caveira'
+            'pergunta', 'resposta', 'assunto', 'assunto_titulo', 'prova', 'ano', 'caveira'
         ]
         read_only_fields = ['id']
 
@@ -54,11 +26,12 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     resposta_correta_display = serializers.CharField(source='get_resposta_correta_display', read_only=True)
+    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = PerguntaMultiplaModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'resposta_correta_display', 'justificativa_resposta_certa',
             'tipo', 'tipo_display'
@@ -77,11 +50,12 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     resposta_correta = serializers.ReadOnlyField()
     resposta_correta_display = serializers.SerializerMethodField()
+    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = PerguntaVFModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'resposta_correta', 'resposta_correta_display',
             'justificativa_resposta_certa', 'tipo', 'tipo_display'
         ]
@@ -95,11 +69,12 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
 class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
+    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta',
             'justificativa_resposta_certa', 'tipo', 'tipo_display'
         ]
@@ -136,16 +111,11 @@ class PerguntaResumoSerializer(serializers.Serializer):
     bibliografia_titulo = serializers.CharField()
     pergunta = serializers.CharField()
     paginas = serializers.CharField()
-    assunto = serializers.CharField(allow_null=True)
+    assunto = serializers.IntegerField(allow_null=True)
+    assunto_titulo = serializers.CharField(allow_null=True)
     caiu_em_prova = serializers.BooleanField()
     ano_prova = serializers.IntegerField()
 
-
-# Serializers para criação/edição
-class BibliografiaCreateUpdateSerializer(BibliografiaSerializer):
-    """Serializer específico para criação e edição de bibliografia"""
-    class Meta(BibliografiaSerializer.Meta):
-        fields = ['id', 'titulo', 'autor', 'materia', 'descricao']
 
 
 class PerguntaMultiplaCreateUpdateSerializer(PerguntaMultiplaSerializer):
@@ -184,6 +154,7 @@ class FlashCardsCreateUpdateSerializer(FlashCardsSerializer):
 
 class RespostaUsuarioSerializer(serializers.ModelSerializer):
     usuario_username = serializers.CharField(source='usuario.username', read_only=True)
+    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = RespostaUsuario
@@ -197,7 +168,8 @@ class RespostaUsuarioSerializer(serializers.ModelSerializer):
             'acertou',
             'timestamp',
             'bibliografia_id',
-            'assunto'
+            'assunto',
+            'assunto_titulo'
         ]
         read_only_fields = ['id', 'timestamp']
 
@@ -229,6 +201,7 @@ class RespostaUsuarioCreateSerializer(serializers.ModelSerializer):
 
 class QuestaoErradaAnonimaSerializer(serializers.ModelSerializer):
     """Serializer para questões erradas anônimas"""
+    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = QuestaoErradaAnonima
@@ -238,6 +211,7 @@ class QuestaoErradaAnonimaSerializer(serializers.ModelSerializer):
             'pergunta_tipo',
             'bibliografia_id',
             'assunto',
+            'assunto_titulo',
             'timestamp'
         ]
         read_only_fields = ['id', 'timestamp']

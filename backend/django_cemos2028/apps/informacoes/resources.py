@@ -1,7 +1,10 @@
 # Recursos de import/export
 from import_export import resources, fields
 from import_export.widgets import ForeignKeyWidget, BooleanWidget
-from django_cemos2028.apps.perguntas.models import BibliografiaModel
+from django_cemos2028.apps.bibliografia.models import (
+    BibliografiaModel,
+    CapitulosBibliografiaModel,
+)
 from .models import (
     PresidentesModel,
     FilosofosModel,
@@ -64,6 +67,11 @@ class ConceitosResource(resources.ModelResource):
         column_name='bibliografia',
         attribute='bibliografia',
         widget=ForeignKeyWidget(BibliografiaModel, 'titulo')
+    )
+    assunto = fields.Field(
+        column_name='assunto',
+        attribute='assunto',
+        widget=ForeignKeyWidget(CapitulosBibliografiaModel, 'id')
     )
     caiu_em_prova = fields.Field(
         column_name='caiu_em_prova',

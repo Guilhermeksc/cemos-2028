@@ -141,9 +141,10 @@ export class FlashCardsService {
 
   /**
    * Busca TODOS os flashcards por assunto usando paginação completa
+   * @param assuntoId ID do capítulo (assunto)
    */
-  getFlashCardsByAssunto(assunto: string): Observable<FlashCards[]> {
-    return this.getAllFlashCards({ assunto });
+  getFlashCardsByAssunto(assuntoId: number): Observable<FlashCards[]> {
+    return this.getAllFlashCards({ assunto: assuntoId });
   }
 
   /**
@@ -154,13 +155,13 @@ export class FlashCardsService {
   }
 
   /**
-   * Retorna lista única de assuntos
+   * Retorna lista única de assuntos (títulos dos capítulos)
    */
   getAssuntos(): Observable<string[]> {
     return this.getAllFlashCards().pipe(
       map(flashcards => {
         const assuntos = flashcards
-          .map(f => f.assunto)
+          .map(f => f.assunto_titulo)
           .filter((assunto): assunto is string => !!assunto);
         return [...new Set(assuntos)].sort();
       })
@@ -199,7 +200,7 @@ export class FlashCardsService {
 
   private groupByAssunto(flashcards: FlashCards[]): { [assunto: string]: number } {
     return flashcards.reduce((acc, flashcard) => {
-      const assunto = flashcard.assunto || 'Sem Assunto';
+      const assunto = flashcard.assunto_titulo || 'Sem Assunto';
       acc[assunto] = (acc[assunto] || 0) + 1;
       return acc;
     }, {} as { [assunto: string]: number });

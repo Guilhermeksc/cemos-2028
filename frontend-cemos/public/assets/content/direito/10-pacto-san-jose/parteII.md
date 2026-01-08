@@ -1,6 +1,6 @@
 # Parte II - Meios da Proteção
 
-## CAPÍTULO VI ÓRGÃOS COMPETENTES
+## Capítulo VI ÓRGÃOS COMPETENTES
 
 **Artigo 33** 
 
@@ -13,7 +13,7 @@ b. a Corte Interamericana de Direitos Humanos, doravante denominada a Corte.
 
 ## Página 11
 
-## CAPÍTULO VII COMISSÃO INTERAMERICANA DE DIREITOS HUMANOS
+## Capítulo VII COMISSÃO INTERAMERICANA DE DIREITOS HUMANOS
 
 ### Seção 1 — Organização
 
@@ -171,7 +171,7 @@ Se se houver chegado a uma solução amistosa de acordo com as disposições do 
 
 3. Transcorrido o prazo fixado, a Comissão decidirá, pelo voto da maioria absoluta dos seus membros, se o Estado tomou ou não medidas adequadas e se publica ou não seu relatório.
 
-## CAPÍTULO VIII - CORTE INTERAMERICANA DE DIREITOS HUMANOS
+## Capítulo VIII - CORTE INTERAMERICANA DE DIREITOS HUMANOS
 
 ### Seção 1 — Organização
 
@@ -257,7 +257,7 @@ A Corte elaborará seu estatuto e submetê-lo-á à aprovação da Assembléia G
 
 **Artigo 64**
 
-1. Os Estados membros da Organização poderão consultar a Corte sobre a interpretação desta Convenção ou de outros tratados concernentes à proteção dos direitos humanos nos Estados americanos. Também poderão consultá-la, no que lhes compete, os órgãos enumerados no capítulo X da Carta da Organização dos Estados Americanos, reformada pelo Protocolo de Buenos Aires.
+1. Os Estados membros da Organização poderão consultar a Corte sobre a interpretação desta Convenção ou de outros tratados concernentes à proteção dos direitos humanos nos Estados americanos. Também poderão consultá-la, no que lhes compete, os órgãos enumerados no Capítulo X da Carta da Organização dos Estados Americanos, reformada pelo Protocolo de Buenos Aires.
 
 2. A Corte, a pedido de um Estado membro da Organização, poderá emitir pareceres sobre a compatibilidade entre qualquer de suas leis internas e os mencionados instrumentos internacionais.
 
@@ -283,7 +283,7 @@ A sentença da Corte será definitiva e inapelável. Em caso de divergência sob
 
 A sentença da Corte deve ser notificada às partes no caso e transmitida aos Estados Partes na Convenção.
 
-## CAPÍTULO IV DISPOSIÇÕES COMUNS
+## Capítulo IV DISPOSIÇÕES COMUNS
 
 **Artigo 70**
 

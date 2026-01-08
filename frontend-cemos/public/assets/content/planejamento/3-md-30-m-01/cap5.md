@@ -53,7 +53,7 @@ Figura 7 — estrutura do EMC
 (i) Reunião de Aprovação da Ordem de Coordenação (O Coor); e 
 (j) Reuniões Eventuais.
 
-5.2.2.1 o detalhamanto das reuniões é abordado no capítulo 7 do volume dois desta publicação.
+5.2.2.1 o detalhamanto das reuniões é abordado no Capítulo 7 do volume dois desta publicação.
 
 5.2.3 O objetivo principal dessas reuniões é viabilizar a tomada de decisões que resultem em ações a serem executadas pelas F Cte e que requeiram coordenação. Esses eventos podem ser realizados em sua totalidade ou em parte, dependendo da necessidade do Cmt Op e da envergadura da operação.
 

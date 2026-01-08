@@ -121,8 +121,8 @@ export class PerguntaVF {
     // Retorna a afirmação que foi sorteada para exibição (sem assunto)
     const afirmacao = this.questionData.afirmacao_sorteada ?? this.questionData.afirmacao_verdadeira;
     // Remover assunto se presente
-    if (this.questionData.assunto) {
-      return this.removeAssuntoFromText(afirmacao, this.questionData.assunto);
+    if (this.questionData.assunto_titulo) {
+      return this.removeAssuntoFromText(afirmacao, this.questionData.assunto_titulo);
     }
     return afirmacao;
   }
@@ -181,8 +181,8 @@ export class PerguntaVF {
   getAfirmacaoVerdadeiraFormatted(): SafeHtml {
     let afirmacao = this.questionData.afirmacao_verdadeira || '';
     // Remover assunto se presente
-    if (this.questionData.assunto) {
-      afirmacao = this.removeAssuntoFromText(afirmacao, this.questionData.assunto);
+    if (this.questionData.assunto_titulo) {
+      afirmacao = this.removeAssuntoFromText(afirmacao, this.questionData.assunto_titulo);
     }
     return this.processMarkdown(afirmacao);
   }

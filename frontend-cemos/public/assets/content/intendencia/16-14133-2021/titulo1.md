@@ -4,7 +4,7 @@
 
 # TÍTULO I - DISPOSIÇÕES PRELIMINARES 
 
-### CAPÍTULO I - DO ÂMBITO DE APLICAÇÃO DESTA LEI
+### Capítulo I - DO ÂMBITO DE APLICAÇÃO DESTA LEI
 
 Art. 1º Esta Lei estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios, e abrange:
 
@@ -70,12 +70,12 @@ II - no caso de contratação de obras e serviços de engenharia, às licitaçõ
 
 ## Página 3
 
-### CAPÍTULO II - DOS PRINCÍPIOS
+### Capítulo II - DOS PRINCÍPIOS
 
 Art. 5º Na aplicação desta Lei, serão observados os princípios da legalidade, da impessoalidade, da moralidade, da publicidade, da eficiência, do interesse público, da probidade administrativa, da igualdade, do planejamento, da transparência, da eficácia, da segregação de funções, da motivação, da vinculação ao edital, do julgamento objetivo, da segurança jurídica, da razoabilidade, da competitividade, da proporcionalidade, da celeridade, da economicidade e do desenvolvimento nacional sustentável, assim como as disposições do DecretoLei nº 4.657, de 4 de setembro de 1942 (Lei de Introdução às Normas do Direito Brasileiro).
 
 
-CAPÍTULO III - DAS DEFINIÇÕES
+Capítulo III - DAS DEFINIÇÕES
 
 Art. 6º Para os fins desta Lei, consideram-se:
 
@@ -305,7 +305,7 @@ LX - agente de contratação: pessoa designada pela autoridade competente, entre
 
 ## Página 9
 
-### CAPÍTULO IV - DOS AGENTES PÚBLICOS
+### Capítulo IV - DOS AGENTES PÚBLICOS
 
 Art. 7º Caberá à autoridade máxima do órgão ou da entidade, ou a quem as normas de organização administrativa indicarem, promover gestão por competências e designar agentes públicos para o desempenho das funções essenciais à execução desta Lei que preencham os seguintes requisitos:
 

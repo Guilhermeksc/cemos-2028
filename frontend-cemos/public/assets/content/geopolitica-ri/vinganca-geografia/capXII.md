@@ -1,4 +1,4 @@
-# CAPÍTULO XII - O DILEMA GEOGRÁFICO DA ÍNDIA
+# Capítulo XII - O DILEMA GEOGRÁFICO DA ÍNDIA
 
 ## A Índia como Estado-Pivô na Geopolítica Eurasiana
 

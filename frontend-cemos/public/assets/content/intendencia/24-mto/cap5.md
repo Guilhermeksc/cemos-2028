@@ -6,7 +6,7 @@ Manual Técnico d Orçamento - MTO. | 2026 ISSOF
 
 5. ELABORAÇÃO DO PROJETO DE LEI DE DIRETRIZES ORÇAMENTÁRIAS
 
-Este capítulo serve como instrumento de apoio ao processo de elaboração do Projeto de Lei de Diretrizes Orçamentárias (PLDO). O capítulo está estruturado de modo a atender aos seguintes objetivos específicos:
+Este Capítulo serve como instrumento de apoio ao processo de elaboração do Projeto de Lei de Diretrizes Orçamentárias (PLDO). O Capítulo está estruturado de modo a atender aos seguintes objetivos específicos:
 
 e esclarecer as funções da Lei de Diretrizes Orçamentárias (LDO);
 
@@ -24,7 +24,7 @@ e darinstruções sobre os perfis e os papéis do Sistema Integrado de Planejame
 
 e informar sobre os canais de apoio.
 
-As instruções contidas nesse manual não pretendem ser exaustivas, de modo que eventuais dúvidas podem ser solucionadas por meio dos canais de apoio, informados ao final do presente capítulo.
+As instruções contidas nesse manual não pretendem ser exaustivas, de modo que eventuais dúvidas podem ser solucionadas por meio dos canais de apoio, informados ao final do presente Capítulo.
 
 Complementa este manual a página de referência sobre o ciclo de vida da LDO, que também pode ser acessada via SIOP, em Manuais > Produtos do SIOP >LDO. Nela, os participantes encontrarão expedientes oficiais, apresentações, instruções sobre as funcionalidades do módulo de LDO do SIOP, roteiros operacionais, relatório de avaliação, diversas versões do texto e dos anexos do PLDO e da LDO, enfim, todo o material de apoio à execução das diversas etapas do processo.
 
@@ -66,7 +66,7 @@ Fatos Relevantes
 
 1998 9.473 22.07.1997 40 71 Inclusão do identificador de uso na lei orçamentária e fim do Quadro de Detalhamento da Despesa - QDD.
 
-1999 9.692 27.07.1998 35 84 Início da abertura automática dos créditos adicionais decorrentes de Projetos de Lei; determinação para que a alocação dos créditos orçamentários fosse feita diretamente às unidades orçamentárias responsáveis pela execução das correspondentes ações, o que impediu a orçamentação do FISTEL no exercício de 1999; inclusão do termo “execução” na especificação dos capítulos (art. 1º), embora só passasse a constar no nome do capítulo, como agregador de dispositivos, a partir da LDO-2008.
+1999 9.692 27.07.1998 35 84 Início da abertura automática dos créditos adicionais decorrentes de Projetos de Lei; determinação para que a alocação dos créditos orçamentários fosse feita diretamente às unidades orçamentárias responsáveis pela execução das correspondentes ações, o que impediu a orçamentação do FISTEL no exercício de 1999; inclusão do termo “execução” na especificação dos Capítulos (art. 1º), embora só passasse a constar no nome do Capítulo, como agregador de dispositivos, a partir da LDO-2008.
 
 (o) [90) —s —s
 
@@ -102,7 +102,7 @@ Dias até
 
 108
 
-Reestruturação do texto da LDO com a inclusão de mais capítulos, seções e subseções
+Reestruturação do texto da LDO com a inclusão de mais Capítulos, seções e subseções
 
 (subseção Das Disposições sobre Precatórios;
 
@@ -110,7 +110,7 @@ subseção Das Vedações; subseção Das Transferências Voluntárias; subseç�
 
 Refinanciamentos; seção Das Alterações da Lei Créditos Adicionais; seção Das Disposições sobre a
 
-Orçamentária; subseção Dos Limitação Orçamentária e Financeira; capítulo Da Fiscalização e das Obras e Serviços com de identificação se a despesa é financeira (0), obrigatória (1) discricionária (2); estabeleceu a obrigatoriedade de de precatórios das autarquias e das fundações
+Orçamentária; subseção Dos Limitação Orçamentária e Financeira; Capítulo Da Fiscalização e das Obras e Serviços com de identificação se a despesa é financeira (0), obrigatória (1) discricionária (2); estabeleceu a obrigatoriedade de de precatórios das autarquias e das fundações
 
 Indícios Irregularidades Graves);
 
@@ -196,7 +196,7 @@ despesas; inclusão de algumas despesas primárias discricionárias na Seção |
 
 2021 14.116 || 31.12.2020 -122 176 Estabelecimento de proporção mínima de recursos para a continuidade de investimentos
 
-em andamento; previsão de regime de transição das empresas estatais entre o Orçamento Fiscal e da Seguridade Social e o Orçamento de Investimentos; regulamentação da transposição, remanejamento ou transferência de recursos relacionados a ciência e tecnologia (8 5º do art. 167 da CF); detalhamento dos requisitos para a observância da regra de ouro em alterações orçamentárias; criação de procedimento de bloqueio de dotações para cumprimento do Teto de Gastos; reestruturação das regras sobre transferências para o setor público e do capítulo sobre a adequação orçamentária das alterações na legislação; recriação da Seção Ill do Anexo Ill e inclusão de novas despesas no rol de ressalvadas de limitação de empenho e movimentação financeira.
+em andamento; previsão de regime de transição das empresas estatais entre o Orçamento Fiscal e da Seguridade Social e o Orçamento de Investimentos; regulamentação da transposição, remanejamento ou transferência de recursos relacionados a ciência e tecnologia (8 5º do art. 167 da CF); detalhamento dos requisitos para a observância da regra de ouro em alterações orçamentárias; criação de procedimento de bloqueio de dotações para cumprimento do Teto de Gastos; reestruturação das regras sobre transferências para o setor público e do Capítulo sobre a adequação orçamentária das alterações na legislação; recriação da Seção Ill do Anexo Ill e inclusão de novas despesas no rol de ressalvadas de limitação de empenho e movimentação financeira.
 
 110
 

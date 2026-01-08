@@ -1,7 +1,7 @@
 
 ## Página 62
 
-### CAPÍTULO IX DO RECEBIMENTO DO OBJETO DO CONTRATO
+### Capítulo IX DO RECEBIMENTO DO OBJETO DO CONTRATO
 
 Art. 140. O objeto do contrato será recebido: I - em se tratando de obras e serviços:
 

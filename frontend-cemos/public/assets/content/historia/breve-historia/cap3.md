@@ -1,4 +1,4 @@
-# CAPÍTULO 3 UMA TEMPESTADE DE MUDANÇAS
+# Capítulo 3 - Uma Tempestade de Mudanças
 
 ## Página 1
 

@@ -1,4 +1,4 @@
-# CAPÍTULO 3 - A PROTEÇÃO DE PESSOAS E BENS NO MAR E A IMPOSIÇÃO DA LEGISLAÇÃO
+# Capítulo 3 - A proteção de pessoas e propriedades no mar e a imposição do direito marítimo
 
 ## Página 49
 

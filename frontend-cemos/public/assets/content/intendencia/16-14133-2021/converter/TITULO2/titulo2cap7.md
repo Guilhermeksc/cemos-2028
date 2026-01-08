@@ -1,6 +1,6 @@
 ## Página 35 
 
-### CAPÍTULO VII DO ENCERRAMENTO DA LICITAÇÃO
+### Capítulo VII DO ENCERRAMENTO DA LICITAÇÃO
 
 Art. 71. Encerradas as fases de julgamento e habilitação, e exauridos os recursos administrativos, o processo licitatório será encaminhado à autoridade superior, que poderá:
 

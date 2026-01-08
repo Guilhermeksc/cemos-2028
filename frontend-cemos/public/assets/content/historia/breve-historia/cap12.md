@@ -1,4 +1,4 @@
-# CAPÍTULO 12 UMA SEGUNDA GUERRA MUNDIAL (Páginas 134-144)
+# Capítulo 12 - Uma segunda Guerra Mundial
 
 ## Página 1
 

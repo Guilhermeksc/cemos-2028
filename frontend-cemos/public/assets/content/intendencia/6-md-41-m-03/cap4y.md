@@ -1,4 +1,4 @@
-# CAPÍTULO IV - Apêndice Estratégico de Mobilização Militar
+# Capítulo IV - Apêndice Estratégico de Mobilização Militar
 
 ## Página 31
 

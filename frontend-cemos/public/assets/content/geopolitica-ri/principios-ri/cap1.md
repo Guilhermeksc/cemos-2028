@@ -141,7 +141,7 @@ Hoje, nenhuma pergunta importante em relações internacionais pode ser respondi
 
 Resumindo: O sentido das relações internacionais 
 
-Como nós, na qualidade de estudantes, podemos começar a atribuir algum sentido aos eventos políticos internacionais em nossa vida cotidiana? Como os estudiosos das relações internacionais nos ajudam a perceber o sentido do mundo à nossa volta? Neste capítulo, apresentamos as principais teorias das relações internacionais, incluindo as abordagens realista, liberal, radical e construtivista. Essas teorias constituem um referencial para perguntar e responder questões fundamentais desse campo. Para respondê-las, os estudiosos de relações internacionais recorrem a muitas outras disciplinas, entre elas a História, a filosofia, a psicologia comportamental e estudos críticos (Tabela 1.2). A disciplina das relações internacionais é pluralista e eclética.
+Como nós, na qualidade de estudantes, podemos começar a atribuir algum sentido aos eventos políticos internacionais em nossa vida cotidiana? Como os estudiosos das relações internacionais nos ajudam a perceber o sentido do mundo à nossa volta? Neste Capítulo, apresentamos as principais teorias das relações internacionais, incluindo as abordagens realista, liberal, radical e construtivista. Essas teorias constituem um referencial para perguntar e responder questões fundamentais desse campo. Para respondê-las, os estudiosos de relações internacionais recorrem a muitas outras disciplinas, entre elas a História, a filosofia, a psicologia comportamental e estudos críticos (Tabela 1.2). A disciplina das relações internacionais é pluralista e eclética.
 
 Tabela 1.2 Ferramentas para o estudo das Relações Internacionais
 

@@ -8,13 +8,13 @@ A PRESIDENTA DA REPÚBLICA , no uso das atribuições que lhe confere o art. 84,
 
 DECRETA:
 
-### CAPÍTULO I - DISPOSIÇÕES PRELIMINARES
+### Capítulo I - DISPOSIÇÕES PRELIMINARES
 
 Art. 1º Este Decreto regulamenta dispositivos da Lei nº 12.598, de 22 de março de 2012.
 
 Parágrafo único. O Regime Especial Tributário para a Indústria de Defesa - RETID, disposto na Lei nº 12.598, de 2012, será regulamentado por ato específico.
 
-### CAPÍTULO II - DA COMISSÃO MISTA DA INDÚSTRIA DE DEFESA
+### Capítulo II - DA COMISSÃO MISTA DA INDÚSTRIA DE DEFESA
 
 Art. 2º Fica criada a Comissão Mista da Indústria de Defesa – CMID, tendo por finalidade assessorar o Ministro de Estado da Defesa em processos decisórios e em proposições de atos relacionados à indústria nacional de defesa.
 
@@ -104,7 +104,7 @@ Art. 3º  A participação na CMID e nas subcomissões temáticas será consider
 
 ## Página 4
 
-### CAPÍTULO III - DAS CLASSIFICAÇÕES E DOS CREDENCIAMENTOS
+### Capítulo III - DAS CLASSIFICAÇÕES E DOS CREDENCIAMENTOS
 
 ### Seção I - Dos Produtos de Defesa, dos Produtos Estratégicos de Defesa e dos Sistemas de Defesa
 
@@ -160,7 +160,7 @@ Art. 11. Será descredenciada a EED que deixe de atender às condições previst
 
 ## Página 6
 
-### CAPÍTULO IV - DA COMPRA, DA CONTRATAÇÃO E DO DESENVOLVIMENTO DE PRODUTOS E SISTEMAS DE DEFESA
+### Capítulo IV - DA COMPRA, DA CONTRATAÇÃO E DO DESENVOLVIMENTO DE PRODUTOS E SISTEMAS DE DEFESA
 
 Art. 12. As aquisições de que trata o § 1º do art. 3º da Lei nº 12.598, de 2012, deverão ser precedidas de Termo de Licitação Especial - TLE.
 
@@ -220,13 +220,13 @@ Parágrafo único. Comprovada a impossibilidade de atendimento à exigência de 
 
 ## Página 8
 
-### CAPÍTULO V - DOS FINANCIAMENTOS ÀS EMPRESAS ESTRATÉGICAS DE DEFESA
+### Capítulo V - DOS FINANCIAMENTOS ÀS EMPRESAS ESTRATÉGICAS DE DEFESA
 
 Art. 17. As EED terão acesso a financiamentos para programas, projetos e ações relativos, respectivamente, a bens e serviços de defesa nacional de que trata o inciso I do caput do art. 8º da Lei nº 12.598, de 2012, e a PED, nos termos da legislação específica.
 
 Art. 18. Para fins do disposto no art. 6º da Lei nº 12.598, de 2012, serão priorizados os financiamentos destinados a atender às diretrizes da Estratégia Nacional de Defesa, os projetos que envolvam capacitação tecnológica, produção e desenvolvimento de conteúdo local.
 
-### CAPÍTULO VI - DISPOSIÇÕES FINAIS
+### Capítulo VI - DISPOSIÇÕES FINAIS
 
 Art. 19. Competirá aos Ministros de Estado expedir normas e procedimentos complementares para a execução deste Decreto, no âmbito de suas competências.
 

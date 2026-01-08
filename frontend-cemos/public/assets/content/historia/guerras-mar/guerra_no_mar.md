@@ -176,7 +176,7 @@ Entre janeiro de 1943 e a capitulação alemã em maio de 1945, dá-se a fase fi
 
 Em 5 de maio de 1945, o comandante em chefe das forças de submarinos, o Grossadmiral Karl Dönitz, dá ordem de cessação de combate para todos os submarinos, com uma única frase de agradecimento:"- Vocês lutaram como leões!". A mais importante batalha da Segunda Guerra Mundial terminava com a derrota alemã. Os aliados haviam perdido 30.248 homens, enquanto os alemães 28.000; 3.500 embarcações aliadas tinham sido afundadas, ao passo que os alemães perderam 766 submarinos, a maioria com suas tripulações completas. Os aliados perderam, ainda, 175 embarcações militares, o que representou um recorde histórico.
 
-## CAPÍTULO 13 - A BATALHA NAVAL DE MIDWAY - PROF. DR. WILLIAMS GONÇALVES
+## Capítulo 13 - A BATALHA NAVAL DE MIDWAY - PROF. DR. WILLIAMS GONÇALVES
 
 A luta pela conquista da pequena ilha de Midway, situada no centro do oceano Pacífico, constituiu uma das principais batalhas aeronavais da história. Plantada justamente "na metade do caminho" dos territórios dos Estados Unidos e do Japão, Midway foi objeto de encarniçada disputa entre suas respectivas forças navais. Para os comandos navais dos dois países o controle sobre a ilha representava uma enorme vantagem estratégica. Aquele que obtivesse o controle sobre a ilha estaria em condições de decidir a guerra em seu favor, como de fato veio a acontecer.
 
@@ -401,7 +401,7 @@ Desde quando se organizaram internamente, após a Guerra de Secessão e a Revolu
 A Batalha Naval de Midway deve ser considerada, enfim, uma das mais importantes batalhas navais de todos os tempos, porque naqueles poucos minutos em que os comandados pelos almirantes Nimitz e Yamamoto entraram em combate, redefiniram o sistema internacional de poder.
 
 
-## CAPÍTULO 14 - A Batalha do Golfo de Leyte (Páginas 66-93) / ALMIRANTE HÉLIO LEÔNCIO MARTINS
+## Capítulo 14 - A Batalha do Golfo de Leyte (Páginas 66-93) / ALMIRANTE HÉLIO LEÔNCIO MARTINS
 
 ### Antecedentes
 
@@ -673,7 +673,7 @@ Merece frisar que, do lado norte-americano, além da superioridade material, foi
 
 Com a rendição, o Japão, arrasado material e humanamente, começou sua recuperação, sob a direção do vencedor, general MacArthur, em outro sentido, não militar, e sim, científico, tecnológico, comercial. Em poucas décadas, o país atingiu o poderio econômico que desejava ter antes da guerra, não conseguído pela força das armas, porque obstado pelos Estados Unidos. Depois da guerra, foram os mesmos Estados Unidos o seu sócio na ascensão. Isso após quatro anos de sanguinolento confronto, milhões de mortos, um país materialmente arrasado, e toda a enorme capacidade de organização e produção dos Estados Unidos empregada sem nada construir. Essa situação esdrúxula parece confirmar a explicação dada por um filósofo, Pitkin, apenas com o título de seu livro de 400 páginas: Breve introdução à história da estupidez humana. Lamentavelmente, tal estupidez tem se manifestado em toda a existência da Humanidade. Pelo que também não será de bom aviso ignorá-la.
 
-## CAPÍTULO 15 - Conflito no Atlântico Sul: A Luta pela Posse do Arquipélago das Falklands-Malvinas 1 (Páginas 94-127)  ALMIRANTE ARMANDO AMORIM FERREIRA VIDIGAL
+## Capítulo 15 - Conflito no Atlântico Sul: A Luta pela Posse do Arquipélago das Falklands-Malvinas 1 (Páginas 94-127)  ALMIRANTE ARMANDO AMORIM FERREIRA VIDIGAL
 
 "Se as ilhas forem invadidas, eu saberei exatamente o que nós teremos de fazer - expulsá-los." Margaret Thatcher
 

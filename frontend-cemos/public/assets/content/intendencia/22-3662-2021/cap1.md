@@ -8,7 +8,7 @@ Estabelece a Política de Compensação Tecnológica, Industrial e Comercial de 
 
 O MINISTRO DE ESTADO DA DEFESA, no uso das atribuições que lhe confere o art. 87, parágrafo único, incisos I e II, da Constituição, observado o disposto nos arts. 2º, inciso VII, e 4º, caput, e § 2º, da Lei nº 12.598, de 21 de março de 2012, no art. 27, inciso XV, alínea "b", da Lei nº 13.844, de 18 de junho de 2019, no art. 1º, inciso XV, alínea "b", do Anexo I ao Decreto nº 9.570, de 20 de novembro de 2018, e tendo em vista o que consta no Processo Administrativo nº 60070.000128/2021-12, resolve:
 
-### CAPÍTULO I - DISPOSIÇÕES PRELIMINARES
+### Capítulo I - DISPOSIÇÕES PRELIMINARES
 
 Art. 1º Esta Portaria dispõe sobre a Política de Compensação Tecnológica, Industrial e Comercial de Defesa - PComTIC Defesa.
 
@@ -92,7 +92,7 @@ XVII - transação de compensação: partes ou uma das atividades de um projeto 
 
 ## Página 5
 
-### CAPÍTULO II - OBJETIVOS
+### Capítulo II - OBJETIVOS
 
 Art. 4º A PComTIC Defesa tem os seguintes objetivos:
 
@@ -104,7 +104,7 @@ III - incentivar a indústria brasileira na busca de inserção internacional, e
 
 IV - consolidar a base tecnológica e industrial brasileira nas áreas estratégicas de interesse nacional da Defesa.
 
-### CAPÍTULO III - ORIENTAÇÕES ESTRATÉGICAS
+### Capítulo III - ORIENTAÇÕES ESTRATÉGICAS
 
 Art. 5º Constituem orientações estratégicas para a implantação da PComTIC Defesa:
 
@@ -122,7 +122,7 @@ VI - assegurar que os benefícios decorrentes das compensações de que trata es
 
 ## Página 6
 
-### CAPÍTULO IV - DISPOSIÇÕES ESPECÍFICAS
+### Capítulo IV - DISPOSIÇÕES ESPECÍFICAS
 
 Art. 6º Compete ao Ministro de Estado da Defesa aprovar outra modalidade de medida de compensação tecnológica, industrial e comercial, adicionalmente às relacionadas no inciso XI do art. 3º, mediante requerimento específico do Comando da Força Singular contratante, quando for o caso.
 
@@ -168,7 +168,7 @@ III - acompanhar as atividades de fomento e fortalecimento dos setores de intere
 
 ## Página 8
 
-### CAPÍTULO V - DISPOSIÇÕES GERAIS
+### Capítulo V - DISPOSIÇÕES GERAIS
 
 Art. 12. As negociações de contratos de importação de PRODE realizadas pelos Comandos das Forças Singulares e pelos órgãos que integram a estrutura do Ministério da Defesa, com valor líquido (preço Free on Board - FOB) igual ou superior a US$ 50.000.000,00 (cinquenta milhões de dólares norte-americanos), ou valor equivalente em outra moeda, em uma única compra ou cumulativamente com um mesmo fornecedor, num período de até doze meses, devem incluir, necessariamente, um acordo de compensação.
 
@@ -228,7 +228,7 @@ Art. 23. Os acordos de compensação que gerem, eventualmente, excedentes em rel
 
 Parágrafo único. Os créditos excedentes existentes no banco de crédito de compensação em favor da empresa contratada poderão ser compensados em um prazo máximo de cinco anos, a partir de seu reconhecimento, não podendo comprometer mais de vinte por cento do valor a ser compensado no novo contrato.
 
-### CAPÍTULO VI - DISPOSIÇÕES FINAIS
+### Capítulo VI - DISPOSIÇÕES FINAIS
 
 Art. 24. Situações especiais ou casos não previstos nesta Portaria devem ser submetidos ao Ministro de Estado da Defesa.
 

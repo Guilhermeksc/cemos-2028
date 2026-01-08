@@ -13,7 +13,7 @@ Subchefia para Assuntos Jurídicos
 A PRESIDENTA DA REPÚBLICA , no uso das atribuições que lhe confere o art. 84, caput , incisos IV e VI, alínea “a”, da Constituição, e tendo em vista o disposto na Lei nº 12.527, de 18 de novembro de 2011, e no art. 24, caput , incisos V e VI, da Lei nº 12.965, de 23 de abril de 2014,
 
 DECRETA :
-CAPÍTULO I
+Capítulo I
 
 DISPOSIÇÕES GERAIS
 
@@ -64,7 +64,7 @@ V - completude e interoperabilidade das bases de dados, as quais devem ser dispo
 VI - atualização periódica, de forma a garantir a perenidade dos dados, a padronização de estruturas de informação e o valor dos dados à sociedade e atender às necessidades de seus usuários; e
 
 VII - designação clara de responsável pela publicação, atualização, evolução e manutenção de cada base de dado aberta, incluída a prestação de assistência quanto ao uso de dados.
-CAPÍTULO II
+Capítulo II
 
 DA LIVRE UTILIZAÇÃO DE BASES DE DADOS
 
@@ -75,7 +75,7 @@ Art. 4º  Os dados disponibilizados pelo Poder Executivo federal e as informaç�
 § 1º  Fica autorizada a utilização gratuita das bases de dados e das informações disponibilizadas nos termos do disposto no inciso XIII do caput do art. 7º da Lei nº 9.610, de 19 de fevereiro de 1998 , e cujo detentor de direitos autorais patrimoniais seja a União, nos termos do disposto no art. 29 da referida Lei .                 (Incluído pelo Decreto nº 9.903, de 2019)
 
 § 2º  Fica o Poder Executivo federal obrigado a indicar o detentor de direitos autorais pertencentes a terceiros e as condições de utilização por ele autorizadas na divulgação de bases de dados protegidas por direitos autorais de que trata o inciso XIII do caput do art. 7º da Lei nº 9.610, de 1998 .                 (Incluído pelo Decreto nº 9.903, de 2019)
-CAPÍTULO III
+Capítulo III
 
 DA GOVERNANÇA
 
@@ -110,14 +110,14 @@ III - monitorar a implementação dos Planos de Dados Abertos; e
 IV - apresentar relatórios periódicos sobre o cumprimento dos Planos de Dados Abertos, com recomendações sobre as medidas indispensáveis à implementação e ao aperfeiçoamento da Política de Dados Abertos.
 
 § 5º  Compete ao Ministério da Economia definir os padrões e a gestão dos demais aspectos tecnológicos da INDA.                 (Incluído pelo Decreto nº 9.903, de 2019)
-CAPÍTULO IV
+Capítulo IV
 
 DA SOLICITAÇÃO DE ABERTURA DE BASES DE DADOS
 
 Art. 6º Às solicitações de abertura de bases de dados da administração pública federal aplicam-se os prazos e os procedimentos previstos para o processamento de pedidos de acesso à informação, nos termos da Lei nº 12.527, de 2011 , e do Decreto nº 7.724, de 16 de maio de 2012 .
 
 Parágrafo único. A decisão negativa de acesso de pedido de abertura de base de dados governamentais fundamentada na demanda por custos adicionais desproporcionais e não previstos pelo órgão ou pela entidade da administração pública federal deverá apresentar análise sobre a quantificação de tais custos e sobre a viabilidade da inclusão das bases de dados em edição futura do Plano de Dados Abertos.
-CAPÍTULO V
+Capítulo V
 
 DISPOSIÇÕES FINAIS
 

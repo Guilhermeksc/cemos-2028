@@ -1,12 +1,12 @@
 ## Página 45
 
-# CAPÍTULO VII - Atribuições
+# Capítulo VII - Atribuições
 
 **7.1 Contextualização**
 
 7.1.1 A Diretriz Setorial de Mobilização Militar (DSMM), estabelecida no manual - MD41-D-01 (32 Edição/2015), contempla a listagem das competências do Ministério da Defesa e dos Comandos das Forças Singulares.
 
-7.1.2 No intuito de se ampliar essa listagem para uma abordagem mais completa, o presente capítulo inclui as atribuições dos órgãos, chefias e comandos com responsabilidade nas várias decisões, providências e ações relativas à Mobilização Militar.
+7.1.2 No intuito de se ampliar essa listagem para uma abordagem mais completa, o presente Capítulo inclui as atribuições dos órgãos, chefias e comandos com responsabilidade nas várias decisões, providências e ações relativas à Mobilização Militar.
 
 7.1.3 Várias das atribuições a seguir relacionadas estão contidas no Anexo | (Estrutura Regimental do Ministério da Defesa) do Decreto nº 10.998, de 15 de março de 2022, bem como no seu Regimento Interno.
 

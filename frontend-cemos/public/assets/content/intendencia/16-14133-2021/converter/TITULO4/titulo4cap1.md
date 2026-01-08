@@ -2,7 +2,7 @@
 
 # TÍTULO IV DAS IRREGULARIDADES 
 
-### CAPÍTULO I DAS INFRAÇÕES E SANÇÕES ADMINISTRATIVAS 
+### Capítulo I DAS INFRAÇÕES E SANÇÕES ADMINISTRATIVAS 
 
 Art. 155. O licitante ou o contratado será responsabilizado administrativamente pelas seguintes infrações: 
 

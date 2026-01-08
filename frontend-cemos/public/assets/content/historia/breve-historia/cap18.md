@@ -1,4 +1,4 @@
-# CAPÍTULO 18 AS NAVES DA VINGANÇA (Páginas 202-211)
+# Capítulo 18 - As naves da Vingança
 
 ## Página 1
 

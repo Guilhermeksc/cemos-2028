@@ -1,6 +1,6 @@
 ## Página 39
 
-# CAPÍTULO VI - Documentação de Mobilização
+# Capítulo VI - Documentação de Mobilização
 
 ### 6.1 Publicações normativas
 

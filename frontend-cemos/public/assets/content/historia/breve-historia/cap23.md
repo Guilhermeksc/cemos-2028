@@ -1,4 +1,4 @@
-# CAPÍTULO 23 RAIOS E TROVÕES EM MOSCOU E VARSÓVIA (Páginas 258-266)
+# Capítulo 23 - Raios e Trovões em Moscou e Varsóvia
 
 ## Página 1
 

@@ -1,4 +1,4 @@
-# Questões do capítulo 1
+# Questões do Capítulo 1
 
 ### Q1. Relacione os aspectos populacionais com alguns aspectos econômicos.
 Por um lado, a população de um país representa o potencial de consumidores deste país; por outro, parte desta população, a chamada População Economicamente Ativa (PEA) representa os potenciais trabalhadores/produtores do país. Outras implicações importantes são as alterações na composição etária ou na distribuição regional desta população.

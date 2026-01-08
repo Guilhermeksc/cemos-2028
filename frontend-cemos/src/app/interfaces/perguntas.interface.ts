@@ -17,7 +17,8 @@ export interface FlashCards {
   bibliografia_titulo?: string;
   pergunta: string;
   resposta: string;
-  assunto?: string;
+  assunto?: number | null;
+  assunto_titulo?: string | null;
   prova: boolean;
   ano?: number;
   caveira: boolean;
@@ -26,7 +27,7 @@ export interface FlashCards {
 export interface FlashCardsFilters {
   search?: string;
   bibliografia?: number;
-  assunto?: string;
+  assunto?: number;
   prova?: boolean;
   ano?: number;
   caveira?: boolean;
@@ -44,13 +45,19 @@ export interface EstatisticasFlashCards {
   anos_prova: number[];
 }
 
+export interface AssuntoOption {
+  id: number;
+  titulo: string;
+}
+
 // Interface base para perguntas (não utilizada diretamente, apenas para referência)
 export interface PerguntaBase {
   id: number;
   bibliografia: number;
   bibliografia_titulo?: string;
   paginas?: string;
-  assunto?: string;
+  assunto?: number | null;
+  assunto_titulo?: string | null;
   caiu_em_prova: boolean;
   ano_prova?: number;
   pergunta: string;
@@ -104,7 +111,8 @@ export interface PerguntaResumo {
   bibliografia_titulo: string;
   pergunta: string;
   paginas?: string;
-  assunto?: string;
+  assunto?: number | null;
+  assunto_titulo?: string | null;
   caiu_em_prova: boolean;
   ano_prova?: number;
 }
@@ -125,7 +133,7 @@ export interface BibliografiaFilters {
 export interface PerguntaFilters {
   search?: string;
   bibliografia?: number;
-  assunto?: string;
+  assunto?: number;
   caiu_em_prova?: boolean;
   ano_prova?: number;
   ordering?: string;

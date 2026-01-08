@@ -135,8 +135,8 @@
                 <small class="card-bibliografia">
                   📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
                 </small>
-                <small class="card-assunto" *ngIf="card.assunto">
-                  ({{ card.assunto }})
+                <small class="card-assunto" *ngIf="card.assunto_titulo">
+                  ({{ card.assunto_titulo }})
                 </small>
                 <small class="flip-hint">👆 Clique para ver a resposta</small>
               </div>
@@ -170,8 +170,8 @@
                 <small class="card-bibliografia">
                   📚 {{ card.bibliografia_titulo || getBibliografiaNome(card.bibliografia) }}
                 </small>
-                <small class="card-assunto" *ngIf="card.assunto">
-                  ({{ card.assunto }})
+                <small class="card-assunto" *ngIf="card.assunto_titulo">
+                  ({{ card.assunto_titulo }})
                 </small>
                 <small class="flip-hint">👆 Clique para ver a pergunta</small>
               </div>

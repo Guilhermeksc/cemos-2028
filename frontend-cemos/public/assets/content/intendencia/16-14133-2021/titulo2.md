@@ -2,7 +2,7 @@
 
 # TÍTULO II DAS LICITAÇÕES
 
-### CAPÍTULO I - DO PROCESSO LICITATÓRIO 
+### Capítulo I - DO PROCESSO LICITATÓRIO 
 
 Art. 11. O processo licitatório tem por objetivos:
 
@@ -140,7 +140,7 @@ II - conclusão de fases ou de objetos de contratos;
 
 III - material e corpo técnico apresentados por empresa para fins de habilitação.
 
-### CAPÍTULO II - DA FASE PREPARATÓRIA 
+### Capítulo II - DA FASE PREPARATÓRIA 
 
 ### Seção I Da Instrução do Processo Licitatório
 
@@ -792,7 +792,7 @@ Art. 52. Nas licitações de âmbito internacional, o edital deverá ajustar-se 
 
 § 6º Observados os termos desta Lei, o edital não poderá prever condições de habilitação, classificação e julgamento que constituam barreiras de acesso ao licitante estrangeiro, admitida a previsão de margem de preferência para bens produzidos no País e serviços nacionais que atendam às normas técnicas brasileiras, na forma definida no art. 26 desta Lei.
 
-### CAPÍTULO III DA DIVULGAÇÃO DO EDITAL DE LICITAÇÃO
+### Capítulo III DA DIVULGAÇÃO DO EDITAL DE LICITAÇÃO
 
 Art. 53. Ao final da fase preparatória, o processo licitatório seguirá para o órgão de assessoramento jurídico da Administração, que realizará controle prévio de legalidade mediante análise jurídica da contratação.
 
@@ -822,7 +822,7 @@ Art. 54. A publicidade do edital de licitação será realizada mediante divulga
 
 § 3º Após a homologação do processo licitatório, serão disponibilizados no Portal Nacional de Contratações Públicas (PNCP) e, se o órgão ou entidade responsável pela licitação entender cabível, também no sítio referido no § 2º deste artigo, os documentos elaborados na fase preparatória que porventura não tenham integrado o edital e seus anexos.
 
-### CAPÍTULO IV DA APRESENTAÇÃO DE PROPOSTAS E LANCES
+### Capítulo IV DA APRESENTAÇÃO DE PROPOSTAS E LANCES
 
 Art. 55. Os prazos mínimos para apresentação de propostas e lances, contados a partir da data de divulgação do edital de licitação, são de:
 
@@ -882,7 +882,7 @@ Art. 58. Poderá ser exigida, no momento da apresentação da proposta, a compro
 
 § 4º A garantia de proposta poderá ser prestada nas modalidades de que trata o§1º do art. 96 desta Lei.
 
-### CAPÍTULO V DO JULGAMENTO
+### Capítulo V DO JULGAMENTO
 
 Art. 59. Serão desclassificadas as propostas que:
 
@@ -936,7 +936,7 @@ Art. 61. Definido o resultado do julgamento, a Administração poderá negociar 
 
 § 2º A negociação será conduzida por agente de contratação ou comissão de contratação, na forma de regulamento, e, depois de concluída, terá seu resultado divulgado a todos os licitantes e anexado aos autos do processo licitatório.
 
-### CAPÍTULO VI DA HABILITAÇÃO
+### Capítulo VI DA HABILITAÇÃO
 
 Art. 62. A habilitação é a fase da licitação em que se verifica o conjunto de informações e documentos necessários e suficientes para demonstrar a capacidade do licitante de realizar o objeto da licitação, dividindo-se em:
 
@@ -1076,7 +1076,7 @@ III - dispensada, total ou parcialmente, nas contratações para entrega imediat
 
 Parágrafo único. As empresas estrangeiras que não funcionem no País deverão apresentar documentos equivalentes, na forma de regulamento emitido pelo Poder Executivo federal.
 
-### CAPÍTULO VII DO ENCERRAMENTO DA LICITAÇÃO
+### Capítulo VII DO ENCERRAMENTO DA LICITAÇÃO
 
 Art. 71. Encerradas as fases de julgamento e habilitação, e exauridos os recursos administrativos, o processo licitatório será encaminhado à autoridade superior, que poderá:
 
@@ -1096,7 +1096,7 @@ IV - adjudicar o objeto e homologar a licitação.§1º Ao pronunciar a nulidade
 
 ## Página 36
 
-### CAPÍTULO VIII DA CONTRATAÇÃO DIRETA
+### Capítulo VIII DA CONTRATAÇÃO DIRETA
 
 ### Seção I Do Processo de Contratação Direta
 
@@ -1264,7 +1264,7 @@ II - o somatório da despesa realizada com objetos de mesma natureza, entendidos
 
 § 7º Não se aplica o disposto no§1º deste artigo às contratações de até R$ 8.000,00 (oito mil reais) de serviços de manutenção de veículos automotores de propriedade do órgão ou entidade contratante, incluído o fornecimento de peças. (Atualizado pelo Decreto nº 12.343, de 2024 para R$ 10.036,10)
 
-### CAPÍTULO IX - DAS ALIENAÇÕES
+### Capítulo IX - DAS ALIENAÇÕES
 
 Art. 76. A alienação de bens da Administração Pública, subordinada à existência de interesse público devidamente justificado, será precedida de avaliação e obedecerá às seguintes normas:
 
@@ -1346,7 +1346,7 @@ II - alienação, ao legítimo possuidor direto ou, na falta dele, ao poder púb
 
 Art. 77. Para a venda de bens imóveis, será concedido direito de preferência ao licitante que, submetendose a todas as regras do edital, comprove a ocupação do imóvel objeto da licitação.
 
-### CAPÍTULO X DOS INSTRUMENTOS AUXILIARES 
+### Capítulo X DOS INSTRUMENTOS AUXILIARES 
 
 ### Seção I Dos Procedimentos Auxiliares
 

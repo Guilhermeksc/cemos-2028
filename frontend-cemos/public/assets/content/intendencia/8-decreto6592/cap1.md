@@ -8,7 +8,7 @@ O PRESIDENTE DA REPÚBLICA, no uso da atribuição que lhe confere o art. 84, in
 
 DECRETA: 
 
-### CAPÍTULO I - DAS DISPOSIÇÕES GERAIS 
+### Capítulo I - DAS DISPOSIÇÕES GERAIS 
 
 Art. 1º  As atividades de Mobilização Nacional são organizadas sob a forma de sistema, nos termos da Lei no 11.631, de 27 de dezembro de 2007. 
 
@@ -44,7 +44,7 @@ IX - cooperação: integração e sinergia das ações.
 
 ## Página 2
 
-### CAPÍTULO II - DA COMPOSIÇÃO E DA ORGANIZAÇÃO DO SINAMOB 
+### Capítulo II - DA COMPOSIÇÃO E DA ORGANIZAÇÃO DO SINAMOB 
 
 Art. 5º  O SINAMOB consiste no conjunto de órgãos que atuam de modo ordenado e integrado, a fim de planejar e realizar todas as fases da Mobilização e da Desmobilização Nacionais.  
 
@@ -136,7 +136,7 @@ X - Subsistema Setorial de Mobilização de Inteligência: coordenar as atividad
 
 ## Página 5 
 
-### CAPÍTULO III - DO COMITÊ DO SINAMOB 
+### Capítulo III - DO COMITÊ DO SINAMOB 
 
 Art. 11.  O Comitê do SINAMOB, colegiado de caráter deliberativo, no âmbito de suas competências, tem por finalidade dispor sobre as matérias de competência do Sistema, estabelecidas no art. 7º da Lei nº 11.631, de 2007. 
 
@@ -238,7 +238,7 @@ Art. 21.  A Secretaria Executiva será exercida pelo Órgão Central de que trat
 
 ## Página 8
 
-### CAPÍTULO IV - DAS COMPETÊNCIAS DOS ÓRGÃOS QUE COMPÕEM O SINAMOB 
+### Capítulo IV - DAS COMPETÊNCIAS DOS ÓRGÃOS QUE COMPÕEM O SINAMOB 
 
 Art. 22.  Ao Órgão Central do SINAMOB, além do prescrito no art. 6, inciso I, e art. 20, compete:
 
@@ -270,7 +270,7 @@ V - fomentar a capacitação de recursos humanos específicos na área de Mobili
 
 ## Página 9
 
-### CAPÍTULO V - DO PREPARO DA MOBILIZAÇÃO NACIONAL 
+### Capítulo V - DO PREPARO DA MOBILIZAÇÃO NACIONAL 
 
 Art. 24.  O preparo da Mobilização Nacional é desenvolvido de modo contínuo, metódico e permanente, desde a situação de normalidade, e consiste no estabelecimento de programas, normas e procedimentos relativos à complementação da Logística Nacional e na adequação das Políticas Governamentais à Política de Mobilização Nacional. 
 
@@ -288,7 +288,7 @@ III - bolsas de estudos e programas de capacitação científica e tecnológica.
 
 ## Página 10 
 
-### CAPÍTULO VI - DA EXECUÇÃO DA MOBILIZAÇÃO NACIONAL 
+### Capítulo VI - DA EXECUÇÃO DA MOBILIZAÇÃO NACIONAL 
 
 Art. 26.  A execução da Mobilização Nacional terá início em ato do Presidente da República, de acordo com o art. 84, inciso XIX, da Constituição. 
 
@@ -318,7 +318,7 @@ IX - a reorientação da produção, da comercialização, da distribuição e c
 
 ## Página 11 
 
-### CAPÍTULO VII - DA DESMOBILIZAÇÃO NACIONAL 
+### Capítulo VII - DA DESMOBILIZAÇÃO NACIONAL 
 
 Art. 30.  As ações de Desmobilização Nacional iniciam-se logo que reduzir ou cessar os motivos que determinaram a decretação da Mobilização Nacional, sendo implementada de modo gradativo, procurando conciliar a necessidade decrescente do esforço de mobilização com a crescente necessidade de volta à normalidade, sem perder de vista a possibilidade de recrudescimento do conflito. 
 
@@ -336,7 +336,7 @@ Parágrafo único.  Entende-se como medidas de garantias, para fins de Desmobili
 
 Art. 34.  A decretação da Desmobilização Nacional caracterizará o retorno total à situação de normalidade, estabelecendo, assim, o final da Mobilização Nacional. 
 
-### CAPÍTULO VIII - DAS DISPOSIÇÕES FINAIS 
+### Capítulo VIII - DAS DISPOSIÇÕES FINAIS 
 
 Art. 35.  A estrutura do SINAMOB poderá ser utilizada no auxílio às situações emergenciais, desde que aprovado pelo seu Comitê. 
 

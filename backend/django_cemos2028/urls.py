@@ -25,4 +25,10 @@ urlpatterns = [
     # App de Informações
     path('api/informacoes/', include('django_cemos2028.apps.informacoes.urls')),
 
+    # App de Revisão e Planejamento de Estudos
+    path('api/revisao/', include('django_cemos2028.apps.revisao.urls')),
+
+    # App de Bibliografia
+    path('api/bibliografia/', include('django_cemos2028.apps.bibliografia.urls')),
+
 ]

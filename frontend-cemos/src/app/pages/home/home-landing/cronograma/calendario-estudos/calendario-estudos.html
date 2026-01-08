@@ -1,0 +1,27 @@
+<div class="calendario-estudos-container">
+  <div *ngIf="!projeto" class="no-projeto-message">
+    <mat-icon>event_busy</mat-icon>
+    <p>Selecione um projeto na aba Principal para visualizar o cronograma.</p>
+  </div>
+
+  <div *ngIf="projeto">
+    <!-- Debug info -->
+    <div style="display: none;">Loading: {{ loadingCalendario() }}</div>
+    
+    <!-- Spinner de Carregamento -->
+    <div class="loading-overlay" *ngIf="loadingCalendario()">
+      <mat-spinner diameter="50"></mat-spinner>
+      <p>Carregando calendário...</p>
+      <p style="font-size: 0.75rem; color: #999;">Estado: {{ loadingCalendario() ? 'Carregando...' : 'Pronto' }}</p>
+    </div>
+
+    <!-- Calendário FullCalendar -->
+    <div class="calendar-wrapper" [class.loading]="loadingCalendario()">
+      <full-calendar 
+        #fullCalendar
+        [options]="calendarOptions"
+        class="fullcalendar-container">
+      </full-calendar>
+    </div>
+  </div>
+</div>

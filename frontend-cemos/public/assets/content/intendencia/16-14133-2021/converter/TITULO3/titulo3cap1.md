@@ -2,7 +2,7 @@
 
 # TÍTULO III DOS CONTRATOS ADMINISTRATIVOS 
 
-### CAPÍTULO I DA FORMALIZAÇÃO DOS CONTRATOS
+### Capítulo I DA FORMALIZAÇÃO DOS CONTRATOS
 
 Art. 89. Os contratos de que trata esta Lei regular-se-ão pelas suas cláusulas e pelos preceitos de direito público, e a eles serão aplicados, supletivamente, os princípios da teoria geral dos contratos e as disposições de direito privado.
 

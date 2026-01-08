@@ -1,10 +1,10 @@
-# CAPÍTULO 3 - CICLO LOGÍSTICO
+# Capítulo 3 - CICLO LOGÍSTICO
 
 ## Página 1
 
 ### 3.1 - GENERALIDADES
 
-O ciclo logístico, descrito no capítulo 2, é o processo pelo qual se desenvolve a logística. Identifica-se, no ciclo, as fases básicas, denominadas:
+O ciclo logístico, descrito no Capítulo 2, é o processo pelo qual se desenvolve a logística. Identifica-se, no ciclo, as fases básicas, denominadas:
 
 - DETERMINAÇÃO DE NECESSIDADES;
 - OBTENÇÃO; e

@@ -1,7 +1,7 @@
 
 ## Página 54
 
-### CAPÍTULO IV DAS PRERROGATIVAS DA ADMINISTRAÇÃO
+### Capítulo IV DAS PRERROGATIVAS DA ADMINISTRAÇÃO
 
 Art. 104. O regime jurídico dos contratos instituído por esta Lei confere à Administração, em relação a eles, as prerrogativas de:
 

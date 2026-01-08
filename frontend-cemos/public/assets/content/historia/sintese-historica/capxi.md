@@ -34,7 +34,7 @@ c) Instrumentos Militares
 
 Exceto no caso dos denominados Instrumentos Militares Emergentes, os Instrumentos Militares são aqueles que implicam uso ou ameaça de uso de força, tanto compelindo quanto em violência declarada.
 
-Detalhar a atuação, instrumento por instrumento, excederia o espaço disponível para este capítulo. Assim, a argumentação a seguir limitar-se- á àqueles aspectos relacionados à Marinha.
+Detalhar a atuação, instrumento por instrumento, excederia o espaço disponível para este Capítulo. Assim, a argumentação a seguir limitar-se- á àqueles aspectos relacionados à Marinha.
 
 ## A DIPLOMACIA
 
@@ -84,7 +84,7 @@ O estudo da trajetória dos estagiários e alunos que participaram desses cursos
 
 ## DIPLOMACIA MILITAR
 
-Neste capítulo, adotou-se a expressão Diplomacia Militar para englobar as ações em que se mobilizem meios militares, impliquem ou não emprego de força ou ameaça do uso de força. Esses meios podem ser utilizados de diferentes maneiras, como, por exemplo, aplicando-os em diversas tarefas de apoio ou de representação (estas últimas, tradicionalmente associadas à expressão "mostrar a bandeira", constituem o exemplo mais tradicional de emprego de Forças Navais, em situação de normalidade); ou posicionando-os de modo a negociar a partir de uma situação de força, por ocasião de uma crise (o que pode ser atendido pela realização de exercícios em áreas de interesse). Assim, a Diplomacia Militar pode estar enquadrada como Instrumento Político-Militar e como Instrumento Militar.
+Neste Capítulo, adotou-se a expressão Diplomacia Militar para englobar as ações em que se mobilizem meios militares, impliquem ou não emprego de força ou ameaça do uso de força. Esses meios podem ser utilizados de diferentes maneiras, como, por exemplo, aplicando-os em diversas tarefas de apoio ou de representação (estas últimas, tradicionalmente associadas à expressão "mostrar a bandeira", constituem o exemplo mais tradicional de emprego de Forças Navais, em situação de normalidade); ou posicionando-os de modo a negociar a partir de uma situação de força, por ocasião de uma crise (o que pode ser atendido pela realização de exercícios em áreas de interesse). Assim, a Diplomacia Militar pode estar enquadrada como Instrumento Político-Militar e como Instrumento Militar.
 
 Tanto como Instrumento Político-Militar como Instrumento Militar, historicamente, a Diplomacia Naval é a que tem maior tradição, por seus predicados. Isto porque, ao contrário das limitações que sofrem as outras Forças Armadas, as Forças Navais são os únicos dispositivos militares capazes de atuar com significativa liberdade em tempo de paz, pois os navios de guerra, a despeito de todo armamento que dispõem, podem visitar portos estrangeiros sem provocar comoção. Característica que diversos governos aproveitam para empregar politicamente as suas Marinhas.
 
@@ -221,7 +221,7 @@ O nosso Brasil merece que reflitamos sobre tais demandas!
 
 ## A GUERRA DA LAGOSTA E A DIPLOMACIA NAVAL
 
-Citada como exemplo em várias passagens deste capítulo, torna-se oportuno ampliar alguns tópicos relacionados à Guerra da Lagosta (1963), ocasião em que o Brasil impediu que barcos franceses continuassem capturando lagostas em nossa plataforma continental. Trata-se de uma crise razoavelmente conhecida, mas que, ainda assim, mereceria um estudo integrado, uma vez que as diver sas abordagens encontradas são setoriais. Com isso, não se consegue apreender e harmonizar, em justa medida, todos os aspectos do tema, que envolve desentro samento entre órgãos do Governo e percepções equivocadas. Destaca-se que foi um confronto relacionado a um tema ambiental, possivelmente, o primeiro com essa característica em que o Brasil se envolveu.
+Citada como exemplo em várias passagens deste Capítulo, torna-se oportuno ampliar alguns tópicos relacionados à Guerra da Lagosta (1963), ocasião em que o Brasil impediu que barcos franceses continuassem capturando lagostas em nossa plataforma continental. Trata-se de uma crise razoavelmente conhecida, mas que, ainda assim, mereceria um estudo integrado, uma vez que as diver sas abordagens encontradas são setoriais. Com isso, não se consegue apreender e harmonizar, em justa medida, todos os aspectos do tema, que envolve desentro samento entre órgãos do Governo e percepções equivocadas. Destaca-se que foi um confronto relacionado a um tema ambiental, possivelmente, o primeiro com essa característica em que o Brasil se envolveu.
 
 Afinal, o nosso País dispôs-se ao enfrentamento bélico, não só para preservar um recurso econômico, mas também, à luz dos argumentos empregados, para proteger da destruição a lagosta e a biota de seu habitat, que pescadores franceses já teriam dizimado em outras áreas devido às técnicas de captura que empregavam.
 

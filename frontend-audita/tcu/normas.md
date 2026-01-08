@@ -1,12 +1,12 @@
 # DGMM-0540
 
-## CAPÍTULO 5 - INTERNET
+## Capítulo 5 - INTERNET
 
 5.10 - AUDITORIA
 
 O CTIM dispõe de recursos para auditar todos os acessos à Internet, inclusive os de correio eletrônico. É possível identificar a origem de todo e qualquer acesso a sítios externos, individualmente. O planejamento das auditorias é atribuição da DCTIM, podendo ser solicitadas pelas próprias OM, em caráter especial.
 
-## CAPÍTULO 6 - CORREIO ELETRÔNICO NA MB
+## Capítulo 6 - CORREIO ELETRÔNICO NA MB
 
 6.6 - AUDITORIAS
 
@@ -17,7 +17,7 @@ A DCTIM poderá, a qualquer tempo, por meio do CTIM ou dos CLTI, realizar audito
 
 Em caso de verificação de discrepâncias ou uso indevido, a OM e seu ComImSup serão notificados para as providências cabíveis.
 
-### CAPÍTULO 8 - RESPONSABILIDADES E ATRIBUIÇÕES
+### Capítulo 8 - RESPONSABILIDADES E ATRIBUIÇÕES
 
 8.7 - DA EQUIPE DE AUDITORIA (EA) DE SIC
 
@@ -38,7 +38,7 @@ f) não divulgar os resultados de auditoria. Esta tarefa cabe à DCTIM.
 O RAD é um documento RESERVADO que tem por objetivo formalizar os resultados apurados por alguma auditoria de segurança e indicar possíveis soluções aos problemas levantados na rede local em relação aos aspectos de SIC. Este documento está voltado às ações de auditoria, e maiores detalhes são apresentados no Capítulo 11 desta Norma.
 
 
-CAPÍTULO 11
+Capítulo 11
 AUDITORIAS DE SEGURANÇA DA INFORMAÇÃO E COMUNICAÇÕES
 11.1 - FINALIDADE DAS AUDITORIAS DE SIC
 A auditoria de SIC é composta por uma Equipe de Auditoria (EA) designada previamente,

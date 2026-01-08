@@ -4,17 +4,17 @@
 
 ## 1. Introdução
 
-Apesar de ser uma discussão relativamente recente na literatura da Ciência Econômica, que, efetivamente, ganha relevância a partir dos anos 2000, existe muita confusão da área acerca da real contribuição sobre o mar e o oceano. De fato, há uma diversidade de conceitos relacionados à economia do mar que envolve diferentes atores,  setores e políticas. Justamente por isso, é necessário começar esta obra esclarecendo tal confusão e, para isso, é necessário que haja uma definição clara sobre esses conceitos. O capítulo seguinte fará exatamente o mesmo esclarecimento a respeito dos métodos e dados econômicos para mensuração da economia do mar, de modo que ambos são essenciais para a plena compreensão dos debates levados a cabo nos demais capítulos deste livro.
+Apesar de ser uma discussão relativamente recente na literatura da Ciência Econômica, que, efetivamente, ganha relevância a partir dos anos 2000, existe muita confusão da área acerca da real contribuição sobre o mar e o oceano. De fato, há uma diversidade de conceitos relacionados à economia do mar que envolve diferentes atores,  setores e políticas. Justamente por isso, é necessário começar esta obra esclarecendo tal confusão e, para isso, é necessário que haja uma definição clara sobre esses conceitos. O Capítulo seguinte fará exatamente o mesmo esclarecimento a respeito dos métodos e dados econômicos para mensuração da economia do mar, de modo que ambos são essenciais para a plena compreensão dos debates levados a cabo nos demais Capítulos deste livro.
 
 O termo “economia do mar” foi usado pela primeira vez na academia na primeira metade do século XIX, em publicações de Petersen e Jensen (1913) e Clarke (1935). No início da discussão, a abordagem tinha uma natureza biológica explícita, que evolui gradualmente ao longo do tempo. Atualmente, conceitos como economia azul, economia marítima, economia marinha, economia costeira, economia oceânica e governança do oceano têm sido utilizados como sinônimos, confundindo discussões na literatura, a compreensão da sociedade sobre o assunto e a formulação de políticas públicas. 
 
-Com o objetivo de contribuir para a compreensão conceitual desses termos, este capítulo sintetiza resultados da pesquisa + bibliométrica[1] conduzida em Santos (2021a, 2022), uma vez que tal método auxilia na identificação de tendências do conhecimento e das temáticas/abordagens de determinada disciplina, dispersão de campos científicos, autores e instituições mais produtivas, e periódicos mais utilizados na disseminação da pesquisa em determinada área do conhecimento. O escopo da pesquisa cobre o período de 1959 a 2020,2 incluindo 1.351 documentos, e as seguintes perguntas impulsionam os principais resultados:quais países são mais relevantes em termos de publicações e citações, e como isso tem evoluído ao longo do tempo?
+Com o objetivo de contribuir para a compreensão conceitual desses termos, este Capítulo sintetiza resultados da pesquisa + bibliométrica[1] conduzida em Santos (2021a, 2022), uma vez que tal método auxilia na identificação de tendências do conhecimento e das temáticas/abordagens de determinada disciplina, dispersão de campos científicos, autores e instituições mais produtivas, e periódicos mais utilizados na disseminação da pesquisa em determinada área do conhecimento. O escopo da pesquisa cobre o período de 1959 a 2020,2 incluindo 1.351 documentos, e as seguintes perguntas impulsionam os principais resultados:quais países são mais relevantes em termos de publicações e citações, e como isso tem evoluído ao longo do tempo?
 
 (1) quais são as principais fontes?
 (2) quais são as palavras-chave mais relevantes e frequentes?
 (3) quais são as linhas de pesquisa mais promissoras para o trabalho futuro?
 
-Como resultado dessas perguntas, faz-se um mapeamento geral da pesquisa relacionada a esta agenda, que permitirá compreender a natureza qualitativa de cada conceito. Portanto, este capítulo está estruturado da seguinte forma: após esta breve introdução, a próxima seção apresenta como a Ciência Econômica tradicionalmente considera o mar, trazendo os principais resultados da pesquisa bibliométrica.
+Como resultado dessas perguntas, faz-se um mapeamento geral da pesquisa relacionada a esta agenda, que permitirá compreender a natureza qualitativa de cada conceito. Portanto, este Capítulo está estruturado da seguinte forma: após esta breve introdução, a próxima seção apresenta como a Ciência Econômica tradicionalmente considera o mar, trazendo os principais resultados da pesquisa bibliométrica.
 
 Em seguida, são discutidos os conceitos e as definições para cada um dos termos utilizados pela literatura, focalizando questões, atores e agendas correlatas a cada conceito. Por fim, segue-se algumas conclusões.
 
@@ -41,7 +41,7 @@ Após essa breve apresentação do como mares e oceano são contemplados nas teo
 
 ## Página 40
 
-Embora 36 de todos os documentos considerados (2,7% do total) mencionem “Brasil” em seu resumo, apenas dois (0,1% do total e 5,6% dos que mencionam o Brasil) mencionam a Amazônia Azul – razão pela qual não é possível fornecer uma análise detalhada do caso deste país neste capítulo, baseando na pesquisa bibliométrica.[4]
+Embora 36 de todos os documentos considerados (2,7% do total) mencionem “Brasil” em seu resumo, apenas dois (0,1% do total e 5,6% dos que mencionam o Brasil) mencionam a Amazônia Azul – razão pela qual não é possível fornecer uma análise detalhada do caso deste país neste Capítulo, baseando na pesquisa bibliométrica.[4]
 
 ### 2.1. Distribuição espacial e temporal
 
@@ -118,7 +118,7 @@ Especialmente pelo Objetivo de Desenvolvimento Sustentável (ODS) 14, mares e oc
 
 ### 2.3. Palavras-chave relevantes e frequentes
 
-As palavras-chave são geralmente fornecidas pelos autores para sintetizar e mostrar brevemente as principais ideias do documento e “palavras-chave mais” (keywords plus) vêm de títulos de referências citadas de documentos analisados, fornecendo depois uma estrutura conceitual do artigo/capítulo (ZHANG et al., 2015). A Figura 4 mostra nuvem de palavras das 50 baseadas na frequência de palavras-chave extraídas de artigos contemplados neste estudo. Entre elas, destacam-se palavras-chave que serviram de base para a criação dos grupos de palavras utilizadas na pesquisa inicial das bases de dados Scopus e WoS, como economia azul, governança oceânica, crescimento azul, economia marinha e economia marítima.
+As palavras-chave são geralmente fornecidas pelos autores para sintetizar e mostrar brevemente as principais ideias do documento e “palavras-chave mais” (keywords plus) vêm de títulos de referências citadas de documentos analisados, fornecendo depois uma estrutura conceitual do artigo/Capítulo (ZHANG et al., 2015). A Figura 4 mostra nuvem de palavras das 50 baseadas na frequência de palavras-chave extraídas de artigos contemplados neste estudo. Entre elas, destacam-se palavras-chave que serviram de base para a criação dos grupos de palavras utilizadas na pesquisa inicial das bases de dados Scopus e WoS, como economia azul, governança oceânica, crescimento azul, economia marinha e economia marítima.
 
 O crescimento exponencial do termo “governança oceânica” se destaca, principalmente no período de 1999-2018. Entretanto, desde 2015 (e especialmente a partir de 2018), o termo “economia azul” tornou-se o mais frequentemente utilizado. No período de 2016-2020*, a frequência do termo economia azul aumenta (871,4%), assim como aquicultura (720,0%), crescimento azul (569,2%), economia marinha (485,7%) e desenvolvimento sustentável (440,0%). Deve haver uma estreita relação com o aumento da frequência das “mudanças climáticas”, “desenvolvimento sustentável”, “sustentabilidade”, “planejamento espacial marinho”, “aquicultura” e “pesca” com a implementação da Agenda 2030, seus 17 SDGs, bem como com a Década do Oceano (2021-2030).
 
@@ -185,11 +185,11 @@ A Figura 5 mostra redes baseadas nas palavras-chave dos autores e no algoritmo d
   - oceans  
   - sustainable development goals  
 
-A Figura 5 sintetiza, por meio de um algoritmo de agrupamento (Louvain), **como a literatura acadêmica organiza e inter-relaciona os principais conceitos da Economia do Mar**, entre 1959 e 2020. Cada grupo de palavras representa um **campo conceitual específico**, confirmando que os termos — frequentemente usados como sinônimos — **possuem agendas diferentes**, como discutido no capítulo.
+A Figura 5 sintetiza, por meio de um algoritmo de agrupamento (Louvain), **como a literatura acadêmica organiza e inter-relaciona os principais conceitos da Economia do Mar**, entre 1959 e 2020. Cada grupo de palavras representa um **campo conceitual específico**, confirmando que os termos — frequentemente usados como sinônimos — **possuem agendas diferentes**, como discutido no Capítulo.
 
 ### **1. Nó central: “ocean governance” — o mais denso e complexo**
 
-O agrupamento vermelho é o mais conectado da rede, confirmando o ponto central do capítulo:
+O agrupamento vermelho é o mais conectado da rede, confirmando o ponto central do Capítulo:
 a **governança oceânica** foi, durante quase duas décadas, o principal eixo da produção científica.
 
 Temas associados:
@@ -201,7 +201,7 @@ Temas associados:
 * manejo pesqueiro
 * gestão ecossistêmica
 
-➡ **A figura reflete exatamente a expansão da agenda pós-2010**, quando o debate migra de visões setoriais para uma abordagem integrada de gestão, política pública e sustentabilidade — conforme descrito no capítulo.
+➡ **A figura reflete exatamente a expansão da agenda pós-2010**, quando o debate migra de visões setoriais para uma abordagem integrada de gestão, política pública e sustentabilidade — conforme descrito no Capítulo.
 
 ---
 
@@ -215,7 +215,7 @@ Suas conexões cobrem temas heterogêneos, como:
 * comércio e transporte
 * geopolítica (China, África do Sul, Oceano Índico)
 
-Isso confirma o que o capítulo denomina **conceito guarda-chuva**: a economia azul dialoga simultaneamente com sustentabilidade, governança, inovação e desenvolvimento.
+Isso confirma o que o Capítulo denomina **conceito guarda-chuva**: a economia azul dialoga simultaneamente com sustentabilidade, governança, inovação e desenvolvimento.
 
 ---
 
@@ -241,7 +241,7 @@ A cor azul identifica temas mais industriais:
 * economia oceânica
 * União Europeia
 
-Confirma a definição apresentada no capítulo: a **economia marinha** é voltada para setores produtivos (pesca, aquicultura, portos, serviços ecossistêmicos), combinando indústria e política marítima.
+Confirma a definição apresentada no Capítulo: a **economia marinha** é voltada para setores produtivos (pesca, aquicultura, portos, serviços ecossistêmicos), combinando indústria e política marítima.
 
 ---
 
@@ -254,7 +254,7 @@ O agrupamento marrom reúne termos como:
 * strategic management
 * innovation
 
-O capítulo associa claramente a **economia marítima** a questões logísticas, portuárias e de competitividade — exatamente o que aparece no cluster.
+O Capítulo associa claramente a **economia marítima** a questões logísticas, portuárias e de competitividade — exatamente o que aparece no cluster.
 
 ---
 
@@ -267,13 +267,13 @@ A cor laranja conecta “climate change” a:
 * governança
 * áreas protegidas
 
-O capítulo enfatiza que a mudança climática tornou-se **nó central e transversal** nos anos 2010, especialmente dentro das discussões de governança e sustentabilidade — o gráfico visualiza essa centralidade.
+O Capítulo enfatiza que a mudança climática tornou-se **nó central e transversal** nos anos 2010, especialmente dentro das discussões de governança e sustentabilidade — o gráfico visualiza essa centralidade.
 
 ---
 
 ## 🔷 **Síntese interpretativa**
 
-A Figura 5 confirma empiricamente a conclusão do capítulo:
+A Figura 5 confirma empiricamente a conclusão do Capítulo:
 
 1. **Os termos não são sinônimos.**
    Cada conceito — economia azul, economia marinha, economia marítima, governança oceânica, crescimento azul — tem seu próprio conjunto de temas e abordagens.
@@ -357,7 +357,7 @@ Mais recentemente, os anos de 2010 testemunharam um aumento nos temas, atores e 
 
 ## 3. Principais conceitos e definições
 
-Baseado principalmente nos resultados da subseção anterior, é apresentada uma discussão conceitual mais detalhada baseada nos resultados da análise bibliométrica, contextualizando-a a partir dos debates centrais na literatura especializada. Em relação à Figura 5, é possível tirar várias conclusões, que até motivaram a pesquisa e justificaram algumas das questões orientadoras deste capítulo.
+Baseado principalmente nos resultados da subseção anterior, é apresentada uma discussão conceitual mais detalhada baseada nos resultados da análise bibliométrica, contextualizando-a a partir dos debates centrais na literatura especializada. Em relação à Figura 5, é possível tirar várias conclusões, que até motivaram a pesquisa e justificaram algumas das questões orientadoras deste Capítulo.
 
 A Figura 7 sintetiza as principais temáticas relacionadas a cada um desses conceitos, que, novamente, não devem ser entendidos como sinônimos. Ela foca nos quatro conceitos mais usados, nomeadamente: economia azul, economia do mar, economia marítima e economia marinha.
 
@@ -370,7 +370,7 @@ Nos anos 1970 e 1980, os conceitos de economy of the sea (GESSNER, 1971) e sea e
 # 🔷 **1. Economia Azul como conceito abrangente (“guarda-chuva”)**
 
 A borda externa mostra que a **Economia Azul** engloba todos os demais conceitos.
-Isso confirma o que o capítulo descreve:
+Isso confirma o que o Capítulo descreve:
 
 * A Economia Azul **não é apenas econômica**, mas multidimensional.
 * Integra sustentabilidade, governança, mudanças climáticas, inovação e políticas públicas.
@@ -471,7 +471,7 @@ Nas bordas do diagrama, aparecem temas estruturantes que influenciam todo o sist
 * **Desenvolvimento sustentável**
 * **Governança oceânica**
 
-Isso confirma o que o capítulo destaca:
+Isso confirma o que o Capítulo destaca:
 ➡ A agenda global pós-2010 deslocou o debate para governança, sustentabilidade e clima, moldando todos os setores da economia do mar.
 
 ---
@@ -484,7 +484,7 @@ A figura deixa claro que:
 2. A **Economia Azul** é o conceito mais amplo, integrando diversas agendas.
 3. Cada subconceito possui **setores econômicos, atores e instrumentos específicos**.
 4. Sustentabilidade, governança, mudanças climáticas e inovação são **temas transversais** essenciais para compreender o campo.
-5. O diagrama confirma visualmente a análise bibliométrica apresentada no capítulo.
+5. O diagrama confirma visualmente a análise bibliométrica apresentada no Capítulo.
 
 
 No caso brasileiro, ainda não existe uma definição oficial de economia azul, economia do mar, economia costeira e/ou economia oceânica. Em julho de 2020, foi criado o Grupo Técnico (GT) “PIB do Mar”, sob coordenação do Ministério da Economia. O GT tem como finalidade: “Definir o conceito de economia azul/do mar para o Brasil;  identificar seus setores e atividades; elaborar proposta de metodologia para mensurar o PIB do Mar do Brasil; e apresentar sugestão para consequente institucionalização”. Sendo assim, o país adotará o conceito de “economia do mar” e, no âmbito deste GT, está discutindo formas de mensuração e definindo quais setores estarão contemplados no “PIB do Mar”, integral ou parcialmente (SANTOS, 2021b). 

@@ -1,4 +1,4 @@
-# CAPÍTULO 11 A ASCENSÃO DE HITLER (Páginas 125-133)
+# Capítulo 11 - A Ascensão de Hitler
 
 ## Página 1
 

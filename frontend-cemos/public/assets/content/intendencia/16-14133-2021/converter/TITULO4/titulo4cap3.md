@@ -1,7 +1,7 @@
 
 ## Página 68
 
-### CAPÍTULO III DO CONTROLE DAS CONTRATAÇÕES
+### Capítulo III DO CONTROLE DAS CONTRATAÇÕES
 
 Art. 169. As contratações públicas deverão submeter-se a práticas contínuas e permanentes de gestão de riscos e de controle preventivo, inclusive mediante adoção de recursos de tecnologia da informação, e, além de estar subordinadas ao controle social, sujeitar-se-ão às seguintes linhas de defesa:
 

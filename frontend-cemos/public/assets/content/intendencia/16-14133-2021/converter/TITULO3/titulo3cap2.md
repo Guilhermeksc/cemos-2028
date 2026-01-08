@@ -1,7 +1,7 @@
 
 ## Página 52
 
-### CAPÍTULO II DAS GARANTIAS
+### Capítulo II DAS GARANTIAS
 
 Art. 96. A critério da autoridade competente, em cada caso, poderá ser exigida, mediante previsão no edital, prestação de garantia nas contratações de obras, serviços e fornecimentos.
 

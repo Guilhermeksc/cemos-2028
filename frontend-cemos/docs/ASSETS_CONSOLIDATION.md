@@ -118,7 +118,7 @@ this.contentService.loadHistoriaBibliografia()
 
 ### **Componente Breve História**
 - ✅ Menu lateral funcional
-- ✅ Carregamento de capítulos via ContentService
+- ✅ Carregamento de Capítulos via ContentService
 - ✅ Renderização de markdown com estilos Dracula
 - ✅ Animações e efeitos visuais mantidos
 

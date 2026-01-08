@@ -1,4 +1,4 @@
-# CAPÍTULO IX - A MARINHA DO BRASIL NA PRIMEIRA GEURRA MUNDIAL - CMG (RM1) FRANCISCO EDUADRO ALVES DE ALMEIDA
+# Capítulo IX - A MARINHA DO BRASIL NA PRIMEIRA GEURRA MUNDIAL - CMG (RM1) FRANCISCO EDUADRO ALVES DE ALMEIDA
 
 No dia 28 de junho de 1914, em Sarajevo, o herdeiro do trono do Império Austro-Húngaro, o Arquiduque Francisco Ferdinando e sua mulher Sofia foram assassinados por um nacionalista de origem sérvia, provocando uma sequência de eventos que culminaram na chamada Grande Guerra, posteriormente chamada de Primeira Guerra Mundial.
 

@@ -6,7 +6,7 @@ O component `BibliografiaCompleta` é um component reutilizável do Angular que 
 ## Características
 - ✅ 3 abas interativas: Livro, Vídeo, Podcast/Perguntas
 - ✅ Interface responsiva com tema Dracula
-- ✅ Suporte a capítulos de livros com navegação lateral
+- ✅ Suporte a Capítulos de livros com navegação lateral
 - ✅ Player de vídeo integrado (YouTube)
 - ✅ Seção de podcasts com links externos
 - ✅ Accordion de perguntas com níveis de dificuldade
@@ -53,10 +53,10 @@ export class SeuComponent {
           id: 'cap1',
           titulo: 'Capítulo 1',
           paginas: 'Páginas 1-20',
-          descricao: 'Descrição do capítulo',
-          conteudo: '<p>Conteúdo HTML do capítulo...</p>'
+          descricao: 'Descrição do Capítulo',
+          conteudo: '<p>Conteúdo HTML do Capítulo...</p>'
         }
-        // mais capítulos...
+        // mais Capítulos...
       ]
     },
     video: {
@@ -142,7 +142,7 @@ export interface BibliografiaCompletaData {
 ```
 
 ### Outras Interfaces
-- `CapituloLivro`: Define estrutura dos capítulos do livro
+- `CapituloLivro`: Define estrutura dos Capítulos do livro
 - `VideoItem`: Define estrutura dos vídeos
 - `PodcastItem`: Define estrutura dos podcasts
 - `PerguntaItem`: Define estrutura das perguntas
@@ -151,8 +151,8 @@ export interface BibliografiaCompletaData {
 
 ### Aba Livro
 - Exibição de informações do livro (título, autor, capa)
-- Lista de capítulos navegável
-- Visualização do conteúdo do capítulo selecionado
+- Lista de Capítulos navegável
+- Visualização do conteúdo do Capítulo selecionado
 - Link para compra (se fornecido)
 
 ### Aba Vídeo

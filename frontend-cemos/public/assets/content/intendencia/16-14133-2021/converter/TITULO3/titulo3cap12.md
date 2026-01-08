@@ -1,6 +1,6 @@
 ## Página 64
 
-### CAPÍTULO XII DOS MEIOS ALTERNATIVOS DE RESOLUÇÃO DE CONTROVÉRSIAS
+### Capítulo XII DOS MEIOS ALTERNATIVOS DE RESOLUÇÃO DE CONTROVÉRSIAS
 
 Art. 151. Nas contratações regidas por esta Lei, poderão ser utilizados meios alternativos de prevenção e resolução de controvérsias, notadamente a conciliação, a mediação, o comitê de resolução de disputas e a arbitragem.
 

@@ -1,6 +1,6 @@
 ## Página 32
 
-### CAPÍTULO VI DA HABILITAÇÃO
+### Capítulo VI DA HABILITAÇÃO
 
 Art. 62. A habilitação é a fase da licitação em que se verifica o conjunto de informações e documentos necessários e suficientes para demonstrar a capacidade do licitante de realizar o objeto da licitação, dividindo-se em:
 

@@ -1,4 +1,4 @@
-# CAPÍTULO 9 - DESIGNAÇÃO DO OBJETIVO
+# Capítulo 9 - DESIGNAÇÃO DO OBJETIVO
 
 ## Página 121
 

@@ -423,8 +423,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       : this.allQuestionsCache;
     
     cacheToUse.forEach(question => {
-      if (question.assunto && question.assunto.trim()) {
-        assuntosSet.add(question.assunto.trim());
+      if (question.assunto_titulo && question.assunto_titulo.trim()) {
+        assuntosSet.add(question.assunto_titulo.trim());
       }
     });
 
@@ -452,8 +452,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       
       const assuntosSet = new Set<string>();
       questionsFromBibliografia.forEach(q => {
-        if (q.assunto && q.assunto.trim()) {
-          assuntosSet.add(q.assunto.trim());
+        if (q.assunto_titulo && q.assunto_titulo.trim()) {
+          assuntosSet.add(q.assunto_titulo.trim());
         }
       });
       
@@ -911,10 +911,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     config.bibliografias.forEach(bibliografiaId => {
       const baseFilters: any = { bibliografia: bibliografiaId };
       
-      // Adicionar filtro de assunto se selecionado
-      if (this.selectedAssunto && this.selectedAssunto.trim()) {
-        baseFilters.assunto = this.selectedAssunto.trim();
-      }
+      // Nota: Filtro de assunto removido do backend pois o backend espera ID (number)
+      // e temos apenas o título (string). O filtro será aplicado no frontend após buscar os dados.
       
       if (config.questoesMultipla > 0) {
         multiplaObservables.push(

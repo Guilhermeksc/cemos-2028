@@ -1,7 +1,7 @@
 
 ## Página 33
 
-# CAPÍTULO V - O Sistema de Mobilização Militar
+# Capítulo V - O Sistema de Mobilização Militar
 
 ### 5.1 Concepção Geral
 

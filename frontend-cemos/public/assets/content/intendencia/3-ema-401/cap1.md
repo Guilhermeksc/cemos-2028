@@ -10,9 +10,9 @@ Esta publicação tem o propósito de especificar a estrutura do Sistema de Mobi
 
  2. DESCRIÇÃO
 
-Esta publicação divide-se em quatro capítulos: o Capítulo 1 apresenta conceitos e definições da Mobilização Nacional, detalha as fases da Mobilização e descreve a Mobilização nas Expressões do Poder Nacional; o Capítulo 2 descreve a estrutura do SIMOMAR e a competência dos seus órgãos componentes; o Capítulo 3 apresenta conceitos sobre a Desmobilização nas Expressões do Poder Nacional e sobre a Desmobilização Marítima; e o  Capítulo 4 estabelece as diretrizes do processo de planejamento da Mobilização Marítima.
+Esta publicação divide-se em quatro Capítulos: o Capítulo 1 apresenta conceitos e definições da Mobilização Nacional, detalha as fases da Mobilização e descreve a Mobilização nas Expressões do Poder Nacional; o Capítulo 2 descreve a estrutura do SIMOMAR e a competência dos seus órgãos componentes; o Capítulo 3 apresenta conceitos sobre a Desmobilização nas Expressões do Poder Nacional e sobre a Desmobilização Marítima; e o  Capítulo 4 estabelece as diretrizes do processo de planejamento da Mobilização Marítima.
 
-### CAPÍTULO 1 -  DISPOSIÇÕES GERAIS
+### Capítulo 1 -  DISPOSIÇÕES GERAIS
 
 1.1. CONCEITUAÇÃO
 

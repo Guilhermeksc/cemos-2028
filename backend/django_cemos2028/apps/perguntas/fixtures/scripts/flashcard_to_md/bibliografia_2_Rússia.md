@@ -217,7 +217,7 @@ Qual era o título que a Moscóvia medieval se autointitulava, como sucessora de
 ---
 
 ### Pergunta
-Qual dinastia iniciou um novo capítulo na história russa em 1613, após o "Tempo de Dificuldades"?
+Qual dinastia iniciou um novo Capítulo na história russa em 1613, após o "Tempo de Dificuldades"?
 
 **Resposta:** A dinastia Romanov, com Miguel Romanov.
 

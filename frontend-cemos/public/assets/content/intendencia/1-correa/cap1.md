@@ -136,7 +136,7 @@ O nível de desempenho de uma cadeia de suprimentos é uma função dos níveis 
 
 ### 1.2.2 Atividades envolvidas na administração de cadeias de suprimentos
 
-Administração de cadeias de suprimentos envolve a administração integrada de uma multiplicidade de atividades, todas discutidas nos capítulos subsequentes deste livro. Uma lista delas, com menção aos respectivos capítulos onde são discutidas, pode ser encontrada na Figura 1.5, que ilustra a ideia de níveis crescentes de integração, de atividades para a ideia de distribuição física & logística integrada e de administração integrada de suprimentos e daí para a ideia de integração total da cadeia e seu uso estratégico como fator de diferenciação competitiva. 
+Administração de cadeias de suprimentos envolve a administração integrada de uma multiplicidade de atividades, todas discutidas nos Capítulos subsequentes deste livro. Uma lista delas, com menção aos respectivos Capítulos onde são discutidas, pode ser encontrada na Figura 1.5, que ilustra a ideia de níveis crescentes de integração, de atividades para a ideia de distribuição física & logística integrada e de administração integrada de suprimentos e daí para a ideia de integração total da cadeia e seu uso estratégico como fator de diferenciação competitiva. 
 
 É importante observar que os conceitos de administração integrada de cadeias de suprimentos não se aplicam apenas a cadeias de produtos físicos, mas também a serviÇos. Evidentemente, as diferentes atividades terão importâncias relativas diferentes quando se analisam cadeias de produtos fisicos, como a cadeia de suprimentos automotiva, e cadeias de serviço, como a cadeia de suprimentos de entretenimento on-line - comoo site iTunes, da Apple Corporation, que vende músicas e filmes por download, por intermédio da internet, em que a administracão de tecnologia da informação é muito mais importante que a administração de estoques. A Figura 1.5 ilustra esse ponto com outro exemplo.
 
@@ -188,7 +188,7 @@ Um dos mais importantes resultados da administração de cadeias de suprimentos 
 
 Muitas vezes, as várias organizações componentes das cadeias de suprimentos e suas lideranças não só têm objetivos diferentes, mas, mais do que isso, têm objetivos conflitantes. Quando dois executivos de duas empresas que integram uma cadeia de suprimentos e têm relações comerciais diretas se sentam para negociar a compra e venda de um determinado produto ou serviço, cada um está imbuído do interesse de maximizar o resultado econômico de sua empresa individual.
 
-Isso porque é com base nesse objetivo que suas recompensas como funcionário (salários, bônus, promoções) se baseiam. Analisemos como tradicionalmente se dá o pro cesso de negociação numa parte da cadeia de suprimentos simplificada que usamos anteriormente neste capítulo. Essa parte está representada na Figura 1.9.
+Isso porque é com base nesse objetivo que suas recompensas como funcionário (salários, bônus, promoções) se baseiam. Analisemos como tradicionalmente se dá o pro cesso de negociação numa parte da cadeia de suprimentos simplificada que usamos anteriormente neste Capítulo. Essa parte está representada na Figura 1.9.
 
 Figura 1.9 Relação tradicional cliente-fornecedor.
 
@@ -281,7 +281,7 @@ Parece plausível que a responsabilidade repouse sobre algum dos participantes d
 
 **Proposição 1 - A iniciativa ea responsabilidade por iniciativas de administração de cadeias de suprimentoS em geral recaem sobre os elos mais fortes da cadeia.**
 
-O interesse por uma administração de cadeias de suprimentos, entre outros, vem do fato de que é conveniente que as tradicionais relações negociais do tipo "ganha-perde", entre elos da cadeia sejam substituídas por relações mais virtuosas, do tipo "ganha-ganha", com efetiva agregação de valor adicional na cadeia e escapando da situação de soma-zero ou soma negativa discutida anteriormente neste capítulo. Outra proposição:
+O interesse por uma administração de cadeias de suprimentos, entre outros, vem do fato de que é conveniente que as tradicionais relações negociais do tipo "ganha-perde", entre elos da cadeia sejam substituídas por relações mais virtuosas, do tipo "ganha-ganha", com efetiva agregação de valor adicional na cadeia e escapando da situação de soma-zero ou soma negativa discutida anteriormente neste Capítulo. Outra proposição:
 
 **Proposição 2 - Iniciativas de administração de cadeias de suprimentos visam prin cipalmente a substituir as relações "ganha-perde", dentro da cadeia, por relações "ganha-ganha".**
 
@@ -311,7 +311,7 @@ Em que pese o papel importante dos chamados "nós fortes" ou de terceiros indepe
 
 #### Conclusão
 
-A administração de cadeias de suprimentos representa tremendo potencial de, se bem feita, trazer enormes benefícios às empresas participantes e seus clientes. As Discussões do Capítulo 1 deixam muito claro, entretanto, a boa administração de cadeias de suprimentos não é tarefa trivial. Requer técnicas, conceitose abordagens que não são exatamente os mesmos que têm sido desenvolvidos, aperfeiçoados e usados largarmente na administração operacional interna das empresas, consagrados ao longo dos últimos dois séculos e meio. São necessárias novas abordagens e certamente uma visão mais ampla dos processos empresariais. Essas novas abordagens serão descritas e analisadas detalhadamente nos capítulos subsequentes deste livro. Usaremos, como um "guia" ou "mapa", o quadro de referência da Figura 1.14. No início de cada capítulo, esse quadro de referência aparecerá, com ênfase na parte a ser tratada, para que o leitor sempre saiba onde os assuntos do capítulo se encaixam no quadro geral.
+A administração de cadeias de suprimentos representa tremendo potencial de, se bem feita, trazer enormes benefícios às empresas participantes e seus clientes. As Discussões do Capítulo 1 deixam muito claro, entretanto, a boa administração de cadeias de suprimentos não é tarefa trivial. Requer técnicas, conceitose abordagens que não são exatamente os mesmos que têm sido desenvolvidos, aperfeiçoados e usados largarmente na administração operacional interna das empresas, consagrados ao longo dos últimos dois séculos e meio. São necessárias novas abordagens e certamente uma visão mais ampla dos processos empresariais. Essas novas abordagens serão descritas e analisadas detalhadamente nos Capítulos subsequentes deste livro. Usaremos, como um "guia" ou "mapa", o quadro de referência da Figura 1.14. No início de cada Capítulo, esse quadro de referência aparecerá, com ênfase na parte a ser tratada, para que o leitor sempre saiba onde os assuntos do Capítulo se encaixam no quadro geral.
 
 ## 1.4 RESUMO
 

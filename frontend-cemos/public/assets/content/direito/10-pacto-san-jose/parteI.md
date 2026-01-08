@@ -22,7 +22,7 @@ Convieram no seguinte:
 
 # PARTE I - DEVERES DOS ESTADOS E DIREITOS PROTEGIDOS
 
-## CAPÍTULO I - ENUMERAÇÃO DE DEVERES
+## Capítulo I - ENUMERAÇÃO DE DEVERES
 
 **Artigo 1. Obrigação de respeitar os direitos**
 
@@ -36,7 +36,7 @@ Convieram no seguinte:
 
 Se o exercício dos direitos e liberdades mencionados no artigo 1 ainda não estiver garantido por disposições legislativas ou de outra natureza, os Estados Partes comprometem-se a adotar, de acordo com as suas normas constitucionais e com as disposições desta Convenção, as medidas legislativas ou de outra natureza que forem necessárias para tornar efetivos tais direitos e liberdades.
 
-## CAPÍTULO II - DIREITOS CIVIS E POLÍTICOS
+## Capítulo II - DIREITOS CIVIS E POLÍTICOS
 
 **Artigo 3. Direito ao reconhecimento da personalidade jurídica**
 
@@ -276,13 +276,13 @@ c. a assegurar o cumprimento, pelas autoridades competentes, de toda decisão em
 
 ## Página 9
 
-## CAPÍTULO III - DIREITOS ECONÔMICOS, SOCIAIS E CULTURAIS
+## Capítulo III - DIREITOS ECONÔMICOS, SOCIAIS E CULTURAIS
 
 **Artigo 26. Desenvolvimento progressivo**
 
 Os Estados Partes comprometem-se a adotar providências, tanto no âmbito interno como mediante cooperação internacional, especialmente econômica e técnica, a fim de conseguir progressivamente a plena efetividade dos direitos que decorrem das normas econômicas, sociais e sobre educação, ciência e cultura, constantes da Carta da Organização dos Estados Americanos, reformada pelo Protocolo de Buenos Aires, na medida dos recursos disponíveis, por via legislativa ou por outros meios apropriados.
 
-## CAPÍTULO IV - SUSPENSÃO DE GARANTIAS, INTERPRETAÇÃO E APLICAÇÃO
+## Capítulo IV - SUSPENSÃO DE GARANTIAS, INTERPRETAÇÃO E APLICAÇÃO
 
 **Artigo 27. Suspensão de garantias**
 
@@ -324,7 +324,7 @@ liberdades nela reconhecidos, não podem ser aplicadas senão de acordo com leis
 
 Poderão ser incluídos no regime de proteção desta Convenção outros direitos e liberdades que forem reconhecidos de acordo com os processos estabelecidos nos artigos 76 e 77.
 
-## CAPÍTULO V DEVERES DAS PESSOAS
+## Capítulo V DEVERES DAS PESSOAS
 
 **Artigo 32. Correlação entre deveres e direitos**
 

@@ -2,7 +2,7 @@
 
 # TÍTULO IV DAS IRREGULARIDADES 
 
-### CAPÍTULO I DAS INFRAÇÕES E SANÇÕES ADMINISTRATIVAS 
+### Capítulo I DAS INFRAÇÕES E SANÇÕES ADMINISTRATIVAS 
 
 Art. 155. O licitante ou o contratado será responsabilizado administrativamente pelas seguintes infrações: 
 
@@ -118,7 +118,7 @@ V - análise jurídica prévia, com posicionamento conclusivo quanto ao cumprime
 
 Parágrafo único. A sanção pelas infrações previstas nos incisos VIII e XIl do caput do art. 155 desta Lei exigirá, como condição de reabilitação do licitante ou contratado, a implantação ou aperfeiçoamento de programa de integridade pelo responsável. (Regulamento)
 
-### CAPÍTULO II DAS IMPUGNAÇÕES, DOS PEDIDOS DE ESCLARECIMENTO E DOS RECURSOS
+### Capítulo II DAS IMPUGNAÇÕES, DOS PEDIDOS DE ESCLARECIMENTO E DOS RECURSOS
 
 Art. 164. Qualquer pessoa é parte legítima para impugnar edital de licitação por irregularidade na aplicação desta Lei ou para solicitar esclarecimento sobre os seus termos, devendo protocolar o pedido até 3 (três) dias úteis antes da data de abertura do certame.
 
@@ -166,7 +166,7 @@ Parágrafo único. Na elaboração de suas decisões, a autoridade competente se
 
 ## Página 68
 
-### CAPÍTULO III DO CONTROLE DAS CONTRATAÇÕES
+### Capítulo III DO CONTROLE DAS CONTRATAÇÕES
 
 Art. 169. As contratações públicas deverão submeter-se a práticas contínuas e permanentes de gestão de riscos e de controle preventivo, inclusive mediante adoção de recursos de tecnologia da informação, e, além de estar subordinadas ao controle social, sujeitar-se-ão às seguintes linhas de defesa:
 

@@ -1,4 +1,4 @@
-# CAPÍTULO 6 - PRINCÍPIOS E FONTES DO DIREITO INTERNACIONAL DOS CONFLITOS ARMADOS (DICA)
+# Capítulo 6 - Princípios e fontes do Direito Internacional Humanitário
 
 ## Página 86
 
@@ -67,7 +67,7 @@ O  princípio  da  necessidade  militar  justifica  a  adoção  de  medidas  qu
 
 ## 6.4 - FONTES DO DICA
 
-As fontes do DICA correspondem às mesmas do DIP apontadas no artigo 5.2 do capítulo 5 desta Norma.
+As fontes do DICA correspondem às mesmas do DIP apontadas no artigo 5.2 do Capítulo 5 desta Norma.
 
 Em  particular,  cumpre  destacar  o  papel  exercido  pelo  CICV.  Nos  termos  das Convenções de Genebra de 1949, o CICV possui, em determinadas hipóteses, as atribuições das potências protetoras para a defesa dos feridos e enfermos, além de interferir sempre que haja a necessidade de um órgão neutro. As pessoas e os locais protegidos com suas insígnias não podem ser vítimas de qualquer violência. O CICV possui estatuto de observador na ONU e é considerado o guardião do direito humanitário pela doutrina jurídica especializada. No exercício deste papel, por exemplo, executa atividades humanitárias em prol das vítimas, visita e apoia os prisioneiros de guerra, assim como cria delegações aonde estejam ocorrendo conflitos armados.
 

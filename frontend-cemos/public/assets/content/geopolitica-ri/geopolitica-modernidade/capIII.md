@@ -20,7 +20,7 @@ Diz ainda o Professor italiano:
 
 "As palavras gregas Kratos, força, potência, poder, e Arche, autori­dade, deram origem ao nome das antigas formas de governo: aristocracia, democracia, oclocracia, monarquia, oligarquia."
 
-Assim como no capítulo anterior, examinamos as modificações ocorridas no campo da geografia, no que se refere a sua utilização pelo homem moderno: vamos agora avaliar o que de novo oferece a práxis política a este homem equipado pela avançada tecnologia.
+Assim como no Capítulo anterior, examinamos as modificações ocorridas no campo da geografia, no que se refere a sua utilização pelo homem moderno: vamos agora avaliar o que de novo oferece a práxis política a este homem equipado pela avançada tecnologia.
 
 Pág 36 
 

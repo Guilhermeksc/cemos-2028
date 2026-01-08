@@ -1,6 +1,6 @@
 ## Página 29
 
-# CAPÍTULO IV - Mobilização Militar
+# Capítulo IV - Mobilização Militar
 
 ### 4.1 Concepção da Mobilização Militar
 

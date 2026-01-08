@@ -60,7 +60,7 @@ Reteremos, provisoriamente, essa hierarquia, na qual a estratégia naval faz par
 
 O problema seguinte concerne às forças marítimas e às forças navais. Felizmente, Castex é, aqui, mais claro.
 
-No capítulo anterior, descrevemos o domínio marítimo e constatamos que ele é muito vasto, tanto do ponto de vista geográfico como conceitual. Essa ideia reflete-se naquilo que Castex escreve sobre as forças marítimas ou navais, estas fazendo parte das primeiras: “Pela denominação bem genérica de forças marítimas, designamos o conjunto de forças que participam da guerra no mar, ou seja, não somente as forças navais propriamente ditas, de superfície e submarinas, mas também as forças aéreas e mesmo as forças terrestres destinadas à defesa costeira"!*. Ora, Castex limita-se aqui às Forças Armadas. Hoje, quando falamos de forças marítimas, é preciso acrescentar os navios mercantes, os barcos de pesca e todos os outros meios que participam da exploração das riquezas do mar. Essa extensão semântica responde à nossa concepção da relação entre as estratégias marítima e naval, propondo que a primeria englobe a segunda.
+No Capítulo anterior, descrevemos o domínio marítimo e constatamos que ele é muito vasto, tanto do ponto de vista geográfico como conceitual. Essa ideia reflete-se naquilo que Castex escreve sobre as forças marítimas ou navais, estas fazendo parte das primeiras: “Pela denominação bem genérica de forças marítimas, designamos o conjunto de forças que participam da guerra no mar, ou seja, não somente as forças navais propriamente ditas, de superfície e submarinas, mas também as forças aéreas e mesmo as forças terrestres destinadas à defesa costeira"!*. Ora, Castex limita-se aqui às Forças Armadas. Hoje, quando falamos de forças marítimas, é preciso acrescentar os navios mercantes, os barcos de pesca e todos os outros meios que participam da exploração das riquezas do mar. Essa extensão semântica responde à nossa concepção da relação entre as estratégias marítima e naval, propondo que a primeria englobe a segunda.
 
 Como observamos, Castex fala de “poder marítimo”, mas também de “poder naval”. Nesse instante, as coisas complicam-se, porque essas expressões têm diversos significados.
 
@@ -156,7 +156,7 @@ A estratégia geral militar tem duas componentes: a estratégia operacional e a 
 
 A estratégia integral de Lucien Poirier corresponde, grosso modo, à definição “castexiana” da estratégia geral: “Essa estratégia é a arte de conduzir, em tempo de guerra e em tempos de paz, todas as forças e todos os meios de luta de uma nação. Essa estratégia geral, atributo essencial do governo, é a verdadeira estratégia de defesa nacional”*”. A diferença reside, sobretudo, no fato de que Lucien Poirier fala “de executar o conjunto de fins definidos pela política geral”, enquanto Castex está limitado à guerra, ou seja, implicitamente, no hard power.
 
-Indicamos em capítulo anterior (cap. 3) que: estratégia geral = estratégia de defesa = estratégia diplomática + estratégia terrestre + estratégia marítima + estratégia econômica + estratégia financeira + estratégia moral.
+Indicamos em Capítulo anterior (cap. 3) que: estratégia geral = estratégia de defesa = estratégia diplomática + estratégia terrestre + estratégia marítima + estratégia econômica + estratégia financeira + estratégia moral.
 
 ## Página 121
 
@@ -593,7 +593,7 @@ Castex bem exprimiu a interação entre a força de intervenção e a força de 
 
 ### A União Europeia
 
-No capítulo 4, falamos da UE. Constatamos que ela tem uma política marítima integrada, assim como uma estratégia marítima: a SSMUE. Ela pode vir a ser um poder marítimo? Para saber a resposta, voltemos à grade de análise proposta a seguir.
+No Capítulo 4, falamos da UE. Constatamos que ela tem uma política marítima integrada, assim como uma estratégia marítima: a SSMUE. Ela pode vir a ser um poder marítimo? Para saber a resposta, voltemos à grade de análise proposta a seguir.
 
 1. Condições geográficas. A Europa tem costas muito extensas com grande número de portos, assim como comunicações fluviais. Sua área marítima, entretanto, é repartida em diversas subáreas contendo características diferentes. O Báltico e o mar Negro são mares semifechados com um fluxo marítimo muito elevado. Em ambos os casos, e, em particular, no Báltico, a Rússia constitui um poder dominante e uma ameaça potencial. A fachada oeste da Europa, inversamente, não parece ameaçada nos dias de hoje. Quanto ao Mediterrâneo, ele representa a matriz histórica da Europa. Ele conhece um fluxo marítimo muito importante, mas é, também, o lugar onde se cruzam inúmeras ameaças, riscos e perigos. É nesse espaço, em especial, que se encontra a única área de confrontação militar entre um membro da UE e outro país, uma metade do Chipre permanecendo sob ocupação turca. Assim, a Turquia ameaça diretamente a ZEE do Chipre e as jazidas de gás nela contidas.
 
@@ -623,7 +623,7 @@ Posto isso, não há nada que impeça a UE de se tornar um poder marítimo. O qu
 
 ### Conclusão
 
-Ao término deste longo capítulo, uma síntese se impõe. Nós estabelecemos uma estrutura político-estratégica que provém de um projeto político. Colocamos a estratégia marítima no centro de tal projeto e identificamos suas três subestratégias: a estratégia de riquezas; a estratégia de meios; e a estratégia naval. A estratégia de riquezas representa o resultado econômico da estratégia marítima, o “output”. A estratégia de meios tem por vocação fornecer às outras duas as capacidades necessárias, o “input”. A estratégia naval é encarregada da ação nos domínios da defesa de nossos interesses e da intervenção em face de ameaças.
+Ao término deste longo Capítulo, uma síntese se impõe. Nós estabelecemos uma estrutura político-estratégica que provém de um projeto político. Colocamos a estratégia marítima no centro de tal projeto e identificamos suas três subestratégias: a estratégia de riquezas; a estratégia de meios; e a estratégia naval. A estratégia de riquezas representa o resultado econômico da estratégia marítima, o “output”. A estratégia de meios tem por vocação fornecer às outras duas as capacidades necessárias, o “input”. A estratégia naval é encarregada da ação nos domínios da defesa de nossos interesses e da intervenção em face de ameaças.
 
 Vimos, também, as ligações estreitas que existem entre a estratégia marítima e as outras atividades de um Estado. A “realidade marítima” espalha-se como um tecido sobre todos os campos da ação e é, por isso, que se fala de “maritimização”.
 

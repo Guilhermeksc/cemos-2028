@@ -210,8 +210,8 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
     const assuntosSet = new Set<string>();
     
     this.allFlashCards.forEach(card => {
-      if (card.assunto) {
-        assuntosSet.add(card.assunto);
+      if (card.assunto_titulo) {
+        assuntosSet.add(card.assunto_titulo);
       }
     });
 
@@ -244,7 +244,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
     // Filtrar por assunto se selecionado
     if (this.selectedAssunto) {
       filteredCards = filteredCards.filter(card => 
-        card.assunto === this.selectedAssunto
+        card.assunto_titulo === this.selectedAssunto
       );
       console.log(`🏷️ Filtrado por assunto "${this.selectedAssunto}":`, filteredCards.length);
     }
@@ -308,8 +308,8 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
       
       const assuntosSet = new Set<string>();
       cardsFromBibliografia.forEach(card => {
-        if (card.assunto) {
-          assuntosSet.add(card.assunto);
+        if (card.assunto_titulo) {
+          assuntosSet.add(card.assunto_titulo);
         }
       });
       
@@ -638,11 +638,10 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
     });
 
     // Buscar todos os flash cards do banco
+    // Nota: Filtro de assunto removido do backend pois o backend espera ID (number)
+    // e temos apenas o título (string). O filtro será aplicado no frontend após buscar os dados.
     const requests = bibliografiasParaBuscar.map(id => {
       const filters: any = { bibliografia: id };
-      if (this.selectedAssunto && this.selectedAssunto.trim()) {
-        filters.assunto = this.selectedAssunto.trim();
-      }
       return this.flashcardsService.getAllFlashCards(filters);
     });
 
@@ -655,7 +654,14 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
     }
 
     // Combinar resultados de todas as bibliografias
-    const allFlashCardsForPDF = results.flat();
+    let allFlashCardsForPDF = results.flat();
+    
+    // Aplicar filtro de assunto no frontend (se selecionado)
+    if (this.selectedAssunto && this.selectedAssunto.trim()) {
+      allFlashCardsForPDF = allFlashCardsForPDF.filter(card => 
+        card.assunto_titulo === this.selectedAssunto
+      );
+    }
 
     if (allFlashCardsForPDF.length === 0) {
       alert('Não há flash cards disponíveis para gerar o PDF com os filtros selecionados.');
@@ -912,7 +918,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
     const groupedFlashCards: { [key: string]: FlashCard[] } = {};
     allFlashCardsForPDF.forEach((card) => {
       const bibliografia = card.bibliografia_titulo || 'Sem bibliografia';
-      const assunto = card.assunto || 'Sem assunto';
+      const assunto = card.assunto_titulo || 'Sem assunto';
       const key = `${bibliografia}|${assunto}`;
       
       if (!groupedFlashCards[key]) {

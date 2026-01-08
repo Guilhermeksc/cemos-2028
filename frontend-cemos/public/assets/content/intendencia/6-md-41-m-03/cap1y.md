@@ -1,8 +1,8 @@
-# CAPÍTULO II - Disposições Gerais
+# Capítulo II - Disposições Gerais
 
 ## Página 13
 
-### CAPÍTULO 1 - INTRODUÇÃO
+### Capítulo 1 - INTRODUÇÃO
 
 **1.1 Finalidade**
 
@@ -18,7 +18,7 @@ Militar (PSMM), conforme modelos constantes dos Anexos: | — Modelo de Plano de
 
 ## Página 15
 
-### CAPÍTULO II - DISPOSIÇÕES GERAIS
+### Capítulo II - DISPOSIÇÕES GERAIS
 
 **2.1 Generalidades**
 

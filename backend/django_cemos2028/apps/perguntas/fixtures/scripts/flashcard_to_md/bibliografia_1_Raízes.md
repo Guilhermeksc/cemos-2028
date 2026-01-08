@@ -66,7 +66,7 @@ Na Idade Média, qual geógrafo fez uma tentativa pré-científica de ordenaçã
 ---
 
 ### Pergunta
-No seu livro "Filosofia da História", qual filósofo dedicou um capítulo inteiro à "Base Geográfica da História"?
+No seu livro "Filosofia da História", qual filósofo dedicou um Capítulo inteiro à "Base Geográfica da História"?
 
 **Resposta:** Hegel
 

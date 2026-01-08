@@ -1,4 +1,4 @@
-# CAPÍTULO 11 - ARMAS NUCLEARES, QUÍMICAS E BIOLÓGICAS
+# Capítulo 11 - ARMAS NUCLEARES, QUÍMICAS E BIOLÓGICAS
 
 ## Página 140
 
@@ -6,7 +6,7 @@
 
 As armas nucleares, químicas e biológicas merecem uma consideração especial dentro do Direito Internacional dos Conflitos Armados (DICA), devido ao seu potencial intrínseco de efeito indiscriminado.
 
-Neste  capítulo,  são  apresentadas  as  principais  considerações  legais  pertinentes  ao desenvolvimento, posse e emprego dessas armas.
+Neste  Capítulo,  são  apresentadas  as  principais  considerações  legais  pertinentes  ao desenvolvimento, posse e emprego dessas armas.
 
 ## 11.2 - ARMAS NUCLEARES
 

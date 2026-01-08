@@ -2,7 +2,7 @@
 
 ## Página 1
 
-No Capítulo 2, examinou-se o conceito de produto, que é o principal indicador para se medir o crescimento econômico de um país. A partir dele, vê-se que, à exceção das últimas duas décadas, o Brasil cresceu a taxas elevadas e, em termos internacionais, pode ser considerado um dos maiores países do mundo, já que possui uma das maiores produções do planeta. Por que não se considera, então, o Brasil um país desenvolvido? Afinal, o Brasil possui uma produção maior que a de países considerados do Primeiro Mundo, como o Canadá e a Suíça. Essas questões serão tratadas neste capítulo.
+No Capítulo 2, examinou-se o conceito de produto, que é o principal indicador para se medir o crescimento econômico de um país. A partir dele, vê-se que, à exceção das últimas duas décadas, o Brasil cresceu a taxas elevadas e, em termos internacionais, pode ser considerado um dos maiores países do mundo, já que possui uma das maiores produções do planeta. Por que não se considera, então, o Brasil um país desenvolvido? Afinal, o Brasil possui uma produção maior que a de países considerados do Primeiro Mundo, como o Canadá e a Suíça. Essas questões serão tratadas neste Capítulo.
 
 ### 3.1 CONCEITO DE DESENVOLVIMENTO
 
@@ -72,7 +72,7 @@ Os indicadores sociais fornecem informações que dizem respeito diretamente à 
 
 Três aspectos podem ser destacados com relação a esses índices no Brasil.
 
-Primeiro, houve evolução positiva de muitos desses indicadores nos últimos anos. Como foi visto nos capítulos anteriores, tanto a esperança de vida da população brasileira ao nascer cresceu como a taxa de mortalidade infantil caiu significativamente, indicando melhores condições de saúde da população brasileira. Na Tabela 3.1, observa-se a diminuição do analfabetismo entre a população com idade superior a 15 anos.
+Primeiro, houve evolução positiva de muitos desses indicadores nos últimos anos. Como foi visto nos Capítulos anteriores, tanto a esperança de vida da população brasileira ao nascer cresceu como a taxa de mortalidade infantil caiu significativamente, indicando melhores condições de saúde da população brasileira. Na Tabela 3.1, observa-se a diminuição do analfabetismo entre a população com idade superior a 15 anos.
 
 ### Tabela 3.1 Brasil e regiões: taxa de analfabetismo de pessoas de 15 anos ou mais de idade — anos selecionados 
 
@@ -493,7 +493,7 @@ Por **desenvolvimento sustentado** entende-se o desenvolvimento que, ao atender 
 *É necessário assegurar às gerações futuras a oportunidade de usufruir, pelo menos, o mesmo nível de bemestar hoje disponível. [...] A experiência passada sugere que a industrialização, a expansão da fronteira agrícola e aurbanização têm criado pressões significativas na base natural da economia, seja pela utilização acelerada de recursos naturais exauríveis, seja pela poluição e degradação da qualidade ambiental. [...] Nesse contexto, a possibilidade de desenvolvimento humano pressupõe a identificação e implementação de trajetórias de crescimento econômico que viabilizem um desenvolvimento sustentável.*
 *O desenvolvimento humano significa não apenas o desenvolvimento para as pessoas e desenvolvimento das pessoas, mas também pelas pessoas. Nesse sentido, cabe a cada país definir sua estratégia de desenvolvimento e, mais do que isso, assegurar que as pessoas, através de estruturas apropriadas, participem plenamente das decisões e processos que afetem suas vidas.[4]*
 
-Desenvolvimento leva em consideração a ideia de crescimento, mas também as noções de redução de desigualdades, erradicação da pobreza, diminuição das necessidades básicas, acesso a condições de educação, saúde, saneamento básico e também passa a envolver temas da sustentabilidade ambiental que se acrescem aos temas da chamada sustentabilidade social que descrevemos ao longo deste capítulo.
+Desenvolvimento leva em consideração a ideia de crescimento, mas também as noções de redução de desigualdades, erradicação da pobreza, diminuição das necessidades básicas, acesso a condições de educação, saúde, saneamento básico e também passa a envolver temas da sustentabilidade ambiental que se acrescem aos temas da chamada sustentabilidade social que descrevemos ao longo deste Capítulo.
 
 A questão ambiental é objeto de imensas polêmicas, e o ponto principal é até onde a humanidade avançou na degradação ambiental a ponto de colocar em risco a vida e a “boa vida” das gerações futuras.
 

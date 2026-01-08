@@ -156,7 +156,7 @@ Carl Von Clausewitz (1780-1831), general prussiano, é certamente o mais conheci
 
 A obra de Clausewitz é de natureza completamente diferente da de Jomini. Na realidade, Jomini se enquadra no espírito iluminista e crê, mais ou menos, em princípios estratégicos imutáveis, cuja aplicação garantiria o sucesso no campo de batalha. A obra de Clausewitz, ao contrário, não sugere fórmulas para a vitória, mas aborda a complexidade da guerra sob um ponto de vista filosófico.
 
-É evidente que Castex nutria maior admiração por Clausewitz do que por Jomini. Isto pode ser comprovado no capítulo “História sucinta da estratégia naval teórica”: “Foi principalmente após 1815 que os estudos estratégicos iriam, sobre as ações terrestres, prosperar plenamente. Primeiro pela continuação dos trabalhos de Jomini...e, enfim e principalmente, pela obra de Clausewitz”. Em seguida, evocando no tomo IV os autores mais lidos, ele cita Clausewitz, mas não cita Jomini”. Ele referencia com aprovação o que o general prussiano escreveu sobre o conceito de fricção da guerraou do “ponto culminante” da 
+É evidente que Castex nutria maior admiração por Clausewitz do que por Jomini. Isto pode ser comprovado no Capítulo “História sucinta da estratégia naval teórica”: “Foi principalmente após 1815 que os estudos estratégicos iriam, sobre as ações terrestres, prosperar plenamente. Primeiro pela continuação dos trabalhos de Jomini...e, enfim e principalmente, pela obra de Clausewitz”. Em seguida, evocando no tomo IV os autores mais lidos, ele cita Clausewitz, mas não cita Jomini”. Ele referencia com aprovação o que o general prussiano escreveu sobre o conceito de fricção da guerraou do “ponto culminante” da 
   ofensiva”.
    
 

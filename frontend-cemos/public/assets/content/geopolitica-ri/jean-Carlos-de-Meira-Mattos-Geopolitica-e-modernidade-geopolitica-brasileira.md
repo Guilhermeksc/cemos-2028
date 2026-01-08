@@ -6,7 +6,7 @@ Este caminho foi desvendado por Galileu. Em seu livro Discorsi i Dimonstrazioni 
 
 A Geopolítica, antes de ter um nome que a caracterizasse como ramo de conhecimento distinto, foi precedida pelas observações sobre a influência da geografia na ação do homem sobre a Terra. que foram objeto da atenção de filósofos e sábios da antigüidade.
 
-Assim foram as observações do historiador grego Heródoto sobre a influência do clima e da natureza do solo no progresso dos grupos humanos. Estudiosos da sociedade política. Hipócrates nas suas obras realça a im­portância do ar. da água e da posição geográfica sobre a atividade do homem. Platão e Aristóteles indicaram as vantagens e desvantagens das po­pulações quando litorâneas ou interioranas. Estrabão, na sua Geografia, indica a posição geográfica da Itália como fator importante para o sucesso do Império Romano. Na Idade Média, surge a tentativa pré-científica do geógrafo Jean Bodino de ordenação do pensamento geográfico-político, valorizando a relação Estado-meio físico. Contribuições val iosas ao enca­minhamento da reflexão normativa sobre esta correlação dos dois fatores acima referidos encontramos nas obras de Em manuel Kant, Montesquieu e Hegel. Este último. no seu livro Filosofia da História. dedica um capítulo inteiro à "Base Geográfica da História". Nesse capítulo, Hegel desenvolve vasta e erudita apreciação sobre a influência da geografia na modelação do homem político e da sociedade política. Napoleão Bonaparte. no apogeu de sua glória. sentenciou: "A Geografia indica o destino das nações".
+Assim foram as observações do historiador grego Heródoto sobre a influência do clima e da natureza do solo no progresso dos grupos humanos. Estudiosos da sociedade política. Hipócrates nas suas obras realça a im­portância do ar. da água e da posição geográfica sobre a atividade do homem. Platão e Aristóteles indicaram as vantagens e desvantagens das po­pulações quando litorâneas ou interioranas. Estrabão, na sua Geografia, indica a posição geográfica da Itália como fator importante para o sucesso do Império Romano. Na Idade Média, surge a tentativa pré-científica do geógrafo Jean Bodino de ordenação do pensamento geográfico-político, valorizando a relação Estado-meio físico. Contribuições val iosas ao enca­minhamento da reflexão normativa sobre esta correlação dos dois fatores acima referidos encontramos nas obras de Em manuel Kant, Montesquieu e Hegel. Este último. no seu livro Filosofia da História. dedica um Capítulo inteiro à "Base Geográfica da História". Nesse Capítulo, Hegel desenvolve vasta e erudita apreciação sobre a influência da geografia na modelação do homem político e da sociedade política. Napoleão Bonaparte. no apogeu de sua glória. sentenciou: "A Geografia indica o destino das nações".
 
 As opiniões acima, que colhemos entre muitas outras tão conceitu­adas, vieram ordenando uma reflexão normativa sobre a relação política­ geografia. possibilitando o surgimento, no campo das ciências, sucessi­vamente, da Geografia Humana (ou Antropogeografia), da Geografia Polí­tica e, finalmente, da Geopolítica.
 
@@ -87,7 +87,7 @@ A Federação Russa, núcleo de poder de Moscou que resistiu ao proces­so de de
 
 Afirmamos que a Geopolítica é um ramo da Ciência Política que se formou pela interação dinâmica de três ramos de conhecimento: a Geografia (espaço físico), a Política (aplicação do Poder à arte de governar) e a História (experiência humana).
 
-Neste capítulo vamos tratar da contribuição do espaço físico nes­ta tríade.
+Neste Capítulo vamos tratar da contribuição do espaço físico nes­ta tríade.
 
 Conceituamos sinteticamente a Geopolítica como a aplicação da política aos espaços geográficos. sob a inspiração da História.
 
@@ -164,7 +164,7 @@ Diz ainda o Professor italiano:
 
 "As palavras gregas Kratos, força, potência, poder, e Arche, autori­dade, deram origem ao nome das antigas formas de governo: aristocracia, democracia, oclocracia, monarquia, oligarquia."
 
-Assim como no capítulo anterior, examinamos as modificações ocorridas no campo da geografia, no que se refere a sua utilização pelo homem moderno: vamos agora avaliar o que de novo oferece a práxis política a este homem equipado pela avançada tecnologia.
+Assim como no Capítulo anterior, examinamos as modificações ocorridas no campo da geografia, no que se refere a sua utilização pelo homem moderno: vamos agora avaliar o que de novo oferece a práxis política a este homem equipado pela avançada tecnologia.
 
 A modernidade na área da Política está representada principal­mente pela presença, cada vez mais acentuada. do Poder Extraterritorial, exercido pelo Estado ou grupo de estados poderosos. Dotados de supre­macia econômica e de alta tecnologia informática, os estados podero­sos penetram verticalmente, através de suas redes de com unicação, nos espaços territoriais de outros países, levando a informação que interes­sa a sua cultura, a sua política e a sua economia.
 
@@ -254,7 +254,7 @@ O escritor Samuel Huntington, em seu livro de sucesso internacio­nal The Clash 
 
 # Capítulo IV - Contribuição da História Moderna na Formulação da Geopolítica
 
-Nos capítulos anteriores analisamos, à luz da modernidade, as con­tribuições da Geografia e da Política na i ntegração do pensamento geopolítico. Agora, vamos apreciar a interação da ciência da Histó­ria modernizada na form ulação da Geopolítica.
+Nos Capítulos anteriores analisamos, à luz da modernidade, as con­tribuições da Geografia e da Política na i ntegração do pensamento geopolítico. Agora, vamos apreciar a interação da ciência da Histó­ria modernizada na form ulação da Geopolítica.
 
 Quase todos os historiadores reconhecem no italiano Giovanni Vico(1668-1744) o principal inovador dos estudos da ciência histórica.
 
@@ -543,7 +543,7 @@ Seríamos injustos se recordando os setenta anos do pensamento, geopolítico bra
 
 # Capítulo VII - Síntese de Setenta Anos de Pensamento Geopolítico Brasileiro
 
-Vamos sintetizar o pensamento geopolítico dos autores historiados no capítulo anterior, tendo em vista apontar a sua característica pre­
+Vamos sintetizar o pensamento geopolítico dos autores historiados no Capítulo anterior, tendo em vista apontar a sua característica pre­
 monitória da Política Nacional.
 
 Na época colonial, vimos a visão estrutural da geopolítica brasileira esboçada no Tratado de Tordesilhas, como nos mostrou o diplomata e escri­tor José Osvaldo de Meira Penna. O historiador seiscentista Gabriel Soares de Sousa (1578) , aqui chegando, traduziu o seu deslumbramento na idéia de Império, "será um dos estados do Mundo"; Alexandre de Gusmão, brasi­leiro a serviço da diplomacia lusa, conseguiu inserir no Tratado de Madri (1750) os dispositivos que legitimaram as conquistas dos bandeirantes paulistas e nortistas.

@@ -1,11 +1,11 @@
 
 ## Página 3
 
-### CAPÍTULO II - DOS PRINCÍPIOS
+### Capítulo II - DOS PRINCÍPIOS
 
 Art. 5º Na aplicação desta Lei, serão observados os princípios da legalidade, da impessoalidade, da moralidade, da publicidade, da eficiência, do interesse público, da probidade administrativa, da igualdade, do planejamento, da transparência, da eficácia, da segregação de funções, da motivação, da vinculação ao edital, do julgamento objetivo, da segurança jurídica, da razoabilidade, da competitividade, da proporcionalidade, da celeridade, da economicidade e do desenvolvimento nacional sustentável, assim como as disposições do DecretoLei nº 4.657, de 4 de setembro de 1942 (Lei de Introdução às Normas do Direito Brasileiro).
 
-### CAPÍTULO III - DAS DEFINIÇÕES
+### Capítulo III - DAS DEFINIÇÕES
 
 Art. 6º Para os fins desta Lei, consideram-se:
 

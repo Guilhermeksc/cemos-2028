@@ -1,10 +1,10 @@
-# CAPÍTULO 4 - SALVAGUARDA DOS INTERESSES NACIONAIS NO MAR, EM TEMPO DE PAZ
+# Capítulo 4 - Salvaguarda dos interesses no mar em tempo de paz
 
 ## Página 70
 
 ## 4.1 - INTRODUÇÃO
 
-O Direito Internacional Público destina-se a reger juridicamente as relações entre os Estados e/ou organismos internacionais, seja em tempo de paz ou em períodos de hostilidades. Neste  capítulo  serão  examinados  os  princípios  gerais  do  Direito  Internacional  (DI)  que governam a conduta dos Estados na proteção de seus interesses no mar em tempo de paz. Modernamente, as hostilidades entre Estados continuam a surgir, sendo que poucas se fazem acompanhar de declaração formal de guerra. Além disso, as vertentes do conflito armado ampliaram-se, tornando ainda mais complexo caracterizar um ato de beligerância.
+O Direito Internacional Público destina-se a reger juridicamente as relações entre os Estados e/ou organismos internacionais, seja em tempo de paz ou em períodos de hostilidades. Neste  Capítulo  serão  examinados  os  princípios  gerais  do  Direito  Internacional  (DI)  que governam a conduta dos Estados na proteção de seus interesses no mar em tempo de paz. Modernamente, as hostilidades entre Estados continuam a surgir, sendo que poucas se fazem acompanhar de declaração formal de guerra. Além disso, as vertentes do conflito armado ampliaram-se, tornando ainda mais complexo caracterizar um ato de beligerância.
 
 Assim, os tradicionais conceitos, em nível absoluto, de “paz” e “guerra” não mais se aplicam aos conflitos armados modernos, destacando-se as insurgências e os atos de terrorismo.
 

@@ -30,7 +30,8 @@ interface SimuladoQuestion {
   pergunta: string;
   bibliografia_titulo?: string;
   paginas?: string;
-  assunto?: string;
+  assunto?: number | null; // ID do assunto (ForeignKey)
+  assunto_titulo?: string | null; // Título do assunto (read-only, para exibição)
   data: PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
   userAnswer?: any;
   isCorrect?: boolean;
@@ -442,8 +443,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     const assuntosMap = new Map<string, { quantidade: number; bibliografiaTitulo: string; bibliografiaId: number }>();
     
     cacheToUse.forEach(question => {
-      if (question.assunto && question.assunto.trim() && question.bibliografia) {
-        const assunto = question.assunto.trim();
+      if (question.assunto_titulo && question.assunto_titulo.trim() && question.bibliografia) {
+        const assunto = question.assunto_titulo.trim();
         const bibliografiaId = question.bibliografia;
         const bibliografiaTitulo = question.bibliografia_titulo || `Bibliografia ${bibliografiaId}`;
         const chave = `${assunto}|${bibliografiaId}`;
@@ -502,8 +503,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       const assuntosMap = new Map<string, { quantidade: number; bibliografiaTitulo: string; bibliografiaId: number }>();
       
       questionsFromBibliografia.forEach(q => {
-        if (q.assunto && q.assunto.trim() && q.bibliografia) {
-          const assunto = q.assunto.trim();
+        if (q.assunto_titulo && q.assunto_titulo.trim() && q.bibliografia) {
+          const assunto = q.assunto_titulo.trim();
           const bibliografiaId = q.bibliografia;
           const bibliografiaTitulo = q.bibliografia_titulo || `Bibliografia ${bibliografiaId}`;
           const chave = `${assunto}|${bibliografiaId}`;
@@ -827,9 +828,9 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       }
     }
 
-    // Se não encontrou assunto em data, tenta em question.assunto
-    if (!assunto && question.assunto) {
-      assunto = question.assunto;
+    // Se não encontrou assunto em data, tenta em question.assunto_titulo
+    if (!assunto && question.assunto_titulo) {
+      assunto = question.assunto_titulo;
     }
 
     const data: any = {
@@ -1050,10 +1051,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     config.bibliografias.forEach(bibliografiaId => {
       const baseFilters: any = { bibliografia: bibliografiaId };
       
-      // Adicionar filtro de assunto se selecionado
-      if (this.selectedAssunto && this.selectedAssunto.trim()) {
-        baseFilters.assunto = this.selectedAssunto.trim();
-      }
+      // Nota: Filtro de assunto removido do backend pois o backend espera ID (number)
+      // e temos apenas o título (string). O filtro será aplicado no frontend após buscar os dados.
       
       if (config.questoesMultipla > 0) {
         multiplaObservables.push(
@@ -1174,15 +1173,29 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           tipo_array: Array.isArray(config.bibliografias)
         });
         
-        const multiplasFiltradas = todasMultiplas.filter(q => 
+        let multiplasFiltradas = todasMultiplas.filter(q => 
           config.bibliografias.includes(q.bibliografia)
         );
-        const vfsFiltradas = todasVFs.filter(q => 
+        let vfsFiltradas = todasVFs.filter(q => 
           config.bibliografias.includes(q.bibliografia)
         );
-        const correlacoesFiltradas = todasCorrelacoes.filter(q => 
+        let correlacoesFiltradas = todasCorrelacoes.filter(q => 
           config.bibliografias.includes(q.bibliografia)
         );
+        
+        // Aplicar filtro de assunto no frontend (se selecionado)
+        if (this.selectedAssunto && this.selectedAssunto.trim()) {
+          const assuntoTitulo = this.selectedAssunto.trim();
+          multiplasFiltradas = multiplasFiltradas.filter(q => 
+            q.assunto_titulo === assuntoTitulo
+          );
+          vfsFiltradas = vfsFiltradas.filter(q => 
+            q.assunto_titulo === assuntoTitulo
+          );
+          correlacoesFiltradas = correlacoesFiltradas.filter(q => 
+            q.assunto_titulo === assuntoTitulo
+          );
+        }
 
         console.log('🔍 Questões filtradas por bibliografia:', {
           bibliografias_solicitadas: config.bibliografias,
@@ -1319,6 +1332,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
             assunto: q.assunto,
+            assunto_titulo: q.assunto_titulo,
             data: qComSorteio,
             uniqueKey: `vf-${q.id}`
           };
@@ -1342,6 +1356,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
             assunto: q.assunto,
+            assunto_titulo: q.assunto_titulo,
             data: q,
             uniqueKey: `multipla-${q.id}`
           };
@@ -1377,6 +1392,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             bibliografia_titulo: q.bibliografia_titulo,
             paginas: q.paginas,
             assunto: q.assunto,
+            assunto_titulo: q.assunto_titulo,
             data: q,
             uniqueKey: `correlacao-${q.id}`
           };
@@ -1437,22 +1453,22 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     const vfData = question.data as PerguntaVF;
     
     // Remover assunto das afirmações se presente
-    if (question.assunto) {
+    if (question.assunto_titulo) {
       const vfDataCopy = { ...vfData };
       
       // Remover assunto da afirmação sorteada
       if (vfDataCopy.afirmacao_sorteada) {
-        vfDataCopy.afirmacao_sorteada = this.removeAssuntoFromText(vfDataCopy.afirmacao_sorteada, question.assunto);
+        vfDataCopy.afirmacao_sorteada = this.removeAssuntoFromText(vfDataCopy.afirmacao_sorteada, question.assunto_titulo);
       }
       
       // Remover assunto da afirmação verdadeira
       if (vfDataCopy.afirmacao_verdadeira) {
-        vfDataCopy.afirmacao_verdadeira = this.removeAssuntoFromText(vfDataCopy.afirmacao_verdadeira, question.assunto);
+        vfDataCopy.afirmacao_verdadeira = this.removeAssuntoFromText(vfDataCopy.afirmacao_verdadeira, question.assunto_titulo);
       }
       
       // Remover assunto da afirmação falsa
       if (vfDataCopy.afirmacao_falsa) {
-        vfDataCopy.afirmacao_falsa = this.removeAssuntoFromText(vfDataCopy.afirmacao_falsa, question.assunto);
+        vfDataCopy.afirmacao_falsa = this.removeAssuntoFromText(vfDataCopy.afirmacao_falsa, question.assunto_titulo);
       }
       
       return vfDataCopy;
@@ -1572,10 +1588,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Remove o assunto do texto da pergunta se ele aparecer no início ou final
    */
   getPerguntaSemAssunto(question: SimuladoQuestion): string {
-    if (!question.pergunta || !question.assunto) {
+    if (!question.pergunta || !question.assunto_titulo) {
       return question.pergunta;
     }
-    return this.removeAssuntoFromText(question.pergunta, question.assunto);
+    return this.removeAssuntoFromText(question.pergunta, question.assunto_titulo);
   }
 
   // Cache de estatísticas para evitar recálculos
@@ -1685,10 +1701,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     bibliografiasParaBuscar.forEach(bibliografiaId => {
       const baseFilters: any = { bibliografia: bibliografiaId };
       
-      // Adicionar filtro de assunto se selecionado
-      if (this.selectedAssunto && this.selectedAssunto.trim()) {
-        baseFilters.assunto = this.selectedAssunto.trim();
-      }
+      // Nota: Filtro de assunto removido do backend pois o backend espera ID (number)
+      // e temos apenas o título (string). O filtro será aplicado no frontend após buscar os dados.
       
       // Buscar TODAS as questões de cada tipo
       multiplaObservables.push(
@@ -1746,6 +1760,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         bibliografia_titulo: q.bibliografia_titulo,
         paginas: q.paginas,
         assunto: q.assunto,
+        assunto_titulo: q.assunto_titulo,
         data: qComSorteio,
         uniqueKey: `vf-${q.id}`
       });
@@ -1760,6 +1775,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         bibliografia_titulo: q.bibliografia_titulo,
         paginas: q.paginas,
         assunto: q.assunto,
+        assunto_titulo: q.assunto_titulo,
         data: q,
         uniqueKey: `multipla-${q.id}`
       });
@@ -1774,6 +1790,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         bibliografia_titulo: q.bibliografia_titulo,
         paginas: q.paginas,
         assunto: q.assunto,
+        assunto_titulo: q.assunto_titulo,
         data: q,
         uniqueKey: `correlacao-${q.id}`
       });
@@ -1863,7 +1880,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     };
     
     // Remove o assunto do texto da pergunta se ele aparecer no início ou final
-    const removeAssuntoFromPergunta = (perguntaText: string, assunto?: string): string => {
+    const removeAssuntoFromPergunta = (perguntaText: string, assunto?: string | null): string => {
       if (!perguntaText || !assunto) return perguntaText;
       
       // Função auxiliar para normalizar texto (remover emojis e normalizar espaços)
@@ -2200,7 +2217,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     const groupedQuestions: { [key: string]: SimuladoQuestion[] } = {};
     questions.forEach((question) => {
       const bibliografia = question.bibliografia_titulo || 'Sem bibliografia';
-      const assunto = question.assunto || 'Sem assunto';
+      const assunto = question.assunto_titulo || 'Sem assunto';
       const key = `${bibliografia}|${assunto}`;
       
       if (!groupedQuestions[key]) {
@@ -2337,7 +2354,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           const multiplaData = question.data as PerguntaMultipla;
           
           // Exibir a pergunta primeiro
-          const perguntaText = removeAssuntoFromPergunta(question.pergunta || multiplaData.pergunta, question.assunto);
+          const perguntaText = removeAssuntoFromPergunta(question.pergunta || multiplaData.pergunta, question.assunto_titulo);
           const perguntaSegments = extractTextWithStyles(perguntaText);
           
           if (perguntaSegments.length > 0) {
@@ -2393,7 +2410,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           const correlacaoData = question.data as PerguntaCorrelacao;
           
           // Exibir a pergunta primeiro
-          const perguntaText = removeAssuntoFromPergunta(question.pergunta || correlacaoData.pergunta, question.assunto);
+          const perguntaText = removeAssuntoFromPergunta(question.pergunta || correlacaoData.pergunta, question.assunto_titulo);
           const perguntaSegments = extractTextWithStyles(perguntaText);
           
           if (perguntaSegments.length > 0) {
@@ -2510,7 +2527,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     const groupedQuestionsGabarito: { [key: string]: SimuladoQuestion[] } = {};
     questions.forEach((question) => {
       const bibliografia = question.bibliografia_titulo || 'Sem bibliografia';
-      const assunto = question.assunto || 'Sem assunto';
+      const assunto = question.assunto_titulo || 'Sem assunto';
       const key = `${bibliografia}|${assunto}`;
       
       if (!groupedQuestionsGabarito[key]) {
@@ -2653,7 +2670,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           const correlacaoData = question.data as PerguntaCorrelacao;
           
           // Exibir a pergunta primeiro
-          const perguntaText = removeAssuntoFromPergunta(question.pergunta || correlacaoData.pergunta, question.assunto);
+          const perguntaText = removeAssuntoFromPergunta(question.pergunta || correlacaoData.pergunta, question.assunto_titulo);
           const perguntaSegments = extractTextWithStyles(perguntaText);
           
           if (perguntaSegments.length > 0) {

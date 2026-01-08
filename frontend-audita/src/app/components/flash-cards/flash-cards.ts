@@ -197,8 +197,8 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     const assuntosSet = new Set<string>();
     
     this.allFlashCards.forEach(card => {
-      if (card.assunto) {
-        assuntosSet.add(card.assunto);
+      if (card.assunto_titulo) {
+        assuntosSet.add(card.assunto_titulo);
       }
     });
 
@@ -231,7 +231,7 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
     // Filtrar por assunto se selecionado
     if (this.selectedAssunto) {
       filteredCards = filteredCards.filter(card => 
-        card.assunto === this.selectedAssunto
+        card.assunto_titulo === this.selectedAssunto
       );
       console.log(`🏷️ Filtrado por assunto "${this.selectedAssunto}":`, filteredCards.length);
     }
@@ -295,8 +295,8 @@ export class FlashCardsComponent implements OnInit, OnDestroy {
       
       const assuntosSet = new Set<string>();
       cardsFromBibliografia.forEach(card => {
-        if (card.assunto) {
-          assuntosSet.add(card.assunto);
+        if (card.assunto_titulo) {
+          assuntosSet.add(card.assunto_titulo);
         }
       });
       

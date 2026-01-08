@@ -1,4 +1,4 @@
-# CAPÍTULO 7 - IMPOSIÇÃO DO DIREITO INTERNACIONAL DOS CONFLITOS ARMADOS (DICA)
+# Capítulo 7 - Imposição do Direito Internacional dos Conflitos Armados (DICA)
 
 ## Página 91
 

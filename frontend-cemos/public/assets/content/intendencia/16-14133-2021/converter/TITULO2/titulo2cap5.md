@@ -1,6 +1,6 @@
 ## Página 30
 
-### CAPÍTULO V DO JULGAMENTO
+### Capítulo V DO JULGAMENTO
 
 Art. 59. Serão desclassificadas as propostas que:
 

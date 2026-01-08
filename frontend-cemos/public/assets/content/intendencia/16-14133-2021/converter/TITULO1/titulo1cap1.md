@@ -4,7 +4,7 @@
 
 # TÍTULO I - DISPOSIÇÕES PRELIMINARES 
 
-### CAPÍTULO I - DO ÂMBITO DE APLICAÇÃO DESTA LEI
+### Capítulo I - DO ÂMBITO DE APLICAÇÃO DESTA LEI
 
 Art. 1º Esta Lei estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios, e abrange:
 

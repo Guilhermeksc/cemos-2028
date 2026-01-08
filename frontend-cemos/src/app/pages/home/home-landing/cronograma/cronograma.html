@@ -1,176 +1,248 @@
+<div class="cronograma-container">
+  <!-- Header Compacto -->
+  <div class="cronograma-header">
+    <h1 class="page-title">
+      <mat-icon>calendar_today</mat-icon>
+      Cronograma de Estudos
+    </h1>
+    <button mat-stroked-button (click)="navigateHome()" class="back-button">
+      <mat-icon>arrow_back</mat-icon>
+      Voltar
+    </button>
+  </div>
 
-<div class="calendar-section">
-  <mat-card class="calendar-card">
-    <mat-card-content>    
-      <div class="calendar-table-container">
-        <table class="calendar-table">
-          <thead>
-            <tr>
-              <th>Passada</th>
-              <th>Matéria</th>
-              <th>Início</th>
-              <th>Término</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="passada-1">
-              <td class="passada-cell" rowspan="9">1</td>
-              <td>História</td>
-              <td>01/09/2025</td>
-              <td>17/10/2025</td>
-            </tr>
-            <tr class="passada-1">
-              <td>Geopolítica</td>
-              <td>20/10/2025</td>
-              <td>28/10/2025</td>
-            </tr>
-            <tr class="passada-1">
-              <td>Relações Internacionais</td>
-              <td>29/10/2025</td>
-              <td>12/11/2025</td>
-            </tr>
-            <tr class="passada-1">
-              <td>Política</td>
-              <td>13/11/2025</td>
-              <td>26/11/2025</td>
-            </tr>
-            <tr class="passada-1">
-              <td>Direito</td>
-              <td>27/11/2025</td>
-              <td>17/12/2025</td>
-            </tr>
-            <tr class="passada-1">
-              <td>Economia</td>
-              <td>18/12/2025</td>
-              <td>29/12/2025</td>
-            </tr>
-            <tr class="passada-1">
-              <td>Estratégia</td>
-              <td>30/12/2025</td>
-              <td>14/01/2026</td>
-            </tr>
-            <tr class="passada-1">
-              <td>Planejamento Militar</td>
-              <td>15/01/2026</td>
-              <td>26/01/2026</td>
-            </tr>
-            <tr class="passada-1 last-row">
-              <td>Serviço de Intendência (SIM)</td>
-              <td>27/01/2026</td>
-              <td>11/02/2026</td>
-            </tr>
+  <!-- Abas Principais -->
+  <mat-tab-group [selectedIndex]="selectedTab()" (selectedIndexChange)="selectedTab.set($event)" class="main-tabs">
+    <!-- Aba Principal -->
+    <mat-tab label="Principal">
+      <div class="tab-content">
+        <!-- Projetos Compactos -->
+        <div class="projetos-section">
+          <div class="section-header">
+            <h2>Meus Projetos</h2>
+            <button mat-icon-button (click)="toggleSelecaoMaterias()" *ngIf="!showSelecaoMaterias()">
+              <mat-icon>add</mat-icon>
+            </button>
+          </div>
+
+          <div class="projetos-list-compact" *ngIf="projetos() && projetos()!.length > 0">
+            <div 
+              class="projeto-item-compact" 
+              *ngFor="let projeto of projetos()"
+              [class.active]="projetoSelecionado()?.id === projeto.id">
+              <div class="projeto-content" (click)="selecionarProjeto(projeto)">
+                <span class="projeto-nome">{{ projeto.nome }}</span>
+                <mat-icon *ngIf="projetoSelecionado()?.id === projeto.id" class="check-icon">check_circle</mat-icon>
+              </div>
+              <button 
+                mat-icon-button 
+                color="warn" 
+                (click)="deletarProjeto(projeto, $event)"
+                matTooltip="Deletar projeto"
+                class="delete-button">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="no-projetos" *ngIf="projetos() && projetos()!.length === 0 && !loadingProjetos()">
+            <p>Nenhum projeto encontrado. Crie um novo projeto para começar.</p>
+          </div>
+
+          <!-- Formulário de Criação Discreto -->
+          <div class="form-novo-projeto" *ngIf="showSelecaoMaterias()">
+            <form [formGroup]="projetoForm" (ngSubmit)="criarProjeto()">
+              <div class="form-row-compact">
+                <mat-form-field appearance="outline" class="compact-field">
+                  <mat-label>Nome do Projeto</mat-label>
+                  <input matInput formControlName="nome" placeholder="Ex: Preparação CEMOS 2028">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="compact-field">
+                  <mat-label>Data de Início</mat-label>
+                  <input matInput [matDatepicker]="picker" formControlName="data_inicio">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="compact-field">
+                  <mat-label>Minutos/Dia</mat-label>
+                  <input matInput type="number" formControlName="minutos_diarios" min="1">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="compact-field">
+                  <mat-label>Passadas</mat-label>
+                  <input matInput type="number" formControlName="total_passadas" min="1" max="10">
+                </mat-form-field>
+              </div>
+
+              <!-- Seleção de Matérias -->
+              <div class="materias-selection">
+                <div class="materias-header">
+                  <h3>Selecione as Matérias</h3>
+                  <button mat-stroked-button type="button" (click)="usarOrdemPadrao()">
+                    Usar Ordem Padrão
+                  </button>
+                </div>
+
+                <!-- Matérias Selecionadas (Ordenáveis) -->
+                <div class="materias-selecionadas" *ngIf="materiasSelecionadas().length > 0">
+                  <h4>Ordem de Estudo (arraste para reordenar)</h4>
+                  <div cdkDropList (cdkDropListDropped)="dropMateria($event)" class="materias-list-drag">
+                    <div 
+                      *ngFor="let materia of materiasSelecionadas()" 
+                      cdkDrag
+                      class="materia-item-drag"
+                      [style.border-left-color]="getCorMateria(materia.id)">
+                      <mat-icon class="drag-handle">drag_indicator</mat-icon>
+                      <div class="materia-info">
+                        <span class="materia-nome">{{ materia.ordem }}. {{ materia.nome }}</span>
+                        <span class="materia-datas" *ngIf="materia.data_inicio && materia.data_fim">
+                          {{ formatarDataBR(materia.data_inicio) }} - {{ formatarDataBR(materia.data_fim) }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lista de Matérias Disponíveis -->
+                <div class="materias-disponiveis">
+                  <h4>Matérias Disponíveis</h4>
+                  <div class="materias-grid">
+                    <button 
+                      type="button"
+                      class="materia-chip"
+                      *ngFor="let materia of materiasDisponiveis()"
+                      [class.selected]="materia.selected"
+                      (click)="toggleMateria(materia)">
+                      {{ materia.nome }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions-compact">
+                <button mat-button type="button" (click)="toggleSelecaoMaterias()">Cancelar</button>
+                <button mat-raised-button color="primary" type="submit" [disabled]="projetoForm.invalid || materiasSelecionadas().length === 0">
+                  Criar Projeto
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Indicadores Compactos -->
+        <div class="indicadores-section" *ngIf="projetoSelecionado() && indicadores()">
+          <h2>Indicadores</h2>
+          <div class="indicadores-grid-compact">
+            <div class="indicador-compact">
+              <div class="indicador-valor">{{ indicadores()!.sessoes_concluidas }}/{{ indicadores()!.total_sessoes }}</div>
+              <div class="indicador-label">Sessões</div>
+            </div>
+            <div class="indicador-compact">
+              <div class="indicador-valor">{{ indicadores()!.revisoes_pendentes }}</div>
+              <div class="indicador-label">Revisões</div>
+            </div>
+            <div class="indicador-compact">
+              <div class="indicador-valor">{{ indicadores()!.materias_concluidas }}/{{ indicadores()!.total_materias }}</div>
+              <div class="indicador-label">Matérias</div>
+            </div>
+            <div class="indicador-compact">
+              <div class="indicador-valor">{{ indicadores()!.percentual_progresso }}%</div>
+              <div class="indicador-label">Progresso</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+
+    <!-- Aba Cronograma -->
+    <mat-tab label="Cronograma">
+      <div class="tab-content cronograma-tab-content">
+        <div *ngIf="!projetoSelecionado()" class="no-projeto-message">
+          <mat-icon>event_busy</mat-icon>
+          <p>Selecione um projeto na aba Principal para visualizar o cronograma.</p>
+        </div>
+
+        <div *ngIf="projetoSelecionado()">
+          <!-- Controles do Calendário -->
+          <div class="calendar-controls">
+            <button mat-stroked-button (click)="toggleConfigDatas()" [class.active]="showConfigDatas()">
+              <mat-icon>event</mat-icon>
+              Configurar Datas das Matérias
+            </button>
+          </div>
+
+          <!-- Painel de Configuração de Datas -->
+          <div class="config-datas-panel" *ngIf="showConfigDatas()">
+            <h3>Configurar Datas de Início e Fim das Matérias</h3>
+            <p class="config-datas-info">Defina quando cada matéria deve começar e terminar. As matérias podem ter períodos sobrepostos.</p>
             
-            <tr class="passada-2">
-              <td class="passada-cell" rowspan="9">2</td>
-              <td>História</td>
-              <td>12/02/2026</td>
-              <td>26/02/2026</td>
-            </tr>
-            <tr class="passada-2">
-              <td>Geopolítica</td>
-              <td>27/02/2026</td>
-              <td>09/03/2026</td>
-            </tr>
-            <tr class="passada-2">
-              <td>Relações Internacionais</td>
-              <td>10/03/2026</td>
-              <td>24/03/2026</td>
-            </tr>
-            <tr class="passada-2">
-              <td>Política</td>
-              <td>25/03/2026</td>
-              <td>07/04/2026</td>
-            </tr>
-            <tr class="passada-2">
-              <td>Direito</td>
-              <td>08/04/2026</td>
-              <td>28/04/2026</td>
-            </tr>
-            <tr class="passada-2">
-              <td>Economia</td>
-              <td>29/04/2026</td>
-              <td>08/05/2026</td>
-            </tr>
-            <tr class="passada-2">
-              <td>Estratégia</td>
-              <td>11/05/2026</td>
-              <td>26/05/2026</td>
-            </tr>
-            <tr class="passada-2">
-              <td>Planejamento Militar</td>
-              <td>27/05/2026</td>
-              <td>05/06/2026</td>
-            </tr>
-            <tr class="passada-2 last-row">
-              <td>Serviço de Intendência (SIM)</td>
-              <td>08/06/2026</td>
-              <td>23/06/2026</td>
-            </tr>
+            <div class="materias-datas" *ngIf="materiasInfo().length > 0">
+              <div class="materia-data-item" *ngFor="let materia of materiasInfo()">
+                <div class="materia-data-header">
+                  <h4>{{ materia.nome }}</h4>
+                  <span class="capitulos-info">{{ materia.total_capitulos || 0 }} capítulos</span>
+                </div>
+                
+                <div class="datas-inputs">
+                  <mat-form-field appearance="outline" class="data-input">
+                    <mat-label>Data de Início</mat-label>
+                    <input 
+                      matInput 
+                      [matDatepicker]="pickerInicio"
+                      [value]="getDataInicioMateria(materia.id)"
+                      (dateChange)="atualizarDataInicioMateria(materia.id, $event)"
+                      placeholder="Selecione a data de início">
+                    <mat-datepicker-toggle matSuffix [for]="pickerInicio"></mat-datepicker-toggle>
+                    <mat-datepicker #pickerInicio></mat-datepicker>
+                  </mat-form-field>
 
-            <tr class="passada-3">
-              <td class="passada-cell" rowspan="9">3</td>
-              <td>História</td>
-              <td>24/06/2026</td>
-              <td>01/07/2026</td>
-            </tr>
-            <tr class="passada-3">
-              <td>Geopolítica</td>
-              <td>02/07/2026</td>
-              <td>07/07/2026</td>
-            </tr>
-            <tr class="passada-3">
-              <td>Relações Internacionais</td>
-              <td>08/07/2026</td>
-              <td>13/07/2026</td>
-            </tr>
-            <tr class="passada-3">
-              <td>Política</td>
-              <td>14/07/2026</td>
-              <td>19/07/2026</td>
-            </tr>
-            <tr class="passada-3">
-              <td>Direito</td>
-              <td>20/07/2026</td>
-              <td>23/07/2026</td>
-            </tr>
-            <tr class="passada-3">
-              <td>Economia</td>
-              <td>24/07/2026</td>
-              <td>29/07/2026</td>
-            </tr>
-            <tr class="passada-3">
-              <td>Estratégia</td>
-              <td>30/07/2026</td>
-              <td>06/08/2026</td>
-            </tr>
-            <tr class="passada-3">
-              <td>Planejamento Militar</td>
-              <td>07/08/2026</td>
-              <td>13/08/2026</td>
-            </tr>
-            <tr class="passada-3 last-row">
-              <td>Serviço de Intendência (SIM)</td>
-              <td>14/08/2026</td>
-              <td>21/08/2026</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+                  <mat-form-field appearance="outline" class="data-input">
+                    <mat-label>Data de Fim</mat-label>
+                    <input 
+                      matInput 
+                      [matDatepicker]="pickerFim"
+                      [value]="getDataFimMateria(materia.id)"
+                      (dateChange)="atualizarDataFimMateria(materia.id, $event)"
+                      placeholder="Selecione a data de fim">
+                    <mat-datepicker-toggle matSuffix [for]="pickerFim"></mat-datepicker-toggle>
+                    <mat-datepicker #pickerFim></mat-datepicker>
+                  </mat-form-field>
 
-      <div class="calendar-legend">
-        <div class="legend-item">
-          <span class="legend-badge passada-1-badge">1ª Passada</span>
-          <span class="legend-text">Primeiro contato com o conteúdo</span>
-        </div>
-        <div class="legend-item">
-          <span class="legend-badge passada-2-badge">2ª Passada</span>
-          <span class="legend-text">Revisão e aprofundamento</span>
-        </div>
-        <div class="legend-item">
-          <span class="legend-badge passada-3-badge">3ª Passada</span>
-          <span class="legend-text">Consolidação final</span>
+                  <button mat-icon-button (click)="limparDatasMateria(materia.id)" matTooltip="Limpar datas">
+                    <mat-icon>clear</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="config-datas-actions">
+              <button mat-button (click)="toggleConfigDatas()">Cancelar</button>
+              <button 
+                mat-raised-button 
+                color="primary" 
+                (click)="aplicarConfigDatas()"
+                [disabled]="loadingConfigDatas()">
+                <mat-spinner diameter="20" *ngIf="loadingConfigDatas()" class="inline-spinner"></mat-spinner>
+                <span *ngIf="!loadingConfigDatas()">Aplicar Datas</span>
+                <span *ngIf="loadingConfigDatas()">Aplicando...</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Componente Calendário de Estudos -->
+          <app-calendario-estudos
+            #calendarioEstudos
+            [projeto]="projetoSelecionado()"
+            [materiasInfo]="materiasInfo()"
+            [coresMaterias]="coresMaterias"
+            (concluirSessaoEvent)="concluirSessao($event)"
+            (concluirRevisaoEvent)="concluirRevisao($event)">
+          </app-calendario-estudos>
+
         </div>
       </div>
-    </mat-card-content>
-  </mat-card>
+    </mat-tab>
+  </mat-tab-group>
 </div>

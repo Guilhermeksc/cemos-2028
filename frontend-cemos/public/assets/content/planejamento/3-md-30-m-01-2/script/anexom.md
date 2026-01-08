@@ -1,7 +1,7 @@
 Sua tarefa é ler o conteúdo do arquivo cap.md e criar um banco de questões com 1 questão por página de múltipla escolha.
 
 Cada questão deve:
-1- Ser relevante e coerente com o conteúdo do capítulo.
+1- Ser relevante e coerente com o conteúdo do Capítulo.
 2- Apresentar quatro alternativas (a, b, c, d), sendo apenas uma correta.
 3- Incluir a justificativa_resposta_certa deve, obrigatoriamente, citar explicitamente o dispositivo correspondente do texto-base, como:
 artigo, inciso ou parágrafo; ou

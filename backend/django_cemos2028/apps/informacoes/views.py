@@ -78,13 +78,13 @@ class CronologiaViewSet(viewsets.ModelViewSet):
 
 class ConceitosViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar conceitos"""
-    queryset = ConceitosModel.objects.select_related('bibliografia').all()
+    queryset = ConceitosModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = ConceitosSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'palavra_chave', 'assunto']
-    search_fields = ['titulo', 'palavra_chave', 'assunto', 'descricao', 'bibliografia__titulo']
-    ordering_fields = ['id', 'titulo', 'ano_prova', 'palavra_chave', 'assunto']
+    search_fields = ['titulo', 'palavra_chave', 'assunto__titulo', 'descricao', 'bibliografia__titulo']
+    ordering_fields = ['id', 'titulo', 'ano_prova', 'palavra_chave', 'assunto__titulo']
     ordering = ['id']
     
     def get_serializer_class(self):

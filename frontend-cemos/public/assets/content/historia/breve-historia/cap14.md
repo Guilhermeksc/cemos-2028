@@ -1,4 +1,4 @@
-# CAPÍTULO 14 UMA ARMA MUITO SECRETA (Páginas 159-165)
+# Capítulo 14 - Uma arma muito secreta
 
 ## Página 1
 

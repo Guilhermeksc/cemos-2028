@@ -1,7 +1,7 @@
 
 ## Página 36
 
-### CAPÍTULO VIII DA CONTRATAÇÃO DIRETA
+### Capítulo VIII DA CONTRATAÇÃO DIRETA
 
 ### Seção I Do Processo de Contratação Direta
 

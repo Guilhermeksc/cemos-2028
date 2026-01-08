@@ -4,7 +4,7 @@
 
 ## Página 13
 
-### CAPÍTULO I - INTRODUÇÃO
+### Capítulo I - INTRODUÇÃO
 
 1.1 Finalidade
 
@@ -24,7 +24,7 @@ Com o intuito de facilitar o entendimento da presente publicação, os principai
 
 ## Página 15
 
-### CAPÍTULO II - RELAÇÃO ENTRE LOGÍSTICA E MOBILIZAÇÃO
+### Capítulo II - RELAÇÃO ENTRE LOGÍSTICA E MOBILIZAÇÃO
 
 2.1. Introdução
 
@@ -104,7 +104,7 @@ xxxx
 
 ## Página 19
 
-### CAPÍTULO III - A MOBILIZAÇÃO NA EXPRESSÃO MILITAR DO PODER NACIONAL
+### Capítulo III - A MOBILIZAÇÃO NA EXPRESSÃO MILITAR DO PODER NACIONAL
 
 3.1. Conceituação
 
@@ -184,7 +184,7 @@ e) participação do Centro de Coordenação Logística e Mobilização (CCLM), 
 
 ## Página 23
 
-### CAPÍTULO IV - SISTEMA DE MOBILIZAÇÃO MILITAR
+### Capítulo IV - SISTEMA DE MOBILIZAÇÃO MILITAR
 
 4.1. Definição
 
@@ -207,7 +207,7 @@ O Sistema de Mobilização Militar (SISMOMIL) é o subsistema setorial do Sistem
 
 ## Página 25
 
-### CAPÍTULO V - PLANEJAMENTO DA MOBILIZAÇÃO MILITAR
+### Capítulo V - PLANEJAMENTO DA MOBILIZAÇÃO MILITAR
 
 5.1. Concepção
 
@@ -276,7 +276,7 @@ e) estimativa dos prazos para atendimento às carências de recursos não passí
 
 ## Página 29
 
-### CAPÍTULO VI - DESMOBILIZAÇÃO
+### Capítulo VI - DESMOBILIZAÇÃO
 
 6.1. Aspectos Pertinentes
 
@@ -322,7 +322,7 @@ h) retorno das indústrias militares e de interesse militar à situação anteri
 
 ## Página 31
 
-### CAPÍTULO VII - DISPOSIÇÕES FINAIS
+### Capítulo VII - DISPOSIÇÕES FINAIS
 
 7.1. Generalidades
 

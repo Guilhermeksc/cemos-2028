@@ -1,4 +1,4 @@
-# CAPÍTULO 1 - DIVISÕES LEGAIS DOS OCEANOS E DO ESPAÇO AÉREO
+# Capítulo 1 - Divisões legais dos oceanos e do espaço aéreo
 
 ## Página 11
 

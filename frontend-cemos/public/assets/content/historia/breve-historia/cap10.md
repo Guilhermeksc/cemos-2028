@@ -1,4 +1,4 @@
-# CAPÍTULO 10 UMA DEPRESSÃO MUNDIAL (Páginas 118-124)
+# Capítulo 10 - Uma depressão mundial
 
 ## Página 1
 

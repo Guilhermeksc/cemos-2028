@@ -1,4 +1,4 @@
-# Questões do capítulo 5
+# Questões do Capítulo 5
 
 ### Q1. Diferencie inflação de hiperinflação.
 

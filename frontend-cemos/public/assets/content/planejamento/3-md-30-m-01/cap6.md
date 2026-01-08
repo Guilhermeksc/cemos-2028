@@ -37,7 +37,7 @@ O Comando de Operações Aeroespaciais (COMAE) tem por missão empregar o Poder 
 
 6.2.6.1 Como Órgão Central, o COMAE é responsável pela orientação normativa dos elos do SISDABRA.
 
-6.2.6.2 Como Comando Operacional, o COMAE é um Comando Conjunto permanentemente ativado, diretamente subordinado: ao Comandante Supremo quando em situação de conflito e ao Comandante da Aeronáutica em tempo de paz. Em ambas as situações, a subordinação é via MD. Vide figura 6 no capítulo IV.
+6.2.6.2 Como Comando Operacional, o COMAE é um Comando Conjunto permanentemente ativado, diretamente subordinado: ao Comandante Supremo quando em situação de conflito e ao Comandante da Aeronáutica em tempo de paz. Em ambas as situações, a subordinação é via MD. Vide figura 6 no Capítulo IV.
 
 6.2.7 A ação de comando do COMAE, sobre os elementos alocados ao SISDABRA, se faz mediante o controle operacional, fundamentado na autoridade para empregar operacionalmente esses meios em missões ou tarefas específicas e limitadas, excluindo a autoridade logística e administrativa.
 

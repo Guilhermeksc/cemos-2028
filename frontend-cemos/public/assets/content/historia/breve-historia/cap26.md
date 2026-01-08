@@ -1,4 +1,4 @@
-# CAPÍTULO 26 A LUA DO ISLÃ BRILHA OUTRA VEZ (Páginas 293-302)
+# Capítulo 26 - A Lua do islã brilha outra vez
 
 ## Página 1
 

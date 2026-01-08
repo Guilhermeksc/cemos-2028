@@ -5,7 +5,11 @@ from django.conf import settings
 from django.db import transaction
 from django.db.models.signals import post_migrate
 from django.dispatch import receiver
-from .models import MateriaModel, BibliografiaModel, FlashCardsModel, PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
+from .models import FlashCardsModel, PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
+from django_cemos2028.apps.bibliografia.models import (
+    BibliografiaModel,
+    CapitulosBibliografiaModel,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -44,6 +48,34 @@ def _as_clean_str(v):
             except Exception:
                 pass
         return s or None
+
+
+def _get_bibliografia(row_value, ctx, row_index):
+    bibliografia_id = _as_int(row_value)
+    if bibliografia_id is None:
+        logger.warning(f"⚠️ ID de bibliografia inválido em {ctx} (linha {row_index}): {row_value}")
+        return None
+    try:
+        return BibliografiaModel.objects.get(id=bibliografia_id)
+    except BibliografiaModel.DoesNotExist:
+        logger.warning(f"⚠️ Bibliografia ID {bibliografia_id} não encontrada em {ctx} (linha {row_index})")
+        return None
+
+
+def _get_capitulo(row_value, bibliografia=None, ctx=None, row_index=None):
+    capitulo_id = _as_int(row_value)
+    if capitulo_id is None:
+        return None
+    try:
+        capitulo = CapitulosBibliografiaModel.objects.get(id=capitulo_id)
+        if bibliografia and capitulo.bibliografia_id != bibliografia.id:
+            logger.warning(
+                f"⚠️ Capítulo {capitulo_id} não pertence à bibliografia {bibliografia.id} em {ctx} (linha {row_index})"
+            )
+        return capitulo
+    except CapitulosBibliografiaModel.DoesNotExist:
+        logger.warning(f"⚠️ Capítulo ID {capitulo_id} não encontrado em {ctx} (linha {row_index})")
+        return None
 
 
 def _require_fields(row, cols, ctx, row_index=None, string_fields=None):
@@ -109,97 +141,7 @@ def load_fixtures_perguntas(sender, **kwargs):
 
     try:
         with transaction.atomic():
-            # 1. Matérias (carregar de arquivo de fixtures)
-            df_materias = load_fixture('materias.xlsx', ['id', 'materia'])
-            materias_carregadas = set()
             
-            if df_materias is not None:
-                logger.info("📄 Processando matérias do arquivo materias.xlsx...")
-                loaded_count = 0
-                for idx, row in df_materias.iterrows():
-                    if _require_fields(row, ['id', 'materia'], 'materias', idx, ['materia']):
-                        materia_id = _as_int(row.get('id'))
-                        materia_nome = _as_clean_str(row.get('materia'))
-                        
-                        if materia_id is None:
-                            logger.warning(f"⚠️ ID de matéria inválido na linha {idx}")
-                            continue
-                        
-                        if not materia_nome:
-                            logger.warning(f"⚠️ Nome de matéria vazio na linha {idx}")
-                            continue
-                        
-                        materia_obj, created = MateriaModel.objects.update_or_create(
-                            id=materia_id,
-                            defaults={
-                                'materia': materia_nome
-                            }
-                        )
-                        materias_carregadas.add(materia_nome)
-                        if created:
-                            loaded_count += 1
-                            logger.info(f"✅ Criada matéria ID {materia_id}: {materia_obj.materia}")
-                        else:
-                            logger.debug(f"ℹ️ Matéria ID {materia_id} atualizada: {materia_obj.materia}")
-                logger.info(f"📊 Total de matérias carregadas do arquivo: {loaded_count} (total processadas: {len(materias_carregadas)})")
-            else:
-                logger.info("⚠️ Arquivo materias.xlsx não encontrado. Tentando extrair matérias de bibliografias.xlsx...")
-            
-            # 2. Bibliografias (e extrair matérias se não foram carregadas de arquivo separado)
-            df_bibliografias = load_fixture('bibliografias.xlsx', ['id', 'titulo', 'autor', 'materia', 'descricao'])
-            if df_bibliografias is not None:
-                # Se não carregou matérias de arquivo separado, extrair do arquivo de bibliografias
-                if not materias_carregadas:
-                    materias_unicas = df_bibliografias['materia'].dropna().unique()
-                    logger.info("📄 Extraindo matérias do arquivo bibliografias.xlsx...")
-                    for materia_nome in materias_unicas:
-                        materia_str = _as_clean_str(materia_nome)
-                        if materia_str:
-                            materia_obj, created = MateriaModel.objects.get_or_create(
-                                materia=materia_str
-                            )
-                            if created:
-                                logger.info(f"✅ Criada matéria extraída: {materia_obj.materia}")
-            
-            # 3. Bibliografias
-            if df_bibliografias is not None:
-                logger.info("📄 Processando bibliografias...")
-                for idx, row in df_bibliografias.iterrows():
-                    if _require_fields(row, ['id', 'titulo'], 'bibliografias', idx, ['titulo', 'autor', 'materia', 'descricao']):
-                        materia_valor = row.get('materia')
-                        materia_obj = None
-                        if materia_valor is not None and not pd.isna(materia_valor):
-                            try:
-                                # Tentar buscar por ID primeiro (se for numérico)
-                                materia_id = _as_int(materia_valor)
-                                if materia_id is not None:
-                                    try:
-                                        materia_obj = MateriaModel.objects.get(id=materia_id)
-                                    except MateriaModel.DoesNotExist:
-                                        logger.warning(f"⚠️ Matéria ID '{materia_id}' não encontrada para bibliografia ID {row.get('id')}")
-                                else:
-                                    # Se não for numérico, buscar por nome
-                                    materia_nome = _as_clean_str(materia_valor)
-                                    if materia_nome:
-                                        try:
-                                            materia_obj = MateriaModel.objects.get(materia=materia_nome)
-                                        except MateriaModel.DoesNotExist:
-                                            logger.warning(f"⚠️ Matéria '{materia_nome}' não encontrada para bibliografia ID {row.get('id')}")
-                            except Exception as e:
-                                logger.warning(f"⚠️ Erro ao buscar matéria '{materia_valor}' para bibliografia ID {row.get('id')}: {e}")
-                        
-                        obj, created = BibliografiaModel.objects.update_or_create(
-                            id=_as_int(row['id']),
-                            defaults={
-                                'titulo': _as_clean_str(row['titulo']),
-                                'autor': _as_clean_str(row.get('autor')),
-                                'materia': materia_obj,
-                                'descricao': _as_clean_str(row.get('descricao'))
-                            }
-                        )
-                        if created:
-                            logger.info(f"✅ Criada bibliografia: {obj.titulo}")
-
             # 4. Flash Cards
             df = load_fixture('flashcards.xlsx', ['bibliografia_id', 'pergunta', 'resposta', 'assunto'])
             if df is not None:
@@ -211,12 +153,10 @@ def load_fixtures_perguntas(sender, **kwargs):
                                      ['pergunta', 'resposta', 'assunto']):
                         
                         try:
-                            bibliografia_id = _as_int(row['bibliografia_id'])
-                            if bibliografia_id is None:
-                                logger.warning(f"⚠️ ID de bibliografia inválido na linha {idx}")
+                            bibliografia = _get_bibliografia(row['bibliografia_id'], 'flashcards', idx)
+                            if bibliografia is None:
                                 continue
-                            
-                            bibliografia = BibliografiaModel.objects.get(id=bibliografia_id)
+                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'flashcards', idx)
                             
                             # Converter prova para boolean (aceita múltiplos formatos)
                             prova_val = row.get('prova', False)
@@ -247,7 +187,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
                                     'resposta': _as_clean_str(row['resposta']),
-                                    'assunto': _as_clean_str(row.get('assunto')),
+                                    'assunto': assunto,
                                     'prova': prova_bool,
                                     'ano': _as_int(row.get('ano')),
                                     'caveira': caveira_bool
@@ -256,8 +196,6 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criado flash card: {obj.pergunta[:50]}...")
-                        except BibliografiaModel.DoesNotExist:
-                            logger.warning(f"⚠️ Bibliografia ID {row.get('bibliografia_id')} não encontrada (linha {idx})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar flash card (linha {idx}): {e}")
                 
@@ -265,28 +203,32 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 5. Perguntas Múltipla Escolha
             df = load_fixture('perguntas_multipla.xlsx', [
-                'bibliografia_titulo', 'paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 
+                'bibliografia_id', 'paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 
                 'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas múltipla escolha...")
                 loaded_count = 0
                 for idx, row in df.iterrows():
-                    if _require_fields(row, ['bibliografia_titulo', 'pergunta', 'alternativa_a', 'alternativa_b', 
-                                           'alternativa_c', 'alternativa_d', 'resposta_correta'], 
-                                     'perguntas_multipla', idx, 
-                                     ['bibliografia_titulo', 'paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 
-                                      'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa']):
-                        
+                    if _require_fields(
+                        row,
+                        ['bibliografia_id', 'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta'],
+                        'perguntas_multipla',
+                        idx,
+                        ['paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa']
+                    ):
                         try:
-                            bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
+                            bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_multipla', idx)
+                            if bibliografia is None:
+                                continue
+                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'perguntas_multipla', idx)
                             
                             obj, created = PerguntaMultiplaModel.objects.update_or_create(
                                 bibliografia=bibliografia,
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
                                     'paginas': _as_clean_str(row.get('paginas')),
-                                    'assunto': _as_clean_str(row.get('assunto')),
+                                    'assunto': assunto,
                                     'alternativa_a': _as_clean_str(row['alternativa_a']),
                                     'alternativa_b': _as_clean_str(row['alternativa_b']),
                                     'alternativa_c': _as_clean_str(row['alternativa_c']),
@@ -300,8 +242,6 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criada pergunta múltipla: {obj.pergunta[:50]}...")
-                        except BibliografiaModel.DoesNotExist:
-                            logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']} (linha {idx})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta múltipla (linha {idx}): {e}")
                 
@@ -309,23 +249,29 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 6. Perguntas Verdadeiro/Falso
             df = load_fixture('perguntas_vf.xlsx', [
-                'bibliografia_titulo', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
+                'bibliografia_id', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas verdadeiro/falso...")
                 loaded_count = 0
                 for idx, row in df.iterrows():
-                    if _require_fields(row, ['bibliografia_titulo', 'afirmacao_verdadeira', 'afirmacao_falsa'], 
-                                     'perguntas_vf', idx, 
-                                     ['bibliografia_titulo', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']):
+                    if _require_fields(
+                        row,
+                        ['bibliografia_id', 'afirmacao_verdadeira', 'afirmacao_falsa'],
+                        'perguntas_vf',
+                        idx,
+                        ['paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']
+                    ):
                         
                         try:
-                            bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
+                            bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_vf', idx)
+                            if bibliografia is None:
+                                continue
+                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'perguntas_vf', idx)
                             
                             # Gerar pergunta padrão se não existir no Excel
                             pergunta_text = _as_clean_str(row.get('pergunta'))
-                            if not pergunta_text:
-                                assunto_text = _as_clean_str(row.get('assunto')) or 'Assunto não especificado'
+                            assunto_text = assunto.titulo if assunto else 'Assunto não especificado'
                             
                             # Usar uma combinação única para identificar a pergunta
                             lookup_key = {
@@ -337,9 +283,9 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 bibliografia=bibliografia,
                                 afirmacao_verdadeira=_as_clean_str(row['afirmacao_verdadeira']),
                                 defaults={
-                                    'pergunta': assunto_text,
+                                    'pergunta': pergunta_text or assunto_text,
                                     'paginas': _as_clean_str(row.get('paginas')),
-                                    'assunto': _as_clean_str(row.get('assunto')),
+                                    'assunto': assunto,
                                     'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),
                                     'justificativa_resposta_certa': _as_clean_str(row.get('justificativa_resposta_certa', '')),
                                     'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
@@ -349,8 +295,6 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criada pergunta V/F: {obj.pergunta[:50]}...")
-                        except BibliografiaModel.DoesNotExist:
-                            logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']} (linha {idx})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta V/F (linha {idx}): {e}")
                 
@@ -358,18 +302,25 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 7. Perguntas de Correlação
             df = load_fixture('perguntas_correlacao.xlsx', [
-                'bibliografia_titulo', 'paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
+                'bibliografia_id', 'paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas de correlação...")
                 loaded_count = 0
                 for idx, row in df.iterrows():
-                    if _require_fields(row, ['bibliografia_titulo', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta'], 
-                                     'perguntas_correlacao', idx, 
-                                     ['bibliografia_titulo', 'paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa']):
+                    if _require_fields(
+                        row,
+                        ['bibliografia_id', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta'],
+                        'perguntas_correlacao',
+                        idx,
+                        ['paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa']
+                    ):
                         
                         try:
-                            bibliografia = BibliografiaModel.objects.get(titulo=_as_clean_str(row['bibliografia_titulo']))
+                            bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_correlacao', idx)
+                            if bibliografia is None:
+                                continue
+                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'perguntas_correlacao', idx)
                             
                             # Processar colunas (assumindo que vêm como strings separadas por vírgula ou JSON)
                             coluna_a_str = _as_clean_str(row['coluna_a'])
@@ -392,7 +343,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 pergunta=_as_clean_str(row['pergunta']),
                                 defaults={
                                     'paginas': _as_clean_str(row.get('paginas')),
-                                    'assunto': _as_clean_str(row.get('assunto')),
+                                    'assunto': assunto,
                                     'coluna_a': coluna_a,
                                     'coluna_b': coluna_b,
                                     'resposta_correta': resposta_correta,
@@ -404,8 +355,6 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criada pergunta correlação: {obj.pergunta[:50]}...")
-                        except BibliografiaModel.DoesNotExist:
-                            logger.warning(f"⚠️ Bibliografia não encontrada: {row['bibliografia_titulo']} (linha {idx})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta correlação (linha {idx}): {e}")
                 

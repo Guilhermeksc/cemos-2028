@@ -1,4 +1,4 @@
-# CAPÍTULO 12 - PESSOAL NÃO COMBATENTE
+# Capítulo 12 - Pessoal não-combatente
 
 ## Página 149
 

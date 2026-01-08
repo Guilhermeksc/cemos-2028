@@ -4,7 +4,7 @@
 
 Estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e de sistemas de defesa; dispõe sobre regras de incentivo à área estratégica de defesa; altera a Lei nº 12.249, de 11 de junho de 2010; e dá outras providências.
 
-### CAPÍTULO I - DISPOSIÇÕES PRELIMINARES
+### Capítulo I - DISPOSIÇÕES PRELIMINARES
 
 Art. 1º Esta Lei estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e de sistemas de defesa e dispõe sobre regras de incentivo à área estratégica de defesa.
 
@@ -66,7 +66,7 @@ Parágrafo único. As EED serão submetidas à avaliação das condições previ
 
 ## Página 3
 
-### CAPÍTULO I-A - DO CREDENCIAMENTO E DO DESCREDENCIAMENTO
+### Capítulo I-A - DO CREDENCIAMENTO E DO DESCREDENCIAMENTO
 
 Art. 2º-A. O credenciamento e o descredenciamento de pessoa jurídica como EED observarão procedimento estabelecido em ato do Ministro de Estado da Defesa. 
 
@@ -100,7 +100,7 @@ II - cancelará o registro do ato declarado nulo nos termos do inciso III do cap
 
 ## Página 4
 
-### CAPÍTULO II - DAS COMPRAS, DAS CONTRATAÇÕES E DO DESENVOLVIMENTO DE PRODUTOS E DE SISTEMAS DE DEFESA
+### Capítulo II - DAS COMPRAS, DAS CONTRATAÇÕES E DO DESENVOLVIMENTO DE PRODUTOS E DE SISTEMAS DE DEFESA
 
 Art. 3º As compras e contratações de Prode ou SD, e do seu desenvolvimento, observarão o disposto nesta Lei.
 
@@ -154,7 +154,7 @@ Art. 5º As contratações de Prode ou SD, e do seu desenvolvimento, poderão se
 
 ## Página 6
 
-### CAPÍTULO III - DO INCENTIVO À ÁREA ESTRATÉGICA DE DEFESA
+### Capítulo III - DO INCENTIVO À ÁREA ESTRATÉGICA DE DEFESA
 
 Art. 6º As EED terão acesso a regimes especiais tributários e financiamentos para programas, projetos e ações relativos, respectivamente, aos bens e serviços de defesa nacional de que trata o inciso I do caput do art. 8º e a PED, nos termos da lei.
 
@@ -264,7 +264,7 @@ Art. 11. Os benefícios de que tratam os arts. 9º , 9º-A, 9º-B e 10 poderão 
 
 Art. 12. As operações de exportação de Prode realizadas pelas EED poderão receber a cobertura de garantia do Seguro de Crédito à Exportação, por intermédio do Fundo de Garantia à Exportação - FGE, a que se refere a Lei nº 9.818, de 23 de agosto de 1999, compreendidas as garantias prestadas pela União em operações de seguro de crédito interno para a produção de PED.
 
-### CAPÍTULO IV - DISPOSIÇÕES FINAIS
+### Capítulo IV - DISPOSIÇÕES FINAIS
 
 Art. 13. O disposto nesta Lei não exclui o controle e as restrições à importação, à exportação, à fabricação, à comercialização e à utilização de produtos controlados.
 
@@ -276,7 +276,7 @@ Art. 16. O Capítulo V da Lei nº 12.249, de 11 de junho de 2010, passa a vigora
 
 ## Página 11
 
-        “CAPÍTULO V - DO REGIME ESPECIAL PARA A INDÚSTRIA AEROESPACIALBRASILEIRA - RETAERO” (NR)
+        “Capítulo V - DO REGIME ESPECIAL PARA A INDÚSTRIA AEROESPACIALBRASILEIRA - RETAERO” (NR)
 
         “Art. 29. Fica instituído o Regime Especial para a Indústria Aeroespacial Brasileira - RETAERO, nos termos desta Lei.” (NR)
 

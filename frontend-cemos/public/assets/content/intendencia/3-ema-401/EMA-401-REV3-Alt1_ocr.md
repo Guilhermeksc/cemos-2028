@@ -56,11 +56,11 @@ OSTENSIVO EMA-401
 
 ÍNDICE
 
-[INES OD) O [o (o IV CAPÍTULO 1. DISPOSIÇÕES GERAIS
+[INES OD) O [o (o IV Capítulo 1. DISPOSIÇÕES GERAIS
 
 1.1. CONCEITUAÇÃO.................css sis rsss sreesereeeersanerecerseanresaresenareaaere ear eanteeaeersssananeasa 1-1 é MD) | | [6/0 ) e PR 1-3 1.3. AMPLITUDE DA MOBILIZAÇÃO................ccccsrssereeeeeeeeeeeereseeresresenereeaneeessssananeess 1-5 1.4. FASES DA MOBILIZAÇÃO................cccisssreereresereeerererereeseeseaneeeaneeeresesaneeressssanantss 1-6 1.5. A MOBILIZAÇÃO NAS EXPRESSÕES DO PODER NACIONAL..............cceeeeseeseeseess 1-9 1.6. A MOBILIZAÇÃO NA ÁREA DE SEGURANÇA............ccccceseeeeeeereseesereresaeessseeeresssa 1-15
 
-CAPÍTULO 2. O SISTEMA DE MOBILIZAÇÃO MARÍTIMA - SIMOMAR
+Capítulo 2. O SISTEMA DE MOBILIZAÇÃO MARÍTIMA - SIMOMAR
 
 2.1. 2.2. 2.3. 2.4. 2.5. 2.6. 2.7. 2.8. 2.9. 2.10.
 
@@ -74,11 +74,11 @@ OSTENSIVO -H- REV.3
 
 OSTENSIVO EMA-401
 
-CAPÍTULO 3. DESMOBILIZAÇÃO
+Capítulo 3. DESMOBILIZAÇÃO
 
 3.1. FASES DA DESMOBILIZAÇÃO................ceciceeeeereereereereeeeereeeerererererereeeecerenerenerenes 3-1 3.2. A DESMOBILIZAÇÃO NAS EXPRESSÕES DO PODER NACIONAL E NA ÁREA DE SITU [o VE 3-2 3.3. A DESMOBILIZAÇÃO MARÍTIMA...............ecccciereeeeereereeereereereeereereereeereeereseereranes 3-3
 
-CAPÍTULO 4. PLANEJAMENTO DA MOBILIZAÇÃO MARÍTIMA
+Capítulo 4. PLANEJAMENTO DA MOBILIZAÇÃO MARÍTIMA
 
 4.1. CONSIDERAÇÕES INICIAIS...............ccece eee erereeereerererecreererereereereeeereseceeseceeseereaao 4-1 4.2. ETAPAS DO PLANEJAMENTO DA MOBILIZAÇÃO MARÍTIMA................cccceeeeeereees 4-2 4.3. LISTA DE NECESSIDADES..........................ssress esses neces rece erreea serena rrenan erema ema rencenaraaa 4-4 4.4. CONFRONTO NECESSIDADES X DISPONIBILIDADE................................c.sssssosscess... 4-7 4.5. PLANO DE MOBILIZAÇÃO MARÍTIMA..............ecceceecceeerereeeeeereereeeerereceeseeresererenes 4-7 4.6. A REALIMENTAÇÃO DO SISTEMA...............ecceccecceeceeereererereereeeeeereereeeeeereseneeseneesa 4-10
 
@@ -100,7 +100,7 @@ orientadora no desenvolvimento de suas atribuições.
 
 2. DESCRIÇÃO
 
-Esta publicação divide-se em quatro capítulos: o Capítulo 1 apresenta conceitos e definições da Mobilização Nacional, detalha as fases da Mobilização e descreve a Mobilização nas Expressões do Poder Nacional; o Capítulo 2 descreve a estrutura do SIMOMAR e a competência dos seus órgãos componentes; o Capítulo 3 apresenta conceitos sobre a Desmobilização nas Expressões do Poder Nacional e sobre a Desmobilização Marítima; e o
+Esta publicação divide-se em quatro Capítulos: o Capítulo 1 apresenta conceitos e definições da Mobilização Nacional, detalha as fases da Mobilização e descreve a Mobilização nas Expressões do Poder Nacional; o Capítulo 2 descreve a estrutura do SIMOMAR e a competência dos seus órgãos componentes; o Capítulo 3 apresenta conceitos sobre a Desmobilização nas Expressões do Poder Nacional e sobre a Desmobilização Marítima; e o
 
 Capítulo 4 estabelece as diretrizes do processo de planejamento da Mobilização Marítima.
 
@@ -108,17 +108,17 @@ Capítulo 4 estabelece as diretrizes do processo de planejamento da Mobilizaçã
 
 Esta publicação é a terceira revisão do EMA-401 — Manual de Mobilização Marítima. Dentre as modificações implementadas, destacam-se:
 
-a) alteração na estrutura com reorganização da sequência de capítulos da publicação;
+a) alteração na estrutura com reorganização da sequência de Capítulos da publicação;
 
 b) inclusão dos conceitos previstos no Manual de Mobilização Militar — MD41-M-02 (22 edição/2022);
 
-c) inclusão de capítulo baseado no Manual para o Planejamento da Mobilização Militar — MD41-M-03 (12 edição/2021);
+c) inclusão de Capítulo baseado no Manual para o Planejamento da Mobilização Militar — MD41-M-03 (12 edição/2021);
 
-d) inclusão de capítulo dedicado, exclusivamente, à Desmobilização;
+d) inclusão de Capítulo dedicado, exclusivamente, à Desmobilização;
 
-e) exclusão do capítulo que tratava do Sistema Nacional de Mobilização (SINAMOB);
+e) exclusão do Capítulo que tratava do Sistema Nacional de Mobilização (SINAMOB);
 
-f) exclusão do capítulo que tratava do Sistema de Mobilização Militar (SISMOMIL); e
+f) exclusão do Capítulo que tratava do Sistema de Mobilização Militar (SISMOMIL); e
 
 g) distribuição das competências do SIMOMAR por Órgão de Direção Setorial (ODS).
 
@@ -208,7 +208,7 @@ INTENCIONALMENTE EM BRANCO
 
 OSTENSIVO EMA-401
 
-CAPÍTULO 1 DISPOSIÇÕES GERAIS
+Capítulo 1 DISPOSIÇÕES GERAIS
 
 1.1. CONCEITUAÇÃO
 
@@ -728,7 +728,7 @@ OSTENSIVO - 1-16 - REV.3
 
 OSTENSIVO EMA-401
 
-CAPÍTULO 2
+Capítulo 2
 
 O SISTEMA DE MOBILIZAÇÃO MARÍTIMA - SIMOMAR
 
@@ -1110,7 +1110,7 @@ OSTENSIVO -2-12 - REV.3
 
 OSTENSIVO EMA-401
 
-CAPÍTULO 3
+Capítulo 3
 
 DESMOBILIZAÇÃO
 
@@ -1210,7 +1210,7 @@ OSTENSIVO -3-4- REV.3
 
 OSTENSIVO EMA-401
 
-CAPÍTULO 4 PLANEJAMENTO DA MOBILIZAÇÃO MARÍTIMA
+Capítulo 4 PLANEJAMENTO DA MOBILIZAÇÃO MARÍTIMA
 
 4.1. CONSIDERAÇÕES INICIAIS
 
@@ -1434,7 +1434,7 @@ carência. Todas as possíveis soluções encontradas deverão ser lançadas no 
 
 Como soluções diferentes, naturalmente, terão custos diferentes, no campo “custo estimado” deverão constar os custos estimados de todas as soluções propostas. Para a apresentação do custo total da LC, deverá ser apresentada a faixa de preço que englobe o custo mínimo e o máximo.
 
-Cada ODS que tiver carências identificadas deverá confeccionar um Plano de Mobilização do setor, seguindo as orientações e o Modelo para Planos de Mobilização das Forças Singulares, que consta no capítulo Ill do manual MD41-M-03, com especial atenção às sugestões de ações a serem planejadas para as Fases de Preparo e Execução da Mobilização e para a Desmobilização, de forma a possibilitar que as soluções propostas para as carências possam ser concretizadas em caso de necessidade. A LC deverá ser um anexo do Plano de Mobilização do setor.
+Cada ODS que tiver carências identificadas deverá confeccionar um Plano de Mobilização do setor, seguindo as orientações e o Modelo para Planos de Mobilização das Forças Singulares, que consta no Capítulo Ill do manual MD41-M-03, com especial atenção às sugestões de ações a serem planejadas para as Fases de Preparo e Execução da Mobilização e para a Desmobilização, de forma a possibilitar que as soluções propostas para as carências possam ser concretizadas em caso de necessidade. A LC deverá ser um anexo do Plano de Mobilização do setor.
 
 Para a elaboração das sugestões de ações a serem planejadas para a Fase de Preparo da Mobilização, as seguintes possibilidades podem ser avaliadas, dentre outras:
 

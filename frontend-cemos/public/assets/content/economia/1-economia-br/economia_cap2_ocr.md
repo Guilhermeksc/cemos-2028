@@ -8,7 +8,7 @@ Assim, para que as análises macroeconômicas pudessem avançar, foi necessário
 
 *[1] Deve ser destacada também a contribuição de Wassily W. Leontief (1905-1989), Prêmio Nobel 1973, russo naturalizado norte-americano, que criou a Matriz Insumo-Produto ou Matriz de Relações Intersetoriais, sistema contábil de dupla entrada, no qual são consideradas tanto as vendas como as compras de cada setor para os demais setores. Enquanto o Sistema de Contas Nacionais considera apenas os bens e serviços finais, a Matriz de Leontief mede tanto as transações com bens e serviços finais, como bens e serviços intermediários, que são os insumos que entram na composição dos bens e serviços finais.*
 
-Neste capítulo, serão apresentados os principais agregados macroeconômicos e como mensurálos. Os conceitos básicos trabalhados são os de produto, renda e dispêndio. Espera-se que ao final do capítulo o leitor entenda como se chega a esses valores e os itens que os compõem.
+Neste Capítulo, serão apresentados os principais agregados macroeconômicos e como mensurálos. Os conceitos básicos trabalhados são os de produto, renda e dispêndio. Espera-se que ao final do Capítulo o leitor entenda como se chega a esses valores e os itens que os compõem.
 
 ### 2.1 DEFINIÇÃO DE PRODUTO
 
@@ -529,7 +529,7 @@ Fonte: dados básicos do Banco Mundial.
 
 ### 2.8 CONSIDERAÇÕES FINAIS
 
-O objetivo deste capítulo era apresentar ao leitor os principais agregados macroeconômicos, formas de medi-los e os diversos atores envolvidos no funcionamento da economia (famílias, empresas, governo e resto do mundo). Essa conceituação é necessária para que o leitor se familiarize com alguns termos e conceitos econômicos de modo que possa, nos próximos capítulos, entender como a economia se comporta e analisar a evolução da economia brasileira.
+O objetivo deste Capítulo era apresentar ao leitor os principais agregados macroeconômicos, formas de medi-los e os diversos atores envolvidos no funcionamento da economia (famílias, empresas, governo e resto do mundo). Essa conceituação é necessária para que o leitor se familiarize com alguns termos e conceitos econômicos de modo que possa, nos próximos Capítulos, entender como a economia se comporta e analisar a evolução da economia brasileira.
 
 ## Página 19
 

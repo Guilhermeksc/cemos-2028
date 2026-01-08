@@ -1,4 +1,4 @@
-# CAPÍTULO 4 - FUNÇÕES LOGÍSTICAS
+# Capítulo 4 - FUNÇÕES LOGÍSTICAS
 
 ## Página 1
 
@@ -139,7 +139,7 @@ a) Levantamento das Necessidades de Manutenção
 
 O levantamento das necessidades visa a determinar as carências de instalações, pessoal e material para o apoio de manutenção em uma situação específica.  
 
-O planejamento e a execução de forma coordenada dessas tarefas compõem o Apoio Logístico Integrado (ALI), descrito no capítulo 6.
+O planejamento e a execução de forma coordenada dessas tarefas compõem o Apoio Logístico Integrado (ALI), descrito no Capítulo 6.
 
 b) Manutenção Preventiva
 

@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from django_cemos2028.apps.perguntas.models import BibliografiaModel
 from .models import (
     PresidentesModel,
     FilosofosModel,
@@ -44,12 +43,13 @@ class CronologiaSerializer(serializers.ModelSerializer):
 
 class ConceitosSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
+    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = ConceitosModel
         fields = [
             'id', 'bibliografia', 'bibliografia_titulo', 'titulo', 'palavra_chave', 'assunto',
-            'descricao', 'caiu_em_prova', 'ano_prova'
+            'assunto_titulo', 'descricao', 'caiu_em_prova', 'ano_prova'
         ]
 
 

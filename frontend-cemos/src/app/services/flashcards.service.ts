@@ -7,7 +7,8 @@ import {
   FlashCards,
   FlashCardsFilters,
   PaginatedResponse,
-  EstatisticasFlashCards
+  EstatisticasFlashCards,
+  AssuntoOption
 } from '../interfaces/perguntas.interface';
 
 @Injectable({
@@ -65,10 +66,10 @@ export class FlashCardsService {
   }
 
   /**
-   * Busca todos os flashcards de uma bibliografia específica
+   * Busca todos os flashcards de uma bibliografia específica usando filtros
    */
   getFlashCardsByBibliografia(id: number): Observable<FlashCards[]> {
-    return this.http.get<FlashCards[]>(`${this.apiUrl}/bibliografias/${id}/flashcards/`);
+    return this.getAllFlashCards({ bibliografia: id });
   }
 
   /**
@@ -140,10 +141,10 @@ export class FlashCardsService {
   }
 
   /**
-   * Busca TODOS os flashcards por assunto usando paginação completa
+   * Busca TODOS os flashcards vinculados a um capítulo/assunto específico
    */
-  getFlashCardsByAssunto(assunto: string): Observable<FlashCards[]> {
-    return this.getAllFlashCards({ assunto });
+  getFlashCardsByAssunto(assuntoId: number): Observable<FlashCards[]> {
+    return this.getAllFlashCards({ assunto: assuntoId });
   }
 
   /**
@@ -154,15 +155,23 @@ export class FlashCardsService {
   }
 
   /**
-   * Retorna lista única de assuntos
+   * Retorna lista única de assuntos (capítulos) disponíveis nos flashcards
    */
-  getAssuntos(): Observable<string[]> {
+  getAssuntos(): Observable<AssuntoOption[]> {
     return this.getAllFlashCards().pipe(
       map(flashcards => {
-        const assuntos = flashcards
-          .map(f => f.assunto)
-          .filter((assunto): assunto is string => !!assunto);
-        return [...new Set(assuntos)].sort();
+        const assuntos = new Map<number, string>();
+
+        flashcards.forEach(f => {
+          if (typeof f.assunto === 'number') {
+            const titulo = f.assunto_titulo ?? `Assunto ${f.assunto}`;
+            assuntos.set(f.assunto, titulo);
+          }
+        });
+
+        return Array.from(assuntos.entries())
+          .map(([id, titulo]) => ({ id, titulo }))
+          .sort((a, b) => a.titulo.localeCompare(b.titulo));
       })
     );
   }
@@ -206,8 +215,9 @@ export class FlashCardsService {
 
   private groupByAssunto(flashcards: FlashCards[]): { [assunto: string]: number } {
     return flashcards.reduce((acc, flashcard) => {
-      const assunto = flashcard.assunto || 'Sem Assunto';
-      acc[assunto] = (acc[assunto] || 0) + 1;
+      const label = flashcard.assunto_titulo
+        || (typeof flashcard.assunto === 'number' ? `Assunto ${flashcard.assunto}` : 'Sem Assunto');
+      acc[label] = (acc[label] || 0) + 1;
       return acc;
     }, {} as { [assunto: string]: number });
   }

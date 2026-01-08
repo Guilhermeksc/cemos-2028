@@ -2,7 +2,7 @@
 
 Pág 43
 
-Nos capítulos anteriores analisamos, à luz da modernidade, as con­tribuições da Geografia e da Política na integração do pensamento geopolítico. Agora, vamos apreciar a interação da ciência da Histó­ria modernizada na formulação da Geopolítica.
+Nos Capítulos anteriores analisamos, à luz da modernidade, as con­tribuições da Geografia e da Política na integração do pensamento geopolítico. Agora, vamos apreciar a interação da ciência da Histó­ria modernizada na formulação da Geopolítica.
 
 Quase todos os historiadores reconhecem no italiano **Giovanni Vico**📌(1668-1744) o principal inovador dos estudos da ciência histórica.
 

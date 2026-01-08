@@ -44,7 +44,7 @@ Speaker 2: Número de NAes, encouraçados, escoltas, melhor radar, direções de
 Speaker 1: Qual o gargalo japonês em 1944?
 Speaker 2: Falta de petróleo, perdas na marinha mercante pelos submarinos dos Estados Unidos e dificuldade de formar/treinar pilotos.
 
-TÓPICO: GLOSSÁRIO NAVAL (NO CAPÍTULO)
+TÓPICO: GLOSSÁRIO NAVAL (NO Capítulo)
 Speaker 1: Qual a diferença entre NAe, NAeL e NAeE?
 Speaker 2: NAe (100 aviões, veloz), NAeL (50 aviões, veloz) e NAeE (20 aviões, lento, convertido de mercante, para escoltas/transporte).
 
@@ -214,7 +214,7 @@ Speaker 2: Mostrou a tenacidade japonesa; Iwo Jima e Okinawa custaram enormes pe
 Speaker 1: O que se destaca sobre o pessoal americano em Leyte?
 Speaker 2: Resistência e senso de dever, sem mística de “bushidô” — exemplo máximo: a defesa do Taffy 3 em Samar.
 
-Speaker 1: Qual é a leitura estratégica final do capítulo?
+Speaker 1: Qual é a leitura estratégica final do Capítulo?
 Speaker 2: A superioridade industrial-tecnológica dos Estados Unidos impôs um “crescendo” de derrotas ao Japão; Leyte selou a destruição da iniciativa naval nipônica e abriu caminho direto à derrota final.
 
 Speaker 1: Quem comandou a reconstrução do Japão e em que direção?

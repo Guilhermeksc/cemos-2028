@@ -1,7 +1,7 @@
 
 ## Página 53
 
-# CAPÍTULO VIII - Desmobilização militar
+# Capítulo VIII - Desmobilização militar
 
 ### 8.1 Considerações Iniciais
 
@@ -79,7 +79,7 @@ i) aproveitamento, nos Quadros da Ativa das FA, do pessoal mobilizado participan
 
 ## Página 55
 
-### CAPÍTULO IX - DISPOSIÇÕES FINAIS
+### Capítulo IX - DISPOSIÇÕES FINAIS
 
 9.1 O assunto Mobilização cresce em importância para a garantia da Soberania Nacional, pois é uma ferramenta que, em função do seu caráter permanente e proativo, é capaz de contribuir para a preservação do País, com todo o seu secular patrimônio, assegurando o uso do mar, da terra e do espaço aéreo na defesa dos interesses nacionais. Portanto, planejar a Mobilização Militar torna-se imperioso para a segurança do País.
 

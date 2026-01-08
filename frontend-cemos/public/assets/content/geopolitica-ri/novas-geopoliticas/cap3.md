@@ -34,7 +34,7 @@ Pois a História, a progressão direcional da evolução humana, essa sim teria 
 
 Não seriam apenas os acontecimentos de 1989-1991 — isto é, a crise do “mundo socialista” — que comprovariam a chegada da História ao seu destino, mas também os séculos anteriores. Até a ciência moderna, na visão de Fukuyama, “parece ditar uma evolução universal em direção ao capitalismo”⁹.
 
-Num capítulo intitulado “A revolução liberal mundial”, ele faz um levantamento sobre quantos Estados adotam a democracia liberal: seriam somente três em 1790, 13 em 1940, trinta em 1975 e 61 em 1990; na década de 1970 as ditaduras foram derrubadas do poder na Europa, África e América Latina, em 1986 a ditadura Marcos foi derrubada nas Filipinas e nesse mesmo ano o general Shun deixava o poder na Coreia do Sul; isso tudo mostraria que os regimes autoritários foram alijados pela ideia de democracia¹⁰.
+Num Capítulo intitulado “A revolução liberal mundial”, ele faz um levantamento sobre quantos Estados adotam a democracia liberal: seriam somente três em 1790, 13 em 1940, trinta em 1975 e 61 em 1990; na década de 1970 as ditaduras foram derrubadas do poder na Europa, África e América Latina, em 1986 a ditadura Marcos foi derrubada nas Filipinas e nesse mesmo ano o general Shun deixava o poder na Coreia do Sul; isso tudo mostraria que os regimes autoritários foram alijados pela ideia de democracia¹⁰.
 
 Como o “desejo de reconhecimento” seria a força motora da História, segundo a dialética do senhor e do escravo de Hegel, a guerra também seria basicamente ocasionada pelo desejo de reconhecimento e, com a universalização do liberalismo, “um mundo feito de democracias liberais teria então menor incentivo para as guerras”¹¹.
 

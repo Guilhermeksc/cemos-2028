@@ -4,7 +4,7 @@
 
 Promulga a Carta das Nações Unidas, da qual faz parte integrante o anexo Estatuto da Corte Internacional de Justiça, assinada em **São Francisco, a 26 de junho de 1945**, por ocasião da Conferência de Organização Internacional das Nações Unidas.
 
-## CAPÍTULO I - PROPÓSITOS E PRINCÍPIOS
+## Capítulo I - PROPÓSITOS E PRINCÍPIOS
 
 Artigo 1. Os propósitos das Nações unidas são:
 
@@ -66,7 +66,7 @@ Artigo 27. 1. Cada membro do Conselho de Segurança terá um voto.
 
 ## Página 3
 
-## CAPÍTULO VI - SOLUÇÃO PACÍFICA DE CONTROVÉRSIAS
+## Capítulo VI - SOLUÇÃO PACÍFICA DE CONTROVÉRSIAS
 
 Artigo 33. 1. As partes em uma controvérsia, que possa vir a constituir uma ameaça à paz e à segurança internacionais, procurarão, antes de tudo, chegar a uma solução por negociação, inquérito, mediação, conciliação, arbitragem, solução judicial, recurso a entidades ou acordos regionais, ou a qualquer outro meio pacífico à sua escolha.
 
@@ -76,7 +76,7 @@ Artigo 34. O Conselho de Segurança poderá investigar sobre qualquer controvér
 
 ## Página 4
 
-## CAPÍTULO VII - AÇÃO RELATIVA A AMEAÇAS À PAZ, RUPTURA DA PAZ E ATOS DE AGRESSÃO
+## Capítulo VII - AÇÃO RELATIVA A AMEAÇAS À PAZ, RUPTURA DA PAZ E ATOS DE AGRESSÃO
 
 Artigo 39. O Conselho de Segurança determinará a existência de qualquer ameaça à paz, ruptura da paz ou ato de agressão, e fará recomendações ou decidirá que medidas deverão ser tomadas de acordo com os Artigos 41 e 42, a fim de manter ou restabelecer a paz e a segurança internacionais.
 

@@ -3,7 +3,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
-from django.db.models import Q, Count
+from django.db.models import Q, Count, F
 from .models import (
     BibliografiaModel,
     FlashCardsModel,
@@ -14,8 +14,7 @@ from .models import (
     QuestaoErradaAnonima
 )
 from .serializers import (
-    BibliografiaSerializer,
-    BibliografiaCreateUpdateSerializer,
+
     FlashCardsSerializer,
     FlashCardsCreateUpdateSerializer,
     PerguntaMultiplaSerializer,
@@ -30,96 +29,14 @@ from .serializers import (
     QuestaoErradaAnonimaSerializer
 )
 
-
-class BibliografiaViewSet(viewsets.ModelViewSet):
-    """ViewSet para gerenciar bibliografias"""
-    queryset = BibliografiaModel.objects.all()
-    serializer_class = BibliografiaSerializer
-    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['autor', 'materia']
-    search_fields = ['titulo', 'autor', 'materia__materia', 'descricao']
-    ordering_fields = ['id', 'titulo', 'autor', 'materia']
-    ordering = ['id']
-    
-    def get_serializer_class(self):
-        if self.action in ['create', 'update', 'partial_update']:
-            return BibliografiaCreateUpdateSerializer
-        return BibliografiaSerializer
-    
-    @action(detail=True, methods=['get'])
-    def perguntas(self, request, pk=None):
-        """Retorna todas as perguntas de uma bibliografia"""
-        bibliografia = self.get_object()
-        perguntas = []
-        
-        # Buscar perguntas múltipla escolha
-        multiplas = PerguntaMultiplaModel.objects.filter(bibliografia=bibliografia)
-        for pergunta in multiplas:
-            perguntas.append({
-                'id': pergunta.id,
-                'tipo': pergunta.tipo,
-                'tipo_display': pergunta.get_tipo_display(),
-                'bibliografia_titulo': pergunta.bibliografia.titulo,
-                'pergunta': pergunta.pergunta,
-                'paginas': pergunta.paginas,
-                'assunto': pergunta.assunto,
-                'caiu_em_prova': pergunta.caiu_em_prova,
-                'ano_prova': pergunta.ano_prova
-            })
-        
-        # Buscar perguntas V/F
-        vfs = PerguntaVFModel.objects.filter(bibliografia=bibliografia)
-        for pergunta in vfs:
-            perguntas.append({
-                'id': pergunta.id,
-                'tipo': pergunta.tipo,
-                'tipo_display': pergunta.get_tipo_display(),
-                'bibliografia_titulo': pergunta.bibliografia.titulo,
-                'pergunta': pergunta.pergunta,
-                'paginas': pergunta.paginas,
-                'assunto': pergunta.assunto,
-                'caiu_em_prova': pergunta.caiu_em_prova,
-                'ano_prova': pergunta.ano_prova
-            })
-        
-        # Buscar perguntas de correlação
-        correlacoes = PerguntaCorrelacaoModel.objects.filter(bibliografia=bibliografia)
-        for pergunta in correlacoes:
-            perguntas.append({
-                'id': pergunta.id,
-                'tipo': pergunta.tipo,
-                'tipo_display': pergunta.get_tipo_display(),
-                'bibliografia_titulo': pergunta.bibliografia.titulo,
-                'pergunta': pergunta.pergunta,
-                'paginas': pergunta.paginas,
-                'assunto': pergunta.assunto,
-                'caiu_em_prova': pergunta.caiu_em_prova,
-                'ano_prova': pergunta.ano_prova
-            })
-        
-        # Ordenar por ID
-        perguntas.sort(key=lambda x: x['id'])
-        
-        serializer = PerguntaResumoSerializer(perguntas, many=True)
-        return Response(serializer.data)
-    
-    @action(detail=True, methods=['get'])
-    def flashcards(self, request, pk=None):
-        """Retorna todos os flashcards de uma bibliografia"""
-        bibliografia = self.get_object()
-        flashcards = FlashCardsModel.objects.filter(bibliografia=bibliografia).order_by('id')
-        serializer = FlashCardsSerializer(flashcards, many=True)
-        return Response(serializer.data)
-
-
 class FlashCardsViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar flash cards"""
-    queryset = FlashCardsModel.objects.select_related('bibliografia').all()
+    queryset = FlashCardsModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = FlashCardsSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'assunto', 'prova', 'ano', 'caveira']
-    search_fields = ['pergunta', 'resposta', 'assunto', 'bibliografia__titulo']
-    ordering_fields = ['id', 'bibliografia__titulo', 'assunto', 'prova', 'ano', 'caveira']
+    search_fields = ['pergunta', 'resposta', 'assunto__titulo', 'bibliografia__titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'assunto__titulo', 'prova', 'ano', 'caveira']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -130,12 +47,12 @@ class FlashCardsViewSet(viewsets.ModelViewSet):
 
 class PerguntaMultiplaViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de múltipla escolha"""
-    queryset = PerguntaMultiplaModel.objects.select_related('bibliografia').all()
+    queryset = PerguntaMultiplaModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaMultiplaSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta', 'assunto']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__titulo']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -146,12 +63,12 @@ class PerguntaMultiplaViewSet(viewsets.ModelViewSet):
 
 class PerguntaVFViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de verdadeiro ou falso"""
-    queryset = PerguntaVFModel.objects.select_related('bibliografia').all()
+    queryset = PerguntaVFModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaVFSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
-    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto']
+    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto__titulo', 'bibliografia__titulo', 'justificativa_resposta_certa']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__titulo']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -162,12 +79,12 @@ class PerguntaVFViewSet(viewsets.ModelViewSet):
 
 class PerguntaCorrelacaoViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de correlação"""
-    queryset = PerguntaCorrelacaoModel.objects.select_related('bibliografia').all()
+    queryset = PerguntaCorrelacaoModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaCorrelacaoSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__titulo']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -188,7 +105,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
         Usuários só veem suas próprias respostas
         Admins veem todas as respostas
         """
-        queryset = RespostaUsuario.objects.select_related('usuario').all()
+        queryset = RespostaUsuario.objects.select_related('usuario', 'assunto').all()
         
         if not self.request.user.is_staff:
             queryset = queryset.filter(usuario=self.request.user)
@@ -212,7 +129,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
             "pergunta_tipo": "multipla",  // ou "vf" ou "correlacao"
             "resposta_usuario": "a",  // ou true/false para VF, ou objeto para correlação
             "bibliografia_id": 1,  // opcional
-            "assunto": "Logística",  // opcional
+            "assunto": 123,  // opcional (ID do capítulo)
             "afirmacao_sorteada_eh_verdadeira": true  // opcional, apenas para VF
         }
         """
@@ -355,14 +272,14 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
         por_assunto = RespostaUsuario.objects.filter(
             usuario=usuario,
             assunto__isnull=False
-        ).values('assunto').annotate(
+        ).values('assunto', assunto_titulo=F('assunto__titulo')).annotate(
             total=Count('id'),
             acertos=Count('id', filter=Q(acertou=True)),
             erros=Count('id', filter=Q(acertou=False))
         )
         
         # Últimas respostas
-        ultimas_respostas = RespostaUsuario.objects.filter(usuario=usuario)[:10]
+        ultimas_respostas = RespostaUsuario.objects.filter(usuario=usuario).select_related('assunto')[:10]
         
         return Response({
             'total_respostas': total_respostas,
@@ -384,7 +301,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
         usuario = request.user
         acertou_param = request.query_params.get('acertou')
         
-        queryset = RespostaUsuario.objects.filter(usuario=usuario).select_related('usuario').order_by('-timestamp')
+        queryset = RespostaUsuario.objects.filter(usuario=usuario).select_related('usuario', 'assunto').order_by('-timestamp')
         
         # Filtrar por acertou/errou se especificado
         if acertou_param is not None:
@@ -424,7 +341,8 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                         'resposta_correta': pergunta.resposta_correta,
                         'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
                         'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
-                        'assunto': pergunta.assunto
+                        'assunto_id': pergunta.assunto_id,
+                        'assunto_titulo': pergunta.assunto.titulo if pergunta.assunto else None
                     }
                 elif resposta.pergunta_tipo == 'vf':
                     pergunta = PerguntaVFModel.objects.get(id=resposta.pergunta_id)
@@ -437,7 +355,8 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                         'resposta_correta': True,  # Sempre True para VF
                         'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
                         'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
-                        'assunto': pergunta.assunto
+                        'assunto_id': pergunta.assunto_id,
+                        'assunto_titulo': pergunta.assunto.titulo if pergunta.assunto else None
                     }
                 elif resposta.pergunta_tipo == 'correlacao':
                     pergunta = PerguntaCorrelacaoModel.objects.get(id=resposta.pergunta_id)
@@ -450,7 +369,8 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                         'resposta_correta': pergunta.resposta_correta,
                         'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
                         'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
-                        'assunto': pergunta.assunto
+                        'assunto_id': pergunta.assunto_id,
+                        'assunto_titulo': pergunta.assunto.titulo if pergunta.assunto else None
                     }
             except Exception as e:
                 detalhes['questao'] = {'erro': f'Questão não encontrada: {str(e)}'}
