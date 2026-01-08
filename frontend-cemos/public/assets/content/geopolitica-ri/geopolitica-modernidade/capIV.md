@@ -1,6 +1,6 @@
 # Capítulo IV - Contribuição da História Moderna na Formulação da Geopolítica
 
-Pág 43
+## Página 43
 
 Nos Capítulos anteriores analisamos, à luz da modernidade, as con­tribuições da Geografia e da Política na integração do pensamento geopolítico. Agora, vamos apreciar a interação da ciência da Histó­ria modernizada na formulação da Geopolítica.
 
@@ -13,7 +13,7 @@ No seu livro clássico, *Princípios de uma Ciência Nova sobre a Natu­reza Com
 
 Na opinião do historiador norte-americano **Edmund Wilsono**📌, Vico foi o primeiro historiador a apreender o <u>caráter orgânico da história da sociedade humana e a importância de reintegrar, através da História, as diversas forças e fatores que compõem a vida humana</u>.
 
-Pág 44
+## Página 44
 
 Demos a palavra a Vico:
 
@@ -29,7 +29,7 @@ Apoiado na doutrina de estudo histórico de Vico, surge, mais de cem anos passad
 
 De Michelet passamos ao consagrado historiador inglês **Arnold Toynbee**📌 (1889-1975), nosso contemporâneo. Escreveu Toynbee a obra monumental *Study of History*, em sete volumes, na qual analisa a história de 21 civilizações que povoaram o mundo desde a mais remota antigüida­de. Na sua pesquisa aplica o método interpretativo de Vico, ao qual acres­centa a sua **<font color="red">"teoria do desafio e da resposta"</font>**. Enfoca as razões de êxito ou fracasso no processo histórico das civilizações à sua capacidade de res­ponder, no curso de sua existência, aos desafios de sua geografia e de sua coesão interna.
 
-Pág 45
+## Página 45
 
 A teoria do "desafio e resposta" de Toynbee fica bem explicitada nos seguintes conceitos:
 
@@ -47,7 +47,7 @@ As doutrinas etnocentristas e as geocentristas, muito apreciadas pelos europeus,
 
 ## Campo inteligível de estudo histórico
 
-Pág 46
+## Página 46
 
 O método de investigação histórica de Toynbee, cujas fontes podem ser encontradas em Vico e Michelet, apóia-se em três critérios principais:
 

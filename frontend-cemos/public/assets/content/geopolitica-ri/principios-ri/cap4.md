@@ -1,5 +1,3 @@
-MINGST, Karen A. Princípios de Relações Internacionais. Tradução de Cristina de Assis Serra. Rio de Janeiro: Elsevier, 6ª Edição, 2014. cap. 1 a 5; 7 (pp. 165 a 187; 191 a 197); 8 e 11.
-
 # Capítulo 4 - O sistema internacional
 
 ■ Por que o conceito de sistema é um poderoso dispositivo descritivo e explanatório? 
@@ -9,6 +7,8 @@ MINGST, Karen A. Princípios de Relações Internacionais. Tradução de Cristin
 ■ Como cada uma das diferentes perspectivas teóricas explica a mudança no sistema internacional?
 ■ Quais são os problemas e/ou deficiências da concepção de sistema internacional?
 
+## Página 124
+
 ## A noção de sistema
 
 Para realistas e radicais, o conceito de sistema internacional é vital para suas análises, ao passo que, para os liberais, o sistema internacional é menos preciso como mecanismo explanatório e menos crucial. Para os construtivistas, o conceito de sistema internacional está ligado às noções de mudança.
@@ -16,6 +16,8 @@ Para realistas e radicais, o conceito de sistema internacional é vital para sua
 Para entender o sistema internacional é preciso esclarecer a própria noção de sistema. Definido em termos amplos, um sistema é um agrupamento de unidades, objetos ou partes unidos por alguma forma de interação regular. O conceito de sistema é essencial para as ciências físicas e biológicas; os sistemas são compostos de diferentes unidades em interação, seja no nível micro (célula, planta, animal), seja no nível macro (ecossistema natural ou clima global). Como essas unidades interagem, a mudança em uma delas causa mudanças nas demais. Os sistemas, com suas partes interativas, tendem a reagir de modo regularizado; suas ações seguem padrões. Fronteiras separam um sistema de outro, mas pode haver permutas através delas. Um sistema pode desmoronar quando as mudanças ocorridas em seu interior se tornam tão significativas que, na verdade, surge um novo sistema.
 
 Na década de 1950, a revolução comportamental nas ciências sociais e a crescente aceitação do realismo político nas relações internacionais levaram os eruditos a conceituar a política internacional como um sistema, usando a linguagem da teoria de sistemas. Partindo do pressuposto de que as pessoas agem de modos regularizados e que os padrões de interação entre elas são em grande parte habituais, realistas e behavioristas deram um salto conceitual, chegando ao postulado de que a política internacional é um sistema cujos atores principais são os Estados individuais.1 Essa noção de sistema está entranhada no pensamento das escolas teóricas dominantes de relações internacionais. De particular interesse é a explicação de como a mudança se dá.
+
+## Página 125
 
 ## O sistema internacional segundo os realistas
 

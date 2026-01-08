@@ -1,6 +1,6 @@
 # Capítulo V - A Geopolítica na Modernidade Síntese 
 
-Pág 49 
+## Página 49 
 
 ## O fator geográfico foi o mais impactado pela modernidade.
 
@@ -10,7 +10,7 @@ O uso do meio geográfico pelo homem foi enormemente favoreci­do, neste último
 
 O meio geográfico natural, enriquecido pelos recursos artificiais que lhe foram agregados, tornou muito mais favorável a sua utilização pelo homem, e isto vai influir na sua potencialização política, como vere­mos em seguida.
 
-Pág 50 
+## Página 50 
 
 ## A utilização política do espaço depende de dois fatores: extensão e posição.
 
@@ -28,7 +28,7 @@ Entretanto, a incidência sobre os hábitos e costumes da sociedade, provocados 
 
 Através dos modernos meios de comunicação, ele invade o espaço de todos os quadrantes do planeta com suas mensagens faladas e escritas. Os meios de transporte em uso aproximam todos os países.
 
-Pág 51 
+## Página 51 
 
 Assim, os recursos da modernidade, incidindo e interagindo na Geografia e na Política, ramos de conhecimentos científicos formadores da Geopolítica, só vieram torná-la mais apta a oferecer avaliações refe­rentes à aplicação do Poder do Estado ou das alianças interestados.
 

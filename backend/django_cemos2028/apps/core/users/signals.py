@@ -145,6 +145,24 @@ def create_default_admin(sender, **kwargs):
             print("ℹ️  Usuário 'juliana' já existe. Nenhuma ação necessária.")
 
 
+        # Verifica/cria usuário 'marcos_vieira'
+        if not Usuario.objects.filter(username='marcos_vieira').exists():
+            marcos_vieira = Usuario.objects.create_user(
+                username='marcos_vieira',
+                password='@cemos2028',  # Senha padrão
+                perfil='user'
+            )
+            # Não é staff nem superuser por padrão
+            marcos_vieira.save()
+
+            print("✅ Usuário 'marcos_vieira' criado com sucesso:")
+            print(f"   Username: marcos_vieira")
+            print(f"   Password: @cemos2028")
+        else:
+            print("ℹ️  Usuário 'marcos_vieira' já existe. Nenhuma ação necessária.")
+
+
+
 
         # Lista de novos usuários a serem criados
         # Nota: usernames podem ter até 20 caracteres

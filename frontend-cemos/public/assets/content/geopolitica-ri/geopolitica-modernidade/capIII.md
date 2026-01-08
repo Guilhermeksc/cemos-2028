@@ -1,6 +1,6 @@
 # Capítulo III - Contribuição do Fator Político para a Formulação da Geopolítica
 
-Pág 35
+## Página 35
 
 ## Maurice Duverger - "Política é Poder"
 
@@ -22,7 +22,7 @@ Diz ainda o Professor italiano:
 
 Assim como no Capítulo anterior, examinamos as modificações ocorridas no campo da geografia, no que se refere a sua utilização pelo homem moderno: vamos agora avaliar o que de novo oferece a práxis política a este homem equipado pela avançada tecnologia.
 
-Pág 36 
+## Página 36 
 
 ## Poder Extraterritorial 
 
@@ -44,7 +44,7 @@ Disse ainda Kennan:
 
 "O próprio pontífice do liberalismo, Milton Friedman, interrogado sobre a substituição do Estado-Nação por um mundo dirigido pelo merca­do, pela livre movimentação do capital e do trabalho, respondeu: 'não acho que o Estado-Nação esteja morto, e todas as tentativas para livrar-se do Estado-Nação têm sido um completo desastre'."
 
-Pág 37 
+## Página 37 
 
 O consagrado pensador patrício **Miguel Reale**📌, em um de seus últi­mos livros, *Pluralismo e liberdade*, reafirma o valor e a necessidade de se <u>preservar o Poder Nacional nesta fase de reavaliações estratégicas que estamos vivendo</u>. Vamos dar a palavra ao Professor Reale:
 
@@ -64,7 +64,7 @@ Concluímos que o pensamento político predominante entre os estadistas e acadê
 
 A soberania, direito imprescindível do Estado-Nação de autodeter­minar-se no campo interno e nas suas relações internacionais, era, tradi­cionalmente, resguardada por determinados zelos preventivos, particularmente nas áreas de informações e proteção territorial. 
 
-Pág 38 
+## Página 38 
 
 A **invasão territorial inevitável pela informação de todo tipo e a rapidez dos transpor­tes modernos**, encurtando drasticamente as distâncias, <u>vêm obrigando os estados a reverem os antigos critérios de zelo pela preservação preventi­va de sua soberania</u>. Esta revisão vem refletida, particularmente, nos tex­tos das alianças militares e pactos econômicos firmados a partir do fim da Segunda Guerra Mundial. Por exemplo, até o seu início, era considerado inadmissível, em termos de zelo soberano, exceto em situação de belige­rância, um Estado permitir o estacionamento de tropa estrangeira, mes­mo aliada, em seu território. Este zelo de avaliação da soberania já não existe, desde que aceito pelas partes soberanas em tratado. O mesmo acontece com o que dizia respeito a admitir comando estrangeiro às suas tropas, quando aliados. Este zelo era tão forte que durante a Primeira Grande Guerra (1914-18), tentado no decorrer dos quatro anos de conflito bélico, <u>não foi possível estabelecer-se o comando único das forças combatentes</u>, preferindo os aliados <u>arcarem com os imensos prejuízos estra­tégicos</u> que isto acarretou.
 
@@ -74,7 +74,7 @@ Dentro deste critério é possível atender-se as alegadas **necessida­des de p
 
 Nos últimos dois séculos, a sociedade mundial esteve alicerçada na figura do **Estado-Nação**, cujos suportes fundamentais foram o respeito aos **<font color="red">princípios de soberania e de autodeterminação dos povos</font>**. <u>Toda jurisprudência do Direito Internacional</u>, consolidada arduamente através do último século, entregue ao resguardo do **Tribunal de Haia**, consagra a legitimidade destes dois princípios basilares. A estrutura política do mundo está baseada no reconhecimento da legitimidade destes dois princípios.
 
-Pág 39
+## Página 39
 
 <u>Os dois tratados internacionais mais importantes dos últimos cem anos, o **Tratado de Paz de Versalhes (1919)** e a **Carta de S. Francisco (1945)**</u>, funda­mentaram a obtenção da desejada paz e segurança da sociedade mundial no respeito aos princípios de soberania nacional e autodeterminação dos povos. A violação deles, como imposição da modernidade, ou da globalização como preferem outros, derruirá toda a estrutura que assegu­ra a estabilidade da sociedade internacional. A que preço? perguntamos.
 
@@ -106,7 +106,7 @@ O escritor francês **Pascal Boniface**📌, no seu livro *La Volonté D'Impuiss
 
 - desejo agudo de compreender o mundo, mas simplificações abusivas.
 
-Pág 40
+## Página 40
 
 Conclui, o autor francês, que estas contradições confundem as pes­soas, criam inevitáveis vacilações de comportamento e influem no exer­cício do poder pelo Estado.
 
@@ -124,6 +124,6 @@ Vamos reproduzir um trecho do pensamento do Professor Chacon:
 
 ## Um Novo Eixo de Conflito: Samuel Huntington e o Choque de Civilizações
 
-Pág 41 
+## Página 41 
 
 O escritor Samuel Huntington, em seu livro de sucesso internacio­nal The Clash of Civilizations, desenvolve a tese de que o grande conflito político do futuro será entre civilizações. Assim, vê o Professor da Universidade de Harvard a política mundial do futuro ser envolvida, cada vez mais, pelos conflitos de índole civilizacional. Toma como exemplo os conflitos contemporâneos no Golfo Pérsico, no Afeganistão, Iugoslávia, Bósnia, Croácia, Kosovo, Cáucaso, Índia, Caxemira, Indonésia, Argélia, predominando em todos, como ingrediente mais ativo. a penetração e o radicalismo da civilização muçulmana.

@@ -1,5 +1,7 @@
 # Capítulo VII - Síntese de Setenta Anos de Pensamento Geopolítico Brasileiro
 
+## Página 85
+
 Vamos sintetizar o pensamento geopolítico dos autores historiados no Capítulo anterior, tendo em vista apontar a sua característica pre-monitória da Política Nacional.
 
 Na época colonial, vimos a visão estrutural da geopolítica brasileira esboçada no Tratado de Tordesilhas, como nos mostrou o diplomata e escri­tor José Osvaldo de Meira Penna. O historiador seiscentista Gabriel Soares de Sousa (1578) , aqui chegando, traduziu o seu deslumbramento na idéia de Império, "será um dos estados do Mundo"; Alexandre de Gusmão, brasi­leiro a serviço da diplomacia lusa, conseguiu inserir no Tratado de Madri (1750) os dispositivos que legitimaram as conquistas dos bandeirantes paulistas e nortistas.
@@ -8,7 +10,7 @@ Um ano antes da Independência, vivendo já o País o clima de liberta­ção do
 
 Nas décadas de 191O e 1920, Alberto Torres e, nas de 1920, 1930 e 1940, Oliveira Vianna, em livros e inúmeros artigos nos jornais e revistas, debateram o tema da necessidade do governo ajustar sua política às reali­dades geográficas do País.
 
-Pág 86
+## Página 86
 
 Em 1931, despontou no horizonte geopolítico o livro de grande re­percussão no País e nos meios sul-americanos. Projeção Continental do Brasil, de autoria do então Capitão Mario Travassos. O autor preocupou­ se, principalmente, com projetos geopolíticos, visando a elevar o Brasil à posição incontestável de primeira potência de nosso subcontinente aus­tral. Propôs para isto uma política de transportes que contrariasse a ten­dência natural de atração da corrente hidrográfica do Prata sobre as nos­sas amplas regiões interiores, banhadas pelas águas dessa bacia conver­gente para Buenos Aires. Propôs o que está realizado, os hoje chamados "corredores de exportação", carreando para os nossos portos sulinos - San­tos, Paranaguá, Porto Alegre e Rio Grande - o interesse econômico do nosso território platino (o maior território desta bacia internacional). Não ficou nisto a proposta de Travassos: idealizou uma articulação dos trans­portes sul-americanos por meio de conexões Atlântico-Pacífico pela trans­ posição da Cordil heira dos Andes nos "nudos", regiões de abaixamento.
 
@@ -18,9 +20,13 @@ As mentes do Professor Backheuser e do Capitão Mario Travassos operaram sobre u
 
 O Brigadeiro Lysias Rodrigues preencheu o espaço dos estudos geopolíticos nas décadas de 1950 e 1960, acompanhando os processos do transporte aéreo e sugerindo sua inserção no sistema viário nacional. Deu um passo adiante na proposta de Travassos sobre a inclusão da aviação no nosso sistema de transportes. Lysias Rodrigues viu o emprego da avi­ação aliviando a situação de isolamento da nossa região limítrofe da Amazônia e do Oeste.
 
+## Página 87
+
 Ainda na década de 1940, tivemos o consagrado escritor Cassiano Ricardo com sua obra monumental de estudo das Bandeiras. Marcha para o Oeste, revigorando o espírito nacional para a necessidade de nos interiorizarmos, de desbravarmos nossos sertões e florestas, civilizando­-os, transformando-os em mananciais de riquezas.
 
 A partir da década de 1950, a inteligência de Golbery do Couto e Silva formulou propostas geopolíticas que vieram a coincidir com os dois surtos desenvolvimentistas que levantaram o otimismo nacional, a fé nos destinos de grandeza do Brasil - o período juscelinista e o do "Brasil Grande" da primeira fase dos governos da Revolução, de 1964 a 1980. As indicações de Golbery foram por uma rearticulação do território para esti­mular a ampla manobra estratégica, visando à integração definitiva e o desenvolvimento de todo o espaço nacional. A atenção maior, mais uma vez, foi para a imensa área interior e, nesta, a Amazônia. Sugeriu, para realizar-se o desenvolvimento da região coberta pela Hiléia, uma mano­bra de investida desbravadora e civilizadora. Em termos de segurança, indispensável ao sucesso da manobra estratégica pretendida, Golbery propôs a articulação diplomática de sólida aliança hemisférica, nela indicando, como pólo importante, as boas relações com os Estados Unidos. As duas crises internacionais da década de 1970, provocadas pela elevação do preço do petróleo, atingiram a nossa economia e afetaram duramente nossos projetos desenvolvimentistas, por isto a ampla manobra estratégica, preconizada por Golbery, perdeu o ritmo de realiza­ções, mas a sua concepção permanece válida e aos poucos vem sendo atendida pela política governamental, como está acontecendo com o **Projeto Avança Brasil**.
+
+## Página 88
 
 A Professora Therezinha de Castro foi uma pesquisadora incansá­vel e uma lutadora obstinada pela aceitação de suas propostas geopolíticas. Deixou dezenas de livros, realizou centenas de conferências no Brasil e no exterior e produziu um milhar de artigos. Foram trinta anos (décadas de 1970-90) de infatigável produção intelectual. Dos muitos te­ mas de que tratou destacaram-se: a necessidade de uma estratégia brasi­leira de presença ativa no Atlântico Sul, para isto a importância de partici­parmos da ocupação da Antártica e o interesse nacional em termos uma política de estreitas relações com os países do Cone Sul. Falecida em fevereiro do ano 2000, a Professora Therezinha pôde ver suas antecipadas idéias geopolíticas aceitas nos projetos de governo, tais como a instala­ção da estação brasileira na Antártica e a criação do Mercosul.
 
@@ -45,9 +51,7 @@ Algumas medidas governamentais, como o Projeto Calha Norte, visando a desenvolve
 
 Quanto à defesa da Amazônia contra possíveis ameaças militares, algumas já sugeridas por líderes de potências mundiais, a nossa prega­ ção insistente tem sido a favor da estratégia de dissuasão, mantendo ali uma força combinada, adestrada para o combate na selva e que seja ca­paz de tornar extremamente cara, em termos de perdas de vida e de dura­ção das operações. qualquer aventura bélica.
 
-Resumindo a Síntese
-
-Pág 90
+## Página 90
 
 Reunindo e integrando o pensamento geopolítico de nossos autores manifestado nestes últimos setenta anos, encontramos os seguintes ru­mos, muitos deles coincidentes, entre as proposições de vários pensadores:
 

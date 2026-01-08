@@ -1,6 +1,6 @@
 # Capítulo I - Raízes da Geopolítica
 
-Pág 17
+## Página 17
 
 A Geopolítica não foi invenção de políticos sedentos de mando, buscando uma justificativa científica para satisfazer sua ambição de poder, como alguns teimam em considerar. <u>A Geopolítica é o produto da evolução da observação gradual da ação do homem na exploração do meio natural</u>, percorrendo o caminho iniciado no estágio de aten­ção normativa até se consolidar em conhecimento sistemático e, daí, em teoria positiva.
 
@@ -10,7 +10,7 @@ A Geopolítica, antes de ter um nome que a caracterizasse como ramo de conhecime
 
 Assim foram as observações do historiador grego Heródoto sobre a influência do clima e da natureza do solo no progresso dos grupos humanos. Estudiosos da sociedade política. Hipócrates nas suas obras realça a im­portância do ar. da água e da posição geográfica sobre a atividade do homem. Platão e Aristóteles indicaram as vantagens e desvantagens das po­pulações quando litorâneas ou interioranas. Estrabão, na sua Geografia, indica a posição geográfica da Itália como fator importante para o sucesso do Império Romano. Na Idade Média, surge a tentativa pré-científica do geógrafo **Jean Bodin**📌 de ordenação do pensamento geográfico-político, valorizando a relação Estado-meio físico. Contribuições valiosas ao enca­minhamento da reflexão normativa sobre esta correlação dos dois fatores acima referidos encontramos nas obras de **Emmanuel Kant**, **Montesquieu** e **Hegel**. Este último, no seu livro *"Filosofia da História"*, dedica um Capítulo inteiro à *"Base Geográfica da História"*. Nesse Capítulo, Hegel desenvolve vasta e erudita apreciação sobre a influência da geografia na modelação do homem político e da sociedade política. **Napoleão Bonaparte**📌 no apogeu de sua glória, sentenciou: ***<font color="red">"A Geografia indica o destino das nações".</font>***
 
-Pág 18
+## Página 18
 
 As opiniões acima, que colhemos entre muitas outras tão conceitu­adas, vieram ordenando uma reflexão normativa sobre a relação política­ geografia, possibilitando o surgimento, no campo das ciências, sucessi­vamente, da **Geografia Humana (ou Antropogeografia)**, da **Geografia Polí­tica** e, finalmente, da **Geopolítica**.
 
@@ -18,7 +18,7 @@ O final do século XIX e primeiras décadas do século XX marcaram a época do g
 
 ## "Sete Leis do Expansionismo" - Friedrich Ratzel e Rudolf Kjellen
 
-Pág 19
+## Página 19
 
 Das obras pioneiras de **Ratzel** e **Kjellen**, ressaltamos alguns con­ceitos que se destacaram por sua projeção no tempo. **Ratzel**, no seu livro **Leis do Crescimento Territorial dos Estados, lançou as famosas "Sete Leis do Expansionismo"** que aqui reproduzimos:
 
@@ -69,7 +69,7 @@ Reconhecida a autenticidade científica da Geopolítica, surgiram nos primeiros 
 
 Sem se embrenharem no campo teórico, vários autores pragmáti­cos, factuais, intuitivos produziram verdadeiros clássicos da Geopolítica, até hoje consultados como guias da política internacional, tais como o Almirante norte-americano **Alfred Thayer Mahan**📌, autor de Influência do *Poder Naval na História (1890)*, e o inglês **Halford J. Mackinder**📌, que publicou *Democratic Ideais and Reality e Geographical Pivot of History (1904)*.
 
-Pág 22
+## Página 22
 
 Mahan e Mackinder ainda hoje são considerados inspiradores, respectivamente, da política do Poder Marítimo e da política do Poder Continental. O inglês Mackinder, desejoso de alertar os políticos britâni­cos para o perigo de vir a se criar no continente europeu um poderoso núcleo político que viesse ameaçar o seu país, formulou uma **<font color="red">"teoria de poder mundial</font>**, baseada na amalgação da massa continental européia em torno de uma área central, **<font color="red">""área pivô"</font>**. A polarização política da mas­sa continental européia, constituindo um único poder, formaria a **<font color="red">"ilha mundial"</font>**, em torno da qual as áreas adjacentes, <u>os "Crescente Interior e Crescente Exterior", teriam que se submeter. Estaria criado o ambicionado poder mundial único.</u>
 
@@ -94,7 +94,7 @@ Assim discrimina as suas grandes regiões:
 - **Pan-Rússia**, compreendendo a Rússia, Irã e Índia - Estado-Di­retor: **Rússia**.
 - **Co-Prosperidade da Grande Ásia**, China, Japão, Coréia, Indonésia e Oceania - Estado-Diretor: **Japão**.
 
-Pág 24 
+## Página 24 
 
 Ao se avizinharem os **perigos da Segunda Guerra Mundial**, diante da arrogância ameaçadora de Hitler, fundamentando sua ambição expansionista em teses que justificava, perversamente, como extraídas dos estudos do Instituto de Munique, <u>os acadêmicos norte-americanos acordaram para a Geopolítica.</u> Sentiram o vácuo em que se encontravam os estudos geopolíticos no país.
 
@@ -110,7 +110,7 @@ A União Soviética da Guerra Fria perfilhou a Geopolítica de Mackinder. Sua po
 
 A ameaça de um isolamento estratégico, <u>em virtude do domínio dos mares pelo Ocidente democrático</u>, inspirou o Almirante russo **Gorshkov**📌 a criar uma doutrina geopolítica, geoideológica, justificando a <u>instalação de bases navais soviéticas espalhadas em países de governo comunista ou pró-Moscou</u>.
 
-Pág 25
+## Página 25
 
 Hoje, entre os **"grandes"**, vem-se esboçando uma Geopolítica globa­lista, baseada no controle do universo geográfico por um poder central (dos "grandes"), que ditaria a todos os países a política mais conveniente à ga­rantia da ordem econômica, da paz e da segurança da humanidade. Obser­va-se no grupo dos "7 grandes" duas disputas subterrâneas: aceitar ou não como novo membro integral o governo de Moscou e a competição interna de poder entre os Estados Unidos e o grupo europeu. Embora estas discre­pâncias venham enfraquecendo a ação política dos "grandes", sua ação de ingerência não tem deixado de acontecer, como foi o caso da <u>agressão ao Estado da Iugoslávia e das pressões intervencionistas que vêm sendo sofri­das pelos governos considerados fora de sua receita de comportamento.</u>
 

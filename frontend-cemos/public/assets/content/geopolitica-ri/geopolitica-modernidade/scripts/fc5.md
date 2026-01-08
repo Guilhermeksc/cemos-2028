@@ -1,0 +1,11 @@
+| bibliografia_id | pergunta | resposta | prova | páginas | assunto |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Qual dos três ramos do conhecimento da Geopolítica sofreu o maior impacto modificador da modernidade? | O ramo geográfico, conforme sintetizado na Página 49. |  | Pág. 49 | 5 |
+| 1 | Quais avanços tecnológicos agregaram novos recursos ao meio geográfico nos últimos cinquenta anos? | A engenharia de transportes, as telecomunicações e a informática, conforme o texto da Página 49. |  | Pág. 49 | 5 |
+| 1 | Como a modernidade alterou a via de exploração do espaço geográfico pelo homem-operativo? | A exploração ganhou uma nova via, a vertical, por onde transitam mensagens e imagens eletrônicas, conforme a Página 49. |  | Pág. 49 | 5 |
+| 1 | Quais são os dois fatores principais considerados na utilização política do meio geográfico e seus respectivos pesos? | A extensão (peso quantitativo) e a posição (peso qualitativo), conforme o texto da Página 50. |  | Pág. 50 | 5 |
+| 1 | Entre os fatores espaço e tempo, qual foi mais drasticamente alterado pela tecnologia moderna e por quê? | O tempo, que foi volatizado pela instantaneidade da comunicação e encurtamento das distâncias, conforme a Página 50. |  | Pág. 50 | 5 |
+| 1 | Qual a afirmação de Descartes utilizada para contrastar a estabilidade do espaço frente à transitoriedade do tempo? | "O espaço é concreto, o tempo não", conforme citado na Página 50. |  | Pág. 50 | 5 |
+| 1 | Qual é o efeito dos recursos da modernidade sobre a capacidade de avaliação da Geopolítica? | Tornaram-na mais apta a oferecer avaliações referentes à aplicação do Poder do Estado, conforme a Página 51. |  | Pág. 51 | 5 |
+| 1 | Quais historiadores são citados como responsáveis pelo enriquecimento do ramo histórico da Geopolítica no último século? | Toynbee, Lucien Febvres e Barbara Tuchman, conforme o texto da Página 51. |  | Pág. 51 | 5 |
+| 1 | Qual é a conclusão sobre a condição atual da Geopolítica em comparação ao seu nascimento há cem anos? | Ela está muito melhor aparelhada para oferecer ao estadista a visão prospectiva dos interesses políticos, conforme a Página 51. |  | Pág. 51 | 5 |

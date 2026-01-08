@@ -2,7 +2,7 @@
 
 ## Geografia, Política e História
 
-Pág 29 
+## Página 29 
 
 Afirmamos que a Geopolítica é um ramo da Ciência Política que se formou pela interação dinâmica de três ramos de conhecimento: a <u>**Geografia** (espaço físico), a **Política** (aplicação do Poder à arte de governar) e a **História** (experiência humana).</u>
 
@@ -16,7 +16,7 @@ Devemos consignar que o espaço geográfico natural, através dos tempos, vem se
 
 Na época em que os principais fundadores da Geopolítica - Friedrich Ratzel, Rudolf Kjellen e Vidal de La Biache - formularam suas teorias, no final do século XIX e primeira década do século XX. o espaço geográfico sobre o qual assentaram seus pensamentos já era beneficiado por instru­mentos e técnicas consideradas avançadas. Conhecia-se, já, a eletricida­de, a máquina a vapor propulsara da indústria. as ferrovias e as comunica­ções com fio: a engenharia alcançara valiosos progressos, as técnicas de agricultura e a medicina tinham deixado de engatinhar.
 
-Pág 30
+## Página 30
 
 Hoje, este espaço geográfico, em que os instrumentos e as técnicas daquela época inspiraram os fundadores da Geopolítica, supervalorizou­ se em termos de recursos artificiais. O homem ativo da modernidade con­ta com o domínio do espaço aéreo, do estratosférico e pesquisa o sideral.
 
@@ -28,7 +28,7 @@ Ao lado disso, o planeta tornou-se superpovoado, gerando preocupações aos agen
 
 O fato histórico está sempre relacionado a dois fatores: espaço e tempo. O espaço geográfico, na modernidade, como vimos,recebeu variados artefatos artificiais que facilitaram e facilitam a operacional idade do homem-político, entretanto, quanto à sua forma e posição, não mudou. Mesmo a maioria do espaço político territorial das nacionalidades já for­madas na virada do século XIX para o XX (época em que a teoria Geo­política foi formulada), como a França, Inglaterra, Itália, Estados Unidos,China, Japão, Brasil, Argentina, Alemanha, pouco mudou. O que mudou enormemente foi o fator tempo, o fator do acontecer.
 
-Pág 31
+## Página 31
 
 A quase instantaneidade da comunicação da imagem e do som a qualquer quadrante da Terra, assim como o encurtamento drástico das distâncias pelos novos meios de transporte, volatizou o fator tempo. Constatamos que a incidência sobre os anseios. hábitos e costu­mes da sociedade, provocada pelos extraordinários avanços tecnológicos, alterou muito mais o fator tempo do que o fator espaço. Descartes já observara: **"O espaço é concreto, o tempo não"**. O contexto físico do espa­ço. objeto da Geopolítica, continua inalterado; sua extensão, forma e po­sição inamovíveis. só que agora são operacionalizados por agentes políti­cos dispondo de instrumentos de progresso mais eficazes.
 
@@ -52,7 +52,7 @@ O conceito de "lugares em rede" seria o daqueles espaços descon­tínuos ligado
 
 Mais adiante, o Professor citado expõe a sua idéia sobre que pode­ríamos chamar de controle político do espaço:
 
-Pág 32
+## Página 32
 
 ## A Dinâmica do Poder no Território: O "Acontecer Solidário"
 
@@ -62,7 +62,7 @@ Pág 32
 
 Afirma-se, cada vez mais, a dialética no território e, ousaria dizer, a dialética do território, já que o território usado é humano, podendo, desse modo, comportar uma dialética. Essa dialética se afirma mediante um controle "local" da parcela "técnica" da produção e um controle "remoto" da parcela política da produção. A parcela técnica da produção permite que as cidades locais ou regionais tenham um certo controle sobre a por­ção de território que as rodeia. Este comando se baseia na configuração técnica do território. na sua densidade técnica e também. de alguma for­ma, na sua densidade funcional, que podemos igualmente chamar de densidade informacional. Já o controle distante, localmente realizado sobre a parcela política da produção, é feito por cidades mundiais e nos seus "relais" os territórios diversos. 
 
-Pág 33
+## Página 33
 
 O resultado é a aceleração da aliena­ção dos espaços e dos homens, do qual um componente é a atual enorme mobilidade das pessoas: aquela máxima do direito romano "ubi pedis ibipatria" (onde estão os pés, aí está a pátria) hoje perde ou muda o seu sentido. Por isso. também o direito local e o direito internacional estão se transformando, para reconhecer naqueles que não nasceram num lugar o direito também de intervir na vida política desse lugar".
 
@@ -77,7 +77,7 @@ Fiéis a este conceito, não temos dúvidas em afirmar que o diploma científico
 
 Se as características do espaço mudaram, cabe aos geopolíticos, especialistas no saber e arte de aplicar o Poder ao Espaço Geográfico, ajustarem o seu conhecimento a esta nova realidade.
 
-Pág 34
+## Página 34
 
 Em livro recente, Criticai Geopolitics, o Geógrafo inglês Gearoid O. Tuathail. professor das universidades de Liverpool e do Estado da Virgínia, propõe-se a desqualificar a Geopolítica como ramo da Ciência Política, apontando-a como uma miragem (a palavra inglesa que usa é "vertico").
 

@@ -1,15 +1,14 @@
-
-# AS MUDANÇAS NO PODERIO MILITAR E AS REDEFINIÇÕES GEOESTRATÉGICAS
+# As mudanças no poderio militar e as redefinições geoestratégicas
 
 ## A RENOVAÇÃO DO PODER MILITAR
 
-Pág 87
+## Página 87
 
 Nada indica que a guerra militar acabou ou sequer que ficou menos frequente no mundo pós-guerra fria. Mas existem inúmeras evidências que apontam para uma radical mudança nos seus objetivos e na sua estratégia — na concepção de inimigo, nos armamentos, na seleção/preparação dos soldados e na logística. O (ex)secretário de defesa dos Estados Unidos, **William J. Perry**📌, assinalou alguns traços dessa “nova defesa” num artigo publicado em 1996 na revista Foreign Affairs.
 
 Em primeiro lugar existiria um redirecionamento da pesquisa e da produção bélicas, que <u>deixariam de lado a ênfase nos meios de destruição em massa</u>, aqueles valorizados durante todo o século XX e em especial na fase da guerra fria, e <u>enfatizariam novas tecnologias de precisão</u>. **O importante hoje**, na época da globalização e do liberalismo triunfante, **não é mais exterminar o inimigo** (isso pode ainda existir, em alguns casos de genocídio, mas são problemas regionais de baixa prioridade e normalmente áreas/povos pouco integrados ao mercado global) **e sim conquistá-lo ou enquadrá-lo, inseri-lo afinal no mercado global**. Assim, no lugar dos armamentos nucleares, químicos ou bacteriológicos, que exterminam multidões e têm efeitos quase incontroláveis, o importante agora são as mídias de precisão, sistemas de informação e de comunicação sofisticados sofisticados, aviões completamente informatizados e difíceis de serem detectados, que rapidamente bombardeiam pontos específicos com uma margem mínima de erro. 
 
-Pág 88
+## Página 88
 
 Só que existe toda uma herança da guerra fria e torna-se necessário uma contenção da fabricação das bombas nucleares e das armas químicas e biológicas, e também uma progressiva desativação das já existentes e/ou um maior controle sobre elas. Inúmeros acordos internacionais — o Tratado da Não Proliferação Nuclear, o Tratado da Proscrição dos Testes Nucleares, a Convenção das Armas Químicas, a Convenção das Armas Biológicas, o Regime de Controle da Tecnologia de Mísseis — estão sendo renovados e assinados por um número crescente de Estados (e os que ainda não assinaram são constantemente pressionados a fazê-lo).
 
@@ -17,17 +16,17 @@ E as quatro nações oriundas da ex-URSS que tinham armas nucleares — a Rússi
 
 Em **segundo lugar** há uma <u>mudança no entendimento da defesa, que deixa de ser o de emular e ameaçar o inimigo para ser “preventiva”</u>. No primeiro caso, típico da guerra fria, havia um estado de prontidão permanente para a guerra e o(s) inimigo(s) bem definido(s), com uma estratégia de espalhar navios, tropas e mísseis por todo o mundo e em especial ao redor dele(s). No segundo caso, do mundo pós-guerra fria, não há um inimigo definido ou permanente — um ou alguns Estados — e sim “possíveis ameaças” que podem vir de grupos terroristas, de algum Estado que os apoie, de crises inesperadas (como a do golfo Pérsico, em 1990-1991), de instabilidades regionais (como nos Bálcãs) que podem ameaçar o sistema global etc. Isso implica não mais mísseis com ogivas nucleares apontando para o inimigo e sim armas de precisão — isto é, mísseis com bombas convencionais que podem destruir um prédio específico com uma margem mínima de erro; sistemas de informações mais eficientes e precisos; navios e aviões que podem ser transportados de uma hora para outra para um lugar remoto; enfim, armamentos móveis e de precisão, que envolvem cada vez menos riscos para os soldados (em muitos casos eles são teleguiados e normalmente se evita o enfrentamento por terra, dando-se preferência aos bombardeios por ar), pois os reclames da sociedade civil contra as perdas de familiares são mais intensos hoje, e que não vão matar indiscriminadamente milhares ou milhões de pessoas e sim ser mais “cirúrgicos” no sentido de eliminar os pontos estratégicos do adversário (edifícios de estados-maiores, asilos de mísseis ou de bombas, estradas, meios de comunicações, aeroportos).
 
-Pág 89
+## Página 89
 
 Em **terceiro lugar**, mudou a concepção de soldado. Nos Estados Unidos e em inúmeros outros países <u>não existe mais o alistamento obrigatório e sim o engajamento voluntário ou até a disputa no mercado de trabalho por profissionais altamente capacitados</u> (engenheiros, analistas de sistema, físicos, médicos, sociólogos, psicólogos etc.) que vão se transformar em oficiais das Forças Armadas. Afinal, conhecimento ou informação é hoje, até mesmo nos meios militares, um atributo muito mais importante que a mera força ou habilidade física. Por isso existem cada vez mais mulheres engajadas nas Forças Armadas norte-americanas, notadamente, e também nas de outras nações. E na guerra do Golfo de 1991, pela primeira vez na história da humanidade, um exército em combate (o norte-americano) era composto em mais de 98% do seu efetivo por pessoas que tinham no mínimo o colegial, o ensino médio completo. A própria separação entre militares e civis, que era intensa da época napoleônica até a guerra fria, começa a se diluir atualmente, já que por um lado os militares têm que estudar em colégios/universidades normais — apenas uma especialização ou pós-graduação é necessária para os oficiais —, e por outro lado existe o crescente envolvimento da sociedade civil com a segurança e a defesa.
 
-Pág 90
+## Página 90
 
 Em resumo, existe uma expansão da revolução técnico-científica até nos meios militares. A informação — e a velocidade com que ela é obtida —, o controle de qualidade e o just-in-time tornam-se muito mais importantes que a força bruta ou que a produção/destruição em massa. O secretário de Defesa norte-americano no governo Clinton enfatizou isso muito bem:
 
 Alguns críticos questionavam a eficácia dos armamentos que utilizam tecnologia de ponta, particularmente os teleguiados de precisão. Porém, esse conceito foi aprovado na operação Tempestade no Deserto [bombardeios sobre o Iraque em 1991], esmagando a força militar iraquiana com pouquíssimas baixas. Os céticos tornaram-se crentes. Hoje, os comandantes militares estão encontrando uma infinidade de usos não apenas para armamentos “inteligentes” como para o serviço secreto “inteligente”, as comunicações “inteligentes” e a logística “inteligente”, todos criados a partir da mesma tecnologia de informática e telecomunicações (...) Essenciais ao domínio aéreo são as tecnologias stealth, que permitem que nossos aviões burlem as defesas aéreas inimigas. As forças de ataque de precisão permitem que os Estados Unidos destruam alvos fixos do inimigo com uma ou duas incursões apenas, em vez de empreendermos um bombardeio intensivo das áreas objetivadas. Possibilitam também a destruição de alvos móveis críticos, como lançadores de mísseis e colunas blindadas. A operação Tempestade no Deserto demonstrou plenamente a eficácia geral da primeira geração de armamentos inteligentes, apesar de sua vulnerabilidade ao mau tempo e à contramedidas de oposição. A segunda geração superará essas limitações, permitindo que se atinja a verdadeira capacidade de “disparar e esquecer”. A superior consciência do campo de batalha significa um conhecimento completo, em tempo real, da disposição de todas as tropas inimigas e aliadas e estamos buscando isso mediante a confrontação das informações obtidas por sensores nacionais, pelo Sistema Global de Posicionamento e por sensores táticos, transmitindo o quadro resultante às mãos dos comandantes por meio de sistemas digitais secretos de comunicação. Também a logística tornou-se direcionada, resultado da aplicação de tecnologias de ponta que possibilitam que se acompanhe o transporte de suprimentos através do globo, conhecendo o que contém cada carregamento, sua localização e hora de chegada ao destino. Essa capacidade proporciona uma vantagem decisiva e também reduz custos e mão de obra, livrando os militares de manter grandes estoques em vários pontos de um teatro de guerra. Também as munições “inteligentes” afetam a logística porque a maioria dos disparos por alvo, em vez de centenas, significa que as antigas estimativas de suprimentos de munições caem por terra, não havendo mais a necessidade de fabricar, transportar, armazenar e proteger enormes volumes de armamentos.
 
-Pág 91 
+## Página 91 
 
 Pode-se argumentar, com alguma razão, que esse tipo de visão considera apenas os Estados Unidos e algumas pouquíssimas economias desenvolvidas, nas quais o domínio da tecnologia de ponta permitiria essa revolução estratégica. Já países como o Paquistão, a Índia ou até a China viveriam numa realidade diferente, na qual ainda são válidos os armamentos nucleares e a estratégia da destruição em massa. E em outras áreas do mundo subdesenvolvido a situação seria ainda a da guerra de extermínio envolvendo etnias rivais (como na África subsaariana) ou então a guerra napoleônica convencional, de conquista territorial e matança indiscriminada com o uso principalmente da força bruta. Sem dúvida que isso tudo ainda existe. Mas assim como ocorre com a globalização e com a revolução técnico-científica, também a nova estratégia militar tende a se espalhar, a ser total ou parcialmente reproduzida/reelaborada nos diversos recantos do planeta. É uma tendência, uma questão antes de mais nada de ritmo.
 
@@ -35,7 +34,7 @@ A insistência na fabricação de armas nucleares, esse enorme desperdício de r
 
 Isso significaria, na prática, que a Rússia pode continuar massacrando os chechenos e que a China pode continuar exterminando os tibetanos. Mas inclusive essa hipótese, embora arraigada na mente das pessoas e na mídia, é questionável. Isso porque é a sanção econômica — e não a intervenção militar, salvo em raríssimas exceções — que é usada como mecanismo de pressão para situações desse tipo, e provavelmente nem mesmo o território indonésio seria invadido caso esse Estado insistisse na manutenção do Timor Leste sob o seu domínio, desde que o genocídio dos timorenses não fosse algo escandaloso e amplamente noticiado pela mídia internacional. E nem a China e sequer a Rússia, com todas as suas bombas atômicas, se livrariam de sanções econômicas no caso desses massacres se tornarem intoleráveis para a opinião pública mundial (ou melhor, dos países desenvolvidos). E de nada serviriam os armamentos nucleares numa situação dessas, de intimidação econômica. Provavelmente seria melhor ceder e dar autonomia a essas regiões, tal como fez a Indonésia (e talvez faça a Rússia num futuro próximo), pois espaço físico e recursos naturais não têm mais tanto valor e normalmente esse tipo de território com população subjugada e insurgente acarreta mais gastos do que ganhos.
 
-Pág 92 
+## Página 92 
 
 ## O PAPEL DAS INFORMAÇÕES NA GUERRA DO SÉCULO XXI
 
@@ -43,19 +42,19 @@ Um outro Capítulo da redefinição do poderio militar consiste na renovada impo
 
 Em segundo lugar, existiria até mesmo uma “guerra das informações”, que seria mais um aspecto ou front na competição militar, e que consistiria não apenas na tentativa de ganhar a disputa na mídia, mas também — e principalmente — minar os circuitos de informações do adversário. Afinal, as comunicações — a informação, o seu teor e a sua velocidade — não somente influenciam a opinião pública e a política das sociedades avançadas. Elas também são um poderoso instrumento da estratégia militar. Por esse motivo, durante a guerra do Kosovo os Estados Unidos lançaram uma série de ataques eletrônicos com vistas a embaralhar ou paralisar as redes de computadores governamentais da Sérvia, e o Pentágono admitiu que também os seus sistemas receberam milhares de visitas indesejáveis durante esse conflito. Os Estados Unidos até já criaram um “centro de guerra cibernética”, cujo quartel-general fica em Colorado Springs, que procura proteger os sistemas estratégicos de computadores do país (tanto os normais quanto os secretos) de ataques terroristas e também tentará inutilizar os sistemas de defesa do inimigo no caso de uma guerra, desordenando a sua logística e infectando-os com vírus, admitiu um importante funcionário do Pentágono.
 
-Pág 93 
+## Página 93 
 
 Na guerra do Golfo de 1991, considerada a primeira do século XXI (pelos métodos empregados, em especial pela presença marcante da informática e das telecomunicações), houve a necessidade de se construir em curtíssimo prazo naquela parte do Oriente Médio conexões extremamente complexas: 118 estações terrestres móveis para comunicações via satélites, suplementadas por 12 terminais comerciais de satélites, usando cerca de 81 chaves que proporcionavam a utilização de 329 circuitos de voz e trinta circuitos de mensagens. Sem esse “sistema nervoso”, a integração sistêmica dos aliados teria sido impossível e as baixas teriam sido bem maiores.
 
 Um oficial da força aérea norte-americana afirmou que, nessa guerra, “uma onça de silício num computador pode ter tido maior efeito que uma tonelada de urânio”. E juntamente com a sofisticação dos instrumentos existe a necessidade, que já foi comentada, de maior qualificação dos operadores. Na Segunda Guerra Mundial, um piloto de avião militar podia ser posto em ação após algumas horas de treino. Na guerra do Golfo, por trás de cada piloto de F-15 existiu um treinamento de vários anos que custou milhões de dólares. E o piloto não é mais um executante isolado na cabine. Ele é parte de um vasto e complexo sistema interativo apoiado por operadores de radar (em solo, em navios ou em aviões AWACS), por peritos em guerra eletrônica e contraguerra na terra e no ar, por oficiais do planejamento e dos serviços de inteligência, por analistas de dados e pessoal de telecomunicações.
 
-Pág 94
+## Página 94
 
 Portanto, a nova estratégia militar “inteligente” não somente leva a um número menor de soldados, só que mais qualificados, como também amplia a importância dos sistemas de informações. E isso não é apenas uma especificidade norte-americana, como afirmam alguns, mas uma tendência geral, pois até a China, após analisar essa guerra de 1991, elaborou um plano de longo prazo para modernizar as suas forças armadas nessa direção (computadores, satélites, armas “inteligentes”...) e ao mesmo tempo reduzir em 50% o seu número de soldados, que deverão ter melhor qualificação.
 
 Essa crescente importância política e até estratégica das comunicações em geral pode conduzir a um conflito entre o Estado — em particular os seus “falcões”, isto é, o pessoal ligado à segurança e ao complexo militar — e o mercado e a sociedade civil. Não que estes dois últimos sejam idênticos (o mercado até tenta moldar a sociedade civil, embora nunca consiga totalmente), mas provavelmente estarão do mesmo lado neste embate, pelo menos em grande parte. É lógico que a sociedade de extrema-direita racistas e algumas organizações (certas ONGs, certos movimentos ambientalistas, por exemplo) que são sustentadas e fazem o jogo de grandes empresas ou até de instituições estatais. E também o mercado imbrica-se com o Estado e com os interesses do complexo policial-militar, que afinal de contas também determinam os lucros de inúmeras firmas particulares importantes. Mas o potencial de conflitos, que já começam a ocorrer (vide as tentativas de censura na Internet), vai opor de um lado os que pretendem controlar as informações, com o argumento de que elas são estratégicas e podem ajudar o inimigo, e de outro lado aqueles que acham que elas devem ser totalmente livres de restrições e influenciadas somente pelo mercado, isto é, pelo público consumidor. O fato de redes de televisão, como a CNN, terem incomodado os dois lados do conflito durante as guerras nos Bálcãs (Bósnia e Kosovo), pelo menos em algumas ocasiões, mostra que elas não são meramente um instrumento a ser usado por um lado ou pelo outro. Elas têm uma relativa autonomia, desempenhando praticamente o papel de terceiro protagonista nos confrontos militares. Um protagonista cuja importância aumenta com a democratização da sociedade: ele ainda é frágil nos Estados autoritários, mas é crucial nas democracias. Isso é mais um indicador de que o jogo de poder no cenário mundial, até mesmo no seu caso extremo que é a guerra, cada vez mais deixa de ser uma exclusividade dos Estados nacionais e passa a contar com inúmeros outros agentes ou protagonistas.
 
-Pág 95 
+## Página 95 
 
 ## KISSINGER E BRZEZINSKI: O “REALISMO GEOESTRATÉGICO” NA NOVA ORDEM MUNDIAL
 
@@ -67,7 +66,7 @@ Tendo em vista essa perspectiva — os interesses “nacionais” dos EUA —, e
 
 Quando a URSS se desintegrou, em 1991, ele logo propôs que os EUA estreitassem seus laços culturais e econômicos com os novos Estados independentes como forma de se evitar que a Rússia transformasse a CEI num novo império. Somente se a Rússia “respeitar a nova situação e permanecer dentro de suas fronteiras”, ele assinalou, aí sim um “significativo programa de ajuda ocidental [para a Rússia] poderia ser organizado”.
 
-Pág 96 
+## Página 96 
 
 Abrandada a ameaça soviética, o grande problema agora estaria na Ásia: no Japão, visto como um competidor econômico e que está “se desgarrando das políticas de segurança e externa dos EUA”, além de supostamente estar “gastando cada vez mais na defesa, tendo já o terceiro, talvez o segundo maior orçamento para a defesa do mundo”; na Índia, no Paquistão e especialmente na Coreia do Norte, que continuam insistindo nas bombas atômicas e podem desestabilizar a região; e na China, que disputa com o Japão a liderança do Leste asiático e também continua a renovar a sua defesa, inclusive com a expansão dos armamentos nucleares.
 
@@ -75,7 +74,7 @@ Ele propõe que os EUA não se alinhem a nenhum dos dois lados — o Japão e a 
 
 Mas a China, cada vez mais vista pela opinião pública norte-americana como a “nova grande ameaça”, deveria ser tratada com cautela: “os radicais, democratas ou republicanos, têm que entender que, em vez do confronto, é melhor conciliar interesses”, afirmou. E lamentando que “os valores e necessidades dos EUA” levem a uma constante pressão sobre a China em nome dos “direitos humanos”, Kissinger alerta as autoridades chinesas a não se preocuparem muito com isso e não reagirem com alarde; o grande problema das relações entre os EUA e a China seriam “os crescentes superávits comerciais da China” e não alguma importante diferença político-ideológica:
 
-Pág 97
+## Página 97
 
 A URSS professava uma ideologia essencialmente hostil aos nossos valores, propagava-a pelo mundo e sustentava-a, dando apoio a partidos comunistas (...). Nada disso se aplica em relação à China. Embora Pequim se declare comunista, na prática ela em nada se parece com a antiga economia estatal e stalinista de Moscou. A economia da China volta-se cada vez mais para o mercado. E a China não apoia nenhum movimento político hostil aos interesses americanos.
 
@@ -87,7 +86,7 @@ A reação de indignação do governo norte-americano aos testes nucleares da Í
 
 Precisamos não exagerar a opinião de que os testes aumentam o perigo de uma guerra nuclear. É evidente que os EUA devem fazer o máximo possível para impedir a proliferação nuclear, mas essa política será ineficaz enquanto os formuladores de nossa política não aprenderem a estabelecer diferenças entre os vários desafios e não fingirem que podem articular uma política universal aplicável a todas as situações (...). O universalismo precisa dar lugar à análise geopolítica. Já que a proliferação ocorreu, precisaremos vincular a não proliferação a outros objetivos e fazer uma distinção entre países cujas atividades não representam ameaça aos interesses americanos ou à paz no mundo e os países que ingressam no programa de armas nucleares para perturbar o equilíbrio. Na minha opinião, Índia e Paquistão estão no primeiro caso [e a Coreia do Norte e o Iraque estariam no segundo caso].
 
-Pág 98
+## Página 98
 
 Afirmando que “é impossível abolir as armas nucleares”, Kissinger entende que elas são importantíssimas para a estratégia internacional dos EUA e que essa política idealista e universalista, que abomina qualquer novo teste nuclear, seria um risco na medida em que representaria “um desarmamento psicológico dos EUA”.
 
@@ -105,7 +104,7 @@ Assim, coerente com essa visão, Kissinger traçou as seguintes recomendações 
 
 O mundo afinal seria como um eterno jogo de xadrez, e o que importa não é preservar tal ou qual peça — seja um princípio, um valor ou um aliado — e sim ter um controle sobre o tabuleiro, saindo-se bem nessa disputa que nunca cessa.
 
-Pág 99 
+## Página 99 
 
 Também Brzezinski possui uma percepção mais ou menos semelhante a essa, embora talvez mais aprimorada e sem as rudes censuras à política externa do governo Clinton. Ele elaborou um minucioso trabalho com o objetivo de propor uma estratégia para a atuação norte-americana na Eurásia, a qual considera — numa perspectiva mackinderiana — “o centro do poder mundial”.
 
@@ -119,7 +118,7 @@ Portanto, a principal preocupação geopolítica dos Estados Unidos na atualidad
 
 Cerca de 75% da população mundial vive na Eurásia, 60% do PNB do globo e, excetuando-se os Estados Unidos, ali localizam-se as seis maiores economias e os seis maiores gastos nacionais com armamentos. Dessa forma, a Eurásia ainda “é o tabuleiro de xadrez no qual a disputa pela primazia global continua a ocorrer”, e “como a América gerencia a Eurásia” é algo crítico para a continuidade da supremacia norte-americana, pois a falência desta faria com que o mundo tivesse “mais violência, menos democracia e menor crescimento econômico”.
 
-Pág 100
+## Página 100
 
 Repetindo a célebre frase de Napoleão, **“a política externa de um Estado está na sua geografia”**, Brzezinski afirma que é necessário atualizar a geopolítica e a geoestratégia clássicas para a nova realidade do poder.
 
@@ -131,7 +130,7 @@ Como o objetivo central dos Estados Unidos deveria ser o de “manipular” os p
 
 Coerente com o título de seu livro, o enxadrista Brzezinski vê a Eurásia como “o grande tabuleiro de xadrez”, o mais importante para o exercício de poder no planeta, e procura antever quais seriam as consequências e as alternativas ante os possíveis movimentos de cada peça importante, ou seja, dos atores geoestratégicos.
 
-Pág 101
+## Página 101
 
 Primeiro, existem as possibilidades ou cenários virtuais desfavoráveis para os interesses norte-americanos, que devem ser evitados por meio de ações preventivas. O cenário mais perigoso seria uma “coalizão hegemônica” que reunisse a China (como líder), a Rússia e o radicalismo islâmico por meio do Irã. 
 
@@ -139,7 +138,7 @@ Uma outra possibilidade, remota mas não impossível, seria um eixo sino-nipôni
 
 Também remoto, mas não totalmente descartável, seria um realinhamento europeu fazendo a França ou a Alemanha (ou ambas) virar as costas para os Estados Unidos e promover uma aliança com uma Rússia recuperada e fortalecida.
 
-Brzezinski divide o tabuleiro eurasiático em quatro regiões geopolíticas:
+Brzezinski divide o tabuleiro eurasiático em quatro regiões geopolíticas, procurando esquematizar a desejável atuação norte-americana para cada uma delas:
 
 - o oeste ou “cabeça de ponte democrática” (a Europa),
 
@@ -148,7 +147,8 @@ Brzezinski divide o tabuleiro eurasiático em quatro regiões geopolíticas:
 - o sul ou “Bálcãs eurasianos” (o Oriente Médio, o centro e o sul da Ásia),
 
 - e o leste ou “âncora oriental” (o Extremo Oriente e o Sudeste Asiático) —
-procurando esquematizar a desejável atuação norte-americana para cada uma delas.
+
+![eurasia](regioes_eurasia.png)
 
 ### Regiões geopolíticas da Eurásia segundo Brzezinski
 
@@ -156,7 +156,7 @@ procurando esquematizar a desejável atuação norte-americana para cada uma del
 
 Fonte: Z. Brzezinski, The Grand Chessboard, p. 34.
 
-Pág 102
+## Página 102
 
 Na Europa, vista como uma “aliada natural” e verdadeira cabeça de ponte para o controle da Ásia, o ideal seria estreitar ainda mais os laços por meio do fortalecimento e da expansão da OTAN e até mesmo, especula, da criação de uma “zona de livre comércio transatlântica”. Mas seria necessário ter “muito cuidado com os dois principais arquitetos da Europa”, isto é, com a França e com a Alemanha. Para a França, a unificação europeia significa recuperar o passado francês de grandeza; existiria aí um ressentimento contra a “americanização” da cultura ocidental e, segundo as palavras de Charles de Gaulle, a “genuína Europa vai do Atlântico até os Urais” [no território russo].
 
@@ -166,7 +166,7 @@ Os líderes alemães conhecem a fraqueza político-militar da França, evidencia
 
 Enquanto a França seria reticente com a expansão da OTAN para o Oriente, argumentando que é importante dialogar antes com a Rússia (ela seria o principal interlocutor europeu desse Estado, devido à necessidade de ter uma autonomia perante os EUA e forçar uma liderança no continente), a Alemanha, pelo contrário, pensa que tanto a União Europeia quanto a OTAN devem se expandir para o Leste Europeu, vendo isso inclusive como algo prioritário.
 
-Pág 103 
+## Página 103 
 
 Nessas condições, o principal objetivo dos Estados Unidos seria o de auxiliar a unificação (e expansão para leste) da Europa com base numa “conexão franco-germânica”, pois sem esses dois países não há uma Europa integrada, mas com uma clara preferência pela liderança alemã: “Isso requer um enérgico e decisivo envolvimento norte-americano, especialmente junto com a Alemanha, no sentido de definir os objetivos europeus e inclusive deliberar sobre esse tema tão delicado – especialmente para a Rússia – que é o status dentro da Europa das Repúblicas bálticas e da Ucrânia.” E o mesmo se aplica à OTAN, que deveria ser preservada, fortalecida e expandida para leste (incluindo até mesmo, e preferencialmente, a Ucrânia) por meio de uma estreita cooperação entre os Estados Unidos e a Europa, notadamente a Alemanha, tentando uma acomodação com a Rússia mas nunca esquecendo que “a tarefa de construção da Europa não pode estar subordinada às objeções russas”.
 
@@ -174,13 +174,13 @@ No espaço médio ou atual “buraco negro” da Eurásia — que teria sido ger
 
 E o caso da Ucrânia foi pior ainda, já que a autonomia desse imenso e rico território com 52 milhões de habitantes que possuem uma identidade étnica e religiosa próxima à russa obrigou a nação russa a repensar a sua própria identidade étnica e política (eles estavam acostumados a considerar “russos” todos os povos eslavos da ex-URSS, algo que ainda fazem com os chechenos e outras etnias que não se consideram como tal). A independência da Ucrânia e a sua firme atuação na CEI, no sentido de não admitir forças armadas ou moeda unificadas (como queria a Rússia), adquirindo portanto uma efetiva autonomia nacional, teria mostrado aos outros povos não russos da ex-URSS, inclusive eslavos, que é possível se libertar do mando de Moscou. Além disso, a Ucrânia tinha uma enorme importância geoestratégica para a Rússia por permitir o controle quase total do mar Negro (e, por intermédio dele, o comércio direto com o Mediterrâneo). E no sul da ex-URSS, na Ásia Central, a autonomia das antigas Repúblicas fez com que o mar Cáspio deixasse de ser um lago soviético e essa região passou a se tornar cada vez mais islâmica, com crescente influência da Turquia, do Irã e até do Paquistão.
 
-Pág 104 
+## Página 104 
 
 E finalmente, na parte leste, apesar de não ter havido perda territorial, ocorreu uma mudança dramática na correlação de forças em face do rápido enfraquecimento político-militar e econômico da Rússia e um correlato fortalecimento da China; a crise russa, também demográfica (ocorreu uma diminuição substancial da expectativa de vida nos anos 1990, as taxas de mortalidade geral e infantil aumentaram, a taxa de natalidade ficou menor que a de mortalidade, o que significa um índice negativo de crescimento populacional), ao lado da crescente dinamicidade de 1,2 bilhão de chineses, faz com que “os enormes vazios espaciais da Sibéria estejam em vias de serem colonizados pela China”.   que as lideranças russas ainda não se deram conta da profundidade das alterações geopolíticas e continuam a considerar o seu país como uma superpotência. Elas se ressentem da atuação global ativa dos EUA, que “desconsideraria a Rússia como um interlocutor e parceiro”.
 
 Mas sob o ponto de vista de Washington, adverte Brzezinski, somente o Japão, a Alemanha e a China poderiam ser admitidos como parceiros globais (para a resolução de problemas que atravancam os negócios, a globalização, a nova ordem), e a Rússia poderia ser no máximo um parceiro regional para algumas partes da Eurásia.  Rússia, portanto, seria antes de tudo um problema: ela é demasiadamente fraca para ser um ator global, mas ainda forte para ser simplesmente ignorada ou considerada um objeto passivo (como um peão no jogo de xadrez). Somente quando a Rússia aceitar a nova realidade econômica e geopolítica, aí então estará apta a ser beneficiada por um enorme alargamento da cooperação transcontinental nos investimentos e no comércio, nas comunicações e na educação; ela deve esquecer a sua “ambição imperial” e embarcar como um passageiro comum no trem da europeização, modernização e democratização.
 
-Pág 105 
+## Página 105 
 
 Num depoimento prestado ao Comitê de Relações Exteriores do Senado norte-americano, a respeito da guerra do Kosovo, Brzezinski comentou que as lideranças políticas russas “não são confiáveis” e teriam feito um jogo dúbio, aparentemente se integrando às forças de paz da OTAN, mas, ao mesmo tempo, apoiando incisivamente (inclusive fornecendo armas) o regime genocidário de Milosevic; ele conclui o depoimento afirmando que “infelizmente, os atuais líderes russos — que se sentiriam mais confortáveis se ainda estivessem num governo soviético — são conduzidos pela nostalgia de um poder global e pelo ressentimento contra a América”.
 
@@ -190,7 +190,7 @@ Contribuir para essa escolha — e ajudar na sua operacionalização — seria u
 
 A terceira região geopolítica que Brzezinski identifica na Eurásia é apelidada de “Bálcãs eurasianos” devido à amplitude dos conflitos étnicos e territoriais. Essa região, que vai da Turquia até a Índia e o extremo oeste da China, passando pelo Oriente Médio e abarcando também a Ásia Central, seria uma zona de instabilidade e constantes lutas por poder, na qual os Estados Unidos desempenhariam o papel de árbitro em última instância. Ela é riquíssima em fontes de energia (petróleo e gás natural) e minerais importantes, inclusive ouro. Existe aí não apenas inúmeras disputas fronteiriças, mas também movimentos separatistas e violentos conflitos étnicos e até religiosos. Os principais competidores ou protagonistas importantes nessa região seriam a Rússia, o Irã, a Turquia, a China, a Índia, o Paquistão e, mais remotamente, a Ucrânia.
 
-Pág 106
+## Página 106
 
 A Rússia teria interesses na Ásia Central devido à memória ainda fresca do seu controle imperial, que muitos de seus líderes gostariam de restaurar, e também pela presença de povos russos nesses novos países independentes: eles representariam 35% da população do Cazaquistão, 21,5% da Quirguízia, 10% da Turcomênia, 8,3% do Uzbequistão, 3,5% do Tadiquistão e 2,5% do Azerbaijão. Mesmo levando-se em conta que desde os anos 1980 as taxas de natalidade e de crescimento demográfico dos povos não russos, em especial os islâmicos, têm sido bem maiores que as dos russos, sem dúvida que existe aí um “caldeirão étnico” mal resolvido, como afirma Brzezinski, pois existem também inúmeras outras misturas na medida em que, para exemplificar, os uzbeques representam 10% da população da Turcomênia, 13% da Quirguízia e 25% no Tadiquistão; os tadiques representam 25% da população do Afeganistão; e os ucranianos representam 5,3% da população do Cazaquistão e 2,5% da Quirguízia.
 
@@ -198,31 +198,31 @@ Do ponto de vista cultural e linguístico, o Tadiquistão é persa (ou seja, lig
 
 O Uzbequistão, portanto, apesar de menor território e recursos em comparação com o Cazaquistão, seria o primeiro candidato a liderar os países da Ásia Central, especialmente pela sua maior homogeneidade étnico-nacional. Brzezinski aconselha uma certa cautela para os Estados Unidos nessa região, pois esse país está muito distante para aí atuar diretamente e, ao mesmo tempo, é muito poderoso para deixar de influir nos acontecimentos decisivos. O melhor seria impedir que um único poder — seja a Rússia, a Turquia, o Irã ou até a China — seja hegemônico nessa região, embora sem afastar ou excluir nenhum deles, e principalmente facilitar o acesso da “comunidade global” (os interesses econômicos e financeiros) até essa região.
 
-Pág 107
+## Página 107
 
 Quanto à última grande região eurasiana, o leste ou “âncora oriental”, Brzezinski a vê como decisiva, o lugar onde grandes alterações geopolíticas de alcance global podem vir a ocorrer. Algumas mudanças significativas que já vêm acontecendo nessa região são:
 
-a ascensão da China como a potência regional dominante, tanto pela força militar quanto pela economia cada vez mais poderosa;
+A ascensão da China como a potência regional dominante, tanto pela força militar quanto pela economia cada vez mais poderosa;
 
-o declínio da Rússia, que deixou de ser um poder dominante;
+O declínio da Rússia, que deixou de ser um poder dominante;
 
-a crescente militarização do Japão, que aos poucos passa a ter maior autonomia político-militar em relação aos Estados Unidos;
+A crescente militarização do Japão, que aos poucos passa a ter maior autonomia político-militar em relação aos Estados Unidos; e
 
-e a virtual reunificação das Coreias, tendo-se em vista que a tensão entre elas diminuiu bastante, o que poderá se constituir num problema para os seus vizinhos.⁵⁵
+A virtual reunificação das Coreias, tendo-se em vista que a tensão entre elas diminuiu bastante, o que poderá se constituir num problema para os seus vizinhos.
 
 A China, inquestionavelmente uma potência regional, tem ambições de se tornar um poder global, algo que talvez venha a ocorrer entre duas ou três décadas, mas que antes terá de superar enormes desafios:
 
-a modernização das forças armadas já vem consumindo cerca de 20% do PNB a cada ano (algo que, tal como no exemplo soviético, pode ter um efeito negativo na economia);
+A modernização das forças armadas já vem consumindo cerca de 20% do PNB a cada ano (algo que, tal como no exemplo soviético, pode ter um efeito negativo na economia);
 
-a importação de comida torna-se cada vez mais essencial para alimentar essa imensa e crescente população;
+A importação de comida torna-se cada vez mais essencial para alimentar essa imensa e crescente população;
 
-o consumo de energia já começa a superar a produção nacional;
+O consumo de energia já começa a superar a produção nacional;
 
-e as tensões políticas, sociais e étnicas podem se agravar com a crescente disparidade social (a distribuição social da renda torna-se a cada ano mais concentrada) e também espacial (é cada vez maior a diferença entre o leste e particularmente o sul da China, que se modernizam e globalizam, e o restante do país, no qual há muita pobreza e cem milhões de desempregados).
+As tensões políticas, sociais e étnicas podem se agravar com a crescente disparidade social (a distribuição social da renda torna-se a cada ano mais concentrada) e também espacial (é cada vez maior a diferença entre o leste e particularmente o sul da China, que se modernizam e globalizam, e o restante do país, no qual há muita pobreza e cem milhões de desempregados).
 
 Além disso, também existem os desafios geopolíticos mais imediatos que a China terá de confrontar. Um deles é a vizinha Índia, que também se moderniza economicamente e militarmente e tenta consolidar a sua posição hegemônica no sul da Ásia. Outro é que a Rússia tende a se retirar da disputa na Europa e no leste da Ásia, mas concentra seus esforços na Ásia Central, exatamente a região na qual a China tem crescentes interesses em razão da necessidade de fontes de energia.
 
-Pág 108
+## Página 108
 
 E uma eventual aliança entre a Índia e a Rússia, algo nada difícil segundo Brzezinski, poderia ser um poderoso freio contra a expansão chinesa, especialmente se complementada pelo lado sudeste por uma forte oposição do Vietnã e da Indonésia (esta provavelmente resguardada pela Austrália). E uma Coreia reunificada e quase certamente alinhada com o Ocidente seria um cenário desagradável para a China, que tenta de todas as maneiras apoiar/influenciar o atual regime da Coreia do Norte para impedir ou retardar essa reunificação.
 
@@ -230,7 +230,7 @@ Tendo em conta tudo isso, Brzezinski não acredita que a China consiga alcançar
 
 Quanto ao Japão, ele viveria hoje um dilema, preocupado com o crescimento da China e com a sua dependência militar dos Estados Unidos. Haveria uma ambiguidade na visão dos japoneses, pois uma parcela da população identifica-se com a cultura oriental ou confuciana e vê com bons olhos a ascensão da China, ao passo que outra parcela encara a China como o tradicional e mais perigoso inimigo, como um ator que pode desestabilizar a região e até o poderio econômico japonês. Se do ponto de vista econômico o Japão é um protagonista global de primeira linha (assim como a Alemanha e, evidentemente, os Estados Unidos), sob o aspecto geopolítico ele é fraco e não possui sequer uma atuação geoestratégica no Extremo Oriente. A reunificação da Coreia poderia ser uma boa oportunidade para redefinir os interesses geopolíticos do Japão, desde que ocorresse entre eles uma provável reconciliação e cooperação. Mas o ideal para os Estados Unidos, opina Brzezinski, seria atuar cuidadosamente no sentido de estabelecer um arranjo: a China se acomodaria como a potência regional nessa parte da Eurásia e o Japão teria uma atuação internacional mais ativa, passando a se envolver — não tanto militarmente, mas sim diplomaticamente e economicamente — nos problemas globais⁵⁸ e, talvez até, especula, conseguindo um assento permanente no Conselho de Segurança da ONU.
 
-Pág 109
+## Página 109
 
 Em resumo, tanto Kissinger quanto Brzezinski (e também, embora com importantes nuances, Huntington) identificam-se com o chamado realismo — a corrente que vê somente ou principalmente o Estado nacional como protagonista no cenário mundial e a sua atuação tem por base não ideais (democracia, direitos humanos, igualitarismo etc.) e sim interesses materiais — e ambos, especialmente Brzezinski, são quase que continuadores da tradição geopolítica clássica. Kissinger e Brzezinski raciocinam principalmente em termos geoestratégicos e estão preocupados, antes de tudo, com a manutenção da hegemonia global dos Estados Unidos.
 
@@ -242,7 +242,7 @@ Eles conseguiram afinal superar o viés geopolítico clássico e assinalar, cada
 
 Em suma, faltou a estes ousadia, criatividade (ou talvez vontade), pois quem almeja cargos governamentais estratégicos deve ser cauteloso nas suas declarações e em seus escritos para ir além do raciocínio geoestratégico e de fato repensar as relações de poder no âmbito planetário.
 
-Pág 111
+## Página 111
 
 ## CONSIDERAÇÕES FINAIS
 
@@ -252,11 +252,15 @@ Verdade é poder, assinalou Foucault. E como não existe “o” poder, no singu
 
 Os atuais conflitos no espaço mundial são concomitantemente – em maior ou menor grau, dependendo do caso – econômicos, políticos, culturais, militares e até, no extremo, sem lógica no sentido da racionalidade cartesiana. Em certa medida, todas as “novas geopolíticas” retratam pelo menos um aspecto da realidade. Nenhuma é completamente absurda no sentido de não se adequar a quaisquer fatos ou acontecimentos, nenhuma é pura ficção descolada de toda realidade. Relativismo apenas? Não creio, pois não se afirma aqui que tudo é relativo, não se pretendeu nivelar todas as interpretações. Procuramos, isso sim, mostrar por que cada uma foi criada, as condições (algo que pressupõe o sujeito e o seu contexto) nas quais surgiu e qual seria afinal – e para quem seria – a sua proposta de ação. Afinal, abandonar a oposição maniqueísta entre verdade e mentira(s), entre o processo/essência e as aparências/ilusões, não significa cair num relativismo inconsequente. Ecletismo? Também não, pois este meramente justapõe ideias diferentes e às vezes antinômicas, sem uma coerência de pensamento. Preferimos então falar em pluralismo, assim entendendo todo pensamento que admite múltiplas verdades (embora elas tenham sujeitos e consequências diferentes), e que – mantendo a sua lógica e coerência de pensamento – dialoga sem preconceitos com interpretações variadas.
 
+## Página 112
+
 É notável como ultimamente os adjetivos ou prefixos “novo” e “pós” são empregados em quase todos os lugares e ocasiões. A velocidade das mudanças se acelerou, as distâncias foram reduzidas, a tecnologia entrou numa fase de inovações radicais e os valores, as normas e os hábitos se transformam durante as nossas vidas, fazendo com que o mundo aparentemente deixe de ser coerente ou perfeitamente legível. Muitas noções ou formas de abordagem clássicas tornaram-se obsoletas ou no mínimo insuficientes. O conceito tradicional de “grande potência”, com ênfase no poderio militar, é um dos inúmeros exemplos disso. E não somente ele deve ser repensado, como também todo o entendimento das relações mundiais de poder. As “novas geopolíticas” são exatamente tentativas de repensar a realidade pós-guerra fria, o mundo da globalização e da terceira revolução industrial.
 
 Mas como esse mundo está sendo (re)construído, como existe um “em-se-fazendo” do qual participam as ideias e representações, as “novas geopolíticas” são igualmente projetos que se entrechocam. Afirmar que a geoeconomia substituiu a geopolítica, por exemplo, não é apenas olhar o mundo de uma certa perspectiva. É também fazer uma aposta – e inclusive tentar influenciar os rumos dos acontecimentos – na prevalescência da guerra comercial sobre a militar. E dizer que a lógica da História leva à universalização da democracia liberal não é uma mera interpretação diletante, mas essencialmente uma proposta de novas relações internacionais. E “ler” o mundo como a coexistência problemática de diferentes civilizações cujos valores são quase herméticos e não cambiáveis, implica basicamente um forte projeto de isolacionismo ocidental com uma correlata desconsideração pelas culturas alienígenas.
 
 Não seria possível uma confluência de todas essas representações? Será que os choques civilizacionais – que efetivamente existem e continuarão a existir neste novo século – não produzirão maior tolerância e até novos valores em comum? Será que a consciência de um planeta único e os riscos apocalípticos dos armamentos pesados não farão com que se diluam as linhas do antagonismo militar? Será que a diminuição do tamanho do mundo e as recentes tecnologias de informação e de velocidade não implicarão novas e mais paritárias regras de sociabilidade entre os povos? Isso não seria a expansão da democracia, mesmo que não puramente ocidental nem liberal? Quem disse, afinal, que uma alternativa tem que vencer? A história não nos fornece inúmeros exemplos de processos cujos resultados foram diferentes dos projetos inicialmente em choque, em que no final das contas ocorreu a mesclagem de propostas (ou de parte delas) e inclusive o surgimento do novo?
+
+## Página 113
 
 O desconhecido por definição não está cartografado. Não existem mapas indicando aquilo que ainda não se conhece direta ou indiretamente. Se as novas geopolíticas são como mapas que procuram representar o mundo do século XXI, elas são em parte rigorosas, pois usam métodos e noções consagrados, mas são também são em boa parte como aqueles desenhos que indicavam um fantasioso “mapa da mina”, isto é, expressam desejos e imagens do tesouro que se espera encontrar de fato. Provavelmente não existe nenhum rumo nem esquema final da história, e ela não é a história ou a aventura já terminada nem tão fim, pelo menos não no sentido de completitude. O único fim imaginável é amor coletiva, o desaparecimento da espécie humana. Mas seria possível modificar completamente a história — que sempre foi constituída por lutas, conflitos, guerras, revoluções, mudanças que (re)criam gaps e deslocam/excluem muitos —, fazendo com que ela realize a utopia de uma humanidade sem guerras, sem desigualdades, sem injustiças, sem mais nenhuma outra mudança radical? Ou esse sonho, como já foi sugerido, seria apenas a busca inconsciente do repouso eterno? O mais provável é que as transformações históricas jamais produzirão o “novo homem” — talvez a engenharia genética o faça, mas isso se daria somente no plano biológico —, isto é, aquele que não precisa mais lutar, que não tenha mais nenhuma desigualdade ou injustiça contra a qual valha a pena combater.
 
