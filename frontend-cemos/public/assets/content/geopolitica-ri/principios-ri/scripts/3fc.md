@@ -19,7 +19,7 @@ Instruções específicas:
 
     prova deve ser branco.
 
-    “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
+“paginas” deverá obrigatoriamente ser preenchido com o marcador ## referente a página, ex: se ## Página 11 então 'Pág 11 ...' poder escrever mais de uma página, mas não escrever trecho, cap... cite diretamente a página
     
 “assunto” será preenchido com: 18.
 

@@ -297,7 +297,6 @@ export class BibliografiaService {
           return;
         }
 
-        console.log(`📄 Buscando página ${currentPage} (page_size: ${pageSize})...`);
         fetchPage(currentPage, pageSize).subscribe({
           next: (response) => {
             const pageResults = response.results || [];

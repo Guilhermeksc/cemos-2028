@@ -83,8 +83,11 @@
             (ngModelChange)="onAssuntoChange()"
             class="filter-select"
             [disabled]="assuntosDisponiveis.length === 0">
-            <option value="">Todos os assuntos</option>
-            <option *ngFor="let assunto of assuntosDisponiveis" [value]="assunto">{{ assunto }}</option>
+            <option [ngValue]="null">Todos os assuntos</option>
+            <option *ngFor="let capitulo of assuntosDisponiveis" [ngValue]="capitulo.id">
+              {{ capitulo.capitulo_titulo }} 
+              <span *ngIf="capitulo.bibliografia_titulo">({{ capitulo.bibliografia_titulo }})</span>
+            </option>
           </select>
         </div>
       </div>

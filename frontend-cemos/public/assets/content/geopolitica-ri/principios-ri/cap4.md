@@ -25,11 +25,21 @@ As noções dos realistas políticos sobre o sistema internacional e suas caract
 
 Para caracterizar o sistema internacional, os realistas lançam mão da dimensão da polaridade. Polaridade de sistema refere-se à distribuição de recursos entre os Estados do sistema internacional, mediante a contabilização do número de “polos” (Estados ou grupos de Estados) em que o poder se concentra. Há ao menos três tipos de polaridade de sistema: multipolaridade, bipolaridade e unipolaridade (Figura 4.1).
 
+![sistema_multipolar](sistema_multipolar.png)
+
+![sistema_multipolar](sistema_bipolar.png)
+
+![sistema_multipolar](sistema_unipolar.png)
+
 FIGURA 4.1 Polaridade no sistema internacional
+
+## Página 126
 
 Se houver vários atores influentes no sistema internacional, será formado um sistema de equilíbrio de poder, ou sistema multipolar. No equilíbrio de poder clássico, os atores são exclusivamente Estados, e deve haver no mínimo cinco deles. O equilíbrio de poder no século XIX – entre Grã-Bretanha, Rússia, Prússia, França e Áustria – é o antecedente concreto discutido no Capítulo 2. Em sistemas multipolares, vários Estados – no mínimo três ou mais – gozam de relativa paridade de poder.
 
 Em um sistema de equilíbrio de poder, as normas essenciais do sistema estão claras para cada Estado participante. O quadro Em Foco, adiante, apresenta uma lista dessas normas básicas de comportamento. Se um ator fundamental não seguir essas normas, o sistema de equilíbrio de poder pode ficar instável. Se o número de Estados diminuir para três, a estabilidade é ameaçada porque tornam-se possíveis coalizões entre quaisquer dois deles, o que deixaria o terceiro isolado e fraco. Quando são formadas alianças dentro de um sistema de equilíbrio de poder, elas têm uma finalidade específica e curta duração, e mudam de acordo com vantagens, e não ideologias. Eventuais guerras que ocorram serão provavelmente de natureza limitada, destinadas a preservar o equilíbrio de poder.
+
+## Página 127
 
 ### Em foco
 
@@ -42,15 +52,23 @@ Em um sistema de equilíbrio de poder, as normas essenciais do sistema estão cl
 ♦ Outros Estados são considerados aliados potenciais.
 ♦ Os Estados cuidam de seus próprios interesses nacionais, definidos em termos de poder.
 
-Em sistemas bipolares, as normas básicas são diferentes. No sistema bipolar da Guerra Fria, os dois blocos (a Organização do Tratado do Atlântico Norte – OTAN – e o Pacto de Varsóvia) prefeririam negociar a lutar, travar guerras menores em vez de grandes guerras e travar grandes guerras em vez de não conseguir eliminar o bloco rival, embora a Guerra Fria nunca tenha explodido em uma guerra “quente”. No sistema bipolar, as alianças tendem a ser de longo prazo, baseadas em interesses relativamente permanentes, não flutuantes. Em um sistema bipolar rígido, as organizações internacionais ou não se desenvolvem ou são completamente ineficazes, caso das Nações Unidas no auge da Guerra Fria. Em um sistema bipolar mais relaxado, as organizações internacionais podem se desenvolver com a finalidade primária de fazer a mediação entre os dois blocos, e cada Estado participante das coalizões mais frouxas pode tentar usar essas organizações em benefício próprio. Durante grande parte da era da Guerra Fria, em particular nas décadas de 1950 e 1960, o sistema internacional foi bipolar – Estados Unidos, seus aliados na OTAN e o Japão contra a União Soviética e seus aliados do Pacto de Varsóvia. Porém, no decurso do conflito, a relativa rigidez ou relaxamento do sistema bipolar foram apresentando variações à medida que Estados poderosos como a República Popular da China e a França seguiam caminhos independentes.
+Em sistemas bipolares, as normas básicas são diferentes. No sistema bipolar da Guerra Fria, os dois blocos (a Organização do Tratado do Atlântico Norte – OTAN – e o Pacto de Varsóvia) prefeririam negociar a lutar, travar guerras menores em vez de grandes guerras e travar grandes guerras em vez de não conseguir eliminar o bloco rival, embora a Guerra Fria nunca tenha explodido em uma guerra “quente”. No sistema bipolar, as alianças tendem a ser de longo prazo, baseadas em interesses relativamente permanentes, não flutuantes. 
 
-Outra possibilidade é que o sistema internacional seja unipolar, ou seja, um Estado detém recursos esmagadores no sistema internacional em virtude de seu tamanho, capacidade econômica e/ou militar ou competência organizacional. Imediatamente após a Guerra do Golfo, em 1991, muitos Estados, incluindo aliados mais próximos dos Estados Unidos e praticamente todos os Estados em desenvolvimento, ficaram preocupados com o fato de que o sistema internacional havia se tornado unipolar. Afinal, os gastos dos Estados Unidos com defesa eram maiores do que os dos 15 Estados seguintes combinados; sua economia era três vezes mais forte do que a das três economias seguintes juntas. Diante de tamanha superioridade, outros Estados afligiamse com a possibilidade de não haver nenhum contrapeso eficaz para o poder americano — uma preocupação que permanece no século XXI. Não há muito o que discutir com relação ao fato de que os Estados Unidos ainda possuem recursos esmagadores, mas coloca-se bastante em questão se os Estados Unidos têm condições de traduzir tamanho potencial em poder de fato. Em termos relativos, o domínio dos Estados Unidos está em declínio. China, Japão e União Europeia vêm crescendo economicamente, assim como Brasil e Índia, embora os gastos militares dos Estados Unidos continuem não tendo nenhum rival à vista — tendência que sugere claramente que, embora os Estados Unidos mantenham a unipolaridade em termos absolutos, sua capacidade de exercer a hegemonia vem sendo desafiada por outros Estados.
+Em um sistema bipolar rígido, as organizações internacionais ou não se desenvolvem ou são completamente ineficazes, caso das Nações Unidas no auge da Guerra Fria. Em um sistema bipolar mais relaxado, as organizações internacionais podem se desenvolver com a finalidade primária de fazer a mediação entre os dois blocos, e cada Estado participante das coalizões mais frouxas pode tentar usar essas organizações em benefício próprio. Durante grande parte da era da Guerra Fria, em particular nas décadas de 1950 e 1960, o sistema internacional foi bipolar – Estados Unidos, seus aliados na OTAN e o Japão contra a União Soviética e seus aliados do Pacto de Varsóvia. Porém, no decurso do conflito, a relativa rigidez ou relaxamento do sistema bipolar foram apresentando variações à medida que Estados poderosos como a República Popular da China e a França seguiam caminhos independentes.
+
+Outra possibilidade é que o sistema internacional seja unipolar, ou seja, um Estado detém recursos esmagadores no sistema internacional em virtude de seu tamanho, capacidade econômica e/ou militar ou competência organizacional. Imediatamente após a Guerra do Golfo, em 1991, muitos Estados, incluindo aliados mais próximos dos Estados Unidos e praticamente todos os Estados em desenvolvimento, ficaram preocupados com o fato de que o sistema internacional havia se tornado unipolar. Afinal, os gastos dos Estados Unidos com defesa eram maiores do que os dos 15 Estados seguintes combinados; sua economia era três vezes mais forte do que a das três economias seguintes juntas. Diante de tamanha superioridade, outros Estados afligiamse com a possibilidade de não haver nenhum contrapeso eficaz para o poder americano — uma preocupação que permanece no século XXI. Não há muito o que discutir com relação ao fato de que os Estados Unidos ainda possuem recursos esmagadores, mas coloca-se bastante em questão se os Estados Unidos têm condições de traduzir tamanho potencial em poder de fato. 
+
+Em termos relativos, o domínio dos Estados Unidos está em declínio. China, Japão e União Europeia vêm crescendo economicamente, assim como Brasil e Índia, embora os gastos militares dos Estados Unidos continuem não tendo nenhum rival à vista — tendência que sugere claramente que, embora os Estados Unidos mantenham a unipolaridade em termos absolutos, sua capacidade de exercer a hegemonia vem sendo desafiada por outros Estados.
+
+## Página 128
 
 O tipo de sistema internacional em vigor em um dado momento tem implicações para o gerenciamento e estabilidade do sistema. Será que certas polaridades são mais administráveis e, por conseguinte, mais estáveis do que outras? A probabilidade de ocorrência de guerras é maior em sistemas bipolares, multipolares ou unipolares? Essas questões dominaram grande parte da discussão entre os realistas, mas os estudos dessas relações não são conclusivos.
 
 Sistemas bipolares são muito difíceis de regular formalmente, visto que nem os Estados não comprometidos nem as organizações internacionais conseguem dirigir o comportamento de nenhum dos dois polos. A regulação informal pode ser mais fácil. Se qualquer dos blocos partir para uma ruptura, suas consequências são percebidas imediatamente, em especial se, como resultado, um deles ganhar em força ou posição. Kenneth Waltz, pelo menos, argumenta que, em virtude dessa visibilidade, o sistema internacional bipolar é a estrutura mais estável no longo prazo: ambos os lados “são capazes de moderar a utilização de violência por parte do outro e absorver possíveis mudanças desestabilizadoras que decorram da utilização de violência que não controlem ou não possam controlar”.2 Em tal sistema há uma clara diferença entre o poder dos dois polos em comparação com o dos demais Estados participantes. Em razão da disparidade de poder, cada um dos dois lados é capaz de focalizar sua atividade quase exclusivamente no outro. Cada qual pode antecipar-se às ações do outro e prever com exatidão suas reações, graças ao histórico de interações sucessivas. Ambos se empenham na preservação desse equilíbrio de poder, de modo a preservar a si mesmo e ao sistema bipolar. Em 2012, Waltz retomou uma tese semelhante acerca de “por que o Irã deve ter a bomba”. Ele argumenta que a capacidade nuclear de Israel é desestabilizadora para a região. “Se o Irã tiver energia nuclear, ele e Israel vão dissuadir os demais, como sempre acontece com as potências nucleares.” Isso traria estabilidade.
 
 Destacando a estabilidade atingida pelo sistema bipolar da Guerra Fria, John Mearsheimer provocou controvérsia ao sugerir que o mundo sentiria falta da estabilidade e previsibilidade impostas pela Guerra Fria. Com o final do sistema bipolar da Guerra Fria, argumentou ele, haveria mais conflitos interestatais e, por isso, maior probabilidade de guerra. A seu ver, a intimidação seria mais difícil e os erros de cálculo, mais prováveis, e derivou daí uma clara implicação política: “Interessa ao Ocidente manter a paz na Europa. Daí seu interesse também na manutenção da ordem da Guerra Fria, e portanto na continuidade do confronto da Guerra Fria; qualquer desdobramento que ameace encerrá-la é perigoso.(…) O fim definitivo da Guerra Fria criaria mais problemas do que resolveria.”4 A maioria dois analistas não concorda com essa conclusão provocadora, em parte porque há outros fatores, além da polaridade, capazes de afetar a estabilidade do sistema.
+
+## Página 129
 
 ### Você decide
 
@@ -64,6 +82,8 @@ Por fim, você pode assumir a posição de que o mundo, na verdade, é multipola
 
 Você decide Que aspecto terá o mundo pela frente, em termos de distribuição de poder? Que tipo de poder ou poderes talvez sejam mais importantes? O poder militar? O econômico? O poder das ideias? Por fim, que impacto você supõe que essa distribuição de poder teria sobre a probabilidade de ocorrência de paz e de guerra? Como isso pode afetar você em sua vida diária?
 
+## Página 130
+
 Teoricamente, a regulação da estabilidade do sistema deveria ser mais fácil em sistemas multipolares e de equilíbrio de poder do que em sistemas bipolares. A finalidade primordial do “fiel da balança”, papel desempenhado pela Grã-Bretanha no século XIX, é servir de regulador para o sistema, interpondo-se para corrigir eventuais desequilíbrios – como aconteceu quando a Grã-Bretanha interveio na Guerra da Crimeia em 1854–1855, opondo-se à Rússia em favor da Turquia. Na multipolaridade, ocorrem várias interações entre as várias partes e, assim, cada qual tem menos oportunidade de se fixar em uma relação específica. A interação de qualquer um dos Estados participantes com outros Estados resulta em lealdades e alianças entrecruzadas e, por conseguinte, modera o grau de hostilidade ou amizade em relação a qualquer dos demais atores. Há menor probabilidade de os Estados reagirem à acumulação de armamentos de apenas uma das partes do sistema, o que reduz a probabilidade de guerra.
 
 Em contrapartida, os teóricos da estabilidade hegemônica entendem que a unipolaridade, quando o ator hegemônico se dispõe a agir, leva ao sistema internacional mais estável. O historiador Paul Kennedy, em Ascensão e queda das grandes potências, argumenta que foi a hegemonia da Grã-Bretanha no século XIX, assim como a dos Estados Unidos na era imediatamente após a Segunda Guerra Mundial, que levou à maior estabilidade.5 Outros proponentes dessa teoria, como Keohane, defendem que os Estados hegemônicos vão se dispor a arcar com o ônus da imposição — unilateral, se necessário — das normas, a fim de assegurar a continuidade do sistema que os beneficia. Quando o hegemônico perde recursos materiais e desiste de exercer o poder, a estabilidade do sistema fica comprometida.
@@ -72,7 +92,11 @@ Fica claro, então, não há consenso entre os realistas quanto à relação ent
 
 Será que um sistema unipolar pode ser duradouro? Um grupo de estudiosos postula que, se o polo único estiver satisfeito com o status quo, o sistema terá maior propensão a resistir e manter-se estável. Mas, se o Estado for tomado pelo medo e tornar-se oportunista, se produzir bens públicos insuficientes e cuidar mais de interesses paroquiais, a estabilidade da ordem internacional pode se ver ameaçada.
 
-Os realistas e a mudança do sistema internacional Embora valorizem a continuidade dos sistemas, os realistas reconhecem que os sistemas internacionais mudam, como já descrevemos. Por que os sistemas mudam? Os realistas atribuem a mudança no sistema ou a mudanças nos atores (e, portanto, na distribuição do poder) ou a mudanças emanadas de fora do sistema.
+## Página 131
+
+### Os realistas e a mudança do sistema internacional
+
+Embora valorizem a continuidade dos sistemas, os realistas reconhecem que os sistemas internacionais mudam, como já descrevemos. Por que os sistemas mudam? Os realistas atribuem a mudança no sistema ou a mudanças nos atores (e, portanto, na distribuição do poder) ou a mudanças emanadas de fora do sistema.
 
 Mudanças no número de atores principais ou na posição relativa de poder entre eles podem resultar mudanças fundamentais no sistema internacional. Normalmente, as guerras são as responsáveis por mudanças desse gênero nas relações de poder. Por exemplo, o final da Segunda Guerra Mundial acarretou a relativa decadência da GrãBretanha e da França, ainda que tenham saído vitoriosas. A guerra sinalizou também não somente o fim das aspirações imperiais do Japão e da Alemanha, mas também o de seus recursos nacionais básicos. Seus respectivos exércitos sofreram uma derrota total; a sociedade civil foi destruída e a infraestrutura, arrasada. Duas outras potências emergiram em posições dominantes — os Estados Unidos, agora dispostos a assumir o papel internacional que tinham recusado após a Primeira Guerra Mundial, e a União Soviética, sustentada por sua vitória, ainda que fraca em termos econômicos. O sistema internacional havia sofrido uma transformação radical; o mundo multipolar fora substituído por outro bipolar.
 
@@ -90,12 +114,15 @@ Mudanças exógenas também podem gerar um deslocamento do sistema político int
 | Restrições                  | Polaridade |
 | Possibilidade de mudança    | Mudança lenta quando o equilíbrio de poder se desloca ou quando ocorre mudança tecnológica |
 
+## Página 132
 
 Nenhuma mudança tecnológica exerceu impacto mais profundo no sistema internacional do que o desenvolvimento de armas nucleares e sua utilização em conflitos armados. A capacidade de destruição dessas armas, sua incapacidade de discriminar entre combatentes e civis e o evidente prejuízo que causam às gerações futuras são características que induziram as autoridades a modificar as regras do jogo. Durante a Guerra Fria, isso levou a que as superpotências não se enfrentassem diretamente, e preferissem confrontos por meio de agentes não nucleares, fazendo uso de tecnologia militar convencional. 
 
 Como não são usadas desde 1945, as armas nucleares perderam a credibilidade em determinados círculos. Não obstante, continuam muito temidas; assim, o empenho dos Estados não nucleares para desenvolver arsenais desse tipo (ou sua ameaça de fazê-lo) enfrenta grande resistência, como quando os norte-coreanos e iranianos anunciaram suas respectivas intenções de entrar no time nuclear. Os Estados nucleares não querem uma mudança no status quo; de seu ponto de vista, a proliferação nuclear, sobretudo quando nas mãos de Estados “hostis” como Coreia do Norte e Irã, é geradora de instabilidade no sistema internacional.
 
 Assim, na visão dos realistas, os sistemas internacionais podem mudar; entretanto, a inclinação inerente às interpretações realistas é a favor da continuidade. Todos os realistas concordam que há padrões de mudança no sistema, ainda que possam discordar quanto ao período que deve ser examinado para estudar as mudanças. As tentativas dos realistas de testar várias das ideias resultantes de suas concepções acerca do sistema internacional não se mostraram conclusivas.
+
+## Página 133
 
 ## O sistema internacional segundo os liberais
 
@@ -114,9 +141,15 @@ No sistema internacional liberal, a negociação e a coordenação muitas vezes 
 | Restrições                  | Interdependência; instituições |
 | Possibilidade de mudança    | Baixa probabilidade de mudança radical, mas pode ocorrer; mudança paulatina e constante, à medida que os atores se envolvem em novas relações |
 
-A segunda concepção liberal vê o sistema internacional em termos de uma ordem internacional específica. Com base na tradição de Immanuel Kant e do presidente americano Woodrow Wilson, como discutido no Capítulo 3, esse ponto de vista sustenta que uma ordem internacional liberal rege os acordos entre os governos com regras e princípios básicos, similares aos princípios assinalados pelos realistas sob condições de polaridade diversas. Diferentemente dos princípios realistas, no entanto, essa ordem é uma ordem reconhecida; não se trata de um mero comportamento padronizado ou um aglomerado de interconexões. Nesta ordem, as instituições têm um papel fundamental. Como defende John Ikenberrry em After Victory, o objetivo reconhecido de uma potência dominante nesta ordem internacional é estabelecer regras que sejam “ao mesmo tempo duráveis e legítimas, mas regras e disposições que também atendam aos interesses de longo prazo do Estado principal”.12 Para tanto, ela limita sua própria autonomia e consente em assumir compromissos críveis.
+## Página 134
+
+A segunda concepção liberal vê o sistema internacional em termos de uma ordem internacional específica. Com base na tradição de Immanuel Kant e do presidente americano Woodrow Wilson, como discutido no Capítulo 3, esse ponto de vista sustenta que uma ordem internacional liberal rege os acordos entre os governos com regras e princípios básicos, similares aos princípios assinalados pelos realistas sob condições de polaridade diversas. Diferentemente dos princípios realistas, no entanto, essa ordem é uma ordem reconhecida; não se trata de um mero comportamento padronizado ou um aglomerado de interconexões.
+
+Nesta ordem, as instituições têm um papel fundamental. Como defende John Ikenberrry em After Victory, o objetivo reconhecido de uma potência dominante nesta ordem internacional é estabelecer regras que sejam “ao mesmo tempo duráveis e legítimas, mas regras e disposições que também atendam aos interesses de longo prazo do Estado principal”.12 Para tanto, ela limita sua própria autonomia e consente em assumir compromissos críveis.
 
 Uma terceira perspectiva liberal do sistema internacional é a do institucionalismo neoliberal. Os institucionalistas neoliberais consideram o sistema internacional anárquico e reconhecem que cada Estado individual age segundo seu próprio interesse, de modo semelhante ao pensamento realista. Contudo, os institucionalistas neoliberais chegam a conclusões diferentes acerca do comportamento do Estado no sistema internacional. Este pode ser um sistema colaborativo, em que os Estados optam por cooperar por se darem conta de que, no futuro, voltarão a interagir com os mesmos atores, como explicado no Capítulo 3. Essas interações recorrentes constituem a motivação para os Estados criarem instituições internacionais — que, por sua vez, moderem o comportamento de cada um e forneçam tanto parâmetros seguros de referência para interações quanto um contexto para a negociação. As instituições internacionais criam pontos de foco para a coordenação e ajudam a reforçar a credibilidade dos compromissos dos Estados na medida em que especificam o que é esperado — incentivando-os, assim, a estabelecer suas respectivas reputações em termos de cumprimento dos acordos firmados. Desse modo, para os neoliberais, as instituições exercem um impacto profundo e independente sobre as interações interestatais na medida em que fornecem informações e enquadram as ações, ainda que não necessariamente afetem as motivações dos Estados. O sistema internacional pode ser anárquico, mas a cooperação pode ocorrer através de instituições.
+
+## Página 135
 
 ### Os liberais e a mudança do sistema internacional
 
@@ -126,6 +159,8 @@ Em segundo lugar, a mudança pode se dar em decorrência de modificações na im
 
 Em terceiro lugar, a mudança pode acontecer à medida que novos atores, entre eles corporações multinacionais, organizações não governamentais ou outros participantes da sociedade civil global, venham reforçar ou tomar o lugar dos Estados. Os diversos novos atores podem desenvolver novos tipos de relações e afetar o comportamento tanto do sistema internacional quanto dos Estados. Esses tipos de mudanças, compatíveis com o pensamento liberal, são discutidos por autores dessa linha. Entretanto, assim como seus colegas realistas, os pensadores liberais também reconhecem que a mudança na estrutura global de poder entre os Estados pode ocorrer. Já os radicais defendem a realização de profundas modificações.
 
+## Página 136
+
 ## O sistema internacional segundo os radicais
 
 Enquanto os realistas definem o sistema internacional em termos de sua polaridade e estabilidade, os radicais procuram descrever e explicar a estrutura em termos inteiramente distintos. Por conseguinte, o futuro que vislumbram é bem diferente.
@@ -134,9 +169,15 @@ A estrutura do sistema internacional é descrita pelos radicais em termos de sua
 
 Diferentes sistemas internacionais apresentam graus variados de estratificação.Historicamente, a estratificação do sistema é generalizada. Segundo algumas medições, várias das potências mundiais (Estados Unidos, Japão, Alemanha, França, GrãBretanha, Rússia e China) respondem por cerca de metade do Produto Interno Bruto (PIB) mundial total, ao passo que a outra metade é compartilhada pelos mais de 180 Estados restantes (Figura 4.2). Da estratificação do poder e dos recursos decorre a divisão entre os privilegiados, caracterizados sem muito rigor como o Norte, e os desprovidos, em grande parte localizados no Sul. Essa distinção é vital para nossa discussão sobre a economia política internacional, encontrada no Capítulo 9.
 
+![estratitifacao_si](estratitifacao_si.png)
+
 ### FIGURA 4.2 Estratificação do sistema internacional
 
+## Página 137
+
 A estratificação de recursos e, portanto, influência tem implicações para a capacidade de autorregulação de cada sistema, bem como para a sua estabilidade. Quando as potências dominantes são desafiadas pelos Estados situados logo abaixo delas em termos de acesso a recursos, o sistema pode ficar altamente instável. Por exemplo, as tentativas da Alemanha e do Japão de obter e recuperar recursos durante a década de 1930 resultaram na Segunda Guerra Mundial. Esse grupo de potências da segunda divisão tem a possibilidade de sair vitorioso de um confronto, possibilidade fora do alcance dos que estão realmente por baixo em um sistema extremamente estratificado (embora ainda possam provocar rupturas substanciais). As potências em ascensão, em especial aquelas em processo de aquisição de recursos, buscam o status de primeira divisão e estão dispostas a ir à guerra por isso. Se os desafiantes não iniciarem uma guerra, as potências da primeira divisão poderão fazê-lo a fim de afastar qualquer perigo de deslocamento de poder.
+
+## Página 138
 
 ### Teoria em Resumo - A perspectiva radical do sistema internacional
 
@@ -155,7 +196,9 @@ Em suma, os radicais acreditam que há grandes disparidades econômicas entranha
 
 Mas o sistema capitalista em si pode ser mudado? Em outras palavras, a transformação do sistema – como a passagem do sistema feudal para o capitalista – é possível? Nesse ponto, as opiniões dos radicais são contraditórias. Alguns são bastante pessimistas, outros se mostram mais otimistas. Assim como os realistas divergem com relação às implicações práticas, não existe um consenso entre os radicais quanto à possibilidade de a estratificação do sistema que eles tanto abominam ser alterada.
 
-## Construtivismo e mudança
+## Página 139
+
+### Construtivismo e mudança
 
 Segundo os construtivistas, todo o conceito de sistema internacional não passa de uma ideia europeia. Eles sustentam que nada pode ser explicado exclusivamente por estruturas materiais internacionais. Martha Finnemore, em The Purpose of Intervention, sugere que já houve várias ordens internacionais distintas, com finalidades variáveis, diferentes concepções de ameaça e confiança em modos diversos de manter a ordem. Ela identifica pelo menos quatro ordens internacionais europeias: uma ordem de equilíbrio, no século XVIII; uma ordem de concerto, no século XIX; um sistema de esfera de influência, em grande parte do século XX; e, após o término da Guerra Fria, uma nova ordem em evolução, cujos objetivos são a promoção da democracia liberal, do capitalismo e dos direitos humanos. Os construtivistas concordam com outros teóricos quanto à importância do poder no sistema internacional, mas propõem que o significado de “poder” pode mudar ao longo do tempo. Nas palavras de Finnemore, “[o] que fez de 1815 um concerto e de 1950 uma Guerra Fria não foi a distribuição de material de recursos, mas os significados compartilhados e as interpretações impostas pelos participantes a esses recursos”.
 
@@ -165,7 +208,9 @@ Os construtivistas acreditam que o que muda são as normas sociais, embora nem t
 
 Os construtivistas, pois, interessam-se por analisar as grandes mudanças na estrutura normativa: como o uso da força vem evoluindo ao longo do tempo, como vem se modificando o entendimento de quem é “humano” e como as ideias a respeito da democracia e dos direitos humanos se internacionalizaram e, num segundo momento, como os Estados foram socializados nelas.
 
-## Vantagens e desvantagens do sistema internacional como nível de análise
+## Página 140
+
+### Vantagens e desvantagens do sistema internacional como nível de análise
 
 Para os partidários de todas as perspectivas teóricas, há claras vantagens na utilização do sistema internacional como nível de análise. A linguagem da teoria de sistemas possibilita comparações e contraposições entre sistemas: o sistema internacional em um determinado ponto no tempo pode ser comparado com outro em outro ponto do tempo; sistemas internacionais podem ser comparados com sistemas internos dos Estados; sistemas políticos podem ser contrastados com sistemas sociais e até biológicos. O modo como esses vários sistemas interagem é o foco das ciências sociais e naturais.
 
@@ -175,17 +220,21 @@ Em suma, a teoria de sistemas é uma abordagem holística, que proporciona anál
 
 Mas a teoria dos sistemas também tem certas deficiências e inadequações flagrantes. A ênfase no nível do sistema internacional faz a política ser, com frequência, negligenciada. As generalizações são amplas e, às vezes, óbvias. Quem contestaria as afirmações de que a maioria dos Estados procura manter seus recursos relativos, ou de que a maioria deles quase sempre prefere negociar a lutar? Quem duvida que alguns Estados ocupem uma posição econômica de destaque, que determina o status de todos os outros?
 
+## Página 141
+
 Os teóricos do sistema internacional sempre foram estorvados pelo problema das fronteiras. Ao adotar a noção de sistema internacional, estão se referindo ao sistema político internacional? Quais fatores encontram-se fora do sistema? Na verdade, grande parte da teorização realista ignora sistematicamente essa questão crítica, diferenciando vários níveis dentro do sistema, mas considerando um único constructo no âmbito do sistema internacional. Os liberais saem-se melhor, diferenciando fatores externos ao sistema e até mesmo incorporando–os à sua noção mais ampla de sistema internacional interdependente. Ainda assim, se não é possível distinguir claramente entre o que está dentro e o que está fora do sistema, será que temos mesmo um sistema? E, mais importante, o que modela o sistema? Qual é a relação recíproca entre as restrições do sistema internacional e o comportamento da unidade (Estado)? Para efeito de comparação, os construtivistas não reconhecem tais fronteiras; argumentam que não há nenhuma distinção natural ou necessária entre o sistema internacional e o Estado, ou entre a política internacional e a política interna, e nenhuma distinção entre fontes de mudança endógenas e exógenas.
 
 Ademais, testar teorias sistêmicas é muito difícil. Na maioria dos casos, os teóricos são limitados pela falta de informações históricas. Afinal, poucos teóricos dos sistemas, exceto por alguns radicais e cíclicos, discutem sistemas anteriores a 1648. Na verdade, a maioria começa pelo século XIX. Os que lançam mão de períodos anteriores são limitados tanto pelas deficiências de sua fundamentação histórica quanto por lapsos gritantes no registro histórico. Ainda que não sejam falhas fatais, nem por isso deixam de restringir a capacidade desses acadêmicos de generalizar suas conclusões.
 
 Talvez a crítica mais crucial seja à atenção dada a um sistema internacional em particular. Seria a ideia de um sistema internacional único, a rigor, uma concepção eurocêntrica? Aqui, os críticos têm sua razão. A ideia de sistema internacional desenvolveu-se com base no mundo estadocêntrico pós-Vestfália, no qual o sistema internacional era composto de Estados europeus soberanos que compartilhavam tradições pré-vestfalianas comuns: o Império Romano, que havia imposto à força a ordem e a unidade a uma vasta extensão geográfica e possuía uma linguagem comum, e a tradição cristã, exemplificada pela Igreja Católica da época medieval, com a sua autoridade e sua leis. Foi a partir dessas raízes sociais comuns que emergiu a ideia do sistema internacional. Alguns estudiosos (a assim chamada escola inglesa) referem-se a esse sistema como **sociedade internacional**, por basear-se em uma cultura comum que lançou os alicerces de regras e instituições compartilhadas. Segundo dois de seus principais arquitetos, os acadêmicos Hedley Bull e Adam Watson, embora o sistema internacional abarque uma série de comunidades políticas independentes, uma sociedade internacional é mais do que isso. Nela, os diversos atores se comunicam, chegando a um consenso quanto a regras e instituições comuns e reconhecendo interesses comuns. Os atores da sociedade internacional partilham uma identidade comum, a percepção de um “nós”, sem a qual sociedade nenhuma pode existir.
 
-## Perspectivas globais 
+## Página 142
+
+### Perspectivas globais 
 
 ### O Sistema Internacional: uma Perspectiva da China
 
-```Os realistas postulam que o sistema internacional muda à medida que grandes potências ganham ou perdem poder em relação a outros Estados. Diante do crescimento do poder econômico e político da China, muitos especulam se ela alcançará os Estados Unidos, levando a uma nova bipolaridade, ou se vai superá-los, instaurando um novo sistema unipolar. Autoridades chinesas declaram suas intenções.```
+Os realistas postulam que o sistema internacional muda à medida que grandes potências ganham ou perdem poder em relação a outros Estados. Diante do crescimento do poder econômico e político da China, muitos especulam se ela alcançará os Estados Unidos, levando a uma nova bipolaridade, ou se vai superá-los, instaurando um novo sistema unipolar. Autoridades chinesas declaram suas intenções.
 
 Após quase um século considerando-se uma vítima das grandes potências, e após décadas de revolução interna, durante as quais permaneceu fechada para o mundo, a China vem se tornando uma grande potência muito segura de si. O país exerce crescente influência econômica e política, fazendo uso da diplomacia tanto bilateral como multilateral. Seus interesses estão estreitamente alinhados com os de outras grandes potências, ainda que não sejam paralelos. O país passou a operar dentro das regras do sistema internacional contemporâneo e socializou-se nas normas internacionais vigentes.
 
@@ -196,6 +245,8 @@ A participação da China no comércio mundial expandiu sua presença global, be
 A China vem agindo de forma responsável em relação tanto aos Estados capitalistas avançados quanto aos países em desenvolvimento. Os chineses financiam uma parcela considerável da dívida americana, graças ao grande superávit de sua balança comercial com os Estados Unidos. Durante a crise financeira internacional de 2008, a China não exerceu pressão sobre o dólar americano nem sobre as taxas de juros. Para ajudar a reequilibrar a economia internacional, o país vem incentivando o consumo interno, aumentando os salários dos trabalhadores e permitindo que sua moeda aos poucos se valorize. Apesar de suas disputas geopolíticas com o Japão, os laços econômicos entre os dois países continuam sólidos.
 
 Como muitos outros Estados, a China necessita de recursos naturais. Assim, vem forjando relações com Estados que estão de acordo com seus interesses nacionais. Vem construindo relações com países africanos, investindo em infraestrutura, tecnologia e recursos naturais, em acordos cujo valor é estimado em cerca de US$40 bilhões. Com uma atividade comercial que supera os US$166 bilhões, a China é o principal parceiro comercial da África; vem dando prosseguimento às suas relações com países ricos em recursos naturais como Nigéria, Argélia, África do Sul, Sudão e Zâmbia, mas também tem expandido seus interesses para setores não ligados a esse tipo de recurso, em lugares como Congo e Etiópia. As empresas privadas, empresários e turistas chineses encontram terreno fértil na África; enquanto o Ocidente colonizou essas terras e muitas vezes as despojou de suas riquezas, a China busca um relacionamento pacífico e benéfico para as duas partes. Os chineses não interferem nos assuntos internos de outros Estados nem impõem condições indesejáveis acerca de questões sob a responsabilidade de cada Estado — o que ilustra como a China tem agido como uma potência mundial responsável.
+
+## Página 143
 
 Como todas as grandes potências, a China tem aumentado seus gastos militares, embora os americanos gastem seis vezes mais em defesa do que os chineses. O país vai continuar modernizando suas forças nucleares e fortalecendo sua capacidade de segundo ataque. Vai desenvolver recursos de guerra cibernética. Contudo, esses avanços talvez tenham sido exagerados pelos observadores ocidentais. Afinal, as Forças Armadas chinesas partiram de uma base muito inferior à de outras grandes potências. A China vem preferindo não fazer uso de sua capacidade militar, e não tem lutado para expandir seu território. Mas defende seus interesses nacionais, de acordo com sua política da China Única: a seu ver, Tibete, Taiwan e as ilhas nos mares do Sul da China, incluindo as Ilhas Diaoyu, fazem parte do país. Assim, os chineses se opõem a qualquer posicionamento de Estados vizinhos, tais como Japão, Coreia, Vietnã e mesmo os Estados Unidos, que venham a refutar suas reivindicações.
 
@@ -208,13 +259,15 @@ Para análise crítica
 3. A China vem defendendo, de maneira consistente, a soberania e a não ingerência nos assuntos internos dos Estados. Como essa postura favorece o papel da China no cenário internacional?
 4. Os construtivistas afirmam que mudanças nas normas levam a mudanças sistêmicas. Será que a China aprendeu novas normas? Ou estará apenas agindo em seu próprio interesse, como sugerem os realistas?
 
+## Página 144
+
 Mas será que não havia sistemas internacionais — ou, mais precisamente, sociedades internacionais — além do mundo europeu? Talvez essas sociedades fossem baseadas em outros conjuntos de regras e instituições. Por exemplo, vários reinos floresceram na China durante séculos antes da unificação, em 200 a.C. A China Imperial perdurou por dois mil anos, unificada em torno de uma cultura comum que os chineses acreditavam ser o centro do universo. Também os povos islâmicos compartilhavam uma identidade comum quando o Islã se espalhou pelo Oriente Médio e daí para a África, Ásia e até Europa. Essa identidade social pode ser observada na crença na umma, ou comunidade de crentes, simbolizada pela instituição do califado, a autoridade política islâmica — uma identidade que se sobrepunha àquelas relacionadas com tribo, raça e mesmo com o próprio Estado. Tal unidade sofreu uma ruptura com a divisão entre sunitas e xiitas, uma disputa acerca de quem seria o legítimo sucessor do profeta Maomé. Há quem proponha uma restauração do califado como maneira de renovar a antiga grandeza histórica da civilização islâmica. Os estudiosos das relações internacionais costumam prestar muito pouca atenção às sociedades internacionais não europeias.
 
 À medida que o sistema internacional baseado na vivência europeia ia se configurando como o mais poderoso e dominante, como é que outras regiões foram se integrando a ele? O colonialismo e a difusão do capitalismo pelas potências europeias incorporaram muitas áreas ao novo sistema, como descrito no Capítulo 2.
 
 Os embates entre essas diversas sociedades internacionais persistem. O cientista político Samuel Huntington classifica esses confrontos como civilizacionais e postula que não havia um sistema internacional único compartilhando uma cultura e tradições comuns, mas diferentes sociedades, ou civilizações. A seu ver, a variedade daria origem ao conflito internacional. Assim, por mais que a concepção de um sistema internacional único possa refletir a realidade das relações de poder em vigor entre o século XIX e os primeiros anos do século XXI, essa ideia é contestada em função de seu viés eurocêntrico, do modo como negligencia os sistemas internacionais dos “outros”, e das dificuldades empíricas para se diferenciar o sistema internacional de suas partes componentes.
 
-## Teoria em Resumo - Pontos de vista concorrentes a respeito do sistema internacional
+### Teoria em Resumo - Pontos de vista concorrentes a respeito do sistema internacional
 
 |                              | REALISMO/NEORREALISMO                                           | LIBERALISMO/INSTITUCIONALISMO NEOLIBERAL                                                                                    | RADICALISMO/TEORIA DA DEPENDÊNCIA                                 | CONSTRUTIVISMO                                                                                |
 | ---------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
@@ -223,7 +276,7 @@ Os embates entre essas diversas sociedades internacionais persistem. O cientista
 | **RESTRIÇÕES**               | Polaridade; distribuição de poder                               | Interdependência; instituições                                                                                              | Capitalismo; estratificação                                       | Interações permanentes                                                                        |
 | **POSSIBILIDADE DE MUDANÇA** | Mudança lenta quando ocorre deslocamento do equilíbrio de poder | Pouca possibilidade de mudança radical; mudança paulatina e constante, à medida que os atores se envolvem em novas relações | Mudança radical desejada, mas limitada pela estrutura capitalista | Ênfase na mudança das identidades e normas sociais                                            |
 
-
+## Página 146
 
 ## Resumindo: Do sistema internacional ao Estado
 

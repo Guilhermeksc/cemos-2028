@@ -32,6 +32,11 @@ export const routes: Routes = [
         path: 'cronograma',
         loadComponent: () => import('./pages/home/home-landing/cronograma/cronograma').then((m) => m.Cronograma)
       },
+      {
+        path: 'revisar-questoes',
+        loadComponent: () => import('./components/perguntas/revisar-questoes/revisar-questoes').then((m) => m.RevisarQuestoes),
+        canActivate: [authGuard]
+      },
       ...moduleRoutes
     ]
   },

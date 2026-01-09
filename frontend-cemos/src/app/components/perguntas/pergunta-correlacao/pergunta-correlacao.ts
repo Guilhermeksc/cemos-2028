@@ -11,7 +11,7 @@ import { PerguntaCorrelacao as PerguntaCorrelacaoInterface } from '../../../inte
   templateUrl: './pergunta-correlacao.html',
   styleUrl: '../perguntas.scss'
 })
-export class PerguntaCorrelacao implements OnInit, OnChanges {
+export class PerguntaCorrelacao implements OnChanges {
   private sanitizer = inject(DomSanitizer);
 
   @Input() questionId!: number;
@@ -22,20 +22,20 @@ export class PerguntaCorrelacao implements OnInit, OnChanges {
 
   userAnswer: { [key: string]: string } = {};
 
-  ngOnInit() {
-    console.log('🔗 Componente PerguntaCorrelacao ngOnInit:', {
-      questionId: this.questionId,
-      tem_questionData: !!this.questionData,
-      questionData_tipo: this.questionData?.tipo,
-      coluna_a_length: this.questionData?.coluna_a?.length,
-      coluna_b_length: this.questionData?.coluna_b?.length,
-      coluna_a: this.questionData?.coluna_a,
-      coluna_b: this.questionData?.coluna_b,
-      isAnswered: this.isAnswered,
-      isCorrect: this.isCorrect,
-      condicao_renderizacao: !!(this.questionData && this.questionData.coluna_a && this.questionData.coluna_b && this.questionData.coluna_a.length > 0 && this.questionData.coluna_b.length > 0)
-    });
-  }
+  // ngOnInit() {
+  //   console.log('🔗 Componente PerguntaCorrelacao ngOnInit:', {
+  //     questionId: this.questionId,
+  //     tem_questionData: !!this.questionData,
+  //     questionData_tipo: this.questionData?.tipo,
+  //     coluna_a_length: this.questionData?.coluna_a?.length,
+  //     coluna_b_length: this.questionData?.coluna_b?.length,
+  //     coluna_a: this.questionData?.coluna_a,
+  //     coluna_b: this.questionData?.coluna_b,
+  //     isAnswered: this.isAnswered,
+  //     isCorrect: this.isCorrect,
+  //     condicao_renderizacao: !!(this.questionData && this.questionData.coluna_a && this.questionData.coluna_b && this.questionData.coluna_a.length > 0 && this.questionData.coluna_b.length > 0)
+  //   });
+  // }
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['questionData']) {

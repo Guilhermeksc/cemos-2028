@@ -64,7 +64,8 @@ export interface Conceitos {
   bibliografia_titulo?: string;
   titulo: string;
   palavra_chave?: string;
-  assunto?: string;
+  assunto?: number | null; // ID do capítulo (ForeignKey)
+  assunto_titulo?: string | null; // Título do capítulo (read-only, para exibição)
   descricao?: string;
   caiu_em_prova: boolean;
   ano_prova?: number;

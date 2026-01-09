@@ -54,12 +54,13 @@
           (change)="onAssuntoChange()"
           [disabled]="isLoadingBibliografias || assuntosDisponiveis.length === 0"
         >
-          <option value="">Todos os Assuntos</option>
+          <option [ngValue]="null">Todos os Assuntos</option>
           <option 
-            *ngFor="let assunto of assuntosDisponiveis" 
-            [value]="assunto"
+            *ngFor="let capitulo of assuntosDisponiveis" 
+            [ngValue]="capitulo.id"
           >
-            {{ assunto }}
+            {{ capitulo.capitulo_titulo }} 
+            <span *ngIf="capitulo.bibliografia_titulo">({{ capitulo.bibliografia_titulo }})</span>
           </option>
         </select>
       </div>

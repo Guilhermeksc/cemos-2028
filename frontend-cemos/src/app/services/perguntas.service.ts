@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, forkJoin } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { environment } from '../environments/environment';
 import {
@@ -17,7 +17,8 @@ import {
   PaginatedResponse,
   EstatisticasBibliografia,
   EstatisticasGerais,
-  Pergunta
+  Pergunta,
+  QuestaoOmitida
 } from '../interfaces/perguntas.interface';
 
 @Injectable({
@@ -30,6 +31,7 @@ export class PerguntasService {
   private bibliografias$ = new BehaviorSubject<Bibliografia[]>([]);
   private loadingBibliografias$ = new BehaviorSubject<boolean>(false);
   private loadingPerguntas$ = new BehaviorSubject<boolean>(false);
+  private questoesOmitidas$ = new BehaviorSubject<QuestaoOmitida[]>([]);
 
   constructor(private http: HttpClient) {}
 
@@ -44,6 +46,10 @@ export class PerguntasService {
 
   get loadingPerguntas(): Observable<boolean> {
     return this.loadingPerguntas$.asObservable();
+  }
+
+  get questoesOmitidas(): Observable<QuestaoOmitida[]> {
+    return this.questoesOmitidas$.asObservable();
   }
 
   // ==================== BIBLIOGRAFIAS ====================
@@ -86,9 +92,26 @@ export class PerguntasService {
 
   /**
    * Busca todas as perguntas de uma bibliografia específica
+   * NOTA: Este método foi substituído por getAllPerguntasMultipla, getAllPerguntasVF e getAllPerguntasCorrelacao
+   * com filtro de bibliografia. Mantido apenas para compatibilidade.
+   * @deprecated Use getAllPerguntasMultipla, getAllPerguntasVF e getAllPerguntasCorrelacao com filtro de bibliografia
    */
   getPerguntasByBibliografia(id: number): Observable<PerguntaResumo[]> {
-    return this.http.get<PerguntaResumo[]>(`${this.apiUrl}/bibliografias/${id}/perguntas/`);
+    // Usar os métodos corretos que buscam todas as perguntas com filtro de bibliografia
+    return forkJoin({
+      multiplas: this.getAllPerguntasMultipla({ bibliografia: id }),
+      vfs: this.getAllPerguntasVF({ bibliografia: id }),
+      correlacoes: this.getAllPerguntasCorrelacao({ bibliografia: id })
+    }).pipe(
+      map(results => {
+        const todasPerguntas: PerguntaResumo[] = [
+          ...results.multiplas.map(p => this.mapToPerguntaResumo(p)),
+          ...results.vfs.map(p => this.mapToPerguntaResumo(p)),
+          ...results.correlacoes.map(p => this.mapToPerguntaResumo(p))
+        ];
+        return todasPerguntas;
+      })
+    );
   }
 
   // ==================== PERGUNTAS MÚLTIPLA ESCOLHA ====================
@@ -237,19 +260,19 @@ export class PerguntasService {
 
       const fetchNextPage = () => {
         if (!hasMore) {
-          console.log(`✅ Paginação completa: ${allResults.length} resultados obtidos`);
+          // console.log(`✅ Paginação completa: ${allResults.length} resultados obtidos`);
           observer.next(allResults);
           observer.complete();
           return;
         }
 
-        console.log(`📄 Buscando página ${currentPage} (page_size: ${pageSize})...`);
+        // console.log(`📄 Buscando página ${currentPage} (page_size: ${pageSize})...`);
         fetchPage(currentPage, pageSize).subscribe({
           next: (response) => {
             const pageResults = response.results || [];
             allResults.push(...pageResults);
             
-            console.log(`📄 Página ${currentPage} recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
+            // console.log(`📄 Página ${currentPage} recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
             
             // Verificar se há mais páginas
             if (response.next) {
@@ -257,7 +280,7 @@ export class PerguntasService {
               fetchNextPage();
             } else {
               hasMore = false;
-              console.log(`✅ Paginação completa: ${allResults.length} resultados obtidos em ${currentPage} página(s)`);
+              // console.log(`✅ Paginação completa: ${allResults.length} resultados obtidos em ${currentPage} página(s)`);
               observer.next(allResults);
               observer.complete();
             }
@@ -369,6 +392,7 @@ export class PerguntasService {
       pergunta: pergunta.pergunta,
       paginas: pergunta.paginas,
       assunto: pergunta.assunto,
+      assunto_titulo: pergunta.assunto_titulo || null,
       caiu_em_prova: pergunta.caiu_em_prova,
       ano_prova: pergunta.ano_prova
     };
@@ -489,5 +513,125 @@ export class PerguntasService {
         }));
       })
     );
+  }
+
+  // ==================== QUESTÕES OMITIDAS ====================
+
+  /**
+   * Carrega a lista de questões omitidas do usuário logado
+   */
+  loadQuestoesOmitidas(): Observable<QuestaoOmitida[]> {
+    return this.http.get<any>(`${this.apiUrl}/questoes-omitidas/`).pipe(
+      map(response => {
+        if (Array.isArray(response)) {
+          return response;
+        }
+        if (response && Array.isArray(response.results)) {
+          return response.results;
+        }
+        return [];
+      }),
+      tap((omitidas) => this.questoesOmitidas$.next(omitidas))
+    );
+  }
+
+  /**
+   * Omitir uma questão para o usuário logado
+   */
+  omitirQuestao(
+    perguntaId: number,
+    perguntaTipo: 'multipla' | 'vf' | 'correlacao',
+    options?: { motivo?: string; bibliografiaId?: number; assuntoId?: number | null }
+  ): Observable<QuestaoOmitida> {
+    const payload: any = {
+      pergunta_id: perguntaId,
+      pergunta_tipo: perguntaTipo
+    };
+
+    if (options?.motivo) {
+      payload.motivo = options.motivo;
+    }
+    if (options?.bibliografiaId !== undefined) {
+      payload.bibliografia = options.bibliografiaId;
+    }
+    if (options?.assuntoId !== undefined) {
+      payload.assunto = options.assuntoId;
+    }
+
+    return this.http.post<QuestaoOmitida>(`${this.apiUrl}/questoes-omitidas/`, payload).pipe(
+      tap((novaOmissao) => {
+        const atual = this.questoesOmitidas$.value;
+        const indexExistente = atual.findIndex(
+          (q) => q.pergunta_id === novaOmissao.pergunta_id && q.pergunta_tipo === novaOmissao.pergunta_tipo
+        );
+        let atualizado: QuestaoOmitida[];
+        if (indexExistente >= 0) {
+          atualizado = [...atual];
+          atualizado[indexExistente] = novaOmissao;
+        } else {
+          atualizado = [...atual, novaOmissao];
+        }
+        this.questoesOmitidas$.next(atualizado);
+      })
+    );
+  }
+
+  /**
+   * Remove uma questão da lista de omissões do usuário logado
+   */
+  restaurarQuestao(perguntaId: number, perguntaTipo: 'multipla' | 'vf' | 'correlacao'): Observable<{ detail: string }> {
+    return this.http.post<{ detail: string }>(`${this.apiUrl}/questoes-omitidas/restaurar/`, {
+      pergunta_id: perguntaId,
+      pergunta_tipo: perguntaTipo
+    }).pipe(
+      tap(() => {
+        const filtrado = this.questoesOmitidas$.value.filter(
+          (q) => !(q.pergunta_id === perguntaId && q.pergunta_tipo === perguntaTipo)
+        );
+        this.questoesOmitidas$.next(filtrado);
+      })
+    );
+  }
+
+  /**
+   * Atualiza uma pergunta de múltipla escolha
+   */
+  updatePerguntaMultipla(id: number, data: Partial<PerguntaMultipla>): Observable<PerguntaMultipla> {
+    return this.http.patch<PerguntaMultipla>(`${this.apiUrl}/perguntas-multipla/${id}/`, data);
+  }
+
+  /**
+   * Atualiza uma pergunta de verdadeiro/falso
+   */
+  updatePerguntaVF(id: number, data: Partial<PerguntaVF>): Observable<PerguntaVF> {
+    return this.http.patch<PerguntaVF>(`${this.apiUrl}/perguntas-vf/${id}/`, data);
+  }
+
+  /**
+   * Atualiza uma pergunta de correlação
+   */
+  updatePerguntaCorrelacao(id: number, data: Partial<PerguntaCorrelacao>): Observable<PerguntaCorrelacao> {
+    return this.http.patch<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/${id}/`, data);
+  }
+
+  /**
+   * Atualiza apenas o campo caiu_em_prova conforme o tipo
+   */
+  updatePerguntaCaiuEmProva(
+    perguntaId: number,
+    perguntaTipo: 'multipla' | 'vf' | 'correlacao',
+    value: boolean
+  ): Observable<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao> {
+    const payload = { caiu_em_prova: value };
+    switch (perguntaTipo) {
+      case 'multipla':
+        return this.updatePerguntaMultipla(perguntaId, payload);
+      case 'vf':
+        return this.updatePerguntaVF(perguntaId, payload);
+      case 'correlacao':
+        return this.updatePerguntaCorrelacao(perguntaId, payload);
+      default:
+        throw new Error(`Tipo de pergunta inválido: ${perguntaTipo}`);
+    }
   }
 }

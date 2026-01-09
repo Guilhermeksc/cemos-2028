@@ -2,6 +2,7 @@ from rest_framework import viewsets, filters, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import permissions
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import Q, Count, F
 from .models import (
@@ -11,10 +12,10 @@ from .models import (
     PerguntaVFModel, 
     PerguntaCorrelacaoModel,
     RespostaUsuario,
-    QuestaoErradaAnonima
+    QuestaoErradaAnonima,
+    QuestaoOmitida
 )
 from .serializers import (
-
     FlashCardsSerializer,
     FlashCardsCreateUpdateSerializer,
     PerguntaMultiplaSerializer,
@@ -26,8 +27,19 @@ from .serializers import (
     PerguntaResumoSerializer,
     RespostaUsuarioSerializer,
     RespostaUsuarioCreateSerializer,
-    QuestaoErradaAnonimaSerializer
+    QuestaoErradaAnonimaSerializer,
+    QuestaoOmitidaSerializer
 )
+
+
+class IsAdminOrReadOnly(permissions.BasePermission):
+    """
+    Permite leitura para todos, mas restringe operações de escrita a usuários admin.
+    """
+    def has_permission(self, request, view):
+        if request.method in permissions.SAFE_METHODS:
+            return True
+        return bool(request.user and request.user.is_staff)
 
 class FlashCardsViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar flash cards"""
@@ -35,8 +47,8 @@ class FlashCardsViewSet(viewsets.ModelViewSet):
     serializer_class = FlashCardsSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'assunto', 'prova', 'ano', 'caveira']
-    search_fields = ['pergunta', 'resposta', 'assunto__titulo', 'bibliografia__titulo']
-    ordering_fields = ['id', 'bibliografia__titulo', 'assunto__titulo', 'prova', 'ano', 'caveira']
+    search_fields = ['pergunta', 'resposta', 'assunto__capitulo_titulo', 'bibliografia__titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'assunto__capitulo_titulo', 'prova', 'ano', 'caveira']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -49,10 +61,11 @@ class PerguntaMultiplaViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de múltipla escolha"""
     queryset = PerguntaMultiplaModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaMultiplaSerializer
+    permission_classes = [IsAdminOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta', 'assunto']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__titulo']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__titulo']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -65,10 +78,11 @@ class PerguntaVFViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de verdadeiro ou falso"""
     queryset = PerguntaVFModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaVFSerializer
+    permission_classes = [IsAdminOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
-    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto__titulo', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__titulo']
+    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto__capitulo_titulo', 'bibliografia__titulo', 'justificativa_resposta_certa']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -81,10 +95,11 @@ class PerguntaCorrelacaoViewSet(viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de correlação"""
     queryset = PerguntaCorrelacaoModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaCorrelacaoSerializer
+    permission_classes = [IsAdminOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__titulo']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__titulo']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -272,7 +287,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
         por_assunto = RespostaUsuario.objects.filter(
             usuario=usuario,
             assunto__isnull=False
-        ).values('assunto', assunto_titulo=F('assunto__titulo')).annotate(
+        ).values('assunto', assunto_titulo=F('assunto__capitulo_titulo')).annotate(
             total=Count('id'),
             acertos=Count('id', filter=Q(acertou=True)),
             erros=Count('id', filter=Q(acertou=False))
@@ -342,7 +357,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                         'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
                         'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
                         'assunto_id': pergunta.assunto_id,
-                        'assunto_titulo': pergunta.assunto.titulo if pergunta.assunto else None
+                        'assunto_titulo': pergunta.assunto.capitulo_titulo if pergunta.assunto else None
                     }
                 elif resposta.pergunta_tipo == 'vf':
                     pergunta = PerguntaVFModel.objects.get(id=resposta.pergunta_id)
@@ -356,7 +371,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                         'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
                         'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
                         'assunto_id': pergunta.assunto_id,
-                        'assunto_titulo': pergunta.assunto.titulo if pergunta.assunto else None
+                        'assunto_titulo': pergunta.assunto.capitulo_titulo if pergunta.assunto else None
                     }
                 elif resposta.pergunta_tipo == 'correlacao':
                     pergunta = PerguntaCorrelacaoModel.objects.get(id=resposta.pergunta_id)
@@ -370,7 +385,7 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                         'justificativa_resposta_certa': pergunta.justificativa_resposta_certa,
                         'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia else None,
                         'assunto_id': pergunta.assunto_id,
-                        'assunto_titulo': pergunta.assunto.titulo if pergunta.assunto else None
+                        'assunto_titulo': pergunta.assunto.capitulo_titulo if pergunta.assunto else None
                     }
             except Exception as e:
                 detalhes['questao'] = {'erro': f'Questão não encontrada: {str(e)}'}
@@ -638,3 +653,55 @@ class RespostaUsuarioViewSet(viewsets.ModelViewSet):
                 for item in erros_por_bibliografia[:50]  # Top 50 bibliografias
             ]
         })
+
+
+class QuestaoOmitidaViewSet(viewsets.ModelViewSet):
+    """
+    Permite que cada usuário gerencie quais questões deseja omitir dos simulados.
+    """
+    permission_classes = [IsAuthenticated]
+    serializer_class = QuestaoOmitidaSerializer
+
+    def get_queryset(self):
+        queryset = QuestaoOmitida.objects.select_related('bibliografia', 'assunto').all()
+        usuario_id = self.request.query_params.get('usuario_id')
+
+        if self.request.user.is_staff and usuario_id:
+            queryset = queryset.filter(usuario_id=usuario_id)
+        else:
+            queryset = queryset.filter(usuario=self.request.user)
+
+        return queryset.order_by('-created_at')
+
+    def perform_create(self, serializer):
+        serializer.save(usuario=self.request.user)
+
+    @action(detail=False, methods=['post'], url_path='restaurar')
+    def restaurar(self, request):
+        """
+        Remove a omissão de uma questão do usuário autenticado.
+        POST /api/questoes-omitidas/restaurar/
+        Body: { "pergunta_id": 1, "pergunta_tipo": "multipla" }
+        """
+        pergunta_id = request.data.get('pergunta_id')
+        pergunta_tipo = request.data.get('pergunta_tipo')
+
+        if pergunta_id is None or not pergunta_tipo:
+            return Response(
+                {'detail': 'pergunta_id e pergunta_tipo são obrigatórios.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        deleted, _ = QuestaoOmitida.objects.filter(
+            usuario=request.user,
+            pergunta_id=pergunta_id,
+            pergunta_tipo=pergunta_tipo
+        ).delete()
+
+        if deleted == 0:
+            return Response(
+                {'detail': 'Questão não estava omitida.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        return Response({'detail': 'Questão restaurada com sucesso.'}, status=status.HTTP_200_OK)

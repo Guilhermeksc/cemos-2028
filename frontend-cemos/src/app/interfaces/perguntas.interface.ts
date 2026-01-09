@@ -194,3 +194,15 @@ export enum AlternativaMultipla {
   D = 'd'
 }
 
+export interface QuestaoOmitida {
+  id: number;
+  usuario: number;
+  pergunta_id: number;
+  pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
+  motivo?: string | null;
+  bibliografia?: number | null;
+  bibliografia_titulo?: string | null;
+  assunto?: number | null;
+  assunto_titulo?: string | null;
+  created_at: string;
+}

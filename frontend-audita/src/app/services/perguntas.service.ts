@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, forkJoin } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { environment } from '../environments/environment';
 import {
@@ -50,6 +50,7 @@ export class PerguntasService {
 
   /**
    * Lista todas as bibliografias com filtros opcionais
+   * NOTA: Usa o endpoint do app bibliografia, não do app perguntas
    */
   getBibliografias(filters?: BibliografiaFilters): Observable<PaginatedResponse<Bibliografia>> {
     this.loadingBibliografias$.next(true);
@@ -63,7 +64,9 @@ export class PerguntasService {
       });
     }
 
-    return this.http.get<PaginatedResponse<Bibliografia>>(`${this.apiUrl}/bibliografias/`, { params })
+    // Usar endpoint do app bibliografia: /api/bibliografia/api/bibliografias/
+    const bibliografiaApiUrl = `${environment.apiUrl}/bibliografia/api`;
+    return this.http.get<PaginatedResponse<Bibliografia>>(`${bibliografiaApiUrl}/bibliografias/`, { params })
       .pipe(
         tap(response => {
           this.bibliografias$.next(response.results);
@@ -74,16 +77,36 @@ export class PerguntasService {
 
   /**
    * Busca uma bibliografia específica por ID
+   * NOTA: Usa o endpoint do app bibliografia, não do app perguntas
    */
   getBibliografia(id: number): Observable<Bibliografia> {
-    return this.http.get<Bibliografia>(`${this.apiUrl}/bibliografias/${id}/`);
+    // Usar endpoint do app bibliografia: /api/bibliografia/api/bibliografias/
+    const bibliografiaApiUrl = `${environment.apiUrl}/bibliografia/api`;
+    return this.http.get<Bibliografia>(`${bibliografiaApiUrl}/bibliografias/${id}/`);
   }
 
   /**
    * Busca todas as perguntas de uma bibliografia específica
+   * NOTA: Este método foi substituído por getAllPerguntasMultipla, getAllPerguntasVF e getAllPerguntasCorrelacao
+   * com filtro de bibliografia. Mantido apenas para compatibilidade.
+   * @deprecated Use getAllPerguntasMultipla, getAllPerguntasVF e getAllPerguntasCorrelacao com filtro de bibliografia
    */
   getPerguntasByBibliografia(id: number): Observable<PerguntaResumo[]> {
-    return this.http.get<PerguntaResumo[]>(`${this.apiUrl}/bibliografias/${id}/perguntas/`);
+    // Usar os métodos corretos que buscam todas as perguntas com filtro de bibliografia
+    return forkJoin({
+      multiplas: this.getAllPerguntasMultipla({ bibliografia: id }),
+      vfs: this.getAllPerguntasVF({ bibliografia: id }),
+      correlacoes: this.getAllPerguntasCorrelacao({ bibliografia: id })
+    }).pipe(
+      map(results => {
+        const todasPerguntas: PerguntaResumo[] = [
+          ...results.multiplas.map(p => this.mapToPerguntaResumo(p)),
+          ...results.vfs.map(p => this.mapToPerguntaResumo(p)),
+          ...results.correlacoes.map(p => this.mapToPerguntaResumo(p))
+        ];
+        return todasPerguntas;
+      })
+    );
   }
 
   // ==================== PERGUNTAS MÚLTIPLA ESCOLHA ====================
@@ -238,7 +261,6 @@ export class PerguntasService {
           return;
         }
 
-        console.log(`📄 Buscando página ${currentPage} (page_size: ${pageSize})...`);
         fetchPage(currentPage, pageSize).subscribe({
           next: (response) => {
             const pageResults = response.results || [];
@@ -364,6 +386,7 @@ export class PerguntasService {
       pergunta: pergunta.pergunta,
       paginas: pergunta.paginas,
       assunto: pergunta.assunto,
+      assunto_titulo: pergunta.assunto_titulo || null,
       caiu_em_prova: pergunta.caiu_em_prova,
       ano_prova: pergunta.ano_prova
     };

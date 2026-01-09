@@ -43,7 +43,7 @@ class CronologiaSerializer(serializers.ModelSerializer):
 
 class ConceitosSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
-    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
+    assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = ConceitosModel

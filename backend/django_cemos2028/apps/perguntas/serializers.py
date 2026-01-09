@@ -1,17 +1,19 @@
 from rest_framework import serializers
+from django_cemos2028.apps.bibliografia.models import BibliografiaModel, CapitulosBibliografiaModel
 from .models import (
     FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel,
     RespostaUsuario,
-    QuestaoErradaAnonima
+    QuestaoErradaAnonima,
+    QuestaoOmitida
 )
 
 
 class FlashCardsSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
-    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
+    assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = FlashCardsModel
@@ -26,7 +28,7 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     resposta_correta_display = serializers.CharField(source='get_resposta_correta_display', read_only=True)
-    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
+    assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = PerguntaMultiplaModel
@@ -50,7 +52,7 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     resposta_correta = serializers.ReadOnlyField()
     resposta_correta_display = serializers.SerializerMethodField()
-    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
+    assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = PerguntaVFModel
@@ -69,7 +71,7 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
 class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
-    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
+    assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = PerguntaCorrelacaoModel
@@ -154,7 +156,7 @@ class FlashCardsCreateUpdateSerializer(FlashCardsSerializer):
 
 class RespostaUsuarioSerializer(serializers.ModelSerializer):
     usuario_username = serializers.CharField(source='usuario.username', read_only=True)
-    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
+    assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = RespostaUsuario
@@ -199,9 +201,68 @@ class RespostaUsuarioCreateSerializer(serializers.ModelSerializer):
         return super().create(validated_data)
 
 
+class QuestaoOmitidaSerializer(serializers.ModelSerializer):
+    bibliografia = serializers.PrimaryKeyRelatedField(
+        queryset=BibliografiaModel.objects.all(),
+        required=False,
+        allow_null=True
+    )
+    bibliografia_titulo = serializers.CharField(
+        source='bibliografia.titulo',
+        read_only=True,
+        allow_null=True
+    )
+    assunto = serializers.PrimaryKeyRelatedField(
+        queryset=CapitulosBibliografiaModel.objects.all(),
+        required=False,
+        allow_null=True
+    )
+    assunto_titulo = serializers.CharField(
+        source='assunto.capitulo_titulo',
+        read_only=True,
+        allow_null=True
+    )
+
+    class Meta:
+        model = QuestaoOmitida
+        fields = [
+            'id',
+            'usuario',
+            'pergunta_id',
+            'pergunta_tipo',
+            'motivo',
+            'bibliografia',
+            'bibliografia_titulo',
+            'assunto',
+            'assunto_titulo',
+            'created_at'
+        ]
+        read_only_fields = ['id', 'usuario', 'created_at', 'bibliografia_titulo', 'assunto_titulo']
+    
+    def create(self, validated_data):
+        usuario = self.context['request'].user
+        pergunta_id = validated_data['pergunta_id']
+        pergunta_tipo = validated_data['pergunta_tipo']
+        motivo = validated_data.get('motivo')
+        bibliografia = validated_data.get('bibliografia')
+        assunto = validated_data.get('assunto')
+
+        instance, _ = QuestaoOmitida.objects.update_or_create(
+            usuario=usuario,
+            pergunta_id=pergunta_id,
+            pergunta_tipo=pergunta_tipo,
+            defaults={
+                'motivo': motivo,
+                'bibliografia': bibliografia,
+                'assunto': assunto
+            }
+        )
+        return instance
+
+
 class QuestaoErradaAnonimaSerializer(serializers.ModelSerializer):
     """Serializer para questões erradas anônimas"""
-    assunto_titulo = serializers.CharField(source='assunto.titulo', read_only=True, allow_null=True)
+    assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:
         model = QuestaoErradaAnonima

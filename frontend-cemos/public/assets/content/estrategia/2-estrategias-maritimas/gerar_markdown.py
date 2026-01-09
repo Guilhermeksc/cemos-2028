@@ -33,7 +33,7 @@ Coluna B: lista de definições, teorias, características ou fatos corresponden
 Preenchimento dos campos:
 
 bibliografia_id: {id_base}
-paginas será preenchido com o markador ## referente a página ex: se ## Página 11 então 'Pág 11 ...'
+“paginas” deverá obrigatoriamente ser preenchido com o marcador ## referente a página, ex: se ## Página 11 então 'Pág 11 ...' poder escrever mais de uma página, mas não escrever trecho, cap... cite diretamente a página
 “assunto” será preenchido com {assunto}.
 pergunta: comando de associação (ex.: Relacione os autores às suas teorias).
 coluna_a: lista JSON.
@@ -76,7 +76,7 @@ Instruções específicas:
 
     prova deve ser branco.
 
-    “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
+“paginas” deverá obrigatoriamente ser preenchido com o marcador ## referente a página, ex: se ## Página 11 então 'Pág 11 ...' poder escrever mais de uma página, mas não escrever trecho, cap... cite diretamente a página
     
 “assunto” será preenchido com: {assunto}.
 
@@ -107,7 +107,7 @@ Gere perguntas que testem conceitos-chave, autores, teorias, eventos:
 - As alternativas devem ser plausíveis, evitando opções óbvias ou absurdas.
 
 bibliografia_id: {id_base}
-“paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
+“paginas” deverá obrigatoriamente ser preenchido com o marcador ## referente a página, ex: se ## Página 11 então 'Pág 11 ...' poder escrever mais de uma página, mas não escrever trecho, cap... cite diretamente a página
 pergunta: texto completo da questão.
 “assunto” será preenchido com: {assunto}
 alternativa_a até alternativa_d: alternativas de resposta.
@@ -138,7 +138,7 @@ def conteudo_vf(assunto: str) -> str:
 
 3. Regras de preenchimento das colunas
 bibliografia_id: {id_base}
-    “paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
+“paginas” deverá obrigatoriamente ser preenchido com o marcador ## referente a página, ex: se ## Página 11 então 'Pág 11 ...' poder escrever mais de uma página, mas não escrever trecho, cap... cite diretamente a página
 “assunto” será preenchido com: {assunto}
 
     “afirmacao_falsa” deve conter a frase que será julgada como falsa.

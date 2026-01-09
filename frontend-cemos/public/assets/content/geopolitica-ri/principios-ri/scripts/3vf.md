@@ -10,7 +10,7 @@ Sua tarefa é ler o arquivo cap.md para criar um banco de questões v ou f, do s
 
 3. Regras de preenchimento das colunas
 bibliografia_id: 4
-    “paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
+“paginas” deverá obrigatoriamente ser preenchido com o marcador ## referente a página, ex: se ## Página 11 então 'Pág 11 ...' poder escrever mais de uma página, mas não escrever trecho, cap... cite diretamente a página
 “assunto” será preenchido com: 18
 
     “afirmacao_falsa” deve conter a frase que será julgada como falsa.

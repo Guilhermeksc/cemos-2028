@@ -255,19 +255,19 @@ export class FlashCardsService {
 
       const fetchNextPage = () => {
         if (!hasMore) {
-          console.log(`✅ Paginação completa de flashcards: ${allResults.length} resultados obtidos`);
+          // console.log(`✅ Paginação completa de flashcards: ${allResults.length} resultados obtidos`);
           observer.next(allResults);
           observer.complete();
           return;
         }
 
-        console.log(`📄 Buscando página ${currentPage} de flashcards (page_size: ${pageSize})...`);
+        // console.log(`📄 Buscando página ${currentPage} de flashcards (page_size: ${pageSize})...`);
         fetchPage(currentPage, pageSize).subscribe({
           next: (response) => {
             const pageResults = response.results || [];
             allResults.push(...pageResults);
             
-            console.log(`📄 Página ${currentPage} de flashcards recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
+            // console.log(`📄 Página ${currentPage} de flashcards recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
             
             // Verificar se há mais páginas
             if (response.next) {

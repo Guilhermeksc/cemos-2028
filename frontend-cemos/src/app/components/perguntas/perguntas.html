@@ -137,19 +137,57 @@
       
       <div class="prova-actions">
         <button 
-          class="btn btn-pdf"
-          (click)="downloadAsPDF()"
-          [disabled]="simuladoQuestions.length === 0 || isGeneratingPDF">
-          <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
-          <mat-spinner *ngIf="isGeneratingPDF" diameter="16"></mat-spinner>
-          {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
+          class="btn-acao btn-revisar"
+          *ngIf="isAdmin"
+          (click)="openRevisarQuestoes()"
+          matTooltip="Revisar Questões"
+          matTooltipPosition="above"
+          matTooltipClass="tooltip-dark"
+          aria-label="Revisar Questões"
+        >
+          <img 
+            class="btn-icon" 
+            src="/assets/img/svg/revisar.svg" 
+            alt="" 
+            aria-hidden="true"
+          />
         </button>
         <button 
-          class="btn btn-secondary gerar-nova-prova-btn"
+          class="btn-acao btn-pdf"
+          (click)="downloadAsPDF()"
+          [disabled]="simuladoQuestions.length === 0 || isGeneratingPDF"
+          [matTooltip]="isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF'"
+          matTooltipPosition="above"
+          [attr.aria-label]="isGeneratingPDF ? 'Gerando PDF' : 'Salvar PDF'"
+          matTooltipClass="tooltip-dark"
+        >
+          <ng-container *ngIf="!isGeneratingPDF; else pdfLoading">
+            <img 
+              class="btn-icon" 
+              src="/assets/img/svg/pdf.svg" 
+              alt="" 
+              aria-hidden="true"
+            />
+          </ng-container>
+          <ng-template #pdfLoading>
+            <mat-spinner diameter="16"></mat-spinner>
+          </ng-template>
+        </button>
+        <button 
+          class="btn-acao btn-nova gerar-nova-prova-btn"
           (click)="gerarNovaProva()"
           [disabled]="isLoadingQuestions"
+          matTooltip="Gerar Nova Prova"
+          matTooltipPosition="above"
+          matTooltipClass="tooltip-dark"
+          aria-label="Gerar Nova Prova"
         >
-          🔄 Gerar Nova Prova
+          <img 
+            class="btn-icon" 
+            src="/assets/img/svg/refresh.svg" 
+            alt="" 
+            aria-hidden="true"
+          />
         </button>
       </div>
     </div>
@@ -194,15 +232,46 @@
             </span>
           </div>
 
-          <!-- Status da Resposta -->
-          <div class="answer-status">
-            <div *ngIf="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'correct'" class="status-badge correct">
-              ✅ Correta
+          <div class="questao-tools">
+            <!-- Status da Resposta -->
+            <div class="answer-status">
+              <div *ngIf="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'correct'" class="status-badge correct">
+                ✅ Correta
+              </div>
+              <div *ngIf="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'incorrect'" class="status-badge incorrect">
+                ❌ Incorreta
+              </div>
             </div>
-            <div *ngIf="question.uniqueKey && getQuestionAnswerStatus(question.uniqueKey) === 'incorrect'" class="status-badge incorrect">
-              ❌ Incorreta
+            <div class="tools-actions">
+              <button 
+                class="btn btn-omit"
+                (click)="omitirQuestao(question)"
+                [disabled]="isOmitindoQuestao(question)"
+              >
+                {{ isOmitindoQuestao(question) ? 'Omitindo...' : 'Omitir' }}
+              </button>
+              <button
+                class="btn btn-edit"
+                *ngIf="isAdmin"
+                (click)="startEditingQuestion(question)"
+              >
+                {{ editingQuestionKey === question.uniqueKey ? 'Editando...' : 'Editar' }}
+              </button>
             </div>
           </div>
+        </div>
+
+        <div class="caiu-prova-toggle" *ngIf="isAdmin">
+          <label>
+            <input 
+              type="checkbox" 
+              [checked]="getCaiuEmProvaStatus(question)" 
+              (change)="onToggleCaiuEmProva(question, $event.target.checked)"
+              [disabled]="isTogglingCaiuEmProva(question)"
+            />
+            Caiu em prova
+          </label>
+          <span class="toggle-status" *ngIf="isTogglingCaiuEmProva(question)">Atualizando...</span>
         </div>
 
         <!-- Conteúdo da Questão -->
@@ -239,6 +308,116 @@
           ></app-pergunta-correlacao>
 
         </div>
+
+        <div 
+          class="question-edit-form" 
+          *ngIf="isAdmin && editingQuestionKey === question.uniqueKey && editingFormData"
+        >
+          <h4>Edição da Questão</h4>
+
+          <div class="form-grid">
+            <label>
+              Enunciado
+              <textarea 
+                rows="3" 
+                [(ngModel)]="editingFormData.pergunta" 
+                [name]="'pergunta-' + question.uniqueKey"
+              ></textarea>
+            </label>
+            <label>
+              Páginas
+              <input 
+                type="text" 
+                [(ngModel)]="editingFormData.paginas"
+                [name]="'paginas-' + question.uniqueKey"
+              />
+            </label>
+            <label>
+              Justificativa
+              <textarea 
+                rows="3" 
+                [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                [name]="'justificativa-' + question.uniqueKey"
+              ></textarea>
+            </label>
+          </div>
+
+          <div *ngIf="question.tipo === 'multipla'" class="form-grid multipla-grid">
+            <label>
+              Alternativa A
+              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" [name]="'a-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Alternativa B
+              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" [name]="'b-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Alternativa C
+              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" [name]="'c-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Alternativa D
+              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" [name]="'d-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Resposta Correta
+              <select [(ngModel)]="editingFormData.resposta_correta" [name]="'resposta-' + question.uniqueKey">
+                <option value="a">Alternativa A</option>
+                <option value="b">Alternativa B</option>
+                <option value="c">Alternativa C</option>
+                <option value="d">Alternativa D</option>
+              </select>
+            </label>
+          </div>
+
+          <div *ngIf="question.tipo === 'vf'" class="form-grid">
+            <label>
+              Afirmação Verdadeira
+              <textarea rows="3" [(ngModel)]="editingFormData.afirmacao_verdadeira" [name]="'vf-verdadeira-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Afirmação Falsa
+              <textarea rows="3" [(ngModel)]="editingFormData.afirmacao_falsa" [name]="'vf-falsa-' + question.uniqueKey"></textarea>
+            </label>
+          </div>
+
+          <div *ngIf="question.tipo === 'correlacao'" class="form-grid">
+            <label>
+              Coluna A (uma entrada por linha)
+              <textarea rows="4" [(ngModel)]="editingFormData.coluna_a_text" [name]="'colA-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Coluna B (uma entrada por linha)
+              <textarea rows="4" [(ngModel)]="editingFormData.coluna_b_text" [name]="'colB-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Resposta Correta (JSON)
+              <textarea rows="4" [(ngModel)]="editingFormData.resposta_correta_text" [name]="'resp-' + question.uniqueKey"></textarea>
+            </label>
+          </div>
+
+          <div *ngIf="editError" class="edit-error">
+            {{ editError }}
+          </div>
+
+          <div class="edit-actions">
+            <button 
+              class="btn btn-primary" 
+              (click)="saveQuestionEdits()" 
+              [disabled]="isSavingEdit"
+            >
+              {{ isSavingEdit ? 'Salvando...' : 'Salvar alterações' }}
+            </button>
+            <button 
+              type="button"
+              class="btn btn-secondary" 
+              (click)="cancelEditingQuestion()"
+              [disabled]="isSavingEdit"
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- Mensagem se não há questões ou questões insuficientes -->
@@ -260,14 +439,50 @@
       <!-- Botão Gerar Nova Prova ao final (visível apenas em smartphones) -->
       <div *ngIf="simuladoQuestions.length > 0" class="gerar-nova-prova-mobile">
         <button 
-          class="btn btn-secondary gerar-nova-prova-btn"
+          class="btn-acao btn-nova gerar-nova-prova-btn"
           (click)="gerarNovaProva()"
           [disabled]="isLoadingQuestions"
+          matTooltip="Gerar Nova Prova"
+          matTooltipPosition="above"
+          matTooltipClass="tooltip-dark"
+          aria-label="Gerar Nova Prova"
         >
-          🔄 Gerar Nova Prova
+          <img 
+            class="btn-icon" 
+            src="/assets/img/svg/refresh.svg" 
+            alt="" 
+            aria-hidden="true"
+          />
         </button>
       </div>
     </div>
+
+  <!-- Painel com questões omitidas -->
+  <div class="questoes-omitidas-panel">
+    <div class="panel-header">
+      <div>
+        <h3>Questões omitidas</h3>
+        <p>Exclua temporariamente questões repetidas e reative quando quiser.</p>
+      </div>
+      <span class="badge" *ngIf="!isLoadingQuestoesOmitidas">{{ questoesOmitidas.length }}</span>
+    </div>
+
+    <div *ngIf="isLoadingQuestoesOmitidas" class="omitidas-loading">
+      Carregando questões omitidas...
+    </div>
+
+    <div *ngIf="!isLoadingQuestoesOmitidas" class="omitidas-actions">
+      <p class="omitidas-summary" *ngIf="questoesOmitidas.length === 0">
+        Nenhuma questão omitida no momento.
+      </p>
+      <p class="omitidas-summary" *ngIf="questoesOmitidas.length > 0">
+        Você possui {{ questoesOmitidas.length }} {{ questoesOmitidas.length === 1 ? 'questão omitida' : 'questões omitidas' }}.
+      </p>
+      <button class="btn btn-tertiary" (click)="openQuestoesOmitidasWindow()" [disabled]="isLoadingQuestoesOmitidas">
+        Gerenciar em nova janela
+      </button>
+    </div>
+  </div>    
   </div>
 
 </div>

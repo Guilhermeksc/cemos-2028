@@ -5,8 +5,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Conceitos as ConceitosInterface } from '../../interfaces/informacoes.interface';
 import { Bibliografia } from '../../interfaces/perguntas.interface';
+import { CapituloBibliografia } from '../../interfaces/bibliografia-models.interface';
 import { InformacoesService } from '../../services/informacoes.service';
 import { PerguntasService } from '../../services/perguntas.service';
+import { BibliografiaService } from '../../services/bibliografia.service';
 import { ConceitosTableComponent } from '../conceitos-table/conceitos-table';
 import { LoadingSpinner } from '../loading-spinner/loading-spinner';
 import { forkJoin } from 'rxjs';
@@ -22,8 +24,8 @@ import { Router } from '@angular/router';
 export class ConceitosComponent implements OnInit {
 
   // Filtros (UI)
-  selectedAssunto: string = '';
-  assuntosDisponiveis: string[] = [];
+  selectedAssunto: number | null = null;
+  assuntosDisponiveis: CapituloBibliografia[] = [];
   @Input() bibliografiaIds: number[] = []; // IDs das bibliografias a serem exibidas
   @Input() title: string = 'Conceitos'; // Título customizável
   @Input() emptyMessage: string = 'Nenhum conceito encontrado. Adicione conceitos para visualizá-los aqui.';
@@ -58,7 +60,8 @@ export class ConceitosComponent implements OnInit {
   }
   constructor(
     private informacoesService: InformacoesService,
-    private perguntasService: PerguntasService
+    private perguntasService: PerguntasService,
+    private bibliografiaService: BibliografiaService
   ) {}
 
   ngOnInit() {
@@ -107,8 +110,8 @@ export class ConceitosComponent implements OnInit {
           this.selectedBibliografiaId = null;
         }
 
-        // Extrair assuntos únicos disponíveis (conforme bibliografia selecionada)
-        this.extractAssuntos(this.selectedBibliografiaId);
+        // Carregar capítulos disponíveis (assuntos)
+        this.loadCapitulos(this.selectedBibliografiaId);
         
         this.loading = false;
       },
@@ -129,23 +132,49 @@ export class ConceitosComponent implements OnInit {
     });
   }
 
-  /** Extrai assuntos únicos da lista de conceitos */
-  private extractAssuntos(bibliografiaId: number | null = null) {
-    const set = new Set<string>();
+  /** Carrega capítulos disponíveis (assuntos) das bibliografias */
+  private loadCapitulos(bibliografiaId: number | null = null) {
+    const bibliografiasParaBuscar = bibliografiaId 
+      ? [bibliografiaId]
+      : (this.bibliografiaIds.length > 0 ? this.bibliografiaIds : this.bibliografias.map(b => b.id));
 
-    this.conceitos.forEach(c => {
-      const matchesBib = bibliografiaId ? c.bibliografia === bibliografiaId : true;
-      if (matchesBib && c.assunto && typeof c.assunto === 'string' && c.assunto.trim().length > 0) {
-        set.add(c.assunto.trim());
+    if (bibliografiasParaBuscar.length === 0) {
+      this.assuntosDisponiveis = [];
+      return;
+    }
+
+    // Buscar capítulos de todas as bibliografias
+    const requests = bibliografiasParaBuscar.map(id => 
+      this.bibliografiaService.getAllCapitulos({ bibliografia: id })
+    );
+
+    forkJoin(requests).subscribe({
+      next: (results) => {
+        // Combinar todos os capítulos e remover duplicatas por ID
+        const allCapitulos = results.flat();
+        const capitulosMap = new Map<number, CapituloBibliografia>();
+        
+        allCapitulos.forEach(cap => {
+          if (!capitulosMap.has(cap.id)) {
+            capitulosMap.set(cap.id, cap);
+          }
+        });
+
+        // Ordenar por título do capítulo
+        this.assuntosDisponiveis = Array.from(capitulosMap.values()).sort((a, b) => 
+          a.capitulo_titulo.localeCompare(b.capitulo_titulo)
+        );
+
+        // Se o assunto atualmente selecionado não existe mais na lista, resetá-lo
+        if (this.selectedAssunto !== null && !this.assuntosDisponiveis.some(c => c.id === this.selectedAssunto)) {
+          this.selectedAssunto = null;
+        }
+      },
+      error: (error) => {
+        console.error('Erro ao carregar capítulos:', error);
+        this.assuntosDisponiveis = [];
       }
     });
-
-    this.assuntosDisponiveis = Array.from(set).sort();
-
-    // Se o assunto atualmente selecionado não existe mais na lista, resetá-lo
-    if (this.selectedAssunto && !this.assuntosDisponiveis.includes(this.selectedAssunto)) {
-      this.selectedAssunto = '';
-    }
   }
 
   onBibliografiaChange() {
@@ -156,9 +185,9 @@ export class ConceitosComponent implements OnInit {
       // (a seleção do tab já é feita pelo método selectBibliografia quando o usuário clica;
       // aqui apenas garantimos que a variável está coerente)
     }
-    this.extractAssuntos(this.selectedBibliografiaId);
+    this.loadCapitulos(this.selectedBibliografiaId);
     // limpar assunto selecionado caso não exista nos novos assuntos
-    this.selectedAssunto = '';
+    this.selectedAssunto = null;
   }
 
   onAssuntoChange() {
@@ -167,7 +196,9 @@ export class ConceitosComponent implements OnInit {
 
   resetFilters() {
     this.selectedBibliografiaId = null;
-    this.selectedAssunto = '';
+    this.selectedAssunto = null;
+    // Recarregar todos os capítulos quando limpar filtros
+    this.loadCapitulos(null);
   }
 
   selectBibliografia(bibliografiaId: number) {
@@ -181,9 +212,8 @@ export class ConceitosComponent implements OnInit {
       list = list.filter(conceito => conceito.bibliografia === this.selectedBibliografiaId);
     }
 
-    if (this.selectedAssunto && this.selectedAssunto.trim().length > 0) {
-      const needle = this.selectedAssunto.trim().toLowerCase();
-      list = list.filter(conceito => (conceito.assunto || '').toString().toLowerCase().includes(needle));
+    if (this.selectedAssunto !== null) {
+      list = list.filter(conceito => conceito.assunto === this.selectedAssunto);
     }
 
     return list;

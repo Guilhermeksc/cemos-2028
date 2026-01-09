@@ -63,18 +63,55 @@ def _get_bibliografia(row_value, ctx, row_index):
 
 
 def _get_capitulo(row_value, bibliografia=None, ctx=None, row_index=None):
-    capitulo_id = _as_int(row_value)
-    if capitulo_id is None:
+    """
+    Busca um capítulo de bibliografia pelo ID.
+    
+    Args:
+        row_value: Valor da célula do Excel (pode ser número ou string)
+        bibliografia: Objeto BibliografiaModel opcional para validação
+        ctx: Contexto (nome do arquivo/processo) para logs
+        row_index: Índice da linha para logs
+    
+    Returns:
+        CapitulosBibliografiaModel ou None se não encontrado
+    """
+    logger.debug(f"🔍 [DEBUG] _get_capitulo chamado - valor recebido: {row_value} (tipo: {type(row_value)}), ctx: {ctx}, linha: {row_index}")
+    
+    if pd.isna(row_value) or row_value is None or str(row_value).strip() == '':
+        logger.debug(f"🔍 [DEBUG] _get_capitulo - valor vazio/None, retornando None")
         return None
+    
+    capitulo_id = _as_int(row_value)
+    logger.debug(f"🔍 [DEBUG] _get_capitulo - ID convertido: {capitulo_id} (de {row_value})")
+    
+    if capitulo_id is None:
+        logger.warning(f"⚠️ [DEBUG] _get_capitulo - Não foi possível converter '{row_value}' para ID numérico em {ctx} (linha {row_index})")
+        return None
+    
     try:
         capitulo = CapitulosBibliografiaModel.objects.get(id=capitulo_id)
+        logger.debug(f"🔍 [DEBUG] _get_capitulo - Capítulo encontrado: ID={capitulo.id}, Título={capitulo.capitulo_titulo}, Bibliografia ID={capitulo.bibliografia_id}")
+        
         if bibliografia and capitulo.bibliografia_id != bibliografia.id:
             logger.warning(
-                f"⚠️ Capítulo {capitulo_id} não pertence à bibliografia {bibliografia.id} em {ctx} (linha {row_index})"
+                f"⚠️ Capítulo {capitulo_id} ({capitulo.capitulo_titulo}) não pertence à bibliografia {bibliografia.id} ({bibliografia.titulo}) em {ctx} (linha {row_index})"
             )
+        
         return capitulo
     except CapitulosBibliografiaModel.DoesNotExist:
-        logger.warning(f"⚠️ Capítulo ID {capitulo_id} não encontrado em {ctx} (linha {row_index})")
+        logger.warning(f"⚠️ Capítulo ID {capitulo_id} não encontrado no banco de dados em {ctx} (linha {row_index})")
+        logger.debug(f"🔍 [DEBUG] _get_capitulo - Tentando listar capítulos disponíveis...")
+        try:
+            total_capitulos = CapitulosBibliografiaModel.objects.count()
+            logger.debug(f"🔍 [DEBUG] Total de capítulos no banco: {total_capitulos}")
+            if total_capitulos > 0:
+                exemplos = CapitulosBibliografiaModel.objects.all()[:5]
+                logger.debug(f"🔍 [DEBUG] Exemplos de capítulos disponíveis: {[(c.id, c.capitulo_titulo) for c in exemplos]}")
+        except Exception as e:
+            logger.debug(f"🔍 [DEBUG] Erro ao listar capítulos: {e}")
+        return None
+    except Exception as e:
+        logger.error(f"❌ Erro inesperado ao buscar capítulo ID {capitulo_id} em {ctx} (linha {row_index}): {e}")
         return None
 
 
@@ -143,20 +180,30 @@ def load_fixtures_perguntas(sender, **kwargs):
         with transaction.atomic():
             
             # 4. Flash Cards
-            df = load_fixture('flashcards.xlsx', ['bibliografia_id', 'pergunta', 'resposta', 'assunto'])
+            df = load_fixture('flashcards.xlsx', ['bibliografia_id', 'pergunta', 'resposta'])
             if df is not None:
                 logger.info("📄 Processando flash cards...")
+                logger.info(f"🔍 [DEBUG] Total de linhas no arquivo flashcards.xlsx: {len(df)}")
+                logger.info(f"🔍 [DEBUG] Colunas encontradas: {list(df.columns)}")
                 loaded_count = 0
+                erros_assunto = 0
                 for idx, row in df.iterrows():
-                    if _require_fields(row, ['bibliografia_id', 'pergunta', 'resposta', 'assunto'], 
+                    if _require_fields(row, ['bibliografia_id', 'pergunta', 'resposta'], 
                                      'flashcards', idx, 
-                                     ['pergunta', 'resposta', 'assunto']):
+                                     ['pergunta', 'resposta']):
                         
                         try:
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'flashcards', idx)
                             if bibliografia is None:
                                 continue
-                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'flashcards', idx)
+                            
+                            # Processar assunto (opcional)
+                            assunto_valor = row.get('assunto')
+                            logger.debug(f"🔍 [DEBUG] Flashcard linha {idx} - Valor de assunto do Excel: {assunto_valor} (tipo: {type(assunto_valor)})")
+                            assunto = _get_capitulo(assunto_valor, bibliografia, 'flashcards', idx)
+                            if assunto_valor and not assunto:
+                                erros_assunto += 1
+                                logger.warning(f"⚠️ Flashcard linha {idx} - Assunto '{assunto_valor}' não foi encontrado, mas será salvo sem assunto")
                             
                             # Converter prova para boolean (aceita múltiplos formatos)
                             prova_val = row.get('prova', False)
@@ -195,11 +242,13 @@ def load_fixtures_perguntas(sender, **kwargs):
                             )
                             if created:
                                 loaded_count += 1
-                                logger.info(f"✅ Criado flash card: {obj.pergunta[:50]}...")
+                                logger.info(f"✅ Criado flash card ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar flash card (linha {idx}): {e}")
+                            import traceback
+                            logger.error(f"🔍 [DEBUG] Traceback: {traceback.format_exc()}")
                 
-                logger.info(f"📊 Total de flash cards carregados: {loaded_count}")
+                logger.info(f"📊 Total de flash cards carregados: {loaded_count} (erros de assunto: {erros_assunto})")
 
             # 5. Perguntas Múltipla Escolha
             df = load_fixture('perguntas_multipla.xlsx', [
@@ -208,7 +257,10 @@ def load_fixtures_perguntas(sender, **kwargs):
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas múltipla escolha...")
+                logger.info(f"🔍 [DEBUG] Total de linhas no arquivo perguntas_multipla.xlsx: {len(df)}")
+                logger.info(f"🔍 [DEBUG] Colunas encontradas: {list(df.columns)}")
                 loaded_count = 0
+                erros_assunto = 0
                 for idx, row in df.iterrows():
                     if _require_fields(
                         row,
@@ -221,7 +273,19 @@ def load_fixtures_perguntas(sender, **kwargs):
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_multipla', idx)
                             if bibliografia is None:
                                 continue
-                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'perguntas_multipla', idx)
+                            
+                            # Processar assunto (opcional)
+                            assunto_valor = row.get('assunto')
+                            logger.debug(f"🔍 [DEBUG] Pergunta múltipla linha {idx} - Valor de assunto do Excel: {assunto_valor} (tipo: {type(assunto_valor)})")
+                            assunto = _get_capitulo(assunto_valor, bibliografia, 'perguntas_multipla', idx)
+                            if assunto_valor and not assunto:
+                                erros_assunto += 1
+                                logger.warning(f"⚠️ Pergunta múltipla linha {idx} - Assunto '{assunto_valor}' não foi encontrado, mas será salva sem assunto")
+                            
+                            # Garantir que justificativa_resposta_certa não seja None (campo obrigatório)
+                            justificativa = _as_clean_str(row.get('justificativa_resposta_certa', ''))
+                            if justificativa is None or justificativa.strip() == '':
+                                justificativa = 'Justificativa não fornecida.'
                             
                             obj, created = PerguntaMultiplaModel.objects.update_or_create(
                                 bibliografia=bibliografia,
@@ -234,50 +298,67 @@ def load_fixtures_perguntas(sender, **kwargs):
                                     'alternativa_c': _as_clean_str(row['alternativa_c']),
                                     'alternativa_d': _as_clean_str(row['alternativa_d']),
                                     'resposta_correta': _as_clean_str(row['resposta_correta']).lower(),
-                                    'justificativa_resposta_certa': _as_clean_str(row.get('justificativa_resposta_certa', '')),
+                                    'justificativa_resposta_certa': justificativa,
                                     'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
                                     'ano_prova': _as_int(row.get('ano_prova'))
                                 }
                             )
                             if created:
                                 loaded_count += 1
-                                logger.info(f"✅ Criada pergunta múltipla: {obj.pergunta[:50]}...")
+                                logger.info(f"✅ Criada pergunta múltipla ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta múltipla (linha {idx}): {e}")
+                            import traceback
+                            logger.error(f"🔍 [DEBUG] Traceback: {traceback.format_exc()}")
                 
-                logger.info(f"📊 Total de perguntas múltipla carregadas: {loaded_count}")
+                logger.info(f"📊 Total de perguntas múltipla carregadas: {loaded_count} (erros de assunto: {erros_assunto})")
 
             # 6. Perguntas Verdadeiro/Falso
             df = load_fixture('perguntas_vf.xlsx', [
-                'bibliografia_id', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
+                'bibliografia_id', 'paginas', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas verdadeiro/falso...")
+                logger.info(f"🔍 [DEBUG] Total de linhas no arquivo perguntas_vf.xlsx: {len(df)}")
+                logger.info(f"🔍 [DEBUG] Colunas encontradas: {list(df.columns)}")
                 loaded_count = 0
+                erros_assunto = 0
                 for idx, row in df.iterrows():
                     if _require_fields(
                         row,
                         ['bibliografia_id', 'afirmacao_verdadeira', 'afirmacao_falsa'],
                         'perguntas_vf',
                         idx,
-                        ['paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']
+                        ['paginas', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']
                     ):
                         
                         try:
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_vf', idx)
                             if bibliografia is None:
                                 continue
-                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'perguntas_vf', idx)
+                            
+                            # Processar assunto (opcional)
+                            assunto_valor = row.get('assunto')
+                            logger.debug(f"🔍 [DEBUG] Pergunta V/F linha {idx} - Valor de assunto do Excel: {assunto_valor} (tipo: {type(assunto_valor)})")
+                            assunto = _get_capitulo(assunto_valor, bibliografia, 'perguntas_vf', idx)
+                            if assunto_valor and not assunto:
+                                erros_assunto += 1
+                                logger.warning(f"⚠️ Pergunta V/F linha {idx} - Assunto '{assunto_valor}' não foi encontrado, mas será salva sem assunto")
                             
                             # Gerar pergunta padrão se não existir no Excel
                             pergunta_text = _as_clean_str(row.get('pergunta'))
-                            assunto_text = assunto.titulo if assunto else 'Assunto não especificado'
+                            assunto_text = assunto.capitulo_titulo if assunto else 'Assunto não especificado'
                             
                             # Usar uma combinação única para identificar a pergunta
                             lookup_key = {
                                 'bibliografia': bibliografia,
                                 'afirmacao_verdadeira': _as_clean_str(row['afirmacao_verdadeira'])[:200]  # Primeiros 200 chars para lookup
                             }
+                            
+                            # Garantir que justificativa_resposta_certa não seja None (campo obrigatório)
+                            justificativa = _as_clean_str(row.get('justificativa_resposta_certa', ''))
+                            if justificativa is None or justificativa.strip() == '':
+                                justificativa = 'Justificativa não fornecida.'
                             
                             obj, created = PerguntaVFModel.objects.update_or_create(
                                 bibliografia=bibliografia,
@@ -287,18 +368,20 @@ def load_fixtures_perguntas(sender, **kwargs):
                                     'paginas': _as_clean_str(row.get('paginas')),
                                     'assunto': assunto,
                                     'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),
-                                    'justificativa_resposta_certa': _as_clean_str(row.get('justificativa_resposta_certa', '')),
+                                    'justificativa_resposta_certa': justificativa,
                                     'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
                                     'ano_prova': _as_int(row.get('ano_prova'))
                                 }
                             )
                             if created:
                                 loaded_count += 1
-                                logger.info(f"✅ Criada pergunta V/F: {obj.pergunta[:50]}...")
+                                logger.info(f"✅ Criada pergunta V/F ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta V/F (linha {idx}): {e}")
+                            import traceback
+                            logger.error(f"🔍 [DEBUG] Traceback: {traceback.format_exc()}")
                 
-                logger.info(f"📊 Total de perguntas V/F carregadas: {loaded_count}")
+                logger.info(f"📊 Total de perguntas V/F carregadas: {loaded_count} (erros de assunto: {erros_assunto})")
 
             # 7. Perguntas de Correlação
             df = load_fixture('perguntas_correlacao.xlsx', [
@@ -306,7 +389,10 @@ def load_fixtures_perguntas(sender, **kwargs):
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas de correlação...")
+                logger.info(f"🔍 [DEBUG] Total de linhas no arquivo perguntas_correlacao.xlsx: {len(df)}")
+                logger.info(f"🔍 [DEBUG] Colunas encontradas: {list(df.columns)}")
                 loaded_count = 0
+                erros_assunto = 0
                 for idx, row in df.iterrows():
                     if _require_fields(
                         row,
@@ -320,7 +406,14 @@ def load_fixtures_perguntas(sender, **kwargs):
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_correlacao', idx)
                             if bibliografia is None:
                                 continue
-                            assunto = _get_capitulo(row.get('assunto'), bibliografia, 'perguntas_correlacao', idx)
+                            
+                            # Processar assunto (opcional)
+                            assunto_valor = row.get('assunto')
+                            logger.debug(f"🔍 [DEBUG] Pergunta correlação linha {idx} - Valor de assunto do Excel: {assunto_valor} (tipo: {type(assunto_valor)})")
+                            assunto = _get_capitulo(assunto_valor, bibliografia, 'perguntas_correlacao', idx)
+                            if assunto_valor and not assunto:
+                                erros_assunto += 1
+                                logger.warning(f"⚠️ Pergunta correlação linha {idx} - Assunto '{assunto_valor}' não foi encontrado, mas será salva sem assunto")
                             
                             # Processar colunas (assumindo que vêm como strings separadas por vírgula ou JSON)
                             coluna_a_str = _as_clean_str(row['coluna_a'])
@@ -338,6 +431,11 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 coluna_b = [item.strip() for item in coluna_b_str.split(',')]
                                 resposta_correta = {}
                             
+                            # Garantir que justificativa_resposta_certa não seja None (campo obrigatório)
+                            justificativa = _as_clean_str(row.get('justificativa_resposta_certa', ''))
+                            if justificativa is None or justificativa.strip() == '':
+                                justificativa = 'Justificativa não fornecida.'
+                            
                             obj, created = PerguntaCorrelacaoModel.objects.update_or_create(
                                 bibliografia=bibliografia,
                                 pergunta=_as_clean_str(row['pergunta']),
@@ -347,18 +445,20 @@ def load_fixtures_perguntas(sender, **kwargs):
                                     'coluna_a': coluna_a,
                                     'coluna_b': coluna_b,
                                     'resposta_correta': resposta_correta,
-                                    'justificativa_resposta_certa': _as_clean_str(row.get('justificativa_resposta_certa', '')),
+                                    'justificativa_resposta_certa': justificativa,
                                     'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
                                     'ano_prova': _as_int(row.get('ano_prova'))
                                 }
                             )
                             if created:
                                 loaded_count += 1
-                                logger.info(f"✅ Criada pergunta correlação: {obj.pergunta[:50]}...")
+                                logger.info(f"✅ Criada pergunta correlação ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta correlação (linha {idx}): {e}")
+                            import traceback
+                            logger.error(f"🔍 [DEBUG] Traceback: {traceback.format_exc()}")
                 
-                logger.info(f"📊 Total de perguntas de correlação carregadas: {loaded_count}")
+                logger.info(f"📊 Total de perguntas de correlação carregadas: {loaded_count} (erros de assunto: {erros_assunto})")
 
         logger.info("✅ Fixtures do app Perguntas carregadas com sucesso!")
         

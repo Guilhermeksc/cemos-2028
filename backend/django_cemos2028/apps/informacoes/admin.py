@@ -77,7 +77,7 @@ class ConceitosAdmin(ImportExportModelAdmin):
     resource_class = ConceitosResource
     list_display = ['titulo', 'palavra_chave', 'assunto', 'bibliografia', 'caiu_em_prova', 'ano_prova']
     list_filter = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'palavra_chave', 'assunto']
-    search_fields = ['titulo', 'palavra_chave', 'assunto__titulo', 'descricao']
+    search_fields = ['titulo', 'palavra_chave', 'assunto__capitulo_titulo', 'descricao']
     ordering = ['id']
     
     fieldsets = (

@@ -19,7 +19,7 @@ class FlashCardsAdmin(ImportExportModelAdmin):
     resource_class = FlashCardsResource
     list_display = ['__str__', 'bibliografia', 'pergunta', 'resposta', 'assunto', 'prova', 'ano', 'caveira']
     list_filter = ['bibliografia', 'assunto', 'prova', 'ano', 'caveira']
-    search_fields = ['pergunta', 'resposta', 'assunto__titulo', 'bibliografia__titulo']
+    search_fields = ['pergunta', 'resposta', 'assunto__capitulo_titulo', 'bibliografia__titulo']
     ordering = ['id']
     
     fieldsets = (
@@ -36,7 +36,7 @@ class PerguntaMultiplaAdmin(ImportExportModelAdmin):
     resource_class = PerguntaMultiplaResource
     list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
     list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia', 'assunto']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__titulo']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     fieldsets = (
@@ -60,7 +60,7 @@ class PerguntaVFAdmin(ImportExportModelAdmin):
     resource_class = PerguntaVFResource
     list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova']
     list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'assunto']
-    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto__titulo', 'bibliografia__titulo', 'justificativa_resposta_certa']
+    search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto__capitulo_titulo', 'bibliografia__titulo', 'justificativa_resposta_certa']
     ordering = ['id']
     
     fieldsets = (
@@ -85,7 +85,7 @@ class PerguntaCorrelacaoAdmin(ImportExportModelAdmin):
     resource_class = PerguntaCorrelacaoResource
     list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova']
     list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'assunto']
-    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__titulo']
+    search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     fieldsets = (
@@ -109,7 +109,7 @@ class PerguntaCorrelacaoAdmin(ImportExportModelAdmin):
 class RespostaUsuarioAdmin(admin.ModelAdmin):
     list_display = ['usuario', 'pergunta_tipo', 'pergunta_id', 'acertou', 'timestamp', 'bibliografia_id', 'assunto']
     list_filter = ['pergunta_tipo', 'acertou', 'timestamp', 'bibliografia_id', 'assunto']
-    search_fields = ['usuario__username', 'pergunta_id', 'assunto__titulo']
+    search_fields = ['usuario__username', 'pergunta_id', 'assunto__capitulo_titulo']
     readonly_fields = ['timestamp']
     date_hierarchy = 'timestamp'
     ordering = ['-timestamp']

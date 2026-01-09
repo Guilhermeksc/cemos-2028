@@ -5,7 +5,8 @@ from .views import (
     PerguntaMultiplaViewSet,
     PerguntaVFViewSet,
     PerguntaCorrelacaoViewSet,
-    RespostaUsuarioViewSet
+    RespostaUsuarioViewSet,
+    QuestaoOmitidaViewSet
 )
 
 # Criar router para as APIs
@@ -15,6 +16,7 @@ router.register(r'perguntas-multipla', PerguntaMultiplaViewSet)
 router.register(r'perguntas-vf', PerguntaVFViewSet)
 router.register(r'perguntas-correlacao', PerguntaCorrelacaoViewSet)
 router.register(r'respostas-usuario', RespostaUsuarioViewSet, basename='respostas-usuario')
+router.register(r'questoes-omitidas', QuestaoOmitidaViewSet, basename='questoes-omitidas')
 
 app_name = 'perguntas'
 

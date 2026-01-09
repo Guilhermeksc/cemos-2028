@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { Router } from '@angular/router';
 import { PerguntasService } from '../../services/perguntas.service';
+import { AuthService } from '../../services/auth.service';
 import { 
   Bibliografia, 
   PerguntaMultipla, 
@@ -15,7 +17,8 @@ import {
   PerguntaVFFilters,
   PerguntaFilters,
   PaginatedResponse,
-  EstatisticasBibliografia
+  EstatisticasBibliografia,
+  QuestaoOmitida
 } from '../../interfaces/perguntas.interface';
 import { Subject, forkJoin, Observable } from 'rxjs';
 import { takeUntil, map } from 'rxjs/operators';
@@ -32,6 +35,8 @@ interface SimuladoQuestion {
   paginas?: string;
   assunto?: number | null; // ID do assunto (ForeignKey)
   assunto_titulo?: string | null; // Título do assunto (read-only, para exibição)
+  caiu_em_prova?: boolean;
+  ano_prova?: number;
   data: PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
   userAnswer?: any;
   isCorrect?: boolean;
@@ -71,6 +76,7 @@ interface AssuntoComContagem {
     FormsModule, 
     MatIconModule,
     MatProgressSpinnerModule,
+    MatTooltipModule,
     PerguntaVFComponent, 
     PerguntaMultiplaComponent, 
     PerguntaCorrelacaoComponent,
@@ -87,6 +93,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   private perguntasService = inject(PerguntasService);
   private router = inject(Router);
   private cdr = inject(ChangeDetectorRef);
+  private authService = inject(AuthService);
   private destroy$ = new Subject<void>();
 
   // Estados do componente - simplificado
@@ -108,6 +115,20 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   // Cache completo de TODAS as questões (para extrair assuntos, sem filtros)
   allQuestionsCacheComplete: Array<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao> = [];
 
+  // Controle de questões omitidas por usuário
+  questoesOmitidas: QuestaoOmitida[] = [];
+  private questoesOmitidasMap = new Map<string, QuestaoOmitida>();
+  isLoadingQuestoesOmitidas = false;
+  private omitindoQuestoes = new Set<string>();
+  private questoesOmitidasWindow: Window | null = null;
+  private windowMessageHandler = (event: MessageEvent) => this.handleExternalWindowMessage(event);
+  private togglingCaiuEmProva = new Set<string>();
+  isAdmin = false;
+  editingQuestionKey: string | null = null;
+  editingFormData: any = null;
+  isSavingEdit = false;
+  editError: string | null = null;
+  
   // Sistema de tabs
   activeTab: TabType = 'completo';
   tabs: { [key in TabType]: TabState } = {
@@ -190,8 +211,85 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     return this.currentTab.insufficientQuestionsMessage;
   }
 
+  private buildQuestaoKey(tipo: 'multipla' | 'vf' | 'correlacao', id: number): string {
+    return `${tipo}-${id}`;
+  }
+
+  private updateQuestoesOmitidasMap() {
+    this.questoesOmitidasMap.clear();
+    this.questoesOmitidas.forEach(questao => {
+      this.questoesOmitidasMap.set(this.buildQuestaoKey(questao.pergunta_tipo, questao.pergunta_id), questao);
+    });
+  }
+
+  private isQuestaoOmitida(tipo: 'multipla' | 'vf' | 'correlacao', id: number): boolean {
+    return this.questoesOmitidasMap.has(this.buildQuestaoKey(tipo, id));
+  }
+
+  private getBibliografiaIdFromQuestion(question: SimuladoQuestion): number | undefined {
+    if (question.data && 'bibliografia' in question.data) {
+      return (question.data as any).bibliografia as number;
+    }
+    return undefined;
+  }
+
+  private getAssuntoIdFromQuestion(question: SimuladoQuestion): number | null | undefined {
+    if (question.data && 'assunto' in question.data) {
+      return (question.data as any).assunto as number | null | undefined;
+    }
+    if (typeof question.assunto === 'number') {
+      return question.assunto;
+    }
+    return undefined;
+  }
+
   ngOnInit() {
     console.log('🚀 Componente Perguntas inicializado - Modo com Tabs');
+    console.log('🔍 [DEBUG] Estado inicial do componente:', {
+      bibliografiaIds: this.bibliografiaIds,
+      bibliografiaIdsLength: this.bibliografiaIds.length,
+      selectedBibliografias: this.selectedBibliografias,
+      assuntosDisponiveis: this.assuntosDisponiveis.length,
+      cacheCompletoLength: this.allQuestionsCacheComplete.length,
+      cacheLength: this.allQuestionsCache.length
+    });
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('message', this.windowMessageHandler);
+    }
+
+    this.perguntasService.questoesOmitidas
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(omitidas => {
+        this.questoesOmitidas = omitidas;
+        this.updateQuestoesOmitidasMap();
+        this.removerQuestoesOmitidasAtivasDosSimulados();
+        this.pushQuestoesOmitidasDataToWindow();
+        this.cdr.detectChanges();
+      });
+
+    this.authService.currentUser$
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(user => {
+        const adminFlag = !!(user && (user.is_staff || user.perfil === 'admin'));
+        if (this.isAdmin !== adminFlag) {
+          this.isAdmin = adminFlag;
+          this.cdr.detectChanges();
+        }
+      });
+    
+    this.isLoadingQuestoesOmitidas = true;
+    this.perguntasService.loadQuestoesOmitidas()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: () => {
+          this.isLoadingQuestoesOmitidas = false;
+        },
+        error: (error) => {
+          console.error('❌ Erro ao carregar questões omitidas:', error);
+          this.isLoadingQuestoesOmitidas = false;
+        }
+      });
     
     // Inicializar bibliografias selecionadas com as recebidas via Input
     if (this.bibliografiaIds.length > 0) {
@@ -219,11 +317,21 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Isso garante que as estatísticas do header sempre mostrem todos os valores disponíveis
    */
   private loadCompleteCache() {
+    console.log('🔍 [DEBUG] loadCompleteCache() chamado', {
+      selectedBibliografias: this.selectedBibliografias,
+      bibliografiaIds: this.bibliografiaIds,
+      bibliografiasLength: this.bibliografias.length
+    });
+    
     if (this.selectedBibliografias.length === 0) {
+      console.warn('⚠️ [DEBUG] loadCompleteCache() abortado: selectedBibliografias está vazio');
       return;
     }
     
-    console.log('📊 Carregando cache completo de todas as questões para estatísticas...');
+    console.log('📊 Carregando cache completo de todas as questões para estatísticas...', {
+      bibliografiasParaBuscar: this.selectedBibliografias,
+      totalBibliografias: this.selectedBibliografias.length
+    });
     
     // Buscar TODAS as questões de TODOS os tipos, sem filtro de assunto
     const multiplaObservables: Observable<PerguntaMultipla[]>[] = [];
@@ -233,6 +341,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     this.selectedBibliografias.forEach(bibliografiaId => {
       const baseFilters: any = { bibliografia: bibliografiaId };
       // Não adicionar filtro de assunto - queremos TODAS as questões
+      
+      console.log('🔍 [DEBUG] Criando observables para bibliografia:', bibliografiaId);
       
       // Buscar TODAS as questões de cada tipo
       multiplaObservables.push(
@@ -246,6 +356,12 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       );
     });
     
+    console.log('🔍 [DEBUG] Observables criados:', {
+      multiplaObservables: multiplaObservables.length,
+      vfObservables: vfObservables.length,
+      correlacaoObservables: correlacaoObservables.length
+    });
+    
     forkJoin({
       multiplas: forkJoin(multiplaObservables),
       vfs: forkJoin(vfObservables),
@@ -254,6 +370,15 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (results: any) => {
+          console.log('🔍 [DEBUG] Resultados recebidos do forkJoin:', {
+            tem_multiplas: !!results.multiplas,
+            tem_vfs: !!results.vfs,
+            tem_correlacoes: !!results.correlacoes,
+            multiplas_tipo: Array.isArray(results.multiplas),
+            vfs_tipo: Array.isArray(results.vfs),
+            correlacoes_tipo: Array.isArray(results.correlacoes)
+          });
+          
           const todasMultiplas: PerguntaMultipla[] = results.multiplas 
             ? results.multiplas.flatMap((perguntas: PerguntaMultipla[]) => perguntas)
             : [];
@@ -264,6 +389,25 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             ? results.correlacoes.flatMap((perguntas: PerguntaCorrelacao[]) => perguntas)
             : [];
           
+          console.log('🔍 [DEBUG] Questões processadas:', {
+            multiplas: todasMultiplas.length,
+            vfs: todasVFs.length,
+            correlacoes: todasCorrelacoes.length,
+            total: todasMultiplas.length + todasVFs.length + todasCorrelacoes.length,
+            exemplos_multiplas: todasMultiplas.slice(0, 2).map(q => ({
+              id: q.id,
+              assunto: q.assunto,
+              assunto_titulo: q.assunto_titulo,
+              bibliografia: q.bibliografia
+            })),
+            exemplos_vfs: todasVFs.slice(0, 2).map(q => ({
+              id: q.id,
+              assunto: q.assunto,
+              assunto_titulo: q.assunto_titulo,
+              bibliografia: q.bibliografia
+            }))
+          });
+          
           // Atualizar cache completo com TODAS as questões disponíveis
           this.allQuestionsCacheComplete = [
             ...todasMultiplas,
@@ -271,18 +415,34 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             ...todasCorrelacoes
           ];
           
+          console.log('🔍 [DEBUG] Cache completo atualizado:', {
+            totalQuestoes: this.allQuestionsCacheComplete.length,
+            questoesComAssunto: this.allQuestionsCacheComplete.filter(q => q.assunto_titulo).length,
+            assuntosUnicos: [...new Set(this.allQuestionsCacheComplete.map(q => q.assunto_titulo).filter(Boolean))].length
+          });
+          
           // Invalidar cache de estatísticas para recalcular
           this._statsCache = null;
+          
+          // Extrair assuntos disponíveis após carregar o cache completo
+          console.log('🔍 [DEBUG] Chamando extractAssuntos()...');
+          this.extractAssuntos();
           
           console.log('✅ Cache completo atualizado com TODAS as questões:', {
             total: this.allQuestionsCacheComplete.length,
             vf: todasVFs.length,
             multipla: todasMultiplas.length,
-            correlacao: todasCorrelacoes.length
+            correlacao: todasCorrelacoes.length,
+            assuntosDisponiveis: this.assuntosDisponiveis.length
           });
         },
         error: (error) => {
           console.error('❌ Erro ao carregar cache completo:', error);
+          console.error('🔍 [DEBUG] Detalhes do erro:', {
+            message: error.message,
+            status: error.status,
+            error: error.error
+          });
         }
       });
   }
@@ -291,19 +451,34 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Carrega bibliografias e suas estatísticas
    */
   private loadBibliografias() {
+    console.log('🔍 [DEBUG] loadBibliografias() chamado', {
+      bibliografiaIds: this.bibliografiaIds,
+      bibliografiaIdsLength: this.bibliografiaIds.length
+    });
+    
     this.isLoadingBibliografias = true;
     
     this.perguntasService.getBibliografias({ page_size: 100 })
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (response) => {
+          console.log('🔍 [DEBUG] Bibliografias recebidas da API:', {
+            total: response.results.length,
+            bibliografias: response.results.map(b => ({ id: b.id, titulo: b.titulo }))
+          });
+          
           // Se há bibliografiaIds definidos, filtrar apenas essas
           if (this.bibliografiaIds.length > 0) {
             this.bibliografias = response.results.filter(b => 
               this.bibliografiaIds.includes(b.id)
             );
+            console.log('🔍 [DEBUG] Bibliografias filtradas por IDs:', {
+              filtradas: this.bibliografias.length,
+              ids: this.bibliografias.map(b => b.id)
+            });
           } else {
             this.bibliografias = response.results;
+            console.log('🔍 [DEBUG] Todas as bibliografias carregadas:', this.bibliografias.length);
           }
           
           // Buscar estatísticas para cada bibliografia
@@ -311,6 +486,11 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         },
         error: (error) => {
           console.error('❌ Erro ao carregar bibliografias:', error);
+          console.error('🔍 [DEBUG] Detalhes do erro:', {
+            message: error.message,
+            status: error.status,
+            error: error.error
+          });
           this.isLoadingBibliografias = false;
         }
       });
@@ -368,14 +548,24 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Quando a bibliografia é alterada
    */
   onBibliografiaChange() {
+    console.log('🔍 [DEBUG] onBibliografiaChange() chamado', {
+      selectedBibliografiaId: this.selectedBibliografiaId,
+      bibliografiaIds: this.bibliografiaIds,
+      bibliografiasLength: this.bibliografias.length,
+      cacheCompletoLength: this.allQuestionsCacheComplete.length,
+      cacheLength: this.allQuestionsCache.length
+    });
+    
     if (this.selectedBibliografiaId === null) {
       // "Todas" selecionada - usar todas as bibliografias disponíveis
       this.selectedBibliografias = this.bibliografiaIds.length > 0 
         ? [...this.bibliografiaIds] 
         : this.bibliografias.map(b => b.id);
+      console.log('🔍 [DEBUG] "Todas" selecionada, bibliografias:', this.selectedBibliografias);
     } else {
       // Uma bibliografia específica selecionada
       this.selectedBibliografias = [this.selectedBibliografiaId];
+      console.log('🔍 [DEBUG] Bibliografia específica selecionada:', this.selectedBibliografias);
     }
     
     // Resetar assunto selecionado
@@ -384,7 +574,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     // Atualizar assuntos disponíveis baseado na bibliografia selecionada
     // Usar cache completo (sem filtro de assunto) para garantir que todos os assuntos apareçam
     if (this.allQuestionsCacheComplete.length > 0 || this.allQuestionsCache.length > 0) {
+      console.log('🔍 [DEBUG] Cache disponível, chamando updateAssuntosDisponiveis()');
       this.updateAssuntosDisponiveis();
+    } else {
+      console.warn('⚠️ [DEBUG] Cache vazio, assuntos não serão atualizados agora');
     }
     
     // Se não há cache completo ainda, será atualizado quando gerarNovaProva() for chamado
@@ -395,16 +588,21 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     
     // Recarregar cache completo com todas as questões para atualizar estatísticas
     if (this.selectedBibliografias.length > 0) {
+      console.log('🔍 [DEBUG] Chamando loadCompleteCache() com bibliografias:', this.selectedBibliografias);
       this.loadCompleteCache();
+    } else {
+      console.warn('⚠️ [DEBUG] Nenhuma bibliografia selecionada, loadCompleteCache() não será chamado');
     }
     
     console.log('📚 Bibliografia selecionada:', {
       selectedId: this.selectedBibliografiaId,
-      bibliografiaIds: this.selectedBibliografias
+      bibliografiaIds: this.selectedBibliografias,
+      assuntosDisponiveis: this.assuntosDisponiveis.length
     });
     
     // Recarregar questões se já houver questões carregadas
     if (this.currentTab.questionsLoaded) {
+      console.log('🔍 [DEBUG] Questões já carregadas, gerando nova prova...');
       this.gerarNovaProva();
     }
   }
@@ -433,17 +631,34 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Agrupa por combinação assunto-bibliografia
    */
   private extractAssuntos() {
+    console.log('🔍 [DEBUG] extractAssuntos() chamado', {
+      cacheCompletoLength: this.allQuestionsCacheComplete.length,
+      cacheLength: this.allQuestionsCache.length,
+      usandoCacheCompleto: this.allQuestionsCacheComplete.length > 0
+    });
+    
     // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos disponíveis
     const cacheToUse = this.allQuestionsCacheComplete.length > 0 
       ? this.allQuestionsCacheComplete 
       : this.allQuestionsCache;
     
+    console.log('🔍 [DEBUG] Cache a ser usado:', {
+      totalQuestoes: cacheToUse.length,
+      questoesComAssunto: cacheToUse.filter(q => q.assunto_titulo).length,
+      questoesSemAssunto: cacheToUse.filter(q => !q.assunto_titulo).length
+    });
+    
     // Mapear assuntos com suas contagens, agrupando por assunto e bibliografia
     // Chave: "assunto|bibliografiaId"
     const assuntosMap = new Map<string, { quantidade: number; bibliografiaTitulo: string; bibliografiaId: number }>();
     
+    let questoesProcessadas = 0;
+    let questoesComAssuntoValido = 0;
+    
     cacheToUse.forEach(question => {
+      questoesProcessadas++;
       if (question.assunto_titulo && question.assunto_titulo.trim() && question.bibliografia) {
+        questoesComAssuntoValido++;
         const assunto = question.assunto_titulo.trim();
         const bibliografiaId = question.bibliografia;
         const bibliografiaTitulo = question.bibliografia_titulo || `Bibliografia ${bibliografiaId}`;
@@ -459,6 +674,17 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           });
         }
       }
+    });
+    
+    console.log('🔍 [DEBUG] Processamento de assuntos:', {
+      questoesProcessadas,
+      questoesComAssuntoValido,
+      assuntosUnicosEncontrados: assuntosMap.size,
+      assuntosDetalhes: Array.from(assuntosMap.entries()).slice(0, 5).map(([chave, dados]) => ({
+        chave,
+        quantidade: dados.quantidade,
+        bibliografiaTitulo: dados.bibliografiaTitulo
+      }))
     });
 
     // Converter para array de objetos com nome, quantidade e bibliografia, ordenado por nome e bibliografia
@@ -476,7 +702,11 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         return a.bibliografiaTitulo.localeCompare(b.bibliografiaTitulo);
       });
     
-    console.log('🏷️ Assuntos disponíveis (do cache completo):', this.assuntosDisponiveis);
+    console.log('🏷️ Assuntos disponíveis (do cache completo):', {
+      total: this.assuntosDisponiveis.length,
+      assuntos: this.assuntosDisponiveis,
+      primeiros5: this.assuntosDisponiveis.slice(0, 5)
+    });
   }
   
   /**
@@ -487,6 +717,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
    * Agrupa por combinação assunto-bibliografia
    */
   private updateAssuntosDisponiveis() {
+    
     // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos
     const cacheToUse = this.allQuestionsCacheComplete.length > 0 
       ? this.allQuestionsCacheComplete 
@@ -519,6 +750,11 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
             });
           }
         }
+      });
+      
+      console.log('🔍 [DEBUG] Assuntos mapeados:', {
+        totalAssuntos: assuntosMap.size,
+        assuntosDetalhes: Array.from(assuntosMap.entries()).slice(0, 5)
       });
       
       // Converter para array de objetos com nome, quantidade e bibliografia, ordenado por nome
@@ -617,6 +853,12 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnDestroy() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('message', this.windowMessageHandler);
+    }
+    if (this.questoesOmitidasWindow && !this.questoesOmitidasWindow.closed) {
+      this.questoesOmitidasWindow.close();
+    }
     this.destroy$.next();
     this.destroy$.complete();
   }
@@ -666,12 +908,21 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
   gerarNovaProva() {
     console.log(`🔄 Gerando nova prova para aba: ${this.activeTab}`);
+    console.log('🔍 [DEBUG] gerarNovaProva() chamado', {
+      activeTab: this.activeTab,
+      bibliografiaIds: this.bibliografiaIds,
+      selectedBibliografias: this.selectedBibliografias,
+      cacheCompletoLength: this.allQuestionsCacheComplete.length,
+      cacheLength: this.allQuestionsCache.length,
+      assuntosDisponiveis: this.assuntosDisponiveis.length
+    });
     
     const currentTab = this.tabs[this.activeTab];
     
     // Garantir que as bibliografias estão configuradas
     if (currentTab.simuladoConfig.bibliografias.length === 0 && this.bibliografiaIds.length > 0) {
       currentTab.simuladoConfig.bibliografias = [...this.bibliografiaIds];
+      console.log('🔍 [DEBUG] Bibliografias configuradas na tab:', currentTab.simuladoConfig.bibliografias);
     }
     
     console.log('📚 Bibliografias configuradas para a prova:', currentTab.simuladoConfig.bibliografias);
@@ -802,6 +1053,790 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
     // Forçar detecção de mudanças
     this.cdr.detectChanges();
+  }
+
+  omitirQuestao(question: SimuladoQuestion) {
+    const key = this.buildQuestaoKey(question.tipo, question.id);
+    if (this.omitindoQuestoes.has(key)) {
+      return;
+    }
+    this.omitindoQuestoes.add(key);
+
+    const bibliografiaId = this.getBibliografiaIdFromQuestion(question);
+    const assuntoId = this.getAssuntoIdFromQuestion(question);
+
+    this.perguntasService.omitirQuestao(question.id, question.tipo, {
+      bibliografiaId,
+      assuntoId: assuntoId === undefined ? undefined : assuntoId
+    })
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: () => {
+          this.removeQuestaoDoSimulado(question);
+          this.omitindoQuestoes.delete(key);
+          this.cdr.detectChanges();
+        },
+        error: (error) => {
+          console.error('❌ Erro ao omitir questão:', error);
+          this.omitindoQuestoes.delete(key);
+        }
+      });
+  }
+
+  isOmitindoQuestao(question: SimuladoQuestion): boolean {
+    return this.omitindoQuestoes.has(this.buildQuestaoKey(question.tipo, question.id));
+  }
+
+  getCaiuEmProvaStatus(question: SimuladoQuestion): boolean {
+    const data: any = question.data;
+    if (data && typeof data.caiu_em_prova === 'boolean') {
+      return data.caiu_em_prova;
+    }
+    return !!question.caiu_em_prova;
+  }
+
+  isTogglingCaiuEmProva(question: SimuladoQuestion): boolean {
+    const key = question.uniqueKey || this.buildQuestaoKey(question.tipo, question.id);
+    return this.togglingCaiuEmProva.has(key);
+  }
+
+  onToggleCaiuEmProva(question: SimuladoQuestion, value: boolean) {
+    if (!this.isAdmin) {
+      return;
+    }
+    const key = question.uniqueKey || this.buildQuestaoKey(question.tipo, question.id);
+    if (this.togglingCaiuEmProva.has(key)) {
+      return;
+    }
+    this.togglingCaiuEmProva.add(key);
+    this.perguntasService.updatePerguntaCaiuEmProva(question.id, question.tipo, value)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (updated: Pergunta) => {
+          const updatedQuestion = updated as Pergunta;
+          question.data = updatedQuestion as any;
+          question.pergunta = updatedQuestion.pergunta || question.pergunta;
+          question.paginas = (updatedQuestion as any).paginas || question.paginas;
+          question.assunto = (updatedQuestion as any).assunto ?? question.assunto;
+          question.assunto_titulo = (updatedQuestion as any).assunto_titulo || question.assunto_titulo;
+          question.caiu_em_prova = (updatedQuestion as any).caiu_em_prova;
+          this.syncQuestionCaches(updatedQuestion);
+          this.togglingCaiuEmProva.delete(key);
+          this.cdr.detectChanges();
+        },
+        error: (error: any) => {
+          console.error('❌ Erro ao atualizar caiu_em_prova:', error);
+          this.togglingCaiuEmProva.delete(key);
+          this.cdr.detectChanges();
+        }
+      });
+  }
+
+  getQuestaoOmitidaPreview(questao: QuestaoOmitida): string {
+    const cacheToUse = this.allQuestionsCacheComplete.length > 0
+      ? this.allQuestionsCacheComplete
+      : this.allQuestionsCache;
+    const match = cacheToUse.find(q => q.id === questao.pergunta_id && q.tipo === questao.pergunta_tipo);
+    if (match && match.pergunta) {
+      const preview = match.pergunta.replace(/\s+/g, ' ').trim();
+      return preview.length > 160 ? `${preview.substring(0, 160)}...` : preview;
+    }
+    return '';
+  }
+
+  private findQuestionInCache(perguntaId: number, tipo: 'multipla' | 'vf' | 'correlacao'): Pergunta | undefined {
+    const cacheToUse = this.allQuestionsCacheComplete.length > 0
+      ? this.allQuestionsCacheComplete
+      : this.allQuestionsCache;
+    return cacheToUse.find(q => q.id === perguntaId && q.tipo === tipo);
+  }
+
+  private getQuestaoOmitidaContext(questao: QuestaoOmitida): {
+    bibliografiaId: number | null;
+    bibliografiaTitulo: string;
+    capituloId: number | null;
+    capituloTitulo: string;
+    preview: string;
+    createdAt: string;
+  } {
+    let bibliografiaId = questao.bibliografia ?? null;
+    let bibliografiaTitulo = questao.bibliografia_titulo || '';
+    let capituloId = questao.assunto ?? null;
+    let capituloTitulo = questao.assunto_titulo || '';
+
+    const cached = this.findQuestionInCache(questao.pergunta_id, questao.pergunta_tipo);
+    if (cached) {
+      if (bibliografiaId === null && typeof cached.bibliografia === 'number') {
+        bibliografiaId = cached.bibliografia;
+      }
+      if (!bibliografiaTitulo && cached.bibliografia_titulo) {
+        bibliografiaTitulo = cached.bibliografia_titulo;
+      }
+      if (capituloId === null && typeof cached.assunto === 'number') {
+        capituloId = cached.assunto;
+      }
+      if (!capituloTitulo && cached.assunto_titulo) {
+        capituloTitulo = cached.assunto_titulo;
+      }
+    }
+
+    if (!bibliografiaTitulo) {
+      bibliografiaTitulo = bibliografiaId ? `Bibliografia #${bibliografiaId}` : 'Bibliografia não identificada';
+    }
+
+    if (!capituloTitulo) {
+      capituloTitulo = capituloId ? `Capítulo #${capituloId}` : 'Sem capítulo associado';
+    }
+
+    return {
+      bibliografiaId,
+      bibliografiaTitulo,
+      capituloId,
+      capituloTitulo,
+      preview: this.getQuestaoOmitidaPreview(questao),
+      createdAt: new Date(questao.created_at).toLocaleString()
+    };
+  }
+
+  private buildQuestoesOmitidasGroupedData() {
+    if (!this.questoesOmitidas || this.questoesOmitidas.length === 0) {
+      return [];
+    }
+
+    const grupos = new Map<string, {
+      bibliografiaId: number | null;
+      titulo: string;
+      total: number;
+      capitulos: Map<string, {
+        capituloId: number | null;
+        titulo: string;
+        questoes: Array<{
+          pergunta_id: number;
+          pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
+          tipo_display: string;
+          preview: string;
+          motivo: string | null | undefined;
+          created_at: string;
+        }>;
+      }>;
+    }>();
+
+    this.questoesOmitidas.forEach(questao => {
+      const context = this.getQuestaoOmitidaContext(questao);
+      const bibKey = `${context.bibliografiaId ?? 'none'}`;
+      if (!grupos.has(bibKey)) {
+        grupos.set(bibKey, {
+          bibliografiaId: context.bibliografiaId,
+          titulo: context.bibliografiaTitulo,
+          total: 0,
+          capitulos: new Map()
+        });
+      }
+      const bibGroup = grupos.get(bibKey)!;
+
+      const capKey = `${context.capituloId ?? 'none'}`;
+      if (!bibGroup.capitulos.has(capKey)) {
+        bibGroup.capitulos.set(capKey, {
+          capituloId: context.capituloId,
+          titulo: context.capituloTitulo,
+          questoes: []
+        });
+      }
+      const capGroup = bibGroup.capitulos.get(capKey)!;
+      capGroup.questoes.push({
+        pergunta_id: questao.pergunta_id,
+        pergunta_tipo: questao.pergunta_tipo,
+        tipo_display: this.getQuestaoTipoDisplay(questao.pergunta_tipo),
+        preview: context.preview,
+        motivo: questao.motivo,
+        created_at: context.createdAt
+      });
+
+      bibGroup.total += 1;
+    });
+
+    return Array.from(grupos.values())
+      .map(group => ({
+        bibliografia_id: group.bibliografiaId,
+        bibliografia_titulo: group.titulo,
+        total: group.total,
+        capitulos: Array.from(group.capitulos.values())
+          .map(cap => ({
+            capitulo_id: cap.capituloId,
+            capitulo_titulo: cap.titulo,
+            questoes: cap.questoes.sort((a, b) => a.pergunta_id - b.pergunta_id)
+          }))
+          .sort((a, b) => a.capitulo_titulo.localeCompare(b.capitulo_titulo))
+      }))
+      .sort((a, b) => a.bibliografia_titulo.localeCompare(b.bibliografia_titulo));
+  }
+
+  private getQuestaoTipoDisplay(tipo: 'multipla' | 'vf' | 'correlacao'): string {
+    switch (tipo) {
+      case 'multipla':
+        return 'Múltipla';
+      case 'vf':
+        return 'Verdadeiro/Falso';
+      case 'correlacao':
+        return 'Correlação';
+      default:
+        return tipo;
+    }
+  }
+
+  startEditingQuestion(question: SimuladoQuestion) {
+    if (!this.isAdmin || !question.uniqueKey) {
+      return;
+    }
+    this.editingQuestionKey = question.uniqueKey;
+    this.editingFormData = this.buildEditFormData(question);
+    this.editError = null;
+  }
+
+  cancelEditingQuestion() {
+    this.editingQuestionKey = null;
+    this.editingFormData = null;
+    this.editError = null;
+    this.isSavingEdit = false;
+  }
+
+  saveQuestionEdits() {
+    if (!this.editingQuestionKey || !this.editingFormData) {
+      return;
+    }
+
+    const question = this.findQuestionByUniqueKey(this.editingQuestionKey);
+    if (!question) {
+      this.editError = 'Questão não encontrada para edição.';
+      return;
+    }
+
+    let payload: any;
+    try {
+      payload = this.buildPayloadForQuestion(question, this.editingFormData);
+    } catch (error: any) {
+      this.editError = error?.message || 'Erro ao preparar dados para salvar.';
+      return;
+    }
+
+    if (!payload) {
+      this.editError = 'Dados inválidos para salvar.';
+      return;
+    }
+
+    this.isSavingEdit = true;
+    this.updatePerguntaByTipo(question, payload)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (updated: Pergunta) => {
+          this.applyUpdatedQuestion(question, updated);
+          this.syncQuestionCaches(updated);
+          this.cancelEditingQuestion();
+          this.isSavingEdit = false;
+          this.cdr.detectChanges();
+        },
+        error: (error: any) => {
+          console.error('❌ Erro ao salvar edição da questão:', error);
+          this.editError = 'Erro ao salvar alterações. Tente novamente.';
+          this.isSavingEdit = false;
+        }
+      });
+  }
+
+  private updatePerguntaByTipo(question: SimuladoQuestion, payload: any) {
+    switch (question.tipo) {
+      case 'multipla':
+        return this.perguntasService.updatePerguntaMultipla(question.id, payload) as unknown as Observable<Pergunta>;
+      case 'vf':
+        return this.perguntasService.updatePerguntaVF(question.id, payload) as unknown as Observable<Pergunta>;
+      case 'correlacao':
+        return this.perguntasService.updatePerguntaCorrelacao(question.id, payload) as unknown as Observable<Pergunta>;
+      default:
+        throw new Error('Tipo de pergunta inválido para edição.');
+    }
+  }
+
+  private findQuestionByUniqueKey(key: string): SimuladoQuestion | undefined {
+    return this.simuladoQuestions.find(q => q.uniqueKey === key);
+  }
+
+  private buildEditFormData(question: SimuladoQuestion) {
+    const data: any = question.data || {};
+    const base = {
+      pergunta: data.pergunta || question.pergunta || '',
+      justificativa_resposta_certa: data.justificativa_resposta_certa || '',
+      paginas: data.paginas || question.paginas || ''
+    };
+
+    switch (question.tipo) {
+      case 'multipla':
+        return {
+          ...base,
+          alternativa_a: data.alternativa_a || '',
+          alternativa_b: data.alternativa_b || '',
+          alternativa_c: data.alternativa_c || '',
+          alternativa_d: data.alternativa_d || '',
+          resposta_correta: data.resposta_correta || 'a'
+        };
+      case 'vf':
+        return {
+          ...base,
+          afirmacao_verdadeira: data.afirmacao_verdadeira || '',
+          afirmacao_falsa: data.afirmacao_falsa || ''
+        };
+      case 'correlacao':
+        return {
+          ...base,
+          coluna_a_text: (data.coluna_a || []).join('\n'),
+          coluna_b_text: (data.coluna_b || []).join('\n'),
+          resposta_correta_text: JSON.stringify(data.resposta_correta || {}, null, 2)
+        };
+      default:
+        return base;
+    }
+  }
+
+  private buildPayloadForQuestion(question: SimuladoQuestion, formData: any) {
+    const payload: any = {
+      pergunta: formData.pergunta,
+      justificativa_resposta_certa: formData.justificativa_resposta_certa,
+      paginas: formData.paginas
+    };
+
+    switch (question.tipo) {
+      case 'multipla':
+        payload.alternativa_a = formData.alternativa_a;
+        payload.alternativa_b = formData.alternativa_b;
+        payload.alternativa_c = formData.alternativa_c;
+        payload.alternativa_d = formData.alternativa_d;
+        payload.resposta_correta = formData.resposta_correta;
+        return payload;
+      case 'vf':
+        payload.afirmacao_verdadeira = formData.afirmacao_verdadeira;
+        payload.afirmacao_falsa = formData.afirmacao_falsa;
+        return payload;
+      case 'correlacao':
+        const colunaA = (formData.coluna_a_text || '')
+          .split('\n')
+          .map((item: string) => item.trim())
+          .filter((item: string) => item.length > 0);
+        const colunaB = (formData.coluna_b_text || '')
+          .split('\n')
+          .map((item: string) => item.trim())
+          .filter((item: string) => item.length > 0);
+
+        let respostaCorreta;
+        try {
+          respostaCorreta = formData.resposta_correta_text
+            ? JSON.parse(formData.resposta_correta_text)
+            : {};
+        } catch (error) {
+          throw new Error('Resposta correta inválida. Use um JSON válido.');
+        }
+
+        payload.coluna_a = colunaA;
+        payload.coluna_b = colunaB;
+        payload.resposta_correta = respostaCorreta;
+        return payload;
+      default:
+        return payload;
+    }
+  }
+
+  private applyUpdatedQuestion(question: SimuladoQuestion, updated: Pergunta) {
+    question.data = updated as any;
+    question.pergunta = updated.pergunta;
+    question.paginas = updated.paginas;
+    question.assunto = updated.assunto ?? question.assunto;
+    question.assunto_titulo = updated.assunto_titulo || question.assunto_titulo;
+    question.bibliografia_titulo = updated.bibliografia_titulo || question.bibliografia_titulo;
+    question.caiu_em_prova = updated.caiu_em_prova;
+    question.ano_prova = updated.ano_prova;
+  }
+
+  private syncQuestionCaches(updated: Pergunta) {
+    const replaceInCache = (cache: Array<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao>) => {
+      const index = cache.findIndex(q => q.id === updated.id && q.tipo === updated.tipo);
+      if (index >= 0) {
+        cache[index] = { ...(cache[index] as any), ...(updated as any) };
+      }
+    };
+
+    replaceInCache(this.allQuestionsCache);
+    replaceInCache(this.allQuestionsCacheComplete);
+  }
+
+  openRevisarQuestoes() {
+    if (!this.isAdmin || typeof window === 'undefined') {
+      return;
+    }
+
+    const ids = this.selectedBibliografias.length > 0
+      ? this.selectedBibliografias
+      : (this.bibliografiaIds.length > 0 ? this.bibliografiaIds : []);
+    const query = ids.length ? `?bibliografias=${ids.join(',')}` : '';
+    const base = window.location.origin;
+    window.open(`${base}/home/revisar-questoes${query}`, '_blank');
+  }
+
+  private removeQuestaoDoSimulado(question: SimuladoQuestion) {
+    Object.values(this.tabs).forEach(tab => {
+      tab.simuladoQuestions = tab.simuladoQuestions.filter(q => !(q.id === question.id && q.tipo === question.tipo));
+      if (question.uniqueKey) {
+        delete tab.questionResults[question.uniqueKey];
+      }
+    });
+  }
+
+  private removerQuestoesOmitidasAtivasDosSimulados() {
+    if (this.questoesOmitidasMap.size === 0) {
+      return;
+    }
+
+    Object.values(this.tabs).forEach(tab => {
+      const antes = tab.simuladoQuestions.length;
+      tab.simuladoQuestions = tab.simuladoQuestions.filter(q => !this.isQuestaoOmitida(q.tipo, q.id));
+
+      if (tab.simuladoQuestions.length !== antes) {
+        const keysAtuais = new Set(
+          tab.simuladoQuestions
+            .map(q => q.uniqueKey)
+            .filter((key): key is string => !!key)
+        );
+
+        Object.keys(tab.questionResults).forEach(key => {
+          if (!keysAtuais.has(key)) {
+            delete tab.questionResults[key];
+          }
+        });
+      }
+    });
+  }
+
+  openQuestoesOmitidasWindow() {
+    if (typeof window === 'undefined') {
+      return;
+    }
+    this.ensureQuestoesOmitidasWindow();
+    this.pushQuestoesOmitidasDataToWindow();
+  }
+
+  private ensureQuestoesOmitidasWindow() {
+    if (typeof window === 'undefined') {
+      return;
+    }
+    if (!this.questoesOmitidasWindow || this.questoesOmitidasWindow.closed) {
+      this.questoesOmitidasWindow = window.open('', 'questoesOmitidas', 'width=900,height=700');
+      if (this.questoesOmitidasWindow) {
+        const doc = this.questoesOmitidasWindow.document;
+        doc.open();
+        doc.write(this.buildQuestoesOmitidasWindowHtml());
+        doc.close();
+      }
+    } else {
+      this.questoesOmitidasWindow.focus();
+    }
+  }
+
+  private buildQuestoesOmitidasWindowHtml(): string {
+    return `
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Questões Omitidas</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 1.5rem;
+        background: #f5f7fb;
+        color: #1e293b;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .info {
+        margin-bottom: 1rem;
+        color: #475569;
+      }
+      .groups-root {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .bibliografia-group {
+        background: white;
+        padding: 1.25rem;
+        border-radius: 16px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+      }
+      .bibliografia-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .capitulo-group {
+        margin-top: 1rem;
+        padding-top: 0.75rem;
+        border-top: 1px dashed #cbd5f5;
+      }
+      .capitulo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .questoes-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 0.75rem;
+      }
+      .questao-card {
+        background: white;
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      }
+      .questao-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.75rem;
+      }
+      .questao-meta {
+        font-size: 0.85rem;
+        color: #475569;
+      }
+      .questao-preview {
+        font-size: 0.95rem;
+        color: #0f172a;
+        margin-bottom: 0.5rem;
+      }
+      button {
+        background: transparent;
+        border: 1px solid #2563eb;
+        color: #2563eb;
+        border-radius: 999px;
+        padding: 0.4rem 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      button:hover:not(:disabled) {
+        background: #2563eb;
+        color: white;
+      }
+      button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      .empty {
+        padding: 2rem;
+        text-align: center;
+        color: #475569;
+      }
+      .badge {
+        background: #2563eb;
+        color: #fff;
+        border-radius: 999px;
+        padding: 0.2rem 0.85rem;
+        font-weight: 600;
+        font-size: 0.85rem;
+      }
+      .badge-small {
+        background: #10b981;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Questões Omitidas</h1>
+    <p class="info">
+      Esta janela mostra somente as questões omitidas do seu perfil. Clique em "Reexibir" para voltar a vê-las nos simulados.
+    </p>
+    <div id="groups-root" class="groups-root"></div>
+    <div id="empty-state" class="empty" style="display: none;">
+      Nenhuma questão omitida no momento.
+    </div>
+    <script>
+      const container = document.getElementById('groups-root');
+      const emptyState = document.getElementById('empty-state');
+
+      function renderQuestoes(grupos) {
+        if (!Array.isArray(grupos) || grupos.length === 0) {
+          container.style.display = 'none';
+          emptyState.style.display = 'block';
+          return;
+        }
+
+        container.style.display = 'flex';
+        emptyState.style.display = 'none';
+        container.innerHTML = grupos.map(grupo => {
+          const capitulosHtml = grupo.capitulos.map(capitulo => {
+            const questoesHtml = capitulo.questoes.map(item => {
+              const preview = item.preview ? \`<div class="questao-preview">\${item.preview}</div>\` : '';
+              const motivo = item.motivo ? \`<div class="questao-meta">Motivo: \${item.motivo}</div>\` : '';
+              return \`
+                <div class="questao-card" id="questao-\${item.pergunta_id}-\${item.pergunta_tipo}">
+                  <div class="questao-header">
+                    <div>
+                      <strong>#\${item.pergunta_id}</strong>
+                      <span class="questao-meta">• \${item.tipo_display}</span>
+                    </div>
+                    <button onclick="restaurarQuestao(\${item.pergunta_id}, '\${item.pergunta_tipo}', this)">
+                      Reexibir
+                    </button>
+                  </div>
+                  \${preview}
+                  \${motivo}
+                  <div class="questao-meta">Omitida em: \${item.created_at}</div>
+                </div>
+              \`;
+            }).join('');
+
+            return \`
+              <article class="capitulo-group">
+                <div class="capitulo-header">
+                  <h3>\${capitulo.capitulo_titulo}</h3>
+                  <span class="badge badge-small">\${capitulo.questoes.length}</span>
+                </div>
+                <div class="questoes-list">\${questoesHtml}</div>
+              </article>
+            \`;
+          }).join('');
+
+          const totalLabel = grupo.total === 1 ? 'questão' : 'questões';
+
+          return \`
+            <section class="bibliografia-group">
+              <div class="bibliografia-header">
+                <h2>\${grupo.bibliografia_titulo}</h2>
+                <span class="badge">\${grupo.total} \${totalLabel}</span>
+              </div>
+              \${capitulosHtml}
+            </section>
+          \`;
+        }).join('');
+      }
+
+      function restaurarQuestao(perguntaId, perguntaTipo, button) {
+        if (!window.opener) {
+          alert('Não foi possível comunicar com a página principal.');
+          return;
+        }
+        button.disabled = true;
+        button.textContent = 'Reexibindo...';
+
+        window.opener.postMessage({
+          type: 'restoreQuestaoOmitida',
+          payload: { pergunta_id: perguntaId, pergunta_tipo: perguntaTipo }
+        }, '*');
+      }
+
+      window.addEventListener('message', function(event) {
+        const data = event.data || {};
+        if (data.type === 'questoesOmitidasData') {
+          renderQuestoes(data.payload || []);
+        }
+        if (data.type === 'restoreResult') {
+          const payload = data.payload || {};
+          const card = document.querySelector(\`#questao-\${payload.perguntaId}-\${payload.perguntaTipo}\`);
+          if (card) {
+            if (payload.success) {
+              card.style.opacity = '0.4';
+              card.querySelector('button').textContent = 'Reexibida';
+            } else {
+              const button = card.querySelector('button');
+              button.disabled = false;
+              button.textContent = 'Reexibir';
+              alert(payload.message || 'Erro ao reexibir questão.');
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
+`;
+  }
+
+  private pushQuestoesOmitidasDataToWindow() {
+    if (!this.questoesOmitidasWindow || this.questoesOmitidasWindow.closed) {
+      return;
+    }
+
+    const payload = this.buildQuestoesOmitidasGroupedData();
+
+    this.questoesOmitidasWindow.postMessage({
+      type: 'questoesOmitidasData',
+      payload
+    }, '*');
+  }
+
+  private handleExternalWindowMessage(event: MessageEvent) {
+    if (!event.data || typeof event.data !== 'object') {
+      return;
+    }
+
+    const message = event.data;
+    if (message.type === 'restoreQuestaoOmitida') {
+      const payload = message.payload || {};
+      if (typeof payload.pergunta_id !== 'number' || !payload.pergunta_tipo) {
+        return;
+      }
+      const tipo = payload.pergunta_tipo as 'multipla' | 'vf' | 'correlacao';
+      this.restaurarQuestaoPorId(
+        payload.pergunta_id,
+        tipo,
+        event.source as Window | null
+      );
+    }
+  }
+
+  private restaurarQuestaoPorId(
+    perguntaId: number,
+    perguntaTipo: 'multipla' | 'vf' | 'correlacao',
+    sourceWindow?: Window | null
+  ) {
+    this.perguntasService.restaurarQuestao(perguntaId, perguntaTipo)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: () => {
+          this.notifyRestoreResult(perguntaId, perguntaTipo, true, sourceWindow);
+        },
+        error: (error) => {
+          console.error('❌ Erro ao restaurar questão omitida:', error);
+          this.notifyRestoreResult(perguntaId, perguntaTipo, false, sourceWindow, 'Erro ao reexibir questão.');
+        }
+      });
+  }
+
+  private notifyRestoreResult(
+    perguntaId: number,
+    perguntaTipo: 'multipla' | 'vf' | 'correlacao',
+    success: boolean,
+    sourceWindow?: Window | null,
+    message?: string
+  ) {
+    if (!sourceWindow || sourceWindow.closed) {
+      return;
+    }
+
+    sourceWindow.postMessage({
+      type: 'restoreResult',
+      payload: {
+        perguntaId,
+        perguntaTipo,
+        success,
+        message
+      }
+    }, '*');
   }
 
   /**
@@ -1031,10 +2066,19 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   private loadRandomQuestions(tabType: TabType): Observable<SimuladoQuestion[]> {
     const config = this.tabs[tabType].simuladoConfig;
     console.log(`📚 Buscando TODAS as questões para aba ${tabType} e bibliografias:`, config.bibliografias);
+    console.log('🔍 [DEBUG] loadRandomQuestions() chamado', {
+      tabType,
+      bibliografias: config.bibliografias,
+      cacheCompletoLength: this.allQuestionsCacheComplete.length,
+      cacheLength: this.allQuestionsCache.length,
+      assuntosDisponiveis: this.assuntosDisponiveis.length,
+      selectedAssunto: this.selectedAssunto
+    });
     
     // Se não há bibliografias selecionadas, retornar array vazio
     if (config.bibliografias.length === 0) {
       console.warn('⚠️ Nenhuma bibliografia selecionada');
+      console.warn('🔍 [DEBUG] Retornando array vazio porque não há bibliografias');
       return new Observable(observer => {
         observer.next([]);
         observer.complete();
@@ -1124,10 +2168,22 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         // Extrair assuntos disponíveis do cache completo (sempre mostra todos)
         // Isso garante que mesmo quando um assunto está selecionado, todos os assuntos
         // da bibliografia permanecem visíveis no combobox
+        console.log('🔍 [DEBUG] Chamando updateAssuntosDisponiveis() após carregar questões');
+        console.log('🔍 [DEBUG] Estado antes de updateAssuntosDisponiveis():', {
+          cacheCompletoLength: this.allQuestionsCacheComplete.length,
+          cacheLength: this.allQuestionsCache.length,
+          assuntosDisponiveisAntes: this.assuntosDisponiveis.length,
+          selectedBibliografiaId: this.selectedBibliografiaId
+        });
         this.updateAssuntosDisponiveis();
         
         // Invalidar cache de estatísticas para recalcular
         this._statsCache = null;
+        
+        console.log('🔍 [DEBUG] Estado após updateAssuntosDisponiveis():', {
+          assuntosDisponiveisDepois: this.assuntosDisponiveis.length,
+          assuntos: this.assuntosDisponiveis.slice(0, 5)
+        });
 
         console.log('📊 TODAS as questões recebidas do backend (paginação completa, combinadas de todas bibliografias):', {
           multiplas: {
@@ -1195,6 +2251,13 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           correlacoesFiltradas = correlacoesFiltradas.filter(q => 
             q.assunto_titulo === assuntoTitulo
           );
+        }
+
+        // Remover questões que o usuário decidiu omitir
+        if (this.questoesOmitidasMap.size > 0) {
+          multiplasFiltradas = multiplasFiltradas.filter(q => !this.isQuestaoOmitida('multipla', q.id));
+          vfsFiltradas = vfsFiltradas.filter(q => !this.isQuestaoOmitida('vf', q.id));
+          correlacoesFiltradas = correlacoesFiltradas.filter(q => !this.isQuestaoOmitida('correlacao', q.id));
         }
 
         console.log('🔍 Questões filtradas por bibliografia:', {
@@ -1338,14 +2401,14 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           };
           questions.push(simuladoQ);
           
-          console.log('➕ Questão V/F adicionada:', {
-            id: simuladoQ.id,
-            uniqueKey: simuladoQ.uniqueKey,
-            tipo: simuladoQ.tipo,
-            tipo_verificacao: simuladoQ.tipo === 'vf',
-            afirmacao_sorteada_eh_verdadeira: mostrarVerdadeira,
-            afirmacao_preview: afirmacaoSorteada.substring(0, 50) + '...'
-          });
+          // console.log('➕ Questão V/F adicionada:', {
+          //   id: simuladoQ.id,
+          //   uniqueKey: simuladoQ.uniqueKey,
+          //   tipo: simuladoQ.tipo,
+          //   tipo_verificacao: simuladoQ.tipo === 'vf',
+          //   afirmacao_sorteada_eh_verdadeira: mostrarVerdadeira,
+          //   afirmacao_preview: afirmacaoSorteada.substring(0, 50) + '...'
+          // });
         });
 
         selectedMultiplas.forEach(q => {
@@ -1362,12 +2425,12 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           };
           questions.push(simuladoQ);
           
-          console.log('➕ Questão Múltipla adicionada:', {
-            id: simuladoQ.id,
-            uniqueKey: simuladoQ.uniqueKey,
-            tipo: simuladoQ.tipo,
-            tipo_verificacao: simuladoQ.tipo === 'multipla'
-          });
+          // console.log('➕ Questão Múltipla adicionada:', {
+          //   id: simuladoQ.id,
+          //   uniqueKey: simuladoQ.uniqueKey,
+          //   tipo: simuladoQ.tipo,
+          //   tipo_verificacao: simuladoQ.tipo === 'multipla'
+          // });
         });
 
         console.log('🔗 Processando questões de correlação:', {
@@ -1398,36 +2461,36 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           };
           questions.push(simuladoQ);
           
-          console.log('➕ Questão de correlação adicionada:', {
-            id: simuladoQ.id,
-            tipo: simuladoQ.tipo,
-            tipo_verificacao: simuladoQ.tipo === 'correlacao',
-            data_tipo: q.tipo,
-            pergunta_preview: simuladoQ.pergunta.substring(0, 30) + '...',
-            coluna_a_length: q.coluna_a?.length,
-            coluna_b_length: q.coluna_b?.length,
-            resposta_correta: q.resposta_correta,
-            uniqueKey: simuladoQ.uniqueKey
-          });
+          // console.log('➕ Questão de correlação adicionada:', {
+          //   id: simuladoQ.id,
+          //   tipo: simuladoQ.tipo,
+          //   tipo_verificacao: simuladoQ.tipo === 'correlacao',
+          //   data_tipo: q.tipo,
+          //   pergunta_preview: simuladoQ.pergunta.substring(0, 30) + '...',
+          //   coluna_a_length: q.coluna_a?.length,
+          //   coluna_b_length: q.coluna_b?.length,
+          //   resposta_correta: q.resposta_correta,
+          //   uniqueKey: simuladoQ.uniqueKey
+          // });
         });
 
-        console.log('📝 Questões finais do simulado:', {
-          total: questions.length,
-          distribuicao: {
-            vf: questions.filter(q => q.tipo === 'vf').length,
-            multipla: questions.filter(q => q.tipo === 'multipla').length,
-            correlacao: questions.filter(q => q.tipo === 'correlacao').length
-          },
-          questoes_detalhadas: questions.map(q => ({
-            id: q.id,
-            tipo: q.tipo,
-            tipo_check: typeof q.tipo,
-            bibliografia: q.bibliografia_titulo,
-            pergunta_preview: q.pergunta.substring(0, 50) + '...',
-            tem_data: !!q.data,
-            data_tipo: (q.data as any)?.tipo
-          }))
-        });
+        // console.log('📝 Questões finais do simulado:', {
+        //   total: questions.length,
+        //   distribuicao: {
+        //     vf: questions.filter(q => q.tipo === 'vf').length,
+        //     multipla: questions.filter(q => q.tipo === 'multipla').length,
+        //     correlacao: questions.filter(q => q.tipo === 'correlacao').length
+        //   },
+        //   questoes_detalhadas: questions.map(q => ({
+        //     id: q.id,
+        //     tipo: q.tipo,
+        //     tipo_check: typeof q.tipo,
+        //     bibliografia: q.bibliografia_titulo,
+        //     pergunta_preview: q.pergunta.substring(0, 50) + '...',
+        //     tem_data: !!q.data,
+        //     data_tipo: (q.data as any)?.tipo
+        //   }))
+        // });
 
         return questions;
       })
@@ -1482,13 +2545,13 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   }
 
   getCorrelacaoData(question: SimuladoQuestion): PerguntaCorrelacao {
-    console.log('🔍 getCorrelacaoData chamado:', {
-      question_id: question.id,
-      question_tipo: question.tipo,
-      tem_data: !!question.data,
-      data_tipo: (question.data as any)?.tipo,
-      data_keys: question.data ? Object.keys(question.data) : []
-    });
+    // console.log('🔍 getCorrelacaoData chamado:', {
+    //   question_id: question.id,
+    //   question_tipo: question.tipo,
+    //   tem_data: !!question.data,
+    //   data_tipo: (question.data as any)?.tipo,
+    //   data_keys: question.data ? Object.keys(question.data) : []
+    // });
 
     if (question.tipo !== 'correlacao') {
       console.warn('⚠️ getCorrelacaoData chamado para questão não-correlação:', question.tipo);
@@ -1497,14 +2560,14 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     }
     
     const data = question.data as PerguntaCorrelacao;
-    console.log('✅ Dados de correlação retornados:', {
-      id: data.id,
-      tem_coluna_a: !!data.coluna_a,
-      tem_coluna_b: !!data.coluna_b,
-      coluna_a_length: data.coluna_a?.length,
-      coluna_b_length: data.coluna_b?.length,
-      resposta_correta_keys: Object.keys(data.resposta_correta || {})
-    });
+    // console.log('✅ Dados de correlação retornados:', {
+    //   id: data.id,
+    //   tem_coluna_a: !!data.coluna_a,
+    //   tem_coluna_b: !!data.coluna_b,
+    //   coluna_a_length: data.coluna_a?.length,
+    //   coluna_b_length: data.coluna_b?.length,
+    //   resposta_correta_keys: Object.keys(data.resposta_correta || {})
+    // });
     
     return data;
   }
@@ -2776,5 +3839,3 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     console.log(`✅ PDF pesquisável gerado com sucesso para ${questionType}:`, fileName);
   }
 }
-
-

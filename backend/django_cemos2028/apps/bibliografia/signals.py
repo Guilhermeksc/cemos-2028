@@ -102,7 +102,10 @@ def load_fixture(filename, required_columns=None):
 
 @receiver(post_migrate)
 def load_fixtures_perguntas(sender, **kwargs):
+    logger.info(f"🔍 [DEBUG] Signal post_migrate recebido para app: {sender.name}")
+    
     if sender.name != 'django_cemos2028.apps.perguntas':
+        logger.debug(f"🔍 [DEBUG] Signal ignorado - app não é perguntas: {sender.name}")
         return
 
     logger.info("📥 Iniciando carga de fixtures XLSX para Perguntas...")
@@ -201,13 +204,23 @@ def load_fixtures_perguntas(sender, **kwargs):
                             logger.info(f"✅ Criada bibliografia: {obj.titulo}")
 
             # Capítulos de Bibliografia
+            logger.info("📄 Processando capítulos de bibliografia...")
             df = load_fixture(
                 'capitulos_bibliografia.xlsx',
                 ['id', 'bibliografia_id', 'capitulo_titulo']
             )
 
             if df is not None:
+                logger.info(f"📊 Total de linhas no arquivo capitulos_bibliografia.xlsx: {len(df)}")
+                logger.info(f"📋 Colunas encontradas: {list(df.columns)}")
+                
+                capitulos_criados = 0
+                capitulos_atualizados = 0
+                erros = 0
+                
                 for idx, row in df.iterrows():
+                    logger.debug(f"🔍 [DEBUG] Processando linha {idx}: {dict(row)}")
+                    
                     if not _require_fields(
                         row,
                         ['id', 'bibliografia_id', 'capitulo_titulo'],
@@ -215,22 +228,46 @@ def load_fixtures_perguntas(sender, **kwargs):
                         idx,
                         string_fields=['capitulo_titulo']
                     ):
+                        logger.warning(f"⚠️ Linha {idx} ignorada: campos obrigatórios ausentes ou inválidos")
+                        erros += 1
                         continue
+                    
                     try:
-                        bibliografia = BibliografiaModel.objects.get(
-                            id=_as_int(row['bibliografia_id'])
-                        )
-                        CapitulosBibliografiaModel.objects.update_or_create(
-                            id=_as_int(row['id']),
+                        bibliografia_id = _as_int(row['bibliografia_id'])
+                        capitulo_id = _as_int(row['id'])
+                        capitulo_titulo = _as_clean_str(row['capitulo_titulo'])
+                        
+                        logger.debug(f"🔍 [DEBUG] Dados processados - ID: {capitulo_id}, Bibliografia ID: {bibliografia_id}, Título: {capitulo_titulo}")
+                        
+                        bibliografia = BibliografiaModel.objects.get(id=bibliografia_id)
+                        
+                        obj, created = CapitulosBibliografiaModel.objects.update_or_create(
+                            id=capitulo_id,
                             defaults={
                                 'bibliografia': bibliografia,
-                                'capitulo_titulo': _as_clean_str(row['capitulo_titulo']),
+                                'capitulo_titulo': capitulo_titulo,
                             }
                         )
+                        
+                        if created:
+                            capitulos_criados += 1
+                            logger.info(f"✅ Criado capítulo ID {capitulo_id}: {capitulo_titulo} (Bibliografia: {bibliografia.titulo})")
+                        else:
+                            capitulos_atualizados += 1
+                            logger.debug(f"ℹ️ Capítulo ID {capitulo_id} atualizado: {capitulo_titulo}")
+                            
                     except BibliografiaModel.DoesNotExist:
                         logger.warning(
-                            f"⚠️ Bibliografia ID não encontrada: {row['bibliografia_id']}"
+                            f"⚠️ Bibliografia ID {_as_int(row['bibliografia_id'])} não encontrada para capítulo ID {_as_int(row['id'])}"
                         )
+                        erros += 1
+                    except Exception as e:
+                        logger.error(f"❌ Erro ao processar linha {idx}: {e}")
+                        erros += 1
+                
+                logger.info(f"📊 Resumo de capítulos processados: {capitulos_criados} criados, {capitulos_atualizados} atualizados, {erros} erros")
+            else:
+                logger.warning("⚠️ Arquivo capitulos_bibliografia.xlsx não encontrado ou não pôde ser carregado")
 
     except Exception as e:
         logger.error(f"❌ Erro ao carregar fixtures: {e}")

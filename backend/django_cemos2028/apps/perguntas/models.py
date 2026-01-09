@@ -277,3 +277,69 @@ class QuestaoErradaAnonima(models.Model):
     
     def __str__(self):
         return f"Questão #{self.pergunta_id} ({self.get_pergunta_tipo_display()}) - Errada"
+
+
+class QuestaoOmitida(models.Model):
+    """
+    Registra quais questões o usuário optou por omitir do seu simulado.
+    Não remove a questão do banco e não interfere nos demais usuários.
+    """
+    TIPO_CHOICES = [
+        ('multipla', 'Múltipla Escolha'),
+        ('vf', 'Verdadeiro ou Falso'),
+        ('correlacao', 'Correlação'),
+    ]
+
+    usuario = models.ForeignKey(
+        Usuario,
+        on_delete=models.CASCADE,
+        related_name='questoes_omitidas',
+        verbose_name="Usuário"
+    )
+    pergunta_id = models.IntegerField(verbose_name="ID da Pergunta")
+    pergunta_tipo = models.CharField(
+        max_length=20,
+        choices=TIPO_CHOICES,
+        verbose_name="Tipo da Pergunta"
+    )
+    bibliografia = models.ForeignKey(
+        BibliografiaModel,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name="Bibliografia",
+        related_name="+"
+    )
+    assunto = models.ForeignKey(
+        CapitulosBibliografiaModel,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name="Assunto",
+        related_name="+"
+    )
+    motivo = models.CharField(
+        max_length=255,
+        blank=True,
+        null=True,
+        verbose_name="Motivo da Omissão"
+    )
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Data da Omissão")
+
+    class Meta:
+        verbose_name = "Questão Omitida"
+        verbose_name_plural = "Questões Omitidas"
+        ordering = ['-created_at']
+        constraints = [
+            models.UniqueConstraint(
+                fields=['usuario', 'pergunta_id', 'pergunta_tipo'],
+                name='unique_usuario_questao_omitida'
+            )
+        ]
+        indexes = [
+            models.Index(fields=['usuario', 'pergunta_tipo']),
+            models.Index(fields=['pergunta_tipo', 'pergunta_id']),
+        ]
+
+    def __str__(self):
+        return f"{self.usuario.username} omitiu {self.get_pergunta_tipo_display()} #{self.pergunta_id}"

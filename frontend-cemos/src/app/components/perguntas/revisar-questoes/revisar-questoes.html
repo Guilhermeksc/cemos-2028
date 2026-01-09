@@ -1,0 +1,180 @@
+<div class="revisar-container">
+  <div class="header">
+    <div>
+      <h1>Revisão de Questões</h1>
+      <p class="subtitle" *ngIf="bibliografiaIds.length > 0">
+        Bibliografias selecionadas: {{ bibliografiaIds.join(', ') }}
+      </p>
+    </div>
+    <div class="actions">
+      <button class="btn" (click)="reload()">Atualizar</button>
+      <button class="btn btn-add" *ngIf="isAdmin" (click)="openAddQuestion()">Adicionar nova questão</button>
+      <button class="btn btn-close" (click)="closeWindow()">Fechar</button>
+    </div>
+  </div>
+
+  <div *ngIf="isLoading" class="loading">
+    Carregando questões...
+  </div>
+
+  <div *ngIf="!isLoading && errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="!isLoading && !errorMessage && !isAdmin" class="warning">
+    Apenas administradores podem revisar e editar questões. As informações abaixo estão em modo somente leitura.
+  </div>
+
+  <div *ngIf="!isLoading && !errorMessage">
+    <div *ngFor="let grupo of tableData" class="bibliografia-card">
+      <div class="grupo-header">
+        <div>
+          <h2>{{ grupo.bibliografiaTitulo }}</h2>
+          <p>{{ grupo.questoes.length }} {{ grupo.questoes.length === 1 ? 'questão' : 'questões' }}</p>
+        </div>
+      </div>
+
+      <div class="tabela-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tipo</th>
+              <th>Enunciado</th>
+              <th>Assunto</th>
+              <th>Caiu em prova</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let questao of grupo.questoes">
+              <tr>
+                <td>#{{ questao.id }}</td>
+                <td>{{ getQuestaoTipoDisplay(questao.tipo) }}</td>
+                <td>
+                  <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                  <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
+                    Justificativa: {{ questao.justificativa_resposta_certa }}
+                  </div>
+                </td>
+                <td>{{ questao.assunto_titulo || '—' }}</td>
+                <td>
+                  <label class="toggle-label" *ngIf="isAdmin">
+                    <input 
+                      type="checkbox" 
+                      [checked]="questao.caiu_em_prova"
+                      (change)="onToggleCaiuEmProva(questao, $event.target.checked)"
+                      [disabled]="togglingCaiuEmProva.has(questao.uniqueKey)"
+                    />
+                    <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                  </label>
+                  <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                </td>
+                <td>
+                  <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                    {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                  </button>
+                </td>
+              </tr>
+              <tr *ngIf="isEditing(questao)">
+                <td colspan="6">
+                  <div class="edit-form">
+                    <div class="form-grid">
+                      <label>
+                        Enunciado
+                        <textarea 
+                          rows="3" 
+                          [(ngModel)]="editingFormData.pergunta" 
+                          name="pergunta-{{ questao.id }}"
+                        ></textarea>
+                      </label>
+                      <label>
+                        Justificativa
+                        <textarea 
+                          rows="3" 
+                          [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                          name="just-{{ questao.id }}"
+                        ></textarea>
+                      </label>
+                    </div>
+
+                    <div *ngIf="questao.tipo === 'multipla'" class="form-grid multipla-grid">
+                      <label>
+                        Alternativa A
+                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" name="mult-a-{{ questao.id }}"></textarea>
+                      </label>
+                      <label>
+                        Alternativa B
+                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" name="mult-b-{{ questao.id }}"></textarea>
+                      </label>
+                      <label>
+                        Alternativa C
+                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" name="mult-c-{{ questao.id }}"></textarea>
+                      </label>
+                      <label>
+                        Alternativa D
+                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" name="mult-d-{{ questao.id }}"></textarea>
+                      </label>
+                      <label>
+                        Resposta Correta
+                        <select [(ngModel)]="editingFormData.resposta_correta" name="resp-{{ questao.id }}">
+                          <option value="a">A</option>
+                          <option value="b">B</option>
+                          <option value="c">C</option>
+                          <option value="d">D</option>
+                        </select>
+                      </label>
+                    </div>
+
+                    <div *ngIf="questao.tipo === 'vf'" class="form-grid">
+                      <label>
+                        Afirmação Verdadeira
+                        <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_verdadeira" name="vf-v-{{ questao.id }}"></textarea>
+                      </label>
+                      <label>
+                        Afirmação Falsa
+                        <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_falsa" name="vf-f-{{ questao.id }}"></textarea>
+                      </label>
+                    </div>
+
+                    <div *ngIf="questao.tipo === 'correlacao'" class="form-grid">
+                      <label>
+                        Coluna A (uma linha por item)
+                        <textarea rows="3" [(ngModel)]="editingFormData.coluna_a_text" name="cor-a-{{ questao.id }}"></textarea>
+                      </label>
+                      <label>
+                        Coluna B (uma linha por item)
+                        <textarea rows="3" [(ngModel)]="editingFormData.coluna_b_text" name="cor-b-{{ questao.id }}"></textarea>
+                      </label>
+                      <label>
+                        Resposta Correta (JSON)
+                        <textarea rows="3" [(ngModel)]="editingFormData.resposta_correta_text" name="cor-resp-{{ questao.id }}"></textarea>
+                      </label>
+                    </div>
+
+                    <div *ngIf="editError" class="edit-error">
+                      {{ editError }}
+                    </div>
+
+                    <div class="edit-actions">
+                      <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                        {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                      </button>
+                      <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                        Cancelar
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div *ngIf="tableData.length === 0" class="empty">
+      Nenhuma questão encontrada para as bibliografias selecionadas.
+    </div>
+  </div>
+</div>

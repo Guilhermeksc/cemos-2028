@@ -21,6 +21,13 @@ import { PerguntaVF as PerguntaVFComponent } from './pergunta-v-f/pergunta-v-f';
 import { PerguntaMultipla as PerguntaMultiplaComponent } from './pergunta-multipla/pergunta-multipla';
 import { PerguntaCorrelacao as PerguntaCorrelacaoComponent } from './pergunta-correlacao/pergunta-correlacao';
 
+interface AssuntoComContagem {
+  nome: string;
+  quantidade: number;
+  bibliografiaTitulo: string;
+  bibliografiaId: number;
+}
+
 interface SimuladoQuestion {
   id: number;
   tipo: 'multipla' | 'vf' | 'correlacao';
@@ -70,6 +77,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   @Output() simuladoStarted = new EventEmitter<void>();
 
   private perguntasService = inject(PerguntasService);
+  private bibliografiaService = inject(BibliografiaService);
   private router = inject(Router);
   private cdr = inject(ChangeDetectorRef);
   private destroy$ = new Subject<void>();
@@ -83,8 +91,8 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   
   // Filtros de bibliografia e assunto
   selectedBibliografiaId: number | null = null;
-  assuntosDisponiveis: string[] = [];
-  selectedAssunto: string = '';
+  assuntosDisponiveis: CapituloBibliografia[] = []; // Mudado para CapituloBibliografia[] para carregar do backend
+  selectedAssunto: number | null = null; // Mudado para number | null (ID do capítulo)
   
   // Cache de todas as questões para extrair assuntos (SEM filtro de assunto)
   allQuestionsCache: Array<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao> = [];
@@ -195,6 +203,12 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
       setTimeout(() => {
         this.gerarNovaProva();
       }, 1000);
+    } else {
+      // Se não há bibliografiaIds, ainda carregar capítulos de todas as bibliografias
+      // após as bibliografias serem carregadas
+      setTimeout(() => {
+        this.loadCapitulos(null);
+      }, 500);
     }
   }
   
@@ -292,10 +306,126 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           
           // Buscar estatísticas para cada bibliografia
           this.loadEstatisticasBibliografias();
+          
+          // Carregar capítulos (assuntos) após carregar bibliografias
+          // Usar bibliografias selecionadas ou todas as bibliografias disponíveis
+          const bibliografiasParaCapitulos = this.selectedBibliografias.length > 0
+            ? this.selectedBibliografias
+            : (this.bibliografiaIds.length > 0 
+                ? this.bibliografiaIds 
+                : this.bibliografias.map(b => b.id));
+          
+          console.log('🔍 [DEBUG] Carregando capítulos para bibliografias:', bibliografiasParaCapitulos);
+          if (bibliografiasParaCapitulos.length > 0) {
+            this.loadCapitulos(this.selectedBibliografiaId);
+          } else {
+            // Se não há bibliografias específicas, carregar todos os capítulos
+            this.loadCapitulos(null);
+          }
         },
         error: (error) => {
           console.error('❌ Erro ao carregar bibliografias:', error);
           this.isLoadingBibliografias = false;
+        }
+      });
+  }
+  
+  /**
+   * Carrega capítulos disponíveis (assuntos) das bibliografias selecionadas
+   */
+  private loadCapitulos(bibliografiaId: number | null = null) {
+    console.log('🔍 [DEBUG] loadCapitulos() chamado', {
+      bibliografiaId,
+      bibliografiaIds: this.bibliografiaIds,
+      selectedBibliografias: this.selectedBibliografias,
+      bibliografiasLength: this.bibliografias.length
+    });
+    
+    const bibliografiasParaBuscar = bibliografiaId 
+      ? [bibliografiaId]
+      : (this.selectedBibliografias.length > 0 
+          ? this.selectedBibliografias 
+          : (this.bibliografiaIds.length > 0 
+              ? this.bibliografiaIds 
+              : this.bibliografias.map(b => b.id)));
+
+    if (bibliografiasParaBuscar.length === 0) {
+      console.warn('⚠️ [DEBUG] Nenhuma bibliografia para buscar capítulos');
+      this.assuntosDisponiveis = [];
+      return;
+    }
+
+    console.log('🔍 [DEBUG] Buscando capítulos para bibliografias:', bibliografiasParaBuscar);
+
+    // Buscar capítulos de todas as bibliografias
+    const requests = bibliografiasParaBuscar.map(id => 
+      this.bibliografiaService.getAllCapitulos({ bibliografia: id })
+    );
+
+    forkJoin(requests)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (results) => {
+          console.log('🔍 [DEBUG] Resultados recebidos do forkJoin:', {
+            totalRequests: results.length,
+            resultados: results.map((r, idx) => ({
+              bibliografiaId: bibliografiasParaBuscar[idx],
+              capitulosCount: Array.isArray(r) ? r.length : 0,
+              primeirosCapitulos: Array.isArray(r) ? r.slice(0, 3).map(c => ({
+                id: c.id,
+                titulo: c.capitulo_titulo,
+                bibliografia: c.bibliografia
+              })) : []
+            }))
+          });
+          
+          // Combinar todos os capítulos e remover duplicatas por ID
+          const allCapitulos = results.flat();
+          console.log('🔍 [DEBUG] Total de capítulos antes de remover duplicatas:', allCapitulos.length);
+          
+          const capitulosMap = new Map<number, CapituloBibliografia>();
+          
+          allCapitulos.forEach(cap => {
+            if (!capitulosMap.has(cap.id)) {
+              capitulosMap.set(cap.id, cap);
+            }
+          });
+
+          // Ordenar por título do capítulo
+          this.assuntosDisponiveis = Array.from(capitulosMap.values()).sort((a, b) => 
+            a.capitulo_titulo.localeCompare(b.capitulo_titulo)
+          );
+
+          console.log('✅ Capítulos carregados com sucesso:', {
+            total: this.assuntosDisponiveis.length,
+            capítulos: this.assuntosDisponiveis.map(c => ({
+              id: c.id,
+              titulo: c.capitulo_titulo,
+              bibliografia: c.bibliografia,
+              bibliografia_titulo: c.bibliografia_titulo
+            }))
+          });
+
+          // Se o assunto atualmente selecionado não existe mais na lista, resetá-lo
+          if (this.selectedAssunto !== null && !this.assuntosDisponiveis.some(c => c.id === this.selectedAssunto)) {
+            console.warn('⚠️ Assunto selecionado não existe mais na lista, resetando...');
+            this.selectedAssunto = null;
+          }
+          
+          // Forçar detecção de mudanças para atualizar o combobox
+          this.cdr.detectChanges();
+        },
+        error: (error) => {
+          console.error('❌ Erro ao carregar capítulos:', error);
+          console.error('🔍 [DEBUG] Detalhes do erro:', {
+            message: error.message,
+            status: error.status,
+            statusText: error.statusText,
+            error: error.error,
+            url: error.url
+          });
+          this.assuntosDisponiveis = [];
+          this.cdr.detectChanges();
         }
       });
   }
@@ -363,16 +493,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     }
     
     // Resetar assunto selecionado
-    this.selectedAssunto = '';
+    this.selectedAssunto = null;
     
-    // Atualizar assuntos disponíveis baseado na bibliografia selecionada
-    // Usar cache completo (sem filtro de assunto) para garantir que todos os assuntos apareçam
-    if (this.allQuestionsCacheComplete.length > 0 || this.allQuestionsCache.length > 0) {
-      this.updateAssuntosDisponiveis();
-    }
-    
-    // Se não há cache completo ainda, será atualizado quando gerarNovaProva() for chamado
-    // (quando não há assunto selecionado, o cache completo será atualizado)
+    // Carregar capítulos (assuntos) da bibliografia selecionada
+    this.loadCapitulos(this.selectedBibliografiaId);
     
     // Atualizar configuração de bibliografias em todas as tabs
     this.updateBibliografiasConfig();
@@ -399,75 +523,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   onAssuntoChange() {
     console.log('🏷️ Assunto alterado:', this.selectedAssunto);
     
-    // IMPORTANTE: Não atualizar assuntosDisponiveis aqui!
-    // A lista de assuntos deve sempre mostrar TODOS os assuntos da bibliografia,
-    // independentemente do assunto selecionado para filtro.
-    // Os assuntos disponíveis são atualizados apenas quando a bibliografia muda.
-    
     // Recarregar questões se já houver questões carregadas
     if (this.currentTab.questionsLoaded) {
       this.gerarNovaProva();
     }
-  }
-  
-
-  /**
-   * Extrai assuntos únicos das questões carregadas (usa cache completo, não filtrado)
-   */
-  private extractAssuntos() {
-    const assuntosSet = new Set<string>();
-    
-    // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos disponíveis
-    const cacheToUse = this.allQuestionsCacheComplete.length > 0 
-      ? this.allQuestionsCacheComplete 
-      : this.allQuestionsCache;
-    
-    cacheToUse.forEach(question => {
-      if (question.assunto_titulo && question.assunto_titulo.trim()) {
-        assuntosSet.add(question.assunto_titulo.trim());
-      }
-    });
-
-    this.assuntosDisponiveis = Array.from(assuntosSet).sort();
-    
-    console.log('🏷️ Assuntos disponíveis (do cache completo):', this.assuntosDisponiveis);
-  }
-  
-  /**
-   * Atualiza assuntos disponíveis baseado na bibliografia selecionada
-   * IMPORTANTE: Sempre usa o cache completo (sem filtro de assunto) para garantir
-   * que todos os assuntos da bibliografia estejam visíveis
-   */
-  private updateAssuntosDisponiveis() {
-    // Usar cache completo (sem filtro de assunto) para extrair TODOS os assuntos
-    const cacheToUse = this.allQuestionsCacheComplete.length > 0 
-      ? this.allQuestionsCacheComplete 
-      : this.allQuestionsCache;
-    
-    if (this.selectedBibliografiaId) {
-      // Filtrar questões da bibliografia selecionada do cache completo
-      const questionsFromBibliografia = cacheToUse.filter(q => 
-        q.bibliografia === this.selectedBibliografiaId
-      );
-      
-      const assuntosSet = new Set<string>();
-      questionsFromBibliografia.forEach(q => {
-        if (q.assunto_titulo && q.assunto_titulo.trim()) {
-          assuntosSet.add(q.assunto_titulo.trim());
-        }
-      });
-      
-      this.assuntosDisponiveis = Array.from(assuntosSet).sort();
-    } else {
-      // Se "Todas" foi selecionado, mostrar todos os assuntos do cache completo
-      this.extractAssuntos();
-    }
-    
-    console.log('🏷️ Assuntos disponíveis atualizados:', {
-      bibliografiaSelecionada: this.selectedBibliografiaId,
-      totalAssuntos: this.assuntosDisponiveis.length,
-      assuntos: this.assuntosDisponiveis
-    });
   }
   
   /**
@@ -911,8 +970,10 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     config.bibliografias.forEach(bibliografiaId => {
       const baseFilters: any = { bibliografia: bibliografiaId };
       
-      // Nota: Filtro de assunto removido do backend pois o backend espera ID (number)
-      // e temos apenas o título (string). O filtro será aplicado no frontend após buscar os dados.
+      // Adicionar filtro de assunto se um capítulo foi selecionado (usando ID)
+      if (this.selectedAssunto !== null) {
+        baseFilters.assunto = this.selectedAssunto;
+      }
       
       if (config.questoesMultipla > 0) {
         multiplaObservables.push(
@@ -980,11 +1041,6 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         // que busca TODAS as questões de TODOS os tipos, independentemente da tab.
         // Isso garante que as estatísticas do header sempre mostrem todos os valores disponíveis.
         // O cache completo só é atualizado quando a bibliografia muda, não quando muda de tab.
-        
-        // Extrair assuntos disponíveis do cache completo (sempre mostra todos)
-        // Isso garante que mesmo quando um assunto está selecionado, todos os assuntos
-        // da bibliografia permanecem visíveis no combobox
-        this.updateAssuntosDisponiveis();
         
         // Invalidar cache de estatísticas para recalcular
         this._statsCache = null;

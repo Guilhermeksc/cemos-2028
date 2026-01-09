@@ -83,8 +83,8 @@ class ConceitosViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'palavra_chave', 'assunto']
-    search_fields = ['titulo', 'palavra_chave', 'assunto__titulo', 'descricao', 'bibliografia__titulo']
-    ordering_fields = ['id', 'titulo', 'ano_prova', 'palavra_chave', 'assunto__titulo']
+    search_fields = ['titulo', 'palavra_chave', 'assunto__capitulo_titulo', 'descricao', 'bibliografia__titulo']
+    ordering_fields = ['id', 'titulo', 'ano_prova', 'palavra_chave', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     def get_serializer_class(self):

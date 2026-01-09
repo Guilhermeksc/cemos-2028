@@ -180,13 +180,13 @@ export class InformacoesService {
 
       const fetchNextPage = () => {
         if (!hasMore) {
-          console.log(`✅ Paginação completa de conceitos: ${allResults.length} resultados obtidos`);
+          // console.log(`✅ Paginação completa de conceitos: ${allResults.length} resultados obtidos`);
           observer.next(allResults);
           observer.complete();
           return;
         }
 
-        console.log(`📄 Buscando página ${currentPage} de conceitos (page_size: ${pageSize})...`);
+        // console.log(`📄 Buscando página ${currentPage} de conceitos (page_size: ${pageSize})...`);
         
         // Criar filtros com paginação
         const paginatedFilters: ConceitosFilters = {
@@ -211,7 +211,7 @@ export class InformacoesService {
             const pageResults = response.results || [];
             allResults.push(...pageResults);
             
-            console.log(`📄 Página ${currentPage} de conceitos recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
+            // console.log(`📄 Página ${currentPage} de conceitos recebida: ${pageResults.length} resultados (total acumulado: ${allResults.length})`);
             
             // Verificar se há mais páginas
             if (response.next) {
