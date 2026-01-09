@@ -6,12 +6,12 @@ Sua tarefa é ler o arquivo cap.md para criar um banco de questões v ou f, do s
 
 2. Estrutura da saída deve ser uma tabela Markdown, conforme abaixo:
 
-| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
+| bibliografia_id | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
 
 3. Regras de preenchimento das colunas
-    bibliografia_id" será 'Portaria Normativa nº 84/GM-MD 2º Vol'.
+bibliografia_id: 35
     “paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
-“assunto” será preenchido com 'Cap. V - Exame de Situação Operacional'.
+“assunto” será preenchido com: 159
 
     “afirmacao_falsa” deve conter a frase que será julgada como falsa.
     
@@ -25,6 +25,5 @@ Sua tarefa é ler o arquivo cap.md para criar um banco de questões v ou f, do s
 
 Exemplo de saída:
 
-| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| EMA-135 | Pág. 11 | Cap. 5 - Mobilização| A Mobilização Nacional é  (...). | A Mobilização Nacional é (...), sem relação com agressão externa. | De acordo com **art. 2º, I**, a Mobilização Nacional (...). | |  |
+| bibliografia_id | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
+| 35 | Pág. 11 | 159| A Mobilização Nacional é  (...). | A Mobilização Nacional é (...), sem relação com agressão externa. | De acordo com **art. 2º, I**, a Mobilização Nacional (...). | |  |
