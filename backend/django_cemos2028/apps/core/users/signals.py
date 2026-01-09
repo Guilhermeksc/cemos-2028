@@ -161,6 +161,22 @@ def create_default_admin(sender, **kwargs):
         else:
             print("ℹ️  Usuário 'marcos_vieira' já existe. Nenhuma ação necessária.")
 
+        # Verifica/cria usuário 'paulo_campos'
+        if not Usuario.objects.filter(username='paulo_campos').exists():
+            paulo_campos = Usuario.objects.create_user(
+                username='paulo_campos',
+                password='@cemos2028',  # Senha padrão
+                perfil='user'
+            )
+            # Não é staff nem superuser por padrão
+            paulo_campos.save()
+
+            print("✅ Usuário 'paulo_campos' criado com sucesso:")
+            print(f"   Username: paulo_campos")
+            print(f"   Password: @cemos2028")
+        else:
+            print("ℹ️  Usuário 'paulo_campos' já existe. Nenhuma ação necessária.")
+
 
 
 
