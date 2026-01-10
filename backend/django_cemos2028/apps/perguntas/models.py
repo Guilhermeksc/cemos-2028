@@ -1,3 +1,5 @@
+import logging
+
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django_cemos2028.apps.core.users.models import Usuario
@@ -5,6 +7,8 @@ from django_cemos2028.apps.bibliografia.models import (
     BibliografiaModel,
     CapitulosBibliografiaModel,
 )
+
+logger = logging.getLogger(__name__)
 
 class FlashCardsModel(models.Model):
     bibliografia = models.ForeignKey(
@@ -72,6 +76,19 @@ class PerguntasBaseModel(models.Model):
     pergunta = models.TextField(verbose_name="Pergunta")
     justificativa_resposta_certa = models.TextField(verbose_name="Justificativa da Resposta Correta")
     tipo = models.CharField(max_length=20, choices=TIPO_CHOICES, verbose_name="Tipo de Pergunta")
+    markdown_file = models.CharField(
+        max_length=255,
+        blank=True,
+        null=True,
+        verbose_name="Arquivo Markdown",
+        help_text="Caminho relativo em assets/content (ex: 'estrategia/2-estrategias-maritimas/cap4.md')"
+    )
+    markdown_highlights = models.JSONField(
+        blank=True,
+        null=True,
+        verbose_name="Marcações de Texto",
+        help_text="Lista de marcações vinculando a pergunta ao conteúdo Markdown"
+    )
     
     class Meta:
         abstract = True
@@ -79,6 +96,40 @@ class PerguntasBaseModel(models.Model):
     
     def __str__(self):
         return f"{self.bibliografia.titulo} - {self.get_tipo_display()}"
+
+    def save(self, *args, **kwargs):
+        if self.assunto:
+            if self.assunto.markdown_path:
+                original = self.assunto.markdown_path
+                normalized = (
+                    original.replace('\\', '/')
+                    .replace('frontend-cemos/public/assets/content/', '')
+                    .replace('public/assets/content/', '')
+                    .lstrip('/')
+                    .strip()
+                )
+                logger.info(
+                    "🔗 [PerguntasBaseModel] Pergunta %s herdando markdown_path do assunto '%s' (ID %s): %s (original: %s)",
+                    self.pk or 'novo',
+                    self.assunto.capitulo_titulo,
+                    self.assunto.id,
+                    normalized,
+                    original
+                )
+                self.markdown_file = normalized
+            else:
+                logger.warning(
+                    "⚠️ [PerguntasBaseModel] Assunto '%s' (ID %s) sem markdown_path; pergunta %s ficará sem arquivo vinculado.",
+                    self.assunto.capitulo_titulo,
+                    self.assunto.id,
+                    self.pk or 'novo'
+                )
+        else:
+            logger.debug(
+                "ℹ️ [PerguntasBaseModel] Pergunta %s não possui assunto; mantendo markdown_file atual.",
+                self.pk or 'novo'
+            )
+        super().save(*args, **kwargs)
 
 
 class PerguntaMultiplaModel(PerguntasBaseModel):

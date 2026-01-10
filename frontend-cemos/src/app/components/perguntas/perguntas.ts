@@ -1466,6 +1466,32 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
     replaceInCache(this.allQuestionsCacheComplete);
   }
 
+  canViewMarkdown(question: SimuladoQuestion): boolean {
+    const data = question.data as Pergunta | undefined;
+    return !!data?.markdown_file;
+  }
+
+  openMarkdownViewer(question: SimuladoQuestion) {
+    const data = question.data as Pergunta | undefined;
+    const markdownFile = data?.markdown_file;
+    if (!markdownFile) {
+      const assuntoInfo = data?.assunto_titulo ? ` (${data.assunto_titulo})` : '';
+      alert(`Nenhum arquivo Markdown vinculado ao assunto${assuntoInfo}. Configure o campo "Arquivo Markdown" no capítulo correspondente antes de usar a ferramenta.`);
+      return;
+    }
+    const urlTree = this.router.createUrlTree(['/markdown-viewer'], {
+      queryParams: {
+        tipo: question.tipo,
+        id: question.id
+      }
+    });
+    const url = this.router.serializeUrl(urlTree);
+    const popup = window.open(url, '_blank', 'width=1200,height=800,resizable=yes,scrollbars=yes');
+    if (!popup) {
+      alert('Não foi possível abrir a janela. Verifique se o bloqueador de pop-ups está desativado.');
+    }
+  }
+
   openRevisarQuestoes() {
     if (!this.isAdmin || typeof window === 'undefined') {
       return;

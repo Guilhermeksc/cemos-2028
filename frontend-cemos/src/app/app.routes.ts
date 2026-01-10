@@ -12,6 +12,11 @@ export const routes: Routes = [
     canActivate: [loginGuard]
   },
   {
+    path: 'markdown-viewer',
+    loadComponent: () => import('./components/markdown-viewer/markdown-viewer.component').then(m => m.MarkdownViewerComponent),
+    canActivate: [authGuard]
+  },
+  {
     path: 'home',
     loadComponent: () => import('./pages/home/home.component').then((m) => m.HomeComponent),
     canActivate: [authGuard],

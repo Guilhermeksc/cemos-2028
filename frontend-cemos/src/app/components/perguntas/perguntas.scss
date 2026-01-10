@@ -350,80 +350,72 @@
   margin: 0 auto;
 }
 
-.btn-acao {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  padding: 0;
-  border: none;
-  background: transparent;
-  border-radius: 50%;
+/* Botões de ação - Padrão pastel similar aos botões Omitir e Editar */
+.btn.btn-revisar {
+  background: #fff7ed; // Laranja pastel claro
+  border: 1px solid #f97316; // Laranja
+  color: #9a3412; // Marrom escuro
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  box-shadow: none;
-
-  .btn-icon {
-    width: 28px;
-    height: 28px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: contain;
-    pointer-events: none;
-    transition: transform 0.2s ease, filter 0.2s ease;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
-  }
-
-  mat-spinner {
-    display: inline-flex !important;
-    width: 26px !important;
-    height: 26px !important;
-    align-self: center;
-  }
+  transition: all 0.2s ease;
 
   &:disabled {
-    opacity: 0.45;
+    opacity: 0.6;
     cursor: not-allowed;
   }
 
-  &:disabled .btn-icon {
-    filter: grayscale(0.8) opacity(0.7);
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--geopolitica-primary);
-    outline-offset: 4px;
-  }
-
-  &:not(:disabled):hover,
-  &:not(:disabled):focus-visible {
-    transform: translateY(-2px);
-  }
-
-  &:not(:disabled):hover .btn-icon,
-  &:not(:disabled):focus-visible .btn-icon {
-    transform: scale(1.08);
+  &:hover:not(:disabled) {
+    background: #f97316; // Laranja sólido
+    color: white;
   }
 }
 
-.btn-acao.btn-revisar:not(:disabled):hover .btn-icon,
-.btn-acao.btn-revisar:not(:disabled):focus-visible .btn-icon {
-  filter: drop-shadow(0 0 10px rgba(217, 119, 6, 0.55));
+.btn.btn-pdf {
+  background: #fef2f2; // Vermelho pastel claro
+  border: 1px solid #ef4444; // Vermelho
+  color: #991b1b; // Vermelho escuro
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: #ef4444; // Vermelho sólido
+    color: white;
+  }
 }
 
-.btn-acao.btn-pdf:not(:disabled):hover .btn-icon,
-.btn-acao.btn-pdf:not(:disabled):focus-visible .btn-icon {
-  filter: drop-shadow(0 0 10px rgba(17, 24, 39, 0.55));
-}
+.btn.btn-nova {
+  background: #f0fdf4; // Verde pastel claro
+  border: 1px solid #10b981; // Verde
+  color: #065f46; // Verde escuro
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
 
-.btn-acao.btn-nova:not(:disabled):hover .btn-icon,
-.btn-acao.btn-nova:not(:disabled):focus-visible .btn-icon {
-  filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.55));
-}
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 
-/* O estilo .btn-revisar anterior foi substituído pelos ícones */
+  &:hover:not(:disabled) {
+    background: #10b981; // Verde sólido
+    color: white;
+  }
+}
 
 /* Lista de Questões */
 .questoes-list {
@@ -520,6 +512,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+
+  .danger-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
 }
 
 .separator {
@@ -602,7 +602,7 @@
   border: 1px solid var(--geopolitica-border);
 }
 
-.btn-omit {
+.btn.btn-omit {
   background: var(--geopolitica-warning-light);
   border: 1px solid var(--geopolitica-warning);
   color: var(--geopolitica-dark);
@@ -624,7 +624,7 @@
   }
 }
 
-.btn-edit {
+.btn.btn-edit {
   background: var(--geopolitica-light);
   border: 1px solid var(--geopolitica-dark);
   color: var(--geopolitica-dark);
@@ -1320,8 +1320,7 @@
     width: 100%;
     gap: 0.75rem;
 
-    .btn-pdf,
-    .gerar-nova-prova-btn {
+    .btn {
       width: 100%;
     }
   }
@@ -1610,5 +1609,27 @@
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
+  }
+}
+
+.btn.btn-highlight {
+  background: #fef3c7; // Amarelo pastel claro
+  border: 1px solid #f59e0b; // Amarelo/laranja
+  color: #92400e; // Marrom escuro
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: #f59e0b; // Amarelo/laranja sólido
+    color: white;
   }
 }

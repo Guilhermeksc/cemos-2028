@@ -50,6 +50,10 @@ class PerguntaMultiplaAdmin(ImportExportModelAdmin):
             'fields': ('justificativa_resposta_certa',),
             'classes': ('collapse',)
         }),
+        ('Texto de apoio', {
+            'fields': ('markdown_file', 'markdown_highlights'),
+            'classes': ('collapse',)
+        }),
     )
     
     readonly_fields = ['tipo']
@@ -75,6 +79,10 @@ class PerguntaVFAdmin(ImportExportModelAdmin):
             'fields': ('justificativa_resposta_certa',),
             'classes': ('collapse',)
         }),
+        ('Texto de apoio', {
+            'fields': ('markdown_file', 'markdown_highlights'),
+            'classes': ('collapse',)
+        }),
     )
     
     readonly_fields = ['tipo']
@@ -98,6 +106,10 @@ class PerguntaCorrelacaoAdmin(ImportExportModelAdmin):
         }),
         ('Justificativa', {
             'fields': ('justificativa_resposta_certa',),
+            'classes': ('collapse',)
+        }),
+        ('Texto de apoio', {
+            'fields': ('markdown_file', 'markdown_highlights'),
             'classes': ('collapse',)
         }),
     )

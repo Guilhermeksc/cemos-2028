@@ -35,7 +35,8 @@ class BibliografiaAdmin(ImportExportModelAdmin):
 
 @admin.register(CapitulosBibliografiaModel)
 class CapitulosBibliografiaAdmin(admin.ModelAdmin):
-    list_display = ['id', 'capitulo_titulo', 'bibliografia']
-    search_fields = ['capitulo_titulo', 'bibliografia__titulo']
+    list_display = ['id', 'capitulo_titulo', 'bibliografia', 'markdown_path']
+    search_fields = ['capitulo_titulo', 'bibliografia__titulo', 'markdown_path']
     list_filter = ['bibliografia']
+    fields = ['id', 'bibliografia', 'capitulo_titulo', 'markdown_path']
     ordering = ['id']

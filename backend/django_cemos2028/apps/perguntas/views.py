@@ -1,8 +1,13 @@
+import logging
+from pathlib import Path
+
+from django.conf import settings
 from rest_framework import viewsets, filters, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import permissions
+from rest_framework.views import APIView
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import Q, Count, F
 from .models import (
@@ -28,8 +33,34 @@ from .serializers import (
     RespostaUsuarioSerializer,
     RespostaUsuarioCreateSerializer,
     QuestaoErradaAnonimaSerializer,
-    QuestaoOmitidaSerializer
+    QuestaoOmitidaSerializer,
+    PerguntaHighlightSerializer
 )
+
+
+logger = logging.getLogger(__name__)
+
+
+def normalize_markdown_path(value: str) -> str:
+    """Normaliza caminhos de arquivos Markdown para formato relativo a assets/content."""
+    if not value:
+        return ''
+    sanitized = value.replace('\\', '/').strip()
+    sanitized = sanitized.replace('frontend-cemos/public/assets/content/', '')
+    sanitized = sanitized.replace('public/assets/content/', '')
+    return sanitized.lstrip('/')
+
+
+def summarize_highlights_for_log(highlights):
+    data = highlights or []
+    missing = []
+    for idx, entry in enumerate(data):
+        # entry pode ser um objeto Django ou dict, garantir interface tipo dict
+        color = entry.get('color') if isinstance(entry, dict) else getattr(entry, 'color', None)
+        if not color:
+            identifier = entry.get('id') if isinstance(entry, dict) else getattr(entry, 'id', None)
+            missing.append(identifier or f'index-{idx}')
+    return len(data), missing
 
 
 class IsAdminOrReadOnly(permissions.BasePermission):
@@ -57,7 +88,142 @@ class FlashCardsViewSet(viewsets.ModelViewSet):
         return FlashCardsSerializer
 
 
-class PerguntaMultiplaViewSet(viewsets.ModelViewSet):
+class PerguntaHighlightMixin:
+    """Ações compartilhadas para marcações de perguntas."""
+
+    highlight_serializer_class = PerguntaHighlightSerializer
+
+    @action(
+        detail=True,
+        methods=['post'],
+        url_path='marcacoes',
+        permission_classes=[permissions.IsAdminUser]
+    )
+    def salvar_marcacoes(self, request, *args, **kwargs):
+        serializer = self.highlight_serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        instance = self.get_object()
+        validated = serializer.validated_data
+        received_highlights = validated.get('markdown_highlights') or []
+        total_received, missing_received = summarize_highlights_for_log(received_highlights)
+        logger.info(
+            '[Perguntas] Recebendo %s marcações para pergunta %s (arquivo=%s).',
+            total_received,
+            instance.pk,
+            validated.get('markdown_file') or instance.markdown_file
+        )
+        if missing_received:
+            logger.warning(
+                '[Perguntas] %s marcações recebidas sem cor definida para pergunta %s: %s',
+                len(missing_received),
+                instance.pk,
+                missing_received
+            )
+        instance.markdown_file = validated.get('markdown_file')
+        instance.markdown_highlights = validated.get('markdown_highlights')
+        instance.save()
+        response_serializer = self.get_serializer(instance)
+        response_data = response_serializer.data
+        response_highlights = response_data.get('markdown_highlights') if isinstance(response_data, dict) else None
+        total_response, missing_response = summarize_highlights_for_log(response_highlights)
+        logger.info(
+            '[Perguntas] Pergunta %s salva com %s marcações.',
+            instance.pk,
+            total_response
+        )
+        if missing_response:
+            logger.warning(
+                '[Perguntas] %s marcações persistidas estão sem cor para pergunta %s: %s',
+                len(missing_response),
+                instance.pk,
+                missing_response
+            )
+        return Response(response_data, status=status.HTTP_200_OK)
+
+
+class MarkdownFileListAPIView(APIView):
+    """Lista arquivos Markdown disponíveis para vincular às perguntas."""
+    permission_classes = [permissions.IsAdminUser]
+
+    def get(self, request):
+        base_path = Path(settings.BASE_DIR).parent / 'frontend-cemos' / 'public' / 'assets' / 'content'
+        arquivos = []
+        if base_path.exists():
+            for md_file in base_path.rglob('*.md'):
+                rel_path = md_file.relative_to(base_path).as_posix()
+                label = " › ".join(rel_path.split('/'))
+                arquivos.append({
+                    'label': label,
+                    'path': rel_path
+                })
+        arquivos.sort(key=lambda item: item['label'].lower())
+        return Response(arquivos)
+
+
+class MarkdownHighlightsAPIView(APIView):
+    """Retorna todas as marcações registradas para um arquivo Markdown."""
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        caminho = request.query_params.get('path')
+        if not caminho:
+            return Response(
+                {'detail': 'Parâmetro "path" é obrigatório.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        normalized = normalize_markdown_path(caminho)
+        resultados = []
+
+        def collect_highlights(queryset, tipo):
+            for pergunta in queryset:
+                highlights = pergunta.markdown_highlights or []
+                for highlight in highlights:
+                    resultados.append({
+                        'pergunta_id': pergunta.id,
+                        'pergunta_tipo': tipo,
+                        'pergunta_label': pergunta.pergunta[:180] if pergunta.pergunta else '',
+                        'bibliografia_titulo': pergunta.bibliografia.titulo if pergunta.bibliografia_id else None,
+                        'assunto_titulo': pergunta.assunto.capitulo_titulo if pergunta.assunto_id else None,
+                        'highlight': highlight,
+                    })
+
+        collect_highlights(
+            PerguntaMultiplaModel.objects.filter(markdown_file=normalized).select_related('bibliografia', 'assunto'),
+            'multipla'
+        )
+        collect_highlights(
+            PerguntaVFModel.objects.filter(markdown_file=normalized).select_related('bibliografia', 'assunto'),
+            'vf'
+        )
+        collect_highlights(
+            PerguntaCorrelacaoModel.objects.filter(markdown_file=normalized).select_related('bibliografia', 'assunto'),
+            'correlacao'
+        )
+
+        aggregated_highlights = [item['highlight'] for item in resultados]
+        total, missing = summarize_highlights_for_log(aggregated_highlights)
+        logger.info(
+            '[Perguntas] %s marcações agregadas para o arquivo %s.',
+            total,
+            normalized
+        )
+        if missing:
+            logger.warning(
+                '[Perguntas] %s marcações agregadas sem cor para o arquivo %s: %s',
+                len(missing),
+                normalized,
+                missing
+            )
+
+        return Response({
+            'path': normalized,
+            'count': len(resultados),
+            'results': resultados
+        })
+
+
+class PerguntaMultiplaViewSet(PerguntaHighlightMixin, viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de múltipla escolha"""
     queryset = PerguntaMultiplaModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaMultiplaSerializer
@@ -74,7 +240,7 @@ class PerguntaMultiplaViewSet(viewsets.ModelViewSet):
         return PerguntaMultiplaSerializer
 
 
-class PerguntaVFViewSet(viewsets.ModelViewSet):
+class PerguntaVFViewSet(PerguntaHighlightMixin, viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de verdadeiro ou falso"""
     queryset = PerguntaVFModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaVFSerializer
@@ -91,7 +257,7 @@ class PerguntaVFViewSet(viewsets.ModelViewSet):
         return PerguntaVFSerializer
 
 
-class PerguntaCorrelacaoViewSet(viewsets.ModelViewSet):
+class PerguntaCorrelacaoViewSet(PerguntaHighlightMixin, viewsets.ModelViewSet):
     """ViewSet para gerenciar perguntas de correlação"""
     queryset = PerguntaCorrelacaoModel.objects.select_related('bibliografia', 'assunto').all()
     serializer_class = PerguntaCorrelacaoSerializer

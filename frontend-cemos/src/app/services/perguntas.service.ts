@@ -18,7 +18,10 @@ import {
   EstatisticasBibliografia,
   EstatisticasGerais,
   Pergunta,
-  QuestaoOmitida
+  QuestaoOmitida,
+  PerguntaHighlightPayload,
+  MarkdownFileInfo,
+  MarkdownHighlightsResponse
 } from '../interfaces/perguntas.interface';
 
 @Injectable({
@@ -202,6 +205,56 @@ export class PerguntasService {
    */
   getPerguntaCorrelacao(id: number): Observable<PerguntaCorrelacao> {
     return this.http.get<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/${id}/`);
+  }
+
+  /**
+   * Lista os arquivos Markdown disponíveis para vincular às perguntas
+   */
+  listarArquivosMarkdown(): Observable<MarkdownFileInfo[]> {
+    return this.http.get<MarkdownFileInfo[]>(`${this.apiUrl}/markdown-files/`);
+  }
+
+  listarHighlightsPorArquivo(path: string): Observable<MarkdownHighlightsResponse> {
+    const params = new HttpParams().set('path', path);
+    return this.http.get<MarkdownHighlightsResponse>(`${this.apiUrl}/markdown-highlights/`, { params });
+  }
+
+  /**
+   * Atualiza somente as marcações de uma pergunta
+   */
+  salvarMarcacaoPergunta(
+    tipo: 'multipla' | 'vf' | 'correlacao',
+    id: number,
+    payload: PerguntaHighlightPayload
+  ): Observable<Pergunta> {
+    const endpoint = `${this.apiUrl}/${this.getEndpointByTipo(tipo)}/${id}/marcacoes/`;
+    console.groupCollapsed(`[PerguntasService] POST ${endpoint}`);
+    console.debug('Tipo', tipo, 'ID', id, 'Arquivo', payload.markdown_file);
+    const preview = (payload.markdown_highlights || []).map((highlight, index) => ({
+      index,
+      id: highlight.id,
+      start: highlight.start_offset,
+      end: highlight.end_offset,
+      color: highlight.color || '(sem cor)'
+    }));
+    if (preview.length > 0) {
+      console.table(preview);
+    } else {
+      console.debug('Nenhuma marcação enviada.');
+    }
+    console.groupEnd();
+
+    return this.http.post<Pergunta>(endpoint, payload).pipe(
+      tap(response => {
+        const responseHighlights = response.markdown_highlights || [];
+        const missingColor = responseHighlights.filter(item => !item.color);
+        console.debug('[PerguntasService] Resposta marcacoes', {
+          pergunta: response.id,
+          totalHighlights: responseHighlights.length,
+          missingColor: missingColor.length
+        });
+      })
+    );
   }
 
   // ==================== MÉTODOS PARA BUSCAR TODAS AS PERGUNTAS (PAGINAÇÃO COMPLETA) ====================
@@ -632,6 +685,17 @@ export class PerguntasService {
         return this.updatePerguntaCorrelacao(perguntaId, payload);
       default:
         throw new Error(`Tipo de pergunta inválido: ${perguntaTipo}`);
+    }
+  }
+
+  private getEndpointByTipo(tipo: 'multipla' | 'vf' | 'correlacao'): string {
+    switch (tipo) {
+      case 'multipla':
+        return 'perguntas-multipla';
+      case 'vf':
+        return 'perguntas-vf';
+      default:
+        return 'perguntas-correlacao';
     }
   }
 }

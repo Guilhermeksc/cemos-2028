@@ -44,13 +44,7 @@ Na Rússia, os maiores pensadores militares do século XIX inscrevem-se e afilia
 
 ## 112 – Clausewitz
 
-Clausewitz é, hoje, o mais conhecido de todos os pensadores militares. Sua maior obra
-Vom Kriege é comparável ao Príncipe de Maquiavel: é uma referência constante e obrigatória,
-uma fonte inesgotável de citações. Não é, entretanto, correto afirmar que ele seja o estrategista
-mais lido. Desde os anos 1860, Rüstov constatava que: “Clausewitz é freqüentemente citado,
-mas muito pouco lido, e nós temos encontrado, mesmo entre os seus mais fervorosos admira-
-dores, aqueles que não se davam conta de que sua obra ficou incompleta e não sabiam, além
-disso, que nós tínhamos apenas a parte estratégica de Vom Kriege”.
+Clausewitz é, hoje, o mais conhecido de todos os pensadores militares. Sua maior obra Vom Kriege é comparável ao Príncipe de Maquiavel: é uma referência constante e obrigatória, uma fonte inesgotável de citações. Não é, entretanto, correto afirmar que ele seja o estrategista mais lido. Desde os anos 1860, Rüstov constatava que: “Clausewitz é freqüentemente citado, mas muito pouco lido, e nós temos encontrado, mesmo entre os seus mais fervorosos admiradores, aqueles que não se davam conta de que sua obra ficou incompleta e não sabiam, além disso, que nós tínhamos apenas a parte estratégica de Vom Kriege”.
 
 Carl von Clausewitz nasceu em 1780. Foi inscrito em um regimento com a idade de 12 anos. Em 1806, ele participa da Batalha de Auerstaedt na qualidade de ajudante de campo do Príncipe Augusto da Prússia. Feito prisioneiro, ele traz consigo do seu cativeiro um ódio feroz contra os franceses. Ele participa, logo depois, da obra de reconstrução militar conduzida por Scharnhorst, de quem ele é amigo. Em 1812, ele rejeita a política de colaboração do rei, que aceitou participar da campanha na Rússia. Ele obtém uma licença e serve no Estado-Maior russo. Está presente na Batalha de Borodino, mas representa um papel pouco efetivo, exceto no momento da convenção de armistício decidido, pelo comandante do corpo prussiano, por determinação de seu próprio chefe, o General Yorck von Wartenburg. 
 

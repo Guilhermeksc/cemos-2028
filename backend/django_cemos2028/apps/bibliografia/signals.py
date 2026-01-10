@@ -207,7 +207,7 @@ def load_fixtures_perguntas(sender, **kwargs):
             logger.info("📄 Processando capítulos de bibliografia...")
             df = load_fixture(
                 'capitulos_bibliografia.xlsx',
-                ['id', 'bibliografia_id', 'capitulo_titulo']
+                ['id', 'bibliografia_id', 'capitulo_titulo', 'markdown_path']
             )
 
             if df is not None:
@@ -236,6 +236,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                         bibliografia_id = _as_int(row['bibliografia_id'])
                         capitulo_id = _as_int(row['id'])
                         capitulo_titulo = _as_clean_str(row['capitulo_titulo'])
+                        markdown_path = _as_clean_str(row.get('markdown_path'))
                         
                         logger.debug(f"🔍 [DEBUG] Dados processados - ID: {capitulo_id}, Bibliografia ID: {bibliografia_id}, Título: {capitulo_titulo}")
                         
@@ -246,6 +247,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                             defaults={
                                 'bibliografia': bibliografia,
                                 'capitulo_titulo': capitulo_titulo,
+                                'markdown_path': markdown_path,
                             }
                         )
                         

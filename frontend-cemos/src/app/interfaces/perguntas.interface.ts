@@ -50,6 +50,41 @@ export interface AssuntoOption {
   titulo: string;
 }
 
+export interface PerguntaHighlightRange {
+  id: string;
+  text: string;
+  start_offset: number;
+  end_offset: number;
+  heading_id?: string | null;
+  note?: string | null;
+  color?: string | null;
+}
+
+export interface PerguntaHighlightPayload {
+  markdown_file?: string | null;
+  markdown_highlights?: PerguntaHighlightRange[] | null;
+}
+
+export interface MarkdownFileInfo {
+  label: string;
+  path: string;
+}
+
+export interface MarkdownAggregatedHighlight {
+  pergunta_id: number;
+  pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
+  pergunta_label?: string;
+  bibliografia_titulo?: string | null;
+  assunto_titulo?: string | null;
+  highlight: PerguntaHighlightRange;
+}
+
+export interface MarkdownHighlightsResponse {
+  path: string;
+  count: number;
+  results: MarkdownAggregatedHighlight[];
+}
+
 // Interface base para perguntas (não utilizada diretamente, apenas para referência)
 export interface PerguntaBase {
   id: number;
@@ -64,6 +99,8 @@ export interface PerguntaBase {
   justificativa_resposta_certa: string;
   tipo: 'multipla' | 'vf' | 'correlacao';
   tipo_display?: string;
+  markdown_file?: string | null;
+  markdown_highlights?: PerguntaHighlightRange[] | null;
 }
 
 // Pergunta de Múltipla Escolha

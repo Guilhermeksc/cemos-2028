@@ -49,6 +49,13 @@ class CapitulosBibliografiaModel(models.Model):
         related_name="capitulos"
     )
     capitulo_titulo = models.CharField(max_length=255, verbose_name="Título do Capítulo")
+    markdown_path = models.CharField(
+        max_length=255,
+        blank=True,
+        null=True,
+        verbose_name="Arquivo Markdown",
+        help_text="Caminho relativo em assets/content (ex: 'estrategia/2-estrategias-maritimas/cap4.md')"
+    )
     
     class Meta:
         verbose_name = "Capítulo de Bibliografia"

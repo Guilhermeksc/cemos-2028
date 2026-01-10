@@ -6,7 +6,9 @@ from .views import (
     PerguntaVFViewSet,
     PerguntaCorrelacaoViewSet,
     RespostaUsuarioViewSet,
-    QuestaoOmitidaViewSet
+    QuestaoOmitidaViewSet,
+    MarkdownFileListAPIView,
+    MarkdownHighlightsAPIView
 )
 
 # Criar router para as APIs
@@ -22,4 +24,6 @@ app_name = 'perguntas'
 
 urlpatterns = [
     path('api/', include(router.urls)),
+    path('api/markdown-files/', MarkdownFileListAPIView.as_view(), name='markdown-files'),
+    path('api/markdown-highlights/', MarkdownHighlightsAPIView.as_view(), name='markdown-highlights'),
 ]

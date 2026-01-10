@@ -137,57 +137,28 @@
       
       <div class="prova-actions">
         <button 
-          class="btn-acao btn-revisar"
+          class="btn btn-revisar"
           *ngIf="isAdmin"
           (click)="openRevisarQuestoes()"
-          matTooltip="Revisar Questões"
-          matTooltipPosition="above"
-          matTooltipClass="tooltip-dark"
           aria-label="Revisar Questões"
         >
-          <img 
-            class="btn-icon" 
-            src="/assets/img/svg/revisar.svg" 
-            alt="" 
-            aria-hidden="true"
-          />
+          Revisar Questões
         </button>
         <button 
-          class="btn-acao btn-pdf"
+          class="btn btn-pdf"
           (click)="downloadAsPDF()"
           [disabled]="simuladoQuestions.length === 0 || isGeneratingPDF"
-          [matTooltip]="isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF'"
-          matTooltipPosition="above"
           [attr.aria-label]="isGeneratingPDF ? 'Gerando PDF' : 'Salvar PDF'"
-          matTooltipClass="tooltip-dark"
         >
-          <ng-container *ngIf="!isGeneratingPDF; else pdfLoading">
-            <img 
-              class="btn-icon" 
-              src="/assets/img/svg/pdf.svg" 
-              alt="" 
-              aria-hidden="true"
-            />
-          </ng-container>
-          <ng-template #pdfLoading>
-            <mat-spinner diameter="16"></mat-spinner>
-          </ng-template>
+          {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
         </button>
         <button 
-          class="btn-acao btn-nova gerar-nova-prova-btn"
+          class="btn btn-nova gerar-nova-prova-btn"
           (click)="gerarNovaProva()"
           [disabled]="isLoadingQuestions"
-          matTooltip="Gerar Nova Prova"
-          matTooltipPosition="above"
-          matTooltipClass="tooltip-dark"
           aria-label="Gerar Nova Prova"
         >
-          <img 
-            class="btn-icon" 
-            src="/assets/img/svg/refresh.svg" 
-            alt="" 
-            aria-hidden="true"
-          />
+          Gerar Nova Prova
         </button>
       </div>
     </div>
@@ -206,7 +177,13 @@
         <div class="questao-header">
           <div class="questao-header-content">
             <span class="questao-titulo">
-              Questão {{ i + 1 }} 
+              <img 
+                *ngIf="getCaiuEmProvaStatus(question)"
+                src="/assets/img/svg/danger.svg" 
+                alt="Caiu em prova"
+                class="danger-icon"
+              />
+              Questão {{ i + 1 }}
               <span class="tipo-badge" [class]="'tipo-' + question.tipo">
                 {{ question.tipo === 'vf' ? 'V/F' : 
                    question.tipo === 'multipla' ? 'Múltipla' : 'Correlação' }}
@@ -243,6 +220,13 @@
               </div>
             </div>
             <div class="tools-actions">
+              <button
+                class="btn btn-highlight"
+                *ngIf="isAdmin || canViewMarkdown(question)"
+                (click)="openMarkdownViewer(question)"
+              >
+                Texto de apoio
+              </button>
               <button 
                 class="btn btn-omit"
                 (click)="omitirQuestao(question)"
@@ -439,20 +423,12 @@
       <!-- Botão Gerar Nova Prova ao final (visível apenas em smartphones) -->
       <div *ngIf="simuladoQuestions.length > 0" class="gerar-nova-prova-mobile">
         <button 
-          class="btn-acao btn-nova gerar-nova-prova-btn"
+          class="btn btn-nova gerar-nova-prova-btn"
           (click)="gerarNovaProva()"
           [disabled]="isLoadingQuestions"
-          matTooltip="Gerar Nova Prova"
-          matTooltipPosition="above"
-          matTooltipClass="tooltip-dark"
           aria-label="Gerar Nova Prova"
         >
-          <img 
-            class="btn-icon" 
-            src="/assets/img/svg/refresh.svg" 
-            alt="" 
-            aria-hidden="true"
-          />
+          Gerar Nova Prova
         </button>
       </div>
     </div>

@@ -1,3 +1,6 @@
+from pathlib import Path
+
+from django.conf import settings
 from rest_framework import serializers
 from django_cemos2028.apps.bibliografia.models import BibliografiaModel, CapitulosBibliografiaModel
 from .models import (
@@ -29,6 +32,7 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     resposta_correta_display = serializers.CharField(source='get_resposta_correta_display', read_only=True)
     assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
+    markdown_highlights = serializers.JSONField(required=False, allow_null=True)
     
     class Meta:
         model = PerguntaMultiplaModel
@@ -36,7 +40,7 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
             'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'resposta_correta_display', 'justificativa_resposta_certa',
-            'tipo', 'tipo_display'
+            'tipo', 'tipo_display', 'markdown_file', 'markdown_highlights'
         ]
         read_only_fields = ['tipo']
     
@@ -53,13 +57,14 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
     resposta_correta = serializers.ReadOnlyField()
     resposta_correta_display = serializers.SerializerMethodField()
     assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
+    markdown_highlights = serializers.JSONField(required=False, allow_null=True)
     
     class Meta:
         model = PerguntaVFModel
         fields = [
             'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'resposta_correta', 'resposta_correta_display',
-            'justificativa_resposta_certa', 'tipo', 'tipo_display'
+            'justificativa_resposta_certa', 'tipo', 'tipo_display', 'markdown_file', 'markdown_highlights'
         ]
         read_only_fields = ['tipo', 'resposta_correta']
     
@@ -72,13 +77,14 @@ class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
+    markdown_highlights = serializers.JSONField(required=False, allow_null=True)
     
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = [
             'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
             'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta',
-            'justificativa_resposta_certa', 'tipo', 'tipo_display'
+            'justificativa_resposta_certa', 'tipo', 'tipo_display', 'markdown_file', 'markdown_highlights'
         ]
         read_only_fields = ['tipo']
     
@@ -126,7 +132,7 @@ class PerguntaMultiplaCreateUpdateSerializer(PerguntaMultiplaSerializer):
         fields = [
             'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
-            'resposta_correta', 'justificativa_resposta_certa'
+            'resposta_correta', 'justificativa_resposta_certa', 'markdown_file', 'markdown_highlights'
         ]
 
 
@@ -135,7 +141,7 @@ class PerguntaVFCreateUpdateSerializer(PerguntaVFSerializer):
     class Meta(PerguntaVFSerializer.Meta):
         fields = [
             'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
-            'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
+            'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa', 'markdown_file', 'markdown_highlights'
         ]
 
 
@@ -144,7 +150,7 @@ class PerguntaCorrelacaoCreateUpdateSerializer(PerguntaCorrelacaoSerializer):
     class Meta(PerguntaCorrelacaoSerializer.Meta):
         fields = [
             'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
-            'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa'
+            'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa', 'markdown_file', 'markdown_highlights'
         ]
 
 
@@ -276,3 +282,38 @@ class QuestaoErradaAnonimaSerializer(serializers.ModelSerializer):
             'timestamp'
         ]
         read_only_fields = ['id', 'timestamp']
+
+
+class PerguntaHighlightRangeSerializer(serializers.Serializer):
+    id = serializers.CharField(required=False, allow_blank=True)
+    text = serializers.CharField()
+    start_offset = serializers.IntegerField(min_value=0)
+    end_offset = serializers.IntegerField(min_value=0)
+    heading_id = serializers.CharField(required=False, allow_blank=True, allow_null=True)
+    note = serializers.CharField(required=False, allow_blank=True, allow_null=True)
+    color = serializers.CharField(required=False, allow_blank=True, allow_null=True)
+
+    def validate(self, attrs):
+        if attrs['end_offset'] <= attrs['start_offset']:
+            raise serializers.ValidationError("end_offset deve ser maior que start_offset")
+        return attrs
+
+
+class PerguntaHighlightSerializer(serializers.Serializer):
+    markdown_file = serializers.CharField(required=False, allow_blank=True, allow_null=True)
+    markdown_highlights = PerguntaHighlightRangeSerializer(many=True, required=False, allow_null=True)
+
+    def validate_markdown_file(self, value):
+        if value in (None, ''):
+            return value
+        normalized = value.strip().lstrip('/')
+        if '..' in Path(normalized).parts:
+            raise serializers.ValidationError("Caminho de arquivo inválido.")
+        return normalized
+
+    def validate(self, attrs):
+        highlights = attrs.get('markdown_highlights')
+        markdown_file = attrs.get('markdown_file')
+        if highlights and not markdown_file:
+            raise serializers.ValidationError("Informe o arquivo Markdown antes de salvar marcações.")
+        return attrs
