@@ -1,6 +1,6 @@
 ## Página 65
 
-# TÍTULO IV DAS IRREGULARIDADES 
+# Título IV - Das irregularidades
 
 ### Capítulo I DAS INFRAÇÕES E SANÇÕES ADMINISTRATIVAS 
 

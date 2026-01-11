@@ -394,3 +394,103 @@ class QuestaoOmitida(models.Model):
 
     def __str__(self):
         return f"{self.usuario.username} omitiu {self.get_pergunta_tipo_display()} #{self.pergunta_id}"
+
+
+class MarkdownHighlight(models.Model):
+    """
+    Modelo normalizado para armazenar marcações de texto vinculadas a perguntas.
+    Facilita backup, importação e exportação das marcações.
+    """
+    TIPO_CHOICES = [
+        ('multipla', 'Múltipla Escolha'),
+        ('vf', 'Verdadeiro ou Falso'),
+        ('correlacao', 'Correlação'),
+    ]
+    
+    pergunta_id = models.IntegerField(verbose_name="ID da Pergunta")
+    pergunta_tipo = models.CharField(
+        max_length=20,
+        choices=TIPO_CHOICES,
+        verbose_name="Tipo da Pergunta"
+    )
+    markdown_file = models.CharField(
+        max_length=255,
+        verbose_name="Arquivo Markdown",
+        help_text="Caminho relativo em assets/content"
+    )
+    
+    # Dados da marcação
+    highlight_id = models.CharField(
+        max_length=100,
+        blank=True,
+        null=True,
+        verbose_name="ID da Marcação",
+        help_text="ID único da marcação (gerado pelo frontend)"
+    )
+    text = models.TextField(verbose_name="Texto Marcado")
+    start_offset = models.IntegerField(verbose_name="Offset Inicial")
+    end_offset = models.IntegerField(verbose_name="Offset Final")
+    heading_id = models.CharField(
+        max_length=255,
+        blank=True,
+        null=True,
+        verbose_name="ID do Cabeçalho",
+        help_text="ID do heading onde a marcação está localizada"
+    )
+    note = models.TextField(
+        blank=True,
+        null=True,
+        verbose_name="Observação",
+        help_text="Observação adicional sobre a marcação"
+    )
+    color = models.CharField(
+        max_length=20,
+        blank=True,
+        null=True,
+        default='#fff59d',
+        verbose_name="Cor",
+        help_text="Cor da marcação em formato hexadecimal"
+    )
+    
+    # Metadados
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Data de Criação")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Data de Atualização")
+    
+    class Meta:
+        verbose_name = "Marcação de Texto"
+        verbose_name_plural = "Marcações de Texto"
+        ordering = ['pergunta_tipo', 'pergunta_id', 'start_offset']
+        indexes = [
+            models.Index(fields=['pergunta_tipo', 'pergunta_id']),
+            models.Index(fields=['markdown_file']),
+            models.Index(fields=['created_at']),
+        ]
+        # Evitar duplicatas baseado em pergunta + highlight_id (quando highlight_id existe)
+        # Para marcações sem highlight_id, usamos pergunta + offsets como identificador único
+        constraints = [
+            models.UniqueConstraint(
+                fields=['pergunta_tipo', 'pergunta_id', 'highlight_id'],
+                condition=models.Q(highlight_id__isnull=False),
+                name='unique_highlight_id_per_question'
+            ),
+            models.UniqueConstraint(
+                fields=['pergunta_tipo', 'pergunta_id', 'start_offset', 'end_offset'],
+                condition=models.Q(highlight_id__isnull=True),
+                name='unique_offset_per_question_no_id'
+            )
+        ]
+    
+    def __str__(self):
+        return f"{self.get_pergunta_tipo_display()} #{self.pergunta_id} - {self.text[:50]}..."
+    
+    def to_dict(self):
+        """Converte a marcação para o formato JSON usado pelo frontend"""
+        return {
+            'id': self.highlight_id or '',
+            'text': self.text,
+            'start_offset': self.start_offset,
+            'end_offset': self.end_offset,
+            'heading_id': self.heading_id or '',
+            'note': self.note or '',
+            'color': self.color or '#fff59d'
+        }

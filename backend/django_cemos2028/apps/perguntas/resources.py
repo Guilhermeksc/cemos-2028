@@ -1,11 +1,13 @@
 # Recursos de import/export
+import json
 from import_export import resources, fields
 from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget
 from .models import (
     FlashCardsModel,
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
-    PerguntaCorrelacaoModel
+    PerguntaCorrelacaoModel,
+    MarkdownHighlight
 )
 from django_cemos2028.apps.bibliografia.models import (
     BibliografiaModel,
@@ -54,17 +56,29 @@ class PerguntaMultiplaResource(resources.ModelResource):
         widget=BooleanWidget()
     )
 
+    markdown_file = fields.Field(
+        column_name='markdown_file',
+        attribute='markdown_file',
+    )
+    markdown_highlights = fields.Field(
+        column_name='markdown_highlights',
+        attribute='markdown_highlights',
+        widget=JSONWidget()
+    )
+
     class Meta:
         model = PerguntaMultiplaModel
         fields = (
             'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
-            'resposta_correta', 'justificativa_resposta_certa', 'tipo'
+            'resposta_correta', 'justificativa_resposta_certa', 'tipo',
+            'markdown_file', 'markdown_highlights'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'alternativa_a', 'alternativa_b',
             'alternativa_c', 'alternativa_d', 'resposta_correta', 'paginas', 'assunto',
-            'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa', 'tipo'
+            'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa', 'tipo',
+            'markdown_file', 'markdown_highlights'
         )
         import_id_fields = ('id',)
         skip_unchanged = True
@@ -88,15 +102,27 @@ class PerguntaVFResource(resources.ModelResource):
         widget=BooleanWidget()
     )
 
+    markdown_file = fields.Field(
+        column_name='markdown_file',
+        attribute='markdown_file',
+    )
+    markdown_highlights = fields.Field(
+        column_name='markdown_highlights',
+        attribute='markdown_highlights',
+        widget=JSONWidget()
+    )
+
     class Meta:
         model = PerguntaVFModel
         fields = (
             'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
-            'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa', 'tipo'
+            'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa', 'tipo',
+            'markdown_file', 'markdown_highlights'
         )
         export_order = (
             'id', 'bibliografia', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 
-            'justificativa_resposta_certa', 'caiu_em_prova', 'ano_prova', 'tipo'
+            'justificativa_resposta_certa', 'caiu_em_prova', 'ano_prova', 'tipo',
+            'markdown_file', 'markdown_highlights'
         )
         import_id_fields = ('id',)
         skip_unchanged = True
@@ -135,17 +161,92 @@ class PerguntaCorrelacaoResource(resources.ModelResource):
         widget=JSONWidget()
     )
 
+    markdown_file = fields.Field(
+        column_name='markdown_file',
+        attribute='markdown_file',
+    )
+    markdown_highlights = fields.Field(
+        column_name='markdown_highlights',
+        attribute='markdown_highlights',
+        widget=JSONWidget()
+    )
+
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = (
             'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta',
-            'justificativa_resposta_certa', 'tipo'
+            'justificativa_resposta_certa', 'tipo',
+            'markdown_file', 'markdown_highlights'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'coluna_a', 'coluna_b',
             'resposta_correta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
-            'justificativa_resposta_certa', 'tipo'
+            'justificativa_resposta_certa', 'tipo',
+            'markdown_file', 'markdown_highlights'
+        )
+        import_id_fields = ('id',)
+        skip_unchanged = True
+        report_skipped = True
+
+
+class MarkdownHighlightResource(resources.ModelResource):
+    """
+    Resource para exportar/importar marcações de texto de forma normalizada.
+    Útil para backups e migração de marcações entre ambientes.
+    """
+    pergunta_tipo = fields.Field(
+        column_name='pergunta_tipo',
+        attribute='pergunta_tipo',
+    )
+    pergunta_id = fields.Field(
+        column_name='pergunta_id',
+        attribute='pergunta_id',
+    )
+    markdown_file = fields.Field(
+        column_name='markdown_file',
+        attribute='markdown_file',
+    )
+    highlight_id = fields.Field(
+        column_name='highlight_id',
+        attribute='highlight_id',
+    )
+    text = fields.Field(
+        column_name='text',
+        attribute='text',
+    )
+    start_offset = fields.Field(
+        column_name='start_offset',
+        attribute='start_offset',
+    )
+    end_offset = fields.Field(
+        column_name='end_offset',
+        attribute='end_offset',
+    )
+    heading_id = fields.Field(
+        column_name='heading_id',
+        attribute='heading_id',
+    )
+    note = fields.Field(
+        column_name='note',
+        attribute='note',
+    )
+    color = fields.Field(
+        column_name='color',
+        attribute='color',
+    )
+
+    class Meta:
+        model = MarkdownHighlight
+        fields = (
+            'id', 'pergunta_tipo', 'pergunta_id', 'markdown_file',
+            'highlight_id', 'text', 'start_offset', 'end_offset',
+            'heading_id', 'note', 'color', 'created_at', 'updated_at'
+        )
+        export_order = (
+            'id', 'pergunta_tipo', 'pergunta_id', 'markdown_file',
+            'highlight_id', 'text', 'start_offset', 'end_offset',
+            'heading_id', 'note', 'color', 'created_at', 'updated_at'
         )
         import_id_fields = ('id',)
         skip_unchanged = True

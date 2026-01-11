@@ -1,4 +1,4 @@
-# Capítulo 3 - CICLO LOGÍSTICO
+# Capítulo 3 - Ciclo Logístico
 
 ## Página 1
 

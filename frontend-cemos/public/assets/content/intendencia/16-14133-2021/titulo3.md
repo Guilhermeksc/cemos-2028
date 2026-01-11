@@ -1,6 +1,6 @@
 ## Página 48
 
-# TÍTULO III DOS CONTRATOS ADMINISTRATIVOS 
+# Título III - Dos Contratos Administrativos
 
 ### Capítulo I DA FORMALIZAÇÃO DOS CONTRATOS
 

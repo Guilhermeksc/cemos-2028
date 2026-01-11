@@ -1,4 +1,4 @@
-# Capítulo 8 - PLANEJAMENTO LOGÍSTICO
+# Capítulo 8 - Planejamento Logístico
 
 ## Página 1
 

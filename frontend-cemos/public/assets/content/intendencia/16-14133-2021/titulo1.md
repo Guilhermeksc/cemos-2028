@@ -2,7 +2,7 @@
 
 ## Página 1
 
-# TÍTULO I - DISPOSIÇÕES PRELIMINARES 
+# Título I - Disposições Preliminares
 
 ### Capítulo I - DO ÂMBITO DE APLICAÇÃO DESTA LEI
 

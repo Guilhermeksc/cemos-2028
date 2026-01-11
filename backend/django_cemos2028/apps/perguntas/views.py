@@ -18,7 +18,8 @@ from .models import (
     PerguntaCorrelacaoModel,
     RespostaUsuario,
     QuestaoErradaAnonima,
-    QuestaoOmitida
+    QuestaoOmitida,
+    MarkdownHighlight
 )
 from .serializers import (
     FlashCardsSerializer,
@@ -92,6 +93,92 @@ class PerguntaHighlightMixin:
     """Ações compartilhadas para marcações de perguntas."""
 
     highlight_serializer_class = PerguntaHighlightSerializer
+    
+    def _sync_highlights_to_normalized_model(self, instance):
+        """Sincroniza marcações do JSONField para o modelo normalizado MarkdownHighlight"""
+        # Determinar o tipo da pergunta
+        if isinstance(instance, PerguntaMultiplaModel):
+            tipo = 'multipla'
+        elif isinstance(instance, PerguntaVFModel):
+            tipo = 'vf'
+        elif isinstance(instance, PerguntaCorrelacaoModel):
+            tipo = 'correlacao'
+        else:
+            logger.warning(f'[Perguntas] Tipo de pergunta desconhecido: {type(instance)}')
+            return
+        
+        # Se não há marcações ou arquivo markdown, remover marcações existentes
+        if not instance.markdown_highlights or not instance.markdown_file:
+            MarkdownHighlight.objects.filter(
+                pergunta_tipo=tipo,
+                pergunta_id=instance.id
+            ).delete()
+            logger.info(f'[Perguntas] Removidas marcações normalizadas para pergunta {tipo} #{instance.id}')
+            return
+        
+        highlights = instance.markdown_highlights
+        if not isinstance(highlights, list):
+            logger.warning(f'[Perguntas] markdown_highlights não é uma lista para pergunta {tipo} #{instance.id}')
+            return
+        
+        # Remover todas as marcações existentes para esta pergunta
+        # (vamos recriar todas para garantir sincronização completa)
+        deleted_count = MarkdownHighlight.objects.filter(
+            pergunta_tipo=tipo,
+            pergunta_id=instance.id
+        ).delete()[0]
+        
+        if deleted_count > 0:
+            logger.info(
+                f'[Perguntas] Removidas {deleted_count} marcações antigas para pergunta {tipo} #{instance.id}'
+            )
+        
+        # Criar novas marcações normalizadas
+        synced_count = 0
+        for idx, highlight_data in enumerate(highlights):
+            if not isinstance(highlight_data, dict):
+                continue
+            
+            highlight_id = highlight_data.get('id', '')
+            text = highlight_data.get('text', '')
+            start_offset = highlight_data.get('start_offset', 0)
+            end_offset = highlight_data.get('end_offset', 0)
+            
+            # Validar dados mínimos
+            if not text or end_offset <= start_offset:
+                logger.warning(
+                    f'[Perguntas] Marcação inválida ignorada para pergunta {tipo} #{instance.id} (índice {idx}): '
+                    f'text={bool(text)}, offsets={start_offset}-{end_offset}'
+                )
+                continue
+            
+            # Criar marcação normalizada
+            # Se não há highlight_id, usar uma combinação de offsets como identificador único
+            try:
+                highlight = MarkdownHighlight.objects.create(
+                    pergunta_tipo=tipo,
+                    pergunta_id=instance.id,
+                    markdown_file=instance.markdown_file,
+                    highlight_id=highlight_id or None,
+                    text=text,
+                    start_offset=start_offset,
+                    end_offset=end_offset,
+                    heading_id=highlight_data.get('heading_id', '') or None,
+                    note=highlight_data.get('note', '') or None,
+                    color=highlight_data.get('color', '#fff59d') or '#fff59d',
+                )
+                synced_count += 1
+            except Exception as e:
+                logger.error(
+                    f'[Perguntas] Erro ao criar marcação normalizada para pergunta {tipo} #{instance.id} '
+                    f'(índice {idx}): {e}'
+                )
+                continue
+        
+        logger.info(
+            f'[Perguntas] Sincronizadas {synced_count} marcações para modelo normalizado '
+            f'(pergunta {tipo} #{instance.id})'
+        )
 
     @action(
         detail=True,
@@ -121,7 +208,16 @@ class PerguntaHighlightMixin:
             )
         instance.markdown_file = validated.get('markdown_file')
         instance.markdown_highlights = validated.get('markdown_highlights')
+        
+        # Marcar para evitar sincronização dupla (o signal também vai sincronizar)
+        # Mas vamos sincronizar manualmente aqui para garantir que aconteça imediatamente
+        instance._skip_highlight_sync = True
         instance.save()
+        instance._skip_highlight_sync = False
+        
+        # Sincronizar marcações para o modelo normalizado (garantir sincronização imediata)
+        self._sync_highlights_to_normalized_model(instance)
+        
         response_serializer = self.get_serializer(instance)
         response_data = response_serializer.data
         response_highlights = response_data.get('markdown_highlights') if isinstance(response_data, dict) else None

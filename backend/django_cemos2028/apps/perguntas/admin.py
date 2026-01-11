@@ -5,13 +5,15 @@ from .models import (
     PerguntaMultiplaModel, 
     PerguntaVFModel, 
     PerguntaCorrelacaoModel,
-    RespostaUsuario
+    RespostaUsuario,
+    MarkdownHighlight
 )
 from .resources import (
     FlashCardsResource,
     PerguntaMultiplaResource,
     PerguntaVFResource,
-    PerguntaCorrelacaoResource
+    PerguntaCorrelacaoResource,
+    MarkdownHighlightResource
 )
 
 @admin.register(FlashCardsModel)
@@ -125,3 +127,37 @@ class RespostaUsuarioAdmin(admin.ModelAdmin):
     readonly_fields = ['timestamp']
     date_hierarchy = 'timestamp'
     ordering = ['-timestamp']
+
+
+@admin.register(MarkdownHighlight)
+class MarkdownHighlightAdmin(ImportExportModelAdmin):
+    resource_class = MarkdownHighlightResource
+    list_display = ['id', 'pergunta_tipo', 'pergunta_id', 'markdown_file', 'text_preview', 'start_offset', 'end_offset', 'created_at']
+    list_filter = ['pergunta_tipo', 'markdown_file', 'created_at', 'updated_at']
+    search_fields = ['text', 'markdown_file', 'note', 'pergunta_id']
+    readonly_fields = ['created_at', 'updated_at']
+    date_hierarchy = 'created_at'
+    ordering = ['pergunta_tipo', 'pergunta_id', 'start_offset']
+    
+    fieldsets = (
+        ('Identificação da Pergunta', {
+            'fields': ('pergunta_tipo', 'pergunta_id', 'markdown_file')
+        }),
+        ('Marcação', {
+            'fields': ('highlight_id', 'text', 'start_offset', 'end_offset', 'heading_id')
+        }),
+        ('Metadados', {
+            'fields': ('note', 'color')
+        }),
+        ('Timestamps', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+    
+    def text_preview(self, obj):
+        """Preview do texto marcado (primeiros 50 caracteres)"""
+        if obj.text:
+            return obj.text[:50] + '...' if len(obj.text) > 50 else obj.text
+        return '-'
+    text_preview.short_description = 'Texto Marcado'

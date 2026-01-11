@@ -3,9 +3,15 @@ import logging
 import pandas as pd
 from django.conf import settings
 from django.db import transaction
-from django.db.models.signals import post_migrate
+from django.db.models.signals import post_migrate, post_save
 from django.dispatch import receiver
-from .models import FlashCardsModel, PerguntaMultiplaModel, PerguntaVFModel, PerguntaCorrelacaoModel
+from .models import (
+    FlashCardsModel, 
+    PerguntaMultiplaModel, 
+    PerguntaVFModel, 
+    PerguntaCorrelacaoModel,
+    MarkdownHighlight
+)
 from django_cemos2028.apps.bibliografia.models import (
     BibliografiaModel,
     CapitulosBibliografiaModel,
@@ -465,3 +471,80 @@ def load_fixtures_perguntas(sender, **kwargs):
     except Exception as e:
         logger.error(f"❌ Erro ao carregar fixtures: {e}")
         raise
+
+
+def sync_highlights_to_normalized_model(instance):
+    """Sincroniza marcações do JSONField para o modelo normalizado MarkdownHighlight"""
+    # Determinar o tipo da pergunta
+    if isinstance(instance, PerguntaMultiplaModel):
+        tipo = 'multipla'
+    elif isinstance(instance, PerguntaVFModel):
+        tipo = 'vf'
+    elif isinstance(instance, PerguntaCorrelacaoModel):
+        tipo = 'correlacao'
+    else:
+        return
+    
+    # Se não há marcações ou arquivo markdown, remover marcações existentes
+    if not instance.markdown_highlights or not instance.markdown_file:
+        MarkdownHighlight.objects.filter(
+            pergunta_tipo=tipo,
+            pergunta_id=instance.id
+        ).delete()
+        return
+    
+    highlights = instance.markdown_highlights
+    if not isinstance(highlights, list):
+        return
+    
+    # Remover todas as marcações existentes para esta pergunta
+    MarkdownHighlight.objects.filter(
+        pergunta_tipo=tipo,
+        pergunta_id=instance.id
+    ).delete()
+    
+    # Criar novas marcações normalizadas
+    for highlight_data in highlights:
+        if not isinstance(highlight_data, dict):
+            continue
+        
+        highlight_id = highlight_data.get('id', '')
+        text = highlight_data.get('text', '')
+        start_offset = highlight_data.get('start_offset', 0)
+        end_offset = highlight_data.get('end_offset', 0)
+        
+        # Validar dados mínimos
+        if not text or end_offset <= start_offset:
+            continue
+        
+        # Criar marcação normalizada
+        try:
+            MarkdownHighlight.objects.create(
+                pergunta_tipo=tipo,
+                pergunta_id=instance.id,
+                markdown_file=instance.markdown_file,
+                highlight_id=highlight_id or None,
+                text=text,
+                start_offset=start_offset,
+                end_offset=end_offset,
+                heading_id=highlight_data.get('heading_id', '') or None,
+                note=highlight_data.get('note', '') or None,
+                color=highlight_data.get('color', '#fff59d') or '#fff59d',
+            )
+        except Exception as e:
+            logger.error(
+                f'[Perguntas] Erro ao sincronizar marcação para pergunta {tipo} #{instance.id}: {e}'
+            )
+
+
+@receiver(post_save, sender=PerguntaMultiplaModel)
+@receiver(post_save, sender=PerguntaVFModel)
+@receiver(post_save, sender=PerguntaCorrelacaoModel)
+def sync_highlights_on_save(sender, instance, **kwargs):
+    """Sincroniza marcações quando uma pergunta é salva"""
+    # Só sincronizar se markdown_highlights foi modificado
+    # (evitar loops infinitos e melhorar performance)
+    if hasattr(instance, '_skip_highlight_sync'):
+        return
+    
+    sync_highlights_to_normalized_model(instance)

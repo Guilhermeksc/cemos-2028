@@ -1,4 +1,4 @@
-# Capítulo 1 Introdução à administração de cadeias globais de suprimentos (Página 1 a 37)
+# Capítulo 1 Introdução à administração de cadeias globais de suprimentos
 
 ## OBJETIVOS DE APRENDIZAGEM
 

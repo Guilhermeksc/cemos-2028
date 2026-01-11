@@ -3,6 +3,79 @@
   background: #f1f5f9;
   padding: 2rem;
   font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+/* Modal de Confirmação */
+.confirm-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.confirm-modal {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.2s ease-out;
+
+  h3 {
+    margin: 0 0 1rem 0;
+    color: #0f172a;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0.75rem 0;
+    color: #475569;
+    line-height: 1.6;
+
+    strong {
+      color: #0f172a;
+    }
+  }
+
+  .warning-text {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    color: #92400e;
+    margin: 1rem 0;
+
+    strong {
+      color: #92400e;
+    }
+  }
+
+  .modal-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .viewer-header {
@@ -32,16 +105,50 @@
   cursor: pointer;
 }
 
+.top-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.header-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
 .info-card {
   background: #fff;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
 
   p {
-    margin: 0.25rem 0;
+    margin: 0.15rem 0;
     color: #475569;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+
+.legend-section {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+
+  .legend-title {
+    margin: 0 0 0.4rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0f172a;
   }
 }
 
@@ -59,48 +166,47 @@
 
 .legend {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
 
   .legend-item {
     display: flex;
     align-items: center;
-    gap: 0.35rem;
-    font-size: 0.95rem;
+    gap: 0.25rem;
+    font-size: 0.8rem;
     color: #475569;
   }
 }
 
 .global-highlights {
   background: #fff;
-  border-radius: 1rem;
-  padding: 1rem 1.25rem;
-  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
-  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
 
   .section-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 0.75rem;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
 
     > div {
       display: flex;
       flex-direction: column;
-      gap: 0.15rem;
+      gap: 0.1rem;
     }
 
     h3 {
       margin: 0;
       color: #0f172a;
+      font-size: 0.9rem;
     }
 
     p {
       margin: 0;
       color: #94a3b8;
-      font-size: 0.9rem;
+      font-size: 0.75rem;
     }
   }
 
@@ -109,58 +215,113 @@
     background: #eef2ff;
     color: #312e81;
     border-radius: 999px;
-    padding: 0.35rem 0.95rem;
+    padding: 0.25rem 0.75rem;
     font-weight: 600;
     cursor: pointer;
+    font-size: 0.8rem;
   }
 
   .global-content {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
   }
 
   &.is-collapsed {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
   }
 
-  ul {
+  .highlights-compact-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.65rem;
+    gap: 0.3rem;
   }
 
-  li {
+  .highlight-item-compact {
     display: flex;
-    gap: 0.75rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 0.75rem;
-    padding: 0.75rem;
-    background: #f8fafc;
+    gap: 0.4rem;
     align-items: flex-start;
+    padding: 0.4rem 0.6rem;
+    background: #f8fafc;
+    border-left: 3px solid #e2e8f0;
+    border-radius: 0.25rem;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #f1f5f9;
+    }
+
+    .color-dot {
+      width: 12px;
+      height: 12px;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
   }
 
-  .highlight-entry {
+  .highlight-entry-compact {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0; // Permite que o texto seja truncado
 
-    strong {
-      display: block;
-      color: #0f172a;
+    .highlight-meta {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+
+      strong {
+        font-size: 0.85rem;
+        color: #0f172a;
+        white-space: nowrap;
+      }
+
+      small {
+        font-size: 0.75rem;
+        color: #64748b;
+        white-space: nowrap;
+      }
     }
 
-    small {
-      color: #64748b;
+    .highlight-text {
+      font-size: 0.8rem;
+      color: #475569;
+      line-height: 1.4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .btn-link-compact {
+    background: transparent;
+    border: none;
+    color: #dc2626;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+
+    &:hover:not(:disabled) {
+      opacity: 1;
     }
 
-    p {
-      margin: 0.35rem 0 0;
-      color: #1f2937;
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
     }
   }
 
   .global-actions {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: flex-end;
   }

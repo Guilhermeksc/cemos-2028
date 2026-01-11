@@ -1,4 +1,4 @@
-# Capítulo 7 - RESPONSABILIDADE PELA LOGÍSTICA NAVAL
+# Capítulo 7 - Responsabilidade pela Logística Naval
 
 ## Página 1
 

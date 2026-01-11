@@ -1,28 +1,55 @@
 <div class="markdown-viewer">
-  <header class="viewer-header">
-    <div>
-      <h1>Texto de apoio</h1>
-      <p *ngIf="question">
-        Pergunta {{ question.id }} · {{ question.tipo_display || question.tipo.toUpperCase() }}
+  <!-- Modal de Confirmação para Limpar Todas as Marcações -->
+  <div class="confirm-modal-overlay" *ngIf="showClearConfirmModal" (click)="cancelClearAllHighlights()">
+    <div class="confirm-modal" (click)="$event.stopPropagation()">
+      <h3>Confirmar Limpeza de Marcações</h3>
+      <p>
+        Tem certeza que deseja remover <strong>TODAS as {{ sortedGlobalHighlights.length }} marcações</strong> deste arquivo?
       </p>
+      <p class="warning-text">
+        ⚠️ Esta ação afetará todas as perguntas que utilizam este arquivo e <strong>não pode ser desfeita</strong>.
+      </p>
+      <div class="modal-actions">
+        <button 
+          class="btn btn-primary" 
+          type="button"
+          (click)="confirmClearAllHighlights()"
+          [disabled]="globalActionInProgress">
+          Sim, remover todas
+        </button>
+        <button 
+          class="btn btn-secondary" 
+          type="button"
+          (click)="cancelClearAllHighlights()"
+          [disabled]="globalActionInProgress">
+          Cancelar
+        </button>
+      </div>
     </div>
-    <button class="btn-close" type="button" (click)="closeWindow()">Fechar</button>
-  </header>
+  </div>
 
-  <section class="info-card" *ngIf="question">
-    <p><strong>Bibliografia:</strong> {{ question.bibliografia_titulo || '—' }}</p>
-    <p><strong>Assunto:</strong> {{ question.assunto_titulo || '—' }}</p>
-    <p><strong>Arquivo Markdown:</strong> {{ question.markdown_file || 'Não configurado' }}</p>
-  </section>
+  <div class="top-section" *ngIf="question && !errorMessage">
+    <!-- Primeira Linha: Bibliografia e Legenda lado a lado -->
+    <div class="header-row">
+      <section class="info-card">
+        <p><strong>Bibliografia:</strong> {{ question.bibliografia_titulo || '—' }}</p>
+        <p><strong>Assunto:</strong> {{ question.assunto_titulo || '—' }}</p>
+        <p><strong>Arquivo Markdown:</strong> {{ question.markdown_file || 'Não configurado' }}</p>
+      </section>
 
-  <section class="legend" *ngIf="!errorMessage">
-    <div class="legend-item" *ngFor="let item of legendEntries">
-      <span class="color-dot" [style.background]="item.color"></span>
-      <span>{{ item.label }}</span>
+      <section class="legend-section">
+        <h3 class="legend-title">Legenda</h3>
+        <div class="legend" *ngIf="!errorMessage">
+          <div class="legend-item" *ngFor="let item of legendEntries">
+            <span class="color-dot" [style.background]="item.color"></span>
+            <span>{{ item.label }}</span>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
 
-  <section class="global-highlights" [class.is-collapsed]="!showGlobalHighlights">
+    <!-- Segunda Linha: Marcações existentes -->
+    <section class="global-highlights" [class.is-collapsed]="!showGlobalHighlights">
     <div class="section-header">
       <div>
         <h3>Marcações existentes</h3>
@@ -33,22 +60,24 @@
       </button>
     </div>
 
-    <div class="global-content" *ngIf="showGlobalHighlights">
+      <div class="global-content" *ngIf="showGlobalHighlights">
       <p *ngIf="sortedGlobalHighlights.length === 0" class="muted">Nenhuma marcação cadastrada para este arquivo.</p>
-      <ul *ngIf="sortedGlobalHighlights.length > 0">
-        <li *ngFor="let entry of sortedGlobalHighlights">
+      <ul class="highlights-compact-list" *ngIf="sortedGlobalHighlights.length > 0">
+        <li *ngFor="let entry of sortedGlobalHighlights" class="highlight-item-compact">
           <span class="color-dot" [style.background]="getTipoColor(entry.pergunta_tipo)"></span>
-          <div class="highlight-entry">
-            <strong>{{ getTipoLabel(entry.pergunta_tipo) }} · Pergunta {{ entry.pergunta_id }}</strong>
-            <small>
-              {{ entry.bibliografia_titulo || '—' }}
-              <ng-container *ngIf="entry.assunto_titulo"> · {{ entry.assunto_titulo }}</ng-container>
-            </small>
-            <p>"{{ entry.highlight.text }}"</p>
+          <div class="highlight-entry-compact">
+            <span class="highlight-meta">
+              <strong>{{ getTipoLabel(entry.pergunta_tipo) }} #{{ entry.pergunta_id }}</strong>
+              <small>
+                {{ entry.bibliografia_titulo || '—' }}
+                <ng-container *ngIf="entry.assunto_titulo"> · {{ entry.assunto_titulo }}</ng-container>
+              </small>
+            </span>
+            <span class="highlight-text">"{{ entry.highlight.text }}"</span>
           </div>
           <button
             *ngIf="isAdmin"
-            class="btn-link"
+            class="btn-link-compact"
             type="button"
             (click)="removeGlobalHighlight(entry)"
             [disabled]="globalActionInProgress">
@@ -62,19 +91,18 @@
           class="btn btn-secondary"
           type="button"
           (click)="clearAllHighlightsForPage()"
-          [disabled]="globalActionInProgress">
+          [disabled]="globalActionInProgress"
+          [attr.aria-busy]="globalActionInProgress">
           {{ globalActionInProgress && globalActionTarget === 'clear-page' ? 'Limpando...' : 'Limpar todas as marcações deste arquivo' }}
         </button>
       </div>
-    </div>
-  </section>
-
+      </div>
+    </section>
+  </div>
+  
   <section class="admin-section" *ngIf="isAdmin && question?.markdown_file">
     <div class="pending-highlight" [class.is-active]="!!pendingHighlight">
-      <div class="card-header">
-        <h3>Nova marcação</h3>
-        <p>Selecione um trecho no texto para preencher os campos abaixo.</p>
-      </div>
+
 
       <ng-container *ngIf="pendingHighlight; else pendingInstructions">
         <p class="selection-text">"{{ pendingHighlight.text }}"</p>
@@ -103,32 +131,13 @@
         <p class="muted placeholder-text">Nenhum trecho selecionado. Utilize o texto ao lado para iniciar uma nova marcação.</p>
       </ng-template>
     </div>
-
-    <div class="highlights-list">
-      <h3>Marcações desta pergunta</h3>
-      <p *ngIf="questionHighlights.length === 0">Nenhuma marcação registrada para esta pergunta.</p>
-      <ul *ngIf="questionHighlights.length > 0">
-        <li *ngFor="let highlight of questionHighlights">
-          <span class="color-dot" [style.background]="highlight.color || getTipoColor(tipo)"></span>
-          <div class="highlight-body">
-            <strong>"{{ highlight.text }}"</strong>
-            <small *ngIf="highlight.note">{{ highlight.note }}</small>
-          </div>
-          <button class="btn-link" type="button" (click)="removeHighlight(highlight)" [disabled]="savingHighlight">
-            Remover
-          </button>
-        </li>
-      </ul>
-
-      <button 
-        class="btn btn-secondary" 
-        type="button" 
-        (click)="clearAllHighlights()" 
-        [disabled]="savingHighlight || questionHighlights.length === 0">
-        Limpar marcações desta pergunta
-      </button>
-    </div>
   </section>
+
+
+
+
+
+
 
   <div class="alert alert-error" *ngIf="errorMessage">
     {{ errorMessage }}

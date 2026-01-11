@@ -60,6 +60,8 @@ export class MarkdownViewerComponent implements OnInit, OnDestroy {
   pendingHighlight: PerguntaHighlightRange | null = null;
   globalActionInProgress = false;
   globalActionTarget: string | null = null;
+  showClearConfirmModal = false;
+  private lastClearClickTime = 0;
 
   readonly defaultColor = '#fff59d';
   private readonly tipoColorMap: Record<'multipla' | 'vf' | 'correlacao', string> = {
@@ -306,17 +308,63 @@ export class MarkdownViewerComponent implements OnInit, OnDestroy {
   }
 
   clearAllHighlightsForPage(): void {
-    if (!this.isAdmin || this.globalHighlights.length === 0 || this.globalActionInProgress) {
+    const now = Date.now();
+    // Prevenir múltiplos cliques em menos de 500ms
+    if (now - this.lastClearClickTime < 500) {
+      console.warn('[MarkdownViewer] Clique muito rápido, ignorando');
       return;
     }
-    if (!confirm('Remover TODAS as marcações deste arquivo para todas as perguntas relacionadas?')) {
+    this.lastClearClickTime = now;
+
+    // Prevenir múltiplas chamadas simultâneas
+    if (this.globalActionInProgress) {
+      console.warn('[MarkdownViewer] Ação já em progresso, ignorando clique');
       return;
     }
 
+    console.log('[MarkdownViewer] clearAllHighlightsForPage chamado', {
+      isAdmin: this.isAdmin,
+      globalHighlightsLength: this.globalHighlights.length,
+      sortedGlobalHighlightsLength: this.sortedGlobalHighlights.length,
+      globalActionInProgress: this.globalActionInProgress
+    });
+
+    if (!this.isAdmin) {
+      console.warn('[MarkdownViewer] Usuário não é admin');
+      alert('Você não tem permissão para executar esta ação.');
+      return;
+    }
+
+    if (this.sortedGlobalHighlights.length === 0) {
+      console.warn('[MarkdownViewer] Nenhuma marcação para limpar');
+      alert('Não há marcações para limpar.');
+      return;
+    }
+
+    // Mostrar modal de confirmação customizado (já que estamos em um popup)
+    this.showClearConfirmModal = true;
+  }
+
+  confirmClearAllHighlights(): void {
+    console.log('[MarkdownViewer] ✅ Confirmação aceita pelo usuário!');
+    this.showClearConfirmModal = false;
+    this.executeClearAllHighlights();
+  }
+
+  cancelClearAllHighlights(): void {
+    console.log('[MarkdownViewer] Usuário cancelou a operação');
+    this.showClearConfirmModal = false;
+  }
+
+  private executeClearAllHighlights(): void {
+
+    console.log('[MarkdownViewer] ✅ Confirmação aceita! Iniciando limpeza de marcações...');
     this.globalActionInProgress = true;
     this.globalActionTarget = 'clear-page';
 
     const questionMap = new Map<string, { tipo: 'multipla' | 'vf' | 'correlacao'; id: number }>();
+    console.log('[MarkdownViewer] Processando globalHighlights:', this.globalHighlights);
+    
     this.globalHighlights.forEach(entry => {
       const key = `${entry.pergunta_tipo}-${entry.pergunta_id}`;
       if (!questionMap.has(key)) {
@@ -324,41 +372,99 @@ export class MarkdownViewerComponent implements OnInit, OnDestroy {
       }
     });
 
-    const operations = Array.from(questionMap.values()).map(({ tipo, id }) =>
-      this.getQuestionRequest(tipo, id).pipe(
+    console.log('[MarkdownViewer] Questões únicas encontradas:', Array.from(questionMap.values()));
+    console.log('[MarkdownViewer] Total de questões únicas:', questionMap.size);
+
+    if (questionMap.size === 0) {
+      console.warn('[MarkdownViewer] Nenhuma questão única encontrada');
+      this.globalActionInProgress = false;
+      this.globalActionTarget = null;
+      return;
+    }
+
+    console.log('[MarkdownViewer] Criando operações para', questionMap.size, 'questões');
+    const operations = Array.from(questionMap.values()).map(({ tipo, id }) => {
+      console.log('[MarkdownViewer] Criando operação para:', { tipo, id });
+      return this.getQuestionRequest(tipo, id).pipe(
         switchMap(pergunta => {
+          console.log('[MarkdownViewer] Pergunta carregada:', { tipo, id, markdown_file: pergunta.markdown_file });
           if (!pergunta.markdown_file) {
-            throw new Error('Pergunta sem arquivo Markdown configurado.');
+            console.error('[MarkdownViewer] Pergunta sem arquivo Markdown:', { tipo, id });
+            throw new Error(`Pergunta ${tipo} #${id} sem arquivo Markdown configurado.`);
           }
+          console.log('[MarkdownViewer] Limpando marcações para:', { tipo, id, markdown_file: pergunta.markdown_file });
           return this.perguntasService.salvarMarcacaoPergunta(tipo, id, {
             markdown_file: pergunta.markdown_file,
             markdown_highlights: []
           });
         })
-      )
-    );
+      );
+    });
+
+    console.log('[MarkdownViewer] Total de operações criadas:', operations.length);
+    console.log('[MarkdownViewer] Executando forkJoin...');
+
+    if (operations.length === 0) {
+      console.warn('[MarkdownViewer] Nenhuma operação para executar');
+      this.globalActionInProgress = false;
+      this.globalActionTarget = null;
+      return;
+    }
 
     forkJoin(operations)
       .pipe(
         takeUntil(this.destroy$),
         finalize(() => {
+          console.log('[MarkdownViewer] Finalizando operação...');
           this.globalActionInProgress = false;
           this.globalActionTarget = null;
         })
       )
       .subscribe({
         next: (responses) => {
+          console.log('[MarkdownViewer] ✅ Marcações limpas com sucesso!', responses.length, 'perguntas atualizadas');
+          console.log('[MarkdownViewer] Respostas recebidas:', responses);
+          
+          // Atualizar questão atual se estiver na lista
           const updatedCurrent = responses.find(pergunta => pergunta.id === this.question?.id);
           if (updatedCurrent) {
+            console.log('[MarkdownViewer] Atualizando questão atual:', updatedCurrent);
             this.question = updatedCurrent;
             this.questionHighlights = [...(updatedCurrent.markdown_highlights || [])];
           }
-          this.loadGlobalHighlights(this.question?.markdown_file || '');
+          
+          // Limpar highlights globais imediatamente
+          this.globalHighlights = [];
           this.applyHighlights();
+          
+          // Recarregar highlights globais do servidor
+          console.log('[MarkdownViewer] Recarregando highlights globais do servidor...');
+          const markdownFile = this.question?.markdown_file || '';
+          if (markdownFile) {
+            this.loadGlobalHighlights(markdownFile);
+          }
+          
+          console.log('[MarkdownViewer] ✅ Processo concluído!');
         },
         error: (err) => {
-          console.error('[MarkdownViewer] Falha ao limpar marcações do arquivo', err);
+          console.error('[MarkdownViewer] ❌ Falha ao limpar marcações do arquivo', err);
+          console.error('[MarkdownViewer] Detalhes do erro:', {
+            message: err.message,
+            error: err.error,
+            stack: err.stack,
+            name: err.name
+          });
+          
+          // Tentar recarregar highlights mesmo em caso de erro parcial
+          const markdownFile = this.question?.markdown_file || '';
+          if (markdownFile) {
+            console.log('[MarkdownViewer] Tentando recarregar highlights após erro...');
+            this.loadGlobalHighlights(markdownFile);
+          }
+          
           this.errorMessage = 'Não foi possível limpar todas as marcações deste arquivo. Tente novamente.';
+          const errorMsg = err.error?.message || err.error?.detail || err.message || 'Erro desconhecido';
+          alert('Erro ao limpar marcações: ' + errorMsg);
         }
       });
   }

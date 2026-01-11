@@ -1,6 +1,6 @@
 ## Página 10
 
-# TÍTULO II DAS LICITAÇÕES
+# Título II - Das Licitações
 
 ### Capítulo I - DO PROCESSO LICITATÓRIO 
 

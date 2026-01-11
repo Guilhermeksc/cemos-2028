@@ -1,4 +1,4 @@
-# Capítulo 4 - FUNÇÕES LOGÍSTICAS
+# Capítulo 4 - Funções Logísticas
 
 ## Página 1
 

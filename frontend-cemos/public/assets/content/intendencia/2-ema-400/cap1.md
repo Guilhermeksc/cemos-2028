@@ -1,4 +1,4 @@
-# Capítulo 1 - CONSIDERAÇÕES GERAIS
+# Capítulo 1 - Considerações Gerais
 
 ## Página 1
 
