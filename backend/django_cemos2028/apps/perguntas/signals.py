@@ -321,7 +321,7 @@ def load_fixtures_perguntas(sender, **kwargs):
 
             # 6. Perguntas Verdadeiro/Falso
             df = load_fixture('perguntas_vf.xlsx', [
-                'bibliografia_id', 'paginas', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
+                'bibliografia_id', 'paginas', 'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa'
             ])
             if df is not None:
                 logger.info("📄 Processando perguntas verdadeiro/falso...")
@@ -335,7 +335,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                         ['bibliografia_id', 'afirmacao_verdadeira', 'afirmacao_falsa'],
                         'perguntas_vf',
                         idx,
-                        ['paginas', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']
+                        ['paginas', 'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']
                     ):
                         
                         try:
@@ -351,9 +351,14 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 erros_assunto += 1
                                 logger.warning(f"⚠️ Pergunta V/F linha {idx} - Assunto '{assunto_valor}' não foi encontrado, mas será salva sem assunto")
                             
-                            # Gerar pergunta padrão se não existir no Excel
+                            # Ler pergunta do Excel, usar assunto como fallback se não existir
                             pergunta_text = _as_clean_str(row.get('pergunta'))
                             assunto_text = assunto.capitulo_titulo if assunto else 'Assunto não especificado'
+                            
+                            # Se pergunta não foi fornecida no Excel, usar assunto como fallback
+                            if not pergunta_text or pergunta_text.strip() == '':
+                                pergunta_text = assunto_text
+                                logger.debug(f"🔍 [DEBUG] Pergunta V/F linha {idx} - Campo 'pergunta' vazio, usando assunto como fallback: {assunto_text}")
                             
                             # Usar uma combinação única para identificar a pergunta
                             lookup_key = {
@@ -370,7 +375,7 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 bibliografia=bibliografia,
                                 afirmacao_verdadeira=_as_clean_str(row['afirmacao_verdadeira']),
                                 defaults={
-                                    'pergunta': pergunta_text or assunto_text,
+                                    'pergunta': pergunta_text,
                                     'paginas': _as_clean_str(row.get('paginas')),
                                     'assunto': assunto,
                                     'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),

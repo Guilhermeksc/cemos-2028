@@ -73,8 +73,7 @@ O confronto de esquadras foi rebatizado de guerra entre forças organizadas, pel
 
 A batalha é o momento paroxístico da guerra. É a meta para a qual todas as energias devem tender. Reencontra-se essa idéia central em praticamente todos os pensadores navais após Mahan:
 
-Nada de manobra sem batalha ao final, imediata ou retardada. Toda manobra que não respeita esse princípio é vã e sem interesse. A guerra
-não é uma ocasião para execução apenas da cinemática. Ela exige o ato de força15.
+Nada de manobra sem batalha ao final, imediata ou retardada. Toda manobra que não respeita esse princípio é vã e sem interesse. A guerra não é uma ocasião para execução apenas da cinemática. Ela exige o ato de força.
 
 A ideia central é simples: a batalha deve permitir a eliminação do adversário, a destruição de sua força militar e, consequentemente, a obtenção imediata do domínio do mar. Como o marinheiro não pode se privar de seus navios, o desaparecimento destes inviabiliza as operações de grande porte. Mahan e Castex citam como exemplos as grandes batalhas do passado que tiveram efeitos decisivos: Salamina, Ácio, Lepanto, La Hougue, Trafalgar... até a Jutlândia, cujos efeitos foram apaixonadamente discutidos durante o período entre-guerras (o debate entre historiadores não se encerrou ainda). Dentro do espírito dos autores clássicos, toda a estratégia deve estar orientada para a busca do resultado decisivo. É isto que explica a formulação por Mahan dos princípios fundamentais que serão retomados por todos seus sucessores: a ofensiva, a concentração, a liberdade de ação... É em nome desses princípios que a guerra de corso é condenada por eles como sendo um substituto ineficaz, e que a proteção do tráfego, da mesma maneira, é depreciada, a fim de que ela não imobilize mais do que uma pequena parcela das forças...
 

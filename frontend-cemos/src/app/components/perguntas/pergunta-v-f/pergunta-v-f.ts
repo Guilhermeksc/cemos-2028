@@ -188,6 +188,18 @@ export class PerguntaVF {
   }
 
   /**
+   * Processa markdown e retorna como string HTML segura para a pergunta
+   */
+  getPerguntaFormatted(): SafeHtml {
+    let pergunta = this.questionData.pergunta || '';
+    // Remover assunto se presente
+    if (this.questionData.assunto_titulo) {
+      pergunta = this.removeAssuntoFromText(pergunta, this.questionData.assunto_titulo);
+    }
+    return this.processMarkdown(pergunta);
+  }
+
+  /**
    * Processa markdown e retorna como string HTML segura para a justificativa
    */
   getJustificativaFormatted(): SafeHtml {

@@ -1,132 +1,99 @@
 import pandas as pd
 import sys
 from pathlib import Path
+from collections import defaultdict
 
-def ler_tabela_markdown(caminho):
-    """Lê uma tabela markdown e retorna um DataFrame"""
-    texto = Path(caminho).read_text(encoding="utf-8")
-    
-    # Capturar apenas linhas que são parte da tabela
+def ler_tabela_markdown(caminho: Path) -> pd.DataFrame:
+    texto = caminho.read_text(encoding="utf-8")
     linhas = [l for l in texto.splitlines() if l.strip().startswith("|")]
-    
+
     if len(linhas) < 2:
-        print(f"AVISO: Tabela não encontrada em {caminho}")
+        print(f"AVISO: Tabela não encontrada em {caminho.name}")
         return pd.DataFrame()
-    
-    # Remover a linha de formatação ":---"
+
     linhas = [l for l in linhas if ":---" not in l]
-    
-    # Limpar e separar cada linha
-    def parse_linha(linha):
-        partes = [c.strip() for c in linha.strip().strip("|").split("|")]
-        return partes
-    
+
+    def parse_linha(linha: str) -> list[str]:
+        return [c.strip() for c in linha.strip().strip("|").split("|")]
+
     dados = [parse_linha(l) for l in linhas]
-    
-    # Primeira linha é o cabeçalho
     header = dados[0]
-    linhas_data = dados[1:]
-    
-    # Construir DataFrame
-    df = pd.DataFrame(linhas_data, columns=header)
-    
+    corpo = dados[1:]
+
+    return pd.DataFrame(corpo, columns=header)
+
+
+def converter_markdown_para_xlsx(nome_arquivo: str, base: Path) -> pd.DataFrame | None:
+    nome_md = f"{nome_arquivo}.md"
+    caminho_entrada = base / nome_md
+    caminho_saida = base / f"{nome_arquivo}.xlsx"
+
+    if not caminho_entrada.exists():
+        print(f"❌ Arquivo não encontrado: {caminho_entrada}")
+        return None
+
+    print(f"📄 Processando: {nome_md}")
+    df = ler_tabela_markdown(caminho_entrada)
+
+    if df.empty:
+        print(f"❌ Nenhum dado válido em {nome_md}")
+        return None
+
+    df.to_excel(caminho_saida, index=False, engine="openpyxl")
+    print(f"✅ XLSX gerado: {caminho_saida.name}")
     return df
 
 
-def converter_markdown_para_xlsx(nome_arquivo, base):
-    """
-    Converte um arquivo markdown para Excel.
-    
-    Args:
-        nome_arquivo: Nome do arquivo sem extensão (ex: 'fc1', 'vf2')
-        base: Diretório base onde estão os arquivos
-    """
-    # Adicionar extensão .md se não tiver
-    if not nome_arquivo.endswith('.md'):
-        nome_arquivo_md = f"{nome_arquivo}.md"
-    else:
-        nome_arquivo_md = nome_arquivo
-        nome_arquivo = nome_arquivo.replace('.md', '')
-    
-    # Caminhos dos arquivos
-    caminho_entrada = base / nome_arquivo_md
-    caminho_saida = base / f"{nome_arquivo}.xlsx"
-    
-    # Verificar se arquivo existe
-    if not caminho_entrada.exists():
-        print(f"❌ ERRO: Arquivo não encontrado: {caminho_entrada}")
-        return False
-    
-    print(f"📄 Processando: {nome_arquivo_md}")
-    
-    # Ler tabela markdown
-    df = ler_tabela_markdown(caminho_entrada)
-    
-    if df.empty:
-        print(f"❌ ERRO: Nenhum dado encontrado em {nome_arquivo_md}")
-        return False
-    
-    # Salvar em Excel
-    df.to_excel(caminho_saida, index=False, engine='openpyxl')
-    
-    print(f"✅ Arquivo Excel gerado com sucesso: {caminho_saida}")
-    print(f"   Total de linhas processadas: {len(df)}")
-    print(f"   Colunas: {', '.join(df.columns.tolist())}")
-    return True
+def consolidar_por_prefixo(dfs_por_prefixo: dict[str, list[pd.DataFrame]], base: Path) -> None:
+    for prefixo, dfs in dfs_por_prefixo.items():
+        if not dfs:
+            continue
+
+        df_consolidado = pd.concat(dfs, ignore_index=True)
+        caminho_saida = base / f"{prefixo}_consolidado.xlsx"
+        df_consolidado.to_excel(caminho_saida, index=False, engine="openpyxl")
+
+        print(f"📦 Consolidado gerado: {caminho_saida.name} ({len(df_consolidado)} linhas)")
+
+
+def extrair_prefixo(nome: str) -> str:
+    for p in ("fc", "vf", "m", "c"):
+        if nome.startswith(p):
+            return p
+    return ""
 
 
 def main():
-    # DIGITE OS NOMES DOS ARQUIVOS MARKDOWN AQUI:
-    # Pode ser uma string com nomes separados por vírgula: "fc1,fc2,fc3"
-    # Ou uma lista: ["fc1", "fc2", "vf1"]
-    # Ou um único nome: "fc1"
-    nomes_arquivos = ["fc1", "fc2", "fc3", "fc4", "fc5", "fc8", "fc9", "fc10", "fc11", "fc12", "fc14", "fc15", "fc16", "fc17", 
-    "vf1", "vf2", "vf3", "vf4", "vf5", "vf8", "vf9", "vf10", "vf11", "vf12", "vf14", "vf15", "vf16", "vf17",
-    "m1", "m2", "m3", "m4", "m5", "m8", "m9", "m10", "m11", "m12", "m14", "m15", "m16", "m17"]
-    
+    nomes_arquivos = [
+        "fcanexo", "fc1", "fc2", "fc3", "fc4", "fc5", "fc6", "fc7", "fc8", "fc9",
+        "fc10", "fc11", "fc12", "fc14", "fc15", "fc16", "fc17", "fc18", "fc19",
+        "vfanexo", "vf1", "vf2", "vf3", "vf4", "vf5", "vf6", "vf7", "vf8", "vf9",
+        "vf10", "vf11", "vf12", "vf14", "vf15", "vf16", "vf17", "vf18", "vf19",
+        "manexo", "m1", "m2", "m3", "m4", "m5", "m6", "m7", "m8", "m9",
+        "m10", "m11", "m12", "m14", "m15", "m16", "m17", "m18", "m19",
+        "canexo", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9",
+        "c10", "c11", "c12", "c14", "c15", "c16", "c17", "c18", "c19",
+    ]
+
     base = Path(__file__).parent.resolve()
-    print(f"\n=== DIRETÓRIO DE TRABALHO: {base} ===")
-    
-    # Processar a string de nomes para lista
-    if isinstance(nomes_arquivos, str):
-        # Remover espaços e dividir por vírgula
-        nomes = [x.strip() for x in nomes_arquivos.split(",") if x.strip()]
-    elif isinstance(nomes_arquivos, list):
-        nomes = [str(x).strip() for x in nomes_arquivos if str(x).strip()]
-    else:
-        # Se for um único nome, converter para lista
-        nomes = [str(nomes_arquivos).strip()]
-    
-    print(f"\n=== PROCESSANDO {len(nomes)} ARQUIVO(S) ===")
-    print(f"Arquivos: {', '.join(nomes)}")
-    
-    # Processar cada arquivo
-    sucessos = 0
-    falhas = 0
-    
-    for nome_arquivo in nomes:
-        print(f"\n{'='*60}")
-        if converter_markdown_para_xlsx(nome_arquivo, base):
-            sucessos += 1
-        else:
-            falhas += 1
-    
-    # Resumo final
-    print(f"\n{'='*60}")
-    print(f"RESUMO FINAL")
-    print(f"{'='*60}")
-    print(f"Total de arquivos processados: {len(nomes)}")
-    print(f"✅ Sucessos: {sucessos}")
-    print(f"❌ Falhas: {falhas}")
-    print(f"{'='*60}")
+    print(f"\n=== DIRETÓRIO: {base} ===")
+
+    dfs_por_prefixo: dict[str, list[pd.DataFrame]] = defaultdict(list)
+
+    for nome in nomes_arquivos:
+        df = converter_markdown_para_xlsx(nome, base)
+        if df is not None:
+            prefixo = extrair_prefixo(nome)
+            if prefixo:
+                dfs_por_prefixo[prefixo].append(df)
+
+    print("\n=== CONSOLIDAÇÃO ===")
+    consolidar_por_prefixo(dfs_por_prefixo, base)
 
 
 if __name__ == "__main__":
-    # Se houver argumentos na linha de comando, usar eles
     if len(sys.argv) > 1:
-        nome_arquivo = sys.argv[1]
         base = Path(__file__).parent.resolve()
-        converter_markdown_para_xlsx(nome_arquivo, base)
+        converter_markdown_para_xlsx(sys.argv[1], base)
     else:
-        # Caso contrário, usar a função main()
         main()

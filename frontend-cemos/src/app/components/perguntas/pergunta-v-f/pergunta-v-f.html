@@ -1,5 +1,8 @@
 <!-- Pergunta Verdadeiro/Falso -->
 <div class="vf-question">
+  <div class="pergunta" *ngIf="questionData.pergunta">
+    <p><span [innerHTML]="getPerguntaFormatted()"></span></p>
+  </div>
   <div class="afirmacao">
     <p><strong>Afirmação: </strong> <span [innerHTML]="getAfirmacaoSorteadaFormatted()"></span></p>
   </div>

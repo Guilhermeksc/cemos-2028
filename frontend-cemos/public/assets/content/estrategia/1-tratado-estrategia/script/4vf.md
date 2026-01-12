@@ -1,34 +1,29 @@
-Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.md  para criar um banco de questões v ou f, do seguinte modo:
+Sua tarefa é ler o arquivo cap.md para criar um banco de questões v ou f, do seguinte modo:
 
-    Criar  3 assertovas por páginas uma versão verdadeira e uma falsa coerente (invertendo o sentido ou alterando um conceito-chave).
+1. Quantidade
+    Criar 3 assertivas por página.
+    Cada assertiva deve possuir: uma versão verdadeira, fiel ao conteúdo; e uma versão falsa, coerente, obtida por inversão lógica ou alteração de conceito-chave.
 
-    Preencher todas as colunas da tabela no formato indicado abaixo.
+2. Estrutura da saída deve ser uma tabela Markdown, conforme abaixo:
 
-    Gerar um texto no formato markdown para permitir a copia
+| bibliografia_id | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
 
-Instruções específicas:
+3. Regras de preenchimento das colunas
+bibliografia_id: 33
+    “paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
+“assunto” será preenchido com: 142
 
-    bibliografia_id" será preenchido com 'Tratado de Estratégia'.
+    “afirmacao_falsa” deve conter a frase que será julgada como falsa.
     
-    “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
-
-    “assunto” será preenchido com 'Cap. 4 - A estratégia enquanto método'.
+    “justificativa_resposta_certa” deve explicar em uma frase por que a afirmação é verdadeira ou falsa. 👉 Toda justificativa deve conter referência explícita ao artigo, inciso, parágrafo ou definição constante do arquivo consultado. Exemplos de formatos aceitos: 
     
-    “afirmacao_verdadeira” deve conter a frase que será julgada como verdadeira ou falsa.
+    “Conforme art. 4º, parágrafo único, inciso III, a intervenção (...).”
+    “Segundo o art. 2º, I, a Mobilização corresponde (...).”
+    “O texto do art. 6º enumera expressamente os órgãos que compõem o SINAMOB (...).”
+    “caiu_em_prova” em branco.
+    “ano_prova” em branco.
 
-    “afirmacao_falsa” deve conter a frase que será julgada como verdadeira ou falsa.
-    
-    “justificativa_resposta_certa” deve explicar em uma frase por que a afirmação é verdadeira ou falsa.
+Exemplo de saída:
 
-    “caiu_em_prova” não precisa ser preenchido.
-
-    “ano_prova” não precisa ser preenchido.
-
-Exemplo de saída esperada:
-
-| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ciência Política | Pág 49| Cap. 3 – O conceito de Estado | O Estado nacional atual é uma corporação territorial de um povo, constituída como nação, que se realiza por um ordenamento jurídico complexo. | O Estado nacional atual se baseia primariamente no parentesco e se realiza sem um ordenamento jurídico complexo, focando apenas na pessoa do governante. | O Estado nacional é uma corporação territorial de um povo constituído como nação, que se estabelece através de um ordenamento jurídico. | | |
-
-
-deverá salvar o resultado em formato markdown
+| bibliografia_id | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
+| 33 | Pág. 11 | 142| A Mobilização Nacional é  (...). | A Mobilização Nacional é (...), sem relação com agressão externa. | De acordo com **art. 2º, I**, a Mobilização Nacional (...). | |  |
