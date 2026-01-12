@@ -300,7 +300,7 @@
           <h4>Edição da Questão</h4>
 
           <div class="form-grid">
-            <label>
+            <label *ngIf="question.tipo !== 'vf'">
               Enunciado
               <textarea 
                 rows="3" 
@@ -355,6 +355,10 @@
           </div>
 
           <div *ngIf="question.tipo === 'vf'" class="form-grid">
+            <label>
+              Pergunta
+              <textarea rows="3" [(ngModel)]="editingFormData.pergunta" [name]="'vf-pergunta-' + question.uniqueKey"></textarea>
+            </label>
             <label>
               Afirmação Verdadeira
               <textarea rows="3" [(ngModel)]="editingFormData.afirmacao_verdadeira" [name]="'vf-verdadeira-' + question.uniqueKey"></textarea>
