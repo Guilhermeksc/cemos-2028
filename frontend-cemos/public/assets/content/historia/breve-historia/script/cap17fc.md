@@ -10,7 +10,7 @@ Todas as colunas devem ser preenchidas, mesmo que com string vazia ("").
 
 Instruções específicas:
 
-    bibliografia_id" será preenchido com "27".
+    bibliografia_id": 5.
 
     pergunta será preenchido com a pergunta contextualizada.
 
@@ -21,14 +21,13 @@ Instruções específicas:
 
     “paginas” será preenchido com o markador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11 ...'
     
-“assunto” será preenchido com "Cap.17 - As naves da vingança".
+“assunto”: 38.
 
 Exemplo de saída esperada:
 
 					
 | bibliografia_id | pergunta | resposta | prova | páginas | assunto |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 38 | Pergunta contextualizada | Resposta objetiva, conforme o item X.X do texto. |  | Pág. 11 | Cap. 1 - Doutrina de Mobilização Militar |
+| 5 | Pergunta contextualizada | Resposta objetiva, conforme o item X.X do texto. |  | Pág. 11 | Cap.17 - As naves da vingança |
 
 
 deverá salvar o resultado em formato markdown

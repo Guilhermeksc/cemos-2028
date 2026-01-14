@@ -6,25 +6,21 @@ Sua tarefa é ler o arquivo cap.md para criar um banco de questões v ou f, do s
 
 2. Estrutura da saída deve ser uma tabela Markdown, conforme abaixo:
 
-| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
+| bibliografia_id | paginas | assunto | pergunta | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
 
 3. Regras de preenchimento das colunas
-bibliografia_titulo: "Decreto nº 678/1992 - Pacto de São José"
-    “paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
-“assunto” será preenchido com "Cap. 1 - Uma aurora resplandecente"
-
-    “afirmacao_falsa” deve conter a frase que será julgada como falsa.
-    
-    “justificativa_resposta_certa” deve explicar em uma frase por que a afirmação é verdadeira ou falsa. 👉 Toda justificativa deve conter referência explícita ao artigo, inciso, parágrafo ou definição constante do arquivo consultado. Exemplos de formatos aceitos: 
-    
-    “Conforme art. 4º, parágrafo único, inciso III, a intervenção (...).”
-    “Segundo o art. 2º, I, a Mobilização corresponde (...).”
-    “O texto do art. 6º enumera expressamente os órgãos que compõem o SINAMOB (...).”
-    “caiu_em_prova” em branco.
-    “ano_prova” em branco.
+bibliografia_id: 5
+“paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
+“assunto”: 24
+"pergunta" deve conter um título com o tema da pergunta elaborada.
+“afirmacao_falsa” deve conter a frase que será julgada como falsa.    
+“justificativa_resposta_certa” deve explicar em uma frase por que a afirmação é verdadeira ou falsa. 👉 Toda justificativa deve conter referência explícita ao artigo, inciso, parágrafo ou definição constante do arquivo consultado. Exemplos de formatos aceitos: 
+“Conforme art. 4º, parágrafo único, inciso III, a intervenção (...).”
+“Segundo o art. 2º, I, a Mobilização corresponde (...).”
+“caiu_em_prova” em branco.
+“ano_prova” em branco.
 
 Exemplo de saída:
 
-| bibliografia_titulo | paginas | assunto | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| EMA-135 | Pág. 11 | Cap. 5 - Mobilização| A Mobilização Nacional é  (...). | A Mobilização Nacional é (...), sem relação com agressão externa. | De acordo com **art. 2º, I**, a Mobilização Nacional (...). | |  |
+| bibliografia_id | paginas | assunto | pergunta | afirmacao_verdadeira | afirmacao_falsa | justificativa_resposta_certa | caiu_em_prova | ano_prova |
+| 5 | Pág. 11 | 24| Mobilização Nacional |A Mobilização Nacional é  (...). | A Mobilização Nacional é (...), sem relação com agressão externa. | De acordo com **art. 2º, I**, a Mobilização Nacional (...). | |  |
