@@ -1,0 +1,52 @@
+<div class="objetivos-estrategicos-container">
+  <!-- Menu discreto lateral -->
+  <div class="side-menu">
+    <!-- Lista de itens do menu -->
+    <mat-nav-list class="menu-list">
+      <mat-list-item 
+        *ngFor="let item of menuItems"
+        class="menu-item"
+        [class.active]="isSelected(item)"
+        [class.has-children]="item.children"
+        [class.no-click]="item.children"
+        (click)="selectMenuItem(item, $event)">
+        
+        <div class="menu-item-content">
+          <span class="menu-item-title">{{ item.title }}</span>
+        </div>
+
+        <!-- Submenu para itens com children (sempre aberto) -->
+        <div 
+          *ngIf="item.children"
+          class="submenu"
+          (click)="$event.stopPropagation()">
+          <mat-list-item 
+            *ngFor="let subItem of item.children"
+            class="submenu-item"
+            [class.active]="isSubItemSelected(subItem)"
+            (click)="selectSubMenuItem(item.id, subItem, $event)">
+            <span class="submenu-item-title">{{ subItem.title }}</span>
+          </mat-list-item>
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+
+  <!-- Área de conteúdo principal -->
+  <div class="main-content">
+    <!-- Loading spinner -->
+    <div *ngIf="isLoading" class="loading-container">
+      <mat-spinner diameter="50"></mat-spinner>
+    </div>
+
+    <!-- Conteúdo Markdown -->
+    <div *ngIf="!isLoading && htmlContent" class="content-container">
+      <mat-card class="content-card">
+        <mat-card-content>
+          <div class="markdown-content" [innerHTML]="htmlContent"></div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+

@@ -32,7 +32,7 @@ Por meio das análises estratégicas, as Diretrizes de Preparo que serão aprese
 
 Quadro 3: Eixos Temáticos.
 
-## Poder de Combate
+### Poder de Combate
 
 - Navios com capacidades antissuperfície, antissubmarino, defesa antiaérea e IVR  
 - Submarinos  
@@ -41,7 +41,7 @@ Quadro 3: Eixos Temáticos.
 - Meios de Minagem e CMM  
 - Conectores do MNT  
 
-## Consciência Situacional
+### Consciência Situacional
 
 - SisGAAz  
 - Meios Navais e Aeronavais de IVR (tripulados ou não tripulados)  
@@ -91,10 +91,9 @@ Quadro 4: Linhas de Esforço (Contextualizar os Adestramentos e Otimizar o Empre
 
 ![quadro](quadro4.png)
 
-x2.3.1. Contextualizar os Adestramentos
+### 2.3.1. Contextualizar os Adestramentos
 
-Visando a manutenção de um Poder Naval aprestado para enfrentar os desafios vislumbrados nos Cenários e na Conjuntura, e considerando os adestramentos como parte componente do aprestamento dos meios para o emprego, os Planos e Programas de Adestramento (PGACON e PGADGN) devem ser conduzidos seguindo as prioridades estabelecidas e de forma alinhada com Possibilidades de Atuação que foram identificadas nas análises estratégicas. Além disso, deve-se buscar a inserção dos Cenários observados nas  PA nos Planos de Trabalho Anual (PTA) da Chefia de Operações Conjuntas do Ministério da 
-Defesa.
+Visando a manutenção de um Poder Naval aprestado para enfrentar os desafios vislumbrados nos Cenários e na Conjuntura, e considerando os adestramentos como parte componente do aprestamento dos meios para o emprego, os Planos e Programas de Adestramento (PGACON e PGADGN) devem ser conduzidos seguindo as prioridades estabelecidas e de forma alinhada com Possibilidades de Atuação que foram identificadas nas análises estratégicas. Além disso, deve-se buscar a inserção dos Cenários observados nas  PA nos Planos de Trabalho Anual (PTA) da Chefia de Operações Conjuntas do Ministério da Defesa.
 
 ## Página 35
 

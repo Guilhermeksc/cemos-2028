@@ -1,0 +1,193 @@
+.objetivos-estrategicos-container {
+  display: flex;
+  min-height: calc(100vh - 64px); // Ajuste conforme header
+  position: relative;
+
+  // Menu lateral discreto
+  .side-menu {
+    width: 240px;
+    min-width: 240px;
+    padding: 24px 16px;
+    overflow-y: auto;
+    flex-shrink: 0;
+
+    .menu-list {
+      padding: 0;
+
+      .menu-item {
+        padding: 0;
+        height: auto;
+        min-height: 36px;
+        margin-bottom: 4px;
+
+        &:not(.no-click) {
+          cursor: pointer;
+
+          &:hover {
+            .menu-item-title {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        &.active {
+          .menu-item-title {
+            font-weight: 500;
+          }
+        }
+
+        .menu-item-content {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 8px 0;
+
+          .menu-item-title {
+            flex: 1;
+            font-size: 13px;
+            color: #666;
+            transition: text-decoration 0.2s;
+          }
+        }
+
+        .submenu {
+          padding-left: 16px;
+          margin-top: 4px;
+
+          .submenu-item {
+            cursor: pointer;
+            padding: 0;
+            height: auto;
+            min-height: auto;
+            margin-bottom: 4px;
+
+            &:hover {
+              .submenu-item-title {
+                text-decoration: underline;
+              }
+            }
+
+            &.active {
+              .submenu-item-title {
+                font-weight: 500;
+              }
+            }
+
+            .submenu-item-title {
+              padding: 6px 0;
+              font-size: 12px;
+              color: #777;
+              transition: text-decoration 0.2s;
+              word-wrap: break-word;
+              white-space: normal;
+              line-height: 1.4;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Área de conteúdo principal
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+
+    .loading-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+    }
+
+    .content-container {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .content-card {
+
+
+        .markdown-content {
+          // Estilos para imagens markdown
+          img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+            box-sizing: border-box;
+            
+            // Limita altura em telas maiores
+            @media (min-width: 769px) {
+              max-height: 80vh;
+            }
+            
+            // Limita altura em telas menores
+            @media (max-width: 768px) {
+              max-height: 70vh;
+              max-width: 100%;
+            }
+          }
+
+          // Estilos para tabelas markdown
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            overflow-x: auto;
+            display: block;
+            
+            th, td {
+              border: 1px solid #ddd;
+              padding: 12px;
+              text-align: left;
+            }
+            
+            th {
+              background-color: #f5f5f5;
+              font-weight: 600;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+            
+            tr:hover {
+              background-color: #f0f0f0;
+            }
+          }
+
+          // Estilos para listas
+          ul, ol {
+            padding-left: 24px;
+            margin: 16px 0;
+
+            li {
+              margin: 8px 0;
+            }
+          }
+
+          // Responsividade para tabelas
+          @media (max-width: 768px) {
+            table {
+              font-size: 12px;
+              display: block;
+              overflow-x: auto;
+              
+              th, td {
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+

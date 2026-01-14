@@ -6,7 +6,7 @@
 
 O Conceito Estratégico é a essência da Estratégia de Defesa Marítima (EDM). Ele resulta da integração das análises estratégicas dos desafios (reúnem ameaças e oportunidades) e propicia a elaboração das Diretrizes Estratégicas voltadas para o Preparo e Emprego do Poder Naval. Permite, assim, um Dimensionamento dos Meios necessários para atingir os Objetivos Estratégicos, sobrepujando os desafios identificados. A partir dessas Diretrizes, serão estabelecidos os Objetivos e as Diretrizes de Gestão, que orientarão as ações voltadas à materialização da Força.
 
-O Conceito Estratégico da EDM foi elaborado seguindo a dinâmica FINS-MANEIRASMEIOS (ENDS-WAYS-MEANS), intrínseca a qualquer estratégia, onde os FINS associam-se aos Objetivos Estratégicos, as MANEIRAS às Posturas Estratégicas e os MEIOS às Capacidades Estratégicas para fazer frente a cada desafio, proveniente das análises estratégicas, da Conjuntura e dos Cenários. O Conceito Estratégico considera, ainda, as Prioridades e os Riscos identificados durante o processo de construção da Estratégia.
+O Conceito Estratégico da EDM foi elaborado seguindo a dinâmica FINS-MANEIRAS-MEIOS (ENDS-WAYS-MEANS), intrínseca a qualquer estratégia, onde os FINS associam-se aos Objetivos Estratégicos, as MANEIRAS às Posturas Estratégicas e os MEIOS às Capacidades Estratégicas para fazer frente a cada desafio, proveniente das análises estratégicas, da Conjuntura e dos Cenários. O Conceito Estratégico considera, ainda, as Prioridades e os Riscos identificados durante o processo de construção da Estratégia.
 
 Dessa forma, os elementos que compõem o Conceito Estratégico serão detalhados a seguir.
 
@@ -81,7 +81,7 @@ Uma vez analisadas as Possibilidades de Atuação do Poder Naval[1], levando em 
 
 Figura 1: Campos de Atuação e principais áreas geográficas
 
-1.3.1. Posturas Estratégicas
+### 1.3.1. Posturas Estratégicas
 
 As posturas estratégicas, também definidas no EMA-301 (Fundamentos Doutrinários da Marinha), referem-se às maneiras (WAYS da lógica estratégica) pelas quais a MB responde aos desafios externos, englobando um conjunto de atitudes ou comportamentos padronizados. As seguintes posturas podem ser adotadas:
 
@@ -101,27 +101,27 @@ As Posturas Estratégicas estão resumidas no Quadro 1:
 
 Quadro 1: Posturas Estratégicas da Força Naval.
 
-1.3.2. Posturas Estratégicas do Poder Naval por Campos de Atuação
+### 1.3.2. Posturas Estratégicas do Poder Naval por Campos de Atuação
 
-a) Defesa Naval 
+**a) Defesa Naval** 
 
 Na Amazônia Azul e nas áreas marítimas de interesse, bem como nas áreas ribeirinhas de interesse das bacias Amazônica e Platina, a postura deverá ser Coercitiva.
 
 ## Página 15
 
-b) Segurança Marítima
+**b) Segurança Marítima**
 
 Na Bacia Amazônica, as posturas deverão ser: Cooperativa com os órgãos federais, na repressão aos delitos de repercussão nacional ou internacional, assim como, especificamente, com os órgãos do Poder Executivo na repressão aos delitos transfronteiriços e ambientais; e Coercitiva, isoladamente ou em coordenação, durante a execução da Patrulha Naval e do Patrulhamento nas LCF. Na Amazônia Azul e nas áreas marítimas de interesse, a postura deverá ser: Coercitiva, isoladamente ou em coordenação, durante a execução da Patrulha Naval e do Patrulhamento; e Cooperativa com os órgãos federais, na repressão aos delitos de repercussão nacional ou internacional, assim como, especificamente, com os órgãos do Poder Executivo, na repressão aos delitos transfronteiriços e ambientais. Na Bacia Platina, a postura deverá ser: Cooperativa com os órgãos federais, na repressão aos delitos de repercussão nacional ou internacional, assim como, especificamente, com os órgãos do Poder Executivo, na repressão aos delitos transfronteiriços e ambientais; e Coercitiva, isoladamente ou em coordenação, durante a execução da Patrulha Naval e do Patrulhamento nas águas interiores continentais.
 
-c) Diplomacia Naval
+**c) Diplomacia Naval**
 
 A postura deverá ser Persuasiva nos fóruns de interesse e Cooperativa no uso dos meios em apoio à Política Externa Brasileira e suas diretrizes, prioritariamente com os países que se mostraram atores relevantes nos assuntos afetos às Possibilidades de Atuação (PA) e com relação direta aos interesses da MB.
 
-d) Apoio às Ações do Estado
+**d) Apoio às Ações do Estado**
 
 A postura adotada deve ser Cooperativa, consolidando a MB como elemento capaz de apoiar outros órgãos do Estado, estritamente de acordo com as atribuições afetas à MB por força da lei.
 
-1.3.3. Prioridades Estratégicas
+### 1.3.3. Prioridades Estratégicas
 
 As Prioridades Estratégicas derivam de análises que levam em conta o Diagnóstico do Poder Naval e a Missão da MB. São escolhas que permitem direcionar os esforços empreendidos pela MB na busca de um Poder Naval compatível com os desafios, coadunando o cumprimento da Missão com uma aplicação eficaz de recursos toda ordem. Essas escolhas não são estáticas, mas atendem a um contexto de urgência e necessidade conjuntural, devendo ser revisadas constantemente.
 
@@ -129,7 +129,7 @@ As Prioridades Estratégicas derivam de análises que levam em conta o Diagnóst
 
 As Prioridades Estratégicas foram divididas por Campos de Atuação e/ou ambientes operacionais de atuação da MB. Assim como os Objetivos Estratégicos, foram numeradas e referenciadas por trigramas, visando a rastreabilidade necessária ao Conceito Estratégico, às Diretrizes de Preparo e Emprego (constante no PCF) e ao Dimensionamento de Força. Tal numeração não estabelece grau de prioridade entre elas. As Prioridades Estratégicas são as seguintes:
 
-a) Defesa Naval (DEF):
+**a) Defesa Naval (DEF):**
 
 I) DEF1 - Ampliar a consciência situacional marítima e fluvial na Amazônia Azul e nas bacias Amazônica e Platina;
 
@@ -139,7 +139,7 @@ III) DEF3 - Ampliar o apoio logístico fixo na Bacia Amazônica;
 
 IV) DEF4 - Aprimorar a doutrina do ambiente ribeirinho na Bacia Amazônica;
 
-V) DEFS - Ampliar o comando e controle da Força Naval;
+V) DEF5 - Ampliar o comando e controle da Força Naval;
 
 VI) DEF6 - Ampliar a cooperação com a Força Aérea Brasileira (FAB) e o Centro Gestor e Operacional do Sistema de Proteção da Amazônia (CENSIPAM) com foco na Inteligência, Vigilância e Reconhecimento (IVR) e Defesa Aeroespacial;
 
@@ -158,27 +158,41 @@ XII) DEF12 - Assegurar as capacidades ligadas aos conectores de superfície do M
 XIII) DEF13 - Incrementar a capacidade de defender as ICPM consideradas prioritárias - Principais plataformas de petróleo e gás responsáveis diretamente pelo abastecimento interno do País e estruturas portuárias prioritárias, de acordo com o Plano de Configuração de Força (PCF);
 
 XIV) DEF14 - Manter o poder de combate do Com6ºDN;
+
 XV) DEF15 - Aperfeiçoar a doutrina do ambiente ribeirinho nas Bacias Amazônica e Platina;
+
 XVI) DEF16 - Compreender o papel da MB na Guerra Híbrida; e
+
 XVII) DEF17 - Consolidar o Sistema de Defesa Nuclear, Biológica, Química e Radiológica (NBQR) na MB;
 
 ## Página 17
 
-b) Segurança Marítima (SMA):
+**b) Segurança Marítima (SMA):**
+
 I) SMA1 - Ampliar a consciência situacional nas LCF da Bacia Amazônica;
+
 II) SMA2 - Ampliar as capacidades logística e de inteligência das OM SSTA(Organizações Militares do Sistema de Segurança do Tráfego Aquaviário) na Bacia Amazônica;
+
 III) SMA3 - Ampliar a consciência situacional na Amazônia Azul, incluindo as Ilhas Oceânicas;
+
 IV) SMA4 - Ampliar a cooperação com a FAB com foco em IVR e Patrulha Marítima;
+
 V) SMA5 - Otimizar os meios empregados na Patrulha Marítima;
+
 VI) SMA6 - Ampliar a consciência situacional nas LCF da Bacia Platina; e
+
 VII) SMA7 - Ampliar as capacidades logística e de inteligência das OM SSTA na Bacia Platina.
 
-c) Diplomacia Naval (DIP):
+**c) Diplomacia Naval (DIP):**
+
 I) DIP1 - Influenciar nas questões marítimas afetas ao Golfo da Guiné, priorizando ações/diretrizes apontadas na análise das PA;
+
 II) DIP2 - Apoiar o MRE no fortalecimento da ZOPACAS; e
+
 III) DIP3 - Ampliar a participação da MB em fóruns internacionais que tratem de assuntos marítimos e do meio ambiente marinho.
 
-d) Apoio às Ações do Estado (AAE):
+**d) Apoio às Ações do Estado (AAE):**
+
 I) AAE1 - Priorizar o trabalho de inteligência em cooperação com os OSP;
 II) AAE2 - Desenvolver doutrina de cooperação com os OSP no contexto da prevenção e da repressão ao crime em águas interiores;
 III) AAE3 - Assegurar a presença do Brasil na Antártica;
@@ -187,7 +201,7 @@ V) AAES - Continuar com as ações para difusão da mentalidade marítima na soc
 
 ## Página 18
 
-1.4. ANÁLISE DE RISCO
+### 1.4. ANÁLISE DE RISCO
 
 A EDM foi construída com base em escolhas e prioridades. Assim, quando se faz uma escolha ou se atribui uma prioridade, há riscos associados pelo que não foi escolhido ou ao que foi atribuída baixa prioridade. Cada risco foi classificado através da análise da probabilidade de um evento influenciar a EDM e quais os impactos para os Objetivos Estratégicos, caso esse evento se concretize. A combinação de prioridades com riscos é dinâmica, merecendo acompanhamento e contínua reavaliação conforme se concretize, em qualquer medida.
 

@@ -1,0 +1,202 @@
+<div class="pensadores-container">
+  <!-- Menu discreto lateral -->
+  <div class="side-menu">
+    <!-- Lista de itens do menu -->
+    <mat-nav-list class="menu-list">
+      <mat-list-item 
+        *ngFor="let item of menuItems"
+        class="menu-item"
+        [class.active]="isSelected(item)"
+        [class.has-children]="item.children"
+        [class.no-click]="item.children"
+        (click)="selectMenuItem(item, $event)">
+        
+        <div class="menu-item-content">
+          <img 
+            *ngIf="item.flagPath" 
+            [src]="item.flagPath" 
+            [alt]="'Bandeira de ' + item.title"
+            class="flag-icon">
+          <span class="menu-item-title">{{ item.title }}</span>
+        </div>
+
+        <!-- Submenu para itens com children (sempre aberto) -->
+        <div 
+          *ngIf="item.children"
+          class="submenu"
+          (click)="$event.stopPropagation()">
+          <mat-list-item 
+            *ngFor="let subItem of item.children"
+            class="submenu-item"
+            [class.active]="isSubItemSelected(subItem)"
+            (click)="selectSubMenuItem(item.id, subItem, $event)">
+            <img 
+              *ngIf="subItem.flagPath" 
+              [src]="subItem.flagPath" 
+              [alt]="'Bandeira de ' + subItem.title"
+              class="flag-icon">
+            <span class="submenu-item-title">{{ subItem.title }}</span>
+          </mat-list-item>
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+
+  <!-- Área de conteúdo principal -->
+  <div class="main-content">
+    <!-- Loading spinner -->
+    <div *ngIf="isLoading" class="loading-container">
+      <mat-spinner diameter="50"></mat-spinner>
+    </div>
+
+    <!-- Carrossel de Pensadores -->
+    <div *ngIf="!isLoading && currentPensador" class="carousel-container">
+      <!-- Frase de Efeito -->
+      <div *ngIf="currentPensador.quote" class="quote-container">
+        <p class="quote-text">{{ currentPensador.quote }}</p>
+      </div>
+
+      <div class="carousel-wrapper">
+        <!-- Pensador Anterior do Anterior -->
+        <div 
+          *ngIf="previousPreviousPensador" 
+          class="carousel-item previous-previous"
+          (click)="navigateToPensador(previousPreviousPensador)">
+          <div class="carousel-item-image">
+            <img 
+              [src]="previousPreviousPensador.imagePath" 
+              [alt]="previousPreviousPensador.title"
+              (error)="$event.target.src='assets/img/svg/pensadores/default.svg'">
+          </div>
+          <div class="carousel-item-title">
+            <img 
+              *ngIf="previousPreviousPensador.flagPath" 
+              [src]="previousPreviousPensador.flagPath" 
+              [alt]="'Bandeira'"
+              class="carousel-flag">
+            <span>{{ previousPreviousPensador.title }}</span>
+          </div>
+        </div>
+
+        <!-- Pensador Anterior -->
+        <div 
+          *ngIf="previousPensador" 
+          class="carousel-item previous"
+          (click)="navigatePrevious()">
+          <div class="carousel-item-image">
+            <img 
+              [src]="previousPensador.imagePath" 
+              [alt]="previousPensador.title"
+              (error)="$event.target.src='assets/img/svg/pensadores/default.svg'">
+          </div>
+          <div class="carousel-item-title">
+            <img 
+              *ngIf="previousPensador.flagPath" 
+              [src]="previousPensador.flagPath" 
+              [alt]="'Bandeira'"
+              class="carousel-flag">
+            <span>{{ previousPensador.title }}</span>
+          </div>
+        </div>
+
+        <!-- Pensador Atual -->
+        <div class="carousel-item current">
+          <div class="carousel-item-image">
+            <img 
+              [src]="currentPensador.imagePath" 
+              [alt]="currentPensador.title"
+              (error)="$event.target.src='assets/img/svg/pensadores/default.svg'">
+          </div>
+          <div class="carousel-item-title">
+            <img 
+              *ngIf="currentPensador.flagPath" 
+              [src]="currentPensador.flagPath" 
+              [alt]="'Bandeira'"
+              class="carousel-flag">
+            <span>{{ currentPensador.title }}</span>
+          </div>
+        </div>
+
+        <!-- Pensador Próximo -->
+        <div 
+          *ngIf="nextPensador" 
+          class="carousel-item next"
+          (click)="navigateNext()">
+          <div class="carousel-item-image">
+            <img 
+              [src]="nextPensador.imagePath" 
+              [alt]="nextPensador.title"
+              (error)="$event.target.src='assets/img/svg/pensadores/default.svg'">
+          </div>
+          <div class="carousel-item-title">
+            <img 
+              *ngIf="nextPensador.flagPath" 
+              [src]="nextPensador.flagPath" 
+              [alt]="'Bandeira'"
+              class="carousel-flag">
+            <span>{{ nextPensador.title }}</span>
+          </div>
+        </div>
+
+        <!-- Pensador Próximo do Próximo -->
+        <div 
+          *ngIf="nextNextPensador" 
+          class="carousel-item next-next"
+          (click)="navigateToPensador(nextNextPensador)">
+          <div class="carousel-item-image">
+            <img 
+              [src]="nextNextPensador.imagePath" 
+              [alt]="nextNextPensador.title"
+              (error)="$event.target.src='assets/img/svg/pensadores/default.svg'">
+          </div>
+          <div class="carousel-item-title">
+            <img 
+              *ngIf="nextNextPensador.flagPath" 
+              [src]="nextNextPensador.flagPath" 
+              [alt]="'Bandeira'"
+              class="carousel-flag">
+            <span>{{ nextNextPensador.title }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botões de Navegação -->
+      <div class="carousel-controls">
+        <button 
+          mat-icon-button 
+          class="nav-button prev-button"
+          [disabled]="!previousPensador"
+          (click)="navigatePrevious()"
+          aria-label="Pensador anterior">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+        <span class="carousel-counter">
+          {{ currentPensadorIndex + 1 }} / {{ flatPensadoresList.length }}
+        </span>
+        <button 
+          mat-icon-button 
+          class="nav-button next-button"
+          [disabled]="!nextPensador"
+          (click)="navigateNext()"
+          aria-label="Próximo pensador">
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- Conteúdo Markdown -->
+    <div *ngIf="!isLoading && htmlContent && currentPensador" class="content-container">
+      <mat-card class="content-card">
+        <mat-card-content>
+          <div class="markdown-content" [innerHTML]="htmlContent"></div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Mensagem quando nenhum item está selecionado -->
+    <div *ngIf="!isLoading && !currentPensador" class="no-selection-container">
+      <p>Selecione um pensador no menu lateral para visualizar o conteúdo.</p>
+    </div>
+  </div>
+</div>
+

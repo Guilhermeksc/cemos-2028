@@ -1,0 +1,13 @@
+**Pensamento e Ciência:** Combina a herança dos autores do século XVIII com os ensinamentos do modelo napoleônico; é com ele que se constitui, verdadeiramente, a ciência estratégica contemporânea.
+**Experiência Militar:** Serviu no Exército francês (no estado-maior de Ney em 1805) e posteriormente a serviço do Czar na Rússia (1813).
+**Primeira Obra de Impacto:** Publicou o *Traité de grand tactique* (1805), onde compara a Guerra dos Sete Anos com as operações das campanhas que vivenciou.
+**Evolução Semântica:** Em 1831, consolida-se o uso do termo *stratégiste* (estrategista); Jomini utilizou anteriormente termos como *stratégien* e *stratégicien* antes de adotar o termo definitivo.
+**Crítica e Declínio:** O declínio do modelo napoleônico afetou a sua influência. A crítica afirmava que ele possuía um método, mas não uma doutrina.
+**Obra Teórica Principal:** O *Précis de l’art de la guerre* (1837/38) destinava-se a oferecer definições e classificações precisas para dar um conteúdo científico à estratégia; Jomini estabelece a taxonomia da estratégia, que por vezes substitui a explicação.
+**Definição de Estratégia:** Definiu a estratégia como "a arte de fazer a guerra sobre o mapa, de abraçar todo o teatro de guerra", distinguindo-a como tudo o que ocorre "aquém e além do combate". (diferente também do Arqueduque Charles – ciência)
+**Divisões da Tática:** Falava em "tática de detalhe" e "grande tática". A tática é o combate. A estratégia é toda a guerra.
+**Fatores Essenciais:** Diferente da bipolaridade ofensiva-defensiva de Clausewitz, Jomini distinguia quatro fatores essenciais: a incerteza, a manobra, o poder de fogo e o choque.
+**Influencia:** Os americanos Dennis MAHAN (pai) e os futuros chefes da Guerra de Secessão; Alfred MAHAN (filho) transporta seus ensinamentos para a estratégia marítima.
+**Boa direção:** “O ponto fundamental da estratégia é a escolha de uma boa direção para as massas”.
+**Logística:** É Jomini quem impõe a transposição da logística para o campo militar. Identifica a Logística com a ciência dos estados-maiores, a qual inclui a redação das ordens e das instruções, a gestão dos meios de transporte, o serviço nos acampamentos e nos aquartelamentos.
+Não concebe a Logística como a parte da arte da guerra relativa aos aprovisionamentos. Sua parte essencial é a ciência das marchas. “a logística ou a ***arte prática de movimentar os exércitos***”. *“A Logística é tudo ou quase tudo no campo das atividades militares, exceto o combate”*

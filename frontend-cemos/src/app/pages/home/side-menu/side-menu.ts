@@ -191,8 +191,10 @@ export class SideMenu implements OnInit, OnDestroy {
             'EMA-310 - Estratégia de Defesa Marítima',
           ]
         },
+        'Objetivos Estratégicos',
         'Flash Cards',
         'Perguntas',
+        'Pensadores',
       ],
       expanded: false
     },
@@ -497,11 +499,17 @@ export class SideMenu implements OnInit, OnDestroy {
             case 'Bibliografia':
               pathParts.push('bibliografia');
               break;
+            case 'Objetivos Estratégicos':
+              pathParts.push('bibliografia', 'objetivos-estrategicos');
+              break;
             case 'Flash Cards':
               pathParts.push('flash-cards');
               break;  
             case 'Perguntas':
               pathParts.push('perguntas');
+              break;
+            case 'Pensadores':
+              pathParts.push('pensadores');
               break;  
           }
         }
@@ -817,11 +825,17 @@ export class SideMenu implements OnInit, OnDestroy {
         case 'Bibliografia':
           pathParts.push('bibliografia');
           break;
+        case 'Objetivos Estratégicos':
+          pathParts.push('bibliografia', 'objetivos-estrategicos');
+          break;
         case 'Flash Cards':
           pathParts.push('flash-cards');
           break;
         case 'Perguntas':
           pathParts.push('perguntas');
+          break;
+        case 'Pensadores':
+          pathParts.push('pensadores');
           break;
         case 'Conceitos':
           pathParts.push('conceitos');

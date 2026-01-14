@@ -1,0 +1,10 @@
+**Terminologia da Guerra:** Utilizava a expressão “altas partes da guerra” (ou "partes mais nobres da guerra") e recusava o conceito de estratégia,.
+**Princípio da Concentração:** Atribuía importância capital à concentração de forças e ataques, afirmando que não se deve espalhá-los, mas reuni-los sobre um mesmo ponto (ou ponto decisivo).
+**Axioma sobre o Inimigo:** Aconselhava a não fazer o que o inimigo deseja pela simples razão de que ele o deseja, evitando campos de batalha estudados ou fortificados pelo adversário.
+**Necessidade da Manobra:** Estava convencido da necessidade da manobra, afirmando: “jamais ataque de frente às posições que você pode obter ao contorná-las”.
+**Triunfo da Estratégia (Ulm):** A manobra de Ulm, em 1805, é considerada a obra-prima onde a estratégia triunfou sem necessidade da tática (batalha), forçando a capitulação do Exército austríaco do General Mack apenas pela concepção da manobra.
+**Força e Velocidade:** Definia a força de um exército como o resultado da massa multiplicada pela velocidade.
+**Importância da Tática:** Valorizava a influência da tática, da ordem e das evoluções, exemplificando que, embora um mameluco fosse superior a um francês individualmente, um grupo organizado de franceses vencia um grupo maior de mamelucos.
+**Princípios de Guerra:** Acreditava que os princípios da guerra eram imutáveis e os mesmos de César e Aníbal (manter forças reunidas, ser invulnerável, rapidez), servindo como eixos para a inspiração do talento,.
+**Uso do Terreno e Fortificações:** Considerava que os locais e fortificações eram armas que precisavam ser bem manejadas, sendo úteis para retardar ou inquietar o inimigo, mas que o terreno, por si só, não devia decidir a ordem de batalha.
+**Prática Criadora:** Representa, na evolução do pensamento estratégico, a "prática criadora" situada entre a teoria fundadora de Guibert e a teoria crítica de Clausewitz.

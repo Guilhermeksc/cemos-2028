@@ -350,6 +350,14 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
               import('../modules/app2-estrategia/app2-estrategia-bibliografia/ema-310-estrategia/ema-310-estrategia').then(
                 (m) => m.Ema310Estrategia
               )
+          },
+          {
+            title: 'Objetivos Estratégicos',
+            path: 'objetivos-estrategicos',
+            loadComponent: () =>
+              import('../modules/app2-estrategia/app2-estrategia-bibliografia/objetivos-estrategicos/objetivos-estrategicos').then(
+                (m) => m.ObjetivosEstrategicos
+              )
           }
         ]
       },
@@ -367,6 +375,14 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         loadComponent: () =>
           import('../modules/app2-estrategia/app2-estrategia-perguntas/app2-estrategia-perguntas').then(
             (m) => m.App2EstrategiaPerguntas
+          )
+      },
+      {
+        title: 'Pensadores',
+        path: 'pensadores',
+        loadComponent: () =>
+          import('../modules/app2-estrategia/app2-estrategia-pensadores/app2-estrategia-pensadores').then(
+            (m) => m.App2EstrategiaPensadores
           )
       },
       {
