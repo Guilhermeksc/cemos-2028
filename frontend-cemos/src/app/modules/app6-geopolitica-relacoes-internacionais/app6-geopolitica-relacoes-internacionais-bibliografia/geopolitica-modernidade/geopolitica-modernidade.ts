@@ -32,7 +32,8 @@ export class GeopoliticaModernidade implements OnInit {
     'capVI.md',
     'capVII.md',
     'capVIII.md',
-    'anexo1.md'
+    'anexo1.md',
+    'anexo2.md',    
   ];
   backRoute: string = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
   backLabel: string = 'Bibliografia';

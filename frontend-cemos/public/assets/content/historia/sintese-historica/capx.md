@@ -2,6 +2,8 @@
 
 ### CF PIERRE PAULO DA CUNHA CASTRO
 
+## Página 1
+
 **A atuação da Marinha do Brasil na Segunda Guerra Mundial ocorreu na campanha que entrou para a história como a "Batalha do Atlântico': O objetivo dessa campanha era a manutenção das linhas de comunicação marítimas entre o continente americano, a Europa e a costa ocidental da África.** Os Aliados buscavam sustentar o contínuo abastecimento das tropas que lutavam no Norte da África e na Europa ocidental, enquanto as Marinhas e Forças Aéreas nazifascistas tentavam negar o uso do oceano às Marinhas de Guerra e, principalmente, aos navios mercantes aliados. Primeiro, com o emprego de seus navios de guerra e da aviação baseada em terra e, depois, por meio da crescente utilização dos submarinos.
 
 **A missão da Marinha do Brasil na Segunda Guerra Mundial foi proteger os comboios de navios mercantes, que trafegavam entre o Mar do Caribe e o litoral sul brasileiro, e patrulhar o Atlântico Sul.**
@@ -16,6 +18,8 @@ Em seu relatório de 1932, o *Ministro da Marinha, Vice-Almirante Protógenes Pe
 
 **Pois bem, estamos deixando morrer a nossa Marinha. A Esquadra agoniza pela idade, e, perdido com ela o hábito das viagens, substituído pela vida parasitária e burocrática dos portos, morrem todas as tradições (..) Estamos numa encruzilhada: ou fazemos renascer o Poder Naval sob bases permanentes e voluntariosas, ou nos resignamos a ostentar a nossa fraqueza provocadora( .. ) Estam os completamente desaparelhado.**
 
+## Página 2
+
 O clamado "renascimento do Poder Naval sob bases permanentes e voluntariosas" foi de fato iniciado nos anos 30. Embora o programa naval estabelecido em 1932, e modificado em 1936, tenha sido elaborado sem obedecer nenhum planejamento estratégico ou político, sua implementação possibilitou a construção de uma Força Naval modesta, consubstanciada às possibilidades e limitações técnicas do País, em um período marcado por severas restrições econômicas, ainda, decorrentes do colapso financeiro da Bolsa de Valores de Nova Iorque, em 1929. Por outro lado, tal iniciativa possibilitou a retomada dos adestramentos minimamente satisfatórios e da capacidade de realizar operações limitadas no campo interno.
 
 Com uma solução completamente oposta à imediata e fácil compra de uma Esquadra em estaleiros estrangeiros, conforme ocorreu no início do século XX, o Poder Naval brasileiro renasceria com uma base sólida e perene. Para garantir os reparos e as modernizações de máquinas complexas existentes nos navios de guerra foi imprescindível o domínio da tecnologia empregada na construção desses meios, fomentando a incipiente indústria brasileira, na tentativa de se reconstruir, no País, um Poder Naval com alguma credibilidade. Assim, a retomada da construção de navios no Brasil possibilitou a capacitação de projetistas, técnicos e operários. Porém, o investimento na indústria naval nacional, além de ser uma solução que demanda continuidade, sempre é cara e demora a apresentar resultados.
@@ -23,6 +27,8 @@ Com uma solução completamente oposta à imediata e fácil compra de uma Esquad
 Em 1936, no principal estaleiro mantido pela Marinha, o Arsenal de Marinha do Rio de Janeiro, iniciou-se a construção de um pequeno navio de guerra de projeto nacional, o Monitor Parnaíba. Seguiram-se outras construções, com um grau crescente de tamanho e de complexidade: outro monitor, navios mineiros e, finalmente, três contratorpedeiros, que só ficariam prontos com a guerra em andamento.
 
 A escolha de um caminho sustentável para a retomada do Poder Naval brasileiro levou ao lento reaparelhamento da Esquadra; vagaroso em demasia para os desafios impostos por um conflito que, nascido das disputas entre nações europeias, rapidamente tomou todo o mundo de assalto e logo chegou ao litoral brasileiro.
+
+## Página 3
 
 Em 1940, a Força Naval brasileira era assim constituída: 
 
@@ -46,6 +52,8 @@ As Flotilhas Fluviais, que operavam nas principais bacias fluviais brasileiras e
 
 Em 1940, a Marinha do Brasil estava desatualizada se comparada com as Marinhas europeias e com a ascendente Força Naval norte-americana. Era clara a vulnerabilidade do Poder Naval brasileiro para o enfrentamento da guerra antissubmarino. Não possuíamos sensores adequados, nem adestramento para o combate contra os submarinos do Eixo. A doutrina antissubmarino era baseada, ainda, nas lições aprendidas com a participação da Divisão Naval em Operações de Guerra (DNOG), na Grande Guerra, muito diferente do que se executava, desde 1939, nas águas do Atlântico Norte e do Mar Mediterrâneo. Os estrategistas navais brasileiros esperavam outro tipo de confrontação e, também, outro modo de atuação dos adversários. Na concepção deles, grandes encouraçados seriam os principais meios empregados no combate contra outros navios. Era esse tipo de guerra naval que se vislumbrava no cenário sul-americano, principalmente em uma hipótese de conflito contra a Argentina, em decorrência das disputas e das concorrências características daquele período.
 
+## Página 4
+
 ## CAPACIDADES NO IMEDIATO PRÉ-GUERRA
 
 Como vimos, a Esquadra brasileira possuía limitações operacionais importantes. Qyando da eclosão da Segunda Guerra Mundial, na Europa, em 1939, a Esquadra brasileira contava com praticamente os mesmos navios que dispunha na Grande Guerra. Isto se deve às práticas políticas que desconsideraram as complexidades do contexto das relações internacionais e, por isso, não proviam as suas Forças Armadas com recursos condizentes com as necessidades mínimas, ao longo do tempo, preterindo seguidamente as demandas apresentadas, governo após governo, o que contribuiu para não se equipar e treinar suas Forças Navais adequadamente.
@@ -55,6 +63,8 @@ Os grandes desafios impostos à Marinha do Brasil eram a defesa da extensa e des
 Ao analisarmos as capacidades da Esquadra brasileira para o cumprimento dessas missões, devemos considerar que as ameaças que se configuravam dentro do contexto da Segunda Guerra Mundial e, particularmente, da Batalha do Atlântico, caracterizavam-se, principalmente, pelos submarinos alemães e italianos, que representavam o principal esforço de guerra do Eixo no Atlântico, e eram utilizados contra navios mercantes. O emprego de submarinos pelas Forças alemã e italiana intensificou-se porque estes meios conseguiam escapar do bloqueio naval imposto pelos Aliados aos portos do Eixo e dos países ocupados. Entretanto, a Esquadra não possuía equipamentos de detecção e armamento para localizar e destruir submarinos, bem como não conhecia os novos procedimentos de combate antissubmarino, baseados no emprego do sonar, para a detecção dos submarinos enquanto submersos. Contudo, cabe ressaltar que o sonar era uma inovação tecnológica, na época. Quando da entrada dos Estados Unidos no conflito, em dezembro de 1941, nem mesmo sua Marinha estava preparada para combater submarinos. Assim, na principal base de treinamento de pessoal da US Navy, em Key West, Flórida, eram os militares da Marinha britânica que ensinavam as táticas antissubmarino para as tripulações norte-americanas.
 
 A Força Naval brasileira teria condições de enfrentar alguns dos corsários alemães, que eram navios mercantes armados, que atacavam com surpresa a navegação mercante aliada; mas teria dificuldade para se opor aos modernos encouraçados de bolso e cruzadores de batalha alemães.
+
+## Página 5
 
 ## INÍCIO DAS HOSTILIDA DES E OS ATAQUES AOS NAVIOS MERCANTES BRASILEIROS
 
@@ -69,6 +79,8 @@ A primeira perda brasileira foi o Navio Mercante Cabedelo, que deixou o porto da
 Todos esses ataques ocorreram, ou na costa dos Estados Unidos, ou no Mar das Antilhas. A única exceção foi o NM Comandante Lira, torpedeado ao largo do Ceará pelo Submarino italiano Barbarigo. Esse foi o único navio a ser salvo devido ao pronto auxílio dado pelo Rebocador Heitor Perdigão e por alguns navios norte-americanos.
 
 O NM Barbacena e NM Piave, torpedeados pelo Submarino alemão U-155 ao largo da Ilha de Trinidad, em 28 de julho de 1942, foram as últimas perdas ocorridas enquanto o Brasil mantinha formalmente a neutralidade.
+
+## Página 6
 
 As atitudes cada vez mais claras de alinhamento do Brasil com os Aliados levaram o Alto Comando alemão a planejar uma operação contra os principais portos nacionais. Posteriormente, por ordem de Adolf Hitler e limitação operacional e logística da Força de U-Boats, esta ofensiva submarina foi reduzida em número de meios, mas, ainda assim, manteve-se vigorosa. Foram enviados submarinos ao litoral brasileiro com ordens para atacar a navegação de longo curso e de cabotagem.
 
@@ -87,6 +99,8 @@ A maioria dos navios mercantes brasileiros vitimados por submarinos alemães, em
 
 Os dois últimos torpedeamentos de navios mercantes brasileiros foram o do Itapagé, em 26 de setembro e do Campos, em 23 de outubro de 1943, todos navegando isolados.
 
+## Página 7
+
 ## A LEI DE EMPRÉSTIMOS E ARRENDAMENTOS E AS MODERNIZAÇÕES DOS MEIOS NAVAIS
 
 Para a compreensão da efetiva participação da Marinha do Brasil na Segunda Guerra Mundial, é importante destacar a instituição do Lend-Lease Act (Lei de Empréstimos e Arrendamentos), em março de 1941, que permitiu que os Estados Unidos fornecessem os materiais necessários ao esforço de guerra dos países Aliados, sem a necessidade de pagamentos imediatos. Era o fim do freio
@@ -102,6 +116,8 @@ Após o término da guerra na Europa, a Marinha recebeu dos Estados Unidos, em 1
 
 Em 15 de abril de 1948, Brasil e Estados Unidos firmaram acordo sobre o pagamento do Lend-Lease. O valor do aluguel dos navios incorporados à Marinha brasileira, e que deveria ser restituído ao final da guerra, não foi incluído na dívida brasileira. Mais tarde, a cessão desses navios foi tornada permanente, porém com o compromisso de que não fossem repassados a outros países.
 
+## Página 8
+
 Quanto às construções navais aqui no Brasil, declarada a guerra, foi desenvolvido um trabalho intenso para adaptar os antigos navios existentes contra a nova ameaça que se apresentava: o submarino. Terminava-se a construção dos três contratorpedeiros da Classe Marcílio Dias (Marcílio Dias, Mariz e Barros e Greenhalgh) no Arsenal de Marinha do Rio de Janeiro, enquanto eram batidas as quilhas dos seis novos contratorpedeiros que constituiriam a Classe Amazonas,mas estes só ficariam prontos depois do conflito.
 
 Seis navios de pesca em alto-mar, encomendados no Estaleiro Lage por uma firma inglesa, foram adaptados para a guerra antissubmarino, renomeados corvetas e incorporados à Marinha do Brasil com os seguintes nomes: Vidal de Negreiros, Matias de Albuquerque, Felipe Camarão, Henrique Dias, Fernandes Vieira e Barreto de Menezes.
@@ -113,6 +129,8 @@ Em decorrência do esforço de guerra, os navios especializados em outras funç�
 As aquisições permitidas pelo Lend-Lease e os aperfeiçoamentos implantados na Força Naval aumentaram em muito a capacidade de reagir de forma adquada aos novos desafios que aquela guerra impunha à Marinha do Brasil.
 
 Além disso, uma quantidade expressiva de militares foi enviada para os programas de instrução emergencial criados na US Navy, para serem instruídos nas táticas antissubmarino e no uso e manutenção dos novos navios, equipamentos e armas. Esses homens, ainda durante a guerra, implementaram na Marinha do Brasil os cursos que realizaram, dando continuidade ao adestramento de Controle de Avarias e de Guerra Antissubmarino, incrementando em muito a formação do pessoal embarcado.
+
+## Página 9
 
 ## A FORÇA NAVAL DO NORDESTE
 
@@ -131,6 +149,8 @@ O Comandante Câmara respondeu: "Os representantes da Marinha do Brasil tiveram 
 
 A atuação conjunta com os norte-americanos possibilitou a aquisição de novos meios navais e armamentos adequados à guerra antissubmarino, bem como proporcionou o necessário treinamento para o nosso pessoal. Assim, um dos principais pontos do relacionamento entre Brasil e Estados Unidos, no campo militar, foi a integração operacional entre as duas Marinhas. Foram aperfeiçoados procedimentos comuns e táticas eficazes na guerra antissubmarino.
 
+## Página 10
+
 ## PERDAS DA MARINHA DO BRASIL
 
 Destaca-se, contudo, que os ganhos operacional e material provenientes da participação na Segunda Guerra Mundial parecem ínfimos, quando reconhecemos que aqueles anos de combate custaram muitas vidas. Foram perdidos 31 navios mercantes brasileiros; nos 33 ataques sofridos pela Marinha Mercante, pereceram 982 pessoas. Além disso, três navios de guerra brasileiros foram a pique em consequência de um ataque submarino e das fatigantes operações no mar, quando morreram três civis, quatro marinheiros americanos e 464 homens da Marinha do Brasil.
@@ -144,6 +164,8 @@ Embora se discuta, até hoje, as condições que levaram ao afundamento do navio
 Por fim, **o pior desastre enfrentado pela Marinha durante a Segunda Guerra Mundial foi o afundamento do Cruzador Bahia**, no dia 4 de julho de 1945. O acidente, ocorrido já depois do término da guerra na Europa, quando o navio guarnecia um ponto de apoio SAR (Search and Rescue) para a ponte aérea que repatriava tropas e equipamentos norte-americanos, **foi causado por um disparo acidental durante um treinamento com metralhadoras em alvos flutuantes que acertou uma das bombas de profundidade**, instaladas na popa. O acidente decorrente de uma falha humana causada, em grande monta, pela exaustiva permanência das tripulações no mar e pela necessidade de constante adestramento, consumiu as vidas de 332 marinheiros brasileiros.
 
 Três infortúnios e 464 mortos, sem contar os 22 falecidos em ataques e acidentes em outros navios de guerra e em navios mercantes, elevando o total a 486 militares da Marinha do Brasil mortos na Segunda Guerra Mundial, de modo que na necessária defesa da Nação brasileira, da liberdade e da democracia, o País perdeu mais homens de suas Forças Armadas atuando na Batalha do Atlântico que no Teatro de Operações Europeu.
+
+## Página 11
 
 ## CONSIDERAÇÕES FINAIS
 

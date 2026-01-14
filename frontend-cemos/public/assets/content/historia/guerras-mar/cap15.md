@@ -1,5 +1,7 @@
 # Capítulo 15 - Conflito no Atlântico Sul: A Luta pela Posse do Arquipélago das Falklands-Malvinas
 
+## Página 1
+
 ### Conflito no Atlântico Sul: A Luta pela Posse do Arquipélago das Falklands-Malvinas 1 (Páginas 94-127)  ALMIRANTE ARMANDO AMORIM FERREIRA VIDIGAL
 
 "Se as ilhas forem invadidas, eu saberei exatamente o que nós teremos de fazer - expulsá-los." Margaret Thatcher
@@ -14,6 +16,8 @@ As origens do conflito são remotas e, para o nosso propósito, aqui não são r
 
 Poucos dias depois, a 2 de abril, os argentinos invadiriam as Falklands criando uma situação que levaria à luta armada.
 
+## Página 2
+
 O Reino Unido, por sua vez, a partir da humilhação de Suez, em 1956, parecia resignar-se à crença de que a decadência nacional era irreversível. A falência industrial e econômica havia determinado a limitação do papel britânico no mundo. Desde a posse de um governo trabalhista, em meados da década de 1960, o conceito estratégico do país passou a refletir essa visão. No Livro Branco de Defesa de 1966, quando Denis Healy foi ministro da Defesa, era afirmado que as futuras guerras em que a Grã-Bretanha se veria envolvida seriam guerras da OTAN e, nessas guerras, o papel da marinha real seria essencialmente antissubmarino, sob o manto protetor da aviação embarcada dos norte-americanos. Assim sendo, a marinha britânica não necessitaria dos navios-aeródromos que estavam em construção nem do existente, o HMS Hermes.
 
 O Almirantado britânico, porém, conseguiu contornar essa decisão dos políticos mudando a classificação dos navios em construção para "navios de convés corrido" adequados para controle de área marítima, e alterando a designação do Hermes para navio porta-helicópteros, de onde operariam os pesados helicópteros antissubmarinos que não podiam operar de navios menores.
@@ -24,6 +28,8 @@ Após o conflito, assim se expressou o almirante Sandy Woodward a respeito do Li
 
 *Políticos estão muito inclinados a ter como certo que as forças armadas de Sua Majestade Britânica farão o que quase sempre têm feito em tempo de guerra, tenham ou não recebido os equipamentos necessários. Os cortes em nossa força de superfície propostos na revisão de defesa de 1981 teriam nos tornado impotentes no final de 1982. Foi somente a guerra das Falklands que salvou a Marinha Real dessa situação.*
 
+## Página 3
+
 Essas mudanças no Reino Unido levaram os argentinos a acreditar que não haveria disposição do lado britânico para lutar pelo arquipélago. Outros fatos contribuíram para isso: em junho de 1981, o governo britânico anunciou que o HMS Endurance, seu único navio-polar, ficaria em disponibilidade logo após a campanha de 81-82; em meados desse mesmo ano, uma nova Lei de Nacionalidade Britânica ("British Nationality Bill") tirava a nacionalidade britânica de 2/3 dos habitantes das ilhas o que, pelo menos, enfraquecia o argumento dos que defendiam a posse das Falklands pela autodeterminação de seus habitantes.
 
 Em 1980, Nicholas Ridley, então ministro de Estado, visitou as ilhas. Nessa ocasião, ele propôs aos kelpers a soberania partilhada com os argentinos, como fora feito no caso de Hong Kong; diante da recusa dos locais em aceitar essa solução, ele disse: "Que caia sobre suas próprias cabeças se vocês continuarem com esta intransigência. Não estamos mais na Era Vitoriana. Nós não vamos mandar uma canhoneira para salvá-los se vocês se meterem em encrencas."
@@ -33,6 +39,8 @@ Pilotos da força aérea argentina, que trabalhavam na empresa aérea que servia
 A Argentina, possivelmente pensando numa "diversão" para os seus problemas internos, julgou, acertadamente, que a ocupação do arquipélago das Malvinas - urna aspiração nacional -, uniria o povo em tomo do governo, e que, erradamente, o Reino Unido, não só pelas razões apresentadas, mas também pelas imensas dificuldades logísticas que teria de vencer para recapturar as ilhas pela força das armas, apenas negociaria para "salvar a face". Os argentinos não levaram em conta o caráter da primeira ministra Margaret Thatcher - a quem a ação da Argentina deu a oportunidade de demonstrar sua extraordinária determinação e capacidade de liderança e de deixar em segundo plano as criticas à sua política doméstica - nem a disposição do Almirantado britânico de salvar a marinha real de sua redução a marinha de segunda classe, conforme já discutido anteriormente.
 
 A relação especial que os argentinos acreditavam ter com os EUA - pela sua posição claramente anticomunista e o apoio dado em El Salvador - não impediu o alinhamento deste com o Reino Unido, apesar da possível pressão dos 40 milhões de hispânicos residentes nos EUA. As relações pessoais de amizade entre Ronald Reagan e a primeira ministra britânica, associada à tradicional ligação entre os EUA e o Reino Unido, fizeram a balança pender para o Reino Unido.
+
+## Página 4
 
 ### A geografia do conflito
 
@@ -47,6 +55,8 @@ Com relação ao Reino Unido, as distâncias são impressionantes: as ilhas Brit
 O arquipélago das Falklands (ver mapa) é composto por aproximadamente 200 ilhas, com uma área total de 8.700km2 . As duas ilhas principais, a Falklands Leste (para os argentinos Gran Malvina), onde fica a capital Port Stanley (Puerto Argentino), e a Falklands Oeste (Soledad), são separadas pelo estreito das Falklands que, na sua parte mais estreita, tem 4,4km. Na capital, residem cerca de 1.200 kelpers; 600 outros estão espalhados pelas ilhas em fazendas de criação de ovelhas. Ao norte das duas ilhas principais, há algumas elevações com alturas variando entre 400 e 700 metros. As costas são muito recortadas e o terreno é bastante acidentado e de trânsito muito difícil (turfas). À época do conflito, existiam apenas 4,5km de estradas. O meio de transporte mais usado é o aéreo havendo inúmeras pistas, cerca de 30, para aviões pequenos; apenas as cinco melhores pistas permitem o pouso de aviões de porte do Hércules C-130, de carga; o maior aeroporto, o da capital, tinha uma pista de asfalto de 1.250 metros, seguindo-se o da ilha di Pebble e o de Goose Green. Modernos aviões de combate não podiam operar de nenhuma pista das Falklands.
 
 As condições atmosféricas na região são extremas, com temperatura muito baixas e ventos fortes. Nas águas em torno há abundante vida marinha, baleias principalmente, o que torna as condições sonares adversas, mormente porque as camadas térmicas não são bem definidas.
+
+## Página 5
 
 ### A invasão
 
@@ -80,6 +90,8 @@ O Grupo Aéreo Embarcado no Veintecinco de Mayo era constituído por:
  c) três helicópteros Alouett; e
  d) alguns helicópteros Sea King.
 
+## Página 6
+
 A força naval argentina tinha excelente capacidade para ações de superfície, dado que os contratorpedeiros haviam sido modernizados (instalaram mísseis superfície-superfície (MSS) Exocet, que também faziam parte do inventário das modernas fragatas A-69).
 
 Para opor-se a esse formidável dispositivo militar, os britânicos dispunham nas ilhas de 67 fuzileiros navais.
@@ -92,6 +104,8 @@ Na noite desse mesmo dia teve *início a invasão das ilhas (Operação Rosário
 
 Às 02h do dia 2, 10 homens-rãs desembarcaram do submarino Santa Fe, na superfície, próximo à entrada da baía de Puerto Argentino; sua míssão era agir como grupo precursor, ocupando a praia onde se daria o desembarque principal. Cumprida essa missão, às 06h15 o Cabo San Antonio aproximou-se da baía de Puerto Argentino e lançou os 19 carros antibios na praia de York. Esses veículos, a caminho de Puerto Argentino, juntaram-se aos 80 comandos argentinos que haviam atacado os aquartelamentos britânicos, os quais encontraram vazios, e a Casa do Governo, onde foi morto um capitão de corveta fuzileiro naval argentino.
 
+## Página 7
+
 Simultaneamente, um grupo de combate, embarcado num helicóptero Sea King, partiu do Almirante Irizar (Quebra-Gelo), desembarcando no aetoporto de Puerto Argentino e desimpedindo a pista que estava bloqueada com diversas viaturas pelos britânicos. Às 08h30, pousou o primeiro C130 da força aérea argentina trazendo soldados do Exército para a ocupação das ilhas.
 
 As 09h15, por determinação do governador Rex Hunt, diante da imensa superioridade argentina, renderam-se os fuzileiros navais britânicos.
@@ -103,6 +117,8 @@ Tão logo chegaram ao Reino Unido as notícias da invasão, a primeira-ministra 
 Entrementes, os argentinos desencadearam a *segunda fase da operação. No dia 3, foi organizada a FT-60* com a tarefa de ocupar a Geórgia do Sul. Constituída pela *fragata tipo A-69 Guerrico e o navio-polar Bahia Paraíso*;
 O GT transportava dois pelotões de fuzileiros navais e dois helicópteros. Partindo do navio polar, um helicóptero Puma, transportando 15 homens de cada vez, deu início à operação aerotransportada; ao ser desembarcado o segundo lote, os fuzileiros britânicos, levados para a ilha pelo Endurance, abriram fogo, obrigando o helicóptero a decolar já envolto em densa fumaça, caindo pouco adiante. O outro helicóptero - um Alouette - veio para o resgate das vítimas.
 
+## Página 8
+
 A Guerrico, ao aproximar-se de Grytviken, foi levemente avariada por um míssel antitanque e tiros de armas leves com a perda de um homem da sua guarnição. Ela respondeu ao fogo com seu canhão de 100mm.
 
 Pouco mais tarde, os 22 fuzileiros britânicos renderam-se. O Endurence refugiou-se mais ao sul, entre os gelos antárticos.
@@ -112,6 +128,8 @@ Ainda nesse mesmo dia, 3 de abril, o Conselho de Segurança aprovou a Resoluçã
 Os primeiros submarinos nucleares britânicos começavam a ser movimentados para as Falklands. A 5 de abril, os argentinos declaram sua rejeição da Resolução 502 por não aceitarem a retirada das tropas como pré-requisito para o início das negociações. Como forma de demonstrar sua resolução, convocaram seus reservistas das classes de 1962 e 1963 e iniciaram uma ponte aérea para as ilhas com o fim de reforçar os contingentes militares, Sob o ponto de vista militar, mais do que aumentar a sua capacidade de resistir a um eventual ataque britânico, os argentinos complicaram o seu problema logístico, tendo que prover a subsistência de um número maior de homens na ilha. Após o estabelecimento do domínio do mar pelos britânicos, o problema logístico argentino agravar-se-ia com sérias consequências para o moral da tropa.
 
 Ainda no dia 5, o que demonstra o extraordinário estado de prontidão dos britânicos, os primeiros navios que iriam constituir a FT-317, inclusive os dois navios-aeródromos Invincible e Hermes, deixam Portsmouth com destino à ilha de Ascensão; no dia seguinte, o navio de assalto anfíbio Fearless, com um batalhão de fuzileiros navais a bordo, segue o mesmo destino. Tem início o afretamento e a requisição de navios mercantes britânicos navios retirados do tráfego (STUFT); ao todo, 45 navios mercantes, de diversos tipos, seriam usados para reforçar os navios da Royal Maritime Service e da Royal Fleet Auxiliary.
+
+## Página 9
 
 Nesse mesmo dia, uma nova e importante vitória diplomática britânica foi anunciada: os países membros da Comunidade Econômica Europeia (CEE) decidiram suspender todas as entregas de armas para a Argentina e impuseram-lhe um embargo total de exportações.
 
@@ -129,6 +147,8 @@ No dia 8 de abril, o secretário de Estado dos EUA, Alexander Haig, iniciou uma 
 
 Ainda no dia 8, nova vitória diplomática do Reino Unido: a OTAN tornou público o seu apoio, o que, na prática, significava que a marinha real poderia usar suas unidades alocadas à organização.
 
+## Página 10
+
 ### A retomada da Geórgia
 
 A maior parte da FT britânica chegou à ilha de Ascensão no dia 12 de abril. Problemas num dos eixos do Invincible, causaram atraso no deslocamento da força.
@@ -138,6 +158,8 @@ A ilha de Ascensão passou por uma profunda mudança desde que foi transferida p
 A força naval britânica aproveitou a estada na ilha para se organizar e realizar uma série de exercícios, inclusive assalto anfíbio. Os três grupos em que a força britânica estava dividida - o grupo formado pelos navios-aeródromos e suas escoltas, sob o comando do almirante Woodward; o grupo formado por todos os navios anfíbios, sob o comando do comodoro Michael Clapp; e, finalmente, o terceiro grupo, o da força de desembarque, sob o comando do major-general Julian Howard Thompson, comandante da 3ª Brigada de Comandos - reportavam-se diretamente ao comandante em chefe da esquadra, no Reino Unido, almirante John Fieldhouse. Faltou, sem dúvida, um comando único intermediário no teatro de operações. As relações entre Woodward e Thompson não foram boas, criando uma série de dificuldades durante a campanha.
 
 Os Sea-Harriers seriam fundamentais para o sucesso da missão mas o pequeno número disponível - 12 no Hermes e oito no Invincible - não era suficiente para garantir a superioridade aérea necessária à realização de uma operação anfíbia. A restrição política que levou a considerar o território continental argentino como santuário - o que implicava não atacar as bases aéreas argentinas - tornava o problema ainda mais grave. Para reforçar os aviões disponíveis, foi formado um novo esquadrão de Harriers (oito aviões) usando também aviões GR3 da Real Força Aérea (RFA) que, para isso, tiveram de sofrer adaptações para operarem no ambiente naval, além da instalação de mísseis Sidewinder AIM-9L.
+
+## Página 11
 
 No dia 16, a força naval britânica deixou a ilha de Ascensão.
 
@@ -149,6 +171,8 @@ Tendo decidido que o primeiro passo seria a retomada da Geórgia do Sul que serv
 
 O GT constituído para a retomada da Geórgia foi formado com o HMS Antrim e o HMS Plymouth, aos quais se uniria mais tarde o Endurunce, que se refugiara nos gelos antárticos para escapar dos argentinos, e o navio da "Royal Fleet Auxiliary" Tidespring, com dois helicópteros Essex 5 a bordo. A bordo do Antrim, estavam grupos de SBS e de SAS "Special Air Service": tropa especial do exército - e elementos do 42 Comandos: o navio cujo efetivo era de 450 homens saiu de Ascensão com 850. Posteriormente, a HMS Brilliant, com dois helicópteros Lynx, juntar-se-ia ao GT. O GT disporia, após a junção com o Endurance e o Brilliant de oito helicópteros: quatro Wessex, dois Lynx e dois Wasp.
 
+## Página 12
+
 No dia 21, sob condições terríveis de tempo, houve diversas tentativas, tanto por grupos SBS como SAS, de desembarcar nas ilhas para observar e informar o movimento das forças argentinas; as tentativas com helicópteros e barcos de borracha Gemini, que se estenderam até o dia 2, falharam, acarretando a perda de dois helicópteros Wessex 5.
 
 Nesse mesmo dia, um avião Boeing da Aerolineas Argentinas, em missão de reconhecimento, encontrou a força principal britânica, aproximando-se do arquipélago das Falklands. Afastado pelos Harriers da cobertura, pôde entretanto dar a posição aproximada da força.
@@ -156,6 +180,8 @@ Nesse mesmo dia, um avião Boeing da Aerolineas Argentinas, em missão de reconh
 No anoitecer do dia 24, o submarino argentino Santa Fe chegou à baía de Cumberland trazendo reforços para a ilha, porém, ao deixar o porto no dia 25,viajando na superfície - talvez não tivesse condições de mergulho - foi avistado e atacado por helicópteros britânicos, afundando. 
 
 Os britânicos, aproveitando-se da confusão gerada pelo incidente com o Santa Fe, decidiram efetuar o desembarque da tropa de comandos em Hestesletten com o apoio de fogo naval da Antrim e Plymouth. No dia 26, os argentinos, sem apresentar qualquer resistência, renderam-se aos britânicos.
+
+## Página 13
 
 ### A batalha que não houve
 
@@ -173,6 +199,8 @@ A 1º de maio foi constituído um quarto GT, com elementos dos GT-79.1 e com as 
 
 As 23h30 desse mesmo dia, um avião S-2E do NAe obteve um contato pelo radar com uma força naval constituída por um alvo grande e seis médios, possivelmente um NAe e sua escolta, numa posição a noroeste das Falklands e distante do NAe argentino 300 mimas. A força argentina imediatamente reagiu, determinando que os GTs-79.1, 79.2 e 79.4 rumassem, com a maior velocidade possível (cerca de 20 nós), em direção ao contato. O objetivo era aproximar-se do contato para colocá-lo ao alcance dos Skyhawk, que atacariam os britânicos com suas bombas, reduzindo a sua capacidade e organização, para, então, engajá-la em ação de superfície em que as suas possibilidades de vitória pareciam efetivas graças à superioridade em MSS; posteriormente, os canhões do Belgrano poderiam definir o combate.
 
+## Página 14
+
 Nesse ponto, as limitações do Veintecinco de Mayo iriam se mostrar decisivas: para que o ataque dos aviões fosse significativo, seria preciso usar todos os aviões de ataque disponíveis, cada um carregando três bombas de 500 libras, e com a quantidade de combustível necessária para realizar o ataque e regressar ao NAe; para a decolagem dos aviões é necessário ter no convoo (convés de voo) um vento relativo adequado, obtido aproando o navio ao vento real e aumentando a velocidade até onde necessário; segundo os relatos argentinos, a força argentina só conseguiu encurtar a distância para a força inimiga até 180 mimas e, nas condições de ventos reinantes - quase nenhum vento, fato muito raro na região -, o navio não tinha potência de máquinas suficiente para que os aviões decolassem com o combustível necessário, nas condições prevalecentes; o alcance máximo dos aviões era de 70 mimas, e o ataque, impossível.
 
 Quando o comandante da força argentina, contra-almirante Juan José Lom bardo, foi informado de que dois aviões Sea-Harrier sombreavam a suas força, afastou-se para águas mais seguras à espera de outra oportunidade.
@@ -185,11 +213,15 @@ A ação compreendeu bombardeios de longa distância feitos a partir de Ascensã
 
 Os bombardeios com os Vulcans ficaram conhecidos como operações Black Buck, tendo sido realizadas ao todo sete dessas operações ao longo do conflito: as de nº 1, 2 e 3 foram dirigidas contra o aeroporto de Port Stanley (a 3 abortou); as 4, 5 e 6, contra o radar localizado em Two Sisters; a 7, contra instalações militares em Stanley. Essas operações não tiveram êxito, mas tiveram um efeito psicológico representavam um extraordinário feito logístico pela distância considerável envolvida - e demonstravam a capacidade britânica de atacar o território argentino; por isso, alguns aviões argentinos foram mantidos nas suas bases para proteção contra qualquer ataque ao território argentino (especialmente os Mirages).
 
+## Página 15
+
 Os ataques pelos Sea Harriers embarcados ao aeroporto de Stanley não foram efetivos: o aeroporto continuou operacional até a véspera da rendição argentina. Talvez seu principal mérito tenha sido impedir o aumento da pista para que dela pudessem operar os modernos aviões de ataque. É difícil entender por que os argentinos não aproveitaram o tempo que tiveram, enquanto a força britânica se deslocava desde Ascensão, para o aumento da pista. Não acreditavam na determinação britânica? 
 
 O bombardeio naval, feito pelos contratorpedeiros e fragatas com canhões de 4,5 polegadas (114mm), levou-os a aproximar-se de terra, ficando no raio de ação da aviação argentina. Assim, desde o primeiro bombardeio a aviação argentina teve oportunidade de atacar a força. Se não houve efetividade no primeiro dia - foram abatidos dois caças e um bombardeiro argentino pela cobertura dos navios e a fragata Arrow foi ligeiramente avariada - os argentinos foram desenvolvendo tática mais eficiente. Nesse primeiro ataque 56 aeronaves foram empregadas - 12 A4B, GA4C, 12 Daggers (versão israelense do Miragê), 10 Mirages e seis Canber ras, porém, apenas 35 chegaram à área e efetuaram o ataque.
 
 A partir desse dia 1º foram realizadas operações especiais - com pessoal SBS e SAS helitransportado nas proximidades de Stanley e de Port Darwin (ao todo, duas em Stanley e uma em Darwin).
+
+## Página 16
 
 ### O afundamento do Belgrano.
 
@@ -198,6 +230,8 @@ O GT constituído pelo CL Belgrano e pelos dois contratorpedeiros foi detectado 
 Segundo fontes britânicas, os dois contratorpedeiros da escolta efetuaram uma série de ataques, por 2 horas, afastando-se posteriormente.
 
 O afundamento do navio CL Belgrano, com a perda de 323 homens de uma guarnição de 1.093, veio reforçar o temor argentino da impossibilidade de lidar com submarinos nucleares; a decisão, a partir daí, de não mais empregar a sua força naval de superficie decorre, possivelmente, do entendimento de sua vulnerabilidade e de que o seu emprego não seria decisivo; receosos de uma possível intervenção chilena, preferiram preservar a frota, confinando seus navios aos portos ou à orla marítima. Os aviões do Vientecinco de Mayo foram transferidos para as bases navais ao sul, de onde passaram a operar até o fim do conflito.
+
+## Página 17
 
 ### O afundamento do Sheffield.
 
@@ -213,6 +247,8 @@ Por uma série de limitações de equipamento, o incêndio resultante do impacto
 
 Hoje, graças aos depoimentos dados por diversos oficiais presentes na ação a Mac Manners, autor de "Forgotten voices of the Falklands", é possível entender as causas que levaram à perda do Sheffield.
 
+## Página 18
+
 O primeiro contato aéreo foi informado pela Glasgow que estava como piquete-radar mais ao norte: ela detectou dois aviões vindo da direção oeste-noroeste que classificou como "aviões hostis"; em consequência, a força assumiu postos de combate. As duas aeronaves aproaram para o Sul sendo detectadas pela Coventry, mas logo desapareceram.
 
 Como a emissão de radar dos Super Etendards não foi detectada pelo Hermes, este classificou o contato como falso, determinando que a força não estava sob ataque, devendo voltar à situação anterior ao alarme. Nesse momento, tanto o Glasgow como a Coventry, detectaram um segundo "flash" de uma emissão do radar Agave dos Super Etendards; de novo, o Hermes informou ser falso o eco. Para o pessoal desses navios, porém, tratava-se de um ataque clássico feito por Super Etendards, com as aeronaves voando muito baixo, abaixo da cobertura do radar, apenas emergindo para dar uma rápida varredura com seu radar, armazenando as informações obtidas no míssil, para então, a cerca de 20 milhas do alvo, disparar o míssil. De fato, a 20 milhas a Coventry detectou de novo o radar dos Super Etendards e mais a emissão dos radares dos misseis, de modo que, obviamente, a força estava sob ataque. Mais uma vez o Hermes classificou os contatos como falsos: os contatos foram considerados pelo coordenador de guerra aérea da força, embarcado no Hermes como dois Harriers. O pessoal da Broadsword julgou que essa avaliação estava errada, pois a hora de retorno dos Harriers era outra e, por isso, o navio permaneceu em postos de combate, uma vez que não tinham confiança nas declarações vindas do capitânia.
@@ -225,6 +261,8 @@ O primeiro contato do Sheffield com o míssil foi visual, porém o tempo para id
 
 O míssil explodiu a meio-navio. Segundo o oficial de comunicações do Sheffield, foi terrível "o barulho, a onda de choque e o som de tal terrífica explosão".
 
+## Página 19
+
 ### Interregno
 
 Os entendimentos encabeçados pelo secretário Alexander Haig para uma solução negociada foram interrompidos, como vimos, a 19 de abril. A partir daí, algumas nações americanas, especialmente o Peru e a Organização das Nações Unidas, sob a liderança do secretário-geral Pérez de Cuellar, passaram a liderar o principal esforço nesse sentido. Ainda com a esperança de uma saída política para a crise, o governo do Reino Unido não autorizava o desembarque nas Falklands.
@@ -234,6 +272,8 @@ Nesse interregno, que se prolongaria até o dia 20 de maio, as ações se sucedi
 Numa operação preparatória para o desembarque, a 14 de maio os britânicos fizeram uma incursão de comandos na ilha de Pebble, onde os argentinos tinham uma boa pista para operar aviões Púcara. Como a baía de San Carlos já tinha sido escolhida para área de desembarque, a pista em Pebble era uma ameaça a ser eliminada. Foram destruídos o radar móvel, seis aviões Púcara, cinco outras pequenas aeronaves e o paiol de munição.
 
 O Atlantic Conveyor, já nas águas do arquipélago, no dia 19, teve os seis Harriers GR-3 transferidos para os navios-aeródromos; os grandes helicópteros Chinook também trazidos foram mantidos a bordo, visto que o navio seria usado como auxiliar dos navios-aeródromos.
+
+## Página 20
 
 ### O desembarque em San Carlos
 
@@ -251,11 +291,15 @@ Até o entardecer, a cabeça-de-praia já tinha 16km2, e 5 mil homens estavam em
 
 Dias depois, foi improvisada, com placas de alumínio, uma pista para que osH arriers pudessem operar da área.
 
+## Página 21
+
 ### Consolidação da cabeça-de-praia
 
 Os dias que se seguiram foram importantes, servindo para definir o sucesso ou o insucesso do desembarque. Nos dias 23, 24 e 25 - data nacional argentina - os argentinos fizeram ataques contra a força naval, deixando a cabeça-de-praia se consolidar. Nesse período, as perdas de ambos os lados foram consideráveis. Os argentinos perderam mais de 20 aviões de combate e alguns helicópteros e, ainda, o navio cargueiro Monsumen, afundado por Sea Harriers; os britânicos tiveram perdas significativas: o HMS Glasgow ficou levemente avariado atingido por uma bomba de 1.000 libras que o atravessou, sem explodir; a fragata HMS Antelope foi afetada por duas bombas de 500 libras que também não explodiram, mas, no dia seguinte, ao ser desmontada uma delas, ela explodiu e, em consequência, o navio partiu em dois e afundou, com a morte de alguns tripulantes; os navios auxiliaires Sir Galahad e o Sir .Lancelot foram levemente avariados por bombas que não explodiram; o HMS Argonaut sofreu algumas avarias, acertado por duas bombas que não explodiram; o HMS Broadsward foi atingido no hangar por uma bomba -que também falhou, contudo, mesmo assim, teve o helicóptero Lynx destruído; o HMS Coventry foi atingido, virando e afundando com a perda de 19 vidas; num segundo ataque feito com aviões Super Etendards, com míssil MAS Exocet, foi afundado o Atlantic Conveyor, com os três helicópteros Chinook se perdendo com o navio (fariam muita falta na parte terrestre da campanha), além de seis Wessexs e um Lynx; um Sea Harrier foi perdido por acidente; dois Lynxs foram perdidos, um da Broadsward e outro da Antelope.
 
 As bombas argentinas que não explodiram têm sido objeto de muita especulação: foram lançadas de muito baixa altura, de modo que o dispositivo de armar não teve tempo para agir? Defeito de fabricação? Erro na montagem? Bombas projetadas para ataque a alvos em terra e que não armavam ao encontrar as chapas finas dos navios?
+
+## Página 22
 
 ### A campanha terrestre
 
@@ -266,6 +310,8 @@ Os detalhes dessa operação não são relevantes para os objetivos deste trabal
 ### Desastre em Fitzroy
 
 Nos primeiros dias de junho a vitória britânica parecia inevitável. Os argentinos concentraram-se em Port Stanley para a defesa final. Uma importante posição para o assalto final contra a capital - Bluff Cove e Fitzroy foi abandonada pelos argentinos, e os britânicos, aproveitando-se da situação, para lá rapidamente enviaram, dia 3, por helicóptero, um contingente de paraquedistas, a ser posteriormente reforçado por homens da 5ª Brigada. Não havendo helicópteros suficientes disponíveis - os três Chinocks que afundaram com o Atlantic Conveyor poderiam ter resolvido o problema - na noite de 5 para 6, o 2° Batalhão de escoceses, a bordo do HMS Intrepid, desembarcou em Bluff Cove e Fitzroy para reforçar os paraquedistas e, na noite seguinte, de 6 para 7, elementos do 1º Batalhão de galeses, também da 5ª Brigada. a bordo do HMS Fearless, desembarcaram e ocuparam posições em terra. Devido às péssimas condições atmosféricas, o restante do batalhão não pôde ser transportado para o local e somente na noite seguinte, com a melhora do tempo, chegaram ao local a bordo dos navios Sir Galahad e Sir Tristan. Por razões diversas, o desembarque só teve início na manhã seguinte. Os argentinos finalmente despertaram: dois Daggers e dois Skyhawks atacaram em voo rasante os dois navios que, sem nenhuma escolta e praticamente desprovidos de armas antiaéreas, foram severamente atingidos e perdidos: 52 homens foram mortos, 50 deles a bordo do Sir Galahad, pois o desembarque ainda não havia sido iniciado. Muitos fatores contribuiram para esse desastre: má sorte, falta de helicópteros; a enorme demora para o desembarque; o fato de o radar de Two Sisters, apesar dos esforços para neutralizá-lo, estar ainda operando; e muitas outras causas. É incontestável, porém, que a principal razão para isso tenha sido a negligência, a crença de que o inimigo já estava batido, incapaz de reagir.
+
+## Página 23
 
 ### Algumas lições das Falklands
 
@@ -279,6 +325,8 @@ Do lado argentino, o memorando do brigadeiro Ernesto Horácio Crespo, comandante
 
 *Não há vocação de trabalho conjunto no Exército e na Armada. Se há na Força Aérea, isto se deve a ela ter tomado conhecimento de suas limitações.*
 
+## Página 24
+
 Tendencioso - porque quer atribuir apenas à Marinha e ao Exército a responsabilidade pela falta de cooperação - embora revelador - porque seu testemunho comprova o atrito entre as três forças.
 
 Um dos aspectos mais impressionantes da campanha foi o extraordinário esforço logístico, principalmente por parte do Reino Unido, diante das distâncias envolvidas. Os navios da RFA constituíram o núcleo do apoio logístico móvel britânico que, com alguns navios da RMAS e com 45 navios mercantes retirados do tráfego e incorporados à força naval, conseguiu garantir a operação. Foram fornecidas no mar cerca de 400.000 toneladas de combustível, houve 1.200 operações de transferência de munição e carga seca no mar, além de 300 por helicópteros e 40 operações de transporte de material e suprimento, lançados de paraquedas para a força por aviões Hercules. A RAF movimentou para a ilha de Ascensão 5.800 homens e 6.600 toneladas de suprimento em mais de 600 voos.
@@ -288,6 +336,8 @@ O reabastecimento de aviões em voo é fator fundamental Aviões Harrier GR-3 vo
 *O conflito deixou claro que a dependência de fontes externas para a obtenção de equipamento e sobressalentes reduz a capacidade militar do país no momento em que ele mais necessita. Os argentinos sofreram inúmeras limitações por essa razão.*
 
 *A capacidade de mobilizar recursos civis para o esforço de guerra é fundamental.* Os britânicos deram inúmeros exemplos dessa capacidade. A mobilização de 45 navios mercantes foi um feito notável Ficou patente a importância estratégica da existência de uma frota mercante significativa e de, no período de paz, preparar os planos para seu emprego na guerra.
+
+## Página 25
 
 Ficou amplamente demonstrado que os contêineres-cofres de carga podem ter inúmeros usos e aplicações: para aumentar a capacidade de gêneros e de alimentos refrigerados dos navios; para ampliar a capacidade de alojamento e rancho para a tripulação extra; para o uso como estações de bombeamento de combustível para aviões embarcados (no Contêiner Bezant e no Atlantic Conveyor); e para muitas outras utilizações.
 
@@ -347,11 +397,15 @@ Segundo Woodward, os mortos teriam sido 258, sendo 87 da Royal Navy, 26 Fuzileir
 
 A avaliação desse quadro é importante, pois muitos fatores são relevantes e, se não forem considerados, levarão a conclusões falsas. Sem dúvida, alguns desses fatores dificultaram a atuação da aviação argentina: operaram no limite do seu raio de ação, não podiam operar à noite e tiveram muitas bombas que não explodiram. Por outro lado, a força naval britânica apresentou sérias deficiências tanto no sistema de defesa aérea como na construção dos navios. Além disso, o fato de a força naval estar numa área restrita, a baía de San Carlos, área isolada onde, portanto, os aviões atacantes dispensavam identificação, prejudicou muito a defesa.
 
+## Página 26
+
 *O sistema de defesa aéreo britânico apresentou inúmeras fraquezas*, algumas muito graves: o *Sea Harrier*, que se revelou uma aeronave extraordinária, *era inadequado para o papel de interceptador*, por causa de seu radar de pequeno alcance para esse tipo de missão e a falta de meios para uma mellior coordenação avião-navio; número pequeno de interceptadores, fator ainda mais agravado pela decisão do almirante Woodward em manter os navios-aeródromos longe da baía de San Carlos, para protegê-los dos ataques aéreos; pequeno número de mísseis, apenas dois, que podiam ser transportados por cada aeronave; a falta de alarme aéreo antecipado - durante o conflito houve tentativa de equipar um helicóptero Sea King para a tarefa, montando nele um radar adequado (só ficou pronto tarde demais para ser usado nas Falklands); a força só dispunha de dois navios armados com o míssil Sea Wolf, de média distância, de grande valia nessas circunstâncias; falta de um sistema de defesa próxima moderno ("dose in weapon system") imediatamente após o conflito esse problema foi resolvido pela instalação de sistemas tipo Vulcan-Phalanx. No que diz respeito à construção dos navios, algumas deficiências tomaram-se evidentes, comprometendo a sua capacidade de sobreviver depois de atingidos: fraca compartimentação estanque; uso de material de baixo ponto de fulgor, como certas ligas de alumínio e magnésio (caso da HMS Ardent); não duplicação de equipamentos vitais como redes e bombas de incêndio, e de certos sistemas elétricos, etc. (como foi o caso do HMS Sheffield); material inadequado usado para isolamento de cabos elétricos, como PVC e espuma de borracha, que ao queimar expelem fumaça tóxica (caso de todos os navios), para citar apenas alguns dos problemas.
 
 A conclusão que se pode tirar a esse respeito das Falklands é que uma força naval, que precise atuar dentro do alcance da aviação inimiga baseada em terra, precisa dispor de um eficiente sistema de defesa aérea sem as limitações aponta das. O avião, embarcado ou não, é o mais poderoso inimigo das forças de superfície.
 
 O navio-aeródromo mostrou toda a sua importância. Sem eles os britânicos não poderiam ter vencido. A respeito, disse o almirante Woodward:
+
+## Página 27
 
 *A verdade incontestável é que os argentinos falharam inexplicavelmente em compreender que, se eles tivessem atingido o Hermes, os britânicos estariam liquidados. Eles nunca atacaram o único alvo que seguramente lhes daria a vitória (...) Um desastre maior, uma mina, Uma explosão, um incêndio, qualquer coisa em qualquer um de nossos navios aeródromos teria, quase certamente, provado ser fatal para toda a operação.*
 
@@ -364,6 +418,8 @@ O desempenho dos Sea Harriers foi surpreendente sobre todos os aspectos, demonst
 O submarino nuclear mostrou toda a sua capacidade como instrumento de guerra, não só pelas baixas que causou - o CL Belgrano -, mas também por tirar do campo de batalha a força naval argentina, convencida de não ter meios para se lhe opor. Os planejadores navais não podem perder de vista a importância dessa poderosa arma de guerra que, simultaneamente, tem imensa capacidade dissuasória.
 
 Se os argentinos dispusessem de mais minas e as tivessem usado de maneira efetiva - minando, por exemplo, o estreito das Falklands teriam causado um sério problema para os britânicos. A minagem ao largo de Stanley com minas de fundeio, de contato, cujo projeto datava da Primeira Guerra Mundial, deu enorme trabalho aos britânicos para sua limpeza, após a retomada do arquipélago, apesar de então disporem do plano de minagem.
+
+## Página 28
 
 O apoio de fogo naval mostrou toda a sua importância O depoimento do comandante do 5° Batalhão de Fuzileiros Navais argentino, o CF Carlos Robácio, ao analista americano Robert L. Scheina, é muito claro a respeito:
 
@@ -424,6 +480,5 @@ Navio-patrulha para gelo - 1 (Endurance)
 
 Navio de pesquisa - 3 (Heda, Herald e Hydra)
 * Empregados como navios-ambulância.
-
 
 O plano inicial argentino era, logo após a ocupação das ilhas, levar o caso para as Nações Unidas, propondo a gestão compartilhada com o Reino Unido. O "entusiasmo" pelo sucesso da ocupação teria acarretado uma mudança de planos, com as ilhas definitivamente nas mãos da Argentina.

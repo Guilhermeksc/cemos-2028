@@ -2,6 +2,8 @@
 
 ### A Batalha do Golfo de Leyte (Páginas 66-93) / ALMIRANTE HÉLIO LEÔNCIO MARTINS
 
+## Página 1
+
 ### Antecedentes
 
 A campanha naval no Pacífico, na guerra travada entre os Estados Unidos e o Japão, teve características especiais, bem diferentes dos outros conflitos marítimos registrados na História.
@@ -16,6 +18,8 @@ Por injunção política, o exército, comandado pelo prestigiado general Dougla
 
 Em junho de 1944, MacArthur havia chegado a Volberkap, no extremo da Nova Guiné, e a força naval de Nimitz, comandada taticamente pelo almirante Raymond Spruance, tomara Saipan, no arquipélago das Marianas. A próxima operação seria combinada, dos dois avanços, a fim de se posicionarem para o ataque direto ao território japonês.
 
+## Página 2
+
 ### Tomada de decisão
 
 A situação em 1944 era bem diferente da existente na deflagração da guerra, com superioridade militar e iniciativa japonesas. Os Estados Unidos haviam multiplicado muitas vezes o seu número de navios-aeródromos, encouraçados, cruzadores, contratorpedeiros, navios auxiliares, bem guarnecidos e adestrados.
@@ -27,6 +31,8 @@ A logística enfrentara com galhardia as dificuldades de as operações se reali
 No Japão, ao contrário, as indústrias tinham dificuldade de substituir as perdas que se avolumavam, porque os insumos a serem recebidos pelos mares da China e do Japão, seu "mediterrâneo" perdiam-se com os contínuos e eficientes ataques dos submarinos norte-americanos. A falta de petróleo limitava as operações da esquadra e mesmo o seu treinamento. A preparação dos pilotos era extremamente prejudicada.
 
 Apesar de tais vantagens norte-americanas, a resistência nipônica em cada ilha fortificada, no mar e com sua aviação (inferior em qualidade, mas ainda numerosa) deveria ser considerada cuidadosamente, sendo crescente com a aproximação do território pátrio. E, na escolha do objetivo a ser atingido a seguir, havia dualidade de opiniões entre Nimitz e MacArthur. A marinha optava por deixar para trás as Filipinas, usando a costa chinesa, em poder dos nacionalistas de Chiang Kai-Chek, para a progressão, com o apoio aéreo norte-americano. MacArthur cria ser perigoso deixar as Filipinas, com numerosas forças de ocupação japonesa, na retaguarda do avanço; que elas seriam plataforma de impulso mais segura do que as duvidosas costas chinesas; e, por fim, porque havia um compromisso moral dos Estados Unidos de libertar seu aliado - ou do próprio MacArthur, com a sua aparatosa declaração, ao deixar as Filipinas: "Eu voltarei!"
+
+## Página 3
 
 Seria decisão tão séria, que levou o presidente Roosevelt pessoalmente a Pearl Harbour, a 16 de julho, para ouvir os dois chefes e levar uma resolução consensual para aprovação na próxima reunião dos chefes aliados em Quebec (a chamada "Octógono") e dos Chefes de Estados-Maiores Aliados (Joint Staff Combined JSC, na sigla em inglês). A argumentação de MacArthur foi vencedora. Com a 7ª esquadra de Kinkaid, reforçada pela 3ª força anfíbia de Nimitz e tropas e aviação do exército, ele comandaria a grande operação de desembarque no golfo de Leyte, nas Filipinas, considerado o local mais favorável, sendo ela protegida, ao largo, pela 3ª esquadra norte-americana, sob o comando tático de Halsey. Essa força naval, poderosa, o elemento de choque de Nimitz, mantendo a formação, mudava de comando e de denominação, sendo a 3ª comandada por Halsey e a 5ª, pelo almirante Raymond Spruance. Enquanto um comando operava, o outro, em Pearl Harbour, planejava as operações seguintes. Em Saipam, atuara a 5ª; em Leyte, foi a vez da 3ª. Caberia também a Halsey uma série de ocupações preliminares, dias ilhas de Palaus e Ulithe (nesta última sendo localizada a base flutuante de apoio às operações em Leyte), e os bombardeios preparatórios das Filipinas e da ilha Formosa, onde havia forte concentração de aviação nipônica MacArthur deveria ocupar as ilhas Morotai. Deixavam para trás os núcleos fortificados das ilhas Yap e Mindanau.
 
@@ -56,7 +62,6 @@ Seria decisão tão séria, que levou o presidente Roosevelt pessoalmente a Pear
 
 - Grupo-tarefa (GT): as forças-tarefas eram divididas em grupos-tarefas.
 
-
 ### Constituição das forças navais norte-americanas
 
 As forças navais da marinha norte-americana empregadas nas operações de Leyte eram assim constituídas:
@@ -66,6 +71,8 @@ As forças navais da marinha norte-americana empregadas nas operações de Leyte
 3ª esquadra - constituída pela FT 38, com quatro GTs, 38.1, 38.2, 38.3 e 38.4, cada um incluindo quatro e cinco NAe e NAeLs, totalizando 15, operando 800 aviões de caça, de bombardeio e torpedeiros, escoltados por seis Es, seis CPs, nove CLs e 58 CTs, distribuídos pelos GTs.
 
 6ª esquadra  - a força de Ss, independente, que, em Leyte, atuava com 25 a 30 unidades, em diversas posições.
+
+## Página 4
 
 ### Preliminares
 
@@ -101,6 +108,8 @@ Entretanto, para a realização do Sho 1, as forças - operando a grandes distâ
 
 2ª esquadra aérea, sob o comando do almirante Shigeru Fukudome, com 450 aviões baseados em Formosa (Mapa 2).
 
+## Página 5
+
 De acordo com informações obtidas, a próxima operação seria a invasão das Filipinas e, assim, teria lugar o plano Sho 1. Consistia este em forças de Kurita e em movimento de pinça, à noite, o primeiro no Norte, cruzando o Nishimura estreito de São Bernardino, e o segundo no Sul, pelo estreito de Surigau - atingirem simultaneamente o golfo de Leyte, destruírem a força de desembarque e as tropas já desembarcadas. Ozawa viria do Norte e enfrentaria a esquadra de Halsey se a encontrasse, e se juntaria a Kurita e Nishimura. Shima, com os dois Es híbridos servindo de isca, atrairia Halsey, para colocá-lo ao alcance da aviação terrestre e tirá-lo do caminho de Ozawa. Plano ousado, não levando em conta a reação do fortíssimo inimigo.
 
 Entre 10 e 19 de outubro, como ação preparatória do desembarque, a força de Halsey penetrou no mar interior (até então só os submarinos o tinham feito) e atacou Okinawa e Formosa. Na primeira dessas ilhas, com menos reação, alguns navios auxiliares foram afundados e abatidas 111 aeronaves japonesas, contra a perda de 21 norte-americanas. Contudo, em Formosa, estavam baseados mais de 1.000 unidades aéreas inimigas - da marinha e do exército. Os combates foram intensos, mas a superioridade norte-americana prevaleceu, com 800 aviões japoneses perdidos e 46 dos Estados Unidos. Bombardeiros B29, vindos da China, juntaram-se aos aviões dos NAes. Dois CPs atacantes foram atingidos, mas puderam ser rebocados e salvaram-se.
@@ -109,11 +118,15 @@ Com os ataques de Halsey, Toyoda visualizara a possibilidade de, fortalecendo ex
 
 A sensação de êxito durou pouco. A quantidade de aviões perdidos inclusive os de Ozawa - e o fato de ser avistada a esquadra de Halsey incólume mostraram a derrota sofrida. *O plano Sho 1 teve que ser apressadamente revisto. A pequena força de Shima, que havia sido chamada do Norte para acabar com os derrelitos deixados pelos americanos (!), foi ordenada a se juntar a Nishimura, e a isca suicida passou a ser missão de Ozawa, com seus NAes vazios.* As esquadras aéreas de Onishi e Funkedome foram reforçadas e a segunda transferida também para as filipinas.
 
+## Página 6
+
 ### Ativação do plano Sho
 
 A 17 de outubro de 1944, informações chegaram a Toyoda, dando como para ser executada a operação anfibia no golfo de Leyte. Foi imediatamente enviada mensagem para os interessados: "Ativar o plano Sho 1." Com isso, desencadearam-se os acontecimentos que geraram a batalha naval travada em quatro lugares afastados entre si, ocupando área de 400 mil milhas quadradas, envolvendo 245 navios de guerra dos oponentes. Dela participaram submarinos, forças aeronavais, aviação baseada em terra, navios com a artilharia mais poderosa já existente, ataques torpédicos de CTs com intensidade nunca vista, LTs e, mesmo arma nova, os aviões suicidas. Ao mesmo tempo, realizava-se a operação anfíbia, desembarcando o 6° Exército dos Estados Unidos (Mapa 2).
 
 Os encontros se deram no ar de Sibuyam, no estreito de Surigau, ao largo da ilha de Sarnar e ao largo do cabo Engano, no extremo Norte das ilhas Filipinas, daí o porquê de suas denominações. Embora afastadas, isoladas, tinham um propósito comum: a destruição das forças de desembarque no golfo de Leyte. Seus resultados interagiam, e isso explica a complexidade de sua narrativa; por isso, os fatos simultâneos precisam ser descritos com cronologia paralela desde a aproximação das forças japonesas.
+
+## Página 7
 
 ### Aproximação das forças japonesas
 
@@ -123,6 +136,8 @@ Kurita teve contatos submarinos que não se concretizaram, ou foram afastados. M
 
 Mais tarde, um encalhou e se perdeu, sendo a guarnição recolhida pelo outro. Uma perda que valeu, pois haviam sido postos a pique dois CPs e avariado seriamente um terceiro. Kurita viu sua força ser enfraquecida também por dois CTs, que acompanharam o avariado. E um dos cruzadores perdido era o capitânia da força. O almirante e seu estado-maior foram pescados do mar por um CT, e só à tarde puderam ser transferidos para um dos grandes encouraçados. Mas essas perdas não influíram nos desígnios da força de Kurita. Continuou seu avanço, e, às 9h, entrava no mar de Sibuyam, onde novas dificuldades o esperavam.
 
+## Página 8
+
 2ª esquadra, seção C (Nishimura) - Nishimura saiu de Brunei logo após Kurita, deixou Palayan a oeste e, na manhã de 23 de outubro, chegou ao mar de Sulu. Às 9h10, passando pela ilha de Negros, foi avistado por aviões de Halsey, que, com três de seus GTs, navegava a leste das Filipinas, o quarto tendo sido enviado para descanso das guarnições em Ulithe.
 
 Atacado, Nishimmra defendeu-se com ativo fogo antiaéreo. Foram atingidos os dois Es e um CT, com poucas avarias, não sendo afetado seu poder combatente. Nishimura continuou, já navegando nas águas tranquilas do mar de Mindanau. A noite, penetrou no estreito de Surigau. Os ataques aéreos não se repetiram. 
@@ -130,6 +145,8 @@ Atacado, Nishimmra defendeu-se com ativo fogo antiaéreo. Foram atingidos os doi
 5ª esquadra (Shima) - A pequena e inexpressiva força de Shima fora chamada do Norte do Japão, onde estacionava, primeiramente para acabar com os navios avariados na Batalha de Formosa, de acordo com os relatos dos pilotos japoneses. Sendo falsos os relatos, depois de muitas dúvidas, recebendo ordens diversas, terminou por ser enviada como reforço a Nishimura. No dia 24 pela manhã, estava chegando a Surigau bem atrás de Nishimura. Mas não se haviam visto nem trocado nenhuma comunicação. Visivelmente as correções do plano à última hora trouxeram confusão.
 
 Força principal (Ozawa) - Ozawa tinha absoluta consciência de qual era sua missão. Devia atrair Halsey, deixando-se destruir, favorecendo, assim, os ataques de Kurita e Nishimura. Largou de Tokoiama, no território metropolitano, a 17 de outubro, com seus quatro NAes. Recebeu os grupos aéreos reduzidos na cidade de Oita. No dia 20, cruzou o estreito de Bungo, no extremo Sul do Japão. As 21h rumou a sueste e à meia-noite, ao sul. Ao, amanhecer do dia 21, enviou o primeiro esclarecimento, nada encontrando. Ozawa sabia que Kurita avançara, e, portanto, concluía que Halsey o deveria estar esperando com seus GTs. Mesmo assim, julgava que, a 24, teria Halsey a seu alcance e o atacaria na esperança de, mesmo com seus ineficientes aviões, provocar sua reação e dar mais liberdade a Kurita. A 23, enviou novo esclarecimento e transmitiu grande número de mensagens, para mostrar sua presença. Sem nada encontrar, prosseguiu para o Sul.
+
+## Página 9
 
 ### Dia 24 de outubro
 
@@ -143,6 +160,8 @@ Kurita fez contínuos pedidos de cobertura aérea, não atendidos. As 14h, em me
 
 Às 7h20, Kurita voltou a seu rumo inicial, não mais sendo atacado. Mas havia se atrasado em relação ao avanço de Nishirnura. O plano Sho 1 demandava perfeita coordenação de tempo, tendo sido, assim, prejudicado. A 0h25 do dia 25, Kurita entrava no estreito de São Bernardino.
 
+## Página 10
+
 Estreito de Surigau - A força de Nishirnura foi avistada por esclarecedores de Halsey às 9h do dia 24, que fizeram algumas passagens sobre os navios, mas causaram pequenas avarias, influindo pouco em sua eficiência combativa. Nishimura continuou rumando para o estreito de Surigau.
 
 As informações recebidas por Kinkaid alertaram-no de que seria de esperar uma progressão inimiga, à noite, pelo estreito. Deu ordem ao comandante do grupo de apoio de fogo e bombardeio, almirante Jessé Oldendorf, para preparar recepção condigna, o que ele fez, como veremos.
@@ -155,6 +174,8 @@ Shima seguia de 30 a 40 milhas atrás de Nishimura, sem que mantivessem nenhuma 
 
 As 2h, Nishimura penetrou o estreito. Além da ação das LTs e das dificuldades de navegação, só iria encontrar reação ao sair.
 
+## Página 11
+
 Cabo Engano - Ao amanhecer do dia 24, Ozawa enviou esclarecimento para o Sul, nada encontrando. Entre as 10h e as 11h, relatos dos aviões de Fukendome informaram-no sobre a existência de NAes e navios pesados navegando a leste da ilha de Luzon. Ainda com o propósito de se fazer conspícuo, às 13h lançou uma surtida de 84 aviões, mais da metade dos que dispunha, os quais se mesclaram com os ataques dos aviões de terra. Alguns foram abatidos, outros, dispersados, indo pousar nas Filipinas. Só seis regressaram aos NAes. Sabendo dos acontecimentos no mar de Sibuyam, Ozawa continuava receando que Halsey se mantivesse em São Bernardino. As 14h25, determinou que se formasse uma guarda avançada, constituída pelos dois Es híbridos e quatro CTs, que, adiantando-se, deveria procurar contatos e chamar a atenção sobre si.
 
 A manobra teve êxito. As 15h40, a guarda avançada foi avistada. E, às 16h45, foram reconhecidos os NAes de Ozawa, a 160 milhas de distância. Receber essa noticia encantou Halsey sempre desejara participar de uma batalha naval. Tratou de reunir seus GTs, mesmo o que se achava a caminho de Ulithe. Teria que tomar uma decisão. Influiu nele o crédito que deu às informações dos pilotos que atuaram no mar de Sibuyan, isto é, a destruição da força de Kurita, que deixara de ser uma ameaça para o desembarque. Também possivelmente na mente de Halsey ainda atuassem ensinamentos adquiridos em toda a carreira dos princípios inculcados por Mahan - não dividir as próprias forças e atacar a força principal do inimigo, o que ele considerava ser a de Ozawa.
@@ -164,11 +185,15 @@ No exame feito da situação, o estado-maior de Halsey considerou três hipótes
 2) permanecer em São Bernardino com toda a sua força, pronto a destruir Kurita, Ozawa, ou ambos;
 3) ir com toda a sua força liquidar os NAes de Ozawa, considerando Kurita neutralizado. Foi escolhida a terceira hipótese. O engodo japonês funcionara. Houve reparos dos comandantes de um dos GT e dos Es, alertando acerca do perigo de deixar São Bernardino sem defesa, mas as mensagens enviadas dando essa opinião não passaram do estado-maior de Halsey, com secos "recebido". A decisão era definitiva.
 
+## Página 12
+
 Logo foi enviado pelo rádio o plano de batalha para todos os navios, com cópia para Nimitz. Kinkaid tomou conhecimento dele apenas por interceptação, isto é, a mensagem não lhe fora enviada diretamente. Em um de seus itens, havia uma determinação que, mal interpretada, causou confusão de graves consequências. Dizia que quatro IEs, com a devida proteção **will be formed as Task Force 34 ("formarão a força-tarefa 34")**, a qual **will engage decisively at long ranges ("deverá engajar o inimigo a longa distância")**. Sendo **will be formed**, em inglês, o futuro do indicativo na voz passiva, significava que a FT 34 seria formada, sem dizer quando. Entretanto, Kinkaid e seu oficial de comunicações entenderam que ele tivesse dito **will form**, imperativo (e não **will be formed**), o que seria ordem da FT 34 ser formada de imediato, como esperavam, tendo ficado guardando o estreito de São Bernardino, protegendo a operação anfíbia, de acordo com a missão da 3ª esquadra. E Nimitz, em Pearl Harbour, compreendeu a mensagem da mesma maneira.
 
 Às 17h, Halsey clareou: **"Se o inimigo passar São Bernardino, a FT 34 será formada quando eu determinar."** Mas transmitiu isso em voz; só recebido pelos navios. Aumentando a confusão, às 20h24, em mensagem direta a Kinkaid, informou: "Estou rumando para o Norte com três GTs, para atacar NAes inimigos ao amanhecer." Se ainda dissesse "todos os navios", Kinkaid poderia não concluir, como concluiu, que a imaginária FT 34 havia ficado em São Bernardino.
 
 Às 21h20, Toyoda determinou que Ozawa voltasse a avançar para o Sul. Ele o fez e chamou a guarda avançada de regresso. Por seu lado, Halsey, à meia-noite, estava com seus GTs reunidos. Avançavam os dois oponentes um contra o outro. A batalha seria ao alvorecer.
+
+## Página 13
 
 ### Dia 25 de outubro
 
@@ -180,6 +205,8 @@ Shima, às 4h30, viu os derrelitos em que se transformara a força de Nishimura,
 
 A ação norte-americana, bem coordenada, revelou-se quase como um exercício. O avanço de Nishimura para a destruição foi tão determinado, que parece ter-lhe sido destinado o papel de sacrifício, como a Ozawa. Sua destruição atraiu a força da 7ª esquadra, como Ozawa fez com a 3ª, ficando livre o caminho para Kurita.
 
+## Página 14
+
 Os vitoriosos do dia foram os CTs, deixando pouco para a linha de batalha terminar. Mas esta, com o estrondo de seus poderosos canhões, marcou o fim de uma era - a do emprego das linhas de batalha nas guerras do mar - que durara alguns séculos.
 
 Ilha de Samar - Pouco depois da meia-noite do dia 24, Kurita penetrou o estreito de São Bernardino. Apesar dos ataques de submarinos e aéreos, que lhe haviam custado perdas sérias, ainda era uma força de artilharia poderosa, com quatro Es, seis CPs, dois CLs e sete CTs. Ao amanhecer, costeava a ilha de Samar. As 5h35 recebera mensagem de Shima informando sobre a destruição da força de Nishimura, o que significava a falência de parte importante do plano Sho. Também não tinha notícias da ação de Ozawa. Mas continuou, para executar a opera ção isolada, com resultados duvidosos.
@@ -190,11 +217,15 @@ A realidade era outra. Tratava-se de parte dos 18 NAeEs da força de Kinkaid, qu
 
 Os seis NAeEs, às 7h, lançavam rotineiramente os aviões para as patrulhas de vigilância, quando se viram rodeados por gêiseres levantados pelos projéteis japoneses. A reação deu lugar à ação de maior bravura, desprendimento, cumprimento do dever, à custa de qualquer sacrificio, de toda a guerra, mostrando que determinação, por vezes, supera desequilíbrios materiais.
 
+## Página 15
+
 O comandante do Taffy decidiu enfrentá-lo. Os CTs e CIBs envolveram em cortinas de fumaça os NAeEs, que seguiram rumos próprios para o lançamento de aviões, que foram para o ar, anxiliados por outros do Taffy 2. A despeito da densa defesa antiaérea, que derrubou duas dezenas deles, mantiveram os navios japoneses sob continuo ataque. Depois, foi dada ordem aos CTs norte-americanos para o ataque torpédico. Três pigmeus avançaram sobre os gigantes CPs e Es. Chegaram a pouca distância dos navios mais próximos. Lançaram seus torpedos, com acerto. Mas dois não resistiram à artilharia pesada que os atingiu e perderam-se. O terceiro, muito avariado, salvou-se. Em seguida, a ordem de avanço foi dada aos CTEs, que também dispararam seus torpedos. Um afundou, os outros recuaram em mau estado. Os NAeEs, ainda que se refugiando na fumaça ou em providenciais aguaceiros, não escaparam ao castigo. Um deles desapareceu nas águas. Os outros muito sofreram, em perdas humanas e materiais.
 
 A ação ousada e sacrificada teve resultados. Quatro CPs inimigos foram postos fora de combate, com muitas avarias nos outros navios. E a força atacante estancou seu avanço e dispersou-se ante o que consideravam adversário de valor, pois continuavam julgando estar combatendo, e vencendo, NAes e CPs. As agruras do Taffy 3 duraram das 7h às 9h. Pediram ajuda a Kinkaid Ele, entretanto, estava convicto de que, pelo menos, a FT 34 achava-se em posição para intervir. Foi mesmo criticado por não ter enviado esclarecimento para o Norte, evitando a surpresa. Mas essa seria também tarefa de Halsey.
 
 Kinkaid realmente nada poderia fazer. A força de Oldendorf não só faltava munição, depois da Batalha de Surigau, como também estava a 65 milhas de distância, não podendo chegar a Samar em tempo útil. A situação crítica levou Kinkaid a enviar mensagens a Halsey, às 7h27, repetindo-as em linguagem clara às 7h39 e às 8h29, perguntando onde se achava a Ff 34, dando ênfase ao perigo por que passava. Halsey só teve conhecimento dessas mensagens às 9h, e a resposta foi desoladora: não havia Ff 34 e os GTs 38 2, 3 e 4 estavam engajados com a força principal do inimigo. Entretanto, deu ordem para o GT 38.1 seguir a toda a velocidade para Samar.
+
+## Página 16
 
 Mas, se as providências humanas falhavam, algo inesperado aconteceu. As 9h11, à vista da dispersão de sua força, Kurita deu ordem de retirada a fim de reorganizá-la. Perdera a oportunidade da vitória que poderia mudar o quadro da guerra. Com a mesma surpresa que tivera ao ser atingido pelos primeiros tiros, o Taffy 3 viu-se livre do inimigo. A batalha de superfície terminara. O comandante do Taffy bem expressou o inesperado desfecho do encontro em seu relatório, quando, além de atribuir o recuo dos japoneses, em parte aos ataques torpédicos e aéreos, assim completou: "e uma visível parcialidade de Deus Todo-Poderoso!".
 
@@ -203,6 +234,8 @@ Até as 12h, Kurita relatou que ainda pretendia voltar ao ataque. Entretanto, à
 Mas as provações do Taffy 3 e dos outros - não haviam terminado, pois foram as primeiras vítimas de nova arma japonesa. Por iniciativa do almirante Onishi, fora organizado um grupamento aéreo de suicidas, que projetariam seus aviões sobre os navios inimigos. Pediu voluntários, e logo os obteve em abundância. Chamavam-se "kamikases" (ou "vento divino", referindo-se a um legendário vento que destruíra a esquadra mongol, a qual, no século XIII, pretendia ocupar o Japão).
 
 O primeiro grupo de kamikases atuou na manhã do dia 25, precipitando-se sobre os NAeEs do Taffy 1. Alguns dos suicidas foram derrubados pelo fogo anti aéreo, entretanto dois conseguiram vitimar seriamente dois NAeEs, sem afundá-los. O Taffy 3 também sofreu castigo dos kamikases, quando se viu livre da força de Kurita. Avariaram dois dos NAeEs e puseram a pique um terceiro. Essa estreia dos kamikases representou apenas uma amostra do que fariam em Okinawa.
+
+## Página 17
 
 Cabo Engano - À meia-noite do dia 24, com a certeza de estar à sua frente a força principal do inimigo, Halsey entregou a direção tática da batalha ao  dante da FT 38 - almirante Marc Mitcher - e formou a FT 34, mas para encarregar-se da destruição final dos navios danificados pelos ataques aéreos e, se necessário, travar duelo de artilharia com os Es híbridos.
 
@@ -214,6 +247,8 @@ CLs e CTs de Ozawa. Seus poucos e ineficientes aviões foram liquidados no prime
 
 Às 10h, contudo, uma mensagem de Nimitz, criptografada com erro elementar, mas não percebido pelo oficial que a recebeu, nem por Halsey, seu destinatário final, mostrou que a responsabilidade do mais modesto dos participantes de um acontecimento pode influir nos mais importantes resultados. Uma mensagem criptografada deve, obrigatoriamente, a fim de dificultar ser decifrada por quem não conheça o código, incluir duas frases sem nexo antes e depois do texto, separadas deste por duas letras: FF, depois da primeira frase, e RR, antes da segunda. Nimitz, em Pearl Harbour, acabou se impressionando pela insistência e tom urgente das perguntas de Kinkaid sobre a julgada real, mas não existente, FT 34. Determinou que também se fizesse pergunta a Halsey. Pergunta simples: "Onde está a FT 34?" porém o tenente que a criptografou acrescentou no início uma frase realmente sem nexo, mas, no fim, escreveu "todo mundo quer saber", o que parecia completar o texto. Quem a recebeu, apesar dos dois rr que mostrariam o término do texto, a manteve na versão que entregou a Halsey. Este, também sem considerar os dois rr, teve um acesso de raiva ao ler o que parecia ser uma áspera critica por ter abandonado São Bernardino.
 
+## Página 18
+
 Vociferando, determinou que a FT 34, agora existente, seguisse para o golfo de Leyte, acompanhada por um dos GT aéreos. E os dois Es mais velozes, com três CLs e oito CTs, adiantar-se-iam, o que era um risco, pois iriam se entender com cinco Es e seis CPs de Kurita. Mas não chegariam a tempo de impedir o avanço de Kurita, mesmo se ele não tivesse recuado.
 
 Halsey nunca se conformou com a ordem que o impediu de completar a batalha. Sem considerar que a sua potente força de Es, durante as Batalhas de Samar e cabo Engano, tivesse navegado 400 milhas sem participar nem em uma nem em outra, declarou que o maior erro que cometera fora mandar de volta a FT 34, quando estava quase com o inimigo ao alcance de seus canhões. Para subs tituí-la, um destacamento de dois CPs, dois CLs e nove CTs rumou para o Norte. Pouco encontrou o que fazer. Destruiu um CT. Ozawa, às 20h, ainda rumou para o Sul, procurando combate, mas nada encontrou e, protegido pela noite, com os dois Es, um CL e cinco CTs, retirou-se para águas metropolitanas. Tinha cum prido sua missão. Contudo, uma triste missão para quem era considerado, mesmo pelo inimigo, o melhor almirante japonês.
@@ -223,6 +258,8 @@ Com o fim da Batalha de cabo Engano, terminara também a Batalha do golfo de Ley
 ### Ação dos submarinos
 
 Tanto os submarinos japoneses como os norte-americanos estavam posicionades patrulhando as proximidades das Filipinas. Entretanto, excetuando-se os ataques iniciais dos dois submarinos, desfalcando a força de Kurita, a intervenção dos outros, de ambos os lados, na batalha foi muito pequena, ou mesmo nula.
+
+## Página 19
 
 ### Falhas
 
@@ -236,6 +273,8 @@ Nas comunicações japonesas, a mais grave falha se deu quando Ozawa não recebe
 
 O reconhecimento do inimigo, dos tipos e do número de navios, quando fruto de esclarecimento sem reação, apresentava certa veracidade. Mas as informações obtidas no fragor do combate foram bastante fàlhas e falsas, como as recebidas por Halsey de seus aviões, na Batalha do mar de Sibuyam. As confusões de Kurita, julgando estar combatendo na Batalha de Samar com a 3ª esquadra, vendo NAes e Cs inexistentes, são menos explicáveis. Ambos tomaram decisões vitais para o êxito de suas missões com base nessas informações. Talvez elas esti vessem de acordo com seus desejos.
 
+## Página 20
+
 ### Erros
 
 Analisar e criticar decisões de chefes tomadas em meio à confusão das batalhas, anos depois, na comodidade dos gabinetes, é arriscado, quando as situações são muito peculiares, impossíveis de ser reproduzidas. Em relação à Batalha do golfo de Leyte, cautelosamente consideramos "erradas" as decisões pelas consequências negativas que tiveram, ou poderiam ter tido.
@@ -248,6 +287,8 @@ Há um fator, aventado por diversos autores, que poderá desvendar o segredo: a 
 
 Com suas atitudes evasivas, Kurita pelo menos aceitava ter errado, o que não aconteceu com Halsey. Em momento algum, em relatos, declarações, livro de memórias, aceita ter sido errada a sua decisão de procurar combate com o que chama "corpo principal" do inimigo, abandonando a proteção imediata da operação anfíbia. Os debates sobre o assunto estenderam-se por muitos anos. Na defesa de seu ponto de vista, Halsey criticou publicamente Kinkaid por ter deixado desamparado o Taffy 3, o que criou uma polêmica que acabou com a antiga amizade.
 
+## Página 21
+
 Nitidamente, o pensamento militar de Halsey foi influenciado por sua personalidade. O que caracterizara as atividades navais do almirante em toda a sua car reira. especialmente na campanha do Pacífico. fora a agressividade. expressa na forma pela qual dirigiu operações a seu cargo, em suas atitudes, nas declarações radicais, o que o fez o chefe naval mais admirado e confiado pelas guarnições, e privilegiado pela mídia. Personalizava o guerreiro do mar. E a sua atuação confir mava esse julgamento. Logo no inicio da guerra, as primeiras ações ofensivas norte-americanas - ataques de NAes às ilhas fortificadas japonesas -, foram audaciosamente chefiadas por ele. No coroando no Sudoeste do Pacífico, conquistando as ilhas Salomão, possivelmente as mais difíceis operações da guerra, Halsey foi impecável. Entretanto esse guerreiro invencível nunca tomara parte em uma batalha naval. Nas maiores e mais importantes batalhas do Pacífico, de Midway e Marianas, uma moléstia que o prendeu em cama de hospital fez com  que a participação fosse responsabilidade da 5ª esquadra, comandada por Spru ance, que a dirigiu e venceu. O encontro com Ozawa seria sua desejada oportunidade, cuja perda, aliás, lamentou-se, ao receber a ordem de ir para o Sul com os Es.
 
 Também atuou sobre a decisão de Halsey a comparação com a decisão de Spruance nas Marianas. Comandava esse último tanto a operação anfíbia como a defesa ao largo pela, no caso, FT 58. Foi atacado por esquadra japonesa, sob o comando de Ozawa, constituída de NAes Es, Cs e CTs, além de 600 aviões baseados em ilhas próximas. A reação norte-americana, principalmente a aérea, foi violenta. Derrubaram 400 aviões, afundaram três NAes e avariaram cinco. Ozawa recuou, perseguido pela FT 58. Spruance, o tipo de intelectual brilhante, comedido, sem grandes arroubos, decidiu que a defesa da operação anfibia tinha prioridade sobre a destruição dos restos da força japonesa. Mandou voltar a FT 58. Essa decisão foi extremamente criticada pelos aviadores, que julgaram não ter Spruance o espírito ofensivo necessário por ser um "almirante de cruzadores": os quais ele havia comandado em sua carreira. Halsey se considerava um aviador, embora só tivesse tirado o brevê aos 54 anos. Não quis repetir o que havia sido alvo de crítica, inclusive dele próprio. Fez o contrário. E os dois almirantes sofreram ásperas referências tendo agido ao reverso, em situações semelhantes. Os aviadores do estado-maior de Nimitz deram a Halsey uma razão para não imitar Spruance. Nas instruções operativas, enquanto as dirigidas a Spruance diziam simplesmente que deveria defender a operação anfíbia, as enviadas a Halsey acrescentaram: "No caso de haver oportunidade de destruir uma maior parte das forças navais inimigas, ou podendo isso ser criado, tal destruição torna-se tarefa prioritária." Era o que Halsey queria.
@@ -255,6 +296,8 @@ Também atuou sobre a decisão de Halsey a comparação com a decisão de Spruan
 A decisão errônea de Halsey, embora com as consequências que poderiam ter tido, não foi reconhecida oficialmente. Nimitz, em seu relatório, faz referência ao fato. Entretanto, publicamente, disse que a decisão de Halsey fora correta. E o comandante em chefe da marinha norte-americana, almirante Ernest King, não quis receber explicações de Halsey, afirmando que ele tivera luz verde para mandar de volta a FT 34. Foi citado nominalmente pelo presidente e promovido a Fleet Admiral, posto que só Nimitz, King e Lehey (chefe do estado-maior de Roosevelt) atingiram. A não condenação pública de Halsey justifica-se. No fim de uma guerra vitoriosa, não se iria empanar a figura do almirante de atuação mais brilhante e reconhecida.
 
 Pode-se concluir quanto à personalidade dos chefes ou ao seu estado de saúde que influem em suas decisões militares. E também é interessante mostrar que, na confusão de uma guerra, por mais que se prepare e planeje, seu desenvol vimento é sempre eivado de eventualidades que a condicionam. O erro de Kurita contrabalançou o erro de Halsey.
+
+## Página 22
 
 ### Conclusões
 
@@ -265,6 +308,8 @@ O plano Sho 1, e não haveria outro melhor nas circunstâncias, seria extremamen
 A derrota japonesa não teve o caráter decisivo de Midway ou Marianas, nem foi algo inesperado. Foi imposta, em um crescendo, desde o momento em que os Estados Unidos começaram a reagir. Foram sendo corroídas as linhas de defesa nipônicas, destruídas suas forças armadas, diminuída sua capacidade de produção e até afetado seu moral Além dos enfrentamentos militares, havia a disputa entre dois estágios de desenvolvimento científico e técnico, entre a capacidade industrial dos adversários, entre os recursos disponíveis, inclusive humanos, dis puta na qual, apesar dos extraordinários esforços japoneses, mormente na área militar, a superioridade dos Estados Unidos era flagrante. Yamamoto, o chefe naval, a quem foram devidos os êxitos iniciais da marinha japonesa, não tinha ilusões. Quando declarou que a vitória só seria conseguida com "a ocupação da Casa Branca"; o que foi considerado uma arrogância risível, na realidade queria dizer que o vitorioso impulso inicial não resistiria ao tempo, que iria permitir o "despertar do colosso" (!).
 
 Os números definem bem as dimensões da derrota japonesa. Vinte e seis navios de guerra, ou 45% das unidades ,envolvidas, ou 305.710 toneladas, foram as perdas japonesas, contra seis navios de guerra, ou 2,8% das forças envolvidas, ou 36 mil toneladas, do lado norte-americano. Mas impressionante é como os ataques às linhas de suprimento nipônicas devem ter afetado a logística militar e nacional. De 1942 a 1944, dos 10 milhões de toneladas de navios mercantes produzidos, mais de 8 milhões foram afundados, 60% por submarinos. Depois da Batalha do golfo de Leyte, o Japão dispunha, ainda, de muitos navios de guerra e aviões, porém sem organização homogênea e imobilizados por falta de combustível e pessoal preparado. Foram sendo destruídos atracados nos portos, nas bases aéreas e no mar.
+
+## Página 23
 
 Entretanto a resistência japonesa continuou. As batalhas terrestres para a conquista de todas as ilhas Filipinas duraram até setembro de 1945, a sua rendição coincidindo com a rendição do Japão. A ilha de Iwo Jima só foi ocupada com grandes perdas de pessoal. A de Okinawa, com enormes perdas de pessoal e de navios, estes vítimas das revoadas de kamikases, além de ataques de submarinos e lanchas suicidas. Os sacrifícios exigidos nessas duas conquistas serviram para justificar o lançamento das bombas atômicas, pois estimava-se que seria de um milhão o número de vítimas nos desembarques em território metropolitano.
 

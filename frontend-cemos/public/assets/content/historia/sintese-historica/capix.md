@@ -1,5 +1,7 @@
 # Cap. IX - A Marinha do Brasil na primeira Guerra Mundial
 
+## Página 1
+
 ### CMG (RM1) FRANCISCO EDUADRO ALVES DE ALMEIDA
 
 No dia 28 de junho de 1914, em Sarajevo, o herdeiro do trono do Império Austro-Húngaro, o Arquiduque Francisco Ferdinando e sua mulher Sofia foram assassinados por um nacionalista de origem sérvia, provocando uma sequência de eventos que culminaram na chamada Grande Guerra, posteriormente chamada de Primeira Guerra Mundial.
@@ -11,6 +13,8 @@ Em segundo lugar, a corrida armamentista entre o Reino Unido e a Alemanha, em es
 Em terceiro lugar, a disputa por mercados e colônias na África e na Ásia. O Império alemão considerava que, como uma potência emergente, tinha o direito a possuir colônias nos continentes africano e asiático, tal como os outros países europeus, como o Reino Unido, a França, a Itália, a Espanha, a Bélgica e Portugal. Esse desejo alemão trouxe mais tensão na relação entre os países europeus.
 
 Em quarto lugar, a inflexibilidade dos acordos militares e da política de alianças entre os países europeus, fazendo com que uma crise pudesse escalar para um conflito armado, sem possibilidades de negociação e entendimento. Dois desses acordos encontravam-se em franca oposição, de um lado a chamada **Tríplice Entente, congregando o Reino Unido, a França e a Rússia** e, de outro lado, a **Tríplice Aliança composta do Império alemão, o Império Áustro-Húngaro e a Itália**. Respirava-se um clima de paz armada que podia se transformar em uma guerra incontrolável.
+
+## Página 2
 
 Em quinto lugar, por um sentimento de revanchismo de parte expressiva da população francesa, ainda agastada pela derrota na Guerra Franco-Prussiana de 1870, quando foi perdida a região da Alsácia-Lorena para os alemães.
 
@@ -24,6 +28,8 @@ Nesse período, a guerra terrestre transformou-se em uma luta estática ao longo
 
 A Esquadra de Alto-Mar do Império alemão realizou incursões na costa inglesa, chegando a bombardear algumas vilas litorâneas, mas sempre evitou, nesse período, um confronto direto com a Marinha Real britânica, mais poderosa. Por sua feita, os alemães também utilizaram uma nova arma considerada estratégica, os seus submarinos, para atacar o comércio marítimo dos franceses e britânicos com uma guerra de corso que tinha o propósito de estrangular o abastecimento para o Reino Unido.
 
+## Página 3
+
 Até o início de 1917, os submarinos alemães procuraram respeitar os navios mercantes neutros, salvo alguns incidentes pontuais. Eles evitavam atacar navios mercantes dos Estados Unidos da América, que se apresentavam como uma grande potência em ascensão. No dia 31 de janeiro de 1917, o Império alemão estabeleceu a guerra submarina irrestrita, na qual não haveria mais intimação prévia, verificação de carga e auxílio aos náufragos que estavam a serviço direto, indireto ou suspeito do inimigo. O propósito principal dos germânicos era impedir a chegada de sobressalentes, matérias-primas e abastecimentos para as ilhas britânicas por meio de um bloqueio submarino. Os neutros assim poderiam sofrer as consequências diretas dessas ações submarinas. O Brasil enviou, em seguida ao estabelecimento da guerra submarina irrestrita, uma nota de protesto, frisando que:
 
 *"tal bloqueio não seria regular nem efetivo e desobedeceria aos princípios do Direito e cláusulas convencionais estabelecidas para operações militares desta natureza ... sente-se no dever de protestar contra este bloqueio"*
@@ -36,6 +42,8 @@ O Brasil naquele período já vinha se aproximando dos Estados Unidos da Améric
 
 Os acontecimentos se precipitaram rapidamente. No dia 20 de maio, o Vapor Tijucas foi afundado perto de Brest, na França, e, logo em seguida, o Lapa foi também afundado próximo ao Cabo Trafalgar, não havendo perdas humanas nos dois ataques. O Governo brasileiro imediatamente revogou a neutralidade e determinou a utilização dos 45 navios alemães que haviam sido apresados em portos nacionais. A opinião pública nacional exigia nas ruas ações mais efetivas contra os alemães. A posição brasileira passou a ser ostensivamente a favor dos aliados. A Alemanha protestou contra a ocupação de seus navios mercantes, no que foi contestada pelo governo brasileiro ao dizer que não se tratava de um ato de represália, mas sim de legítima defesa dos interesses nacionais afetados pelos torpedeamentos.
 
+## Página 4
+
 No dia 18 de outubro de 1917, ocorreu o quarto afundamento de navio mercante nacional. Dessa feita a vítima foi o Macau, a cerca de 200 milhas do Cabo Finisterre. Naquela oportunidade, o submarino alemão parou o vapor brasileiro e aprisionou o seu comandante e despenseiro. Desses nunca mais se tiveram notícias. O governo de Venceslau Braz, não tendo o que fazer, reconheceu e proclamou o estado de guerra iniciado pelo Império alemão contra o Brasil. A partir dessa data, o Brasil estava em guerra com a Alemanha.
 
 A grande preocupação estratégica do Brasil continuava a ser a região platina na fronteira com a Argentina. No campo naval, não só no sul houve essa atenção, mas também o controle e a manutenção das linhas de comunicação na costa brasileira contra corsários de superfície e submarinos inimigos e a vigilância e defesa de costa contra ações inimigas. O Poder Naval, para atender a essas demandas, era baseado na Esquadra adquirida em 1908 pelo Almirante Alexandrino Faria de Alencar quando foi Ministro da Marinha de Monso Pena. **Existiam duas correntes de pensamento naval no Brasil naquele período que eram diametralmente opostas.** A primeira apregoava o domínio do mar pleno, com a **constituição de uma grande e poderosa Marinha**, composta de grandes navios, seguindo os princípios que Alfred Mahan expressara no seu livro de 1910, The influence of sea power upon history 1660-1783, que era o domínio do mar por meio de uma batalha decisiva. Uma segunda concepção estratégica imaginava **concentrar os poucos recursos nacionais em maior número de navios capazes de proteger não só as linhas de comunicação como o extenso litoral**.
@@ -44,6 +52,8 @@ Prevaleceu a segunda opção defendida pelo Ministro da Marinha de Rodrigues Alv
 
 Em uma viagem de inspeção para a escolha do local a ser construído esse porto, o Ministro Júlio de Noronha se deslocou para a Baía da Ilha Grande, em janeiro de 1906. Foram acompanhando a comitiva ministerial, o Encouraçado Aquidabã e os Cruzadores Barroso e Tiradentes. Diversos almirantes acompanharam a comitiva embarcados nesses navios. Depois de um dia particularmente quente e cansativo para os seus integrantes, por volta das 22 horas e 45 minutos, ocorreu uma forte explosão de munição nos paióis do Aquidabã, quando o navio estava fundeado junto à ponta da Baía de Jacuecanga, próximo a Angra dos Reis. Rapidamente o navio afundou no local. O ministro não se encontrava a bordo, pois fora pernoitar no Barroso. Nesse trágico acidente, morreram o filho do ministro, que era o seu ajudante de ordens, os Almirantes João Cândido Brasil, Rodrigo José da Rocha e Francisco Calheiros da Graça, o Capitão de Mar e Guerra José Pedro Alves de Barros, o comandante e imediato do Aquidabã, Capitão de Fragata Arthur Serra Pinto e Luis Henrique de Noronha e o Capitão de Corveta João Augusto dos Santos Porto, da Casa Militar de Rodrigues Alves. A quase totalidade da tripulação do encouraçado pereceu nesse trágico acidente. Como não poderia deixar de ser, o Ministro Noronha ficou inconsolável e os planos para a construção do futuro porto militar que apoiaria a Esquadra imaginada por ele foram abandonados.
 
+## Página 5
+
 Ao final daquele ano de 1906, assumiu o Ministério da Marinha o Almirante Alexandrino Faria de Alencar, que defendia a ideia da constituição de Esquadras compostas por grandes e poderosos navios, um retorno à primeira concepção estratégica naval.Alexandrino era senador e como tal combatera da tribuna o programa de Noronha. Acreditava que os grandes navios eram a solução ideal para a Marinha. Depois de um amplo debate, que muitas vezes alcançou um nível inflamado de ideias contrapostas, opondo duas concepções distintas de Marinha, Alexandrino conseguiu alterar a constituição do programa de 1904 formulado por Noronha, por uma Esquadra considerada mais poderosa formada por dois encouraçados de 20 mil toneladas, dois cruzadores de 3.200 toneladas e dez contratorpedeiros de 650 toneladas. Sua construção se daria no Reino Unido. O que Alexandrino planejou foi a construção de dois encouraçados do tipo Dreadnought com maior tonelagem, maior poder de fogo e maior velocidade em relação aos encouraçados anteriores. 
 
 O Dreadnought fora um desenho arquitetado por um engenheiro italiano de nome Vittorio Cuniberti que foi aproveitado pelo Primeiro Lorde do Mar da Marinha britânica, Lorde Fisher, para equipar a Marinha Real. Esse tipo de navio era superior em tudo em relação aos encouraçados anteriores. Ele foi tão importante para a constituição das Marinhas daquele período que os encouraçados passaram a ser "pré-Dreadnoughl' para aqueles construídos antes do "Dreadnought" de 1906, de "Dreadnought" para os de sua classe e "super-Dreadnought" para os grandes navios mais poderosos e aperfeiçoados.
@@ -51,6 +61,8 @@ O Dreadnought fora um desenho arquitetado por um engenheiro italiano de nome Vit
 Em 1910, essa nova Esquadra chegou ao Brasil e ela foi o núcleo básico do Poder Naval brasileiro em 1917, logo depois da declaração de guerra contra a Alemanha.
 
 No dia 2 de novembro de 1917, isto é pouco mais de uma semana após a declaração do estado de guerra com a Alemanha, dois navios mercantes brasileiros foram atacados quando se encontravam no Porto Grande na Ilha de São Vicente, em Cabo Verde, o Guaíba e o Acari. A defesa da ilha estava a cargo da Marinha portuguesa, porém as canhoneiras lusitanas fundeadas no porto pouco puderam fazer contra o submarino atacante, que se evadiu da área. Depois de torpedeados, ambos os navios conseguiram encalhar no porto, salvando-se a carga, no entanto dois tripulantes faleceram. Eram o quinto e sexto ataques a navios nacionais na guerra. A guerra submarina prosseguiu com extrema violência.
+
+## Página 6
 
 ## A MARINHA DO BRASIL ATUANDO NA COSTA BRASILEIRA
 
@@ -62,6 +74,8 @@ Em razão das pressões da opinião pública nacional, que exigia de Venceslau B
 
 As Forças Armadas brasileiras eram pequenas e não se comparavam com as dos beligerantes, no entanto Olinto ofertou quatro contribuições ao esforço de guerra que foram aceitas pelos aliados. Em primeiro lugar, o envio de uma missão médica chefiada pelo doutor Nabuco de Gouveia, que atuaria na França. Essa missão seguiu para esse país e só regressou ao Brasil em 1919, após o término da guerra. A segunda contribuição foi o envio de um grupo de aviadores militares, a maior parte deles da Marinha, para se agregarem às Forças Aéreas aliadas na Inglaterra em missões de patrulha no Canal da Mancha. A terceira contribuição foi a agregação de um grupo de oficiais do Exército, que atuou junto às Forças Terrestres francesas na frente ocidental e por fim a constituição de uma Divisão Naval que operou no triângulo formado por Dacar, Cabo Verde e Gibraltar.
 
+## Página 7
+
 ## A DIVISÃO NAVAL EM OPERAÇÕES DE GUERRA
 
 O Ministro da Marinha, Almirante Alexandrino Faria de Alencar, que retornou pela terceira vez para assumir a pasta no governo Venceslau Brás, determinou ao Chefe do Estado-Maior, Vice-Almirante Adelino Martins, que preparasse uma Divisão Naval "para seguir para mares europeus, reunindo-se à Esquadra oportunamente indicada". Essa divisão seria comandada por um almirante e composta dos Cruzadores Bahia e Rio Grande do Sul, Contratorpedeiros Piauí, Santa Catari na, Paraíba e Rio Grande do Norte. 7 Posteriormente, foram incorporados à divisão o Cruzador Auxiliar e Tênder Belmonte, um navio alemão, o Valesia, que fazia parte da lista dos navios arrestados quando da declaração de guerra e o Rebocador de Alto-Mar Laurindo Pitta. Os navios provinham do Programa de Renovação Naval de Alexandrino e eram os mais modernos que a Marinha dispunha. Apesar de novos,apresentavam uma notável obsolescência e muitos problemas na condução de suas máquinas, em especial a corrosão acentuada dos tubos das caldeiras e condensadores.
@@ -72,13 +86,17 @@ Para o comando da **DNOG (Divisão Naval em Operações de Guerra)**, nome pelo 
 
 Percebendo Frontin que as tripulações estavam com um nível de adestramento deficiente, executou um intensivo programa de exercícios para prepará-las para se incorporar às divisões navais britânicas que atuavam na costa africana. Além do treinamento, Frontin determinou que os comandantes acompanhassem detalhadamente os preparativos logísticos, incluindo aí os reparos necessários para colocar os navios em plena capacidade de combate. Um dos itens que mais preocupou o Almirante Frontin foi o suprimento de carvão para a divisão, uma vez que o carvão nacional era contraindicado por possuir grande quantidade de enxofre. O carvão de melhor qualidade, o Cardiff, proveniente do Reino Unido, estava sob rígido controle desse país que ainda possuía navios que utilizavam aquele combustível. Outro ponto preocupante foi o estado dos tubos das caldeiras e condensadores principalmente dos cruzadores. Muitos desses tubos apresentaram altos índices de corrosão que poderiam afetar os navios em operações de combate.
 
+## Página 8
+
 Um programa intenso de exercícios foi definido e seguido pelas tripulações de modo a se prepararem para as patrulhas antissubmarino. Exercícios de artilharia, táticas, comunicações, controle de avarias e de formaturas foram conduzidos em áreas próximas ao Rio de Janeiro, especialmente na Baía da Ilha Grande. Frontin determinou também que fossem controladas, pelos comandantes de navios, as tabelas de consumo de combustível, em razão especialmente da grande travessia Fernando de Noronha a Freetown, na Serra Leoa.
 
 No dia 7 de maio de 1918, suspenderam do Rio de Janeiro os Contratorpedeiros Piauí e Paraíba e, dois dias depois, o Rio Grande do Norte e o Santa Catarina em direção a Salvador. O s dois cruzadores, por sua vez, suspenderam do Rio de Janeiro no dia 11 de maio, tendo o capitânia recebido a visita do Presidente da República Venceslau Brás, além dos Ministros da Marinha, Alexandrino Faria de Alencar, das Relações Exteriores, Dr Nilo Peçanha e da Fazenda Dr Antonio Carlos.
 
 Posteriormente, os quatro contratorpedeiros se dirigiram para Natal enquanto os cruzadores seguiram para Recife, onde atracaram no dia 24 de junho. Depois de melhorarem as condições materiais e de adestramento nesses portos, os contratorpedeiros e cruzadores seguiram para o ponto de encontro em Fernando de Noronha. O Cruzador Auxiliar e Tênder Belmonte, carregado de carvão e sobressalentes, suspendeu do Rio de Janeiro em 6 de julho, enquanto o Rebocador de Alto-Mar Laurindo Pitta largou do Rio de Janeiro dois dias depois, parando em Salvador e de lá seguindo para Fernando de Noronha para se juntar aos demais navios. Desse ponto, a divisão completa com os oito navios seguiu em direção a Freetown, na Serra Leoa. A guerra começou para a DNOG.
 
-## AS TRAVESSIAS E O PERIGO SUBMARINO
+## Página 9
+
+### AS TRAVESSIAS E O PERIGO SUBMARINO
 
 Antes de realizar a travessia Fernando de Noronha a Freetown, o Almirante Frontin publicou uma Ordem do Dia na qual disse:
 
@@ -91,6 +109,8 @@ Foram estabelecidas instruções especiais de segurança para o deslocamento dos
 A travessia Fernando de Noronha a Freetown iniciou-se no princípio do mês de agosto. Os navios navegaram totalmente às escuras, em posições muito próximas um do outro, cumprindo um plano evasivo de zigue-zague para dificultar a solução do tiro torpédico dos submarinos inimigos. Um ponto relevante nessa longa travessia, que levou cerca de nove dias, foi a capacidade marinheira das tripulações dos navios. Muitas fainas de transferência de carvão ocorreram em pleno alto-mar e as manobras foram conduzidas de modo profissional e eficiente. 
 O Belmonte transferia o carvão para o Laurindo Pitta que, em pleno alto-mar, atracava a contrabordo dos cruzadores e contratorpedeiros. Os exercícios de artilharia, comunicações e de manobras continuaram durante todo o percurso até Freetown.
 
+## Página 10
+
 Durante a travessia, no terceiro dia de viagem, o Almirantado britânico alertou para a presença de submarinos na rota da divisão e, logo após o recebimento dessa mensagem, o Contratorpedeiro Rio Grande do Norte assinalou ao capitânia o avistamento de um objeto suspeito que podia ser um submarino. O objeto desapareceu depois de certo tempo sem ser identificado.
 
 No dia 9 de agosto, a divisão encontrou o Encouraçado Britannia, da Marinha britânica, próximo a Freetown. Esse navio acompanhou a divisão até os locais de fundeio nesse porto. Frontin, ao se apresentar ao Almirante Sheppard, comandante da divisão de cruzadores que operava no O este africano, submeteu as suas instruções de trânsito a essa autoridade que considerou que nada devia ser modificado "por tudo estar perfeito". Em Freetown, os navios permaneceram por 14 dias, reabastecendo-se de carvão e víveres e executando pequenos reparos. No dia 23 de agosto, os oito navios suspenderam de Freetown em direção de Dacar, no Senegal, ponto de apoio francês no ocidente africano.
@@ -100,6 +120,8 @@ Essa travessia foi particularmente difícil, pois os navios navegaram com mar gr
 Na véspera da chegada a Dacar, na noite de 25 de agosto, a DNOG sentiu pela primeira vez o perigo de um suposto ataque submarino. Por volta das 20h15 o Cruzador Bahia, o Contratorpedeiro Rio Grande do Norte e o Rebocador Laurindo Pitta perceberam um submarino na superfície. Imediatamente, abriram fogo contra esse inimigo. Foi observada uma esteira fosforescente como se fosse um torpedo lançado por esse submarino, que passou a cerca de 20 metros da popa do Belmonte. O Rio Grande do Norte realizou um contra-ataque contra esse suposto inimigo, que logo depois não foi mais avistado.
 
 No dia 26 de agosto, a DNOG finalmente fundeou em Dacar, uma possessão francesa importante e ponto de chegada e saída de comboios na África Ocidental. As patrulhas antissubmarino iriam começar. No entanto, novas provações estavam a caminho para as tripulações brasileiras.
+
+## Página 11
 
 ## A TERRÍVEL GRIPE ESPANHOLA
 
@@ -113,6 +135,8 @@ A partir do dia 6 de setembro, os doentes começaram a sobrecarregar os serviço
 
 Cerca de 90% das tripulações estavam prostradas, o que prejudicou a condução do serviço de bordo. Tudo foi interrompido, ventilação, serviço sanitário, cozinhas, lanchas dos navios e a condução do serviço diário. Os camarotes, alojamentos, praça-d'armas e até a câmara do Almirante Frontin serviram de enfermaria para os doentes. Era um gemer, um gritar em desespero, uma espera pela morte que não poupava ninguém.
 
+## Página 12
+
 Os tripulantes que não estavam contaminados procuraram auxiliar o máximo que podiam os seus colegas. Faziam a higiene e asseio dos doentes, cozinhavam, distribuíam água e tratavam os contaminados. Era um espetáculo aterrador. As mortes começaram a aumentar rapidamente. As cenas foram muito perturbadoras.
 
 Um marinheiro, em completo desespero, ardendo em febre, coberto de suor, sorveu a sua própria expectoração como forma de debelar a sede. No dia seguinte, amanheceu morto. Outro marinheiro morto foi encontrado agarrado ao pescoço de um moribundo, sendo difícil até retirá-lo em razão do enrijecimento cadavérico.
@@ -124,6 +148,8 @@ Os mortos foram sendo colocados nos conveses dos navios e de lá entregues a lan
 Durante a gripe, o Piauhy, por estar em melhores condições sanitárias, realizou patrulha antissubmarino no arquipélago de Cabo Verde em apoio à Marinha portuguesa. Assim mesmo, foi atingido pela gripe, tendo falecido alguns militares nessa possessão lusitana.
 
 Finalmente, no dia 3 de novembro, a DNOG suspendeu de Dacar em direção a Gibraltar, base onde se encontrava o Almirante Heathcoat Grant, que assumiria o comando operacional da divisão. O Rio Grande do Sul permaneceu no Senegal para a retubulação de seus condensadores. O Belmonte recebeu a incumbência de transportar trigo para a Europa, em razão da falta de cargueiros nos países aliados. O Laurindo Pitta regressou ao Brasil por não ser mais necessário os seus serviços. Sete dias depois, os navios chegaram a Gibraltar a tempo de assistir ao sepultamento das vítimas do Britannia, afundado por um submarino alemão dias antes, na entrada do Mediterrâneo. No dia 11, finalmente foi assinado o armistício que deu fim à Grande Guerra. Frontin publicou uma Ordem do Dia na qual terminou dizendo que "os marinheiros brasileiros depois destas duras provas de valor e força de vontade, mostraram que são capazes de honrar seus antepassados e de escrever belas páginas da história da nossa Pátria".
+
+## Página 13
 
 ## A FUNÇÃO DIPLOMÁTICA E O REGRESSO DA DNOG
 

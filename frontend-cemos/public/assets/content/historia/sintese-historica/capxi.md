@@ -2,6 +2,8 @@
 
 ### CA (RM1) GUILHERME MATTOS DE ABREU
 
+## Página 1
+
 **Certa vez, ouvimos de um diplomata chinês: "Militares e diplomatas são parceiros de toda hora! São como se fossem as duas mãos de um mesmo corpo!" No entanto, esta relação nem sempre é percebida, por se conferir ênfase ao discurso "política externa sem seguranfa ou defesa" onde os formuladores imaginam escudar-se na fórmula "soft power" (poder suave ou brando), ainda que a história e o acompanhamento do noticiário no dia a dia indiquem que, infelizmente, os conflitos façam parte da realidade humana e assim continuarão por muito tempo.**
 
 O Barão do Rio Branco assinalava que o diplomata e o militar "são sócios aparecem, em postos de continência, o que se prestam mútuo auxílio. Um expõe o direito e argumenta com ele em prol da comunidade, o outro bate-se para vingar o direito agredido, respondendo a violência com violência". Este argumento, entretanto, não atende plenamente à relação entre os dois segmentos, pois pressupõe o fracasso de um para que o outro possa atuar. 
@@ -12,7 +14,9 @@ O fato é que o culto ao Direito e o uso do poder coercitivo são temas recorren
 
 Diplomatas e militares são parceiros de toda hora! A Marinha, em particular, por suas características, historicamente tem atuação relevante no apoio à demonstrava ao Brasil foi forjado na política externa brasileira.
 
-## OS INSTRUMENTOS DA POLÍTICA EXTERNA
+## Página 2
+
+### OS INSTRUMENTOS DA POLÍTICA EXTERNA
 
 Neste ponto, torna-se oportuno categorizar os instrumentos de que dispõe uma nação, de modo a facilitar a percepção das possibilidades e amplitude de atuação do setor defesa em proveito da política externa, cabendo destacar que, eventualmente, as atividades descritas poderão atender a mais de uma categoria:
 
@@ -36,7 +40,9 @@ Exceto no caso dos denominados Instrumentos Militares Emergentes, os Instrumento
 
 Detalhar a atuação, instrumento por instrumento, excederia o espaço disponível para este Capítulo. Assim, a argumentação a seguir limitar-se- á àqueles aspectos relacionados à Marinha.
 
-## A DIPLOMACIA
+## Página 3
+
+### A DIPLOMACIA
 
 A atividade diplomática tornou-se cada vez mais complexa, dinâmica e multidisciplinar, envolvendo uma diversidade de órgãos e agentes que podem e devem ser combinados para permitir alcançar os efeitos desejados. Por óbvio, o coração do sistema é o Ministério das Relações Exteriores (MRE).
 
@@ -48,6 +54,8 @@ A Marinha contribui, ainda, para a boa imagem do País, ao exercer com proficiê
 
 Foram definidos ainda conceitos complementares importantes, como Águas Interiores, que são as situadas no interior das linhas de base do mar territorial; as Águas Arquipelágicas, circunjacentes aos arquipélagos como os de Martim Vaz e Trindade, de Fernando de Noronha e o Atol das Rocas; o Alto-Mar, que corresponde as partes não incluídas na Zona Econômica Exclusiva, no mar territorial ou nas águas interiores, nem nas águas arquipelágicas de um Estado, e é franqueado a todos os Estados, sejam eles costeiros ou não, desde que utilizado para fins pacíficos; e o regime das ilhas; entre outros.
 
+## Página 4
+
 Uma parte importante da Convenção é o artigo 4, onde encontramos que, quando um Estado costeiro tiver a intenção de estabelecer o limite exteri or de sua Plataforma Continental (PC) além das 200 milhas marítimas, apresentará à Comissão de Limites da Plataforma Continental (CLPC) da ONU as características de tal limite, juntamente com informações científicas e técnicas de apoio. Estabeleceu-se o prazo de até dez anos, após a entrada em vigor da Convenção, para que fosse apresentada a reivindicação à CLPC, posteriormente prorrogado.
 
 Aqui, vislumbrou-se uma oportunidade, que os brasileiros souberam aproveitar. Ao longo de dez anos, desde 1987, a Marinha e a Petrobras, com o auxílio da comunidade científica, desenvolveram um trabalho de levantamento intenso e acurado, denominado Levantamento da Plataforma Continental (LEPLAC), de modo a delimitar o relevo submarino, para que o Brasil pudesse reivindicar essa área excedente à linha de 200 milhas. Além disso, no Arquipélago de São Pedro e São Paulo, construiu-se uma estação científica, permanentemente guarnecida por um pequeno grupo de pesquisadores, desde 1998, o que permitiu configurar uma ZEE de 200 milhas em seu entorno, de área maior que o estado de Mato Grosso do Sul.
@@ -55,6 +63,8 @@ Aqui, vislumbrou-se uma oportunidade, que os brasileiros souberam aproveitar. Ao
 O somatório das áreas inseridas no contorno das duzentas milhas em relação ao continente e ilhas oceânicas, acrescido da área adicional reivindicada entre 200 e 350 milhas, perfaz cerca de 4.500.000km, da mesma ordem de grandeza da área da Amazônia Verde. É como se tivéssemos uma outra Amazônia! E esta Amazônia é Azul.
 
 Trata-se de uma região imensamente rica e de grande influência na economia do País, em função do fluxo de comércio marítimo, tanto exterior quanto doméstico, da extração de hidrocarbonetos, da pesca e do turismo. Além disso, apresenta potencialidades econômicas relevantes por explorar, como as relacionadas à geração de energia, a explotação de recursos minerais de vários tipos e a produção de fármacos derivados da biodiversidade marinha.
+
+## Página 5
 
 ## DIPLOMACIA PARALELA E DIPLOMACIA PÚBLICA
 
@@ -74,7 +84,9 @@ Envolve cooperação, controle de armas convencionais, construção de medidas d
 
 A existência de uma indústria nacional de equipamentos militares contribui para uma maior autonomia do país, tanto em aspectos de ordem logística quanto política.
 
-## ASSISTÊNCIA MILITAR E EDUCAÇÃO MILITAR
+## Página 6
+
+### ASSISTÊNCIA MILITAR E EDUCAÇÃO MILITAR
 
 Eventuais parcerias com as Marinhas de outros países também contribuem para o melhor relacionamento e desenvolvimentos de confiança mútua. Um bom exemplo foi a realização de manutenção de meia-vida do Submarino Santa Cruz, da Armada da República Argentina, no Arsenal de Marinha do Rio de Janeiro - sinalizando o reconhecimento internacional da capacitação técnica da MB em manter e reparar submarinos -, tendo como contrapartida a manutenção das turbinas a gás das fragatas brasileiras no Arsenal Aeronaval argentino.
 
@@ -82,11 +94,13 @@ Quanto à educação militar, há mais de um século é oferecida a oportunidade
 
 O estudo da trajetória dos estagiários e alunos que participaram desses cursos, certamente, indicaria a existência de inúmeros indivíduos que atingiram elevados postos de natureza militar ou civil em seus países- comandantes de Força, ministros, embaixadores, titulares de instituições de relevo, etc. - propiciando relacionamentos importantes para a condução de nossa política externa.
 
-## DIPLOMACIA MILITAR
+### DIPLOMACIA MILITAR
 
 Neste Capítulo, adotou-se a expressão Diplomacia Militar para englobar as ações em que se mobilizem meios militares, impliquem ou não emprego de força ou ameaça do uso de força. Esses meios podem ser utilizados de diferentes maneiras, como, por exemplo, aplicando-os em diversas tarefas de apoio ou de representação (estas últimas, tradicionalmente associadas à expressão "mostrar a bandeira", constituem o exemplo mais tradicional de emprego de Forças Navais, em situação de normalidade); ou posicionando-os de modo a negociar a partir de uma situação de força, por ocasião de uma crise (o que pode ser atendido pela realização de exercícios em áreas de interesse). Assim, a Diplomacia Militar pode estar enquadrada como Instrumento Político-Militar e como Instrumento Militar.
 
 Tanto como Instrumento Político-Militar como Instrumento Militar, historicamente, a Diplomacia Naval é a que tem maior tradição, por seus predicados. Isto porque, ao contrário das limitações que sofrem as outras Forças Armadas, as Forças Navais são os únicos dispositivos militares capazes de atuar com significativa liberdade em tempo de paz, pois os navios de guerra, a despeito de todo armamento que dispõem, podem visitar portos estrangeiros sem provocar comoção. Característica que diversos governos aproveitam para empregar politicamente as suas Marinhas.
+
+## Página 7
 
 A Diplomacia Naval, em síntese, consiste no emprego de navios de guerra em apoio à Diplomacia, persuadindo, coibindo, apoiando ou compelindo outros atores.
 
@@ -119,6 +133,8 @@ As também tradicionais viagens do Navio-Veleiro Cisne B ranco;
 
 Por vezes, tais exercícios revestem-se de peculiaridades relacionadas à conjuntura regional, como é o caso dos frequentemente realizados na costa ocidental africana com as Marinhas lindeiras, voltados ao contro le e proteção do tráfego marítimo, com vistas à capacitação SARe ao combate a atividades ilícitas, como a pirataria.
 
+## Página 8
+
 *b) Intimidando em situação de crise ou como demonstração de interesse*
 
 A presença de uma Força Naval em determinada área marítima exerce dissuasão em uma situação de crise ou demonstra sólido interesse em determinada região. Mantida como força potencial, não realiza, em princípio, ações diretas. Por vezes, a simples notícia da existência pode influenciar o processo decisório.
@@ -128,6 +144,8 @@ A História do Brasil oferece bons exemplos: em uma época em que a posse da Col
 Na Guerra da Independência, o Almirante Cochrane chegou a São Luís, Maranhão (capitania então fiel à Coroa portuguesa), com um único navio. Insinuou aos locais que havia uma poderosa Força Naval a caminho, capaz de submetera cidade. Mesmo sem ver a Força Naval, que ainda estaria além do horizonte, as autoridades locais capitularam sem resistência.
 
 Na crise com a França, denominada Guerra da Lagosta (1963), o envio do Contratorpedeiro Tartu para proteger os barcos de pesca franceses foi imediatamente respondido pelo Brasil, que despachou navios de guerra para as proximidades da belonave francesa. Entretanto, a existência de uma poderosa Força-Tarefa da Marinha francesa em exercício na costa africana, a poucos dias de navegação do Nordeste brasileiro, causou preocupação às autoridades navais brasileiras.
+
+## Página 9
 
 *c) Operações de Paz*
 
@@ -146,6 +164,8 @@ Apoiar a Marinha do Líbano no patrulhamento e no monitoramento do seu mar terri
 
 Treinar o pessoal da Marinha do Líbano para que, no futuro, seja capaz de assumir o controle de suas águas territoriais.
 
+## Página 10
+
 *d) Operações de Apoio Humanitário*
 
 Apoiar outros países em momentos de dificuldade constitui uma boa ocasião para promover a aproximação entre povos e a construção de relações capazes de gerar oportunidades em proveito mútuo, bem como de se obter prestígio internacional.
@@ -160,7 +180,9 @@ Outro evento relevante foi o apoio ao Chile, após o terremoto de 27 de fevereir
 
 Ações humanitárias relacionadas à assistência a refugiados também se inserem neste contexto. Nos anos 70, em função do agravamento das guerras de libertação na África, inúmeras pessoas aventuraram-se a atravessar o Atlântico em embarcações de pesca, tentando alcançar o Brasil, por vezes ficando à deriva no oceano por insuficiência de combustível, o que demandou ações de busca e salvamento por parte da Marinha.
 
-## INSTRUMENTOS MILITARES
+## Página 11
+
+### INSTRUMENTOS MILITARES
 
 Enquadram-se nesta categoria os empreendimentos que impliquem uso ou ameaça de uso de força, em vários níveis, até alcançar o extremo, que é a guerra. 
 
@@ -200,7 +222,9 @@ Que, a despeito das dificuldades, as Forças Armadas sempre cumpriram as missõe
 
 São constatações importantes, que chamam a atenção para a necessidade de atualização e de preparo da Marinha para o enfrentamento de uma conjuntura adversa extrema, que pode materializar-se a qualquer tempo.
 
-## CONCLUSÃO
+## Página 12
+
+### CONCLUSÃO
 
 **"Diplomacia sem força militar é como música sem instrumentos."** Frederico, o Grande, da Prússia (1712-1786).
 
@@ -218,8 +242,9 @@ E a Marinha do Brasil, por suas características, sem dúvida, exerce papel rele
 
 O nosso Brasil merece que reflitamos sobre tais demandas!
 
+## Página 13
 
-## A GUERRA DA LAGOSTA E A DIPLOMACIA NAVAL
+### A GUERRA DA LAGOSTA E A DIPLOMACIA NAVAL
 
 Citada como exemplo em várias passagens deste Capítulo, torna-se oportuno ampliar alguns tópicos relacionados à Guerra da Lagosta (1963), ocasião em que o Brasil impediu que barcos franceses continuassem capturando lagostas em nossa plataforma continental. Trata-se de uma crise razoavelmente conhecida, mas que, ainda assim, mereceria um estudo integrado, uma vez que as diver sas abordagens encontradas são setoriais. Com isso, não se consegue apreender e harmonizar, em justa medida, todos os aspectos do tema, que envolve desentro samento entre órgãos do Governo e percepções equivocadas. Destaca-se que foi um confronto relacionado a um tema ambiental, possivelmente, o primeiro com essa característica em que o Brasil se envolveu.
 
@@ -232,6 +257,8 @@ Se, por um lado, o Presidente João Goulart aparentava considerar o assunto sem 
 A reação do Presidente Charles de Gaulle não ficaria imune a críticas, na França, visto que o país possuía investimentos no Brasil em escala muito mais relevante do que a que poderia ser alcançada com atividade lagosteira em nossas costas.
 
 O ex-Premier Paul Reynald, em meio a comentários a respeito da política externa executada por Charles de Gaulle, assinalou que vários ministros e outras autoridades tentaram chamar a atenção do presidente para a progressiva deterioração da situação. "Em vão. De Gaulle considerou que a majestade da França havia sido ultrajada".
+
+## Página 14
 
 A decisão francesa de enviar um dos navios de guerra que participavam de exercício nas costas do Senegal para o Nordeste brasileiro, com o propósito de proteger os barcos franceses, sinalizou a disposição de compelir pela força o Governo brasileiro a se retrair, representando uma escalada na crise. Salienta-se que a força tarefa francesa em adestramento na costa africana (e, portanto, relativamente próxima) era nucleada no Porta-Aviões Clemenceau e possuía um poder combatente expressivo, o que causou grande preocupação às autoridades navais brasileiras.
 
@@ -247,6 +274,8 @@ O cruzador encontrou a comitiva presidencial nas escalas no Peru, Chile e Urugua
 
 Esta mudança de proceder - uma demonstração de força, em função do meio empregado- evidentemente está vinculada à crise do ano anterior e aparenta ter sido temperada pela irritação do presidente francês em face de outros contenciosos e das matérias desagradáveis veiculadas pela mídia antes da viagem. O Cruzador Colbert era um dos navios mais modernos e poderosos da Marinha Nacional Francesa. A sua presença era uma amostra do desenvolvimento e da capacidade de projeção do Poder Militar francês , bem como, simbolicamente, do Poder Nacional, aspecto que remete a visita ao âmbito da Diplomacia Naval.
 
+## Página 15
+
 O presidente do Brasil, à época, era o Marechal Castelo Branco. Um homem culto e preparado, que nunca se entregava de improviso aos assuntos governamentais. Assim, orientou o Itamarati, quanto às implicações da viagem, que não teria "apenas o significado de restabelecimento total de antigas e históricas relações, nem de passear, num outro continente, a sua glória"; bem como estudou a coleção de documentos que lhes foram remetidos pelo Ministério das Relações Exteriores e os organizados pela Embaixada da França. Além disso, interferiu pessoalmente nos detalhes da programação. O general De Gaulle, ao contrário, não parece que fora bem orientado sobre Castelo, "a quem possivelmente imaginava um presidente como muitos outros que conhecera".
 
 O presidente francês desembarcou no Cais da Bandeira, fronteiro ao Edifício do Ministério da Marinha, no Rio de Janeiro, sendo recebido por Castelo Branco, em 13 de outubro; dali, seguiu pela Avenida Rio Branco, sob aplausos da população, até o Monumento aos Mortos da Segunda Guerra Mundial. Após a cerimônia de aposição floral, os presidentes deslocaram-se para o Aeroporto Santos Dumont, de onde uma aeronave da FAB os transportou à Brasília. Seguiu-se a viagem do presidente francês a São Paulo e o retorno ao Rio de Janeiro, onde foi oferecida uma recepção em retribuição ao Marechal Castelo Branco, a bordo do Colbert, atracado no Píer da Praça Mauá, em 15 de outubro. De Gaulle embarcou no "Caravelle présidentielle" no dia seguinte, retornando à França.
@@ -256,6 +285,8 @@ Os eventos por ocasião da chegada e as conversas travadas no voo e em Brasília
 O Almirante René Besnaut, então ajudante de ordens do presidente francês, apontou que esta viagem pareceu-lhe o marco grandioso de um projeto que se tornaria duradouro. O objetivo francês era o de criar, ampliar ou reforçar a cooperação econômica, científica e política com os países em vias de desenvolvimento e o de assumir um papel crescente no mundo. A América Latina ocupava, a este respeito, um lugar essencial aos olhos do dignitário francês; e a iniciativa de aproximação protagonizada por De Gaulle continuaria a dar frutos desde então. 
 
 É interessante observar como esta visita - um marco da Diplomacia de ambos os países- em sequência a uma crise relevante relacionada a um recurso do mar, pode contar com um meio naval, seja como símbolo de poder intimidante, como cenário ou como apoio à Diplomacia Presidencial. J,
+
+## Página 16
 
 Notas 
 
