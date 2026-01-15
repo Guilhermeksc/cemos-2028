@@ -395,6 +395,28 @@
   }
 }
 
+.btn.btn-pdf-simulado {
+  background: #fef2f2; // Vermelho pastel claro
+  border: 1px solid #ef4444; // Vermelho
+  color: #991b1b; // Vermelho escuro
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: #ef4444; // Vermelho sólido
+    color: white;
+  }
+}
+
 .btn.btn-nova {
   background: #f0fdf4; // Verde pastel claro
   border: 1px solid #10b981; // Verde

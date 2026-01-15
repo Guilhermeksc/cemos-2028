@@ -141,8 +141,8 @@
       // Frase de Efeito
       .quote-container {
         width: 100%;
-        padding: 30px 20px;
-        margin-bottom: 30px;
+        padding: 10px 5px;
+        margin-bottom: 5px;
         text-align: center;
         border-radius: 8px;
 
@@ -370,9 +370,65 @@
           font-weight: 500;
           min-width: 80px;
           text-align: center;
+          }
+        }
+
+        // Ideia Central
+        .ideia-central-container {
+          width: 100%;
+          padding: 15px 20px;
+          margin-bottom: 10px;
+          text-align: center;
+          background: linear-gradient(135deg, rgba(63, 81, 181, 0.03) 0%, rgba(63, 81, 181, 0.08) 100%);
+          border-left: 3px solid #3f51b5;
+          border-radius: 6px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
+
+          .ideia-central-label {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #3f51b5;
+            letter-spacing: 0.5px;
+            font-size: 13px;
+          }
+
+          .ideia-central-text {
+            font-weight: 500;
+            color: #333;
+            font-size: 15px;
+            line-height: 1.5;
+          }
+        }
+
+        .principal-obra {
+          margin-top: 16px;
+          text-align: center;
+          font-size: 14px;
+          color: #444;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 6px;
+
+          .principal-obra-label {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #3f51b5;
+            letter-spacing: 0.5px;
+          }
+
+          .principal-obra-text {
+            font-weight: 500;
+            color: #333;
+          }
         }
       }
-    }
 
     .content-container {
       max-width: 1200px;
@@ -463,12 +519,28 @@
     @media (max-width: 1200px) {
       .carousel-container {
         .quote-container {
-          padding: 25px 15px;
-          margin-bottom: 25px;
-
+          padding: 5px 1px;
+  
           .quote-text {
             font-size: 18px;
+          }
+        }
 
+        .ideia-central-container {
+          padding: 12px 15px;
+          margin-bottom: 8px;
+
+          .ideia-central-label {
+            font-size: 12px;
+          }
+
+          .ideia-central-text {
+            font-size: 14px;
+          }
+        }
+
+        .quote-container {
+          .quote-text {
             &::before,
             &::after {
               font-size: 50px;
@@ -502,11 +574,28 @@
     @media (max-width: 960px) {
       .carousel-container {
         .quote-container {
-          padding: 20px 15px;
-          margin-bottom: 20px;
+          padding: 5px 1px;
 
           .quote-text {
             font-size: 16px;
+          }
+        }
+
+        .ideia-central-container {
+          padding: 10px 12px;
+          margin-bottom: 6px;
+
+          .ideia-central-label {
+            font-size: 11px;
+          }
+
+          .ideia-central-text {
+            font-size: 13px;
+          }
+        }
+
+        .quote-container {
+          .quote-text {
             padding: 0 20px;
 
             &::before,
@@ -558,11 +647,28 @@
     @media (max-width: 600px) {
       .carousel-container {
         .quote-container {
-          padding: 15px 10px;
-          margin-bottom: 15px;
+          padding: 5px 1px;
 
           .quote-text {
             font-size: 14px;
+          }
+        }
+
+        .ideia-central-container {
+          padding: 8px 10px;
+          margin-bottom: 5px;
+
+          .ideia-central-label {
+            font-size: 10px;
+          }
+
+          .ideia-central-text {
+            font-size: 12px;
+          }
+        }
+
+        .quote-container {
+          .quote-text {
             padding: 0 15px;
 
             &::before,
@@ -585,4 +691,3 @@
     }
   }
 }
-

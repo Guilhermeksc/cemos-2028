@@ -52,8 +52,13 @@
     <!-- Carrossel de Pensadores -->
     <div *ngIf="!isLoading && currentPensador" class="carousel-container">
       <!-- Frase de Efeito -->
-      <div *ngIf="currentPensador.quote" class="quote-container">
+      <div *ngIf="currentPensador && currentPensador.quote" class="quote-container">
         <p class="quote-text">{{ currentPensador.quote }}</p>
+      </div>
+
+      <!-- Ideia Central -->
+      <div *ngIf="currentPensador && currentPensador.ideia_central" class="ideia-central-container">
+        <span class="ideia-central-text">{{ currentPensador.ideia_central }}</span>
       </div>
 
       <div class="carousel-wrapper">
@@ -181,6 +186,12 @@
           aria-label="Próximo pensador">
           <mat-icon>chevron_right</mat-icon>
         </button>
+      </div>
+
+      <!-- Principal obra -->
+      <div *ngIf="currentPensador.principal_obra" class="principal-obra">
+        <span class="principal-obra-label">Principal obra:</span>
+        <span class="principal-obra-text">{{ currentPensador.principal_obra }}</span>
       </div>
     </div>
 

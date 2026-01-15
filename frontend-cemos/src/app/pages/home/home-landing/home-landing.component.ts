@@ -41,6 +41,9 @@ export class HomeLandingComponent {
   }
 
   navigateEstatisticas(): void {
+    if (!this.isAdmin()) {
+      return;
+    }
     this.router.navigate(['/home/estatisticas']);
   }
 }
