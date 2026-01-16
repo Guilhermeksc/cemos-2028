@@ -9,37 +9,37 @@
             {
               "numero": 1,
               "texto": "Emprego das FA – Responsabilidade",
-              "complemento": "",
+              "complemento": "Presidente da República",
               "mnemonico": ""
             },
             {
               "numero": 2,
               "texto": "Emprego das FA – Possíveis subordinações (3)",
-              "complemento": "",
-              "mnemonico": ""
+              "complemento": "CON: Comandos Conjuntos → via Ministro da Defesa, MIN: Ministro da Defesa direto (adestramento, conjuntas, paz), FOR: Comandante da Força (emprego isolado)",
+              "mnemonico": "CON–MIN–FOR"
             },
             {
               "numero": 3,
               "texto": "Emprego das FA – Caracterização do emprego em GLO (4)",
-              "complemento": "",
-              "mnemonico": ""
+              "complemento": "P: decisão do Presidente\nE: Esgotamento dos meios do art. 144\nA: Área delimitada\nT: Tempo limitado\nC: Controle operacional transferido (centro de coordenação)\nM: Militar em atividade militar",
+              "mnemonico": "P-E-A-T-C-M"
             },
             {
               "numero": 4,
-              "texto": "Emprego das FA – Definição de Controle Operacional dos OSP",
+              "texto": "Emprego das FA – Definição de Controle Operacional dos Órgãos de Segurança Pública (OSP)",
               "complemento": "",
               "mnemonico": ""
             },
             {
               "numero": 5,
               "texto": "Emprego das FA – Atribuição subsidiária geral das Forças Armadas:",
-              "complemento": "",
+              "complemento": "cooperar com o desenvolvimento nacional e a defesa civil",
               "mnemonico": "CoDeDe"
             },
             {
               "numero": 6,
               "texto": "Emprego das FA – Aç contra delitos transfronteiriços e ambientais (3):",
-              "complemento": "",
+              "complemento": "revista de pessoas, de veículos terrestres, de embarcações e de aeronaves; patrulhamento; prisões em flagrante delito",
               "mnemonico": "Revista Pa Pri"
             },
             {
