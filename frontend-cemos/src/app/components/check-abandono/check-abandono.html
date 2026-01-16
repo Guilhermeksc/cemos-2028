@@ -1,0 +1,65 @@
+<div class="check-abandono">
+  <div *ngIf="loading" class="loading">Carregando...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  
+  <div *ngIf="!loading && !error && livros.length > 0" class="check-abandono-container">
+    <!-- Menu lateral -->
+    <aside class="sidebar-menu" [class.open]="menuOpen">
+      <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+        <span class="menu-icon">☰</span>
+      </button>
+      <nav class="menu-nav">
+        <ul class="menu-list">
+          <li *ngFor="let livro of livros; let livroIndex = index" class="menu-item livro-item">
+            <div class="livro-titulo">{{ livro.titulo }}</div>
+            <ul class="capitulos-list">
+              <li *ngFor="let capitulo of livro.capitulos; let capIndex = index" class="menu-item capitulo-item">
+                <a 
+                  (click)="$event.preventDefault(); scrollToCapitulo(livroIndex, capIndex)" 
+                  class="menu-link"
+                  [attr.aria-label]="'Ir para ' + capitulo.titulo"
+                  [attr.href]="'#' + getCapituloId(livroIndex, capIndex)">
+                  {{ capitulo.titulo }}
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <div class="livros">
+      <div *ngFor="let livro of livros; let livroIndex = index" class="livro">
+        <h2 class="livro-titulo">{{ livro.titulo }}</h2>
+        <div class="capitulos">
+          <div 
+            *ngFor="let capitulo of livro.capitulos; let capIndex = index" 
+            class="capitulo"
+            [id]="getCapituloId(livroIndex, capIndex)">
+            <h3 class="capitulo-titulo">{{ capitulo.titulo }}</h3>
+            <div class="itens">
+              <div *ngFor="let item of capitulo.itens; let itemIndex = index" class="item">
+                <div 
+                  class="item-texto" 
+                  [class.active]="isItemOpen(livroIndex, capIndex, itemIndex)"
+                  (click)="toggleItem(livroIndex, capIndex, itemIndex)">
+                  <span class="item-numero">{{ item.numero }}.</span>
+                  <span class="item-texto-content">
+                    {{ item.texto }}
+                    <span *ngIf="item.mnemonico && item.mnemonico.trim()" class="mnemonico">[{{ item.mnemonico }}]</span>
+                  </span>
+                </div>
+                <div 
+                  *ngIf="isItemOpen(livroIndex, capIndex, itemIndex) && item.complemento" 
+                  class="item-complemento">
+                  {{ item.complemento }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

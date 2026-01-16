@@ -1,0 +1,2477 @@
+{
+  "livros": [
+    {
+      "titulo": "COUTAU-BÉGARIE",
+      "capitulos": [
+        {
+          "titulo": "Cap 1",
+          "itens": [
+            {
+              "numero": 1,
+              "texto": "Origem da palavra",
+              "complemento": "Estratego",
+              "mnemonico": ""
+            },
+            {
+              "numero": 2,
+              "texto": "Helwig e Venturini (1780)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 3,
+              "texto": "Massenbach (1802)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 4,
+              "texto": "Fundamental para aumentar o distanciamento entre estratégia e tática (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 5,
+              "texto": "Inovação capital do modelo prussiano (1808)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 6,
+              "texto": "Idade de ouro do pensamento militar",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 7,
+              "texto": "Arqueduque Carlos x Jomini x Clausewitz",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 8,
+              "texto": "Concordância unânime entre os três",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 9,
+              "texto": "Extensões da Estratégia (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 10,
+              "texto": "1ª Extensão – principais autores",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 11,
+              "texto": "General Iung – estratégia em 3 partes:",
+              "complemento": "",
+              "mnemonico": "PoPA"
+            },
+            {
+              "numero": 12,
+              "texto": "John Bigelow – distinção em 3 estratégias:",
+              "complemento": "",
+              "mnemonico": "PoReTa"
+            },
+            {
+              "numero": 13,
+              "texto": "Julian Corbett – distinção entre duas estratégias",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 14,
+              "texto": "2ª Extensão – principais autores",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 15,
+              "texto": "Clemenceu x Ludendorff x Liddel Hart x Castex x Hitler – conceito de cada um:",
+              "complemento": "",
+              "mnemonico": "I T G G A"
+            },
+            {
+              "numero": 16,
+              "texto": "Liddell Hart – Grande Estratégia – função",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 17,
+              "texto": "Definição de Estratégia para Couteau Begarie (elementos constituintes) (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 18,
+              "texto": "Dialética das Inteligências – conceito (o que CB quis dizer)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 19,
+              "texto": "Objetivo da Estratégia, segundo CB",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 20,
+              "texto": "Julien Freund – Estratégia x Tática",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 21,
+              "texto": "Julien Freund – Caracterização de todo conflito",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 22,
+              "texto": "Robert Claplow – Lei da Coalizão nas tríades",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 23,
+              "texto": "Clausewitz – Leis de ação recíproca (3)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 2",
+          "itens": [
+            {
+              "numero": 24,
+              "texto": "Trilogia dos níveis da arte da guerra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 25,
+              "texto": "Política – Clausewitz x Von Moltke x Von Bernhardi x Ludendorff x Poirier",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 26,
+              "texto": "Castex – Estratégia x Tática",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 27,
+              "texto": "Jomini – Estratégia x Tática",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 28,
+              "texto": "Tática – Jomini x Clausewitz x Napoleão",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 29,
+              "texto": "Logística – primeiro autor a se interessar / autor que transpõe para o campo militar",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 30,
+              "texto": "Logística para Jomini (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 31,
+              "texto": "Logística – reconhecimento como ramo da arte da guerra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 32,
+              "texto": "Industrialização da Guerra e a Substituição da Trilogia pela Tetralogia",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 33,
+              "texto": "Arte Operacional – conceito e inventor do conceito",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 34,
+              "texto": "Edward Luttwak e seus vigorosos discursos de defesa",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 3",
+          "itens": [
+            {
+              "numero": 35,
+              "texto": "Autor em que se constitui a ciência estratégica contemporânea",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 36,
+              "texto": "Quem transpôs Jomini para a estratégia marítima e explicação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 37,
+              "texto": "Quem assegurou a fama de Clausewitz",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 38,
+              "texto": "Motivo pelo qual Clausewitz não foi bem aceito no mundo anglo-saxão",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 39,
+              "texto": "Quem transpôs Clausewitz para a estratégia marítima e explicação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 40,
+              "texto": "Semelhanças e diferenças entre Jomini e Clausewitz",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 4",
+          "itens": [
+            {
+              "numero": 41,
+              "texto": "Escolas Estratégicas (3) e conceito de cada uma",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 42,
+              "texto": "Ponto final da evolução dos princípios",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 43,
+              "texto": "Princípio superior de Foch / Princípio igualmente absoluto / um terceiro princípio (par): E Li Se",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 44,
+              "texto": "Princípio de Liddell Hart (3): O M S",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 45,
+              "texto": "Princípios da Estratégia, segundo CB: CEMOS PILA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 46,
+              "texto": "Pensamento de Corbett sobre Concentração",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 47,
+              "texto": "Iniciativa é hoje vencida por qual meio",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 5",
+          "itens": [
+            {
+              "numero": 48,
+              "texto": "Modalidades essenciais ou fundamentais da estratégia (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 49,
+              "texto": "Conceito de Choque",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 50,
+              "texto": "Exemplos de Choque Tático e Estratégico",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 51,
+              "texto": "Choque e Manobra da Falange grega",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 52,
+              "texto": "Conceito de Manobra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 53,
+              "texto": "Exemplos de Manobra no Plano Tático",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 54,
+              "texto": "Manobra de Ulm (1805) como obra-prima da Manobra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 55,
+              "texto": "Componente essencial da Manobra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 56,
+              "texto": "Fatores essenciais do sucesso da Manobra (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 57,
+              "texto": "Situação que fez a contradição entre poder de fogo e movimento ser ultrapassada",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 58,
+              "texto": "Fator que fez o poder de fogo não ser mais puramente tático passando a ser também estratégico",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 59,
+              "texto": "Meios que oferecem uma síntese manobra, choque e poder de fogo (2)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 8",
+          "itens": [
+            {
+              "numero": 60,
+              "texto": "Mahan: Críticas a sua obra (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 61,
+              "texto": "Mahan: Discípulo de Jomini",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 62,
+              "texto": "Mahan: princípios universalmente válidos (3): E C O",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 63,
+              "texto": "Mahan: Conceito central",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 64,
+              "texto": "Aube: Equalizadores de poder (2): MiTo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 65,
+              "texto": "Aube: Sugestão para combater potência marítima superior (RU) (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 66,
+              "texto": "Países influenciados pela Jeune Ecole (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 67,
+              "texto": "Corbett – Críticas à Batalha Decisiva (3): Fim Rara Domínio",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 68,
+              "texto": "Características da estratégia teórica (3): Es Fra Re",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 69,
+              "texto": "Bases da estratégia marítima teórica – Mahan x Aube",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 70,
+              "texto": "Meios subestimados às vésperas da IGM e IIGM",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 71,
+              "texto": "Lucien Poirier – esquema tripartido: Fu Cri Cri",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 72,
+              "texto": "Características da Jeune École (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 73,
+              "texto": "Características da Vieille École (4)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 9",
+          "itens": [
+            {
+              "numero": 74,
+              "texto": "Guerra entre Forças Organizadas – Estratégias do Partido mais fraco x Estratégia do Partido mais forte",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 75,
+              "texto": "Exemplos de Batalhas Decisivas (6): SAL JuLaTra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 76,
+              "texto": "Críticas Castexianas à Batalha Decisiva (3): Missões Provocar Efeitos decisivos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 77,
+              "texto": "Condições para Batalha Decisiva, segundo CB (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 78,
+              "texto": "Outras formas militares alternativas à Batalha, segundo CB (4): BECO",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 79,
+              "texto": "Tipos de bloqueio (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 80,
+              "texto": "Meios defensivos que fez o Bloqueio Cerrado ceder lugar ao Bloqueio Aberto (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 81,
+              "texto": "Meios que permitem compensar a deficiência resultante do afastamento do Bloqueio Aberto (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 82,
+              "texto": "Propósitos da Ofensiva de pequeno vulto (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 83,
+              "texto": "Em que conceito se baseia a teoria da Esquadra em Potência",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 84,
+              "texto": "Esquadra em Potência no plano (nível) político e no plano militar",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 85,
+              "texto": "Princípio associado ao conceito de Esquadra em Potência (por parte do mais forte)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 86,
+              "texto": "Tipos de Defesa Costeira",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 87,
+              "texto": "Aspecto ofensivo da Guerra Costeira",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 88,
+              "texto": "Concepção de Aube sobre Guerra Costeira",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 89,
+              "texto": "Dimensões da Guerra no Mar x na Terra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 90,
+              "texto": "Estratégia da Guerra de Corso e de quem é o privilégio de usar essa estratégia",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 91,
+              "texto": "Efeitos induzidos da Guerra de Corso (2): Esforço Comboio",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 92,
+              "texto": "Guerra de Corso – Estratégico x Tático",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 93,
+              "texto": "Instrumento ideal de guerra ao comércio",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 94,
+              "texto": "Motivos que colocaram em xeque a ofensiva submarina na IGM (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 95,
+              "texto": "Plano Z de Hitler",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 96,
+              "texto": "Transformação estratégica compreendida plenamente por Bernard Brodie",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 97,
+              "texto": "Ofensiva da potência dominante na Guerra das comunicações",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 98,
+              "texto": "Resultado da guerra de comunicações contemporânea",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 99,
+              "texto": "Verdadeiro domínio do mar (dupla exigência)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 100,
+              "texto": "Domínio dos mares – ofensivo (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 101,
+              "texto": "Domínio dos mares – defensivo (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 102,
+              "texto": "Negação do mar (5)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 10",
+          "itens": [
+            {
+              "numero": 103,
+              "texto": "Reviravoltas, técnicas e políticas, que afetaram o meio marítimo e causaram uma mudança tanto nos meios como nas missões",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 104,
+              "texto": "SNE x SNA – diferenças",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 105,
+              "texto": "Novos meios (avião e submarino) x Fim das Esquadras de Superfície? (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 106,
+              "texto": "Classificação dos meios (“tipos de Força”), segundo CB (6): C L A V I D ou CLAnf na DIV",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 107,
+              "texto": "Força composta por navios de superfície e submarinos de ataques modernos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 108,
+              "texto": "Força de Intervenção x Vigilância (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 109,
+              "texto": "Solução High-low mix",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 110,
+              "texto": "SNE x SNA x Submarino de propulsão à Diesel – Aplicação nos tipos de Força",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 111,
+              "texto": "Trem da Esquadra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 112,
+              "texto": "Meios específicos de cada tipo de Força",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 113,
+              "texto": "Tipologia das Marinhas do Terceiro-Mundo e suas características, segundo Michael Morris (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 114,
+              "texto": "Classificação das Marinhas e suas características, segundo CB (6): SR MaGo CaGo Po Co",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 115,
+              "texto": "Meio que possibilitou pela PRIMEIRA VEZ que a terra tivesse um meio de agir no mar e vice-versa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 116,
+              "texto": "Classificação das Missões, segundo Duval: Ação FIT",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 117,
+              "texto": "Novas missões adicionadas às missões tradicionais de Duval: Pro GeMa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 118,
+              "texto": "Classificação das missões, segundo Zumwalt (4): P2D2 ou Pre Pro DiDo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 119,
+              "texto": "Duval e Zoomwalt – diferença e semelhança",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 120,
+              "texto": "Novas mudanças anunciadas pela globalização (5)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 11",
+          "itens": [
+            {
+              "numero": 121,
+              "texto": "Pais fundadores do pensamento estratégico aéreo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 122,
+              "texto": "Douhet – ideia central (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 123,
+              "texto": "Axiomas de Douhet (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 124,
+              "texto": "Receptivo às ideias de Douhet",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 125,
+              "texto": "Mitchell – ideia central",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 126,
+              "texto": "Mitchell – demais ideias (3): Eco Caça CC",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 127,
+              "texto": "Trenchard – características da ação aérea (2): Of Bo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 128,
+              "texto": "Semelhança de pensamento entre Douhet, Mitchell e Trenchard",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 129,
+              "texto": "Diferenças entre as duas escolas aéreas",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 130,
+              "texto": "Duas grandes concepções da estratégia aérea",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 131,
+              "texto": "Era de ouro do pensamento aéreo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 132,
+              "texto": "Liddell Hart sobre bombardeio estratégico",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 133,
+              "texto": "Blitzkrieg alemã",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 134,
+              "texto": "Lapchinsky sobre ideias de Douhet",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 135,
+              "texto": "Acordo MacArthur / Pratt",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 136,
+              "texto": "Conceito popularizado por Seversky",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 137,
+              "texto": "Nova Geografia, graças ao avião",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 138,
+              "texto": "Neodouhetismo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 139,
+              "texto": "Teóricos da paralisia estratégica (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 140,
+              "texto": "Subsistemas de Warden (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 141,
+              "texto": "Boyd x Warden",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 142,
+              "texto": "Renascimento do Poder Aéreo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 143,
+              "texto": "Shock and Awe e Halt Phase Concept – conceito e exemplo de emprego",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 144,
+              "texto": "E-BO de David Deptula – conceito",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 12",
+          "itens": [
+            {
+              "numero": 145,
+              "texto": "Grande UNIFICADOR das estratégias e motivo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 146,
+              "texto": "Síndrome de Guynemer x Síndrome de Hiroshima (ou Dresden)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 147,
+              "texto": "Superioridade aérea para os teóricos do poder aéreo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 148,
+              "texto": "Missões Táticas x Estratégicas",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 149,
+              "texto": "Aviação Tática x Estratégica",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 150,
+              "texto": "Aviação na Estratégia convencional e alternativa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 151,
+              "texto": "Esquadras x Forças Aéreas (tempo para intervir, presença e transporte de recursos)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 152,
+              "texto": "Aviação na Estratégia de destruição x de desgaste x de interdição",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 153,
+              "texto": "Batalha que a Estratégia aérea defensiva sobrepôs a Estratégia aérea ofensiva",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 154,
+              "texto": "Exemplos Estratégia aérea defensiva (“genéricas” atuais)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 155,
+              "texto": "Domínio do ar x Domínio do mar (no sentido de meio ambiente e não dominação)  – diferença entre os pensamentos estratégicos aéreo e marítimo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 156,
+              "texto": "Tarefas da aviação de cooperação (ou tática ou de apoio) (4): RATO",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 157,
+              "texto": "Quatro dimensões do espaço de batalha, sengo o General McPeak (4): FRAP",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 158,
+              "texto": "Modalidades ou objetivos do bombardeio estratégico (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 159,
+              "texto": "Finalidade do bombardeio estratégico",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 160,
+              "texto": "Tipologia proposta por Robert Pape (3): PuRiIn ou PRI",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 161,
+              "texto": "Exemplo de resultado inverso do bombardeio estratégico na IIGM",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 162,
+              "texto": "Exemplo de passagens pelos 3 estágios das estratégias de Robert Pape na IIGM",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 163,
+              "texto": "Motivos pelos fracassos dos bombardeios na Coreia e Vietnã (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 164,
+              "texto": "Coreia e Vietnã – Crítica à teoria de Warden",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 165,
+              "texto": "Motivos da eficácia na Primeira Guerra do Golfo (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 166,
+              "texto": "Bombardeio estratégico na Guerra do Kosovo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 167,
+              "texto": "Erro base do bombardeio indistinto",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 168,
+              "texto": "Key nodes",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 169,
+              "texto": "Participação em operações de superfície x Bombardeio estratégico – motivos desse antagonismo (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 170,
+              "texto": "Participação em operações de superfície x Bombardeio estratégico – o que pôs fim a esse antagonismo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 171,
+              "texto": "Conceito de Guerra Paralela de Warden",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 14",
+          "itens": [
+            {
+              "numero": 172,
+              "texto": "Fatores Geoestratégicos (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 173,
+              "texto": "Quatro estratégias determinadas pelos Fatores Estáticos (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 174,
+              "texto": "Dupla vantagem do terreno",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 175,
+              "texto": "Terreno como obstáculo (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 176,
+              "texto": "Efeitos de um obstáculo (3 + 2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 177,
+              "texto": "Impactos de um obstáculo (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 178,
+              "texto": "Tipos de obstáculos hidrográficos (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 179,
+              "texto": "Montanha para a defesa – pequenos destacamentos x Exército",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 180,
+              "texto": "Funções da vegetação (7)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 181,
+              "texto": "Características da floresta (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 182,
+              "texto": "Em que o obstáculo desértico reside",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 183,
+              "texto": "Meios que diminuem o valor relativo dos obstáculos desérticos (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 184,
+              "texto": "Arma especializada na transposição de obstáculos e meios",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 185,
+              "texto": "Óbices criados pela transposição de montanhas e desertos (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 186,
+              "texto": "Vales dos rios penetrantes",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 187,
+              "texto": "Motivos para tomada da Capital (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 188,
+              "texto": "Manobra de destruição e evacuação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 189,
+              "texto": "Topoestratégia e Morfoestratégia x Fisioestratégia",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 190,
+              "texto": "Vantagens obtidas por uma conquista de uma Posição Estratégica (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 191,
+              "texto": "Principal característica Meteoestratégia",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 192,
+              "texto": "Fatores Dinâmicos (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 193,
+              "texto": "Fatores Dinâmicos Ofensivos (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 194,
+              "texto": "Fatores Dinâmicos Defensivos (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 195,
+              "texto": "Matéria-prima estratégica por excelência",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 196,
+              "texto": "Geopolítica x Geoestratégia de Recursos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 197,
+              "texto": "Exemplos de Geoestratégia de Vias e infraestruturas de comunicação (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 198,
+              "texto": "Tipos e Exemplos de Obstáculos políticos (2) e Militares (Fortificações) (2)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 15",
+          "itens": [
+            {
+              "numero": 199,
+              "texto": "Funções do Elemento Marinho (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 200,
+              "texto": "Funções Negativas do Elemento Marinho (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 201,
+              "texto": "Funções Positivas do Elemento Marinho (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 202,
+              "texto": "Energias possíveis de serem extraídas do Elemento Marinho, segundo CB (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 203,
+              "texto": "Três pontos sublinhados por CB sobre a função do Mar como Teatro de Conflitos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 204,
+              "texto": "Consequências estratégicas sobre a liberdade de movimento do Direito do Mar (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 205,
+              "texto": "Dilatação das distâncias no mar",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 206,
+              "texto": "Motivos que fizeram as Esquadras se afastarem da costa, tornando a Est Mar verdadeiramente Oceânica",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 207,
+              "texto": "Motivos de as bases (em outros territórios) permanecerem indispensáveis (2) e exemplo da Guerra das Malvinas",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 208,
+              "texto": "No que a Estratégia Marítima se diferencia da Terrestre e no que se distingue da Aérea",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 209,
+              "texto": "O que permitiu a permanência (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 210,
+              "texto": "Surpresa e Proteção no mar x Demonstração Clausewitiana",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 211,
+              "texto": "Argumentos topográficos no mar (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 212,
+              "texto": "Fatores meteorológicas que influem sobre os alcances radar e sonar (3)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 16",
+          "itens": [
+            {
+              "numero": 213,
+              "texto": "Aparece como UNIFICADOR das estratégias.",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 214,
+              "texto": "ATENUOU A DICOTOMIA entre o poder terrestre e o poder marítimo, em detrimento do segundo, segundo Mackinder.",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 215,
+              "texto": "Consequência da aviação, segundo Lindbergh.",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 216,
+              "texto": "Seus aparecimentos corrigiram parcialmente este desequilíbrio e aperfeiçoaram a globalização da estratégia",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 217,
+              "texto": "DISSOLVE as estratégias particulares a uma interpenetração das estratégias",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 218,
+              "texto": "Principal vetor da INTEGRAÇÃO das antigas estratégicas terrestre e naval",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 219,
+              "texto": "General Bertrand, 1948 – Classificação das Estratégias (3) e conceito de cada uma: Co Oce OAro",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 220,
+              "texto": "Ideias-chave de Douhet, resumidas por Coronel Mendigal (3):",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 221,
+              "texto": "Semelhança entre a Estratégias Marítima de Mahan e Aérea de Douhet",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 222,
+              "texto": "Mahan afirmava a independência do mar em relação à terra. Meio que permitiu a interpenetração das estratégias na época contemporânea.",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 223,
+              "texto": "Características da Guerra no Mar que se encontra na Guerra Aérea e não se encontra na Terrestre (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 224,
+              "texto": "Impacto da arma aérea x Defesa antiaérea",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 225,
+              "texto": "Vantagem conferida pela arma aérea",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 226,
+              "texto": "Diferença da Guerra Aérea para a Guerra Marítima",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 17",
+          "itens": [
+            {
+              "numero": 227,
+              "texto": "Principal característica estratégica do meio espacial",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 228,
+              "texto": "Os sistemas espaciais são orientados na direção da tríade (3): VECo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 229,
+              "texto": "Funções dos sistemas espaciais (3): Com EsAO",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 230,
+              "texto": "Tipos de satélite de observação (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 231,
+              "texto": "Resultado da função observação sobre a dissimulação de instalações",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 232,
+              "texto": "Observação gráfica fornecem e demandam",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 233,
+              "texto": "Desvantagem da transmissão por satélites em relação à por cabos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 234,
+              "texto": "Escuta eletrônica x Escuta das comunicações",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 235,
+              "texto": "Razão que desvaneceu o desenvolvimento de sistemas espaciais agressivos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 236,
+              "texto": "Obstáculos para aquisição de uma capacidade de ataque direto contra a Terra a partir do Espaço (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 237,
+              "texto": "Fórmula agressiva mais barata",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 238,
+              "texto": "Tipos (classificação) de Potências Espaciais (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 239,
+              "texto": "Quatro escolas, segundo David Lupton, e conceito de cada uma: Santu Sobre Do Hi",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LARS WEDIN",
+      "capitulos": [
+        {
+          "titulo": "Cap 1 -",
+          "itens": [
+            {
+              "numero": 240,
+              "texto": "Jean Grivel e Richard Grivel – contribuições: Poder inGrivel",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 241,
+              "texto": "Colomb – Conceito",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 242,
+              "texto": "Mahan: principais métodos de Guerra Naval (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 243,
+              "texto": "Mahan: Missão prioritária",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 244,
+              "texto": "Mahan: “Propósito da Guerra Naval”",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 245,
+              "texto": "Mahan: Sequência lógica da Guerra Naval",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 246,
+              "texto": "Mahan: Propósito da Guerra Naval, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 247,
+              "texto": "Mahan: Únicas Forças capazes de atingir tal propósito",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 248,
+              "texto": "Corbett – Principal contribuição, se contrapondo a Mahan",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 249,
+              "texto": "Corbett – Estratégia Marítima x Estratégia Naval e interdependência com a Terrestre",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 250,
+              "texto": "Castex – Pensamento dele sobre Colomb",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 251,
+              "texto": "Criador da estratégia teórica sobre o mar, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 252,
+              "texto": "Castex – Propósito da Guerra Naval, segundo Mahan e corolário",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 253,
+              "texto": "Castex – Propósito da Estratégia Naval, segundo Mahan",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 254,
+              "texto": "Castex – Objetivo Principal, segundo Mahan, por meio de:",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 255,
+              "texto": "Castex – Aspectos Negativos de Corbett, segundo Castex (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 256,
+              "texto": "Castex – Aspectos Positivos de Corbett, segundo Castex (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 257,
+              "texto": "Castex – Contribuição de Corbett ao confrontar Mahan, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 258,
+              "texto": "Castex – Ideias de Castex que são Coberttianas (3): Duelo Do IM",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 4 - LARS WEDIN",
+          "itens": [
+            {
+              "numero": 259,
+              "texto": "Condições militares e estratégicas que são diferentes no mar e em terra (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 260,
+              "texto": "Três círculos das Geopolítica do mar (3): Ar Pe Ar",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 261,
+              "texto": "Declaração de Limassol",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 262,
+              "texto": "Domínios da Política Marítima Integrada da UE: CrePE é ViDa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 263,
+              "texto": "Limitam cada vez mais a liberdade de navegação (2 ou 4): RecTec ou (Re)³I",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 264,
+              "texto": "Corrida por Recursos – Reivindicação da China",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 265,
+              "texto": "Corrida por Recursos – Reivindicações da Rússia (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 266,
+              "texto": "Corrida por Recursos – Risco intensificado",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 267,
+              "texto": "Exemplos de Estabelecimento de Reservas Naturais no mar (2): MN ZoPEco",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 268,
+              "texto": "Consequência provável de Estabelecimento de Reservas Naturais no mar",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 269,
+              "texto": "Diferença entre o tempo de Castex e o nosso no tocante ao transporte marítimo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 270,
+              "texto": "Energias limpas que provém do mar (3): E M O",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 271,
+              "texto": "Produção energética mais importante extraída do mar (2): PG",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 272,
+              "texto": "Em termos castexianos, existem dois grandes perturbadores contemporâneos (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 273,
+              "texto": "Consequências da Pesca Ilegal (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 274,
+              "texto": "Força em missões específicas",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 275,
+              "texto": "Sea Basing",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 276,
+              "texto": "Significado de ter ou não ter o domínio do mar, segundo castex, na ofensiva e na defensiva",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 277,
+              "texto": "Definição de domínio do mar, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 278,
+              "texto": "Dois tipos de comunicações essenciais de superfície, segundo Castex: MiMa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 279,
+              "texto": "Continuidades (3) e Mudanças (3) no Ambiente Marinho desde os tempos de Castex",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 5",
+          "itens": [
+            {
+              "numero": 280,
+              "texto": "Propósito da Estratégia Naval, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 281,
+              "texto": "Aron – Definição de poder",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 282,
+              "texto": "Aron – Conceito de Força",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 283,
+              "texto": "Tipos de poder, segundo Nye (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 284,
+              "texto": "Certas condições essenciais para alcançar o Poder Marítimo, segundo Mahan (7): T³P²GI",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 285,
+              "texto": "CMG Eudeline modernizou a lista de Mahan (exemplos de cada) (5): GEFI PM",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 286,
+              "texto": "Fator que falta nessa lista, segundo Wedin",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 287,
+              "texto": "Cegueira Marítima da Suécia",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 288,
+              "texto": "Propósito da Estratégia Marítima, segundo Wedin",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 289,
+              "texto": "Definição de Estratégia Marítima e Naval, segundo Wedin",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 290,
+              "texto": "Vocações da Estratégia Marítima (2), segundo Wedin, e conceito de vias-e-meios",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 291,
+              "texto": "Estrutura político-estratégica formulada por Lucien Poirier (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 292,
+              "texto": "Estratégia Integral – Lucien Poirier (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 293,
+              "texto": "Estratégia Integral – Wedin (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 294,
+              "texto": "Três subestratégias da Estratégia Marítima, segundo Wedin",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 295,
+              "texto": "Métodos estratégicos de Wedin e seus empregos reais e virtuais",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 296,
+              "texto": "Modo de ação que se encontra no cruzamento do hard power e soft power",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 297,
+              "texto": "Conceitos de “dependências” e “dualidade das Forças Navais”, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 298,
+              "texto": "A Estratégia Marítima, na Subestratégia de Riquezas, necessita do concurso de outras estratégias (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 299,
+              "texto": "Principais problemas relacionados à dualidade das forças navais e à estratégia de meios (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 300,
+              "texto": "A Estratégia Marítima, na Subestratégia de Meios, necessita do apoio de outras estratégias (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 301,
+              "texto": "A Estratégia Marítima, na Subestratégia Naval, necessita do apoio de outras estratégias (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 302,
+              "texto": "A Estratégia Moral visa a:",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 303,
+              "texto": "Trindade de Clausewitz",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 304,
+              "texto": "Dependências da Estratégia Marítima",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 305,
+              "texto": "Outras dependências da Estratégia Marítima (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 306,
+              "texto": "Dualidade atinente às Forças Navais",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 307,
+              "texto": "Cinco missões estratégicas do Livro Branco de Defesa francês (+ ou -, real ou virtual): CAPre Di ProtIn",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 308,
+              "texto": "Subdivisões do Conhecimento e Antecipação (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 309,
+              "texto": "Dois modos de ação da Prevenção",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 310,
+              "texto": "Diferença entre Prevenção e Dissuasão",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 311,
+              "texto": "Dissuasão convencional de Wedin",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 312,
+              "texto": "Lei da expectativa político-estratégica",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 313,
+              "texto": "Condição necessária e suficiente para Persuadir e Dissuadir",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 314,
+              "texto": "Tipos de Proteção (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 315,
+              "texto": "Intervenção – Missões ditas simples x complexas",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 316,
+              "texto": "Projeção de Forças invertida",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 317,
+              "texto": "Análise do Poder Marítimo da UE nos termos de CMG Eudeline",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 318,
+              "texto": "Faltam (Deficiências) ao Poder Marítimo da UE (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 319,
+              "texto": "Dois “mestres” da Estratégia Naval (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 320,
+              "texto": "Principal trunfo das Forças Navais",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 6",
+          "itens": [
+            {
+              "numero": 321,
+              "texto": "Tripartição Castexiana dos modos de ação (3): O LuA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 322,
+              "texto": "Capacitação demonstrada por Mitchel ao afundar um navio alemão com aeronave e nome do navio",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 323,
+              "texto": "Relação ao ataque e defesa das LCM e bases aéreas, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 324,
+              "texto": "Geografia Horizontal x Geografia Vertical",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 325,
+              "texto": "Importância da Topografia dos fundos (geografia vertical)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 326,
+              "texto": "Bases x Posições, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 327,
+              "texto": "Castex não podia prever sobre a geografia do mar (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 328,
+              "texto": "Operação Harmattan e vantagens do emprego do Sea Basing (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 329,
+              "texto": "Utilidades do Mobile Landing Plataforms (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 330,
+              "texto": "Funções do Espaço, segundo Wedin: AjuNaViCo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 331,
+              "texto": "Camadas do Ciberespaço, segundo Wedin: FiCo² LoCo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 332,
+              "texto": "Pilares da Ciberguerra, segundo Wedin: Da Pro DeDe",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 333,
+              "texto": "Tríptico de Castex (ou 3 Pilares de Castex): A LuA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 334,
+              "texto": "Domínio do mar, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 335,
+              "texto": "Três modos de ação de Luta contra Forças Organizadas, segundo castex, e qual ele condena",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 336,
+              "texto": "Exemplos de Batalhas Decisivas (6): Sa Le Tra Tsu Mi Ley",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 337,
+              "texto": "Métodos navais de Ataque das Comunicações (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 338,
+              "texto": "Defesa das Comunicações",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 339,
+              "texto": "Três modos de Ação do Mar contra Terra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 340,
+              "texto": "Maior operação anfíbia do século XIX",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 341,
+              "texto": "Diferença de cultura estratégica da nação insular e da continental",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 342,
+              "texto": "Conceito de A2/AD e contra-A2/AD e exemplos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 343,
+              "texto": "Dependências do A2/AD (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 344,
+              "texto": "Diferença entre a época de Castex e a nossa no que se refere à capacidade de Comandar e Coordenar dos Almirantes",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 345,
+              "texto": "Conceitos de Network-centric warfare e Air-sea Battle Concept / resultados da aplicação desses conceitos (2) e vantagem",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 346,
+              "texto": "Nova missão que emerge nos dias de hoje para uma Força Naval",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 347,
+              "texto": "Tipos de Diplomacia Naval, segundo CB (4+3): Eco De SiRo Hum ProPo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 348,
+              "texto": "Ação básica da Diplomacia Naval",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 349,
+              "texto": "O Resultado diplomático depende de (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 350,
+              "texto": "Conceito de Clausewitz que influenciou Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 351,
+              "texto": "Objetivo Principal para Jomini, Foch e Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 352,
+              "texto": "Duas Condições para sucesso na Manobra (Estratégica), segundo Castex (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 353,
+              "texto": "Alma da manobra ou aquilo que permite ter Liberdade de Ação, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 354,
+              "texto": "Lições de Foch sobre concentração/divisão de forças (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 355,
+              "texto": "Qualidade extremamente importante do estratego, segundo Castex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 356,
+              "texto": "Estratégia Sequencial x Cumulativa – Conceito e exemplos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 357,
+              "texto": "Estratégia Sequencial x Cumulativa – qual é relacionada à Paralisia Estratégia e explicação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 358,
+              "texto": "Estratégia Sequencial x Cumulativa – qual é relacionada à Guerra sobre o mar x sobre a terra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 359,
+              "texto": "Capaci0dade C4I²STAR",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 360,
+              "texto": "PPDICA ou CAPre Di ProtIn aplicado à Manutenção da Ordem no Mar – exemplos e qual tipo de tecnologia dos meios (high, low ou high-low mix)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 361,
+              "texto": "Tipo de Missão estratégica da contenção de derramamento de óleo no mar",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EMA-310",
+      "capitulos": [
+        {
+          "titulo": "CAP. 1 EMA-310",
+          "itens": [
+            {
+              "numero": 362,
+              "texto": "Essência da EDM",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 363,
+              "texto": "Fins, Maneiros e Meios associam-se a:",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 364,
+              "texto": "Característica relevante dos OBE",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 365,
+              "texto": "Campos de Atuação do Poder Naval (4): ADiDeSe",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 366,
+              "texto": "OBE (11)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 367,
+              "texto": "OBE relacionado ao desenvolvimento e operação do SCPN",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 368,
+              "texto": "OBE que decorre da Política Nacional de Assuntos Antárticos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 369,
+              "texto": "Posturas Estratégicas (4): PerCo FoCo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 370,
+              "texto": "Posturas em cada Campo de Atuação do Poder Naval",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 371,
+              "texto": "Prioridades Estratégicas DEF-1, SMA-1, DIP-1 e AAE-1",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 372,
+              "texto": "Prioridades Estratégicas DEF (17), SMA (7),  DIP (3), AAE (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 373,
+              "texto": "Risco R1",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 374,
+              "texto": "Riscos (14)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 375,
+              "texto": "Definição de Capacidade",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 376,
+              "texto": "Definição de Capacidades Estratégicas do Poder Naval",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 377,
+              "texto": "Capacidades Estratégicas do Poder Naval (10): P4RAC²EM ou PoR a PreP Pro C²EMA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 378,
+              "texto": "Conceito Estratégico – “definição”",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 379,
+              "texto": "Espaço Geopolítico Prioritário de influência para o Brasil",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 380,
+              "texto": "Defesas naturais da fronteira do Brasil",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 381,
+              "texto": "Dupla característica do Oceano Atlântico",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 382,
+              "texto": "Tarefas Básicas do Poder Naval (6): Negar Segurança² Real Pro Con",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 383,
+              "texto": "Posturas Estratégicas adotadas e capacidade estratégica exercidas no ASPSP, Elevação de Rio Grande, Lago da Hidroelétrica de Itaipu",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 384,
+              "texto": "Posturas Estratégicas em Fernando de Noronha e Trindade",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 385,
+              "texto": "OBE “Exercer Diplomacia Naval” – Posturas estratégica e quais países",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 386,
+              "texto": "Posturas Estratégicas adotadas e capacidade estratégica exercidas na Antártica",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "CAP. 2 - EMA-310",
+          "itens": [
+            {
+              "numero": 387,
+              "texto": "Diretrizes Estratégicas de Preparo x Emprego",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 388,
+              "texto": "Linhas de Esforço (eixo temático) das Diretrizes de Preparo (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 389,
+              "texto": "Materializam o Poder de Combate necessário para se adotar a Postura Coercitiva (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 390,
+              "texto": "Programas fundamentais para desenvolver o Setor Estratégico Nuclear de Defesa (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 391,
+              "texto": "Linhas de Esforço das Diretrizes de Emprego (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 392,
+              "texto": "Forma de contextualizar os adestramentos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 393,
+              "texto": "Formas de otimizar o emprego dos meios (3)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

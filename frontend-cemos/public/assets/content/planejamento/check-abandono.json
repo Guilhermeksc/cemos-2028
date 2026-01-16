@@ -1,0 +1,1393 @@
+{
+  "livros": [
+    {
+      "titulo": "Lei Complementar nº 97",
+      "capitulos": [
+        {
+          "titulo": "Cap 1",
+          "itens": [
+            {
+              "numero": 1,
+              "texto": "Emprego das FA – Responsabilidade",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 2,
+              "texto": "Emprego das FA – Possíveis subordinações (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 3,
+              "texto": "Emprego das FA – Caracterização do emprego em GLO (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 4,
+              "texto": "Emprego das FA – Definição de Controle Operacional dos OSP",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 5,
+              "texto": "Emprego das FA – Atribuição subsidiária geral das Forças Armadas:",
+              "complemento": "",
+              "mnemonico": "CoDeDe"
+            },
+            {
+              "numero": 6,
+              "texto": "Emprego das FA – Aç contra delitos transfronteiriços e ambientais (3):",
+              "complemento": "",
+              "mnemonico": "Revista Pa Pri"
+            },
+            {
+              "numero": 7,
+              "texto": "Emprego das FA – Atribuições subsidiárias da Marinha (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 8,
+              "texto": "Emprego das FA – Autoridade Marítima x Autoridade Aeronáutica Militar",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Estrutura Militar de Defesa",
+      "capitulos": [
+        {
+          "titulo": "Cap 2",
+          "itens": [
+            {
+              "numero": 9,
+              "texto": "Estrutura Militar de Defesa – Composição (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 10,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades do PR",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 11,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades do Ministro de Estado da Defesa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 12,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades do Conselho Militar de Defesa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 13,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades do Comandantes das FA (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 14,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades do CEMCFA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 15,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades do Comandante Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MD-30-m-01(1º Volumne)",
+      "capitulos": [
+        {
+          "titulo": "Cap 3",
+          "itens": [
+            {
+              "numero": 16,
+              "texto": "Funcionamento do CMiD será disciplinado por:",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 17,
+              "texto": "Organização e funcionamento da EttMiD serão disciplinados por:",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 18,
+              "texto": "Definição de Segurança Nacional: PPG",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 19,
+              "texto": "Definição de Crise e Estado de Crise",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 20,
+              "texto": "Situação de Guerra x Situação de não-guerra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 21,
+              "texto": "Situação de normalidade x Situação de não-normalidade",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 22,
+              "texto": "Conflito armado x Guerra",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 23,
+              "texto": "Emprego Conjunto das FA – “Caracterizada pela” e “Caminho para”",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 24,
+              "texto": "Ideias básicas indispensáveis na concepção de emprego conjunto das FA (13)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 25,
+              "texto": "CDN x CMiD",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 26,
+              "texto": "Sistemática DPED – DMED – DPEM – PEECFA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 27,
+              "texto": "Fonte de dados muito mais completa que o plano operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 28,
+              "texto": "DPED – quem elabora / quem emite / propósito / principais tópicos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 29,
+              "texto": "DMED – quem elabora / quem emite / propósito / principais tópicos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 30,
+              "texto": "DPEM – quem elabora / quem emite / propósito / principais tópicos",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Cap 4",
+          "itens": [
+            {
+              "numero": 31,
+              "texto": "Definição de Operações Conjuntas (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 32,
+              "texto": "Comandos Operacionais Conjuntos Permanentes (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 33,
+              "texto": "Casos de ativação de Comandos Operacionais Conjuntos com caráter temporário (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 34,
+              "texto": "Tipos de Comandos Operacionais (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 35,
+              "texto": "Tipos de Áreas de Responsabilidade dos Comandos Operacionais Conjuntos (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 36,
+              "texto": "Área de Responsabilidade – definição / documento que consta sua limitação / Aprovação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 37,
+              "texto": "TO – definição / zonas (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 38,
+              "texto": "AOp – definição",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 39,
+              "texto": "ZD – definição",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 40,
+              "texto": "EFD – Definição",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 41,
+              "texto": "EFD – Será atingido quando alcançar uma ou mais condições (4): Es Vo Po Fo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 42,
+              "texto": "Propósito Assuntos Civis (deverão ser plj e exec de modo a)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 43,
+              "texto": "Temas englobados na interação do ComTO com o Poder Público (8): DeCi Con³ CoorA³",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 44,
+              "texto": "Medidas e Ações de Dissimulação a serem adotadas nos níveis Est, Op e Tat (5): DesCiDi PG",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 45,
+              "texto": "Ações que podem ser necessárias antes da ativação (4):",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 46,
+              "texto": "CmdoOpCj – Constituição (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 47,
+              "texto": "CmdoOpCj – Definições de Força Componente, Força Conjunta e Força-Tarefa",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 48,
+              "texto": "CmdoOpCj – Características das Forças Componentes Singulares (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 49,
+              "texto": "CmdoOpCj – Características das Forças Conjuntas Componentes (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 50,
+              "texto": "CmdoOpCj – Condições para que uma Força seja considerada Componente (6): EFD é Po CO CoCo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 51,
+              "texto": "CmdoOpCj – Fatores que determinarão a sua composição (5): MITML",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 52,
+              "texto": "CmdoOpCj – Aspectos a serem observados (5) – LiCoor para um CoRe UniDo e Flex",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 53,
+              "texto": "CmdoOpCj – Atribuições do Comandante Operacional (9): MAR DO NILA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 54,
+              "texto": "CmdoOpCj – Delegação do CmtOp ao C Log Cte (2): DeLogAR",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 55,
+              "texto": "CmdoOpCj – Atribuições do Cmt F Cte",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 56,
+              "texto": "CmdoOpCj – Atribuições do C Log Cte",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 57,
+              "texto": "EMCj – Constituição (11)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 58,
+              "texto": "EMCj – Obrigatoriedade quanto aos chefes das D-2, D-3 e D-5",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 59,
+              "texto": "EMCj – Vantagem de ter Oficial de Ligação das F Cte no EMCj",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 60,
+              "texto": "EMCj – Reuniões em cada jornada de trabalho (10) e objetivo principal delas",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 61,
+              "texto": "EMCj – Atribuições dos Chefes das Seções",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 62,
+              "texto": "COMAE – Missão",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 63,
+              "texto": "COMAE – Características (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 64,
+              "texto": "COMAE – Tarefas (Compete) (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 65,
+              "texto": "COMAE – Elos do SISDABRA (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 66,
+              "texto": "COMAE – Funções (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 67,
+              "texto": "COMAE – Ação de Comando sobre os elos do SISDABRA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 68,
+              "texto": "COMAE – Principal característica da Defesa Aeroespacial",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 69,
+              "texto": "COMZD – Finalidade da Defesa Territorial",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 70,
+              "texto": "COMZD – Condicionantes para a Decisão de estabelecimento de uma ZD (7): PA³PUN",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 71,
+              "texto": "COMZD – Vantagens (4) e desvantagens (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 72,
+              "texto": "COMZD – Indicadores de níveis estratégicos que devem ser considerados no estabelecimento de uma ZD (3): SegAtiIn",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 73,
+              "texto": "COMZD – Responsabilidades em caso de não ser estabelecida uma ZD",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 74,
+              "texto": "COMZD – Estrutura de uma ZD (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 75,
+              "texto": "COMZD – Princípios a serem considerados na Tomada de Decisão (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 76,
+              "texto": "COMZD – Motivo de os meios da ZD serem prontificados antes dos meios do TO",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 77,
+              "texto": "COMZD – OM de Guarda Territorial",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 78,
+              "texto": "ComDCiber – Características (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 79,
+              "texto": "ComDCiber – Definição",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 80,
+              "texto": "ComDCiber – Missão: POCIEx",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 81,
+              "texto": "ComDCiber – Ações do SMDC (2)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MD-30-m-01(2º Volumne)",
+      "capitulos": [
+        {
+          "titulo": "Sem capítulo",
+          "itens": [
+            {
+              "numero": 82,
+              "texto": "PPC – Processos e documentos de cada nível de decisão",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 83,
+              "texto": "PPC – Fatores que o PPC não prescinde (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 84,
+              "texto": "PPC – Características do PPC (3): FCC",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 85,
+              "texto": "PPC – Matriz de três colunas: FaDeCo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 86,
+              "texto": "PPC – Etapas (3) e suas principais características (1 de cada)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 87,
+              "texto": "PPC – CPO – o que facilita e o que possibilita",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 88,
+              "texto": "PPC – Fases da Etapa 1 (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 89,
+              "texto": "PPC – Etapas (e suas divisões) da Fase 1 da Etapa 1 (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 90,
+              "texto": "PPC – Fatores Gerais (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 91,
+              "texto": "PPC – Diagrama de Relações",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 92,
+              "texto": "PPC – Definição de EFD Op, Problema e Obj Op",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 93,
+              "texto": "PPC – Técnica para a formulação do problema militar (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 94,
+              "texto": "PPC – Partes da 2ªEtapa da Fase 1 da Etapa 1",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 95,
+              "texto": "PPC – Elementos balizadores de todo o trabalho que conduzirá à Decisão (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 96,
+              "texto": "PPC – Antes de Enunciar a Missão (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 97,
+              "texto": "PPC – Adoção de uma PB implica em (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 98,
+              "texto": "PPC – Forma de eliminar ou reduzir as PB",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 99,
+              "texto": "PPC – Tipos de planos em que se pode estabelecer PB",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 100,
+              "texto": "PPC – Validade de uma PB",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 101,
+              "texto": "PPC – PB sobre próprias forças",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 102,
+              "texto": "PPC – PB x PI",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 103,
+              "texto": "PPC – PB do escalão superior",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 104,
+              "texto": "PPC – Conceitos abarcados pelas Limitações ao Planejamento (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 105,
+              "texto": "PPC – Tipos de Limitações ao Planejamento (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 106,
+              "texto": "PPC – Caracteriza a conclusão da Fase 1 da Etapa 1",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 107,
+              "texto": "PPC – Componentes da DIPLAN (10)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 108,
+              "texto": "PPC – Vantagens da DIPLAN como Ordem Preparatória (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 109,
+              "texto": "PPC – “Etapas” da Fase 2 da Etapa 1 (10)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 110,
+              "texto": "PPC – Fatores Operacionais (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 111,
+              "texto": "PPC – Aspectos mais relevantes que impactam na missão e no EFD Op consolidados na Fase 2 da Etapa 1 (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 112,
+              "texto": "PPC – Produto do processo da Abordagem Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 113,
+              "texto": "PPC – Arte Operacional x Abordagem Operacional x Desenho Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 114,
+              "texto": "PPC – Características da ARP (11): CHiCo Te² RePPLICo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 115,
+              "texto": "PPC – Forças Inimigas (7)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 116,
+              "texto": "PPC – Nossas Forças (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 117,
+              "texto": "PPC – Forças Amigas (o que são)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 118,
+              "texto": "PPC – CPC – definição, foco das comparações e aspectos a serem comparados (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 119,
+              "texto": "PPC – Definição de FTD e sua importância",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 120,
+              "texto": "PPC – Cuidado a ser tomado com os FFF",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 121,
+              "texto": "PPC – Pontos fundamentais a serem explorados na elaboração das LA (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 122,
+              "texto": "PPC – Propósitos do Desenho Operacional (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 123,
+              "texto": "PPC – IC",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 124,
+              "texto": "PPC – Conteúdo da IC (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 125,
+              "texto": "PPC – Necessidades de Inteligência (2) e Plano de Obtenção de Conhecimentos",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 126,
+              "texto": "PPC – Dois requisitos da PsbIni",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 127,
+              "texto": "PPC – Principais parâmetros na análise das PsbIni (8)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 128,
+              "texto": "PPC – Fatores de análise das probabilidades (além dos parâmetros acima) (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 129,
+              "texto": "PPC – Graduação das PsbIni",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 130,
+              "texto": "PPC – PsbIni que deverão receber especial atenção (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 131,
+              "texto": "PPC – Definição de LA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 132,
+              "texto": "PPC – Elementos básicos da LA (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 133,
+              "texto": "PPC – Formas que a LA é melhor expressa (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 134,
+              "texto": "PPC – Requisitos do Conceito Sumário (8): CODALIMA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 135,
+              "texto": "PPC – Prova Preliminar de APA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 136,
+              "texto": "PPC – Provas básicas que dependem de julgamento pessoal (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 137,
+              "texto": "PPC – Confronto – organizador / árbitro / coordenador – quem é e suas funções",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 138,
+              "texto": "PPC – Objetivo do confronto / Uma das finalidades",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 139,
+              "texto": "PPC – Grupo de Assessoria e suas funções (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 140,
+              "texto": "PPC – Confronto quando o tempo é limitado",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 141,
+              "texto": "PPC – Composição dos partidos e quem inicia",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 142,
+              "texto": "PPC – Registro das ações das Forças Componentes e de todas as atividades operacionais",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 143,
+              "texto": "PPC – Justificativa para combinar LA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 144,
+              "texto": "PPC – Conclusões do Confronto (15)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 145,
+              "texto": "PPC – Cuidado ao se discriminar as vantagens e desvantagens de cada LA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 146,
+              "texto": "PPC – Ferramentas de apoio à decisão",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 147,
+              "texto": "PPC – O que a Decisão expressará + pronomes",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 148,
+              "texto": "PPC – O que o CPO expressará + pronomes",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 149,
+              "texto": "PPC – Vantagens da CPO como Ordem Preparatória (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 150,
+              "texto": "PPC – Documentos que compõem a Ordem Preparatória (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 151,
+              "texto": "PPC – Mínimo que o CPO deve conter (10)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 152,
+              "texto": "PPC – Fases da Etapa 2 (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 153,
+              "texto": "PPC – Participação de representantes das FCte ao longo da Etapa 2 visa (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 154,
+              "texto": "PPC – Passos da 1ª Fase da Etapa 2 (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 155,
+              "texto": "PPC – Conteúdo do Conceito da operação (12)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 156,
+              "texto": "PPC – Vantagens do planejamento das FCte de forma paralela e simultânea (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 157,
+              "texto": "PPC – Responsabilidade da Redação do Plano Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 158,
+              "texto": "PPC – Mínimo que o Corpo do Plano deve conter (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 159,
+              "texto": "PPC – Subparágrafos da Situação (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 160,
+              "texto": "PPC – Parágrafo execução deve conter (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 161,
+              "texto": "PPC – Processos de controle (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 162,
+              "texto": "PPC – Períodos da Etapa 3 (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 163,
+              "texto": "PPC – Avaliação contínua do andamento das ações (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 164,
+              "texto": "PPC – Informações coletas x Informações críticas",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 165,
+              "texto": "PPC – Princípio da Sinergia: PSICo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 166,
+              "texto": "PPC – Coordenador da Operação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 167,
+              "texto": "PPC – Aspectos a serem observado na Etapa 3, 2º Período (5): SR GAS ou Ge Si R CoSi Ava",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 168,
+              "texto": "PPC – Operações Correntes x Operações Futuras",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 169,
+              "texto": "PPC – Reuniões (9)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 170,
+              "texto": "PPC – Objetivo principal das Reuniões",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 171,
+              "texto": "PPC – Conceito de Arte Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 172,
+              "texto": "PPC – Conceito de Abordagem Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 173,
+              "texto": "PPC – Conceito de Desenho Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 174,
+              "texto": "PPC – Fatores condicionantes da Arte Operacional (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 175,
+              "texto": "PPC – Elementos do Fator Espaço (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 176,
+              "texto": "PPC – Tempo x Espaço (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 177,
+              "texto": "PPC – Alto ritmo (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 178,
+              "texto": "PPC – Vantagens de um ritmo adequado (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 179,
+              "texto": "PPC – Resultado de um ritmo elevado",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 180,
+              "texto": "PPC – Elementos tangíveis (5) e elementos intangíveis da Força (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 181,
+              "texto": "PPC – Elementos do Desenho Operacional (11)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 182,
+              "texto": "PPC – Ações x Efeitos x PD",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 183,
+              "texto": "PPC – Ponto Culminante – Sucesso na ofensiva x Sucesso na Defensiva",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 184,
+              "texto": "PPC – LOp x Linhas de Esforço",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 185,
+              "texto": "PPC – Conceito de Pausa Operacional (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 186,
+              "texto": "Op Interagências – Células de Ligação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 187,
+              "texto": "Op Interagências – Unidade de Esforços",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 188,
+              "texto": "Op Interagências – Primeiro passo na construção e manutenção da coordenação interagências deve incluir (6): OAB PMM",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 189,
+              "texto": "Op Interagências – Definição do problema e Desenho Operacional",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 190,
+              "texto": "Op Interagências – Responsabilidade da coordenação interagência no nível estratégico",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 191,
+              "texto": "Op Interagências – Características das Operações Interagências: S A D I C5 O",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 192,
+              "texto": "Op Interagências – Princípios norteadores: CaCo FOI PU CoCo ou C4 PIFOU",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 193,
+              "texto": "Op Interagências – Condições para a eleição de preferências coletivas, chegando a um consenso (3): Opinião, Entendimento e Comprometimento",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 194,
+              "texto": "Op Interagências – Construção e manutenção da coordenação (9)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 195,
+              "texto": "Op Interagências – Influências dos meios de comunicação (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 196,
+              "texto": "Op Interagências – O que deve estar incluso no Plano de Comunicações",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 197,
+              "texto": "Op Interagências – Atividades em que as ONG poderão estar envolvidas (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 198,
+              "texto": "Op Interagências – Principal que uma ONG pode fornecer",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 199,
+              "texto": "Op Interagências – Motivos pelos quais as ONG podem evitar associação às FA",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 200,
+              "texto": "Op Interagências – Conhecimentos sobre as FA que as ONG podem ter acesso (5): CaNaLiTO",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 201,
+              "texto": "Op Interagências – Cuidados em apoiar ONG",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 202,
+              "texto": "Op Interagências – Características das tarefas de apoio às ONG (2): CuEx",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 203,
+              "texto": "Op Interagências – Capacidades mais demandadas pelas ONG (3): Se LoCo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 204,
+              "texto": "Op Interagências – Responsabilidade pela coordenação com a ONU",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 205,
+              "texto": "Op Interagências – Coordenação do Conselheiro Militar",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 206,
+              "texto": "Op Interagências – Composição do Movimento Internacional da Cruz Vermelha e do Crescente Vermelho",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 207,
+              "texto": "Op Interagências – Propósito do Movimento Internacional da Cruz Vermelha e do Crescente Vermelho",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 208,
+              "texto": "Op Interagências – Ponto comum em seu histórico de assistência",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 209,
+              "texto": "Op Interagências – Tarefa do CICV",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 210,
+              "texto": "Op Interagências – CICV x FICVCV",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 211,
+              "texto": "Op Interagências – Definição de CCOp",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 212,
+              "texto": "Op Interagências – Responsabilidades do Cmt Op (2): Mil Age",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 213,
+              "texto": "Op Interagências – Fatores principais na produção do plano (4): MR. FiFo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 214,
+              "texto": "Op Interagências – Devem ser expressos aos meios de comunicações (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 215,
+              "texto": "Op Interagências – Passos para o Cmt Op certificar-se do entendimento, identificar os objetivos e coordenar as ações (8)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 216,
+              "texto": "Op Interagências – Dados ou Informações que podem ser obtidas com ONG, OIG etc (5): HiCuPoSeGo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 217,
+              "texto": "Op Interagências – Seção de Ligação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 218,
+              "texto": "Op Interagências – Requisitos desejáveis da Seção de Ligação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 219,
+              "texto": "Op Interagências – Papel-chave do elemento de ligação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 220,
+              "texto": "Op Interagências – Propósito das equipes de ligação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 221,
+              "texto": "Op Interagências – Requisitos essenciais para o sucesso das Equipes de Ligação",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 222,
+              "texto": "Op Interagências – Princípios que deve ser dada atenção especial (2)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 223,
+              "texto": "Op Interagências – SINAMOB",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 224,
+              "texto": "Op Interagências – Temas tratados pelo Apoio Jurídico (12)",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

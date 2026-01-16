@@ -392,6 +392,14 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import('../modules/app2-estrategia/app2-estrategia-conceitos/app2-estrategia-conceitos').then(
             (m) => m.App2EstrategiaConceitos
           )
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app2-estrategia/app2-estrategia-check-abandono/app2-estrategia-check-abandono').then(
+            (m) => m.App2EstrategiaCheckAbandono
+          )
       }
     ]
   },
@@ -464,6 +472,14 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         loadComponent: () =>
           import('../modules/app3-planejamento-militar/app3-planejamento-militar-conceitos/app3-planejamento-militar-conceitos').then(
             (m) => m.App3PlanejamentoMilitarConceitos
+          )
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app3-planejamento-militar/app3-check-abandono/app3-check-abandono').then(
+            (m) => m.App3CheckAbandono
           )
       },
     ]

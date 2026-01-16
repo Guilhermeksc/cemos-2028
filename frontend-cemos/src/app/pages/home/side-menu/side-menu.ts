@@ -195,6 +195,7 @@ export class SideMenu implements OnInit, OnDestroy {
         'Flash Cards',
         'Perguntas',
         'Pensadores',
+        'Check Abandono',
       ],
       expanded: false
     },
@@ -212,6 +213,7 @@ export class SideMenu implements OnInit, OnDestroy {
         },
         'Flash Cards',
         'Perguntas',
+        'Check Abandono',
       ],
       expanded: false
     },
@@ -510,7 +512,10 @@ export class SideMenu implements OnInit, OnDestroy {
               break;
             case 'Pensadores':
               pathParts.push('pensadores');
-              break;  
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
+              break;
           }
         }
         break;
@@ -544,6 +549,9 @@ export class SideMenu implements OnInit, OnDestroy {
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
               break;
           }
         }
@@ -836,6 +844,9 @@ export class SideMenu implements OnInit, OnDestroy {
           break;
         case 'Pensadores':
           pathParts.push('pensadores');
+          break;
+        case 'Check Abandono':
+          pathParts.push('check-abandono');
           break;
         case 'Conceitos':
           pathParts.push('conceitos');
