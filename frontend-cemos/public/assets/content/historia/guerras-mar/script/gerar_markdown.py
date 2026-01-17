@@ -80,7 +80,7 @@ Exemplo de saída esperada:
 
 					
 | bibliografia_id | pergunta | resposta | prova | páginas | assunto |
-| {id_base} | Pergunta contextualizada | Resposta objetiva, conforme o item X.X do texto. |  | Pág. 11 | {assunto} |
+| {id_base} | Pergunta contextualizada | Resposta objetiva, conforme o item X.X do texto. |  | Pág. 11 | {numero} |
 
 
 deverá salvar o resultado em formato markdown

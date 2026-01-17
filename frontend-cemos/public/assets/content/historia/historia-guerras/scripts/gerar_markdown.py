@@ -4,13 +4,12 @@ BASE_DIR = Path(__file__).parent
 BASE_DIR.mkdir(parents=True, exist_ok=True)
 
 parametros_base = {
-    "12":   {"numero": 43, "assunto": "Capítulo 12 - A Batalha do Atlântico"},
-    "13": {"numero": 44, "assunto": "Capítulo 13 - A Batalha Naval de Midway"},
-    "14": {"numero": 45, "assunto": "Capítulo 14 - A Batalha do Golfo de Leyte"},
-    "15": {"numero": 46, "assunto": "Capítulo 15 - Conflito no Atlântico Sul"},
+    "1": {"numero": 47, "assunto": "I. Guerras da Indochina"},
+    "2": {"numero": 48, "assunto": "II. Guerras Árabe-Israelenses"},
+    "3": {"numero": 49, "assunto": "III. Guerras do Golfo"},
 }
 
-id_base = 6
+id_base = 7
 
 def conteudo_c(numero: int, assunto: str) -> str:
     return f"""Sua tarefa é ler integralmente o conteúdo do arquivo cap.md e criar um banco de questões de correlação entre colunas, no formato de associação lógica, conforme as instruções abaixo.
@@ -80,7 +79,7 @@ Exemplo de saída esperada:
 
 					
 | bibliografia_id | pergunta | resposta | prova | páginas | assunto |
-| {id_base} | Pergunta contextualizada | Resposta objetiva, conforme o item X.X do texto. |  | Pág. 11 | {assunto} |
+| {id_base} | Pergunta contextualizada | Resposta objetiva, conforme o item X.X do texto. |  | Pág. 11 | {numero} |
 
 
 deverá salvar o resultado em formato markdown

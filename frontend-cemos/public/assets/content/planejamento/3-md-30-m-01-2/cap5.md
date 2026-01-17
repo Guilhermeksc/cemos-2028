@@ -932,11 +932,11 @@ Tabela 4: proposta de agenda
 
 5.6.6 A Decisão expressará um plano geral para o atingimento do EFD Op, incluindo, necessariamente, as informações "o que" e "como fazer". Caso julgado pertinente, a decisão também poderá responder às perguntas “quem”, “quando”, “onde” e “para que”.
 
+## Página 73
+
 ### 5.7 Fase 6 Exm Sit Op — Conceito Preliminar da Operação
 
 5.7.1 Após a Decisão, o Comandante desenvolverá o Conceito Preliminar da Operação (CPO), estabelecendo “como” a decisão será implementada, “quem” executará as ações inerentes à sua implementação e, ainda, “onde”, “quando” e "para quê" serão executadas. Deverá, assim, expressar uma ideia geral de manobra quanto a como transcorrerão as operações inerentes à LA selecionada, situando-as no tempo e no espaço.
-
-## Página 73
 
 5.7.2 O CPO nada mais é que o aprimoramento do Conceito Sumário da LA selecionada como Decisão, enriquecido pelas conclusões obtidas no Confronto e pela análise de outros aspectos do Exame de Situação.
 

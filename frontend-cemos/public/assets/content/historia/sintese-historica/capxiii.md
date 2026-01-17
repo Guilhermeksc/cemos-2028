@@ -2,6 +2,8 @@
 
 ### AE ILQUES BARBOSA JUNIOR
 
+## Página 1
+
 Na atualidade, a evolução do Poder Naval impõe, mais do que em outros períodos da história, a existência, em diversos níveis, de líderes efetivos e assessores experientes. Tal característica decorre da dinâmica e complexidade das relações internacionais e, sobretudo, de uma crescente influência da tecnologia da informação nas atividades da civilização humana, o que inclui as situações de conflito.
 
 A dinâmica e a complexidade das relações internacionais e do ambiente interno indicam que na Era do Conhecimento os desafios serão permanentes e alcançarão magnitude crescente. Assim, para a identificação das capacidades previstas em uma Marinha equivalente à estatura político-estratégica do Brasil, analisaremos os múltiplos desafios que se apresentam na atual navegação da nossa Marinha. De início, o desafio mais importante será aquele voltado para a identificação e capacitação de líderes e assessores. Na época do Google, como mencionado, devemos identificar e capacitar líderes em todos os níveis hierárquicos, considerando, além dos conhecimentos científicos, tecnológicos e da área das ciências sociais e humanas, o estudo aprofundado da Ética e da Rosa das Virtudes.
@@ -10,7 +12,9 @@ Para os demais, como "auxílios à navegação" da análise que efetuaremos, vam
 
 Por oportuno, destacamos que os desafios apresentam interações; devendo ser admitida alguma dificuldade em delimitar, com exatidão, a causa ou efeito ou, em outras palavras, as consequências do equacionamento, ou não, de um determinado aspecto de um dos desafios nas capacidades pretendidas pela Marinha do Brasil.
 
-## DESAFIOS CULTURAIS
+## Página 2
+
+### DESAFIOS CULTURAIS
 
 Como as relações internacionais vêm passando por um período elevado de incertezas, temos adicionais dificuldades, no Brasil, para claramente identificar os desafios culturais e avaliar as correspondentes magnitudes e desdobramentos.
 
@@ -32,6 +36,8 @@ Proliferação das armas de destruição em massa
 
 Na atual dinâmica e amplitude de emprego do Poder Naval, constatamos a distância existente entre o "pacifismo unilateral" e a realidade das ameaças que, além de atuantes, exigem crescentes níveis de amplitude de prontidão.
 
+## Página 3
+
 Na verdade, é fundamental identificar as ameaças ao Brasil e o desenvolvimento de uma mentalidade de defesa na sociedade brasileira, de modo a sensibilizá-la acerca da importância das questões que envolvem ameaças aos interesses nacionais, em todas as suas vertentes, especialmente letalidade e temporalidade. Nesse contexto, é decisivo abordar posicionamentos pautados por uma ampla análise e identificação de situações de conflitos político-estratégicos e, ainda, aquelas decorrentes de fenômenos da natureza, que exigem o emprego das Forças Ar madas. Ainda temos as disputas por recursos naturais, como a água e minérios, alterações climáticas, ciberterrorismo, entre outros.
 
 Outro desafio cultural está relacionado com a Mentalidade Marítima. Pelo mar fomos descobertos e nos fizemos Estado, pois a partir do mar e dos rios consolidamos nossa Independência e fixamos nossas fronteiras, o que garante, até os dias atuais, a integridade do nosso território. Também nos defendemos das mais graves agressões à soberania nacional. Em suma, nosso País continental guarda relação inseparável com os espaços oceânicos e ribeirinhos, tanto por sua origem vitais para o Brasil, como o transporte, como por disporem de imensas riquezas que, seguramente, serão cada vez mais importantes para nossa sobrevivência e prosperidade.
@@ -39,6 +45,8 @@ Outro desafio cultural está relacionado com a Mentalidade Marítima. Pelo mar f
 Cada vez mais constatamos que foi, é e será pela via marítima e por hidrovias que vêm trafegando e trafegarão os produtos e serviços vitais para o Brasil. Nos oceanos e nas hidrovias temos a sobrevivência e a prosperidade do nosso País.
 
 Dessa forma, torna-se necessário aprimorar continuamente a integração das atividades da Marinha do Brasil relacionadas à proteção marítima (Poder Naval) com as relacionadas à segurança da navegação, à salvaguarda da vida humana no mar e à preservação ambiental (Poder Marítimo). Quando assim procedermos, estaremos fortalecendo junto à sociedade brasileira a necessidade de investir e manter uma estrutura capaz de atender às mais relevantes demandas do Desenvolvimento Nacional.
+
+## Página 4
 
 O desafio é convencer a sociedade acerca da importância do Sistema de Proteção e Segurança Marítima; pois, com o também constatamos ao longo da história, países marítimos sempre lideraram e lideram as relações internacionais.
 
@@ -54,6 +62,8 @@ O intenso emprego de hidrovias, com suas importantes vantagens competitivas, tam
 
 A segurança desse importante patrimônio, existente no ambiente marítimo e fluvial, caracteriza as atribuições constitucionais da Marinha do Brasil, envolvendo ampla gama de atividades econômicas, as infraestruturas estratégicas, meio ambiente, recursos minerais e, principalmente, a preservação desses recursos para as gerações futuras de brasileiros.
 
+## Página 5
+
 ## Autoridade Marítima Brasíleira (AMB)
 
 A Marinha do Brasil (MB), além da destinação constitucional de contriuir para a defesa da Pátria, também exerce, na figura do Comandante da Marinha, o papel de Autoridade Marítima Brasileira (AMB). Neste aspecto, seus propósitos são: assegurar a salvaguarda da vida humana, a segurança da navegação, no mar aberto e hidrovias interiores, bem como a prevenção da poluição ambiental por parte de embarcações, plataformas ou suas instalações de apoio. Em tempos de paz, essas são atividades bastante visíveis da MB para a sociedade.
@@ -64,6 +74,8 @@ As Capitanias dos Portos, Delegacias e Agências, espalhadas pelo território na
 
 A partir da complexidade das ameaças, anteriormente mencionadas, e considerando a magnitude do patrimônio a preservar, podemos identificar mais um desafio que contempla o constante fortalecimento das operações interagências, entre outros, temos o Instituto Brasileiro do Meio Ambiente e dos Recursos Na­turais Renováveis, a Agência Nacional de Transportes Aquaviários, Instituto Chico Mendes de Conservação da Biodiversidade, Polícia Federal e a Receita Federal. Apesar da relevância dos aspectos abordados, quanto à Mentalidade Ma­ rítima, ainda é imprescindível mencionarmos dois temas: a denominada "Terri­torialização do Mar" e considerações a respeito da "Economia Azul", aquela que envolve todas as atividades relacionadas direta ou indiretamente com o mar.
 
+## Página 6
+
 A Territorialização do Mar é uma nova vertente das relações internacionais que vem demonstrando o interesse de Estados por áreas do Alto-Mar, onde, sob diversos pretextos, pode ocorrer indevida alteração de deveres e/ ou direitos em beneficio de alguns Estados e em detrimento de outros, os costeiros ou da própria comunidade internacional.
 
 A Economia Azul é um modelo que propõe mudanças estruturais baseado no funcionamento dos ecossistemas marítimos. É calcado no uso inteligente e no aproveitamento total dos recursos naturais e no funcionamento dos ecossistemas, sem prejudicá-los.
@@ -71,6 +83,8 @@ A Economia Azul é um modelo que propõe mudanças estruturais baseado no funcio
 Em um cenário de elevada dinâmica e incertezas nas relações internacionais, passa a ser ainda mais relevante aceitar e implementar "Alterações no Status Quo". Assim, devemos neutralizar "pacifismos unilaterais", próprios de países imaturos, e aceitar naturalmente a existência de ameaças ao Brasil a partir de análises político-estratégicas que considerem, com adequada profundidade e amplitude, as interações e desdobramentos dos interesses nacionais no presente, no amanhã e no futuro do nosso País. A convicção do papel decisivo do Poder Marítimo, junto à sociedade brasileira, caracteriza outra alteração essencial no Status Quo.
 
 Para levar a termo esta alteração, precisamos nos preparar. No setor do pessoal, temos diversas iniciativas que estão atuando fortemente no aprimoramento da capacitação de oficiais e praças. Algumas dessas iniciativas exigem significativas alterações no planejamento e execução de programas e projetos da Marinha. Como exemplo, temos: no emprego de recursos humanos e financeiros, a necessidade de elaborar Estudos de Viabilidade Orçamentária (EVO) em conjunto com os Estudos de Viabilidade de Pessoal (EVP); tendo em mente que pessoal capacitado sempre será mais caro e difícil que recursos financeiros.
+
+## Página 7
 
 O processo de capacitação dos recursos humanos (Força de Trabalho) demanda a valorização das atividades acadêmicas e o aprimoramento do desempenho profissional de oficiais, praças e servidores civis, em especial nas áreas operativa e de ensino.
 
@@ -90,6 +104,8 @@ Temos um planejamento contínuo que aprimora o alinhamento estratégico da Marin
 
 Finalizando os desafios culturais, a disseminação dos valores éticos é fundamental em todos os níveis da formação militar, sendo a Rosa das Virtudes a fonte primeira para essa disseminação. A liderança e a ética militar precisam andar juntas, orientando a formação do nosso pessoal. Em cenários com elevada dinâmica de alterações nas situações de conflito e; onde, adicionalmente, ainda temos a ocorrência da redução das distâncias hierárquicas e a disseminação constante de valores diferentes daqueles que cultuamos, sempre será relevante fortalecer o estudo das virtudes e da ética. Essa é a melhor orientação que podemos dar para os futuros Chefes Navais.
 
+## Página 8
+
 ## DESAFIOS ESTRATÉGICOS
 
 Visando a aprofundar seu conhecimento estratégico, a Marinha do Brasil(MB) interage com várias instituições que valorizam a obtenção e a aplicação do conhecimento, sendo uma forma de se aprimorar e buscar a excelência. Nesse sentido, estabelece programas conjuntos de estudos técnicos e de engenharia alusivos a programas e projetos de interesse.
@@ -104,6 +120,8 @@ Dessa maneira, é importante continuar implementando iniciativas que valorizem o
 
 Outro importante desafio estratégico a enfrentar é como cumprir a missão das Organizações Militares (OM) em um ambiente em que a redução do efetivo caracteriza uma tendência de difícil reversão. Para não comprometer a qualidade dos serviços ou a segurança (do material e do pessoal), reiteramos a relevância da capacitação do pessoal e do emprego de modernos processos, e equipamentos e tecnologia.
 
+## Página 9
+
 A existência de Base Industrial de Defesa forte é importante para a capacidade logística e de mobilização de um país, além de ser um fator dissuasório. Nesse sentido, o desafio será como contribuir para o seu fortalecimento, capaz de reduzir o alto grau de dependência externa em um contexto orçamentário desfavorável.
 
 A tendência é o surgimento/desaparecimento cada vez mais rápido de produtos/tecnologias. Visando a evitar a obsolescência da Força, temos que aprimorar a cadeia logística da Marinha do Brasil, de modo a contar com itens de suprimento no estado da arte e, ainda, um planejamento que considere a disponibilidade de recursos orçamentários para o desenvolvimento e obtenção desse material, com tecnologias sensíveis incorporadas.
@@ -116,6 +134,8 @@ Programa Nuclear da Marinha (PNM);
 Programa de Desenvolvimento de Submarinos (PROSUB); e
 Construção dos Navios da Classe Tamandaré (NCT).
 
+## Página 10
+
 O PNM e o PROSUB promovem um imenso arrasto tecnológico para o Brasil. A autorização para a construção dos NCT abre uma importante oportunidade para que se incluam no projeto modernas tecnologias críticas. Isso demonstra o grande desafio que é o desenvolvimento desses programas.
 
 No que se refere às Atribuições Subsidiárias, as quais, ressalto, são subsidiárias apenas devido à denominação legal, a Marinha do Brasil coopera com o desenvolvimento nacional e, também, com a defesa civil por meio de participação em campanhas institucionais de utilidade pública ou de interesse social, e atua, por meio de ações preventivas e repressivas, na faixa de fronteira terrestre, no mar e nas águas interiores, contra delitos transfronteiriços e ambientais, isoladamente ou em coordenação com outros órgãos do Poder Executivo.
@@ -126,12 +146,16 @@ Para a realização de suas tarefas, o *COMCONTRAM* recebe informações de font
 
 O COMCONTRAM emprega ainda o Computer-Assisted Maritime Threat Evaluation System (CAMTES), que é uma ferramenta do Sistema de Inteligência Marítimo utilizada pela Organização do Tratado do Atlântico Norte. Sua finalidade é a análise inteligente do comportamento de navios, realizando a integração de diversos bancos de dados das principais instituições ligadas à Marinha Mercante e do AIS. O desafio é a interação com outras instituições e a consequente integração de informações. E sses sistemas, entre outros, fazem parte do Sistema de Gerenciamento da Amazônia Azul (SisGAAz).
 
+## Página 11
+
 Um desafio estratégico, também relevante, é a associação da Inteligência Operacional (que exige elevada velocidade de informações trafegadas por sistemas informatizados e banco de dados) com a Inteligência Tecnológica (que enfatiza a análise de informações e avaliação dos resultados, identificando tecnologias emergentes e as declinantes, e ainda os processos de Pesquisa e Desenvolvimento). Indica que devemos buscar o aprimoramento da Inteligência Operacional, de modo a, juntamente com sistemas de Inteligência Artificial, executarmos funções consideradas inteligentes, tais como: termos disponíveis sistemas com capacidade de raciocínio, aprendizagem, reconhecimento de padrões e de inferências. Sempre é oportuno destacar que a Inteligência Artificial é uma ferramenta útil tanto para apoio à decisão quanto para a execução de operações.
 
 A Marinha do Brasil, constatando essa necessidade, vem desenvolvendo o Sistema de Inteligência Operacional Web (SIOp-Web), por meio do Centro de Análises de Sistemas Navais. Trata-se de um sistema informatizado, com um banco de dados associado. Esse sistema poderá ser acessado pelas OM, via Rede de Comunicações Integradas da Marinha, para inserção e obtenção de dados para
 planejamento e execução de operações. Ademais, recentemente, estabeleceu, no Estado-Maior da Armada, o Núcleo de Inteligência Tecnológica da Marinha. O delineamento da Força de Trabalho (FT), composta por militares de carreira, prestadores de tarefa por tempo certo, temporários, servidores civis e contratados, demandada para guarnecer cada OM, constitui a determinação de necessidades que serve de base para o planejamento da gestão de pessoal, desde a obtenção até a distribuição, visando a colocar a pessoa certa, no lugar certo, no momento certo, bem como para o estabelecimento do fluxo de carreira e dos itinerários formativos.
 
 A missão de reorganizar a FT da Marinha não se limita à distribuição dos recursos humanos, deve, também, equilibrar os interesses da MB e dos integrantes da FT, repensar a relação das pessoas com o trabalho, a determinação de necessidades de pessoal e as competências, criar ou ajustar serviços, otimizar o nível de participação, redistribuir as tarefas, aglutinar pessoal em trabalhos de equipe, racionalizar a utilização de espaços físicos e equipamentos, definir critérios de alocação de pessoal, melhorar as condições de trabalho, bem como o tempo certo para as promoções e alocação de pessoal.
+
+## Página 12
 
 ## DESAFIOS ESTRUTURAIS
 
@@ -142,6 +166,8 @@ Como mencionado, a reestruturação da DGN decorreu, entre outros aspectos, da n
 As transformações que levaram à reformulação do Sistema de CT&I e Engenharia da Marinha foram motivadas pela necessidade premente de se racionalizar a alocação de recursos humanos, financeiros e materiais, de modo geral, em toda a Marinha e, em particular, no Setor de CT&l.
 
 A incorporação do PROSUB e do PNM ao Setor de CT&l, representada pela transferência de subordinação da Coordenadoria-Geral do Programa de Desenvolvimento de Submarino com Propulsão N uclear e do Centro Tecnológico da Marinha em São Paulo (CTMSP), da Diretoria-Geral do Material da Marinha (DGMM) para a Diretoria-Geral de Desenvolvimento Nuclear e Tecnológico da Marinha (DGDNTM), possibilitou uma distribuição mais homogênea das atribuições de cada Órgão de Direção Setorial (ODS). Por outro lado, o Setor de responsabilidade da DGDNTM teve sua abrangência ampliada, absorvendo os principais programas e projetos estratégicos da Marinha, aqueles que envolvem o desenvolvimento do submarino com propulsão nuclear, com forte arrasto científico, tecnológico e industrial. D esde então, a DGDNTM passou a ser a interlocutora  da Marinha para todos os assuntos afetos à pesquisa e desenvolvimento com os demais setores e organizações, estatais e privados, que tratam do assunto.
+
+## Página 13
 
 Desde o início de suas atividades, o PNM defronta-se com óbices e oportunidades para um processo sistemático de absorção, aprimoramento e ampla disseminação de tecnologias de ponta, inclusive aquelas ainda indisponíveis no País.
 
@@ -157,6 +183,8 @@ Fomento da Base Industrial de D efesa, ligada à construção de submarinos e à
 Desenvolvimento, por meio da AMAZUL e supervisão da DGMM, da Gestão do Conhecimento nas áreas de projeto, desenvolvimento e
 engenharia de submarinos e utilização da energia nuclear.
 
+## Página 14
+
 É oportuno ressaltar que a prioridade de emprego de equipamentos desenvolvidos no País, sempre que possível, é vital para o crescimento do Sistema de CT&l da MB, contribuindo para a otimização na gestão e consequentemente para melhor aplicação dos recursos.
 
 Dessa maneira, considerando que os custos totais de obtenção desses tipos de meios somam centenas de milhões de reais, a Marinha do Brasil tem um grande desafio, além da demanda de recursos para a continuidade dos grandes projetos de obtenção. Assim, são necessários recursos para operação e apoio (manutenção, sobressalentes, etc.) desses meios, durante a vida útil (normalmente de 30 a 40 anos) . É fundamental o apoio do Poder Político para a sustentação do preparo e emprego do Poder Naval.
@@ -169,6 +197,8 @@ Desfazimento - cerca de 2%.
 
 Outro desafio estrutural é a disponibilidade de áreas de adestramento, que permitam a realização de tiro real com meios navais, aeronavais e orgânicos de fuzileiros navais, ao mesmo tempo com dimensões, que permitam a condução das ações em terra, no mar e hidrovias. Atualmente, o Corpo de Fuzileiros Navais emprega o Campo de Instrução de Formosa, que permite executar tiro real, com
 meios aéreos e de fuzileiros navais, além de possuir uma extensa área para o desdobramento da tropa. Entretanto, essa área não é litorânea, o que não permite a realização do Movimento Navio para Terra. A Força de Fuzileiros da Esquadra dispõe, no momento, apenas da Ilha da Marambaia para realizar ao mesmo tempo tiro real e o desembarque de meios e pessoal.
+
+## Página 15
 
 De modo a buscar a superação desses desafios estruturais, a Marinha do Brasil possui, operando ou desenvolvendo, diversos simuladores. Entre outros, po demos citar:
 
@@ -186,6 +216,8 @@ A inserção do Conselho de Estudos Político-Estratégicos (CEPE), nas atividad
 
 O CEPE-MB contribui com os demais setores da MB na realização de estudos complexos, multifacetados, com implicações a longo prazo, difíceis de serem realizados pelo pessoal da ativa, sujeito a imposições de carreira e naturais limitações de seu dia a dia. Para isso, o CEPE-MB conta com a colaboração de especialistas em diversas áreas, voluntários, originários da reserva naval, das universidades, da base industrial de defesa e de academias e associações especializadas, por meio de parcerias nacionais e internacionais.
 
+## Página 16
+
 O desafio para o CEPE-MB é consolidar, ampliar e disseminar os estudos desenvolvidos pela Marinha.
 
 Ainda como desafio estrutural, no setor de pessoal, é contínuo o aprimoramento da prestação da Assistência Médica Hospitalar, no Sistema de Saúde da Marinha (SSM). Como sabemos, conforme previsão legal, temos o enfrentamento das limitações orçamentárias, agravadas pelo crescimento e envelhecimento populacional, e pelo aumento dos custos em saúde decorrente da inflação do setor saúde, cujo índice é muito superior ao oficial.
@@ -193,6 +225,8 @@ Ainda como desafio estrutural, no setor de pessoal, é contínuo o aprimoramento
 Por outro lado, o SSM deve estar em condições de incorporar novas tecnologias e de capacitar adequadamente os profissionais de saúde, a fim de continuar provendo aos usuários uma assistência de excelência.
 
 Dentre outras iniciativas, foi criado o Saúde Naval que, à semelhança dos mais modernos sistemas de saúde, visa a implementar medidas destinadas a melhoria, constante, da qualidade de vida dos usuários do SSM. O Saúde Naval visa a aprimorar a prevenção de enfermidades.
+
+## Página 17
 
 ## DESAFIOS DE CIÊNCIA TECNOLOGIA. INOVAÇÃO E ENGENHARIA
 
@@ -203,6 +237,8 @@ Em um mundo que valoriza cada vez mais os dados digitais, a diversidade das ques
 Para lidar com esses desafios, a MB necessita estudar as mudanças de forma rigorosa e ao mesmo tempo criativa, escapando das armadilhas de paradigmas que nos ancoram. Ao mesmo tempo em que precisamos seguir com os planejamentos da nossa Força Naval fundamentados nos conhecimentos disponíveis, temos que criar um fórum onde as análises e discussões sejam o mais livre possível e considerem todas as possibilidades das perspectivas navais.
 
 Temos que nos atualizar quanto às possibilidades e tendências dos avanços exponenciais da tecnologia e da engenharia militar-naval. Ainda, realizar exercícios sobre a Guerra Naval do Futuro, gerando insights que poderão ser do interesse da MB e de outras instituições relacionadas à defesa.
+
+## Página 18
 
 A Escola de Guerra Naval (EGN) deve aprimorar os estudos sobre os conflitos, não somente aqueles do passado e da atualidade, mas as possibilidades de conflitos no futuro.
 
@@ -215,6 +251,8 @@ Esse contexto remete aos combates da Guerra Naval, posto que o sucesso de uma Op
 
 Os navios interligados por redes que utilizam o Protocolo de Internet (IP) necessitam de alta capacidade de transferência de dados utilizando comunicação por satélite para troca de informações entre navios e centros de comando e controle. Assim, considerando a guerra da informação, são exigidos marinheiros e fuzileiros altamente qualificados e motivados.
 
+## Página 19
+
 As tecnologias e a engenharia militar modernas mudaram o Ambiente Operacional. Nesse novo ambiente, as imagens de satélites dificultam a ocultação de Forças Navais e a Guerra Cibernética é uma realidade. Estamos sofrendo ataques, tanto em setores do governo como na iniciativa privada.
 
 Os satélites e a Internet conectaram o planeta, tornamo-nos dependentes dessa tecnologia e de sua engenharia, o que nos oferece novas oportunidades a serem exploradas e novas vulnerabilidades a serem protegidas. Os cabos submarinos de fibra óptica são fundamentais para a comunicação. Eles interligam seis dos sete continentes da Terra. Apenas a Antártica ainda não conta com uma ligação do tipo. Esses cabos atravessam os oceanos e fazem com que a troca de informações entre os países seja rápida e eficiente. São milhares de quilômetros de fibra óptica que respondem por cerca de 99% das conexões do nosso planeta. Até 2019, oito novos cabos submarinos vão entrar em operação no Brasil, mais do que dobrando a capacidade de tráfego dos seis que existem atualmente.
@@ -225,6 +263,8 @@ Para nos adaptarmos a essa nova realidade, surgem novos desafios para a prote ç
 
 Abordando, ainda, as evoluções tecnológicas no Ambiente Operacional, vemos uma presença cada vez maior dos drones no campo de batalha, passando de poucas dezenas, no início do século, para milhares atualmente, conforme mencionado por Peter Singer em seu livro Wired for Uilr, e ocupam os três ambientes: terra, mar e ar.
 
+## Página 20
+
 As armas a laser e eletromagnéticas e as hipersônicas são uma nova alternativa para sistemas de armas. No entanto, apesar de há pouco inseridas como ficção científica, estão equipando navios e tendo como alvos todos aqueles que estiverem dentro do alcance desses sistemas de arma .
 
 Em que pese a importância dos desafios estratégicos apresentados, temos que considerar que a capacidade das Marinhas cumprirem os objetivos pretendidos está relacionada com o desenvolvimento científico, tecnológico e da engenharia dos respectivos países. Dessa maneira, posicionar a MB entre as Marinhas de maior destaque no cenário mundial é o maior desafio, que só poderá ser alcançado se houver avanços significativos nas áreas prioritárias indicadas na Estratégia de CT&I, elaborada no âmbito da nossa M arinha.
@@ -232,6 +272,8 @@ Em que pese a importância dos desafios estratégicos apresentados, temos que co
 A definição de estratégias para colocá-las no mesmo nível com as Marinhas mais desenvolvidas depende da capacidade da MB em identificar fatos portadores de futuro e propor ferramentas que contribuam para a tomada de decisão sobre os investimentos a realizar. É necessário aumentar o dispêndio em pesquisa e desenvolvimento (P&D), incluindo parcerias com as academias e a base industrial de defesa, e ser capaz de atrair e manter os recursos humanos necessários.
 
 A inovação tecnológica acrescenta valor aos produtos e ganho nos processos produtivos de uso dual. O desafio de promover a capacidade de converter ideias em valor é preponderante para o sucesso das nossas atividades. Gradualmente, é necessário transferir parcela de investimentos em importação de tecnologia e serviços especializados (com a transferência de tecnologia) para os setores de pesquisa e desenvolvimento.
+
+## Página 21
 
 A consolidação do Sistema de CT&I da Marinha resulta da garantia de continuidade das ações, a fim de que não sejam interrompidos programas e projetos fundamentais para o desenvolvimento da CT&I, no âmbito da MB.
 
@@ -248,7 +290,9 @@ Desenvolver tecnologias, notadamente as "Tecnologias-Chave", que possam contribu
 Domínio da Inteligência Tecnológica; e 
 Contribuição para a tomada de decisão do Conselho de Ciência e Tecnologia da Marinha.
 
-## DESAFIOS ORÇAMENTÁRIOS
+## Página 22
+
+### DESAFIOS ORÇAMENTÁRIOS
 
 A abrupta mudança da conjuntura econômica do País, em 2014, foi determinante para a decisão de aprimorar a atribuição de prioridades dos programas e projetos da MB.
 
@@ -262,6 +306,8 @@ A Alta Administração Naval, por meio da Gestão Estratégica, analisa e avalia
 
 O Controle Interno está sendo aprimorado de forma a permitir o gerenciamento dos Riscos Estratégicos da Marinha e garantir o compliance, ou seja, a conformidade com as leis e regulamentos externos e internos à Força.
 
+## Página 23
+
 A concentração logística, por meio da reestruturação e reformulação da capacidade gerencial das funções logísticas, visa a otimizar a utilização dos recursos humanos, materiais e financeiros, de forma a incrementar a eficácia do apoio logístico ao Poder Naval.
 
 Considerados o NRF e a nova metodologia prevista para o Sistema de Planejamento Estratégico da Marinha, a Alta Administração Naval aprovou a criação do Plano de Metas YANKEE, que concentra todas as Metas Prioritárias da Marinha e propicia um novo mecanismo, no Sistema do Plano Diretor, para a prioridade e alocação dos recursos disponibilizados à MB.
@@ -269,6 +315,8 @@ Considerados o NRF e a nova metodologia prevista para o Sistema de Planejamento 
 A EC no 95/2016 estabeleceu o teto para as despesas do Orçamento Público, limitando, em última análise, a inclusão de novos projetos ao Orçamento da MB. Ocorre que a mesma EC permite que o aumento de capital de empresas estatais, não dependentes, esteja fora da base de cálculo e limites para o teto.
 
 Assim, foi idealizado o modelo de negócio, incluindo a Empresa Gerencial de Projetos Navais, como empresa pública não dependente, para viabilizar financeiramente o projeto dos Navios da Classe Tamandaré.
+
+## Página 24
 
 ## CONSIDERAÇÕES FINAIS
 
@@ -280,6 +328,8 @@ Atualmente, as inovações tecnológicas são diárias e resultam no aprofundame
 As pesquisas relacionadas aos veículos autônomos (meios não tripulados), para emprego aéreo, terrestre ou marítimo (na superfície ou submerso), estão no caminho principal dos investimentos para os próximos anos. A filosofia é a redução de custos e riscos para os combatentes, permitindo, também, uma maior autonomia de emprego de meios nas cenas de ação.
 
 Temos a robotização da guerra. A primeira fase desse processo ocorreu como emprego de Veículo Aéreo Não Tripulado, como vetor de atuação para realizar incursões perigosas ao território dominado pelo inimigo.
+
+## Página 25
 
 As situações de emprego do Poder Naval do presente, amanhã e futuro ocorrem, cada vez mais, em menores distâncias temporais, sendo de difícil previsão quais ambientes serão afetados ou quais não serão. A tendência é ocorrer uma ampliação das opções tecnológicas nas situações de conflitos. Estão em desenvolvimento, e a poucos passos do uso operacional, tecnologias surpreendentes como as de aumento do desempenho humano em combate, de construção de redes e sistemas resistentes às invasões cibernéticas, de controle do espectro eletromagnético e uso generalizado de agilidade de frequência, de navegação precisa em ambientes onde a utilização de sistemas tipo Global Positioning System seja impossível, de sensores inteligentes, de mísseis de cruzeiro de altíssima velocidade, de armas de alta energia, de satélites e aeronaves fracionadas e configuráveis, e de veículos aéreos, terrestres, navais, submarinos e anfíbios remotamente controlados e de alto desempenho.
 

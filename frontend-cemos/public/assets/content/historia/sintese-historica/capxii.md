@@ -2,6 +2,8 @@
 
 ### CMG (RM1) WILLIAM DE SOUSA MOREIRA
 
+## Página 1
+
 **O século XX" irrompeu navegando a 32 nós (59,2km/h). Essa fora a velocidade desenvolvida por um pequeno navio, o Turbinia, na parada naval britânica de 1897, por ocasião do jubileu de Diamante da Rainha Vitória. O impacto sobre o público que testemunhava aquela efeméride prenunciava uma era de desenvolvimentos que impulsionaria as aventuras humanas no mar.**
 
 A herança científica e tecnológica da modernidade, notadamente ao longo do século XIX, dera origem a sucessivos avanços na indústria marítima. A máquina a vapor, símbolo da Revolução Industrial, embarcara para transformar a propulsão naval. A energia do combustível da época, o carvão, era transformada nas caldeiras, que geravam o vapor necessário para mover grandes máquinas alternativas e, posteriormente, turbinas. As rodas laterais de pás, inicialmente adotadas para impulsionar os navios, foram substituídas pela hélice propulsora, o que liberava espaço nas praças de máquinas, melhorava a manobrabilidade e reduzia vulnerabilidades.
@@ -9,6 +11,8 @@ A herança científica e tecnológica da modernidade, notadamente ao longo do s�
 O resultado foi, por um lado, a paulatina independência das velas e dos ventos e, por outro, a possibilidade de navios maiores, mais velozes e de maior confiabilidade. Aos poucos, as calmarias deixaram de ser uma preocupação para os navegantes.
 
 Paralelamente, a evolução da siderurgia e da metalurgia fazia com que as ligas metálicas ferrosas passassem a ser a matéria-prima por excelência da construção naval. Couraças foram incorporadas às laterais do navio, na tentativa de fazer frente ao surgimento das munições explosivas que destroçavam os cascos de madeira. O engenheiro britânico Robert Whitehead havia desenvolvido uma arma submarina que se tornaria o pesadelo dos grandes navios: o torpedo autopropulsado. Se em 1866 o alcance dessa arma era de aproximadamente 220 jardas (201 metros), no início do século XX já era de 2.190 jardas. (2.002 metros) e, em 1913, às vésperas da Grande Guerra, chegava a 18.500 jardas (16,9krn) (MCNEIL, 1982, p. 284).
+
+## Página 2
 
 As comunicações deram um salto com a passagem dos primeiros cabos submarinos transatlânticos nos anos 1850/60, de modo que, no limiar do século XX, já configuravam uma malha mundial a revolucionar o modo de se comunicar e, consequentemente, a capacidade de comando e controle sobre Forças operando a grandes distâncias. A primeira transmissão de telégrafo, em 1858, reduzira o tempo de envio de uma mensagem entre usuários na Europa e nos EUA de dez dias - tempo da travessia do Atlântico por navio -para algumas horas.
 
@@ -18,11 +22,15 @@ Ampliava-se, desse modo, a produção de conhecimento sobre o ambiente marinho, 
 
 Naquele contexto, parecia que o desenvolvimento tinha pressa e a velocidade no mar tornava-se cada vez mais relevante, a ponto de as grandes companhias de navegação criarem o Prêmio Blue Riband para distinguir o navio que fizesse a travessia mais rápida do Atlântico Norte. Há registros de vencedores entre 1838 e 1952. Em 1838, o Sirius, da companhia British & American, com deslocamento de 1.995 toneladas e capacidade de 40 passageiros, com propulsão a vapor e com rodas de pás laterais, fez a travessia em uma rota de 3.583 milhas náuticas (mn) de extensão em 18,6 dias, a 8,03 nós (14,8krn/h). Em 1909, o RMS Mauretania, da Cunard Line, com 32.000t. e 2.165 passageiros, com propulsão de turbinas a vapor e hélices, percorreu 2.784mn em 4,4 dias, na velocidade de 26 nós (48,3krn/h). Em 1956, o United States, da United States Lines (USL), de 44.500t. de deslocamento e com 1.928 passageiros, também com turbinas, navegou 2.906mn em apenas 3,5 dias, alcançando 34,5 nós (63,9krn/h) (N EWAL, 2018). **Em apenas uma década, a turbina a vapor transformara a propulsão naval, tanto no uso civil quanto militar!**
 
+## Página 3
+
 No que tange aos navios de guerra com propulsão a vapor, um fator de importância estratégica era a fonte de energia para a propulsão, ou seja, o combustível. Após a energia eólica ter predominado pelos séculos da Marinha a vela, a propulsão mecânica pela máquina a vapor, no início do século XIX, fez ascender o carvão mineral como fonte de energia por excelência para a utilização em caldeiras geradoras de vapor. Essa nova fonte era encontrada em abundância e qualidade na Grã-Bretanha, berço da maior potência naval da época. Esse tipo de combustível representava, contudo, desafios logísticos consideráveis, entre os quais sua disponibilização em portos pelo mundo, as extenuantes fainas de carregamento do navio e a inevitável poluição que causava a bordo.
 
 Assim, os primeiros esforços de mudança para o óleo combustível se deram ao início do século XX, não sem hesitação do Almirantado britânico pelo fato de trocar o carvão, um material abundante no Reino Unido, por outro de menor disponibilidade, o petróleo e seus derivados. Contudo, a realidade se impôs, pelas enormes vantagens do óleo combustível, que possuía maior teor energético e permitia o abastecimento e o transporte com maior facilidade (DAHL, 2001). A paulatina mudança foi sendo implementada nos navios, tendo o óleo se tornado o combustível prioritário, já na primeira metade do século XX.
 
 Essa sequência de avanços não era sem estímulos. Com sua obra **A influência do Poder Marítimo na história, 1660-1783, (1890), Alfred Thayer Mahan havia lançado as bases da teoria do domínio do mar, alertando para a importância de as potências mundiais possuírem grandes Marinhas**. As décadas que se seguiram ao lançamento daquela obra testemunharam um "desfile de novas capacitações", que instrumentalizavam o uso da força no mar. Uma classe de navio considerada revolucionária, que bem representa esse período, foi o HMS Dreadnought, extra ordinária plataforma naval, com deslocamento de 18.120t, propulsão com quatro eixos e hélices movidos por turbinas 23.000hp e 18 caldeiras, era capaz de desenvolver 21 nós (39km/h), com raio de ação de 6.620mn. Tinha como armamento dez canhões de 12pol., 24 de 3pol. e quatro tubos de torpedos de 5 x 18 polegadas. Usava como combustível o carvão, pulverizado com óleo.
+
+## Página 4
 
 Tamanho poder tornou-se o novo paradigma em termos de navio de guerra, tornando obsoletos os seus precursores, que passaram a compor o grupo pré-Dreadnought.
 
@@ -31,6 +39,8 @@ O governo da então recente República acompanhava com interesse os desenvolvime
 Ainda com relação aos avanços da tecnologia naval, convém destacar o advento dos motores diesel, que ocupariam local de destaque na propulsão naval a partir da primeira metade do século XX:, já na era do óleo combustível, inicialmente, nos navios de menor porte. Passaram a ser utilizados, dependendo do tipo de motor, acoplados ao eixo, diretamente ou através de uma engrenagem redutora; ou a um gerador que, por sua vez, aciona um motor elétrico acoplado ao eixo, nos sistemas denominados diesel-elétricos, como os adotados nos Contratorpedeiros de Escolta Classe Bertioga, empregado pela Marinha do Brasil a partir da Segunda Guerra Mundial, dos quais um remanescente é conservado como navio-museu, o Bauru.
 
 Posteriormente, as turbinas a gás também tornar-se-iam opção para a propulsão em navios de guerra, principalmente a partir dos anos 1960. São empregadas em várias combinações, existindo navios com propulsão exclusivamente com turbinas a gás de tipos diferentes combinadas (COGOG), como é o caso das Fragatas Classe Greenhalgh; com uma combinação de motores diesel-turbinas a gás (CODOG), como ocorre nas Fragatas Classe Niterói e nas Corvetas Classe Inhaúma e Barroso; ou ainda uma associação do sistema diesel-elétrico com turbinas (COD LAG), as quais são empregadas para altas velocidades, adotada nas Fragatas britânicas MK-23. Nos modernos contratorpedeiros britânicos Tipo 45 adotou-se um sistema integrado de propulsão elétrica, onde uma combinação de geradores acionados por motores diesel e turbinas a gás produzem a quantidade necessária de energia elétrica para a propulsão e para os diversos sistemas, confor me a demanda. A utilização de motores elétricos para a propulsão destes navios apresenta vantagens significativas, por reduzir a assinatura acústica (nível de ruído), característica relevante na guerra antissubmarino. Outra combinação desiste ma de propulsão adota hélices, acionadas por motores diesel, para velocidades de cruzeiro, cujo efeito pode ser reforçado, quando se necessita de altas velocidades, pela propulsão a jato d'água (hidrojet) acionada por turbina a gás. É empregado nas Fragatas Meko A-200SAN, da Marinha sul-africana, construídas na Alemanha.
+
+## Página 5
 
 ## A AVIAÇÃO
 
@@ -45,6 +55,8 @@ Inicialmente, para viabilizar o embarque de aeronaves, diversas tentativas de ad
 
 A motivação e as experiências operacionais adquiridas no conflito contribuíram para a solução de diversos problemas técnicos relativos à operação de aeronaves embarcadas. Em 1917, surgiu o primeiro porta-aviões capaz de realizar decolagem e pouso de aviões - foi o H M S Argus, um navio mercante convertido, de modo a possuir um convés corrido em toda a sua extensão. 4 A partir de então, os projetos de engenharia naval sofisticar-se-iam até o estágio atual, em que grandes e poderosos porta-aviões nucleiam Forças Navais, com amplo espectro de emprego.
 
+## Página 6
+
 Não foi à toa que o porta-aviões logo se tornou o navio capital das grandes potências capazes de construir ou possuir esse tipo de meio, que consistia em verdadeira base aérea móvel, com elevado potencial de contribuir para as tarefas básicas do Poder Naval, notadamente o controle de área marítima e a projeção de poder a longas distâncias. Combates na Segunda Guerra Mundial, especialmente no Teatro de Operações do Pacífico, forneceram evidências de que aquelas bases aéreas móveis seriam determinantes na estratégia naval, gerando continuamente novas doutrinas e dando origem a outros desenvolvimentos tecnológicos.
 
 Contudo, tal meio era altamente custoso, intensivo em tecnologias e exigia enorme capacidade de apoio logístico, haj a vista a ampla gama de sofisticados sistemas e equipamentos, incluindo os ligados ao lançamento e pouso de aeronaves, como catapultas e aparelhos de parada. D emandava, igualmente, contingentes expressivos de pessoal muito qualificado, além dos que tradicionalmente eram necessários aos navios de superfície, como os envolvidos na operação e na manutenção das aeronaves embarcadas, incluindo os próprios pilotos e técnicos dos Esquadrões de aviação naval. Essa tecnicidade limitou o número de países capazes de operar um navio complexo como o porta-aviões.
@@ -55,11 +67,15 @@ A ampliação e a versatilidade do helicóptero trouxeram a necessidade de novos
 
 O primeiro pouso de um helicóptero em navio da Marinha do Brasil ocorreu no Navio Hidrográfico Sirius, em Kobe, Japão, em 1957, quando de seu recebimento. O NHi Sirius foi o primeiro navio da MB a ser dotado de aeronave orgânica. No ano seguinte, alguns dias após a sua chegada ao Brasil, o Presidente da República, Juscelino Kubitschek, embarcaria em um helicóptero pela primeira vez, decolando do convés do Sirius, quando visitou o navio acompanhado pelo Ministro da Marinha (6 de junho de 1958)
 
+## Página 7
+
 ### A História da Aviação Naval
 
 A história da Aviação Naval Brasileira inicia-se em 23 de agosto de 1916, com o decreto de criação da Escola de Aviação Naval - a primeira escola militar de aviação do País. Foi instalada, provisoriamente, no antigo Arsenal de Marinha, ao pé do Morro de São Bento, e na Ilha do Rijo; passando à Ilha das Enxadas (1917); e, a partir de 1924, para a Ponta do Galeão, Ilha do Governador, onde disporia de pista de pouso e amplas instalações.
 
 Ao longo de mais de um século, a sua história pode ser dividida em quatro fases, interrompidas por um período em que deixou de existir, entre 1941 e 1952. A fase pioneira registrou eventos marcantes, como os primeiros raids aéreos, a partir do Rio de Janeiro, para Angra dos Reis (1916), para Campos (1917), para Santos (1919), Aracaju (1923) e Belo Horizonte (1926)- distâncias significativas para a época; o transporte das primeiras malas postais, pelo então denominado Correio da Esquadra (depois Correio Aéreo Naval); um voo histórico com Santos Dumont como passageiro (25 de janeiro de 1917); o primeiro voo noturno (9 de março de 1917); o primeiro voa de um presidente da República em uma aeronave militar brasileira (Wences lau Brás, em 2 de abril de 1917); a participação de aviadores navais brasileiros em operações de patrulha, na Europa, durante a Primeira Guerra Mundial; a criação de bases aéreas navais em inúmeras localidades, núcleos de diversos aeroportos e bases ainda existentes; imagens valiosas da então Capital Federal e arredores nas primeiras décadas do século XX, visto que o Rio de Janeiro era usado como área de exercício para o reconhecimento aéreo; a realização de levantamentos fotográficos em apoio à confecção de cartas náuticas e mapas e projetos do governo; a fabricação dos primeiros aviões no Brasil; o emprego em combate contra os movimentos revoltosos nessa fase conturbada da República; ações de patrulha no Alto Solimões (região de Tabatinga), por ocasião do conflito entre Colômbia e o Peru (Questão de Letícia, 1933), o estabelecimento dos primeiros procedimentos relacionados à medicina de aviação, entre outros.
+
+## Página 8
 
 Com a ativação do Ministério da Aeronáutica, em 1941, foi extinta, assim como a Aviação do Exército.
 
@@ -79,11 +95,15 @@ O São Paulo, por suas maiores dimensões, trouxe novas perspectivas e condiçõ
 
 Mais recentemente, em 2018, foi adquirido junto ao Reino Unido um navio porta-helicópteros multipropósito, o PHM Atlântico, ex-HMS Ocean, que atenderá às demandas da Esquadra brasileira em curto e médio prazo.
 
+## Página 9
+
 ## NOVAS OPÇÕES PARA O USO DA FORÇA NO AMBJENTE MARINHO
 
 Além dos porta-aviões e dos navios escoltas, uma variedade de soluções tecnológicas para os problemas de projeção de força a partir do mar foram surgindo. As inovações concebidas, em geral, implicavam o desenvolvimento e adaptação a novas doutrinas e táticas, nem sempre de fácil implementação. A História registrou alguns insucessos na aplicação de novas ideias, como no caso das operações anfíbias. É o caso, por exemplo, da Campanha de Galípoli na Primeira Guerra Mundial, em que um desembarque anfíbio foi tentado com resultados adversos para britânicos, franceses, neozelandeses e australianos que dela participaram. O estudo dessa campanha permitiu o repensar os desafios das projeções de poder vindas do mar. Assim, surgiram inovações voltadas aos problemas do movimento navio-terra, que seriam aplicadas nas guerras do século XX em que esse tipo de operação foi empreendida. Navios anfíbios, como os de desembarque de carros de combate, posteriormente, os navios de desembarque doca, com suas embarcações de desembarque orgânicas, foram ampliando a capacidade de projeção de força.
 
 Com a evolução do contexto político estratégico, ganharam importância os navios com maior flexibilidade de emprego, podendo ser usado em diferentes missões e com diferentes propósitos. São meios que podem atuar em cumprimento às tarefas básicas do Poder Naval ou em apoio, por exemplo, no caso de assistência humanitária ou por ocasião de catástrofes.
+
+## Página 10
 
 ## TECNOLOGIA ABAIXO D'ÁGUA 
 
@@ -97,6 +117,8 @@ Nesse processo, pode-se destacar o salto de capacitação tecnológica e industr
 
 O sucesso desses empreendimentos foi uma vitória para a engenharia brasileira e um importante passo na direção do projeto próprio para um submarino com propulsão nuclear.
 
+## Página 11
+
 ## A ERA NUCLEAR
 
 O desenvolvimento exponencial da ciência e de suas aplicações tecnológicas ao longo do século XX, principalmente a partir da Primeira Guerra Mundial, foi aposentando tecnologias até então tidas como no estado da arte, como foi o caso dos dreadnoughts, o navio revolucionário da corrida armamentista naval que antecedeu a Grande Guerra, mas que se tornaria obsoleto com o advento do porta-aviões.
@@ -109,6 +131,8 @@ O projeto do Submarino norte-americano Nautilus mostrou ao mundo o potencial de 
 
 Cônscio da relevância da nova forma de energia, o Almirante Álvaro Alberto da Motta e Silva empenhou-se em defender os interesses brasileiros para o desenvolvimento nacional dessa tecnologia no País, tendo contribuído para a institucionalização da ciência e tecnologia (C&T) no Brasil, como, por exemplo, com a criação, em 1951, do Conselho Nacional de Pesquisas (CNPq), hoje Conselho Nacional de Desenvolvimento Científico e Tecnológico, que se tornou um órgão de grande importância para a formulação e condução das políticas de CT&l.
 
+## Página 12
+
 Em 1979, a Marinha iniciou um programa para o desenvolvimento de um submarino com propulsão nuclear. Para tal, foram mobilizados meios e recursos que levariam ao domínio da fabricação do combustível nuclear, incluindo o ciclo completo de enriquecimento isotópico de urânio. Trata-se de um projeto de longo prazo, de dimensão geracional, estratégico para o Brasil, com variados efeitos de arrasto em diferentes campos da atividade humana, como medicina, indústria, agricultura, entre outros. A construção do primeiro submarino com propulsão nuclear transcende a Marinha e representa um desafio para a sociedade brasileira.
 
 O Programa de Desenvolvimento de Submarinos (PROSUB) engloba a construção de quatro submarinos convencionais da Classe Scorpene, a partir de uma pareceria estratégica firmada com a França. Um novo estaleiro e uma base naval foram incluídos no programa, tendo sido construídos no município de Itaguaí, Rio de Janeiro. À medida que o projeto avança, as instalações do Laboratório de Geração de Energia Nucleoelétrica (LABGENE) em terra vão sendo preparadas para os testes preliminares do que virá a ser a planta propulsora do Submarino Alvaro Alberto, o primeiro submarino de propulsão nuclear do Brasil.
@@ -117,13 +141,17 @@ No século XXI, os países, em geral, e as comunidades científicas, em particul
 
 Nesse sentido, um grande passo para o desenvolvimento da capacidade de pesquisa brasileira foi obtenção do Navio Hidroceanográfico Vital de Oliveira (H39), fruto da cooperação entre os Ministérios da Defesa (MD) e da Ciência, Tecnologia e Inovação, a Marinha do Brasil e as empresas Petrobras e Vale. Colocado a serviço da Diretoria de Hidrografia e Navegação (DHN), o navio é um dos mais avançados meios de pesquisa do hemisfério sul, equipado com modernos laboratórios, sensores e equipamentos, sendo capaz de embarcar equipes de cientistas, pesquisadores e técnicos que atuam nos diversos domínios das ciências do mar. Entre os recursos do navio, destaca-se um veículo remotamente operado, capaz de ser empregado em pesquisa em profundidades da ordem de quatro mil metros. Tantos avanços e meios requerem da Marinha continuado desenvolvimento organizacional, notadamente na estrutura logística, administrativa e de pessoal.
 
-## A ESTRUTURA LOGÍSTICA. ADMINISTRATIVA E DE PESSOAL
+## Página 13
+
+### A ESTRUTURA LOGÍSTICA. ADMINISTRATIVA E DE PESSOAL
 
 Novas tecnologias exigem aprimoramento continuado da infraestrutura de apoio para os sofisticados sistemas de defesa, equipamentos e plataformas, que demandam pessoal altamente qualificado, não somente para a operação, mas também para a manutenção. A gestão da Força requer, igualmente, estrutura administrativa apropriada, que evolui com o tempo, em função de fatores variados, entre eles, novas necessidades derivadas das transformações inerentes à Era do Conhecimento e aos avanços das tecnologias da informação e comunicações (TIC).
 
 Ao longo do século XX, a Marinha do Brasil veio desenvolvendo um conjunto de bases e organizações militares de apoio, distribuídas pelo território nacional conforme a necessidade. Em geral, situam-se próximas às sedes dos respectivos Distritos Navais, de modo a atender às Forças Navais distritais. As bases estão capacitadas para prover manutenção e reparos, podendo ser complementada por empresas e instituições componentes da Base Industrial de Defesa (BID), nas respectivas localidades ou mesmo fora delas. Alguns exemplos são: Base Naval de Val de Cães (4ºDN, Belém- PA), Base Naval de Natal (3ºDN, Natal- RN), Base Naval de Aratu (2ºDN, próxima a Salvador- BA). Também nas grandes bacias hidrográficas, a Base Fluvial de Ladário (6ºDN, Ladário - MS) e a Estação Naval do Rio Negro (9ºDN, Manaus- AM).
 
 No Rio de Janeiro, área do Primeiro Distrito Naval (1ºDN) e onde estão as sedes da Esquadra e da Força de Fuzileiros da Esquadra, concentra-se a maior parte dos meios navais, aeronavais e de fuzileiros navais de alta tecnologia. O histórico Arsenal de Marinha do Rio de Janeiro presta serviços importantes na área de construção naval, incluindo navios e submarinos, bem como para a manutenção de meios, sendo um pilar importante do aprestamento do Poder Naval brasileiro.
+
+## Página 14
 
 Sua origem remonta ao Período Colonial, quando, em 1763, o governo-geral do Brasil, com sede no Rio de Janeiro, decidiu criar um estaleiro, nomeado Arsenal Real da Marinha, localizado ao sopé do Mosteiro de São Bento, na cidade que abrigava o que seria o mais importante porto da Colônia.
 
@@ -132,6 +160,8 @@ A construção recente do estaleiro e base naval em Itaguaí, voltados primordia
 A avançada indústria naval e de defesa, particularmente na Região Sudoeste, contribui sobremaneira para o suporte logístico, notadamente aos meios da Esquadra. Cabe destacar, contudo, a importância da Base Industrial de Defesa (BID) nacional como um todo, a qual abarca empresas e instituições, públicas e privadas, altamente qualificadas em reparos em diversos campos tecnológicos, como eletrônica, comunicações, sistemas digitais e de armas, sensores, motores, estruturas navais, propulsão entre tantos outros. Assim, a existência e a presença de Forças Navais são indutoras do desenvolvimento e contribuem para a economia, à medida que geram demandas por produtos e serviços e estimulam a formação de clusters marítimos de avançada tecnologia.
 
 Na dimensão logística, ressalta-se a importância do sistema de abastecimento, capaz de lidar com demandas complexas de produtos e serviços necessários à manutenção do aprestamento dos meios navais, aeronavais e de fuzileiros navais. Nesse sentido, o Corpo de Intendentes da Marinha desenvolveu importantes conceitos e ferramentas de administração e de abastecimento. Gerir o sistema de aquisições de modo a prover tempestivamente materiais, sobressalentes, serviços e todos os insumos necessários à operação regular da Marinha é uma tarefa de alta complexidade e um diuturno desafio.
+
+## Página 15
 
 No plano da gestão, modernas ferramentas de TI combinadas com recursos de comunicação instrumentalizam o trabalho administrativo das organizações militares, conectadas em redes com flexibilidade para atender às diversas demandas da Forças, com foco no Setor Operativo. Um Centro de Comando do Teatro de Operações Marítimo (CCTOM) combinado com diferentes recursos de monitoramento e acompanhamento do tráfego marítimo instrumentalizam o desenvolvimento da consciência situacional marítima e melhor informam o processo decisóriovoltado à segurança marítima no Atlântico Sul e áreas de interesse.
 
@@ -143,6 +173,8 @@ Por fim, cabe destacar a contribuição das mulheres à Marinha, hoje presentes 
 
 Percebe-se que os avanços tecnológicos perpassam todos os diferentes setores da Marinha, que necessitam coevoluir de forma equilibrada, de modo a alcançar a sinergia necessária à otimização dos recursos humanos e materiais aplicados no preparo e emprego do Poder Naval brasileiro.
 
+## Página 16
+
 ## A TECNOLOGIA NAVAL EM TRANSFORMAÇÃO: UM OLHAR PARA O FUTURO
 
 A importância da C&T ao longo dos últimos dois séculos só cresceu, gerando aplicações que instrumentalizaram a aventura humana no mar, transformado em arena de competição por espaços, mercados, riquezas e poder. Se considerarmos a escala longa da História, em pouco tempo a tecnologia naval possibilitou a passagem da propulsão a vela para a propulsão mecânica, inicialmente a partir da máquina e da turbina a vapor, posteriormente, do motor diesel, do motor elétrico e das turbinas a gás. Recorreu-se, para tal, à energia dos ventos, do carvão, do petróleo e, no caso da propulsão nuclear, ao átomo. Em busca da eficiência, foram feitas algumas combinações desses recursos.
@@ -152,6 +184,8 @@ Nessa dinâmica de avanços, surgiram novos meios navais, como encouraçados, su
 Na Era do Conhecimento, abrem-se perspectivas de uso combinado de domínios do conhecimento, como a neurociência, a biologia sintética, a nanociência, a ciência dos materiais, a computação quântica, com amplo leque de aplicações.
 
 Novos desafios derivam da chamada Quarta Revolução Industrial, com métodos inovadores de produção que incluem a robótica e a manufatura aditiva, aliados à crescente conectividade em rede de pessoas, sistemas complexos e produtos, como a "Internet das coisas", e, ainda, com ampliação da capacidade de processamento e análise de grandes massas de dados (big data), entre outros fatores.
+
+## Página 17
 
 Esse contexto permite antever inovações tecnológicas de ruptura, com aplicação militar ou dual, que poderão alterar formas conhecidas de combater. Inteligência artificial em sistemas robóticos e plataformas crescentemente autônomas, incluindo navios e aeronaves não tripulados, ciberarmas, nanoarmas, armas de energia direta, hipervelocidade, eis algumas das possibilidades que já deixaram o plano da ficção ou que despontam no horizonte.
 
