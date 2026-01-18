@@ -23,6 +23,8 @@ export class App8DireitoBibliografia implements OnInit {
   public flashcardsPath = `${this.ROUTE_BASE}/flash-cards`;
   public mediaPath = `${this.ROUTE_BASE}/media`;
   public perguntasPath = `${this.ROUTE_BASE}/perguntas`;
+  public simuladosPath = `${this.ROUTE_BASE}/simulados`;
+  public checkAbandonoPath = `${this.ROUTE_BASE}/check-abandono`;
 
   /** 🔹 Configuração das capas */
   public capas: CapaConfig[] = [

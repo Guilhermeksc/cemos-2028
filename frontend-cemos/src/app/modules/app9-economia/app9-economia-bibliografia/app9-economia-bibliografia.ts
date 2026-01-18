@@ -22,6 +22,8 @@ export class App9EconomiaBibliografia implements OnInit {
   public conceitosPath = `${this.ROUTE_BASE}/conceitos`;
   public flashcardsPath = `${this.ROUTE_BASE}/flash-cards`;
   public perguntasPath = `${this.ROUTE_BASE}/perguntas`;
+  public simuladosPath = `${this.ROUTE_BASE}/simulados`;
+  public checkAbandonoPath = `${this.ROUTE_BASE}/check-abandono`;
 
   /** 🔹 Configuração das capas */
   public capas: CapaConfig[] = [

@@ -29,6 +29,8 @@ export class CapaBibliografia implements OnInit {
   @Input() flashcardsPath: string = '';
   @Input() mediaPath: string = '';
   @Input() perguntasPath: string = '';
+  @Input() simuladosPath: string = '';
+  @Input() checkAbandonoPath: string = '';
 
   get showNavigationButtons(): boolean {
     return true;
@@ -39,8 +41,43 @@ export class CapaBibliografia implements OnInit {
    */
   navigateTo(path: string): void {
     if (path) {
-      const segments = path.startsWith('/') ? path.substring(1).split('/') : path.split('/');
-      this.router.navigate(segments);
+      console.log('🔗 [CapaBibliografia] Navegando para:', path);
+      console.log('📍 [CapaBibliografia] URL atual:', this.router.url);
+      
+      // Se o path começa com /, usar navegação absoluta
+      if (path.startsWith('/')) {
+        console.log('📍 [CapaBibliografia] Usando navegação absoluta');
+        this.router.navigateByUrl(path).then(
+          (success) => {
+            if (success) {
+              console.log('✅ [CapaBibliografia] Navegação absoluta bem-sucedida');
+            } else {
+              console.error('❌ [CapaBibliografia] Navegação absoluta falhou');
+            }
+          },
+          (error) => {
+            console.error('❌ [CapaBibliografia] Erro na navegação absoluta:', error);
+          }
+        );
+      } else {
+        // Navegação relativa usando segmentos
+        const segments = path.split('/');
+        console.log('📍 [CapaBibliografia] Segmentos (relativo):', segments);
+        this.router.navigate(segments, { relativeTo: null }).then(
+          (success) => {
+            if (success) {
+              console.log('✅ [CapaBibliografia] Navegação relativa bem-sucedida');
+            } else {
+              console.error('❌ [CapaBibliografia] Navegação relativa falhou');
+            }
+          },
+          (error) => {
+            console.error('❌ [CapaBibliografia] Erro na navegação relativa:', error);
+          }
+        );
+      }
+    } else {
+      console.warn('⚠️ [CapaBibliografia] Path vazio, não é possível navegar');
     }
   }
   // Novas propriedades para múltiplas capas

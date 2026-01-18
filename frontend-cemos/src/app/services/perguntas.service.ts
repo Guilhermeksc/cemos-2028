@@ -7,6 +7,8 @@ import { environment } from '../environments/environment';
 import {
   Bibliografia,
   BibliografiaFilters,
+  FlashCards,
+  FlashCardsFilters,
   PerguntaMultipla,
   PerguntaMultiplaFilters,
   PerguntaVF,
@@ -207,6 +209,36 @@ export class PerguntasService {
     return this.http.get<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/${id}/`);
   }
 
+  // ==================== FLASH CARDS (QUESTÕES ABERTAS) ====================
+
+  /**
+   * Lista flash cards com filtros
+   */
+  getFlashCards(filters?: FlashCardsFilters): Observable<PaginatedResponse<FlashCards>> {
+    this.loadingPerguntas$.next(true);
+
+    let params = new HttpParams();
+    if (filters) {
+      Object.entries(filters).forEach(([key, value]) => {
+        if (value !== undefined && value !== null && value !== '') {
+          params = params.set(key, value.toString());
+        }
+      });
+    }
+
+    return this.http.get<PaginatedResponse<FlashCards>>(`${this.apiUrl}/flashcards/`, { params })
+      .pipe(
+        tap(() => this.loadingPerguntas$.next(false))
+      );
+  }
+
+  /**
+   * Busca um flash card específico
+   */
+  getFlashCard(id: number): Observable<FlashCards> {
+    return this.http.get<FlashCards>(`${this.apiUrl}/flashcards/${id}/`);
+  }
+
   /**
    * Lista os arquivos Markdown disponíveis para vincular às perguntas
    */
@@ -294,6 +326,18 @@ export class PerguntasService {
       (page: number, pageSize: number) => {
         const filtersWithPagination = { ...filters, page, page_size: pageSize };
         return this.getPerguntasCorrelacao(filtersWithPagination);
+      }
+    );
+  }
+
+  /**
+   * Busca TODOS os flash cards usando paginação completa
+   */
+  getAllFlashCards(filters?: FlashCardsFilters): Observable<FlashCards[]> {
+    return this.getAllPaginatedResults<FlashCards>(
+      (page: number, pageSize: number) => {
+        const filtersWithPagination = { ...filters, page, page_size: pageSize };
+        return this.getFlashCards(filtersWithPagination);
       }
     );
   }

@@ -128,6 +128,8 @@ export class SideMenu implements OnInit, OnDestroy {
         },
         'Flash Cards',
         'Perguntas',
+        'Simulados',
+        'Check Abandono',
         'Conceitos',
         'Líderes Históricos',   
       ],
@@ -148,6 +150,8 @@ export class SideMenu implements OnInit, OnDestroy {
         },
         'Flash Cards',
         'Perguntas',
+        'Simulados',
+        'Check Abandono',
         'Conceitos',
         'Teóricos',
       ],
@@ -175,7 +179,9 @@ export class SideMenu implements OnInit, OnDestroy {
           ]
         },
         'Flash Cards',
-        'Perguntas',    
+        'Perguntas',
+        'Simulados',
+        'Check Abandono',    
       ],
       expanded: false
     },
@@ -194,6 +200,7 @@ export class SideMenu implements OnInit, OnDestroy {
         'Objetivos Estratégicos',
         'Flash Cards',
         'Perguntas',
+        'Simulados',
         'Pensadores',
         'Check Abandono',
       ],
@@ -213,6 +220,7 @@ export class SideMenu implements OnInit, OnDestroy {
         },
         'Flash Cards',
         'Perguntas',
+        'Simulados',
         'Check Abandono',
       ],
       expanded: false
@@ -237,7 +245,9 @@ export class SideMenu implements OnInit, OnDestroy {
         },
         'Conceitos',
         'Flash Cards',
-        'Perguntas',  
+        'Perguntas',
+        'Simulados',
+        'Check Abandono',  
       ],
       expanded: false
     },
@@ -263,8 +273,10 @@ export class SideMenu implements OnInit, OnDestroy {
           ]
         },
         'Conceitos',
-        'Flash Cards',        
-        'Perguntas', 
+        'Flash Cards',
+        'Perguntas',
+        'Simulados',
+        'Check Abandono', 
       ],
       expanded: false
     },
@@ -282,6 +294,8 @@ export class SideMenu implements OnInit, OnDestroy {
         },
         'Flash Cards',
         'Perguntas',
+        'Simulados',
+        'Check Abandono',
         'Conceitos',
       ],
       expanded: false
@@ -413,8 +427,11 @@ export class SideMenu implements OnInit, OnDestroy {
   }
 
   navigate(section: string, division?: string, subDivision?: string, option?: string) {
+    console.log('🧭 [SideMenu] navigate chamado:', { section, division, subDivision, option });
+    
     // Determine the selected menu option
     const optionText = option || subDivision || division || '';
+    console.log('📝 [SideMenu] optionText:', optionText);
 
     // Build path parts array
     const pathParts = ['home'];
@@ -476,6 +493,12 @@ export class SideMenu implements OnInit, OnDestroy {
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
+            case 'Simulados':
+              pathParts.push('simulados');
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
+              break;
           }
         }
         break;
@@ -509,6 +532,9 @@ export class SideMenu implements OnInit, OnDestroy {
               break;  
             case 'Perguntas':
               pathParts.push('perguntas');
+              break;
+            case 'Simulados':
+              pathParts.push('simulados');
               break;
             case 'Pensadores':
               pathParts.push('pensadores');
@@ -546,6 +572,9 @@ export class SideMenu implements OnInit, OnDestroy {
               break;  
             case 'Perguntas':
               pathParts.push('perguntas');
+              break;
+            case 'Simulados':
+              pathParts.push('simulados');
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
@@ -587,6 +616,12 @@ export class SideMenu implements OnInit, OnDestroy {
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
+            case 'Simulados':
+              pathParts.push('simulados');
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
+              break;
           }
         }
         break;
@@ -620,6 +655,12 @@ export class SideMenu implements OnInit, OnDestroy {
               break;  
             case 'Perguntas':
               pathParts.push('perguntas');
+              break;
+            case 'Simulados':
+              pathParts.push('simulados');
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
@@ -675,6 +716,12 @@ export class SideMenu implements OnInit, OnDestroy {
               break;  
             case 'Perguntas':
               pathParts.push('perguntas');
+              break;
+            case 'Simulados':
+              pathParts.push('simulados');
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
               break;
             case 'Conceitos':
               pathParts.push('conceitos');
@@ -740,6 +787,9 @@ export class SideMenu implements OnInit, OnDestroy {
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
+            case 'Simulados':
+              pathParts.push('simulados');
+              break;
             case 'Conceitos':
               pathParts.push('conceitos');
               break;
@@ -777,6 +827,12 @@ export class SideMenu implements OnInit, OnDestroy {
             case 'Perguntas':
               pathParts.push('perguntas');
               break;
+            case 'Simulados':
+              pathParts.push('simulados');
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
+              break;
             case 'Conceitos':
               pathParts.push('conceitos');
               break;              
@@ -786,10 +842,24 @@ export class SideMenu implements OnInit, OnDestroy {
     }
 
     // Set active path for highlighting
-    this.currentActivePath.set(pathParts.join('/'));
+    const finalPath = pathParts.join('/');
+    console.log('📍 [SideMenu] Path final construído:', finalPath);
+    this.currentActivePath.set(finalPath);
     
     // Navigate to the constructed path
-    this.router.navigate(pathParts);
+    console.log('🚀 [SideMenu] Navegando para:', pathParts);
+    this.router.navigate(pathParts).then(
+      (success) => {
+        if (success) {
+          console.log('✅ [SideMenu] Navegação bem-sucedida para:', finalPath);
+        } else {
+          console.error('❌ [SideMenu] Navegação falhou para:', finalPath);
+        }
+      },
+      (error) => {
+        console.error('❌ [SideMenu] Erro na navegação:', error);
+      }
+    );
     
     // Emit the itemClicked event to close drawer on mobile
     this.itemClicked.emit();
@@ -841,6 +911,9 @@ export class SideMenu implements OnInit, OnDestroy {
           break;
         case 'Perguntas':
           pathParts.push('perguntas');
+          break;
+        case 'Simulados':
+          pathParts.push('simulados');
           break;
         case 'Pensadores':
           pathParts.push('pensadores');

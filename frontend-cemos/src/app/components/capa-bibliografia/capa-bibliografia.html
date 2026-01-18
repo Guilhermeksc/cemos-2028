@@ -35,6 +35,18 @@
           <span class="button-text">Perguntas</span>
         </span>
       </button>
+      <button mat-stroked-button (click)="navigateTo(simuladosPath)" *ngIf="simuladosPath">
+        <span class="button-content">
+          <mat-icon class="button-icon">assignment</mat-icon>
+          <span class="button-text">Simulados</span>
+        </span>
+      </button>
+      <button mat-stroked-button (click)="navigateTo(checkAbandonoPath)" *ngIf="checkAbandonoPath">
+        <span class="button-content">
+          <mat-icon class="button-icon">checklist</mat-icon>
+          <span class="button-text">Check Abandono</span>
+        </span>
+      </button>
     </div>
     
     <!-- MODO MÚLTIPLAS CAPAS: Grid de capas clicáveis -->

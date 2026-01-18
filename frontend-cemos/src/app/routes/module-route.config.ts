@@ -312,6 +312,20 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
             '../modules/app1-intendencia/app1-intendencia-perguntas/app1-intendencia-perguntas'
           ).then((m) => m.App1IntendenciaPerguntas)
       },
+      {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app1-intendencia/app1-simulados/app1-simulados').then((m) => m.App1Simulados)
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app1-intendencia/app1-intendencia-check-abandono/app1-intendencia-check-abandono').then(
+            (m) => m.App1IntendenciaCheckAbandono
+          )
+      },
     ]
   },
   {
@@ -376,6 +390,12 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import('../modules/app2-estrategia/app2-estrategia-perguntas/app2-estrategia-perguntas').then(
             (m) => m.App2EstrategiaPerguntas
           )
+      },
+      {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app2-estrategia/app2-simulados/app2-simulados').then((m) => m.App2Simulados)
       },
       {
         title: 'Pensadores',
@@ -467,6 +487,12 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           ).then((m) => m.App3PlanejamentoMilitarPerguntas)
       },
       {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app3-planejamento-militar/app3-simulados/app3-simulados').then((m) => m.App3Simulados)
+      },
+      {
         title: 'Conceitos',
         path: 'conceitos',
         loadComponent: () =>
@@ -548,6 +574,20 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           )
       },
       {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app4-historia/app4-simulados/app4-simulados').then((m) => m.App4Simulados)
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app4-historia/app4-historia-check-abandono/app4-historia-check-abandono').then(
+            (m) => m.App4HistoriaCheckAbandono
+          )
+      },
+      {
         title: 'Líderes Históricos',
         path: 'lideres-historicos',
         loadComponent: () =>
@@ -619,6 +659,20 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import(
             '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-perguntas/app6-geopolitica-relacoes-internacionais-perguntas'
           ).then((m) => m.App6GeopoliticaRelacoesInternacionaisPerguntas)
+      },
+      {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app6-geopolitica-relacoes-internacionais/app6-simulados/app6-simulados').then((m) => m.App6Simulados)
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-check-abandono/app6-geopolitica-relacoes-internacionais-check-abandono').then(
+            (m) => m.App6GeopoliticaRelacoesInternacionaisCheckAbandono
+          )
       },
       {
         title: 'Conceitos',
@@ -747,6 +801,20 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         loadComponent: () =>
           import('../modules/app7-politica/app7-politica-perguntas/app7-politica-perguntas').then(
             (m) => m.App7PoliticaPerguntas
+          )
+      },
+      {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app7-politica/app7-simulados/app7-simulados').then((m) => m.App7Simulados)
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app7-politica/app7-politica-check-abandono/app7-politica-check-abandono').then(
+            (m) => m.App7PoliticaCheckAbandono
           )
       },
       {
@@ -891,6 +959,20 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           )
       },
       {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app8-direito/app8-simulados/app8-simulados').then((m) => m.App8Simulados)
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app8-direito/app8-direito-check-abandono/app8-direito-check-abandono').then(
+            (m) => m.App8DireitoCheckAbandono
+          )
+      },
+      {
         title: 'Resumo',
         path: 'resumo',
         loadComponent: () =>
@@ -953,6 +1035,20 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
         loadComponent: () =>
           import('../modules/app9-economia/app9-economia-perguntas/app9-economia-perguntas').then(
             (m) => m.App9EconomiaPerguntas
+          )
+      },
+      {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app9-economia/app9-simulados/app9-simulados').then((m) => m.App9Simulados)
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app9-economia/app9-economia-check-abandono/app9-economia-check-abandono').then(
+            (m) => m.App9EconomiaCheckAbandono
           )
       },
       {

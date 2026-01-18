@@ -15,6 +15,8 @@ export class App4HistoriaBibliografia implements OnInit {
   public conceitosPath = '/home/app4-historia/conceitos';
   public flashcardsPath = '/home/app4-historia/flash-cards';
   public perguntasPath = '/home/app4-historia/perguntas';
+  public simuladosPath = '/home/app4-historia/simulados';
+  public checkAbandonoPath = '/home/app4-historia/check-abandono';
   // Configuração de múltiplas capas
   capas: CapaConfig[] = [
     {

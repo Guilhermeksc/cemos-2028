@@ -1,0 +1,203 @@
+<div class="simulados-container">
+  <div class="header">
+    <h1>📝 Simulados</h1>
+  </div>
+
+  <!-- Filtros de Bibliografia e Assunto -->
+  <div class="filters-section" *ngIf="!isLoadingBibliografias">
+    <div class="filter-row">
+      <div class="filter-group">
+        <label for="bibliografia-select">📖 Bibliografia:</label>
+        <select 
+          id="bibliografia-select"
+          class="filter-select"
+          [(ngModel)]="selectedBibliografiaId"
+          (change)="onBibliografiaChange()"
+          [disabled]="isLoadingBibliografias"
+        >
+          <option [ngValue]="null">Todas as Bibliografias</option>
+          <option 
+            *ngFor="let bibliografia of bibliografias" 
+            [ngValue]="bibliografia.id"
+          >
+            {{ bibliografia.titulo }}{{ bibliografia.autor ? ' - ' + bibliografia.autor : '' }}
+          </option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="assunto-select">🏷️ Assunto:</label>
+        <select 
+          id="assunto-select"
+          class="filter-select"
+          [(ngModel)]="selectedAssunto"
+          (change)="onAssuntoChange()"
+          [disabled]="isLoadingBibliografias || assuntosDisponiveis.length === 0"
+        >
+          <option value="">Todos os Assuntos</option>
+          <option 
+            *ngFor="let assunto of assuntosDisponiveis" 
+            [value]="assunto.nome"
+          >
+            {{ assunto.nome }} ({{ assunto.quantidade }}) - [{{ assunto.bibliografiaTitulo }}]
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Ações -->
+    <div class="actions-row">
+      <button
+        *ngIf="bibliografiaPath"
+        class="btn btn-back"
+        (click)="goToBibliografia()"
+      >
+        <span class="back-arrow"></span>
+        Voltar à Bibliografia
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="isLoadingBibliografias" class="loading-text" style="text-align: center; padding: 1rem; color: #6b7280; font-style: italic;">
+    Carregando bibliografias...
+  </div>
+
+  <!-- Presets -->
+  <div class="presets-section">
+    <h2>Simulados Padronizados</h2>
+    <div class="presets-grid">
+      @for (preset of presets; track preset.titulo) {
+        <mat-card
+          class="preset-card"
+          [class.is-disabled]="isGeneratingPDF || selectedBibliografias.length === 0"
+          (click)="generatePresetPdf(preset)"
+        >
+          <mat-card-header>
+            <mat-card-title>{{ preset.titulo }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="preset-config">
+              <span>V/F: {{ preset.config.questoesVF }}</span>
+              <span>Múltipla: {{ preset.config.questoesMultipla }}</span>
+              <span>Correlação: {{ preset.config.questoesCorrelacao }}</span>
+              <span>Abertas: {{ preset.config.questoesAbertas }}</span>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button
+              mat-raised-button
+              color="primary"
+              class="generate-simulado-btn"
+              (click)="generatePresetPdf(preset)"
+              [disabled]="isGeneratingPDF || selectedBibliografias.length === 0"
+              aria-label="Gerar simulado"
+            >
+              <img src="/assets/img/svg/simulados.svg" alt="Gerar simulado" class="btn-icon" />
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      }
+    </div>
+  </div>
+
+  <!-- Simulado Customizado -->
+  <div class="cards-section">
+    <div class="cards-header">
+      <h2>Simulado Customizado</h2>
+    </div>
+
+    <div class="cards-grid">
+      <mat-card class="simulado-card">
+        <mat-card-content>
+          <!-- Configuração -->
+          <div class="card-config">
+            <h3>Configuração</h3>
+            <div class="config-inputs">
+              <mat-form-field appearance="outline">
+                <mat-label>V/F</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  [value]="customSimulado.config.questoesVF"
+                  (blur)="updateCustomConfig({ questoesVF: +$any($event.target).value })"
+                  min="0"
+                />
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Múltipla</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  [value]="customSimulado.config.questoesMultipla"
+                  (blur)="updateCustomConfig({ questoesMultipla: +$any($event.target).value })"
+                  min="0"
+                />
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Correlação</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  [value]="customSimulado.config.questoesCorrelacao"
+                  (blur)="updateCustomConfig({ questoesCorrelacao: +$any($event.target).value })"
+                  min="0"
+                />
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Abertas</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  [value]="customSimulado.config.questoesAbertas"
+                  (blur)="updateCustomConfig({ questoesAbertas: +$any($event.target).value })"
+                  min="0"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <!-- Status -->
+          <div class="card-status">
+            @if (customSimulado.status === 'loading') {
+              <mat-spinner diameter="20"></mat-spinner>
+              <span>Gerando questões...</span>
+            } @else if (customSimulado.status === 'error') {
+              <mat-icon color="warn">error</mat-icon>
+              @if (customSimulado.insufficientQuestionsMessage) {
+                <span class="error-message">{{ customSimulado.insufficientQuestionsMessage }}</span>
+              } @else {
+                <span class="error-message">Erro ao gerar questões</span>
+              }
+            } @else if (customSimulado.status === 'ready') {
+              <mat-icon color="primary">check_circle</mat-icon>
+              <span>{{ customSimulado.questions.length }} questões prontas</span>
+            } @else {
+              <span>Nenhuma questão gerada</span>
+            }
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="generateCustomQuestions()"
+            [disabled]="customSimulado.status === 'loading' || selectedBibliografias.length === 0"
+          >
+            <mat-icon>refresh</mat-icon>
+            Gerar Questões
+          </button>
+          <button
+            mat-raised-button
+            color="accent"
+            (click)="generateCustomPdf()"
+            [disabled]="customSimulado.status !== 'ready' || isGeneratingPDF"
+          >
+            <mat-icon>picture_as_pdf</mat-icon>
+            Gerar PDF
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

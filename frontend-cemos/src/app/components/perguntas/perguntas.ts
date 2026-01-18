@@ -26,6 +26,7 @@ import { PerguntaVF as PerguntaVFComponent } from './pergunta-v-f/pergunta-v-f';
 import { PerguntaMultipla as PerguntaMultiplaComponent } from './pergunta-multipla/pergunta-multipla';
 import { PerguntaCorrelacao as PerguntaCorrelacaoComponent } from './pergunta-correlacao/pergunta-correlacao';
 import { LoadingSpinner } from '../loading-spinner/loading-spinner';
+import { SimuladosPdfService } from '../simulados/services/simulados-pdf.service';
 
 interface SimuladoQuestion {
   id: number;
@@ -94,6 +95,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
   private router = inject(Router);
   private cdr = inject(ChangeDetectorRef);
   private authService = inject(AuthService);
+  private pdfService = inject(SimuladosPdfService);
   private destroy$ = new Subject<void>();
 
   // Estados do componente - simplificado
@@ -2763,14 +2765,27 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
 
   /**
    * Converte apenas as questões do simulado atual para PDF pesquisável
-   * Gera 3 PDFs separados: um para V/F, um para Múltipla Escolha e um para Correlação
+   * Gera um único PDF com todas as questões misturadas e o gabarito
    * Usa apenas as questões já carregadas no simulado atual
+   * DELEGADO para SimuladosPdfService conforme refatoração
    */
   async downloadSimuladoAsPDF() {
     this.isGeneratingPDF = true;
 
     try {
-      await this.downloadSimuladoAsPDFSearchable();
+      const currentTab = this.tabs[this.activeTab];
+      const simuladoQuestions = currentTab.simuladoQuestions;
+
+      if (simuladoQuestions.length === 0) {
+        alert('Não há questões no simulado atual para gerar o PDF.');
+        return;
+      }
+
+      // Delegar para o serviço de PDF
+      await this.pdfService.generateMixedPdf(
+        simuladoQuestions,
+        currentTab.questionResults
+      );
     } catch (error) {
       console.error('❌ Erro ao gerar PDF do simulado:', error);
       alert('Erro ao gerar PDF do simulado. Por favor, tente novamente.');

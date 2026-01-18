@@ -17,6 +17,8 @@ export class App6GeopoliticaRelacoesInternacionaisBibliografia implements OnInit
   public flashcardsPath = '/home/app6-geopolitica-relacoes-internacionais/flash-cards';
   // public mediaPath = '/home/app6-geopolitica-relacoes-internacionais/media';
   public perguntasPath = '/home/app6-geopolitica-relacoes-internacionais/perguntas';
+  public simuladosPath = '/home/app6-geopolitica-relacoes-internacionais/simulados';
+  public checkAbandonoPath = '/home/app6-geopolitica-relacoes-internacionais/check-abandono';
   // Configuração de múltiplas capas
   capas: CapaConfig[] = [
     {
