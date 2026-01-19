@@ -45,7 +45,7 @@ c) Zona de Defesa (ZD).
 
 ### 3.3.3 Teatro de Operações (TO)
 
-2.3.3.1 É a parte do teatro de guerra necessária à condução das operações militares de grande vulto, para o cumprimento de determinada missão e para o consequente apoio logístico. Seus limites serão inicialmente estabelecidos por ocasião do planejamento estratégico para uma determinada HE, podendo ser alterados mediante solicitação do Comandante do TO (ComTO) e autorização do Comandante Supremo, caso necessário.
+3.3.3.1 É a parte do teatro de guerra necessária à condução das operações militares de grande vulto, para o cumprimento de determinada missão e para o consequente apoio logístico. Seus limites serão inicialmente estabelecidos por ocasião do planejamento estratégico para uma determinada HE, podendo ser alterados mediante solicitação do Comandante do TO (ComTO) e autorização do Comandante Supremo, caso necessário.
 
 3.3.3.2 Do ponto de vista operacional, o TO/A Op poderá ser subdividido em áreas de responsabilidade, a serem atribuídas a cada uma das Forças Componentes diretamente subordinadas ao ComTO/A Op.
 
