@@ -24,34 +24,20 @@ representação gráfica mais comum e, em sua essência, a materialização da A
 
 ### 2. FATORES CONDICIONANTES DA ARTE OPERACIONAL
 
-2.1 A arte da guerra, em todos os níveis de decisão consiste em obter e manter a
-liberdade de ação e impor a sua vontade ao inimigo. Nos níveis estratégico e operacional,
-a liberdade de ação é conseguida, principalmente, pelo equilíbrio apropriado dos fatores
-de ESPAÇO, TEMPO, FORÇA e suas combinações.
-2.2. Um perfeito conhecimento dos meios disponíveis, que será condicionante para
-dimensionarmos a força a ser empregada e sua relação no tempo e no espaço, é a chave
-na determinação dos objetivos operacionais. Assim, diferente do tempo perdido, que
-nunca pode ser recuperado, o espaço cedido pode ser reconquistado e os efetivos podem
-ser recompletados.
-2.3. Nas guerras modernas a capacidade de concentração de forças, fruto de sua
-mobilidade, no local (espaço) e momento (tempo) oportunos é fundamental para o
-sucesso do planejamento e execução de uma campanha.
-2.4. Enfim, a chave para a aplicação da Arte Operacional reside na capacidade de
-visualizar o emprego de forças e os seus efeitos no tempo e no espaço. Isto é
-fundamental para avaliar as várias possibilidades, antecipar os prováveis resultados e as
-suas implicações.
+2.1 A arte da guerra, em todos os níveis de decisão consiste em obter e manter a liberdade de ação e impor a sua vontade ao inimigo. Nos níveis estratégico e operacional, a liberdade de ação é conseguida, principalmente, pelo equilíbrio apropriado dos fatores de ESPAÇO, TEMPO, FORÇA e suas combinações.
+
+2.2. Um perfeito conhecimento dos meios disponíveis, que será condicionante para dimensionarmos a força a ser empregada e sua relação no tempo e no espaço, é a chave na determinação dos objetivos operacionais. Assim, diferente do tempo perdido, que nunca pode ser recuperado, o espaço cedido pode ser reconquistado e os efetivos podem ser recompletados.
+
+2.3. Nas guerras modernas a capacidade de concentração de forças, fruto de sua mobilidade, no local (espaço) e momento (tempo) oportunos é fundamental para o sucesso do planejamento e execução de uma campanha.
+
+2.4. Enfim, a chave para a aplicação da Arte Operacional reside na capacidade de visualizar o emprego de forças e os seus efeitos no tempo e no espaço. Isto é fundamental para avaliar as várias possibilidades, antecipar os prováveis resultados e as suas implicações.
 
 2.5. Fator Espaço
-2.5.1. Toda área de responsabilidade de um Comando Operacional contém um grande
-número de características naturais e artificiais que afetam significativamente o
-planejamento e a execução das operações.
-2.5.2. Os principais elementos que constituem o fator espaço são: posição geoestratégica,
-distância, eixos prioritários de transporte (Linhas de Comunicações e Suprimento),
-localização das forças e características físicas do ambiente. Esses elementos podem
-dispor de um significado tático, operacional ou estratégico.
-2.5.3. O significado do fator ESPAÇO não deve ser considerado sozinho em um
-panejamento, pois seu efeito global depende dos dois outros fatores operacionais de
-TEMPO e FORÇA.
+2.5.1. Toda área de responsabilidade de um Comando Operacional contém um grande número de características naturais e artificiais que afetam significativamente o planejamento e a execução das operações.
+
+2.5.2. Os principais elementos que constituem o fator espaço são: posição geoestratégica, distância, eixos prioritários de transporte (Linhas de Comunicações e Suprimento), localização das forças e características físicas do ambiente. Esses elementos podem dispor de um significado tático, operacional ou estratégico.
+
+2.5.3. O significado do fator ESPAÇO não deve ser considerado sozinho em um panejamento, pois seu efeito global depende dos dois outros fatores operacionais de TEMPO e FORÇA.
 
 | **Fator ESPAÇO** | **Aspectos previstos no PPC** |
 |---|---|

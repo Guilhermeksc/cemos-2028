@@ -162,8 +162,31 @@ f) Fase 6 – Conceito Preliminar da Operação.
 ## (2021) Quais itens devem constar da “Situação” no corpo principal do Plano?
 b) Situação: informações necessárias ao entendimento pleno do quadro da campanha pelos elementos subordinados. Este parágrafo pode ser dividido em cinco subparágrafos: Hipóteses de Emprego, Forças Inimigas, Forças Amigas, Centros de Gravidade e Premissas Básicas; (vol2 pag 78)
 
+##  (2022) EPO - Qual importância da simultaneidade do planejamento?
+R: Os planejamentos das Forças Componentes, sendo realizado, sempre que possível, de forma paralela e simultânea com o Plano Operacional, contribuirão para a validação da Decisão. Isso também proporcionará a antecipação de providências, sobretudo de caráter logístico, para o início das ações.
+
+item 6.3.2 
+
+## (2022) EPO - Qual importância dos ElmLig das FCte nessa parte?
+R: 1ª fase - Desenvolvimento do Conceito da Operação  o Comandante aprofundará o CPO elaborado na etapa anterior. 
+- Sempre que possível, deverá ocorrer a participação de representantes das F Cte  ao longo desta etapa visando possibilitar: 
+(1) maior agilidade na troca de informações
+(2) um assessoramento direto no que diz respeito às capacidades das forças envolvidas e na atribuição das respectivas tarefas
+
+
+## (2022) EPO - Qual o impacto do nível de detalhamento dos Planos que serão transmitidos para as FCte?
+R: Esses documentos conterão as informações necessárias para que os comandos subordinados compreendam as tarefas que lhes foram atribuídas, de forma clara e inequívoca, identificando as limitações e a forma como suas ações poderão interferir com as tarefas dos demais comandantes envolvidos na Campanha/Operação. No entanto, há de se ter cuidado para evitar um excessivo detalhamento das tarefas atribuídas, de modo a não engessar o planejamento desses comandantes.
+
+6.3.3 
 
 # Capítulo VII - Controle da Operação Planejada no Nível Operacional
+
+## (2022) Quais são as Fases do Controle da Ação Planejada:
+R: Planejamento do Controle (elaborado antes da ação) e Controle da Operação em Curso (enquanto as ações estão sendo realizadas).
+
+## (2022)  Produto da Reunião de Coordenação de Fogos e da Reunião de Coordenação de Inteligência:
+R: RCF → LPIPA / RCI → Plano de Obtenção de Conhecimento (POC)
+
 
 ## (2021) CORRELACIONE – Documentos e propósitos das Reuniões do Estado-Maior do Comando Operacional:
 (1) Reunião de Situação
@@ -184,6 +207,64 @@ d) avaliação dos aspectos políticos.
 
 
 # Anexo D - A ARTE OPERACIONAL
+
+## (2022) 4 do Anexo
+    1- MP sobre o que se busca na arte operacional (marcar o errado) - Para mim era uma expressão que estava dizendo que o que o foco era a busca das Capacidades Críticas
+    (a) A arte operacional está relacionada ao entendimento do ambiente e do problema operacional, ao longo da 1ª fase do Exame de Situação. 
+    (b) Na aplicação da Arte Operacional, o Cmt TO e seu EMCj utilizam ferramentas intelectuais que ajudam a comunicar uma visão comum do ambiente operacional.
+    (c) A Arte Operacional é a concepção e planejamento contínuo e sistêmico de operações e campanhas militares sincronizadas que produzirão efeitos essenciais para a consecução dos objetivos operacionais de modo a atingir as Capacidades Críticas.
+    (d) A arte operacional nos dá uma visão que permite que as metas genéricas e abstratas do nível estratégico se traduzam em ações no nível operacional.
+    (e)  Todas as anteriores estão incorretas.
+Letra: C (atingir o EFD Op)
+
+## (2022)     2- V ou F com os elementos do Desenho operacional - saber as palavras chave
+
+( F ) O EFD Op deve ser identificado durante a 2ª fase do Exm Sit Op.
+EFD Op é identificado na 1 fase do Exm Sit
+
+( F ) Uma Campanha normalmente será conduzida com base exclusivamente na expressão do Poder Militar.
+(...........................................)
+
+( F ) Nos níveis operacional e tático, os CG são forças militares específicas.
+Normalmente os CG são forças militares específicas
+
+( F ) Uma ação deve ser mensurável por meio de medidas e indicadores.
+Os efeitos devem ser mensuráveis.
+
+( V ) Ponto de Decisão é o ponto no qual se espera que o Comandante tome uma decisão crítica concernente ao andamento da operação/campanha.
+(...........................................)
+
+( F ) Em uma postura ofensiva, Ponto Culminante é o ponto em que a continuação do ataque ainda é possível.
+No PC o ataque não é mais possível.
+
+( V ) Em um desenho operacional, pode haver tantas L Op quanto o EMCj considerar necessário e eles podem ser agrupados por atividades ou áreas geográficas.
+(...........................................)
+
+(F) As Linhas de Operação possuem uma lógica de propósito/causa e efeito que visam a cooperar com as Linhas de Esforço.
+Linha de Esforço e Linha de Operação estão invertidas na frase.
+
+( V ) As variantes normalmente são decisivas para o resultado da operação geral.
+(...........................................)
+
+( F ) Normalmente, uma Pausa Operacional é a mais longa possível.
+Deve ser o mais curta possível
+
+## (2022)  Correlacione dos fatores operacionais e suas características
+    (1) Espaço
+    (2) Tempo
+    (3) Força
+( 3 ) Quanto maior a superioridade deste fator em relação a um adversário, maior liberdade de ação se disporá para a condução da política, da estratégia.
+( 2 ) O resultado que se busca com operações de ritmo elevado é conseguir a paralisia estratégica do adversário, quebrando o seu ciclo de “Observação, Orientação, Decisão, Ação” (ciclo “OODA”).
+( 1) Toda área de responsabilidade de um Comando Operacional possui características que afetam o planejamento e a execução das operações.
+
+## (2022)  Múltipla escolha sobre uma afirmação sobre o desenho operacional
+    (a)  Esta transformação é feita através do estabelecimento de condições (pontos de decisão) ao longo de diferentes linhas de operação.
+(ponto decisivo)
+    (b)   O desenho operacional pode ser estático ou definitivo.
+    (c)   O desenho não é uma Linha de Ação, uma execução sincronizada de ações, se constitui em um arquétipo (esqueleto) que deve ser capaz de abarcar várias linhas de ação. 
+    (d)  O desenho operacional é a manifestação da visão e da criatividade.
+Letra: C.
+
 
 ## (2021) CORRELACIONE – Elementos do Desenho Operacional:
 
