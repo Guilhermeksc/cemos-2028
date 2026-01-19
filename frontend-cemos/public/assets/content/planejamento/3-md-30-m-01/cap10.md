@@ -30,6 +30,15 @@
 
 Segue a transcrição em texto da estrutura apresentada:
 
+![figura30](figura30.png)
+
+a) Centro de Coordenação das Operações Logísticas (CCOL);
+b) Centro de Coordenação dos Recursos Humanos (CCRH);
+c) Centro de Coordenação Civil-Militar (C3M);
+d) Centro de Coordenação Administrativa e Financeira (CCAFin);
+e) Centro de Operações de SEGAR (COSEGAR), quando necessário; e
+f) outras Seções julgadas necessárias pelo Cmt Log
+
 ### Figura 30 — Estrutura do CM
 Centro de Coordenação Civil-Militar (C³M)
 • Adjunto

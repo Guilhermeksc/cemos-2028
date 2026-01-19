@@ -54,6 +54,8 @@
 
 ### 7.3 Estrutura da Zona de Defesa
 
+![figura8](figura8.png)
+
 A estrutura apresentada no organograma representa a **Zona de Defesa (ZD)** conforme o MD30-M-01. Ela mostra como a ZD se articula para coordenar ações de defesa em seu setor de responsabilidade.
 
 **1. ZD – Zona de Defesa**

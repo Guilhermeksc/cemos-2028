@@ -33,7 +33,7 @@ j) D-10: 10º Seção (Administração Financeira).
 
 5.1.4.4 Quando a situação exigir, poderão ser designados oficiais de ligação entre as F Cte, visando uma melhor coordenação no apoio mútuo e na redução da possibilidade de ocorrência de interferência mútua. Torna-se, entretanto, importante a existência de oficiais de ligação das F Cte na Força Aérea Componente (FAC).
 
-### figura
+![figura7](figura7.png)
 
 Figura 7 — estrutura do EMC
 
