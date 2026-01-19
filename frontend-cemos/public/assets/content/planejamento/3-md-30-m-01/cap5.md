@@ -11,10 +11,10 @@
 a) D-1: 1ª Seção (Pessoal);
 b) D-2: 2ª Seção (Inteligência);
 c) D-3: 3ª Seção (Operações); 
-d) D-4: 42 Seção (Logística e Mobilização); 
-e) D-5: 52 Seção (Planejamento);
-f) D-6: 62 Seção (Comando e Controle); 
-g) D-7: 72 Seção (Comunicação Social); 
+d) D-4: 4ª Seção (Logística e Mobilização); 
+e) D-5: 5ª Seção (Planejamento);
+f) D-6: 6ª Seção (Comando e Controle); 
+g) D-7: 7ª Seção (Comunicação Social); 
 h) D-8: 8º Seção (Operações de Informação); 
 i) D-9: 9º Seção (Assuntos Civis); e
 j) D-10: 10º Seção (Administração Financeira).

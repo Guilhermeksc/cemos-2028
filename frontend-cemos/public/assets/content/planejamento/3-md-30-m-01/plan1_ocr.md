@@ -944,7 +944,7 @@ O Comando de Operações Aeroespaciais (COMAE) tem por missão empregar o Poder 
 
 7.1 Considerações Iniciais
 
-7.1.1 Em situação de crise ou conflito armado, o esforço desenvolvido pelas Forças em Operações depende do fluxo de recursos materiais e humanos essenciais à campanha, cuja obtenção se realiza principalmente na Zona do Interior (Z1), em todos os setores direta ou indiretamente ligados aquele esforço.
+7.1.1 Em situação de crise ou conflito armado, o esforço desenvolvido pelas Forças em Operações depende do fluxo de recursos materiais e humanos essenciais à campanha, cuja obtenção se realiza principalmente na Zona do Interior (ZI), em todos os setores direta ou indiretamente ligados aquele esforço.
 
 7.1.2 A Defesa Territorial tem a finalidade de preservar o potencial material e humano da Nação. Cabe, portanto, ao Comando da Zona de Defesa (Cmdo ZD), como principal responsável pela Defesa Territorial na sua área de jurisdição, a garantia da ordem e da segurança das instalações que têm influência no esforço de guerra. Contudo, deve-se ter em mente que a Defesa Territorial não terá condições de se opor a ações de vulto do adversário.
 
