@@ -56,6 +56,8 @@ def _as_clean_str(v):
         return s or None
 
 
+
+
 def _get_bibliografia(row_value, ctx, row_index):
     bibliografia_id = _as_int(row_value)
     if bibliografia_id is None:
@@ -194,11 +196,19 @@ def load_fixtures_perguntas(sender, **kwargs):
                 loaded_count = 0
                 erros_assunto = 0
                 for idx, row in df.iterrows():
-                    if _require_fields(row, ['bibliografia_id', 'pergunta', 'resposta'], 
+                    # Validar campos obrigatórios incluindo 'id' como número inteiro fixo
+                    required_cols = ['id', 'bibliografia_id', 'pergunta', 'resposta']
+                    if _require_fields(row, required_cols, 
                                      'flashcards', idx, 
-                                     ['pergunta', 'resposta']):
+                                     string_fields=['pergunta', 'resposta']):
                         
                         try:
+                            # Obter ID numérico fixo fornecido na planilha
+                            flashcard_id = _as_int(row.get('id'))
+                            if flashcard_id is None:
+                                logger.warning(f"⚠️ Flashcard linha {idx} - ID inválido, ignorando linha")
+                                continue
+                            
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'flashcards', idx)
                             if bibliografia is None:
                                 continue
@@ -236,9 +246,10 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
                             
                             obj, created = FlashCardsModel.objects.update_or_create(
-                                bibliografia=bibliografia,
-                                pergunta=_as_clean_str(row['pergunta']),
+                                id=flashcard_id,
                                 defaults={
+                                    'bibliografia': bibliografia,
+                                    'pergunta': _as_clean_str(row['pergunta']),
                                     'resposta': _as_clean_str(row['resposta']),
                                     'assunto': assunto,
                                     'prova': prova_bool,
@@ -249,6 +260,8 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criado flash card ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
+                            else:
+                                logger.debug(f"🔄 Atualizado flash card ID {obj.id}: {obj.pergunta[:50]}...")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar flash card (linha {idx}): {e}")
                             import traceback
@@ -268,14 +281,21 @@ def load_fixtures_perguntas(sender, **kwargs):
                 loaded_count = 0
                 erros_assunto = 0
                 for idx, row in df.iterrows():
+                    required_cols = ['id', 'bibliografia_id', 'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta']
                     if _require_fields(
                         row,
-                        ['bibliografia_id', 'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta'],
+                        required_cols,
                         'perguntas_multipla',
                         idx,
-                        ['paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa']
+                        string_fields=['paginas', 'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta', 'justificativa_resposta_certa']
                     ):
                         try:
+                            # Obter ID numérico fixo fornecido na planilha
+                            pergunta_id = _as_int(row.get('id'))
+                            if pergunta_id is None:
+                                logger.warning(f"⚠️ Pergunta múltipla linha {idx} - ID inválido, ignorando linha")
+                                continue
+                            
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_multipla', idx)
                             if bibliografia is None:
                                 continue
@@ -294,9 +314,10 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 justificativa = 'Justificativa não fornecida.'
                             
                             obj, created = PerguntaMultiplaModel.objects.update_or_create(
-                                bibliografia=bibliografia,
-                                pergunta=_as_clean_str(row['pergunta']),
+                                id=pergunta_id,
                                 defaults={
+                                    'bibliografia': bibliografia,
+                                    'pergunta': _as_clean_str(row['pergunta']),
                                     'paginas': _as_clean_str(row.get('paginas')),
                                     'assunto': assunto,
                                     'alternativa_a': _as_clean_str(row['alternativa_a']),
@@ -312,6 +333,8 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criada pergunta múltipla ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
+                            else:
+                                logger.debug(f"🔄 Atualizada pergunta múltipla ID {obj.id}: {obj.pergunta[:50]}...")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta múltipla (linha {idx}): {e}")
                             import traceback
@@ -330,15 +353,22 @@ def load_fixtures_perguntas(sender, **kwargs):
                 loaded_count = 0
                 erros_assunto = 0
                 for idx, row in df.iterrows():
+                    required_cols = ['id', 'bibliografia_id', 'afirmacao_verdadeira', 'afirmacao_falsa']
                     if _require_fields(
                         row,
-                        ['bibliografia_id', 'afirmacao_verdadeira', 'afirmacao_falsa'],
+                        required_cols,
                         'perguntas_vf',
                         idx,
-                        ['paginas', 'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']
+                        string_fields=['paginas', 'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa']
                     ):
                         
                         try:
+                            # Obter ID numérico fixo fornecido na planilha
+                            pergunta_id = _as_int(row.get('id'))
+                            if pergunta_id is None:
+                                logger.warning(f"⚠️ Pergunta V/F linha {idx} - ID inválido, ignorando linha")
+                                continue
+                            
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_vf', idx)
                             if bibliografia is None:
                                 continue
@@ -360,24 +390,19 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 pergunta_text = assunto_text
                                 logger.debug(f"🔍 [DEBUG] Pergunta V/F linha {idx} - Campo 'pergunta' vazio, usando assunto como fallback: {assunto_text}")
                             
-                            # Usar uma combinação única para identificar a pergunta
-                            lookup_key = {
-                                'bibliografia': bibliografia,
-                                'afirmacao_verdadeira': _as_clean_str(row['afirmacao_verdadeira'])[:200]  # Primeiros 200 chars para lookup
-                            }
-                            
                             # Garantir que justificativa_resposta_certa não seja None (campo obrigatório)
                             justificativa = _as_clean_str(row.get('justificativa_resposta_certa', ''))
                             if justificativa is None or justificativa.strip() == '':
                                 justificativa = 'Justificativa não fornecida.'
                             
                             obj, created = PerguntaVFModel.objects.update_or_create(
-                                bibliografia=bibliografia,
-                                afirmacao_verdadeira=_as_clean_str(row['afirmacao_verdadeira']),
+                                id=pergunta_id,
                                 defaults={
+                                    'bibliografia': bibliografia,
                                     'pergunta': pergunta_text,
                                     'paginas': _as_clean_str(row.get('paginas')),
                                     'assunto': assunto,
+                                    'afirmacao_verdadeira': _as_clean_str(row['afirmacao_verdadeira']),
                                     'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),
                                     'justificativa_resposta_certa': justificativa,
                                     'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
@@ -387,6 +412,8 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criada pergunta V/F ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
+                            else:
+                                logger.debug(f"🔄 Atualizada pergunta V/F ID {obj.id}: {obj.pergunta[:50]}...")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta V/F (linha {idx}): {e}")
                             import traceback
@@ -405,15 +432,22 @@ def load_fixtures_perguntas(sender, **kwargs):
                 loaded_count = 0
                 erros_assunto = 0
                 for idx, row in df.iterrows():
+                    required_cols = ['id', 'bibliografia_id', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta']
                     if _require_fields(
                         row,
-                        ['bibliografia_id', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta'],
+                        required_cols,
                         'perguntas_correlacao',
                         idx,
-                        ['paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa']
+                        string_fields=['paginas', 'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa']
                     ):
                         
                         try:
+                            # Obter ID numérico fixo fornecido na planilha
+                            pergunta_id = _as_int(row.get('id'))
+                            if pergunta_id is None:
+                                logger.warning(f"⚠️ Pergunta correlação linha {idx} - ID inválido, ignorando linha")
+                                continue
+                            
                             bibliografia = _get_bibliografia(row['bibliografia_id'], 'perguntas_correlacao', idx)
                             if bibliografia is None:
                                 continue
@@ -448,9 +482,10 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 justificativa = 'Justificativa não fornecida.'
                             
                             obj, created = PerguntaCorrelacaoModel.objects.update_or_create(
-                                bibliografia=bibliografia,
-                                pergunta=_as_clean_str(row['pergunta']),
+                                id=pergunta_id,
                                 defaults={
+                                    'bibliografia': bibliografia,
+                                    'pergunta': _as_clean_str(row['pergunta']),
                                     'paginas': _as_clean_str(row.get('paginas')),
                                     'assunto': assunto,
                                     'coluna_a': coluna_a,
@@ -464,6 +499,8 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if created:
                                 loaded_count += 1
                                 logger.info(f"✅ Criada pergunta correlação ID {obj.id}: {obj.pergunta[:50]}... (Assunto: {assunto.capitulo_titulo if assunto else 'Nenhum'})")
+                            else:
+                                logger.debug(f"🔄 Atualizada pergunta correlação ID {obj.id}: {obj.pergunta[:50]}...")
                         except Exception as e:
                             logger.error(f"❌ Erro ao processar pergunta correlação (linha {idx}): {e}")
                             import traceback

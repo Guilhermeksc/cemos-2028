@@ -11,6 +11,7 @@ from django_cemos2028.apps.bibliografia.models import (
 logger = logging.getLogger(__name__)
 
 class FlashCardsModel(models.Model):
+    id = models.IntegerField(primary_key=True, editable=False)
     bibliografia = models.ForeignKey(
         BibliografiaModel, 
         on_delete=models.CASCADE, 
@@ -45,6 +46,8 @@ class FlashCardsModel(models.Model):
         return f"{self.bibliografia.titulo} - {self.pergunta}"
 
 class PerguntasBaseModel(models.Model):
+    id = models.IntegerField(primary_key=True, editable=False)
+    
     TIPO_CHOICES = [
         ('multipla', 'Múltipla Escolha'),
         ('vf', 'Verdadeiro ou Falso'),

@@ -14,7 +14,7 @@ import { PerguntaMultipla as PerguntaMultiplaInterface } from '../../../interfac
 export class PerguntaMultipla {
   private sanitizer = inject(DomSanitizer);
 
-  @Input() questionId!: number;
+  @Input() questionId!: number; // ID fixo numérico
   @Input() questionData!: PerguntaMultiplaInterface;
   @Input() isAnswered: boolean = false;
   @Input() isCorrect: boolean = false;

@@ -1,7 +1,7 @@
 # Recursos de import/export
 import json
 from import_export import resources, fields
-from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget
+from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget, IntegerWidget
 from .models import (
     FlashCardsModel,
     PerguntaMultiplaModel, 
@@ -15,6 +15,11 @@ from django_cemos2028.apps.bibliografia.models import (
 )
 
 class FlashCardsResource(resources.ModelResource):
+    id = fields.Field(
+        column_name='id',
+        attribute='id',
+        widget=IntegerWidget()
+    )
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
@@ -40,6 +45,11 @@ class FlashCardsResource(resources.ModelResource):
         report_skipped = True
 
 class PerguntaMultiplaResource(resources.ModelResource):
+    id = fields.Field(
+        column_name='id',
+        attribute='id',
+        widget=IntegerWidget()
+    )
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
@@ -86,6 +96,11 @@ class PerguntaMultiplaResource(resources.ModelResource):
 
 
 class PerguntaVFResource(resources.ModelResource):
+    id = fields.Field(
+        column_name='id',
+        attribute='id',
+        widget=IntegerWidget()
+    )
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
@@ -130,6 +145,11 @@ class PerguntaVFResource(resources.ModelResource):
 
 
 class PerguntaCorrelacaoResource(resources.ModelResource):
+    id = fields.Field(
+        column_name='id',
+        attribute='id',
+        widget=IntegerWidget()
+    )
     bibliografia = fields.Field(
         column_name='bibliografia',
         attribute='bibliografia',
@@ -202,6 +222,7 @@ class MarkdownHighlightResource(resources.ModelResource):
     pergunta_id = fields.Field(
         column_name='pergunta_id',
         attribute='pergunta_id',
+        widget=IntegerWidget()
     )
     markdown_file = fields.Field(
         column_name='markdown_file',

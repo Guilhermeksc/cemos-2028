@@ -15,6 +15,7 @@ from .models import (
 
 
 class FlashCardsSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
@@ -28,6 +29,7 @@ class FlashCardsSerializer(serializers.ModelSerializer):
 
 
 class PerguntaMultiplaSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     resposta_correta_display = serializers.CharField(source='get_resposta_correta_display', read_only=True)
@@ -52,6 +54,7 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
 
 
 class PerguntaVFSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     resposta_correta = serializers.ReadOnlyField()
@@ -74,6 +77,7 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
 
 
 class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
     bibliografia_titulo = serializers.CharField(source='bibliografia.titulo', read_only=True)
     tipo_display = serializers.CharField(source='get_tipo_display', read_only=True)
     assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
@@ -161,6 +165,7 @@ class FlashCardsCreateUpdateSerializer(FlashCardsSerializer):
 
 
 class RespostaUsuarioSerializer(serializers.ModelSerializer):
+    pergunta_id = serializers.IntegerField()
     usuario_username = serializers.CharField(source='usuario.username', read_only=True)
     assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
@@ -182,6 +187,7 @@ class RespostaUsuarioSerializer(serializers.ModelSerializer):
         read_only_fields = ['id', 'timestamp']
 
 class RespostaUsuarioCreateSerializer(serializers.ModelSerializer):
+    pergunta_id = serializers.IntegerField()
     afirmacao_sorteada_eh_verdadeira = serializers.BooleanField(required=False, allow_null=True, write_only=True)
     acertou = serializers.BooleanField(required=False, write_only=True)
     
@@ -245,6 +251,7 @@ class QuestaoOmitidaSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = ['id', 'usuario', 'created_at', 'bibliografia_titulo', 'assunto_titulo']
     
+    
     def create(self, validated_data):
         usuario = self.context['request'].user
         pergunta_id = validated_data['pergunta_id']
@@ -268,6 +275,7 @@ class QuestaoOmitidaSerializer(serializers.ModelSerializer):
 
 class QuestaoErradaAnonimaSerializer(serializers.ModelSerializer):
     """Serializer para questões erradas anônimas"""
+    pergunta_id = serializers.IntegerField()
     assunto_titulo = serializers.CharField(source='assunto.capitulo_titulo', read_only=True, allow_null=True)
     
     class Meta:

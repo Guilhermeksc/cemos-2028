@@ -1,17 +1,10 @@
+# Capítulo II - Concepção de Preparo e Emprego Conjunto
+
+## (2024) Caso o Exame de Situação Tático da Força Componente aponte para a necessidade de alteração nos limites das áreas de responsabilidade definidas no Plano Operacional, a solicitação deverá ser formalizada a quem e, em caso de necessidade de alteração dos limites estabelecidos no PEECFA, a quem solicitará? (6 pts) (MÉDIA)
+Resposta: ao Comandante Operacional, que a analisará - 3 pts. Em caso de necessidade de alteração dos limites estabelecidos no PEECFA, deverá ser solicitado ao Ministro da Defesa, por intermédio do CEMCFA. 3 pts (Também será aceito somente Ministro da Defesa ou CEMCFA valendo porém 1 pto nesse último). 
+Referência:  MD30-M-01, 1º Volume, Cap. 2, subitem 2.7.5, pág. 24
+
 # Capítulo III - Operações Conjuntas das Forças Armadas
-
-## (2022) Qual é a Importância dos assuntos civis nas Operações.
-R: Atividades do Com TO com os assuntos civis deverão ser cuidadosamente planejadas e executadas, de modo a reduzir os pontos de fricção entre a população civil e a força militar. Tais atividades incluem: 
-(1) a administração de governo 
-(2) a assistência humanitária
-(3) a defesa civil 
-(4) as ACiSo 
-(5) o controle da população
-(6) o controle de refugiados, deslocados e evacuados
-(7) o controle de recursos locais e serviços públicos
-(8) a coordenação das agências civis governamentais (operações interagências) ou ONGs, presentes na área do Comando Operacional.
-
-item 3.4.7
 
 ## (2021) Quais as duas características em comum entre o COMAE e o COMDCIBER?
 Ambos são Comandos Operacionais conjuntos permanentemente ativados. Ambos são órgãos centrais nas suas respectivas áreas de atuação.
@@ -24,6 +17,14 @@ R: De modo geral, o EFD será atingido quando tiver sido alcançada uma ou mai
     d) redução da capacidade das FA oponentes a um ponto tal que impeça uma oposição efetiva. 
 
 # Capítulo IV - Comando Operacional Conjunto
+
+## (2024) Questão de V ou F sobre o MD30-M-01,  abaixo estão as REF de cada afirmativa:
+    • item 4.1.3.1
+    • item 4.1.3.3
+    • item 4.1.5
+    • item 4.3.5 - f
+    • item 4.4.1 - c
+    • item 4.5.1 - c
 
 ## (2021) Quais são os cinco fatores que determinarão a composição do Comando Operacional?
 
@@ -41,12 +42,60 @@ Por outro lado, a organização por Forças Conjunta Componentes proporciona:
 
 # Capítulo V - Estado-Maior Conjunto
 
+## (2024) Correlacione as colunas sobre funções do EMCj
+1 - D6
+2 - D2
+3 - D3
+4 - D4
+5 - D7
+
+( ) Gerencia a matriz de processamento de informações
+( ) Realiza a análise de Comunicações Sociais
+( ) Realiza a produção de informações e conhecimentos
+( ) Coordena o Processo de Planejamento Conjunto
+( ) Realiza a análise de pessoal
+( ) Realiza a análise de logística
+
+(1 - 5 - 2 - 3 - X - 4)
+
 ## (2021) A quem cabe a responsabilidade de autorizar a modificação da composição do Estado-Maior Conjunto?
 5.1.1 O EMCj deverá ser organizado em função das características e demandas da ope-ração para a qual foi ativado o Comando Operacional Conjunto, de forma a gerenciar os aspectos indispensáveis ao cumprimento da missão e valendo-se da flexibilidade quanto à necessidade da existência de mais ou menos seções, constituindo-se numa prerrogativa do Comandante Operacional.
 
+# Capítulo VII - Comando de Zona de Defesa
+
+# Capítulo VIII - Comando de Defesa Cibernética
+
+## (2024) ME sobre ComDCiber:
+a) Não pertence à estrutura regimental de nenhuma Força Singular, estando subordinado diretamente ao MD. 
+b) Está diretamente subordinado ao SMDC. 
+c) Tem capacidade de atuar em operações interagências. 
+d) Quando ativado, assumirá também a responsabilidade da Defesa Cibernética no TO. 
+e) Poderá, em situações excepcionais, participar da elaboração do PEECFA. 
+
+Resposta: C 
+(MD 30-M-01, 1º Vol, Cap. 8, itens 8.1.1 e 8.1.2).  
+
 MD30-M-01 (2º Volume)
 
+# Capítulo II - Planejamento para Operações Conjuntas
+
+## (2024) Completar as Lacunas. (4 pts) (DIFÍCIL)
+No âmbito do MD, os PPC são realizados nos níveis Estratégico, Operacional e Tático. No nível estratégico é denominado PPEC e sua aplicação será de responsabilidade do CEMCFA, seu produto final é o PEECFA.
+No nível operacional, o processo é denominado PPC, cujo produto final é o Plano Operacional.
+
+Ref: MD-30-M-01, 2º Vol, Cap. 2, subitens 2.1.2.1 e 2.1.2.2, pág. 21
+
 # Capítulo IV - Processo de Planejamento Conjunto (PPC)
+
+## (2024) ME - Modelo gráfico que pode ser utilizado para facilitar o entendimento da situação atual e desejada, depois de realizada a análise dos fatores gerais de um ambiente operacional.
+R: letra B - Diagrama de relações MD30-M-01, 2º voume, Cap V, subitem 5.2.3.4.5, pa 42
+
+5.2.3.4.5 Para facilitar o entendimento da situação atual e desejada, após a análise dos fatores gerais de um ambiente operacional, podem ser elaborados modelos gráficos. Recomenda-se a utilização do Diagrama de Relações, que baseado na inferência lógica e apoiado em evidências, ajuda o planejador a desenvolver uma melhor identificação e compreensão do problema e pode, muitas vezes, apontar para fatores até então não identificados.
+
+## (2024) Qual característica do Processo de Planejamento Conjunto (PPC) possibilita retornar às etapas anteriores, a fim de rever certos aspectos / inserir novos dados? (2 pontos)
+R: Cíclico
+
+4.1.8
 
 ## (2021) Cite as 3 fases do PPC.
 1ª fase: Exame da situação operacional
@@ -65,15 +114,61 @@ R: Plano Operacional. Orienta o planejamento dos escalões subordinados.
 
 # Capítulo V - Exame de Situação Operacional
 
-## MP sobre conclusões do confronto – indicar a incorreta
-    (a) capacidade do inimigo em se opor a cada LA 
-    (b) necessidade de subdividir forças
-    (c) vantagens e desvantagens de cada LA 
-    (d) vulnerabilidades ou inconsistências a serem corrigidas 
-    (e) a quantidade e características gerais dos meios militares dos oponentes 
-Letra: E
+## (2024) V ou F sobre Linhas de Ação
+ 
+(V) Embora as ações para o seu atendimento possam estar inter-relacionadas, os Requisitos deverão ser estudados separadamente, no grau de detalhamento necessário ao nível do planejamento em curso, de modo a assegurar que a totalidade das necessidades inerentes a cada LA seja atendida.
+ 
+(F) Efeito pode ser definido como uma alteração no estado de um sistema (ou elemento de um sistema) resultante de uma ou mais ações e que contribui para a obtenção ou atingimento de um Ponto Decisivo. Um efeito deve ser mensurável. NÃO Expressa uma situação desejada no futuro (Ex: Fluxo logístico inimigo degradado). 
+ 
+(F) Ao realizar esta prova, o planejador verificará as limitações ao planejamento, identificadas por ocasião da análise da Missão e da emissão da Diretriz de Planejamento. Caso uma LA infrinja tais limitações, a mesma será considerada inaceitável (INADEQUADA).
+ 
+(F) Uma LA será considerada PRATICÁVEL se puder ser implementada com as forças, apoio e tecnologia disponíveis, sem levar (LEVANDO) em consideração a oposição esperada por parte do Inimigo e os demais óbices, incluindo aqueles relacionados aos custos financeiros. Isso será conseguido analisando-se criteriosamente os Requisitos inerentes à LA, com ênfase nos aspectos logísticos envolvidos, num nível de detalhamento suficiente para permitir ao Comandante avaliar a capacidade de implementação da LA. 
+ 
+(F) Uma LA será considerada adequada (ACEITÁVEL) se os prováveis resultados compensarem os riscos e custos estimados. As perdas prováveis, determinadas na prova de praticabilidade, servirão de base para esta prova e são avaliadas à vista das tarefas e dos propósitos da missão. Tais perdas referem-se à pessoal, material, tempo e posição. 
+ 
+(F) Praticabilidade e adequabilidade (ACEITABILIDADE) dependem de julgamento pessoal e, portanto, dois ou mais comandantes poderiam chegar a conclusões divergentes. Assim, uma determinada LA pode parecer perfeitamente mais aceitável para um Comandante de perfil ousado e agressivo, mas menos aceitável para outro mais cauteloso. 
+MD30-M-01 Cap V  - 5.4.3.5.5  
+- 5.4.3.3.3 
+- 5.4.3.6.4 
+- 5.4.3.6.5 
+- 5.4.3.6.6 
+- 5.4.3.6.7
 
-5.4.4.5.1
+## (2024) Texto que apresentava uma situação e mandava responder se as afirmações a seguir estavam corretas.
+a) As comparações devem se limitar somente às próprias forças versus as forças inimigas, não devendo incluir as forças amigas não orgânicas do Comandante Operacional.
+R: Todas as forças não orgânicas do Comando Operacional considerado, que possam interferir na execução da operação, provendo ou necessitando de algum tipo de apoio ou coordenação serão objeto de estudo nesse item. As conclusões trarão importantes dados a serem considerados, particularmente quando na montagem das LA.
+
+b)
+R:
+ 
+Ref: MD30-M-01, 2º Vol, Cap. 5, item 5.3.7 e 5.3.8.4, pág. 53 a 55
+
+## (2024) V ou F Acerca da Fase 2 do Exame de Situação Operacional, no que tange às “características da Área de Responsabilidade”
+
+    1. Estudo da Hidrográfica da Área de Responsabilidade limita-se à influência de oceanos e águas interiores das Operações Navais e não de rios e cursos de água que impliquem a realização de operações de transposição e interfiram na progressão da tropa para estudo do terreno.
+    2. Terreno e topografia 
+    3. Clima e meteorologia - análise geral ou estudos detalhados dos mesmos
+    4. Linhas de transporte e suprimento deve se aree SOMENTE às rotas existentes
+    5. Aspectos de condições sanitárias NAO serão considerados no nível operacional 
+    6. Períodos diurnos e noturnos dão importantes no planejamento - equipentls que serão empregados, atividades logísticas etc.
+
+R: F-V-V-F-F-V
+Ref: Cap 5
+
+## (2024) A etapa 1 do PPC – Exame da Situação Operacional é constituída de 6 fases.
+a. Em qual fase (nome e número) são levantadas vantagens e desvantagens de cada LA, caso sejam implementadas?
+Fase 4 - Comparação das LA.
+MD-30-M-01, 2º Vol, Cap. 5, subitem 5.5, p. 66
+b. Em qual fase (nome e número) é elaborado o documento que nada mais é que o aprimoramento do Conceito Sumário da LA selecionada como Decisão, enriquecido pelas conclusões obtidas no Confronto e que deverá ser apresentada ao escalão superior que emitiu as diretrizes de planejamento?
+Fase 6 – Conceito Preliminar da Operação.
+MD-30-M-01, 2º Vol, Cap. 5, subitem 5.7, p. 72 e 73
+
+## (2024) Indique se a análise abaixo está correta ou incorreta e justifique sua resposta.
+
+"O Adjunto da Seção de Operações, ao realizar a avaliação do ambiente operacional, afirmou que podem ser formulados objetivos operacionais com vistas a contribuir de forma direta ou indireta com os objetivos estratégicos de ordem econômica ou diplomática, que serão liderados por outras expressões do poder nacional."
+R: Correta (1 ponto). Uma campanha militar dificilmente será conduzida com base exclusiva na expressão do Poder Militar (5 pontos). MD-30-1-01, 2º VOL, Artigo 5.2.3.7.2. Páginas 44-45.
+
+5.2.3.7.2 Os Objetivos Operacionais podem ser atribuídos ao Cmt Op no próprio planejamento estratégico, em casos extraordinários, como parte da visualização do EMCFA para se atingir o EFD Estrt. Uma Campanha dificilmente será conduzida com base exclusivamente na expressão do Poder Militar. Logo, podem ser formulados Objetivos Operacionais com vistas a contribuir de forma direta ou indireta com os Objetivos Estratégicos de ordem econômica e diplomática, que serão liderados por outras expressões do Poder Nacional.
 
 ## (2022) V ou F sobre CPO – características, o que ele contém, se manda pra cima e pra baixo – Jogo de palavras
 ( F ) O CPO não se limita a ser um documento de uso interno do EMCj, podendo, sempre que possível e adequado, ser disseminado para os níveis superiores sob a forma de uma “Ordem Preparatória”. 
@@ -181,6 +276,22 @@ R: Esses documentos conterão as informações necessárias para que os comandos
 
 # Capítulo VII - Controle da Operação Planejada no Nível Operacional
 
+## (2024) Texto sobre o Controle da Operação em Curso e as Reuniões que acontecem nessa fase.
+a) Qual o Propósito da Reunião de Situação?
+R: O propósito dessa reunião é permitir que o EMCj proporcione ao Comandante a consciência situacional
+b) Como é denominada a Reunião que permite que o Cmt Op atualize os Cmt F Cte sobre as atividades em curso, realizando uma coordenação de alto nível?
+R: Reunião de Coordenação de Comando.
+Referência: MD-30-M-01 Vol. 2 Capítulo 7 item 7.3.6.5 e 7.3.6.6
+
+
+
+## (2024) a) Qual o Propósito da Reunião de Situação?
+R: O propósito dessa reunião é permitir que o EMCj proporcione ao Comandante a consciência situacional
+b) Como é denominada a Reunião que permite que o Cmt Op atualize os Cmt F Cte sobre as atividades em curso, realizando uma coordenação de alto nível?
+R: Reunião de Coordenação de Comando.
+Referência: MD-30-M-01 Vol. 2 Capítulo 7 item 7.3.6.5 e 7.3.6.6
+
+
 ## (2022) Quais são as Fases do Controle da Ação Planejada:
 R: Planejamento do Controle (elaborado antes da ação) e Controle da Operação em Curso (enquanto as ações estão sendo realizadas).
 
@@ -205,17 +316,15 @@ d) avaliação dos aspectos políticos.
     (5) Reunião de Controle da Ação Planejada
 7.3.6.13.1 Visa garantir a continuidade e a sincronização das ações planejadas. Durante a reunião, o progresso das operações será comparado com o planejamento. Qualquer alteração na LA adotada será avaliada e levada ao conhecimento do Ch EMCj na Reunião de Coordenação de Operações para análise e, caso pertinente, para inclusão na O Coor, em forma de ordem às F Cte.
 
-
 # Anexo D - A ARTE OPERACIONAL
 
-## (2022) 4 do Anexo
-    1- MP sobre o que se busca na arte operacional (marcar o errado) - Para mim era uma expressão que estava dizendo que o que o foco era a busca das Capacidades Críticas
-    (a) A arte operacional está relacionada ao entendimento do ambiente e do problema operacional, ao longo da 1ª fase do Exame de Situação. 
-    (b) Na aplicação da Arte Operacional, o Cmt TO e seu EMCj utilizam ferramentas intelectuais que ajudam a comunicar uma visão comum do ambiente operacional.
-    (c) A Arte Operacional é a concepção e planejamento contínuo e sistêmico de operações e campanhas militares sincronizadas que produzirão efeitos essenciais para a consecução dos objetivos operacionais de modo a atingir as Capacidades Críticas.
-    (d) A arte operacional nos dá uma visão que permite que as metas genéricas e abstratas do nível estratégico se traduzam em ações no nível operacional.
-    (e)  Todas as anteriores estão incorretas.
-Letra: C (atingir o EFD Op)
+## (2024) Questão de V ou F sobre Desenho Operacional. (4,0 pts) (DIFÍCIL)
+(  ) As variantes são opções ao plano básico e podem incluir mudanças de prioridades e de organização de unidades na estrutura de comando ou na própria natureza da operação. Por propiciarem flexibilidade ao antecipar situações que poderiam alterar o plano básico, as variantes normalmente são decisivas para o resultado da operação geral, pois permitem atuar mais rapidamente do que o adversário para explorar uma situação resultante (emergente) da situação operacional. [Esse é o texto da publicação. Não me recordo qual alteração foi feita para que fosse falsa.]
+(  ) Os PD são descritos como efeitos e deduzidos durante as primeiras fases do Exame de Situação do EMCj. Normalmente, têm sua origem a partir das análises dos Centros de Gravidades (próprio e do inimigo), do enunciado da missão e dos Objetivos Operacionais. 
+(  ) Ponto de Decisão é aquele no qual se espera que o Comandante tome uma decisão crítica concernente ao andamento da operação/campanha. Pode estar relacionado a uma variante ou à transição de fases em uma operação/campanha. Mais de um Ponto de Decisão pode ser identificado durante a fase de planejamento e se torna um elemento-chave para o Comandante durante a fase de execução.
+(  ) Ponto Culminante é o ponto de uma operação, a partir do qual a força deixa de ter capacidade para continuar as operações com sucesso. Este conceito tem aplicação na ofensiva e na defensiva. [Esse é o texto da publicação. Não me recordo qual alteração foi feita para que fosse falsa.]
+R: F - V - V - F
+Ref: MD30-M-01, 2º Vol., Anexo D, itens 4.11, 4.5.2, 4.7 e 4.8, pág. 211, 208, 209, 209
 
 ## (2022)     2- V ou F com os elementos do Desenho operacional - saber as palavras chave
 
@@ -257,15 +366,6 @@ Deve ser o mais curta possível
 ( 2 ) O resultado que se busca com operações de ritmo elevado é conseguir a paralisia estratégica do adversário, quebrando o seu ciclo de “Observação, Orientação, Decisão, Ação” (ciclo “OODA”).
 ( 1) Toda área de responsabilidade de um Comando Operacional possui características que afetam o planejamento e a execução das operações.
 
-## (2022)  Múltipla escolha sobre uma afirmação sobre o desenho operacional
-    (a)  Esta transformação é feita através do estabelecimento de condições (pontos de decisão) ao longo de diferentes linhas de operação.
-(ponto decisivo)
-    (b)   O desenho operacional pode ser estático ou definitivo.
-    (c)   O desenho não é uma Linha de Ação, uma execução sincronizada de ações, se constitui em um arquétipo (esqueleto) que deve ser capaz de abarcar várias linhas de ação. 
-    (d)  O desenho operacional é a manifestação da visão e da criatividade.
-Letra: C.
-
-
 ## (2021) CORRELACIONE – Elementos do Desenho Operacional:
 
     (1) Ponto Decisivo
@@ -286,23 +386,6 @@ As variantes são opções ao plano básico e podem incluir mudanças de priorid
 
 ## (2021) Como se denominam as alterações no estado de um sistema resultante de uma ou mais ações desencadeadas com vistas a alcançar um Ponto Decisivo? Cite uma característica deste elemento.
 4.6.1 Efeitos são alterações no estado de um sistema (ou elemento de um sistema) resultante de uma ou mais ações desencadeadas com vistas a alcançar um Ponto Decisivo. Essas alterações ocorrerão em alguma parte do sistema como resultado de uma, ou mais ações capazes de influenciar o ambiente operacional. Um efeito deve ser mensurável por meio de medidas e indicadores. Expressam uma situação desejada no futuro (Ex: Fluxo logístico inimigo degradado).
-
-
-
-## (2021) Múltipla Escolha  Características do CG.
-4.4.3 Sob uma perspectiva ampla, um CG pode ser representado por um conjunto de forças oponentes ou sua estrutura de comando, a opinião pública, a vontade nacional, líderes políticos e militares ou a estrutura de uma coligação, dependendo do seu nível de análise.
-///
-a) Características dos Centros de Gravidade
-- Existe em cada nível de decisão;
-- Nos níveis político e estratégico, pode ser intangível tanto moral quanto físico;
-- Nos níveis operacional e tático, é essencialmente físico;
-- É uma fonte de impulsão (alavancagem) ou um ponto de equilíbrio (ponto focal);
-- Permite ou favorece a liberdade de ação;
-- É baseado e vinculado a objetivos;
-- Duas ou mais estratégias simultâneas, cada uma usando forças físicas diferentes, podem exigir mais de um CG simultaneamente:
-- A sua identificação e análise fornecem a base para o desenvolvimento de Linhas de Ação;
-- A sua determinação deverá ser feita o mais detalhadamente possível, de maneira específica, pormenorizada e discreta; e
-- Pode mudar no tempo ou entre fases. (vol 2 pag 216)
 
 ## (2022) Dava uma situação onde o ChEM dizia que todos do EM eram responsáveis pela obtenção do EFD – C ou E
 Errado - Responsável é Cmt Op. (Quem propõe é o D-5)
@@ -326,14 +409,3 @@ Errado - Responsável é Cmt Op. (Quem propõe é o D-5)
 ( F ) O Comandante Supremo é o responsável por expedir a DPEM (DPED)
 ( F ) O EMCFA é o responsável por adjudicar meios para as operações. (MD)
 ( V ) O CPO deverá ser apresentado ao escalão superior que emitiu as diretrizes para o planejamento ora em elaboração.                                  (....)
-
-
-## (2022) MP sobre atribuições do COMAE - a incorreta:
-    (a) realizar a defesa aeroespacial do território nacional contra todas as formas de ameaça, a fim de assegurar o exercício da soberania no espaço aéreo brasileiro.
-    (b) empregar os meios sob seu comando operacional, incluídos os necessários para o estabelecimento dos procedimentos a serem seguidos com relação às aeronaves hostis ou suspeitas de tráfico de substâncias entorpecentes e drogas afins. 
-    (c) planejar, coordenar, supervisionar, controlar e executar o emprego do Poder Aeroespacial.
-    (d) atuar, em casos definidos na legislação em vigor, sobre as aeronaves consideradas suspeitas.
-    (e) atuar como órgão central do Sistema de Defesa Aeroespacial Brasileiro (SISDABRA) 
-
-Letra B - CONTROLE Operacional
-

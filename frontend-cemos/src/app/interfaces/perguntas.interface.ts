@@ -12,7 +12,7 @@ export interface Bibliografia {
 }
 
 export interface FlashCards {
-  id: number;
+  id: number; // ID fixo numérico
   bibliografia: number;
   bibliografia_titulo?: string;
   pergunta: string;
@@ -71,7 +71,7 @@ export interface MarkdownFileInfo {
 }
 
 export interface MarkdownAggregatedHighlight {
-  pergunta_id: number;
+  pergunta_id: number; // ID fixo numérico
   pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
   pergunta_label?: string;
   bibliografia_titulo?: string | null;
@@ -87,7 +87,7 @@ export interface MarkdownHighlightsResponse {
 
 // Interface base para perguntas (não utilizada diretamente, apenas para referência)
 export interface PerguntaBase {
-  id: number;
+  id: number; // ID fixo numérico
   bibliografia: number;
   bibliografia_titulo?: string;
   paginas?: string;
@@ -142,7 +142,7 @@ export interface PerguntaCorrelacao extends PerguntaBase {
 
 // Interface para resumo de perguntas (usado em listagens)
 export interface PerguntaResumo {
-  id: number;
+  id: number; // ID fixo numérico
   tipo: 'multipla' | 'vf' | 'correlacao';
   tipo_display: string;
   bibliografia_titulo: string;
@@ -234,7 +234,7 @@ export enum AlternativaMultipla {
 export interface QuestaoOmitida {
   id: number;
   usuario: number;
-  pergunta_id: number;
+  pergunta_id: number; // ID fixo numérico
   pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
   motivo?: string | null;
   bibliografia?: number | null;

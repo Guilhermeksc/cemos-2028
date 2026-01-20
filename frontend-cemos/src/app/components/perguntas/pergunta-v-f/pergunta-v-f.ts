@@ -14,7 +14,7 @@ import { PerguntaVF as PerguntaVFInterface } from '../../../interfaces/perguntas
 export class PerguntaVF {
   private sanitizer = inject(DomSanitizer);
 
-  @Input() questionId!: number;
+  @Input() questionId!: number; // ID fixo numérico
   @Input() questionData!: PerguntaVFInterface;
   @Input() isAnswered: boolean = false;
   @Input() isCorrect: boolean = false;

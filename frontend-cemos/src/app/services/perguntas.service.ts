@@ -512,7 +512,7 @@ export class PerguntasService {
    * Nota: O token de autenticação é adicionado automaticamente pelo AuthInterceptor
    */
   registrarResposta(data: {
-    pergunta_id: number;
+    pergunta_id: number; // ID fixo numérico
     pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
     resposta_usuario: any;
     bibliografia_id?: number;
@@ -636,7 +636,7 @@ export class PerguntasService {
    * Omitir uma questão para o usuário logado
    */
   omitirQuestao(
-    perguntaId: number,
+    perguntaId: number, // ID fixo numérico
     perguntaTipo: 'multipla' | 'vf' | 'correlacao',
     options?: { motivo?: string; bibliografiaId?: number; assuntoId?: number | null }
   ): Observable<QuestaoOmitida> {

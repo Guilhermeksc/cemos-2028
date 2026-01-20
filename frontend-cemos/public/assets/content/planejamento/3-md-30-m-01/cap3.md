@@ -59,7 +59,7 @@ E o espaço geográfico necessário à condução de operações militares, que 
 
 ### 3.3.5 Zona de Defesa (ZD) 
 
-3.3.5.1 Parte do território nacional pertencente à Zona do Interior (Z1), onde um Comando Operacional ativado planejará e coordenará as ações de defesa territorial, em consonância com as ações de defesa aeroespacial.
+3.3.5.1 Parte do território nacional pertencente à Zona do Interior (ZI), onde um Comando Operacional ativado planejará e coordenará as ações de defesa territorial, em consonância com as ações de defesa aeroespacial.
 
 3.3.5.2 A necessidade da criação de ZD, assim como as suas delimitações geográficas, será avaliada por ocasião da elaboração do respectivo PEECFA.
 

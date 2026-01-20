@@ -43,7 +43,7 @@ export class MarkdownViewerComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();
 
   tipo: 'multipla' | 'vf' | 'correlacao' = 'multipla';
-  questionId = 0;
+  questionId = 0; // ID fixo numérico
   question: Pergunta | null = null;
 
   isAdmin = false;

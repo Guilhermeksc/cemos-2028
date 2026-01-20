@@ -14,7 +14,7 @@ import { PerguntaCorrelacao as PerguntaCorrelacaoInterface } from '../../../inte
 export class PerguntaCorrelacao implements OnChanges {
   private sanitizer = inject(DomSanitizer);
 
-  @Input() questionId!: number;
+  @Input() questionId!: number; // ID fixo numérico
   @Input() questionData!: PerguntaCorrelacaoInterface;
   @Input() isAnswered: boolean = false;
   @Input() isCorrect: boolean = false;

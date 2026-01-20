@@ -29,7 +29,7 @@ import { LoadingSpinner } from '../loading-spinner/loading-spinner';
 import { SimuladosPdfService } from '../simulados/services/simulados-pdf.service';
 
 interface SimuladoQuestion {
-  id: number;
+  id: number; // ID fixo numérico
   tipo: 'multipla' | 'vf' | 'correlacao';
   pergunta: string;
   bibliografia_titulo?: string;
@@ -41,7 +41,7 @@ interface SimuladoQuestion {
   data: PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
   userAnswer?: any;
   isCorrect?: boolean;
-  uniqueKey?: string; // Chave única: tipo-id (ex: "vf-1", "multipla-2")
+  uniqueKey?: string; // Chave única: tipo-id (ex: "vf-uuid", "multipla-uuid")
 }
 
 interface SimuladoConfig {
@@ -1213,7 +1213,7 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         capituloId: number | null;
         titulo: string;
         questoes: Array<{
-          pergunta_id: number;
+          pergunta_id: number; // ID fixo numérico
           pergunta_tipo: 'multipla' | 'vf' | 'correlacao';
           tipo_display: string;
           preview: string;
