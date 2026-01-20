@@ -12,7 +12,7 @@ export class App9EconomiaFlashcards {
 
   bibliografiaIds: number[] = [30, 31, 32];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app9-economia/bibliografia';
 
   // Título opcional para o componente flash-cards

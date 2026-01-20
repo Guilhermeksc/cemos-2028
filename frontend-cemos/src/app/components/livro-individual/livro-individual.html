@@ -11,7 +11,7 @@
   <aside class="left-menu" [class.menu-open]="leftMenuOpen">
     
     <!-- Header do Menu Esquerdo -->
-    <div class="menu-header">
+    <div class="menu-header" *ngIf="!isFullscreen">
       <!-- Botão de Fechar (Mobile) -->
       <button 
         class="menu-close-button mobile-only"
@@ -132,7 +132,7 @@
   <aside class="right-menu" [class.menu-open]="rightMenuOpen">
     
     <!-- Header do Menu Direito -->
-    <div class="menu-header">
+    <div class="menu-header" *ngIf="!isFullscreen">
       <!-- Botão de Fechar (Mobile) -->
       <button 
         class="menu-close-button mobile-only"
@@ -197,7 +197,7 @@
     <div class="fullscreen-container">
       <!-- Menu Lateral Esquerdo - Arquivos (Fullscreen) -->
       <aside class="left-menu fullscreen-menu" [class.menu-open]="leftMenuOpen">
-        <div class="menu-header">
+        <div class="menu-header" *ngIf="!isFullscreen">
           <!-- Botão de Fechar (Mobile) -->
           <button 
             class="menu-close-button mobile-only"
@@ -295,7 +295,7 @@
 
       <!-- Menu Lateral Direito - Índice (Fullscreen) -->
       <aside class="right-menu fullscreen-menu" [class.menu-open]="rightMenuOpen">
-        <div class="menu-header">
+        <div class="menu-header" *ngIf="!isFullscreen">
           <!-- Botão de Fechar (Mobile) -->
           <button 
             class="menu-close-button mobile-only"

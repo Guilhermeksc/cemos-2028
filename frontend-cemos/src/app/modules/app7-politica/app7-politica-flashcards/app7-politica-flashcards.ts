@@ -13,7 +13,7 @@ export class App7PoliticaFlashcards {
 
   bibliografiaIds: number[] = [9];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app7-politica/bibliografia';
 
 }

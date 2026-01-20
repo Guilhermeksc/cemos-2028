@@ -13,7 +13,7 @@ export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
   readonly bibliografiasDisponiveisIds: number[] = [1, 2, 3, 4];
   
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
   
   pageTitle = 'Perguntas de Geopolítica e Relações Internacionais';

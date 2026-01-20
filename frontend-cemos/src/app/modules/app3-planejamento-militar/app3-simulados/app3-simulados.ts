@@ -13,7 +13,7 @@ export class App3Simulados implements OnInit {
   // Bibliografias disponíveis para este módulo (mesmas do módulo de perguntas)
   readonly bibliografiasDisponiveisIds: number[] = [69, 70, 71];
   
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app3-planejamento-militar/bibliografia';
   
   pageTitle = 'Simulados de Planejamento Militar';

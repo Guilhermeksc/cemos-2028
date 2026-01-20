@@ -23,7 +23,7 @@ interface FlashCardDisplay extends FlashCard {
 })
 export class FlashCardsComponent implements OnInit, OnDestroy, OnChanges {
   @Input() bibliografiaIds: number[] = [];
-  @Input() bibliografiaPath?: string; // Rota para voltar à bibliografia
+  @Input() bibliografiaPath?: string; // Rota para Voltar
   @Input() title?: string; // Título opcional para adicionar ao cabeçalho
   
   private flashcardsService = inject(FlashCardsService);

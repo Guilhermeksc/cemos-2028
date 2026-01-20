@@ -13,7 +13,7 @@ export class App7Simulados implements OnInit {
   // Bibliografias disponíveis para este módulo (mesmas do módulo de perguntas)
   readonly bibliografiasDisponiveisIds: number[] = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app7-politica/bibliografia';
 
   pageTitle = 'Simulados de Política';

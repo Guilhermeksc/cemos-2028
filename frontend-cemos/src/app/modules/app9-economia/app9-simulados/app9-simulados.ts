@@ -13,7 +13,7 @@ export class App9Simulados implements OnInit {
   // Bibliografias disponíveis para este módulo (mesmas do módulo de perguntas)
   readonly bibliografiasDisponiveisIds: number[] = [30, 31, 32];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app9-economia/bibliografia';
 
   pageTitle = 'Simulados de Economia';

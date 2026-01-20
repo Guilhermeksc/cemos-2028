@@ -13,7 +13,7 @@ export class App8DireitoPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
   readonly bibliografiasDisponiveisIds: number[] = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
     
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app8-direito/bibliografia';
   
   pageTitle = 'Perguntas de Direito';

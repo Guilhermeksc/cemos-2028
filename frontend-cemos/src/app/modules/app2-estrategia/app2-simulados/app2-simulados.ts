@@ -13,7 +13,7 @@ export class App2Simulados implements OnInit {
   // Bibliografias disponíveis para este módulo (mesmas do módulo de perguntas)
   readonly bibliografiasDisponiveisIds: number[] = [33, 34, 35];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app2-estrategia/bibliografia';
 
   pageTitle = 'Simulados de Estratégia';

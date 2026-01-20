@@ -13,7 +13,7 @@ export class App4Simulados implements OnInit {
   // Bibliografias disponíveis para este módulo (mesmas do módulo de perguntas)
   readonly bibliografiasDisponiveisIds: number[] = [5, 6, 7, 8];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app4-historia/bibliografia';
 
   pageTitle = 'Simulados de História';

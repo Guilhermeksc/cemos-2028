@@ -13,7 +13,7 @@ export class App3PlanejamentoMilitarPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
   readonly bibliografiasDisponiveisIds: number[] = [69, 70, 71];
     
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app3-planejamento-militar/bibliografia';
   
   pageTitle = 'Perguntas de Planejamento Militar';

@@ -14,7 +14,7 @@
 
   <!-- navegação para desktop -->
   <nav class="navigation-buttons desktop-nav" aria-label="Navegação">
-    <button *ngIf="showBibliografia" class="btn btn-stroked" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">⬅️ Voltar à Bibliografia</button>
+    <button *ngIf="showBibliografia" class="btn btn-stroked" (click)="navigateTo(getPath('bibliografia'))" aria-label="Voltar para Bibliografia">⬅️ Voltar</button>
     <button *ngIf="showFlashcards" class="btn btn-stroked" (click)="navigateTo(getPath('flash-cards'))">📇 Flashcards</button>
     <button *ngIf="showMedia" class="btn btn-stroked" (click)="navigateTo(getPath('media'))">▶️ Media</button>
     <button *ngIf="showPerguntas" class="btn btn-stroked" (click)="navigateTo(getPath('perguntas'))">❓ Perguntas</button>
@@ -26,7 +26,7 @@
     <div *ngIf="title" class="mobile-title">
       <h2>{{ title }}</h2>
     </div>
-    <button *ngIf="showBibliografia" class="btn btn-dropdown" (click)="navigateTo(getPath('bibliografia'))">⬅️ Voltar à Bibliografia</button>
+    <button *ngIf="showBibliografia" class="btn btn-dropdown" (click)="navigateTo(getPath('bibliografia'))">⬅️ Voltar</button>
     <button *ngIf="showFlashcards" class="btn btn-dropdown" (click)="navigateTo(getPath('flash-cards'))">📇 Flashcards</button>
     <button *ngIf="showMedia" class="btn btn-dropdown" (click)="navigateTo(getPath('media'))">▶️ Media</button>
     <button *ngIf="showPerguntas" class="btn btn-dropdown" (click)="navigateTo(getPath('perguntas'))">❓ Perguntas</button>

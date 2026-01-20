@@ -92,7 +92,7 @@ export class AppXNomeModuloSimulados implements OnInit {
   // 4. Substitua este array pelos IDs reais
   readonly bibliografiasDisponiveisIds: number[] = [ID1, ID2, ID3, ...];
   
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/appX-nome-modulo/bibliografia';
   
   pageTitle = 'Simulados de Nome do Módulo';

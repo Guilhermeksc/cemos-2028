@@ -13,7 +13,7 @@ export class App3PlanejamentoMilitarFlashcards {
   // IDs das bibliografias de Planejamento Militar
   bibliografiaIds: number[] = [69, 70, 71];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app3-planejamento-militar/bibliografia';
 
 }

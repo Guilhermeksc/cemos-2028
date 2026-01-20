@@ -29,7 +29,7 @@ export class SubMenu implements OnInit {
   @Input() items: SubMenuItem[] = [];
   @Input() selectedItemId: string = '';
   @Input() showBackButton: boolean = false;
-  @Input() backButtonLabel: string = 'Voltar à Bibliografia';
+  @Input() backButtonLabel: string = 'Voltar';
   @Input() isCollapsed: boolean = false;
   
   @Output() itemSelected = new EventEmitter<SubMenuItem>();

@@ -13,7 +13,7 @@ export class App2EstrategiaPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
   readonly bibliografiasDisponiveisIds: number[] = [33, 34, 35];
     
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app2-estrategia/bibliografia';
   
   pageTitle = 'Perguntas de Estratégia';

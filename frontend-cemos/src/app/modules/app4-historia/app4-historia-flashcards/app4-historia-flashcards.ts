@@ -10,9 +10,9 @@ import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards
 })
 export class App4HistoriaFlashcards {
 
-  bibliografiaIds: number[] = [5];
+  bibliografiaIds: number[] = [5, 6, 7, 8];
 
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app4-historia/bibliografia';
 
 }

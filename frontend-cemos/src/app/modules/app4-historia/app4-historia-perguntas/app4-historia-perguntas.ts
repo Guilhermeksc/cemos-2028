@@ -13,7 +13,7 @@ export class App4HistoriaPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
   readonly bibliografiasDisponiveisIds: number[] = [5, 6, 7, 8];
     
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app4-historia/bibliografia';
   
   pageTitle = 'Perguntas de História';

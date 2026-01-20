@@ -13,7 +13,7 @@ export class App9EconomiaPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
   readonly bibliografiasDisponiveisIds: number[] = [30, 31, 32];
     
-  // Rota para voltar à bibliografia
+  // Rota para Voltar
   bibliografiaPath = '/home/app9-economia/bibliografia';
   
   pageTitle = 'Perguntas de Economia';
