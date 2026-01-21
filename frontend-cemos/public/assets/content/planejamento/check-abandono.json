@@ -4,7 +4,7 @@
       "titulo": "Lei Complementar nº 97/1999",
       "capitulos": [
         {
-          "titulo": "Capítulo V - DO EMPREGO",
+          "titulo": "Capítulo V - Do Emprego",
           "itens": [
             {
               "numero": 1,
@@ -45,7 +45,7 @@
           ]
         },
         {
-          "titulo": "Capítulo VI - DAS DISPOSIÇÕES COMPLEMENTARES",
+          "titulo": "Capítulo VI - Das Disposições Complementares",
           "itens": [
             {
               "numero": 1,
@@ -88,53 +88,53 @@
       ]
     },
     {
-      "titulo": "Estrutura Militar de Defesa",
+      "titulo": "Decreto nº 7.276/2010",
       "capitulos": [
         {
-          "titulo": "Cap 2",
+          "titulo": "Aprova a Estrutura Militar de Defesa",
           "itens": [
             {
-              "numero": 9,
-              "texto": "Estrutura Militar de Defesa – Composição (6)",
-              "complemento": "",
-              "mnemonico": ""
+              "numero": 1,
+              "texto": "Composição (6)",
+              "complemento": "Composta por: Presidente da República; Ministro de Estado da Defesa; Conselho Militar de Defesa; Comandantes das Forças Armadas; Chefe do Estado-Maior Conjunto das Forças Armadas; e Comandantes dos Comandos Operacionais.",
+              "mnemonico": "PR–MD–CMD–CFA–CEMCFA–CO"
             },
             {
-              "numero": 10,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades do PR",
-              "complemento": "",
-              "mnemonico": ""
+              "numero": 2,
+              "texto": "Responsabilidades do Presidente da República",
+              "complemento": "Decidir sobre o emprego das Forças Armadas; determinar ao Ministro da Defesa a ativação dos Comandos Operacionais; designar seus comandantes; emitir diretrizes para o emprego; e aprovar o planejamento estratégico.",
+              "mnemonico": "Decide–Ativa–Designa–Diretrizes–Aprova - D3A2"
             },
             {
-              "numero": 11,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades do Ministro de Estado da Defesa",
-              "complemento": "",
-              "mnemonico": ""
+              "numero": 3,
+              "texto": "Responsabilidades do Ministro de Estado da Defesa",
+              "complemento": "Assessorar o Presidente; emitir diretrizes para emprego, exercícios conjuntos e operações de paz; ativar Comandos Operacionais; aprovar planejamentos estratégicos; e adjudicar meios conforme necessidades e disponibilidades.",
+              "mnemonico": "Assessora–Diretrizes–Adjudica"
             },
             {
-              "numero": 12,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades do Conselho Militar de Defesa",
-              "complemento": "",
-              "mnemonico": ""
+              "numero": 4,
+              "texto": "Responsabilidades do Conselho Militar de Defesa",
+              "complemento": "Assessorar o Presidente da República quanto ao emprego de meios militares e assessorar o Ministro da Defesa nas competências relativas ao emprego das Forças Armadas.",
+              "mnemonico": "AssPR–AssMD"
             },
             {
-              "numero": 13,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades do Comandantes das FA (3)",
-              "complemento": "",
-              "mnemonico": ""
+              "numero": 5,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades dos Comandantes das Forças Armadas (3)",
+              "complemento": "Fornecer os meios adjudicados aos Comandos Operacionais; prestar apoio logístico necessário; e emitir diretrizes para planejamento operacional quando da ativação de Comando Singular subordinado.",
+              "mnemonico": "Meios–Log–DirOp"
             },
             {
-              "numero": 14,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades do CEMCFA",
-              "complemento": "",
-              "mnemonico": ""
+              "numero": 6,
+              "texto": "Estrutura Militar de Defesa – Responsabilidades do Chefe do Estado-Maior Conjunto das Forças Armadas",
+              "complemento": "Assessorar o Ministro da Defesa; propor o planejamento estratégico de emprego; acompanhar planejamentos e ações dos Comandos Operacionais; e propor, coordenar e avaliar exercícios conjuntos.",
+              "mnemonico": "Ass–Planeja–Acompanha–Coord"
             },
             {
-              "numero": 15,
+              "numero": 7,
               "texto": "Estrutura Militar de Defesa – Responsabilidades do Comandante Operacional",
-              "complemento": "",
-              "mnemonico": ""
-            }
+            "complemento": "Apresentar planejamentos operacionais e proposta de adjudicação de meios; planejar, controlar, coordenar e executar o emprego das forças sob seu comando; e conduzir exercícios conforme diretrizes superiores.",
+            "mnemonico": "Planeja–Coord–Executa"
+        }
           ]
         }
       ]
@@ -143,7 +143,96 @@
       "titulo": "MD-30-m-01(1º Volumne)",
       "capitulos": [
         {
-          "titulo": "Cap 3",
+          "titulo": "Capítulo II – Concepção de Preparo e Emprego Conjunto",
+          "itens": [
+            {
+              "numero": 1,
+              "texto": "Política Nacional de Defesa (PND)– Segurança Nacional – Conceito",
+              "complemento": "Condição que permite ao País preservar sua soberania e integridade territorial, promover seus interesses nacionais, livre de pressões e ameaças, e garantir aos cidadãos o exercício dos direitos e deveres constitucionais.",
+              "mnemonico": "Soberania-Integridade-Garantia-Interesses-Livre - SIGILO"
+            },
+            {
+              "numero": 2,
+              "texto": "Preparo Nacional para a Guerra",
+              "complemento": "Envolve todos os setores da vida nacional, exigindo planejamento prévio em todos os níveis para transição rápida da normalidade para a guerra ou conflito armado.",
+              "mnemonico": "Todos-Planejam"
+            },
+            {
+              "numero": 3,
+              "texto": "Crise",
+              "complemento": "A crise é um conflito posicionado entre a paz e a guerra. Exige uma administração (manobra ou gerenciamento) que permita uma evolução favorável aos interesses nacionais em jogo.",
+              "mnemonico": "Conflito entre Guerra e Paz"
+            },
+            {
+              "numero": 4,
+              "texto": "Proporcionalidade na Crise",
+              "complemento": "Na evolução da crise, deve existir proporcionalidade entre a causa do conflito e os meios empregados para resolvê-la.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 5,
+              "texto": "Emprego das Forças Armadas",
+              "complemento": "O emprego das FA é sempre respaldo à ação política do governo, com diretrizes e Regras de Engajamento compatíveis com a condução política.",
+              "mnemonico": "Política–RE"
+            },
+            {
+              "numero": 6,
+              "texto": "Situação de Guerra x Situação de não-guerra ",
+              "complemento": "Divide-se em situação de guerra (Defesa da Pátria) e de não-guerra, incluindo GLO, atribuições subsidiárias, terrorismo, operações internacionais e apoio à política externa.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 7,
+              "texto": "Situação de Normalidade",
+              "complemento": "Caracteriza-se pela vigência plena das garantias individuais e ausência de medidas excepcionais, admitindo emprego das FA se houver comprometimento da ordem pública.",
+              "mnemonico": "Garantias–Ordem"
+            },
+            {
+              "numero": 8,
+              "texto": "Situação de Não-Normalidade",
+              "complemento": "Caracteriza-se por grave comprometimento da ordem pública e institucional, com intervenção federal, estado de defesa ou estado de sítio.",
+              "mnemonico": "Interv–Def–Sít"
+            },
+            {
+              "numero": 9,
+              "texto": "Estado de Crise e Conflito Armado",
+              "complemento": "Crise é estado de tensão com risco de escalada; conflito armado é o emprego da violência por grupos organizados para impor vontade ou resolver contenciosos.",
+              "mnemonico": "Tensão–Violência"
+            },
+            {
+              "numero": 10,
+              "texto": "Diretrizes e Planejamento Estratégico",
+              "complemento": "Em crise ou conflito, o planejamento inicia-se com a DPED, seguida da DMED e da DPEM, culminando no PEECFA, sob coordenação do EMCFA.",
+              "mnemonico": "DPED–DMED–DPEM–PEECFA"
+            },
+            {
+              "numero": 11,
+              "texto": "Emprego Conjunto – Conceito",
+              "complemento": "Baseia-se na interoperabilidade e sinergia das Forças Armadas para maximizar a expressão militar do Poder Nacional.",
+              "mnemonico": "Inter–Sin"
+            },
+            {
+              "numero": 12,
+              "texto": "Ideias Básicas do Emprego Conjunto",
+              "complemento": "Unidade de comando, cadeia clara de comando, delegação de autoridade, C² eficiente, doutrina conjunta, adestramento integrado, logística adequada e proporcionalidade.",
+              "mnemonico": "UC–C²–Log–Prop"
+            },
+            {
+              "numero": 13,
+              "texto": "Níveis de Emprego e Planejamento",
+              "complemento": "A concepção de emprego conjunto perpassa os níveis político, estratégico, operacional e tático, com ações simultâneas e integradas.",
+              "mnemonico": "Pol–Estr–Op–Tat"
+            },
+            {
+              "numero": 14,
+              "texto": "Documentos do Ciclo de Planejamento",
+              "complemento": "DPED (Político), DMED e DPEM (Estratégico), DIPLAN e Planos Operacionais (Operacional) e Planos/Ordens Táticas (Tático).",
+              "mnemonico": "DPED–DMED–DPEM–DIPLAN"
+            }
+          ]
+        },
+        {
+          "titulo": "Capítulo III - Operações Conjuntas das Forças Armadas",
           "itens": [
             {
               "numero": 16,
@@ -236,7 +325,7 @@
               "mnemonico": ""
             }
           ]
-        },
+        },        
         {
           "titulo": "Cap 4",
           "itens": [
