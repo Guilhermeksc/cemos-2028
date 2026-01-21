@@ -43,24 +43,9 @@ f) quando contribuir para os efeitos associados aos Pontos Decisivos.
 
 4.1.8 Cabe observar que, embora o planejamento seja conjunto e a sinergia das ações seja uma meta a ser buscada, para resguardar os princípios da simplicidade e economia de meios, cada meio adjudicado deve ser empregado de acordo com o seu tipo de preparo, englobando aí aspectos doutrinários, de adestramento e de equipamento.
 
-### Comando Operacional Conjunto (Cmdo Op Cj)
-
-- **Tr Cmdo Op**
-- **S Cmt**
-- **EMCj**
-
-### Subordinados
-
-- **FNC**
-- **FTC**
-- **FAC**
-- **C Log Cte**
-- **F Cj Op Esp Cte**
-- **F Cj G Ciber Cte**
-- **F Cj Cte**
-- **FT Cj Cte**
-
 **Figura 5 – estrutura do Comando Operacional Conjunto**
+
+![alt text](figura5.png)
 
 ### 4.2 Do Comando Operacional Conjunto 
 
@@ -70,7 +55,7 @@ f) quando contribuir para os efeitos associados aos Pontos Decisivos.
 
 4.2.2 Os Comandos Operacionais Conjuntos, quando ativados, ficarão subordinados ao CS, por intermédio do Ministro da Defesa, para situações de emprego de guerra e não guerra, conforme a figura 6.
 
-### figura
+![### figura](figura6.png)
 
 4.2.3 O Comando Operacional Conjunto deverá buscar observar os seguintes aspectos:
 

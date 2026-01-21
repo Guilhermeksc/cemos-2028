@@ -1,57 +1,86 @@
 {
   "livros": [
     {
-      "titulo": "Lei Complementar nº 97",
+      "titulo": "Lei Complementar nº 97/1999",
       "capitulos": [
         {
-          "titulo": "Cap 1",
+          "titulo": "Capítulo V - DO EMPREGO",
           "itens": [
             {
               "numero": 1,
-              "texto": "Emprego das FA – Responsabilidade",
-              "complemento": "Presidente da República",
-              "mnemonico": ""
+              "texto": "Responsabilidade pelo Emprego das Forças Armadas",
+              "complemento": "Compete ao Presidente da República decidir o emprego das Forças Armadas, que determinará ao Ministro de Estado da Defesa a ativação de órgãos operacionais",
+              "mnemonico": "PR"
             },
             {
               "numero": 2,
-              "texto": "Emprego das FA – Possíveis subordinações (3)",
-              "complemento": "CON: Comandos Conjuntos → via Ministro da Defesa, MIN: Ministro da Defesa direto (adestramento, conjuntas, paz), FOR: Comandante da Força (emprego isolado)",
+              "texto": "Emprego das Forças Armadas – Possíveis subordinação",
+              "complemento": "CON: Comandos Conjuntos → via Ministro da Defesa; MIN: Ministro da Defesa direto (adestramento, conjuntas, paz), FOR: Comandante da Força (emprego isolado)",
               "mnemonico": "CON–MIN–FOR"
             },
             {
               "numero": 3,
-              "texto": "Emprego das FA – Caracterização do emprego em GLO (4)",
-              "complemento": "P: decisão do Presidente\nE: Esgotamento dos meios do art. 144\nA: Área delimitada\nT: Tempo limitado\nC: Controle operacional transferido (centro de coordenação)\nM: Militar em atividade militar",
-              "mnemonico": "P-E-A-T-C-M"
+              "texto": "Emprego das Forças Armadas em Garantia da Lei e da Ordem (GLO)",
+              "complemento": "Decisão presidencial; esgotamento dos meios do art. 144; atuação episódica; área delimitada; tempo limitado; ações preventivas e repressivas\nArt. 144. A segurança pública, dever do Estado, direito e responsabilidade de todos, é exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio, através dos seguintes órgãos:\nI - polícia federal;\nII - polícia rodoviária federal;\nIII - polícia ferroviária federal;\nIV - polícias civis;\nV - polícias militares e corpos de bombeiros militares.\nVI - polícias penais federal, estaduais e distrital.",
+              "mnemonico": "P-E-A-T"
             },
             {
               "numero": 4,
-              "texto": "Emprego das FA – Definição de Controle Operacional dos Órgãos de Segurança Pública (OSP)",
-              "complemento": "",
-              "mnemonico": ""
+              "texto": "Esgotamento dos instrumentos do art. 144 da Constituição Federal",
+              "complemento": "Consideram-se esgotados quando formalmente reconhecidos, por ofício do Chefe do Poder Executivo Federal ou Estadual, como indisponíveis, inexistentes ou insuficientes ao desempenho regular de sua missão constitucional",
+              "mnemonico": "Indisp-Inex-Insuf"
             },
             {
               "numero": 5,
-              "texto": "Emprego das FA – Atribuição subsidiária geral das Forças Armadas:",
-              "complemento": "cooperar com o desenvolvimento nacional e a defesa civil",
-              "mnemonico": "CoDeDe"
+              "texto": "Definição de controle operacional",
+              "complemento": "O poder conferido à autoridade encarregada das operações, para atribuir e coordenar missões ou tarefas específicas a serem desempenhadas por efetivos dos órgãos de segurança pública, obedecidas as suas competências constitucionais ou legais.",
+              "mnemonico": "CO"
             },
             {
               "numero": 6,
-              "texto": "Emprego das FA – Aç contra delitos transfronteiriços e ambientais (3):",
-              "complemento": "revista de pessoas, de veículos terrestres, de embarcações e de aeronaves; patrulhamento; prisões em flagrante delito",
-              "mnemonico": "Revista Pa Pri"
+              "texto": "Natureza da atuação do militar",
+              "complemento": "A atuação do militar nessas hipóteses é considerada atividade militar para fins do art. 124 da Constituição Federalconstitucionais\nArt. 124. À Justiça Militar compete processar e julgar os crimes militares definidos em lei.",
+              "mnemonico": ""
+            }
+          ]
+        },
+        {
+          "titulo": "Capítulo VI - DAS DISPOSIÇÕES COMPLEMENTARES",
+          "itens": [
+            {
+              "numero": 1,
+              "texto": "Atribuição subsidiária geral das Forças Armadas",
+              "complemento": "Cooperar com o desenvolvimento nacional e a defesa civil",
+              "mnemonico": "CoDeDe"
             },
             {
-              "numero": 7,
-              "texto": "Emprego das FA – Atribuições subsidiárias da Marinha (5)",
-              "complemento": "",
+              "numero": 2,
+              "texto": "Atribuições subsidiária específica - Ações contra delitos transfronteiriços e ambientais",
+              "complemento": "Atuação preventiva e repressiva na faixa de fronteira, no mar e nas águas interiores,  independentemente da posse, da propriedade, da finalidade ou de qualquer gravame que sobre ela recaia, contra delitos transfronteiriços e ambientais, isoladamente ou em coordenação com outros órgãos do Poder Executivo,\n(Incluído pela Lei Complementar nº 136, de 2010)",
+              "mnemonico": "Art. 16-A"
+            },
+            {
+              "numero": 3,
+              "texto": "Tipos de ações subsidiárias contra delitos",
+              "complemento": "PA: Patrulhamento; RE: revista de pessoas, de veículos terrestres, de embarcações e de aeronaves; PRI: prisões em flagrante delito",
+              "mnemonico": "Pa-Re-Pri"
+            },
+            {
+              "numero": 4,
+              "texto": "Atribuições subsidiárias particulares da Marinha",
+              "complemento": "Pela especificidade dessas atribuições, é da competência do Comandante da Marinha o trato dos assuntos dispostos neste artigo, ficando designado como 'Autoridade Marítima', Cabe à Marinha, como atribuições subsidiárias particulares:\n Orientar o e controlar a Marinha Mercante;\nNA: prover a segurança da navegação aquaviária;\nPO: contribuir para a formulação de políticas nacionais do mar;\nLE: implementar e fiscalizar o cumprimento de leis e regulamentos;\nCO: cooperação na repressão a delitos na forma de apoio logístico, de inteligência, de comunicações e de instrução.",
+              "mnemonico": "NaPoLeCo"
+            },
+            {
+              "numero": 5,
+              "texto": "Atribuições subsidiárias específicas do Exército",
+              "complemento": "Formulação e condução de políticas do Poder Militar Terrestre; cooperação em obras e serviços de engenharia; apoio à repressão de delitos de repercussão nacional e internacional no território nacional",
               "mnemonico": ""
             },
             {
-              "numero": 8,
-              "texto": "Emprego das FA – Autoridade Marítima x Autoridade Aeronáutica Militar",
-              "complemento": "",
+              "numero": 6,
+              "texto": "Atribuições subsidiárias particulares da Aeronáutica",
+              "complemento": "Comandante da Aeronáutica → ‘Autoridade Aeronáutica Militar’: orientar, coordenar e controlar as atividades de Aviação Civil; segurança da navegação aérea; política aeroespacial nacional; infraestrutura aeronáutica e aeroportuária; operar o Correio Aéreo Nacional (CAN); cooperar com os órgãos federais à repressão de delitos; controle permanente do espaço aéreo",
               "mnemonico": ""
             }
           ]

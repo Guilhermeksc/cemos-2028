@@ -56,7 +56,7 @@
 
 2.2.2.3 No estado de crise ou de conflito armado (interno ou externo), o Planejamento Estratégico iniciar-se-á após o recebimento da Diretriz Presidencial de Emprego de Defesa (DPED). Com base na DPED, o Min Def emitirá a Diretriz Ministerial de Emprego de Defesa (DMED), considerando ou não a existência de um PEECFA previamente elaborado em situação de normalidade, para fazer face à situação vigente. Nessa situação, a atualização e a elaboração do PEECFA será coordenada pelo EMCFA, por intermédio da Chefia de Operações Conjuntas.
 
-2.2.2.4 Ao eclodir a crise, o Comandante Supremo das Forças Armadas (CS) normalmente comporá um gabinete de crise para que seja assessorado em suas decisões. Se o quadro inicial levar a um possível emprego das Forças Armadas, o Conselho Militar de Defesa (C Mi D) poderá, mesmo antes de se expedir uma DPED, assessorar o Min Def na indicação de um oficial general, em princípio do último posto, possível Comandante do TO/A Op/ZD, para que, juntamente com a Chefia de Operações Conjuntas (CHOC), atualize ou produza um PEECFA, que faça frente à situação e já se dê andamento à configuração de seu Estado-Maior Conjunto (EMCj. Tal medida tem por finalidade ganhar tempo de planejamento e contribuir na coordenação do emprego de tropas antes da 1º fase da campanha militar.
+2.2.2.4 Ao eclodir a crise, o Comandante Supremo das Forças Armadas (CS) normalmente comporá um gabinete de crise para que seja assessorado em suas decisões. Se o quadro inicial levar a um possível emprego das Forças Armadas, o Conselho Militar de Defesa (C Mi D) poderá, mesmo antes de se expedir uma DPED, assessorar o Min Def na indicação de um oficial general, em princípio do último posto, possível Comandante do TO/A Op/ZD, para que, juntamente com a Chefia de Operações Conjuntas (CHOC), atualize ou produza um PEECFA, que faça frente à situação e já se dê andamento à configuração de seu Estado-Maior Conjunto (EMCj). Tal medida tem por finalidade ganhar tempo de planejamento e contribuir na coordenação do emprego de tropas antes da 1º fase da campanha militar.
 
 2.2.2.5 Em situações em que a eclosão do conflito ocorra repentinamente ou que não siga modelo doutrinário convencional, será ativado um Comando Operacional, em conformidade com o exame de situação, constituído por forças de pronto emprego. As forças de pronto emprego terão a finalidade de prover uma pronta resposta às situações de crise ou conflito armado em que a rapidez e a oportunidade constituam os fatores para o emprego.
 
@@ -322,7 +322,8 @@ d) planejar e executar a defesa e o controle de danos de instalações sob sua r
     (d) condições de tempo e espaço para o planejamento (calendário de atividades);
     (e) medidas de coordenação interna no EMCFA e com as FS;
     (f) considerações de tempo e espaço na realização do estudo de situação estratégico;
-    (g) considerações sobre normas de segurança, normas de conduta, gerenciamento de risco e prevenção de danos ambientais; e(h) considerações sobre o controle da operação planejada e aprovação do PEECFA.
+    (g) considerações sobre normas de segurança, normas de conduta, gerenciamento de risco e prevenção de danos ambientais; e
+    (h) considerações sobre o controle da operação planejada e aprovação do PEECFA.
 
 2.9.5.3 Em situação de normalidade, na DPEM poderão constar os seguintes itens:
 
