@@ -11,7 +11,7 @@ import { ConceitosComponent } from '../../../components/conceitos/conceitos';
 })
 export class App3PlanejamentoMilitarConceitos {
 
-  planejamentoMilitarConceitosBibliografiaIds: number[] = [69, 70, 71]; 
+  planejamentoMilitarConceitosBibliografiaIds: number[] = [69, 70, 71, 72]; 
 
   emptyMessage = 'Nenhum conceito de Planejamento Militar encontrado. Adicione conceitos relacionados às matérias para visualizá-los aqui.';
   

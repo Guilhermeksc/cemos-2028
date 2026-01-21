@@ -11,7 +11,7 @@ import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards
 })
 export class App3PlanejamentoMilitarFlashcards {
   // IDs das bibliografias de Planejamento Militar
-  bibliografiaIds: number[] = [69, 70, 71];
+  bibliografiaIds: number[] = [69, 70, 71, 72];
 
   // Rota para Voltar
   bibliografiaPath = '/home/app3-planejamento-militar/bibliografia';

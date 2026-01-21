@@ -11,7 +11,7 @@ import { Perguntas } from '../../../components/perguntas/perguntas';
 })
 export class App3PlanejamentoMilitarPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
-  readonly bibliografiasDisponiveisIds: number[] = [69, 70, 71];
+  readonly bibliografiasDisponiveisIds: number[] = [69, 70, 71, 72];
     
   // Rota para Voltar
   bibliografiaPath = '/home/app3-planejamento-militar/bibliografia';
