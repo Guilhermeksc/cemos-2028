@@ -18,14 +18,6 @@ R: De modo geral, o EFD será atingido quando tiver sido alcançada uma ou mai
 
 # Capítulo IV - Comando Operacional Conjunto
 
-## (2024) Questão de V ou F sobre o MD30-M-01,  abaixo estão as REF de cada afirmativa:
-    • item 4.1.3.1
-    • item 4.1.3.3
-    • item 4.1.5
-    • item 4.3.5 - f
-    • item 4.4.1 - c
-    • item 4.5.1 - c
-
 ## (2021) Quais são os cinco fatores que determinarão a composição do Comando Operacional?
 
 4.2.1 A missão atribuída, as características geográficas da área de atuação, os meios à disposição, as possibilidades do inimigo e a estrutura do apoio logístico a ser adotada serão os fatores que determinarão a composição do C Op.
@@ -65,16 +57,6 @@ Por outro lado, a organização por Forças Conjunta Componentes proporciona:
 
 # Capítulo VIII - Comando de Defesa Cibernética
 
-## (2024) ME sobre ComDCiber:
-a) Não pertence à estrutura regimental de nenhuma Força Singular, estando subordinado diretamente ao MD. 
-b) Está diretamente subordinado ao SMDC. 
-c) Tem capacidade de atuar em operações interagências. 
-d) Quando ativado, assumirá também a responsabilidade da Defesa Cibernética no TO. 
-e) Poderá, em situações excepcionais, participar da elaboração do PEECFA. 
-
-Resposta: C 
-(MD 30-M-01, 1º Vol, Cap. 8, itens 8.1.1 e 8.1.2).  
-
 MD30-M-01 (2º Volume)
 
 # Capítulo II - Planejamento para Operações Conjuntas
@@ -87,11 +69,6 @@ Ref: MD-30-M-01, 2º Vol, Cap. 2, subitens 2.1.2.1 e 2.1.2.2, pág. 21
 
 # Capítulo IV - Processo de Planejamento Conjunto (PPC)
 
-## (2024) ME - Modelo gráfico que pode ser utilizado para facilitar o entendimento da situação atual e desejada, depois de realizada a análise dos fatores gerais de um ambiente operacional.
-R: letra B - Diagrama de relações MD30-M-01, 2º voume, Cap V, subitem 5.2.3.4.5, pa 42
-
-5.2.3.4.5 Para facilitar o entendimento da situação atual e desejada, após a análise dos fatores gerais de um ambiente operacional, podem ser elaborados modelos gráficos. Recomenda-se a utilização do Diagrama de Relações, que baseado na inferência lógica e apoiado em evidências, ajuda o planejador a desenvolver uma melhor identificação e compreensão do problema e pode, muitas vezes, apontar para fatores até então não identificados.
-
 ## (2024) Qual característica do Processo de Planejamento Conjunto (PPC) possibilita retornar às etapas anteriores, a fim de rever certos aspectos / inserir novos dados? (2 pontos)
 R: Cíclico
 
@@ -102,37 +79,12 @@ R: Cíclico
 2ª fase: Elaboração de planos e ordens
 3ª fase: Controle da Operação Planejada
 
-## (2022) V ou F com conceitos gerais de cada etapa do PPC
-- Produto das Etapas, o que se faz em cada etapa
-( F ) Na Etapa 1, uma ideia geral quanto à forma como a LA escolhida será implementada, denominada Diretiva de Planejamento (DIPLAN) (CPO).
-( F ) Na Etapa 2, o Comandante desenvolve o Conceito da Operação e elabora os documentos para transmissão aos níveis superiores (subordinados e a outros comandos interessados).
-( V ) Na Etapa 3, caso necessário, o Comandante introduzirá as alterações adequadas nos planos e ordens anteriormente estabelecidos. 
 
 ## (2022) Qual é o produto do PPC e sua importância para as FCte
 
 R: Plano Operacional. Orienta o planejamento dos escalões subordinados.
 
 # Capítulo V - Exame de Situação Operacional
-
-## (2024) V ou F sobre Linhas de Ação
- 
-(V) Embora as ações para o seu atendimento possam estar inter-relacionadas, os Requisitos deverão ser estudados separadamente, no grau de detalhamento necessário ao nível do planejamento em curso, de modo a assegurar que a totalidade das necessidades inerentes a cada LA seja atendida.
- 
-(F) Efeito pode ser definido como uma alteração no estado de um sistema (ou elemento de um sistema) resultante de uma ou mais ações e que contribui para a obtenção ou atingimento de um Ponto Decisivo. Um efeito deve ser mensurável. NÃO Expressa uma situação desejada no futuro (Ex: Fluxo logístico inimigo degradado). 
- 
-(F) Ao realizar esta prova, o planejador verificará as limitações ao planejamento, identificadas por ocasião da análise da Missão e da emissão da Diretriz de Planejamento. Caso uma LA infrinja tais limitações, a mesma será considerada inaceitável (INADEQUADA).
- 
-(F) Uma LA será considerada PRATICÁVEL se puder ser implementada com as forças, apoio e tecnologia disponíveis, sem levar (LEVANDO) em consideração a oposição esperada por parte do Inimigo e os demais óbices, incluindo aqueles relacionados aos custos financeiros. Isso será conseguido analisando-se criteriosamente os Requisitos inerentes à LA, com ênfase nos aspectos logísticos envolvidos, num nível de detalhamento suficiente para permitir ao Comandante avaliar a capacidade de implementação da LA. 
- 
-(F) Uma LA será considerada adequada (ACEITÁVEL) se os prováveis resultados compensarem os riscos e custos estimados. As perdas prováveis, determinadas na prova de praticabilidade, servirão de base para esta prova e são avaliadas à vista das tarefas e dos propósitos da missão. Tais perdas referem-se à pessoal, material, tempo e posição. 
- 
-(F) Praticabilidade e adequabilidade (ACEITABILIDADE) dependem de julgamento pessoal e, portanto, dois ou mais comandantes poderiam chegar a conclusões divergentes. Assim, uma determinada LA pode parecer perfeitamente mais aceitável para um Comandante de perfil ousado e agressivo, mas menos aceitável para outro mais cauteloso. 
-MD30-M-01 Cap V  - 5.4.3.5.5  
-- 5.4.3.3.3 
-- 5.4.3.6.4 
-- 5.4.3.6.5 
-- 5.4.3.6.6 
-- 5.4.3.6.7
 
 ## (2024) Texto que apresentava uma situação e mandava responder se as afirmações a seguir estavam corretas.
 a) As comparações devem se limitar somente às próprias forças versus as forças inimigas, não devendo incluir as forças amigas não orgânicas do Comandante Operacional.
@@ -142,18 +94,6 @@ b)
 R:
  
 Ref: MD30-M-01, 2º Vol, Cap. 5, item 5.3.7 e 5.3.8.4, pág. 53 a 55
-
-## (2024) V ou F Acerca da Fase 2 do Exame de Situação Operacional, no que tange às “características da Área de Responsabilidade”
-
-    1. Estudo da Hidrográfica da Área de Responsabilidade limita-se à influência de oceanos e águas interiores das Operações Navais e não de rios e cursos de água que impliquem a realização de operações de transposição e interfiram na progressão da tropa para estudo do terreno.
-    2. Terreno e topografia 
-    3. Clima e meteorologia - análise geral ou estudos detalhados dos mesmos
-    4. Linhas de transporte e suprimento deve se aree SOMENTE às rotas existentes
-    5. Aspectos de condições sanitárias NAO serão considerados no nível operacional 
-    6. Períodos diurnos e noturnos dão importantes no planejamento - equipentls que serão empregados, atividades logísticas etc.
-
-R: F-V-V-F-F-V
-Ref: Cap 5
 
 ## (2024) A etapa 1 do PPC – Exame da Situação Operacional é constituída de 6 fases.
 a. Em qual fase (nome e número) são levantadas vantagens e desvantagens de cada LA, caso sejam implementadas?
@@ -170,17 +110,6 @@ R: Correta (1 ponto). Uma campanha militar dificilmente será conduzida com base
 
 5.2.3.7.2 Os Objetivos Operacionais podem ser atribuídos ao Cmt Op no próprio planejamento estratégico, em casos extraordinários, como parte da visualização do EMCFA para se atingir o EFD Estrt. Uma Campanha dificilmente será conduzida com base exclusivamente na expressão do Poder Militar. Logo, podem ser formulados Objetivos Operacionais com vistas a contribuir de forma direta ou indireta com os Objetivos Estratégicos de ordem econômica e diplomática, que serão liderados por outras expressões do Poder Nacional.
 
-## (2022) V ou F sobre CPO – características, o que ele contém, se manda pra cima e pra baixo – Jogo de palavras
-( F ) O CPO não se limita a ser um documento de uso interno do EMCj, podendo, sempre que possível e adequado, ser disseminado para os níveis superiores sob a forma de uma “Ordem Preparatória”. 
-(níveis subordinados)
-( F ) O CPO basicamente é o aprimoramento do Conceito Sumário da LA selecionada na Decisão.
-(Aperfeiçoado pelas conclusões obtidas no confronto e do Exm Sit)
-( V ) O CPO deverá ser apresentado ao escalão superior junto aos principais riscos identificados, de modo que o escalão superior poderá intervir no que está sendo planejado.
-(..........................................)
-( F ) O CPO está pronto para a etapa seguinte do processo, e servirá como base para o Conceito da Operação.
-(será aperfeiçoado durante a etapa seguinte)
-5.7.4 
-
 ## (2022) MP sobre qual documento o COp antecipa o planejamento dos subordinados
 R: Ordem Preparatória
 
@@ -196,14 +125,6 @@ R: Praticável
 R: Inadequada
 
 5.4.3.6.4 Ao realizar esta prova, o planejador verificará as limitações ao planejamento, identificadas por ocasião da análise da Missão e da emissão da Diretriz de Planejamento. Caso uma LA infrinja tais limitações, a mesma será considerada inadequada.
-
-## (2022) V ou F sobre CPC
-( F ) O foco principal na CPC será a comparação entre “capacidades equivalentes” (capacidades antagônicas)
-( V ) As comparações das forças combatentes serão feitas em termos de meios que se opõem e não por tipos.
-( F ) Cabe a comparação entre as capacidades logísticas e de mobilização.
-( V ) FTD são os aspectos dinâmicos da situação, sendo importantes para se estabelecer as LA e as Psb Ini.
-
-item 5.3.8.3 
 
 ## (2022) Dava o conceito e tinha que falar do que se estava falando - são condicionantes comumente impostas pelo nível superior e abarcam dois conceitos: “o que não pode ser feito” e “o que deve ser feito”, no nível operacional.
 R: Limitação ao Planejamento
@@ -318,46 +239,6 @@ d) avaliação dos aspectos políticos.
 
 # Anexo D - A ARTE OPERACIONAL
 
-## (2024) Questão de V ou F sobre Desenho Operacional. (4,0 pts) (DIFÍCIL)
-(  ) As variantes são opções ao plano básico e podem incluir mudanças de prioridades e de organização de unidades na estrutura de comando ou na própria natureza da operação. Por propiciarem flexibilidade ao antecipar situações que poderiam alterar o plano básico, as variantes normalmente são decisivas para o resultado da operação geral, pois permitem atuar mais rapidamente do que o adversário para explorar uma situação resultante (emergente) da situação operacional. [Esse é o texto da publicação. Não me recordo qual alteração foi feita para que fosse falsa.]
-(  ) Os PD são descritos como efeitos e deduzidos durante as primeiras fases do Exame de Situação do EMCj. Normalmente, têm sua origem a partir das análises dos Centros de Gravidades (próprio e do inimigo), do enunciado da missão e dos Objetivos Operacionais. 
-(  ) Ponto de Decisão é aquele no qual se espera que o Comandante tome uma decisão crítica concernente ao andamento da operação/campanha. Pode estar relacionado a uma variante ou à transição de fases em uma operação/campanha. Mais de um Ponto de Decisão pode ser identificado durante a fase de planejamento e se torna um elemento-chave para o Comandante durante a fase de execução.
-(  ) Ponto Culminante é o ponto de uma operação, a partir do qual a força deixa de ter capacidade para continuar as operações com sucesso. Este conceito tem aplicação na ofensiva e na defensiva. [Esse é o texto da publicação. Não me recordo qual alteração foi feita para que fosse falsa.]
-R: F - V - V - F
-Ref: MD30-M-01, 2º Vol., Anexo D, itens 4.11, 4.5.2, 4.7 e 4.8, pág. 211, 208, 209, 209
-
-## (2022)     2- V ou F com os elementos do Desenho operacional - saber as palavras chave
-
-( F ) O EFD Op deve ser identificado durante a 2ª fase do Exm Sit Op.
-EFD Op é identificado na 1 fase do Exm Sit
-
-( F ) Uma Campanha normalmente será conduzida com base exclusivamente na expressão do Poder Militar.
-(...........................................)
-
-( F ) Nos níveis operacional e tático, os CG são forças militares específicas.
-Normalmente os CG são forças militares específicas
-
-( F ) Uma ação deve ser mensurável por meio de medidas e indicadores.
-Os efeitos devem ser mensuráveis.
-
-( V ) Ponto de Decisão é o ponto no qual se espera que o Comandante tome uma decisão crítica concernente ao andamento da operação/campanha.
-(...........................................)
-
-( F ) Em uma postura ofensiva, Ponto Culminante é o ponto em que a continuação do ataque ainda é possível.
-No PC o ataque não é mais possível.
-
-( V ) Em um desenho operacional, pode haver tantas L Op quanto o EMCj considerar necessário e eles podem ser agrupados por atividades ou áreas geográficas.
-(...........................................)
-
-(F) As Linhas de Operação possuem uma lógica de propósito/causa e efeito que visam a cooperar com as Linhas de Esforço.
-Linha de Esforço e Linha de Operação estão invertidas na frase.
-
-( V ) As variantes normalmente são decisivas para o resultado da operação geral.
-(...........................................)
-
-( F ) Normalmente, uma Pausa Operacional é a mais longa possível.
-Deve ser o mais curta possível
-
 ## (2022)  Correlacione dos fatores operacionais e suas características
     (1) Espaço
     (2) Tempo
@@ -383,7 +264,6 @@ Deve ser o mais curta possível
 4.11 Variante
 As variantes são opções ao plano básico e podem incluir mudanças de prioridades e de organização de unidades na estrutura de comando ou na própria natureza da operação. Por propiciarem flexibilidade ao antecipar situações que poderiam alterar o plano básico, as variantes normalmente são decisivas para o resultado da operação geral, pois permitem atuar mais rapidamente do que o adversário para explorar uma situação resultante (emergente) da situação operacional. Uma variante, em essência, consiste em uma rota diferente para chegar ao mesmo EFD Op da operação em desenvolvimento.
 
-
 ## (2021) Como se denominam as alterações no estado de um sistema resultante de uma ou mais ações desencadeadas com vistas a alcançar um Ponto Decisivo? Cite uma característica deste elemento.
 4.6.1 Efeitos são alterações no estado de um sistema (ou elemento de um sistema) resultante de uma ou mais ações desencadeadas com vistas a alcançar um Ponto Decisivo. Essas alterações ocorrerão em alguma parte do sistema como resultado de uma, ou mais ações capazes de influenciar o ambiente operacional. Um efeito deve ser mensurável por meio de medidas e indicadores. Expressam uma situação desejada no futuro (Ex: Fluxo logístico inimigo degradado).
 
@@ -408,4 +288,4 @@ Errado - Responsável é Cmt Op. (Quem propõe é o D-5)
 ## (2022) V ou F com as atribuições e os documentos dos níveis estratégicos e operacionais
 ( F ) O Comandante Supremo é o responsável por expedir a DPEM (DPED)
 ( F ) O EMCFA é o responsável por adjudicar meios para as operações. (MD)
-( V ) O CPO deverá ser apresentado ao escalão superior que emitiu as diretrizes para o planejamento ora em elaboração.                                  (....)
+( V ) O CPO deverá ser apresentado ao escalão superior que emitiu as diretrizes para o planejamento ora em elaboração.
