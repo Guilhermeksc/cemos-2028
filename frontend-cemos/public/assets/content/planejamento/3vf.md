@@ -1,9 +1,9 @@
-Sua tarefa é ler o arquivo cap.md para criar uma questão em formato markdown:
+Sua tarefa é ler o arquivo cap.md para criar questões em formato markdown:
 
 Cada assertiva deve possuir: uma versão verdadeira, fiel ao conteúdo; e uma versão falsa, coerente, obtida por inversão lógica ou alteração de conceito-chave.
 
 3. Regras de preenchimento das colunas
-bibliografia_id: 71
+bibliografia_id: 69
 “paginas” será preenchido com o marcador ## referente a página ao qual se refere, ex: se ## Página 11 então 'Pág 11'
 “assunto”: 166
 pergunta: deve ser como se fosse um tópico
