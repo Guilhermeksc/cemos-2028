@@ -34,7 +34,7 @@
               "numero": 5,
               "texto": "Definição de controle operacional",
               "complemento": "O poder conferido à autoridade encarregada das operações, para atribuir e coordenar missões ou tarefas específicas a serem desempenhadas por efetivos dos órgãos de segurança pública, obedecidas as suas competências constitucionais ou legais.",
-              "mnemonico": "CO"
+              "mnemonico": ""
             },
             {
               "numero": 6,
@@ -113,34 +113,34 @@
             },
             {
               "numero": 4,
-              "texto": "Responsabilidades do Conselho Militar de Defesa",
+              "texto": "Responsabilidades do Conselho Militar de Defesa (C Mi D)",
               "complemento": "Assessorar o Presidente da República quanto ao emprego de meios militares e assessorar o Ministro da Defesa nas competências relativas ao emprego das Forças Armadas.",
               "mnemonico": "AssPR–AssMD"
             },
             {
               "numero": 5,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades dos Comandantes das Forças Armadas (3)",
-              "complemento": "Fornecer os meios adjudicados aos Comandos Operacionais; prestar apoio logístico necessário; e emitir diretrizes para planejamento operacional quando da ativação de Comando Singular subordinado.",
-              "mnemonico": "Meios–Log–DirOp"
+              "texto": "Responsabilidades dos Comandantes das Forças Armadas (3)",
+              "complemento": "Fornecer os meios adjudicados aos Comandos Operacionais; prestar apoio logístico necessário; e emitir diretrizes para planejamento operacional quando da ativação de Comando Singular subordinado.\nMe: [Me]ios; Lo: [Lo]gística; Dia: [Di]retrizes quando da [A]tivação",
+              "mnemonico": "MeLoDia"
             },
             {
               "numero": 6,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades do Chefe do Estado-Maior Conjunto das Forças Armadas",
+              "texto": "Responsabilidades do Chefe do Estado-Maior Conjunto das Forças Armadas",
               "complemento": "Assessorar o Ministro da Defesa; propor o planejamento estratégico de emprego; acompanhar planejamentos e ações dos Comandos Operacionais; e propor, coordenar e avaliar exercícios conjuntos.",
-              "mnemonico": "Ass–Planeja–Acompanha–Coord"
+              "mnemonico": ""
             },
             {
               "numero": 7,
-              "texto": "Estrutura Militar de Defesa – Responsabilidades do Comandante Operacional",
+              "texto": "Responsabilidades do Comandante Operacional",
             "complemento": "Apresentar planejamentos operacionais e proposta de adjudicação de meios; planejar, controlar, coordenar e executar o emprego das forças sob seu comando; e conduzir exercícios conforme diretrizes superiores.",
-            "mnemonico": "Planeja–Coord–Executa"
+            "mnemonico": ""
         }
           ]
         }
       ]
     },
     {
-      "titulo": "MD-30-m-01(1º Volumne)",
+      "titulo": "MD-30-m-01 (1º Volumne)",
       "capitulos": [
         {
           "titulo": "Capítulo II – Concepção de Preparo e Emprego Conjunto",
@@ -155,13 +155,13 @@
               "numero": 2,
               "texto": "Preparo Nacional para a Guerra",
               "complemento": "Envolve todos os setores da vida nacional, exigindo planejamento prévio em todos os níveis para transição rápida da normalidade para a guerra ou conflito armado.",
-              "mnemonico": "Todos-Planejam"
+              "mnemonico": ""
             },
             {
               "numero": 3,
               "texto": "Crise",
               "complemento": "A crise é um conflito posicionado entre a paz e a guerra. Exige uma administração (manobra ou gerenciamento) que permita uma evolução favorável aos interesses nacionais em jogo.",
-              "mnemonico": "Conflito entre Guerra e Paz"
+              "mnemonico": ""
             },
             {
               "numero": 4,
@@ -197,7 +197,7 @@
               "numero": 9,
               "texto": "Estado de Crise e Conflito Armado",
               "complemento": "Crise é estado de tensão com risco de escalada; conflito armado é o emprego da violência por grupos organizados para impor vontade ou resolver contenciosos.",
-              "mnemonico": "Tensão–Violência"
+              "mnemonico": ""
             },
             {
               "numero": 10,
@@ -209,13 +209,13 @@
               "numero": 11,
               "texto": "Emprego Conjunto – Conceito",
               "complemento": "Baseia-se na interoperabilidade e sinergia das Forças Armadas para maximizar a expressão militar do Poder Nacional.",
-              "mnemonico": "Inter–Sin"
+              "mnemonico": ""
             },
             {
               "numero": 12,
               "texto": "Ideias Básicas do Emprego Conjunto",
               "complemento": "Unidade de comando, cadeia clara de comando, delegação de autoridade, C² eficiente, doutrina conjunta, adestramento integrado, logística adequada e proporcionalidade.",
-              "mnemonico": "UC–C²–Log–Prop"
+              "mnemonico": ""
             },
             {
               "numero": 13,
@@ -231,6 +231,125 @@
             }
           ]
         },
+        {
+          "titulo": "Capítulo III - Operações Conjuntas das Forças Armadas",
+          "itens": [
+            {
+              "numero": 1,
+              "texto": "Comandos Operacionais",
+              "complemento": "Comandos Operacionais serão geralmente conjuntos, podendo, em casos excepcionais, serem singulares, organizados de acordo com a Estrutura Militar de Defesa.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 2,
+              "texto": "Operações Conjuntas",
+              "complemento": "Caracterizam-se pelo emprego coordenado de elementos de mais de uma Força Singular, com propósitos interdependentes ou complementares, visando a um objetivo comum sob um Comando Operacional Conjunto.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 3,
+              "texto": "Estado-Maior Conjunto (EMCj)",
+              "complemento": "É constituído para o planejamento do emprego e o controle da execução das ações planejadas nas Operações Conjuntas.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 4,
+              "texto": "Comandos Operacionais Permanentes e Temporários",
+              "complemento": "COMAE e ComDCiber são Comandos Operacionais Conjuntos permanentes; os demais possuem caráter temporário e são ativados em situações de guerra e não-guerra.",
+              "mnemonico": "COMAE–ComDCiber"
+            },
+            {
+              "numero": 5,
+              "texto": "Tipos de Comandos Operacionais",
+              "complemento": "De acordo com o planejamento estratégico de uma HE, podem ser ativados o Comando do Teatro de Operações (Cmdo TO), o Comando da Área de Operações (Cmdo A Op) e o Comando da Zona de Defesa (Cmdo ZD).",
+              "mnemonico": ""
+            },
+            {
+              "numero": 6,
+              "texto": "Forças Expedicionárias e de Paz",
+              "complemento": "Podem ser constituídas com estruturas conjuntas ou singulares para operações fora do território nacional, integrando ou não forças combinadas ou multinacionais.",
+              "mnemonico": "Exp–Paz"
+            },
+            {
+              "numero": 7,
+              "texto": "Áreas de Responsabilidade",
+              "complemento": "A cada Comando Operacional ativado é atribuída uma área de responsabilidade geográfica, na qual o Comandante exerce autoridade para condução das operações militares.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 8,
+              "texto": "Delimitação das Áreas",
+              "complemento": "A delimitação do TO, A Op e ZD ocorre no PEECFA, elaborado pelo EMCFA e aprovado pelo Comandante Supremo, assessorado pelo Ministro da Defesa.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 9,
+              "texto": "Teatro de Operações (TO)",
+              "complemento": "Espaço necessário à condução de operações militares de grande vulto, com apoio logístico, podendo ser subdividido em áreas atribuídas às Forças Componentes.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 10,
+              "texto": "Zonas do TO Terrestre/Marítima",
+              "complemento": "O TO terrestre pode conter Zona de Combate (ZC) e Zona de Administração (ZA), definidas pelo Comandante do TO, considerando manobras e apoio logístico. No caso de um TO predominantemente marítimo as ZC e ZA são de difícil caracterização, ficando a ZA delimitada, a princípio, pelas áreas em terra ocupadas pelas Bases Navais e outras estruturas logísticas prestadoras do apoio ao esforço de guerra.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 11,
+              "texto": "Área de Operações (A Op)",
+              "complemento": "Espaço geográfico necessário à condução de operações militares que não justifiquem a criação de um Teatro de Operações.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 12,
+              "texto": "Zona de Defesa (ZD)",
+              "complemento": "Parte da Zona do Interior destinada ao planejamento e coordenação das ações de defesa territorial, em consonância com a defesa aeroespacial.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 13,
+              "texto": "Estado Final Desejado (EFD)",
+              "complemento": "Situação política ou militar a ser alcançada ao final das operações, indicando se os efeitos desejados foram atingidos.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 14,
+              "texto": "Condições para Atingir o EFD",
+              "complemento": "De uma maneira geral, o EFD será atingido quando tiver sido alcançada uma ou mais das seguintes condições:\nPo de Poder Militar: (a) a estrutura de apoio ao esforço de guerra do oponente tiver sido afetada a tal ponto que ele não consiga mais manter poder militar suficiente para o prosseguimento das operações;\nVo de Vontade: (b) quebra da vontade de lutar do oponente;\nPerde Governo: (c) perda de condições do governo oponente em congregar o povo para o esforço de guerra; e/ou\n Capaidade das FA: (d) redução da capacidade das FA oponentes a um ponto tal que impeça uma oposição efetiva.",
+              "mnemonico": "PoVo Perde Governo e Capacidade das FA"
+            },
+            {
+              "numero": 15,
+              "texto": "Assuntos Civis nas Operações",
+              "complemento": "Devem ser planejados para reduzir fricções com a população civil, abrangendo administração pública, assistência humanitária, defesa civil e controle da população.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 16,
+              "texto": "Coordenação Interagências",
+              "complemento": "Cabe ao Comando Operacional coordenar ações militares com agências civis governamentais e, quando aplicável, com ONGs presentes na área.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 17,
+              "texto": "Dissimulação",
+              "complemento": "A fim de iludir as forças oponentes em relação aos planejamentos, são adotadas ações de dissimulação nos níveis estratégico, operacional e tático, incluindo guerra eletrônica, desinformação, operações psicológicas e ações diversionárias.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 18,
+              "texto": "Comando e Controle dos Meios",
+              "complemento": "Os meios podem estar sob Comando Operacional (adjudicados) ou sob Controle Operacional para missões ou tarefas específicas.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 19,
+              "texto": "Princípios a serem adotados e Regras de Engajamento",
+              "complemento": "As operações conjuntas devem observar legitimidade, legalidade, tratados internacionais e Regras de Engajamento adequadas à situação.",
+              "mnemonico": "Legitimidade-legalidade"
+            }
+          ]
+        },    
         {
           "titulo": "Capítulo III - Operações Conjuntas das Forças Armadas",
           "itens": [

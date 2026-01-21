@@ -222,7 +222,8 @@ def create_default_admin(sender, **kwargs):
             'azevedo',
             'regina',
             'dani',
-            'elea'
+            'elea',
+            'camila'
         ]
 
         for username in novos_perfis_cemos2028:
