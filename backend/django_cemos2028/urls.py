@@ -10,11 +10,23 @@ admin.site.index_title = "Painel de Administração"
 def health_check(request):
     return JsonResponse({"status": "healthy", "service": "cemos2028_backend"})
 
+
+def metrics_example(request):
+    return JsonResponse(
+        {
+            "labels": ["Planejamento", "Execução", "Controle", "Resultados"],
+            "values": [24, 17, 32, 11],
+        }
+    )
+
 urlpatterns = [
     path('admin/', admin.site.urls),  # Usa admin.site padrão com configurações customizadas
 
     # Health Check
     path('api/health/', health_check, name='health_check'),
+
+    # Métricas exemplo para o Dash
+    path('api/metrics/', metrics_example, name='metrics_example'),
 
     # Autenticação JWT
     path('api/auth/', include('django_cemos2028.apps.core.auth.urls')),

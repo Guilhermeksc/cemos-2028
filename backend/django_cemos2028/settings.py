@@ -29,6 +29,8 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "0.0.0.0",
+    "backend",
+    "backend:8000",
     "195.200.1.112",
     "cemos2028.com",
     "www.cemos2028.com",
@@ -70,13 +72,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",         # Ambiente Angular local
     "http://localhost:8088",         # Ambiente Angular local alternativo
     "http://127.0.0.1:4200",
     "http://127.0.0.1:8088",
+    "http://localhost:8050",         # Dash local
+    "http://127.0.0.1:8050",         # Dash local
     "http://195.200.1.112",          # IP direto
     "http://cemos2028.com",         # Domínio sem HTTPS
     "https://cemos2028.com",        # Domínio com HTTPS
@@ -84,6 +88,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://auditapro.com.br",      # Auditapro sem HTTPS
     "https://auditapro.com.br",     # Auditapro com HTTPS
     "https://www.auditapro.com.br", # Auditapro com HTTPS (www)
+    "https://dash.cemos2028.com",    # Dash (subdomínio)
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -91,6 +96,8 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8088",
     "http://127.0.0.1:4200",
     "http://127.0.0.1:8088",
+    "http://localhost:8050",
+    "http://127.0.0.1:8050",
     "http://195.200.1.112",
     "https://195.200.1.112",
     "http://cemos2028.com",
@@ -99,6 +106,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://auditapro.com.br",
     "https://auditapro.com.br",
     "https://www.auditapro.com.br",
+    "https://dash.cemos2028.com",
 ]
 
 ROOT_URLCONF = 'django_cemos2028.urls'

@@ -10,3 +10,5 @@ DROP SCHEMA public CASCADE;
 CREATE SCHEMA public;
 
 docker compose restart backend
+
+docker compose -f docker-compose.dev.yml up -d --build

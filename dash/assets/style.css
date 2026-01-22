@@ -1,0 +1,106 @@
+:root {
+  --bg: #05080d;
+  --panel: #0b1220;
+  --primary: #00f5ff;
+  --secondary: #1e90ff;
+  --accent: #7c3aed;
+  --text: #e6f7ff;
+  --muted: #7ea6c6;
+  --grid: #122036;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #05080d !important;
+  color: var(--text);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+#_dash-app-content {
+  min-height: 100%;
+  background: var(--bg) !important;
+}
+
+#react-entry-point,
+.dash-app-container,
+.dash-spreadsheet,
+.dash-graph {
+  background: var(--bg) !important;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  min-height: 100vh;
+  background: var(--bg) !important;
+}
+
+.js-plotly-plot,
+.plotly,
+.main-svg {
+  background: transparent !important;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 24px;
+  border: 1px solid var(--grid);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.08), rgba(124, 58, 237, 0.08)),
+    var(--panel);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.12), inset 0 0 20px rgba(30, 144, 255, 0.15);
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.status {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--grid);
+  background: var(--panel);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.08);
+}
+
+.card--wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .card--wide {
+    grid-column: span 1;
+  }
+}
