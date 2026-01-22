@@ -136,7 +136,7 @@ export class SideMenu implements OnInit, OnDestroy {
       expanded: false
     },  
     { 
-      title: 'Geopolítica e Relações Internacionais', 
+      title: 'Geopolítica', 
       icon: 'public', 
       children: [
         {
@@ -144,8 +144,7 @@ export class SideMenu implements OnInit, OnDestroy {
           children: [
             'A Vingança da Geografia',
             'Geopolítica e Modernidade',
-            'Novas Geopolíticas',
-            'Princípios de Relações Internacionais'
+            'Novas Geopolíticas'
           ]
         },
         'Flash Cards',
@@ -157,6 +156,24 @@ export class SideMenu implements OnInit, OnDestroy {
       ],
       expanded: false
     },      
+    { 
+      title: 'Relações Internacionais', 
+      icon: 'language', 
+      children: [
+        {
+          title: 'Bibliografia',
+          children: [
+            'Princípios de Relações Internacionais'
+          ]
+        },
+        'Flash Cards',
+        'Perguntas',
+        'Simulados',
+        'Check Abandono',
+        'Pensadores',
+      ],
+      expanded: false
+    },
     { 
       title: 'Intendência', 
       icon: 'inventory_2', 
@@ -352,8 +369,11 @@ export class SideMenu implements OnInit, OnDestroy {
       case 'História':
         pathParts.push('app4-historia', 'bibliografia');
         break;
-      case 'Geopolítica e Relações Internacionais':
+      case 'Geopolítica':
         pathParts.push('app6-geopolitica-relacoes-internacionais', 'bibliografia');
+        break;
+      case 'Relações Internacionais':
+        pathParts.push('app6-1-relacoes-internacionais', 'bibliografia');
         break;
       case 'Política':
         pathParts.push('app7-politica', 'bibliografia');
@@ -625,7 +645,7 @@ export class SideMenu implements OnInit, OnDestroy {
           }
         }
         break;
-      case 'Geopolítica e Relações Internacionais':
+      case 'Geopolítica':
         pathParts.push('app6-geopolitica-relacoes-internacionais');
         if (division === 'Bibliografia') {
           pathParts.push('bibliografia');
@@ -639,9 +659,6 @@ export class SideMenu implements OnInit, OnDestroy {
                 break;
               case 'Novas Geopolíticas':
                 pathParts.push('novas-geopoliticas');
-                break;
-              case 'Princípios de Relações Internacionais':
-                pathParts.push('principios-ri');
                 break;
             }
           }
@@ -667,6 +684,40 @@ export class SideMenu implements OnInit, OnDestroy {
               break;
             case 'Teóricos':
               pathParts.push('teoricos');
+              break;
+          }
+        }
+        break;
+      case 'Relações Internacionais':
+        pathParts.push('app6-1-relacoes-internacionais');
+        if (division === 'Bibliografia') {
+          pathParts.push('bibliografia');
+          if (optionText) {
+            switch (optionText) {
+              case 'Princípios de Relações Internacionais':
+                pathParts.push('principios-ri');
+                break;
+            }
+          }
+        } else if (optionText) {
+          switch (optionText) {
+            case 'Bibliografia':
+              pathParts.push('bibliografia');
+              break;
+            case 'Flash Cards':
+              pathParts.push('flash-cards');
+              break;  
+            case 'Perguntas':
+              pathParts.push('perguntas');
+              break;
+            case 'Simulados':
+              pathParts.push('simulados');
+              break;
+            case 'Check Abandono':
+              pathParts.push('check-abandono');
+              break;
+            case 'Pensadores':
+              pathParts.push('pensadores');
               break;
           }
         }
@@ -884,8 +935,11 @@ export class SideMenu implements OnInit, OnDestroy {
       case 'História':
         pathParts.push('app4-historia');
         break;
-      case 'Geopolítica e Relações Internacionais':
+      case 'Geopolítica':
         pathParts.push('app6-geopolitica-relacoes-internacionais');
+        break;
+      case 'Relações Internacionais':
+        pathParts.push('app6-1-relacoes-internacionais');
         break;
       case 'Política':
         pathParts.push('app7-politica');

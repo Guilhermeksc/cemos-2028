@@ -1,0 +1,3 @@
+Filosofia Clássica / Influência para o Realismo/Radicalismo.
+No “Estado perfeito”, os governantes devem ser reis-filósofos detentores de conhecimentos superiores de filosofia e guerra. A força vital humana é a inteligência.
+Introduziu a análise de classe e o raciocínio dialético (diálogo que leva a contradições nas premissas originais), que seriam bases futuras para os analistas Marxistas (Radicalismo).

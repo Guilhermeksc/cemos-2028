@@ -1,0 +1,8 @@
+# Principais Teóricos de Geopolítica
+
+| Teórico | Descrição | Frase / Obra Principal |
+|----------|------------|-----------------|----------------|
+| ![mahan](img/teoricos/17.jpg) |**Alfred Mahan** (1840–1914)<br> Realismo (Geopolítica Naval) Escreveu sobre a importância do **controle dos mares**. Sua tese era de que o Estado que controla as **rotas marítimas** controla o mundo. Para ele, a soberania em terra não era tão crítica quanto o acesso e o controle das rotas oceânicas. | Não há obra principal específica citada nas fontes, mas o foco está em seus escritos sobre o controle dos mares. |
+| ![mackinder](img/teoricos/18.jpg) |**Sir Halford Mackinder** (1861–1947)<br>  Realismo (Geopolítica Terrestre)  Enfatizou a importância do **controle do “coração” geográfico da Eurásia** (*Heartland*). Sua tese postula que **"Quem domina a Europa Oriental domina o coração da Eurásia; quem domina o coração da Eurásia comanda a ilha mundial da Europa, Ásia e África, e quem comanda a ilha mundial comanda o mundo"**. Suas ideias se encaixam na tradição realista, que considera o tamanho e a posição geográfica como fontes naturais primárias de poder. | Não há obra principal específica citada nas fontes. |
+| ![haushofer](img/teoricos/19.jpg) |**Karl Haushofer** (1869–1946)<br>  Realismo (Geopolítica - Aplicada) Geógrafo alemão que interpretou a tese de Mackinder para defender a expansão nazista. Defendia que a Alemanha poderia se tornar uma potência se conseguisse capturar o **coração da Eurásia**. Sua obra buscou fazer da geopolítica uma área legítima de investigação acadêmica e ele foi o principal proponente da expansão nazista. | Não há obra principal específica citada nas fontes. |
+

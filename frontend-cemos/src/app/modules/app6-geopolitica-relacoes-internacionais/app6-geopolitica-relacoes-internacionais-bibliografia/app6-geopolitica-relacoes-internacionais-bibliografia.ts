@@ -41,13 +41,6 @@ export class App6GeopoliticaRelacoesInternacionaisBibliografia implements OnInit
       title: 'Novas Geopolíticas',
       description: 'Paulo Fagundes Visentini',
       permite_consulta: false
-    },
-    {
-      imagePath: 'assets/content/geopolitica-ri/img/principios-ri.jpg',
-      routePath: '/home/app6-geopolitica-relacoes-internacionais/bibliografia/principios-ri',
-      title: 'Princípios de Relações Internacionais',
-      description: 'Karen A. Mingst',
-      permite_consulta: false
     }
   ];
 

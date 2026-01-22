@@ -1,0 +1,324 @@
+{
+  "title": "Contexto Histórico das Relações Internacionais Contemporâneas",
+  "children": [
+    {
+      "title": "Importância da História",
+      "children": [
+        {"title": "Entender eventos e tendências do passado"},
+        {"title": "Moldar conceitos-chave (Estado, nação, soberania, poder, equilíbrio de poder)"},
+        {"title": "Orientar decisões atuais (padrões e precedentes)"},
+        {"title": "Exemplo: Conflito na Palestina (entender Holocausto e antissemitismo)"}
+      ]
+    },
+    {
+      "title": "Antecedentes do Sistema Internacional",
+      "children": [
+        {"title": "Sistema Vestfaliano (Início - 1648)"},
+        {"title": "Século XIX (Pós-Vestfália)"},
+        {"title": "Século XX (Guerras e Transições)"},
+        {"title": "Guerra Fria (1945-1989)"},
+        {"title": "Pós-Guerra Fria e Novo Milênio"}
+      ]
+    },
+    {
+      "title": "Origens na Civilização Ocidental (Europa)",
+      "children": [
+        {"title": "Antigos Gregos (relação indivíduo/sociedade, legitimidade, soberania popular)"},
+        {"title": "Romanos (Estado de Direito, Forças Armadas de cidadãos)"}
+      ]
+    },
+    {
+      "title": "Tendências Históricas Importantes",
+      "children": [
+        {"title": "Surgimento do Estado e Soberania"},
+        {"title": "Desenvolvimento do Sistema Internacional de Estados"},
+        {"title": "Causas e Consequências do Colonialismo e Guerras Mundiais"},
+        {"title": "Redução da Relevância dos Estados e do Sistema de Estados"}
+      ]
+    },
+    {
+    "title": "Sistema Vestfaliano (Início - 1648)",
+    "children": [
+        {
+        "title": "Marco de Referência: Tratados de Vestfália (fim da Guerra dos Trinta Anos)"
+        },
+        {
+        "title": "Fim do Domínio da Autoridade Religiosa (Ascensão Secular)"
+        },
+        {
+        "title": "Princípios Fundamentais",
+        "children": [
+            {"title": "Integridade Territorial dos Estados"},
+            {"title": "Igualdade Jurídica dos Estados-membros"},
+            {"title": "Soberania (Desenvolvimento Intelectual)"}
+        ]
+        },
+        {
+        "title": "Conceito de Soberania (Jean Bodin)",
+        "children": [
+            {"title": "Poder Absoluto e Perpétuo investido em uma comunidade"},
+            {"title": "Não reside no indivíduo, mas no Estado (Perenidade)"},
+            {"title": "Limitações (Lei divina, Lei natural, Leis constitucionais, Pactos/Tratados)"}
+        ]
+        },
+        {
+        "title": "Consequências de Vestfália",
+        "children": [
+            {"title": "Adoção da Noção de Soberania (pequenos Estados da Europa Central)"},
+            {"title": "Estabelecimento de Forças Armadas Nacionais Permanentes"},
+            {"title": "Surgimento do Estado Territorial (Base Secular)"},
+            {"title": "Princípio de Não Interferência nos Assuntos de Outros Estados"},
+            {
+            "title": "Núcleo de Estados Dominantes",
+            "children": [
+                {"title": "Áustria"},
+                {"title": "Rússia"},
+                {"title": "Prússia"},
+                {"title": "Inglaterra"},
+                {"title": "França"}
+            ]
+            }
+        ]
+        }
+    ]
+    },
+    {
+    "title": "Século XIX (Pós-Vestfália)",
+    "children": [
+        {
+        "title": "Revoluções e Princípios Básicos",
+        "children": [
+            {"title": "Guerra de Independência Americana (1776)"},
+            {"title": "Revolução Francesa (1789) - Fim do absolutismo"},
+            {"title": "Frutos do Iluminismo e Contrato Social"},
+            {"title": "Princípio 1: Limitação Humana ao Governo Absolutista (John Locke)"},
+            {"title": "Princípio 2: Nacionalismo (Identificação com passado/cultura comum)"}
+        ]
+        },
+        {
+        "title": "Guerras Napoleônicas",
+        "children": [
+            {"title": "França como alvo por ser potência revolucionária"},
+            {"title": "Ascensão de Napoleão Bonaparte"},
+            {"title": "Uso hábil do Zelo Nacionalista"},
+            {"title": "Quedas por Nacionalismo (Guerrilha Espanhola, Terra Arrasada Russa)"},
+            {"title": "Derrota Final: Batalha de Waterloo (1815)"}
+        ]
+        },
+        {
+        "title": "Paz no Núcleo Europeu (1815–1854)",
+        "children": [
+            {"title": "Concerto da Europa (Congresso de Viena)"},
+            {
+            "title": "Fatores da Paz",
+            "children": [
+                {"title": "Medo da Revolução das Massas (União das Elites)"},
+                {"title": "Conflitos de Interesses Internos (Unificação Alemã/Italiana)"},
+                {"title": "Imperialismo/Colonialismo (Válvula de Escape)"},
+                {"title": "Equilíbrio de Poder"}
+            ]
+            }
+        ]
+        },
+        {
+        "title": "Equilíbrio de Poder",
+        "children": [
+            {"title": "Estados têm hegemonia (alianças contra Estados mais fortes)"},
+            {"title": "Equilíbrio Simétrico (Baixo risco de derrota) vs. Assimétrico (Alto risco de conflito)"},
+            {"title": "Grã-Bretanha (Função Equilibradora)"},
+            {"title": "Rússia (Construção de Alianças; Santa Aliança 1815)"}
+        ]
+        },
+        {
+        "title": "Economia e Sociedade",
+        "children": [
+            {"title": "Adam Smith (Liberalismo Econômico)", "children": [{"title": "Mão Invisível do Mercado"}]},
+            {"title": "Industrialização (Grã-Bretanha lidera)"},
+            {"title": "Ascensão das Classes Médias ao Poder Político"}
+        ]
+        },
+        {
+        "title": "Imperialismo e Colonialismo",
+        "children": [
+            {"title": "Imperialismo: Anexação de territórios remotos (por força)"},
+            {"title": "Colonialismo: Estabelecimento de povo do país de origem"},
+            {"title": "Motivações (Ganhos econômicos, Raízes culturais/religiosas, Rivalidade política europeia)"},
+            {"title": "Conferência de Berlim (1885): Divisão da África"},
+            {"title": "Efeitos: Unidade/identidade Europeia, Exploração do Mundo Não Europeu"}
+        ]
+        },
+{
+  "title": "Século XX (Guerras e Transições)",
+  "children": [
+    {
+      "title": "Ruptura do Equilíbrio e 1ª Guerra Mundial (1914–1918)",
+      "children": [
+        {"title": "Rigidez das Alianças (Tríplice Aliança vs. Dupla Aliança)"},
+        {"title": "Ascensão Rápida do Poder Germânico"},
+        {
+          "title": "Derrota Russa na Russo-Japonesa (1904–1905)",
+          "children": [
+            {"title": "Compromete Superioridade Branca"},
+            {"title": "Causa prejuízo à legitimidade do Czar (Revolução 1917)"}
+          ]
+        },
+        {"title": "Assassinato de Franz Ferdinand (Estopim)"},
+        {"title": "Honra dos Compromissos de Aliança"},
+        {"title": "Consequências: Impasse (Plano Schlieffen fracassa), 8,5 milhões de soldados mortos"}
+      ]
+    },
+    {
+      "title": "Período Entre Guerras (1919–1939)",
+      "children": [
+        {
+          "title": "Colapso de Três Impérios (Russo, Austro-Húngaro, Otomano)"
+        },
+        {
+          "title": "Recrudescimento dos Nacionalismos (Autodeterminação)"
+        },
+        {
+          "title": "Insatisfação Alemã (Tratado de Versalhes)",
+          "children": [
+            {"title": "Reparações de guerra (US$ 32 bilhões)"},
+            {"title": "Hiperinflação e Empobrecimento da Classe Média"},
+            {"title": "Ascensão de Adolf Hitler (Fascismo)"}
+          ]
+        },
+        {
+          "title": "Liga das Nações",
+          "children": [
+            {"title": "Criada para evitar guerras futuras (Infrutífera)"},
+            {"title": "Restrita: EUA e Rússia não aderem; vencidos não participam"}
+          ]
+        },
+        {"title": "Substituição do Liberalismo pelo Realismo (Teoria Dominante)"}
+      ]
+    },
+    {
+      "title": "2ª Guerra Mundial (1939–1945)",
+      "children": [
+        {"title": "Agressão do Eixo (Alemanha, Itália, Japão)"},
+        {"title": "Invasão da Manchúria (Japão, 1931); Estupro de Nanquim (1937)"},
+        {"title": "Invasão da Etiópia (Itália, 1935)"},
+        {"title": "Invasão da Polônia (Alemanha, 1939)"},
+        {"title": "Aliança Incomum: Aliados (EUA, URSS, GB, França) vs. Eixo"},
+        {"title": "Genocídio e Brutalidade (Holocausto, Atrocidades Japonesas)"},
+        {"title": "Bombas Atômicas em Hiroshima e Nagasaki (Fim da Guerra)"},
+        {"title": "Consequências: Redistribuição de Poder, Divisão da Alemanha/Coreia"},
+        {"title": "Desenvolvimento do Direito Internacional Humanitário (Convenções de Genebra)"}
+      ]
+    },
+{
+  "title": "Guerra Fria (1945–1989)",
+  "children": [
+    {
+      "title": "Origens",
+      "children": [
+        {"title": "Surgimento de Duas Superpotências (EUA e URSS)"},
+        {"title": "Declínio da Europa como epicentro político"},
+        {"title": "Incompatibilidades Fundamentais (Interesses Nacionais e Ideologia)"},
+        {"title": "Colapso do Sistema Colonial (Acelera Descolonização)"},
+        {"title": "Globalização do Conflito (Teatros de Terceiros)"}
+      ]
+    },
+    {
+      "title": "Diferenças Ideológicas",
+      "children": [
+        {"title": "EUA: Liberalismo Democrático e Capitalismo (Livre Comércio, Indivíduo)"},
+        {"title": "URSS: Comunismo Marxista (Revolução, Socialismo, Cerco Capitalista Hostil)"}
+      ]
+    },
+    {
+      "title": "Doutrinas e Estratégias",
+      "children": [
+        {"title": "Contenção (George Kennan, Doutrina Truman)"},
+        {"title": "Destruição Mútua Garantida (MAD) e Dissuasão Nuclear"},
+        {"title": "Política de Bloco (OTAN vs. Pacto de Varsóvia)"}
+      ]
+    },
+    {
+      "title": "Confrontos e Crises",
+      "children": [
+        {"title": "Bloqueio de Berlim (1948–1949)"},
+        {"title": "Guerra da Coreia (1950–1953) – Guerra por Agentes (ONU vs. China/URSS)"},
+        {"title": "Crise dos Mísseis de Cuba (1962) – Confronto direto de alto nível"},
+        {"title": "Guerra do Vietnã (1965–1973) – Efeito Dominó"},
+        {"title": "Conflitos por Agentes (Oriente Médio, África, América Latina)"},
+        {"title": "Ações Agressivas Não Reagidas (Hungria 1956, Tchecoslováquia 1968, Granada 1983)"}
+      ]
+    },
+    {
+      "title": "A Longa Paz (Frieza)",
+      "children": [
+        {"title": "Dissuasão Nuclear"},
+        {"title": "Estabilidade da Bipolaridade (Equilíbrio do Terror)"},
+        {"title": "Poderio Econômico Hegemônico dos EUA (Manutenção da Estabilidade)"},
+        {"title": "Preponderância do Liberalismo Econômico (Transnacional)"}
+      ]
+    },
+{
+  "title": "Pós-Guerra Fria e Novo Milênio",
+  "children": [
+    {
+      "title": "Fim da Guerra Fria (Transição Gradual)",
+      "children": [
+        {"title": "Glasnost (Abertura Política)"},
+        {"title": "Perestroika (Reestruturação Econômica)"},
+        {"title": "Queda do Muro de Berlim (1989)"},
+        {"title": "Dissolução do Pacto de Varsóvia e da URSS (1991)"},
+        {"title": "Mudança na Política Externa Soviética (Cooperação Multilateral)"}
+      ]
+    },
+    {
+      "title": "Década de 1990",
+      "children": [
+        {"title": "Nova Ordem Mundial (Invasão do Kuwait pelo Iraque – Resposta Multilateral ONU)"},
+        {"title": "Primazia dos EUA (Em declínio)"},
+        {"title": "Violenta Desintegração da Iugoslávia (Guerras da Bósnia e Kosovo)"},
+        {"title": "Aumento do Conflito Étnico (Ruanda, Grandes Lagos África)"},
+        {"title": "Intervenção da OTAN em Kosovo (Questão da Soberania)"}
+      ]
+    },
+    {
+      "title": "Primeira Década do Novo Milênio (2000s)",
+      "children": [
+        {
+          "title": "Recrudescimento do Terrorismo",
+          "children": [
+            {"title": "Atentados de 11/09/2001 (Al-Qaeda)"},
+            {"title": "Guerra ao Terror (Afeganistão e Iraque 2003)"},
+            {"title": "Dilemas de Soberania (Paquistão)"}
+          ]
+        },
+        {
+          "title": "Crises Econômicas e Sociais",
+          "children": [
+            {"title": "Crise Financeira Global (2008 – EUA/Europa/Ásia)"},
+            {"title": "Primavera Árabe (2011) – Levantes Populares contra Ditadores"}
+          ]
+        },
+        {
+          "title": "Questões Transnacionais Contemporâneas",
+          "children": [
+            {"title": "Mudança Climática"},
+            {"title": "Tráfico Sexual"},
+            {"title": "Crime Organizado"},
+            {"title": "Doenças Transmissíveis"}
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+  ]
+}
+
+  ]
+}
+    
+    ]
+    }
+
+    ]
+}

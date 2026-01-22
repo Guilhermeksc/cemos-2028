@@ -11,12 +11,12 @@ import { Perguntas } from '../../../components/perguntas/perguntas';
 })
 export class App6GeopoliticaRelacoesInternacionaisPerguntas implements OnInit {
   // Bibliografias disponíveis para este módulo
-  readonly bibliografiasDisponiveisIds: number[] = [1, 2, 3, 4];
+  readonly bibliografiasDisponiveisIds: number[] = [1, 2, 3];
   
   // Rota para Voltar
   bibliografiaPath = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';
   
-  pageTitle = 'Perguntas de Geopolítica e Relações Internacionais';
+  pageTitle = 'Perguntas de Geopolítica';
 
   ngOnInit() {
     console.log('Módulo de Perguntas - Geopolítica e Relações Internacionais iniciado');

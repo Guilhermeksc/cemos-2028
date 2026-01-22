@@ -11,7 +11,7 @@ import { FlashCardsComponent } from '../../../components/flash-cards/flash-cards
 })
 export class App6GeopoliticaRelacoesInternacionaisFlashcards {
   // IDs das bibliografias de Geopolítica e Relações Internacionais
-  bibliografiaIds: number[] = [1, 2, 3, 4];
+  bibliografiaIds: number[] = [1, 2, 3];
 
   // Rota para Voltar
   bibliografiaPath = '/home/app6-geopolitica-relacoes-internacionais/bibliografia';

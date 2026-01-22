@@ -633,14 +633,6 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
               import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-bibliografia/novas-geopoliticas/novas-geopoliticas').then(
                 (m) => m.NovasGeopoliticas
               )
-          },
-          {
-            title: 'Princípios de Relações Internacionais',
-            path: 'principios-ri',
-            loadComponent: () =>
-              import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-bibliografia/principios-ri/principios-ri').then(
-                (m) => m.PrincipiosRi
-              )
           }
         ]
       },
@@ -689,6 +681,69 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import(
             '../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-pensadores/app6-geopolitica-relacoes-internacionais-pensadores'
           ).then((m) => m.App6GeopoliticaRelacoesInternacionaisPensadores)
+      }
+    ]
+  },
+  {
+    title: 'App6-1 Relações Internacionais',
+    path: 'app6-1-relacoes-internacionais',
+    defaultChild: 'bibliografia',
+    segments: [
+      {
+        title: 'Bibliografia',
+        path: 'bibliografia',
+        loadComponent: () =>
+          import('../modules/app6-1-relacoes-internacionais/app6-1-relacoes-internacionais-bibliografia/app6-1-relacoes-internacionais-bibliografia').then(
+            (m) => m.App6RelacoesInternacionaisBibliografia
+          ),
+        children: [
+          {
+            title: 'Princípios de Relações Internacionais',
+            path: 'principios-ri',
+            loadComponent: () =>
+              import('../modules/app6-1-relacoes-internacionais/app6-1-relacoes-internacionais-bibliografia/principios-ri/principios-ri').then(
+                (m) => m.PrincipiosRi
+              )
+          }
+        ]
+      },
+      {
+        title: 'Flash Cards',
+        path: 'flash-cards',
+        loadComponent: () =>
+          import(
+            '../modules/app6-1-relacoes-internacionais/app6-1-relacoes-internacionais-flashcards/app6-1-relacoes-internacionais-flashcards'
+          ).then((m) => m.App6RelacoesInternacionaisFlashcards)
+      },
+      {
+        title: 'Perguntas',
+        path: 'perguntas',
+        loadComponent: () =>
+          import(
+            '../modules/app6-1-relacoes-internacionais/app6-1-relacoes-internacionais-perguntas/app6-1-relacoes-internacionais-perguntas'
+          ).then((m) => m.App6RelacoesInternacionaisPerguntas)
+      },
+      {
+        title: 'Simulados',
+        path: 'simulados',
+        loadComponent: () =>
+          import('../modules/app6-1-relacoes-internacionais/app6-1-simulados/app6-simulados').then((m) => m.App6Simulados)
+      },
+      {
+        title: 'Check Abandono',
+        path: 'check-abandono',
+        loadComponent: () =>
+          import('../modules/app6-geopolitica-relacoes-internacionais/app6-geopolitica-relacoes-internacionais-check-abandono/app6-geopolitica-relacoes-internacionais-check-abandono').then(
+            (m) => m.App6GeopoliticaRelacoesInternacionaisCheckAbandono
+          )
+      },
+      {
+        title: 'Pensadores',
+        path: 'pensadores',
+        loadComponent: () =>
+          import(
+            '../modules/app6-1-relacoes-internacionais/app6-1-pensadores/app6-1-pensadores'
+          ).then((m) => m.App61Pensadores)
       }
     ]
   },

@@ -21,12 +21,12 @@ export class App6GeopoliticaRelacoesInternacionaisConceitos {
   // geopoliticaBibliografiaIds: number[] = [1, 5, 12]; // Kaplan, Mattos, Vesentini
   //
   // Se deixar vazio [], o componente mostrará todas as bibliografias que têm conceitos
-  geopoliticaBibliografiaIds: number[] = [1, 2, 3, 4];
+  geopoliticaBibliografiaIds: number[] = [1, 2, 3];
 
-  emptyMessage = 'Nenhum conceito de Geopolítica e RI encontrado. Adicione conceitos relacionados às matérias para visualizá-los aqui.';
+  emptyMessage = 'Nenhum conceito de Geopolítica encontrado. Adicione conceitos relacionados às matérias para visualizá-los aqui.';
   
   // Configurações do header
-  moduleLabel = 'Geopolítica e Relações Internacionais';
+  moduleLabel = 'Geopolítica';
   moduleEmoji = '🌍';
 
   // Paths para navegação entre módulos
