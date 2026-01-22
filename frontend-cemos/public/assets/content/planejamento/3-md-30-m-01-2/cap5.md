@@ -26,7 +26,7 @@ f) Fase 6 — Conceito Preliminar da Operação.
 
 ### 5.2 Fase 1 Exm Sit Op - Avaliação do Ambiente Operacional e Análise da Missão
 
-5.2.1 O Cmt Op e seu EMCj devem adquirir uma ideia clara e completa do problema militar, antes de tentar solucioná-lo. Isso incluirá uma compreensão contextual da situação, por meio de uma avaliação do ambiente operacional, e do enunciado e análise da própria missão, que serão consolidados em uma Diretriz de Planejamento (DIPLIAN).
+5.2.1 O Cmt Op e seu EMCj devem adquirir uma ideia clara e completa do problema militar, antes de tentar solucioná-lo. Isso incluirá uma compreensão contextual da situação, por meio de uma avaliação do ambiente operacional, e do enunciado e análise da própria missão, que serão consolidados em uma Diretriz de Planejamento (DIPLAN).
 
 5.2.3 A fase 1 se desenvolve seguindo a sequência abaixo:
 
@@ -839,7 +839,7 @@ Tabela 1: questionamentos sobre as LA levantadas
 
 ## Página 68
 
-5.5.1.4 Por simplicidade, as vantagens e desvantagens serão identificadas sob o ponto de vista das atividades afetas a cada uma das seções do EM, e consolidadas pela Seção de Operações ou de Planejamento, a critério do Ch EMCij, sob forma tabular como nos exemplos a seguir:
+5.5.1.4 Por simplicidade, as vantagens e desvantagens serão identificadas sob o ponto de vista das atividades afetas a cada uma das seções do EM, e consolidadas pela Seção de Operações ou de Planejamento, a critério do Ch EMCj, sob forma tabular como nos exemplos a seguir:
 
 ### Vantagens
 

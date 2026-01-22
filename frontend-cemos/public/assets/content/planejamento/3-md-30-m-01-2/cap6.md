@@ -40,7 +40,7 @@ d) ideia quanto ao início e término das ações a serem executadas; e
 
 e) área em que ocorrerão essas ações.
 
-6.2.6 Passo 3: Execução das Operações
+### 6.2.6 Passo 3: Execução das Operações
 
 6.2.6.1 Estabelecer como será executada cada operação pelas F Cte e a interdependência entre essas operações, sincronizando-as no espaço e no tempo. Esse passo visa estabelecer como serão executadas as ações visualizadas no passo anterior, atendo-se ao grau de detalhamento adequado ao nível de decisão, determinando-se:
 

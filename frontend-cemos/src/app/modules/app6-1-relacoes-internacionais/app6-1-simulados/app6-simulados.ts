@@ -19,7 +19,7 @@ export class App6Simulados implements OnInit {
   pageTitle = 'Simulados de Relações Internacionais';
 
   ngOnInit() {
-    console.log('🚀 [App6Simulados] Módulo de Simulados - Geopolítica e RI iniciado');
+    console.log('🚀 [App6Simulados] Módulo de Simulados - Relações Internacionais iniciado');
     console.log('📚 [App6Simulados] Bibliografias disponíveis:', this.bibliografiasDisponiveisIds);
   }
 }

@@ -2,7 +2,7 @@
 
 NOTAS E MODELOS DE ROTEIROS DE ANÁLISE RELATIVOS AO PROCESSO DE PLANEJAMENTO CONJUNTO
 
-1. CONSIDERAÇÕES INICIAIS
+### 1. CONSIDERAÇÕES INICIAIS
 
 1.1 A arte operacional consiste na concepção e no planejamento contínuo e sistêmico de operações e campanhas militares sincronizadas que produzirão efeitos essenciais para a consecução dos objetivos operacionais, gerando, assim, as condições que favoreçam a consecução do EFD Op.
 
@@ -32,7 +32,8 @@ representação gráfica mais comum e, em sua essência, a materialização da A
 
 2.4. Enfim, a chave para a aplicação da Arte Operacional reside na capacidade de visualizar o emprego de forças e os seus efeitos no tempo e no espaço. Isto é fundamental para avaliar as várias possibilidades, antecipar os prováveis resultados e as suas implicações.
 
-2.5. Fator Espaço
+### 2.5. Fator Espaço
+
 2.5.1. Toda área de responsabilidade de um Comando Operacional contém um grande número de características naturais e artificiais que afetam significativamente o planejamento e a execução das operações.
 
 2.5.2. Os principais elementos que constituem o fator espaço são: posição geoestratégica, distância, eixos prioritários de transporte (Linhas de Comunicações e Suprimento), localização das forças e características físicas do ambiente. Esses elementos podem dispor de um significado tático, operacional ou estratégico.
@@ -48,62 +49,38 @@ representação gráfica mais comum e, em sua essência, a materialização da A
 
 *Tabela 12: fator espaço*
 
-2.6 Fator Tempo
+### 2.6 Fator Tempo
 
-2.6.1. No nível operacional, o TEMPO é um dos principais fatores levado em
-consideração na concepção e condução das operações de guerra. Este fator está
-intimamente relacionado com o fator espaço. Existe a necessidade de tempo para vencer
-o espaço. Comparando com o fator TEMPO, que é dinâmico e variável, o fator espaço é
-estático e invariável. O tempo perdido nunca pode ser recuperado, enquanto que o
-espaço perdido pode ser reconquistado.
-2.6.2. O Cmt, em função do tempo disponível, deve determinar a melhor organização das
-forças para realizar as tarefas/missões atribuídas. Essa organização, muitas vezes, será
-uma combinação de ações simultâneas e/ou contínuas, para atingir, em melhores
-condições, o EFD, otimizando os recursos humanos e materiais disponíveis.
-2.6.3 O Fator TEMPO pode se referir ao ritmo da operação em relação ao ritmo do
-adversário. Assim, diz-se que uma operação tem um ritmo alto, quando o ritmo da
-operação é maior que o do adversário. O ritmo, mais do que uma indicação de mobilidade
-ou rapidez de movimento da força, é um índice da velocidade na qual as diferentes ações
-que compõem a operação são executadas. Assim, uma operação possui alto ritmo
-quando as diferentes ações que a integram são desenvolvidas com grande rapidez e alto
-grau de sincronização.
-2.6.4 Quando um ritmo próprio executado excede a capacidade de reação do oponente,
-as próprias forças podem manter a iniciativa e obter uma vantagem marcante, gerando
-com isso uma liberdade de ação adequada.
-2.6.5 Controlar e / ou alterar esse ritmo é necessário para manter a iniciativa. Para
-maximizar as próprias capacidades, é necessário ajustar o rítmo da operação. Um ritmo
-adequado:
+2.6.1. No nível operacional, o TEMPO é um dos principais fatores levado em consideração na concepção e condução das operações de guerra. Este fator está intimamente relacionado com o fator espaço. Existe a necessidade de tempo para vencer o espaço. Comparando com o fator TEMPO, que é dinâmico e variável, o fator espaço é estático e invariável. O tempo perdido nunca pode ser recuperado, enquanto que o espaço perdido pode ser reconquistado.
+
+2.6.2. O Cmt, em função do tempo disponível, deve determinar a melhor organização das forças para realizar as tarefas/missões atribuídas. Essa organização, muitas vezes, será uma combinação de ações simultâneas e/ou contínuas, para atingir, em melhores condições, o EFD, otimizando os recursos humanos e materiais disponíveis.
+
+2.6.3 O Fator TEMPO pode se referir ao ritmo da operação em relação ao ritmo do adversário. Assim, diz-se que uma operação tem um ritmo alto, quando o ritmo da operação é maior que o do adversário. O ritmo, mais do que uma indicação de mobilidade ou rapidez de movimento da força, é um índice da velocidade na qual as diferentes ações que compõem a operação são executadas. Assim, uma operação possui alto ritmo quando as diferentes ações que a integram são desenvolvidas com grande rapidez e alto grau de sincronização.
+
+2.6.4 Quando um ritmo próprio executado excede a capacidade de reação do oponente, as próprias forças podem manter a iniciativa e obter uma vantagem marcante, gerando com isso uma liberdade de ação adequada.
+
+2.6.5 Controlar e / ou alterar esse ritmo é necessário para manter a iniciativa. Para maximizar as próprias capacidades, é necessário ajustar o rítmo da operação. Um ritmo adequado:
 
 a) permite manter a iniciativa;
-b) impede que o oponente se reorganize e, com. isso, se atinja seu Centro de
-Gravidade ou Ponto Culminante mais rapidamente; e
-c) não compromete nossa capacidade de tomada de decisão e/ou apoio ao
-combate.
+b) impede que o oponente se reorganize e, com. isso, se atinja seu Centro de Gravidade ou Ponto Culminante mais rapidamente; e
+c) não compromete nossa capacidade de tomada de decisão e/ou apoio ao combate.
 
-2.6.6 Com isso, é possível aplicar uma pressão constante, com uma quantidade rítmica
-de ações militares, semelhantes a uma frequência cardíaca variável.
-2.6.7 O resultado que se busca com operações de ritmo elevado é conseguir a paralisia
-estratégica do adversário, quebrando o seu ciclo de "Observação, Orientação, Decisão,
-Ação", conhecido como ciclo "OODA". Uma operação pode ser desenvolvida em um ritmo
-muito alto e, no entanto, ter um tempo muito restrito, o que provocará uma quebra do ciclo
-decisório do inimigo e reduzirá sua capacidade de reação.
+2.6.6 Com isso, é possível aplicar uma pressão constante, com uma quantidade rítmica de ações militares, semelhantes a uma frequência cardíaca variável.
 
-2.7 Fator Força
-2.7.1 O fator FORÇA não consiste somente dos aspectos militares como forças navais,
-terrestres ou aéreas, mas também de todos os apoios e os aspectos civis, sendo tudo sob
-a responsabilidade do Comandante Operacional.
+2.6.7 O resultado que se busca com operações de ritmo elevado é conseguir a paralisia estratégica do adversário, quebrando o seu ciclo de "Observação, Orientação, Decisão, Ação", conhecido como ciclo "OODA". Uma operação pode ser desenvolvida em um ritmo muito alto e, no entanto, ter um tempo muito restrito, o que provocará uma quebra do ciclo decisório do inimigo e reduzirá sua capacidade de reação.
 
-2.7.2 O termo “meios”, mais amplo, é usado algumas vezes na terminologia político-
-estratégico, para denotar não somente as Forças Armadas, mas também os recursos
-políticos, diplomáticos e econômicos de todo o Estado.
-2.7.3 Ele é muito difícil de ser quantificado, pois depende de fatores tangíveis e
-intangíveis, especialmente nos níveis políticos, estratégico e operacional da condução da
-guerra.
-2.7.4 Quanto maior a superioridade deste fator em relação a um adversário, maior
-liberdade de ação se disporá para a condução da política, da estratégia e
-consequentemente para a determinação dos objetivos estratégicos, operacionais e
-táticos.
+### 2.7 Fator Força
+
+2.7.1 O fator FORÇA não consiste somente dos aspectos militares como forças navais, terrestres ou aéreas, mas também de todos os apoios e os aspectos civis, sendo tudo sob a responsabilidade do Comandante Operacional.
+
+2.7.2 O termo “meios”, mais amplo, é usado algumas vezes na terminologia político-estratégico, para denotar não somente as Forças Armadas, mas também os recursos políticos, diplomáticos e econômicos de todo o Estado.
+
+2.7.3 Ele é muito difícil de ser quantificado, pois depende de fatores tangíveis e intangíveis, especialmente nos níveis políticos, estratégico e operacional da condução da guerra.
+
+2.7.4 Quanto maior a superioridade deste fator em relação a um adversário, maior liberdade de ação se disporá para a condução da política, da estratégia e consequentemente para a determinação dos objetivos estratégicos, operacionais e táticos.
+
 2.7.5 Como elementos tangíveis das forças, entre outros, são considerados:
+
 a) tipo/composição/combinação;
 b) interoperabilidade;
 c) mobilidade;
@@ -111,6 +88,7 @@ d) flexibilidade; e
 e) apoio logístico e demais apoios.
 
 2.7.6 Como elementos intangíveis das forças, entre outros, são considerados:
+
 a) grau de liderança dos Comandantes;
 b) apoio da opinião pública;
 c) vontade de lutar;
@@ -125,7 +103,6 @@ e) moral e disciplina.
 
 *Tabela 13: Fator Força – elementos tangíveis*
 
-
 | **INTANGÍVEIS** | **Onde é analisado no PPC** |
 |---|---|
 | **Qualidade da Liderança** | a) Análise da Missão e Considerações Preliminares – análise da própria missão, aspectos políticos, aspectos psicossociais e inimigo;<br>b) A Situação e sua Compreensão – características da Área de Operações (fatores gerais políticos, fatores gerais psicossociais);<br>c) Forças Inimigas – peculiaridades e deficiências; e<br>d) Nossas Forças – composição. |
@@ -136,8 +113,7 @@ e) moral e disciplina.
 
 *Tabela 53: Fator Força – elementos intangíveis*
 
-
-2.8 Os Fatores Tempo e Espaço na Dimensão Informacional
+### 2.8 Os Fatores Tempo e Espaço na Dimensão Informacional
 
 2.8.1 Os fatores tempo e espaço não são restritivos na perspectiva lógica da dimensão informacional, que inclui o espaço cibernético. Essa perspectiva lógica refere-se onde e como as informações são obtidas, produzidas, armazenadas, protegidas e difundidas. É onde o C2 das forças militares é exercido e por meio da qual a intenção do comandante é transmitida. As ações nesta perspectiva afetam o conteúdo e o fluxo de informações.
 
@@ -159,7 +135,7 @@ e) moral e disciplina.
 
 4.1 No Desenho Operacional estão caracterizados diversos elementos que facilitam o entendimento do que será planejado. Servem como uma forma gráfica que permite ao Comandante e seu Estado-Maior a compreensão da abordagem mais adequada para a resolução do problema militar elencado em fase anterior e sintetiza a visão do Comandante sobre “o que” deve ser feito para se atingir o EFD Op. Os vários elementos do desenho operacional refletem graficamente a inter-relação entre os fins, os meios e os modos, desde o começo até a finalização da operação ou da campanha.
 
-4.2 Estado Final Desejado (EFD)
+### 4.2 Estado Final Desejado (EFD)
 
 4.2.1 É uma situação, política ou militar, favorável que deve ser alcançada quando a operação estiver finalizada.
 
@@ -173,7 +149,7 @@ e) moral e disciplina.
 
 4.2.6 A necessidade de se atingir o Centro de Gravidade (CG) inimigo e prover a proteção dos nossos próprios CG tem por finalidade alcançar o EFD Militar. Desse modo, nenhuma operação, ação militar ou linha de operação deve conduzir a situações que sejam incompatíveis com o EFD Op.
 
-4.3 Objetivos Operacionais (Obj Op)
+### 4.3 Objetivos Operacionais (Obj Op)
 
 4.3.1 As operações conjuntas devem ser dirigidas a objetivos operacionais que contribuam para alcançar o EFD Militar (ou Op). Um Objetivo Operacional, portanto, é uma meta para a qual concorrerão as ações, do ponto de vista operacional. Desta forma, todos os esforços devem ser direcionados e concentrados para atingir esses objetivos.
 
@@ -181,7 +157,7 @@ e) moral e disciplina.
 
 4.3.3 Uma Campanha dificilmente será conduzida com base exclusivamente na expressão do Poder Militar. Logo, podem ser formulados Obj Op com vistas a contribuir de forma direta ou indireta com os objetivos estratégicos atinentes a outras expressões do Poder Nacional.
 
-4.4 Centro de Gravidade (CG)
+### 4.4 Centro de Gravidade (CG)
 
 4.4.1 O foco do Exame de Situação é identificar o(s) CG do inimigo, suas Vulnerabilidades Críticas (VC) e concentrar poder de combate superior para explorá-las.
 
@@ -193,7 +169,7 @@ e) moral e disciplina.
 
 4.4.5 Nota relacionada ao planejamento operacional neste volume consolida orientações sobre a identificação e análise de Centros de Gravidade.
 
-4.5 Ponto Decisivo (PD)
+### 4.5 Ponto Decisivo (PD)
 
 4.5.1 Um Ponto Decisivo (PD) representa uma condição sem a qual não se progride na Operação/Campanha. Pode ser relacionado a um local, evento-chave específico, sistema crítico ou função que permite aos comandantes obter uma vantagem relevante sobre o inimigo e influenciar decisivamente o resultado final da Operação/Campanha.
 
@@ -207,7 +183,7 @@ e) moral e disciplina.
 
 4.5.6 O Ponto Decisivo deve estar relacionado à obtenção de efeitos ou ações perfeitamente identificáveis sobre pessoas ou meios militares, bem como outros efeitos intangíveis, como aqueles de natureza psicológica. Os PD devem ser apoiados por ações ou efeitos preferencialmente mensuráveis.
 
-4.6 Efeitos e Ações
+### 4.6 Efeitos e Ações
 
 4.6.1 Efeitos são alterações no estado de um sistema (ou elemento de um sistema) resultante de uma ou mais ações desencadeadas com vistas a alcançar um Ponto Decisivo. Essas alterações ocorrerão em alguma parte do sistema como resultado de uma, ou mais ações capazes de influenciar o ambiente operacional. Um efeito deve ser mensurável por meio de medidas e indicadores. Expressam uma situação desejada no futuro (Ex: Fluxo logístico inimigo degradado).
 
@@ -215,11 +191,11 @@ e) moral e disciplina.
 
 4.6.3 O resultado esperado de ações previstas para realizar é o que se define como efeito. Entretanto, as nossas ações podem ter efeitos que não se buscou produzir. Dessa forma, em uma cadeia lógica, o ponto decisivo (condição) é considerado como alcançado através do atingimento de um ou vários efeitos, e este, por sua vez, será a soma de uma ou várias ações.
 
-4.7 Ponto de Decisão (P Dcs)
+### 4.7 Ponto de Decisão (P Dcs)
 
 É o ponto no qual se espera que o Comandante tome uma decisão crítica concernente ao andamento da operação/campanha. Pode estar relacionado a uma variante ou à transição de fases em uma operação/campanha. Mais de um Ponto de Decisão pode ser identificado durante a fase de planejamento e se torna um elemento-chave para o Comandante durante a fase de execução.
 
-4.8 Ponto Culminante
+### 4.8 Ponto Culminante
 
 4.8.1 Ponto Culminante é o ponto de uma operação, a partir do qual a força deixa de ter capacidade para continuar as operações com sucesso. Este conceito tem aplicação na ofensiva e na defensiva.
 
@@ -229,9 +205,9 @@ e) moral e disciplina.
 
 4.8.4 Todo esforço deverá ser orientado para que se alcancem os objetivos antes do ponto culminante e, ao mesmo tempo, tentar fazer com que o inimigo alcance o seu ponto culminante o quanto antes possível.
 
-![ponto_culminante.png](ponto_culminante.png.png)
+![ponto_culminante.png](ponto_culminante.png)
 
-4.9 Linhas de Operação
+### 4.9 Linhas de Operação
 
 4.9.1 As Linhas de Operação (L Op) resultam da união temporária de vários PD relacionados tematicamente entre si, e que uma vez alcançados conduzem ao atingimento de um ou mais Objetivos operacionais. Essa linha, portanto, representa a sequência espaço-temporal e lógica dos PD em seu caminho para o atingimento do EFD Op. Em um desenho operacional, pode haver tantas L Op quanto o EMCj considerar necessário e eles podem ser agrupados por atividades ou áreas geográficas. Portanto, é essencial que as L Op sejam desenvolvidas e apresentadas, com foco:
 
@@ -240,19 +216,19 @@ b) nos PD necessários para manter a liberdade de ação e a progressão em dire
 
 4.9.2 Os comandantes utilizam-nas para orientar o potencial de combate para um fim desejado, organizando-as segundo uma concepção lógica, que integra todas as capacidades militares de uma força conjunta, com vistas a fazê-la atingir os Obj Op e o EFD Op.
 
-4.10 Linhas de Esforço
+### 4.10 Linhas de Esforço
 
 As Linhas de Esforço possuem uma lógica de propósito/causa e efeito que visam a cooperar com as Linhas de Operação. Este elemento do desenho operacional busca a convergência de esforços, de modo a evitar a duplicidade das tarefas e ações determinadas e o desperdício de meios e recursos para as forças componentes, colaborando com o Comandante e seu Estado-Maior a alcançarem o EFD Op em um ambiente interagência. Destaca-se que o citado ambiente envolve diferentes fatores e atores “não militares” como os Órgãos Governamentais, as Organizações Não-Governamentais (ONG), os Organismos Internacionais, as empresas privadas e outras instituições civis
 
-4.11 Variante
+### 4.11 Variante
 
 As variantes são opções ao plano básico e podem incluir mudanças de prioridades e de organização de unidades na estrutura de comando ou na própria natureza da operação. Por propiciarem flexibilidade ao antecipar situações que poderiam alterar o plano básico, as variantes normalmente são decisivas para o resultado da operação geral, pois permitem atuar mais rapidamente do que o adversário para explorar uma situação resultante (emergente) da situação operacional. Uma variante, em essência, consiste em uma rota diferente para chegar ao mesmo EFD Op da operação em desenvolvimento.
 
-4.12 Pausa Operacional
+### 4.12 Pausa Operacional
 
 É a interrupção temporária das operações, antes das nossas forças terem atingido o seu próprio ponto culminante, com vistas à regeneração do potencial de combate, para que seja desferido o golpe decisivo sobre o adversário. Normalmente, uma Pausa Operacional é o mais curta possível, de modo a não permitir a iniciativa e a liberdade de ação ao inimigo.
 
-5. CONSTRUÇÃO DO DESENHO OPERACIONAL
+### 5. CONSTRUÇÃO DO DESENHO OPERACIONAL
 
 5.1 Como já visto nas considerações iniciais, o Desenho Operacional é a ferramenta básica para o desenvolvimento da abordagem operacional. Sua construção, em que pese não seguir formatos rígidos, apresenta uma sequência lógica a ser seguida. 
 

@@ -61,7 +61,7 @@ Figura 7 — estrutura do EMC
 
 ### 5.3 Principais Competências e Atribuições
 
-5.3.1 O Chefe do EMCj possui as seguintes atribuições:
+### 5.3.1 O Chefe do EMCj possui as seguintes atribuições:
 
 (a) assessorar o Comandante e o Subcomandante;
 (b) participar do processo de planejamento conjunto desde a concepção inicial das operações, coordenando a elaboração dos planos decorrentes;
@@ -71,7 +71,7 @@ Figura 7 — estrutura do EMC
 (f) organizar o confronto das linhas de ação levantadas; e
 (g) coordenar as ações entre as diversas Forças Componentes.
 
-5.3.2 Às seções do EMCj compete:
+### 5.3.2 Às seções do EMCj compete:
 
 (a) assessorar o Comandante, o Ch EMCj e o Subcomandante, quando for o caso, para a tomada de decisões em todas as fases da operação/campanha;
 (b) participar do processo de planejamento desde a concepção inicial das operações, elaborando os planos decorrentes;
@@ -79,7 +79,7 @@ Figura 7 — estrutura do EMC
 (d) zelar pela observância dos aspectos doutrinários conjuntos, propondo ao Ch EMCj os ajustes adequados; e
 (e) tratar os assuntos de suas respectivas áreas com os órgãos militares e civis, incluindo os EM das F Cte, desde que autorizado pelo Cmt Op.
 
-5.3.3 O Chefe da Seção de Pessoal (D-1) possui as seguintes atribuições:
+### 5.3.3 O Chefe da Seção de Pessoal (D-1) possui as seguintes atribuições:
 
 (a) proceder à análise de Pessoal;
 (b) estabelecer normas e procedimentos para os assuntos relativos à gestão e ao trato de civis ou militares, sejam amigos ou inimigos, particularmente prisioneiros de guerra (PG), refugiados e deslocados, em coordenação com as seções de Inteligência e de Assuntos Civis;
@@ -102,7 +102,8 @@ Figura 7 — estrutura do EMC
 (p) confeccionar o Anexo de Pessoal e seus apêndices ao plano operacional; e
 (o) estruturar a Seção de Pessoal do EMCj.
 
-5.3.4 O Chefe da Seção de Inteligência (D-2) possui as seguintes atribuições:
+### 5.3.4 O Chefe da Seção de Inteligência (D-2) possui as seguintes atribuições:
+
 (a) coordenar a produção de informações e conhecimentos, visando ao apoio à decisão do Cmt Op e, quando pertinente, aos demais níveis decisórios;
 (b) observar as orientações previstas no Anexo Estratégico de Inteligência, do PEECFA;
 (c) coordenar as atividades de Inteligência relativas ao planejamento operacional, tendo o apoio dos representantes dos setores de Inteligência das F Cte (na situação de normalidade considerar representantes dos Comandos de Operações das Forças e do EMCFA);
@@ -128,7 +129,7 @@ Figura 7 — estrutura do EMC
 
 ## Página 55
 
-5.3.5 O Chefe da Seção de Operações (D-3) possui as seguintes atribuições:
+### 5.3.5 O Chefe da Seção de Operações (D-3) possui as seguintes atribuições:
 
 (a) planejar, coordenar e integrar as ações do C Op;
 (b) indicar necessidade de adestramentos específicos das Forças Componentes;
@@ -147,7 +148,7 @@ Figura 7 — estrutura do EMC
 (o) ativar a Subseção de Guerra Cibernética (SGC) em sua estrutura e organização, a fim de coordenar o emprego da capacidade cibernética nas operações; e
 (p) estruturar a Seção de Operações do EMCj.
 
-5.3.6 O Chefe da Seção de Logística e Mobilização (D-4) possui as seguintes atribuições:
+### 5.3.6 O Chefe da Seção de Logística e Mobilização (D-4) possui as seguintes atribuições:
 
 (a) proceder à análise de logística;
 (b) estabelecer os níveis mínimos de estoque nas diversas classes de suprimento;
@@ -171,7 +172,7 @@ Figura 7 — estrutura do EMC
 (q) coordenar e controlar as ações de mobilização no âmbito do Cmdo Op e suas FCte; e
 (r) consolidar as Listas de Necessidades das demais seções do EMCj em uma única denominada Lista de Necessidades Complementar (LNC), apêndice ao Anexo de Logística e Mobilização. Caso não seja ativado o C Log Cte, também confeccionará a LNP.
 
-5.3.7 O Chefe da Seção de Planejamento (D-5) possui as seguintes atribuições:
+### 5.3.7 O Chefe da Seção de Planejamento (D-5) possui as seguintes atribuições:
 
 (a) auxiliar a Seção de Operações na elaboração dos documentos afetos ao Exame de Situação Operacional e à etapa da Elaboração de Planos e Ordens;
 (b) propor ao Comandante o Estado Final Desejado Operacional (EFDOp) da operação, caso este não tenha sido claramente definido pelo escalão superior;
@@ -188,7 +189,7 @@ Figura 7 — estrutura do EMC
 
 ## Página 57
 
-5.3.8 O Chefe da Seção de Comando e Controle (D-6) possui as seguintes atribuições:
+### 5.3.8 O Chefe da Seção de Comando e Controle (D-6) possui as seguintes atribuições:
 
 (a) proceder à análise de Comando e Controle;
 (b) coordenar a integração das redes que interligarão os CC² do C Op com os CC² das F Cte;

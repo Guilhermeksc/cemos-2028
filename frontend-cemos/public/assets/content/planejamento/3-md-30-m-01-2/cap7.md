@@ -50,7 +50,7 @@ e) gerenciamento da informação.
 
 ## Página 83
 
-7.3.3.2 As atividades de um Comando Operacional, no decorrer da campanha/operação, são realizadas por meio de uma rotina de eventos de coordenação e de tomada de decisão. Essa rotina de trabalho estabelecerá as interações necessárias entre as seções do EMCij, e deste com os EM das Forças Componentes, bem como disciplinará o fluxo de informações e ordens, proporcionando maior eficiência no emprego dos recursos materiais e humanos disponíveis.
+7.3.3.2 As atividades de um Comando Operacional, no decorrer da campanha/operação, são realizadas por meio de uma rotina de eventos de coordenação e de tomada de decisão. Essa rotina de trabalho estabelecerá as interações necessárias entre as seções do EMCj, e deste com os EM das Forças Componentes, bem como disciplinará o fluxo de informações e ordens, proporcionando maior eficiência no emprego dos recursos materiais e humanos disponíveis.
 
 7.3.3.3 Consciência situacional é a percepção precisa dos fatores e condições que afetam a execução da tarefa durante um período de tempo, permitindo ou proporcionando ao Comandante Operacional estar ciente do que se passa ao seu redor e assim ter condições de focar o pensamento a frente do objetivo, ficando em melhores condições para a tomada de decisão. E a perfeita sintonia entre a situação percebida e a situação real.
 
