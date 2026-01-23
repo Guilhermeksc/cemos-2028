@@ -132,15 +132,15 @@
             {
               "numero": 7,
               "texto": "Responsabilidades do Comandante Operacional",
-            "complemento": "Apresentar planejamentos operacionais e proposta de adjudicação de meios; planejar, controlar, coordenar e executar o emprego das forças sob seu comando; e conduzir exercícios conforme diretrizes superiores.",
-            "mnemonico": ""
+              "complemento": "Apresentar planejamentos operacionais e proposta de adjudicação de meios; planejar, controlar, coordenar e executar o emprego das forças sob seu comando; e conduzir exercícios conforme diretrizes superiores.",
+              "mnemonico": ""
         }
           ]
         }
       ]
     },
     {
-      "titulo": "MD-30-m-01 (1º Volumne)",
+      "titulo": "MD-30-m-01 (1º Volume)",
       "capitulos": [
         {
           "titulo": "Capítulo II – Concepção de Preparo e Emprego Conjunto",
@@ -171,32 +171,32 @@
             },
             {
               "numero": 5,
-              "texto": "Emprego das Forças Armadas",
-              "complemento": "O emprego das FA é sempre respaldo à ação política do governo, com diretrizes e Regras de Engajamento compatíveis com a condução política.",
-              "mnemonico": "Política–RE"
+              "texto": "Doutrina Militar de Defesa ",
+              "complemento": "Documento que apresenta as atribuições constitucionais das forças armadas, abrangendo as ações de guerra e não guerra",
+              "mnemonico": "DMD"
             },
             {
               "numero": 6,
-              "texto": "Situação de Guerra x Situação de não-guerra ",
-              "complemento": "Divide-se em situação de guerra (Defesa da Pátria) e de não-guerra, incluindo GLO, atribuições subsidiárias, terrorismo, operações internacionais e apoio à política externa.",
+              "texto": "Emprego das FA: Guerra x Não-guerra ",
+              "complemento": "O emprego das FA é sempre respaldo à ação política do governo, com diretrizes e Regras de Engajamento compatíveis com a condução política.\nDivide-se em situação de guerra (Defesa da Pátria) e de não-guerra, incluindo GLO, atribuições subsidiárias, terrorismo, operações internacionais e apoio à política externa.",
               "mnemonico": ""
             },
             {
               "numero": 7,
-              "texto": "Situação de Normalidade",
+              "texto": "Situação de emprego: Normalidade",
               "complemento": "Caracteriza-se pela vigência plena das garantias individuais e ausência de medidas excepcionais, admitindo emprego das FA se houver comprometimento da ordem pública.",
               "mnemonico": "Garantias–Ordem"
             },
             {
               "numero": 8,
-              "texto": "Situação de Não-Normalidade",
+              "texto": "Situação de emprego: Não-Normalidade",
               "complemento": "Caracteriza-se por grave comprometimento da ordem pública e institucional, com intervenção federal, estado de defesa ou estado de sítio.",
               "mnemonico": "Interv–Def–Sít"
             },
             {
               "numero": 9,
               "texto": "Estado de Crise e Conflito Armado",
-              "complemento": "Crise é estado de tensão com risco de escalada; conflito armado é o emprego da violência por grupos organizados para impor vontade ou resolver contenciosos.",
+              "complemento": "Crise é estado de tensão com risco de escalada; conflito armado é o emprego da violência por grupos organizados para impor vontade ou resolver contenciosos.\nÉ apenas jurídica, é apenas na perspectiva jurídica que é a sua diferença, conflito armado para guerra. Em suma, eles são a mesma coisa, a diferença que tem é só na perspectiva jurídica.",
               "mnemonico": ""
             },
             {
@@ -207,9 +207,9 @@
             },
             {
               "numero": 11,
-              "texto": "Emprego Conjunto – Conceito",
-              "complemento": "Baseia-se na interoperabilidade e sinergia das Forças Armadas para maximizar a expressão militar do Poder Nacional.",
-              "mnemonico": ""
+              "texto": "Principal característica do emprego conjunto das FA",
+              "complemento": "Interoperabilidade e sinergia das Forças Armadas para maximizar a expressão militar do Poder Nacional.",
+              "mnemonico": "Interoperabilidade-Sinergia"
             },
             {
               "numero": 12,
@@ -228,9 +228,146 @@
               "texto": "Documentos do Ciclo de Planejamento",
               "complemento": "DPED (Político), DMED e DPEM (Estratégico), DIPLAN e Planos Operacionais (Operacional) e Planos/Ordens Táticas (Tático).",
               "mnemonico": "DPED–DMED–DPEM–DIPLAN"
+            },
+            {
+              "numero": 15,
+              "texto": "Comandante Supremo das Forças Armadas ao eclodir a crise",
+              "complemento": "Compor um gabinete de crise para que seja acessorado de suas decisões.",
+              "mnemonico": "Gabinete de Crise"
+            },
+            {
+              "numero": 16,
+              "texto": "Conselho Militar de Defesa ao eclodir a crise (C Mi D)",
+              "complemento": "Poderá, mesmo antes de se expedir uma DPED, assessorar o Min Def na indicação de um oficial general, em princípio do último posto, possível Comandante do TO/A Op/ZD, para que, juntamente com a Chefia de Operações Conjuntas (CHOC), atualize ou produza um PEECFA, que faça frente à situação e já se dê andamento à configuração de seu Estado-Maior Conjunto (EMCj). Tal medida tem por finalidade ganhar tempo de planejamento e contribuir na coordenação do emprego de tropas antes da 1º fase da campanha militar.",
+              "mnemonico": "Assessora o MD"
+            },
+            {
+              "numero": 17,
+              "texto": "Documento emitido pelo MD, sem PEECFA previamente elaborado",
+              "complemento": "Visando a antecipar as providências circunstanciais de interesse do MD e das FA, até que seja expedida a DPED correspondente à situação.\nDiretriz Ministerial de Emprego de Defesa (DMED)",
+              "mnemonico": "DMED"
+            },
+            {
+              "numero": 18,
+              "texto": "Três ideias básicas da concepção do emprego conjunto",
+              "complemento": "Unidade de comando, cadeia comando bem definida, delegação de autoridade, C² eficiente, doutrina conjunta, adestramento integrado, logística adequada e proporcionalidade.",
+              "mnemonico": "UCD-C²-D-A-L-P"
+            },
+            {
+              "numero": 19,
+              "texto": "Ciclo completo de planejamento",
+              "complemento": "A concepção de emprego conjunto perpassa os níveis político, estratégico, operacional e tático, com ações simultâneas e integradas.",
+              "mnemonico": "Pol[PR]–Estr–Op–Tat"
+            },
+            {
+              "numero": 20,
+              "texto": "Órgãos consultivos e de assessoramento",
+              "complemento": "Conselho de Defesa Nacional (CDN) e Conselho Militar de Defesa (C Mi D).",
+              "mnemonico": "Consultivo CDN – Assessoramento C Mi D"
+            },
+            {
+              "numero": 21,
+              "texto": "Comandos Operacionais",
+              "complemento": "Comandos Operacionais serão geralmente conjuntos, podendo, em casos excepcionais, serem singulares, organizados de acordo com a Estrutura Militar de Defesa. São responsáveis pela elaboração do planejamento operacional, e a solicitação de adjudicação de meios aos Comandos Operacionais.",
+              "mnemonico": "COMAE–ComDCiber"
+            },
+            {
+              "numero": 22,
+              "texto": "Nível Político",
+              "complemento": "Definir o emprego das forças armadas, decidir pelo emprego das forças armadas.",
+              "mnemonico": "PR"
+            },
+            {
+              "numero": 23,
+              "texto": "Nível Estratégico",
+              "complemento": "Exercer a direção superior das forças armadas, assessorar o Ministro da Defesa e o Chefe do Estado-Maior Conjunto das Forças Armadas (CEMCFA).",
+              "mnemonico": "MD e CEMCFA"
+            },
+            {
+              "numero": 24,
+              "texto": "Nível Operacional",
+              "complemento": "Planejamento operacional é realizado pelos Comandos Operacionais, com base no PEECFA. Nesse nível, os principais conceitos estratégicos, objetivos e estado final desejado servem de base para o estabelecimento dos objetivos operacionais e das missões a serem atribuídas às Forças Componentes.",
+              "mnemonico": "Forças Componentes"
+            },
+            {
+              "numero": 25,
+              "texto": "Atividade de Inteligência no nível operacional",
+              "complemento": "A atividade de inteligência é intensificada, pela integração dos conhecimentos disponíveis no Sistema de Inteligência Operacional (SIOP), no Sistema de Inteligência de Defesa (SINDE) e nos demais órgãos que compõem o Sistema Brasileiro de Inteligência (SISBIN), a fim de suprir as necessidades de inteligência, cujo levantamento já deverá ter sido iniciado ainda na etapa de Exame de Situação e Planejamento.\nTambém serão atualizados os dados sobre o Teatro de Operações (TO)/Areas de Operações (A Op) e Zonas de Defesa (ZD), Seção de Assuntos Jurídicos (SFC).",
+              "mnemonico": "SIOP–SINDE–SISBIN–TO–A Op–ZD–SFC"
+            },
+            {
+              "numero": 26,
+              "texto": "Alteração nos limites das áreas de responsabilidade pré-definidas no PEECFA",
+              "complemento": "Caso o Exame de Situação Operacional aponte para a necessidade de alteração nos limites das áreas de responsabilidade pré-definidas no PEECFA, a solicitação deverá ser formalizada ao Ministro da Defesa, por intermédio do Chefe do Estado-Maior Conjunto das Forças Armadas (CEMCFA).",
+              "mnemonico": "MD, via CEMCFA, para aprovação do CS"
+            },
+            {
+              "numero": 27,
+              "texto": "Exame de Situação Operacional",
+              "complemento": "Base mais completa para o planejamento operacional, quem aprova.\nDurante o Exame de Situação Operacional, o Comandante Operacional fará a proposta inicial ao Min Def, via Chefe do Estado-Maior Conjunto das Forças Armadas (CEMCFA), dos meios a serem adjudicados, julgados adequados às necessidades, a fim de alcançar o Estado Final Desejado Operacional definido por ele ou pelo nível estratégico.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 28,
+              "texto": "Nível Tático",
+              "complemento": "São os planos táticos, ordens de operação. Conceito preliminar de operação (CPO) é a base do planejamento tático.",
+              "mnemonico": "CPO"
+            },
+            {
+              "numero": 29,
+              "texto": "Exame de Situação Tático x Exame de Situação Operacional",
+              "complemento": "Quem faz exame de situação tático? O Comandante da Força Componente. Quem faz o exame da situação operacional? O Comandante Operacional.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 30,
+              "texto": "Verificação do Centro de Gravidade",
+              "complemento": "São verificados no Conceito Preliminar de Operação (CPO), onde se estuda o problema em todas as dimensões em que se encontra inserido.",
+              "mnemonico": ""
+            },
+            {
+              "numero": 31,
+              "texto": "Linhas de Ação",
+              "complemento": "São as linhas de ação, que são as linhas de operação/esforço, pontos culminantes, pontos de decisão, variantes e pausa operacional.",
+              "mnemonico": ""
+            }
+          ]           
+        },
+        {
+          "titulo": "Capítulo II - Documentos e Ciclo de Planejamento",
+          "itens": [
+            {
+              "numero": 1,
+              "texto": "Diretriz Presidencial de Emprego de Defesa",
+              "complemento": "Determina a ativação de Comandos Operacionais e transmitir orientações políticas para solução do conflito. No caso de Defesa da Pátria, é emitida pelo Comandante Supremo das Forças Armadas (CS) assessorado pelo Gabinete de Segurança Institucional da Presidência da República (GSI/PR) e ouvido o Ministro da Defesa (MD). Em situações de normalidade. Em situações de crise ou conflito armado, a DPED é emitida pelo CS e transmitida ao MD.\nDeve conter o Estado Final Desejado Político (EFD) e o Estado Final Desejado Operacional (EFO).",
+              "mnemonico": "DPED - CS, GSI/PR, MD"
+            },
+            {
+              "numero": 2,
+              "texto": "Diretrizes Estratégicas/Planos Estratégicos",
+              "complemento": "Diretrizes Ministerial - MD, Diretriz de Planejamento Estratégico Militar e Plano Estratégico de Emprego Conjunto das Forças Armadas. DMED é elaborada pelo Chefe do Estado-Maior Conjunto das Forças Armadas (CEMCFA) e transmitida ao MD. DPEM é elaborada pelo Chefe de Operações Conjuntas (CHOC) e transmitida ao MD. PEECFA é elaborado pelo EMCFA e transmitido ao CS.",
+              "mnemonico": "DMED–DPEM–PEECFA"
+            },
+            {
+              "numero": 3,
+              "texto": "Diretriz de Planejamento",
+              "complemento": "Comandos operacionais ativados em situações de guerra ou não-guerra, devem elaborar o DIPLAN, que será transmitido ao CS para aprovação.",
+              "mnemonico": "DIPLAN"
+            },
+            {
+              "numero": 4,
+              "texto": "Diretrizes de Planejamentos Táticos",
+              "complemento": "São elaborados a partir dos Comandos operacionais ativados em situações de guerra ou não-guerra, devem elaborar o DIPLAN, que será transmitido ao CS para aprovação.",
+              "mnemonico": "Ordens de Operações/Planos Táticos"
+            },
+            {
+              "numero": 5,
+              "texto": "Hipóteses de Emprego por PEECFA",
+              "complemento": "Cada Hipótese de Emprego (HE) deve ter um PEECFA específico.",
+              "mnemonico": ""
             }
           ]
-        },
+        },          
         {
           "titulo": "Capítulo III - Operações Conjuntas das Forças Armadas",
           "itens": [
@@ -238,7 +375,7 @@
               "numero": 1,
               "texto": "Comandos Operacionais",
               "complemento": "Comandos Operacionais serão geralmente conjuntos, podendo, em casos excepcionais, serem singulares, organizados de acordo com a Estrutura Militar de Defesa.",
-              "mnemonico": ""
+              "mnemonico": "COMAE–ComDCiber"
             },
             {
               "numero": 2,
@@ -1623,7 +1760,176 @@
               "mnemonico": ""
             }
           ]
+        },
+        {
+          "titulo": "Anexo - A Arte Operacional",
+          "itens": [
+            {
+              "numero": 82,
+              "texto": "PPC – Processos e documentos de cada nível de decisão",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 83,
+              "texto": "PPC – Fatores que o PPC não prescinde (5)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 84,
+              "texto": "PPC – Características do PPC (3): FCC",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 85,
+              "texto": "PPC – Matriz de três colunas: FaDeCo",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 86,
+              "texto": "PPC – Etapas (3) e suas principais características (1 de cada)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 87,
+              "texto": "PPC – CPO – o que facilita e o que possibilita",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 88,
+              "texto": "PPC – Fases da Etapa 1 (6)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 89,
+              "texto": "PPC – Etapas (e suas divisões) da Fase 1 da Etapa 1 (3)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 90,
+              "texto": "PPC – Fatores Gerais (4)",
+              "complemento": "",
+              "mnemonico": ""
+            },
+            {
+              "numero": 91,
+              "texto": "PPC – Diagrama de Relações",
+              "complemento": "",
+              "mnemonico": ""
+            }
+          ]
         }
+      ]
+    },
+    {
+      "titulo": "Anexo D - A Arte Operacional e o Desenho Operacional",
+      "capitulos": [
+        {
+          "titulo": "Conceitos Fundamentais e Fatores Condicionantes",
+          "itens": [
+            {
+              "numero": 1,
+              "texto": "Definição de Arte Operacional",
+              "complemento": "Consiste na concepção e planejamento contínuo de operações sincronizadas para atingir objetivos operacionais. Utiliza o entendimento do ambiente e premissas estratégicas para equilibrar Espaço, Tempo e Força.",
+              "citacao": ",,",
+              "mnemonico": "Con-Pla-Sin-Ob - (Concepção, Planejamento, Sincronização, Objetivos)"
+            },
+            {
+              "numero": 2,
+              "texto": "Fatores Condicionantes da Arte Operacional",
+              "complemento": "A liberdade de ação nos níveis estratégico e operacional depende do equilíbrio de três fatores principais: Espaço, Tempo e Força.",
+              "citacao": "",
+              "mnemonico": "Es-Tem-For - (Espaço, Tempo, Força)"
+            },
+            {
+              "numero": 3,
+              "texto": "Elementos do Fator Espaço",
+              "complemento": "Os elementos que constituem o espaço são: Posição geoestratégica, Distância, Eixos de transporte e Características físicas do ambiente.",
+              "citacao": "",
+              "mnemonico": "Po-Di-Ei-Car - (Posição, Distância, Eixos, Características)"
+            },
+            {
+              "numero": 4,
+              "texto": "Elementos Tangíveis do Fator Força",
+              "complemento": "Elementos físicos mensuráveis: Tipo/Composição, Interoperabilidade, Mobilidade, Flexibilidade e Apoio Logístico.",
+              "citacao": "",
+              "mnemonico": "CIM-FLA - (Composição, Interoperabilidade, Mobilidade, Flexibilidade, Logística e Apoios)"
+            },
+            {
+              "numero": 5,
+              "texto": "Elementos Intangíveis do Fator Força",
+              "complemento": "Aspectos morais e psicológicos: Grau de Liderança, Opinião pública, Vontade de lutar, Coesão da aliança, Moral e disciplina.",
+              "citacao": "",
+              "mnemonico": "Li-O-V-Co-Mo - (Liderança, Opinião, Vontade, Coesão, Moral)"
+            }
+          ]
+        },
+        {
+          "titulo": "Elementos do Desenho Operacional",
+          "itens": [
+            {
+              "numero": 6,
+              "texto": "Principais Componentes Estruturais",
+              "complemento": "O desenho utiliza elementos gráficos para representar a visão do comandante. Os principais são: Estado Final Desejado (EFD), Objetivos Operacionais, Centro de Gravidade (CG), Pontos Decisivos (PD), Linhas de Operação/Esforço, Pontos Culminantes, Pontos de Decisão, Variantes e Pausa Operacional.",
+              "citacao": ",,,,,,,,,",
+              "mnemonico": "E-O-C + 3P + Li-Va-Pa - (EFD, Obj, CG + P.Decisivo/Decisão/Culminante + Linhas, Variantes, Pausa)"
+            },
+            {
+              "numero": 7,
+              "texto": "Definição de Ponto Decisivo (PD)",
+              "complemento": "Condição sine qua non para progredir. Define-se em termos de Força, Espaço ou Tempo. Deve ser escrito como verbo no particípio (ex: 'superioridade obtida').",
+              "citacao": ",,",
+              "mnemonico": "FET-Particípio - (Força, Espaço, Tempo descritos no Particípio)"
+            },
+            {
+              "numero": 8,
+              "texto": "Diferença entre Efeitos e Ações",
+              "complemento": "Efeitos são alterações no estado de um sistema (mensuráveis). Ações são tarefas (cinéticas ou não) realizadas para criar efeitos. Ação gera Efeito que atinge Ponto Decisivo.",
+              "citacao": ",",
+              "mnemonico": "Ação-Cria-Efeito-Muda - (Ação cria o efeito que muda o estado)"
+            },
+            {
+              "numero": 9,
+              "texto": "Pontos de Gestão da Campanha",
+              "complemento": "Ponto de Decisão (decisão crítica/transição), Ponto Culminante (perda de capacidade de continuar com sucesso) e Pausa Operacional (interrupção para regeneração).",
+              "citacao": ",,",
+              "mnemonico": "Decide-Culmina-Pausa"
+            }
+          ]
+        },
+        {
+          "titulo": "Construção do Desenho Operacional",
+          "itens": [
+            {
+              "numero": 10,
+              "texto": "Lógica de Construção",
+              "complemento": "A estrutura é concebida da direita para a esquerda (do fim para o início).",
+              "citacao": "",
+              "mnemonico": "Di-Esq (Direita para Esquerda)"
+            },
+            {
+              "numero": 11,
+              "texto": "Sequência Lógica de Montagem (Passo a Passo)",
+              "complemento": "a) Eixo horizontal (tempo); b) EFD Op; c) Objetivos Operacionais; d) Centro de Gravidade; e) Pontos Decisivos; f) Linhas de Operação/Esforço; g) Pontos Culminantes e de Decisão; h) Verificação da sequência/ritmo.",
+              "citacao": ",,,",
+              "mnemonico": "Ei-E-O-C-P-L-P-Seq - (Eixo, EFD, Obj, CG, PD, Linhas, Pontos C/D, Sequência)"
+            },
+            {
+              "numero": 12,
+              "texto": "Natureza do Desenho",
+              "complemento": "Não é uma Linha de Ação (COA), mas um arquétipo (esqueleto) capaz de abarcar várias linhas de ação. É flexível e ajustável.",
+              "citacao": "",
+              "mnemonico": "Arqué-Flex - (Arquétipo Flexível, não COA)"
+            }
+          ]
+        }        
       ]
     }
   ]

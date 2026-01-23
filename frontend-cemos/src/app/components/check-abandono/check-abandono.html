@@ -30,6 +30,10 @@
 
     <!-- Conteúdo principal -->
     <div class="livros">
+      <button class="pdf-button" (click)="gerarPDF()" aria-label="Baixar PDF" title="Baixar PDF">
+        <img src="/assets/img/svg/pdf.svg" alt="PDF" class="pdf-icon" />
+        <span class="pdf-tooltip">Baixar PDF</span>
+      </button>
       <div *ngFor="let livro of livros; let livroIndex = index" class="livro">
         <h2 class="livro-titulo">{{ livro.titulo }}</h2>
         <div class="capitulos">
