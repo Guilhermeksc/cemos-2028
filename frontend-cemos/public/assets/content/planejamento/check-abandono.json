@@ -9,20 +9,20 @@
             {
               "numero": 1,
               "texto": "Responsabilidade pelo Emprego das Forças Armadas",
-              "complemento": "Compete ao Presidente da República decidir o emprego das Forças Armadas, que determinará ao Ministro de Estado da Defesa a ativação de órgãos operacionais",
+              "complemento": "Compete ao Presidente da República decidir o emprego das Forças Armadas, que determinará ao Ministro de Estado da Defesa a ativação de órgãos operacionais.\nCompete ao Presidente da República a decisão do emprego das Forças Armadas, por iniciativa própria ou em atendimento a pedido manifestado por quaisquer dos poderes constitucionais, por intermédio dos Presidentes do Supremo Tribunal Federal, do Senado Federal ou da Câmara dos Deputados.",
               "mnemonico": "PR"
             },
             {
               "numero": 2,
               "texto": "Emprego das Forças Armadas – Possíveis subordinação",
-              "complemento": "CON: Comandos Conjuntos → via Ministro da Defesa; MIN: Ministro da Defesa direto (adestramento, conjuntas, paz), FOR: Comandante da Força (emprego isolado)",
+              "complemento": "CON: Ao CS no caso de Comandos Conjuntos → via Ministro da Defesa; MIN: Ministro da Defesa direto (adestramento, operações conjuntas, paz), FOR: Comandante da Força (emprego isolado)",
               "mnemonico": "CON–MIN–FOR"
             },
             {
               "numero": 3,
               "texto": "Emprego das Forças Armadas em Garantia da Lei e da Ordem (GLO)",
-              "complemento": "Decisão presidencial; esgotamento dos meios do art. 144; atuação episódica; área delimitada; tempo limitado; ações preventivas e repressivas\nArt. 144. A segurança pública, dever do Estado, direito e responsabilidade de todos, é exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio, através dos seguintes órgãos:\nI - polícia federal;\nII - polícia rodoviária federal;\nIII - polícia ferroviária federal;\nIV - polícias civis;\nV - polícias militares e corpos de bombeiros militares.\nVI - polícias penais federal, estaduais e distrital.",
-              "mnemonico": "P-E-A-T"
+              "complemento": "Decisão [P]presidencial; [E]esgotamento dos meios do art. 144; [A]atuação episódica; [A]área delimitada; [T]tempo limitado; ações preventivas e repressivas\nArt. 144. A segurança pública, dever do Estado, direito e responsabilidade de todos, é exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio, através dos seguintes órgãos:\nI - polícia federal;\nII - polícia rodoviária federal;\nIII - polícia ferroviária federal;\nIV - polícias civis;\nV - polícias militares e corpos de bombeiros militares.\nVI - polícias penais federal, estaduais e distrital.",
+              "mnemonico": "P-E-A-A-T"
             },
             {
               "numero": 4,
@@ -32,7 +32,7 @@
             },
             {
               "numero": 5,
-              "texto": "Definição de controle operacional",
+              "texto": "Transferência do controle operacional",
               "complemento": "O poder conferido à autoridade encarregada das operações, para atribuir e coordenar missões ou tarefas específicas a serem desempenhadas por efetivos dos órgãos de segurança pública, obedecidas as suas competências constitucionais ou legais.",
               "mnemonico": ""
             },
