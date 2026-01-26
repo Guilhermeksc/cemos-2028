@@ -129,7 +129,7 @@ Esses produtos em geral não têm necessidade de sofrer liquidações ao fim da 
 
 Numa tentativa de escapar da desconfortável situação de margens apertadas, muitas empresas procuram inovar, lançando os chamados **produtos inovadores**.
 
-| ⚠️**Conceito-chave**⚠️|
+| ⚠️Conceito-chave⚠️|
 |----------------|
 |Produtos inovadores são produtos diferenciados, lançados frequentemente, em geral com ciclo de vida curto e demanda pouco previsível, características que dão ao cliente outras razões para adquirir estes produtos do que apenas o preço mais baixo.|
 
@@ -139,9 +139,10 @@ A Nike é um exemplo. Calçados de esporte no período anterior aos anos 1970 er
 
 ### Produtos funcionais e inovadores e a estratégia de cadeia de suprimentos**
 
-| ⚠️**Fique atento**⚠️|
-|----------------|
-|As características estratégicas das cadeias de suprimentos necessárias para criar e fornecer produtos inovadores, com suas demandas voláteis e imprevisíveis, são fundamentalmente diferentes daquelas necessárias para lidar com os produtos funcionais e suas demandas mais firmes e estáveis.|
+| ⚠️ **Fique atento** ⚠️ |
+|-----------------------|
+| As características estratégicas das cadeias de suprimentos necessárias para criar e fornecer produtos inovadores, com suas demandas voláteis e imprevisíveis, são fundamentalmente diferentes daquelas necessárias para lidar com os produtos funcionais e suas demandas mais firmes e estáveis. |
+
 
 Uma das funções mais relevantes das cadeias de suprimentos é conciliar suprimento e demanda. Na medida em que as demandas são mais estáveis e previsíveis, essa conciliação é mais simples de ser feita. Quando se gerenciam demandas mais voláteis e imprevisíveis, as empresas têm de organizar seus recursos de modo a serem capazes de responder mais rapidamente a fatores inesperados, já que estes causam frequentemente desbalanceamento entre o suprimento e a demanda (às vezes, um crescimento de demanda inesperado pode resultar em custos por perda de venda se a cadeia de suprimentos não está preparada para responder a ele e, às vezes, uma demanda menor que a esperada pode resultar em custos de excesso e sobras de estoque, como a necessidade de redução de preços em liquidações). Com produtos cuja demanda é mais previsível, a necessidade de resposta rápida é menor, e as cadeias de suprimentos que os fornecem têm mais oportunidades de concentrarem seus esforços de prover um fluxo contínuo, ininterrupto e eficiente de produtos das fontes de matéria-prima até os consumidores.
 

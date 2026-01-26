@@ -28,6 +28,7 @@ export class CadeiasSuprimentosLogistica {
     'cap1-execicios.md',
     'cap2.md',
     'cap2-execicios.md',
+    'cap3.md',
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
