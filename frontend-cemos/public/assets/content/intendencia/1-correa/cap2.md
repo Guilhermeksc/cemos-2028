@@ -16,7 +16,7 @@
 
 Pela sua importância estratégica para o sucesso competitivo das orgarnizações hoje e no futuro, as decisões de gestäo de cadeias de suprimen tos não podem mais ser tratadas de forma ad hoc e localizada, Ë necessário que essas decisões se conformem a um padrão coerente que efetivamente leve a cadeia a atingir de Sempenhos maiores que aqueles de cadeias concorrentes, nos critérios de desempenho mais valorizados pelos clientes a quem atende ou pretende atender. Este Capítulo trata de uma parte importante da formação desse padrão coerente de decisões.
 
-A localização desses temas no quadro geral de referência proposto no Capítulo 1 se encon tra na Figura 2.1, enfatizando a Estratégia da cadeia de suprimentos.
+A localização desses temas no quadro geral de referência proposto no Capítulo 1 se encontra na Figura 2.1, enfatizando a Estratégia da cadeia de suprimentos.
 
 ![figura](figura2-1.png)
 
@@ -24,7 +24,9 @@ Figura 2.1 Quadro de referência para gestão de cadeias de suprimentos que ser�
 
 A seguir, uma breve descrição sobre a Embraer (Empresa Brasileira de Aeronáutica) e a evolução de sua estratégia de cadeia de suprimentos ao longo dos anos, ilustrando a sua importância para o sucesso competitivo da empresa.
 
-Embraer: como a estratégia da cadeia de suprimentos apoia o sucesso competitivo Recentemente adquirida pela americana Boeing, a Empresa Brasileira de Aeronáutica (Embraer), baseada em São José dos Campos, no estado de São Paulo, é uma das empresas das quais os brasileiros mais se orgulham. Foi fundada em l1969 numa iniciativa governamental e inicialmente era uma empresa estatal, tendo sido priva tizada em 07 de dezembro de 1994. Fonte: http://www.embraer.com/english/content/imprensa/press releases_detalhe.asp?id=2045 e website da Folha Online (http:// www.folha. uol.com.br). Acesso em: l1 set. 2008.
+**Embraer: como a estratégia da cadeia de suprimentos apoia o sucesso competitivo**
+
+Recentemente adquirida pela americana Boeing, a Empresa Brasileira de Aeronáutica (Embraer), baseada em São José dos Campos, no estado de São Paulo, é uma das empresas das quais os brasileiros mais se orgulham. Foi fundada em l1969 numa iniciativa governamental e inicialmente era uma empresa estatal, tendo sido priva tizada em 07 de dezembro de 1994. 
 
 Embora o período da Embraer como empresa pública tenha sido muito importante no desenvolvimento de competencias avançadas em engenharia aeronáutica, foi a partir da privatização que a empresa iniciou sua jornada para se tornar, num espaço de tempo relativamente curto, uma das maiores e mais competitivas fabricantes de aeronaves do mundo. A Embraer focaliza-se em segmentos de mercado específicos com grande potencial de crescimento em aviação comercial, executiva e, hoje menos intensamente, militar. A empresa foi a maior exportadora brasileira nos anos de 1999 a 2001 e a se gunda maior exportadora nos anos de 2002 a 2004. Em 2008 já empregava mais de 23 mil funcionários, mais de 85% deles baseados no Brasil. A Figura 2.3 ilustra o crescimento do número de funcionários da Embraer desde o ano 2000.
 
@@ -36,7 +38,9 @@ Desde 1996, a Embraer produziu e entregou mals de 3.300 aviões de sua família 
 
 Baseada na plataforma do jato de aviação comercial ERJ-135, a Embraer entrou no mercado de aviação executiva em dezembro de 2001 como avião Legacy para O mercado executivo corporativo. Em maio de 2005, a Embraer anunciou o lançamento de dois novos jatos, o Phenom 100 e o Phenom 300, para o segmento de aeronaves executivas extraleves e leves, com grande exxpectativa de vendas futuras.
 
-Acompanhe a evolução do número de aeronaves en tregues pela Embraer desde 1997 na Figura 2.4. A Embraer conta hoje com uma operação globalizada com unidades em quatro continentes, conforme a Figura 2.5.
+Acompanhe a evolução do número de aeronaves en tregues pela Embraer desde 1997 na Figura 2.4.
+
+A Embraer conta hoje com uma operação globalizada com unidades em quatro continentes, conforme a Figura 2.5.
 
 ## Página 32 
 
@@ -108,7 +112,10 @@ Uma forma de classificar os tipos de produtos e mercados (para então analisar q
 
 **Produtos funcionais**
 
-**Conceito-chave**
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|  Produtos do dia a dia adquiridos pelos consumidores em diferentes canais varejistas, como supermercados, lojas de conveniência e postos de gasolina. |
+
 
 Produtos funcionais são aqueles produtos do dia a dia que as pessoas compram, por exemplo, de vários canais varejistas, como supermercados, lojas de conveniência e postos de gasolina.
 
@@ -122,19 +129,19 @@ Esses produtos em geral não têm necessidade de sofrer liquidações ao fim da 
 
 Numa tentativa de escapar da desconfortável situação de margens apertadas, muitas empresas procuram inovar, lançando os chamados **produtos inovadores**.
 
-**Conceito-chave**
-
-Produtos inovadores são produtos diferenciados, lançados frequentemente, em geral com ciclo de vida curto e demanda pouco previsível, características que dão ao cliente outras razões para adquirir estes produtos do que apenas o preço mais baixo.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|Produtos inovadores são produtos diferenciados, lançados frequentemente, em geral com ciclo de vida curto e demanda pouco previsível, características que dão ao cliente outras razões para adquirir estes produtos do que apenas o preço mais baixo.|
 
 Produtos eletrônicos (pense, por exemplo, na sempre inovadora linha de produtos da Apple, com seus iPods, iPads, iPhones, iWatches e Macs) e itens de moda (como roupas e acessórios) são exemplos de produtos inovadores, mas há também exemplos de empresas que, num certo momento, inovaram suas linhas de produtos, originalmente funcionais.
 
 A Nike é um exemplo. Calçados de esporte no período anterior aos anos 1970 eram itens relativamente padronizados. A partir dos anos 1980, a Nike revolucionou o mercado com a introdução frequente de grande quantidade de novos designs, tornando o produto muito mais inovador, passando a comandar margens de lucro muito maiores. Não raro, os produtos inovadores têm lucratividade na faixa dos 20 a 80% ou até mais. O mesmo aconteceu quando a Swatch (do mesmo grupo suíço fabricante de relógios que produz os tradicionais Omega) revolucionou o mercado de relógios com seus inovadores e múltiplos designs lançados frequentemente e tornando esses itens moda. Embora produtos inovadores permitam à empresa ter maiores margens de lucro, a própria novidade constante dos produtos inovadores torna sua demanda muito mais imprevisível que aquela associada aos produtos funcionais, levando à falta e sobra de produtos, que, com frequência, têm de ser liquidados ao final da estação (reduções de preço de até 40% são comuns). Além disso, seus ciclos de vida são em geral muito mais curtos (três meses a um ano), o que torna a demanda ainda mais imprevisível (erros de previsão na casa dos 40 a 100% ou mais são comuns). Esses produtos competem conforme a estratégia competitiva com ênfase em **diferenciação**, de acordo com a classificação de Porter (1980).
 
-**Produtos funcionais e inovadores e a estratégia de cadeia de suprimentos**
+### Produtos funcionais e inovadores e a estratégia de cadeia de suprimentos**
 
-**Fique atento**
-
-As características estratégicas das cadeias de suprimentos necessárias para criar e fornecer produtos inovadores, com suas demandas voláteis e imprevisíveis, são fundamentalmente diferentes daquelas necessárias para lidar com os produtos funcionais e suas demandas mais firmes e estáveis.
+| ⚠️**Fique atento**⚠️|
+|----------------|
+|As características estratégicas das cadeias de suprimentos necessárias para criar e fornecer produtos inovadores, com suas demandas voláteis e imprevisíveis, são fundamentalmente diferentes daquelas necessárias para lidar com os produtos funcionais e suas demandas mais firmes e estáveis.|
 
 Uma das funções mais relevantes das cadeias de suprimentos é conciliar suprimento e demanda. Na medida em que as demandas são mais estáveis e previsíveis, essa conciliação é mais simples de ser feita. Quando se gerenciam demandas mais voláteis e imprevisíveis, as empresas têm de organizar seus recursos de modo a serem capazes de responder mais rapidamente a fatores inesperados, já que estes causam frequentemente desbalanceamento entre o suprimento e a demanda (às vezes, um crescimento de demanda inesperado pode resultar em custos por perda de venda se a cadeia de suprimentos não está preparada para responder a ele e, às vezes, uma demanda menor que a esperada pode resultar em custos de excesso e sobras de estoque, como a necessidade de redução de preços em liquidações). Com produtos cuja demanda é mais previsível, a necessidade de resposta rápida é menor, e as cadeias de suprimentos que os fornecem têm mais oportunidades de concentrarem seus esforços de prover um fluxo contínuo, ininterrupto e eficiente de produtos das fontes de matéria-prima até os consumidores.
 
@@ -205,9 +212,9 @@ Os dois produtos, para poderem ser competitivos em seus respectivos mercados, t�
 
 A classificação entre cadeias de suprimentos eficientes e de resposta rápida é baseada no nível de previsibilidade da demanda a ser atendida. Lee (2002), entretanto, chama a atenção para o fato de que imprevisibilidade não afeta apenas o lado da demanda das cadeias de suprimentos. Afeta também o lado dos suprimentos e, de acordo com o autor, diferentes ações estratégicas seriam apropriadas quando cadeias eficientes encaram imprevisibilidade no lado do suprimento e quando cadeias de resposta rápida enfrentam o desafio.
 
-**Conceito-chave**
-
-Suprimentos **imprevisíveis** são, por exemplo: mais vulneráveis a quebras e a outros problemas que causam interrupções; mais sujeitos a níveis de qualidade variáveis; a ter poucas fontes disponíveis de suprimentos; a fornecedores menos confiáveis; a alterações de processo; a engargalamento; a serem inflexíveis ou a terem *lead times* muito variáveis.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|Suprimentos **imprevisíveis** são, por exemplo: mais vulneráveis a quebras e a outros problemas que causam interrupções; mais sujeitos a níveis de qualidade variáveis; a ter poucas fontes disponíveis de suprimentos; a fornecedores menos confiáveis; a alterações de processo; a engargalamento; a serem inflexíveis ou a terem *lead times* muito variáveis.|
 
 Exemplos de cadeias eficientes enfrentando suprimentos imprevisíveis podem ser achados em quantidade nos mercados de produtos com insumos agrícolas, que são dependentes de safras, por sua vez sujeitas às imprevisibilidades do clima. Um exemplo extremo, apenas para ilustrar, é a demanda por sorvete de baunilha, vendido em grandes quantidades e, de forma geral, previsível. Cinquenta por cento do suprimento mundial de baunilha vem da ilha de Madagascar, que é não só sujeita a incertezas climáticas, mas também à instabilidade política, o que configura um exemplo de produto com demanda previsível, mas com suprimento imprevisível.
 
@@ -219,15 +226,15 @@ O resultado (explicado em mais detalhes no Capítulo 8) é que mesmo cadeias com
 
 Por outro lado, pode-se também pensar em exemplos de **cadeias de resposta rápida** (necessárias para lidar com demanda mais imprevisível) que encaram também condições imprevisíveis de suprimento. Exemplos são os produtos de alta tecnologia, como computadores ou produtos avançados de telecomunicações: tanto a demanda é pouco previsível como também o são os processos de suprimentos, com as incertezas características dos processos de desenvolvimento, introdução no mercado e crescimento rápido de vendas de produtos de alta tecnologia de ciclos curtos.
 
-**Fique atento**
-
-Quando cadeias eficientes encaram suprimentos imprevisíveis, segundo Lee (2002), elas deveriam usar principalmente estratégias de redução dessas incertezas.
+| ⚠️**Fique atento**⚠️|
+|----------------|
+|Quando cadeias eficientes encaram suprimentos imprevisíveis, segundo Lee (2002), elas deveriam usar principalmente estratégias de redução dessas incertezas.|
 
 As estratégias de redução de incertezas sugeridas por Lee (*op. cit.*) podem ser planejamento e gestão colaborativa de previsões e de estoques entre parceiros da cadeia, com muito compartilhamento de informações, de forma que as distorções de informação na cadeia sejam minimizadas (esses modelos colaborativos são explorados em mais detalhes no Capítulo 9). Quanto às incertezas não relacionadas à distorção de informações (por exemplo, devidas a engargalamento ou a fornecedores não confiáveis), estratégias de proteção e prevenção são recomendadas — por exemplo, o desenvolvimento de fornecedores alternativos e a criação de estoques de proteção de insumos-chave (que podem ser compartilhados entre concorrentes para minimização de custos). Os estoques estratégicos de combustíveis de países não produtores de petróleo, por exemplo, fazem esse papel. A ideia nesses casos é **reduzir a imprevisibilidade dos suprimentos**.
 
-**Fique atento**
-
-Quando cadeias de resposta rápida têm processos de suprimentos mais imprevisíveis, a estratégia recomendada é o aumento de proteção da cadeia, com a formação de colchões de estoques ou de capacidade que protejam a cadeia de possíveis interrupções.
+| ⚠️**Fique atento**⚠️|
+|----------------|
+|Quando cadeias de resposta rápida têm processos de suprimentos mais imprevisíveis, a estratégia recomendada é o aumento de proteção da cadeia, com a formação de colchões de estoques ou de capacidade que protejam a cadeia de possíveis interrupções.|
 
 Essas cadeias combinam características de proteção com resposta rápida e isso em geral só pode ser feito com uma boa gestão da **redundância** de alguns recursos (estoques e capacidade, tipicamente). Essa redundância vai aumentar os custos, mas, lembre-se, as cadeias de resposta rápida necessitam enfatizar mais a rapidez que a eficiência. Além disso, em geral as cadeias de resposta rápida conseguem, por seus produtos, preços que permitem esse aumento de custo, desde que ele permaneça em níveis competitivos. A ideia nesses casos é **preparar-se para responder bem à imprevisibilidade dos suprimentos**. A Figura 2.9 ilustra essa ideia.
 
@@ -239,9 +246,9 @@ Essas cadeias combinam características de proteção com resposta rápida e iss
 
 Em gestão de fluxos de materiais, uma das classificações importantes que diferenciam a natureza dos fluxos é aquela que separa os **fluxos empurrados** (*push*, na literatura de língua inglesa) dos **fluxos puxados** (*pull*, na literatura de língua inglesa). Uma decisão estratégica importante em cadeias de suprimentos refere-se exatamente à natureza dos fluxos, que podem ser empurrados, puxados ou híbridos (empurrados-puxados). Além disso, para os sistemas híbridos, uma decisão igualmente importante é onde localizar a chamada **“fronteira entre os fluxos empurrados e puxados”**. Analisemos cada uma dessas opções estratégicas. A primeira é aquela em que os fluxos são **empurrados**.
 
-**Conceito-chave**
-
-Fluxos **empurrados** são aqueles em que as atividades de produção e/ou movimentação de materiais ocorrem antes da ocorrência de um pedido formal de um cliente que se encontre a jusante na cadeia de suprimentos.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|Fluxos **empurrados** são aqueles em que as atividades de produção e/ou movimentação de materiais ocorrem antes da ocorrência de um pedido formal de um cliente que se encontre a jusante na cadeia de suprimentos.|
 
 Nessa modalidade, as atividades de produção e/ou movimentação são feitas baseadas numa previsão das necessidades futuras dos clientes que se encontram a jusante. Um exemplo familiar é a produção tradicional de sabão em pó. O cliente, quando chega num supermercado, espera encontrar sabão em pó disponível imediatamente na prateleira. Para que o sabão esteja lá disponível, em certo momento anterior, ele teve de ser movimentado, com antecedência, do fabricante para o supermercado (o que pode ter levado algumas horas ou mesmo dias).
 
@@ -249,9 +256,9 @@ Com maior antecedência ainda, o sabão em pó teve de ser fabricado e embalado 
 
 Com base nessa previsão, o produto produzido é “empurrado” para estágios a jusante da cadeia até que esteja disponível na prateleira esperando para ser comprado. A produção e/ou o transporte dos materiais nos sistemas empurrados de gestão de fluxos de materiais são feitos **antes** e **na esperança** de o cliente colocar seu pedido. O oposto ocorre com os **fluxos puxados**.
 
-**Conceito-chave**
-
-Fluxos **puxados** são aqueles em que as atividades de produção e/ou movimentação de materiais só ocorrem **depois** de haver um pedido formal de um cliente que se encontre a jusante na cadeia de suprimentos.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|Fluxos **puxados** são aqueles em que as atividades de produção e/ou movimentação de materiais só ocorrem **depois** de haver um pedido formal de um cliente que se encontre a jusante na cadeia de suprimentos.|
 
 Nessa modalidade, as atividades de produção e/ou movimentação não são feitas se não houver uma solicitação explícita de um cliente a jusante. Um exemplo extremo é a produção de produtos sob encomenda. O cliente, quando chega à oficina de um alfaiate para comprar um terno sob medida, não espera encontrar na prateleira exatamente o terno que será o seu, já pronto nas suas exatas medidas — a menos que o alfaiate tivesse uma bola de cristal, o que, em geral, não é o caso.
 
@@ -259,9 +266,9 @@ O alfaiate, a pedido do cliente, só então dispara suas atividades de desenho e
 
 Na maioria das cadeias de suprimentos, entretanto, nem todos os fluxos envolvidos são puxados a partir do pedido do cliente e tampouco todos os fluxos são empurrados. Há ambas as modalidades presentes. No caso do alfaiate do exemplo anterior, os aviamentos, por exemplo, as linhas, os botões e o tecido podem ter sido comprados pelo alfaiate com antecedência (ou de acordo com suas previsões de pedido) e estocados para atender aos clientes. Ou seja, parte da cadeia teve fluxo empurrado — produção e/ou transporte feitos antes do pedido, de acordo com previsões de necessidade futura — e parte da cadeia teve fluxo puxado a partir do pedido feito. Isso acontece porque há vantagens e desvantagens nos dois sistemas (empurrados e puxados) de gestão de fluxos de materiais, e trabalhar com ambos pode permitir à cadeia de suprimentos obter benefícios de ambos, minimizando simultaneamente as desvantagens de ambos.
 
-**Conceito-chave**
-
-Os fluxos **híbridos empurrados-puxados** ocorrem na maioria das cadeias de suprimentos nas quais parte dos fluxos (em geral a montante) são empurrados e parte dos fluxos (em geral a jusante) são puxados.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|Os fluxos **híbridos empurrados-puxados** ocorrem na maioria das cadeias de suprimentos nas quais parte dos fluxos (em geral a montante) são empurrados e parte dos fluxos (em geral a jusante) são puxados.|
 
 ## Página 40
 
@@ -293,9 +300,9 @@ Figura 2.10 Estratégias de cadeias de suprimentos com fluxo empurado, puxado e 
 
 Estrategicamente, é importante que, na gestão de cadeias de suprimentos, a escolha da natureza dos fluxos na cadeia seja coerente com a sua forma de competir. Há basicamente três possibilidades para a definição do projeto estratégico do fluxo: **fluxo empurrado puro**, **fluxo puxado puro** ou **fluxo híbrido empurrado-puxado**. O mais comum é o fluxo híbrido empurrado-puxado. Quando uma cadeia define que vai trabalhar de forma híbrida, a decisão mais importante passa a ser onde ela vai localizar a chamada **fronteira entre o fluxo empurrado e o fluxo puxado**, ou seja, qual parte da cadeia vai trabalhar executando atividades antes da entrada efetiva do pedido de um cliente (para maior velocidade de atendimento) e quais atividades só vão ser realizadas depois de um pedido ter entrado (para trabalhar sob menor incerteza). A localização da fronteira entre o fluxo empurrado e o puxado numa cadeia de suprimentos é uma decisão estratégica que deve ser coerente com as necessidades de eficiência e custos baixos e de capacidade de resposta, analisadas anteriormente neste capítulo.
 
-**Fique atento**
-
-Cadeias de suprimentos com necessidade de maior eficiência tenderão a trabalhar com maior parcela de seus fluxos **puxados**, enquanto cadeias de suprimentos com necessidade de resposta mais rápida tenderão a trabalhar com maiores parcelas de seus fluxos **empurrados**.
+| ⚠️**Fique atento**⚠️|
+|----------------|
+|Cadeias de suprimentos com necessidade de maior eficiência tenderão a trabalhar com maior parcela de seus fluxos **puxados**, enquanto cadeias de suprimentos com necessidade de resposta mais rápida tenderão a trabalhar com maiores parcelas de seus fluxos **empurrados**.|
 
 A Figura 2.11 ilustra o conceito. Situações completamente fora da diagonal indicada tendem a ser menos adequadas. Por exemplo, uma cadeia que exige resposta extremamente rápida, como produtos de moda de ciclo curtíssimo e alta margem, nesse caso, poderá haver problemas caso se opte por trabalhar com parcelas grandes de suas cadeias com fluxos 100% (ou próximos de 100%) puxados, ou contraproducente, pois isso faria com que até as matérias-primas mais básicas só fossem extraídas e beneficiadas quando um pedido acontecesse. Isso evidentemente faria com que o tempo de resposta fosse muito lento, causando uma resposta insatisfatória às suas necessidades estratégicas.
 
@@ -323,9 +330,9 @@ A parte da economia que trata dos custos de transação, originada pelos trabalh
 
 Uma **transação** é a transferência de um bem ou serviço entre unidades de operação tecnologicamente separadas.
 
-**Conceito-chave**
-
-Os **custos de transação** são os custos totais associados a uma transação, excetuando-se o menor preço possível do produto para a “sobrevivência” do produtor.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|Os **custos de transação** são os custos totais associados a uma transação, excetuando-se o menor preço possível do produto para a “sobrevivência” do produtor.|
 
 Custos de transação só existem porque os mercados são imperfeitos — por exemplo, as informações nos mercados não são 100% disponíveis e as pessoas não são 100% perfeitas na sua capacidade de análise. Assim, surgem comportamentos racionais nas decisões. Esses custos incluem, por exemplo, informação sobre o fornecedor, o fato de não o conhecer perfeitamente, os custos de cotação, os custos de elaboração de contratos, os eventuais custos judiciais de fazer os contratos terem efeito, entre outros.
 
@@ -354,17 +361,17 @@ A **Figura 2.12** ilustra o processo de análise de custos de transação.
 
 Figura 2.12 — Fatores influentes nos custos de transação.
 
-**Fique atento**
-
-Quanto maiores os níveis de especificidade do ativo do cliente, das incertezas, da frequência e quanto menor o número de potenciais fornecedores envolvidos com a transação, maiores seus custos.
+| ⚠️**Fique atento**⚠️|
+|----------------|
+|Quanto maiores os níveis de especificidade do ativo do cliente, das incertezas, da frequência e quanto menor o número de potenciais fornecedores envolvidos com a transação, maiores seus custos.|
 
 ## Página 44
 
 **Custos de transação e a decisão estratégica de comprar ou fazer**
 
-**Conceito-chave**
-
-A teoria econômica por trás da análise dos custos de transação preconiza que, quanto mais altos os custos de transação incorridos, mais as empresas tenderão a tentar minimizá-los via integração vertical, ou seja, tendendo a optar por fazer internamente o item em questão em vez de terceirizar sua produção. Do mesmo modo, quanto menores os custos de transação, mais as empresas tenderão, assumindo comportamento racional (embora limitado), a optar por **comprar** o item.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|A teoria econômica por trás da análise dos custos de transação preconiza que, quanto mais altos os custos de transação incorridos, mais as empresas tenderão a tentar minimizá-los via integração vertical, ou seja, tendendo a optar por fazer internamente o item em questão em vez de terceirizar sua produção. Do mesmo modo, quanto menores os custos de transação, mais as empresas tenderão, assumindo comportamento racional (embora limitado), a optar por **comprar** o item.|
 
 Os custos de transação são necessários à nossa análise, mas não são suficientes (McIvor, 2009). Também é necessário levar em conta uma outra vertente de considerações: aquela que trata do conceito de **competências centrais** (*core competencies*).
 
@@ -390,9 +397,9 @@ Competências centrais seriam também importantes portas para os mercados do fut
 
 ## Página 45
 
-**Conceito-chave**
-
-Uma **competência central** é um conjunto de habilidades e tecnologias que contribuem desproporcionalmente para o valor percebido pelo cliente e que, efetivamente, é única ou exclusiva (portanto, de difícil imitação) e tem o potencial de abrir portas para mercados promissores futuros.
+| ⚠️**Conceito-chave**⚠️|
+|----------------|
+|Uma **competência central** é um conjunto de habilidades e tecnologias que contribuem desproporcionalmente para o valor percebido pelo cliente e que, efetivamente, é única ou exclusiva (portanto, de difícil imitação) e tem o potencial de abrir portas para mercados promissores futuros.|
 
 A **Figura 2.13** ilustra o processo de identificação de competências centrais.
 
@@ -410,17 +417,17 @@ O raciocínio por trás das competências centrais advoga que uma empresa não f
 
 **Competências centrais e a decisão estratégica de comprar ou fazer**
 
-**Fique atento**
-
-Os itens resultantes da ação de competências centrais numa organização não devem ser terceirizados.
+| ⚠️**Fique atento**⚠️|
+|----------------|
+|Os itens resultantes da ação de competências centrais numa organização não devem ser terceirizados.|
 
 A Gillette tem como competência central para suas lâminas de barbear seu conhecimento do processo de produção das lâminas e do equipamento que as produz. O desenvolvimento desse processo não é, portanto, terceirizado, pois se trata de uma fonte de vantagem competitiva sustentável para a empresa. A Honda também não terceiriza o projeto ou a produção de seus motores leves e eficientes. Hoje, mais do que nunca, essa competência, dados os aumentos periódicos do preço do petróleo, é fonte importante de vantagem competitiva da empresa.
 
 **2.2.5 Um modelo para a decisão de comprar ou fazer**
 
-**Para refletir**
-
-São dois os grandes conceitos a serem levados em conta quando se decide sobre comprar (terceirizar) ou fazer determinada atividade (que resulta na produção de um bem ou serviço) numa cadeia de suprimentos: os **custos de transação** e as **competências centrais** da organização envolvida. Quanto menores os custos de transação, mais recomendada é a decisão de terceirizar a atividade. Por outro lado, quanto maiores os custos de transação, mais a empresa deve considerar manter a atividade sendo feita internamente.
+| ⚠️**Para refletir**⚠️|
+|----------------|
+|São dois os grandes conceitos a serem levados em conta quando se decide sobre comprar (terceirizar) ou fazer determinada atividade (que resulta na produção de um bem ou serviço) numa cadeia de suprimentos: os **custos de transação** e as **competências centrais** da organização envolvida. Quanto menores os custos de transação, mais recomendada é a decisão de terceirizar a atividade. Por outro lado, quanto maiores os custos de transação, mais a empresa deve considerar manter a atividade sendo feita internamente.|
 
 Quanto maiores os custos de transação, maiores os riscos a empresa ter seus custos aumentados por comportamento oportunista dos fornecedores.
 
@@ -444,9 +451,7 @@ A **Figura 2.14** ilustra um processo para decisão de comprar ou fazer.
 * **IV. Terceirizar com alto controle**
 
 **Quadrante I — Fazer ou controlar 100%**
-Atividades classificadas nesse quadrante não deveriam ser terceirizadas, mas mantidas internamente. Isso porque se trata de algo que é uma competência central, crucial para a competitividade futura da organização, e que, ao mesmo tempo, se terceirizada, por ter altos custos de transação, colocaria a empresa numa desconfortável situação potencial de cair vítima de comportamento oportunista de seus fornecedores. Em raras situações, a empresa pode se ver vítima de uma decisão anterior equivocada, que levou à terceirização de uma atividade dessa natureza. Nesses casos, a primeira opção seria reverter a decisão, trazendo a atividade para ser feita internamente de novo. A segunda, caso a primeira não seja possível ou viável, …
-
-…seria a empresa tentar, via estabelecimento de contratos fortes, garantir que continue mantendo 100% do controle sobre a atividade, o que nem sempre é fácil conseguir. Neste quadrante estão, por exemplo, as unidades de inteligência logística da FedEx, da Coca-Cola ou da Avon; o projeto dos circuitos integrados da Intel e da AMD; o relacionamento com os clientes da Dell; a manutenção da flexibilidade nos projetos dos motores da Honda; o projeto de aeronaves (ou engenharia de projeto) integrada da Embraer (em parceria com a Pratt & Whitney, a Resende e a Boeing ou a NASA), por exemplo — todas atividades cruciais para o sucesso competitivo futuro dessas empresas.
+Atividades classificadas nesse quadrante não deveriam ser terceirizadas, mas mantidas internamente. Isso porque se trata de algo que é uma competência central, crucial para a competitividade futura da organização, e que, ao mesmo tempo, se terceirizada, por ter altos custos de transação, colocaria a empresa numa desconfortável situação potencial de cair vítima de comportamento oportunista de seus fornecedores. Em raras situações, a empresa pode se ver vítima de uma decisão anterior equivocada, que levou à terceirização de uma atividade dessa natureza. Nesses casos, a primeira opção seria reverter a decisão, trazendo a atividade para ser feita internamente de novo. A segunda, caso a primeira não seja possível ou viável, seria a empresa tentar, via estabelecimento de contratos fortes, garantir que continue mantendo 100% do controle sobre a atividade, o que nem sempre é fácil conseguir. Neste quadrante estão, por exemplo, as unidades de inteligência logística da FedEx, da Coca-Cola ou da Avon; o projeto dos circuitos integrados da Intel e da AMD; o relacionamento com os clientes da Dell; a manutenção da flexibilidade nos projetos dos motores da Honda; o projeto de aeronaves (ou engenharia de projeto) integrada da Embraer (em parceria com a Pratt & Whitney, a Resende e a Boeing ou a NASA), por exemplo — todas atividades cruciais para o sucesso competitivo futuro dessas empresas.
 
 **Quadrante II — Fazer ou controlar (situação menos comum)**
 
@@ -454,11 +459,11 @@ Neste quadrante, as atividades são consideradas competências centrais para o s
 
 **Quadrante III — Terceirizar com baixo controle**
 
-Esse é o quadrante em que a decisão de terceirização é mais simples e direta. Aqui, a atividade a ser terceirizada não envolve diretamente competências consideradas centrais e, ao mesmo tempo, seus custos básicos de transação (alto número de potenciais fornecedores, baixa especificidade de ativos, baixa incerteza e possivelmente baixa frequência). Isso quer dizer que, em atividades produtivas para mercados confiáveis, com vários concorrentes lutando pela preferência dos clientes, com produtos similares. Um exemplo…
+Esse é o quadrante em que a decisão de terceirização é mais simples e direta. Aqui, a atividade a ser terceirizada não envolve diretamente competências consideradas centrais e, ao mesmo tempo, seus custos básicos de transação (alto número de potenciais fornecedores, baixa especificidade de ativos, baixa incerteza e possivelmente baixa frequência). Isso quer dizer que, em atividades produtivas para mercados confiáveis, com vários concorrentes lutando pela preferência dos clientes, com produtos similares. 
 
 ## Página 47
 
-…é a compra de papel para impressora por uma fabricante de bebidas. A produção de papel branco não envolve nenhuma competência central da empresa, o mercado fornecedor é confiável, vários fornecedores têm produtos similares e a impressora da empresa trabalha igualmente bem com quaisquer deles. Assim, a fabricante de bebidas não deveria considerar, portanto, fazer papel de impressora, mas sim comprar de fornecedores. Essa terceirização também não exige alto grau de controle do fornecedor por parte da contratante — via, por exemplo, contratos detalhados e de longo prazo, dada a confiabilidade do mercado e a similaridade dos produtos concorrentes, que levam à pouca probabilidade de comportamentos oportunistas dos fornecedores. Outros exemplos são os consumíveis utilizados em processos produtivos, os materiais de escritório, os materiais de limpeza, aqueles itens de prateleira e serviços padronizados (facilmente disponíveis e providos por vários fornecedores) que entram nos processos produtivos (como parafusos e embalagens comuns) ou nos serviços de apoio (como os serviços de entrega de documentos simples e limpeza geral).
+Um exemplo é a compra de papel para impressora por uma fabricante de bebidas. A produção de papel branco não envolve nenhuma competência central da empresa, o mercado fornecedor é confiável, vários fornecedores têm produtos similares e a impressora da empresa trabalha igualmente bem com quaisquer deles. Assim, a fabricante de bebidas não deveria considerar, portanto, fazer papel de impressora, mas sim comprar de fornecedores. Essa terceirização também não exige alto grau de controle do fornecedor por parte da contratante — via, por exemplo, contratos detalhados e de longo prazo, dada a confiabilidade do mercado e a similaridade dos produtos concorrentes, que levam à pouca probabilidade de comportamentos oportunistas dos fornecedores. Outros exemplos são os consumíveis utilizados em processos produtivos, os materiais de escritório, os materiais de limpeza, aqueles itens de prateleira e serviços padronizados (facilmente disponíveis e providos por vários fornecedores) que entram nos processos produtivos (como parafusos e embalagens comuns) ou nos serviços de apoio (como os serviços de entrega de documentos simples e limpeza geral).
 
 **Quadrante IV — Terceirizar com alto controle**
 
@@ -467,6 +472,12 @@ Aqui a atividade não envolve competências centrais da organização, portanto,
 Esse conjunto de condições leva à decisão de terceirização pelos fabricantes de microcomputadores tipo Dell e HP (por ser atividade não central), mas a forma de terceirização deve ser com **nível elevado de controle**, diferentemente do Quadrante III, dados os riscos de a empresa cliente tornar-se vítima de comportamento oportunista do fornecedor. Aqui, portanto, é recomendável que a terceirização venha acompanhada de maior nível de controle (via, por exemplo, contratos mais detalhados, exigentes e de mais longo prazo). Outros exemplos são o fornecimento de motores para os fabricantes de avião, como a Embraer, e os provedores de serviço logístico para os varejistas da Internet.
 
 As referidas discussões sinalizam para o fato de que, além da decisão de fazer ou comprar, também é essencial que a empresa, quando decide por comprar, elabore as nuances do tipo de relação que deveria ter com seus potenciais fornecedores. As simples matrizes 2 × 2 da Figura 2.7 deixam claro: **Os quadrantes I e II são grandes de fazer — mas há nuances. Há situações em que se podem obter os níveis necessários de controle sobre o fornecimento mesmo sem ter propriedade acionária. Os quadrantes III e IV são quadrantes de comprar — mas também aqui há nuances. Há situações em que se necessita maior nível de controle sobre o fornecimento e situações em que esse maior nível de controle pode ser não apenas desnecessário, mas também não recomendável.** As nuances possíveis e adequadas para o estabelecimento e gerenciamento dos relacionamentos com os vários fornecedores de uma empresa numa cadeia de suprimentos é um tema que será retomado e discutido em mais detalhes no Capítulo 5 — Gestão de risco da cadeia global de suprimentos.
+
+| ✅**Teoria na Prática** |
+|------------------|
+| A Dell está tentando vender suas fábricas de computadores no mundo todo, uma ação que pretende reformar drasticamente um modelo de produção que por muito tempo foi a marca registrada da estratégia da empresa, mas que agora não tem mais sido considerado competitivo.
+<br>Atualmente, a Dell tem procurado empresas de terceirização de manufatura de produtos eletrônicos com ofertas para vender suas fábricas de PCs. O plano parece ser o mais recente sinal das mudanças no mercado mundial de microcomputadores e da pressão crescente que a empresa tem sofrido para aumentar sua lucratividade.
+<br>A Dell, que liderou o mercado a partir da sua abordagem de manufatura enxuta (*lean manufacturing*), com produção de PCs sob encomenda direta dos clientes, agora se vê seguindo os rivais na terceirização das suas operações. Qualquer venda de fábrica ainda depende de a Dell encontrar compradores. Os dois principais candidatos são as grandes empresas de terceirização da produção de eletrônicos – a maioria localizada na Ásia. As fábricas da Dell foram originalmente projetadas para o mercado corporativo, que adquiria diretamente dos seus altos volumes de microcomputadores de mesa, configurados sob encomenda. Nos últimos três anos, entretanto, a demanda migrou para *notebooks* muito mais padronizados, vendidos para clientes em lojas do varejo. A Dell está atrás da concorrência a fim de encontrar uma forma de tornar a sua produção de computadores portáteis mais enxuta. Michael Dell, o fundador da empresa, liderou uma estratégia inovadora de vender computadores diretamente aos clientes, eliminando a configuração e montagem das máquinas apenas depois de os pedidos terem sido recebidos. Depois de o cliente efetuar seu pedido, via internet ou por telefone, as fábricas da empresa produzem os computadores a partir de componentes (cujo estoque, muitas vezes, é mantido pelos fornecedores nas fábricas da Dell, que, então, são pagos quando utilizados) que são configurados com softwares e despachados em questão de horas. O sistema original minimizava estoques e maximizava o fluxo de caixa da empresa. A Dell tem fábricas nos Estados Unidos (nos estados do Texas e Flórida), na Irlanda, na China, na Índia, no Brasil (Hortolândia), na Malásia e na Polônia. Elas ainda são consideradas bastante eficientes na produção de PCs de mesa, mas não apresentam o mesmo resultado para a produção de notebooks. Estes são mais complexos e intensivos em mão de obra, embora mais padronizados que os PCs de mesa. Um dos maiores concorrentes da Dell, a HP, já terceiriza toda a sua produção de notebooks e 88% da sua produção de PCs de mesa.|
 
 ## Página 48
 
