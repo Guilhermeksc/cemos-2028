@@ -1,16 +1,26 @@
 # Capítulo 1 Introdução à administração de cadeias globais de suprimentos
 
+## Página 1
+
 ## OBJETIVOS DE APRENDIZAGEM
 
-Explicar por que o interesse na administração de cadeias de suprimentos cresceu tanto nas últimas três décadas.
-Ser capaz de examinar e avaliar como a administração das cadeias de suprimentos pode influenciar a competitividade e o desempenho financeiro da organização. 
-Elencar as principais atividades envolvidas na administração de cadeias de suprimentos.
-Classificar os principais tipos de cadeias de suprimentos existentes.
-Argumentar sobre questões de governança, ou seja, a quem cabe a responsabilidade pela administração das cadeias de suprimentos.
+📌 Explicar por que o interesse na administração de cadeias de suprimentos cresceu tanto nas últimas três décadas.
+
+📌 Ser capaz de examinar e avaliar como a administração das cadeias de suprimentos pode influenciar a competitividade e o desempenho financeiro da organização. 
+
+📌 Elencar as principais atividades envolvidas na administração de cadeias de suprimentos.
+
+📌 Classificar os principais tipos de cadeias de suprimentos existentes.
+
+📌 Argumentar sobre questões de governança, ou seja, a quem cabe a responsabilidade pela administração das cadeias de suprimentos.
 
 ## 1.1 INTRODUÇÃO 
 
-A administração de cadeias de suprimentos tem estado, já há duas décadas, no topo da agenda dos principais executivos das empre sas, sejam elas fornecedoras de bens ou de serviços. Para grande número destas empresas, a cadeia de suprimentos é o aspecto individual com maior potencial de tornar-se o mais po deroso fator na obtenção de vantagens com petitivas nos mercados globais, assim como no aumento de lucratividade e crescimento das empresas. Um exemplo de excelência na administração de cadeias de esuprimentos, alavancando enorme Sucesso no mercado, crescimento e lucrativida de, é dado pela história do Walmart.
+A administração de cadeias de suprimentos tem estado, já há duas décadas, no topo da agenda dos principais executivos das empre sas, sejam elas fornecedoras de bens ou de serviços. Para grande número destas empresas, a cadeia de suprimentos é o aspecto individual com maior potencial de tornar-se o mais po deroso fator na obtenção de vantagens com petitivas nos mercados globais, assim como no aumento de lucratividade e crescimento das empresas.
+
+Um exemplo de excelência na administração de cadeias de esuprimentos, alavancando enorme Sucesso no mercado, crescimento e lucrativida de, é dado pela história do Walmart.
+
+## Página 2
 
 ### A maior empresa do mundo
 
@@ -25,6 +35,8 @@ A competência-chave que permitiu ao Walmart seu Crescimento e sucesso está na 
 Sam Walton, antes de fundar o Walmart, era um franqueado de uma cadeia de lojas chamada Ben Franklin Stores. Ele, embora por contrato fosse obrigado a comprar a maioria de suas mercadorias da Ben Franklin, podia, para certos itens, comprar maiores volumes de outros fornecedores, transportando-os diretamente para suas lojas.
 
 Quando o mercado norte-americano começou a valorizar mais os "varejistas de desconto", nos anos 1960, Sam Walton viu a oportunidade de abrir lojas grandes de desconto com aparência de armazéns, chamadas Walmart Discount City. Para estocá-las, ele se viu forçado a incrementar seus esforços de compras e suprimentos. Em razão da localização remota (na cidade de Bentonville, interior do Arkansas, um estado rural do centro-sul dos Estados Unidos), os fornecedores se negavam a fazer entregas nas lojas, forçando o Walmart a desenvolver um sistema próprio de distribuição.
+
+## Página 3
 
 Sam Walton estabeleceu escritórios de compras em Nova lorque, adotando a prática de compras diretas e eliminando os tradicionais intermediários (distribuidores e atacadistas). Com o crescimento dos anos seguintes, muitos dos fornecedores passaram a fixar escritórios com vendedores e analistas em Bentonville. Adicionalmente, o Walmart começou cedo a procurar fornecedores globalmente, abrindo na China, no meio dos anos 1980, o primeiro de uma série de escritórios internacionais de compras. Esses escritórios trabalhavam diretamente com fabricantes que manufaturavam produtos da marca própria do Walmart.
 
