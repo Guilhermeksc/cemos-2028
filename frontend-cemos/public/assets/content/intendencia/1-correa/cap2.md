@@ -112,7 +112,7 @@ Uma forma de classificar os tipos de produtos e mercados (para então analisar q
 
 **Produtos funcionais**
 
-```⚠️**Conceito-chave**⚠️ - Produtos do dia a dia adquiridos pelos consumidores em diferentes canais varejistas, como supermercados, lojas de conveniência e postos de gasolina.```
+⚠️**Conceito-chave:**  Produtos do dia a dia adquiridos pelos consumidores em diferentes canais varejistas, como supermercados, lojas de conveniência e postos de gasolina.⚠️
 
 Produtos funcionais são aqueles produtos do dia a dia que as pessoas compram, por exemplo, de vários canais varejistas, como supermercados, lojas de conveniência e postos de gasolina.
 
