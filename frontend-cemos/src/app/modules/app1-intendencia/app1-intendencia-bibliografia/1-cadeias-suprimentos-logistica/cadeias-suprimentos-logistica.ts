@@ -19,11 +19,15 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
   styleUrl: './cadeias-suprimentos-logistica.scss',
   encapsulation: ViewEncapsulation.None
 })
+
 export class CadeiasSuprimentosLogistica {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/intendencia/1-correa';
   fileNames: string[] = [
     'cap1.md',
+    'cap1-execicios.md',
+    'cap2.md',
+    'cap2-execicios.md',
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
