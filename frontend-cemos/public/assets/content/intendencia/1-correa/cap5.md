@@ -182,73 +182,15 @@ Figura 5.7: Categorias de riscos em cadeias de suprimentos e potenciais causas
 
 | Categoria de risco | Potenciais fatores |
 | --- | --- |
-| **Cadeia de unidades operacionais** | * Desastre natural, incêndio, greve, quebra de equipamento <br>
-
-<br> * Infraestrutura para operação e segurança local <br>
-
-<br> * Ataque terrorista, guerra, crime organizado <br>
-
-<br> * Saúde financeira dos fornecedores; uso de fornecedor único <br>
-
-<br> * Saúde financeira dos clientes; dependência de poucos clientes <br>
-
-<br> * Problemas de coordenação e colaboração entre unidades |
-| **Recursos humanos** | * Disponibilidade de recursos humanos <br>
-
-<br> * Disponibilidade de habilidades/competências <br>
-
-<br> * Ação de sindicatos e associações; regras locais |
-| **Tecnologia** | * Mudança tecnológica drástica <br>
-
-<br> * Espionagem industrial <br>
-
-<br> * Problemas com proteção à propriedade intelectual <br>
-
-<br> * Obsolescência tecnológica |
-| **Transporte** | * Disponibilidade/qualidade de transporte <br>
-
-<br> * Greves em portos e aeroportos, alfândega <br>
-
-<br> * Pirataria, roubo de carga, acidentes <br>
-
-<br> * Enchentes, deslizamentos, neve, más condições em estradas <br>
-
-<br> * Ataque terrorista, guerra |
-| **Fornecimento** | * Capacidade inadequada na fonte do suprimento <br>
-
-<br> * Inflexibilidade na fonte do suprimento <br>
-
-<br> * Problemas de qualidade <br>
-
-<br> * Aumentos de preço; escassez de *commodities* |
-| **Demanda** | * Introdução de produtos pela empresa <br>
-
-<br> * Introdução de produtos pelo concorrente <br>
-
-<br> * Volatilidade na cadeia de suprimentos por efeito "chicote" <br>
-
-<br> * Mudança repentina de demanda por condições da economia |
-| **Sistemas de informação** | * Ataques de *hackers* a *sites* da internet, p. ex. de *e-commerce* <br>
-
-<br> * Ataque de *hackers* a dados corporativos <br>
-
-<br> * Queda de sistema; quebra de infraestrutura <br>
-
-<br> * Confiabilidade/disponibilidade/agilidade das informações |
-| **Ambiente econômico** | * Mudanças relativas de níveis salariais <br>
-
-<br> * Mudanças de taxas de câmbio e de juros <br>
-
-<br> * Recessão, nível de intervenção governamental, impostos <br>
-
-<br> * Políticas governamentais restritivas/cotas, corrupção, burocracia |
-| **Ambiente político** | * Mudanças de regime político, mudança de governo <br>
-
-<br> * Golpes de Estado, guerra civil <br>
-
-<br> * Mudanças de legislação e prioridades <br>
-
-<br> * Pressão de grupos de interesse, ONGs |
+| **Cadeia de unidades operacionais** | * Desastre natural, incêndio, greve, quebra de equipamento <br><br> * Infraestrutura para operação e segurança local <br><br> * Ataque terrorista, guerra, crime organizado <br><br> * Saúde financeira dos fornecedores; uso de fornecedor único <br><br> * Saúde financeira dos clientes; dependência de poucos clientes <br><br> * Problemas de coordenação e colaboração entre unidades |
+| **Recursos humanos** | * Disponibilidade de recursos humanos <br><br> * Disponibilidade de habilidades/competências <br><br> * Ação de sindicatos e associações; regras locais |
+| **Tecnologia** | * Mudança tecnológica drástica <br><br> * Espionagem industrial <br><br> * Problemas com proteção à propriedade intelectual <br><br> * Obsolescência tecnológica |
+| **Transporte** | * Disponibilidade/qualidade de transporte <br><br> * Greves em portos e aeroportos, alfândega <br><br> * Pirataria, roubo de carga, acidentes <br><br> * Enchentes, deslizamentos, neve, más condições em estradas <br><br> * Ataque terrorista, guerra |
+| **Fornecimento** | * Capacidade inadequada na fonte do suprimento <br><br> * Inflexibilidade na fonte do suprimento <br><br> * Problemas de qualidade <br><br> * Aumentos de preço; escassez de *commodities* |
+| **Demanda** | * Introdução de produtos pela empresa <br><br> * Introdução de produtos pelo concorrente <br><br> * Volatilidade na cadeia de suprimentos por efeito "chicote" <br><br> * Mudança repentina de demanda por condições da economia |
+| **Sistemas de informação** | * Ataques de *hackers* a *sites* da internet, p. ex. de *e-commerce* <br><br> * Ataque de *hackers* a dados corporativos <br><br> * Queda de sistema; quebra de infraestrutura <br><br> * Confiabilidade/disponibilidade/agilidade das informações |
+| **Ambiente econômico** | * Mudanças relativas de níveis salariais <br><br> * Mudanças de taxas de câmbio e de juros <br><br> * Recessão, nível de intervenção governamental, impostos <br><br> * Políticas governamentais restritivas/cotas, corrupção, burocracia |
+| **Ambiente político** | * Mudanças de regime político, mudança de governo <br><br> * Golpes de Estado, guerra civil <br><br> * Mudanças de legislação e prioridades <br><br> * Pressão de grupos de interesse, ONGs |
 
 | 🔵**SAIBA MAIS**{bg=azul} |
 | --- |
@@ -267,7 +209,7 @@ O processo de gestão de riscos em cadeias de suprimentos em geral engloba os se
 5. **Avaliação dos níveis de vulnerabilidade**
 6. **Definição de ações priorizadas para redução e transferência de riscos**
 
-### Passo 1 – Identificação de processos e recursos sujeitos a riscos
+**Passo 1 – Identificação de processos e recursos sujeitos a riscos**
 
 Como é muito complexa a tarefa de analisar os riscos da empresa como um todo, em geral, o primeiro passo será a escolha de um processo ou um recurso cujos riscos se pretendam gerenciar. Os processos poderiam ser, por exemplo, "desenvolvimento de novos produtos", "gestão de demanda", "gestão de clientes", "atendimento de pedidos", "manufatura" ou "suprimentos". Imaginemos que o processo escolhido seja de "manufatura". O próximo passo é o de identificação dos principais riscos que possam afetar o processo de manufatura.
 
@@ -277,68 +219,18 @@ Imaginemos que nossa análise se refira a uma empresa fictícia chamada Confian�
 
 ## Página 130
 
-## Empresa fictícia Confiança – Principais fatores de risco
+### Empresa fictícia Confiança – Principais fatores de risco
 
 | Unidade | Fatores de Risco |
 | --- | --- |
-| **Brasil** | * Incêndio, greve, quebra de equipamento<br>
-
-<br>* Crime organizado e eventual<br>
-
-<br>* Ação de sindicatos e associações, regras locais<br>
-
-<br>* Roubo de carga, acidentes<br>
-
-<br>* Enchentes<br>
-
-<br>* Greves em portos e aeroportos, alfândega<br>
-
-<br>* Confiabilidade / disponibilidade / agilidade das informações<br>
-
-<br>* Queda de sistema; quebra de infraestrutura<br>
-
-<br>* Mudanças relativas de níveis salariais<br>
-
-<br>* Mudanças de taxas de câmbio e de juros<br>
-
-<br>* Recessão, nível de intervenção governamental, impostos<br>
-
-<br>* Políticas governamentais restritivas / cotas, corrupção, burocracia<br>
-
-<br>* Mudanças de legislação e prioridades |
-| **Estados Unidos** | * Desastre natural (terremotos, furacões), incêndio, quebra de equipamento<br>
-
-<br>* Ataque terrorista<br>
-
-<br>* Disponibilidade de recursos humanos<br>
-
-<br>* Confiabilidade / disponibilidade / agilidade das informações |
-| **Vietnã** | * Infraestrutura para operação local<br>
-
-<br>* Disponibilidade de habilidades / competências<br>
-
-<br>* Problemas com proteção à propriedade intelectual<br>
-
-<br>* Disponibilidade / qualidade de transporte<br>
-
-<br>* Confiabilidade / disponibilidade / agilidade das informações<br>
-
-<br>* Queda de sistema, quebra de infraestrutura<br>
-
-<br>* Mudanças relativas de níveis salariais<br>
-
-<br>* Mudanças de taxas de câmbio e de juros<br>
-
-<br>* Recessão, nível de intervenção governamental, impostos<br>
-
-<br>* Mudanças de regime político, mudança de governo |
+| **Brasil** | * Incêndio, greve, quebra de equipamento<br><br>* Crime organizado e eventual<br><br>* Ação de sindicatos e associações, regras locais<br><br>* Roubo de carga, acidentes<br><br>* Enchentes<br><br>* Greves em portos e aeroportos, alfândega<br><br>* Confiabilidade / disponibilidade / agilidade das informações<br><br>* Queda de sistema; quebra de infraestrutura<br><br>* Mudanças relativas de níveis salariais<br><br>* Mudanças de taxas de câmbio e de juros<br><br>* Recessão, nível de intervenção governamental, impostos<br><br>* Políticas governamentais restritivas / cotas, corrupção, burocracia<br><br>* Mudanças de legislação e prioridades |
+| **Estados Unidos** | * Desastre natural (terremotos, furacões), incêndio, quebra de equipamento<br><br>* Ataque terrorista<br><br>* Disponibilidade de recursos humanos<br><br>* Confiabilidade / disponibilidade / agilidade das informações |
+| **Vietnã** | * Infraestrutura para operação local<br><br>* Disponibilidade de habilidades / competências<br><br>* Problemas com proteção à propriedade intelectual<br><br>* Disponibilidade / qualidade de transporte<br><br>* Confiabilidade / disponibilidade / agilidade das informações<br><br>* Queda de sistema, quebra de infraestrutura<br><br>* Mudanças relativas de níveis salariais<br><br>* Mudanças de taxas de câmbio e de juros<br><br>* Recessão, nível de intervenção governamental, impostos<br><br>* Mudanças de regime político, mudança de governo |
 | **Rede toda** | * Problemas de coordenação e colaboração entre unidades |
-
-Aqui está a transcrição do texto contido na imagem:
 
 **Figura 5.8** Identificação dos principais fatores de risco para a empresa Confiança.
 
-### **Passo 3 – Avaliação da probabilidade de ocorrência associada aos principais riscos**
+**Passo 3 – Avaliação da probabilidade de ocorrência associada aos principais riscos**
 
 A avaliação de probabilidade de ocorrência é diferente e usa diferentes ferramentas e técnicas, conforme o tipo de risco: **aleatório, acidental e intencional**. Analisemos cada uma delas.
 
@@ -384,10 +276,344 @@ Isso também significa que esses ataques deverão ocorrer nos mais frágeis e me
 
 ## Página 133
 
+Também as distribuições temporais (dias, semanas, meses em que as ocorrências são mais frequentes) auxiliam no estágio de preparação. Por exemplo, em alguns setores, é frequente que nos meses que antecedem os dissídios salariais haja maior risco de mobilização sindical para greves. Um exemplo ilustrativo é do sindicato *Longshore and Warehouse Union*, americano, que em 2002 decidiu fazer uma "operação padrão" nos portos da costa oeste dos Estados Unidos. Para maximizar o impacto, escolheram exatamente o mês de outubro para a mobilização, quando o tráfego de produtos dos países asiáticos produtores é máximo na preparação dos estoques para o Natal.
+
+Também, para alguns eventos intencionais, podem-se usar informações públicas disponíveis. Por exemplo, quanto a registros de crimes comuns, há informação estatística de ocorrências por região, conforme ilustrado na Figura 5.13. Ficam claras as localidades com maior probabilidade de ocorrência de roubos.
+
+(Imagem: Mapa de previsão da ocorrência de crimes)
+
+![alt text](figura5-13.png)
+
+**Figura 5.13** Exemplo de mapa de previsão da ocorrência de crimes, por região, de uma parte de uma cidade: 0 = mais baixo risco; 100 = média de risco; e 5.000 = risco máximo.
+
+**Passo 4 – Identificação das consequências da ocorrência associada aos riscos**
+
+Na avaliação das consequências, ou impactos, da ocorrência associada aos riscos, a estatística também pode auxiliar. Se a empresa já se deparou com a ocorrência muitas vezes no passado, pode tomar sua experiência como um elemento de previsão para impactos similares no futuro.
+
+Por exemplo, uma organização que frequentemente sofre interrupções no seu suprimento de energia elétrica pode usar o impacto percebido das interrupções passadas para estimar qual o impacto de uma possível futura interrupção.
+
+Já para interrupções menos frequentes, como o fechamento prolongado de um fornecedor relevante, ou um incêndio de proporções importantes, ou uma greve prolongada, a história de eventos passados pode contribuir pouco – exatamente pelo fato de esses eventos serem raros. Nesse caso, o uso de cenários e de perguntas do tipo “o que aconteceria se...” pode ser a única alternativa. Por exemplo:
+
+▪️O que aconteceria se nosso fornecedor principal sofresse uma interrupção e sua fábrica tivesse de ser fechada por duas semanas?
+▪️O que aconteceria se houvesse uma greve na alfândega que durasse um mês?
+▪️O que aconteceria se um furacão categoria IV atingisse a fábrica da Califórnia?
+▪️O que aconteceria se a fábrica de São Paulo sofresse uma enchente séria?
+▪️O que aconteceria se um produto nosso sofresse sabotagem e fosse envenenado?
+
+Perguntas como estas fazem com que os envolvidos pensem nos impactos e, se possível, os quantifiquem, tanto em termos de aspectos tangíveis (custos associados, por exemplo) como mais intangíveis (por exemplo, quanto à perda de confiança dos clientes ou danos à imagem e marca da organização).
+
+O quadro da Figura 5.14 traz um sumário dos passos 3 e 4, dos possíveis métodos de avaliação da probabilidade e consequências de ocorrências associadas aos riscos.
+
+**Figura 5.14** Quadro sumário de formas para avaliação de probabilidade e impacto de ocorrências associadas a riscos.
+
+| Risco | Probabilidade | Consequência (exemplos) |
+| --- | --- | --- |
+| **Aleatório** | Estimada de dados históricos. Ex.: dados históricos de ocorrências de inundações ou furacões. | O que aconteceria se... Um furacão fechasse a fábrica de um fornecedor por duas semanas? |
+| **Acidental** | Estimada de dados históricos do setor industrial. Ex.: história do desempenho de entregas para avaliar a probabilidade de atrasos do fornecedor. | O que aconteceria se... Um fornecedor-chave atrasasse um componente-chave por duas semanas? |
+| **Intencional** | Estimada de dados históricos e inteligência. Ex.: mapas de frequência de roubos ou greves. | O que aconteceria se... Um embarque completo fosse roubado durante o período de lançamento? |
+
 ## Página 134
+
+**Passo 5 – Avaliação dos níveis de vulnerabilidade**
+
+Um conceito importante na gestão de riscos é o de vulnerabilidade.
+
+| 💡**Fique atento**💡{bg=amarelo} |
+| --- |
+| A vulnerabilidade de uma empresa ou cadeia de suprimentos aos riscos está associada à consideração conjunta da probabilidade da ocorrência associada ao risco e a seriedade (ou, às vezes, chamada severidade) do seu impacto. |
+
+A consideração conjunta dos níveis de probabilidade e impacto das várias ocorrências possíveis pode ser representada por meio de um gráfico, conforme a Figura 5.15.
+
+![alt text](figura5-15.png)
+
+**Figura 5.15** Ferramenta para análise de vulnerabilidade aos riscos.
+
+*Quadrante Probabilidade alta – Consequência severa* (vulnerabilidade alta): riscos que se enquadram nesse quadrante são aqueles que tornam a operação mais vulnerável. Aqui se encaixa o exemplo da ocorrência de sequestro de aeronaves de grandes linhas aéreas americanas, como a United Airlines e a American Airlines, por terroristas nos meses pós-ataque às torres do World Trade Center (WTC) em 2001. Motivados pela visibilidade alcançada pela tragédia do WTC, vários grupos terroristas passaram a ver nesse tipo de ação algo a perseguir, aumentando a probabilidade de ocorrência. Evidentemente, é impossível quantificar os impactos com precisão, já que envolveram perdas humanas substanciais, mas são os mais devastadores possível.
+
+*Quadrante Probabilidade baixa – Consequência severa* (vulnerabilidade média): aqui se encaixam os eventos com baixa probabilidade de ocorrerem, mas com alto impacto. Imagine, olhando para a Figura 5.10, a ocorrência de um tornado que atinja a fábrica da empresa Confiança (que temos usado como exemplo neste capítulo) na Califórnia, no sudoeste americano. Embora a probabilidade de um tornado atingir uma localidade específica na Califórnia seja muito baixa, os danos seriam provavelmente bastante grandes, dada a capacidade destrutiva de um tornado.
+
+*Quadrante Probabilidade alta – Consequência leve (vulnerabilidade moderada):* aqui se encontram os eventos com os quais as empresas lidam no dia a dia fazendo uso de seus sistemas de planejamento e controle. Exemplos seriam atrasos moderados na entrega de uma matéria-prima, uma quebra de um equipamento, um acidente com um caminhão transportando produtos para o centro de distribuição, entre outros. São eventos relativamente frequentes de acontecer numa maioria de ambientes, mas exercem impacto moderado, já que as empresas frequentemente têm estoques e outros recursos de segurança para lidarem com isso.
+
+*Quadrante Probabilidade baixa – Consequência leve (vulnerabilidade baixa):* definitivamente os eventos que se encaixam nesta categoria não ocupam as posições mais altas na agenda de preocupações dos gestores de riscos das cadeias de suprimentos. Trata-se de eventos que, por um lado, apresentam probabilidade baixa de ocorrerem, e quando ocorrem, têm impacto baixo, ou consequências leves.
+
+A Figura 5.16 mostra um exemplo de uso da ferramenta para análise de vulnerabilidades.
+
+**Figura 5.16** Exemplo de uso da ferramenta para análise de vulnerabilidade aos riscos de uma empresa.
+
+| Probabilidade da ocorrência (Eixo Y) | Consequências (Eixo X) |
+| --- | --- |
+| **Alta / Leves** | **Alta / Severas** |
+| Fechamento de um porto | Queda do sistema |
+| Ruptura de um link de transporte | Quebra de equipamentos |
+| Greve na alfândega | Atrasos menores de entrega |
+| **Baixa / Leves** | **Baixa / Severas** |
+| Vírus no computador | Novo concorrente |
+| Enchente | Acidentes no escritório |
+| Tempo muito quente ou frio | Epidemia de gripe |
+
+**[Conteúdo do Quadrante Superior Direito - Fundo Escuro]**
+
+* Perda de um Fornecedor-chave
+* Problemas com mão de obra
+* Ataque de hackers
+* Recessão econômica
+* Problemas visíveis de qualidade
+
+**[Conteúdo do Quadrante Inferior Direito - Fundo Cinza]**
+
+* Falha grave de TI
+* Tornado
+* Adulteração de produto
+* Greve geral
+* Irregularidades contábeis
+* Fechamento de vários portos
+* Sabotagem de funcionários
+* Mudanças tecnológicas
+* Incêndio em armazém central
+
+![alt text](figura5-16.png)
 
 ## Página 135
 
+| ✅**Teoria na Prática**{bg=azul} |
+| --- |
+| **Análise de vulnerabilidade em ação** <br><br> A General Motors do Brasil utiliza ferramentas muito similares àquelas descritas neste capítulo para analisar suas vulnerabilidades. Em seu processo de gestão de peças sobressalentes para a América Latina (*Passo 1* do processo de gestão de riscos descrito neste capítulo), a GM procura identificar potenciais fontes de risco (*Passo 2*) a partir de uma lista de áreas de risco a fim de facilitar o processo de identificação. A tabela da Figura 5.17 ilustra alguns exemplos usados pela empresa. <br><br> **Alguns exemplos de fontes potenciais de risco por área de risco** <br><br>**Figura 5.17** Alguns exemplos de fontes de riscos por área de risco consideradas pela GM Brasil para seu negócio de peças sobressalentes.<br><br>A empresa, a partir daí, procura detalhar mais as fontes de riscos em ocorrências, por exemplo, a fonte de risco "Falta de componente" é detalhada em "Falta de componentes padrão (p. ex., velas de ignição)", "Falta de componentes específicos (p. ex., porta)", de forma a poder, então, avaliar as probabilidades da ocorrência (*Passo 3*), sua consequência (*Passo 4*) e o nível da vulnerabilidade da GM ao risco (*Passo 5*). Para isso, a empresa utiliza a ferramenta ilustrada na Figura 5.18.<br><br>Dessa forma, a General Motors consegue, de forma mais objetiva, identificar e avaliar as suas fontes de vulnerabilidade. Note que na Figura 5.18 os números das células da matriz principal representam a soma dos números correspondentes aos níveis de probabilidade de ocorrência com o número correspondente à consequência da ocorrência. Por exemplo, para uma ocorrência que seja considerada *Provável* de acontecer (grau 4 de probabilidade) e com consequência *Catastrófica* (grau 5 de consequência), a vulnerabilidade calculada seria de . Um nível de risco (vulnerabilidade) grau 9 é considerado um *Risco extremo* por ser maior que 7. A recomendação, geral, então, é a de que um *Plano de ação detalhado* para lidar com esse risco seja desenvolvido. |
+
+| Comercial e legal | Econômica e financeira | Tecnológica | Cadeia de suprimentos | Política | Gestão e controle | Recursos humanos | Ambiental | Eventos naturais |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fraude | Instabilidade geopolítica | Infraestrutura de TI | Falta de componente | Decisões políticas afetando o negócio | Quebra de procedimento | Falta de mão de obra qualificada | Gestão inadequada de segurança | Terremotos |
+| Terceirização | Mau uso de fundos | Segurança da informação | Questões/falhas de fornecedores | Escrutínio constante pela mídia | Uso impróprio de recursos | Perda de pessoal-chave | Instalações/equipamento inadequados | Tempestades |
+| Negligência | Flutuações de câmbio | Obsolescência | Capacidade produtiva | Atividade terrorista | Objetivos impróprios de projeto | Gestão de desempenho | Contaminação | Inundações |
+| Quebra de contrato | Desvio de fundos | Inflexibilidade | Preço de suprimentos e venda | Percepção da comunidade |  | Baixos salários | Poluição | Incêndio |
+| Quebra de estatuto |  |  | Desempenho de transportadoras |  |  |  | Ruído |  |
+|  |  |  | Operação de portos e alfândega |  |  |  |  |  |
+|  |  |  | Inacurácia de previsões |  |  |  |  |  |
+|  |  |  | Capacidade/complexidade logística |  |  |  |  |  |
+
 ## Página 136
 
+![alt text](figura5-18.png)
+
+**Passo 6 – Definição de ações priorizadas para redução e transferência de riscos**
+
+Considerando que as vulnerabilidades ou níveis de riscos têm dois elementos formadores – a probabilidade e a consequência das ocorrências –, há genericamente duas formas de se reduzirem as vulnerabilidades: ou se reduzem as probabilidades de ocorrência, ou se reduzem as suas consequências. Evidentemente, estas duas possibilidades não são mutuamente exclusivas, e as ações de redução de vulnerabilidades em geral envolvem uma mistura de ambas. Analisemos cada uma delas.
+
+| 💡**Fique atento**💡{bg=amarelo} |
+| --- |
+| Há duas formas de se reduzir a vulnerabilidade a riscos nas cadeias de suprimentos: ou se reduzem as probabilidades, ou se reduzem as consequências das ocorrências causadoras das interrupções. |
+
+**Redução da probabilidade das ocorrências associadas ao risco**
+
+Esta opção de ação tem um aspecto preventivo e pode ser aplicado aos três tipos de risco: aleatório, acidental e intencional.
+
+▪️Nos riscos *aleatórios*, por exemplo, nos desastres naturais, as forças da natureza ainda não conseguem, numa maioria de situações, ser "domadas" por ações do homem. Não se consegue, por exemplo, diminuir a probabilidade de ocorrência de furacões, terremotos ou chuvas intensas, mas certamente é possível diminuir a probabilidade que esses fenômenos afetarem a cadeia de suprimentos. Por exemplo, historicamente, a probabilidade de ocorrência de tornados na região central dos Estados Unidos é muito mais alta do que na costa leste. Estas probabilidades deverão continuar assim por um considerável período de tempo e estão muito além do escopo de controle das empresas e suas cadeias de suprimentos. Entretanto, dentro do escopo de controle das empresas está, pelo menos até certo ponto, a decisão de localização de unidades operacionais.
+
 ## Página 137
+
+A decisão de localizar uma unidade fora da região central americana não afeta as probabilidades das ocorrências por região, mas certamente afeta a probabilidade de a unidade ser afetada por um tornado. Nem sempre, é verdade, uma empresa pode ter total liberdade para a decisão de localização de suas unidades operacionais. Se uma empresa fabricante de produtos decide objetivar os mercados da região central americana, ela pode decidir estabelecer uma fábrica na Florida Central (relativamente pouco afetada por tornados) e enviar os produtos para os estados da região central. Entretanto, algumas empresas de serviços (por exemplo, uma clínica), quando decidem objetivar os estados centrais, têm necessariamente que localizar unidades em regiões próximas de sua clientela, tendo então que conviver com riscos maiores.
+
+Observe, entretanto que isso não é verdade para todos os serviços. Com a evolução das tecnologias de informação e telecomunicação, mais e mais serviços podem ser prestados de forma remota, dando mais liberdade aos gestores nas suas decisões de localização. Um *call center*, por exemplo, pode atender a todo um país sem ter seus centros de atendimento sequer próximos do referido país.
+
+O ponto aqui, portanto, é que, para desastres naturais, embora não seja tecnologicamente possível (ainda, pelo menos) agir sobre o fenômeno natural em si, de forma que suas probabilidades de ocorrência sejam diminuídas, muitas vezes é possível que decisões dentro do escopo de controle das empresas e suas cadeias de suprimentos possam reduzir drasticamente a probabilidade que o fenômeno natural as afete. Nestas decisões são incluídas a decisão de localização (em regiões menos sujeitas aos fenômenos), as ações preventivas (por exemplo, manter as vias de escoamento de água desobstruídas para que chuvas intensas não se transformem em uma enchente que afete a empresa, ou reforçar estruturalmente os edifícios para que sofram menos com furacões).
+
+Nos riscos *acidentais*, é importante ter claro nas políticas de gestão de riscos que a orientação predominante tem de ser a de *prevenção*, ou seja, as ações preventivas na redução de riscos acidentais devem ter total prioridade em relação às ações corretivas.
+
+Riscos acidentais estão associados, entre outros fatores, à imprudência, negligência, incompetência/imperícia e a falhas das tecnologias. Quanto à imprudência, a criação de uma cultura que valorize a conscientização da importância da prevenção, por exemplo, de acidentes, com uso de equipamento de proteção industrial, criação de procedimentos e *check lists* preventivos para identificação e redução de condições e atitudes inseguras é essencial. As empresas em geral têm suas políticas de prevenção de acidentes e suas CIPAs (Comissões Internas de Prevenção de Acidentes). A mesma lógica por trás da atuação dos mecanismos de prevenção de acidentes de trabalho pode ser usada para prevenir interrupções por causas outras.
+
+Quanto à negligência, muito do que já se discutiu quanto à imprudência se aplica, mas negligência está mais ligada à atitude dos envolvidos, e, às vezes, mudar atitudes pode ser difícil. A política, nesse caso, com intuito de reduzir riscos acidentais, tem de estar ligada aos critérios de seleção de pessoal. Critérios que procurem identificar pessoas com tendência a comportamento negligente e evitem que ocupem posições de risco podem reduzir substancialmente esses riscos. Quanto à incompetência/imperícia, só há uma solução: procurar garantir que só ocupem posições na organização os profissionais que estejam com níveis de competência compatíveis com os requeridos pela posição ocupada. Motoristas mal treinados ou pouco experientes, operadores de equipamento pouco qualificados, planejadores de produção, suprimentos e distribuição que não conhecem profundamente os conceitos e técnicas de suas atribuições vão causar interrupções importantes nas cadeias de suprimentos – é apenas uma questão de tempo. Treinamento e acompanhamento para uma adequada conciliação entre competências do trabalhador e requisitos do trabalho é a melhor forma de reduzir probabilidades de erros acidentais por incompetência.
+
+Por mais que se trabalhem as opções para redução dos erros acidentais pelas pessoas, errar é humano e os erros *vão* acontecer. Uma linha de defesa adicional importante a se considerar na redução de riscos é um mecanismo que se coloca entre o "erro humano" e a "interrupção". Em outras palavras, é um mecanismo que visa a evitar que um erro se torne uma falha ou uma interrupção. Esse mecanismo é chamado *poka-yoke*, ou mecanismo à prova de falhas. O Saiba mais a seguir o descreve.
+
+## Página 138
+
+| 🔵**SAIBA MAIS**{bg=azul} |
+| --- |
+| **Poka-yoke, uma linha de defesa entre o erro e a falha (Corrêa e Corrêa, 2017)** |
+| A expressão japonesa *poka-yoke*, que, traduzida com certa liberdade significa *à prova de falhas*, engloba os conceitos desenvolvidos por Shigeo Shingo, um consultor japonês, na década de 1960.<br><br>Inicialmente, a técnica era direcionada à identificação dos potenciais de erros sujeitos a ocorrer durante o processo de fabricação, buscando eliminá-los o mais próximo possível de suas causas, por meio da adoção de dispositivos capazes de detectá-los imediatamente após a sua ocorrência, corrigindo-lhes as causas. Assim, os erros não se tornariam acidentes ou falhas (que, por sua vez, causam interrupções). O conceito foi desenvolvido tendo em vista a redução de falhas de qualidade (defeitos).<br><br>Suponha que um potencial de defeito identificado fosse a falta de um furo, obtido num processo de usinagem. A adoção de um pino que adentrasse ao furo no dispositivo de fixação da peça no estágio subsequente ao da furação eliminaria a possibilidade de uma peça sem o furo prosseguir no processo. O *erro* não desencadearia o *defeito*.<br><br>Posteriormente, continuando a busca da eliminação dos potenciais de *erros* o mais próximo possível de suas causas, os conceitos do *poka-yoke* passaram a ser aplicados desde o projeto, estendendo-se também à manutenção, segurança e processos de serviço, todos potenciais causadores de interrupções.<br><br>Os conceitos do *poka-yoke* envolvem:<br>▪️Controles ou características do produto em si ou de seu processo de obtenção, que evitem ou minimizem a ocorrência dos erros.<br>▪️Dispositivos ou ações simples (geralmente de pouco custo) ao final das operações sucessivas, de modo a detectar e corrigir os erros na sua fonte.<br><br>Alguns princípios apontam para áreas de ação na adoção do *poka-yoke*:<br>▪️*Detecção*: busca identificar o erro antes que este se torne um defeito, uma falha ou um acidente. O pino no dispositivo de fixação da peça para detectar a ausência de um furo, citado anteriormente, demonstra bem o princípio.<br>▪️*Minimização*: busca minimizar o efeito do erro. Como exemplo, considere as modernas aeronaves. O *software* de controle de voo é preparado para não atender comandos de manobras bruscas demais pelo piloto, que ponham em risco a integridade estrutural do avião. Esse *poka-yoke* é um mecanismo que evita que um erro do piloto se transforme numa falha grave e até a possível queda do avião.<br>▪️*Facilitação*: busca a adoção de técnicas que facilitem a execução das tarefas nos processos. A adoção de aparelhos de GPS, por exemplo, nos veículos de carga, minimiza a chance de interrupções por erros no caminho ou atrasos por congestionamento evitável. Os aparelhos de GPS mais contemporâneos sinalizam retenções no caminho, sugerindo rotas alternativas.<br>▪️*Prevenção*: busca ações para impedir que o erro ocorra. As entradas de combustível nos tanques dos veículos têm diâmetros diferentes (compatíveis apenas com o combustível adequado ao veículo) com o intuito de impedir o abastecimento com o combustível errado, acarretando a não disponibilidade temporária do veículo e a consequente interrupção no transporte.<br>▪️*Substituição*: busca substituir processos ou sistemas por outros mais consistentes. Os sistemas de alimentação carburados dos veículos foram substituídos pelos sistemas de injeção eletrônica, muito mais consistentes frente a variações climáticas e de solicitação do motor.<br>▪️*Eliminação*: busca a eliminação da possibilidade de ocorrência de erros pelo redesenho do produto, do processo de obtenção ou da prestação de serviço. Considere que, até pouco tempo, todos os dispositivos de carga de baterias (como das calculadoras, por exemplo) possuíam uma chave seletora da tensão de entrada (110 ou 220 volts). O engano do usuário em utilizar a tomada certa causaria, inevitavelmente, a queima do carregador. Atualmente, pelo redesenho do produto, todos os bons equipamentos permitem tanto a conexão em 110 quanto em 220 volts, sem a necessidade da seleção prévia. Outro exemplo é o uso de códigos de barras em produtos, que visam à eliminação de erros de digitação nos caixas dos supermercados.<br>![alt text](figura5-19.png)<br>**Figura 5.19** Os códigos de barras em produtos são mecanismos de *poka-yoke* que eliminam o erro de digitação, como nesse auto-checkout.<br><br>O uso de *poka-yoke* é essencialmente um mecanismo preventivo que, embora tenha sido desenvolvido para prevenir problemas de qualidade e defeitos, têm sido largamente utilizado para prevenir também os acidentes e outras causas de interrupção, tornando-se um valioso aliado no objetivo de reduzir a probabilidade de ocorrências causadoras de interrupção nas cadeias de suprimentos.|
+
+## Página 139
+
+Nos riscos *intencionais*, a prevenção também é essencial, e prevenir riscos de ocorrências intencionais inclui aumentar a segurança. *Firewalls* contra ataques virtuais, sistemas protegidos por senhas seguras, transmissão de dados criptografados, segurança patrimonial para garantir acesso apenas a pessoas autorizadas e evitar roubo, sabotagem e espionagem industrial, mecanismos de segurança para prevenir roubos de carga, localização de unidades em áreas mais seguras, são todos exemplos de mecanismos que visam a aumento de segurança contra a ocorrência de eventos intencionais causadores de interrupção. Sheffi (2005) sugere que, para reduzir a probabilidade de riscos intencionais, a empresa:
+
+▪️*use métodos em camadas.* Um exemplo são as camadas com diferentes níveis de segurança e acesso: primeiro, à empresa (crachá), depois a departamentos mais sensíveis (portas com teclado e senha de acesso), depois a equipamentos com senhas e possíveis sistemas biométricos (retina, impressão digital) de identificação e assim por diante;
+
+▪️*consiga identificar atividades que representem ameaça dentre as normais.* A grande maioria das atividades realizadas dentro da empresa e na interface entre ela e seu ambiente é benigna. Apenas uma pequena proporção representa ameaça – os padrões destas atividades devem ser rapidamente identificados;
+
+▪️*trabalhe colaborativamente e construa parcerias.* Como nas cadeias de suprimentos mercadorias e outros fluxos, como o financeiro e o de informações, trocam constantemente de mãos e envolvem muitas empresas, o trabalho colaborativo e integrado entre estas empresas pode ajudar a garantir um ambiente de operação mais seguro;
+
+▪️*Treine muito e teste constantemente seus mecanismos.* Um dos perigos das medidas de segurança é elas se tornarem rotineiras e as pessoas deixarem de dar a elas a importância e atenção devidas. Assim, os sistemas devem ser constantemente testados, com a simulação de ocorrências, com ou sem o conhecimento prévio dos envolvidos, a fim de identificar a eficácia das medidas de segurança e ajudar a manter o nível de atenção.
+
+**Redução das consequências das ocorrências associadas ao risco**
+
+Uma segunda forma de redução dos riscos de interrupção nas cadeias de suprimentos é desenvolver e implantar ações e mecanismos para reduzir a *consequência* das interrupções. Aqui não se ganha muito por separar as ações por tipo de risco, porque, uma vez ocorrida a interrupção, o mais importante é que de forma rápida e eficiente as operações voltem à sua operação normal. Aqui, em geral, duas abordagens básicas podem ser usadas: redundância de recursos, agilidade e flexibilidade. De novo, estas duas abordagens gerais não são mutuamente exclusivas e podem (e muitas vezes devem) ser usadas em combinação.
+
+▪️*Redundância de recursos* se refere a manter mais recursos disponíveis à empresa do que aqueles estritamente necessários à operação sob condições normais. Esses recursos "extras" são mantidos em níveis bem gerenciados exatamente para ajudar a empresa a fazer frente a possíveis interrupções. Se uma empresa mantiver algum nível de estoques de segurança (ver Capítulo 9) de um certo item, por exemplo, estará mais robusta a uma interrupção de fornecimento do que se não contar com nenhum estoque de segurança do item; se uma empresa tem apenas um fornecedor qualificado de certo item, será muito menos robusta a uma interrupção do que se tiver vários; se uma empresa tiver alguma capacidade extra de produção, sofrerá menos com a quebra de uma máquina; se tiver reservas financeiras, será mais robusta à saída do mercado de um cliente importante; se uma empresa de entregas expressas como a UPS ([www.ups.com](https://www.ups.com)) tiver aeronaves de reserva, sofrerá muito menos com uma interrupção causada por uma aeronave impedida de levantar voo pela falta de uma peça; se uma empresa tem *backups* de seus sistemas e dados, sofrerá menos com uma interrupção eventual causada por uma queda de sistema, um dano a um disco rígido ou ataque de um *hacker*.
+
+## Página 140
+
+▪️*Agilidade* se refere a características planejadas para o sistema a fim de torná-lo mais robusto. Por exemplo, na ocorrência de uma interrupção, os sistemas de informação e as pessoas envolvidas necessitam ter a agilidade para identificar o ocorrido, avaliar a sua severidade e disparar ações de recuperação. Isso não significa ter recursos redundantes, mas ter recursos que façam a informação fluir rapidamente até que chegue aos pontos de decisão adequados. Quando se percebe que um desastre natural afetou substancialmente um fornecedor, essa informação às vezes chega à empresa por meio de uma comunicação externa feita ao comprador. Este deve ter o discernimento e a rapidez para, se necessário, mobilizar outros membros da organização para avaliar o potencial impacto da ocorrência e ter os canais de comunicação abertos com níveis hierárquicos superiores para que eles sejam envolvidos o mais rapidamente possível. Estes, por sua vez, também têm de ter agilidade para disparar ações o mais rapidamente possível. Na gestão de uma crise, tempo é essencial, principalmente nos momentos imediatamente posteriores ao ocorrido, nas etapas de contenção do dano e início da etapa de preparação para recuperação.
+
+* *Flexibilidade* é outra característica que pode alavancar muito a resposta às interrupções, auxiliando a reduzir suas consequências. Uma empresa, por exemplo, que tenha quatro fábricas dedicadas, cada uma a produzir exclusivamente um dos quatro produtos que vende ao mercado, quando sofre uma interrupção importante numa das fábricas, perde 100% da produção do referido produto. Se, por outro lado, a empresa tem quatro fábricas flexíveis, capazes de produzir, cada uma, os quatro produtos que a empresa vende, uma interrupção importante numa fábrica será mais facilmente absorvida pelas outras, desde que tenham alguma capacidade extra. Um grupo de funcionários polivalentes será muito mais capaz de produzir mesmo com um deles ausente do que um grupo de funcionários em que cada um seja capaz de executar apenas uma tarefa. Outros aspectos de flexibilidade que auxiliam na capacidade de reduzir as consequências de uma interrupção são a modularização e a padronização de peças, produtos e processos. Com maior padronização, mais intercambialidade de peças entre produtos, produtos entre mercados, e de processos entre unidades produtivas pode ser feita, na ocorrência de interrupções da disponibilidade de recursos (máquinas, fábricas) e do suprimento de peças.
+
+Evidentemente, quando se trabalha com recursos redundantes e/ou flexíveis, há custos adicionais. Por isso, é muito importante pesar os custos extras da redundância e da flexibilidade dos recursos com os benefícios de uma maior robustez ou resiliência (a capacidade de recuperação da cadeia depois de uma interrupção) da cadeia de suprimentos.
+
+![alt text](figura5-20.png)
+
+A Figura 5.20 ilustra as estratégias gerais de redução das probabilidades e consequências das ocorrências associadas a riscos.
+
+**Figura 5.20** Estratégias genéricas de redução de riscos.
+
+**Transferência de riscos**
+
+Em várias situações, as empresas optam por transferir a terceiros parte dos riscos associados a interrupções. A forma mais evidente de transferência de riscos é o uso de empresas seguradoras que, por sua vez, em muitas situações, retransferem parte dos seus riscos para outras seguradoras em operações de resseguro. Da mesma forma que as empresas participantes das cadeias de suprimentos, as seguradoras também procuram trabalhar os dois aspectos dos seus riscos: a probabilidade de ocorrência de eventos causadores de interrupção/dano e as suas consequências, já que responsabilizar-se-ão por prejuízos decorrentes das consequências dos eventos, caso estejam dentro do que foi previsto em contrato entre seguradora e empresa segurada.
+
+**Percepção de riscos em cadeias de suprimentos no Brasil**
+
+Num dos poucos artigos da literatura que abordam gestão de risco no Brasil, Blos *et al.* (2009) investigaram utilizando pesquisa por levantamento (*survey*) a percepção de risco, nas cadeias de suprimentos, de executivos dos setores automotivo e de produtos eletrônicos no Brasil. Embora a amostra não seja grande (49 empresas responderam o questionário dos pesquisadores), a percepção identificada dos gestores quanto às principais vulnerabilidades de suas cadeias de suprimentos em relação a fatores que os fazem "expostos a perturbações sérias, originadas de riscos internos e externos à cadeia de suprimentos" é curiosamente similar quando se comparam ambos os setores industriais analisados. A tabela da Figura 5.21 traz os resultados da pesquisa.
+
+## Página 141
+
+**Vulnerabilidade Financeira**
+
+| # | Fator de Risco | Automotivo % | Eletrônico % |
+| --- | --- | --- | --- |
+| 1 | Crédito | 35 | 33 |
+| 2 | Liquidez/caixa | 20 | 21 |
+| 3 | Recessão econômica | 10 | 11 |
+| 4 | Instabilidade dos mercados financeiros | 9 | 9 |
+| 5 | Flutuação de taxas de câmbio | 8 | 8 |
+| 6 | Preços de combustíveis | 7 | 7 |
+| 7 | Mudanças adversas nas leis para o setor | 6 | 6 |
+| 8 | Inadimplência | 5 | 5 |
+
+**Vulnerabilidade Estratégica**
+
+| # | Fator de Risco | Automotivo % | Eletrônico % |
+| --- | --- | --- | --- |
+| 1 | Sindicatos | 27 | 25 |
+| 2 | Relações com canal de distribuição | 17 | 18 |
+| 3 | Relações com fornecedores | 15 | 14 |
+| 4 | Relações com clientes | 13 | 12 |
+| 5 | Lançamento de programas | 12 | 12 |
+| 6 | Número de fornecedores | 9 | 9 |
+| 7 | Decisões tecnológicas | 5 | 6 |
+| 8 | Novos concorrentes | 2 | 4 |
+
+**Vulnerabilidade a Eventos Danosos**
+
+| # | Fator de Risco | Automotivo % | Eletrônico % |
+| --- | --- | --- | --- |
+| 1 | Dano a propriedade | 23 | 21 |
+| 2 | Incêndio em edifício ou equipamento | 15 | 15 |
+| 3 | Dano por raio | 15 | 14 |
+| 4 | Dano por ventania | 9 | 10 |
+| 5 | Explosão de caldeira ou máquina | 9 | 9 |
+| 6 | Perda de instalação-chave | 7 | 8 |
+| 7 | Poluição do terreno, água ou ar | 7 | 7 |
+| 8 | Perdas de carga no transporte | 3 | 4 |
+| 9 | Risco geopolítico | 3 | 3 |
+| 10 | Inundação | 3 | 3 |
+| 11 | Sabotagem | 3 | 3 |
+| 12 | Tempestades | 3 | 3 |
+
+**Vulnerabilidade Operacional**
+
+| # | Fator de Risco | Automotivo % | Eletrônico % |
+| --- | --- | --- | --- |
+| 1 | Roubo | 17 | 18 |
+| 2 | Erros de operador/acidente | 15 | 16 |
+| 3 | Perda de pessoal-chave | 11 | 13 |
+| 4 | Vírus de computador | 9 | 10 |
+| 5 | Má qualidade | 9 | 10 |
+| 6 | Falha em sistemas de TI | 9 | 8 |
+| 7 | Riscos com recursos humanos | 9 | 8 |
+| 8 | Perda de fornecedor-chave | 5 | 4 |
+| 9 | Interrupção na logística (p. ex., rotas) | 4 | 4 |
+| 10 | Perda de equipamento-chave | 4 | 3 |
+| 11 | Falha no provedor logístico | 4 | 3 |
+| 12 | Falha em instalações | 4 | 3 |
+
+**Fonte:** Blos *et al.* (2009), conforme indicado na Figura 5.21 da imagem.
+
+### 5.3 ESTUDO DE CASO: CISCO E A GESTÃO DE RISCOS NA CADEIA DE SUPRIMENTOS
+
+**Figura 5.22** Sede da Cisco Systems, em São Francisco (EUA).
+
+Um dos maiores terremotos que já atingiram a China ocorreu em 12 de maio de 2008, com magnitude de 7,8 na escala Richter e epicentro a 80 km a noroeste de Chengdu, a capital da província de Sichuan. O evento representou um teste de fogo para o recém-implantado mecanismo de gestão de riscos da Cisco Systems ([www.cisco.com](https://www.cisco.com)), gigante dos equipamentos eletrônicos para telecomunicações e cadeias de computadores, fundada em 1984 e com faturamento de mais de 40 bilhões de dólares em 2008, empregando 65 mil pessoas em todo o mundo.
+
+Nos últimos anos, o monitoramento de crises na cadeia de suprimentos se tornou uma parte essencial do programa Cisco de Gestão de Risco na Cadeia de suprimentos (GRCS) dentro do setor recém-renomeado Gestão da Cadeia de Valor ao Cliente (GCVC). Na Cisco, GCVC é uma função central, anteriormente chamada Gestão de Cadeia Global de Suprimentos, tendo mudado de nome para enfatizar o foco no cliente.
+
+Para fazer o programa funcionar, a equipe de GRCS tem parcerias próximas com outros setores da organização de GCVC, como o setor de Gestão Global de Fornecedores (GGF), que supervisiona as decisões de compras e suprimentos e relações com fornecedores globalmente; Operações de Produto, que transforma inovações de engenharia em produtos robustos; e Operações Globais de Manufatura, que supervisiona as operações de produção e logística da empresa por meio de uma extensa cadeia de parceiros (95% da produção da Cisco é terceirizada).
+
+## Página 142
+
+O programa de gestão de risco na cadeia de suprimentos (GRCS) da Cisco consiste nos seguintes componentes:
+
+1. **Programa de Planejamento de Continuidade do Negócio (PCN).** Esse programa tem foco nos fornecedores, manufaturas terceirizadas e provedores de serviços logísticos, especificando e documentando planos e tempos de recuperação e definindo padrões de resiliência a serem atingidos.
+2. **Gestão de crise.** A equipe global de gestão de crise da Cisco é responsável pelo monitoramento global e resposta a interrupções 24 horas por dia, sete dias por semana.
+3. **Resiliência de produtos.** A gestão global de fornecedores (GGF) e a equipe de gestão de riscos em particular colaboram aqui para endereçar três questões:
+▪️ auxiliar as unidades de negócios a tomarem boas decisões estratégicas que considerem vulnerabilidades em relação ao projeto de produtos;
+▪️ traduzir estratégias de longo prazo de redução de risco em prioridades de curto prazo; e,
+▪️ reduzir o custo de programas e estratégias de redução de risco.
+4. **Resiliência da cadeia de suprimentos.** O GRCS trabalha com operações de manufatura, com as manufaturas terceirizadas e com os parceiros provedores de serviços logísticos a fim de identificar nós na cadeia de suprimentos com tempos estimados de recuperação de interrupções maiores que a tolerância estabelecida pela Cisco e desenvolver planos de aumento de resiliência desses nós.
+
+### Parceiros-chave
+
+O programa Cisco de GRCS requer muita colaboração multissetorial. Por exemplo, o time de GRCS trabalha com a equipe de engenharia para avaliar atributos de resiliência de novos produtos ainda em desenvolvimento (por exemplo, a dependência de fornecedores únicos). Esse planejamento permite à empresa construir resiliência na cadeia de suprimentos desde as etapas de projeto de produtos e de processos. Às vezes, requisitos de projeto são conflitantes com os níveis requeridos de resiliência na cadeia de suprimentos. Pode haver risco, por exemplo, de se projetar um produto que dependa exclusivamente de um fornecedor novo — uma empresa, por exemplo, que ainda não tenha demonstrado sua habilidade de aumentar volumes de produção com a rapidez necessária ou manter estabilidade financeira ao longo do tempo. Para produtos já em produção, a equipe de GRCS trabalha de perto com operações de manufatura a fim de definir planos de aumento de resiliência (por exemplo, qualificando fornecedores alternativos, fábricas alternativas e negociando e implantando estoque e capacidade produtiva de segurança).
+
+### O programa de GRCS da Cisco em ação
+
+A Cisco tem centenas de parceiros terceirizados com fábricas ao redor do mundo. Para permitir o monitoramento da cadeia de suprimentos, em primeiro lugar a equipe precisa entender onde cada componente dos produtos Cisco é de fato produzido. Para coletar essa informação crucial, foi desenvolvido o planejamento de continuidade do negócio (PCN) que coleta todas as informações necessárias para realizar a análise de risco da cadeia de suprimentos, adicionalmente ao plano de gestão de crise. A coleta de dados dos fornecedores inclui: endereço físico das fábricas, contatos em emergência, localização de fábricas alternativas e tempo de recuperação no caso de necessidade de mudança de produção para a fábrica alternativa. A coleta de informações inclui também uma avaliação dos planos de continuidade dos próprios fornecedores, na eventualidade de uma interrupção.
+
+Com a cadeia de unidades de operação definida, a organização de GRCS está pronta para começar a correlacionar eventos mundiais com as localizações estratégicas no mapa. A equipe utiliza informações da NC4 (National Center for Crisis and Continuity Coordination – Centro Nacional para Coordenação de Crises e Continuidade ([http://www.nc4.us](http://www.nc4.us)), uma organização que monitora continuamente perturbações mundiais de várias naturezas: políticas, meteorológicas, sísmicas, entre outras), o que permite construir perfis de alerta baseados em específicas localidades.
+
+A NC4 envia sistematicamente a seus clientes, como a Cisco, alertas customizados, que podem ser filtrados com base em vários atributos, como severidade e tipo da ocorrência. No caso do terremoto de Chengdu, a equipe da Cisco foi notificada com o seguinte alerta da NC4: *Incidente meteorológico e geofísico moderado a extremo a menos de 100 km da localidade da cadeia de suprimentos.*
+
+Esse monitoramento próximo e em tempo real reduz muito o tempo de resposta a eventos que não estejam sob controle da Cisco. No caso de Chengdu, em 48 horas a empresa foi capaz de conduzir uma análise completa do impacto do incidente, incluindo uma avaliação de fornecedores, peças e produtos afetados. Dentro de dois dias, a equipe de GRCS havia iniciado um levantamento completo da crise visando à comunicação com os contatos de emergência dos fornecedores da região.
+
+Em paralelo, a Cisco disparou avaliações completas junto às empresas parceiras para averiguar o impacto financeiro. Essa análise inicial revelou, em menos de 24 horas, que a empresa tinha algo em torno de 20 fornecedores na área afetada.
+
+## Página 143
+
+Embora não tenha havido nenhum impacto direto em nenhuma instalação fabril ou armazém da empresa ou terceirizada, havia dois fornecedores de componentes potencialmente sob risco: o Fornecedor X, que apresentava risco de redução de faturamento para a Cisco (além de ser fornecedor único) e o Fornecedor Y, com menor impacto no faturamento, mas com dano físico em um de seus edifícios.
+
+Ocorre que a equipe de GRCS, junto com a função de gestão global de suprimentos, havia proativamente começado a trabalhar para endereçar a questão de fornecedor único do Fornecedor X e já havia identificado uma fonte alternativa alguns meses antes. Quanto ao Fornecedor Y, o time de GRCS de gestão de crise mobilizou colegas internos de planejamento de operações e suprimentos para ativar fontes alternativas de suprimentos anteriormente identificadas, assim como conseguir o comprometimento do fornecedor com o aumento de sua capacidade.
+
+## Quantificando o impacto
+
+Uma vez identificadas as instalações afetadas pelo terremoto na China, foi possível usar a informação coletada para determinar o potencial impacto da ocorrência nos despachos futuros de produtos da Cisco para seus clientes e, como consequência, o impacto nos resultados da organização.
+
+A Cisco utiliza as mesmas capacitações analíticas para desenvolver avaliações proativas e desenvolver iniciativas de redução de risco. Para isso, a empresa usa um "mecanismo de risco" para avaliar a probabilidade de ocorrências. O mecanismo de risco inclui várias bases de dados (como dados históricos de 100 anos de inundações, dados atuariais, dados geopolíticos e geológicos, dados de acidentes por instalação, dados de desempenho histórico de fornecedores).
+
+Estas probabilidades de interrupção são correlacionadas com todas as localidades envolvidas com a cadeia de suprimentos da Cisco, como as fábricas dos fornecedores, as manufaturas terceirizadas, os armazéns e os centros logísticos. O impacto de uma interrupção é determinado com base em quanto o faturamento da Cisco é dependente de cada um dos nós da cadeia de suprimentos analisados e nos correspondentes tempos de recuperação em caso de interrupção. A Cisco usa até modelos de simulação para consideração conjunta de todos esses dados para a criação de mapas visuais, baseados em probabilidades e impactos de interrupções.
+
+## Reduzindo riscos na base de fornecedores
+
+Um programa centralmente coordenado facilita uma resposta rápida e coordenada para crises. Por exemplo, em 2008, quando a situação da economia mundial se degradou, a Cisco ficou preocupada com a saúde financeira de vários de seus fornecedores principais. A empresa rapidamente lançou uma iniciativa de avaliação de risco financeiro a fim de identificar fornecedores com itens fornecidos com exclusividade que teriam implicações importantes em termos de faturamento em caso de interrupção por saída do mercado. Colaborativamente com o grupo de gestão global de suprimentos e com o setor financeiro, a equipe de GRCS rapidamente organizou reuniões com os parceiros em risco e, depois de uma completa avaliação, classificou-os em três categorias: "verde", que não requeriam qualquer ação, "amarelo", que requeriam monitoramento, e "vermelho", que necessitavam de ações de redução de risco. Para fornecedores que caíram na classificação vermelha, a Cisco rapidamente disparou ações para identificar fornecedores alternativos. Quando dois dos fornecedores foram à falência meses depois, a empresa já havia estabelecido fontes alternativas para as peças fornecidas por eles, reduzindo assim, substancialmente, o impacto das interrupções.
+
+## Reduzindo risco nas unidades manufatureiras
+
+Novamente em relação ao terremoto de Chengdu, baseado na avaliação do impacto, a Cisco foi capaz de rapidamente avaliar se tinha havido impacto nas suas unidades produtivas ou centros logísticos. Se tivesse havido, o programa de redução de risco teria entrado em ação para ativar os planos de recuperação e garantir que esta ocorresse dentro dos tempos pré-estimados, trabalhando intensamente e de perto com os grupos envolvidos, como o de gestão de manufatura.
+
+Construir resiliência pode ser bastante caro, dada a complexidade e o tamanho da tarefa. No caso da Cisco, implica coletar dados de mais de 700 fornecedores, identificar e qualificar fontes de suprimentos alternativas e construir capacidades de resposta a crises que possam lidar com mais de oito mil produtos. Orçamentos específicos são necessários e isso só se consegue com o comprometimento da alta direção.
+
+## Página 143
+
+## 5.4 RESUMO
+
+▪️Se, por um lado, as cadeias globais representam enormes oportunidades de redução de custos e de uso de talentos e recursos onde quer que se localizem (ver Capítulo 4), por outro lado, os riscos também aumentaram muito.
+▪️Risco, genericamente considerado, pode ser definido como o valor estatístico da expectativa sobre um evento indesejado que pode ocorrer ou não.
+▪️O valor da expectativa sobre um possível evento negativo é dado pela consideração conjunta da probabilidade estimada da sua ocorrência por alguma medida de sua severidade, impacto ou consequência.
+▪️Risco em cadeias de suprimentos está associado à possibilidade de um evento indesejado ocorrer e seu consequente impacto na consecução do objetivo amplo da gestão de cadeias de suprimentos, que é o de conciliar suprimento e demanda.
+▪️Diferentes tipos de risco, aleatórios, acidentais e intencionais, podem exigir diferentes formas de gestão.
+▪️É importante classificar os riscos, porque as formas de se lidar com os diferentes tipos pode ser diferente.
+▪️O processo de gestão de risco em cadeias de suprimentos em geral engloba os seguintes passos:
+1. identificação de processos e recursos sujeitos a riscos;
+2. identificação dos principais riscos;
+3. avaliação da probabilidade de ocorrência associada aos principais riscos;
+4. identificação das consequências da ocorrência associada aos riscos;
+5. avaliação dos níveis de vulnerabilidade;
+6. definição de ações priorizadas para redução e transferência de riscos.
+▪️A vulnerabilidade de uma empresa ou cadeia de suprimentos aos riscos está associada à consideração conjunta da probabilidade da ocorrência associada ao risco e a seriedade (ou, às vezes, chamada severidade) do seu impacto.
+▪️Há duas formas de se reduzir a vulnerabilidade a riscos nas cadeias de suprimentos: ou se reduzem as probabilidades, ou se reduzem as consequências das ocorrências causadoras das interrupções.
+▪️A expressão japonesa *poka-yoke*, que traduzida com certa liberdade significa à prova de falhas, engloba os conceitos desenvolvidos por Shigeo Shingo, um consultor japonês, na década de 1960. O conceito pode ser adaptado para auxiliar no controle de riscos.
