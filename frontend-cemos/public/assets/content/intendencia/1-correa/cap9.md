@@ -587,7 +587,7 @@ Os custos totais envolvidos no sistema de estoques ilustrado na Figura 9.23 pode
   [
   CA = C_e \cdot \frac{L}{2}
   ]
-  
+
 **Custo de pedido CP:** multiplica-se o custo fixo de um pedido  pelo número de pedidos feitos num ano (demanda anual  dividida pelo tamanho de lote ):
 
 **Custo de pedido (CP):**
@@ -599,15 +599,37 @@ O custo de armazenagem (de estocar), de pedido (de pedir) e o custo total são m
 
 ## Página 270
 
+![alt text](figura9-23.png)
+
 Pode-se demonstrar que, para essa modelagem, os custos mínimos de operação do sistema ocorrem quando o custo de armazenagem se iguala ao custo com pedidos (acompanhe na Figura 9.23). Isso só ocorre quando o tamanho de lote assume determinado valor, chamado de lote econômico (). Estabelece-se então a equação:
+
+**Condição de equilíbrio dos custos (lote econômico):**
+  [
+  C_f \cdot \frac{DA}{L_E} = C_e \cdot \frac{L_E}{2}
+  ]
 
 O lote econômico (aquele que minimiza os custos totais considerados) é dado, portanto, por:
 
+**Lote Econômico (LE):**
+  [
+  L_E = \sqrt{\frac{2 \cdot DA \cdot C_f}{C_e}}
+  ]
+
 Para calcular o outro parâmetro, o ponto de ressuprimento, basta multiplicar a taxa de demanda por unidade de tempo, , pelo tempo de ressuprimento  (na mesma unidade de tempo da demanda), como visto a seguir. Isso garante que, quando um pedido é feito, tem-se em estoque uma quantidade suficiente para atender a demanda média durante o *lead time*.
+
+**Ponto de Ressuprimento (sem estoque de segurança):**
+  [
+  PR = D \cdot TR
+  ]
 
 ### Considerações para definição de estoque de segurança
 
 Em situações reais, nem sempre os pressupostos do modelo de ponto de ressuprimento com lote econômico estão presentes. Em geral, as demandas não são constantes, como foi assumido, podendo ter tendências de crescimento ou decréscimo, ou ciclicidades. Mesmo quando a demanda é relativamente constante, há flutuação aleatória em torno de uma média. Se considerada a fórmula  de forma estrita, qualquer flutuação da demanda durante o *lead time* para um valor acima da média considerada acarreta a falta do item. Para isso não acontecer, em situações práticas acrescenta-se certa quantidade de estoques ao valor da "demanda média durante o *lead time*" a fim de proteger o sistema contra essas flutuações aleatórias normais. A essa quantidade dá-se o nome de estoque de segurança (). O ponto de ressuprimento então passa a ser calculado como
+
+**Ponto de Ressuprimento (com estoque de segurança):**
+  [
+  PR = D \cdot TR + E_{seg}
+  ]
 
 A pergunta, a partir daí, passa a ser: que quantidade de estoques de segurança manter?
 
@@ -619,14 +641,31 @@ Surge então a necessidade de quantificar a incerteza. Em outras palavras, de sa
 
 Vamos assumir por simplicidade que a demanda real se comporta segundo uma distribuição normal (variando aleatoriamente em torno de um patamar constante). A previsão feita, vamos assumir que seja a média das vendas passadas, já que a demanda é relativamente constante. Os dois valores, portanto, necessários a caracterizar a distribuição dos erros de previsão são:
 
-* a média  das vendas passadas – representando a previsão a ser usada nos cálculos (normalmente, simbolizada pela letra grega mu, lê-se “mi”) e,
-* o desvio-padrão  (simbolizado pela letra grega sigma, que representa o desvio-padrão dos erros de previsão).
+▪️a média  das vendas passadas – representando a previsão a ser usada nos cálculos (normalmente, simbolizada pela letra grega mu, lê-se “mi”) e,
+▪️o desvio-padrão (simbolizado pela letra grega sigma, que representa o desvio-padrão dos erros de previsão).
 
 A média  da demanda semanal, então, seria estimada a partir da média da própria amostra de demanda semanais. No nosso caso, para as demandas passadas, a média seria dada por:
 
+**Média da demanda:**
+  [
+  \mu = \bar{d} = \frac{d_1 + d_2 + d_3 + \cdots + d_n}{N}
+  ]
+
 e o desvio-padrão seria dado por:
 
+**Desvio-padrão da demanda:**
+  [
+  \sigma = \sqrt{\frac{(d_1 - \bar{d})^2 + (d_2 - \bar{d})^2 + (d_3 - \bar{d})^2 + \cdots + (d_n - \bar{d})^2}{n - 1}}
+  ]
+
 A partir, então, da média e do desvio-padrão estimados, podem-se usar essas estimativas para inferir quais seriam as probabilidades, por exemplo, de a demanda semanal ser maior que determinado valor. Da mesma forma, é possível determinar, por exemplo, um valor de demanda semanal cuja probabilidade de ser superado pela demanda real seja de 5%, ou qualquer outra probabilidade. É possível, a partir do conhecimento dos valores de desvio-padrão e média da demanda, definir que quantidade de estoque deveria ser mantida em estoque para que haja apenas 5% ou 1% (ou seja qual for o valor) de probabilidade de que a demanda não seja atendida de forma completa. Pode-se, portanto, definir o nível de estoque de segurança necessário para atender a determinado nível de serviço oferecido ao cliente. A relação entre nível de serviço ao cliente e nível de estoque de segurança é dada por (veja a demonstração em Corrêa *et al.*, 2018):
+
+**Fórmula:**
+
+[
+E_{seg} = FS \cdot \sigma \cdot \sqrt{\frac{LT}{PP}}
+]
+
 
 Em que:
 **Eseg** = estoque de segurança
@@ -657,19 +696,46 @@ Na tabela da Figura 9.24, a seguir, pode ser encontrado o fator de segurança co
 
 Por exemplo, suponhamos que estejamos interessados em dimensionar o estoque de segurança para uma situação em que a média das demandas passadas de um determinado produto seja de 120 unidades por semana e que o desvio-padrão seja de duas unidades (por semana). Assumamos o *lead time* de ressuprimento do item como sendo de três semanas. Ou seja:
 
-
-
+[
+\bar{d} = 120
+]
+[
+\sigma = 2
+]
+[
+LT = 3
+]
+[
+PP = 1
+]
+[
+FS = 1,645 \quad (95%)
+]
 
  semana (a demanda de que tratamos é semanal)
 
 Usando a fórmula e supondo que o *lead time* de obtenção do item em questão é de três semanas, e que se pretenda um nível de serviço de 95% (em média, deixando 5% não atendidos a partir da disponibilidade de estoque) vem:
+
+
+**Fórmula do estoque de segurança:**
+[
+E_{seg} = FS \cdot \sigma \cdot \sqrt{\frac{LT}{PP}}
+]
+
+**Aplicação numérica:**
+[
+E_{seg} = 1{,}645 \cdot 2 \cdot \sqrt{\frac{3}{1}}
+]
+
+[
+E_{seg} \approx 5{,}7 \approx 6
+]
 
  ou, arredondando, 6.
 
 ## Página 272
 
 O ponto de ressuprimento desta situação seria, então,
-
 
 Explicando, foi usado o desvio-padrão da amostra como estimador do desvio-padrão da demanda, igual a 2. Foi usado o fator de segurança 1,645 da tabela de fatores de segurança, correspondente a um nível de serviço de 95%. E, finalmente, foi usado um corretor para o desvio-padrão de , porque o período ao qual se refere o desvio-padrão considerado é a semana. Como o que se quer é o desvio-padrão da variação de três semanas de demanda, e não de apenas uma, aplica-se este corretor. Para detalhes sobre os cálculos estatísticos e probabilísticos usados aqui, recomendamos a consulta a qualquer bom manual de probabilidades e estatística.
 
@@ -736,16 +802,12 @@ O modelo de revisão periódica para gestão de estoques é de operação mais s
 | --- |
 | No sistema de revisão periódica, o período entre pedidos é fixo e a quantidade pedida é variável. |
 
-Este sistema pode ser ilustrado pela Figura 9.25.
-
-[Descrição da Imagem: Gráfico de Nível de estoques versus Tempo, mostrando dentes de serra irregulares. Lotes de ressuprimento (L1, L2, L3, L4) são variáveis, enquanto os Períodos de revisão (P) entre os momentos R1, R2, R3 e R4 são fixos. O tempo de entrega é indicado por LT.]
+![alt text](figura9-25.png)
 
 **Figura 9.25** Sistema de revisão periódica.
 
 **Definição de parâmetros para sistemas de revisão periódica**
 A definição dos parâmetros (quantidade a ressuprir, por exemplo) para o sistema de revisão (ou reposição) periódica é feita a partir da formulação a seguir:
-
-
 
 Em que:
  quantidade a pedir
@@ -811,11 +873,15 @@ Para os casos em que não se pode assumir demanda constante, o modelo usado é o
 
 As linhas representam:
 
-* **Demanda prevista:** a previsão de demanda para os próximos períodos, descrita período a período.
-* **Recebimentos programados:** material já despachado pelo fornecedor, esperado para chegar no período e nas quantidades descritas.
-* **Estoque projetado:** o resultado do cálculo, período a período, do balanço de estoques ao final do período descrito, considerando todas as entradas e saídas previstas do estoque. Note que o estoque atual aparece na primeira célula da linha, destacada dos períodos futuros.
-* **Recebimentos planejados:** recebimentos de materiais que ainda não foram despachados pelo fornecedor.
-* **Liberação de pedidos planejados:** correspondendo aos recebimentos planejados, estas são as respectivas liberações de pedidos para os fornecedores. Note que, por exemplo, a liberação de 200 unidades planejada para ocorrer no período 1 corresponde à quantidade de recebimento planejado do período 4 (já que o *lead time* LT neste exemplo é de 3 semanas). Uma liberação de pedido do tamanho de um lote (no caso, 200) é determinada pelo algoritmo de cálculo para aparecer na linha "Liberações de pedidos planejados" no período "p-LT" sempre que o cálculo:
+▪️**Demanda prevista:** a previsão de demanda para os próximos períodos, descrita período a período.
+
+▪️**Recebimentos programados:** material já despachado pelo fornecedor, esperado para chegar no período e nas quantidades descritas.
+
+▪️**Estoque projetado:** o resultado do cálculo, período a período, do balanço de estoques ao final do período descrito, considerando todas as entradas e saídas previstas do estoque. Note que o estoque atual aparece na primeira célula da linha, destacada dos períodos futuros.
+
+▪️**Recebimentos planejados:** recebimentos de materiais que ainda não foram despachados pelo fornecedor.
+
+▪️**Liberação de pedidos planejados:** correspondendo aos recebimentos planejados, estas são as respectivas liberações de pedidos para os fornecedores. Note que, por exemplo, a liberação de 200 unidades planejada para ocorrer no período 1 corresponde à quantidade de recebimento planejado do período 4 (já que o *lead time* LT neste exemplo é de 3 semanas). Uma liberação de pedido do tamanho de um lote (no caso, 200) é determinada pelo algoritmo de cálculo para aparecer na linha "Liberações de pedidos planejados" no período "p-LT" sempre que o cálculo:
 
 ▪️[Estoque do período "p − 1"] − [Demanda do período "p"]
 ▪️[Recebimento programado do período "p"]
@@ -871,10 +937,9 @@ Os produtos da empresa são montados de acordo com o programa mestre de produç�
 
 O MPS da Failace é dirigido por três fontes de demanda: vendas diretas aos clientes da região de São Paulo, além de ordens colocadas pelos armazéns regionais localizados em Uberlândia e Porto Alegre, cada um visto como um cliente para a fábrica. Para as vendas diretas aos clientes da região de São Paulo, atendidas pelo estoque no armazém da fábrica, a demanda é prevista pela equipe de vendas local. As vendas para clientes das regiões Nordeste, Centro-Oeste e Norte são previstas pela equipe de Uberlândia, enquanto as vendas da região Sul são previstas pela equipe de Porto Alegre.
 
----
+![alt text](figura9-28.png)
 
-## **Figura 9.28** Esquema de distribuição e ferramentas de gestão da Failace.
-*(Diagrama mostrando o fluxo de COMPONENTES → Fábrica de São Paulo → Armazém de Uberlândia e Armazém de Porto Alegre, com as ferramentas MRP, MPS e DRP indicadas na lateral).*
+**Figura 9.28** Esquema de distribuição e ferramentas de gestão da Failace.
 
 A Figura 9.29 oferece uma visão mais detalhada da relação entre a fábrica e os dois centros de distribuição da Failace, para apenas um de seus produtos, a lavadora por pressão modelo RioJato 2010, usando registros do tipo TPOP.
 
@@ -886,41 +951,7 @@ Na Figura 9.29, fica claro como as atividades nos centros de distribuição diri
 
 ver a lógica do DRP é muito similar à do MRP, discutida anteriormente neste capítulo. O processo continua ao longo do horizonte de planejamento do DRP de Uberlândia, gerando necessidades brutas para o MPS da fábrica de São Paulo, como é mostrado na Figura 9.29. Eventos similares ocorrem para o armazém de Porto Alegre.
 
-**DRP UBERLÂNDIA**
-| Período | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Previsão de Vendas | 200 | 200 | 200 | 200 | 200 | 200 | 200 | 200 |
-| Em Trânsito | | | | | | | | |
-| Estoque Projetado (500) | 300 | 500 | 300 | 500 | 300 | 500 | 300 | 500 |
-| Recebimento Ordens Planejadas | | 400 | | 400 | | 400 | | 400 |
-| Liberação de Ordens Planejadas | 400 | | 400 | | 400 | | 400 | |
-**Lote:** 400
-**Lead Time:** 1
-**Estoque de Segurança:** 200
-
-**DRP PORTO ALEGRE**
-| Período | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Previsão de Vendas | 150 | 150 | 150 | 150 | 150 | 150 | 150 | 150 |
-| Em Trânsito | 300 | | | | | | | |
-| Estoque Projetado (350) | 500 | 350 | 200 | 350 | 200 | 350 | 200 | 350 |
-| Recebimento Ordens Planejadas | | | | 300 | | 300 | | 300 |
-| Liberação de Ordens Planejadas | | 300 | | 300 | | 300 | | |
-**Lote:** 300
-**Lead Time:** 2
-**Estoque de Segurança:** 200
-
-**MPS SÃO PAULO**
-| Período | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Previsão de Vendas | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 |
-| Necessidades Uberlândia | 400 | | 400 | | 400 | | 400 | |
-| Necessidades Porto Alegre | | 300 | | 300 | | 300 | | |
-| Demanda Total | 500 | 400 | 500 | 400 | 500 | 400 | 500 | 100 |
-| Estoque Projetado (1300) | 800 | 400 | 900 | 500 | 1000 | 600 | 1100 | 1000 |
-| MPS | | | 1000 | | 1000 | | 1000 | |
-**Lote:** 1000
-**Estoque de Segurança:** 400
+![alt text](figura9-29.png)
 
 **Figura 9.29** O DRP da Failace para a RioLato 2010 (baseado em Corrêa et al., 2018).
 
@@ -934,6 +965,8 @@ No alto da Figura 9.30 é mostrado o fluxo típico de produtos, desde a fábrica
 Mediante esse processo, vão sendo criados estoques ao longo do percurso. Esses estoques e demandas (muitas vezes influenciados por tamanho de lotes e estoques de segurança) poderão estar frequentemente desbalanceados, como é mostrado na parte central da figura. A parte inferior da figura mostra a situação ideal: um fluxo uniforme com estoques reduzidos e balanceados com as operações que fornecem produtos e as operações que os demandam. O importante é integrar bem todas essas operações e balancear o fluxo.
 
 ## Página 278
+
+![alt text](figura9-30.png)
 
 ### 9.2.7 Curva ABC
 
@@ -1020,9 +1053,9 @@ Veja as Figuras 9.31 (a e b) para um exemplo de aplicação. Essa curva também 
 
 ## Página 280
 
-Observe como na região classificada como *A* poucos itens são responsáveis por grande parte do valor de uso total. Logo, estes deveriam ser os itens a merecerem maior atenção gerencial, para os quais vale mais a pena manter controles de estoque mais precisos e rigorosos. Os benefícios do esforço de redução de estoques médios de itens *A* são muito maiores do que os benefícios de um esforço gerencial similar despendido para manter estoques mais baixos de itens *C*, que são responsáveis por uma parcela muito menor do valor de uso total dos itens de estoque.
+![alt text](figura9-31b.png)
 
----
+Observe como na região classificada como *A* poucos itens são responsáveis por grande parte do valor de uso total. Logo, estes deveriam ser os itens a merecerem maior atenção gerencial, para os quais vale mais a pena manter controles de estoque mais precisos e rigorosos. Os benefícios do esforço de redução de estoques médios de itens *A* são muito maiores do que os benefícios de um esforço gerencial similar despendido para manter estoques mais baixos de itens *C*, que são responsáveis por uma parcela muito menor do valor de uso total dos itens de estoque.
 
 ### 9.3 ESTUDO DE CASO: TRANSPARÊNCIA FALTANDO NA CADEIA DE SUPRIMENTOS DE CIRCUITOS INTEGRADOS
 
@@ -1034,11 +1067,9 @@ Forçados a adivinhar a demanda para seus produtos num mercado em queda livre, t
 
 "Nós ainda não temos certeza do que aconteceu", diz Angelo Grestoni, proprietário de uma pequena fábrica na Califórnia que usina peças de alumínio componentes de máquinas usadas para fabricar *chips*. Ele está a muitas etapas de distância da Zoran na cadeia de suprimentos, mas seus clientes também evaporaram mais ou menos na mesma época. Hoje, Grestoni emprega apenas 150 pessoas, das 600 que empregava há 18 meses.
 
-O resultado acumulado: a contração do setor tecnológico pode ter sido exagerada. Em março, a Best Buy (um...
+O resultado acumulado: a contração do setor tecnológico pode ter sido exagerada. Em março, a Best Buy (um varejista americano importante neste mercado) disse que poderia ter vendido mais aparelhos eletrônicos no trimestre que terminou em 28 de fevereiro de 2009, mas os cortes drásticos que seus fornecedores fizeram tornaram difícil manter produtos nas prateleiras. Os fornecedores "todos decidiram produzir muito menos", diz o diretor de comercialização da Best Buy, Michael Vitelli.
 
 ## Página 281
-
-...varejista americano importante neste mercado) disse que poderia ter vendido mais aparelhos eletrônicos no trimestre que terminou em 28 de fevereiro de 2009, mas os cortes drásticos que seus fornecedores fizeram tornaram difícil manter produtos nas prateleiras. Os fornecedores "todos decidiram produzir muito menos", diz o diretor de comercialização da Best Buy, Michael Vitelli.
 
 À medida que a contração passou para outras etapas da cadeia de suprimentos, seus efeitos se amplificaram. Rick Tsai, CEO da fabricante de chips Taiwan Semiconductor Manufacturing Co., disse que no último trimestre de 2008 o consumo de equipamento eletrônico nos Estados Unidos caiu 8% em relação ao ano anterior. Mas o despacho de produtos dos fabricantes para o varejo caiu 10%, e o despacho de chips para os fabricantes caiu 20%.
 
@@ -1049,6 +1080,8 @@ Isso tem consequências para a recuperação econômica. Embora o PIB americano 
 A produção está começando a se recuperar, pelo menos um pouco. O lucro do primeiro trimestre da Taiwan Semicondutores, ou TSMC, em março, aumentou muito, e no mês passado a Zoran relatou aumento substancial de pedidos.
 
 A Zoran é tipicamente uma empresa de nicho, nascida da evolução recente da indústria de alta tecnologia, hoje pulverizada pelo mundo todo: projeta chips especializados para processamento de áudio e vídeo para produtos como câmeras, TVs e telefones celulares. Seus clientes são, na maioria, pouco conhecidas empresas asiáticas que manufaturam produtos, subcontratadas por gigantes como a Toshiba. A Figura 9.32 traz o exemplo de uma cadeia de suprimentos de aparelhos de DVD.
+
+![alt text](figura9-32.png)
 
 ## Página 282
 
@@ -1074,32 +1107,32 @@ Baseado no artigo "Clarity is Missing Link in Supply Chain", por Phred Dvorak, p
 
 ### 9.4 RESUMO
 
-* A gestão de estoques na cadeia global de suprimentos é um assunto que continua no alto da lista de prioridades dos executivos.
-* Além de boas práticas de *gestão de estoques*, a *coordenação* entre os vários sistemas de estoques envolvidos nas relações fornecedor-cliente da cadeia tem papel essencial para que se evitem desperdícios por redundância de estoques e também que se evitem oscilações e volatilidade da demanda.
-* Estoques são acúmulos de recursos materiais entre etapas de um processo de transformação. Os níveis de estoques variam quando os fluxos de entrada e de saída da etapa variam, um em relação ao outro.
-* Os estoques têm uma propriedade fundamental, que é ser uma arma — no sentido de que pode ser usada produtivamente ou contraprodutivamente: os estoques proporcionam independência às etapas do processo de transformação entre as quais se encontram.
-* O lado contraprodutivo dos estoques é que, como ajudam a absorver diferenças relativas de taxas de entradas e saídas tanto evitáveis quanto inevitáveis, corre-se o risco de usar estoques em vez de disparar ações para equalizar as taxas quando isso é possível.
-* É importante entender as razões pelas quais os estoques surgem. Só assim se podem entender quais são evitáveis e quais são inevitáveis, tendo certeza de que aquelas evitáveis sejam constantemente combatidas e, em relação às causas inevitáveis, que os estoques sejam dimensionados adequadamente, em níveis apenas suficientes para lidar com elas.
-* As principais causas do surgimento de estoques são:
-* falta de coordenação, de várias naturezas, entre etapas do processo;
-* incertezas de previsões em relação ao suprimento e à demanda;
-* especulação; e
-* necessidade de preenchimento dos canais de distribuição.
-* Há quatro tipos básicos principais de estoques em cadeias de suprimentos: estoques de matérias-primas e suprimentos, estoques em processo, estoque de produtos acabados e estoques de materiais para manutenção, reparo, consumo e movimentação.
-* À demanda futura que tem de ser prevista dá-se o nome de demanda independente; à demanda futura que pode ser calculada dá-se o nome de demanda dependente.
-* Há vantagens de se gerenciar demandas dependentes, pois estão sujeitas a uma incerteza menor; a técnica que calcula as necessidades de materiais se chama MRP. O MRP é um sistema centralizado, em que um sistema computacional, baseado em base de dados, calcula, a partir dos planos de produção futura, as necessidades de materiais: o quê, quando e quanto produzir e comprar.
-* Informação essencial para o MRP é a "estrutura de produto" ou "árvore do produto", que representa todas as relações pai-filho, entre todos os itens de um determinado produto.
-* No MRP, explosão (ou cálculo) das necessidades brutas significa o cálculo da quantidade total de componentes que necessita estar disponível para a fabricação das quantidades necessárias de produtos; o cálculo de necessidades líquidas significa deduzir, das necessidades brutas, as quantidades projetadas disponíveis em estoque no período correspondente, chegando às necessidades líquidas de obtenção dos itens analisados.
-* A coordenação de estoques entre empresas fornecedoras e clientes nas cadeias de suprimentos é obtida a partir da integração das estruturas de produto dos itens fornecidos e dos produtos onde são usados.
-* O sistema kanban é um sistema no qual as quantidades são produzidas quando demandadas pelo estágio posterior do processo; kanban é como é chamado o sistema que gerencia os estoques e os fluxos puxados nos sistemas como o *just in time* e o *lean*.
-* O kanban de produção dispara a produção de um lote (geralmente pequeno e próximo à unidade); o kanban de transporte autoriza a movimentação do material pela fábrica, do centro de produção que produz determinado componente para o centro de produção que consome este componente no seu estágio do processo.
-* O número de cartões kanban entre dois centros de produção determina o estoque de material entre estes dois centros.
-* É cada vez mais frequente o uso de formas de coordenação que utilizam os princípios dos fluxos puxados e do kanban para coordenar também a obtenção e o consumo de itens entre empresas de uma cadeia de suprimentos.
-* Uma forma de integração entre parceiros na cadeia de suprimentos que tem ganhado interesse é o VMI. No VMI, em vez de a empresa em questão gerenciar seus estoques de insumos, eles são gerenciados por cada fornecedor.
-* Um dos modelos mais conhecidos de gestão de estoques de itens com demanda independente é o chamado "ponto de reposição com lote econômico". Nele, o período entre pedidos é variável e a quantidade pedida é fixa. Esse sistema assume demanda relativamente constante.
-* Estoques de segurança existem para fazer frente a incertezas, tanto de demanda como de suprimentos.
-* Outro modelo muito conhecido de gestão de estoques de itens com demanda independente é o sistema de revisão periódica, em que o período entre pedidos é fixo e a quantidade pedida é variável. Esse sistema também assume demanda relativamente constante.
-* Para os casos em que não se pode assumir demanda constante, o modelo usado é o modelo chamado *time-phased order point* (TPOP).
-* DRP, *distribution requirements planning*, é o sistema que utiliza TPOP para calcular necessidades de remessas e produção em sistemas de distribuição física de produtos.
-* Determinados itens de estoque têm custo de estocagem maior que outros. Uma das formas de se pensar classificação de importância de itens de estoque é a chamada curva ABC ou curva de Pareto.
-* A técnica ABC é uma forma de classificar todos os itens de estoque de determinado sistema em três grupos, baseados no seu valor total anual de uso. O objetivo é definir grupos para os quais diferentes sistemas de controle de estoque serão mais apropriados, resultando em um sistema total mais eficiente em custos.
+▪️A gestão de estoques na cadeia global de suprimentos é um assunto que continua no alto da lista de prioridades dos executivos.
+▪️Além de boas práticas de *gestão de estoques*, a *coordenação* entre os vários sistemas de estoques envolvidos nas relações fornecedor-cliente da cadeia tem papel essencial para que se evitem desperdícios por redundância de estoques e também que se evitem oscilações e volatilidade da demanda.
+▪️Estoques são acúmulos de recursos materiais entre etapas de um processo de transformação. Os níveis de estoques variam quando os fluxos de entrada e de saída da etapa variam, um em relação ao outro.
+▪️Os estoques têm uma propriedade fundamental, que é ser uma arma — no sentido de que pode ser usada produtivamente ou contraprodutivamente: os estoques proporcionam independência às etapas do processo de transformação entre as quais se encontram.
+▪️O lado contraprodutivo dos estoques é que, como ajudam a absorver diferenças relativas de taxas de entradas e saídas tanto evitáveis quanto inevitáveis, corre-se o risco de usar estoques em vez de disparar ações para equalizar as taxas quando isso é possível.
+▪️É importante entender as razões pelas quais os estoques surgem. Só assim se podem entender quais são evitáveis e quais são inevitáveis, tendo certeza de que aquelas evitáveis sejam constantemente combatidas e, em relação às causas inevitáveis, que os estoques sejam dimensionados adequadamente, em níveis apenas suficientes para lidar com elas.
+▪️As principais causas do surgimento de estoques são:
+▪️falta de coordenação, de várias naturezas, entre etapas do processo;
+▪️incertezas de previsões em relação ao suprimento e à demanda;
+▪️especulação; e
+▪️necessidade de preenchimento dos canais de distribuição.
+▪️Há quatro tipos básicos principais de estoques em cadeias de suprimentos: estoques de matérias-primas e suprimentos, estoques em processo, estoque de produtos acabados e estoques de materiais para manutenção, reparo, consumo e movimentação.
+▪️À demanda futura que tem de ser prevista dá-se o nome de demanda independente; à demanda futura que pode ser calculada dá-se o nome de demanda dependente.
+▪️Há vantagens de se gerenciar demandas dependentes, pois estão sujeitas a uma incerteza menor; a técnica que calcula as necessidades de materiais se chama MRP. O MRP é um sistema centralizado, em que um sistema computacional, baseado em base de dados, calcula, a partir dos planos de produção futura, as necessidades de materiais: o quê, quando e quanto produzir e comprar.
+▪️Informação essencial para o MRP é a "estrutura de produto" ou "árvore do produto", que representa todas as relações pai-filho, entre todos os itens de um determinado produto.
+▪️No MRP, explosão (ou cálculo) das necessidades brutas significa o cálculo da quantidade total de componentes que necessita estar disponível para a fabricação das quantidades necessárias de produtos; o cálculo de necessidades líquidas significa deduzir, das necessidades brutas, as quantidades projetadas disponíveis em estoque no período correspondente, chegando às necessidades líquidas de obtenção dos itens analisados.
+▪️A coordenação de estoques entre empresas fornecedoras e clientes nas cadeias de suprimentos é obtida a partir da integração das estruturas de produto dos itens fornecidos e dos produtos onde são usados.
+▪️O sistema kanban é um sistema no qual as quantidades são produzidas quando demandadas pelo estágio posterior do processo; kanban é como é chamado o sistema que gerencia os estoques e os fluxos puxados nos sistemas como o *just in time* e o *lean*.
+▪️O kanban de produção dispara a produção de um lote (geralmente pequeno e próximo à unidade); o kanban de transporte autoriza a movimentação do material pela fábrica, do centro de produção que produz determinado componente para o centro de produção que consome este componente no seu estágio do processo.
+▪️O número de cartões kanban entre dois centros de produção determina o estoque de material entre estes dois centros.
+▪️É cada vez mais frequente o uso de formas de coordenação que utilizam os princípios dos fluxos puxados e do kanban para coordenar também a obtenção e o consumo de itens entre empresas de uma cadeia de suprimentos.
+▪️Uma forma de integração entre parceiros na cadeia de suprimentos que tem ganhado interesse é o VMI. No VMI, em vez de a empresa em questão gerenciar seus estoques de insumos, eles são gerenciados por cada fornecedor.
+▪️Um dos modelos mais conhecidos de gestão de estoques de itens com demanda independente é o chamado "ponto de reposição com lote econômico". Nele, o período entre pedidos é variável e a quantidade pedida é fixa. Esse sistema assume demanda relativamente constante.
+▪️Estoques de segurança existem para fazer frente a incertezas, tanto de demanda como de suprimentos.
+▪️Outro modelo muito conhecido de gestão de estoques de itens com demanda independente é o sistema de revisão periódica, em que o período entre pedidos é fixo e a quantidade pedida é variável. Esse sistema também assume demanda relativamente constante.
+▪️Para os casos em que não se pode assumir demanda constante, o modelo usado é o modelo chamado *time-phased order point* (TPOP).
+▪️DRP, *distribution requirements planning*, é o sistema que utiliza TPOP para calcular necessidades de remessas e produção em sistemas de distribuição física de produtos.
+▪️Determinados itens de estoque têm custo de estocagem maior que outros. Uma das formas de se pensar classificação de importância de itens de estoque é a chamada curva ABC ou curva de Pareto.
+▪️A técnica ABC é uma forma de classificar todos os itens de estoque de determinado sistema em três grupos, baseados no seu valor total anual de uso. O objetivo é definir grupos para os quais diferentes sistemas de controle de estoque serão mais apropriados, resultando em um sistema total mais eficiente em custos.
