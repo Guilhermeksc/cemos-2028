@@ -1,4 +1,4 @@
-# Capítulo 3 Gestão dos relacionamentos na cadeia global de suprimentos
+# Capítulo 3 - Gestão dos relacionamentos na cadeia global de suprimentos
 
 **3.1** Introdução, 63
 **3.2** Conceitos, 67

@@ -1,4 +1,4 @@
-# Capítulo 5: Gestão de riscos na cadeia global de suprimentos
+# Capítulo 5 - Gestão de riscos na cadeia global de suprimentos
 
 **5.1** Introdução, 119
 **5.2** Conceitos, 122

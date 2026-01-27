@@ -1,4 +1,4 @@
-# Capítulo 1 Introdução à administração de cadeias globais de suprimentos
+# Capítulo 1 - Introdução à administração de cadeias globais de suprimentos
 
 **1.1** Introdução, 1
 **1.2** Conceitos, 4

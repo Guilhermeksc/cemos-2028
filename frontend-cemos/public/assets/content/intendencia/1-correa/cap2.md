@@ -1,4 +1,4 @@
-# Capítulo 2 Gestão estratégica da cadeia global de suprimentos
+# Capítulo 2 - Gestão estratégica da cadeia global de suprimentos
 
 **2.1** Introdução, 29
 **2.2** Conceitos, 34

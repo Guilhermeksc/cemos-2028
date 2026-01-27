@@ -1,4 +1,4 @@
-# Capítulo 8: Gestão de demanda na cadeia global de suprimentos
+# Capítulo 8 - Gestão de demanda na cadeia global de suprimentos
 
 **8.1** Introdução, 213
 **8.2** Conceitos, 216

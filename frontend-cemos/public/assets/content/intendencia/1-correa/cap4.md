@@ -1,4 +1,4 @@
-# Capítulo 4 Gestão global de suprimentos (global sourcing)
+# Capítulo 4 - Gestão global de suprimentos (global sourcing)
 
 **4.1** Introdução, 93
 **4.2** Conceitos, 97
