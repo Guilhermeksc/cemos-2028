@@ -1,5 +1,18 @@
 # Capítulo 4 Gestão global de suprimentos (global sourcing)
 
+**4.1** Introdução, 93
+**4.2** Conceitos, 97
+**4.2.1** Tipos de suprimentos, 97
+**4.2.2** Terceirização global (*global sourcing*), 98
+**4.2.3** Estrutura organizacional para suprimentos, 100
+**4.2.4** O processo de suprimento, 102
+**4.2.5** Terceirização de serviços e serviços compartilhados (*shared services*), 106
+**4.2.6** Para onde terceirizar, 108
+**4.2.7** Ética e responsabilidade social na prática de gestão global de suprimentos, 109
+**4.2.8** Sustentabilidade na gestão global de suprimentos, 111
+**4.3** Estudo de caso: Procter and Gamble (P&G) serviços de suporte, 114
+**4.4** Resumo, 115
+
 ## Página 93
 
 ### 0BJETIVOS DE APRENDIZAGEM

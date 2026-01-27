@@ -1,5 +1,14 @@
 # Capítulo 5: Gestão de riscos na cadeia global de suprimentos
 
+**5.1** Introdução, 119
+**5.2** Conceitos, 122
+**5.2.1** Risco, 122
+**5.2.2** Tipos de risco, 126
+**5.2.3** Categorias de riscos e seus fatores em cadeias de suprimentos, 127
+**5.2.4** O processo de gestão de riscos em cadeias globais de suprimentos, 129
+**5.3** Estudo de caso: Cisco e a gestão de riscos na cadeia de suprimentos, 141
+**5.4** Resumo, 144
+
 ## Página 119
 
 ### 0BJETIVOS DE APRENDIZAGEM
@@ -13,10 +22,6 @@
 📌 **Entender quais são as principais estratégias** para gerenciamento de risco em gestão de cadeias de suprimentos.
 
 📌 **Orientar sobre como implantar mecanismos** de gestão de risco em cadeias globais de suprimentos.
-
-Aqui está a transcrição do texto contido na imagem. Como esta página específica não contém os quadros especiais mencionados (como "Para refletir" ou "Conceito-chave"), transcrevi o conteúdo principal seguindo a formatação de tópicos para facilitar a leitura.
-
----
 
 ## 5.1 INTRODUÇÃO
 

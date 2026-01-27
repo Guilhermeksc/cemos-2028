@@ -1,5 +1,17 @@
 # Capítulo 2 Gestão estratégica da cadeia global de suprimentos
 
+**2.1** Introdução, 29
+**2.2** Conceitos, 34
+**2.2.1** Estratégia, 34
+**2.2.2** Qual a estratégia de cadeia de suprimentos mais adequada para seus produtos e seus mercados?, 34
+**2.2.3** Fluxos empurrados, puxados e híbridos, 38
+**2.2.4** A decisão estratégica de comprar ou fazer, 42
+**2.2.5** Um modelo para a decisão de comprar ou fazer, 45
+**2.2.6** Estratégia de cadeias de suprimentos e o desenvolvimento de produtos, 48
+**2.2.7** Projeto de produto e processo para cadeias de suprimentos mais eficazes, 48
+**2.3** Estudo de caso: Consórcio Modular da Volkswagen Resende, 55
+**2.4** Resumo, 60
+
 ## Página 29
 
 ### 0BJETIVOS DE APRENDIZAGEM

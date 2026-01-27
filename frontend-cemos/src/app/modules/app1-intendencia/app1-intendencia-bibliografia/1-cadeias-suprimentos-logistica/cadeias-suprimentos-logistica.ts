@@ -24,11 +24,11 @@ export class CadeiasSuprimentosLogistica {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/intendencia/1-correa';
   fileNames: string[] = [
-    'cap11.md',
+    'cap1.md',
     'cap1-execicios.md',
-    'cap22.md',
+    'cap2.md',
     'cap2-execicios.md',
-    'cap33.md',
+    'cap3.md',
     'cap3-exercicios.md',
     'cap4.md',
     'cap4-exercicios.md',
@@ -37,7 +37,17 @@ export class CadeiasSuprimentosLogistica {
     'cap8.md',
     'cap8-exercicios.md',
     'cap9.md',
-    'cap9-exercicios.md'
+    'cap9-exercicios.md',
+    'cap10.md',
+    'cap10-exercicios.md',
+    'cap11.md',
+    'cap11-exercicios.md',
+    'cap12.md',
+    'cap12-exercicios.md',
+    'cap13.md',
+    'cap13-exercicios.md',
+    'cap14.md',
+    'cap15-exercicios.md'
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';

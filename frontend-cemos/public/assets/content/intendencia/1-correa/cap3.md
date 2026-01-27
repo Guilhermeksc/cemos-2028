@@ -1,5 +1,14 @@
 # Capítulo 3 Gestão dos relacionamentos na cadeia global de suprimentos
 
+**3.1** Introdução, 63
+**3.2** Conceitos, 67
+**3.2.1** Fundamentos da gestão de relacionamento com parceiros da cadeia de suprimentos, 67
+**3.2.2** Negociação, 69
+**3.2.3** Gestão do relacionamento com clientes (CRM), 72
+**3.2.4** Gestão do relacionamento com fornecedores (SRM), 82
+**3.3** Estudo de caso: Relacionamento com fornecedores na Toyota e na General Motors, 87
+**3.4** Resumo, 89
+
 ## Página 63
 
 ### 0BJETIVOS DE APRENDIZAGEM
