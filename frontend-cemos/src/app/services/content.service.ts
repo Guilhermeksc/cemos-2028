@@ -18,10 +18,74 @@ export class ContentService {
   private baseUrl = '/assets/content';
 
   constructor(private http: HttpClient) {
+    const getHeaderBgColor = (color: 'verde' | 'azul' | 'vermelho' | 'amarelo' | null): string => {
+      switch (color) {
+        case 'verde':
+          return '#d1f5d3';
+        case 'azul':
+          return '#d1e9ff';
+        case 'vermelho':
+          return '#ffd6d9';
+        case 'amarelo':
+          return '#fff5b1';
+        default:
+          return '#f5f5f5';
+      }
+    };
+
+    const renderer = new marked.Renderer();
+
+    renderer.table = (token: any) => {
+      const headers: string[] = Array.isArray(token.header)
+        ? token.header
+        : Array.isArray(token.headers)
+          ? token.headers
+          : [];
+      const aligns: string[] = Array.isArray(token.align) ? token.align : [];
+      const rows: string[][] = Array.isArray(token.rows) ? token.rows : [];
+
+      const thCount = headers.length;
+
+      let headerBgColor: 'verde' | 'azul' | 'vermelho' | 'amarelo' | null = null;
+      if (thCount === 1) {
+        const match = headers[0].match(/\{\s*bg\s*[:=]\s*(verde|azul|vermelho|amarelo)\s*\}/i);
+        if (match) {
+          headerBgColor = match[1].toLowerCase() as 'verde' | 'azul' | 'vermelho' | 'amarelo';
+          headers[0] = headers[0].replace(match[0], '').trim();
+        }
+      }
+
+      const renderCell = (cell: string, tag: 'th' | 'td', align?: string, style?: string) => {
+        const alignAttr = align ? ` align=\"${align}\"` : '';
+        const styleAttr = style ? ` style=\"${style}\"` : '';
+        return `<${tag}${alignAttr}${styleAttr}>${cell}</${tag}>`;
+      };
+
+      const headerStyle = headerBgColor
+        ? `background-color: ${getHeaderBgColor(headerBgColor)};`
+        : '';
+
+      const headerHtml = `<tr>${headers.map((cell, i) => renderCell(cell, 'th', aligns[i], headerStyle)).join('')}</tr>`;
+      const bodyHtml = rows
+        .map(row => `<tr>${row.map((cell, i) => renderCell(cell, 'td', aligns[i])).join('')}</tr>`)
+        .join('');
+
+      const classes = ['md-table'];
+      if (thCount === 1) {
+        classes.push('md-single-column');
+        if (headerBgColor) {
+          classes.push(`md-single-column--${headerBgColor}`);
+        }
+      }
+
+      return `<table class=\"${classes.join(' ')}\">\n<thead>${headerHtml}</thead>\n<tbody>${bodyHtml}</tbody>\n</table>`;
+    };
+
     // Configurar marked para renderização segura
     marked.setOptions({
       breaks: true,
       gfm: true,
+      renderer
     });
   }
 
@@ -178,6 +242,7 @@ export class ContentService {
   loadGeopoliticaModernidadeContent(chapterId: string): Observable<string> {
     return this.loadMarkdownContent(`geopolitica-ri/geopolitica-modernidade/${chapterId}.md`);
   }  
+
   /**
    * Carrega lista de capítulos disponíveis (pode ser expandido para ler um índice)
    */

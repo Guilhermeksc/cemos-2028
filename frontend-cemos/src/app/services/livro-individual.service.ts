@@ -123,6 +123,14 @@ export class LivroIndividualService {
     lines.forEach((line, index) => {
       // Headers com IDs para scroll (usa o mesmo índice do parseMarkdownHeadings)
       // Regex mais flexível para capturar headings com espaços opcionais após #
+      const h4Match = line.match(/^####\s+(.+)$/);
+      if (h4Match) {
+        const title = h4Match[1].trim();
+        const id = this.generateId(title, index);
+        html += `<h4 id="${id}">${title}</h4>\n`;
+        return;
+      }
+
       const h3Match = line.match(/^###\s+(.+)$/);
       if (h3Match) {
         const title = h3Match[1].trim();
@@ -241,13 +249,24 @@ export class LivroIndividualService {
   private isSeparatorRow(line: string): boolean {
     if (!line) return false;
     // GFM: linha composta por |, :, -, e espaços. Ex: | --- | :---: | ---: |
-    return /^\s*\|?\s*(:?-{3,}:?\s*\|\s*)+:?-{3,}:?\s*\|?\s*$/.test(line);
+    // Suporta também tabelas de uma coluna: | --- |
+    return /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(line);
   }
 
   private buildTableHtml(rows: string[]): string {
     if (rows.length < 2) return rows.join('\n');
 
     const headerCells = this.splitRow(rows[0]).map(cell => cell.trim());
+
+    const allRows = rows.map(row => this.splitRow(row));
+    const isSingleColumn = allRows.every(row => row.length === 1);
+    let headerBgColor: 'verde' | 'azul' | 'vermelho' | 'amarelo' | null = null;
+
+    if (isSingleColumn && headerCells.length === 1) {
+      const extracted = this.extractSingleColumnHeaderColor(headerCells[0]);
+      headerCells[0] = extracted.text;
+      headerBgColor = extracted.color;
+    }
 
     // Alinhamentos (opcional, por ora ignorado)
     // const aligns = this.splitRow(rows[1]).map(seg => this.parseAlign(seg));
@@ -258,8 +277,16 @@ export class LivroIndividualService {
     // As cores de fundo e texto são controladas pelo CSS do componente
     const tableStyle = 'border-collapse: collapse; width: 100%; border: 2px solid #000000;';
     const cellStyle = 'padding: 8px; border: 1px solid #000000;';
-    // Header sem background-color inline para permitir controle via CSS
-    const headerCellStyle = `${cellStyle} font-weight: 600; border-bottom: 2px solid #000000;`;
+    const headerBg = this.getHeaderBgColor(headerBgColor);
+    const headerCellStyle = `${cellStyle} font-weight: 600; border-bottom: 2px solid #000000;${headerBg ? ` background-color: ${headerBg};` : ''}`;
+
+    const tableClasses = ['md-table'];
+    if (isSingleColumn) {
+      tableClasses.push('md-single-column');
+      if (headerBgColor) {
+        tableClasses.push(`md-single-column--${headerBgColor}`);
+      }
+    }
 
     const thead = `<thead><tr>${headerCells.map(h => `<th style="${headerCellStyle}">${h}</th>`).join('')}</tr></thead>`;
 
@@ -274,7 +301,33 @@ export class LivroIndividualService {
 
     const tbody = `<tbody>${tbodyRows}</tbody>`;
 
-    return `<table style="${tableStyle}">\n${thead}\n${tbody}\n</table>`;
+    return `<table style="${tableStyle}" class="${tableClasses.join(' ')}">\n${thead}\n${tbody}\n</table>`;
+  }
+
+  private extractSingleColumnHeaderColor(text: string): { text: string; color: 'verde' | 'azul' | 'vermelho' | 'amarelo' | null } {
+    const match = text.match(/\{\s*bg\s*[:=]\s*(verde|azul|vermelho|amarelo)\s*\}/i);
+    if (!match) {
+      return { text: text.trim(), color: null };
+    }
+
+    const cleanedText = text.replace(match[0], '').trim();
+    const color = match[1].toLowerCase() as 'verde' | 'azul' | 'vermelho' | 'amarelo';
+    return { text: cleanedText, color };
+  }
+
+  private getHeaderBgColor(color: 'verde' | 'azul' | 'vermelho' | 'amarelo' | null): string | null {
+    switch (color) {
+      case 'verde':
+        return '#d1f5d3';
+      case 'azul':
+        return '#d1e9ff';
+      case 'vermelho':
+        return '#ffd6d9';
+      case 'amarelo':
+        return '#fff5b1';
+      default:
+        return null;
+    }
   }
 
   private splitRow(line: string): string[] {

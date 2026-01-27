@@ -71,9 +71,7 @@
         </div>
         
         <div class="headings-tree" *ngIf="isHeadingsNavigationExpanded">
-          
-          <!-- Nível 1 (H1) -->
-          <ng-container *ngFor="let h1 of headings">
+                    <ng-container *ngFor="let h1 of headings">
             <div class="heading-item level-1">
               
               <div class="heading-content" (click)="navigateToHeading(h1)">

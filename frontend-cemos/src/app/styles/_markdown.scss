@@ -183,6 +183,36 @@
       background-color: #fafafa;
     }
   }
+
+  // ========================================
+  // TABELA DE UMA COLUNA (ALERTAS)
+  // ========================================
+  table.md-single-column {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+
+    thead th {
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  table.md-single-column--verde thead th {
+    background-color: #e8f5e9;
+  }
+
+  table.md-single-column--azul thead th {
+    background-color: #e3f2fd;
+  }
+
+  table.md-single-column--vermelho thead th {
+    background-color: #ffebee;
+  }
+
+  table.md-single-column--amarelo thead th {
+    background-color: #fffde7;
+  }
   
   // ========================================
   // LINHA HORIZONTAL

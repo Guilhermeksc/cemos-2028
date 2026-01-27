@@ -129,7 +129,7 @@
   </main>
 
   <!-- Menu Lateral Direito - Índice -->
-  <aside class="right-menu" [class.menu-open]="rightMenuOpen">
+  <aside class="right-menu" [class.menu-open]="rightMenuOpen" *ngIf="false">
     
     <!-- Header do Menu Direito -->
     <div class="menu-header" *ngIf="!isFullscreen">
@@ -151,7 +151,6 @@
       
       <div class="headings-tree" *ngIf="headings.length > 0">
         
-        <!-- Nível 1 (H1) -->
         <ng-container *ngFor="let h1 of headings">
           <div class="heading-item level-1">
             
@@ -160,7 +159,6 @@
               <span class="heading-title">{{ h1.title }}</span>
             </div>
 
-            <!-- Nível 2 (H2) - Filhos do H1 -->
             <div class="heading-children" *ngIf="isExpanded(h1) && h1.children && h1.children.length > 0">
               <ng-container *ngFor="let h2 of h1.children">
                 <div class="heading-item level-2">
@@ -294,7 +292,7 @@
       </main>
 
       <!-- Menu Lateral Direito - Índice (Fullscreen) -->
-      <aside class="right-menu fullscreen-menu" [class.menu-open]="rightMenuOpen">
+      <aside class="right-menu fullscreen-menu" [class.menu-open]="rightMenuOpen" *ngIf="false">
         <div class="menu-header" *ngIf="!isFullscreen">
           <!-- Botão de Fechar (Mobile) -->
           <button 

@@ -331,11 +331,11 @@ Figura 1.11 Representação de três tipos de cadeias de suprimentos de bens.
 
 ## Página 17
 
-##### Cadeias simples de bens
+#### Cadeias simples de bens
 
 Nestas, produtor individual lida diretamente com o consumidor final. Um exemplo seria uma pequena fábrica de geleia do interior de Minas Gerais, que adquire frutas de um produtor local, prepara e embala as geleias c as entrega diretamente aos usuários. 0 coontrole dessa cadeia ¢ muito simples e todos os fluxos são controlados pclo fabricante. pois cle tem contato direto como cliente a jusante e, a montante, em relação aos fornecedores, a complexidade da cadeia é baixa. 
 
-##### Cadeia de bens com mútiplos escalões 
+#### Cadeia de bens com mútiplos escalões 
 
 As cadeias de múltiplos escalões são mais complexas, porque necessitam de armazéns de distribuição e pontos de venda, para que níveis de escala viáveis sejam atingidos no transporte a clientes localizados a distâncias maiores. A preocupação adicional com a administração dos fluxos logisticos e de informações pelos vários escalões e a administração dos múltiplos estoques envolvidos são a razão da complexidade adicional. Um exemplo seria uma fábrica de jeans, que produz mais altos volumes e tem sua produção escoada por intermédio de uma cadeia de distribuidores regionais que fazem chegar seu produto a numerosos pontos de varejo dispersos geograficamente.
 

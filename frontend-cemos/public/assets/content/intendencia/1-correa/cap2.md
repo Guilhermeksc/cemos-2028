@@ -36,7 +36,7 @@ Figura 2.3 Evolução do número de funcionários da Embraer em anos recentes.
 
 Desde 1996, a Embraer produziu e entregou mals de 3.300 aviões de sua família de jatos comerciais ERJ para mais de 37 linhas aéreas em 24 países. A família ERJ de jatos para aviação regional é composta de várias aeronaves: o ERJ-135 (37 lugares), ERJ-140 (44 lugares) e o ERJ-145 (50 lugares) têm plataforma comum e foram projetados Para compartilharem grande número de peças compo nentes, permitindo grande flexibilidade no atendimento ao mercado. O mesmo acontece com as aeronaves maiores linha da Embraer: EMBRAER 170 (70 a 80 lugares), EMBRAFR 175 (78 a 88 lugares), EMBRAER 190 (98 a 114 lugares) e e EMBRAER 195 (108 a 122 lugares).
 
-Baseada na plataforma do jato de aviação comercial ERJ-135, a Embraer entrou no mercado de aviação executiva em dezembro de 2001 como avião Legacy para O mercado executivo corporativo. Em maio de 2005, a Embraer anunciou o lançamento de dois novos jatos, o Phenom 100 e o Phenom 300, para o segmento de aeronaves executivas extraleves e leves, com grande exxpectativa de vendas futuras.
+Baseada na plataforma do jato de aviação comercial ERJ-135, a Embraer entrou no mercado de aviação executiva em dezembro de 2001 como avião Legacy para O mercado executivo corporativo. Em maio de 2005, a Embraer anunciou o lançamento de dois novos jatos, o Phenom 100 e o Phenom 300, para o segmento de aeronaves executivas extraleves e leves, com grande expectativa de vendas futuras.
 
 Acompanhe a evolução do número de aeronaves en tregues pela Embraer desde 1997 na Figura 2.4.
 
@@ -347,9 +347,7 @@ A análise de transações visa a obter eficiência na gestão dessas transaçõ
 
 **Especificidade de ativos:** ativos são específicos a uma transação quando altamente especializados e, portanto, têm pouco ou nenhum uso geral fora da específica relação fornecedor–cliente em questão. Quando uma empresa, por exemplo, tem de comprar uma máquina para processar um material de um fornecedor específico, capaz de processar somente aquele material específico, porém inapta a processar materiais de outros fornecedores concorrentes, considera-se que esse ativo (a máquina) é específico para a relação entre a empresa e aquele fornecedor. Uma decisão de trocar o fornecedor exigiria a troca da máquina, aumentando substancialmente o custo de troca entre fornecedor. Esse custo alto de troca pode levar a comportamentos oportunistas do fornecedor, como, por exemplo, aumentos de preço ou maiores custos para lidar com entregas, o que acarreta maior custo para a empresa cliente. Portanto, quanto maior a especificidade de ativos de uma transação, maiores os custos de transação do item.
 
-**Incerteza:** são as fontes de perturbações para as quais adaptações são requeridas numa relação fornecedor–cliente. Num mundo imperfeito, no qual os indivíduos…
-
-…têm uma capacidade limitada de processar informações e, portanto, estão sujeitas a reações oportunistas dos interlocutores comerciais, uma alta incerteza torna mais difícil para a empresa avaliar as ações do fornecedor. Numa transação, a maior parte da incerteza percebida pelo cliente, em relação à incerteza percebida pelo fornecedor, dá-se no nome de **assimetria de informação**. O grau geral de incerteza envolvendo uma transação tende a aumentar seus custos, mas, quando há assimetria de informação (e, portanto, do nível de incerteza) favorecendo o fornecedor, a possibilidade de comportamento oportunista deste aumenta, aumentando os custos de transação. Portanto, quanto maior o nível de incerteza em torno da transação, maiores seus custos.
+**Incerteza:** são as fontes de perturbações para as quais adaptações são requeridas numa relação fornecedor–cliente. Num mundo imperfeito, no qual os indivíduo têm uma capacidade limitada de processar informações e, portanto, estão sujeitas a reações oportunistas dos interlocutores comerciais, uma alta incerteza torna mais difícil para a empresa avaliar as ações do fornecedor. Numa transação, a maior parte da incerteza percebida pelo cliente, em relação à incerteza percebida pelo fornecedor, dá-se no nome de **assimetria de informação**. O grau geral de incerteza envolvendo uma transação tende a aumentar seus custos, mas, quando há assimetria de informação (e, portanto, do nível de incerteza) favorecendo o fornecedor, a possibilidade de comportamento oportunista deste aumenta, aumentando os custos de transação. Portanto, quanto maior o nível de incerteza em torno da transação, maiores seus custos.
 
 **Frequência:** quanto mais frequentemente uma empresa transaciona com um fornecedor, mais vezes ela tem que incorrer nos custos de realizar cada transação e, portanto, maiores serão seus custos de transação em relação àquele item, ao longo de um determinado período. Por exemplo, no caso do fornecedor de carpetes, talvez uma vez a cada dez anos. Os custos de cotação, coleta de informações, elaboração de contrato e outros ocorrem, portanto, a cada dez anos. Já um fornecedor de certa matéria-prima frequentemente necessária levará, teoricamente, à ocorrência de custos de transação várias vezes por ano. O custo de transação desse item será, portanto, maior que o custo de transação do carpete. Quanto maior a frequência das transações, maiores seus custos.
 
@@ -359,7 +357,7 @@ A **Figura 2.12** ilustra o processo de análise de custos de transação.
 
 Figura 2.12 — Fatores influentes nos custos de transação.
 
-| ⚠️**Fique atento**⚠️|
+|💡**Fique atento**💡{bg=amarelo}|
 |----------------|
 |Quanto maiores os níveis de especificidade do ativo do cliente, das incertezas, da frequência e quanto menor o número de potenciais fornecedores envolvidos com a transação, maiores seus custos.|
 
@@ -367,7 +365,7 @@ Figura 2.12 — Fatores influentes nos custos de transação.
 
 **Custos de transação e a decisão estratégica de comprar ou fazer**
 
-| ⚠️**Conceito-chave**⚠️|
+| ⚠️**Conceito-chave**⚠️{bg=verde}|
 |----------------|
 |A teoria econômica por trás da análise dos custos de transação preconiza que, quanto mais altos os custos de transação incorridos, mais as empresas tenderão a tentar minimizá-los via integração vertical, ou seja, tendendo a optar por fazer internamente o item em questão em vez de terceirizar sua produção. Do mesmo modo, quanto menores os custos de transação, mais as empresas tenderão, assumindo comportamento racional (embora limitado), a optar por **comprar** o item.|
 
