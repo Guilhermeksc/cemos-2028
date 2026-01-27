@@ -348,7 +348,39 @@ A avaliação de probabilidade de ocorrência é diferente e usa diferentes ferr
 
 ## Página 131
 
+Observe como a localização da fábrica da Confiança, na costa da Califórnia, no sudoeste americano, a faz sujeita a um risco relativamente alto de sofrer um terremoto. Veja como a situação da Califórnia é totalmente diferente daquela do estado da Flórida (a península a sudeste dos EUA), quanto aos riscos de um terremoto. Isso pode ser claramente identificado a partir desses mapas históricos de ocorrências de desastres naturais.
+
+A Figura 5.10 traz uma ilustração do mapa de ocorrências de tornados nos Estados Unidos, de 1950 até 2004. Observe como as ocorrências permitem ver que o risco de tornados para a fábrica da Confiança localizada na Califórnia é bastante pequena.
+
+No Brasil, felizmente, terremotos e furacões não são frequentes, mas enchentes podem ser uma preocupação e fonte de risco potencial. Informações de pluviosidade histórica, como aquela encontrada no *site* do INMET (Instituto Nacional de Meteorologia), podem auxiliar na avaliação de probabilidade de ocorrência de pluviosidade excessiva, levando a enchentes relevantes. Veja a Figura 5.11.
+
+Aprofundando um pouco mais o uso desse tipo de informação, dados como os da Figura 5.12 podem indicar, ao longo de um ano, os pontos de maior risco para uma determinada região.
+
+![alt text](figura5-10.png)
+
+![alt text](figura5-11.png)
+
 ## Página 132
+
+![alt text](figura5-12.png)
+
+Essas informações podem ser usadas para o estágio de preparação. Por exemplo, para a fábrica da Confiança em São Paulo, fica evidente que o risco de enchentes é mais drástico nos últimos e nos primeiros meses do ano, e, portanto, o disparo de ações de preparação e prevenção de danos por enchentes, por exemplo, devem antecedecer a esses períodos.
+
+### Probabilidade de ocorrência de riscos acidentais
+
+Evidentemente, a ação mais recomendável para lidar com riscos acidentais é a prevenção. Entretanto, para a gestão de riscos, é necessário estimar a probabilidade de ocorrência de eventos acidentais, ou seja, que ocorrem não intencionalmente, mas por algum tipo de falha involuntária causada por descuido, incompetência ou negligência.
+
+No caso de acidentes de trânsito, por exemplo, o *site* da Associação Brasileira de Prevenção de Acidentes de Trânsito ([http://www.vias-seguras.com/content/view/full/132](https://www.google.com/search?q=http://www.vias-seguras.com/content/view/full/132)) traz informações bastante ricas e detalhadas sobre índices de acidentes por rodovia, por trecho de rodovia, entre outros. É possível, portanto, trabalhando com dados como estes e com dados internos das empresas envolvidas, avaliar muito mais objetivamente os riscos de acidentes de trânsito. Outro exemplo de riscos acidentais que podem se beneficiar de dados setoriais e internos da própria empresa são os de acidentes de trabalho, atrasos relevantes de fornecedores, quebras de equipamento, entre outros que podem contar com uma boa base de dados históricos.
+
+Isso, evidentemente, será mais factível quanto mais a empresa adotar como prática o acúmulo desses dados, de forma a torná-los facilmente utilizáveis no futuro. Se a **empresa** não costuma acumular esse tipo de informação histórica e pretende fazer uma boa gestão de riscos de sua cadeia de suprimentos, deve começar a criar suas bases de dados sem demora.
+
+Como pode ser visto pelos exemplos até agora, informação histórica é um dos elementos essenciais na avaliação de probabilidades associadas a riscos. Quanto mais dados relevantes disponíveis, mais a estatística poderá trabalhar a favor de uma boa gestão de riscos.
+
+**Probabilidade de ocorrência de riscos intencionais**
+
+A avaliação dos riscos intencionais segue uma lógica um pouco diferente daquela da avaliação dos riscos aleatórios e acidentais. Segundo Sheffi (2005), interrupções intencionais constituem uma ameaça adaptável na qual os perpetradores visam ao sucesso do ataque e à maximização do dano causado. Consequentemente, proteger um determinado aspecto do sistema sob ataque pode aumentar a probabilidade de ataque em outro aspecto. Se uma empresa reforça tremendamente a segurança do aspecto “transporte” de suas cargas, por exemplo, provendo escolta armada, os indivíduos que intencionam se apoderar destas cargas provavelmente passarão a procurar fragilidades em outros aspectos do seu fluxo – por exemplo, passando a tentar assaltar os depósitos.
+
+Isso também significa que esses ataques deverão ocorrer nos mais frágeis e menos preparados pontos da operação – nos quais a operação estiver mais fragilizada. Nos eventos mais frequentes, como as greves, assaltos e roubos de carga, a estatística e a história poderão auxiliar a avaliar as probabilidades de ocorrência.
 
 ## Página 133
 
