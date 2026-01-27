@@ -68,19 +68,9 @@ Recentemente o Walmart tem se engajado no desenvolvimento de práticas que levam
 
 Quem vive o ambiente empresarial de hoje, em que o termo "administração de cadeias de suprimentos" (ou o correspondente termo em inglês supply chain management) incorporou-se definitivamente ao jargão gerencial, pode achar difícil crer que há pouco mais de 30 anos esse não era um termo amplamente conhecido, tendo sido cunhado por consultores apenas no início dos anos 1980 (Lambert e Cooper, 2000). Quando comparado à idade que a moderna concepção da área de administração de produção e operações tem, em torno de 250 anos, com acelerada evolução no último século (Corrêa e Corrêa, 2017), fica claro que a área de administração de cadeias de suprimentos é uma área ainda jovem que ganhou grande visibilidade, principalmente nas últimas duas décadas.
 
-**Saiba mais**
-
-A evolução de tecnologia e os retornos decrescentes justificam o aumento recente do interesse por administração de cadeias de suprimentos.
-
-**Evolução tecnológica**
-
-Nunca em épocas passadas a tecnologia evoluiu a passos tão rápidos. Isso faz com que seja difícil para empresas manterem internamente os processos de atualização e desenvolvimento tecnológico em todas as áreas que contribuem para os produtos e serviços que oferecem ao mercado. Na esperança de evitar que se tornem “medíocres em tudo, mas tentarem ser excepcionais em tudo”, têm preferido delegar a terceiros parcelas cada vez mais substanciais não só da produção de partes de seus produtos e serviços, mas também do desenvolvimento destas partes. Isso aumentou substancialmente a quantidade e a intensidade de trocas nas interfaces entre as empresas e as cadeias de suprimentos em que as empresas se encontram, tornando-as mais complexas. A administração das cadeias de suprimentos passou, portanto, a ganhar muito mais atenção gerencial.
-
-**Retornos decrescentes dos esforços internos de melhoria**
-
-Em paralelo, nota-se um desbalanceamento, dentro da área de administração de operações, entre o tratamento de operações dentro das empresas da cadeia de suprimentos e entre as empresas da cadeia de suprimentos. Historicamente, a grande ênfase dos modelos, das práticas, do ensino e da pesquisa em operações tem sido na administração de “empresas”. Há numerosas escolas de administração de empresas no Brasil e no mundo, mas nenhuma dedicada à administração de cadeias de empresas. Não se advoga aqui que haja essas escolas, apenas se pretende que isso ilustre para onde é que tem se direcionado a ênfase dessa área do conhecimento. Apenas ultimamente a área de administração de operações passou a debruçar-se sobre as questões de como tratar as relações entre empresas numa cadeia. As principais técnicas desenvolvidas (e usadas) ao longo destes últimos dois séculos e meio de evolução predominantemente centram-se na busca por aumentos de produtividade e qualidade dentro das organizações.
-
-Anteriormente aos anos 1990, foram raras as iniciativas que consideravam as cadeias de empresas e seu desempenho sistêmico. Isso de certa forma ajuda a explicar por que hoje grande número de empresas tem notado que os custos marginais de melhorias em qualidade e produtividade dentro das empresas da cadeia de suprimentos são grandes e crescentes (já que grande esforço já alocado em melhorias, ao longo de muitas décadas, leva a retornos decrescentes), enquanto o (relativamente) pequeno esforço colocado historicamente em melhorias nos relacionamentos entre empresas da cadeia faz com que os esforços de melhoria ainda tenham retorno relativamente alto que os esforços internos. Isso tem feito com que empresas procurem voltar sua atenção gerencial para melhorias em temas como logística e administração de cadeias de suprimentos.
+| 🔵**SAIBA MAIS**{bg=azul}|
+|----------------|
+|A evolução de tecnologia e os retornos decrescentes justificam o aumento recente do interesse por administração de cadeias de suprimentos.<br><br>**Evolução tecnológica**<br>Nunca em épocas passadas a tecnologia evoluiu a passos tão rápidos. Isso faz com que seja difícil para empresas manterem internamente os processos de atualização e desenvolvimento tecnológico em todas as áreas que contribuem para os produtos e serviços que oferecem ao mercado. Na esperança de evitar que se tornem “medíocres em tudo, mas tentarem ser excepcionais em tudo”, têm preferido delegar a terceiros parcelas cada vez mais substanciais não só da produção de partes de seus produtos e serviços, mas também do desenvolvimento destas partes. Isso aumentou substancialmente a quantidade e a intensidade de trocas nas interfaces entre as empresas e as cadeias de suprimentos em que as empresas se encontram, tornando-as mais complexas. A administração das cadeias de suprimentos passou, portanto, a ganhar muito mais atenção gerencial.<br><br>**Retornos decrescentes dos esforços internos de melhoria**<br><br>Em paralelo, nota-se um desbalanceamento, dentro da área de administração de operações, entre o tratamento de operações dentro das empresas da cadeia de suprimentos e entre as empresas da cadeia de suprimentos. Historicamente, a grande ênfase dos modelos, das práticas, do ensino e da pesquisa em operações tem sido na administração de “empresas”. Há numerosas escolas de administração de empresas no Brasil e no mundo, mas nenhuma dedicada à administração de cadeias de empresas. Não se advoga aqui que haja essas escolas, apenas se pretende que isso ilustre para onde é que tem se direcionado a ênfase dessa área do conhecimento. Apenas ultimamente a área de administração de operações passou a debruçar-se sobre as questões de como tratar as relações entre empresas numa cadeia. As principais técnicas desenvolvidas (e usadas) ao longo destes últimos dois séculos e meio de evolução predominantemente centram-se na busca por aumentos de produtividade e qualidade dentro das organizações.<br><br>Anteriormente aos anos 1990, foram raras as iniciativas que consideravam as cadeias de empresas e seu desempenho sistêmico. Isso de certa forma ajuda a explicar por que hoje grande número de empresas tem notado que os custos marginais de melhorias em qualidade e produtividade dentro das empresas da cadeia de suprimentos são grandes e crescentes (já que grande esforço já alocado em melhorias, ao longo de muitas décadas, leva a retornos decrescentes), enquanto o (relativamente) pequeno esforço colocado historicamente em melhorias nos relacionamentos entre empresas da cadeia faz com que os esforços de melhoria ainda tenham retorno relativamente alto que os esforços internos. Isso tem feito com que empresas procurem voltar sua atenção gerencial para melhorias em temas como logística e administração de cadeias de suprimentos.|
 
 ## Página 5
 
@@ -98,11 +88,13 @@ Usando esse conceito, a Toyota e a Honda terceirizavam a fornecedores o equivale
 
 ## Página 6
 
-💡 **Para refletir** - A exemplo do *Just in Time* em relação às práticas internas de manufatura, as *keiretsus* japonesas e seu sucesso fizeram com que as empresas ocidentais passassem a repensar suas próprias práticas, passando a apreciar as vantagens de mais altos níveis de terceirização e relações mais cooperativas com fornecedores, abrindo caminho para o desenvolvimento de conceitos estratégicos importantes em administração de cadeias de suprimentos, como as decisões estratégicas de terceirizar ou fazer, os relacionamentos mais próximos e cooperativos com fornecedores e o uso de fornecedores como fontes importantes de conhecimento e competências na cadeia de suprimentos. 💡
+| ❓**Para refletir**❓{bg=vermelho}|
+|----------------|
+|A exemplo do *Just in Time* em relação às práticas internas de manufatura, as *keiretsus* japonesas e seu sucesso fizeram com que as empresas ocidentais passassem a repensar suas próprias práticas, passando a apreciar as vantagens de mais altos níveis de terceirização e relações mais cooperativas com fornecedores, abrindo caminho para o desenvolvimento de conceitos estratégicos importantes em administração de cadeias de suprimentos, como as decisões estratégicas de terceirizar ou fazer, os relacionamentos mais próximos e cooperativos com fornecedores e o uso de fornecedores como fontes importantes de conhecimento e competências na cadeia de suprimentos.|
 
-**Saiba mais**
-
-As *keiretsus* surgiram no Japão depois da II Grande Guerra Mundial, durante o “milagre japonês”, quando os aliados, vencedores da guerra, desmantelaram as chamadas *zaibatsus* (grupos empresariais dominados por grupos familiares tradicionais). As empresas resultantes do desmantelamento foram reintegradas por meio de aquisições cruzadas de participação acionária, formando alianças integradas horizontalmente, cruzando fronteiras entre setores industriais. 
+| 🔵**SAIBA MAIS**{bg=azul}|
+|----------------|
+|As *keiretsus* surgiram no Japão depois da II Grande Guerra Mundial, durante o “milagre japonês”, quando os aliados, vencedores da guerra, desmantelaram as chamadas *zaibatsus* (grupos empresariais dominados por grupos familiares tradicionais). As empresas resultantes do desmantelamento foram reintegradas por meio de aquisições cruzadas de participação acionária, formando alianças integradas horizontalmente, cruzando fronteiras entre setores industriais.|
 
 Onde possível, as empresas pertencentes às *keiretsus* forneciam apenas umas para as outras. As maiores *keiretsus* foram formadas em torno de bancos que emprestavam dinheiro para as empresas participantes e possuíam participação acionária nestas, mantendo sobre elas certo nível de controle. As *keiretsus* são intrincadas redes de empresas interdependentes.
 
@@ -127,7 +119,9 @@ Imagine dois dos grandes concorrentes nesse mer cado no Brasil: Unilever (dona d
 
 Na verdade, entretanto, aqui também a concorrência hoje ocorre entre cadeias: embora compartilhem muitos dos parceiros, o nível de competência com que estas empresas conseguem integrar-se aos seus parceiros compartilhados pode ser completamente diferente. Se a Unilever, por exemplo, estiver mais bem integrada com um grande varejista do que a P&G por exemplo, sua cadeia será mais eficaz, embora ambas estejam se relacionando com o mesmo varejista.
 
-⚠️**FIQUE ATENTO - A concorrência pelos mercados hoje se dá entre "cadeias de Suprimentos" e não mais entre "empresas", mesmo quando grande parte dos elementos das cadeias concorrentes seja comum e compartilhada.**⚠️
+|💡**Fique atento**💡{bg=amarelo}|
+|----------------|
+|A concorrência pelos mercados hoje se dá entre "cadeias de Suprimentos" e não mais entre "empresas", mesmo quando grande parte dos elementos das cadeias concorrentes seja comum e compartilhada.**|
 
 #### Uma poderosa arma competitiva 
 
@@ -171,7 +165,9 @@ O preço pago pelo usuário final, portanto, é o somatório de todo o custo ope
 
 Com menos competitividade e preços mais altos, a cadeia venderá menos produtos, porque o usuário final, único pagante, poderá preferir comprar de uma cadeia mais eficiente - por preços menores. Ora, como a única fonte de dinheiro "novo" da cadeia do usuário final, se este deixa de comprar, a fonte "secará" para essa cadeia inteira: não apenas os nós ineficientes serão penalizados, mas todos os nós, inclusive aqueles que, vistos individualmente, poderiam ser considerados eticientes.
 
-⚠️**O FIQUE ATENTO - Hoje para uma empresa ser competitiva e bem-sucedida, não basta que tenha eficiência nas suas operações internas - suas parceiras de cadeia de suprimentos (os outros nós a montante e a jusante na cadeia) devem ser internamente eficientes e, além disso, os elos (fluxos físicos, financeiros, de informação e de relacionamento entre os nós) também devem ser eficientes. Isso só se obtém com uma adequada integração na administração dos nós e elos da cadeia de suprimentos.**⚠️
+|💡**Fique atento**💡{bg=amarelo}|
+|----------------|
+| Hoje para uma empresa ser competitiva e bem-sucedida, não basta que tenha eficiência nas suas operações internas - suas parceiras de cadeia de suprimentos (os outros nós a montante e a jusante na cadeia) devem ser internamente eficientes e, além disso, os elos (fluxos físicos, financeiros, de informação e de relacionamento entre os nós) também devem ser eficientes. Isso só se obtém com uma adequada integração na administração dos nós e elos da cadeia de suprimentos.**|
 
 #### Administração de cadeias de suprimentos envolve mais que apenas a gestão de custos
 
@@ -191,7 +187,9 @@ A Figura 1.4 Diferença entre eficiência e eficácia.
 
 O nível de desempenho de uma cadeia de suprimentos é uma função dos níveis de eficiéncia e eficácia que, não as empresas individuais, mas o conjunto de empresas que interagem na cadeia de suprimentos tem.
 
-⚠️**FIQUE ATENTO - Hoje para uma empresa ser competitiva e bem-sucedida, não basta que seja eficiente e eficaz nas suas operações internas - Suas parceiras de Cadeia de suprimentos (os outros nós a montante e a jusante da cadeia) também devem ser internamente eficientes e eficazes, e os elos (fluxos físicos, financeiros, de informação e relacionamento entre os nós) também devem ser eficientes e eficazes. Isso só se obtém com uma adequada administração integrada da cadeia de suprimentos.**⚠️
+|💡**Fique atento**💡{bg=amarelo}|
+|----------------|
+|Hoje para uma empresa ser competitiva e bem-sucedida, não basta que seja eficiente e eficaz nas suas operações internas - Suas parceiras de Cadeia de suprimentos (os outros nós a montante e a jusante da cadeia) também devem ser internamente eficientes e eficazes, e os elos (fluxos físicos, financeiros, de informação e relacionamento entre os nós) também devem ser eficientes e eficazes. Isso só se obtém com uma adequada administração integrada da cadeia de suprimentos.**|
 
 ### 1.2.2 Atividades envolvidas na administração de cadeias de suprimentos
 
@@ -205,13 +203,9 @@ Administração de cadeias de suprimentos envolve a administração integrada de
 
 Figura 1.5 Atividades envolvidas na administração integrada da cadeia global de suprimentos.
 
-**SAIBA MAIS**
-
-Para consumidores mais tradicionalistas, que ainda usam DVDs para assistirem a seus filmes, os varejistas criaram uma operação inovadora, dando acesso instantâneo a milhares de títulos cuja manutenção em estoque físico seria impossível ou inviável de outra forma. O cliente consulta um enorme menu de títulos em quiosques localizados em supermercados e o filme é então baixado e impresso num DVD virgem.
-
-Trata-se de uma associação americana chamada Associação para Controle de Cópias de DVDs – um consórcio entre os estúdios cinematográficos e os fabricantes de hardware e software responsáveis pelos sistemas que impedem que DVDs “piratas” sejam produzidos domesticamente, permitindo que esses sistemas sejam licenciados mais amplamente. Isso abre as portas para a possibilidade de venda, em quiosques, de DVDs gravados no local. Grandes cadeias varejistas, como as cadeias de farmácias e lojas de conveniências americanas Walgreens e Publix já instalaram quiosques em suas lojas. Ter disponível o conteúdo dos grandes estúdios produtores de filmes fortalece o potencial de aumentar o fluxo de clientes nas lojas. Para os estúdios, adotar os quiosques permite vender os milhares de produtos recentes e mais antigos de seu catálogo sem terem que fisicamente produzir, armazenar e distribuir os DVDs.
-
-Além disso, com o uso dos quiosques os varejistas não precisam destinar espaço precioso de prateleira para estocar DVDs. Evidentemente, os clientes menos conservadores já não usam DVDs, preferindo downloads e streaming feitos diretamente pelo usuário final em televisores inteligentes ou *tablets*, computadores ou smartphones. Entretanto, enquanto ainda houver clientes que insistem em usar DVDs, os quiosques serão uma alternativa interessante, que já muda bastante a forma de distribuição de filmes.
+| 🔵**SAIBA MAIS**{bg=azul}|
+|----------------|
+|Para consumidores mais tradicionalistas, que ainda usam DVDs para assistirem a seus filmes, os varejistas criaram uma operação inovadora, dando acesso instantâneo a milhares de títulos cuja manutenção em estoque físico seria impossível ou inviável de outra forma. O cliente consulta um enorme menu de títulos em quiosques localizados em supermercados e o filme é então baixado e impresso num DVD virgem.<br><br>Trata-se de uma associação americana chamada Associação para Controle de Cópias de DVDs – um consórcio entre os estúdios cinematográficos e os fabricantes de hardware e software responsáveis pelos sistemas que impedem que DVDs “piratas” sejam produzidos domesticamente, permitindo que esses sistemas sejam licenciados mais amplamente. Isso abre as portas para a possibilidade de venda, em quiosques, de DVDs gravados no local. Grandes cadeias varejistas, como as cadeias de farmácias e lojas de conveniências americanas Walgreens e Publix já instalaram quiosques em suas lojas. Ter disponível o conteúdo dos grandes estúdios produtores de filmes fortalece o potencial de aumentar o fluxo de clientes nas lojas. Para os estúdios, adotar os quiosques permite vender os milhares de produtos recentes e mais antigos de seu catálogo sem terem que fisicamente produzir, armazenar e distribuir os DVDs.<br><br>Além disso, com o uso dos quiosques os varejistas não precisam destinar espaço precioso de prateleira para estocar DVDs. Evidentemente, os clientes menos conservadores já não usam DVDs, preferindo downloads e streaming feitos diretamente pelo usuário final em televisores inteligentes ou *tablets*, computadores ou smartphones. Entretanto, enquanto ainda houver clientes que insistem em usar DVDs, os quiosques serão uma alternativa interessante, que já muda bastante a forma de distribuição de filmes.|
 
 ## Página 11
 
@@ -227,7 +221,9 @@ Tradicionalmente, as organizações se estruturavam de forma "funcional", em que
 
 Figura 1.6 Estrutura organizacional hierárquica ou funcional ilustrativa de uma empresa de transporte aéreo.
 
-⚠️**CONCEITO-CHAVE - Um *processo de negócios* pode ser definido como um conjunto estruturado e encadeado de atividades com resultados que atendem a clientes (Davenport e Beers, 1995).**⚠️
+| ⚠️**Conceito-chave**⚠️{bg=verde}|
+|----------------|
+|Um *processo de negócios* pode ser definido como um conjunto estruturado e encadeado de atividades com resultados que atendem a clientes (Davenport e Beers, 1995).**|
 
 O problema com a estrutura funcional é que, como pode ser visto pelas linhas verticais, as estruturas de coordenação e comunicação são predominantemente chefe-subordinado. Isso tende a fazer com que as respostas ao cliente, que na verdade está na ponta de encademantos de relações cliente-fornecedor internos que cruzam transversalmente a estrutura funcional, fiquem mais demoradas e falhas, exatamente porque os clientes e fornecedores internos não têm linhas diretas de comunicação e coordenação.
 
@@ -245,13 +241,17 @@ O cliente usuário final de uma cadeia automobilística é o indivíduo que adqu
 
 O relacionamento com o cliente se dá em vários níveis: há interações financeiras, logísticas (bens) e de informações entre a cadeia de suprimentos e o usuário final. Ou seja, o processo de relacionamento deve cruzar as fronteiras funcionais (tanto na concessionária quanto na montadora e nos fornecedores). O usuário final pode, em certo momento, contatar a concessionária sobre alguma dúvida ou problema específico com algum acessório de seu carro que demande uma resposta direta do fornecedor, ou do fornecedor do fornecedor da montadora, e isso requer coordenação "horizontal", de processos, entre concessionária, montadora e fornecedores.
 
-⚠️ **PARA REFLETIR** - Numa visão meramente funcional, ou segmentada, dos atores da cadeia de suprimentos, o cliente sofrerá as consequências da ausência de linhas de fluxo de comunicação, coordenação e colaboração entre as funções e empresas envolvidas — percebe custos mais altos, demoras, desencontro de informações, por exemplo. Daí o poder da abordagem por processos em administração de cadeias de suprimentos, principalmente aquelas cadeias que operam em ambientes dinâmicos e competitivos. A abordagem por processos reconhece o cliente como origem e destino principal das atividades da cadeia.⚠️
+| ❓**Para refletir**❓{bg=vermelho}|
+|----------------|
+| Numa visão meramente funcional, ou segmentada, dos atores da cadeia de suprimentos, o cliente sofrerá as consequências da ausência de linhas de fluxo de comunicação, coordenação e colaboração entre as funções e empresas envolvidas — percebe custos mais altos, demoras, desencontro de informações, por exemplo. Daí o poder da abordagem por processos em administração de cadeias de suprimentos, principalmente aquelas cadeias que operam em ambientes dinâmicos e competitivos. A abordagem por processos reconhece o cliente como origem e destino principal das atividades da cadeia.|
 
 ### 1.2.3 Administração de cadeias de suprimentos: uma definição operacional
 
 Para os objetivos deste texto, podemos definir administração de cadeias de suprimentos como abaixo:
 
-⚠️**CONCEITO-CHAVE - Administração de cadeias de suprimentos é a administracão integrada dos processos principais de negócios envolvidos com fluxos físicos, financeiros e de informações, englobando desde os produtores originans de insumos basicos até o consumidor final. na geração e fornecimento de bens, serviços e informações, de forma a agregar valor para todos os clientes - intermediários e finais - e para outros grupos de interesse legítimos e relevantes para a cadeia (acionistas, funcionários, gestores, comunidade, governo).**⚠️
+| ⚠️**Conceito-chave**⚠️{bg=verde}|
+|----------------|
+| Administração de cadeias de suprimentos é a administracão integrada dos processos principais de negócios envolvidos com fluxos físicos, financeiros e de informações, englobando desde os produtores originans de insumos basicos até o consumidor final. na geração e fornecimento de bens, serviços e informações, de forma a agregar valor para todos os clientes - intermediários e finais - e para outros grupos de interesse legítimos e relevantes para a cadeia (acionistas, funcionários, gestores, comunidade, governo).**|
 
 #### Impactos da administração de cadeias de suprimentos no resultado financeiro da organização
 
@@ -263,7 +263,9 @@ A Figura 1.8 faz uso de um modelo simples de cálculo de EVA para ilustrar como 
 
 ## Página 14 
 
-⚠️**FIQUE ATENTO - A administração de cadeias de suprimentos pode ser uma importante arma competitiva, com impactos claros e relevantes no resultado econômico das empresas componentes.**⚠️
+|💡**Fique atento**💡{bg=amarelo}|
+|----------------|
+| A administração de cadeias de suprimentos pode ser uma importante arma competitiva, com impactos claros e relevantes no resultado econômico das empresas componentes.**|
 
 #### Com a administração de cadeias de suprimentos todos podem ganhar
 
@@ -299,7 +301,9 @@ Na Figura 1.9, como o lucro de um parceiro aumentou na mesma proporção, o do o
 
 Figura 1.10 0 jogo conflitante ganha-perde nas negociações tradicionais na verdade não tem soma zero, mas soma negativa: a cadeia perde.
 
-⚠️**FIQUE ATENTO - Pelo menos em determinadas situações, relações mais colaborativas em que se compartilham informações e se coordenam processos decisórios podem ser mais indicadas que as relações conflituosas tradicionais. Mais colaboracão resulta em reduções importantes do nível de incerteza e aumento do nivel de integração na cadeia. Para isso, é necessário que haja uma administração de cadeia de suprimentos em que as acões sejam coordenadas e colaborativas, com algum mecanismo gestor por trás das ações dos vários nós para garantir essa coordenação.**⚠️
+|💡**Fique atento**💡{bg=amarelo}|
+|----------------|
+| Pelo menos em determinadas situações, relações mais colaborativas em que se compartilham informações e se coordenam processos decisórios podem ser mais indicadas que as relações conflituosas tradicionais. Mais colaboracão resulta em reduções importantes do nível de incerteza e aumento do nivel de integração na cadeia. Para isso, é necessário que haja uma administração de cadeia de suprimentos em que as acões sejam coordenadas e colaborativas, com algum mecanismo gestor por trás das ações dos vários nós para garantir essa coordenação.**|
 
 #### Alinhamento de atividades e competências nas cadeias de suprimentos
 
@@ -321,7 +325,9 @@ Quando as condições climáticas ou outras condições relevantes mudam, o gest
 
 Por sua própria posição na cadeia de suprimentos, e nesse caso pelo maior foco, o fabricante tem muito melhores condições que o supermercado para fazer previsões de vendas de curto prazo dos seus produtos e, portanto, está numa posição mais privilegiada para fazer a administração de estoques do supermercado do que o próprio gestor de estoques do supermercado! Isso significa que em certas situações pode valer a pena realocar a atividade de "previsão das vendas ao consumidor": em vez de ser realizada pelo supermercado, passar a ser realizada nela fabricante (essa prática se chama **estoque gerenciado pelo fornecedor - VMI** e é utilizada em muitas situações).
 
-⚠️**FIQUE ATENTO - Muitas vezes, as atividades da cadeia têm que ser realocadas para nós que tenham mais competência para realizá-1as e isso só é possível com a abordagem global e por processos que a administração de cadeias de suprimentos adota.**⚠️
+|💡**Fique atento**💡{bg=amarelo}|
+|----------------|
+| Muitas vezes, as atividades da cadeia têm que ser realocadas para nós que tenham mais competência para realizá-1as e isso só é possível com a abordagem global e por processos que a administração de cadeias de suprimentos adota.**|
 
 ### 1.2.4 Tipos de cadeias de suprimentos e empresas focais
 
@@ -394,9 +400,9 @@ Agora imagine um nó forte pensando nas suas opções de ação. Se disparar uma
 
 Figura 1.13 Resultados gerais das iniciativas de assumir a governança e desenvolver administração de cadeias de suprimentos.
 
-**SAIBA MAIS**
-
-Ilustremos a dificuldade que algumas cadeias de suprimentos às vezes têm de escapar do paradoxo de governança (os atores fortes da cadeia de suprimentos que teriam o poder de fazer acontecer uma administração mais colaborativa da cadeia de suprimentos na qual se insere, muitas vezes não têm o interesse de fazer com que isso aconteça por um motivo simples: ganha mais, pelo menos no curto prazo, mantendo o *status quo*). Uma destas ilustrações é a postura que algumas grandes cadeias de varejo no Brasil mantiveram durante boa parte dos anos 1980 e 1990, com uma relação altamente conflituosa com os seus fornecedores a fim de se beneficiar do grande poder de barganha que tinham por operarem vivendo um momento de grande concentração de cadeias de supermercados no país. O texto ilustra um resumo (o original completo tem 32 “artigos”) de um suposto “Manual do Comprador” que uma delas alegadamente utilizava para treinar seus compradores. Não se nota muito, no clima geral do manual, assim como na abordagem eticamente questionável de alguns assuntos, uma disposição de cooperar ou colaborar para uma melhor administração da cadeia como um todo.
+| 🔵**SAIBA MAIS**{bg=azul}|
+|----------------|
+|Ilustremos a dificuldade que algumas cadeias de suprimentos às vezes têm de escapar do paradoxo de governança (os atores fortes da cadeia de suprimentos que teriam o poder de fazer acontecer uma administração mais colaborativa da cadeia de suprimentos na qual se insere, muitas vezes não têm o interesse de fazer com que isso aconteça por um motivo simples: ganha mais, pelo menos no curto prazo, mantendo o *status quo*). Uma destas ilustrações é a postura que algumas grandes cadeias de varejo no Brasil mantiveram durante boa parte dos anos 1980 e 1990, com uma relação altamente conflituosa com os seus fornecedores a fim de se beneficiar do grande poder de barganha que tinham por operarem vivendo um momento de grande concentração de cadeias de supermercados no país. O texto ilustra um resumo (o original completo tem 32 “artigos”) de um suposto “Manual do Comprador” que uma delas alegadamente utilizava para treinar seus compradores. Não se nota muito, no clima geral do manual, assim como na abordagem eticamente questionável de alguns assuntos, uma disposição de cooperar ou colaborar para uma melhor administração da cadeia como um todo.
 
 **“MANUAL DO COMPRADOR”**
 
