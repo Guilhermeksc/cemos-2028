@@ -1,3 +1,5 @@
+# Capítulo 9: Gestão e coordenação de estoques na cadeia global de suprimentos
+
 **9.1** Introdução, 249
 **9.2** Conceitos, 254
 **9.2.1** Estoques – conceitos básicos, 254

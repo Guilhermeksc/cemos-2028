@@ -1,4 +1,4 @@
-# EXERCÍCIOS CAPÍTULO 1
+# Exercícios - Capítulo 1
 
 ## 1.Sempre houve “cadeias de suprimentos”, já que em praticamente nenhum momento da História empresas foram totalmente autossuficientes e, portanto, sempre tiveram de lidar com fornecedores, revendedores etc. Por que você considera que apenas nos últimos 30 anos a área de administração de cadeias de suprimentos passou a despertar grande interesse dentro das organizações?
 
