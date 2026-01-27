@@ -24,11 +24,11 @@ export class CadeiasSuprimentosLogistica {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/intendencia/1-correa';
   fileNames: string[] = [
-    'cap1.md',
+    'cap11.md',
     'cap1-execicios.md',
-    'cap2.md',
+    'cap22.md',
     'cap2-execicios.md',
-    'cap3.md',
+    'cap33.md',
     'cap3-exercicios.md',
     'cap4.md',
     'cap4-exercicios.md',
