@@ -1,7 +1,5 @@
 # MD44-M-02 - Capítulo I - Introdução
 
-Manual de boas práticas de Custos do Ciclo de Vida de Sistemas de Defesa
-
 ## Página 11
 
 ### 1.1 Finalidade

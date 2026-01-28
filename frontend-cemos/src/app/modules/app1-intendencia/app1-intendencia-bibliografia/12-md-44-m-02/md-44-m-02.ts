@@ -21,7 +21,7 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
 })
 export class Md44M02 implements OnInit {
   // Configuração do LivroIndividual
-  contentPath: string = 'assets/content/intendencia/12-md-44-m-02';
+  contentPath: string = 'assets/content/intendencia/12-md-44m-02';
   fileNames: string[] = [
     'cap1.md',
     'cap2.md',

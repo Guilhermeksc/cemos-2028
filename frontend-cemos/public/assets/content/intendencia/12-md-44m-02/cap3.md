@@ -1,7 +1,5 @@
 # MD44-M-02 - Capítulo III - Processo para o gerenciamento do custo do ciclo de vida
 
-Manual de boas práticas de Custos do Ciclo de Vida de Sistemas de Defesa
-
 ## Página 21
 
 ### 3.1 Diretrizes Gerais

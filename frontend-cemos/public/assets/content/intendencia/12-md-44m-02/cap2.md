@@ -1,7 +1,5 @@
 # MD44-M-02 - Capítulo II - Conceitos Básicos
 
-Manual de boas práticas de Custos do Ciclo de Vida de Sistemas de Defesa
-
 ## Página 15
 
 ### 2.1 Fases do Ciclo de Vida de Sistemas de Defesa
