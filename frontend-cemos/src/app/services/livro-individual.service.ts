@@ -168,7 +168,23 @@ export class LivroIndividualService {
     html = html.replace(/_(.+?)_/g, '<em>$1</em>');
 
     // Imagens (processar ANTES de links para evitar conflito)
-    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" />');
+    // Suporta parâmetros opcionais: ![alt?parametros](imagem.png)
+    // Parâmetros: width=50%, height=100mm, scale=0.8, skip, small, medium, large
+    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, altText, src) => {
+      // Extrai parâmetros do alt text (formato: alt?parametros)
+      let alt = altText;
+      let params = '';
+      
+      if (altText.includes('?')) {
+        const parts = altText.split('?');
+        alt = parts[0];
+        params = parts.slice(1).join('?'); // Permite múltiplos ? se necessário
+      }
+      
+      // Cria o atributo data-pdf-params se houver parâmetros
+      const dataAttr = params ? ` data-pdf-params="${params}"` : '';
+      return `<img src="${src}" alt="${alt}"${dataAttr} />`;
+    });
 
     // Links (não captura imagens porque já foram processadas)
     html = html.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank">$1</a>');
