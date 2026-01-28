@@ -787,7 +787,7 @@ export class LivroIndividual implements OnInit, OnDestroy {
     // Configurações de página
     const pageWidth = 210; // A4 width in mm
     const pageHeight = 297; // A4 height in mm
-    const margin = 20;
+    const margin = 10; // Margem reduzida para ocupar mais espaço nas bordas
     const maxWidth = pageWidth - (margin * 2);
     let y = margin;
     
@@ -798,28 +798,114 @@ export class LivroIndividual implements OnInit, OnDestroy {
       italic: boolean;
     }
     
-    // Remove emojis e caracteres especiais problemáticos do texto, preservando espaços
-    const removeEmojis = (text: string): string => {
-      // Remove emojis usando regex Unicode, preservando espaços
-      // Inclui: emojis, símbolos, pictogramas, flags, etc.
-      let cleaned = text
-        .replace(/[\u{1F300}-\u{1F9FF}]/gu, '') // Emojis gerais
-        .replace(/[\u{1F600}-\u{1F64F}]/gu, '') // Emoticons
-        .replace(/[\u{1F680}-\u{1F6FF}]/gu, '') // Transporte e símbolos
-        .replace(/[\u{2600}-\u{26FF}]/gu, '') // Símbolos diversos
-        .replace(/[\u{2700}-\u{27BF}]/gu, '') // Dingbats
-        .replace(/[\u{1F900}-\u{1F9FF}]/gu, '') // Suplemento de emojis
-        .replace(/[\u{1FA00}-\u{1FAFF}]/gu, '') // Suplemento estendido
+    // Converte emojis para texto alternativo legível no PDF
+    // O jsPDF não suporta bem emojis Unicode, então convertemos para texto
+    const convertEmojisToText = (text: string): string => {
+      let converted = text;
+      
+      // Converte emojis específicos conhecidos (ordem importa - mais específicos primeiro)
+      // Usa array de tuplas para evitar problemas com chaves duplicadas
+      const emojiReplacements: Array<[string, string]> = [
+        // Quadrados e formas (com variation selector primeiro)
+        ['▪️', '-'],
+        ['▫️', '-'],
+        ['⬛', '-'],
+        ['⬜', '-'],
+        ['🔲', '-'],
+        ['🔳', '-'],
+        ['▪', '-'], // Sem variation selector
+        ['▫', '-'], // Sem variation selector
+        
+        // Check marks e aprovação
+        ['✅', '☑'],
+        ['✔️', '✔'],
+        ['☑️', '☑'],
+        ['✔', '✔'],
+        ['☑', '☑'],
+        ['✓', '✓'],
+        
+        // Interrogação e dúvida
+        ['❓', ''],
+        ['❔', ''],
+        
+        // Exclamação e aviso
+        ['⚠️', ''],
+        ['❗', '[!]'],
+        ['❕', '[!]'],
+        ['⚠', '[!]'], // Sem variation selector
+        
+        // Lâmpada e ideias
+        ['💡', ''],
+        
+        // Documentos e notas
+        ['📌', '-'],
+        ['📝', '[NOTA]'],
+        ['📋', '[CLIP]'],
+        ['📄', '[DOC]'],
+        ['📑', '[MARCA]'],
+        
+        // Busca e pesquisa
+        ['🔍', '[Lupa]'],
+        ['🔎', '[Lupa]'],
+        
+        // Estrelas
+        ['⭐', '[★]'],
+        ['🌟', '[★]'],
+        ['★', '★'],
+        ['☆', '☆'],
+        ['✩', '✩'],
+        ['✪', '✪'],
+        
+        // Setas
+        ['→', '→'],
+        ['←', '←'],
+        ['↑', '↑'],
+        ['↓', '↓'],
+        ['⇒', '⇒'],
+        ['⇐', '⇐'],
+        ['⇑', '⇑'],
+        ['⇓', '⇓'],
+        
+        // Bullets e pontos
+        ['•', '•'],
+        ['·', '·'],
+        ['◦', '◦'],
+        
+        // Traços e pontuação
+        ['—', '—'],
+        ['–', '–'],
+        ['…', '...'],
+      ];
+      
+      // Aplica substituições (ordena por tamanho decrescente para evitar substituições parciais)
+      emojiReplacements
+        .sort((a, b) => b[0].length - a[0].length)
+        .forEach(([emoji, replacement]) => {
+          const escapedEmoji = emoji.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const regex = new RegExp(escapedEmoji, 'g');
+          converted = converted.replace(regex, replacement);
+        });
+      
+      // Remove outros emojis Unicode que não foram mapeados
+      // Mas preserva caracteres especiais comuns como acentos, símbolos matemáticos, etc.
+      converted = converted
+        .replace(/[\u{1F300}-\u{1F9FF}]/gu, '') // Emojis gerais (não mapeados)
+        .replace(/[\u{1F600}-\u{1F64F}]/gu, '') // Emoticons (não mapeados)
+        .replace(/[\u{1F680}-\u{1F6FF}]/gu, '') // Transporte e símbolos (não mapeados)
+        .replace(/[\u{1F900}-\u{1F9FF}]/gu, '') // Suplemento de emojis (não mapeados)
+        .replace(/[\u{1FA00}-\u{1FAFF}]/gu, '') // Suplemento estendido (não mapeados)
         .replace(/[\u{FE00}-\u{FE0F}]/gu, '') // Variation selectors
         .replace(/[\u{200D}]/gu, '') // Zero width joiner
         .replace(/[\u{FE0F}]/gu, ''); // Variation selector-16
       
-      // Normaliza múltiplos espaços consecutivos em um único espaço
-      // Mas preserva espaços entre palavras
-      cleaned = cleaned.replace(/[ \t]+/g, ' '); // Normaliza espaços e tabs
+      // Normaliza espaços múltiplos consecutivos
+      converted = converted.replace(/[ \t]+/g, ' ');
       
-      return cleaned;
+      return converted;
     };
+    
+    // Alias para manter compatibilidade com código existente
+    const removeEmojis = convertEmojisToText;
     
     // Extrai texto com estilos de um elemento
     const extractTextWithStyles = (element: HTMLElement): TextSegment[] => {
@@ -829,10 +915,10 @@ export class LivroIndividual implements OnInit, OnDestroy {
         if (node.nodeType === Node.TEXT_NODE) {
           const text = node.textContent || '';
           if (text.length > 0) {
-            // Remove emojis preservando espaços
+            // Preserva emojis e normaliza espaços
             // Não fazemos trim() aqui para preservar espaços no início/fim que podem ser importantes
             const cleanText = removeEmojis(text);
-            // Só adiciona se houver conteúdo (após remover emojis)
+            // Adiciona se houver conteúdo (incluindo emojis)
             if (cleanText.trim().length > 0 || text.trim().length > 0) {
               segments.push({ text: cleanText, bold, italic });
             }
@@ -863,7 +949,7 @@ export class LivroIndividual implements OnInit, OnDestroy {
     };
     
     // Renderiza texto com estilos em uma linha, com justificação para parágrafos
-    const renderStyledText = (segments: TextSegment[], x: number, yPos: number, maxLineWidth: number, fontSize: number = 11, justify: boolean = true): number => {
+    const renderStyledText = (segments: TextSegment[], x: number, yPos: number, maxLineWidth: number, fontSize: number = 9, justify: boolean = true): number => {
       let currentX = x;
       let currentY = yPos;
       const lineHeight = fontSize * 0.4;
@@ -872,9 +958,12 @@ export class LivroIndividual implements OnInit, OnDestroy {
       const allWords: Array<{text: string, bold: boolean, italic: boolean}> = [];
       
       segments.forEach(segment => {
+        // Divide o texto preservando emojis e espaços
+        // Regex para dividir por espaços, mas preserva emojis como parte das palavras
         const parts = segment.text.split(/(\s+)/);
         parts.forEach(part => {
           if (part && !/^\s+$/.test(part)) {
+            // Preserva emojis junto com o texto
             allWords.push({ text: part, bold: segment.bold, italic: segment.italic });
           }
         });
@@ -939,6 +1028,7 @@ export class LivroIndividual implements OnInit, OnDestroy {
           }
           
           try {
+            // Renderiza o texto incluindo emojis (jsPDF tentará renderizar se suportado)
             pdf.text(word.text, xPos, currentY);
             xPos += pdf.getTextWidth(word.text);
             
@@ -947,7 +1037,28 @@ export class LivroIndividual implements OnInit, OnDestroy {
               xPos += spaceBetweenWords;
             }
           } catch (e) {
-            console.warn('Erro ao renderizar palavra:', word.text, e);
+            // Se houver erro ao renderizar (ex: emoji não suportado), tenta renderizar sem o emoji problemático
+            console.warn('Erro ao renderizar texto com possível emoji:', word.text.substring(0, 50), e);
+            // Tenta renderizar caractere por caractere para identificar o problema
+            try {
+              // Fallback: renderiza cada caractere individualmente
+              let charX = xPos;
+              for (const char of word.text) {
+                try {
+                  pdf.text(char, charX, currentY);
+                  charX += pdf.getTextWidth(char);
+                } catch (charError) {
+                  // Se um caractere específico falhar (provavelmente um emoji não suportado), pula
+                  console.warn('Caractere não suportado:', char);
+                }
+              }
+              xPos = charX;
+              if (index < words.length - 1) {
+                xPos += spaceBetweenWords;
+              }
+            } catch (fallbackError) {
+              console.error('Erro no fallback de renderização:', fallbackError);
+            }
           }
         });
         
@@ -989,12 +1100,364 @@ export class LivroIndividual implements OnInit, OnDestroy {
       return currentY;
     };
     
-    // Processa elementos de bloco
-    const processBlockElement = (element: HTMLElement, level: number = 0) => {
+    // Função auxiliar para carregar imagem e converter para base64
+    const loadImageAsBase64 = async (imageSrc: string): Promise<{ data: string; format: string } | null> => {
+      return new Promise((resolve) => {
+        try {
+          // Se já é base64, retorna diretamente
+          if (imageSrc.startsWith('data:')) {
+            const matches = imageSrc.match(/data:image\/(\w+);base64,(.+)/);
+            if (matches) {
+              resolve({ data: matches[2], format: matches[1] });
+              return;
+            }
+          }
+          
+          // Cria uma imagem para carregar
+          const img = new Image();
+          img.crossOrigin = 'anonymous';
+          
+          img.onload = () => {
+            try {
+              // Cria um canvas para converter a imagem em base64
+              const canvas = document.createElement('canvas');
+              canvas.width = img.naturalWidth || img.width;
+              canvas.height = img.naturalHeight || img.height;
+              
+              const ctx = canvas.getContext('2d');
+              if (!ctx) {
+                resolve(null);
+                return;
+              }
+              
+              ctx.drawImage(img, 0, 0);
+              
+              // Converte para base64
+              const base64 = canvas.toDataURL('image/png');
+              const matches = base64.match(/data:image\/(\w+);base64,(.+)/);
+              if (matches) {
+                resolve({ data: matches[2], format: 'png' });
+              } else {
+                resolve(null);
+              }
+            } catch (error) {
+              console.error('Erro ao converter imagem para base64:', error);
+              resolve(null);
+            }
+          };
+          
+          img.onerror = () => {
+            console.error('Erro ao carregar imagem:', imageSrc);
+            resolve(null);
+          };
+          
+          // Define o src para iniciar o carregamento
+          img.src = imageSrc;
+        } catch (error) {
+          console.error('Erro ao processar imagem:', error);
+          resolve(null);
+        }
+      });
+    };
+    
+    // Interface para parâmetros de imagem no PDF
+    interface ImagePDFParams {
+      skip?: boolean;
+      scale?: number;
+      width?: number;
+      height?: number;
+    }
+    
+    // Função auxiliar para parsear parâmetros de imagem
+    const parseImageParams = (paramsString: string): ImagePDFParams => {
+      const params: ImagePDFParams = {};
+      
+      if (!paramsString) return params;
+      
+      // Divide por espaços ou vírgulas
+      const parts = paramsString.split(/[\s,]+/).filter(p => p);
+      
+      parts.forEach(part => {
+        part = part.trim();
+        
+        // Parâmetros booleanos (skip, center, etc)
+        if (part === 'skip') {
+          params.skip = true;
+        } else if (part === 'small') {
+          params.scale = 0.5;
+        } else if (part === 'medium') {
+          params.scale = 0.75;
+        } else if (part === 'large') {
+          params.scale = 1.0;
+        }
+        // Parâmetros com valor (width=50%, height=100mm, scale=0.8)
+        else if (part.includes('=')) {
+          const [key, value] = part.split('=').map(s => s.trim());
+          
+          if (key === 'width') {
+            // Pode ser porcentagem ou valor absoluto (mm)
+            if (value.endsWith('%')) {
+              params.width = parseFloat(value) / 100;
+            } else if (value.endsWith('mm')) {
+              params.width = parseFloat(value);
+            } else {
+              // Assume mm se não especificado
+              params.width = parseFloat(value) || 0;
+            }
+          } else if (key === 'height') {
+            // Pode ser porcentagem ou valor absoluto (mm)
+            if (value.endsWith('%')) {
+              params.height = parseFloat(value) / 100;
+            } else if (value.endsWith('mm')) {
+              params.height = parseFloat(value);
+            } else {
+              // Assume mm se não especificado
+              params.height = parseFloat(value) || 0;
+            }
+          } else if (key === 'scale') {
+            params.scale = parseFloat(value) || 1;
+          }
+        }
+      });
+      
+      return params;
+    };
+    
+    // Função auxiliar para adicionar imagem ao PDF (definida no escopo correto)
+    const addImageToPDF = async (imageSrc: string, altText: string, imgElement: HTMLImageElement | undefined, currentLevel: number) => {
+      try {
+        // Extrai parâmetros do elemento img se disponível
+        let pdfParams: ImagePDFParams = {};
+        if (imgElement) {
+          const paramsString = imgElement.getAttribute('data-pdf-params');
+          if (paramsString) {
+            pdfParams = parseImageParams(paramsString);
+          }
+        }
+        
+        // Verifica se deve pular a imagem
+        if (pdfParams.skip === true) {
+          console.log('⏭️ Imagem ignorada (skip):', imageSrc);
+          return;
+        }
+        
+        console.log('🖼️ Processando imagem:', imageSrc, pdfParams);
+        
+        // Carrega a imagem e converte para base64 se necessário
+        const imageData = await loadImageAsBase64(imageSrc);
+        
+        if (!imageData) {
+          console.warn('⚠️ Não foi possível carregar a imagem:', imageSrc);
+          // Adiciona texto alternativo se a imagem não puder ser carregada
+          if (altText) {
+            pdf.setFontSize(8);
+            pdf.setFont('helvetica', 'italic');
+            pdf.text(`[Imagem: ${altText}]`, margin + (currentLevel * 5), y);
+            y += 5;
+          }
+          return;
+        }
+        
+        console.log('✅ Imagem carregada com sucesso:', imageSrc);
+        
+        // Obtém dimensões da imagem original
+        let imgWidth = 100;
+        let imgHeight = 100;
+        
+        if (imgElement) {
+          imgWidth = imgElement.naturalWidth || imgElement.width || 100;
+          imgHeight = imgElement.naturalHeight || imgElement.height || 100;
+        } else {
+          // Tenta carregar a imagem para obter dimensões
+          const tempImg = new Image();
+          tempImg.src = imageSrc;
+          imgWidth = tempImg.naturalWidth || tempImg.width || 100;
+          imgHeight = tempImg.naturalHeight || tempImg.height || 100;
+        }
+        
+        // Converte pixels para mm (assumindo 96 DPI)
+        const pxToMm = 0.264583; // 1px = 0.264583mm a 96 DPI
+        const imgWidthMm = imgWidth * pxToMm;
+        const imgHeightMm = imgHeight * pxToMm;
+        
+        // Calcula espaço necessário (incluindo margens antes e depois)
+        const spaceBefore = 5; // Espaço antes da imagem
+        const spaceAfter = 5; // Espaço depois da imagem
+        const altTextHeight = altText ? 10 : 0; // Espaço para texto alternativo
+        
+        // Calcula dimensões máximas disponíveis na página atual
+        let maxImageWidth = maxWidth - (currentLevel * 5);
+        let maxImageHeight = pageHeight - margin - y - spaceBefore - spaceAfter - altTextHeight;
+        
+        // Estima dimensões finais baseado nos parâmetros (se houver)
+        let estimatedWidth = imgWidthMm;
+        let estimatedHeight = imgHeightMm;
+        
+        // Aplica largura se especificada
+        if (pdfParams.width !== undefined && typeof pdfParams.width === 'number') {
+          if (pdfParams.width < 1) {
+            // É porcentagem (0.0 a 1.0)
+            estimatedWidth = maxImageWidth * pdfParams.width;
+          } else {
+            // É valor absoluto em mm
+            estimatedWidth = pdfParams.width;
+          }
+          // Mantém proporção se altura não foi especificada
+          if (pdfParams.height === undefined) {
+            estimatedHeight = (estimatedWidth / imgWidthMm) * imgHeightMm;
+          }
+        }
+        
+        // Aplica altura se especificada
+        if (pdfParams.height !== undefined && typeof pdfParams.height === 'number') {
+          if (pdfParams.height < 1) {
+            // É porcentagem (0.0 a 1.0)
+            estimatedHeight = maxImageHeight * pdfParams.height;
+          } else {
+            // É valor absoluto em mm
+            estimatedHeight = pdfParams.height;
+          }
+          // Mantém proporção se largura não foi especificada
+          if (pdfParams.width === undefined) {
+            estimatedWidth = (estimatedHeight / imgHeightMm) * imgWidthMm;
+          }
+        }
+        
+        // Aplica escala se especificada
+        if (pdfParams.scale !== undefined && typeof pdfParams.scale === 'number') {
+          estimatedWidth = imgWidthMm * pdfParams.scale;
+          estimatedHeight = imgHeightMm * pdfParams.scale;
+        }
+        
+        // Se nenhum parâmetro foi aplicado, estima escala automática
+        if (pdfParams.width === undefined && pdfParams.height === undefined && pdfParams.scale === undefined) {
+          let scale = 1;
+          if (imgWidthMm > maxImageWidth) {
+            scale = maxImageWidth / imgWidthMm;
+          }
+          estimatedWidth = imgWidthMm * scale;
+          estimatedHeight = imgHeightMm * scale;
+        }
+        
+        // Verifica se a imagem estimada cabe na página atual
+        // Se não couber, adiciona nova página ANTES de calcular dimensões finais
+        const totalNeededHeight = spaceBefore + estimatedHeight + spaceAfter + altTextHeight;
+        if (y + totalNeededHeight > pageHeight - margin) {
+          console.log('📄 Imagem não cabe na página atual, adicionando nova página');
+          pdf.addPage();
+          y = margin;
+          // Recalcula altura máxima disponível na nova página
+          maxImageHeight = pageHeight - margin - y - spaceBefore - spaceAfter - altTextHeight;
+        }
+        
+        // Recalcula dimensões máximas disponíveis (pode ter mudado após nova página)
+        maxImageWidth = maxWidth - (currentLevel * 5);
+        maxImageHeight = pageHeight - margin - y - spaceBefore - spaceAfter - altTextHeight;
+        
+        // Calcula dimensões finais da imagem
+        let finalWidth = imgWidthMm;
+        let finalHeight = imgHeightMm;
+        
+        // Aplica largura se especificada
+        if (pdfParams.width !== undefined && typeof pdfParams.width === 'number') {
+          if (pdfParams.width < 1) {
+            // É porcentagem (0.0 a 1.0)
+            finalWidth = maxImageWidth * pdfParams.width;
+          } else {
+            // É valor absoluto em mm
+            finalWidth = pdfParams.width;
+          }
+          // Mantém proporção se altura não foi especificada
+          if (pdfParams.height === undefined) {
+            finalHeight = (finalWidth / imgWidthMm) * imgHeightMm;
+          }
+        }
+        
+        // Aplica altura se especificada
+        if (pdfParams.height !== undefined && typeof pdfParams.height === 'number') {
+          if (pdfParams.height < 1) {
+            // É porcentagem (0.0 a 1.0)
+            finalHeight = maxImageHeight * pdfParams.height;
+          } else {
+            // É valor absoluto em mm
+            finalHeight = pdfParams.height;
+          }
+          // Mantém proporção se largura não foi especificada
+          if (pdfParams.width === undefined) {
+            finalWidth = (finalHeight / imgHeightMm) * imgWidthMm;
+          }
+        }
+        
+        // Aplica escala se especificada
+        if (pdfParams.scale !== undefined && typeof pdfParams.scale === 'number') {
+          finalWidth = imgWidthMm * pdfParams.scale;
+          finalHeight = imgHeightMm * pdfParams.scale;
+        }
+        
+        // Se nenhum parâmetro foi aplicado, calcula escala automática
+        if (pdfParams.width === undefined && pdfParams.height === undefined && pdfParams.scale === undefined) {
+          let scale = 1;
+          if (imgWidthMm > maxImageWidth) {
+            scale = maxImageWidth / imgWidthMm;
+          }
+          
+          // Verifica se precisa escalar pela altura também
+          const scaledHeight = imgHeightMm * scale;
+          if (scaledHeight > maxImageHeight) {
+            scale = maxImageHeight / imgHeightMm;
+          }
+          
+          finalWidth = imgWidthMm * scale;
+          finalHeight = imgHeightMm * scale;
+        }
+        
+        // Garante que não ultrapasse os limites máximos (após nova página se necessário)
+        if (finalWidth > maxImageWidth) {
+          const scale = maxImageWidth / finalWidth;
+          finalWidth = maxImageWidth;
+          finalHeight = finalHeight * scale;
+        }
+        if (finalHeight > maxImageHeight) {
+          const scale = maxImageHeight / finalHeight;
+          finalHeight = maxImageHeight;
+          finalWidth = finalWidth * scale;
+        }
+        
+        // Centraliza a imagem horizontalmente
+        const xPos = margin + (currentLevel * 5) + (maxImageWidth - finalWidth) / 2;
+        
+        // Adiciona espaço antes da imagem
+        y += 5;
+        
+        // Adiciona a imagem ao PDF
+        pdf.addImage(imageData.data, imageData.format, xPos, y, finalWidth, finalHeight);
+        console.log('✅ Imagem adicionada ao PDF:', imageSrc, `(${finalWidth.toFixed(2)}mm x ${finalHeight.toFixed(2)}mm)`);
+        
+        // Não adiciona texto alternativo quando a imagem é renderizada com sucesso
+        // O texto alternativo só aparece quando a imagem não pode ser carregada
+        y += finalHeight;
+        
+        // Adiciona espaço após a imagem
+        y += 5;
+        
+      } catch (error) {
+        console.error('❌ Erro ao adicionar imagem ao PDF:', error);
+        // Adiciona texto alternativo em caso de erro
+        if (altText) {
+          pdf.setFontSize(8);
+          pdf.setFont('helvetica', 'italic');
+          pdf.text(`[Imagem: ${altText}]`, margin + (currentLevel * 5), y);
+          y += 5;
+        }
+      }
+    };
+    
+    // Processa elementos de bloco (agora assíncrona para suportar imagens)
+    const processBlockElement = async (element: HTMLElement, level: number = 0) => {
       const children = Array.from(element.childNodes);
       
-      children.forEach((node) => {
-        if (y + 10 > pageHeight - margin) {
+      for (const node of children) {
+        if (y + 7 > pageHeight - margin) { // Threshold reduzido
           pdf.addPage();
           y = margin;
         }
@@ -1002,19 +1465,33 @@ export class LivroIndividual implements OnInit, OnDestroy {
         if (node.nodeType === Node.TEXT_NODE) {
           const text = node.textContent?.trim();
           if (text) {
-            // Remove emojis do texto antes de processar
+            // Preserva emojis no texto (normaliza apenas espaços)
             const cleanText = removeEmojis(text);
             if (cleanText) {
-              pdf.setFontSize(11);
+              pdf.setFontSize(9); // Fonte reduzida para 9
               pdf.setFont('helvetica', 'normal');
               const lines = pdf.splitTextToSize(cleanText, maxWidth - (level * 5));
               lines.forEach((line: string) => {
-                if (y + 7 > pageHeight - margin) {
+                if (y + 5 > pageHeight - margin) { // Line height reduzido
                   pdf.addPage();
                   y = margin;
                 }
-                pdf.text(line, margin + (level * 5), y);
-                y += 7;
+                try {
+                  pdf.text(line, margin + (level * 5), y);
+                } catch (e) {
+                  // Se houver erro com emoji, tenta renderizar caractere por caractere
+                  console.warn('Erro ao renderizar linha com possível emoji:', line.substring(0, 50));
+                  let charX = margin + (level * 5);
+                  for (const char of line) {
+                    try {
+                      pdf.text(char, charX, y);
+                      charX += pdf.getTextWidth(char);
+                    } catch (charError) {
+                      // Pula caracteres não suportados
+                    }
+                  }
+                }
+                y += 5; // Line height reduzido
               });
             }
           }
@@ -1024,51 +1501,92 @@ export class LivroIndividual implements OnInit, OnDestroy {
           
           // Processa headings
           if (tagName === 'h1' || tagName === 'h2' || tagName === 'h3') {
-            y += 5; // Espaço antes do heading
-            const fontSize = tagName === 'h1' ? 16 : tagName === 'h2' ? 14 : 12;
+            y += 3; // Espaço antes do heading (reduzido)
+            const fontSize = tagName === 'h1' ? 13 : tagName === 'h2' ? 11 : 10; // Fontes reduzidas proporcionalmente
             
             // Extrai texto com estilos e renderiza
             const segments = extractTextWithStyles(el);
             // Força negrito nos headings (sem justificação)
             segments.forEach(s => s.bold = true);
             y = renderStyledText(segments, margin + (level * 5), y, maxWidth - (level * 5), fontSize, false);
-            y += 3; // Espaço após heading
+            y += 2; // Espaço após heading (reduzido)
           }
           // Processa parágrafos com conteúdo inline (com justificação)
           else if (tagName === 'p') {
+            // Verifica se há imagens dentro do parágrafo primeiro
+            const imagesInParagraph = el.querySelectorAll('img');
+            if (imagesInParagraph.length > 0) {
+              // Processa imagens primeiro
+              for (const img of Array.from(imagesInParagraph)) {
+                const imgEl = img as HTMLImageElement;
+                const imgSrc = imgEl.src || imgEl.getAttribute('src') || '';
+                if (imgSrc) {
+                  const altText = imgEl.alt || '';
+                  await addImageToPDF(imgSrc, altText, imgEl, level);
+                }
+              }
+              // Remove imagens do parágrafo antes de processar texto
+              imagesInParagraph.forEach(img => img.remove());
+            }
+            
             // Extrai texto com estilos e renderiza com justificação
             const segments = extractTextWithStyles(el);
             if (segments.length > 0) {
-              y = renderStyledText(segments, margin + (level * 5), y, maxWidth - (level * 5), 11, true);
+              y = renderStyledText(segments, margin + (level * 5), y, maxWidth - (level * 5), 9, true); // Fonte reduzida para 9
             } else {
               // Fallback para texto simples
               const text = el.textContent?.trim() || '';
               if (text) {
-                // Remove emojis do texto antes de processar
+                // Preserva emojis no texto (normaliza apenas espaços)
                 const cleanText = removeEmojis(text);
                 if (cleanText) {
-                  pdf.setFontSize(11);
+                  pdf.setFontSize(9); // Fonte reduzida para 9
                   pdf.setFont('helvetica', 'normal');
                   const lines = pdf.splitTextToSize(cleanText, maxWidth - (level * 5));
                   lines.forEach((line: string) => {
-                    if (y + 7 > pageHeight - margin) {
+                    if (y + 5 > pageHeight - margin) { // Line height reduzido
                       pdf.addPage();
                       y = margin;
                     }
-                    pdf.text(line, margin + (level * 5), y);
-                    y += 7;
+                    try {
+                      pdf.text(line, margin + (level * 5), y);
+                    } catch (e) {
+                      // Se houver erro com emoji, tenta renderizar caractere por caractere
+                      console.warn('Erro ao renderizar linha com possível emoji:', line.substring(0, 50));
+                      let charX = margin + (level * 5);
+                      for (const char of line) {
+                        try {
+                          pdf.text(char, charX, y);
+                          charX += pdf.getTextWidth(char);
+                        } catch (charError) {
+                          // Pula caracteres não suportados
+                        }
+                      }
+                    }
+                    y += 5; // Line height reduzido
                   });
                 }
               }
             }
-            y += 3; // Espaço após parágrafo
+            y += 2; // Espaço após parágrafo (reduzido)
+          }
+          // Processa imagens
+          else if (tagName === 'img') {
+            const img = el as HTMLImageElement;
+            const imgSrc = img.src || img.getAttribute('src') || '';
+            
+            if (imgSrc) {
+              // Processa a imagem de forma assíncrona
+              const altText = img.alt || '';
+              await addImageToPDF(imgSrc, altText, img, level);
+            }
           }
           // Processa listas
           else if (tagName === 'ul' || tagName === 'ol') {
             const listItems = el.querySelectorAll('li');
             listItems.forEach((li, index) => {
               const bullet = tagName === 'ul' ? '• ' : `${index + 1}. `;
-              pdf.setFontSize(11);
+              pdf.setFontSize(9); // Fonte reduzida para 9
               pdf.setFont('helvetica', 'normal');
               const bulletWidth = pdf.getTextWidth(bullet);
               
@@ -1079,26 +1597,40 @@ export class LivroIndividual implements OnInit, OnDestroy {
               pdf.text(bullet, margin + (level * 5), y);
               
               if (segments.length > 0) {
-                y = renderStyledText(segments, margin + (level * 5) + bulletWidth, y, maxWidth - (level * 5) - bulletWidth, 11, false);
+                y = renderStyledText(segments, margin + (level * 5) + bulletWidth, y, maxWidth - (level * 5) - bulletWidth, 9, false); // Fonte reduzida para 9
               } else {
                 const text = li.textContent?.trim() || '';
                 if (text) {
-                  // Remove emojis do texto antes de processar
+                  // Preserva emojis no texto (normaliza apenas espaços)
                   const cleanText = removeEmojis(text);
                   if (cleanText) {
                     const lines = pdf.splitTextToSize(cleanText, maxWidth - (level * 5) - bulletWidth);
                     lines.forEach((line: string) => {
-                      if (y + 7 > pageHeight - margin) {
+                      if (y + 5 > pageHeight - margin) { // Line height reduzido
                         pdf.addPage();
                         y = margin;
                       }
-                      pdf.text(line, margin + (level * 5) + bulletWidth, y);
-                      y += 7;
+                      try {
+                        pdf.text(line, margin + (level * 5) + bulletWidth, y);
+                      } catch (e) {
+                        // Se houver erro com emoji, tenta renderizar caractere por caractere
+                        console.warn('Erro ao renderizar linha de lista com possível emoji:', line.substring(0, 50));
+                        let charX = margin + (level * 5) + bulletWidth;
+                        for (const char of line) {
+                          try {
+                            pdf.text(char, charX, y);
+                            charX += pdf.getTextWidth(char);
+                          } catch (charError) {
+                            // Pula caracteres não suportados
+                          }
+                        }
+                      }
+                      y += 5; // Line height reduzido
                     });
                   }
                 }
               }
-              y += 2;
+              y += 1.5; // Espaço reduzido entre itens
             });
           }
           // Processa tabelas
@@ -1107,14 +1639,14 @@ export class LivroIndividual implements OnInit, OnDestroy {
           }
           // Processa outros elementos recursivamente
           else {
-            processBlockElement(el, level);
+            await processBlockElement(el, level);
           }
         }
-      });
+      }
     };
 
-    // Processa o conteúdo
-    processBlockElement(contentWrapper);
+    // Processa o conteúdo (agora com await)
+    await processBlockElement(contentWrapper);
 
     // Função para remover acentos e caracteres especiais
     const removeAccents = (str: string): string => {
@@ -1153,8 +1685,8 @@ export class LivroIndividual implements OnInit, OnDestroy {
     removeEmojisFn: (text: string) => string
   ): number {
     let y = startY;
-    const cellPadding = 3;
-    const fontSize = 9; // Fonte menor para tabelas
+    const cellPadding = 2.5; // Padding reduzido
+    const fontSize = 8; // Fonte ainda menor para tabelas
     const lineHeight = fontSize * 0.45;
     
     // Obtém cabeçalho e linhas
@@ -1281,10 +1813,10 @@ export class LivroIndividual implements OnInit, OnDestroy {
       });
       
       y += maxCellHeight;
-    });
-    
-    y += 5; // Espaço após tabela
-    return y;
+      });
+      
+      y += 3; // Espaço após tabela (reduzido)
+      return y;
   }
 
   /**

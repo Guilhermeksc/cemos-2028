@@ -1,17 +1,5 @@
 # Capítulo 1 - Introdução à administração de cadeias globais de suprimentos
 
-**1.1** Introdução, 1
-**1.2** Conceitos, 4
-**1.2.1** Por que o interesse crescente em administração de cadeias de suprimentos?, 4
-**1.2.2** Atividades envolvidas na administração de cadeias de suprimentos, 9
-**1.2.3** Administração de cadeias de suprimentos: uma definição operacional, 13
-**1.2.4** Tipos de cadeias de suprimentos e empresas focais, 16
-**1.2.5** A globalização e a administração de cadeias de suprimentos, 19
-**1.2.6** Governança das cadeias de suprimentos, 19
-**1.2.7** Alinhamento de incentivos na cadeia, 22
-**1.3** Estudo de caso: Governança para sustentabilidade na cadeia de suprimentos do McDonald's, 24
-**1.4** Resumo, 26
-
 ## Página 1
 
 ## OBJETIVOS DE APRENDIZAGEM
@@ -147,7 +135,7 @@ Nela, um Fabricante recebe insumos (componentes do sabonete) de seus Fornecedore
 
 As entidades envolvidas aqui (fabricante, distribuidor, varejista e usuário) são muitas vezes chamadas de "nós" da cadeia de suprimentos, assim como as "ligações" (o relacionamento, os fluxos físicos de bens, os fluxos financeiros e os de informações) entre as entidades são denominados "elos" da cadeia.
 
-![alt text](figura1-2.png)
+![alt text?medium](figura1-2.png)
 
 Figura 1.2 Uma cadeia de suprimentos simples.
 
@@ -159,7 +147,7 @@ O usuário final vai ao varejista e compra sabonete. A transferência do sabonet
 
 Consideremos o varejista, agora. Com a receita que obtém do pagamento feito pelo usuário, o varejista paga seus Custos Operacionais (salários, depreciação, energia etc., exceto materiais, na ilustração da figura) e paga dividendos aos acionistas na forma de Lucro (representados pelas setas verticais acima do nó).
 
-Com o resto do dinheiro, ele adquire os bens e serviços que nccessita para operar - entre cles, sabonetes comprados do distribuidor. Note que o fluxo financeiro entre varejista e distribuidor "$$$" é menor que o fluxo financeiro entre usuário e varejista "$$$$" justarmente porque uma parte do fluxo "$$$$" foi usada para pagar custos operacionais e lucros do varejista "$".
+Com o resto do dinheiro, ele adquire os bens e serviços que neccessita para operar - entre eles, sabonetes comprados do distribuidor. Note que o fluxo financeiro entre varejista e distribuidor "$$$" é menor que o fluxo financeiro entre usuário e varejista "$$$$" justarmente porque uma parte do fluxo "$$$$" foi usada para pagar custos operacionais e lucros do varejista "$".
 
 Com o distribuidor ocorre o mesmo: com a receita que obtém do varejista pela venda de sabonetes, paga seus custos operacionais (salários, depreciação, enetua etc., exceto materiais) e paga dividendos aos acionistas na forma de lucro (representados pelas setas verticais acima do nó). Note que uma vez mais o fluxo "horizontar" referente às "trocas" na cadeia, diminui à medida que viaja para montante da cadeia (no sentido dos clientes para os fornecedores), em razão das saídas financeiras que necessitam ocorrer em cada "nó" fim de pagar seus respectivos custos operacionais e remunerar seus acionistas.
 
@@ -167,7 +155,7 @@ Vamos agora olhar não para os nós individuais da cadeia, mas para a cadeia int
 
 Veja a Figura 1.3.
 
-![alt text](figura1-3.png)
+![alt text?medium](figura1-3.png)
 
 A Figura 1.3 mostra que, quando se adota uma visão global da cadeia, o sistema passa a ter uma só entrada financeira (o dinheiro pago pelo usuário pelo produto final) e várias saídas: os custos operacionais e lucros de todos os nós da cadeia. Ou seja, o usuário final é o único nó "pagante da cadeia de suprimentos.
 
@@ -193,7 +181,7 @@ Os termos eficiência e eficácia têm de ser usados com precisão nesse context
 
 **Eficiência**, por outro lado, é a medida de quão economicamente os recursos da organização são utilizados quando provendo determinado nível de satisfação dos clientes e de outros grupos de interesse. Eficiência pode resultar em vantagem competitiva porque permite preços mais baixos e pode também resultar em margens mais altas.
 
-![alt text](figura1-4.png)
+![Diagrama?small](figura1-4.png)
 
 A Figura 1.4 Diferença entre eficiência e eficácia.
 
@@ -211,7 +199,7 @@ Administração de cadeias de suprimentos envolve a administração integrada de
 
 É importante observar que os conceitos de administração integrada de cadeias de suprimentos não se aplicam apenas a cadeias de produtos físicos, mas também a serviÇos. Evidentemente, as diferentes atividades terão importâncias relativas diferentes quando se analisam cadeias de produtos fisicos, como a cadeia de suprimentos automotiva, e cadeias de serviço, como a cadeia de suprimentos de entretenimento on-line - comoo site iTunes, da Apple Corporation, que vende músicas e filmes por download, por intermédio da internet, em que a administracão de tecnologia da informação é muito mais importante que a administração de estoques. A Figura 1.5 ilustra esse ponto com outro exemplo.
 
-![alt text](figura1-5.png)
+![alt text?medium](figura1-5.png)
 
 Figura 1.5 Atividades envolvidas na administração integrada da cadeia global de suprimentos.
 
@@ -229,7 +217,7 @@ O conceito de organizar as atividades de uma empresa por processos foi introduzi
 
 Tradicionalmente, as organizações se estruturavam de forma "funcional", em que as várias funções eram "compartimentalizadas", resultando nos tradicionais organogramas funcionais ou hierárquicos. Nesse arranjo, no topo da estrutura, o principal executivo da empresa coordena a atividade dos vários grupos funcionais, que podem ser de marketing, de operação, de finanças, de recursos humanos, e assim por diante. Cada uma destas funções, por sua vez, sofre também subdivisões com base funcional. O resultado é uma estrutura conforme ilustra a Figura 1.6.
 
-![alt text](figura1-6.png)
+![alt text?medium](figura1-6.png)
 
 Figura 1.6 Estrutura organizacional hierárquica ou funcional ilustrativa de uma empresa de transporte aéreo.
 
@@ -243,7 +231,7 @@ Além disso, as *funções separadas umas das outras tendem a tornar-se feudos (
 
 Inicialmente, processos de negócios eram vistos como uma forma de integrar funções dentro das empresas, mas hoje são usados também para estruturar atividades entre membros da cadeia de suprimentos - a cadeia toda fun cionando para atender o cliente usuário final, que está na extremidade de sequências de atividades encadeadas na forma de relações fornecedor-cliente e que cruzam não só os limites funcionais internos das organizações, mas também as próprias fronteiras das organizações, a fim de incluir atividades de parceiros na cadeia de suprimentos. Omodelo da Figura 1.7 ilustra a visäo de administração cadeia de suprimentos com ênfase na gestão por processos.
 
-![alt text](figura1-7.png)
+![alt text?medium](figura1-7.png)
 
 Figura 1.7 Visão da administração de adeias de suprimentos com ênfase em gestão por processos (adaptada de lambert et al, 2006).
 
@@ -271,7 +259,7 @@ Não é à toa que a administração de cadeias de suprimentos tem ocupado o top
 
 A Figura 1.8 faz uso de um modelo simples de cálculo de EVA para ilustrar como as atividades da administração de cadeias de suprimentos influenciam diretamente os três fatores que, por sua vez, definem o valor econômico agregado das empresas.
 
-![alt text](figura1-8.png)
+![alt text?medium](figura1-8.png)
 
 ## Página 14 
 
@@ -287,7 +275,7 @@ Muitas vezes, as várias organizações componentes das cadeias de suprimentos e
 
 Isso porque é com base nesse objetivo que suas recompensas como funcionário (salários, bônus, promoções) se baseiam. Analisemos como tradicionalmente se dá o pro cesso de negociação numa parte da cadeia de suprimentos simplificada que usamos anteriormente neste Capítulo. Essa parte está representada na Figura 1.9.
 
-![alt text](figura1-9.png)
+![alt text?medium](figura1-9.png)
 
 Figura 1.9 Relação tradicional cliente-fornecedor.
 
@@ -309,7 +297,7 @@ Por sua vez, o fabricante também procurará, pelo mesmo motivo, não compartilh
 
 Na Figura 1.9, como o lucro de um parceiro aumentou na mesma proporção, o do outro diminuiu, aparentemente a cadeia teve "soma zero, mas isso só é verdade quando levamos em conta apenas o lucro (representado por uma das setas verticais sobre os nós). Quando se considera o efeito colateral decorrente do jogo conflitante "ganha-perde", que é um maior nível global de incerteza, notamos que o resultado liquido não é zero, mas negativo, já que os custos totais da cadeia serão maiores e isso será repassado na forma de preços menos competitivos ao usuário final! Veja a Figura 1.I0.
 
-![alt text](figura1-10.png)
+![alt text?medium](figura1-10.png)
 
 Figura 1.10 0 jogo conflitante ganha-perde nas negociações tradicionais na verdade não tem soma zero, mas soma negativa: a cadeia perde.
 
@@ -363,7 +351,7 @@ Cadeias complexas de bens Nessa situação, que de fato ilustra a situação enf
 
 Serviços também têm suas cadeias de suprimentos e sua administração também é bastante complexa. Além das complexidades já descritas pelas cadeias complexas de bens, há um fator adicional: muitas vezes não só a empresa focal tem contato direto com o cliente, mas seus fornecedores e fornecedores dos fornecedores também têm. Um exemplo são as cadeias de serviços de saúde. Se considerarmos a empresa focal como a empresa de seguro saúde, ela tem que gerenciar uma complexa cadeia de distribuidores as corretoras de seguros de saúde e uma complexa cadeia de fornecedores: esta inclui hospitais, clínicas, médicos individuais, laboratórios de análises etc. Os fornecedores principais, por exemplo, os hospitais, tem suas próprias cadeias complexas de suprimento de bens (remédios, materiais etc.) e de serviços (muitas vezes, alguns serviços médicos, como radiologia, e a maioria dos serviços de apoio, como limpeza, hotelaria e alimentaçãa são terceirizados). Ocorre que, numa cadeia como esta, o contato com o cliente, uma atividade tão importante quanto complexa para os negócios, não pode ser concentrada, mas tem necessariamente que ser dispersa: o cliente não só tem contato direto com o corretor de seguro, como com a empresa de seguro saúde em si, com o hospital, com as empresas terceiras que prestam serviços de radiologia, limpeza, alimentação e assim por diante. A Figura 1.12 ilustra uma cadeia complexa de serviços.
 
-![alt text](figura1-12.png)
+![alt text?medium](figura1-12.png)
 
 Figura 1.12 Cadeia de Suprimentos complexa de serviços de saúde e seus principais fluxos.
 
@@ -408,7 +396,7 @@ Agora imagine um nó forte pensando nas suas opções de ação. Se disparar uma
 
 **Proposição 4 - Os elos fortes das cadeias, que têm maior probabilidade de êxito, têm relativamente pouco interesse em disparar iniciativas de administração de cadeia, visto que não são aparentemente os maiores beneficiários, pelo menoS no curto prazo.**
 
-![alt text](figura1-13.png)
+![alt text?medium](figura1-13.png)
 
 Figura 1.13 Resultados gerais das iniciativas de assumir a governança e desenvolver administração de cadeias de suprimentos.
 

@@ -155,20 +155,20 @@ As partes tentarão: ou forçar o outro lado a atender suas demandas (buscando a
 
 Ganha-ganha, ganha-perde e perde-perde são termos da teoria dos jogos (para uma abordagem introdutória, ver Fiani, 2004) que se referem a possíveis resultados de um jogo ou disputa entre dois lados e, mais importante, como cada lado percebe seu resultado em relação à sua expectativa antes do jogo ou disputa. Por exemplo, “ganha” indica um resultado melhor do que a expectativa inicial e “perde” indica um resultado pior do que a expectativa inicial (Spangler, 2003).
 
-■ **Ganha-ganha** é um resultado que ocorre quando ambos os lados têm a percepção de que ganharam. Como ambos ganharam nesse cenário, a resolução do impasse provavelmente será aceita de forma voluntária. Esse cenário é, em geral, atingido por cooperação em vez de conflito.
+▪️**Ganha-ganha** é um resultado que ocorre quando ambos os lados têm a percepção de que ganharam. Como ambos ganharam nesse cenário, a resolução do impasse provavelmente será aceita de forma voluntária. Esse cenário é, em geral, atingido por cooperação em vez de conflito.
 
-■ **Ganha-perde** ocorre quando só um lado tem percepção positiva do resultado atingido, portanto, é menos provável que esse cenário seja aceito de forma voluntária. Processos conflituosos tendem a resultar em ganha-perde. O princípio aqui é de competição, mais do que cooperação, entre os participantes.
+▪️**Ganha-perde** ocorre quando só um lado tem percepção positiva do resultado atingido, portanto, é menos provável que esse cenário seja aceito de forma voluntária. Processos conflituosos tendem a resultar em ganha-perde. O princípio aqui é de competição, mais do que cooperação, entre os participantes.
 
-■ **Perde-perde** significa que todas as partes envolvidas saíram-se mal. Em alguns desses processos negociais, todas as partes entendem que perdas são inevitáveis e que serão equitativamente distribuídas. Nestas situações, resultados perde-perde podem ser preferíveis a ganha-perde, porque pelo menos são considerados mais justos.
+▪️**Perde-perde** significa que todas as partes envolvidas saíram-se mal. Em alguns desses processos negociais, todas as partes entendem que perdas são inevitáveis e que serão equitativamente distribuídas. Nestas situações, resultados perde-perde podem ser preferíveis a ganha-perde, porque pelo menos são considerados mais justos.
 
 Em outras situações, entretanto, resultados perde-perde ocorrem mesmo quando um resultado ganha-ganha poderia ser atingido. Um exemplo clássico é o dilema do prisioneiro, discutido anteriormente neste capítulo. Perde-perde é um resultado frequente quando o resultado ganha-ganha só pode ser identificado (como no caso do dilema do prisioneiro) por intermédio de um relacionamento cooperativo — identificação esta que pode passar despercebida se as partes envolvidas na negociação se engajam numa postura competitiva e quando há baixo nível de confiança entre elas.
 
 Algumas lições podem ser tiradas do dilema do prisioneiro em termos de negociação:
 
-■ se ambos os lados cooperam, ambos podem ter bons resultados;
-■ se um lado coopera e outro compete, o cooperante terá péssimo resultado e o concorrente terá ótimo resultado;
-■ se ambos competem, ambos terão resultados medíocres — no curto ou no longo prazo;
-■ na presença de incerteza sobre qual postura (concorrente/oportunista ou cooperativa) o outro lado vai adotar, a melhor escolha para todos os lados é concorrer.
+▪️se ambos os lados cooperam, ambos podem ter bons resultados;
+▪️se um lado coopera e outro compete, o cooperante terá péssimo resultado e o concorrente terá ótimo resultado;
+▪️ ambos competem, ambos terão resultados medíocres — no curto ou no longo prazo;
+▪️na presença de incerteza sobre qual postura (concorrente/oportunista ou cooperativa) o outro lado vai adotar, a melhor escolha para todos os lados é concorrer.
 
 No mundo real, diferentemente do nosso exemplo hipotético dos prisioneiros, as partes podem se comunicar e se comprometer com uma abordagem mais cooperativa. Podem adotar normas de comportamento justo e cooperativo e se concentrar no relacionamento futuro. Isso cria confiança e ajuda a garantir ganhos para todos.
 
@@ -176,12 +176,12 @@ No mundo real, diferentemente do nosso exemplo hipotético dos prisioneiros, as 
 
 Embora nem sempre presentes, os seguintes aspectos são fatores importantes para que uma negociação tenha sucesso nos relacionamentos em cadeias de suprimentos:
 
-■ manter na negociação uma atitude de confiança na outra parte;
-■ preferir sempre a abordagem cooperativa à competitiva;
-■ buscar soluções que resultem em ganha-ganha, procurando criar valor conjuntamente (fazer crescer o bolo e não apenas buscar a maior fatia);
-■ buscar soluções que contemplem a negociação presente como parte do relacionamento futuro e não de forma isolada;
-■ reconhecer as necessidades e limitações da outra parte; e
-■ preparar-se para e planejar a negociação.
+▪️manter na negociação uma atitude de confiança na outra parte;
+▪️preferir sempre a abordagem cooperativa à competitiva;
+▪️buscar soluções que resultem em ganha-ganha, procurando criar valor conjuntamente (fazer crescer o bolo e não apenas buscar a maior fatia);
+▪️buscar soluções que contemplem a negociação presente como parte do relacionamento futuro e não de forma isolada;
+▪️reconhecer as necessidades e limitações da outra parte; e
+▪️preparar-se para e planejar a negociação.
 
 **Planejamento para negociação**
 
