@@ -24,6 +24,13 @@ export class Md44M02 implements OnInit {
   contentPath: string = 'assets/content/intendencia/12-md-44-m-02';
   fileNames: string[] = [
     'cap1.md',
+    'cap2.md',
+    'cap3.md',
+    'cap4.md',
+    'cap5.md', 
+    'anexo_a.md',
+    'anexo_b.md',
+    'anexo_c.md'
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
