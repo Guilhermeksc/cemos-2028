@@ -4,13 +4,13 @@
 
 ### Capítulo 1 - INTRODUÇÃO
 
-**1.1 Finalidade**
+### 1.1 Finalidade
 
 Orientar a elaboração dos Planos de Mobilização Militar (P Mob Mil) das Forças Armadas (FA), denominados Plano de Mobilização Marítima (P Mob Mar), Terrestre (P Mob Ter) e Aeroespacial (P Mob Aepc), e do Ministério da Defesa (MD), denominados Apêndice Estratégico de Mobilização Militar (AEMM) e Plano Setorial de Mobilização
 
 Militar (PSMM), conforme modelos constantes dos Anexos: | — Modelo de Plano de Mobilização das Forças Singulares; Il - Modelo de Apêndice Estratégico de Mobilização Militar; e III — Modelo de Plano Setorial de Mobilização Militar.
 
-**1.2 Objetivos**
+### 1.2 Objetivos
 
 1.2.1 Estabelecer normas e procedimentos para a elaboração dos P Mob Mil.
 
@@ -20,7 +20,7 @@ Militar (PSMM), conforme modelos constantes dos Anexos: | — Modelo de Plano de
 
 ### Capítulo II - DISPOSIÇÕES GERAIS
 
-**2.1 Generalidades**
+### 2.1 Generalidades
 
 2.1.1 A Mobilização Militar aplicada no campo da defesa nacional tem como meta aumentar o poder de permanência em ação das FA, com a finalidade de propiciar o poder dissuasório do Estado, em apoio à sua diplomacia.
 
@@ -32,7 +32,7 @@ Militar (PSMM), conforme modelos constantes dos Anexos: | — Modelo de Plano de
 
 2.1.5 Os P Mob Mil conterão basicamente ações estratégicas de Mobilização e de Desmobilização nas fases do Preparo e da Execução de ambas.
 
-2.1.6 Os Planos de Mobilização das FA (P Mob Mar, P Mob Ter e P Mob Aepc) são documentos elaborados pelos Orgãos de Direção Geral (ODG) das Forças Singulares (FS), ou seja, Estado-Maior da Armada, do Exército e da Aeronáutica (EMA, EME e EMAER), que especificam e padronizam as ações inerentes às atividades de Mobilização e Desmobilização Militares, as quais serão desenvolvidas no âmbito das Organizações Militares (OM), principalmente daquelas que compõem os Sistemas de Mobilização Marítima (SIMOMAR?), do Exército (SIMOBE) e Aeroespacial (SISMAERO).
+2.1.6 Os Planos de Mobilização das FA (P Mob Mar, P Mob Ter e P Mob Aepc) são documentos elaborados pelos Orgãos de Direção Geral (ODG) das Forças Singulares (FS), ou seja, Estado-Maior da Armada, do Exército e da Aeronáutica (EMA, EME e EMAER), que especificam e padronizam as ações inerentes às atividades de Mobilização e Desmobilização Militares, as quais serão desenvolvidas no âmbito das Organizações Militares (OM), principalmente daquelas que compõem os Sistemas de Mobilização Marítima (SIMOMAR), do Exército (SIMOBE) e Aeroespacial (SISMAERO).
 
 2.1.7 Considerando a magnitude e complexidade das atividades inerentes à Fase do Preparo, será oportuno antecipar, ao máximo possível, as etapas do planejamento da Mobilização.
 
@@ -72,7 +72,7 @@ e) após cumpridas as exigências, as LN descaracterizadas a serem encaminhadas 
 
 2.1.18 É necessário que as FS promovam reuniões periódicas, seminários, simpósios, encontros, treinamentos e exercícios destinados ao aprimoramento contínuo da Mobilização e da Desmobilização Militares.
 
-**2.2 Pressupostos Básicos**
+### 2.2 Pressupostos Básicos
 
 2.2.1 Os planejamentos da Mobilização Marítima, Terrestre e Aeroespacial serão realizados continuadamente, em todos os níveis e sem interrupção, levando-se em conta as duas fases da mobilização: Preparo e Execução.
 
@@ -116,7 +116,9 @@ e) estimativa das Carências não passíveis de obtenções no âmbito do Poder 
 
 2.2.15 O horizonte temporal de até 3 (três) anos é o tempo considerado para a efetividade dos planejamentos, ou seja, o tempo previsto, de acordo com a análise da situação. Este horizonte poderá ser encurtado ou dilatado, dependendo da evolução dos fatos conforme constatada durante o estudo da situação.
 
-2.3 Bases para o planejamento 2.3.1 A efetiva participação dos diversos setores de logística das FS é fundamental para análise das LN e, posteriormente, nas decorrentes LC que integrarão os respectivos Planos de Mobilização.
+### 2.3 Bases para o planejamento 
+
+2.3.1 A efetiva participação dos diversos setores de logística das FS é fundamental para análise das LN e, posteriormente, nas decorrentes LC que integrarão os respectivos Planos de Mobilização.
 
 ## Página 19
 
@@ -128,7 +130,7 @@ e) estimativa das Carências não passíveis de obtenções no âmbito do Poder 
 
 2.3.5 Ao receberem as LN, as FS deverão confrontá-las com as disponibilidades, utilizando, como documento auxiliar, a planilha constante do Anexo VI e, a seguir, proceder à elaboração das LC. Nesse momento, para evitar transferir ações tipicamente da Logística para a esfera da Mobilização, deverão considerar, nos planejamentos, que as OM estarão com suas dotações completas, assim como não será computado o que está previsto para ser obtido no horizonte temporal de até 3 (três) anos por intermédio de qualquer planejamento logístico.
 
-**2.4 Competências**
+### 2.4 Competências
 
 2.4.1 Para o planejamento da Mobilização Militar observam-se, dentre outras, as seguintes competências:
 
@@ -190,7 +192,7 @@ o) as demandas constantes dos P Mob Mil, atendidas ou não, em qualquer ocasião
 
 ## Página 22
 
-**2.5 O Plano de Articulação e de Equipamento de Defesa e a Mobilização Militar**
+### 2.5 O Plano de Articulação e de Equipamento de Defesa e a Mobilização Militar
 
 2.5.1 O Plano de Articulação e de Equipamento de Defesa (PAED) contém projetos ou programas de curto, médio e longo prazos resultantes das capacidades militares de defesa levantadas em conjunto com as FS e das capacidades específicas destas. O PAED integra e consolida as necessidades de recomposição e de ampliação dos meios operacionais da Marinha, do Exército e da Aeronáutica e visa a busca de autonomia tecnológica e o fortalecimento da Base Industrial de Defesa (BID) do País.
 

@@ -2,7 +2,7 @@
 
 ## Página 39
 
-3.1. FASES DA DESMOBILIZAÇÃO
+### 3.1. FASES DA DESMOBILIZAÇÃO
 
 As atividades de Desmobilização, assim como a de Mobilização compreendem, duas fases: a de Preparo e a de Execução.
 
@@ -14,16 +14,7 @@ A Fase da Execução da Desmobilização consiste na implementação do que foi 
 
 Desse modo, além de serem coerentes com o planejamento da Mobilização, os planos da Desmobilização devem ser continuamente reavaliados, de modo a se coadunarem com a nova realidade do país, pós-conflito, otimizando, com antecedência, o emprego dos recursos remanescentes necessários à preparação para o retorno à normalidade.
 
-### Figura 5: Execução da Desmobilização
-
-- **Estrutura Logística Frente a uma HE** (círculo azul claro à esquerda)
-  ↓  
-  **Desmobilização** (seta verde apontando para a direita)
-  ↓  
-- **Estrutura Logística de Paz** (círculo azul escuro à direita)
-
-**Fonte:** Estado-Maior da Armada, 2023.
-
+![desmobilizacao](execucao_desmobilizacao.png)
 
 ## Página 40
 

@@ -12,13 +12,15 @@ O Sistema de Informações Gerenciais de Logística e Mobilização de Defesa (S
 
 ### 2.2. O SISTEMA DE MOBILIZAÇÃO MARÍTIMA 
 
-2.2.1. Atribuição do Sistema
+### 2.2.1. Atribuição do Sistema
 
 O SIMOMAR tem como atribuição planejar, coordenar e executar as atividades relativas à Mobilização Marítima, compatibilizando-a com as atividades rotineiras desenvolvidas pela MB e prevendo a ativação do Sistema de Mobilização Militar (SISMOMIL) e do Sistema Nacional de Mobilização (SINAMOB).
 
 ## Página 28
 
-2.2.2.Propósitos do Sistema
+![simomar](simomar.png)
+
+### 2.2.2.Propósitos do Sistema
 
 O SIMOMAR tem como propósito:
 
@@ -34,43 +36,43 @@ e) antecipar o estabelecimento de prioridades para o atendimento das necessidade
 
 São princípios do SIMOMAR:
 
-a) confiabilidade - necessidade de gerar conhecimentos com credibilidade, em função da responsabilidade, precisão e atualização tempestiva dos dados nos sistemas corporativos;
+a) **confiabilidade** - necessidade de gerar conhecimentos com credibilidade, em função da responsabilidade, precisão e atualização tempestiva dos dados nos sistemas corporativos;
 
-b)continuidade - desenvolvimento das atividades em sequência lógica e caráter permanente. O caráter permanente possibilitará o estudo e o planejamento das providências a desencadear na Fase de Execução da Mobilização e a sequência lógica assegurará a continuidade das medidas de fortalecimento do Poder Marítimo, com vista ao desenvolvimento das ações estratégicas. Em face da variação da conjuntura, uma estrutura permanente é condição indispensável para a eficácia do planejamento realizado;
+b) **continuidade** - desenvolvimento das atividades em sequência lógica e caráter permanente. O caráter permanente possibilitará o estudo e o planejamento das providências a desencadear na Fase de Execução da Mobilização e a sequência lógica assegurará a continuidade das medidas de fortalecimento do Poder Marítimo, com vista ao desenvolvimento das ações estratégicas. Em face da variação da conjuntura, uma estrutura permanente é condição indispensável para a eficácia do planejamento realizado;
 
-c) controle - acompanhamento do desenvolvimento das atividades de Mobilização Marítima, nas Fases do Preparo e da Execução, bem como a avaliação dos resultados, para permitir as correções e realimentações necessárias, a fim de atingir o propósito estabelecido;
+c) **controle** - acompanhamento do desenvolvimento das atividades de Mobilização Marítima, nas Fases do Preparo e da Execução, bem como a avaliação dos resultados, para permitir as correções e realimentações necessárias, a fim de atingir o propósito estabelecido;
 
 ## Página 29
 
-d) cooperação - integração e sinergia das ações;
+d) **cooperação** - integração e sinergia das ações;
 
-e) coordenação - conjugação de esforços, de modo harmônico, dos órgãos que integram a estrutura da Mobilização Marítima, para a consumação de um mesmo fim;
+e) **coordenação** - conjugação de esforços, de modo harmônico, dos órgãos que integram a estrutura da Mobilização Marítima, para a consumação de um mesmo fim;
 
-f) economia - busca da eficácia, com o emprego judicioso e econômico dos recursos;
+f) **economia** - busca da eficácia, com o emprego judicioso e econômico dos recursos;
 
-g) flexibilidade - possibilidade de adoção de soluções alternativas, pela necessidade de adaptação às mudanças e às situações decorrentes do dinamismo da conjuntura. Como as ações variam de acordo com a natureza e a intensidade dos óbices, os órgãos empregados na atividade de Mobilização Marítima devem estar em condições de, rapidamente, adaptarem-se às situações de emergência, constituindo-se de verdadeiros núcleos de subsistemas capazes de serem acionados no caso de decretação de Mobilização Marítima;
+g) **flexibilidade** - possibilidade de adoção de soluções alternativas, pela necessidade de adaptação às mudanças e às situações decorrentes do dinamismo da conjuntura. Como as ações variam de acordo com a natureza e a intensidade dos óbices, os órgãos empregados na atividade de Mobilização Marítima devem estar em condições de, rapidamente, adaptarem-se às situações de emergência, constituindo-se de verdadeiros núcleos de subsistemas capazes de serem acionados no caso de decretação de Mobilização Marítima;
 
-h)interoperabilidade - capacidade de integração e compartilhamento de informações;
+h) **interoperabilidade** - capacidade de integração e compartilhamento de informações;
 
-i) objetividade - identificação clara das atividades que devem ser realizadas e determinação precisa dos meios requeridos para sua concretização, no espaço e no tempo. Diz respeito aos objetivos e efeitos desejados a obter. A finalidade de estarem claramente definidos os objetivos e os efeitos desejados é permitir que todas as ações decorrentes concorram para um único fim, somando esforços e evitando desperdícios que não contribuam para os propósitos do Sistema. O primeiro requisito para a adoção de qualquer plano é a verificação de sua adequação com os propósitos e com os efeitos desejados fixados;
+i) **objetividade** - identificação clara das atividades que devem ser realizadas e determinação precisa dos meios requeridos para sua concretização, no espaço e no tempo. Diz respeito aos objetivos e efeitos desejados a obter. A finalidade de estarem claramente definidos os objetivos e os efeitos desejados é permitir que todas as ações decorrentes concorram para um único fim, somando esforços e evitando desperdícios que não contribuam para os propósitos do Sistema. O primeiro requisito para a adoção de qualquer plano é a verificação de sua adequação com os propósitos e com os efeitos desejados fixados;
 
-j) oportunidade - condicionamento da realização das ações planejadas ao fator tempo, a fim de que as necessidades possam ser atendidas de forma adequada;
+j) **oportunidade** - condicionamento da realização das ações planejadas ao fator tempo, a fim de que as necessidades possam ser atendidas de forma adequada;
 
-k) prioridade - escalonamento das atividades, por ordem de importância, prevalecendo o principal sobre o secundário. Para tal, é importante possuir o conhecimento das ações planejadas e o momento de sua execução;
+k) **prioridade** - escalonamento das atividades, por ordem de importância, prevalecendo o principal sobre o secundário. Para tal, é importante possuir o conhecimento das ações planejadas e o momento de sua execução;
 
-|) realidade - garantia de que todas as ações, providências e medidas propostas para o funcionamento do Sistema tenham a característica de serem exequíveis com os conhecimentos e recursos disponíveis;
+|) **realidade** - garantia de que todas as ações, providências e medidas propostas para o funcionamento do Sistema tenham a característica de serem exequíveis com os conhecimentos e recursos disponíveis;
 
-m) segurança - garantia de execução dos planos elaborados, a despeito dos óbices que se anteponham;
+m) **segurança** - garantia de execução dos planos elaborados, a despeito dos óbices que se anteponham;
 
 ## Página 30
 
-n) simplicidade - sem prejudicar a propriedade de ser completo, uso da linha de ação mais simples e adequada ao desenvolvimento das atividades, evitando uma desnecessária complexidade em sua concepção, disseminação e execução, de modo a serem compreendidas e executadas com facilidade. Entretanto, é imperioso evitar um excesso de simplicidade em detrimento da precisão, da flexibilidade e da real consecução do propósito; e
+n) **simplicidade** - sem prejudicar a propriedade de ser completo, uso da linha de ação mais simples e adequada ao desenvolvimento das atividades, evitando uma desnecessária complexidade em sua concepção, disseminação e execução, de modo a serem compreendidas e executadas com facilidade. Entretanto, é imperioso evitar um excesso de simplicidade em detrimento da precisão, da flexibilidade e da real consecução do propósito; e
 
-o) unidade de direção - existência de uma autoridade central para assegurar convergência de esforços para o objetivo estabelecido. Uma eficiente unidade de direção requer uma organização com cadeia e relações de comando apropriados às tarefas determinadas, com precisa atribuição de responsabilidades, um sistema de coordenação adequado e uma doutrina logística e de mobilização bem compreendida e praticada em todos os níveis.
+o) **unidade de direção** - existência de uma autoridade central para assegurar convergência de esforços para o objetivo estabelecido. Uma eficiente unidade de direção requer uma organização com cadeia e relações de comando apropriados às tarefas determinadas, com precisa atribuição de responsabilidades, um sistema de coordenação adequado e uma doutrina logística e de mobilização bem compreendida e praticada em todos os níveis.
 
 Os princípios apresentados são interdependentes e se completam. Assim, a sua aplicação deve ser cuidadosamente ponderada em cada situação particular, de modo a atender às circunstâncias do momento.
 
-2.2.4. A Estrutura do Sistema
+### 2.2.4. A Estrutura do Sistema
 
 Devido à estrutura do SIMOMAR, normalmente será necessário o contato horizontal entre os componentes do sistema a fim de realizarem as trocas de informações necessárias à execução de suas atribuições.
 

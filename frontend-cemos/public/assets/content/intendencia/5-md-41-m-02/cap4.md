@@ -72,7 +72,7 @@ g) desenvolver atividades, tais como exercícios de mobilização, singulares ou
 
 4.5.5 Para tal, após a decretação da Mobilização Nacional e a decorrente expedição, pelo MD, da Diretriz de Mobilização Militar, as ações planejadas na fase do Preparo serão implementadas na fase da Execução de modo acelerado e compulsório, objetivando a transferência de recursos, complementares à Logística, considerando a possibilidade de ocorrência de qualquer tipo de emprego das Forças Armadas.
 
-4.5.6 Obtenção de recursos pela Mobilização Militar
+### 4.5.6 Obtenção de recursos pela Mobilização Militar
 
 4.5.6.1 As fases básicas da Logística Militar compreendem: a Determinação das Necessidades, a Obtenção e a Distribuição. Em relação aos recursos cuja obtenção ultrapassa a capacidade da Logística das FS, os mesmos serão obtidos pela Mobilização Militar, que atua com mais intensidade na Fase da Obtenção, podendo não ser necessário atuar diretamente nas demais fases.
 

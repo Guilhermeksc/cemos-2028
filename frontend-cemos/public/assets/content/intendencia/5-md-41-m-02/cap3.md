@@ -15,15 +15,19 @@
 
 3.1.5 A Mobilização Industrial é definida como um conjunto de atividades planejadas, empreendidas e orientadas pelo Estado, no quadro da mobilização nacional, desde a situação de normalidade, visando adequar a capacidade industrial da nação ao atendimento das necessidades militares e civis, determinadas por uma situação de emergência decorrente da iminência de concretização ou efetivação de uma hipótese de emprego das Forças Armadas ou para atender às capacidades operacionais destas.
 
-3.2 Conceitos Básicos Considerando o contido na Lei nº 12.598, de 2012, devem ser observados os seguintes conceitos:
+### 3.2 Conceitos Básicos 
 
-3.2.1 Produto de Defesa (PRODE) Todo bem, serviço, obra ou informação, inclusive armamentos, munições, meios de transporte e de comunicações, fardamentos e materiais de uso individual e coletivo utilizados nas atividades finalísticas de defesa, com exceção daqueles de uso administrativo.
+Considerando o contido na Lei nº 12.598, de 2012, devem ser observados os seguintes conceitos:
+
+### 3.2.1 Produto de Defesa (PRODE)
+
+Todo bem, serviço, obra ou informação, inclusive armamentos, munições, meios de transporte e de comunicações, fardamentos e materiais de uso individual e coletivo utilizados nas atividades finalísticas de defesa, com exceção daqueles de uso administrativo.
 
 [3] Base Industrial de Defesa (BID) — é conjunto integrado por empresas públicas e privadas, bem como organizações civis e militares, que realizem ou conduzam pesquisa, projeto, desenvolvimento, industrialização, produção, reparo, conservação, revisão, conversão, modernização ou manutenção de produtos de defesa no País.
 
 ## Página 24
 
-3.2.2 Produto Estratégico de Defesa (PED)
+### 3.2.2 Produto Estratégico de Defesa (PED)
 
 Todo PRODE que, pelo conteúdo tecnológico, pela dificuldade de obtenção ou pela imprescindibilidade, seja de interesse estratégico para a defesa nacional, tais como:
 
@@ -33,21 +37,25 @@ b) serviços técnicos especializados na área de projetos, pesquisas e desenvol
 
 c) equipamentos e serviços técnicos especializados para as áreas de informação e de inteligência.
 
-3.2.3 Sistema de Defesa Conjunto inter-relacionado ou interativo de produtos de defesa que atenda a uma finalidade específica.
+### 3.2.3 Sistema de Defesa 
 
-3.2.4 Empresa Estratégica de Defesa (EED)
+Conjunto inter-relacionado ou interativo de produtos de defesa que atenda a uma finalidade específica.
+
+### 3.2.4 Empresa Estratégica de Defesa (EED)
 
 Toda pessoa jurídica credenciada pelo Ministério da Defesa mediante o atendimento cumulativo das condições previstas no inciso IV do art. 2º da Lei nº 12.598, de 2012. As EED são essenciais para a promoção do desenvolvimento científico e tecnológico brasileiro e fundamentais para preservação da segurança e defesa nacional contra ameaças externas.
 
-3.2.5 Empresa de Defesa
+### 3.2.5 Empresa de Defesa
 
 Toda pessoa jurídica cadastrada em conformidade com as normas do Sistema de Catalogação de Defesa (SISCADE)[4] que produza PRODE ou Sistema de Defesa em território nacional ou integre suas cadeias produtivas.
 
-3.2.6 Empresa Mobilizável ou Empresa de Interesse da Mobilização (EIMOB)
+### 3.2.6 Empresa Mobilizável ou Empresa de Interesse da Mobilização (EIMOB)
 
 É a empresa que, em caso de Mobilização, tenha capacidade técnica e estrutural de fornecer produtos, serviços, instalações ou pessoal necessários ao atendimento das necessidades ou carências logísticas das FA.
 
-3.2.7 Produção Industrial Produção industrial é o resultado do esforço integrado dos seus três elementos básicos: mão de obra, capacidade instalada (máquinas e instalações apropriadas) e insumos.
+### 3.2.7 Produção Industrial
+
+Produção industrial é o resultado do esforço integrado dos seus três elementos básicos: mão de obra, capacidade instalada (máquinas e instalações apropriadas) e insumos.
 
 3.2.7.1 Algumas EIMOB podem apresentar capacidade industrial instalada suficiente ao esforço para atender a uma hipótese de emprego (HE) das Forças Armadas, ou a uma capacidade operacional essencial. Nesse caso, o aumento da produção se fará pela atuação apenas sobre a mão de obra e os insumos. Porém, dependendo da situação, será necessário atuar sobre todos os três elementos básicos da produção, para se obter o seu aumento imediato, que é definido como “surto” e é o resultado da aplicação da mão de obra já existente ou obtida no mais curto prazo possível e da utilização da capacidade ociosa existente e dos insumos estocados (Figura 2).
 

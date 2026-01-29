@@ -52,16 +52,16 @@ A MB adota a seguinte definição:
 A logística admite diversas classificações, dependendo do ponto de vista que se adote para o seu estudo.
 
 1.3.1 - Quanto à natureza:
-- logística pura; e
-- logística aplicada.
+▪️logística pura; e
+▪️logística aplicada.
 
 1.3.2 - Quanto ao nível ou escalão em que se desenvolve:
-- logística nacional ou de alto nível; e
-- logística militar.
+▪️logística nacional ou de alto nível; e
+▪️logística militar.
 
 1.3.3 - Quanto à função que exerce:
-- logística de produção; e
-- logística de consumo.
+▪️logística de produção; e
+▪️logística de consumo.
 
 ### 1.4 - LOGÍSTICA PURA E LOGÍSTICA APLICADA
 

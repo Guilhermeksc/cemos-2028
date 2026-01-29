@@ -99,7 +99,9 @@ A Jurisdição do Material é estabelecida pela DGMM, em coordenação com a SGM
 
 4.3.1 - Conceito
 
-É o conjunto de atividades que são executadas visando a manter o material (meios e sistemas) e o software1 utilizados pela MB na melhor condição para emprego e, quando houver defeitos ou avarias, reconduzi-lo àquela condição.
+É o conjunto de atividades que são executadas visando a manter o material (meios e sistemas) e o software utilizados pela MB na melhor condição para emprego e, quando houver defeitos ou avarias, reconduzi-lo àquela condição.
+
+Enfatiza-se a distinção entre “sistema de informação digital” e “software”: o primeiro refere-se ao conjunto de elementos inter-relacionados que, utilizando recursos de TI, efetuam o trâmite, a geração, o desenvolvimento, o processamento ou o arquivamento de informações digitais. Por “software”, compreenda-se os programas e os dados a eles associados.
 
 A manutenção abrange tanto a manutenção planejada como a manutenção não planejada.
 
@@ -118,8 +120,6 @@ a) Todo meio, sistema ou software possui associado a ele um ciclo de vida que es
 b) Por intermédio de programas de revitalização e modernização, o ciclo de vida pode ser estendido, após análise prévia de viabilidade operacional, técnica e econômica;
 
 c) Quando a manutenção for considerada antieconômica, deverá ser iniciado o processo de substituição ou destinação, devendo ser verificada a existência de componentes aproveitáveis;
-
-Enfatiza-se a distinção entre “sistema de informação digital” e “software”: o primeiro refere-se ao conjunto de elementos inter-relacionados que, utilizando recursos de TI, efetuam o trâmite, a geração, o desenvolvimento, o processamento ou o arquivamento de informações digitais. Por “software”, compreenda-se os programas e os dados a eles associados.
 
 d) As atividades das funções Manutenção e Suprimento são interdependentes. A manutenção inadequada implica um aumento das necessidades de suprimento e, inversamente, a carência de suprimento exige maior esforço de manutenção;
 
@@ -498,5 +498,4 @@ Os ODSL das Funções Logísticas são:
 | TRANSPORTE                                         | *               |
 | ENGENHARIA                                         | DGMM            |
 
-(*) A SGM será o ODSL para todos os casos exceto para o transporte de caráter operativo,  
-quando o ODSL deverá ser o ComOpNav, por se tratar de Apoio Logístico Móvel.
+(*) A SGM será o ODSL para todos os casos exceto para o transporte de caráter operativo, quando o ODSL deverá ser o ComOpNav, por se tratar de Apoio Logístico Móvel.

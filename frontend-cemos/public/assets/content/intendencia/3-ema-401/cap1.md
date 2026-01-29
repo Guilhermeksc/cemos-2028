@@ -4,17 +4,17 @@
 
 ### INTRODUÇÃO
 
- 1. PROPÓSITO
+### 1. PROPÓSITO
 
 Esta publicação tem o propósito de especificar a estrutura do Sistema de Mobilização Marítima (SIMOMAR), definir as atribuições dos seus órgãos componentes e apresentar os conceitos doutrinários aplicáveis ao planejamento da Mobilização e Desmobilização Marítimas. O Manual de Mobilização Marítima é a base doutrinária para o conhecimento, o planejamento, o preparo e a execução, no âmbito da Marinha do Brasil (MB), da Mobilização e Desmobilização Marítimas, devendo ser utilizado pelos órgãos componentes do SIMOMAR como publicação  orientadora no desenvolvimento de suas atribuições.
 
- 2. DESCRIÇÃO
+### 2. DESCRIÇÃO
 
 Esta publicação divide-se em quatro Capítulos: o Capítulo 1 apresenta conceitos e definições da Mobilização Nacional, detalha as fases da Mobilização e descreve a Mobilização nas Expressões do Poder Nacional; o Capítulo 2 descreve a estrutura do SIMOMAR e a competência dos seus órgãos componentes; o Capítulo 3 apresenta conceitos sobre a Desmobilização nas Expressões do Poder Nacional e sobre a Desmobilização Marítima; e o  Capítulo 4 estabelece as diretrizes do processo de planejamento da Mobilização Marítima.
 
 ### Capítulo 1 -  DISPOSIÇÕES GERAIS
 
-1.1. CONCEITUAÇÃO
+### 1.1. CONCEITUAÇÃO
 
 A Mobilização Nacional, prevista no art. 22, inciso XXVIII e no art. 84, inciso XIX, da Constituição Federal, amparada em legislação e regulamentação específicas na Lei nº 11.631, de 27 de dezembro de 2007 e no Decreto nº 6.592, de 2 de outubro de 2008, é o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, complementando a Logística Nacional, destinadas a capacitar o país a realizar ações estratégicas, no campo da Defesa Nacional, diante de agressão estrangeira. A Mobilização tem a finalidade de complementar a Logística quando se esgotar a capacidade desta no atendimento das necessidades requeridas.
 
@@ -48,6 +48,8 @@ i) Subsistema Setorial de Mobilização de Segurança; e
 
 j) Subsistema Setorial de Mobilização de Inteligência.
 
+![sinamob](sinamob.png)
+
 Na área militar, a condução das atividades de mobilização é exercida pelo Subsistema Setorial de Mobilização Militar (SISMOMIL), sob a direção e coordenação do MD, com o propósito de assegurar o emprego contínuo, adequado e oportuno dos meios e das condições necessárias para o enfrentamento militar de agressão estrangeira. Além do MD, também compõem esse subsistema as Forças Armadas (FA), por intermédio de seus  respectivos Sistemas de Mobilização: Sistema de Mobilização Marítima (SIMOMAR), Sistema de Mobilização do Exército (SIMOBE) e Sistema de Mobilização Aeroespacial (SISMAERO).
 
 ## Página 3
@@ -56,73 +58,89 @@ O SIMOMAR é responsável pelo planejamento das soluções das carências da For
 
 A Mobilização Marítima possui como área de atuação os componentes do Poder Marítimo e os setores das Expressões do Poder Nacional que tratam de atividades que apresentam interesse para a Força Naval.
 
-1.2. DEFINIÇÕES
+### 1.2. DEFINIÇÕES
 
-Para padronizar o trato do assunto com os demais órgãos integrantes do SINAMOB, seguem algumas definições e conceitos empregados na Mobilização e Desmobilização. 1.2.
+Para padronizar o trato do assunto com os demais órgãos integrantes do SINAMOB, seguem algumas definições e conceitos empregados na Mobilização e Desmobilização.
 
-1. Base Industrial de Defesa (BID)
+**1.2.1. Base Industrial de Defesa (BID)**
 
 Conjunto integrado por empresas públicas e privadas, bem como organizações civis e militares que realizem ou conduzam pesquisa, projeto, desenvolvimento, industrialização, produção, reparo, conservação, revisão, conversão, modernização ou manutenção de Produtos de Defesa (PRODE) no país.
 
-1.2.2. Produto de Defesa (PRODE)
+**1.2.2. Produto de Defesa (PRODE)**
 
 Todo bem, serviço, obra ou informação, inclusive armamentos, munições, meios de transporte e de comunicações, fardamento e materiais de uso individual e coletivo utilizados nas atividades finalísticas de defesa, com exceção daqueles de uso administrativo.
 
-1.2.3. Produto Estratégico de Defesa (PED)
+**1.2.3. Produto Estratégico de Defesa (PED)**
 
-Todo PRODE que, pelo conteúdo tecnológico, pela dificuldade de obtenção ou pela imprescindibilidade, seja de interesse estratégico para a defesa nacional. 1.2.4. Poder Nacional
+Todo PRODE que, pelo conteúdo tecnológico, pela dificuldade de obtenção ou pela imprescindibilidade, seja de interesse estratégico para a defesa nacional. 
+
+**1.2.4. Poder Nacional**
 
 É a capacidade que tem a nação para alcançar e manter os Objetivos Nacionais, em conformidade com a Vontade Nacional. Manifesta-se em cinco expressões: a política, a econômica, a psicossocial, a militar e a científico-tecnológica.
 
-1.2.5. Potencial Nacional Conjunto de recursos humanos e dos meios de que dispõe a nação, em estado latente, passíveis de serem transformados em poder.
+**1.2.5. Potencial Nacional**
+
+Conjunto de recursos humanos e dos meios de que dispõe a nação, em estado latente, passíveis de serem transformados em poder.
 
 ## Página 4
 
-1.2.6. Capacidade de Mobilização Nacional
+**1.2.6. Capacidade de Mobilização Nacional**
 
 Grau de aptidão que tem uma nação de, em tempo oportuno, passar de uma situação de paz para uma situação de guerra, com o máximo de eficácia e o mínimo de transtornos para a vida nacional.
 
-1.2.7. Elasticidade
+**1.2.7. Elasticidade**
 
 Característica que, dispondo uma força de adequadas estruturas de comando e controle (C2) e de logística, lhe permite variar o poder de combate pelo acréscimo ou supressão de estruturas, com oportunidade, ou por intermédio da mobilização de meios adicionais, quando for o caso.
 
-1.2.8. Hipótese de Emprego (HE)
+**1.2.8. Hipótese de Emprego (HE)**
 
 Antevisão de possível emprego das FA em determinada situação ou área de interesse estratégico para a Defesa Nacional. É formulada considerando-se o alto grau de indeterminação e imprevisibilidade de ameaças ao país, sendo perfeitamente caracterizada e mensurável. Com base nas HE, serão elaborados e mantidos atualizados os planos estratégicos e operacionais pertinentes, visando a possibilitar o contínuo aprestamento do Poder Nacional como um todo, e em particular do Poder Militar, para emprego na defesa dos interesses nacionais.
 
-1.2.9. Logística Nacional
+**1.2.9. Logística Nacional**
 
-Conjunto de atividades relativas à previsão e provisão dos recursos e meios necessários à realização das ações decorrentes da Estratégia Nacional de Defesa (END). 1.
+Conjunto de atividades relativas à previsão e provisão dos recursos e meios necessários à realização das ações decorrentes da Estratégia Nacional de Defesa (END).
 
-2.10. Logística Militar
+**1.2.10. Logística Militar**
 
 Conjunto de atividades relativas à previsão e provisão dos recursos e serviços necessários à execução das missões das FA.
 
-1.2.11. Lista de Necessidades (LN)
+**1.2.11. Lista de Necessidades (LN)**
 
 É o documento elaborado por ocasião dos planejamentos que relaciona as demandas logísticas de cada Força Singular (FS). Esse processo se inicia no planejamento estratégico e tem prosseguimento nos níveis de planejamento subsequentes, constituindo subsídio relevante para o aparelhamento e o preparo das Forças.
 
-1.2.12. Carências Logísticas Recursos logísticos, os quais não são passíveis de obtenção pelo escalão considerado e que são encaminhados para obtenção pelo escalão superior.
+**1.2.12. Carências Logísticas**
+
+Recursos logísticos, os quais não são passíveis de obtenção pelo escalão considerado e que são encaminhados para obtenção pelo escalão superior.
 
 ## Página 15
 
-1.2.13. Carências de Mobilização
+**1.2.13. Carências de Mobilização**
 
-São as “carências”, não atendidas pela logística militar, obtidas pela comparação entre as necessidades e as disponibilidades de recursos para atender às operações planejadas. 1.2.14. Mobilização Nacional
+São as “carências”, não atendidas pela logística militar, obtidas pela comparação entre as necessidades e as disponibilidades de recursos para atender às operações planejadas.
 
-Conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, complementando a Logística Nacional, destinadas a capacitar o país a realizar ações estratégicas no campo da Defesa Nacional, diante de agressão estrangeira. 1.2.15. Mobilização Militar
+**1.2.14. Mobilização Nacional**
 
-Conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de preparar a expressão militar para a passagem da estrutura de paz para a estrutura de guerra, para fazer frente a uma situação de emergência decorrente da iminência de concretização ou efetivação de uma HE. 1.2.16. Mobilização Marítima
+Conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, complementando a Logística Nacional, destinadas a capacitar o país a realizar ações estratégicas no campo da Defesa Nacional, diante de agressão estrangeira. 
 
-Conjunto de atividades sistêmicas, empreendidas rotineiramente na MB, relativas à previsão das necessidades de complementação da logística da Força Naval e ao planejamento antecipado de seu atendimento, para fazer frente a uma situação de emergência decorrente da efetivação de uma HE ou na iminência de sua concretização. 1.2.17. Desmobilização Nacional
+**1.2.15. Mobilização Militar**
 
-É o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, com vistas ao retorno gradativo do país à situação de normalidade, quando cessados ou reduzidos os motivos determinantes da execução da Mobilização Nacional. 1.2.18. Desmobilização Militar
+Conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de preparar a expressão militar para a passagem da estrutura de paz para a estrutura de guerra, para fazer frente a uma situação de emergência decorrente da iminência de concretização ou efetivação de uma HE. 
+
+**1.2.16. Mobilização Marítima**
+
+Conjunto de atividades sistêmicas, empreendidas rotineiramente na MB, relativas à previsão das necessidades de complementação da logística da Força Naval e ao planejamento antecipado de seu atendimento, para fazer frente a uma situação de emergência decorrente da efetivação de uma HE ou na iminência de sua concretização.
+
+**1.2.17. Desmobilização Nacional**
+
+É o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, com vistas ao retorno gradativo do país à situação de normalidade, quando cessados ou reduzidos os motivos determinantes da execução da Mobilização Nacional. 
+
+**1.2.18. Desmobilização Militar**
 
 Parte da Desmobilização Nacional, cujas atividades se destinam ao retorno gradativo da Expressão Militar do Poder Nacional às proporções compatíveis com as exigências da Defesa Nacional, em situação de normalidade.
 
 ## Página 16
 
-1.3. AMPLITUDE DA MOBILIZAÇÃO
+### 1.3. AMPLITUDE DA MOBILIZAÇÃO
 
 A Constituição Federal prevê que a Mobilização Nacional pode ser decretada total ou parcialmente pelo Presidente da República. Essa abrangência será especificada no diploma legal que decretar a Mobilização:
 
@@ -130,11 +148,15 @@ a) Mobilização Total — quando a emergência configurada exigir o acionamento
 
 b) Mobilização Parcial — quando a emergência configurada apenas exigir o acionamento de parte dos recursos do Poder Nacional ou do Território Nacional.
 
-1.4. FASES DA MOBILIZAÇÃO
+### 1.4. FASES DA MOBILIZAÇÃO
 
 As atividades de Mobilização compreendem duas fases: a de Preparo e a de Execução.
 
-1.4.1. Fase de Preparo O Preparo da Mobilização consiste na realização de ações estratégicas, por meio de  um planejamento adequado, desenvolvido desde a situação de normalidade, de modo contínuo, metódico e permanente, para que seja assegurada eficácia quando da sua execução.
+![sinamob](estrutura_mob.png)
+
+### 1.4.1. Fase de Preparo
+
+O Preparo da Mobilização consiste na realização de ações estratégicas, por meio de  um planejamento adequado, desenvolvido desde a situação de normalidade, de modo contínuo, metódico e permanente, para que seja assegurada eficácia quando da sua execução.
 
 Por meio do estabelecimento de programas, normas e procedimentos relativos à complementação da Logística Nacional e na adequação das Políticas Governamentais à Política de Mobilização Nacional, visa detectar as deficiências de recursos logísticos, de forma a garantir, em situações de emergência, o seu suprimento, na quantidade e qualidade exigidas, no local onde são necessários e no tempo adequado.
 
@@ -162,7 +184,7 @@ No âmbito da Expressão Militar do Poder Nacional, será confeccionado o Plano 
 
 ## Página 18
 
-1.4.2. Fase de Execução
+### 1.4.2. Fase de Execução
 
 A Execução da Mobilização, caracterizada pela celeridade e compulsoriedade das ações a serem implementadas, visa propiciar ao país condições para enfrentar o fato que a motivou. Terá início por ato do Poder Executivo, autorizado ou referendado pelo Congresso Nacional, no intervalo das sessões legislativas.
 
@@ -200,7 +222,7 @@ a) Materiais, serviços e instalações: doação, compra, contratação de serv
 
 b) Pessoal: banco de talentos, concurso, contratação, convocação, formação, movimentação de pessoal, recrutamento e treinamento.
 
-1.5. A MOBILIZAÇÃO NAS EXPRESSÕES DO PODER NACIONAL
+### 1.5. A MOBILIZAÇÃO NAS EXPRESSÕES DO PODER NACIONAL
 
 A Mobilização ocorre em todas as Expressões do Poder Nacional, por meio de um conjunto de atividades bem diversificadas, porém harmônicas. É processada seja na transferência de recursos entre as Expressões do Poder Nacional, seja na produção de meios adicionais, com o atendimento das necessidades, sendo influenciado pelas diversas limitações existentes, em função de prioridades, de prazos e do confronto entre as necessidades e as disponibilidades.
 
@@ -208,7 +230,9 @@ Apesar da Mobilização se apoiar acentuadamente na Expressão Econômica, como 
 
 ## Página 20
 
-1.5.1. Mobilização na Expressão Política
+![sinamob](poder_nacional.png)
+
+### 1.5.1. Mobilização na Expressão Política
 
 No que tange à Expressão Política, conceitua-se Mobilização como o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de adaptar o ordenamento jurídico institucional, para fazer frente a uma situação decorrente da efetivação de uma HE ou na iminência de sua concretização.
 
@@ -230,7 +254,7 @@ c) Poder Judiciário - a dinamização do processo de aplicação das leis, dos 
 
 d) Partidos Políticos - a adoção de medidas em apoio ao esforço nacional de Mobilização.
 
-1.5.2. Mobilização na Expressão Econômica
+### 1.5.2. Mobilização na Expressão Econômica
 
 No que tange à Expressão Econômica, conceitua-se Mobilização como o conjunto de atividades de natureza econômica, planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de transformar a economia do país de uma situação de paz para outra, em que possa fazer frente a uma situação decorrente da efetivação de uma HE ou na iminência de sua concretização.
 
@@ -282,7 +306,7 @@ A formação de estoques estratégicos, tanto de material nacional, quanto aquel
 
 O conceito de Mobilização Industrial indica que o parque industrial nacional deve ser preparado para reorientar sua produção visando suprir a demanda de um conflito armado, por intermédio da produção de produtos de defesa e de uso dual.
 
-1.5.3. Mobilização na Expressão Psicossocial
+### 1.5.3. Mobilização na Expressão Psicossocial
 
 No que tange à Expressão Psicossocial, a Mobilização visa à motivação de pessoas e da sociedade, com a finalidade de criar condições favoráveis ao apoio às atividades de Mobilização. Ela é conceituada como o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de preparar a nação, social e psicologicamente, para fazer frente a uma situação decorrente da efetivação de uma HE ou na iminência de sua concretização.
 
@@ -290,7 +314,7 @@ No que tange à Expressão Psicossocial, a Mobilização visa à motivação de 
 
 O objetivo da Mobilização Psicossocial é a formação e a consolidação de uma Mentalidade de Mobilização, entendida como uma atitude, eminentemente, consciente e participativa, tendo como estímulo preponderante a possibilidade da ocorrência de conflito armado que envolva direta ou indiretamente o país. A segurança das instituições e do patrimônio individual e familiar deverá ser enfatizada para motivar o indivíduo quanto à necessidade de sua participação consciente na Mobilização.
 
-1.5.4. Mobilização na Expressão Militar
+### 1.5.4. Mobilização na Expressão Militar
 
 No que tange à Expressão Militar, conceitua-se Mobilização como o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de preparar o país para a passagem de uma estrutura de paz para uma estrutura de guerra, para fazer frente a uma situação decorrente da efetivação de uma HE ou na iminência de sua concretização.
 
@@ -312,7 +336,7 @@ f) busca de padronização e nacionalização de materiais e itens de interesse 
 
 ## Página 25
 
-1.5.5. Mobilização na Expressão Científica e Tecnológica
+### 1.5.5. Mobilização na Expressão Científica e Tecnológica
 
 A Expressão Científica e Tecnológica alcançou um estágio de elevada importância, quer para o Desenvolvimento, quer para a Defesa, mostrando ser um elemento indispensável para a Mobilização.
 
@@ -336,7 +360,7 @@ f) Pesquisa e Desenvolvimento de energias alternativas.
 
 ## Página 26
 
-1.6. A MOBILIZAÇÃO NA ÁREA DE SEGURANÇA
+### 1.6. A MOBILIZAÇÃO NA ÁREA DE SEGURANÇA
 
 Além da Mobilização atuar e se processar em todas as Expressões do Poder Nacional, acrescenta-se a área de Segurança como campo de atuação da Mobilização.
 

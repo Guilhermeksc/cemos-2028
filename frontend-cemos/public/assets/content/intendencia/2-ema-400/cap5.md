@@ -17,16 +17,16 @@ O apoio logístico, pois, consiste na concretização do fluxo logístico de pes
 O Sistema de Apoio Logístico é o conjunto ordenado de elementos - pessoal, organizações, material, normas, processos e técnicas - interrelacionados e destinados a prover as necessidades da MB.
 
 Tais sistemas devem estar em condições de:
-- evoluir, sem solução de continuidade, da situação de normalidade para uma situação de conflito;
-- realizar o apoio logístico consoante o planejamento;
-- entrosar-se com os sistemas congêneres do meio civil, das demais forças e, ainda, de forças aliadas; e
-- prestar apoio logístico às demais forças, sob determinadas circunstâncias.
+▪️evoluir, sem solução de continuidade, da situação de normalidade para uma situação de conflito;
+▪️realizar o apoio logístico consoante o planejamento;
+▪️entrosar-se com os sistemas congêneres do meio civil, das demais forças e, ainda, de forças aliadas; e
+▪️prestar apoio logístico às demais forças, sob determinadas circunstâncias.
 
 Na organização do apoio logístico devem ser levados em conta os seguintes fatores:
-- missão e constituição das forças e das OM da MB a apoiar;
-- possibilidades econômicas do País;
-- duração estimada das operações navais; e
-- condições vigentes em tempo de paz e Hipóteses de Emprego consideradas.
+▪️missão e constituição das forças e das OM da MB a apoiar;
+▪️possibilidades econômicas do País;
+▪️duração estimada das operações navais; e
+▪️condições vigentes em tempo de paz e Hipóteses de Emprego consideradas.
 
 A organização deste sistema deve, pois, atender às condições de ordem estratégica e tática, conciliadas com as disponibilidades do sistema econômico da Nação.
 
@@ -62,23 +62,23 @@ As Bases Navais podem ser classificadas quanto aos seguintes aspectos:
 
 I) Localização:
 
-- Bases Continentais - dispersas ao longo do litoral nacional, evitando-se uma desnecessária concentração;
-- Bases Avançadas - instaladas em pontos próximos das áreas de operação, não só no litoral, como em ilhas oceânicas. São, normalmente, temporárias e perdem a razão de ser ao término do conflito que gerou a sua necessidade; e
-- Bases Ultramarinas - localizadas, normalmente, em países aliados, cedidas por acordos internacionais.
+▪️Bases Continentais - dispersas ao longo do litoral nacional, evitando-se uma desnecessária concentração;
+▪️Bases Avançadas - instaladas em pontos próximos das áreas de operação, não só no litoral, como em ilhas oceânicas. São, normalmente, temporárias e perdem a razão de ser ao término do conflito que gerou a sua necessidade; e
+▪️Bases Ultramarinas - localizadas, normalmente, em países aliados, cedidas por acordos internacionais.
 
 II) Duração:
-- Base Permanente – apoia, durante o ciclo de atividades de um meio operativo, em tempo de paz, as ações de adestramento e de manutenção desse meio, além do apoio de retaguarda, em situações de conflito. Pode prestar apoio direto às forças em operação em área próxima; e
-- Base Temporária – é a que se destina a cumprir, por tempo limitado, tarefas restritas de apoio logístico às forças.
+▪️Base Permanente – apoia, durante o ciclo de atividades de um meio operativo, em tempo de paz, as ações de adestramento e de manutenção desse meio, além do apoio de retaguarda, em situações de conflito. Pode prestar apoio direto às forças em operação em área próxima; e
+▪️Base Temporária – é a que se destina a cumprir, por tempo limitado, tarefas restritas de apoio logístico às forças.
 
 III) Mobilidade:
-- Base Fixa – é aquela cujas instalações estão situadas em terra, sem condições de deslocamento para outra área geográfica; e
-- Base Móvel – é aquela que possui instalações com capacidade de fácil transferência de uma localidade para outra. É, normalmente, constituída por meios flutuantes, tomando, então, a denominação de base flutuante.
+▪️Base Fixa – é aquela cujas instalações estão situadas em terra, sem condições de deslocamento para outra área geográfica; e
+▪️Base Móvel – é aquela que possui instalações com capacidade de fácil transferência de uma localidade para outra. É, normalmente, constituída por meios flutuantes, tomando, então, a denominação de base flutuante.
 
 IV) Meios apoiados:
-- Base Naval – é a que orienta seu esforço principal para o apoio às forças navais;
-- Base Aérea-naval – é a que presta apoio a aeronaves orgânicas da Marinha;
-- Base Aeronaval – é aquela que engloba as responsabilidades das duas outras, ou seja, apoia as forças navais, incluindo os meios aéreos orgânicos; e
-- Base de Fuzileiros Navais – é aquela que apoia as forças de fuzileiros navais.
+▪️Base Naval – é a que orienta seu esforço principal para o apoio às forças navais;
+▪️Base Aérea-naval – é a que presta apoio a aeronaves orgânicas da Marinha;
+▪️Base Aeronaval – é aquela que engloba as responsabilidades das duas outras, ou seja, apoia as forças navais, incluindo os meios aéreos orgânicos; e
+▪️Base de Fuzileiros Navais – é aquela que apoia as forças de fuzileiros navais.
 
 ## Página 4
 
@@ -120,23 +120,23 @@ A finalidade do apoio móvel é estabelecer um ponto de concentração na área 
 
 São vantagens do apoio móvel sobre o apoio fixo:
 
-- evitar a interferência mútua entre forças navais quando há limitações de áreas para a instalação de bases avançadas;
-- ser mais sensível à ação do comando da força naval, por fazer parte orgânica desta força;
-- prestar o apoio mais próximo à área de operações e/ou diretamente aos meios de uma força naval;
-- devido à mobilidade, ser menos vulnerável à ação do inimigo;
-- proporcionar maior flexibilidade às operações; e
-- contribuir positivamente para a maior permanência da força naval no mar, sem comprometer a sua mobilidade.
+▪️evitar a interferência mútua entre forças navais quando há limitações de áreas para a instalação de bases avançadas;
+▪️ser mais sensível à ação do comando da força naval, por fazer parte orgânica desta força;
+▪️prestar o apoio mais próximo à área de operações e/ou diretamente aos meios de uma força naval;
+▪️devido à mobilidade, ser menos vulnerável à ação do inimigo;
+▪️proporcionar maior flexibilidade às operações; e
+▪️contribuir positivamente para a maior permanência da força naval no mar, sem comprometer a sua mobilidade.
 
 A maior desvantagem do apoio móvel com relação ao apoio fixo reside na limitação de recursos logísticos que podem ser proporcionados aos meios apoiados.
 
 O apoio logístico móvel apresenta-se sob duas formas:
-- o apoio logístico às forças em um ponto pré-estabelecido, próximo à área de operação; e
-- o apoio logístico às forças durante os seus trânsitos na e para a área de operações.
+▪️o apoio logístico às forças em um ponto pré-estabelecido, próximo à área de operação; e
+▪️o apoio logístico às forças durante os seus trânsitos na e para a área de operações.
 
 Para a execução destas duas formas, existem três tipos de unidades móveis:
-- grupo de apoio móvel;
-- grupo de reabastecimento no mar; e
-- grupo de recompletamento.
+▪️grupo de apoio móvel;
+▪️grupo de reabastecimento no mar; e
+▪️grupo de recompletamento.
 
 ## Página 7
 
@@ -145,17 +145,16 @@ Para a execução destas duas formas, existem três tipos de unidades móveis:
 O grupo de apoio móvel é constituído por meios navais com características apropriadas e tem por tarefa prover apoio às forças navais nas proximidades da área de operações.
 
 Compreende:
-- o provimento do apoio logístico diretamente às unidades navais; e
-- a constituição de um ponto de acumulação de estoques de suprimentos da rede de abastecimento, tais como: combustíveis, munição, sobressalentes em geral, gêneros alimentícios e outros itens de consumo.
+▪️o provimento do apoio logístico diretamente às unidades navais; e
+▪️a constituição de um ponto de acumulação de estoques de suprimentos da rede de abastecimento, tais como: combustíveis, munição, sobressalentes em geral, gêneros alimentícios e outros itens de consumo.
 
-Os meios logísticos que compõem o grupo de apoio móvel são diversos, podendo incluir, dentre outros: navio-oficina, navio-tender (de submarinos, de navios-varredores, de navios-aeródromos), rebocadores, navio de salvamento, navio de abastecimento, dique flutuante, navio-doca, navio-hospital, navio-tanque, navio-transporte, além de diversas unidades auxiliares (barcos, lanchas, barcaças, batelões,
-EDVP, EDVM, cábreas, etc.).
+Os meios logísticos que compõem o grupo de apoio móvel são diversos, podendo incluir, dentre outros: navio-oficina, navio-tender (de submarinos, de navios-varredores, de navios-aeródromos), rebocadores, navio de salvamento, navio de abastecimento, dique flutuante, navio-doca, navio-hospital, navio-tanque, navio-transporte, além de diversas unidades auxiliares (barcos, lanchas, barcaças, batelões, EDVP, EDVM, cábreas, etc.).
 
 O grupo de apoio móvel necessita de proteção. Assim, meios navais de combate podem estar presentes na sua constituição, o que representa uma desvantagem, pois unidades combatentes são desviadas de sua tarefa principal.
 
 ## Página 8
 
-5.6.2 - Grupo de Reabastecimento no Mar
+### 5.6.2 - Grupo de Reabastecimento no Mar
 
 O propósito do reabastecimento no mar é o de ampliar a capacidade de permanência no TO das unidades navais, por meio do provimento de suas necessidades logísticas durante o trânsito para a área de operações, ou no seu interior.
 
@@ -167,6 +166,6 @@ A existência de dispositivos aperfeiçoados para transferência de carga e o em
 
 Os helicópteros orgânicos provocaram alterações significativas nos procedimentos táticos das forças navais. A vulnerabilidade à ação do inimigo foi reduzida ao diminuir o tempo de reabastecimento, ao aumentar a liberdade de manobra, além de diminuir a necessidade de afastamento dos navios de combate da área de operações. 
 
-5.6.3 - Grupo de Recompletamento
+### 5.6.3 - Grupo de Recompletamento
 
 É um grupo de navios empregados como “ligação” entre os principais pontos de apoio, na retaguarda, e a área de operações, e tem por propósito o reabastecimento dos dois grupos mencionados anteriormente.

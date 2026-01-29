@@ -111,21 +111,26 @@ f) elos externos: órgãos públicos e/ou entidades privadas as quais, tratando 
 
 5.4.4 A Direção e Execução das atividades de Mobilização nas FS são atribuições exclusivas de cada Comando de FS.
 
-5.4.5 Os assuntos de Mobilização Militar são tratados no âmbito do SISMOMIL da seguinte forma: a) No âmbito Ministerial
+5.4.5 Os assuntos de Mobilização Militar são tratados no âmbito do SISMOMIL da seguinte forma:
+
+**a) No âmbito Ministerial**
 
 No nível Ministro da Defesa, são deliberados, dentre outros assuntos de Mobilização Militar, a aprovação das publicações normativas, a assinatura da Diretriz de Mobilização Militar, a ser expedida no prosseguimento da decretação da Mobilização Nacional, e a aprovação e assinatura do Plano Setorial de Mobilização Militar (PSMM).
 
-b) No âmbito do EMCFA
+**b) No âmbito do EMCFA**
 
 1) Para aprovação do CEMCFA, são tratados, dentre outros, os assuntos de Mobilização Militar que devam ser incluídos nos Planos Estratégicos de Emprego Conjunto das Forças Armadas (PEECFA).
 
 2) No âmbito do Comitê de Chefes de Estado-Maior das Forças Armadas, são deliberados, os assuntos (inclusive a Mobilização Militar) que mereçam aprovação conjunta do CEMCFA e Comandos das FS. Do mencionado comitê, participam a Chefia do EMCFA e as Chefias de Estados-Maiores das FS.
 
-c) No âmbito da estrutura do SISMOMIL 1) Em relação à coordenação da Mobilização Militar, os assuntos relacionados com as atribuições do EMCFA / MD e Cmdo FS voltadas para a coordenação das atividades de Mobilização Militar são deliberados no âmbito dos seguintes órgãos: - Chefia de Logística e Mobilização (CHELOG) do EMCFA-MD; - Subchefia de Mobilização (SUBMOB) da CHELOG; e - Subchefias com encargos de Mobilização nos Estados-Maiores das FS.
+**c) No âmbito da estrutura do SISMOMIL**
+
+1) Em relação à coordenação da Mobilização Militar, os assuntos relacionados com as atribuições do EMCFA / MD e Cmdo FS voltadas para a coordenação das atividades de Mobilização Militar são deliberados no âmbito dos seguintes órgãos: - Chefia de Logística e Mobilização (CHELOG) do EMCFA-MD; - Subchefia de Mobilização (SUBMOB) da CHELOG; e - Subchefias com encargos de Mobilização nos Estados-Maiores das FS.
 
 2) No Conselho de Coordenação da Mobilização Militar, convocado eventualmente pelo ODSEM, são debatidos assuntos comuns às FS que, por sua natureza, requeiram agilização da sua apreciação e coordenação. Dele participam:
 
-- representantes da Subchefia de Mobilização da Chefia de Logística e Mobilização do EMCFA; e - representantes dos Estados-Maiores das FS.
+- representantes da Subchefia de Mobilização da Chefia de Logística e Mobilização do EMCFA; e 
+- representantes dos Estados-Maiores das FS.
 
 5.4.5.1 Além das situações contidas nos números 1) e 2) da letra c), podem ser realizadas, desde que de comum acordo entre os Estados-Maiores das FS, ligações funcionais entre os órgãos de diversos níveis dos Subsistemas de Mobilização das FS, incluindo, também, os setores correspondentes do órgão central do SISMOMIL.
 

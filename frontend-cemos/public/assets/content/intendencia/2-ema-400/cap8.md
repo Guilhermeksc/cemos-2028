@@ -14,19 +14,19 @@ De acordo com as diretrizes constantes em documentos pertinentes, serão conside
 
 ## Página 2
 
-8.2.1 - Escalão Operativo
+### 8.2.1 - Escalão Operativo
 
 Neste escalão, o planejamento logístico contemplará não somente as operações a realizar, como também a vida normal dos meios operativos, significando que, na eventualidade de uma operação, determinadas necessidades básicas já estarão atendidas.
 
 No planejamento específico para uma operação, terá ênfase, no escalão operativo, a determinação de necessidades, que é feita em vários níveis.
 
-a) Nível força naval
+**a) Nível força naval**
 
 Neste nível é elaborada uma estimativa de logística que abrange as necessidades globais dos meios da força naval a ser empregada, considerando as diversas linhas de ação estabelecidas pelo planejamento. Uma vez escolhida a linha de ação pelo Comandante da força (Decisão), tem lugar a elaboração do plano logístico, o qual dirá respeito ao apoio necessário às ações decorrentes da linha de ação escolhida.
 
 ## Página 3
 
-b) Nível TOM
+**b) Nível TOM**
 
 Neste nível, são estabelecidas, em uma primeira etapa, pelo ComTOM, diretrizes para o planejamento logístico das forças adjudicadas ao Teatro, tendo em vista as tarefas atribuídas a essas forças.
 
@@ -38,7 +38,7 @@ O planejamento logístico para operações combinadas está regulado em publica�
 
 O planejamento para a execução do apoio logístico de cada força caberá ao escalão administrativo dos Comandos das Forças Armadas a qual pertencerem, efetuado por intermédio dos sistemas de apoio logístico respectivos, de conformidade com as atribuições do escalão administrativo.
 
-8.2.2 - Escalão Administrativo
+### 8.2.2 - Escalão Administrativo
 
 Neste escalão, o planejamento logístico compreenderá, basicamente, a obtenção e a distribuição dos recursos logísticos requeridos - pessoal, material e serviços - pelas forças, em face da determinação de necessidades realizada no escalão operativo. 
 

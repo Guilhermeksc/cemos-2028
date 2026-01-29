@@ -35,7 +35,7 @@ b) o valor da estrutura militar a ser mantida compatível com as exigências da 
 
 8.3.2 O Planejamento da Desmobilização Militar procurará determinar os encargos e as condições de execução para todos os escalões subordinados.
 
-**8.3.3 Competências**
+### 8.3.3 Competências
 
 8.3.3.1 Cabe ao Ministério da Defesa, como Órgão de Direção Setorial da Expressão Militar:
 

@@ -16,9 +16,9 @@ Para resolver o problema logístico será preciso realizar um esforço, inicialm
 
 O esforço logístico para solucionar um problema logístico é desenvolvido em todos os níveis e tem como participantes:
 
-- o Comando ou a Direção, que determina o modo de resolver o problema;
-- as Funções Logísticas, as quais formam um conjunto de ações correlatas que  concorrem para a solução do problema; e
-- o Ciclo Logístico, constituído pela ordenação das ações que serão desenvolvidas, englobando uma ou mais funções.
+▪️o Comando ou a Direção, que determina o modo de resolver o problema;
+▪️as Funções Logísticas, as quais formam um conjunto de ações correlatas que  concorrem para a solução do problema; e
+▪️o Ciclo Logístico, constituído pela ordenação das ações que serão desenvolvidas, englobando uma ou mais funções.
 
 ## Página 2
 
@@ -27,13 +27,13 @@ O esforço logístico para solucionar um problema logístico é desenvolvido em 
 Como o problema logístico e o esforço logístico contêm aspectos diversos, por envolverem todas as necessidades dos clientes, é mister agrupar estes aspectos em funções bem definidas que estabeleçam um propósito comum. Desta forma, entende-se Função Logística como a reunião, sob uma única designação, de um conjunto de atividades logísticas afins, correlatas ou de mesma natureza.
 
 São funções logísticas:
--RECURSOS HUMANOS;
--SAÚDE;
--SUPRIMENTO;
--MANUTENÇÃO;
--ENGENHARIA;
--TRANSPORTE; e
--SALVAMENTO.
+▪️RECURSOS HUMANOS;
+▪️SAÚDE;
+▪️SUPRIMENTO;
+▪️MANUTENÇÃO;
+▪️ENGENHARIA;
+▪️TRANSPORTE; e
+▪️SALVAMENTO.
 
 Para que a MB se adequasse à Doutrina de Logística Militar (DLM), ABASTECIMENTO deixou de ser definido como função logística, passando a ser entendido em sentido amplo, como um conjunto de atividades voltadas para o apoio de material às Forças e demais OM, englobando a função logística SUPRIMENTO e parte da função logística TRANSPORTE, além de relacionar-se estreitamente com a função logística MANUTENÇÃO.
 
@@ -52,9 +52,9 @@ Este caminho é definido como ciclo logístico.
 
 De um modo amplo, a logística prevê e provê os recursos de que necessitam as Forças Armadas, os quais são agrupados em três categorias que congregam funções logísticas correlatas.
 
-- pessoal - elemento base de qualquer organização;
-- material - para melhorar ou tornar possível as ações do pessoal; e
-- serviços - para o apoio de forças nos aspectos técnicos e de infra-estrutura.
+▪️**pessoal** - elemento base de qualquer organização;
+▪️**material** - para melhorar ou tornar possível as ações do pessoal; e
+▪️**serviços** - para o apoio de forças nos aspectos técnicos e de infra-estrutura.
 
 A categoria pessoal, que congrega as funções logísticas Recursos Humanos e Saúde, deve preparar o pessoal para estar em condições de ser utilizado pelas forças, quando necessário.
 

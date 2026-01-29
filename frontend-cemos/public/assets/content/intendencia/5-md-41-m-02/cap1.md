@@ -4,11 +4,11 @@
 
 ###  Capítulo 1 - INTRODUÇÃO
 
-1.1 Finalidade
+### 1.1 Finalidade
 
 Regular os fundamentos doutrinários que orientam os processos relativos à Mobilização Militar no âmbito do Ministério da Defesa (MD) e das Forças Singulares (FS).
 
-1.2 Aplicação
+### 1.2 Aplicação
 
 Na medida em que orienta tais processos no âmbito do MD e das FS, esta publicação serve de base doutrinária para o conhecimento, o planejamento, o preparo e a execução da Mobilização Militar.
 
@@ -119,7 +119,9 @@ e) saúde;
 f) suprimento; e
 g) transporte.
 
-2.5.4 Função Logística Engenharia É o conjunto de atividades planejadas e executadas com o objetivo de obter e adequar a infraestrutura física e as instalações existentes às necessidades das Forças.
+### 2.5.4 Função Logística Engenharia 
+
+É o conjunto de atividades planejadas e executadas com o objetivo de obter e adequar a infraestrutura física e as instalações existentes às necessidades das Forças.
 
 2.5.4.1 A obtenção e a utilização da infraestrutura física necessária, normalmente, compreendem:
 
@@ -146,7 +148,7 @@ m) gestão ambiental.
 
 ## Página 19
 
-2.5.5 Função Logística Manutenção
+### 2.5.5 Função Logística Manutenção
 
 É o conjunto de atividades que são executadas visando a manter o material na melhor condição para emprego e, quando houver avarias, reconduzi-lo aquela condição. São atividades da Função Logística Manutenção:
 
@@ -156,7 +158,9 @@ c) manutenção preditiva;
 d) manutenção modificadora; e
 e) manutenção corretiva.
 
-2.5.6 Função Logística Recursos Humanos É o conjunto de atividades relacionadas com o gerenciamento do pessoal.
+### 2.5.6 Função Logística Recursos Humanos 
+
+É o conjunto de atividades relacionadas com o gerenciamento do pessoal.
 
 2.5.6.1 São atividades da Função Logística Recursos Humanos:
 a) levantamento das necessidades;
@@ -167,7 +171,9 @@ e) manutenção do moral e do bem-estar.
 
 2.5.6.2 Disciplina, justiça militar, prisioneiros de guerra e civis internados não fazem parte da Função Logística Recursos Humanos.
 
-2.5.7 Função Logística Salvamento É o conjunto de atividades que são executadas visando à salvaguarda e ao resgate de recursos materiais, suas cargas ou itens específicos.
+### 2.5.7 Função Logística Salvamento
+
+É o conjunto de atividades que são executadas visando à salvaguarda e ao resgate de recursos materiais, suas cargas ou itens específicos.
 
 2.5.7.1 São atividades da Função Logística Salvamento:
 a) combate a incêndios;
@@ -178,7 +184,7 @@ e) reboque;
 f) desencalhe, emersão ou reflutuação de meios; e
 g) resgate de recursos materiais acidentados, cargas ou itens específicos.
 
-2.5.8 Função Logística Saúde
+### 2.5.8 Função Logística Saúde
 
 É o conjunto de atividades relacionadas com a conservação do pessoal, nas condições adequadas de aptidão física e psíquica, por intermédio de medidas sanitárias de prevenção e de recuperação. Engloba também as atividades relacionadas à conservação da saúde dos animais de emprego militar.
 
@@ -191,7 +197,7 @@ d) Tratamento.
 
 ## Página 20
 
-2.5.9 Função Logística Suprimento
+### 2.5.9 Função Logística Suprimento
 
 É o conjunto de atividades que trata da previsão e provisão do material, de todas as classes, necessário às organizações e forças apoiadas. São atividades da Função Logística Suprimento:
 
@@ -201,7 +207,7 @@ c) distribuição.
 
 2.5.9.1 As atividades das funções logísticas manutenção e suprimento são interdependentes. A manutenção inadequada implica um aumento das necessidades de suprimento e, inversamente, a carência de suprimento exige maior esforço de manutenção.
 
-2.5.10 Função Logística Transporte
+### 2.5.10 Função Logística Transporte
 
 É o conjunto de atividades que são executadas com vistas ao deslocamento de recursos humanos, materiais e animais por diversos meios, em tempo e para os locais predeterminados, a fim de atender às necessidades.
 
@@ -210,7 +216,7 @@ a) levantamento das necessidades;
 b) seleção; e
 c) gerência de transportes.
 
-2.6 O Sistema Nacional de Mobilização
+### 2.6 O Sistema Nacional de Mobilização
 
 2.6.1 O Sistema Nacional de Mobilização (SINAMOB) consiste no conjunto de órgãos que atuam de modo ordenado e integrado a fim de planejar e realizar todas as fases da Mobilização e da Desmobilização Nacionais.
 
@@ -236,7 +242,9 @@ j) Subsistema Setorial de Mobilização de Inteligência.
 
 Figura 1: O Sistema Nacional de Mobilização (SINAMOB)
 
-2.7 Desmobilização Nacional
+![md](md.png)
+
+### 2.7 Desmobilização Nacional
 
 2.7.1 Cessados os motivos que determinaram a Execução da Mobilização, o País deverá retornar à situação de normalidade, em que os recursos são, em sua maior parte, canalizados, prioritariamente, para o desenvolvimento.
 
@@ -245,7 +253,5 @@ Figura 1: O Sistema Nacional de Mobilização (SINAMOB)
 2.7.3 Para cada Plano Nacional de Mobilização será elaborado, simultaneamente, o correspondente Plano Nacional de Desmobilização.
 
 2.7.4 No retorno do País à situação de normalidade, a Desmobilização Nacional deverá ser efetuada gradativamente, para não causar maiores prejuízos à vida nacional, particularmente para a estrutura e a infraestrutura do País, as quais, até então, estavam orientadas, prioritariamente, para o apoio às ações estratégicas de segurança.
-
-## Página 22
 
 2.7.5 Durante o retorno gradual à situação de normalidade, atos normativos regularão as medidas de garantias, quais sejam, reparações ou indenizações devidas aos recursos mobilizados.

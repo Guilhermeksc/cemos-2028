@@ -24,6 +24,7 @@ export class Ema420 implements OnInit {
   contentPath: string = 'assets/content/intendencia/9-ema-420';
   fileNames: string[] = [
     'cap1.md',
+    'cap2.md',
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';

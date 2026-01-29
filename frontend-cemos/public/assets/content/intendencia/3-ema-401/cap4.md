@@ -76,7 +76,9 @@ f) Lista de Necessidades de Planejamento (LNP); e
 
 g) Lista de Necessidades Atendidas (LNA).
 
-Todas as listas de necessidades serão elaboradas com base no procedimento e modelo constante no anexo IV do Manual para o Planejamento da Mobilização Militar (MD41-M-03). 4.3.1. Lista de Necessidades Inicial (LNI)
+Todas as listas de necessidades serão elaboradas com base no procedimento e modelo constante no anexo IV do Manual para o Planejamento da Mobilização Militar (MD41-M-03).
+
+### 4.3.1. Lista de Necessidades Inicial (LNI)
 
 Elaborada pelo nível estratégico durante a confecção do Plano Estratégico de Emprego Conjunto das Forças Armadas (PEECFA). Por ser um trabalho essencialmente estratégico, concede ao planejador a liberdade de idealizar e relacionar quais os recursos que resultam nas condições mais favoráveis ao desfecho do conflito.
 
@@ -86,7 +88,7 @@ A lista elaborada neste nível contemplará os recursos necessários para a exec
 
 ## Página 47
 
-4.3.2. Lista de Necessidades Complementar (LNC)
+### 4.3.2. Lista de Necessidades Complementar (LNC)
 
 No planejamento do nível operacional surge a LNC. Aqui começam a aparecer as necessidades que refletem aquelas lacunas de recursos mais presentes no dia a dia das Organizações Militares (OM).
 
@@ -96,29 +98,29 @@ Algumas das necessidades listadas no nível estratégico são ajustadas e especi
 
 A lista elaborada neste nível irá conter os recursos necessários para a execução da Linha de Ação do Plano Operacional e orientará o planejamento no nível tático.
 
-4.3.3. Lista de Necessidades Suplementar (LNS)
+### 4.3.3. Lista de Necessidades Suplementar (LNS)
 
 No planejamento do nível tático surge a LNS. É importante notar que nesta lista estão incluídas as necessidades oriundas das OM de pequeno escalão, as quais de fato exercem o poder militar. Consequentemente, revela necessidades mais próximas da realidade, muitas das quais nem são vislumbradas pelos escalões superiores.
 
 Na elaboração da LNS o foco deve estar voltado diretamente para aquilo que a Força Naval Componente precisa para cumprir a missão recebida. Não há restrição sob qualquer aspecto neste nível de planejamento. Todos os recursos podem e devem ser relacionados e na quantidade que for considerada necessária. Caberá aos escalões superiores avaliarem e selecionarem as informações recebidas.
 
-4.3.4. Lista de Necessidades Final (LNF)
+### 4.3.4. Lista de Necessidades Final (LNF)
 
 Após o Planejamento Tático, o Comando Logístico do Comando Operacional ativado consolidará as LN das fases do planejamento (LNI, LNC e LNS) em uma única lista, a Lista de Necessidades Final, a qual será encaminhada ao EEMCFA.
 
-4.3.5. Lista de Necessidades de Deslocamento Estratégico (LNDE)
+### 4.3.5. Lista de Necessidades de Deslocamento Estratégico (LNDE)
 
 Esta lista, decorrente do Plano de Deslocamento e Concentração de Força Singular (PDCFS), é elaborada pela MB que, após o Planejamento Tático, terá 30 (trinta) dias para encaminhar seu PDCFS contendo sua LNDE ao EMCFA.
 
 ## Página 48
 
-4.3.6. Lista de Necessidades de Planejamento (LNP)
+### 4.3.6. Lista de Necessidades de Planejamento (LNP)
 
 O EMCFA, em conjunto com representantes dos Estados-Maiores das FS, no prazo de 20 (vinte) dias, analisará e consolidará as LNF e as LNDE, recebidas dos Comandos Logiísticos dos Comandos Operacionais ativados e das FS, respectivamente, resultando na LNP.
 
 As listas de necessidades elaboradas ao decorrer do planejamento são classificadas, sendo restrito o seu acesso. Após a elaboração da LNP, o EMCFA irá promover a descaracterização e desclassificação da lista, de acordo com o procedimento previsto no MD41-M-03, além da separação das necessidades e consolidação das LNP por FS (LNPMB, LNPEB e LNPFAB), estas já ostensivas.
 
-4.3.7. Lista de Necessidades Atendidas (LNA)
+### 4.3.7. Lista de Necessidades Atendidas (LNA)
 
 Após o recebimento da LNPMB, a estrutura logística da MB realizará o confronto entre as necessidades e a disponibilidade de recursos, relacionando as necessidades que poderão ser atendidas pela logística da Força na Lista de Necessidades Atendidas.
 
@@ -182,7 +184,7 @@ e) a convocação de civis e militares.
 
 Após o recebimento dos Planos de Mobilização elaborados pelos ODS, o EMA verificará a possibilidade de solucionar internamente algumas das carências apresentadas e depois confeccionar o Plano de Mobilização Marítima, tendo a LC da MB como anexo. As sugestões apresentadas pelos ODS serão a principal fonte de dados para essa etapa do trabalho que será realizado pelo OCD do SIMOMAR.
 
-![tramite de documentos](image.png)
+![tramite de documentos](tramite.png)
 
 ## Página 52
 

@@ -6,9 +6,9 @@
 
 O ciclo logístico, descrito no Capítulo 2, é o processo pelo qual se desenvolve a logística. Identifica-se, no ciclo, as fases básicas, denominadas:
 
-- DETERMINAÇÃO DE NECESSIDADES;
-- OBTENÇÃO; e
-- DISTRIBUIÇÃO.
+▪️DETERMINAÇÃO DE NECESSIDADES;
+▪️OBTENÇÃO; e
+▪️DISTRIBUIÇÃO.
 
 ### 3.2 - DETERMINAÇÃO DE NECESSIDADES
 
@@ -19,11 +19,11 @@ O trabalho de determinar necessidades é baseado no plano estratégico ou operat
 Esses dados iniciais indicarão quem necessita, para qual missão, local da missão e as disponibilidades existentes. 
 
 De posse desses dados, será possível realizar esta fase básica respondendo às seguintes perguntas:
-- O QUE É NECESSÁRIO? Especificando a qualidade;
-- QUANTO É NECESSÁRIO? Estabelecendo a quantidade;
-- QUANDO SERÁ NECESSÁRIO? Definindo o tempo em que a necessidade deve ser satisfeita;
-- ONDE SERÁ NECESSÁRIO? Indicando o local onde deve ser satisfeita a necessidade; e
-- O QUE É MAIS IMPORTANTE? Apontando a prioridade a ser atribuída a cada necessidade.
+▪️O QUE É NECESSÁRIO? Especificando a qualidade;
+▪️QUANTO É NECESSÁRIO? Estabelecendo a quantidade;
+▪️QUANDO SERÁ NECESSÁRIO? Definindo o tempo em que a necessidade deve ser satisfeita;
+▪️ONDE SERÁ NECESSÁRIO? Indicando o local onde deve ser satisfeita a necessidade; e
+▪️O QUE É MAIS IMPORTANTE? Apontando a prioridade a ser atribuída a cada necessidade.
 
 ## Página 2
 
@@ -70,9 +70,9 @@ Nos outros níveis, em especial no operativo, a obtenção se limita, praticamen
 Na Logística Operativa, uma fonte de obtenção é representada pelos próprios recursos colocados à disposição do Comando que determinou as necessidades.
 
 Estes recursos são:
-- humanos;
-- financeiros; e
-- materiais.
+▪️humanos;
+▪️financeiros; e
+▪️materiais.
 
 Os recursos humanos são a fonte de obtenção para as necessidades de pessoal em todos os níveis de Comando.
 
@@ -90,9 +90,9 @@ São recursos reais aqueles que se encontram efetivamente à disposição do Com
 
 Quando se trata de recursos materiais, para que se possa levar a efeito a transformação das necessidades apontadas em elementos logísticos que as satisfaçam, é preciso desenvolver três tipos de atividades complementares entre si, embora sejam de caráter distinto:
 
-- técnico-industriais;
-- financeiras; e
-- orgânicas.
+▪️técnico-industriais;
+▪️financeiras; e
+▪️orgânicas.
 
 As atividades técnico-industriais são as correspondentes à produção física para atender às necessidades de material das forças. São atividades exercidas nos altos escalões da logística militar e da logística nacional, não abrangendo portanto a logística operativa.
 
@@ -117,11 +117,11 @@ Estabelecer prioridades e observar prazos são decorrências da escassez de temp
 3.3.2 - Etapas da Obtenção
 
 A obtenção é desenvolvida por meio de cinco etapas:
-- pedido;
-- procura;
-- aquisição;
-- acompanhamento; e
-- recebimento.
+▪️pedido;
+▪️procura;
+▪️aquisição;
+▪️acompanhamento; e
+▪️recebimento.
 
 O pedido consiste na apresentação da necessidade pelo utilizador. Para que seja bem entendido, é preciso que contenha os dados essenciais sobre o material, pessoal ou serviço solicitado, isto é, seja portador de especificação adequada. Os pedidos devem ser feitos com o espírito de máxima economia.
 
@@ -139,18 +139,18 @@ O recebimento exige a conferência quantitativa e qualitativa do que foi adquiri
 
 A obtenção dar-se-á, dentre outros, por intermédio de um dos seguintes métodos, conforme disposições legais em vigor:
 
-- doação, que é a concessão, de forma gratuita;
-- compra, que é o processo de aquisição de bens, cedidos voluntariamente pelo proprietário, mediante pagamento de importância ajustada, à vista ou a prazo, sendo o processo mais aconselhável e normal;
-- contratação de serviço, que é o processo indenizável utilizado para a formalização da prestação de um determinado serviço;
-- confisco, que é a apropriação sumária e de forma controlada, em caráter punitivo, sem pagamento, para utilização militar;
-- contribuição, que é um tributo, periódico ou eventual, voluntário ou compulsório, visando a um determinado fim militar, podendo ou não comportar ressarcimento posterior;
-- pedido, que é a solicitação formal a um órgão de suprimento ou prestador de serviços, segundo normas específicas;
-- requisição, que é a imposição do fornecimento de materiais, animais e serviços, mediante ordem escrita e assinada por autoridade competente, sendo o pagamento, normalmente, realizado posteriormente;
-- desenvolvimento, que é o processo de especificação, projeto, teste e produção dirigido ao atendimento de uma necessidade específica;
-- troca, que é o processo de aquisição de bens e serviços, cedidos voluntariamente, mediante ressarcimento em outros bens e serviços;
-- empréstimo, que é o processo de aquisição de bens, cedidos voluntariamente pelo proprietário, sem ônus para o utilizador, que deverão ser restituídos ao mesmo, após cessadas as necessidades de sua utilização, no mínimo, no estado em que se encontravam ao serem emprestados;
-- arrendamento mercantil, que é a operação na qual uma das partes cede o uso de um ou mais bens mediante o pagamento pela outra de prestações periódicas, sendo usual que, ao final do contrato, o arrendatário tenha opção de compra dos bens; e 
-- transferência, que é o processo para realizar o remanejamento de materiais ou animais entre organizações militares.
+▪️doação, que é a concessão, de forma gratuita;
+▪️compra, que é o processo de aquisição de bens, cedidos voluntariamente pelo proprietário, mediante pagamento de importância ajustada, à vista ou a prazo, sendo o processo mais aconselhável e normal;
+▪️contratação de serviço, que é o processo indenizável utilizado para a formalização da prestação de um determinado serviço;
+▪️confisco, que é a apropriação sumária e de forma controlada, em caráter punitivo, sem pagamento, para utilização militar;
+▪️contribuição, que é um tributo, periódico ou eventual, voluntário ou compulsório, visando a um determinado fim militar, podendo ou não comportar ressarcimento posterior;
+▪️pedido, que é a solicitação formal a um órgão de suprimento ou prestador de serviços, segundo normas específicas;
+▪️requisição, que é a imposição do fornecimento de materiais, animais e serviços, mediante ordem escrita e assinada por autoridade competente, sendo o pagamento, normalmente, realizado posteriormente;
+▪️desenvolvimento, que é o processo de especificação, projeto, teste e produção dirigido ao atendimento de uma necessidade específica;
+▪️troca, que é o processo de aquisição de bens e serviços, cedidos voluntariamente, mediante ressarcimento em outros bens e serviços;
+▪️empréstimo, que é o processo de aquisição de bens, cedidos voluntariamente pelo proprietário, sem ônus para o utilizador, que deverão ser restituídos ao mesmo, após cessadas as necessidades de sua utilização, no mínimo, no estado em que se encontravam ao serem emprestados;
+▪️arrendamento mercantil, que é a operação na qual uma das partes cede o uso de um ou mais bens mediante o pagamento pela outra de prestações periódicas, sendo usual que, ao final do contrato, o arrendatário tenha opção de compra dos bens; e 
+▪️transferência, que é o processo para realizar o remanejamento de materiais ou animais entre organizações militares.
 
 A obtenção do pessoal necessário dar-se-á, dentre outros, por intermédio de um dos seguintes métodos: movimentação de pessoal, treinamento, concurso, formação, convocação, mobilização, contratação e recrutamento.
 
@@ -172,13 +172,13 @@ Ao conjunto de órgãos de apoio, por intermédio dos quais se executa essa terc
 
 Os Órgãos de Apoio, integrantes desse sistema , são, dentre outros, os seguintes:
 
-- Estabelecimentos Continentais: bases navais, arsenais, depósitos, hospitais, quartéis, escolas, centros de instrução, etc.
+▪️Estabelecimentos Continentais: bases navais, arsenais, depósitos, hospitais, quartéis, escolas, centros de instrução, etc.
 
-- Bases Avançadas: estabelecimentos dos tipos acima mencionados, localizados em pontos focais do litoral ou ilhas oceânicas, para apoio a determinadas operações.
+▪️Bases Avançadas: estabelecimentos dos tipos acima mencionados, localizados em pontos focais do litoral ou ilhas oceânicas, para apoio a determinadas operações.
 
-- Grupos de Apoio Móvel ou Bases Flutuantes: conjunto destinado a prestar apoio logístico aos meios navais nas proximidades das áreas de operações.
+▪️Grupos de Apoio Móvel ou Bases Flutuantes: conjunto destinado a prestar apoio logístico aos meios navais nas proximidades das áreas de operações.
 
-- Grupo de Reabastecimento no Mar: constituído por navios com características apropriadas a prover, na área de operações, os suprimentos necessários a uma força em deslocamento, com o propósito de ampliar a sua capacidade de permanência em ação.
+▪️Grupo de Reabastecimento no Mar: constituído por navios com características apropriadas a prover, na área de operações, os suprimentos necessários a uma força em deslocamento, com o propósito de ampliar a sua capacidade de permanência em ação.
 
 ## Página 10
 
@@ -186,11 +186,9 @@ Os Órgãos de Apoio, integrantes desse sistema , são, dentre outros, os seguin
 
 A distribuição compreende tarefas de acumulação, transporte e entrega. 
 
-A acumulação é a atividade relacionada com o recebimento e a armazenagem de material, o preparo das instalações prestadoras de serviços e o aquartelamento de pessoal. Essa tarefa depende essencialmente do planejamento, que determinará os níveis a serem alcançados para satisfazer não só as necessidades normais e, portanto, previstas, como também as de emergência e, consequentemente, imprevistas. Daí
-decorre a obrigação de serem mantidos níveis de estoque de material ou reserva de pessoal para fazer frente a esses imprevistos e atender a todas as necessidades. A acumulação faz a ligação entre a obtenção e a distribuição e atua como elemento regulador do fluxo logístico.
+A acumulação é a atividade relacionada com o recebimento e a armazenagem de material, o preparo das instalações prestadoras de serviços e o aquartelamento de pessoal. Essa tarefa depende essencialmente do planejamento, que determinará os níveis a serem alcançados para satisfazer não só as necessidades normais e, portanto, previstas, como também as de emergência e, consequentemente, imprevistas. Daí decorre a obrigação de serem mantidos níveis de estoque de material ou reserva de pessoal para fazer frente a esses imprevistos e atender a todas as necessidades. A acumulação faz a ligação entre a obtenção e a distribuição e atua como elemento regulador do fluxo logístico.
 
-O transporte ou movimentação é a parte dinâmica da distribuição e abrange a transferência dos recursos logísticos obtidos até os pontos de acumulação e destes aos consumidores. O transporte é de suma importância para a distribuição e de sua correta gerência depende a eficácia desta fase do ciclo logístico. Requer a conjugação de fatores como tempo, espaço e volume, com vias de comunicação, meios de
-transporte e prioridades. 
+O transporte ou movimentação é a parte dinâmica da distribuição e abrange a transferência dos recursos logísticos obtidos até os pontos de acumulação e destes aos consumidores. O transporte é de suma importância para a distribuição e de sua correta gerência depende a eficácia desta fase do ciclo logístico. Requer a conjugação de fatores como tempo, espaço e volume, com vias de comunicação, meios de transporte e prioridades. 
 
 A entrega encerra a fase da distribuição, fazendo chegar aos utilizadores os recursos logísticos necessários.
 

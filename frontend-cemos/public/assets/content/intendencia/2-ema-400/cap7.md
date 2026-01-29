@@ -19,18 +19,19 @@ A responsabilidade direta pela logística das OM da MB é atribuição de seus t
 ### 7.3 - EM SITUAÇÃO DE CONFLITO
 
 Estabelecida a Estrutura Militar de Guerra, os seguintes escalões e níveis de responsabilidade deverão ser considerados pela Logística Naval:
-- Escalão administrativo:
-- nível de supervisão; e
-- nível de execução.
-- Escalão operacional:
-- nível Teatro de Operações Marítimo (TOM); e
-- nível força naval.
+**Escalão administrativo:**
+▪️nível de supervisão; e
+▪️nível de execução.
+**Escalão operacional:**
+▪️nível Teatro de Operações Marítimo (TOM); e
+▪️nível força naval.
 
-7.3.1 - Escalão Administrativo
-a) Nível de supervisão
+### 7.3.1 - Escalão Administrativo
+
+**a) Nível de supervisão**
 A supervisão do Sistema de Apoio Logístico da Marinha cabe ao EMA.
 
-b) Nível de execução
+**b) Nível de execução**
 As fases logísticas de obtenção e de distribuição referentes às forças navais são da responsabilidade dos ODS.
 A expressão força naval abrange não apenas as forças operativas com seu apoio integrado, mas também todas as organizações de comando, controle, comunicações e apoio adjudicadas aos Comandos operativos. 
 
@@ -38,14 +39,16 @@ A distribuição é feita por intermédio dos Comandos de Área de Apoio (AAP), 
 
 ## Página 3
 
-7.3.2 - Escalão Operacional
+### 7.3.2 - Escalão Operacional
 
-a) Nível TOM
+**a) Nível TOM**
 
 O Comandante do Teatro de Operações Marítimo (ComTOM), Comando Combinado, coordena o apoio logístico às forças navais, terrestres e aéreas subordinadas. Esta coordenação poderá envolver as seguintes atribuições:
-- estabelecimento de prioridades, em função da missão e da análise da determinação de necessidades das forças navais, terrestres e aéreas subordinadas; e
-- fixação da oportunidade de distribuição dos diversos recursos logísticos às forças em operação.
-b) Nível força naval
+▪️de prioridades, em função da missão e da análise da determinação de necessidades das forças navais, terrestres e aéreas subordinadas; e
+▪️fixação da oportunidade de distribuição dos diversos recursos logísticos às forças em operação.
+
+**b) Nível força naval**
+
 São da responsabilidade do Comandante da força naval:
-- a determinação de necessidades; e
-- a distribuição dos recursos logísticos às unidades componentes de sua força, quando essa fase logística lhe for atribuída.
+▪️a determinação de necessidades; e
+▪️a distribuição dos recursos logísticos às unidades componentes de sua força, quando essa fase logística lhe for atribuída.

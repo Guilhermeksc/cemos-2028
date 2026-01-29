@@ -1,147 +1,203 @@
-## Página 1
+# MD41-M-01 - Doutrina de Mobilização Militar
 
-# MD-41-M-01 - Doutrina de Mobilização Militar
+## Página 4
 
-## Página 13
+### CAPÍTULO 1 - INTRODUÇÃO
 
-### Capítulo I - INTRODUÇÃO
+### 1.1 Finalidade
 
-1.1 Finalidade
+Estabelecer a concepção doutrinária a ser considerada pelo Ministério da Defesa (MD) e pelas Forças Armadas (FA) no preparo e na da execução da Mobilização e da Desmobilização Militares, desde a normalidade até a situação de crise/conflito armado decorrente de agressão estrangeira e posterior retorno à normalidade.
 
-Estabelecer a concepção doutrinária a ser considerada pelo Ministério da Defesa (MD) e pelas Forças Armadas (FA) no preparo e na execução da Mobilização e da Desmobilização Militares, desde a situação de normalidade até a iminência ou efetivação de uma Hipótese de Emprego (HE) ou de situações de crise (catástrofes, desastres naturais etc.) e posterior retorno à normalidade.
+AGRESSÃO ESTRANGEIRA: o art. 22, 8 12, do Decreto nº 6.592, de 2008 preceitua que os parâmetros para a qualificação da expressão agressão estrangeira são os seguintes, dentre outros: ameaças ou atos lesivos à soberania nacional, à integridade territorial, ao povo brasileiro ou às instituições nacionais, ainda que não signifiquem invasão ao território nacional.
 
-1.2 Conceitos Básicos
+### 1.2 Aplicação
 
-Com o intuito de facilitar o entendimento da presente publicação, os principais conceitos básicos estão transcritos no Anexo IV — Glossário.
+Esta publicação provê orientações básicas doutrinárias para o conhecimento, o planejamento, o preparo e a execução da Mobilização Militar.
 
-1.3 Generalidades
+### 1.3 Referências 
 
-1.3.1. A Estratégia Nacional de Defesa (END) apresenta a capacidade de mobilização nacional como fator de dissuasão nas relações internacionais, na medida em que confere elasticidade na expansão do poder combatente das FA, com o aumento célere dos recursos humanos, materiais e de serviços, para complementar a Logística Militar nas situações motivadoras em que o País estiver envolvido.
+a) Constituição da República Federativa do Brasil, de 5 de outubro de 1988;
 
-1.3.2. Como estratégia de dissuasão, as FA brasileiras deverão estar estruturadas de modo compatível com a estatura político-estratégica do País para preservar a soberania e os interesses nacionais em conciliação com os interesses dos países da América do Sul. Esse contexto deverá ser sustentado não apenas pela superioridade econômica, tecnológica e militar, como também pela capacidade de mobilização nacional.
+b) Lei nº 11.631, de 27 de dezembro de 2007 (Dispõe sobre a Mobilização Nacional e cria o Sistema Nacional de Mobilização - SINAMOB);
 
-1.3.3. A promulgação da Lei de Mobilização Nacional (Lei nº 11.631, de 27 de dezembro de 2007) permitiu ao MD evoluir na formulação do arcabouço legal que orienta as ações do Sistema Subsetorial de Mobilização Militar, sendo a Doutrina de Mobilização Militar o documento básico para o desenvolvimento, em todos os níveis, dos planejamentos de preparo e execução da mobilização militar.
+c) Lei nº 12.598, de 21 de março de 2012 (Estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e de sistemas de defesa; dispõe sobre regras de incentivo à área estratégica de defesa; e altera a Lei nº 12.249, de 11 de junho de 2010);
 
-## Página 15
+d) Decreto nº 6.592, de 2 de outubro de 2008 (Regulamenta o disposto na Lei nº 11.631, de 27 de dezembro de 2007, que dispõe sobre a Mobilização Nacional e cria o Sistema Nacional de Mobilização - SINAMOB);
 
-### Capítulo II - RELAÇÃO ENTRE LOGÍSTICA E MOBILIZAÇÃO
+e) Decreto nº 7.294, de 6 de setembro de 2010 (Dispõe sobre a Política de Mobilização Nacional);
 
-2.1. Introdução
+f) Decreto nº 7.970, de 28 de março de 2013 (Regulamenta o disposto na Lei nº 12.598, de 22 de março de 2012, que estabelece normas especiais para as compras, as contratações e o desenvolvimento de produtos e sistemas de defesa);
 
-2.1.1. A Logística Nacional deve fornecer os meios necessários para a realização das ações estratégicas nacionais. Quando esses meios se tornam insuficientes para fazer face às ameaças à Defesa Nacional, o Estado empregará a Mobilização Nacional, de modo a obter os meios que não puderem ser proporcionados de imediato. A Logística é, portanto, o ponto de partida para a Mobilização.
+g) Decreto nº 11.337, de 1º de janeiro de 2023 (Aprova a Estrutura Regimental do Ministério da Defesa);
 
-2.1.2. O Poder Nacional é o campo comum de atuação da Logística e da Mobilização. Isso faz com que, particularmente na fase do preparo da Mobilização, as ações desenvolvidas pelos dois sistemas sejam concorrentes, porém não conflitantes, tornando, por vezes, complexo o entendimento da distinção do que é Logística e do que é Mobilização.
+h) Exposição de Motivos nº 006, de 14 de setembro de 1987, da Secretaria-Geral do Conselho de Segurança Nacional (aprova a Doutrina Básica de Mobilização Nacional);
 
-2.1.3. Essa distinção, em determinadas circunstâncias, torna-se desnecessária, uma vez que o objetivo a ser alcançado com as ações empreendidas pelos dois sistemas é a capacitação da Expressão Militar do Poder Nacional para cumprir suas destinações constitucionais, em especial aquela relacionada com a manutenção e a defesa da Soberania Nacional.
+## Página 5
 
-2.1.4. Quando o Estado realiza ações de desenvolvimento no campo da Logística Nacional, como, por exemplo, o fomento da pesquisa científico-tecnológica e da inovação para nacionalização de produto de defesa, está, ao mesmo tempo, expandindo o Potencial Nacional, relacionado à Mobilização e, consequentemente, fortalecendo o Poder Nacional vinculado à Logística.
+i) Portaria nº 073, de 10 de agosto de 1988, da Secretaria-Geral do Conselho de Segurança Nacional (aprova o Manual Básico de Mobilização Nacional);
 
-2.1.5. Atualmente, cresce a importância do fomento de projetos de desenvolvimento e de produção de itens de emprego dual (de aplicação civil e militar), de forma a contribuir com o crescimento das empresas e a manutenção de linhas de produção de materiais de possível emprego militar, desse modo, incrementando a manutenção do Poder Nacional e o desenvolvimento do Potencial Nacional, respectivamente, nas áreas de Logística e Mobilização.
+j) Portaria Normativa nº 113/SPEAI/MD, de 1º de fevereiro de 2007 (Dispõe sobre a Doutrina Militar de Defesa - MD51-M-04 - 22 Edição/2007);
 
-2.1.6. Cabe ressaltar que, em situação de normalidade, ações de Logística ou de preparo da Mobilização são executadas por intermédio da aplicação de recursos orçamentários, respeitando-se as leis de mercado. Nesse caso, o Estado não está capacitado a obrigar o setor privado a atender suas encomendas, passando a ter essa competência somente após a Mobilização Nacional ter sido decretada pelo Presidente da República.
+k) Portaria Normativa nº 1.489/MD, de 3 de julho de 2015 (Aprova a Política de Mobilização Militar - MD41-P-01 - 22 Edição/2015);
 
-2.1.7. O parágrafo único do art. 4º da Lei de Mobilização Nacional (Lei nº 11.631, de 2007) esclarece o limiar conceitual entre Logística e Mobilização quando especifica medidas que caracterizam o poder coercitivo do Estado a fim de preparar o País para o enfrentamento de situações de emergência previstas nesse diploma legal:
+|) Instrução Normativa nº 7/MD, de 20 de outubro de 2015 (Aprova a Diretriz Setorial de Mobilização Militar - MD41-D-01 - 32 Edição/2015);
 
-## Página 16
+m) Portaria Normativa nº 40/MD, 23 de junho de 2016 (Aprova a Doutrina de Logística Militar - MD42-M-02 - 32 Edição/2016);
 
-Art. 4º Parágrafo Único.(...)
+n) Portaria Normativa nº 94/GM-MD, de 20 de dezembro de 2018 (Aprova a Sistemática de Planejamento Estratégico Militar - SPEM - MD51-M-01 - 22 Edição/2018);
 
-I — a convocação dos entes federados para integrar o esforço da Mobilização Nacional;
+o) Portaria Normativa nº 84/GM-MD, de 15 de setembro de 2020 (Aprova a Doutrina de Operações Conjuntas - MD30-M-01/Volumes 1 e 2 - 22 Edição/2020);
 
-II — a reorientação da produção, da comercialização, da distribuição e do consumo de bens e da utilização de serviços;
+p) Portaria nº 1.266/GM-MD, de 11 de março de 2021 (Aprova o Manual para o Planejamento da Mobilização Militar - MD41-M-03 - 12 Edição/2021);
 
-III — a intervenção nos fatores da produção públicos e privados; IV — a requisição e a ocupação de bens e serviços; e
+q) Portaria GM-MD nº 5.807, de 28 de novembro de 2022 (Aprova o Manual de Mobilização Militar - MD41-M-02 - 22 Edição/2022);
 
-V — a convocação de civis e militares.
+r) Portaria GM-MD nº 5.938, de 7 de dezembro de 2022 (Aprova as Normas para o Cadastramento e Credenciamento de Empresas de Interesse da Mobilização - MD41-N-01 - 22 Edição/2022); e
 
-2.1.8. É na fase da execução da Mobilização que essa distinção se evidencia, ao permitir que ocorra a intervenção do Estado nos meios de produção, de forma célere e compulsória, para complementar as carências de toda ordem da Expressão Militar do Poder Nacional, de modo a implementar e incrementar ações em favor da Defesa Nacional.
+s) Portaria Normativa nº 9/GAP/MD, de 13 de janeiro de 2016 (Aprova o Glossário das Forças Armadas - MD35-G-01 (52 Edição/2015).
 
-2.2. Metodologia de Obtenção de Recursos
+1.4 Aprimoramento As sugestões para aperfeiçoamento desta publicação deverão ser encaminhadas para a Assessoria de Doutrina e Legislação do Estado-Maior Conjunto das Forças Armadas, no seguinte endereço:
 
-2.2.1. O ciclo logístico é o processo pelo qual se desenvolve, de forma abrangente, a logística militar, sendo de fundamental importância que os planejamentos logísticos e de mobilização sejam realizados de maneira integrada. O ciclo logístico é dividido em três fases básicas: determinação de necessidades, obtenção e distribuição, correspondendo cada fase singular a ações específicas concernentes à mobilização.
+## Página 6
 
-2.2.2. No caso específico das operações conjuntas, serão acrescidas duas fases de especial interesse para a mobilização: a determinação das capacidades logísticas e a reversão.
+### CAPÍTULO II - RELAÇÃO ENTRE LOGÍSTICA E MOBILIZAÇÃO
 
-2.2.3. Na comparação das ações dos dois sistemas (Logística e Mobilização), verifica-se que a Mobilização Militar utiliza-se das mesmas fases da Logística Militar (determinação das necessidades, obtenção e distribuição), a fim de prover a complementação das necessidades de recursos para a condução das operações militares de defesa e de manutenção da Soberania Nacional.
+### 2.1 Considerações iniciais
 
-2.2.4. A forma de obtenção de recursos poderá distinguir ações relativas à Logística e à Mobilização. Na Mobilização, o Estado adquire a capacidade de, com os limites e garantias previstos em lei, obrigar as agências governamentais, empresas públicas, empresas privadas e mesmo os entes federados (Estados e Municípios) a fornecer bens e serviços necessários à condução de Operações Militares.
+2.1.1 Da Logística Nacional, advêm os recursos necessários para apoiar as atividades do País desde a situação de normalidade. Quando se verifica a possibilidade de esses recursos se apresentarem insuficientes para fazer face a ameaças externas à soberania nacional, à integridade territorial, ao patrimônio nacional, ao povo brasileiro e às instituições nacionais, o Estado empregará a Mobilização Nacional? de modo a obter os recursos que não puderem ser proporcionados tempestivamente. Portanto, a incapacidade da Logística em atender ao enfrentamento dessas ameaças é o ponto de partida para o planejamento e a execução da Mobilização.
 
-2.2.5. Nesse contexto, a Mobilização Militar recebe as carências logísticas das Forças Singulares (FS), busca em seus sistemas de apoio à decisão a forma de obtenção dos recursos relativos às carências levantadas e, por vezes, finaliza o ciclo com a distribuição do recurso mobilizado à Força solicitante, caso não possam ser utilizadas as linhas tradicionais da Logística Militar.
+LOGÍSTICA NACIONAL: conjunto de atividades relativas à previsão e à provisão dos recursos e meios necessários à realização das ações decorrentes da estratégia nacional.
 
-## Página 17
+MOBILIZAÇÃO NACIONAL: conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, complementando a Logística Nacional, destinadas a capacitar o País a realizar ações estratégicas no campo da Defesa Nacional, diante de agressão estrangeira.
 
-2.2.6. A obtenção dos recursos logísticos de instalações, material e serviços, para fim de Mobilização, conforme disposições legais em vigor em tempo de normalidade ou a serem elaboradas em situações de emergência, dar-se-á por intermédio de um dos seguintes métodos:
+2.1.2 O Poder Nacional é a fonte comum de recursos a serem mobilizados, os quais poderão ser obtidos em todas as suas expressões, das quais advêm todos os recursos e meios de que se vale a Mobilização para complementar a Logística, a fim de atender a uma situação de emergência no campo da Defesa Nacional.
 
-a) Doação: concessão de recurso por parte do proprietário, de forma gratuita;
+PODER NACIONAL: é a capacidade que tem a Nação para alcançar e manter os Objetivos Nacionais, em conformidade com a Vontade Nacional. Manifesta-se em cinco expressões: a política, a econômica, a psicossocial, a militar e a científico-tecnológica.
 
-b) Compra: processo de aquisição de bens, cedidos voluntariamente pelo proprietário mediante pagamento de importância ajustada, à vista ou a prazo, sendo o processo mais aconselhável e normal;
+2.1.3 Na fase do preparo da Mobilização, as ações desenvolvidas pelos sistemas de Logística e de Mobilização se complementam, permanecendo a Logística na execução das atividades de previsão e provisão dos recursos e meios alinhados à Estratégia Nacional de Defesa (END). Por sua vez, a Mobilização complementará a Logística, buscando gerar novas capacidades e/ou aumentar aquelas já existentes.
 
-c) Contratação de serviço: processo indenizável utilizado para a formalização da prestação de determinado serviço;
+ESTRATÉGIA NACIONAL DE DEFESA: conjunto de opções e diretrizes governamentais que orientam a nação quanto ao emprego dos meios de que dispõe para superar as ameaças aos seus objetivos, conforme o estabelecido na Política Nacional de Defesa.
 
-d) Confisco: apropriação sumária e de forma controlada, em caráter punitivo, sem pagamento, para utilização militar;
+2.1.4 Quando o Estado fomenta o desenvolvimento de produtos com tecnologia autóctone, está, ao mesmo tempo, aumentando a capacidade do País na oferta de bens e serviços e expandindo o Potencial Nacional para ser empregado, por meio da Mobilização, no enfrentamento de uma agressão estrangeira.
 
-e) Contribuição: tributo, periódico ou eventual, voluntário ou compulsório, visando a determinado fim militar, podendo ou não comportar ressarcimento posterior;
+POTENCIAL NACIONAL: conjunto de recursos humanos e dos meios de que dispõe a Nação, em estado latente, passíveis de serem transformados em poder.
 
-f) Pedido: solicitação formal a órgão de suprimento ou prestador de serviços, segundo normas específicas;
+2.1.5 Em situações de normalidade, ações de logística ou de preparo da Mobilização, exemplificadas no item 3.3.2.7, são executadas por intermédio da aplicação de recursos orçamentários, respeitando-se a legislação em vigor. Nesse caso, o Estado não está capacitado a demandar ao setor privado atender às suas encomendas, passando a ter essa competência somente após a Mobilização Nacional ter sido decretada pelo Presidente da República.
 
-9) Requisição: imposição do fornecimento de materiais, animais e serviços, mediante ordem escrita e assinada por autoridade competente, sendo o pagamento, normalmente, realizado posteriormente;
+## Página 7
 
-h) Desenvolvimento: processo de especificação, projeto, teste e produção, dirigido ao atendimento de uma necessidade específica;
+2.1.6 Para o enfrentamento de uma situação de emergência no campo da Defesa Nacional, a produção de materiais de emprego militar e a contribuição tempestiva dos mais diversos componentes do Poder Nacional em proveito do esforço de defesa do País serão reguladas pelo Poder Executivo por meio do Decreto de Mobilização Nacional e seus anexos.
 
-i) Troca: processo de aquisição de bens e serviços cedidos voluntariamente, mediante ressarcimento em outros bens e serviços;
+2.1.7 O Decreto de Mobilização Nacional dá início à fase de execução da Mobilização Nacional, a qual é caracterizada pela celeridade e compulsoriedade das ações a serem implementadas, com vistas a propiciar ao País condições de enfrentar o fato que a motivou. Nessa fase, a Expressão Militar do Poder Nacional transformará a sua estrutura de paz em estrutura de guerra, graças à Mobilização, que complementará as suas carências logísticas”, a fim de fazer frente a uma situação de emergência decorrente da iminência ou concretização de uma agressão estrangeira.
 
-j) Empréstimo: processo de aquisição de bens cedidos voluntariamente pelo proprietário, sem ônus para o utilizador, que deverão ser restituídos ao proprietário depois de interrompidas as necessidades de sua utilização, no mínimo no estado em que se encontravam ao serem emprestados;
+2.1.8 É na fase da execução da Mobilização que a distinção entre Logística e Mobilização se evidencia, visto que esta última proporcionará, nessa fase, o necessário complemento à primeira, para atender, adequadamente e de forma célere e compulsória pelo Estado, o esforço de defesa diante de uma agressão estrangeira.
 
-k) Arrendamento mercantil: operação na qual uma das partes cede o uso de um ou mais bens mediante o pagamento, pela outra, de prestações periódicas, sendo usual que, ao final do contrato, o arrendatário tenha opção de compra dos bens; e
+2.1.9 O parágrafo único do art. 4º da Lei de Mobilização Nacional (Lei nº 11.631, de 2007) especifica, dentre outras, as seguintes medidas/ações necessárias à execução da Mobilização Nacional, evidenciando o poder coercitivo do Estado:
 
-l) Transferência: processo para realizar o remanejamento de materiais ou animais entre organizações militares e órgãos públicos.
+a) a convocação dos entes federados para integrar o esforço da Mobilização Nacional;
 
-2.2.7. A obtenção de recursos humanos dar-se-á, dentre outros, por intermédio de um dos seguintes métodos: movimentação de pessoal, treinamento, concurso, formação, convocação, mobilização, contratação ou recrutamento.
+b) a reorientação da produção, da comercialização, da distribuição e do consumo de bens e da utilização de serviços;
 
-## Página 18
+c) a intervenção nos fatores da produção públicos e privados; d) a requisição e a ocupação de bens e serviços; e
 
-xxxx
+e) a convocação de civis e militares
 
-## Página 19
+### 2.2 Métodos de Obtenção de Recursos Mobilizáveis
 
-### Capítulo III - A MOBILIZAÇÃO NA EXPRESSÃO MILITAR DO PODER NACIONAL
+2.2.1 O ciclo logístico é o processo pelo qual se desenvolve, de forma abrangente, a logística militar?, sendo de fundamental importância que os planejamentos logísticos e de mobilização sejam realizados de maneira complementar. O ciclo logístico é dividido em três fases básicas: determinação das necessidades”, obtenção e distribuição, correspondendo cada fase a ações específicas concernentes à mobilização.
 
-3.1. Conceituação
+2.2.2 Na comparação das ações dos dois sistemas (Logística e Mobilização), verifica-se que a Mobilização Militar se utiliza das mesmas fases da Logística Militar (determinação das necessidades, obtenção e distribuição), a fim de prover a complementação das necessidades de recursos para a condução das operações militares de defesa e de manutenção da soberania nacional.
 
-3.1.1. Entende-se por Expressão Militar do Poder Nacional a manifestação de natureza preponderantemente militar do conjunto de pessoas e de meios que a Nação dispõe, atuando em conformidade com a vontade nacional e sob a direção do Estado, para alcançar e manter os objetivos nacionais. Os componentes da Expressão Militar do Poder Nacional são: o Poder Naval, o Poder Militar Terrestre e o Poder Militar Aeroespacial.
+2.2.3 A forma de obtenção de recursos poderá distinguir ações relativas à Logística e à Mobilização. Na Mobilização, o Estado poderá, observando-se os limites e garantias previstos em lei, atuar nos fatores de produção públicos e privados, além de requisitar bens e serviços necessários para apoiar a condução das operações militares.
 
-3.1.2. Entende-se por Capacidade de Mobilização, na Expressão Militar, o grau de aptidão que as FA possuem para absorver ou se beneficiar dos recursos humanos, materiais e de serviços que a Nação coloca ao seu dispor, em face da concretização de uma ou mais 3.2. Amplitude da Mobilização Militar
+CARÊNCIAS LOGÍSTICAS: são os recursos logísticos não passíveis de obtenção pelo escalão considerado e que são encaminhados para obtenção pelo escalão superior.
 
-3.2.1. Para fim de aplicação dessa Doutrina, a Mobilização poderá ser total ou parcial.
+LOGÍSTICA MILITAR: conjunto de atividades relativas à previsão e à provisão dos recursos e dos serviços necessários à execução das missões das Forças Armadas.
 
-Essa abrangência será especificada em diploma legal que decretará a execução da Mobilização.
+NECESSIDADES (LOGÍSTICAS): são todos os recursos logísticos quantificados para atender às operações planejadas, abrangendo tanto os recursos necessários ao início, como à sustentação das operações.
 
-3.2.1.1. Mobilização total - quando a emergência configurada exigir o acionamento da totalidade dos recursos do Poder Nacional e, ainda, valer-se dos recursos em estado latente que formam o Potencial Nacional.
+## Página 8
 
-3.2.1.2. Mobilização parcial - quando a emergência configurada apenas exigir o acionamento de parte dos recursos do Poder Nacional ou do território nacional.
+2.2.4 Nesse contexto, a Mobilização Militar, após ter recebido as listas de carências!º logísticas das Forças Armadas, busca nos sistemas de apoio à decisão disponíveis a forma de obtenção dos recursos relativos às carências levantadas e, por vezes, finaliza o ciclo com a distribuição do recurso mobilizado à Força interessada, caso não possam ser utilizadas as linhas tradicionais da Logística Militar.
 
-Observação: caso a emergência configurada for restrita ao campo da Expressão Militar, esses recursos serão transferidos das demais Expressões do Poder Nacional para que as FA possam fazer face à concretização de uma HE. 3.3. Fases da Mobilização Militar 3.3.1. A Mobilização Militar desenvolve suas atividades em duas fases: 
-a) Preparo; e 
-b) Execução. 
+2.2.5 A obtenção dos recursos logísticos de instalações, material e serviços, para fim de Mobilização, a ser regulamentada por meio do Decreto de Mobilização Nacional e seus anexos ou definida em lei específica, poderá ser realizada por intermédio de um dos seguintes métodos:
 
+a) doação: concessão de recurso por parte do proprietário, de forma gratuita;
 
-3.3.2. Preparo da Mobilização Militar 
+b) pedido: solicitação formal a órgão de suprimento ou prestador de serviços, segundo normas específicas;
 
-3.3.2.1. O preparo da Mobilização na Expressão Militar do Poder Nacional consiste no conjunto de atividades empreendidas ou orientadas pelo Estado, desde a situação de normalidade, visando a facilitar a execução da Mobilização Militar.
+c) compra: processo de aquisição de bens, fornecidos voluntariamente pelo proprietário mediante ressarcimento de importância ajustada, à vista ou a prazo, sendo esse o processo preferencial a ser adotado;
 
-## Página 20
+d) contratação de serviço: processo indenizável utilizado para a formalização da prestação de determinado serviço;
 
-3.3.2.2. Nessa fase, as ações empreendidas pela Expressão Militar devem considerar a conjuntura vigente no campo do desenvolvimento da infraestrutura e da Logística Nacional e buscar inserir nos Programas de Governo desenvolvidos pelo poder público, as necessidades de fortalecimento da Logística e da Mobilização Militar.
+e) desenvolvimento: processo de especificação, projeto, teste e produção direcionado ao atendimento de uma necessidade específica;
 
-3.3.2.3. Deve haver um alinhamento entre as atividades de preparo da Mobilização Militar com as ações estratégicas de desenvolvimento do Governo, a fim de facilitar o provimento de recursos necessários à execução de ações estratégicas de preparo da Mobilização Militar, visando ao emprego da Expressão Militar do Poder Nacional em operações militares de manutenção e de defesa da Soberania Nacional.
+f) troca: processo de aquisição de bens e serviços cedidos voluntariamente, mediante ressarcimento por outros bens e serviços;
 
-3.3.2.4. Nesse contexto, pode-se considerar que as ações empreendidas na fase de preparo da Mobilização Militar são indutoras do desenvolvimento nacional, na medida em que buscam fortalecer a infraestrutura e a logística ao atuarem no Potencial Nacional, objetivando transformá-lo em Poder Nacional.
+g) empréstimo: processo de obtenção de bens cedidos voluntariamente pelo proprietário, sem ônus para o utilizador, devendo eles serem restituídos ao proprietário depois de interrompidas as necessidades de sua utilização, em princípio, no estado em que se encontravam ao serem emprestados;
 
-3.3.2.5. São exemplos de atividades básicas a serem empreendidas durante a fase do preparo:
+h) arrendamento mercantil: operação na qual uma das partes cede o uso de um ou mais bens mediante o pagamento, pela outra, de prestações periódicas, sendo usual que, ao final do contrato, o arrendatário tenha opção de compra dos bens;
 
-a) colocação de encomendas educativas nas indústrias da Base Industrial de Defesa (BID);
+i) transferência: processo para realizar o remanejamento de materiais, instalações ou animais entre organizações militares e órgãos públicos;
 
-b) formação e cadastramento de reservas aptas;
+j) tributação: impostos extraordinários para, nos termos da Constituição da República Federativa do Brasil de 1988 (CRFB/88), atender despesas decorrentes de guerra externa ou sua iminência;
+
+k) requisição: imposição do fornecimento, em caráter transitório e auto executório, de materiais, instalações, animais e serviços, mediante ordem escrita e assinada por autoridade competente, sendo o ressarcimento realizado posteriormente, se houver danos; e
+
+LISTA DE CARÊNCIAS: é o documento que, obtido do confronto entre necessidades e disponibilidades de recursos para determinada operação conjunta das Forças Armadas, lista as demandas que ultrapassam a capacidade logística daquelas Forças. É filtrada em todos os escalões, integra os vários planos de mobilização militar e é a matéria prima da Mobilização.
+
+## Página 9
+
+l) confisco: em caso de mobilização, é a apropriação, em favor do Estado, de forma controlada, nos termos da lei, sem ressarcimento, para utilização em prol do esforço militar a ser empreendido, a fim de suprir as carências logísticas necessárias à condução das operações militares.
+
+2.2.6 A obtenção de recursos humanos dar-se-á, dentre outros, por intermédio de um dos seguintes métodos: movimentação de pessoal, treinamento, concurso, formação, convocação, contratação ou recrutamento.
+
+## Página 10
+
+### CAPÍTULO III - MOBILIZAÇÃO MILITAR
+
+### 3.1 Conceituação
+
+3.1.1 A Mobilização Militar pode ser entendida como o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de preparar a Expressão Militar do Poder Nacional para a passagem da estrutura de paz para a estrutura de guerra visando a fazer frente a uma situação decorrente da iminência ou concretização de uma agressão estrangeira.
+
+3.1.2 Entende-se por Expressão Militar do Poder Nacional a manifestação de natureza preponderantemente militar do conjunto de pessoas e de meios de que a Nação dispõe, atuando em conformidade com a vontade nacional e sob a direção do Estado, para alcançar e manter os objetivos nacionais. Os componentes da Expressão Militar do Poder Nacional são: o Poder Naval, o Poder Militar Terrestre e o Poder Militar Aeroespacial.
+
+3.1.3 A Capacidade de Mobilização, na Expressão Militar, é o grau de aptidão que têm as Forças Armadas para absorverem ou se beneficiarem com os recursos humanos e com os materiais e serviços que a Nação coloca ao seu dispor, em face da iminência ou concretização de uma agressão estrangeira.
+
+### 3.2 Amplitude da Mobilização Militar
+
+3.2.1 Como subsídio para a aplicação desta doutrina, a Mobilização Nacional poderá ser decretada de forma total ou parcial. Essa abrangência ou amplitude será especificada no Decreto de Mobilização Nacional.
+
+3.2.2 A Mobilização será total quando a emergência configurada impuser o acionamento da totalidade dos recursos do Poder Nacional em todo o território nacional e, ainda, valer-se dos recursos em estado latente que formam o Potencial Nacional. Será parcial quando a emergência configurada exigir apenas o acionamento de parte dos recursos do Poder Nacional ou do território nacional.
+
+### 3.3 Fases da Mobilização Militar
+
+3.3.1 A Mobilização Militar desenvolve suas atividades em duas fases:
+
+a) Preparo; e
+b) Execução.
+
+3.3.2 Preparo da Mobilização Militar
+
+3.3.2.1 O preparo da Mobilização na Expressão Militar do Poder Nacional consiste no conjunto de atividades empreendidas ou orientadas pelo Estado, desde a situação de normalidade, buscando viabilizar a execução da Mobilização Militar, a partir do momento em que for decretada a Mobilização Nacional.
+
+## Página 11
+
+3.3.2.2 Nessa fase, as ações empreendidas pela Expressão Militar devem considerar a conjuntura vigente no campo do desenvolvimento da infraestrutura e da Logística Nacional e buscar inserir, nos Programas de Governo, as necessidades das Forças Armadas.
+
+3.3.2.3 Dever-se-á, também, buscar o alinhamento entre as atividades de preparo da Mobilização Militar com as ações estratégicas de desenvolvimento estabelecidas pelo Governo, a fim de garantir as melhores condições possíveis para a obtenção de recursos destinados ao atendimento das necessidades e carências das Forças Armadas no enfrentamento de uma agressão estrangeira.
+
+3.3.2.4 Ainda nessa fase, a Expressão Militar deve identificar as carências logísticas, resultantes do confronto entre as disponibilidades da sua Logística e as necessidades levantadas para o enfrentamento de uma possível agressão estrangeira ou em decorrência de sua iminência ou de sua concretização.
+
+3.3.2.5 Essas carências logísticas comporão os planos de mobilização nos vários níveis de planejamento, até o Plano Setorial de Mobilização Militar (PSMM).
+
+3.3.2.6 Nesse contexto, pode-se considerar que as ações planejadas e/ou empreendidas na fase de preparo da Mobilização Militar poderão ser indutoras do desenvolvimento nacional, na medida em que buscam fortalecer a infraestrutura e a logística ao atuarem no Potencial Nacional, objetivando transformá-lo em Poder Nacional.
+
+3.3.2.7 As seguintes atividades básicas, dentre outras, podem ser empreendidas durante a fase do preparo:
+
+a) colocação de encomendas educativas!! nas indústrias da Base Industrial de Defesa (BID);
+
+b) formação e cadastramento de reservas mobilizáveis;
 
 c) incremento de pesquisas e desenvolvimentos tecnológicos de interesse dual (militar e civil);
 
@@ -149,292 +205,259 @@ d) busca de padronização e nacionalização de materiais e itens de interesse 
 
 e) especificação e acompanhamento de fontes produtoras de material de defesa, no País e no exterior;
 
-f) seleção e cadastramento de empresas públicas e privadas de prestação de serviços;
+f) seleção e cadastramento de empresas públicas e privadas de prestação de serviços de interesse da Mobilização;
 
 g) proposta de legislação especial para os casos de excepcionalidade, visando dar suporte jurídico às atividades a serem empreendidas pela Mobilização Militar;
 
-h) mapear e atuar nos planejamentos estratégicos dos governos federal, estadual e municipal, de modo a contemplar recursos passíveis de serem utilizados pelas FA em situação de emergência; e
+h) mapeamento e atuação nos planejamentos estratégicos dos governos federal, estadual e municipal, de modo que contemplem recursos passíveis de serem utilizados pelas Forças Armadas em situação decorrente da iminência ou efetivação de uma agressão estrangeira;
 
-i) execução de exercícios de mobilização de recursos humanos, materiais, de serviços e de instalações, com o intuito de adestrar o sistema de Mobilização Militar e levantar dados, custos e soluções para as tarefas críticas previstas nos planejamentos estratégico e operacional.
+ENCOMENDA EDUCATIVA: encomenda de determinado item ou serviço de interesse da mobilização feita às indústrias mobilizáveis a título de treinamento e como incentivo à produção a fim de assegurar a capacitação da mão de obra especializada e da própria indústria para a fabricação daquele item.
 
-## Página 21
+BASE INDUSTRIAL DE DEFESA (BID): conjunto integrado por empresas estatais e privadas, bem como organizações civis e militares, que realizem ou conduzam pesquisa, projeto, desenvolvimento, industrialização, produção, reparo, conservação, revisão, conversão, modernização ou manutenção de produtos de defesa no País.
 
-### 3.3.3. Execução da Mobilização Militar
+## Página 12
 
-3.3.3.1. A execução da Mobilização Militar consiste no conjunto de atividades, empreendidas ou orientadas pelo Estado, no quadro da Mobilização Nacional, com a finalidade de, compulsória e aceleradamente, transferir recursos e meios existentes ou passíveis de serem obtidos por qualquer método no Poder Nacional, no Potencial Nacional ou no exterior, com prioridade para a Expressão Militar, conforme planejado na fase do preparo da Mobilização Militar.
+i) execução de jogos de guerra, exercícios e simulações periódicas de mobilização de recursos humanos, materiais, serviços e instalações, com o intuito de adestrar o sistema de Mobilização Militar, levantar a cronologia necessária para implementar as ações de mobilização; identificar limitações e lacunas e levantar dados, custos e soluções para as tarefas críticas previstas nos planejamentos estratégico e operacional; e
 
-3.3.3.2. Nessa fase, é para a Expressão Militar do Poder Nacional que converge a maior parte dos recursos de toda ordem disponíveis na Nação, a fim de poder empreender ações para atender à concretização de uma HE das FA.
+j) gestão junto aos governos (federal, estadual/distrital e municipal) para a realização de obras ou melhorias em infraestruturas de interesse das operações militares.
 
-3.3.3.3. Diretrizes expedidas pelo MD e pelas FA regularão em detalhes, em consonância com o decreto presidencial que autoriza o início da fase de execução da Mobilização Nacional, o alcance geográfico do território nacional e as medidas de caráter excepcional que passarão a vigorar nessa fase, a fim de permitir, de forma célere e compulsória, a passagem de recursos da Nação para a Expressão Militar do Poder Nacional.
+### 3.3.3 Execução da Mobilização Militar
 
-3.3.3.4. São exemplos de atividades básicas, entre outras, a serem empreendidas durante a fase de execução:
+3.3.3.1 A execução da Mobilização Militar consiste no conjunto de atividades, empreendidas ou orientadas pelo Estado, no quadro da Mobilização Nacional, com a finalidade de, compulsória e aceleradamente, transferir, para a Expressão Militar, recursos e meios existentes ou passíveis de serem obtidos por qualquer método em todas as Expressões do Poder Nacional, no Potencial Nacional ou no exterior, conforme planejado na fase do preparo.
 
-a) aprovação da legislação especial para os casos de excepcionalidade, já formulada e não aprovada na fase do preparo;
+3.3.3.2 Na fase da execução, convergirão para a Expressão Militar do Poder Nacional os recursos requeridos para permitir-lhe empreender as ações necessárias ao enfrentamento da agressão estrangeira.
 
-b) desenvolvimento de campanhas visando obter o apoio interno e externo aos objetivos idealizados nos planejamentos para a HE das FA para atender à emergência configurada;
+3.3.3.3 Nessa fase, as medidas e ações de caráter excepcional que passarão a vigorar em relação ao recebimento e à utilização apropriada dos recursos e meios a serem transferidos da Nação para a Expressão Militar do Poder Nacional serão reguladas por diretrizes expedidas pelo Ministério da Defesa e pelos Comandantes das Forças Armadas, em consonância com o Decreto de Mobilização Nacional.
 
-c) convocação, incorporação e destinação dos recursos humanos, de acordo com os planejamentos supracitados;
+3.3.3.4 As seguintes atividades básicas, dentre outras, poderão ser empreendidas durante a fase de execução:
 
-d) intervenção nas indústrias militares, indústrias civis, instalações e órgãos logísticos de interesse militar, dentro dos limites fixados em lei; e
+a) aprovação de legislação especial para os casos decorrentes de agressão estrangeira, inclusive aquela já formulada e não aprovada na fase do preparo;
 
-e) participação do Centro de Coordenação Logística e Mobilização (CCLM), compondo a célula de mobilização.
+b) desenvolvimento de campanhas visando obter o apoio interno e externo aos objetivos idealizados nos planejamentos referentes a uma possível agressão estrangeira ou em decorrência de sua iminência ou de sua concretização;
 
-## Página 22
+c) convocação, incorporação e destinação dos recursos humanos necessários à execução dos planejamentos mencionados em b) acima;
 
+d) mobilização de indústrias, instalações e órgãos logísticos de interesse militar, dentro dos limites fixados em lei;
 
-## Página 23
+e) obtenção do material, pessoal, instalações e serviços previstos para atender às carências logísticas elencadas nos planos de mobilização e outras que surgirem tempestivamente; e
 
-### Capítulo IV - SISTEMA DE MOBILIZAÇÃO MILITAR
+f) participação de integrantes do Sistema de Mobilização Militar (SISMOMIL) no Centro de Coordenação Logística e Mobilização (CCLM), compondo a coordenação de mobilização.
 
-4.1. Definição
+## Página 14
 
-O Sistema de Mobilização Militar (SISMOMIL) é o subsistema setorial do Sistema Nacional de Mobilização (SINAMOB), que atua na Expressão Militar do Poder Nacional com a finalidade de realizar todas as fases da Mobilização e da Desmobilização Militares. (Fig. 1 do Anexo Il)
+### CAPÍTULO IV - SISTEMA DE MOBILIZAÇÃO MILITAR
 
-4.2. Competências
+### 4.1 Definição
 
-4.2.1. Compete ao Ministério da Defesa, como Órgão de Direção Setorial da Expressão Militar (ODSEM), por meio de órgão previsto no seu Regimento Interno, exercer as responsabilidades como Secretaria-Executiva do Sistema de Mobilização Militar e realizar as atividades técnico-administrativas inerentes ao seu funcionamento.
+O Sistema de Mobilização Militar é o subsistema setorial do Sistema Nacional de Mobilização (SINAMOB) que atua na Expressão Militar do Poder Nacional com a finalidade de realizar todas as fases da Mobilização e Desmobilização Militares.
 
-4.2.2. Caberá a cada Comando de Força Singular estruturar o seu Sistema de Mobilização de forma a executar, no âmbito de cada Força, as ações relativas à Mobilização e à Desmobilização Militares.
+### 4.2 O SISMOMIL na Estrutura do SINAMOB
 
-4.2.3. O ODSEM poderá solicitar reunião do Conselho de Coordenação (CONCOORD), composto por representantes dos Estados-Maiores das Forças Armadas e do Ministério da Defesa.
+4.2.1 O SINAMOB (Figura 1) consiste no conjunto de órgãos que, integrando dez subsistemas setoriais, sendo um deles o SISMOMIL, atuam de modo ordenado e integrado a fim de planejar e realizar todas as fases da Mobilização e da Desmobilização Nacionais.
 
-4.2.4. O CONCOORD terá como competência, quando convocado pelo ODSEM, a apreciação de assuntos de Mobilização e Desmobilização Militares que envolvam interesse de mais de uma FS.
+Subsistema Setorial de Mobilização de Política Externa
+Subsistema Setorial de Mobilização de Política Interna
+Subsistema Setorial de Mobilização Psicológica
+Subsistema Setoria de Mobilização de Proteção e Defesa Civil
+Subsistema Setorial de Mobilização Militar
+Subsistema Setorial de Mobilização de
+Subsistema Setorial de Mobilização
+Subsistema Setorial de Mobilização de Inteligência Econômica
+Subsistema Setorial de Mobilização Social
+Subsistema Setorial de Mobilização de Segurança
 
-4.2.5 A figura 2 do Anexo “II” apresenta a Estrutura Organizacional do SISMOMIL.
+Figura 1: O Sistema Nacional de Mobilização (SINAMOB)
 
-## Página 24
+![md](md.png)
 
+## Página 15
 
-## Página 25
+### 4.3 Composição
 
-### Capítulo V - PLANEJAMENTO DA MOBILIZAÇÃO MILITAR
+4.3.1 O SISMOMIIL (Figura 2) é composto pelo Ministério da Defesa e pelos Comandos das Forças Armadas, por intermédio dos seus respectivos Sistemas de Mobilização, a saber:
 
-5.1. Concepção
+1) Órgão de Direção Setorial da Expressão Militar (ODSEM) -Ministério da Defesa;
 
-5.1.1. A Mobilização Militar, como parte integrante da Mobilização Nacional, deve desenvolver atividades que se destinem a capacitar as FS para enfrentar com êxito uma situação de emergência, procurando dotá-las de todos os recursos de pessoal, material e de serviços necessários e previstos nos planos de mobilização que excederam as possibilidades logísticas, a serem obtidos no Poder Nacional, no Potencial Nacional ou no exterior.
+2) Sistema de Mobilização Marítima (SIMOMAR);
 
-5.1.2. O planejamento da Mobilização Militar terá como referência as Listas de Necessidades, levantadas por ocasião dos planejamentos.
+3) Sistema de Mobilização do Exército (SIMOBE); e
 
-5.1.3. Do confronto entre as necessidades e as disponibilidades resultará o conhecimento das carências logísticas que a Mobilização Militar buscará suprir e suplantar, de forma contínua, metódica e permanente, na fase do “Preparo”, e de forma acelerada e compulsória quando na fase da “Execução”, caso a Logística Militar não as tenha atendido nos prazos previstos.
+4) Sistema de Mobilização Aeroespacial (SISMAERO).
 
-5.1.4. Considerando o fato de que, por ocasião da aplicação do Poder, as necessidades normalmente superam as disponibilidades, o SISMOMIL deverá planejar o desenvolvimento de ações que criem condições para transformar o Potencial em Poder e capacitem o Poder Nacional à produção, tempestivamente, na quantidade e qualidade necessárias, de recursos e meios de toda ordem, imprescindíveis à Mobilização Militar.
+![md](estrutura.png)
 
-5.1.5. O planejamento deve basear-se:
+Figura 2: Estrutura Organizacional Básica do SISMOMIL
 
-a) na observação da legislação referente à Mobilização Nacional;
+4.3.2 O Sistema de Mobilização Marítima (SIMOMAR) tem por finalidade assegurar o planejamento, a coordenação e a execução de atividades relativas à mobilização e desmobilização marítimas a fim de, completando e/ou complementando a Logística Naval, atender às necessidades da Marinha do Brasil.
 
-b) nas Hipóteses de Emprego das FA;
+4.3.3 O Sistema de Mobilização do Exército (SIMOBE) tem por finalidade assegurar o planejamento, a coordenação e a execução de atividades relativas à mobilização e desmobilização militares terrestres a fim de, completando e/ou complementando a Logística Militar Terrestre, atender às necessidades do Exército Brasileiro.
 
-c) na priorização do emprego dos produtos nacionais de defesa;
+4.3.4 O Sistema de Mobilização Aeroespacial (SISMAERO) tem por finalidade assegurar o planejamento, a coordenação e a execução de atividades relativas à mobilização e desmobilização aeroespaciais a fim de, completando e/ou complementando a Logística Aeroespacial, atender às necessidades da Força Aérea Brasileira.
 
-d) na tendência atual de os conflitos armados ocorrerem de modo rápido e violento, exigindo uma pronta resposta do Poder Nacional, o que impõe uma fase meticulosa de preparo para atender com rapidez a transição para a execução da Mobilização; e
+4.3.5 Caberá a cada Comando de Forças Armadas estruturar o seu Sistema de Mobilização de forma a executar as ações relativas à Mobilização e à Desmobilização Militares, podendo tais ações serem apoiadas pelo Ministério da Defesa.
 
-e) na interoperabilidade entre as FA.
+### 4.4 Objetivo
 
-5.1.6. A Mobilização Militar deverá, portanto, ser planejada de modo a assegurar os recursos e os meios necessários à rápida capacitação das FA para a consecução das ações, fornecendo-lhes pessoal com habilitação para os recompletamentos, além dos recursos logísticos e financeiros na qualidade, na quantidade e na especificação previstas nos planejamentos, para atender às HE das FA.
+O SISMOMIL tem por objetivo alcançar a capacidade e a condição permanentes para coordenar o planejamento da mobilização e desmobilização militares e absorver e empregar, oportunamente, os recursos e materiais advindos das demais expressões do Poder Nacional a fim de, completando e/ou complementando a logística militar, atender às necessidades das Forças Armadas na iminência ou concretização de uma agressão estrangeira.
 
-## Página 26
+## Página 16
 
-5.1.7. O Anexo "III" apresenta a Concepção Lógica do SISMOMIL.
+### 4.5 Competências
 
-### 5.2. Metodologia de Planejamento
+4.5.1 Compete ao Ministério da Defesa, como ODSEM, exercer a Secretaria-Executiva do SISMOMIL e realizar as atividades técnico-administrativas inerentes ao seu funcionamento.
 
-5.2.1. Os Planos de Mobilização, em todos os níveis, deverão abranger ações referentes as fases de preparo e de execução da Mobilização Militar.
+4.5.2 O ODSEM poderá solicitar reunião do Conselho de Coordenação da Mobilização Militar (CONCOORD), composto por representantes dos Estados-Maiores das Forças Armadas e do Ministério da Defesa, para apreciar assuntos de Mobilização e Desmobilização Militares que envolvam interesses de mais de uma Forças Armadas ou transcendam as atribuições específicas dos sistemas de Mobilização das FA ou que, por sua natureza, requeiram agilização de sua apreciação.
 
-5.2.2. A fase de preparo conterá as ações e as medidas a serem adotadas durante o período de normalidade da Nação. Nessa fase, o planejamento deverá orientar as FS para as medidas a serem empreendidas, em harmonia com o processo de desenvolvimento do País, particularmente as de fomento da BID.
+## Página 18
 
-5.2.3. As ações de preparo compreendem, ainda, os exercícios de adestramento conjunto relativos às atividades de mobilização de recursos humanos, de materiais, de serviços e de instalações. Para esses exercícios deverão ser expedidas diretrizes pelo MD e pelos Comandos das FS, a fim de definir os propósitos e as responsabilidades de cada escalão envolvido nos exercícios.
+### CAPÍTULO V -  PLANEJAMENTO DA MOBILIZAÇÃO MILITAR
 
-5.2.4. A fase de execução conterá as ações a serem desenvolvidas a partir da decretação da Mobilização Nacional. Nessa fase, o planejamento das FS deverá acelerar as atividades destinadas a reduzir as carências existentes, com a utilização de recursos provenientes das demais Expressões do Poder Nacional.
+### 5.1 Concepção
 
-5.2.5. Por ocasião do planejamento das HE, o Estado-Maior Conjunto das Forças Armadas (EMCFA) estabelecerá a prioridade dos Planos de Mobilização, após apreciação dos Comandos das FS. Para cada HE deverá ser elaborado um Plano de Mobilização baseado nas Listas de Necessidades levantadas durante os planejamentos.
+5.1.1 A Mobilização Militar, como parte integrante da Mobilização Nacional, deve desenvolver atividades que se destinem a capacitar as FA para enfrentarem com êxito uma situação decorrente da iminência ou efetivação de uma agressão estrangeira, procurando dotá-las de todos os recursos de pessoal, material, instalações e serviços necessários e previstos nos planos de mobilização que excederem as capacidades logísticas das Forças, a serem obtidos no Poder Nacional, no Potencial Nacional ou no exterior.
 
-5.2.6. A Mobilização Militar deverá estar presente em todas as fases de planejamento das HE (Planejamentos Estratégico, Operacional e Tático), apresentando, de forma contextualizada com a HE em questão, as ações estratégicas da fase de preparo da Mobilização, as diretrizes gerais e particulares para os planejamentos operacionais e táticos, bem como os Planos de Mobilização das FA.
+5.1.2 No planejamento da Mobilização Militar, considerando o fato de que, por ocasião da aplicação da Expressão Militar do Poder Nacional, as necessidades normalmente superarão as disponibilidades, o SISMOMIL deverá planejar medidas e ações que criem condições para se utilizar o Potencial Nacional no incremento da capacidade do Poder Nacional para a produção, tempestivamente e na quantidade e qualidade requeridas, de recursos e meios necessários ao enfrentamento da agressão estrangeira.
 
-5.2.7. O Planejamento da Mobilização Militar será consubstanciado no Plano Subsetorial de Mobilização Militar (PSMM) que consolidará os Planos de Mobilização das FA. Os planejamentos devem ser mantidos atualizados, particularmente, quando houver alterações sensíveis na conjuntura nacional relativas à infraestrutura e à logística, bem como nos custos estimados para as operações planejadas.
+5.1.3 O planejamento deve basear-se:
 
-5.2.8. Os Planos de Mobilização, compatíveis com o nível do planejamento, conterão basicamente:
+a) nos objetivos e diretrizes contidas na Política de Mobilização Nacional;
+
+b) na Doutrina Básica de Mobilização Nacional;
+
+c) em uma situação decorrente de agressão estrangeira ou de sua iminência;
+
+d) na priorização do emprego dos produtos de defesa (PRODE) nacionais;
+
+e) na tendência atual de os conflitos armados ocorrerem de modo rápido e violento, exigindo uma pronta resposta do Poder Nacional, o que impõe uma fase meticulosa de preparo para atender com rapidez a transição para a execução da Mobilização; e
+
+f) na interoperabilidade entre as Forças Armadas.
+
+5.1.4 A Mobilização Militar deverá, portanto, ser planejada de modo a assegurar os recursos e os meios necessários à rápida capacitação das Forças Armadas para a concretização das ações a serem realizadas no enfrentamento da agressão estrangeira, fornecendo-lhes pessoal com habilitação para os recompletamentos, além dos recursos logísticos e financeiros na qualidade, na quantidade e na especificação previstas nos planejamentos.
+
+### 5.2 Metodologia de Planejamento
+
+5.2.1 Com base na Política de Mobilização Nacional e na Doutrina Básica de Mobilização Nacional, o Ministro da Defesa, como autoridade do Subsistema Setorial de Mobilização Militar, emitirá a Diretriz Setorial de Mobilização Militar (DSMM), prevista no Manual Básico de Mobilização Nacional e normatizada por meio da publicação MD41-D-01, com o objetivo de orientar o planejamento do preparo e da execução da Mobilização e da Desmobilização Militares no âmbito do Ministério da Defesa e das Forças Armadas.
+
+## Página 19
+
+5.2.2 Por ocasião dos planejamentos estratégicos, operacionais e táticos das operações conjuntas, bem como dos planejamentos dos deslocamentos e das concentrações estratégicas das OM adjudicadas ao (Comando Operacional ativado, as necessidades serão levantadas e consubstanciadas nas Listas de Necessidades, conforme o preconizado no manual MD30-M-01 - Doutrina de Operações Conjuntas.
+
+5.2.3 Do confronto entre as necessidades a que se refere o item 5.2.2 e as disponibilidades de recursos da Logística Militar, resultará o conhecimento das carências logísticas, que a Mobilização Militar buscará suprir, de forma contínua, metódica e permanente, na fase do “Preparo”, e de forma acelerada e compulsória quando na fase da “Execução”.
+
+5.2.4 Essas carências logísticas deverão constar nos planos de mobilização, seguindo as diretrizes expedidas pelo Estado-Maior Conjunto das Forças Armadas para os planejamentos das operações conjuntas.
+
+5.2.5 A Mobilização Militar deverá estar presente em todos os níveis de planejamento das operações conjuntas (planejamentos estratégico, operacional e tático
+
+5.2.6 Por ocasião dos planejamentos estratégicos das operações conjuntas, o Chefe do EstadoMaior Conjunto das Forças Armadas (CEMCFA) expedirá, para cada operação, sua diretriz para a elaboração dos Planos de Mobilização das Forças Armadas, confeccionados com base nas Listas de Carências.
+
+5.2.7 Os Planos de Mobilização, em todos os níveis, deverão abranger medidas e ações referentes as fases de preparo e de execução da Mobilização Militar.
+
+5.2.8 Com base, principalmente, nas carências logísticas levantadas, o planejamento na fase de preparo conterá as medidas e ações a serem adotadas durante o período de normalidade da Nação. Nessa fase, o planejamento deverá orientar as Forças Armadas para as medidas e ações a serem empreendidas, em harmonia com o processo de desenvolvimento do País, particularmente as de fomento da BID.
+
+5.2.9 Entre as possíveis medidas e ações relativas à fase de preparo, incluem-se, também, os jogos de guerra, simulações e exercícios periódicos de adestramento conjunto relativos às atividades de mobilização de recursos de toda ordem. Deverão ser expedidas diretrizes pelo Ministério da Defesa e pelos Comandos das Forças Armadas, a fim de definir os propósitos e as responsabilidades de cada escalão envolvido nessas atividades.
+
+5.2.10 A fase de execução conterá as ações a serem desenvolvidas a partir da decretação da Mobilização Nacional. Nessa fase, o planejamento das Forças Armadas deverá possibilitar a redução das carências existentes o mais rápido possível, mediante a utilização de recursos provenientes das demais Expressões do Poder Nacional.
+
+5.2.11 Os Planos de Mobilização das Forças Armadas referentes a determinada operação conjunta serão consolidados, inicialmente, no Plano Estratégico de Mobilização Militar (PEMM). Posteriormente, no caso das carências não atendidas pelo SISMOMIL, eles serão consolidados também no Plano Setorial de Mobilização Militar (PSMM), que será encaminhado ao Órgão Central do SINAMOB.
+
+LISTA DE NECESSIDADES: é o documento que, elaborado por ocasião e/ou em decorrência dos planejamentos estratégicos, operacionais e táticos de determinada operação conjunta das Forças Armadas, bem como por ocasião do planejamento do deslocamento e concentração estratégica das OM adjudicadas ao Comando Operacional ativado, relaciona as demandas de toda ordem (de pessoal, material, instalações, serviços e outras), agrupadas por função logística, para atender às operações planejadas, abrangendo todos os recursos necessários tanto ao início como à sustentação das operações.
+
+## Página 20
+
+5.2.12 Os planejamentos devem ser mantidos atualizados, particularmente, quando houver alterações sensíveis na conjuntura nacional relativas à infraestrutura e à logística, bem como nos custos estimados para as operações planejadas.
+
+5.2.13 Os Planos de Mobilização, compatíveis com o nível do planejamento, conterão basicamente:
 
 a) previsão do atendimento das necessidades por transferências internas de recursos existentes e por obtenções;
 
-b) especificação dos recursos em falta, detalhando quantidade, qualidade, estimativa de custos de aquisição e prováveis fornecedores, previamente cadastrados em seus sistemas de informação;
+b) especificação das carências logísticas, detalhando quantidade, qualidade, estimativa de custos de aquisição e prováveis fornecedores, previamente cadastrados em seus sistemas de informação;
 
-## Página 27
+c) estimativa dos prazos e locais para atendimento às carências dos escalões considerados;
 
-c) necessidade de intervenção em empresas públicas ou privadas, especificando as ações e os recursos estimados para a sua realização;
+d) estimativa dos prazos para atendimento às carências de recursos não passíveis de aquisição ou fornecimento pela indústria nacional;
 
-d) estimativa dos prazos e locais para atendimento às carências dos escalões considerados; e
+e) proposta ao SINAMOB visando à mobilização de indústrias, instalações e órgãos logísticos de interesse militar;
 
-e) estimativa dos prazos para atendimento às carências de recursos não passíveis de aquisição ou fornecimento pela indústria nacional.
+f) orientações quanto às várias ações e medidas, bem como ações alternativas, a serem desencadeadas na fase da execução;
 
-5.2.9. Após a decretação de Mobilização Nacional pelo Presidente da República, o MD emitirá sua Diretriz de Mobilização, contendo as orientações para as respectivas Forças, relativas às ações a serem adotadas para a execução do PSMM.
+g) soluções alternativas para as carências logísticas que não puderem ser atendidas em tempo hábil; e
 
-5.2.10. Os Comandos das Forças Singulares estabelecerão as Diretrizes de Mobilização para os Comandos subordinados.
+h) orientações quanto à coordenação com as demais áreas da administração pública no âmbito federal, distrital, estadual ou municipal e com a iniciativa privada, caso necessário.
 
-## Página 28
+5.2.14 Após a decretação da Mobilização Nacional pelo Presidente da República, o Ministro da Defesa emitirá sua Diretriz de Mobilização Militar relativa à operação conjunta considerada, tendo por finalidade orientar, no âmbito do Ministério da Defesa, dos Comandos Operacionais ativados e das Forças Armadas, o planejamento e/ou o replanejamento e a execução da Mobilização e da Desmobilização Militares referentes aquela operação.
 
+5.2.15 Os Comandos das Forças Armadas expedirão suas respectivas Diretrizes de Mobilização para os Comandos subordinados.
 
-## Página 29
+## Página 22
 
-### Capítulo VI - DESMOBILIZAÇÃO
+### CAPÍTULO VI - DESMOBILIZAÇÃO MILITAR
 
-6.1. Aspectos Pertinentes
+### 6.1 Considerações iniciais
 
-6.1.1. Cessados ou reduzidos os motivos que determinaram o desenvolvimento da Mobilização, a Nação deverá retornar à condição de normalidade. Impõe-se, dessa forma, a adoção de medidas específicas de Desmobilização Nacional, devendo ser planejadas e preparadas, para serem executadas de modo gradativo, procurando conciliar as necessidades decrescentes da estrutura criada pela situação de crise com as necessidades crescentes da volta à situação de normalidade.
+6.1.1 Cessados ou reduzidos os motivos que determinaram a decretação da Mobilização Nacional, o País deverá retornar à situação de normalidade. Impõe-se, dessa forma, a adoção de medidas específicas de Desmobilização Nacional! devendo ser planejadas e preparadas, para serem executadas de modo gradativo, procurando conciliar as necessidades decrescentes da estrutura criada pela situação de crise com as necessidades crescentes da volta à situação de normalidade.
 
-6.1.2. As ações e medidas que virão a compor o Plano Setorial de Desmobilização Militar (PSDM) decorrerão das Diretrizes emanadas do ODSEM, observado o prescrito no dispositivo legal que decretou a execução da Mobilização Nacional. Essas diretrizes permitirão o retorno gradativo à situação de normalidade, visando ao menor prejuízo possível para a sociedade, sem que venham, entretanto, a comprometer o nível de operacionalidade atingido pelas FA, considerando, ainda, a possibilidade de recrudescimento das ações.
+6.1.2 Nesse contexto, a Desmobilização Militar é definida como a parte da Desmobilização Nacional cujas atividades se destinam ao retorno gradativo da Expressão Militar do Poder Nacional às proporções compatíveis com as exigências da Defesa Nacional em situação de normalidade.
 
-6.1.3. As condições e as garantias com que o cidadão será ressarcido pela utilização de bens ou serviços de sua propriedade por parte da Expressão Militar do Poder Nacional, durante a vigência do esforço de Mobilização, deverão estar previstas em ordenamento jurídico, visando ainda o menor prejuízo possível para a sociedade, quando do retorno à situação de normalidade.
+6.1.3 As ações e medidas que virão a compor o Plano Setorial de Desmobilização Militar (PSDM) decorrerão das Diretrizes emanadas pelo ODSEM, observado o prescrito no dispositivo legal que decretou a execução da Mobilização Nacional. Essas diretrizes permitirão o retorno gradativo à situação de normalidade, visando ao menor prejuízo possível para a sociedade, sem que venham a comprometer o nível de operacionalidade atingido pelas Forças Armadas, considerando, ainda, a possibilidade de recrudescimento das ações.
 
-6.2. Planejamento
+6.1.4 As condições e as garantias com que o cidadão será ressarcido pela utilização de bens ou serviços de sua propriedade por parte da Expressão Militar do Poder Nacional, durante a vigência do esforço de Mobilização, deverão estar previstas em ordenamento jurídico, visando ainda ao menor prejuízo possível para a sociedade, quando do retorno à situação de normalidade.
 
-6.2.1. Para cada Plano de Mobilização deverá corresponder um Plano de Desmobilização, cabendo ao ODSEM, após examinar as propostas dos Comandos das FS, estabelecer o momento do início da sua execução.
+### 6.2 Fases da Desmobilização Militar
 
-6.2.2. Compatíveis com o nível do planejamento, os Planos de Desmobilização conterão, basicamente:
+6.2.1 As atividades da Desmobilização serão planejadas em duas fases: Preparo e Execução.
+
+6.2.1.1 Na fase do Preparo, serão previstas e planejadas medidas a serem efetivadas na fase da execução que possam permitir a retomada das atividades normais quando cessarem os motivos que determinaram a Mobilização.
+
+6.2.1.2 Na fase de Execução, serão postas em prática, de forma ordenada e gradativa, as atividades planejadas na fase do Preparo e outras que se fizerem necessárias, preservando as ações de segurança e desenvolvimento a serem mantidas na conjuntura existente.
+
+### 6.3 Planejamento
+
+6.3.1 Para cada Plano de Mobilização deverá ser elaborado o correspondente Plano de Desmobilização, cabendo ao ODSEM, após examinar as propostas dos Comandos das Forças Armadas, estabelecer o momento do início da sua execução, que, normalmente, deverá coincidir com o término do período de estabilização definido pelo Comando Operacional ativado visando à consolidação dos objetivos políticos estabelecidos na Diretriz Presidencial de Emprego da Defesa (DPED).
+
+DESMOBILIZAÇÃO NACIONAL: é o conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, com vistas ao retorno gradativo do País à situação de normalidade, quando cessados ou reduzidos os motivos determinantes da execução da Mobilização Nacional.
+
+## Página 23
+
+6.3.2 Compatíveis com o nível do planejamento, os Planos de Desmobilização conterão, basicamente:
 
 a) medidas de assistência social destinadas aos contingentes de recursos humanos desmobilizados;
 
 b) condições de absorção e de devolução dos recursos logísticos mobilizados de propriedade particular;
 
-c) formas de ressarcimento aos cidadãos pelos bens e serviços mobilizados, observando-se a previsão em lei; e
+c) formas de ressarcimento aos cidadãos pelos bens e serviços mobilizados, observandose a previsão em lei; e
 
 d) processos de redução gradativa da intervenção nos meios de produção.
 
-## Página 30
-
-6.2.3. São exemplos de ações de Desmobilização Militar, dentre outras:
+6.3.3 São exemplos de ações de Desmobilização Militar, dentre outras:
 
 a) absorção dos excedentes de produção da BID;
 
-b) criação de uma situação interna favorável à retomada da normalidade;
+b) reintegração dos recursos humanos mobilizados às condições de trabalho originais;
 
-c) reintegração dos recursos humanos mobilizados às condições de trabalho originais;
+c) amparo e readaptação dos incapacitados decorrentes das operações militares;
 
-d) amparo e readaptação dos incapacitados decorrentes das operações militares;
+d) extinção de comandos, unidades militares e serviços criados em razão do esforço de mobilização;
 
-e) extinção de comandos, unidades militares e serviços criados em razão do esforço de mobilização;
+e) destinação aos excedentes de guerra em poder das Forças Armadas;
 
-f) destinação aos excedentes de guerra em poder das FA;
+f) liberação dos controles e das restrições implementadas para as organizações civis, que foram colocadas à disposição da Mobilização Militar;
 
-g) liberação dos controles e das restrições implementadas para as organizações civis, que foram colocadas à disposição da Mobilização Militar; e
+g) retorno (reconversão) das indústrias militares e de interesse militar à situação anterior a mobilização;
 
-h) retorno das indústrias militares e de interesse militar à situação anterior à mobilização.
+h) licenciamento dos efetivos excedentes;
 
-## Página 31
+i) revisão e cancelamento de contratos;
 
-### Capítulo VII - DISPOSIÇÕES FINAIS
+j) redução gradativa dos efetivos a níveis compatíveis com o fim da Mobilização; e
 
-7.1. Generalidades
+k) execução das restituições e, se for o caso (se houver danos), das indenizações das instalações, serviços e materiais requisitados.
 
-7.1.1. O EMCFA e as FS deverão considerar, por ocasião de operações de adestramento, exercícios e estudos conduzidos sob sua iniciativa, a possibilidade de incluir militares e/ou civis que lidem com os assuntos de Mobilização, tanto do Ministério da Defesa como dos Estados-Maiores daquelas Forças. Quando não houver prejuízo ao desenvolvimento das ações ou ao seu sigilo, representantes dos demais subsistemas componentes do SINAMOB poderão, igualmente, ser incluídos.
+## Página 24
 
-7.1.2. As Escolas de Formação, de Aperfeiçoamento e de Altos Estudos das Forças Singulares incluirão nos seus Planos de Disciplinas o desenvolvimento de assuntos e de exercícios referentes à Mobilização e à Desmobilização Militares.
+### CAPÍTULO VII - DISPOSIÇÕES FINAIS
 
-7.1.3. O ODSEM deverá constar das listas de distribuição de publicações e assuntos, elaboradas pelas FA, inerentes à Mobilização e à Desmobilização Militares.
+7.1 O Estado-Maior Conjunto das Forças Armadas e os Estados-Maiores das Forças Armadas deverão considerar, por ocasião de operações de adestramento, exercícios e estudos conduzidos sob sua iniciativa, a possibilidade de incluir militares e/ou civis que lidem com os assuntos de Mobilização. Quando não houver prejuízo ao desenvolvimento das ações ou ao seu sigilo, representantes dos demais subsistemas componentes do SINAMOB poderão ser incluídos.
 
-7.1.4. A Escola Superior de Guerra (ESG) deverá desenvolver, em seus cursos e estágios, assuntos e trabalhos referentes à Mobilização e Desmobilização Militares.
+7.2 O Ministério da Defesa e as Forças Armadas, por intermédio de seus sistemas de ensino, deverão incluir, nos currículos escolares, assuntos relacionados à Mobilização e à Desmobilização.
 
-## Página 33
-
-### ANEXO A - ESTRUTURA ORGANIZACIONAL DO SISTEMA DE MOBILIZAÇÃO MILITAR - SISMOMIL
-
-![tramite de documentos](md.png)
-
-![tramite de documentos](organograma.png)
-
-## Página 34
-
-### ANEXO B - CONCEPÇÃO LÓGICA DO SISMOMIL
-
-![tramite de documentos](sismomil.png)
-
-SIGLA DESCRIÇÃO 
-SINAMOB Sistema Nacional de Mobilização
-SISMOMIL Sistema de Mobilização Militar
-SIMOMAR Sistema de Mobilização Marítima
-SIMOBE Sistema de Mobilização do Exército
-SISMAERO Sistema de Mobilização Aeroespacial
-EIDN Sistema de Empresas de Interesse da Defesa Nacional
-MOBPES Sistema de Mobilização de Pessoal
-CNPq Conselho Nacional de Desenvolvimento Científico e Tecnológico - Plataforma
-FEDIND Sistema das Federações de Indústrias
-CATBR Catálogo Brasileiro de Itens e Empresas
-GEOPR Sistema Georreferenciado de Apoio à Decisão da Presidência da República
-
-## Página 37
-
-### ANEXO C - GLOSSÁRIO
-
-Atividade Logística - conjunto de tarefas afins, reunidas segundo critérios de relacionamento, interdependência ou similaridade, cujos resultados concorrem para o desenvolvimento de uma determinada função logística.
-
-Base Industrial de Defesa (BID) - conjunto integrado por empresas estatais e privadas, bem como organizações civis e militares, que realizem ou conduzam pesquisa, projeto, desenvolvimento, industrialização, produção, reparo, conservação, revisão, conversão, modernização ou manutenção de produtos de defesa no País.
-
-Capacidade Logística - Capacidade que têm as forças armadas de desenvolver um conjunto de medidas para prever e prover na qualidade, na quantidade e na oportunidade, os recursos humanos, o material e os serviços necessários ao seu preparo e emprego.
-
-Capacidade de Mobilização Nacional - grau de aptidão que tem a Nação de, em tempo oportuno, passar de uma situação de paz para uma situação de guerra, com o máximo de eficácia e o mínimo de transtornos para a vida nacional.
-
-Carências Logiísticas - recursos logísticos, os quais não são passíveis de obtenção pelo escalão considerado e que são encaminhados para obtenção pelo escalão superior.
-
-Catálogo de Itens e Empresas (CAT-BR) - se constitui em um Catálogo que representa o universo dos itens gerenciados pelas Forças Armadas Brasileiras e permite ao usuário distinguir cada item de suprimento de forma inequívoca através da descrição das suas características e/ou referências dos seus fabricantes. O CAT-BR é o produto final do Sistema Militar de Catalogação (SISMICAT).
-
-Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) - Criado em 1951, é uma agência do Ministério da Ciência, Tecnologia e Inovação (MCTI), que tem como principais atribuições fomentar a Ciência, Tecnologia e Inovação, incentivar a formação de pesquisadores brasileiros e atuar na formulação de suas políticas, contribuindo para o avanço das fronteiras do conhecimento, o desenvolvimento sustentável e a soberania nacional.
-
-Desmobilização Militar - parte da desmobilização nacional, cujas atividades se destinam ao retorno gradativo da Expressão Militar do Poder Nacional às proporções compatíveis com as exigências da Defesa Nacional, em situação de normalidade.
-
-Desmobilização Nacional - conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, com vistas ao retorno gradativo do País à situação de normalidade, quando cessados ou reduzidos os motivos determinantes da execução da Mobilização Nacional.
-
-## Página 38
-
-Determinação das capacidades logísticas - etapa inicial do planejamento logístico do Teatro de Operações, a qual será executada pelos planejadores logísticos em todos os níveis, com o objetivo de identificar os meios e as unidades logísticas especializadas, existentes e disponíveis na área de operações, para a estruturação do apoio logístico. Nos níveis estratégico e operacional, a identificação dos meios disponíveis deverá considerar não somente os militares, mas também os meios civis contratáveis e os meios passíveis de mobilização. No nível tático, a capacidade logística será determinada pelos meios adjudicados ao Comando do Teatro de Operações pelas Forças Singulares.
-
-Determinação das Necessidades - decorre do exame pormenorizado dos planos propostos e, em particular, das ações e operações previstas, definindo quais são as necessidades, quando, em que quantidade, com que qualidades e em que local deverão estar disponíveis. A importância dessa fase é ressaltada pela complexidade a ela inerente e por constituir-se na base em que se assentarão as fases subsequentes.
-
-Distribuição - consiste em fazer chegar aos usuários, oportuna e eficazmente, todos os recursos fixados pela determinação das necessidades. A distribuição dos recursos materiais compreende o recebimento, o armazenamento, o transporte e a entrega.
-
-Encomendas Educativas - são os prováveis itens necessários à Mobilização Militar, destinados às empresas reconhecidas como de interesse da defesa nacional, para manutenção da sua produção, garantida com recursos da Mobilização, a fim de evitar prejuízos àquela empresa e manter a capacitação da mão de obra especializada e da própria indústria para fabricação daquele item.
-
-Fases da Logística - conjunto de ações que se constituem na base para se desenvolver todo o processo, tanto de logística como de mobilização. Por sua importância, destacamse as seguintes fases: determinação das necessidades, obtenção e distribuição.
-
-Função Logística - reunião, sob uma única designação, de um conjunto de atividades logísticas afins, correlatas ou de mesma natureza. Divide-se em: engenharia, manutenção, recursos humanos, salvamento, saúde, suprimento e transporte.
-
-Hipótese de Emprego (HE) - antevisão de possível emprego das Forças Armadas em determinada situação ou área de interesse estratégico para a Defesa Nacional. E formulada considerando-se o alto grau de indeterminação e imprevisibilidade de ameaças ao País, sendo perfeitamente caracterizada e mensurável. Com base nas Hipóteses de Emprego, serão elaborados e mantidos atualizados os planos estratégicos e operacionais pertinentes, visando a possibilitar o contínuo aprestamento do Poder Nacional como um todo, e em particular do Poder Militar, para emprego na defesa dos interesses nacionais.
-
-Listas de Necessidades - documento elaborado por ocasião dos planejamentos que relaciona as demandas de toda ordem (de inteligência, de logística, de C?, de operações de informação, doutrinárias, de tropas e meios de cada Força, de adestramento etc.), visualizadas como deficiências a serem supridas para a obtenção das condições básicas e a efetivação do plano. Esse processo de levantamento de necessidades terá prosseguimento nos níveis de planejamento subsequentes, quando será consolidado, constituindo subsídio relevante para o aparelhamento e o preparo das Forças. Por ocasião da entrega dos planejamentos por parte dos Comandos Operacionais ativados, o EMCFA deverá analisar as listas de necessidades, definindo o que pode ser atendido no âmbito da Expressão Militar do Poder Nacional, assim como as carências a serem supridas por meio da mobilização.
-
-## Página 39
-
-Logística Militar - conjunto de atividades relativas à previsão e à provisão dos recursos e dos serviços necessários à execução das missões das Forças Armadas.
-
-Logística Nacional - conjunto de atividades relativas à previsão e à provisão dos recursos e meios necessários à realização das ações decorrentes da estratégia nacional.
-
-Mobilização Militar - conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, desde a situação de normalidade, com o propósito de preparar a expressão militar para a passagem da estrutura de paz para a estrutura de guerra, para fazer frente a uma situação de emergência decorrente da iminência de concretização ou efetivação de uma HE.
-
-Mobilização Nacional - conjunto de atividades planejadas, orientadas e empreendidas pelo Estado, complementando a Logística Nacional, destinadas a capacitar o País a realizar ações estratégicas no campo da Defesa Nacional, diante de agressão estrangeira.
-
-Necessidades Logísticas - todos os recursos logísticos, quantificados para atender às operações planejadas, abrangendo tanto os recursos necessários ao início, como à sustentação das operações.
-
-Obtenção - fase em que são identificadas as fontes e tomadas as medidas para a aquisição e a obtenção dos recursos necessários. O maior esforço da mobilização darse-á nesta fase.
-
-Poder Nacional - É a capacidade que tem a Nação para alcançar e manter os Objetivos Nacionais, em conformidade com a Vontade Nacional. Manifesta-se em cinco expressões: a política, a econômica, a psicossocial, a militar e a científico-tecnológica.
-
-Potencial Nacional - conjunto de recursos humanos e de meios de que dispõe a Nação, em estado latente, passíveis de serem transformados em poder.
-
-Reversão - fase final da logística conjunta, executada pelos órgãos componentes da cadeia logística, evacuando da frente para a retaguarda os meios de combate ou logísticos, em condições de inservibilidade, substituição ou rodízio para preservação da área de operações. A reversão deverá ser objeto de especial atenção por ocasião do encerramento das operações de um Comando Operacional ativado, uma vez que todos os meios materiais disponibilizados aos mesmos, seja por aquisição, adjudicação ou mobilização, serão avaliados e processados, sendo-lhes dado o destino apropriado.
-
-Sistema de Empresas de Interesse da Defesa Nacional (EIDN) - Sistema apoiado em tecnologia da informação (TI) para orientar os trabalhos desenvolvidos no âmbito das Forças Armadas visando padronizar os procedimentos de coleta de dados que servirão para o Ministério da Defesa declarar, as empresas ou estabelecimentos como de interesse da Defesa Nacional, tanto para fins de Mobilização Nacional, como para aplicação da Lei do Serviço Militar.
-
-## Página 40
-
-Sistema das Federações de Indústrias (FEDIND) - Neste caso, indicando que vários Sistemas de Federações de Indústrias (FIERJ, FIBRA, FIESP, etc.) podem participar do SISMOMIL, por meio do EIDN.
-
-Sistema Georreferenciado de Monitoramento e Apoio à Decisão da Presidência da República (GEOPR) - é um sistema baseado em TI, de busca e troca de informações, administrado no Gabinete de Segurança Institucional (GSI/PR), utilizado como uma ferramenta para assessoramento das decisões na Presidência da República.
-
-Sistema de Mobilização Aeroespacial (SISMAERO) - é um sistema integrante, no campo da Defesa Nacional, do SISMOMIL, componente do SINAMOB, composto por um conjunto de normas que estabelece os procedimentos a serem adotados na Marinha do Brasil (MB) para o planejamento, coordenação e execução da Mobilização Marítima, devendo servir de base doutrinária às diversas ações a ela inerentes.
-
-Sistema de Mobilização do Exército (SIMOBE) - é um sistema integrante, no campo da Defesa Nacional, do SISMOMIL componente do SINAMOB, e no âmbito do Exército Brasileiro (EB) é considerado um dos Sistemas de Atividades que busca, por meio da utilização de recursos de tecnologia da informação, integrar processos, metodologias, procedimentos, métodos, rotinas e técnicas, destinadas à produção de conhecimentos com qualidade e oportunidade necessárias ao gerenciamento eficiente, eficaz e efetivo de todas as atividades relativas à mobilização militar terrestre, assim como as de desmobilização.
-
-Sistema de Mobilização Marítima (SIMOMAR) - é um sistema integrante, no campo da Defesa Nacional, do Sistema de Mobilização Militar (SISMOMIL), componente do Sistema Nacional de Mobilização (SINAMOB), composto por um conjunto de normas que estabelece os procedimentos a serem adotados na MB para o planejamento, coordenação e execução da Mobilização Marítima, devendo servir de base doutrinária às diversas ações a ela inerentes.
-
-Sistema Nacional de Mobilização (SINAMOB) - consiste no conjunto de órgãos que atuam de modo ordenado e integrado, a fim de planejar e realizar todas as fases da Mobilização e da Desmobilização Nacionais.
-
-Sistema de Mobilização de Pessoal (MOBPES) - Ainda não criado, neste caso, indicando um sistema no MD para concentrar as informações de pessoal necessário ao esforço da Mobilização.
+7.3 As Forças Armadas e seus órgãos subordinados deverão incluir o ODSEM nas listas de distribuição de publicações e assuntos inerentes à Mobilização e à Desmobilização elaborados na sua jurisdição.
