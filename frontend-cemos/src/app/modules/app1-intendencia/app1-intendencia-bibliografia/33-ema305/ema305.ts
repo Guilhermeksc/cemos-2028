@@ -23,7 +23,9 @@ export class Ema305 implements OnInit {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/intendencia/33-ema305';
   fileNames: string[] = [
-    'cap1.md',
+    'cap3.md',
+    'cap4.md',
+    'cap5.md',
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';

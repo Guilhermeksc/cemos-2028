@@ -25,6 +25,9 @@ export class Ema420 implements OnInit {
   fileNames: string[] = [
     'cap1.md',
     'cap2.md',
+    'cap3.md',
+    'cap4.md',
+    'anexos.md',        
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
