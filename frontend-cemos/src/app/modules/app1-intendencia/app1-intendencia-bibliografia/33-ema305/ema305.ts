@@ -21,7 +21,7 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
 })
 export class Ema305 implements OnInit {
   // Configuração do LivroIndividual
-  contentPath: string = 'assets/content/intendencia/33-ema305';
+  contentPath: string = 'assets/content/intendencia/33-ema-305';
   fileNames: string[] = [
     'cap3.md',
     'cap4.md',

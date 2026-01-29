@@ -21,7 +21,7 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
 })
 export class Ema301 implements OnInit {
   // Configuração do LivroIndividual
-  contentPath: string = 'assets/content/intendencia/32-ema301';
+  contentPath: string = 'assets/content/intendencia/32-ema-301';
   fileNames: string[] = [
     'cap1.md',
   ];
