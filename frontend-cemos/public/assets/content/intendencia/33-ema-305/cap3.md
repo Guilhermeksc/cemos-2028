@@ -20,7 +20,7 @@ Para a execução das operações, os meios do Poder Naval alocados ao ComTO sã
 
 A guerra naval comporta diferentes tipos de operações navais. A classificação reflete o caráter geral de seus propósitos que devem concorrer, de alguma forma, para a execução das tarefas básicas do Poder Naval. Uma operação pode implicar a execução de operações componentes, conduzidas por parcela da força principal, com propósitos que contribuam para o cumprimento da missão. Além disso, há casos em que uma operação é apoiada ou complementada por outros tipos. As operações de apoio são assim denominadas quando conduzidas por forças não integrantes da que executa a operação principal. Para a realização de operações componentes ou de apoio, o Comandante superior comum coordena as ações, podendo ocorrer situações em que um dos Comandantes subordinados exerça o controle operacional e tático local das forças, sobretudo em área onde elas interajam, a fim de evitar interferências mútuas. Nos casos em que as relações de comando não forem objeto de menção direta pelo Comandante superior comum, o controle operativo local caberá, em princípio, ao Comandante mais antigo. Caso este não possua estrutura suficiente, a delegação do controle será obrigatória. 
 
-####  3.4.1 - Operação de Ataque 
+#### 3.4.1 - Operação de Ataque 
 
 A operação de ataque é a realizada por meios navais, aeronavais ou de fuzileiros navais, em conjunto ou isoladamente, para a execução de uma ou mais das seguintes tarefas: 
 
@@ -31,7 +31,7 @@ d) destruir ou danificar objetivos em terra e ao largo do litoral.
 
 É uma operação que pode concorrer para o estabelecimento, a manutenção e a exploração do Controle de Área Marítima (CAM) ou para a negação do uso do mar pelo inimigo, em quadro estratégico ofensivo ou defensivo. Quando realizada contra objetivos em terra, caracteriza projeção de poder.
 
-A força a ser empregada nesse tipo de operação, particularmente nas fases de disputa, estabelecimento e exploração do CAM, é, preferencialmente, nucleada em NavioAeródromo (NÃe), com aviação orgânica diversificada. O emprego de força de ataque que disponha apenas de navios de superfície, não apoiados por NÃe, será fortemente condicionado pelo grau de ameaça aérea e de submarinos. Se tal ameaça for superior às capacidades de defesa antiaérea e antissubmarino da força, a operação de ataque poderá ser inaceitável.
+A força a ser empregada nesse tipo de operação, particularmente nas fases de disputa, estabelecimento e exploração do CAM, é, preferencialmente, nucleada em Navio-Aeródromo (NAe), com aviação orgânica diversificada. O emprego de força de ataque que disponha apenas de navios de superfície, não apoiados por NAe, será fortemente condicionado pelo grau de ameaça aérea e de submarinos. Se tal ameaça for superior às capacidades de defesa antiaérea e antissubmarino da força, a operação de ataque poderá ser inaceitável.
 
 ## Página 15
 
@@ -218,10 +218,10 @@ Um bloqueio não deve barrar o acesso ou partida de áreas costeiras e portos ne
 
 Embora, por força da tradição, se classifique o bloqueio como uma operação típica, na verdade pode envolver um conjunto de operações, tais como:
 
-- ataque por submarinos, nos limites geográficos do bloqueio;
-- minagem ofensiva em áreas de maior concentração do trânsito inimigo;
-- operação de esclarecimento associada à de ataque por forças capazes de interceptar e destruir os meios que não respeitem o bloqueio; e
-- operações terrestres de caráter naval, defensivas e ofensivas.
+▪️ataque por submarinos, nos limites geográficos do bloqueio;
+▪️minagem ofensiva em áreas de maior concentração do trânsito inimigo;
+▪️operação de esclarecimento associada à de ataque por forças capazes de interceptar e destruir os meios que não respeitem o bloqueio; e
+▪️operações terrestres de caráter naval, defensivas e ofensivas.
 
 ## Página 24
 
@@ -289,22 +289,20 @@ A Operação de Informação (OpInfo) é o conjunto de ações coordenadas dirig
 **3.4.12 - Operação de Interdição Marítima**
 
 A Operação de Interdição Marítima (OIM) ou “Maritime Interdiction Operation” (MIO) se refere ao conjunto de esforços para monitorar, interrogar, interceptar e, se necessário, abordar tráfego marítimo em uma área definida, para verificar, redirecionar, apreender suas cargas ou apresar embarcações, na aplicação de sanções contra outros Estados, como aquelas em apoio às resoluções do Conselho de Segurança das  Unidas e/ou para prevenir o transporte de itens restritos. As unidades engajadas em OIM, normalmente, executam as seguintes tarefas:
-
-## Página 28
-
-- enviar o Grupo de Visita e Inspeção (GVT) e, conforme a evolução da situação, a Guarnição de Presa (GP)[1] para abordar e, se necessário, apresar embarcações em trânsito numa determinada área, ou dela saindo, em caso de direito de perseguição. Em função do grau de risco envolvido, o envio do (a) GVI/GP poderá ser precedido pela visita de um destacamento de abordagem especializada, composto por Mergulhadores de Combate (MEC);
-
-- procurar por evidências de itens proibidos; 
-- redirecionar os navios que não cumprirem as normas determinadas pelas sanções; e 
-- apresar embarcações que recusem a cumprir a ordem para desviar rumo.
+▪️enviar o Grupo de Visita e Inspeção (GVT) e, conforme a evolução da situação, a Guarnição de Presa (GP)[1] para abordar e, se necessário, apresar embarcações em trânsito numa determinada área, ou dela saindo, em caso de direito de perseguição. Em função do grau de risco envolvido, o envio do (a) GVI/GP poderá ser precedido pela visita de um destacamento de abordagem especializada, composto por Mergulhadores de Combate (MEC);
+▪️procurar por evidências de itens proibidos; 
+▪️redirecionar os navios que não cumprirem as normas determinadas pelas sanções; e 
+▪️apresar embarcações que recusem a cumprir a ordem para desviar rumo.
 
 [1] Nas doutrinas navais estrangeiras, as ações executadas pelo(a) GVI/GP são conhecidas pelo acrônimo VBSS (“visit, board, search and seizure”).
+
+## Página 28
 
 **3.4.13 - Operação Psicológica**
 
 A operação psicológica, que inclui as ações psicológicas e a guerra psicológica, compreende atividades políticas, militares, econômicas e psicossociais planejadas e conduzidas para criar em grupos (inimigos, hostis, neutros e/ou amigos) emoções, atitudes ou comportamentos favoráveis à consecução dos objetivos nacionais. Contemplam medidas preventivas, desencadeadas em caráter permanente, que têm como propósitos evitar o emprego prematuro da força, impedir ou dificultar a eclosão e o agravamento de uma situação de perturbação da ordem. Normalmente abrangem atividades de preparo de tropa, inteligência e comunicação social. A operação civil-militar, as OpEsp e a Ação Cívico-Social (ACISO) contribuem com a operação psicológica, pois influenciam comportamentos favoráveis da população civil. Quanto ao nível de atuação, a operação psicológica é considerada: 
-- estratégica, quando presta apoio a ações nos diversos campos do Poder Nacional e nos níveis estratégicos nacional e setorial, facilitando a consecução dos objetivos selecionados. Tem atuação permanente, com resultados duradouros a médio e longo prazos; e 
-- tática, quando em apoio à execução de operações militares, com planejamento e execução a cada operação militar, obtendo resultados a curto e médio prazos.
+▪️estratégica, quando presta apoio a ações nos diversos campos do Poder Nacional e nos níveis estratégicos nacional e setorial, facilitando a consecução dos objetivos selecionados. Tem atuação permanente, com resultados duradouros a médio e longo prazos; e 
+▪️tática, quando em apoio à execução de operações militares, com planejamento e execução a cada operação militar, obtendo resultados a curto e médio prazos.
 
 #### 3.4.14 - Operação de Busca e Resgate em Combate ou de Combate SAR
 
@@ -353,10 +351,11 @@ Os dados obtidos pela operação de inteligência complementam os selecionados p
 #### 3.4.19 - Operação de Defesa de Ilhas e Arquipélagos Oceânicos 
 
 A operação de defesa de ilhas e arquipélagos oceânicos é aquela que consiste no somatório de quatro tarefas principais: 
-- estabelecer defesa terrestre em uma ou mais ilhas; 
-- controlar a área marítima circunvizinha, em termos ideais, ou, no mínimo, negar o uso do mar nesta área; 
-- controlar o espaço aéreo sobrejacente à(s) ilha(s) e à área marítima circunvizinha; e 
-- manter o apoio logístico às forças na(s) ilha(s), particularmente por via marítima.
+
+▪️estabelecer defesa terrestre em uma ou mais ilhas; 
+▪️controlar a área marítima circunvizinha, em termos ideais, ou, no mínimo, negar o uso do mar nesta área; 
+▪️controlar o espaço aéreo sobrejacente à(s) ilha(s) e à área marítima circunvizinha; e 
+▪️manter o apoio logístico às forças na(s) ilha(s), particularmente por via marítima.
 
 A defesa das ilhas oceânicas, de responsabilidade dos fuzileiros navais, será executada por GptOpFuzNav, que pode contar com um componente de patrulha costeira para execução das ações de vigilância aproximada e combate, dentro de suas possibilidades. Esta operação poderá ser conjunta e contar com a participação de meios de Força Aérea e/ou meios de Exército, estes contribuindo, particularmente, para a defesa antiaérea e a defesa de costa. 
 
@@ -399,8 +398,9 @@ A coordenação dos meios de defesa aeroespacial da Força Naval ou de fuzileiro
 A defesa aeroespacial ativa das instalações navais fixas localizadas no território nacional é determinada pela Diretriz para a Defesa Aeroespacial do Território Nacional, publicação que estabelece as normas e os procedimentos que disciplinam as atividades do SISDABRA. 
 
 O Comando de Operações Aeroespaciais (COMAE), do Comando da Aeronáutica, é o órgão central do SISDABRA, e a ele compete: 
-- realizar a defesa aeroespacial do território nacional contra todas as formas de ameaça, a fim de assegurar o exercício da soberania no espaço aéreo brasileiro; e 
-- empregar os meios sob seu controle operacional, incluídos os necessários para o estabelecimento dos procedimentos a serem seguidos com relação às aeronaves hostis ou suspeitas de tráfico de substâncias entorpecentes e drogas afins.
+
+▪️realizar a defesa aeroespacial do território nacional contra todas as formas de ameaça, a fim de assegurar o exercício da soberania no espaço aéreo brasileiro; e 
+▪️empregar os meios sob seu controle operacional, incluídos os necessários para o estabelecimento dos procedimentos a serem seguidos com relação às aeronaves hostis ou suspeitas de tráfico de substâncias entorpecentes e drogas afins.
 
 ## Página 35
 
@@ -420,24 +420,27 @@ Portanto, a MB é responsável pela autodefesa antiaérea de suas bases e das in
 
 A contribuição prioritária dos meios do Poder Naval em proveito do SISDABRA é a destruição dos NAÃe inimigos e da aviação inimiga, em suas bases ou em trânsito. Entretanto, nesse contexto, há outras formas de emprego:
 
-- na composição da Força Naval de Defesa Aeroespacial, de ativação não compulsória;
+▪️na composição da Força Naval de Defesa Aeroespacial, de ativação não compulsória;
 
-- em autodefesa, os navios em condições operativas, quando surtos em bases ou portos, sem comprometer suas mobilidades;
+▪️em autodefesa, os navios em condições operativas, quando surtos em bases ou portos, sem comprometer suas mobilidades;
 
-- na defesa antiaérea local, os navios imobilizados, mediante entendimentos entre a MB, ComTO ou Comandante da ZD, dependendo da localização do porto, e o COMAE; e
+▪️na defesa antiaérea local, os navios imobilizados, mediante entendimentos entre a MB, ComTO ou Comandante da ZD, dependendo da localização do porto, e o COMAE; e
 
-- na defesa de pontos de interesse, os meios de artilharia antiaérea de fuzileiros navais, sem comprometer a defesa dos meios de fuzileiros navais e das instalações de interesse da MB.
+▪️na defesa de pontos de interesse, os meios de artilharia antiaérea de fuzileiros navais, sem comprometer a defesa dos meios de fuzileiros navais e das instalações de interesse da MB.
 
-Ressalta-se que as aeronaves que compõem a ala aérea de um NÃe destinam-se à defesa aérea das forças navais e à projeção de poder. As limitações impostas pelo esforço necessário para atender aos requisitos esperados de instrução e adestramento, no que concerne ao emprego de aeronaves embarcadas, não permitem que esses vetores venham a compor o SISDABRA, exceto em situações eventuais.
+Ressalta-se que as aeronaves que compõem a ala aérea de um NAe destinam-se à defesa aérea das forças navais e à projeção de poder. As limitações impostas pelo esforço necessário para atender aos requisitos esperados de instrução e adestramento, no que concerne ao emprego de aeronaves embarcadas, não permitem que esses vetores venham a compor o SISDABRA, exceto em situações eventuais.
 
 ## Página 36
 
 A defesa aeroespacial passiva das organizações militares de terra deve se pautar pelas normas estabelecidas em documentos elaborados pelo Comando da Aeronáutica e incluem medidas tomadas antes, durante e depois de um ataque para reduzir seus efeitos, sem hostilizar o inimigo, tais como: 
-- detecção antecipada; 
-- difusão de alerta e de alarme de defesa aeroespacial; 
-- tráfego aéreo (interdição de espaço aéreo e corredores de segurança);- proteção (abrigos, dispersão, balões de barragem e resistência de prédios); 
-- camuflagem (dissimulação e simulação); - avaliação e reparo de danos; e 
-- ações de guerra eletrônica.
+
+▪️detecção antecipada; 
+▪️difusão de alerta e de alarme de defesa aeroespacial; 
+▪️tráfego aéreo (interdição de espaço aéreo e corredores de segurança);
+▪️proteção (abrigos, dispersão, balões de barragem e resistência de prédios); 
+▪️camuflagem (dissimulação e simulação); 
+▪️avaliação e reparo de danos; e 
+▪️ações de guerra eletrônica.
 
 ### 3.5.2 - Ações de Guerra Eletrônica 
 
@@ -452,18 +455,20 @@ As AGE são aquelas de caráter estratégico, tático, logístico e de pesquisa,
 ## Página 37
 
 O RETRON abrange o conjunto de atividades conduzidas que visa à obtenção e ao processamento sistemático e oportuno de informações sobre a CGE adversária, a fim de permitir o correto dimensionamento e proteção da própria capacidade, uma efetiva avaliação de sua adequabilidade e, quando necessário, a obtenção de dados para sua reformulação. Por sua vez, o RETRON envolve as atividades de Inteligência de Comunicações (INTCOM), as de Inteligência Eletrônica (INTELT) e as de Inteligência de Imagens (INTIM), as quais visam obter parâmetros técnicos e outros conhecimentos, como abaixo discriminado: 
-- INTCOM: interceptação de sinais de sistemas de comunicações que utilizem o espectro eletromagnético (EEM) e sejam empregados por alvos de interesse. 
-- INTELT: interceptação de sinais de sistemas que não sejam os de comunicações, e que utilizem o EEM e sejam empregados por alvos de interesse. 
-- INTIM: processamento e análise de imagens provenientes da área de sensoriamento remoto e agentes de coleta de imagens.
+
+▪️INTCOM: interceptação de sinais de sistemas de comunicações que utilizem o espectro eletromagnético (EEM) e sejam empregados por alvos de interesse. 
+▪️INTELT: interceptação de sinais de sistemas que não sejam os de comunicações, e que utilizem o EEM e sejam empregados por alvos de interesse. 
+▪️INTIM: processamento e análise de imagens provenientes da área de sensoriamento remoto e agentes de coleta de imagens.
 
 O APEL reúne o conjunto de medidas de prontificação ou preparo que compreende atividades de pesquisa, de desenvolvimento, de capacitação humana, visando proporcionar os recursos de toda ordem necessários para o estabelecimento, verificação, manutenção ou reformulação da CGE.
 
 **b) Medidas de Guerra Eletrônica**
 
 As MGE abrangem as ações efetivamente realizadas no decorrer de uma operação de guerra naval. Sua natureza é fundamentalmente tática e seu emprego deve estar amparado por um planejamento e pela adequabilidade dos procedimentos e equipamentos utilizados. As MGE são divididas em três ramos: Medidas de Apoio à Guerra Eletrônica (MAGE), Medidas de Ataque Eletrônico (MAE) e Medidas de Proteção Eletrônica (MPE), conforme o conjunto de ações tomadas para:
-- MAGE: monitoração, busca de interceptação, localização, análise, avaliação e correlação e registro dos sinais eletromagnéticos irradiados pelo opositor, com a finalidade de explorá-las em apoio às operações.
-- MAE: impedimento ou redução do uso efetivo, por parte do inimigo, do espectro eletromagnético e, também, degradação, neutralização ou destruição de sua capacidade de combate por meio de equipamentos e armamentos que utilizem este espectro. As MAE podem ser subdivididas em não destrutivas e destrutivas.
-- MPE: proteção de meios, sistemas, equipamentos, pessoal e instalações, a fim de assegurar o uso efetivo do espectro eletromagnético, a despeito do emprego de MAE por forças amigas e inimigas.
+
+▪️MAGE: monitoração, busca de interceptação, localização, análise, avaliação e correlação e registro dos sinais eletromagnéticos irradiados pelo opositor, com a finalidade de explorá-las em apoio às operações.
+▪️MAE: impedimento ou redução do uso efetivo, por parte do inimigo, do espectro eletromagnético e, também, degradação, neutralização ou destruição de sua capacidade de combate por meio de equipamentos e armamentos que utilizem este espectro. As MAE podem ser subdivididas em não destrutivas e destrutivas.
+▪️MPE: proteção de meios, sistemas, equipamentos, pessoal e instalações, a fim de assegurar o uso efetivo do espectro eletromagnético, a despeito do emprego de MAE por forças amigas e inimigas.
 
 ## Página 38
 
@@ -483,9 +488,9 @@ b) Tipo
 
 Podem ser de ataque cibernético, de proteção cibernética ou de exploração cibernética, tendo como propósitos, respectivamente:
 
-- ataque cibernético: degradar, corromper, destruir ou manipular informações em ativos de informação de interesse.
-- proteção cibernética: neutralizar ataques e exploração cibernética contra ativos de informação de interesse. É uma atividade de caráter permanente.
-- exploração cibernética: obter a consciência situacional do ambiente cibernético, subsidiar ações de ataque cibernético e contribuir para a produção de conhecimento de inteligência.
+▪️ataque cibernético: degradar, corromper, destruir ou manipular informações em ativos de informação de interesse.
+▪️proteção cibernética: neutralizar ataques e exploração cibernética contra ativos de informação de interesse. É uma atividade de caráter permanente.
+▪️exploração cibernética: obter a consciência situacional do ambiente cibernético, subsidiar ações de ataque cibernético e contribuir para a produção de conhecimento de inteligência.
 
 c) Efeito desejado
 
@@ -509,10 +514,10 @@ Enquadradas no contexto da operação de informação, as ações de guerra cibe
 
 As ações de guerra acústica são aquelas que envolvem o emprego da energia acústica submarina para determinar, explorar, reduzir ou prevenir o uso do espectro acústico pelo inimigo, e para assegurar o seu uso pelas próprias forças. Essas ações visam a:
 
-- obter informações sobre o inimigo, pela coleta de dados sobre seus sistemas e pela detecção de suas irradiações acústicas;
-- reduzir e dificultar a detecção das irradiações acústicas próprias;
-- impedir ou dificultar a utilização pelo inimigo do espectro acústico, por meio de técnicas de despistamento; e
-- evitar ou minorar os efeitos das interferências acústicas provocadas pelo inimigo no desempenho dos sistemas próprios.
+▪️obter informações sobre o inimigo, pela coleta de dados sobre seus sistemas e pela detecção de suas irradiações acústicas;
+▪️reduzir e dificultar a detecção das irradiações acústicas próprias;
+▪️impedir ou dificultar a utilização pelo inimigo do espectro acústico, por meio de técnicas de despistamento; e
+▪️evitar ou minorar os efeitos das interferências acústicas provocadas pelo inimigo no desempenho dos sistemas próprios.
 
 ## Página 40
 
@@ -535,7 +540,6 @@ Abrange as funções de alerta antecipado, disseminação de informações, prot
 **b) Detecção**
 
 Compreende as funções do reconhecimento e da detecção/identificação. A função de reconhecimento tem como propósito coletar dados para o planejamento da defesa NBQRe, destacando-se, para tal, a tarefa do balizamento de um local para um posto de descontaminação. A função da detecção/identificação tem como propósitos verificar se houve a utilização de um agente NBQRe e a determinação do agente empregado. Tal função envolve processos subjetivos (utilizam os sentidos humanos para detecção de um agente NBQRe) e processos objetivos (por meio de equipamentos específicos distribuídos a elementos especializados para esse fim).
-
 
 ## Página 41
 
@@ -580,8 +584,6 @@ As ações aeronavais são aquelas realizadas por aeronaves do Poder Naval, quan
 ### 3.5.10 - Ações Aéreas 
 
 As ações aéreas compreendem o conjunto de atos, manobras e procedimentos realizados pelas aeronaves adjudicadas a um Comando Operacional. Normalmente, tais meios compõem a FAC, à qual cabe a tarefa de prover apoio ao ComTO. Para obter maior interoperabilidade nas operações conjuntas, o Estado-Maior Conjunto e os Estados-Maiores das Forças Componentes (singulares ou conjuntos) são compostos por oficiais das Forças Singulares envolvidas.
-
-
 ## Página 43
 
 ### 3.5.11 - Ações Terrestres 

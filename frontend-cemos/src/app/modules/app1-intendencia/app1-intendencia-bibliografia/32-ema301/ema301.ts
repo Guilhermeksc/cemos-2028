@@ -24,6 +24,7 @@ export class Ema301 implements OnInit {
   contentPath: string = 'assets/content/intendencia/32-ema-301';
   fileNames: string[] = [
     'cap1.md',
+    'cap2.md',    
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
