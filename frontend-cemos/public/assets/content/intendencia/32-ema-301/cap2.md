@@ -96,6 +96,10 @@ Esse conceito facilita o entendimento da amplitude de atuação do Poder Naval b
 
 Assim, o emprego do Poder Naval ocorre nos seguintes Campos de Atuação: Defesa Naval, Segurança Marítima, Diplomacia Naval e Apoio às Ações do Estado, conforme ilustrados na figura 5 e descritos a seguir:
 
+Figura 5 – Campos de Atuação do Poder Naval
+
+![alt text](figura5.png)
+
 ## Página 32
 
 ### 2.3.1. CAPN Defesa Naval
@@ -126,9 +130,9 @@ Cumpre observar que, no contínuo normalidade-crise-conflito, a percepção ou d
 
 b) Segurança da Navegação Aquaviária - é a vertente do CAPN Segurança Marítima representada pelo conjunto de ações e atividades da Segurança Marítima voltadas para as atribuições da Autoridade Marítima Brasileira (AMB), atuando com o propósito de assegurar a salvaguarda da vida humana e a segurança da navegação, no mar e hidrovias interiores, e a prevenção da poluição ambiental por parte de embarcações, plataformas ou suas instalações de apoio nas águas sob jurisdição nacional. Também abrange as ações preventivas, orientadoras e de capacitação de pessoal.
 
-## Página 34
-
 Adicionalmente, nessa vertente são consideradas todas as ações que exigem prontidão e reação necessárias para lidar com a ocorrência de incidentes e acidentes de navegação, tanto nas AJB quanto em toda a Área de Responsabilidade SAR do Brasil.
+
+## Página 34
 
 ### 2.3.3. CAPN Diplomacia Naval
 
@@ -190,6 +194,10 @@ j) Resiliência: capacidade de absorver os impactos de ações adversas e recupe
 
 ## Página 38
 
+Figura 6 - Capacidades Estratégicas do Poder Naval
+
+![alt text](figura6.png)
+
 ## 2.5. TAREFAS BÁSICAS DO PODER NAVAL
 
 As TBPN são definidas como tarefas essenciais da MB e são expressas na forma de amplas ações que geram amplos efeitos, os quais são alcançados por meio das Capacidades Estratégicas da Força, apresentadas anteriormente.
@@ -216,6 +224,10 @@ f) Contribuir para a Segurança e Desenvolvimento Nacional: conjunto de operaç�
 
 ## Página 40
 
+Figura 7 – Tarefas Básicas do Poder Naval
+
+![alt text](figura7.png)
+
 ### 2.5.1. Relação entre os CAPN e as TBPN
 
 A partir da identificação criteriosa das TBPN, é possível associar quais Tarefas Básicas estão mais associadas a cada Campo de Atuação. Essa correlação é interpretativa e não pretende ser exata. Ela apenas busca demonstrar a rastreabilidade desde os propósitos da Missão da MB, passando pelas CAPN e TBPN, conforme ilustrado na figura a seguir, para posteriormente chegar aos Efeitos do Poder Naval:
@@ -223,6 +235,10 @@ A partir da identificação criteriosa das TBPN, é possível associar quais Tar
 ## Página 41
 
 ## 2.6. POSTURAS ESTRATÉGICAS
+
+Figura 8 - Relação entre os Campos de Atuação e as Tarefas Básicas do Poder Naval
+
+![alt text](figura8.png)
 
 As posturas estratégicas referem-se às maneiras pelas quais a MB responde aos desafios externos, englobando um conjunto de atitudes ou comportamentos padronizados da Força Naval, conforme a seguir:
 
@@ -233,6 +249,10 @@ b) Cooperação — Caracteriza-se pelo apoio da MB a uma outra força, outro ó
 c) Coerção — postura na qual são usados majoritariamente recursos de ameaça do uso da força. Lança-se mão de condutas que buscam desencorajar o antagonista quanto às suas intenções ou mesmo impedi-lo, influenciando na sua avaliação de custo-benefício; e
 
 d) Uso da Força — É caracterizada pelo enfrentamento, com a possibilidade de efetivo choque de forças. Pode ser adotada de pronto ou escalonada desde a Postura de Coerção, considerando que o ator antagonista se posicionou pelo uso ou ameaça do uso da força contra os nossos objetivos.
+
+Figura 9 - Posturas Estratégicas da Força Naval
+
+![alt text](posturas_estrategicas.png)
 
 ## Página 42
 

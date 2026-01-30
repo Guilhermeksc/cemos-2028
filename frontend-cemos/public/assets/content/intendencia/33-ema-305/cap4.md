@@ -93,10 +93,10 @@ a) todo ato ilícito de violência ou de detenção ou todo ato de depredação 
 I) um navio ou uma aeronave em alto-mar ou pessoas ou bens a bordo dos mesmos; e 
 II) um navio ou uma aeronave, pessoas ou bens em lugar não submetido à jurisdição de algum Estado;
 
-## Página 49
-
 b) todo ato de participação voluntária na utilização de um navio ou de uma aeronave, quando aquele que o pratica tenha conhecimento de fatos que deem a esse navio ou a essa aeronave o caráter de navio ou aeronave pirata; e 
 c) toda a ação que tenha por fim incitar ou ajudar intencionalmente a cometer um dos atos enunciados nas alíneas a ou b.
+
+## Página 49
 
 ### 4.6.2 - Terrorismo
 
@@ -165,7 +165,9 @@ O Poder Naval é responsável, desde o tempo de paz, por prover a segurança das
 ### 4.11 - SEGURANÇA DO TRÁFEGO MARÍTIMO
 
 A Segurança do Tráfego Marítimo é realizada desde o tempo de paz, por meio dos ramos do Monitoramento, da Direção e da Defesa do Tráfego Marítimo. Tem como propósito prover segurança às Linhas de Comunicação Marítimas (LCM), à pesca e a outras atividades desenvolvidas nas águas de interesse. No aspecto funcional, se refere ao conjunto de precauções para anular ou minimizar os riscos e os eventuais efeitos oriundos de ameaças de qualquer natureza.
+
 O Monitoramento do Tráfego Marítimo é uma atividade permanente, executada pela Organização de Controle Naval do Tráfego Marítimo (ORGACONTRAM), essencial para as estruturas civil e militar. Pressupõe a detecção, a localização, o acompanhamento, a identificação e a classificação do tráfego. Para isso, utilizar-se-á da análise de possíveis anomalias a partir de padrões de comportamento ou de informações adicionais obtidas, mediante emprego de sistemas de inteligência, fundamentais à segurança marítima e à formação da consciência situacional marítima. 
+
 A ORGACONTRAM interage com diversos organismos, dentre os quais se destacam: as sociedades classificadoras; a Receita Federal; os ministérios e as secretarias governamentais; a Polícia Federal; o Instituto Brasileiro do Meio Ambiente e dos Recursos seguros; os sindicatos; os portos e terminais; os agentes e despachantes marítimos; os armadores; as indústrias de construção naval; a indústria e a comunidade pesqueira; e as instituições hidrográficas e oceanográficas.
 
 ## Página 53
@@ -188,92 +190,92 @@ Figura nº 3 - Estrutura da Segurança do Tráfego Marítimo na MB.
 
 As Operações de Paz (OpPaz) consistem no emprego da força militar, em apoio a esforços diplomáticos, para manter, impor ou construir a paz em país estrangeiro. São desenvolvidas, normalmente, visando ao cumprimento de resoluções ou de acordos e definidas por conceitos básicos e essenciais estabelecidos nas legislações específicas dos organismos internacionais.
 
-No âmbito das Nações Unidas, o mandato é resultante de uma resolução do Conselho de Segurança. É o documento formal que estabelece uma OpPaz, contendo os seus fundamentos e objetivos a atingir. É desenvolvido no mais alto nível político e diplomático e, normalmente, contém: a finalidade da operação; os países participantes; as 
+No âmbito das Nações Unidas, o mandato é resultante de uma resolução do Conselho de Segurança. É o documento formal que estabelece uma OpPaz, contendo os seus fundamentos e objetivos a atingir. É desenvolvido no mais alto nível político e diplomático e, normalmente, contém: a finalidade da operação; os países participantes; as recomendações acerca do financiamento da operação; os direitos e imunidades dos componentes da missão de paz; o resultado esperado; as condições colocadas pelas partes envolvidas em relação à presença da missão de paz; e o tempo de duração da missão. As categorias de participação militar brasileira em OpPaz são: 
+
+- tropa/navio: quando os militares, com autorização do Congresso Nacional, integram um contingente armado, reunidos em módulo de emprego operacional, conforme normas fixadas pela Lei nº 2.953, de 17 de novembro de 1956; e 
+
+- individual: observadores militares, oficiais de estado-maior não vinculados à tropa brasileira e pessoal especializado. 
+
+As OpPaz compreendem cinco tipos: Diplomacia Preventiva, Promoção da Paz, Manutenção da Paz, Imposição da Paz e Consolidação da Paz. O primeiro tipo será tratado no item 5.2, por ser uma atividade benigna. Os quatro seguintes são enquadrados no emprego limitado da força, definidas por sua finalidade, conforme abaixo. 
 
 ## Página 54
 
-recomendações acerca do financiamento da operação; os direitos e imunidades dos componentes da missão de paz; o resultado esperado; as condições colocadas pelas partes envolvidas em relação à presença da missão de paz; e o tempo de duração da missão. As categorias de participação militar brasileira em OpPaz são: - tropa/navio: quando os militares, com autorização do Congresso Nacional, integram um contingente armado, reunidos em módulo de emprego operacional, conforme normas fixadas pela Lei nº 2.953, de 17 de novembro de 1956; e - individual: observadores militares, oficiais de estado-maior não vinculados à tropa brasileira e pessoal especializado. As OpPaz compreendem cinco tipos: Diplomacia Preventiva, Promoção da Paz, Manutenção da Paz, Imposição da Paz e Consolidação da Paz. O primeiro tipo será tratado no item 5.2, por ser uma atividade benigna. Os quatro seguintes são enquadrados no emprego limitado da força, definidas por sua finalidade, conforme abaixo. a) Promoção da Paz Designa as ações diplomáticas posteriores ao início do conflito, para levar as partes litigantes a suspender as hostilidades e a negociarem. As ações de promoção da paz baseiam-se nos meios de solução pacífica de controvérsias previstos no Capítulo VI da Carta das Nações Unidas, os quais podem incluir, em casos extremos, dependendo do mandato dos mediadores, o isolamento diplomático e a imposição de sanções, adentrando então nas ações coercitivas previstas no Capítulo VII da referida Carta. O termo deriva da expressão em inglês “peacemaking”. b) Manutenção da Paz Trata das atividades levadas a cabo no terreno, com o consentimento das partes em conflito por militares, policiais e civis para implementar ou monitorar a execução de arranjos relativos ao controle de conflitos (cessar-fogo, separação de forças etc.) e sua solução (acordos de paz abrangentes ou parciais), em complemento aos esforços políticos realizados para encontrar uma solução pacífica e duradoura para o conflito. O termo deriva da expressão em inglês “peacekeeping”. c) Imposição da Paz Corresponde às ações adotadas ao abrigo do Capítulo VII da Carta das Nações Unidas, incluindo o uso de força armada para manter ou restaurar a paz e a segurança internacionais em situações nas quais tenha sido identificada e reconhecida a existência de uma ameaça à paz, ruptura da paz ou ato de agressão. O termo “peace
+**a) Promoção da Paz**
 
-enforcement” é internacionalmente consagrado.
+Designa as ações diplomáticas posteriores ao início do conflito, para levar as partes litigantes a suspender as hostilidades e a negociarem. As ações de promoção da paz baseiam-se nos meios de solução pacífica de controvérsias previstos no Capítulo VI da Carta das Nações Unidas, os quais podem incluir, em casos extremos, dependendo do mandato dos mediadores, o isolamento diplomático e a imposição de sanções, adentrando então nas ações coercitivas previstas no Capítulo VII da referida Carta. O termo deriva da expressão em inglês “peacemaking”. 
 
-OSTENSIVO -4-11 - ORIGINAL
+**b) Manutenção da Paz**
 
----
+Trata das atividades levadas a cabo no terreno, com o consentimento das partes em conflito por militares, policiais e civis para implementar ou monitorar a execução de arranjos relativos ao controle de conflitos (cessar-fogo, separação de forças etc.) e sua solução (acordos de paz abrangentes ou parciais), em complemento aos esforços políticos realizados para encontrar uma solução pacífica e duradoura para o conflito. O termo deriva da expressão em inglês “peacekeeping”. 
+ 
+c) Imposição da Paz Corresponde às ações adotadas ao abrigo do Capítulo VII da Carta das Nações Unidas, incluindo o uso de força armada para manter ou restaurar a paz e a segurança internacionais em situações nas quais tenha sido identificada e reconhecida a existência de uma ameaça à paz, ruptura da paz ou ato de agressão. O termo “peace enforcement” é internacionalmente consagrado.
+
+Ressalta-se que o Brasil, em razão do princípio da não intervenção, disposto no artigo 4º da Constituição Federal, não participa dessa modalidade de OpPaz, ou seja, quando não há o consentimento das partes beligerantes. 
 
 ## Página 55
 
-OSTENSIVO EMA-305
+d) Consolidação da Paz Refere-se às iniciativas voltadas para o tratamento dos efeitos do conflito, visando a fortalecer o processo de reconciliação nacional por meio de implementação de projetos destinados a recompor as estruturas institucionais, a recuperar a infraestrutura física e a ajudar na retomada da atividade econômica. Essas ações, voltadas basicamente para o desenvolvimento econômico e social do país anfitrião, são empreendidas, preferencialmente, por outros órgãos das Nações Unidas, mas, dependendo das dificuldades no terreno, podem requerer a atuação militar. O termo deriva da expressão em inglês “peacebuilding”.
 
-Ressalta-se que o Brasil, em razão do princípio da não intervenção, disposto no artigo 4º da Constituição Federal, não participa dessa modalidade de OpPaz, ou seja, quando não há o consentimento das partes beligerantes. d) Consolidação da Paz Refere-se às iniciativas voltadas para o tratamento dos efeitos do conflito, visando a fortalecer o processo de reconciliação nacional por meio de implementação de projetos destinados a recompor as estruturas institucionais, a recuperar a infraestrutura física e a ajudar na retomada da atividade econômica. Essas ações, voltadas basicamente para o desenvolvimento econômico e social do país anfitrião, são empreendidas, preferencialmente, por outros órgãos das Nações Unidas, mas, dependendo das dificuldades no terreno, podem requerer a atuação militar. O termo deriva da expressão em inglês “peacebuilding”. O Poder Naval, devido às suas características de mobilidade, permanência, versatilidade e flexibilidade, e por dispor de forças de caráter expedicionário, está apto a participar da execução de OpPaz, tanto de caráter naval como terrestre. 4.12.1 - Operação de Paz de Caráter Naval Nesta classe, na qual preponderam operações e ações no ambiente marítimo ou ambiente ribeirinho, o Poder Naval pode participar com meios navais, aeronavais e de fuzileiros navais ou, individualmente, com Comandantes de forças-tarefa, observadores ou oficiais de estado-maior, para a obtenção, dentre outros, dos seguintes efeitos desejados: - estabilização institucional; - monitoramento de cessar-fogo ou zona desmilitarizada; - imposição de sanções ou embargos; - apoio humanitário; - assistência a refugiados; - assistência às negociações de paz; - limpeza de áreas marítimas minadas; - evacuação em emergência de brasileiros ou mesmo de pessoas de outras nacionalidades, que se encontrem participando de OpPaz; - interposição entre forças navais oponentes; - transporte de meios da MB, das demais FA brasileiras, ou de outros países, para a área de operações;
+O Poder Naval, devido às suas características de mobilidade, permanência, versatilidade e flexibilidade, e por dispor de forças de caráter expedicionário, está apto a participar da execução de OpPaz, tanto de caráter naval como terrestre.
 
+### 4.12.1 - Operação de Paz de Caráter Naval 
+
+Nesta classe, na qual preponderam operações e ações no ambiente marítimo ou ambiente ribeirinho, o Poder Naval pode participar com meios navais, aeronavais e de fuzileiros navais ou, individualmente, com Comandantes de forças-tarefa, observadores ou oficiais de estado-maior, para a obtenção, dentre outros, dos seguintes efeitos desejados:
+- estabilização institucional;
+- monitoramento de cessar-fogo ou zona desmilitarizada;
+- imposição de sanções ou embargos;
+- apoio humanitário;
+- assistência a refugiados;
+- assistência às negociações de paz;
+- limpeza de áreas marítimas minadas;
+- evacuação em emergência de brasileiros ou mesmo de pessoas de outras nacionalidades, que se encontrem participando de OpPaz;
+- interposição entre forças navais oponentes;
+- transporte de meios da MB, das demais FA brasileiras, ou de outros países, para a área de operações;
 - coordenação e controle de determinado espaço aéreo;
-
-OSTENSIVO - 4-12 - ORIGINAL
-
----
+- apoio de fogo na defesa das forças em terra;
+- alojamento e abrigo temporário de forças amigas ou refugiados; e
+- realização de Ação Cívico-Social (ACISO).
 
 ## Página 56
 
-OSTENSIVO EMA-305
+### 4.12.2 - Operação de Paz de Caráter Terrestre
 
-- apoio de fogo na defesa das forças em terra;
-
-- alojamento e abrigo temporário de forças amigas ou refugiados; e
-
-- realização de Ação Cívico-Social (ACISO).
-
-4.12.2 - Operação de Paz de Caráter Terrestre
-
-Nesta categoria, na qual preponderam as operações e ações no ambiente terrestre, com
-
-pouco ou nenhum vínculo direto com o mar, o Poder Naval pode participar com meios
-
-aeronavais e de fuzileiros navais ou individualmente, com observadores ou oficiais de
-
-estado-maior, para a obtenção dos seguintes efeitos desejados, além daqueles descritos
-
-no inciso anterior:
+Nesta categoria, na qual preponderam as operações e ações no ambiente terrestre, com pouco ou nenhum vínculo direto com o mar, o Poder Naval pode participar com meios aeronavais e de fuzileiros navais ou individualmente, com observadores ou oficiais de estado-maior, para a obtenção dos seguintes efeitos desejados, além daqueles descritos no inciso anterior:
 
 - realização de esclarecimento a pé, mecanizado e motorizado;
-
-- estabelecimento de base e atividades iniciais, prévias ao desdobramento de uma Força
-
-de Paz eminentemente terrestre;
-
+- estabelecimento de base e atividades iniciais, prévias ao desdobramento de uma Força de Paz eminentemente terrestre;
 - limpeza de campos minados terrestres;
-
 - instalação e operação de hospitais de campanha; e
-
 - interposição entre forças terrestres oponentes.
 
-4.13 - OPERAÇÃO DE EVACUAÇÃO DE NÃO COMBATENTES
+### 4.13 - OPERAÇÃO DE EVACUAÇÃO DE NÃO COMBATENTES
 
-A Operação de Evacuação de Não Combatentes (OpENC) é aquela conduzida com o propósito de evacuar para um Local de Destino Seguro (LDS) pessoal civil, preferencialmente, de nacionalidade brasileira e militares brasileiros, impossibilitados de prover adequadamente sua autodefesa, de países onde exista uma ameaça à sua segurança ou onde exista uma situação de calamidade. A OpENC, usualmente, envolve a entrada de uma força militar no território do país anfitrião e a ocupação temporária de um objetivo que assegure as condições de segurança para a realização de uma retirada planejada de não combatentes. Decorre, normalmente, de situações de crise no país anfitrião, que podem ter consequências nas áreas humanitárias, militares ou políticas, como nos casos de: conflitos regionais, instabilidade interna, catástrofes causadas por fenômenos naturais ou acidentes de grandes proporções ambientais. A estrutura de comando e controle e os fatores políticos na execução do apoio militar torna-a diferente de outras operações militares. Durante uma OpENC, o Embaixador do Brasil ou a autoridade diplomática em exercício no país anfitrião, é a autoridade do governo para a evacuação, ou seja, é o responsável pela condução e pela segurança dos evacuados, até a chegada do componente militar. A decisão de evacuar uma embaixada é
+A Operação de Evacuação de Não Combatentes (OpENC) é aquela conduzida com o propósito de evacuar para um Local de Destino Seguro (LDS) pessoal civil, preferencialmente, de nacionalidade brasileira e militares brasileiros, impossibilitados de prover adequadamente sua autodefesa, de países onde exista uma ameaça à sua segurança ou onde exista uma situação de calamidade.
 
-política. Os objetivos da política externa do Brasil, aliados às condições da área de conflito,
+A OpENC, usualmente, envolve a entrada de uma força militar no território do país anfitrião e a ocupação temporária de um objetivo que assegure as condições de segurança para a realização de uma retirada planejada de não combatentes. Decorre, normalmente, de situações de crise no país anfitrião, que podem ter consequências nas áreas humanitárias, militares ou políticas, como nos casos de: conflitos regionais, instabilidade interna, catástrofes causadas por fenômenos naturais ou acidentes de grandes proporções ambientais.
 
-OSTENSIVO -4-13 - ORIGINAL
-
----
+A estrutura de comando e controle e os fatores políticos na execução do apoio militar torna-a diferente de outras operações militares. Durante uma OpENC, o Embaixador do Brasil ou a autoridade diplomática em exercício no país anfitrião, é a autoridade do governo para a evacuação, ou seja, é o responsável pela condução e pela segurança dos evacuados, até a chegada do componente militar. A decisão de evacuar uma embaixada é política. Os objetivos da política externa do Brasil, aliados às condições da área de conflito, com ênfase na segurança dos cidadãos brasileiros, são os fatores determinantes na realização de uma OpENC.
 
 ## Página 57
 
-OSTENSIVO EMA-305
+As forças de caráter expedicionário são especialmente apropriadas para a realização de OpENC. Diferentemente de uma operação de resgate, uma OpENC não necessariamente é de curta duração. Além disso, presume-se que esta não envolva a circunstância de nacionais permanecerem sob controle (presos ou detidos) de forças adversas, quando seria recomendada a realização de um resgate. Tais aspectos, a duração e o grau de controle sobre os nacionais, são as principais diferenças entre os dois tipos de operação.
 
-com ênfase na segurança dos cidadãos brasileiros, são os fatores determinantes na realização de uma OpENC. As forças de caráter expedicionário são especialmente apropriadas para a realização de OpENC. Diferentemente de uma operação de resgate, uma OpENC não necessariamente é de curta duração. Além disso, presume-se que esta não envolva a circunstância de nacionais permanecerem sob controle (presos ou detidos) de forças adversas, quando seria recomendada a realização de um resgate. Tais aspectos, a duração e o grau de controle sobre os nacionais, são as principais diferenças entre os dois tipos de operação. Pela característica incerta, uma OpENC pode ser desencadeada inopinadamente, devido a mudanças repentinas no governo do país anfitrião, reorientação política ou militar em relação ao Brasil ou ameaças hostis a cidadãos brasileiros, por forças internas ou externas naquele país. Os fatores chaves no planejamento são: acompanhamento da situação, apreciação correta das possíveis mudanças políticas e militares, além do conhecimento do número de brasileiros residentes ou em trânsito pelo país em crise, do ambiente em que o Comando Operacional irá operar e a preparação da força para um ambiente que pode, rapidamente, passar de permissivo para incerto ou hostil. a) Ambiente Permissivo Nessa condição não é esperada resistência às operações de evacuação. Assim, necessita-se de pequeno ou nenhum emprego de forças militares no país anfitrião, podendo ou não ser estabelecidas medidas de processamento dos evacuados. O Comando Operacional deve contar com a concordância e apoio do país anfitrião. A principal preocupação é com as atividades logísticas e legais de repatriação dos evacuados. b) Ambiente Incerto É o ambiente operacional em que as FA do país anfitrião, receptivas ou não à OpENC, não detêm o controle efetivo do território e da população na região da operação. Devido à incerteza, o Comando Operacional poderá dispor de unidades de segurança adicionais e prever a utilização de uma Força de Reação. O planejamento deverá contemplar a possibilidade de escalada para um ambiente hostil. c) Ambiente Hostil Nesse ambiente, o governo do país anfitrião adotou postura hostil, pondo em risco a permanência e a vida de brasileiros naquele território, ou perdeu o controle da situação. É de se esperar que a evacuação seja realizada sob condições de desordem
+Pela característica incerta, uma OpENC pode ser desencadeada inopinadamente, devido a mudanças repentinas no governo do país anfitrião, reorientação política ou militar em relação ao Brasil ou ameaças hostis a cidadãos brasileiros, por forças internas ou externas naquele país. Os fatores chaves no planejamento são: acompanhamento da situação, apreciação correta das possíveis mudanças políticas e militares, além do conhecimento do número de brasileiros residentes ou em trânsito pelo país em crise, do ambiente em que o Comando Operacional irá operar e a preparação da força para um ambiente que pode, rapidamente, passar de permissivo para incerto ou hostil.
 
-civil, ações terroristas ou de combate. Portanto, o Comando Operacional deverá estar
+**a) Ambiente Permissivo**
 
-OSTENSIVO -4-14 - ORIGINAL
+Nessa condição não é esperada resistência às operações de evacuação. Assim, necessita-se de pequeno ou nenhum emprego de forças militares no país anfitrião, podendo ou não ser estabelecidas medidas de processamento dos evacuados. O Comando Operacional deve contar com a concordância e apoio do país anfitrião. A principal preocupação é com as atividades logísticas e legais de repatriação dos evacuados.
 
----
+**b) Ambiente Incerto**
 
-## Página 58
+É o ambiente operacional em que as FA do país anfitrião, receptivas ou não à OpENC, não detêm o controle efetivo do território e da população na região da operação. Devido à incerteza, o Comando Operacional poderá dispor de unidades de segurança adicionais e prever a utilização de uma Força de Reação. O planejamento deverá contemplar a possibilidade de escalada para um ambiente hostil.
 
-OSTENSIVO EMA-305
+**c) Ambiente Hostil**
 
-preparado para realizar a entrada em território hostil, estabelecer perímetros de segurança, escoltar comboios, participar de operações de busca e realizar triagem de pessoal. Ressalta-se que, em se tratando de ambiente incerto ou hostil, associado ao fato de que um dos princípios regentes do Brasil nas relações internacionais é o da não intervenção, somente com respaldo de um mandato das Nações Unidas, o emprego das FA em uma OpENC seria legítimo. 4.14 - SEGURANÇA DE REPRESENTAÇÕES DIPLOMÁTICAS A segurança de representações diplomáticas visa a prover a segurança pessoal do chefe da representação, dos demais funcionários diplomáticos e administrativos, da residência oficial e da chancelaria das Embaixadas do Brasil e, se for o caso, proteger os nacionais não combatentes em regresso ao Brasil. A organização emergencial deve ser ativada nos casos em que o agravamento da situação política em determinado Estado, além de comprometer a segurança da representação diplomática do Brasil, vier, também, a pôr em
+Nesse ambiente, o governo do país anfitrião adotou postura hostil, pondo em risco a permanência e a vida de brasileiros naquele território, ou perdeu o controle da situação. É de se esperar que a evacuação seja realizada sob condições de desordem civil, ações terroristas ou de combate. Portanto, o Comando Operacional deverá estar preparado para realizar a entrada em território hostil, estabelecer perímetros de segurança, escoltar comboios, participar de operações de busca e realizar triagem de pessoal.
 
-risco os nacionais não combatentes ali residentes.
+Ressalta-se que, em se tratando de ambiente incerto ou hostil, associado ao fato de que um dos princípios regentes do Brasil nas relações internacionais é o da não intervenção, somente com respaldo de um mandato das Nações Unidas, o emprego das FA em uma OpENC seria legítimo. 
 
-OSTENSIVO - 4-15 - ORIGINAL
+### 4.14 - SEGURANÇA DE REPRESENTAÇÕES DIPLOMÁTICAS
+
+A segurança de representações diplomáticas visa a prover a segurança pessoal do chefe da representação, dos demais funcionários diplomáticos e administrativos, da residência oficial e da chancelaria das Embaixadas do Brasil e, se for o caso, proteger os nacionais não combatentes em regresso ao Brasil. A organização emergencial deve ser ativada nos casos em que o agravamento da situação política em determinado Estado, além de comprometer a segurança da representação diplomática do Brasil, vier, também, a pôr em risco os nacionais não combatentes ali residentes.

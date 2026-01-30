@@ -86,6 +86,10 @@ Cabe ressaltar que as expressões "guerra" e "conflito armado” se diferenciam 
 
 O surgimento de conceitos como Guerra Híbrida e Zona Cinza dos Conflitos representa novos desafios para o Poder Naval, representando ameaças e cenários de conflito que podem combinar meios militares convencionais, irregulares e cibernéticos, onde as normas do direito internacional são desafiadas ou violadas entre a normalidade e o conflito armado. Esses conceitos estão em aprimoramento na MB.
 
+Figura 1 - Espectro dos Conflitos
+
+![alt text](figura1.png)
+
 ## Página 13
 
 ## 1.2. PODER NACIONAL, PODER MARÍTIMO e PODER NAVAL
@@ -170,6 +174,10 @@ O termo Amazônia Azul® e seus limites geográficos foi criado e divulgado pela
 
 O Dia Nacional da Amazônia Azul é celebrado em 16 de novembro. A data foi escolhida em homenagem à entrada em vigor da CNUDM, em 1994.
 
+Figura 2 – Amazônia Azul
+
+![alt text](figura2.png)
+
 ## Página 18
 
 ### 1.4.2. Águas Jurisdicionais Brasileiras (AJB)
@@ -192,6 +200,10 @@ Assim, a MB implantou, organizou e mantém em funcionamento o Serviço de Busca 
 
 ## Página 19
 
+Figura 3 – Área de responsabilidade SAR brasileira
+
+![alt text](figura3.png)
+
 ### 1.4.4. Entorno Estratégico
 
 A PND e END estabelecem a orientação de que o País visualiza um entorno estratégico que inclui a América do Sul, o Atlântico Sul, os países da costa ocidental africana e a Antártica.
@@ -202,12 +214,15 @@ Dentre os países da costa ocidental africana, o Brasil se destaca pela extensã
 
 (3) Definição preliminar para Economia Azul no âmbito da Comissão Interministerial para os Recursos do Mar (CIRM): “É o uso sustentável dos recursos marinhos para o desenvolvimento econômico, melhoria do bemestar social e geração de empregos, conservando a saúde dos ecossistemas oceânicos e costeiros”.
 
-
 ## Página 20
 
 Em sua Política Naval, a MB adota e aprimora o conceito de Entorno Estratégico, destacando sua parte marítima, abrangendo cerca de 55 milhões de km?, atribuindo prioridade ao que podemos chamar de Atlântico Sul Geopolítico, compreendido pelos seguintes limites: ao Norte, o paralelo 16ºN; ao Sul, o Continente Antártico; a Leste, pelo litoral da África Ocidental; e ao Oeste, pela América do Sul. O limite 16ºN tem o propósito de englobar três importantes áreas: o espaço entre os salientes nordestino e costa ocidental africana, o Mar do Caribe e o litoral brasileiro do hemisfério Norte.
 
 Adicionalmente, a END destaca duas áreas marítimas de importância estratégica para a Defesa, sob o ponto de vista da necessidade de controlar o acesso marítimo ao Brasil. São elas a área marítima entre Santos e Vitória e a área marítima em torno da foz do rio Amazonas.
+
+Figura 4 - Entorno Estratégico
+
+![alt text](figura4.png)
 
 ### 1.4.5. Ilhas Oceânicas
 
