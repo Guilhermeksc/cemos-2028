@@ -86,10 +86,46 @@ services:
     networks:
       - app_network
 
+  prometheus:
+    image: prom/prometheus:v2.53.0
+    container_name: cemos2028_prometheus
+    restart: unless-stopped
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    volumes:
+      - ./observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    depends_on:
+      - backend
+    networks:
+      - app_network
+
+  grafana:
+    image: grafana/grafana:11.1.0
+    container_name: cemos2028_grafana
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=@cemos2028
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./observability/grafana/provisioning:/etc/grafana/provisioning
+      - ./observability/grafana/dashboards:/var/lib/grafana/dashboards
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    networks:
+      - app_network
+
 
 volumes:
   static_volume:
   postgres_data:
+  prometheus_data:
+  grafana_data:
 
 networks:
   app_network:

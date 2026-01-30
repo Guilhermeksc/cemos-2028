@@ -16,6 +16,7 @@ djangorestframework-simplejwt
 # Segurança e utilitários
 django-filter
 whitenoise
+prometheus-client
 
 # Async compatibilidade (se desejar ASGI)
 uvicorn[standard]

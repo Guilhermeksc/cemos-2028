@@ -1,6 +1,8 @@
 from django.contrib import admin
-from django.urls import path, include
 from django.http import JsonResponse
+from django.urls import include, path
+
+from django_cemos2028.observability.views import metrics_view
 
 # Personalização do Django Admin
 admin.site.site_header = "Administração do Sistema de apoio ao Cemos"
@@ -27,9 +29,15 @@ urlpatterns = [
 
     # Métricas exemplo para o Dash
     path('api/metrics/', metrics_example, name='metrics_example'),
+    
+    # Endpoint de métricas para Prometheus
+    path('metrics/', metrics_view, name='prometheus_metrics'),
 
     # Autenticação JWT
     path('api/auth/', include('django_cemos2028.apps.core.auth.urls')),
+
+    # Telemetria de eventos do frontend
+    path('api/telemetry/', include('django_cemos2028.apps.telemetry.urls')),
 
     # App de Perguntas
     path('api/perguntas/', include('django_cemos2028.apps.perguntas.urls')),

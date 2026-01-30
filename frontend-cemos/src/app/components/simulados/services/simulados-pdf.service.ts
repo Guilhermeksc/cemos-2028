@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { SimuladoQuestion, PdfCustomizationOptions } from '../simulados.types';
 import { PerguntaMultipla, PerguntaVF, PerguntaCorrelacao, FlashCards } from '../../../interfaces/perguntas.interface';
+import { ObservabilityService, PdfDownloadEvent } from '../../../services/observability.service';
 
 /**
  * Interface para representar um segmento de texto com estilo
@@ -18,6 +19,7 @@ interface TextSegment {
   providedIn: 'root'
 })
 export class SimuladosPdfService {
+  constructor(private observabilityService: ObservabilityService) {}
 
   /**
    * Gera um único PDF pesquisável com todas as questões do simulado misturadas
@@ -301,6 +303,8 @@ export class SimuladosPdfService {
     // Salvar PDF
     pdf.save(fileName);
     
+    this.notifyPdfDownload(questions.length, options);
+
     console.log(`✅ PDF único do simulado gerado com sucesso:`, fileName);
   }
 
@@ -321,6 +325,15 @@ export class SimuladosPdfService {
   }
 
   // ========== HELPERS PRIVADOS ==========
+  private notifyPdfDownload(totalQuestoes: number, options?: PdfCustomizationOptions): void {
+    const event: PdfDownloadEvent = {
+      simuladoNome: options?.nomeSimulado || 'Simulado',
+      origem: options?.origem || 'desconhecida',
+      bibliografias: options?.bibliografias || [],
+      totalQuestoes,
+    };
+    this.observabilityService.trackPdfDownload(event);
+  }
 
   private createRemoveEmojis(): (text: string) => string {
     return (text: string): string => {

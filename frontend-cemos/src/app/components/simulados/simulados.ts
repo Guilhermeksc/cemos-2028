@@ -387,7 +387,9 @@ export class Simulados implements OnInit, OnDestroy {
         undefined,
         {
           ...this.pdfOptions,
-          nomeSimulado: preset.titulo
+          nomeSimulado: preset.titulo,
+          origem: 'preset',
+          bibliografias: [...this.selectedBibliografias],
         }
       );
     } catch (error) {
@@ -463,7 +465,9 @@ export class Simulados implements OnInit, OnDestroy {
         undefined,
         {
           ...this.pdfOptions,
-          nomeSimulado: this.customSimulado.titulo
+          nomeSimulado: this.customSimulado.titulo,
+          origem: 'custom',
+          bibliografias: [...this.selectedBibliografias],
         }
       );
     } catch (error) {

@@ -104,6 +104,14 @@ export class EstatisticasComponent implements OnInit {
       },
       error: (error) => {
         console.error('Erro ao carregar ranking geral:', error);
+        // Se for erro 401, o interceptor já vai tratar o refresh token
+        // Não precisamos fazer nada aqui, apenas logar o erro
+        if (error.status === 401) {
+          console.warn('Erro 401 ao carregar ranking geral - interceptor vai tentar renovar token');
+        } else if (error.status === 403) {
+          console.warn('Erro 403 - usuário não tem permissão para acessar ranking geral');
+          // Não faz logout, apenas não carrega os dados
+        }
       }
     });
   }
@@ -115,6 +123,14 @@ export class EstatisticasComponent implements OnInit {
       },
       error: (error) => {
         console.error('Erro ao carregar estatísticas gerais de erros:', error);
+        // Se for erro 401, o interceptor já vai tratar o refresh token
+        // Não precisamos fazer nada aqui, apenas logar o erro
+        if (error.status === 401) {
+          console.warn('Erro 401 ao carregar estatísticas gerais - interceptor vai tentar renovar token');
+        } else if (error.status === 403) {
+          console.warn('Erro 403 - usuário não tem permissão para acessar estatísticas gerais');
+          // Não faz logout, apenas não carrega os dados
+        }
       }
     });
   }

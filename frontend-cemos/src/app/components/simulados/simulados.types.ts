@@ -74,6 +74,8 @@ export interface PdfCustomizationOptions {
   turma?: string;
   agrupamento?: 'bibliografia-assunto' | 'tipo-questao';
   fonteTamanho?: 'compacto' | 'padrao';
+  origem?: 'preset' | 'custom' | 'desconhecida';
+  bibliografias?: number[];
   
   // Seções toggláveis
   mostrarSumarioDesempenho?: boolean;

@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     # Core
     'django_cemos2028.apps.core.auth',
     'django_cemos2028.apps.core.users',
+    'django_cemos2028.apps.telemetry',
     # Módulos
     'django_cemos2028.apps.bibliografia',
     'django_cemos2028.apps.perguntas',
