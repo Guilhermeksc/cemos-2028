@@ -50,7 +50,7 @@ Há previsão para emprego das FA na GLO, em situação que se presuma ser poss�
 
 Compete, privativamente, ao Tribunal Superior Eleitoral (TSE) requisitar a força federal necessária ao cumprimento da lei, de suas próprias decisões ou das decisões dos Tribunais Regionais que o solicitarem, e para garantir a votação e a apuração, tendo em vista o disposto no artigo 23, caput, inciso XIV, da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), com a redação dada pelo art. 7º da Lei nº 4.961, de 4 de maio de 1966.
 
-O decreto para emprego das FA é de responsabilidade do Presidente da República, sendo a atuação militar amparada pelo $ 7º do artigo 15 da Lei Complementar nº 97, de 9 de junho de 1999 (redação dada pela Lei Complementar nº 136, de 25 de agosto de 2010). 
+O decreto para emprego das FA é de responsabilidade do Presidente da República, sendo a atuação militar amparada pelo § 7º do artigo 15 da Lei Complementar nº 97, de 9 de junho de 1999 (redação dada pela Lei Complementar nº 136, de 25 de agosto de 2010). 
 
 Nesse contexto, as ações militares de garantia de votação e da apuração são operações de GLO, conforme previsto no artigo 5º do Decreto nº 3.897, de 24 de agosto de 2001, onde as localidades e o período de emprego das FA serão definidos conforme os termos de requisição do TSE.
 
@@ -79,7 +79,7 @@ Essas ações não apresentam as restrições impostas pelo decreto que regulame
 
 Inicialmente, chamada de patrulha costeira, quando instituída pela Lei nº 2.419, de 10 de fevereiro de 1955, passou a atual denominação de Patrulha Naval (PATNAV), pelo Decreto nº 5.129, de 6 de julho de 2004. Trata-se de uma atribuição subsidiária particular da MB, conforme disciplina o inciso IV do artigo 17 da Lei Complementar nº 97, de 9 de junho de 1999, cujo propósito é implementar e fiscalizar o cumprimento de leis e regulamentos, em AJB, na plataforma continental brasileira e no alto-mar, respeitados os tratados, convenções e atos internacionais ratificados pelo Brasil.
 
-A PATNAV é conduzida por meios navais, com a utilização de embarcações e aeronaves orgânicas em apoio às suas atividades. Poderá haver o reforço de fuzileiros navais ou de mergulhadores de combate embarcados nos meios navais, principalmente quando da visita e inspeção, em proveito da segurança e da abordagem com oposição, respectivamente, do grupo (Grupo de Visita e Inspeção — GVT), que é composto por militares previamente designados pelo Comandante. O emprego de armamento portátil pelos componentes do GVl fica condicionado às situações em que atos hostis os exponham a risco de morte ou lesão corporal.
+A PATNAV é conduzida por meios navais, com a utilização de embarcações e aeronaves orgânicas em apoio às suas atividades. Poderá haver o reforço de fuzileiros navais ou de mergulhadores de combate embarcados nos meios navais, principalmente quando da visita e inspeção, em proveito da segurança e da abordagem com oposição, respectivamente, do grupo (Grupo de Visita e Inspeção — GVI), que é composto por militares previamente designados pelo Comandante. O emprego de armamento portátil pelos componentes do GVl fica condicionado às situações em que atos hostis os exponham a risco de morte ou lesão corporal.
 
 Há previsão no decreto mencionado de o GVI ser integrado por representantes de órgão federal ou estadual, não se lhes aplicando a designação prévia pelo Comandante e que seus armamentos portáteis sejam da dotação do navio. Nesse caso, tais agentes atuarão dentro de suas competências legais.
 
@@ -102,9 +102,9 @@ c) toda a ação que tenha por fim incitar ou ajudar intencionalmente a cometer 
 
 O terrorismo consiste na prática por um ou mais indivíduos dos atos previstos no artigo 2º da Lei nº 13.260, de 16 de março de 2016, por razões de xenofobia, discriminação ou preconceito de raça, cor, etnia e religião, quando cometidos com a finalidade de provocar terror social ou generalizado, expondo a perigo pessoa, patrimônio, a paz pública ou a incolumidade pública. São atos de terrorismo:
 
-- Usar ou ameaçar usar, transportar, guardar, portar ou trazer consigo explosivos, gases tóxicos, venenos, conteúdos biológicos, químicos, nucleares ou outros meios capazes de causar danos ou promover destruição em massa;
-- sabotar o funcionamento ou apoderar-se, com violência, grave ameaça a pessoa ou servindo-se de mecanismos cibernéticos, do controle total ou parcial, ainda que de modo temporário, de meio de comunicação ou de transporte, de portos, aeroportos, estações ferroviárias ou rodoviárias, hospitais, casas de saúde, escolas, estádios esportivos, instalações públicas ou locais onde funcionem serviços públicos essenciais, instalações de geração ou transmissão de energia, instalações militares, instalações de exploração, refino e processamento de petróleo e gás e instituições bancárias e sua rede de atendimento; e
-- atentar contra a vida ou a integridade física de pessoa. O terrorismo possui características de delito transfronteiriço ou transnacional, bem como pode estar vinculado ao crime organizado, de forma que a lei em apreço passou a prever e criminalizar as organizações terroristas como aquelas voltadas para a prática dos atos de terrorismo legalmente definidos.
+▪️Usar ou ameaçar usar, transportar, guardar, portar ou trazer consigo explosivos, gases tóxicos, venenos, conteúdos biológicos, químicos, nucleares ou outros meios capazes de causar danos ou promover destruição em massa;
+▪️sabotar o funcionamento ou apoderar-se, com violência, grave ameaça a pessoa ou servindo-se de mecanismos cibernéticos, do controle total ou parcial, ainda que de modo temporário, de meio de comunicação ou de transporte, de portos, aeroportos, estações ferroviárias ou rodoviárias, hospitais, casas de saúde, escolas, estádios esportivos, instalações públicas ou locais onde funcionem serviços públicos essenciais, instalações de geração ou transmissão de energia, instalações militares, instalações de exploração, refino e processamento de petróleo e gás e instituições bancárias e sua rede de atendimento; e
+▪️atentar contra a vida ou a integridade física de pessoa. O terrorismo possui características de delito transfronteiriço ou transnacional, bem como pode estar vinculado ao crime organizado, de forma que a lei em apreço passou a prever e criminalizar as organizações terroristas como aquelas voltadas para a prática dos atos de terrorismo legalmente definidos.
 
 O enfrentamento ao terrorismo pode incluir medidas defensivas (antiterrorismo) com vistas a minimizar a vulnerabilidade aos atos terroristas, ou ofensivas (contraterrorismo), conduzidas de modo a evitar, dissuadir ou responder ao terrorismo. 
 
@@ -192,9 +192,9 @@ As Operações de Paz (OpPaz) consistem no emprego da força militar, em apoio a
 
 No âmbito das Nações Unidas, o mandato é resultante de uma resolução do Conselho de Segurança. É o documento formal que estabelece uma OpPaz, contendo os seus fundamentos e objetivos a atingir. É desenvolvido no mais alto nível político e diplomático e, normalmente, contém: a finalidade da operação; os países participantes; as recomendações acerca do financiamento da operação; os direitos e imunidades dos componentes da missão de paz; o resultado esperado; as condições colocadas pelas partes envolvidas em relação à presença da missão de paz; e o tempo de duração da missão. As categorias de participação militar brasileira em OpPaz são: 
 
-- tropa/navio: quando os militares, com autorização do Congresso Nacional, integram um contingente armado, reunidos em módulo de emprego operacional, conforme normas fixadas pela Lei nº 2.953, de 17 de novembro de 1956; e 
+▪️tropa/navio: quando os militares, com autorização do Congresso Nacional, integram um contingente armado, reunidos em módulo de emprego operacional, conforme normas fixadas pela Lei nº 2.953, de 17 de novembro de 1956; e 
 
-- individual: observadores militares, oficiais de estado-maior não vinculados à tropa brasileira e pessoal especializado. 
+▪️individual: observadores militares, oficiais de estado-maior não vinculados à tropa brasileira e pessoal especializado. 
 
 As OpPaz compreendem cinco tipos: Diplomacia Preventiva, Promoção da Paz, Manutenção da Paz, Imposição da Paz e Consolidação da Paz. O primeiro tipo será tratado no item 5.2, por ser uma atividade benigna. Os quatro seguintes são enquadrados no emprego limitado da força, definidas por sua finalidade, conforme abaixo. 
 
@@ -208,33 +208,51 @@ Designa as ações diplomáticas posteriores ao início do conflito, para levar 
 
 Trata das atividades levadas a cabo no terreno, com o consentimento das partes em conflito por militares, policiais e civis para implementar ou monitorar a execução de arranjos relativos ao controle de conflitos (cessar-fogo, separação de forças etc.) e sua solução (acordos de paz abrangentes ou parciais), em complemento aos esforços políticos realizados para encontrar uma solução pacífica e duradoura para o conflito. O termo deriva da expressão em inglês “peacekeeping”. 
  
-c) Imposição da Paz Corresponde às ações adotadas ao abrigo do Capítulo VII da Carta das Nações Unidas, incluindo o uso de força armada para manter ou restaurar a paz e a segurança internacionais em situações nas quais tenha sido identificada e reconhecida a existência de uma ameaça à paz, ruptura da paz ou ato de agressão. O termo “peace enforcement” é internacionalmente consagrado.
+**c) Imposição da Paz**
+
+Corresponde às ações adotadas ao abrigo do Capítulo VII da Carta das Nações Unidas, incluindo o uso de força armada para manter ou restaurar a paz e a segurança internacionais em situações nas quais tenha sido identificada e reconhecida a existência de uma ameaça à paz, ruptura da paz ou ato de agressão. O termo “peace enforcement” é internacionalmente consagrado.
 
 Ressalta-se que o Brasil, em razão do princípio da não intervenção, disposto no artigo 4º da Constituição Federal, não participa dessa modalidade de OpPaz, ou seja, quando não há o consentimento das partes beligerantes. 
 
 ## Página 55
 
-d) Consolidação da Paz Refere-se às iniciativas voltadas para o tratamento dos efeitos do conflito, visando a fortalecer o processo de reconciliação nacional por meio de implementação de projetos destinados a recompor as estruturas institucionais, a recuperar a infraestrutura física e a ajudar na retomada da atividade econômica. Essas ações, voltadas basicamente para o desenvolvimento econômico e social do país anfitrião, são empreendidas, preferencialmente, por outros órgãos das Nações Unidas, mas, dependendo das dificuldades no terreno, podem requerer a atuação militar. O termo deriva da expressão em inglês “peacebuilding”.
+**d) Consolidação da Paz** 
+
+Refere-se às iniciativas voltadas para o tratamento dos efeitos do conflito, visando a fortalecer o processo de reconciliação nacional por meio de implementação de projetos destinados a recompor as estruturas institucionais, a recuperar a infraestrutura física e a ajudar na retomada da atividade econômica. Essas ações, voltadas basicamente para o desenvolvimento econômico e social do país anfitrião, são empreendidas, preferencialmente, por outros órgãos das Nações Unidas, mas, dependendo das dificuldades no terreno, podem requerer a atuação militar. O termo deriva da expressão em inglês “peacebuilding”.
 
 O Poder Naval, devido às suas características de mobilidade, permanência, versatilidade e flexibilidade, e por dispor de forças de caráter expedicionário, está apto a participar da execução de OpPaz, tanto de caráter naval como terrestre.
 
 ### 4.12.1 - Operação de Paz de Caráter Naval 
 
 Nesta classe, na qual preponderam operações e ações no ambiente marítimo ou ambiente ribeirinho, o Poder Naval pode participar com meios navais, aeronavais e de fuzileiros navais ou, individualmente, com Comandantes de forças-tarefa, observadores ou oficiais de estado-maior, para a obtenção, dentre outros, dos seguintes efeitos desejados:
-- estabilização institucional;
-- monitoramento de cessar-fogo ou zona desmilitarizada;
-- imposição de sanções ou embargos;
-- apoio humanitário;
-- assistência a refugiados;
-- assistência às negociações de paz;
-- limpeza de áreas marítimas minadas;
-- evacuação em emergência de brasileiros ou mesmo de pessoas de outras nacionalidades, que se encontrem participando de OpPaz;
-- interposição entre forças navais oponentes;
-- transporte de meios da MB, das demais FA brasileiras, ou de outros países, para a área de operações;
-- coordenação e controle de determinado espaço aéreo;
-- apoio de fogo na defesa das forças em terra;
-- alojamento e abrigo temporário de forças amigas ou refugiados; e
-- realização de Ação Cívico-Social (ACISO).
+
+▪️estabilização institucional;
+
+▪️monitoramento de cessar-fogo ou zona desmilitarizada;
+
+▪️imposição de sanções ou embargos;
+
+▪️apoio humanitário;
+
+▪️assistência a refugiados;
+
+▪️assistência às negociações de paz;
+
+▪️limpeza de áreas marítimas minadas;
+
+▪️evacuação em emergência de brasileiros ou mesmo de pessoas de outras nacionalidades, que se encontrem participando de OpPaz;
+
+▪️interposição entre forças navais oponentes;
+
+▪️transporte de meios da MB, das demais FA brasileiras, ou de outros países, para a área de operações;
+
+▪️coordenação e controle de determinado espaço aéreo;
+
+▪️apoio de fogo na defesa das forças em terra;
+
+▪️alojamento e abrigo temporário de forças amigas ou refugiados; e
+
+realização de Ação Cívico-Social (ACISO).
 
 ## Página 56
 
@@ -242,11 +260,15 @@ Nesta classe, na qual preponderam operações e ações no ambiente marítimo ou
 
 Nesta categoria, na qual preponderam as operações e ações no ambiente terrestre, com pouco ou nenhum vínculo direto com o mar, o Poder Naval pode participar com meios aeronavais e de fuzileiros navais ou individualmente, com observadores ou oficiais de estado-maior, para a obtenção dos seguintes efeitos desejados, além daqueles descritos no inciso anterior:
 
-- realização de esclarecimento a pé, mecanizado e motorizado;
-- estabelecimento de base e atividades iniciais, prévias ao desdobramento de uma Força de Paz eminentemente terrestre;
-- limpeza de campos minados terrestres;
-- instalação e operação de hospitais de campanha; e
-- interposição entre forças terrestres oponentes.
+▪️realização de esclarecimento a pé, mecanizado e motorizado;
+
+▪️estabelecimento de base e atividades iniciais, prévias ao desdobramento de uma Força de Paz eminentemente terrestre;
+
+▪️limpeza de campos minados terrestres;
+
+▪️instalação e operação de hospitais de campanha; e
+
+▪️interposição entre forças terrestres oponentes.
 
 ### 4.13 - OPERAÇÃO DE EVACUAÇÃO DE NÃO COMBATENTES
 

@@ -2,8 +2,8 @@ from pathlib import Path
 import csv
 
 BASE_DIR = Path(__file__).parent
-CSV_FILE = BASE_DIR / "flashcards.csv"
-MD_FILE = BASE_DIR / "flashcards.md"
+CSV_FILE = BASE_DIR / "cap4.csv"
+MD_FILE = BASE_DIR / "cap4fc.md"
 
 header = "| bibliografia_id | pergunta | resposta | prova | páginas | assunto | justificativa | caveira\n"
 separator = "|---|---|---|---|---|---|---|---|\n"

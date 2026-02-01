@@ -78,9 +78,9 @@ A modalidade mais completa de OpAnf é o assalto anfíbio, que se refere a um at
 
 O assalto anfíbio observa as fases de planejamento, de embarque, de ensaio, de travessia e de assalto. Essa sequência natural pode ser alterada devido à premência de tempo para deslocar a ForTarAnf ou devido ao sigilo da operação. Nessas situações, o embarque ocorreria antes do planejamento.
 
-A subordinação do Comandante da Força de Desembarque (ComForDbg) ao Comandante da Força-Tarefa Anfíbia (ComForTarAnf) ocorrerá a partir do início do embarque da tropa e de seu material. Na eventualidade de o embarque ocorrer antes da fase do planejamento, a subordinação anteriormente citada não deve ser prevalecer, tendo em vista a necessidade de se observar o paralelismo entre os dois comandos durante a condução do planejamento.
+A subordinação do Comandante da Força de Desembarque (ComForDbq) ao Comandante da Força-Tarefa Anfíbia (ComForTarAnf) ocorrerá a partir do início do embarque da tropa e de seu material. Na eventualidade de o embarque ocorrer antes da fase do planejamento, a subordinação anteriormente citada não deve ser prevalecer, tendo em vista a necessidade de se observar o paralelismo entre os dois comandos durante a condução do planejamento.
 
-O ComForTarAnf tem sob sua responsabilidade uma área geográfica, a Área do Objetivo Anfíbio (AOA), onde se incluem a Área de Desembarque (ADbg) e os espaços marítimo, terrestre e aéreo necessários ao cumprimento da missão.
+O ComForTarAnf tem sob sua responsabilidade uma área geográfica, a Área do Objetivo Anfíbio (AOA), onde se incluem a Área de Desembarque (ADbq) e os espaços marítimo, terrestre e aéreo necessários ao cumprimento da missão.
 
 Antes e durante a fase do assalto podem ser executadas operações preparatórias, conduzidas pela Força de Apoio, Força Avançada ou, até mesmo, por componentes da própria ForTarAnf.
 
@@ -90,7 +90,7 @@ A ForDbq deve ter condições de conquistar, rapidamente, ponderável superiorid
 
 ## Página 18
 
-Em quaisquer circunstâncias, o controle das operações aéreas na AOA será desempenhado, inicialmente, pelo ComForTarAnf, podendo ser transferido ao ComForDbg, quando este tenha condições de exercê-lo em terra.
+Em quaisquer circunstâncias, o controle das operações aéreas na AOA será desempenhado, inicialmente, pelo ComForTarAnf, podendo ser transferido ao ComForDbq, quando este tenha condições de exercê-lo em terra.
 
 O ComForDbq exerce, primeiramente, seu comando a partir de bordo. Quando tiver sido estabelecido em terra um sistema de comando e controle que permita o pleno exercício das atividades de sua Força, o ComForDbq poderá cumpri-lo a partir de terra, mantendo-se subordinado ao ComForTarAnf. A ForTarAnf continuará executando suas tarefas até o término da operação, evidenciado pelo cumprimento de sua missão.
 
@@ -239,8 +239,7 @@ O transporte de um porto a outro, em apoio logístico a um TO, não é uma opera
 
 As OpEsp são aquelas realizadas por pessoal adequada e rigorosamente selecionado e intensivamente adestrado, empregando métodos, táticas, técnicas, procedimentos e equipamentos não convencionais, visando à consecução de objetivos dos níveis político, estratégico, operacional e tático. Normalmente, são operações de duração limitada, em função do reduzido efetivo empregado e da dificuldade de ressuprimento. Podem ser conduzidas tanto em tempo de paz quanto em períodos de crise ou conflito armado; em situações de normalidade ou não normalidade institucional; de forma ostensiva, sigilosa ou coberta; em áreas negadas, hostis ou politicamente sensíveis; independentemente ou em coordenação com operações realizadas por forças convencionais; em proveito de comandos de nível estratégico, operacional ou tático.
 
-O sigilo, a rapidez, a surpresa e a agressividade das ações são as condições essenciais para o sucesso desse tipo de operação. Os elementos de OpEsp, quando agrupados e equipados para a execução deste tipo de operação, são considerados meios. Desta 
-forma, é indispensável que os militares nelas empregados possuam condições físicas e psicológicas adequadas para o exercício de atividades complexas, em ambiente de risco elevado. No contexto da MB, devem ser respeitadas as especificidades da formação e preparo dos integrantes e dos elementos de OpEsp, adequando-os para o emprego, preferencialmente, no ambiente marítimo ou a partir dele, nas águas interiores e em certas áreas terrestres limitadas de interesse para as operações navais.
+O sigilo, a rapidez, a surpresa e a agressividade das ações são as condições essenciais para o sucesso desse tipo de operação. Os elementos de OpEsp, quando agrupados e equipados para a execução deste tipo de operação, são considerados meios. Desta forma, é indispensável que os militares nelas empregados possuam condições físicas e psicológicas adequadas para o exercício de atividades complexas, em ambiente de risco elevado. No contexto da MB, devem ser respeitadas as especificidades da formação e preparo dos integrantes e dos elementos de OpEsp, adequando-os para o emprego, preferencialmente, no ambiente marítimo ou a partir dele, nas águas interiores e em certas áreas terrestres limitadas de interesse para as operações navais.
 
 ## Página 25
 
@@ -289,7 +288,7 @@ A Operação de Informação (OpInfo) é o conjunto de ações coordenadas dirig
 **3.4.12 - Operação de Interdição Marítima**
 
 A Operação de Interdição Marítima (OIM) ou “Maritime Interdiction Operation” (MIO) se refere ao conjunto de esforços para monitorar, interrogar, interceptar e, se necessário, abordar tráfego marítimo em uma área definida, para verificar, redirecionar, apreender suas cargas ou apresar embarcações, na aplicação de sanções contra outros Estados, como aquelas em apoio às resoluções do Conselho de Segurança das  Unidas e/ou para prevenir o transporte de itens restritos. As unidades engajadas em OIM, normalmente, executam as seguintes tarefas:
-▪️enviar o Grupo de Visita e Inspeção (GVT) e, conforme a evolução da situação, a Guarnição de Presa (GP)[1] para abordar e, se necessário, apresar embarcações em trânsito numa determinada área, ou dela saindo, em caso de direito de perseguição. Em função do grau de risco envolvido, o envio do (a) GVI/GP poderá ser precedido pela visita de um destacamento de abordagem especializada, composto por Mergulhadores de Combate (MEC);
+▪️enviar o Grupo de Visita e Inspeção (GVI) e, conforme a evolução da situação, a Guarnição de Presa (GP)[1] para abordar e, se necessário, apresar embarcações em trânsito numa determinada área, ou dela saindo, em caso de direito de perseguição. Em função do grau de risco envolvido, o envio do (a) GVI/GP poderá ser precedido pela visita de um destacamento de abordagem especializada, composto por Mergulhadores de Combate (MEC);
 ▪️procurar por evidências de itens proibidos; 
 ▪️redirecionar os navios que não cumprirem as normas determinadas pelas sanções; e 
 ▪️apresar embarcações que recusem a cumprir a ordem para desviar rumo.
@@ -318,8 +317,7 @@ A operação de combate SAR é fundamentalmente diferente das operações de soc
 
 A Operação Ribeirinha (OpRib), que pode ser conjunta ou singular, é aquela realizada com o propósito de obter e manter o controle de parte ou toda uma Área Ribeirinha (ARib), ou para negá-la ao inimigo. Entende-se por ARib a que compreende hidrovia fluvial ou lacustre, terreno e espaço aéreo sobrejacente, caracterizada por linhas de comunicações terrestres limitadas e pela existência de extensa superfície hídrica ou rede de hidrovias interiores (rios principais e seus afluentes, braços de rios, canais, lagos e lagoas), que servem de delimitação de fronteira, via de penetração estratégica ou rotas essenciais ou principais para o transporte de superfície. Estão incluídas como OpRib o controle de linhas de comunicações fluviais e as escoltas de meios fluviais por estas linhas.
 
-O conceito da operação fundamenta-se no princípio de que é inviável o controle de hidrovias interiores sem o controle das áreas terrestres que lhes são adjacentes e viceversa. O estabelecimento e a manutenção do controle das linhas de comunicação fluviais serão as prioridades do Poder Naval na OpRib, particularmente quando em operação conjunta. Portanto, para a MB, caracteriza-se pela forte associação à calha do rio. Normalmente, não se aprofunda no terreno. As unidades tarefas de fuzileiros navais,
-diferentemente do que ocorre em uma OpAnf, estão permanentemente ligadas aos navios e embarcações orgânicas, para assegurar o controle de margens. Não raro, unidades, ou partes destas, progridem de um ponto de terra a outro em embarcações rápidas, de acordo com a situação tática. Dessa forma, navios, aeronaves, embarcações e equipamentos da tropa devem ter compatibilidade. Embarcações, com frações da tropa, navegam permanentemente em defesa dos navios, principalmente durante o trânsito em locais estreitos das calhas dos rios e, reciprocamente, são cobertas pelo armamento dos navios. Aquelas realizam reconhecimento em pontos avançados da derrota ou breves incursões em terra. O helicóptero orgânico é outro elemento integrado. Assim, o adestramento para esta operação deve ser específico, diferindo consideravelmente de uma OpAnf.
+O conceito da operação fundamenta-se no princípio de que é inviável o controle de hidrovias interiores sem o controle das áreas terrestres que lhes são adjacentes e viceversa. O estabelecimento e a manutenção do controle das linhas de comunicação fluviais serão as prioridades do Poder Naval na OpRib, particularmente quando em operação conjunta. Portanto, para a MB, caracteriza-se pela forte associação à calha do rio. Normalmente, não se aprofunda no terreno. As unidades tarefas de fuzileiros navais, diferentemente do que ocorre em uma OpAnf, estão permanentemente ligadas aos navios e embarcações orgânicas, para assegurar o controle de margens. Não raro, unidades, ou partes destas, progridem de um ponto de terra a outro em embarcações rápidas, de acordo com a situação tática. Dessa forma, navios, aeronaves, embarcações e equipamentos da tropa devem ter compatibilidade. Embarcações, com frações da tropa, navegam permanentemente em defesa dos navios, principalmente durante o trânsito em locais estreitos das calhas dos rios e, reciprocamente, são cobertas pelo armamento dos navios. Aquelas realizam reconhecimento em pontos avançados da derrota ou breves incursões em terra. O helicóptero orgânico é outro elemento integrado. Assim, o adestramento para esta operação deve ser específico, diferindo consideravelmente de uma OpAnf.
 
 ## Página 30
 
@@ -418,7 +416,7 @@ e) os órgãos das Forças Singulares, das Forças Auxiliares, dos entes federat
 
 Portanto, a MB é responsável pela autodefesa antiaérea de suas bases e das instalações de interesse, abrangendo a defesa próxima, quando sob ataque direto. A execução da autodefesa antiaérea das bases e das estações navais caberá aos respectivos Comandantes, em estreita coordenação com o COMAE e outros Comandos, conforme o caso.
 
-A contribuição prioritária dos meios do Poder Naval em proveito do SISDABRA é a destruição dos NAÃe inimigos e da aviação inimiga, em suas bases ou em trânsito. Entretanto, nesse contexto, há outras formas de emprego:
+A contribuição prioritária dos meios do Poder Naval em proveito do SISDABRA é a destruição dos NAe inimigos e da aviação inimiga, em suas bases ou em trânsito. Entretanto, nesse contexto, há outras formas de emprego:
 
 ▪️na composição da Força Naval de Defesa Aeroespacial, de ativação não compulsória;
 
@@ -474,7 +472,7 @@ As MGE abrangem as ações efetivamente realizadas no decorrer de uma operação
 
 ### 3.5.3 - Ações de Guerra Cibernética 
 
-As ações de guerra cibernética são aquelas que envolvem o emprego de ferramentas disponíveis nos campos da Tecnologia da Informação e (Comunicações para desestabilizar os ativos de informação do inimigo e, também, para possibilitar a proteção dos ativos de informação de interesse. Essas ações ocorrem no espaço cibernético, um dos domínios operacionais, que permeia o terrestre, o marítimo e o aeroespacial, que são interdependentes.
+As ações de guerra cibernética são aquelas que envolvem o emprego de ferramentas disponíveis nos campos da Tecnologia da Informação e Comunicações para desestabilizar os ativos de informação do inimigo e, também, para possibilitar a proteção dos ativos de informação de interesse. Essas ações ocorrem no espaço cibernético, um dos domínios operacionais, que permeia o terrestre, o marítimo e o aeroespacial, que são interdependentes.
 
 O espaço cibernético é um espaço virtual, composto por ativos de informação conectados em redes ou não, onde as informações digitais transitam, são processadas e/ou armazenadas. 
 

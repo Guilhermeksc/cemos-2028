@@ -20,14 +20,21 @@ Nesse contexto, o emprego do Poder Naval para o apoio à política externa é um
 
 Dentre as formas de emprego do Poder Naval em tempo de paz, capazes de contribuir com a política externa do País, além das já descritas ações sob a égide de organizações internacionais, como as Operações de Paz (OpPaz), sobressaem-se:
 
-- realizar operações no exterior, com ação de presença em áreas de interesse;
-- mostrar bandeira com os meios navais, os quais atuam como “embaixadores” do Brasil em portos estrangeiros selecionados sob critérios político-estratégicos;
-- receber visita de navios de guerra de Marinhas amigas;
-- promover assistência técnico-militar com Forças Armadas (FA) estrangeiras, por meio de cursos, estágios, conclaves, simpósios, intercâmbios, inspeções técnicas ou administrativas, Grupos de Apoio Técnico (GAT), Missões de Assessoria Naval (MAN), dentre outras opções;
-- integrar reuniões de Estados-Maiores, Comitês Navais, Conferências Navais, dentre outros congêneres, nos níveis estratégico, operacional e tático;
-- realizar exercícios e jogos de guerra bilaterais e multilaterais, aprimorando a interoperabilidade com Marinhas amigas;
-- conduzir operações em razão de compromissos internacionais; e
-- empregar a Diplomacia Preventiva, que é um tipo de OpPaz que compreende as atividades destinadas a prevenir o surgimento de disputas entre as partes, a evitar que as disputas existentes degenerem em conflitos armados e a impedir que estes, uma vez eclodidos, se alastrem. Contempla as diferentes modalidades de atuação mencionadas no Capítulo VI da Carta das Nações Unidas (solução pacífica de controvérsias) e outras que venham a ser acordadas entre os interessados. Diferencia-se do emprego preventivo de tropas por se constituir em ação consentida, sem uso da força.
+▪️realizar operações no exterior, com ação de presença em áreas de interesse;
+
+▪️mostrar bandeira com os meios navais, os quais atuam como “embaixadores” do Brasil em portos estrangeiros selecionados sob critérios político-estratégicos;
+
+▪️receber visita de navios de guerra de Marinhas amigas;
+
+▪️promover assistência técnico-militar com Forças Armadas (FA) estrangeiras, por meio de cursos, estágios, conclaves, simpósios, intercâmbios, inspeções técnicas ou administrativas, Grupos de Apoio Técnico (GAT), Missões de Assessoria Naval (MAN), dentre outras opções;
+
+▪️integrar reuniões de Estados-Maiores, Comitês Navais, Conferências Navais, dentre outros congêneres, nos níveis estratégico, operacional e tático;
+
+▪️realizar exercícios e jogos de guerra bilaterais e multilaterais, aprimorando a interoperabilidade com Marinhas amigas;
+
+▪️conduzir operações em razão de compromissos internacionais; e
+
+▪️ empregar a Diplomacia Preventiva, que é um tipo de OpPaz que compreende as atividades destinadas a prevenir o surgimento de disputas entre as partes, a evitar que as disputas existentes degenerem em conflitos armados e a impedir que estes, uma vez eclodidos, se alastrem. Contempla as diferentes modalidades de atuação mencionadas no Capítulo VI da Carta das Nações Unidas (solução pacífica de controvérsias) e outras que venham a ser acordadas entre os interessados. Diferencia-se do emprego preventivo de tropas por se constituir em ação consentida, sem uso da força.
 
 ### 5.3 - OPERAÇÃO HUMANITÁRIA
 
@@ -42,11 +49,12 @@ A operação humanitária[1] é aquela realizada em outros países, em ambiente 
 A Ação Cívico-Social (ACISO) representa um conjunto de atividades de caráter temporário, episódico ou programado de assistência e auxílio às comunidades, promovendo o espírito cívico e comunitário dos cidadãos, no País ou no exterior, desenvolvidas pelas organizações militares das FA, nos diversos níveis de comando, com o aproveitamento dos recursos em pessoal, material e técnicas disponíveis, para resolver problemas imediatos e prementes. Além da natureza assistencial, também se insere como assunto civil e colabora nas operações psicológicas. Inclui-se nesse conjunto as operações de assistência hospitalar à população ribeirinha, conhecidas como ASSHOP, realizadas rotineiramente pela MB, com os Navios de Assistência Hospitalar distritais.
 
 As ASSHOP, em complemento às patrulhas navais realizadas pelos Navios-Patrulha Fluviais, constituem oportunidades para o incremento da capacitação operativa da força nos cenários amazônico e do Pantanal, pois possibilitam a realização das seguintes ações:
-- atualizar dados de inteligência operacional;
-- intensificar o bom relacionamento com a população, o qual será fundamental na ocorrência de conflito;
-- manter um elevado nível de capacitação na função logística saúde, principalmente, no que se refere ao atendimento das patologias regionais;
-- desenvolver a capacitação para a execução de manutenções e reparos em locais remotos; e
-- desenvolver a capacitação na navegação regional, que envolve peculiaridades específicas. 
+
+▪️atualizar dados de inteligência operacional;
+▪️intensificar o bom relacionamento com a população, o qual será fundamental na ocorrência de conflito;
+▪️manter um elevado nível de capacitação na função logística saúde, principalmente, no que se refere ao atendimento das patologias regionais;
+▪️desenvolver a capacitação para a execução de manutenções e reparos em locais remotos; e
+▪️desenvolver a capacitação na navegação regional, que envolve peculiaridades específicas. 
 
 Adicionalmente, os navios exercem ação de presença em rincões isolados, desestimulando atividades irregulares, e contribuem para a segurança da navegação, tanto por auxiliarem a fiscalização quanto por reportarem alterações fisiográficas, perigos à navegação e o estado dos auxílios à navegação.
 
@@ -102,19 +110,19 @@ Cabe às FA, como atribuição subsidiária geral, cooperar com o desenvolviment
 
 A MB coopera da seguinte forma:
 
-- implementando projetos e incentivando a construção de meios navais em estaleiros nacionais, de forma a contribuir para o fortalecimento da infraestrutura de construção naval brasileira e do aumento da oferta de empregos no setor;
+▪️implementando projetos e incentivando a construção de meios navais em estaleiros nacionais, de forma a contribuir para o fortalecimento da infraestrutura de construção naval brasileira e do aumento da oferta de empregos no setor;
 
-- executando tarefas relacionadas à Diretoria de Hidrografia e Navegação (DHN), especificamente aquelas que contribuem para a navegação segura, como a cartografia, a sinalização náutica e a meteorologia, possibilitando o acesso de embarcações a portos e terminais, em cujas localidades são intensificadas as atividades econômicas de comércio, transporte e turismo;
+▪️executando tarefas relacionadas à Diretoria de Hidrografia e Navegação (DHN), especificamente aquelas que contribuem para a navegação segura, como a cartografia, a sinalização náutica e a meteorologia, possibilitando o acesso de embarcações a portos e terminais, em cujas localidades são intensificadas as atividades econômicas de comércio, transporte e turismo;
 
-- desenvolvendo atividades de pesquisa no ambiente marinho e prestando apoio aos programas científicos brasileiros relacionados com o mar;
+▪️desenvolvendo atividades de pesquisa no ambiente marinho e prestando apoio aos programas científicos brasileiros relacionados com o mar;
 
-- absorvendo tecnologia, possibilitando a elevação de patamar tecnológico em áreas de interesse naval, com a possibilidade de arrasto tecnológico para a sociedade civil por aplicação dual;
+▪️absorvendo tecnologia, possibilitando a elevação de patamar tecnológico em áreas de interesse naval, com a possibilidade de arrasto tecnológico para a sociedade civil por aplicação dual;
 
-- conduzindo ou fomentando a pesquisa científica, a fim de possibilitar o desenvolvimento de novas tecnologias;
+▪️conduzindo ou fomentando a pesquisa científica, a fim de possibilitar o desenvolvimento de novas tecnologias;
 
-- conduzindo ou fomentando a pesquisa tecnológica, a fim de possibilitar a nacionalização de produtos de defesa, bem como o fortalecimento da Base Industrial de Defesa; e
+▪️conduzindo ou fomentando a pesquisa tecnológica, a fim de possibilitar a nacionalização de produtos de defesa, bem como o fortalecimento da Base Industrial de Defesa; e
 
-- intensificando o relacionamento e o desenvolvimento de pesquisas científicas e de projetos em parceria com o Exército Brasileiro, Força Aérea Brasileira, instituições de ensino superior e outras instituições públicas e privadas.
+▪️intensificando o relacionamento e o desenvolvimento de pesquisas científicas e de projetos em parceria com o Exército Brasileiro, Força Aérea Brasileira, instituições de ensino superior e outras instituições públicas e privadas.
 
 A MB deve participar de projetos de outros órgãos públicos que visem à melhoria de infraestrutura portuária e gestão da construção de portos. Aqui se incluem a supervisão ou a execução de sinalização náutica e batimetria em portos e hidrovias e a elaboração de projetos (e/ou gestão) de dragagem/derrocagem de portos e hidrovias.
 
@@ -140,9 +148,11 @@ PÚBLICA OU DE INTERESSE SOCIAL Cabe às FA, como ações de caráter geral a pa
 
 Cabe à Marinha, como atribuição subsidiária particular, orientar e controlar a Marinha Mercante e suas atividades correlatas, no que interessa à defesa nacional, conforme disciplina o inciso I do artigo 17 da Lei Complementar nº 97, de 9 de junho de 1999. Nesse contexto, as responsabilidades da MB, dentre outras, são as seguintes:
 
-- aprimoramento dos procedimentos previstos de Controle Naval do Tráfego Marítimo (CNTM) quanto à cooperação e orientação ao tráfego de embarcações, estabelecendo canais de comunicações permanentes com as companhias de navegação e com os navios no mar;
-- coordenação, em conjunto com os órgãos competentes do governo federal, dos assuntos relacionados com o emprego de navios mercantes em contribuição ao Poder Naval, bem como dos aspectos administrativos e operacionais que envolvam a organização de comboios como medida adotada para a proteção das linhas de comunicação marítimas; e
-- o Ensino Profissional Marítimo (EPM), destinado ao preparo técnico-profissional do pessoal a ser empregado pela Marinha Mercante e atividades correlatas, além do desenvolvimento do conhecimento no domínio da Tecnologia Marítima e das Ciências Náuticas, conforme previsão da Lei nº 7.573, de 23 de dezembro de 1986, regulamentada pelo Decreto nº 94.536, de 29 de junho de 1987. 
+▪️aprimoramento dos procedimentos previstos de Controle Naval do Tráfego Marítimo (CNTM) quanto à cooperação e orientação ao tráfego de embarcações, estabelecendo canais de comunicações permanentes com as companhias de navegação e com os navios no mar;
+
+▪️coordenação, em conjunto com os órgãos competentes do governo federal, dos assuntos relacionados com o emprego de navios mercantes em contribuição ao Poder Naval, bem como dos aspectos administrativos e operacionais que envolvam a organização de comboios como medida adotada para a proteção das linhas de comunicação marítimas; e
+
+▪️o Ensino Profissional Marítimo (EPM), destinado ao preparo técnico-profissional do pessoal a ser empregado pela Marinha Mercante e atividades correlatas, além do desenvolvimento do conhecimento no domínio da Tecnologia Marítima e das Ciências Náuticas, conforme previsão da Lei nº 7.573, de 23 de dezembro de 1986, regulamentada pelo Decreto nº 94.536, de 29 de junho de 1987. 
 
 Ressalta-se que o EPM, mediante as diversas modalidades de cursos, deverá contribuir para a consecução dos objetivos fixados pela Política Marítima Nacional, aprovada pelo Decreto nº 1.265, de 11 de outubro de 1994.
 
@@ -208,11 +218,11 @@ Conforme disposto no artigo 33 da LESTA, os acidentes e fatos da navegação, de
 
 No que se refere à segurança da navegação, cabe, ainda, à MB as seguintes tarefas:
 
-- realizar contínua evolução, implantação e manutenção dos auxílios à navegação sob sua responsabilidade, bem como fiscalização dos balizamentos sob a responsabilidade de outros órgãos, que orientam as embarcações nas AJB;
+▪️realizar contínua evolução, implantação e manutenção dos auxílios à navegação sob sua responsabilidade, bem como fiscalização dos balizamentos sob a responsabilidade de outros órgãos, que orientam as embarcações nas AJB;
 
-- realizar levantamentos hidrográficos, que resultam na confecção das cartas náuticas e suas atualizações divulgadas por meio de Avisos aos Navegantes, ferramentas necessárias e imprescindíveis para a navegação; e
+▪️realizar levantamentos hidrográficos, que resultam na confecção das cartas náuticas e suas atualizações divulgadas por meio de Avisos aos Navegantes, ferramentas necessárias e imprescindíveis para a navegação; e
 
-- elaborar e disseminar os Avisos Rádio-Náuticos e dos Boletins Meteorológicos relativos às áreas de responsabilidade do Brasil.
+▪️elaborar e disseminar os Avisos Rádio-Náuticos e dos Boletins Meteorológicos relativos às áreas de responsabilidade do Brasil.
 
 No que se refere à prevenção da poluição ambiental, além da LESTA, a Lei nº 9.966, de 28 de abril de 2000, conhecida por Lei do Óleo, de acordo com seu artigo 27, aduz que a AM, por intermédio de suas organizações competentes, é responsável pelas seguintes atribuições:
 
@@ -234,19 +244,19 @@ Cabe à Marinha, como atribuição subsidiária particular, contribuir para a fo
 
 Trata-se de um amplo trabalho, onde se apresentam algumas situações imprevisíveis, em virtude do desenvolvimento de novos projetos conduzidos por órgãos federais e que exigem participações tempestivas da MB. Seguem abaixo as contribuições previsíveis:
 
-- aprimoramento das relações funcionais com os órgãos públicos e privados que tratam das atividades da Marinha Mercante e assuntos correlatos, particularmente com a Agência Nacional de Transportes Aquaviários (ANTAQ), visando a uma perfeita integração de esforços e a evitar duplicidade de atribuições;
+▪️aprimoramento das relações funcionais com os órgãos públicos e privados que tratam das atividades da Marinha Mercante e assuntos correlatos, particularmente com a Agência Nacional de Transportes Aquaviários (ANTAQ), visando a uma perfeita integração de esforços e a evitar duplicidade de atribuições;
 
-- elaboração de propostas de atualização e aprimoramento da legislação relacionada ao Poder Marítimo e ao direito do mar;
+▪️elaboração de propostas de atualização e aprimoramento da legislação relacionada ao Poder Marítimo e ao direito do mar;
 
-- promoção da Política Marítima Nacional, mantendo-a atualizada e em harmonia com as demais políticas nacionais e coadunada com os atos internacionais que lhe são pertinentes;
+▪️promoção da Política Marítima Nacional, mantendo-a atualizada e em harmonia com as demais políticas nacionais e coadunada com os atos internacionais que lhe são pertinentes;
 
-- promoção da Política Nacional para Assuntos Antárticos (POLANTAR), buscando, para sua implementação, a efetiva participação de todos os órgãos com atribuições no desenvolvimento das atividades antárticas;
+▪️promoção da Política Nacional para Assuntos Antárticos (POLANTAR), buscando, para sua implementação, a efetiva participação de todos os órgãos com atribuições no desenvolvimento das atividades antárticas;
 
-- promoção da Política Nacional para os Recursos do Mar (PNRM), inclusive cooperando com os demais órgãos interessados que necessitem de apoio de meios flutuantes, de técnicos navais e de dados oceanográficos para o desempenho de serviços relacionados com a consecução dos objetivos dessa política;
+▪️promoção da Política Nacional para os Recursos do Mar (PNRM), inclusive cooperando com os demais órgãos interessados que necessitem de apoio de meios flutuantes, de técnicos navais e de dados oceanográficos para o desempenho de serviços relacionados com a consecução dos objetivos dessa política;
 
-- coordenação e participação nos seguintes programas: Programa de Observação dos Oceanos e Clima (GOOS-Brasil), Programa Antártico Brasileiro (PROANTAR), Programa de Avaliação do Potencial Sustentável e Monitoramento dos Recursos Vivos Marinhos (REVIMAR), Programa de Levantamento da Plataforma Continental Brasileira (LEPLAC), Programa de Mentalidade Marítima (PROMAR), Programa de Pesquisa Científica da Ilha da Trindade (PROTRINDADE), Programa Nacional de Boias (PNBOIA), Programa de Avaliação da Potencialidade Mineral da Plataforma Continental Jurídica Brasileira (REMPLAC), Programa de Prospecção e Exploração de Recursos Minerais da Área Internacional do Atlântico Sul e Equatorial (PROAREA) e Programa Arquipélago de São Pedro e São Paulo (PROARQUIPELAGO): e 
+▪️coordenação e participação nos seguintes programas: Programa de Observação dos Oceanos e Clima (GOOS-Brasil), Programa Antártico Brasileiro (PROANTAR), Programa de Avaliação do Potencial Sustentável e Monitoramento dos Recursos Vivos Marinhos (REVIMAR), Programa de Levantamento da Plataforma Continental Brasileira (LEPLAC), Programa de Mentalidade Marítima (PROMAR), Programa de Pesquisa Científica da Ilha da Trindade (PROTRINDADE), Programa Nacional de Boias (PNBOIA), Programa de Avaliação da Potencialidade Mineral da Plataforma Continental Jurídica Brasileira (REMPLAC), Programa de Prospecção e Exploração de Recursos Minerais da Área Internacional do Atlântico Sul e Equatorial (PROAREA) e Programa Arquipélago de São Pedro e São Paulo (PROARQUIPELAGO): e 
 
-- contribuição para a criação da mentalidade marítima na sociedade brasileira, enfatizando a importância do Poder Marítimo como um dos segmentos do Poder Nacional e realçando seu valor imprescindível para o desenvolvimento nacional.
+▪️contribuição para a criação da mentalidade marítima na sociedade brasileira, enfatizando a importância do Poder Marítimo como um dos segmentos do Poder Nacional e realçando seu valor imprescindível para o desenvolvimento nacional.
 
 O crescimento do Poder Marítimo, decorrente da correta aplicação das políticas acima, cria, em contrapartida, condições favoráveis para o desenvolvimento do Poder Naval.
 
@@ -256,11 +266,11 @@ O crescimento do Poder Marítimo, decorrente da correta aplicação das polític
 
 O Sistema de Proteção ao Programa Nuclear Brasileiro (SIPRON) foi inicialmente instituído pelo Decreto-Lei nº 1.809, de 7 de outubro de 1980 e passou a ser regido pela Lei nº 12.731, de 21 de novembro de 2012. Regulamentado pelo Decreto nº 2.210, de 22 de abril de 1997, o SIPRON tem as seguintes atribuições:
 
-- coordenar as ações para atender permanentemente as necessidades de proteção e segurança do Programa Nuclear Brasileiro;
+▪️coordenar as ações para atender permanentemente as necessidades de proteção e segurança do Programa Nuclear Brasileiro;
 
-- coordenar as ações para proteger os conhecimentos e a tecnologia detidos por órgãos, entidades, empresas, instituições de pesquisa e demais organizações públicas ou privadas que executem atividades para o Programa Nuclear Brasileiro; e
+▪️coordenar as ações para proteger os conhecimentos e a tecnologia detidos por órgãos, entidades, empresas, instituições de pesquisa e demais organizações públicas ou privadas que executem atividades para o Programa Nuclear Brasileiro; e
 
-- planejar e coordenar as ações, em situações de emergência nuclear, que tenham como objetivo proteger: as pessoas envolvidas na operação das instalações nucleares e na guarda, manuseio e transporte dos materiais nucleares; a população e o meio ambiente situados nas proximidades das instalações nucleares; e as instalações e materiais nucleares. Nesse contexto, cabe à MB, como órgão de apoio, quando acionado pelo SIPRON, em relação à segurança nuclear:
+▪️planejar e coordenar as ações, em situações de emergência nuclear, que tenham como objetivo proteger: as pessoas envolvidas na operação das instalações nucleares e na guarda, manuseio e transporte dos materiais nucleares; a população e o meio ambiente situados nas proximidades das instalações nucleares; e as instalações e materiais nucleares. Nesse contexto, cabe à MB, como órgão de apoio, quando acionado pelo SIPRON, em relação à segurança nuclear:
 
 a) proporcionar segurança ao transporte aquaviário de equipamento vital, de material especificado e de material nuclear, bem como segurança à navegação concernente àquele transporte; e
 
