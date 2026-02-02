@@ -4,23 +4,19 @@ BASE_DIR = Path(__file__).parent
 BASE_DIR.mkdir(parents=True, exist_ok=True)
 
 parametros_base = {
-    "2":   {"numero": 172, "assunto": "Capítulo II - Planejamento para Operações Conjuntas"},
-    "4":   {"numero": 173, "assunto": "Capítulo IV - Processo de Planejamento Conjunto (PPC)"},
-    "5":   {"numero": 174, "assunto": "Capítulo V - Exame de Situação Operacional"},
-    "6":   {"numero": 175, "assunto": "Capítulo VI - Elaboração de Plano de Ordens"},
-    "7":   {"numero": 176, "assunto": "Capítulo VII - Controle da Operação Planejada no Nível Operacional"},
-    "anexo":   {"numero": 177, "assunto": "Anexo D - Comunicação Social"},                    
+    "1":   {"cap": 1, "numero": 209, "assunto": "Capítulo 1 - Base Doutrinária da MB"},
+    "2":   {"cap": 2, "numero": 241, "assunto": "Capítulo 2 - Conceitos Doutrinários Estratégicos"},
 }
 
-id_base = 72
+id_base = 67
 
-def conteudo_c(numero: int, assunto: str) -> str:
-    return f"""Sua tarefa é ler integralmente o conteúdo do arquivo cap.md e criar um banco de questões de correlação entre colunas, no formato de associação lógica, conforme as instruções abaixo.
+def conteudo_c(cap: int, numero: int, assunto: str) -> str:
+    return f"""Sua tarefa é ler integralmente o conteúdo do arquivo cap{cap}.md e criar um banco de questões de correlação entre colunas no arquivo c{cap}.md, no formato de associação lógica, conforme as instruções abaixo.
 
 1. Cada questão deve conter:
 
 Coluna A: lista de conceitos, autores, eventos ou períodos.
-Coluna B: lista de definições, teorias, características ou fatos correspondentes.
+Coluna B: lista de definições, teorias, características ou fatos correspondentes.   
 2. As associações devem ser historicamente e conceitualmente corretas.
 3. A ordem da correspondência em resposta_correta deve ser alternada, evitando sempre:
    ```json
@@ -52,8 +48,8 @@ por exemplo:
 | {id_base}| Pág. 11 | {numero} | Relacione os conceitos geopolíticos com seus autores correspondentes. | ["Heartland", "Eurasianismo", "Destino Manifesto Russo"] | ["Mackinder", "Dugin", "March"] | {{"0": "0", "1": "1", "2": "2"}} | Cada conceito está corretamente associado ao pensador que o desenvolveu ou aplicou à Rússia. |  |  |
 """
 
-def conteudo_fc(numero: int, assunto: str) -> str:
-    return f"""Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap.md  para criar um banco de flash-cards, do seguinte modo:
+def conteudo_fc(cap: int, numero: int, assunto: str) -> str:
+    return f"""Sua tarefa é ler a lista de perguntas e respostas e verificar os arquivos cap{cap}.md  para criar um banco de flash-cards no arquivo fc{cap}.md, do seguinte modo:
 
     Criar exatamente 3 flashcards por página identificada no arquivo.
 
@@ -81,15 +77,15 @@ Instruções específicas:
 Exemplo de saída esperada:
 
 					
-| bibliografia_id | pergunta | resposta | prova | páginas | assunto |
-| {id_base} | Pergunta contextualizada | Resposta objetiva, conforme o item X.X do texto. |  | Pág. 11 | {assunto} |
+| bibliografia_id | pergunta | resposta | prova | páginas | assunto | justificativa | caveira |
+| {id_base} | Pergunta contextualizada | Resposta objetiva |  | Pág. 11 | {assunto} | Conforme o item X.X do texto. |  |
 
 
 deverá salvar o resultado em formato markdown
 """
 
-def conteudo_m(numero: int, assunto: str) -> str:
-    return f"""Sua tarefa é ler o conteúdo do arquivo cap.md e criar um banco de questões com 1 questão por página de múltipla escolha.
+def conteudo_m(cap: int, numero: int, assunto: str) -> str:
+    return f"""Sua tarefa é ler o conteúdo do arquivo cap{cap}.md e criar um banco de questões no arquivo m{cap}.md com 1 questão por página de múltipla escolha.
 
 Cada questão deve:
 1- Ser relevante e coerente com o conteúdo do capítulo.
@@ -123,8 +119,8 @@ Modelo de saída esperado
 
 """
 
-def conteudo_vf(numero: int, assunto: str) -> str:
-    return f"""Sua tarefa é ler o arquivo cap.md para criar um banco de questões v ou f, do seguinte modo:
+def conteudo_vf(cap: int, numero: int, assunto: str) -> str:
+    return f"""Sua tarefa é ler o arquivo cap{cap}.md para criar um banco de questões v ou f no arquivo vf{cap}.md, do seguinte modo:
 
 1. Quantidade
     Criar 3 assertivas por página.
@@ -162,13 +158,13 @@ for parte, dados in parametros_base.items():
         arquivo_parte = BASE_DIR / f"{parte}{s}.md"
 
         if s == "c":
-            arquivo_parte.write_text(conteudo_c(numero, assunto), encoding="utf-8")
+            arquivo_parte.write_text(conteudo_c(dados["cap"], numero, assunto), encoding="utf-8")
         elif s == "fc":
-            arquivo_parte.write_text(conteudo_fc(numero, assunto), encoding="utf-8")
+            arquivo_parte.write_text(conteudo_fc(dados["cap"], numero, assunto), encoding="utf-8")
         elif s == "m":
-            arquivo_parte.write_text(conteudo_m(numero, assunto), encoding="utf-8")
+            arquivo_parte.write_text(conteudo_m(dados["cap"], numero, assunto), encoding="utf-8")
         elif s == "vf":
-            arquivo_parte.write_text(conteudo_vf(numero, assunto), encoding="utf-8")
+            arquivo_parte.write_text(conteudo_vf(dados["cap"], numero, assunto), encoding="utf-8")
         else:
             raise ValueError(f"Sufixo desconhecido: {s}")
 

@@ -12,3 +12,5 @@ CREATE SCHEMA public;
 docker compose restart backend
 
 docker compose -f docker-compose.dev.yml up -d --build
+
+docker compose exec backend python manage.py report_observability

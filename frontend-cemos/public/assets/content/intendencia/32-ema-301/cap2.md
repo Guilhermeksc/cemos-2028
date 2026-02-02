@@ -1,6 +1,8 @@
-# Capítulo 2 CONCEITOS DOUTRINÁRIOS ESTRATÉGICOS
+# Capítulo 2 - Conceitos Doutrinários Estratégicos
 
-## 2.1. LÓGICA DO DESENVOLVIMENTO DOUTRINÁRIO NA MB
+## Página 27
+
+### 2.1. LÓGICA DO DESENVOLVIMENTO DOUTRINÁRIO NA MB
 
 O encadeamento lógico dos conceitos doutrinários estratégicos é relevante pois agrega rastreabilidade, instrumentalidade e utilidade ao Planejamento Estratégico da MB, à condução dos processos de Planejamento de Força e ao desenvolvimento doutrinário decorrente nos níveis operacional e tático.
 
@@ -14,11 +16,11 @@ Considerando o contexto de uma Marinha multifacetada, como a MB, uma vez definid
 
 — o dimensionamento de recursos de toda ordem para fazer frente a essas demandas. Para esse dimensionamento e configuração da Força, analisa-se a MB pela perspectiva dos Elementos de Força, que encerram as capacidades que produzirão os Efeitos do Poder Naval associados às TBPN e aos CAPN.
 
-## Página 28
-
 O desenvolvimento doutrinário da MB respeita essa lógica e é realizado, sequencial e pragmaticamente, em ciclos de discussões e trabalhos realizados pelos Órgãos Coordenadores de Doutrina da Força (EMA, ComOpNav e CGCFN), com o concurso da EGN e outros colaboradores, no âmbito do Comitê Permanente de Desenvolvimento Doutrinário da MB (CPDD).
 
-## 2.2. ANÁLISE DA MISSÃO DA MB
+## Página 28
+
+### 2.2. ANÁLISE DA MISSÃO DA MB
 
 A análise da Missão da MB e sua evolução histórica são o ponto de partida da lógica de desenvolvimento doutrinário na MB. Elas possibilitam a compreensão de uma série de aspectos relacionados aos conceitos doutrinários estratégicos abordados neste Capítulo.
 
@@ -88,7 +90,7 @@ b) Emprego - a utilização efetiva das Capacidades do Poder Naval no exercício
 
 O entendimento da Missão da MB contribui, entre outras coisas, para a identificação dos CAPN e das TBPN, elementos essenciais da lógica doutrinária abordada a seguir.
 
-## 2.3. CAMPOS DE ATUAÇÃO DO PODER NAVAL (CAPN)
+### 2.3. CAMPOS DE ATUAÇÃO DO PODER NAVAL (CAPN)
 
 Os CAPN definem as possibilidades de emprego da Força em alto nível, considerando as Capacidades Estratégicas e Efeitos do Poder Naval e abrangem atividades correlatas ao emprego do Poder Naval para consecução dos OBE, constantes da EDM.
 
@@ -156,7 +158,7 @@ Destaca-se que as atribuições subsidiárias previstas em Lei referem-se às �
 
 Prosseguindo com a Lógica Doutrinária, o próximo artigo descreve a elaboração do conceito de Capacidades Estratégicas do Poder Naval, ferramenta útil para o desenvolvimento doutrinário em complemento à definição clássica das Características do Poder Naval.
 
-## 2.4. CAPACIDADES ESTRATÉGICAS DO PODER NAVAL
+### 2.4. CAPACIDADES ESTRATÉGICAS DO PODER NAVAL
 
 O termo Capacidade, conforme mencionado no art. 2.2, é definido como a aptidão de um conjunto de meios que realiza um conjunto de tarefas para atingir efeito(s) sob determinadas condições. Nesse sentido, entende-se que um efeito, ao ser atingido, produz ou alcança um resultado ou situação favorável em relação a um objetivo ou interesse.
 
@@ -198,7 +200,7 @@ Figura 6 - Capacidades Estratégicas do Poder Naval
 
 ![alt text](figura6.png)
 
-## 2.5. TAREFAS BÁSICAS DO PODER NAVAL
+### 2.5. TAREFAS BÁSICAS DO PODER NAVAL
 
 As TBPN são definidas como tarefas essenciais da MB e são expressas na forma de amplas ações que geram amplos efeitos, os quais são alcançados por meio das Capacidades Estratégicas da Força, apresentadas anteriormente.
 
@@ -234,7 +236,7 @@ A partir da identificação criteriosa das TBPN, é possível associar quais Tar
 
 ## Página 41
 
-## 2.6. POSTURAS ESTRATÉGICAS
+### 2.6. POSTURAS ESTRATÉGICAS
 
 Figura 8 - Relação entre os Campos de Atuação e as Tarefas Básicas do Poder Naval
 
@@ -256,7 +258,7 @@ Figura 9 - Posturas Estratégicas da Força Naval
 
 ## Página 42
 
-## 2.7. EFEITOS DO PODER NAVAL
+### 2.7. EFEITOS DO PODER NAVAL
 
 Os Efeitos do Poder Naval são os propósitos que, ao serem atingidos, produzem ou alcançam um resultado, ou situação favorável, em relação a um objetivo ou interesse, mediante conjugação de capacidades que contribuem diretamente para superar desafios.
 
