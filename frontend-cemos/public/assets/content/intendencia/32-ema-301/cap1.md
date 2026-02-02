@@ -62,7 +62,7 @@ Esta publicação, de acordo com as normas estabelecidas no EMA-411-Manual do Si
 
 ## Página 11
 
-### Capítulo 1 BASE DOUTRINÁRIA DA MB
+### Capítulo 1 - Base Doutrinária da MB
 
 Os Fundamentos Doutrinários visam orientar, no nível estratégico, o desenvolvimento doutrinário da MB nos níveis operacional e tático, conforme previsto nas Normas para o Sistema Doutrinário da Marinha (EMA-304).
 
@@ -186,7 +186,7 @@ Compreendem as águas interiores e os espaços marítimos brasileiros nos quais 
 
 Entende-se por águas interiores os rios, baías, lagos, lagoas e demais águas compreendidas entre a costa e as linhas de base retas, a partir de onde se mede o mar territorial. Essa definição abrange cerca de 60.000 km de hidrovias navegáveis.
 
-### 1.4.3. Área de Responsabilidade de Busca e Salvamento (SAR!) Brasileira
+### 1.4.3. Área de Responsabilidade de Busca e Salvamento (SAR) Brasileira
 
 Decorrente de compromissos assumidos por intermédio de convenções internacionais”? das quais o País é Estado parte, relacionadas com atividades de busca e salvamento, o Brasil possui extensa área marítima do Oceano Atlântico sob sua responsabilidade, que abrange toda a costa brasileira e se estende na direção leste, até o meridiano 10ºW, conforme apresentado na figura a seguir.
 

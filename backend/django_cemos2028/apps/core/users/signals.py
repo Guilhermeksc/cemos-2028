@@ -197,7 +197,8 @@ def create_default_admin(sender, **kwargs):
             'oliveira',
             'pires',
             'celso',
-            'dhayane'
+            'dhayane',
+            'mariano'
         ]
 
         # Cria os novos usuários
