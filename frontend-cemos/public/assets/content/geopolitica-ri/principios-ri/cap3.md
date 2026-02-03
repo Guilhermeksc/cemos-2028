@@ -1,10 +1,13 @@
 
 # Capítulo 3 - Perspectivas concorrentes: Como pensar as relações internacionais em termos teóricos
 
-■ Qual o valor de estudar relações internacionais de uma perspectiva teórica?
-■ Por que os estudiosos dão atenção ao problema dos níveis de análise?
-■ Quais são os principais fundamentos teóricos do realismo e do neorrealismo? Do liberalismo e do institucionalismo neoliberal? Do radicalismo? Do construtivismo?
-■ Escolha um evento internacional contemporâneo qualquer e analise-o segundo diferentes perspectivas teóricas.
+**■ Qual o valor de estudar relações internacionais de uma perspectiva teórica?**
+
+**■ Por que os estudiosos dão atenção ao problema dos níveis de análise?**
+
+**■ Quais são os principais fundamentos teóricos do realismo e do neorrealismo? Do liberalismo e do institucionalismo neoliberal? Do radicalismo? Do construtivismo?**
+
+**■ Escolha um evento internacional contemporâneo qualquer e analise-o segundo diferentes perspectivas teóricas.**
 
 ## Página 90
 
@@ -48,7 +51,7 @@ As teorias de relações internacionais assumem uma variedade de formas. Neste C
 
 Por que os Estados Unidos e seus parceiros de coalizão invadiram o Iraque em 2003? A lista de explanações possíveis pode ser organizada de acordo com três níveis de análise (Figura 3.1). Dividir a análise da política internacional em níveis ajuda a orientar nossas perguntas e sugere o tipo adequado de evidências a explorar. Prestar atenção nos níveis de análise nos ajuda a fazer deduções lógicas e permite-nos explorar todas as categorias de explanação.
 
-![niveis_analise](niveis_analise.png)
+![niveis_analise](img/niveis_analise.png)
 
 FIGURA 3.1 Níveis de Análise em Relações Internacionais
 
@@ -58,25 +61,27 @@ Em uma categorização usada pela primeira vez por Kenneth Waltz e ampliada por 
 
 O Quadro 3.1 categoriza possíveis explicações da Guerra do Iraque de acordo com esses três níveis de análise. É claro que fatores de todos os três níveis provavelmente contribuíram para a decisão dos Estados Unidos de invadir o Iraque em 2003. A finalidade da teoria é nos apontar para uma compreensão de quais dessas várias explanações serão necessárias e suficientes para a invasão.
 
-Quadro 3.1 
-**Possíveis explanações para a invasão do Iraque pelos Estados Unidos em 2003, por nível de análise**
+**Quadro 3.1 - Possíveis explanações para a invasão do Iraque pelos Estados Unidos em 2003, por nível de análise**
 
-Nível individual 
-1. Saddam Hussein era um líder cruel, que perpetrava atrocidades contra seu próprio povo e desafiava o Ocidente.
-2. Saddam Hussein era irracional — tanto que não capitulou diante da superioridade da coalizão Estados Unidos/Grã-Bretanha.
-3. Saddam Hussein e o Iraque já estiveram na mira de George W. Bush e seus assessores em 2001.
+**Nível individual**
 
-Nível de Estado
-4. Os Estados Unidos devem proteger sua segurança nacional, e as armas de destruição em massa do Iraque representavam uma ameaça à segurança americana.
-5. Expulsar o talibã do Afeganistão foi apenas o primeiro passo na guerra contra o terrorismo; a invasão do Iraque, conhecido por seu apoio ao terrorismo, foi o segundo.
-6. Os Estados Unidos devem assegurar um suprimento estável de petróleo, e o Iraque possui as segundas maiores reservas do mundo.
-7. Os Estados Unidos não devem permitir que Estados que apoiam o terrorismo ou grupos terroristas tenham acesso a armas de destruição.
-8. É do interesse nacional americano instalar um regime árabe progressista na região.
+▪️1. Saddam Hussein era um líder cruel, que perpetrava atrocidades contra seu próprio povo e desafiava o Ocidente.
+▪️2. Saddam Hussein era irracional — tanto que não capitulou diante da superioridade da coalizão Estados Unidos/Grã-Bretanha.
+▪️3. Saddam Hussein e o Iraque já estiveram na mira de George W. Bush e seus assessores em 2001.
 
-Nível internacional
-9. As resoluções das Nações Unidas condenando o Iraque tinham de ser impostas, de modo a manter a legitimidade da organização.
-10. Um sistema internacional unipolar em condições privilegiadas de reagir às ameaças percebidas à estabilidade do sistema, e a invasão dos Estados Unidos foi uma manifestação disso.
-11. Há um imperativo moral internacional de intervenção humanitária – depor líderes ruins e instalar regimes democráticos.
+**Nível de Estado**
+
+▪️4. Os Estados Unidos devem proteger sua segurança nacional, e as armas de destruição em massa do Iraque representavam uma ameaça à segurança americana.
+▪️5. Expulsar o talibã do Afeganistão foi apenas o primeiro passo na guerra contra o terrorismo; a invasão do Iraque, conhecido por seu apoio ao terrorismo, foi o segundo.
+▪️6. Os Estados Unidos devem assegurar um suprimento estável de petróleo, e o Iraque possui as segundas maiores reservas do mundo.
+▪️7. Os Estados Unidos não devem permitir que Estados que apoiam o terrorismo ou grupos terroristas tenham acesso a armas de destruição.
+▪️8. É do interesse nacional americano instalar um regime árabe progressista na região.
+
+**Nível internacional**
+
+▪️9. As resoluções das Nações Unidas condenando o Iraque tinham de ser impostas, de modo a manter a legitimidade da organização.
+▪️10. Um sistema internacional unipolar em condições privilegiadas de reagir às ameaças percebidas à estabilidade do sistema, e a invasão dos Estados Unidos foi uma manifestação disso.
+▪️11. Há um imperativo moral internacional de intervenção humanitária – depor líderes ruins e instalar regimes democráticos.
 
 Embora a maioria dos estudiosos reconheça a utilidade de se considerar os níveis de análise, há divergências com relação ao número de níveis que seriam úteis para explicar os eventos. A maioria dos cientistas políticos faz uso de entre três e seis níveis. Embora o acréscimo de novas camadas possa proporcionar um contexto mais descritivo, torna também a explicação e a previsão mais difíceis. A diferenciação mais importante a se fazer no plano teórico deve ser entre os níveis internacional e interno. Neste livro, usaremos os três que mencionamos: o individual, o do Estado e o do sistema internacional.
 
@@ -358,12 +363,13 @@ Em 2009, o sentimento popular e político havia mudado. O número relativamente 
 
 Para análise crítica
 
-1. Em que medida as relações do Canadá com os Estados Unidos afetam suas estratégias de política externa?
-2. O Canadá apoiou a política dos Estados Unidos no Afeganistão, mas não sua política no Iraque. Que teoria melhor explica a diferença nas posições canadenses?
+▪️1. Em que medida as relações do Canadá com os Estados Unidos afetam suas estratégias de política externa?
 
-3. Fatores domésticos ajudam a explicar as opções do Canadá em termos de política externa. Como?
+▪️2. O Canadá apoiou a política dos Estados Unidos no Afeganistão, mas não sua política no Iraque. Que teoria melhor explica a diferença nas posições canadenses?
 
-4. Que explicação da posição do Canadá você considera mais convincente? Por quê?
+▪️3. Fatores domésticos ajudam a explicar as opções do Canadá em termos de política externa. Como?
+
+▪️4. Que explicação da posição do Canadá você considera mais convincente? Por quê?
 
 ## Página 119
 

@@ -1,12 +1,17 @@
 
 # Capítulo 2 - O contexto histórico das relações internacionais contemporâneas
 
-*■ Quais períodos históricos parecem ter exercido maior influência sobre o desenvolvimento das relações internacionais?*
-*■ Quais são as origens históricas do Estado?*
-*■ Por que os estudiosos das relações internacionais têm os Tratados de Vestfália como marco de referência?*
-*■ Quais são as origens históricas do sistema europeu de equilíbrio de poder?*
-*■ Como a Guerra Fria pôde ser ao mesmo tempo uma série de confrontações entre os Estados Unidos e a União Soviética e uma “longa paz”?*
-*■ Que eventos-chave moldaram o mundo pós-Guerra Fria e a primeira década do novo milênio?*
+**■ Quais períodos históricos parecem ter exercido maior influência sobre o desenvolvimento das relações internacionais?**
+
+**■ Quais são as origens históricas do Estado?**
+
+**■ Por que os estudiosos das relações internacionais têm os Tratados de Vestfália como marco de referência?**
+
+**■ Quais são as origens históricas do sistema europeu de equilíbrio de poder?**
+
+**■ Como a Guerra Fria pôde ser ao mesmo tempo uma série de confrontações entre os Estados Unidos e a União Soviética e uma “longa paz”?**
+
+**■ Que eventos-chave moldaram o mundo pós-Guerra Fria e a primeira década do novo milênio?**
 
 ## Página 37
 
@@ -90,7 +95,7 @@ A taxa de crescimento populacional disparou e o comércio se intensificou com o 
 
 Em primeiro lugar, as elites políticas europeias estavam unidas em seu medo da revolução das massas. De fato, no Congresso de Viena, o diplomata austríaco Conde Klemens von Metternich (1773–1859), arquiteto do Concerto da Europa, estava convencido de que a Europa seria mais bem administrada se voltasse à era do absolutismo. As elites sonhavam com vastas alianças, capazes de reunir os líderes europeus no combate à revolução das bases. Na primeira metade do século XIX, essas alianças não foram inteiramente bem-sucedidas. Na década de 1830, Grã-Bretanha e França aliaram-se contra as três potências do Leste (Prússia, Rússia e Áustria). Em 1848, todas as cinco foram confrontadas pelas massas e a demanda por reformas. No entanto, na segunda metade do século, os líderes europeus agiram em consonância e evitaram a difusão de levantes das massas de um Estado para outro. Em 1870, em meio ao tumulto que se seguiu à derrota da França na Guerra Franco-Prussiana, o líder Napoleão III foi rapidamente isolado, por receio de uma revolução que nunca ocorreu. Assim, o medo da revolta das bases uniu os líderes europeus, reduzindo a probabilidade de guerras entre os Estados.
 
-![europa1648_2](europa1648.png)
+![europa1648_2](img/europa1648.png)
 
 Em segundo lugar, dois dos maiores conflitos de interesses enfrentados pelos principais Estados europeus foram travados dentro de territórios próximos em termos culturais, não entre eles: a unificação de Alemanha e Itália. Nos dois casos, a unificação contava com poderosos defensores e oponentes entre as potências europeias. Por exemplo, os britânicos apoiaram a unificação da Itália, possibilitando a anexação, por esta, de Nápoles e da Sicília. A Áustria, por sua vez, preocupada com a crescente força da Prússia, não fez oposição ativa ao que poderia perfeitamente ir de encontro a seus interesses nacionais — a criação de dois vizinhos de tamanho considerável, a partir da reunião de uma miríade de unidades independentes. A unificação germânica seria admitida pela Rússia desde que seus interesses na Polônia fossem respeitados; contou também com o apoio da classe média dominante na Grã-Bretanha, já que esta imaginava que uma Alemanha mais forte seria um potencial contrapeso à França. Assim, uma vez que as energias e recursos dos povos alemão e italiano estavam concentrados na luta por constituir Estados territoriais contíguos unificados, e como o impacto exato dos Estados recém-unificados sobre o equilíbrio de poder europeu era desconhecido, evitou-se a guerra generalizada.
 
@@ -148,7 +153,7 @@ Fatos-chave na europa do século XIX ♦ De revoluções surgem dois conceitos: 
 
 Europa, C. 1878
 
-![europa1878](europa1878.png)
+![europa1878](img/europa1878.png)
 
 ### Ruptura: consolidação de alianças
 
@@ -169,7 +174,7 @@ Entretanto, **sob o sistema de alianças, uma vez disparado o tiro fatal, os Est
 
 O final da Primeira Guerra Mundial testemunhou mudanças críticas nas relações internacionais. **Em primeiro lugar, três impérios europeus estavam exauridos** e, por fim, entraram em colapso ao longo ou perto do fim da Primeira Guerra Mundial. Com eles foi-se também a ordem social conservadora da Europa; em seu lugar, veio à tona uma proliferação de nacionalismos. A Rússia saiu da guerra em 1917, quando a revolução explodiu em seu território. O czar foi deposto e substituído não só por um novo líder (Vladimir I. Lênin) mas por uma nova ideologia, que teria profundas implicações por todo o restante do século XX. Os Impérios Austro-húngaro e Otomano também se esfacelaram. A Áustria-Hungria foi substituída pela Áustria, Hungria, Tchecoslováquia, parte da Iugoslávia e parte da Romênia. O Império Otomano também foi reconfigurado. Tendo gradativamente perdido o poder ao longo de todo o século XIX, a derrota representou também a derrocada final dos otomanos. A Arábia insurgiu-se contra o domínio turco, e forças britânicas ocuparam Jerusalém e Bagdá. Uma Turquia reduzida surgiu em seu lugar.
 
-![europa1914](europa1914.png)
+![europa1914](img/europa1914.png)
 
 O fim dos impérios contribuiu para acelerar e intensificar os nacionalismos. Com efeito, um dos Quatorze Pontos do Presidente Woodrow Wilson no tratado que pôs fim à Primeira Guerra Mundial pregava a autodeterminação, isto é, o direito dos grupos nacionais à autonomia de governo. O nacionalismo desses vários grupos (austríacos e húngaros, por exemplo) tinha sido estimulado por inovações tecnológicas na indústria da impressão e por um público em massa, agora alfabetizado. Agora era fácil e barato publicar material na profusão de diferentes línguas europeias e, assim, apresentar diferentes interpretações da História e da vida nacional. Todavia, na realidade muitas dessas entidades recém-criadas não possuíam nem histórias comuns nem históricos políticos compatíveis, nem eram economicamente viáveis.
 
@@ -205,7 +210,7 @@ O fascismo germânico foi único no modo como mobilizou o apoio das massas ao Es
 
 Em 1940, Hitler pôs seu grande plano em ação e realizou uma sucessão de conquistas rápidas, que culminaram com a queda da França em maio. No verão e no outono, depois de ver repetidamente frustrados os seus esforços para coagir a Grã-Bretanha a permanecer neutra, o governo alemão, conhecido como Terceiro Reich, preparou-se para a invasão. Deu-se então a Batalha da Grã-Bretanha; travada quase inteiramente no ar, seria vencida pelos britânicos graças a uma combinação de extrema coragem, desenvoltura e sorte. Hitler viu-se obrigado a voltar-se para o Leste com a Grã-Bretanha hostil às costas. Em junho de 1941, o Terceiro Reich empreendeu a mais ambiciosa invasão terrestre da história: a Operação Barbarossa — a longamente planejada mas, no fim das contas, malfadada invasão da União Soviética. O ataque de surpresa levou os soviéticos a unir forças com britânicos e franceses.
 
-![europa1939](europa1939.png)
+![europa1939](img/europa1939.png)
 
 O poder do fascismo — em suas versões alemã, italiana e japonesa — levou a uma desconfortável aliança entre a União Soviética comunista e os liberais Estados Unidos, Grã-Bretanha e França, entre outros (os Aliados). Sua intenção era contrapor-se às potências do Eixo (Alemanha, Itália e Japão), se necessário, pela força. Assim, durante a Segunda Guerra Mundial, os que faziam frente ao Eixo agiram em uníssono, independente de suas divergências ideológicas.
 
@@ -253,7 +258,7 @@ Embora esses mal-entendidos não tenham provocado a Guerra Fria, certamente adic
 
 **A terceira consequência do fim da Segunda Guerra Mundial foi o colapso do sistema colonial,** fenômeno que poucos foram capazes de prever. A derrota do Japão e da Alemanha acarretou o imediato desmantelamento de seus respectivos impérios coloniais. As demais potências colonialistas viram-se instigadas pelo endosso da Carta das Nações Unidas ao princípio da autodeterminação nacional, depararam-se com a realidade do enfraquecimento de sua posição econômica e política e foram confrontadas pelos movimentos locais pela independência — movimentos equipados com armas de pequeno porte remanescentes da Segunda Guerra Mundial, liderados por comandantes talentosos (que adotaram estratégias de defesa indireta, tais como a “revolucionária” guerra de guerrilha) e eram inspirados, pelos ideais nacionalistas, aos mais profundos sacrifícios. As potências vitoriosas concederam a independência às suas antigas colônias, começando pela da Índia, assinada pela Grã-Bretanha em 1947. A França precisou sofrer uma derrota militar na Indochina, no início da década de 1950, para consentir na descolonização daquela parte do mundo. Também os Estados africanos tornaram-se independentes entre 1957 e 1963. Embora o processo de descolonização tenha ocorrido ao longo de um extenso período, foi uma transição relativamente pacífica. **Os europeus, juntamente com seus aliados americanos, estavam mais interessados em lutar contra o comunismo do que em conservar o controle de seus territórios coloniais.**
 
-"[europa_guerra_fria](europa_guerra_fria.png)
+"[europa_guerra_fria](img/europa_guerra_fria.png)
 
 A quarta consequência foi a percepção de que as diferenças entre as duas superpotências emergentes seriam dirimidas indiretamente, em teatros de terceiros, em vez de confrontação direta entre as protagonistas. Bastava a “perda” de qualquer aliado em potencial, ainda que pobre ou distante, para deflagrar um processo acumulativo conducente a uma significativa modificação do equilíbrio de poder. Com a proliferação dos Estados descolonizados recém-independentes no mundo pós-guerra, as superpotências lançaram-se à disputa pela influência sobre esses novos atores como modo de projetar seu poder em áreas fora de suas esferas de influência tradicionais. **Assim, a Guerra Fria resultou na globalização do conflito para todos os continentes. As relações internacionais tornaram-se verdadeiramente globais.**
 
@@ -488,7 +493,7 @@ O destino final do que agora se entende como a “Primavera Árabe” de 2011 ai
 
 Todos os Estados no novo milênio se defrontam com duas grandes questões: (1) vai se tornar mais fácil ou mais difícil de abordar as questões transnacionais da primeira década — religião, crime organizado, doenças transmissíveis, meio ambiente e terrorismo? (2) Para que fins os Estados devem canalizar suas energias nacionais, militares, econômicas, culturais, diplomáticas e políticas? Será que a contenção ou extirpação do terrorismo vai se tornar o novo objetivo nacional dos Estados? Ou será impedir uma catástrofe ambiental em escala global? Ou encontrar uma maneira de superar a pobreza? Não se sabe ainda que metas nacionais e internacionais virão a dominar o cenário político no decorrer do século XXI, e que países — Estados Unidos, China, Brasil, Rússia, África do Sul, União Europeia — assumirão a liderança.
 
-![primaveraarabe](primaveraarabe.png)
+![primaveraarabe](img/primaveraarabe.png)
 
 Primavera Árabe, 2011
 

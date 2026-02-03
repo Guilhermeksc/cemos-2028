@@ -1,11 +1,16 @@
 # Capítulo 4 - O sistema internacional
 
-■ Por que o conceito de sistema é um poderoso dispositivo descritivo e explanatório? 
-■ Quais são os conceitos empregados pelos realistas para analisar o sistema internacional?
-■ Como um teórico liberal entende o sistema internacional?
-■ Como os radicais veem o sistema internacional? E os construtivistas?
-■ Como cada uma das diferentes perspectivas teóricas explica a mudança no sistema internacional?
-■ Quais são os problemas e/ou deficiências da concepção de sistema internacional?
+**■ Por que o conceito de sistema é um poderoso dispositivo descritivo e explanatório?**
+
+**■ Quais são os conceitos empregados pelos realistas para analisar o sistema internacional?**
+
+**■ Como um teórico liberal entende o sistema internacional?**
+
+**■ Como os radicais veem o sistema internacional? E os construtivistas?**
+
+**■ Como cada uma das diferentes perspectivas teóricas explica a mudança no sistema internacional?**
+
+**■ Quais são os problemas e/ou deficiências da concepção de sistema internacional?**
 
 ## Página 124
 
@@ -25,11 +30,11 @@ As noções dos realistas políticos sobre o sistema internacional e suas caract
 
 Para caracterizar o sistema internacional, os realistas lançam mão da dimensão da polaridade. Polaridade de sistema refere-se à distribuição de recursos entre os Estados do sistema internacional, mediante a contabilização do número de “polos” (Estados ou grupos de Estados) em que o poder se concentra. Há ao menos três tipos de polaridade de sistema: multipolaridade, bipolaridade e unipolaridade (Figura 4.1).
 
-![sistema_multipolar](sistema_multipolar.png)
+![sistema_multipolar](img/sistema_multipolar.png)
 
-![sistema_multipolar](sistema_bipolar.png)
+![sistema_multipolar](img/sistema_bipolar.png)
 
-![sistema_multipolar](sistema_unipolar.png)
+![sistema_multipolar](img/sistema_unipolar.png)
 
 FIGURA 4.1 Polaridade no sistema internacional
 
@@ -169,7 +174,7 @@ A estrutura do sistema internacional é descrita pelos radicais em termos de sua
 
 Diferentes sistemas internacionais apresentam graus variados de estratificação.Historicamente, a estratificação do sistema é generalizada. Segundo algumas medições, várias das potências mundiais (Estados Unidos, Japão, Alemanha, França, GrãBretanha, Rússia e China) respondem por cerca de metade do Produto Interno Bruto (PIB) mundial total, ao passo que a outra metade é compartilhada pelos mais de 180 Estados restantes (Figura 4.2). Da estratificação do poder e dos recursos decorre a divisão entre os privilegiados, caracterizados sem muito rigor como o Norte, e os desprovidos, em grande parte localizados no Sul. Essa distinção é vital para nossa discussão sobre a economia política internacional, encontrada no Capítulo 9.
 
-![estratitifacao_si](estratitifacao_si.png)
+![estratitifacao_si](img/estratitifacao_si.png)
 
 ### FIGURA 4.2 Estratificação do sistema internacional
 
@@ -254,10 +259,13 @@ China não se envolve em atividades militares longe de seu litoral. Diferentemen
 
 Para análise crítica
 
-1. Por que interessa à China apoiar o atual sistema internacional, mesmo sem dominálo?
-2. Como um realista ofensivo reagiria à explicação dada pelos chineses a respeito do papel exercido por seu país no sistema internacional?
-3. A China vem defendendo, de maneira consistente, a soberania e a não ingerência nos assuntos internos dos Estados. Como essa postura favorece o papel da China no cenário internacional?
-4. Os construtivistas afirmam que mudanças nas normas levam a mudanças sistêmicas. Será que a China aprendeu novas normas? Ou estará apenas agindo em seu próprio interesse, como sugerem os realistas?
+▪️1. Por que interessa à China apoiar o atual sistema internacional, mesmo sem dominálo?
+
+▪️2. Como um realista ofensivo reagiria à explicação dada pelos chineses a respeito do papel exercido por seu país no sistema internacional?
+
+▪️3. A China vem defendendo, de maneira consistente, a soberania e a não ingerência nos assuntos internos dos Estados. Como essa postura favorece o papel da China no cenário internacional?
+
+▪️4. Os construtivistas afirmam que mudanças nas normas levam a mudanças sistêmicas. Será que a China aprendeu novas normas? Ou estará apenas agindo em seu próprio interesse, como sugerem os realistas?
 
 ## Página 144
 
@@ -285,11 +293,17 @@ De todas as abordagens teóricas, a realista e a radical são as que dão maior 
 Estados e responsáveis pelas decisões relacionadas com a política externa agem dentro dos limites do sistema internacional. No próximo Capítulo estudaremos o Estado, os desafios por ele enfrentados e modelos de tomada de decisões na esfera estatal.
 
 ## Para reflexão 
-1. O sistema internacional é análogo aos sistemas físicos ou biológicos? Que similaridades há entre eles? E que diferenças?
-2. Realistas, liberais, radicais e construtivistas encaram a soberania de diferentes formas. Explique.
-3. A visão realista do sistema internacional costuma ser criticada por seu foco excessivo no status quo. Até que ponto essa crítica é válida? Essa é uma característica desejável ou não?
-4. Neorrealistas e neoliberais concordam em relação a uma determinada característica básica do sistema internacional. Em que eles divergem? Qual a importância da dissensão?
-5. Após o colapso da União Soviética, certos teóricos alegaram que o marxismo tinha sido desacreditado e estava, a rigor, morto. É verdade? Como o radicalismo pode nos ajudar a explicar certas características do sistema internacional?
-6. Em que tipo de sistema internacional você gostaria de viver? Por quê?
+
+▪️1. O sistema internacional é análogo aos sistemas físicos ou biológicos? Que similaridades há entre eles? E que diferenças?
+
+▪️2. Realistas, liberais, radicais e construtivistas encaram a soberania de diferentes formas. Explique.
+
+▪️3. A visão realista do sistema internacional costuma ser criticada por seu foco excessivo no status quo. Até que ponto essa crítica é válida? Essa é uma característica desejável ou não?
+
+▪️4. Neorrealistas e neoliberais concordam em relação a uma determinada característica básica do sistema internacional. Em que eles divergem? Qual a importância da dissensão?
+
+▪️5. Após o colapso da União Soviética, certos teóricos alegaram que o marxismo tinha sido desacreditado e estava, a rigor, morto. É verdade? Como o radicalismo pode nos ajudar a explicar certas características do sistema internacional?
+
+▪️6. Em que tipo de sistema internacional você gostaria de viver? Por quê?
 
 Palavras-chave estratificação (p. 95) multilateralismo (p. 93) Norte (p. 95) Nova Ordem Econômica Internacional (NOEI) (p. 97) sistema (p. 85) sociedade internacional (p. 100) Sul (p. 95)

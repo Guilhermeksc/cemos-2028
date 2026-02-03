@@ -1,11 +1,18 @@
 # Capítulo 8 - Guerra e rivalidade
 
-■ O que faz da segurança um valor preeminente?
-■ Como os níveis de análise nos ajudam a explicar as causas da guerra?
-■ A guerra interestatal está se tornando obsoleta? Por quê? ■ Quais são as características centrais dos conflitos assimétricos?
-■ Há diferenças entre o terrorismo da última década e as formas anteriores de terrorismo? Em caso positivo, quais?
-■ Quando uma guerra é “justa”? Como, se é que é possível, podemos lutar de maneira “justa”?
-■ Quais são as diferenças entre a abordagem realista e a liberal do gerenciamento da insegurança?
+**■ O que faz da segurança um valor preeminente?**
+
+**■ Como os níveis de análise nos ajudam a explicar as causas da guerra?**
+
+**■ A guerra interestatal está se tornando obsoleta? Por quê?**
+
+**■ Quais são as características centrais dos conflitos assimétricos?**
+
+**■ Há diferenças entre o terrorismo da última década e as formas anteriores de terrorismo? Em caso positivo, quais?**
+
+**■ Quando uma guerra é “justa”? Como, se é que é possível, podemos lutar de maneira “justa”?**
+
+**■ Quais são as diferenças entre a abordagem realista e a liberal do gerenciamento da insegurança?**
 
 ## Página 264
 

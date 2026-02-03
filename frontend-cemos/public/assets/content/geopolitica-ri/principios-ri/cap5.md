@@ -1,12 +1,18 @@
 # Capítulo 5 - O Estado
 
-■ Como se define o Estado, o principal ator nas relações internacionais?
-■ Quais são as diferentes visões do Estado sustentadas pelas várias perspectivas teóricas?
-■ Como é medido o poder do Estado?
-■ Quais são os métodos que os Estados usam para exercitar seu poder?
-■ O comportamento das democracias é diferente daquele dos Estados que não são democráticos?
-■ Que modelos nos ajudam a entender como os Estados tomam decisões relacionadas com política externa?
-■ Quais são os maiores desafios do Estado atualmente? 
+**■ Como se define o Estado, o principal ator nas relações internacionais?**
+
+**■ Quais são as diferentes visões do Estado sustentadas pelas várias perspectivas teóricas?**
+
+**■ Como é medido o poder do Estado?**
+
+**■ Quais são os métodos que os Estados usam para exercitar seu poder?**
+
+**■ O comportamento das democracias é diferente daquele dos Estados que não são democráticos?**
+
+**■ Que modelos nos ajudam a entender como os Estados tomam decisões relacionadas com política externa?**
+
+**■ Quais são os maiores desafios do Estado atualmente?** 
 
 ## Página 150
 
@@ -16,10 +22,13 @@ Quando pensamos em relações internacionais, o Estado é central. Grande parte 
 
 Para uma entidade ser considerada um Estado, quatro condições jurídicas fundamentais devem ser cumpridas. 
 
-    1. A primeira é que um Estado deve ter uma base territorial, com fronteiras definidas em termos geográficos. 
-    2. A segunda é que, dentro de suas fronteiras, deve residir uma população estável. 
-    3. Terceiro, deve haver um governo ao qual essa população deve obediência. 
-    4. Por fim, um Estado tem de gozar do reconhecimento diplomático dos demais Estados.
+▪️1. A primeira é que um Estado deve ter uma base territorial, com fronteiras definidas em termos geográficos. 
+
+▪️2. A segunda é que, dentro de suas fronteiras, deve residir uma população estável. 
+
+▪️3. Terceiro, deve haver um governo ao qual essa população deve obediência. 
+
+▪️4. Por fim, um Estado tem de gozar do reconhecimento diplomático dos demais Estados.
 
 Esses critérios jurídicos não são absolutos, e estão sujeitos às mais diversas interpretações. Grande parte dos Estados possui uma base territorial, embora as fronteiras exatas não raro sejam objeto de disputa. Enquanto não se concedeu à Autoridade Palestina certa medida de controle sobre a Cisjordânia e Gaza, por exemplo, a Palestina não dispunha de uma base territorial. Entretanto, havia recebido o status de observadora especial em organismos internacionais e era considerada quase um Estado. Em 2012, o território foi promovido a observador sem direito a voto na Assembleia Geral da ONU. A maioria dos Estados conta com uma população estável, mas comunidades migrantes e povos nômades cruzam fronteiras — caso, por exemplo, dos povos massai, do Quênia e da Tanzânia, sem serem detectados pelas autoridades. A maior parte dos Estados dispõe de algum tipo de estrutura institucional para governança, mas nem sempre é possível saber se o povo a obedece ou não — por falta de informações ou em virtude de uma situação problemática, porque a legitimidade institucional do governo está sob constante questionamento. Um Estado não precisa ter uma forma de governo determinada, mas a maioria de seu povo deve reconhecer a legitimidade do governo. Em 2010, o povo do Egito informou ao restante da comunidade internacional que não reconhecia mais a legitimidade do governo liderado por Hosni Mubarak, o que desencadeou uma série de manifestações e acabou levado à queda de seu governo. Por fim, outros Estados devem reconhecer o Estado em termos diplomáticos; porém, é preciso o reconhecimento de quantos Estados para cumprir esse critério? A República do Transkei – minúsculo pedaço de terra recortado da África do Sul – foi reconhecida por apenas um Estado, a própria África do Sul. Tal iniciativa mostrou-se insuficiente para conferir ao Transkei o status de Estado, e o território logo voltou a ser incorporado à África do Sul.
 
@@ -31,7 +40,7 @@ A definição de Estado difere da de nação. **Uma nação é um grupo de pesso
 
 ## Página 152
 
-![regiao_central](regiao_central.png)
+![regiao_central](img/regiao_central.png)
 
 Certas nações, como Dinamarca e Itália, constituíram seus próprios Estados. Essa coincidência entre Estado e nação, o **Estado-nação**, é o fundamento da autodeterminação nacional, a ideia de que povos que compartilhem determinada identidade como nação têm o direito de determinar como e sob que condições devem viver. Outras nações encontram-se dispersas por vários Estados. Por exemplo, os alemães residiam — e vivem ainda — não só na Alemanha unificada, mas também nos confins do Leste Europeu; os somalis vivem no Quênia, Etiópia e Djibuti, não só na Somália. Outros Estados, ainda, têm dentro de suas fronteiras diferentes nações – Índia, Rússia e África do Sul são bons exemplos. Nos Estados Unidos e no Canadá, várias nações indígenas americanas distintas fazem uma parte do Estado, assim como diversas comunidades de imigrantes. Estado e nação nem sempre coincidem. Nesses casos, porém, com o passar do tempo, foi sendo forjada uma identidade e nacionalidade comuns, mesmo na ausência de similaridades religiosas, étnicas ou culturais. No caso dos Estados Unidos, os valores nacionais que refletem ideias comuns são expressos em rituais públicos que incluem o Juramento de Fidelidade, o hino nacional e o engajamento voluntário de cada um na respectiva comunidade. Estados são entidades complexas e, ao mesmo tempo, em constante transformação.
 

@@ -1,10 +1,14 @@
 # Capítulo 11 - Questões transnacionais: meio ambiente, saúde mundial e crime
 
-■ O que caracteriza o meio ambiente, a saúde e o crime como questões transnacionais?
-■ Como os conceitos de bens coletivos e sustentabilidade nos ajudam a pensar sobre as questões ambientais?
-■ Como as questões ambientais podem acarretar conflitos armados? ■ Que fatores fazem das doenças transmissíveis uma questão transnacional particularmente difícil de administrar?
-■ Que tecnologias facilitam a propagação do crime organizado transnacional?
-■ Como as teorias de relações internacionais incorporam um entendimento das questões transnacionais, e que orientações tais teorias podem apresentar a fim de, eventualmente, reverter danos ao meio ambiente global, ameaças à saúde mundial e o crime transnacional?
+**■ O que caracteriza o meio ambiente, a saúde e o crime como questões transnacionais?**
+
+**■ Como os conceitos de bens coletivos e sustentabilidade nos ajudam a pensar sobre as questões ambientais?**
+
+**■ Como as questões ambientais podem acarretar conflitos armados? ■ Que fatores fazem das doenças transmissíveis uma questão transnacional particularmente difícil de administrar?**
+
+**■ Que tecnologias facilitam a propagação do crime organizado transnacional?**
+
+**■ Como as teorias de relações internacionais incorporam um entendimento das questões transnacionais, e que orientações tais teorias podem apresentar a fim de, eventualmente, reverter danos ao meio ambiente global, ameaças à saúde mundial e o crime transnacional?**
 
 ## Página 403
 

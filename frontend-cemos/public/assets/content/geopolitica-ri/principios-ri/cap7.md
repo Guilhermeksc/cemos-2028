@@ -1,11 +1,16 @@
 # Capítulo 7 - Organizações intergovernamentais, direito internacional e organizações não governamentais
 
-■ Por que são formadas organizações intergovernamentais?
-■ Qual é a contribuição de organizações intergovernamentais como as Nações Unidas à paz e à segurança internacionais?
-■ Como a União Europeia mudou ao longo do tempo?
-■ Qual é o papel do direito internacional nas relações internacionais?
-■ Quais são os papéis desempenhados pelas organizações não governamentais?
-■ Que perspectivas rivais os teóricos de relações internacionais trazem para sua análise das organizações intergovernamentais, organizações não governamentais e direito internacional?
+**■ Por que são formadas organizações intergovernamentais?**
+
+**■ Qual é a contribuição de organizações intergovernamentais como as Nações Unidas à paz e à segurança internacionais?**
+
+**■ Como a União Europeia mudou ao longo do tempo?**
+
+**■ Qual é o papel do direito internacional nas relações internacionais?**
+
+**■ Quais são os papéis desempenhados pelas organizações não governamentais?**
+
+**■ Que perspectivas rivais os teóricos de relações internacionais trazem para sua análise das organizações intergovernamentais, organizações não governamentais e direito internacional?**
 
 
 ## Página 219
