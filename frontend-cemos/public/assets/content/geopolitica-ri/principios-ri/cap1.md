@@ -6,9 +6,9 @@
 **■ Qual é a contribuição do behaviorismo?**
 **■ Que abordagens alternativas vêm desafiar as abordagens tradicionais? Por quê?**
 
-## Relações internacionais na vida diária 
-
 ## Página 22
+
+## Relações internacionais na vida diária 
 
 Abra a porta do seu armário e dê uma olhada nas etiquetas das suas roupas. Foram feitas por trabalhadores da Índia, Vietnã, China, El Salvador e Turquia. Passe pelos balcões de carne ou peixe no supermercado. Nosso alimento é cultivado no México e nas Filipinas, abatido na Nova Zelândia e recolhido nas fazendas de peixes da Tailândia e da China. Veja as etiquetas dos produtos da sua casa. O tapete que você comprou tem a certificação indiana Rugmark, que atesta que não foi usado trabalho infantil na sua confecção. Entre seus colegas de classe há gente nascida na Europa, Ásia, América Latina e África, e outros tantos alunos de sua escola já estudaram no exterior, nessas mesmas regiões. As pessoas da sua cidade, seja ela pequena ou grande, já endossaram a realização de eleições livres no Irã, expressaram seu apoio a Israel e participaram de protestos silenciosos contra a opressão na Coreia do Norte e no Zimbábue. Acesse a internet, o Facebook ou o Twitter e leia sobre as guerras em curso na Síria e no Mali; sobre as negociações em torno da mudança climática e sobre o problema do tráfico sexual; e sobre o empenho dos cidadãos de pequenos Estados insulares do Pacífico Sul, da Islândia e da Louisiana em se preparar para os efeitos de inundações costeiras causadas pelo aquecimento global. Lugares e acontecimentos que já foram considerados remotos hoje parecem estar ao alcance da mão.
 
@@ -159,7 +159,7 @@ Hoje, nenhuma pergunta importante em relações internacionais pode ser respondi
 
 ## Página 33
 
-Resumindo: O sentido das relações internacionais 
+#### Resumindo: O sentido das relações internacionais 
 
 Como nós, na qualidade de estudantes, podemos começar a atribuir algum sentido aos eventos políticos internacionais em nossa vida cotidiana? Como os estudiosos das relações internacionais nos ajudam a perceber o sentido do mundo à nossa volta? Neste Capítulo, apresentamos as principais teorias das relações internacionais, incluindo as abordagens realista, liberal, radical e construtivista. Essas teorias constituem um referencial para perguntar e responder questões fundamentais desse campo. Para respondê-las, os estudiosos de relações internacionais recorrem a muitas outras disciplinas, entre elas a História, a filosofia, a psicologia comportamental e estudos críticos (Tabela 1.2). A disciplina das relações internacionais é pluralista e eclética.
 

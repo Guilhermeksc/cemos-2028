@@ -38,7 +38,7 @@ A <u>**Guerra dos Trinta Anos devastou a Europa**</u>. Iniciada como uma disputa
 
 O teórico mais importante da época foi o economista escocês **Adam Smith**📌 (1723–1790). Em *"Uma inquirição sobre a natureza e causas da riqueza das nações"*, Smith argumentou que a noção de mercado deveria aplicar-se a todas as ordens sociais. **Deve-se permitir que os indivíduos** — trabalhadores, proprietários, investidores, consumidores — **trabalhem em favor de seus próprios interesses, sem ser tolhidos por regulamentações do Estado**. Segundo Smith, cada indivíduo age racionalmente para maximizar seus próprios interesses. Quando grupos de indivíduos trabalham em prol de seus interesses pessoais, aumenta a eficiência econômica e mais bens e serviços são produzidos e consumidos. Na esfera mais ampla, incrementam-se, analogamente, a riqueza do Estado e a do sistema internacional. <u>O que faz o sistema funcionar é a assim chamada mão do mercado: quando os indivíduos trabalham em prol de seus interesses pessoais racionais, o sistema (o mercado) funciona sem esforço</u>. Porém, outras ideias do período também promoveriam mudanças drásticas na governança nos séculos XIX, XX e XXI.
 
-![europa1648](europa1648.png)
+![europa1648](img/europa1648.png)
 
 ## Página 41
 
