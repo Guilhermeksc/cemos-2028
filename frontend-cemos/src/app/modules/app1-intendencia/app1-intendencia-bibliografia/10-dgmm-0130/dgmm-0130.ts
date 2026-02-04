@@ -24,6 +24,9 @@ export class Dgmm0130 implements OnInit {
   contentPath: string = 'assets/content/intendencia/10-dgmm-0130';
   fileNames: string[] = [
     'cap1.md',
+    'cap2.md',
+    'cap8.md',
+    'cap9.md',            
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';

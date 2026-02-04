@@ -21,9 +21,14 @@ import { LivroIndividual } from '../../../../components/livro-individual/livro-i
 })
 export class Sgm201 implements OnInit {
   // Configuração do LivroIndividual
-  contentPath: string = 'assets/content/intendencia/13-sgm201';
+  contentPath: string = 'assets/content/intendencia/13-sgm-201';
   fileNames: string[] = [
     'cap1.md',
+    'cap6.md',    
+    'cap7.md',
+    'cap13.md',
+    'cap15.md',
+    'cap16.md',                
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
