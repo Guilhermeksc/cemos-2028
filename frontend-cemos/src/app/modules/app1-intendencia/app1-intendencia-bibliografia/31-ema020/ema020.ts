@@ -23,12 +23,14 @@ export class Ema020 implements OnInit {
   // Configuração do LivroIndividual
   contentPath: string = 'assets/content/intendencia/31-ema020';
   fileNames: string[] = [
-    'cap1.md',
+    'cap2.md',
+    'cap3.md',
+    'cap4.md',
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
-  
+
   ngOnInit() {
     // Inicialização do componente
   }
-  }
+}
