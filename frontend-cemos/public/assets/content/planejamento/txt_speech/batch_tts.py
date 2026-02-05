@@ -1,4 +1,5 @@
 from __future__ import annotations
+import random
 
 import argparse
 from pathlib import Path
@@ -60,6 +61,18 @@ SUBSTITUICOES_FONETICAS = {
 
 SPEAKER_1_VOICE = "pt-BR-Chirp3-HD-Iapetus"
 SPEAKER_2_VOICE = "pt-BR-Chirp3-HD-Laomedeia"
+
+def carregar_vozes_chirp_hd(
+    client: texttospeech.TextToSpeechClient,
+    genero: texttospeech.SsmlVoiceGender,
+) -> list[str]:
+    voices = client.list_voices(language_code="pt-BR").voices
+    return [
+        v.name
+        for v in voices
+        if v.name.startswith("pt-BR-Chirp3-HD")
+        and v.ssml_gender == genero
+    ]
 
 
 def aplicar_fonetica(texto: str) -> str:
@@ -139,7 +152,6 @@ def carregar_linhas(
         linha_num = start + offset
         yield linha_num, pergunta, resposta
 
-
 def gerar_audios(
     arquivo_entrada: Path,
     start: int,
@@ -150,6 +162,16 @@ def gerar_audios(
     client = texttospeech.TextToSpeechClient()
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    vozes_masculinas = carregar_vozes_chirp_hd(
+        client, texttospeech.SsmlVoiceGender.MALE
+    )
+    vozes_femininas = carregar_vozes_chirp_hd(
+        client, texttospeech.SsmlVoiceGender.FEMALE
+    )
+
+    if not vozes_masculinas or not vozes_femininas:
+        raise RuntimeError("Nenhuma voz Chirp3-HD disponível para pt-BR.")
+
     for linha_num, pergunta, resposta in carregar_linhas(arquivo_entrada, start, end):
         nome_pergunta = output_dir / f"linha_{linha_num:04d}_speaker1.mp3"
         nome_resposta = output_dir / f"linha_{linha_num:04d}_speaker2.mp3"
@@ -159,7 +181,7 @@ def gerar_audios(
                 client=client,
                 texto=pergunta,
                 nome_arquivo=str(nome_pergunta.relative_to(BASE_DIR)),
-                voz=SPEAKER_1_VOICE,
+                voz=random.choice(vozes_masculinas),
                 genero=texttospeech.SsmlVoiceGender.MALE,
             )
 
@@ -168,7 +190,7 @@ def gerar_audios(
                 client=client,
                 texto=resposta,
                 nome_arquivo=str(nome_resposta.relative_to(BASE_DIR)),
-                voz=SPEAKER_2_VOICE,
+                voz=random.choice(vozes_femininas),
                 genero=texttospeech.SsmlVoiceGender.FEMALE,
             )
 
@@ -208,11 +230,11 @@ def parse_args() -> argparse.Namespace:
 
 if __name__ == "__main__":
     # Parâmetros hardcoded (ajuste conforme necessário)
-    START = 19
-    END = 21
+    START = 1
+    END = 5
     INPUT_FILE = BASE_DIR / "tabela.xlsx"
     OUTPUT_DIR = BASE_DIR / "audios"
-    MODO = "respostas"  # "perguntas", "respostas" ou "ambos"
+    MODO = "ambos"  # "perguntas", "respostas" ou "ambos"
 
     gerar_audios(
         arquivo_entrada=INPUT_FILE,
