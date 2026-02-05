@@ -24,11 +24,16 @@ export class Md40M01 implements OnInit {
   contentPath: string = 'assets/content/intendencia/11-md-40-m-01';
   fileNames: string[] = [
     'cap1.md',
+    'cap2.md',
+    'cap3.md',
+    'cap4.md',
+    'anexo_a.md',
+    'anexo_b.md'
   ];
   backRoute: string = '/home/app1-intendencia/bibliografia';
   backLabel: string = 'Bibliografia';
-  
+
   ngOnInit() {
     // Inicialização do componente
   }
-  }
+}
