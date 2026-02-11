@@ -2,7 +2,7 @@
 
 ## Página 1
 
-A Primeira Guerra Mundial, o evento mais significativo do século, não foi apenas traumática enquanto durou, mas tam­bém teve efeitos profundos: ajudou a impulsionar a Revolução Russa; configurou-se como uma das causas da depressão financeira dos anos 1930, o maior baque econômico na história até então; estimulou, direta e indiretamente, a ascensão de Hitler e da Alemanha nazista, ajudando a provocar a Segunda Grande Guerra; acabou com o apogeu da Europa Ocidental e seu domínio mundial; e também acelerou a as­ censão dos Estados Unidos e da União Soviética. Durante esse período, um estadista britânico elaborou um plano para a Palestina que ainda hoje provoca tensões no Oriente Médio.
+A Primeira Guerra Mundial, o evento mais significativo do século, não foi apenas traumática enquanto durou, mas tam­bém teve efeitos profundos: ajudou a impulsionar a Revolução Russa; configurou-se como uma das causas da depressão financeira dos anos 1930, o maior baque econômico na história até então; estimulou, direta e indiretamente, a ascensão de Hitler e da Alemanha nazista, ajudando a provocar a Segunda Grande Guerra; acabou com o apogeu da Europa Ocidental e seu domínio mundial; e também acelerou a as­censão dos Estados Unidos e da União Soviética. Durante esse período, um estadista britânico elaborou um plano para a Palestina que ainda hoje provoca tensões no Oriente Médio.
 
 **Boa parte da inventividade do século foi estimulada pelas necessidaeds geradas pelas duas grandes guerras.**
 
