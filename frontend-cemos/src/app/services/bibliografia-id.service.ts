@@ -22,7 +22,8 @@ export interface MateriaBibliografia {
   providedIn: 'root'
 })
 export class BibliografiaIdService {
-  private readonly apiUrl = `${environment.apiUrl}/perguntas/api`;
+  // Usar endpoint do app bibliografia, não do app perguntas
+  private readonly apiUrl = `${environment.apiUrl}/bibliografia/api`;
 
   constructor(private http: HttpClient) {}
 

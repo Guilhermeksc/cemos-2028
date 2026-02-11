@@ -1,0 +1,147 @@
+<div class="pdf-slides-container" [class.fullscreen]="isFullscreen">
+  
+  <!-- Loading Spinner -->
+  <div class="loading-overlay" *ngIf="isLoading">
+    <mat-spinner diameter="60"></mat-spinner>
+    <p>Carregando slides...</p>
+  </div>
+
+  <!-- Error Message -->
+  <div class="error-overlay" *ngIf="error && !isLoading">
+    <mat-icon>error_outline</mat-icon>
+    <p>{{ error }}</p>
+  </div>
+
+  <!-- Folder List View -->
+  <div class="pdf-list-view" *ngIf="showFolderList && !isLoading && !error">
+    <div class="pdf-list-header">
+      <h2>Selecione uma Pasta</h2>
+      <button mat-icon-button class="close-viewer-button" (click)="closeViewer()" aria-label="Fechar visualizador">
+        <mat-icon>close</mat-icon>
+      </button>
+      <p>{{ pdfFolders.length }} pasta(s) disponível(is)</p>
+      <small class="cache-info">Os slides carregados ficam salvos no cache do navegador</small>
+    </div>
+    <div class="pdf-list-grid">
+      <button 
+        *ngFor="let folder of pdfFolders"
+        class="pdf-item-button folder-button"
+        [class.empty-folder]="!folder.files || folder.files.length === 0"
+        (click)="selectFolder(folder)"
+        [class.selected]="selectedFolder?.path === folder.path"
+        [disabled]="!folder.files || folder.files.length === 0">
+        <mat-icon>{{ (!folder.files || folder.files.length === 0) ? 'folder_open' : 'folder' }}</mat-icon>
+        <span class="pdf-name">{{ folder.name }}</span>
+        <span class="file-count">
+          {{ (!folder.files || folder.files.length === 0) ? 'Vazia' : folder.files.length + ' arquivo(s)' }}
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- PDF List View -->
+  <div class="pdf-list-view" *ngIf="showPdfList && !isLoading && selectedFolder">
+    <div class="pdf-list-header">
+      <button mat-icon-button class="back-folder-button" (click)="backToFolderList()" aria-label="Voltar para pastas">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      <button mat-icon-button class="close-viewer-button" (click)="closeViewer()" aria-label="Fechar visualizador">
+        <mat-icon>close</mat-icon>
+      </button>
+      <h2>{{ selectedFolder.name }}</h2>
+      <p>{{ selectedFolder.files.length }} arquivo(s) disponível(is)</p>
+      <small class="cache-info">Os slides carregados ficam salvos no cache do navegador</small>
+    </div>
+    <div class="pdf-list-grid">
+      <button 
+        *ngFor="let fileName of getSortedPdfFiles()"
+        class="pdf-item-button"
+        (click)="selectPdf(fileName)"
+        [class.selected]="selectedPdfName === fileName">
+        <mat-icon>picture_as_pdf</mat-icon>
+        <span class="pdf-name">{{ fileName }}</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slides Container -->
+  <div 
+    class="slides-wrapper" 
+    *ngIf="!isLoading && !error && !showPdfList && slideImages.length > 0"
+    #slideContainer>
+    
+    <div 
+      class="slide" 
+      *ngFor="let slideImage of slideImages; let i = index"
+      [class.active]="i === currentSlideIndex"
+      [attr.data-slide-index]="i">
+      <div class="slide-content">
+        <img [src]="slideImage" [alt]="'Slide ' + (i + 1)" />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Navigation Controls -->
+  <div class="navigation-controls" *ngIf="!isLoading && !error && !showFolderList && !showPdfList && slideImages.length > 0">
+    
+    <!-- Back Button -->
+    <button 
+      class="nav-button nav-button-back"
+      (click)="backToPdfList()"
+      aria-label="Voltar para lista">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <!-- Previous Button -->
+    <button 
+      class="nav-button nav-button-prev"
+      (click)="previousSlide()"
+      [disabled]="!canGoPrevious()"
+      [class.disabled]="!canGoPrevious()"
+      aria-label="Slide anterior">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <!-- Next Button -->
+    <button 
+      class="nav-button nav-button-next"
+      (click)="nextSlide()"
+      [disabled]="!canGoNext()"
+      [class.disabled]="!canGoNext()"
+      aria-label="Próximo slide">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+
+  </div>
+
+  <!-- Info and Fullscreen Controls -->
+  <div class="top-controls" *ngIf="!isLoading && !error && !showFolderList && !showPdfList && slideImages.length > 0">
+    
+    <!-- Folder and PDF Name -->
+    <div class="pdf-name-display" *ngIf="selectedFolder && selectedPdfName">
+      <span class="folder-name">{{ selectedFolder.name }}</span>
+      <span class="separator">/</span>
+      <span class="file-name">{{ selectedPdfName }}</span>
+    </div>
+
+    <!-- Slide Counter -->
+    <div class="slide-counter">
+      {{ getCurrentSlideInfo() }}
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="control-buttons-group">
+      <!-- Fullscreen Button -->
+      <button 
+        class="control-button fullscreen-button"
+        (click)="isFullscreen ? exitFullscreen() : enterFullscreen()"
+        [matTooltip]="isFullscreen ? 'Sair da tela cheia' : 'Tela cheia'"
+        aria-label="Tela cheia">
+        <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
+      </button>
+    </div>
+
+  </div>
+
+</div>

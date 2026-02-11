@@ -152,14 +152,14 @@
         >
           {{ isGeneratingPDF ? 'Gerando PDF...' : 'Salvar PDF' }}
         </button>
-        <button 
+        <!-- <button 
           class="btn btn-pdf-simulado"
           (click)="downloadSimuladoAsPDF()"
           [disabled]="simuladoQuestions.length === 0 || isGeneratingPDF"
           [attr.aria-label]="isGeneratingPDF ? 'Gerando PDF do simulado' : 'PDF simulado'"
         >
           {{ isGeneratingPDF ? 'Gerando PDF...' : 'PDF simulado' }}
-        </button>
+        </button> -->
         <button 
           class="btn btn-nova gerar-nova-prova-btn"
           (click)="gerarNovaProva()"
@@ -235,13 +235,13 @@
               >
                 Texto de apoio
               </button>
-              <button 
+              <!-- <button 
                 class="btn btn-omit"
                 (click)="omitirQuestao(question)"
                 [disabled]="isOmitindoQuestao(question)"
               >
                 {{ isOmitindoQuestao(question) ? 'Omitindo...' : 'Omitir' }}
-              </button>
+              </button> -->
               <button
                 class="btn btn-edit"
                 *ngIf="isAdmin"

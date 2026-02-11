@@ -39,7 +39,7 @@ class PerguntaMultiplaSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaMultiplaModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova', 'caveira',
             'pergunta', 'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'resposta_correta_display', 'justificativa_resposta_certa',
             'tipo', 'tipo_display', 'markdown_file', 'markdown_highlights'
@@ -65,7 +65,7 @@ class PerguntaVFSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaVFModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova', 'caveira',
             'pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'resposta_correta', 'resposta_correta_display',
             'justificativa_resposta_certa', 'tipo', 'tipo_display', 'markdown_file', 'markdown_highlights'
         ]
@@ -86,7 +86,7 @@ class PerguntaCorrelacaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = [
-            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova',
+            'id', 'bibliografia', 'bibliografia_titulo', 'paginas', 'assunto', 'assunto_titulo', 'caiu_em_prova', 'ano_prova', 'caveira',
             'pergunta', 'coluna_a', 'coluna_b', 'resposta_correta',
             'justificativa_resposta_certa', 'tipo', 'tipo_display', 'markdown_file', 'markdown_highlights'
         ]
@@ -127,6 +127,7 @@ class PerguntaResumoSerializer(serializers.Serializer):
     assunto_titulo = serializers.CharField(allow_null=True)
     caiu_em_prova = serializers.BooleanField()
     ano_prova = serializers.IntegerField()
+    caveira = serializers.BooleanField()
 
 
 
@@ -134,28 +135,65 @@ class PerguntaMultiplaCreateUpdateSerializer(PerguntaMultiplaSerializer):
     """Serializer específico para criação e edição de pergunta múltipla escolha"""
     class Meta(PerguntaMultiplaSerializer.Meta):
         fields = [
-            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'justificativa_resposta_certa', 'markdown_file', 'markdown_highlights'
         ]
+    
+    def create(self, validated_data):
+        """Cria uma nova pergunta múltipla escolha com ID gerado automaticamente"""
+        from django.db.models import Max
+        
+        # Obter o maior ID existente e adicionar 1
+        max_id = PerguntaMultiplaModel.objects.aggregate(max_id=Max('id'))['max_id']
+        next_id = (max_id or 0) + 1
+        
+        # Criar instância com o ID gerado
+        validated_data['id'] = next_id
+        return super().create(validated_data)
 
 
 class PerguntaVFCreateUpdateSerializer(PerguntaVFSerializer):
     """Serializer específico para criação e edição de pergunta V/F"""
     class Meta(PerguntaVFSerializer.Meta):
         fields = [
-            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira', 'pergunta',
             'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa', 'markdown_file', 'markdown_highlights'
         ]
+    
+    def create(self, validated_data):
+        """Cria uma nova pergunta VF com ID gerado automaticamente"""
+        from django.db.models import Max
+        from .models import PerguntaVFModel
+        
+        # Obter o maior ID existente e adicionar 1
+        max_id = PerguntaVFModel.objects.aggregate(max_id=Max('id'))['max_id']
+        next_id = (max_id or 0) + 1
+        
+        # Criar instância com o ID gerado
+        validated_data['id'] = next_id
+        return super().create(validated_data)
 
 
 class PerguntaCorrelacaoCreateUpdateSerializer(PerguntaCorrelacaoSerializer):
     """Serializer específico para criação e edição de pergunta de correlação"""
     class Meta(PerguntaCorrelacaoSerializer.Meta):
         fields = [
-            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta', 'justificativa_resposta_certa', 'markdown_file', 'markdown_highlights'
         ]
+    
+    def create(self, validated_data):
+        """Cria uma nova pergunta de correlação com ID gerado automaticamente"""
+        from django.db.models import Max
+        
+        # Obter o maior ID existente e adicionar 1
+        max_id = PerguntaCorrelacaoModel.objects.aggregate(max_id=Max('id'))['max_id']
+        next_id = (max_id or 0) + 1
+        
+        # Criar instância com o ID gerado
+        validated_data['id'] = next_id
+        return super().create(validated_data)
 
 
 class FlashCardsCreateUpdateSerializer(FlashCardsSerializer):

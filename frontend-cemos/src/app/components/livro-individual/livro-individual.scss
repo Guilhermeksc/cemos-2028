@@ -108,6 +108,24 @@
       }
     }
 
+    .slides-button {
+      transition: all 0.2s ease;
+      background-color: transparent;
+
+      &:hover:not(:disabled) {
+        background-color: rgba(33, 150, 243, 0.08);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      mat-icon {
+        color: #2196f3;
+      }
+    }
+
     .menu-toggle-button {
       transition: all 0.2s ease;
       background-color: transparent;
@@ -1264,3 +1282,72 @@ body.livro-fullscreen-active {
     }
   }
 }
+
+// ========================================
+// SLIDES VIEWER OVERLAY
+// ========================================
+.slides-viewer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background: #000;
+
+  .close-slides-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 10001;
+
+    mat-icon {
+      font-size: 28px;
+      width: 28px;
+      height: 28px;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+// Estilo para botão de slides no mobile
+.btn-slides-mobile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+// ========================================
+// PDF SLIDES VIEWER OVERLAY
+// ========================================
+app-pdf-slides-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background: #000;
+}
+

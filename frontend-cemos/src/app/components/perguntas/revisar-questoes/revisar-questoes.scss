@@ -146,6 +146,45 @@ table {
     background: #f8fafc;
     font-size: 0.9rem;
     color: #475569;
+
+    .header-with-icon {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: flex-start;
+    }
+
+    .header-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      display: inline-block;
+    }
+
+    .star-icon {
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+    }
+
+    .danger-icon {
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  // Coluna de ações - largura fixa
+  th:last-child,
+  td.actions-cell {
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    white-space: nowrap;
+  }
+
+  // Quando a linha está em modo de edição, aumentar altura da coluna de ações
+  tr.editing-row td.actions-cell {
+    min-height: 200px;
+    height: auto;
+    vertical-align: top;
+    padding-top: 1rem;
   }
 
   tr:last-child td {
@@ -205,11 +244,139 @@ table {
     border: 1px solid #cbd5f5;
     padding: 0.45rem;
     font-family: inherit;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
-.multipla-grid textarea {
-  min-height: 60px;
+.form-grid-single {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.multipla-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  textarea {
+    min-height: 60px;
+    width: 100%;
+  }
+}
+
+.vf-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  textarea {
+    min-height: 60px;
+    width: 100%;
+  }
+}
+
+// Estilos para correlação melhorada
+.coluna-preview {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 6px;
+  font-size: 0.85rem;
+
+  strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #475569;
+  }
+
+  .preview-item {
+    padding: 0.25rem 0;
+    color: #64748b;
+  }
+}
+
+.correlacao-mapping {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  h4 {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    color: #0f172a;
+  }
+
+  .mapping-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .mapping-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+
+    .mapping-label {
+      flex: 1;
+      font-size: 0.9rem;
+      color: #475569;
+      min-width: 200px;
+    }
+
+    .mapping-select {
+      min-width: 250px;
+      padding: 0.5rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      background: white;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mapping-item {
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    .mapping-label {
+      width: 100%;
+    }
+
+    .mapping-select {
+      width: 100%;
+    }
+  }
 }
 
 .edit-actions {
@@ -224,6 +391,203 @@ table {
   font-weight: 600;
 }
 
+.filters-section {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.95rem;
+  }
+
+  .filter-combobox {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    font-size: 0.95rem;
+    color: #0f172a;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+
+    &:hover:not(:disabled) {
+      border-color: #94a3b8;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    &:disabled {
+      background: #f1f5f9;
+      cursor: not-allowed;
+      color: #94a3b8;
+    }
+
+    option {
+      padding: 0.5rem;
+    }
+  }
+
+  .loading-text {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.questoes-tabs {
+  margin-top: 1.5rem;
+
+  ::ng-deep .mat-mdc-tab-label {
+    min-width: 120px;
+  }
+
+  .tab-count {
+    margin-left: 0.5rem;
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: normal;
+  }
+}
+
+.tab-content {
+  padding-top: 1rem;
+}
+
+// Formulário de Adicionar Questão
+.add-question-form-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-question-form {
+  background: white;
+  border: 2px solid #10b981;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+
+    h3 {
+      margin: 0;
+      color: #0f172a;
+      font-size: 1.25rem;
+    }
+  }
+
+  .form-content {
+    .form-grid {
+      margin-bottom: 1rem;
+    }
+
+    .form-info {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      p {
+        margin: 0.25rem 0;
+        color: #475569;
+        font-size: 0.9rem;
+
+        strong {
+          color: #0f172a;
+        }
+      }
+    }
+
+    .add-error {
+      background: #fee2e2;
+      color: #b91c1c;
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+
+      .btn-primary {
+        background: #10b981;
+        color: white;
+        border-color: #10b981;
+
+        &:hover:not(:disabled) {
+          background: #059669;
+          border-color: #059669;
+        }
+
+        &:disabled {
+          background: #94a3b8;
+          border-color: #94a3b8;
+          cursor: not-allowed;
+          opacity: 0.6;
+        }
+      }
+
+      .btn-secondary {
+        background: white;
+        color: #475569;
+        border-color: #cbd5e1;
+
+        &:hover:not(:disabled) {
+          background: #f1f5f9;
+          border-color: #94a3b8;
+        }
+
+        &:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .actions {
     width: 100%;
@@ -233,5 +597,25 @@ table {
   .btn {
     flex: 1;
     text-align: center;
+  }
+
+  .questoes-tabs {
+    ::ng-deep .mat-mdc-tab-label {
+      min-width: auto;
+      padding: 0 12px;
+      font-size: 0.85rem;
+    }
+  }
+
+  .add-question-form {
+    .form-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+
+      .btn-close {
+        align-self: flex-end;
+      }
+    }
   }
 }

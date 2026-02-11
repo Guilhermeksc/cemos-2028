@@ -76,6 +76,7 @@ class PerguntasBaseModel(models.Model):
         verbose_name="Ano da Prova",
         validators=[MinValueValidator(2000), MaxValueValidator(2100)]
     )
+    caveira = models.BooleanField(default=False, verbose_name="Caveira")
     pergunta = models.TextField(verbose_name="Pergunta")
     justificativa_resposta_certa = models.TextField(verbose_name="Justificativa da Resposta Correta")
     tipo = models.CharField(max_length=20, choices=TIPO_CHOICES, verbose_name="Tipo de Pergunta")

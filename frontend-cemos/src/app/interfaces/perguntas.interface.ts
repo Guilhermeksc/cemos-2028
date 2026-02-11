@@ -95,6 +95,7 @@ export interface PerguntaBase {
   assunto_titulo?: string | null;
   caiu_em_prova: boolean;
   ano_prova?: number;
+  caveira: boolean;
   pergunta: string;
   justificativa_resposta_certa: string;
   tipo: 'multipla' | 'vf' | 'correlacao';
@@ -152,6 +153,7 @@ export interface PerguntaResumo {
   assunto_titulo?: string | null;
   caiu_em_prova: boolean;
   ano_prova?: number;
+  caveira: boolean;
 }
 
 // Union type para todos os tipos de pergunta
@@ -173,6 +175,7 @@ export interface PerguntaFilters {
   assunto?: number;
   caiu_em_prova?: boolean;
   ano_prova?: number;
+  caveira?: boolean;
   ordering?: string;
   page?: number;
   page_size?: number;

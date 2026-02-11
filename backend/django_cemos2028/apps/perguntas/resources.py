@@ -65,6 +65,11 @@ class PerguntaMultiplaResource(resources.ModelResource):
         attribute='caiu_em_prova',
         widget=BooleanWidget()
     )
+    caveira = fields.Field(
+        column_name='caveira',
+        attribute='caveira',
+        widget=BooleanWidget()
+    )
 
     markdown_file = fields.Field(
         column_name='markdown_file',
@@ -79,7 +84,7 @@ class PerguntaMultiplaResource(resources.ModelResource):
     class Meta:
         model = PerguntaMultiplaModel
         fields = (
-            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira', 'pergunta',
             'alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d',
             'resposta_correta', 'justificativa_resposta_certa', 'tipo',
             'markdown_file', 'markdown_highlights'
@@ -87,7 +92,7 @@ class PerguntaMultiplaResource(resources.ModelResource):
         export_order = (
             'id', 'bibliografia', 'pergunta', 'alternativa_a', 'alternativa_b',
             'alternativa_c', 'alternativa_d', 'resposta_correta', 'paginas', 'assunto',
-            'caiu_em_prova', 'ano_prova', 'justificativa_resposta_certa', 'tipo',
+            'caiu_em_prova', 'ano_prova', 'caveira', 'justificativa_resposta_certa', 'tipo',
             'markdown_file', 'markdown_highlights'
         )
         import_id_fields = ('id',)
@@ -116,6 +121,11 @@ class PerguntaVFResource(resources.ModelResource):
         attribute='caiu_em_prova',
         widget=BooleanWidget()
     )
+    caveira = fields.Field(
+        column_name='caveira',
+        attribute='caveira',
+        widget=BooleanWidget()
+    )
 
     markdown_file = fields.Field(
         column_name='markdown_file',
@@ -130,13 +140,13 @@ class PerguntaVFResource(resources.ModelResource):
     class Meta:
         model = PerguntaVFModel
         fields = (
-            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira', 'pergunta',
             'afirmacao_verdadeira', 'afirmacao_falsa', 'justificativa_resposta_certa', 'tipo',
             'markdown_file', 'markdown_highlights'
         )
         export_order = (
             'id', 'bibliografia', 'paginas', 'assunto', 'afirmacao_verdadeira', 'afirmacao_falsa', 
-            'justificativa_resposta_certa', 'caiu_em_prova', 'ano_prova', 'tipo',
+            'justificativa_resposta_certa', 'caiu_em_prova', 'ano_prova', 'caveira', 'tipo',
             'markdown_file', 'markdown_highlights'
         )
         import_id_fields = ('id',)
@@ -194,14 +204,14 @@ class PerguntaCorrelacaoResource(resources.ModelResource):
     class Meta:
         model = PerguntaCorrelacaoModel
         fields = (
-            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'pergunta',
+            'id', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira', 'pergunta',
             'coluna_a', 'coluna_b', 'resposta_correta',
             'justificativa_resposta_certa', 'tipo',
             'markdown_file', 'markdown_highlights'
         )
         export_order = (
             'id', 'bibliografia', 'pergunta', 'coluna_a', 'coluna_b',
-            'resposta_correta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova',
+            'resposta_correta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira',
             'justificativa_resposta_certa', 'tipo',
             'markdown_file', 'markdown_highlights'
         )

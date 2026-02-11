@@ -32,6 +32,7 @@ export class LivroIndividual implements OnInit, OnDestroy {
   @Input() fileNames: string[] = []; // Lista de arquivos MD a carregar
   @Input() backRoute: string = ''; // Rota de volta (ex: '/home/app6-geopolitica-relacoes-internacionais/bibliografia')
   @Input() backLabel: string = 'Bibliografia'; // Label do botão de voltar
+  @Input() pdfSlidesFolders: Array<{name: string, path: string, files: string[]}> = []; // Array de pastas com seus PDFs
 
   isLoading: boolean = false;
   isFullscreen: boolean = false;
@@ -765,6 +766,31 @@ export class LivroIndividual implements OnInit, OnDestroy {
     } finally {
       this.isGeneratingPDF = false;
     }
+  }
+
+  /**
+   * Abre o visualizador de slides de PDF em uma nova janela
+   */
+  openSlidesViewer(): void {
+    if (this.pdfSlidesFolders && this.pdfSlidesFolders.length > 0) {
+      // Salva os dados dos PDFs no localStorage temporariamente
+      localStorage.setItem('pdfSlidesData', JSON.stringify(this.pdfSlidesFolders));
+      
+      // Abre uma nova janela com a rota do visualizador de slides
+      const slidesUrl = this.router.createUrlTree(['/home/slides-viewer']).toString();
+      const baseUrl = window.location.origin;
+      const fullUrl = `${baseUrl}${slidesUrl}`;
+      
+      window.open(fullUrl, '_blank', 'width=1920,height=1080,resizable=yes,scrollbars=yes');
+    }
+  }
+
+
+  /**
+   * Verifica se pode exibir o botão de slides
+   */
+  canShowSlidesButton(): boolean {
+    return !!(this.pdfSlidesFolders && this.pdfSlidesFolders.length > 0);
   }
 
   /**

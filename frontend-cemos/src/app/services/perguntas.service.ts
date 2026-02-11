@@ -491,7 +491,8 @@ export class PerguntasService {
       assunto: pergunta.assunto,
       assunto_titulo: pergunta.assunto_titulo || null,
       caiu_em_prova: pergunta.caiu_em_prova,
-      ano_prova: pergunta.ano_prova
+      ano_prova: pergunta.ano_prova,
+      caveira: pergunta.caveira
     };
   }
 
@@ -691,6 +692,27 @@ export class PerguntasService {
   }
 
   /**
+   * Cria uma nova pergunta de múltipla escolha
+   */
+  createPerguntaMultipla(data: Partial<PerguntaMultipla>): Observable<PerguntaMultipla> {
+    return this.http.post<PerguntaMultipla>(`${this.apiUrl}/perguntas-multipla/`, data);
+  }
+
+  /**
+   * Cria uma nova pergunta de verdadeiro/falso
+   */
+  createPerguntaVF(data: Partial<PerguntaVF>): Observable<PerguntaVF> {
+    return this.http.post<PerguntaVF>(`${this.apiUrl}/perguntas-vf/`, data);
+  }
+
+  /**
+   * Cria uma nova pergunta de correlação
+   */
+  createPerguntaCorrelacao(data: Partial<PerguntaCorrelacao>): Observable<PerguntaCorrelacao> {
+    return this.http.post<PerguntaCorrelacao>(`${this.apiUrl}/perguntas-correlacao/`, data);
+  }
+
+  /**
    * Atualiza uma pergunta de múltipla escolha
    */
   updatePerguntaMultipla(id: number, data: Partial<PerguntaMultipla>): Observable<PerguntaMultipla> {
@@ -720,6 +742,27 @@ export class PerguntasService {
     value: boolean
   ): Observable<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao> {
     const payload = { caiu_em_prova: value };
+    switch (perguntaTipo) {
+      case 'multipla':
+        return this.updatePerguntaMultipla(perguntaId, payload);
+      case 'vf':
+        return this.updatePerguntaVF(perguntaId, payload);
+      case 'correlacao':
+        return this.updatePerguntaCorrelacao(perguntaId, payload);
+      default:
+        throw new Error(`Tipo de pergunta inválido: ${perguntaTipo}`);
+    }
+  }
+
+  /**
+   * Atualiza apenas o campo caveira conforme o tipo
+   */
+  updatePerguntaCaveira(
+    perguntaId: number,
+    perguntaTipo: 'multipla' | 'vf' | 'correlacao',
+    value: boolean
+  ): Observable<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao> {
+    const payload = { caveira: value };
     switch (perguntaTipo) {
       case 'multipla':
         return this.updatePerguntaMultipla(perguntaId, payload);

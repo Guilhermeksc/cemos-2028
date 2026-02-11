@@ -325,9 +325,10 @@ class PerguntaMultiplaViewSet(PerguntaHighlightMixin, viewsets.ModelViewSet):
     serializer_class = PerguntaMultiplaSerializer
     permission_classes = [IsAdminOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta', 'assunto']
+    filterset_fields = ['bibliografia', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira']
+    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'resposta_correta', 'assunto', 'caveira']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo', 'caveira']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -342,9 +343,10 @@ class PerguntaVFViewSet(PerguntaHighlightMixin, viewsets.ModelViewSet):
     serializer_class = PerguntaVFSerializer
     permission_classes = [IsAdminOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
+    filterset_fields = ['bibliografia', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira']
+    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto', 'caveira']
     search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto__capitulo_titulo', 'bibliografia__titulo', 'justificativa_resposta_certa']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo', 'caveira']
     ordering = ['id']
     
     def get_serializer_class(self):
@@ -359,9 +361,10 @@ class PerguntaCorrelacaoViewSet(PerguntaHighlightMixin, viewsets.ModelViewSet):
     serializer_class = PerguntaCorrelacaoSerializer
     permission_classes = [IsAdminOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto']
+    filterset_fields = ['bibliografia', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira']
+    filterset_fields = ['bibliografia', 'caiu_em_prova', 'ano_prova', 'assunto', 'caveira']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
-    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo']
+    ordering_fields = ['id', 'bibliografia__titulo', 'caiu_em_prova', 'ano_prova', 'assunto__capitulo_titulo', 'caveira']
     ordering = ['id']
     
     def get_serializer_class(self):

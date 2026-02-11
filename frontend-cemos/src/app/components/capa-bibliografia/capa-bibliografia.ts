@@ -4,9 +4,11 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 import { LivroIndividualService } from '../../services/livro-individual.service';
 import { CapaConfig } from '../../interfaces/capa-config.interface';
+import { PdfSlidesViewer } from '../pdf-slides-viewer/pdf-slides-viewer';
 
 // Re-exporta a interface para facilitar importações
 export type { CapaConfig } from '../../interfaces/capa-config.interface';
@@ -17,7 +19,9 @@ export type { CapaConfig } from '../../interfaces/capa-config.interface';
     CommonModule,
     MatProgressSpinnerModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    PdfSlidesViewer
   ],
   templateUrl: './capa-bibliografia.html',
   styleUrl: './capa-bibliografia.scss'
@@ -31,9 +35,40 @@ export class CapaBibliografia implements OnInit {
   @Input() perguntasPath: string = '';
   @Input() simuladosPath: string = '';
   @Input() checkAbandonoPath: string = '';
+  @Input() pdfSlidesFolders: Array<{name: string, path: string, files: string[]}> = []; // Array de pastas com seus PDFs
+  
+  // Estado para controlar exibição do slides viewer
+  showSlidesViewer: boolean = false;
 
   get showNavigationButtons(): boolean {
     return true;
+  }
+
+  /**
+   * Abre o visualizador de slides de PDF
+   */
+  openSlidesViewer(): void {
+    if (this.pdfSlidesFolders && this.pdfSlidesFolders.length > 0) {
+      this.showSlidesViewer = true;
+      // Adiciona classe no body para garantir que side-menu fique abaixo
+      document.body.classList.add('pdf-slides-viewer-active');
+    }
+  }
+
+  /**
+   * Fecha o visualizador de slides de PDF
+   */
+  closeSlidesViewer(): void {
+    this.showSlidesViewer = false;
+    // Remove classe do body
+    document.body.classList.remove('pdf-slides-viewer-active');
+  }
+
+  /**
+   * Verifica se pode exibir o botão de slides
+   */
+  canShowSlidesButton(): boolean {
+    return !!(this.pdfSlidesFolders && this.pdfSlidesFolders.length > 0);
   }
 
   /**

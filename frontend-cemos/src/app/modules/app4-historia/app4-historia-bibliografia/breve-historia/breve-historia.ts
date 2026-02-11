@@ -40,6 +40,35 @@ export class BreveHistoria implements OnInit {
   ];
   backRoute: string = '/home/app4-historia/bibliografia';
   backLabel: string = 'Bibliografia';
+  
+  // Configuração para PDF Slides (estrutura de subpastas)
+  pdfSlidesFolders: Array<{name: string, path: string, files: string[]}> = [
+    {
+      name: 'Breve História do Século XX',
+      path: 'historia/breve-historia/pdf',
+      files: [
+        'Cap1-AuroraResplandecente.pdf',
+        'Cap3-TempestadeMudancas.pdf',
+        'Cap4-GuerradasGuerras.pdf',
+        'Cap5-RevoltaPetrogrado.pdf',
+        'Cap6-UtopiaPesadelo.pdf',
+        'Cap7-VelhoSultao.pdf',
+        'Cap9-PercussionistaItaliano.pdf',
+        'Cap10-DepressaoMundial.pdf',
+        'Cap11-AscensaoHitler.pdf',
+        'Cap12-UmaSegundaGuerraMundial.pdf',
+        'Cap13-DePearlHarboraQuedadeBerlim.pdf',
+        'Cap14-UmaArmaMuitoSecreta.pdf',
+        'Cap15-CaioPano.pdf',
+        'Cap16-AFlechaFlamenjanteeosVentosdaMudanca.pdf',
+        'Cap18-AsNavesdaVinganca.pdf',
+        'Cap19-AIlhaeoNavioFantasma.pdf',
+        'Cap23-RaioseTrovoesemMoscoueVarsovia.pdf',
+        'Cap24-AQuedadosMuros.pdf',
+        'Cap26-LuadoIslaBrilhaoutraVez.pdf',
+      ]
+    }
+  ];
 
   ngOnInit() {
     // Inicialização do componente

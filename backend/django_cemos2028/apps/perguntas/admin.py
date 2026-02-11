@@ -36,14 +36,14 @@ class FlashCardsAdmin(ImportExportModelAdmin):
 @admin.register(PerguntaMultiplaModel)
 class PerguntaMultiplaAdmin(ImportExportModelAdmin):
     resource_class = PerguntaMultiplaResource
-    list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'resposta_correta']
-    list_filter = ['caiu_em_prova', 'ano_prova', 'resposta_correta', 'bibliografia', 'assunto']
+    list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira', 'resposta_correta']
+    list_filter = ['caiu_em_prova', 'ano_prova', 'caveira', 'resposta_correta', 'bibliografia', 'assunto']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
-            'fields': ('bibliografia', 'pergunta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'pergunta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira')
         }),
         ('Alternativas', {
             'fields': ('alternativa_a', 'alternativa_b', 'alternativa_c', 'alternativa_d', 'resposta_correta')
@@ -64,14 +64,14 @@ class PerguntaMultiplaAdmin(ImportExportModelAdmin):
 @admin.register(PerguntaVFModel)
 class PerguntaVFAdmin(ImportExportModelAdmin):
     resource_class = PerguntaVFResource
-    list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova']
-    list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'assunto']
+    list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira']
+    list_filter = ['caiu_em_prova', 'ano_prova', 'caveira', 'bibliografia', 'assunto']
     search_fields = ['pergunta', 'afirmacao_verdadeira', 'afirmacao_falsa', 'assunto__capitulo_titulo', 'bibliografia__titulo', 'justificativa_resposta_certa']
     ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
-            'fields': ('bibliografia', 'pergunta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'pergunta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira')
         }),
         ('Afirmações', {
             'fields': ('afirmacao_verdadeira', 'afirmacao_falsa'),
@@ -93,14 +93,14 @@ class PerguntaVFAdmin(ImportExportModelAdmin):
 @admin.register(PerguntaCorrelacaoModel)
 class PerguntaCorrelacaoAdmin(ImportExportModelAdmin):
     resource_class = PerguntaCorrelacaoResource
-    list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova']
-    list_filter = ['caiu_em_prova', 'ano_prova', 'bibliografia', 'assunto']
+    list_display = ['__str__', 'bibliografia', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira']
+    list_filter = ['caiu_em_prova', 'ano_prova', 'caveira', 'bibliografia', 'assunto']
     search_fields = ['pergunta', 'bibliografia__titulo', 'justificativa_resposta_certa', 'assunto__capitulo_titulo']
     ordering = ['id']
     
     fieldsets = (
         ('Informações da Pergunta', {
-            'fields': ('bibliografia', 'pergunta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova')
+            'fields': ('bibliografia', 'pergunta', 'paginas', 'assunto', 'caiu_em_prova', 'ano_prova', 'caveira')
         }),
         ('Correlação', {
             'fields': ('coluna_a', 'coluna_b', 'resposta_correta'),

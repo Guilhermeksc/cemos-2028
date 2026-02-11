@@ -55,6 +55,17 @@
         <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
         <mat-spinner *ngIf="isGeneratingPDF" diameter="20"></mat-spinner>
       </button>
+      <!-- Botão de Slides (Desktop) -->
+      <!-- <button 
+        *ngIf="canShowSlidesButton()"
+        mat-icon-button 
+        class="slides-button desktop-only"
+        (click)="openSlidesViewer()"
+        [matTooltip]="'Visualizar Slides'"
+        matTooltipPosition="right"
+        aria-label="Visualizar Slides">
+        <mat-icon>slideshow</mat-icon>
+      </button> -->
     </div>
 
     <!-- Conteúdo do Menu Esquerdo -->
@@ -105,6 +116,14 @@
         aria-label="Tela cheia">
         <mat-icon>fullscreen</mat-icon>
         <span>Tela Cheia</span>
+      </button>
+      <button 
+        class="btn-mobile-menu btn-slides-mobile"
+        *ngIf="canShowSlidesButton()"
+        (click)="openSlidesViewer()"
+        aria-label="Slides">
+        <mat-icon>slideshow</mat-icon>
+        <span>Slides</span>
       </button>
     </div>
     
@@ -237,6 +256,17 @@
             aria-label="Baixar como PDF">
             <mat-icon *ngIf="!isGeneratingPDF">picture_as_pdf</mat-icon>
             <mat-spinner *ngIf="isGeneratingPDF" diameter="20"></mat-spinner>
+          </button>
+          <!-- Botão de Slides (Desktop) -->
+          <button 
+            *ngIf="canShowSlidesButton()"
+            mat-icon-button 
+            class="slides-button desktop-only"
+            (click)="openSlidesViewer()"
+            [matTooltip]="'Visualizar Slides'"
+            matTooltipPosition="right"
+            aria-label="Visualizar Slides">
+            <mat-icon>slideshow</mat-icon>
           </button>
         </div>
         <div class="menu-content">

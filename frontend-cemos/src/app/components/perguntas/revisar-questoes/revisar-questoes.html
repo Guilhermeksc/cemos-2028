@@ -2,20 +2,21 @@
   <div class="header">
     <div>
       <h1>Revisão de Questões</h1>
-      <p class="subtitle" *ngIf="bibliografiaIds.length > 0">
-        Bibliografias selecionadas: {{ bibliografiaIds.join(', ') }}
+      <p class="subtitle" *ngIf="selectedMateriaId && selectedBibliografiaId && selectedAssuntoId">
+        {{ getMateriaNome(selectedMateriaId) }} → {{ getBibliografiaTitulo(selectedBibliografiaId) }} → {{ getAssuntoNome(selectedAssuntoId) }}
       </p>
     </div>
     <div class="actions">
-      <button class="btn" (click)="reload()">Atualizar</button>
-      <button class="btn btn-add" *ngIf="isAdmin" (click)="openAddQuestion()">Adicionar nova questão</button>
+      <button class="btn btn-add" *ngIf="isAdmin" (click)="openAddQuestion()">
+        Adicionar nova questão {{ getQuestaoTipoDisplay(activeTabType) }}
+      </button>
       <button class="btn btn-close" (click)="closeWindow()">Fechar</button>
     </div>
   </div>
 
-  <div *ngIf="isLoading" class="loading">
+  <!-- <div *ngIf="isLoading" class="loading">
     Carregando questões...
-  </div>
+  </div> -->
 
   <div *ngIf="!isLoading && errorMessage" class="error">
     {{ errorMessage }}
@@ -25,156 +26,1139 @@
     Apenas administradores podem revisar e editar questões. As informações abaixo estão em modo somente leitura.
   </div>
 
-  <div *ngIf="!isLoading && !errorMessage">
-    <div *ngFor="let grupo of tableData" class="bibliografia-card">
-      <div class="grupo-header">
-        <div>
-          <h2>{{ grupo.bibliografiaTitulo }}</h2>
-          <p>{{ grupo.questoes.length }} {{ grupo.questoes.length === 1 ? 'questão' : 'questões' }}</p>
+  <div *ngIf="!isLoading && !errorMessage" class="filters-section">
+    <div class="filters-grid">
+      <div class="filter-item">
+        <label for="materia-select">Matéria:</label>
+        <select 
+          id="materia-select"
+          [(ngModel)]="selectedMateriaId" 
+          (change)="onMateriaChange()"
+          [disabled]="isLoadingMaterias || isLoading"
+          class="filter-combobox"
+        >
+          <option [value]="null">-- Selecione uma matéria --</option>
+          <option *ngFor="let materia of materiasDisponiveis" [value]="materia.id">
+            {{ materia.nome }}
+          </option>
+        </select>
+        <span *ngIf="isLoadingMaterias" class="loading-text">Carregando...</span>
+      </div>
+
+      <div class="filter-item">
+        <label for="bibliografia-select">Bibliografia:</label>
+        <select 
+          id="bibliografia-select"
+          [(ngModel)]="selectedBibliografiaId" 
+          (change)="onBibliografiaChange()"
+          [disabled]="isLoadingBibliografias || isLoading || !selectedMateriaId"
+          class="filter-combobox"
+        >
+          <option [value]="null">-- Selecione uma bibliografia --</option>
+          <option *ngFor="let bib of bibliografiasDisponiveis" [value]="bib.id">
+            {{ bib.titulo }} {{ bib.autor ? '— ' + bib.autor : '' }}
+          </option>
+        </select>
+        <span *ngIf="isLoadingBibliografias" class="loading-text">Carregando...</span>
+      </div>
+
+      <div class="filter-item">
+        <label for="assunto-select">Assunto:</label>
+        <select 
+          id="assunto-select"
+          [(ngModel)]="selectedAssuntoId" 
+          (change)="onAssuntoChange()"
+          [disabled]="isLoadingAssuntos || isLoading || !selectedBibliografiaId"
+          class="filter-combobox"
+          required
+        >
+          <option [value]="null" disabled>-- Selecione um assunto --</option>
+          <option *ngFor="let assunto of assuntosDisponiveis" [value]="assunto.id">
+            {{ assunto.nome }}
+          </option>
+        </select>
+        <span *ngIf="isLoadingAssuntos" class="loading-text">Carregando...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulário de Adicionar Questão -->
+  <div *ngIf="showAddForm && isAdmin" class="add-question-form-container">
+    <div class="add-question-form">
+      <div class="form-header">
+        <h3>Adicionar Nova Questão - {{ getQuestaoTipoDisplay(activeTabType) }}</h3>
+        <button class="btn btn-small btn-close" (click)="cancelAddForm()">✕ Fechar</button>
+      </div>
+
+      <div class="form-content">
+        <div class="form-grid">
+          <label>
+            Enunciado *
+            <textarea 
+              rows="3" 
+              [(ngModel)]="addFormData.pergunta" 
+              name="add-pergunta"
+              placeholder="Digite o enunciado da questão..."
+            ></textarea>
+          </label>
+        </div>
+
+        <!-- Campos específicos para Múltipla Escolha -->
+        <div *ngIf="activeTabType === 'multipla'" class="form-grid multipla-grid">
+          <label>
+            Alternativa A *
+            <textarea rows="2" [(ngModel)]="addFormData.alternativa_a" name="add-alt-a"></textarea>
+          </label>
+          <label>
+            Alternativa B *
+            <textarea rows="2" [(ngModel)]="addFormData.alternativa_b" name="add-alt-b"></textarea>
+          </label>
+          <label>
+            Alternativa C *
+            <textarea rows="2" [(ngModel)]="addFormData.alternativa_c" name="add-alt-c"></textarea>
+          </label>
+          <label>
+            Alternativa D *
+            <textarea rows="2" [(ngModel)]="addFormData.alternativa_d" name="add-alt-d"></textarea>
+          </label>
+          <label>
+            Resposta Correta *
+            <select [(ngModel)]="addFormData.resposta_correta" name="add-resposta">
+              <option value="a">Alternativa A</option>
+              <option value="b">Alternativa B</option>
+              <option value="c">Alternativa C</option>
+              <option value="d">Alternativa D</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- Campos específicos para Verdadeiro/Falso -->
+        <div *ngIf="activeTabType === 'vf'" class="form-grid vf-grid">
+          <label>
+            Afirmação Verdadeira *
+            <textarea rows="3" [(ngModel)]="addFormData.afirmacao_verdadeira" name="add-verdadeira"></textarea>
+          </label>
+          <label>
+            Afirmação Falsa *
+            <textarea rows="3" [(ngModel)]="addFormData.afirmacao_falsa" name="add-falsa"></textarea>
+          </label>
+          <label>
+            Justificativa
+            <textarea 
+              rows="3" 
+              [(ngModel)]="addFormData.justificativa_resposta_certa" 
+              name="add-justificativa"
+              placeholder="Explique por que a resposta está correta..."
+            ></textarea>
+          </label>
+        </div>
+
+        <!-- Campos específicos para Correlação -->
+        <div *ngIf="activeTabType === 'correlacao'" class="form-grid vf-grid">
+          <label>
+            Coluna A (uma entrada por linha - será numerada automaticamente: 1), 2), 3)...) *
+            <textarea 
+              rows="4" 
+              [(ngModel)]="addFormData.coluna_a_text" 
+              (input)="onAddColunaAChange()"
+              name="add-col-a"
+              placeholder="Item 1&#10;Item 2&#10;Item 3"
+            ></textarea>
+                                <div class="coluna-preview" *ngIf="addFormData.coluna_a_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaAItemsForPreview(addFormData.coluna_a_text); let i = index" class="preview-item">
+                                    {{ i + 1 }}) {{ item }}
+                                  </div>
+                                </div>
+                              </label>
+                              <label>
+                                Coluna B (uma entrada por linha - será letrada automaticamente: A), B), C)...) *
+                                <textarea 
+                                  rows="4" 
+                                  [(ngModel)]="addFormData.coluna_b_text" 
+                                  (input)="onAddColunaBChange()"
+                                  name="add-col-b"
+                                  placeholder="Opção A&#10;Opção B&#10;Opção C"
+                                ></textarea>
+                                <div class="coluna-preview" *ngIf="addFormData.coluna_b_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaBItemsForPreview(addFormData.coluna_b_text); let i = index" class="preview-item">
+                                    {{ getLetterForIndex(i) }}) {{ item }}
+                                  </div>
+                                </div>
+          </label>
+        </div>
+        
+        <!-- Mapeamento de Resposta Correta para Adicionar -->
+        <div *ngIf="activeTabType === 'correlacao' && addFormData.correlacao_mappings && addFormData.correlacao_mappings.length > 0" class="correlacao-mapping">
+          <h4>Resposta Correta - Relacione cada item da Coluna A com um item da Coluna B:</h4>
+          <div class="mapping-list">
+            <div *ngFor="let mapping of addFormData.correlacao_mappings; let i = index" class="mapping-item">
+              <div class="mapping-label">
+                <strong>{{ i + 1 }})</strong> {{ mapping.colunaA || '(vazio)' }}
+              </div>
+              <select 
+                [(ngModel)]="mapping.respostaIndex"
+                (ngModelChange)="updateAddCorrelacaoMapping(i, $event)"
+                [name]="'add-mapping-' + i"
+                class="mapping-select"
+              >
+                                    <option [ngValue]="null">-- Não relacionar --</option>
+                                    <option *ngFor="let itemB of getAddColunaBItems(); let j = index" [ngValue]="j">
+                                      {{ getLetterForIndex(j) }}) {{ itemB }}
+                                    </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Justificativa para Correlação -->
+        <div *ngIf="activeTabType === 'correlacao'" class="form-grid">
+          <label>
+            Justificativa
+            <textarea 
+              rows="3" 
+              [(ngModel)]="addFormData.justificativa_resposta_certa" 
+              name="add-justificativa-correlacao"
+              placeholder="Explique por que a resposta está correta..."
+            ></textarea>
+          </label>
+        </div>
+
+        <!-- Justificativa para Múltipla Escolha -->
+        <div *ngIf="activeTabType === 'multipla'" class="form-grid">
+          <label>
+            Justificativa
+            <textarea 
+              rows="3" 
+              [(ngModel)]="addFormData.justificativa_resposta_certa" 
+              name="add-justificativa-multipla"
+              placeholder="Explique por que a resposta está correta..."
+            ></textarea>
+          </label>
+        </div>
+
+        <div class="form-info">
+          <p><strong>Bibliografia:</strong> {{ getBibliografiaTitulo(selectedBibliografiaId) }}</p>
+          <p *ngIf="selectedAssuntoId"><strong>Assunto:</strong> {{ getAssuntoNome(selectedAssuntoId) }}</p>
+        </div>
+
+        <div *ngIf="addError" class="add-error">
+          {{ addError }}
+        </div>
+
+        <div class="form-actions">
+          <button 
+            class="btn btn-primary" 
+            (click)="saveAddQuestion()"
+            [disabled]="isSavingAdd"
+          >
+            {{ isSavingAdd ? 'Salvando...' : 'Salvar Questão' }}
+          </button>
+          <button 
+            class="btn btn-secondary" 
+            (click)="cancelAddForm()"
+            [disabled]="isSavingAdd"
+          >
+            Cancelar
+          </button>
         </div>
       </div>
-
-      <div class="tabela-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Tipo</th>
-              <th>Enunciado</th>
-              <th>Assunto</th>
-              <th>Caiu em prova</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            <ng-container *ngFor="let questao of grupo.questoes">
-              <tr>
-                <td>#{{ questao.id }}</td>
-                <td>{{ getQuestaoTipoDisplay(questao.tipo) }}</td>
-                <td>
-                  <div class="pergunta-texto">{{ questao.pergunta }}</div>
-                  <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
-                    Justificativa: {{ questao.justificativa_resposta_certa }}
-                  </div>
-                </td>
-                <td>{{ questao.assunto_titulo || '—' }}</td>
-                <td>
-                  <label class="toggle-label" *ngIf="isAdmin">
-                    <input 
-                      type="checkbox" 
-                      [checked]="questao.caiu_em_prova"
-                      (change)="onToggleCaiuEmProva(questao, $event.target.checked)"
-                      [disabled]="togglingCaiuEmProva.has(questao.uniqueKey)"
-                    />
-                    <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
-                  </label>
-                  <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
-                </td>
-                <td>
-                  <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
-                    {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
-                  </button>
-                </td>
-              </tr>
-              <tr *ngIf="isEditing(questao)">
-                <td colspan="6">
-                  <div class="edit-form">
-                    <div class="form-grid">
-                      <label>
-                        Enunciado
-                        <textarea 
-                          rows="3" 
-                          [(ngModel)]="editingFormData.pergunta" 
-                          name="pergunta-{{ questao.id }}"
-                        ></textarea>
-                      </label>
-                      <label>
-                        Justificativa
-                        <textarea 
-                          rows="3" 
-                          [(ngModel)]="editingFormData.justificativa_resposta_certa" 
-                          name="just-{{ questao.id }}"
-                        ></textarea>
-                      </label>
-                    </div>
-
-                    <div *ngIf="questao.tipo === 'multipla'" class="form-grid multipla-grid">
-                      <label>
-                        Alternativa A
-                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" name="mult-a-{{ questao.id }}"></textarea>
-                      </label>
-                      <label>
-                        Alternativa B
-                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" name="mult-b-{{ questao.id }}"></textarea>
-                      </label>
-                      <label>
-                        Alternativa C
-                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" name="mult-c-{{ questao.id }}"></textarea>
-                      </label>
-                      <label>
-                        Alternativa D
-                        <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" name="mult-d-{{ questao.id }}"></textarea>
-                      </label>
-                      <label>
-                        Resposta Correta
-                        <select [(ngModel)]="editingFormData.resposta_correta" name="resp-{{ questao.id }}">
-                          <option value="a">A</option>
-                          <option value="b">B</option>
-                          <option value="c">C</option>
-                          <option value="d">D</option>
-                        </select>
-                      </label>
-                    </div>
-
-                    <div *ngIf="questao.tipo === 'vf'" class="form-grid">
-                      <label>
-                        Afirmação Verdadeira
-                        <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_verdadeira" name="vf-v-{{ questao.id }}"></textarea>
-                      </label>
-                      <label>
-                        Afirmação Falsa
-                        <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_falsa" name="vf-f-{{ questao.id }}"></textarea>
-                      </label>
-                    </div>
-
-                    <div *ngIf="questao.tipo === 'correlacao'" class="form-grid">
-                      <label>
-                        Coluna A (uma linha por item)
-                        <textarea rows="3" [(ngModel)]="editingFormData.coluna_a_text" name="cor-a-{{ questao.id }}"></textarea>
-                      </label>
-                      <label>
-                        Coluna B (uma linha por item)
-                        <textarea rows="3" [(ngModel)]="editingFormData.coluna_b_text" name="cor-b-{{ questao.id }}"></textarea>
-                      </label>
-                      <label>
-                        Resposta Correta (JSON)
-                        <textarea rows="3" [(ngModel)]="editingFormData.resposta_correta_text" name="cor-resp-{{ questao.id }}"></textarea>
-                      </label>
-                    </div>
-
-                    <div *ngIf="editError" class="edit-error">
-                      {{ editError }}
-                    </div>
-
-                    <div class="edit-actions">
-                      <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
-                        {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
-                      </button>
-                      <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
-                        Cancelar
-                      </button>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </ng-container>
-          </tbody>
-        </table>
-      </div>
     </div>
+  </div>
 
-    <div *ngIf="tableData.length === 0" class="empty">
-      Nenhuma questão encontrada para as bibliografias selecionadas.
-    </div>
+  <div *ngIf="!isLoading && !errorMessage && bibliografiaIds.length > 0">
+    <mat-tab-group [(selectedIndex)]="activeTabIndex" (selectedIndexChange)="onTabChange($event)" class="questoes-tabs">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Múltipla Escolha
+          <span class="tab-count" *ngIf="allTableData.length > 0">
+            ({{ getQuestoesCountByType('multipla') }})
+          </span>
+        </ng-template>
+        <div class="tab-content">
+          <div *ngFor="let grupo of tableData" class="bibliografia-card">
+            <div class="grupo-header">
+              <div>
+                <h2>{{ grupo.bibliografiaTitulo }}</h2>
+                <p>{{ grupo.questoes.length }} {{ grupo.questoes.length === 1 ? 'questão' : 'questões' }}</p>
+              </div>
+            </div>
+
+            <div class="tabela-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Enunciado</th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/star.svg" alt="Caiu em prova" class="header-icon star-icon" />
+                        <span>Caiu em prova</span>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/danger.svg" alt="Caveira" class="header-icon danger-icon" />
+                        <span>Caveira</span>
+                      </div>
+                    </th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngFor="let questao of grupo.questoes">
+                    <tr [class.editing-row]="isEditing(questao)">
+                      <td>#{{ questao.id }}</td>
+                      <td>
+                        <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                        <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
+                          Justificativa: {{ questao.justificativa_resposta_certa }}
+                        </div>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input 
+                            type="checkbox" 
+                            [checked]="questao.caiu_em_prova"
+                            (change)="onToggleCaiuEmProva(questao, $event.target.checked)"
+                            [disabled]="togglingCaiuEmProva.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input 
+                            type="checkbox" 
+                            [checked]="questao.caveira"
+                            (change)="onToggleCaveira(questao, $event.target.checked)"
+                            [disabled]="togglingCaveira.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaveira.has(questao.uniqueKey) ? 'Atualizando...' : questao.caveira ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
+                      </td>
+                      <td class="actions-cell">
+                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                        </button>
+                      </td>
+                    </tr>
+                    <tr *ngIf="isEditing(questao)">
+                      <td colspan="5">
+                        <div class="edit-form">
+                          <!-- Formulário específico para Múltipla Escolha -->
+                          <div *ngIf="questao.tipo === 'multipla'">
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Enunciado
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.pergunta" 
+                                  name="pergunta-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                              <label>
+                                Páginas
+                                <input 
+                                  type="text" 
+                                  [(ngModel)]="editingFormData.paginas" 
+                                  name="paginas-{{ questao.id }}"
+                                  placeholder="Ex: 45-50"
+                                  maxlength="100"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-grid multipla-grid">
+                            <label>
+                              Alternativa A
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" name="mult-a-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa B
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" name="mult-b-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa C
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" name="mult-c-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa D
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" name="mult-d-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Resposta Correta
+                              <select [(ngModel)]="editingFormData.resposta_correta" name="resp-{{ questao.id }}">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                              </select>
+                            </label>
+                            </div>
+                            <div class="form-grid">
+                              <label>
+                                Justificativa
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                  name="just-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                            </div>
+                          </div>
+
+                          <!-- Formulário específico para V/F -->
+                          <div *ngIf="questao.tipo === 'vf'" class="form-grid vf-grid">
+                            <label>
+                              Enunciado
+                              <textarea 
+                                rows="3" 
+                                [(ngModel)]="editingFormData.pergunta" 
+                                name="pergunta-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                            <label>
+                              Páginas
+                              <input 
+                                type="text" 
+                                [(ngModel)]="editingFormData.paginas" 
+                                name="paginas-vf-{{ questao.id }}"
+                                placeholder="Ex: 45-50"
+                                maxlength="100"
+                              />
+                            </label>
+                            <label>
+                              Afirmação Verdadeira
+                              <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_verdadeira" name="vf-v-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Afirmação Falsa
+                              <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_falsa" name="vf-f-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Justificativa
+                              <textarea 
+                                rows="3" 
+                                [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                name="just-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                          </div>
+
+                          <!-- Formulário específico para Correlação -->
+                          <div *ngIf="questao.tipo === 'correlacao'">
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Enunciado
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.pergunta" 
+                                  name="pergunta-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                              <label>
+                                Páginas
+                                <input 
+                                  type="text" 
+                                  [(ngModel)]="editingFormData.paginas" 
+                                  name="paginas-cor-{{ questao.id }}"
+                                  placeholder="Ex: 45-50"
+                                  maxlength="100"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Coluna A (uma linha por item - será numerada automaticamente: 1), 2), 3)...)
+                                <textarea 
+                                  rows="4" 
+                                  [(ngModel)]="editingFormData.coluna_a_text" 
+                                  (input)="onColunaAChange(questao.uniqueKey)"
+                                  name="cor-a-{{ questao.id }}"
+                                  placeholder="Item 1&#10;Item 2&#10;Item 3"
+                                ></textarea>
+                                <div class="coluna-preview" *ngIf="editingFormData.coluna_a_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaAItemsForPreview(editingFormData.coluna_a_text); let i = index" class="preview-item">
+                                    {{ i + 1 }}) {{ item }}
+                                  </div>
+                                </div>
+                              </label>
+                              <label>
+                                Coluna B (uma linha por item - será letrada automaticamente: A), B), C)...)
+                                <textarea 
+                                  rows="4" 
+                                  [(ngModel)]="editingFormData.coluna_b_text" 
+                                  (input)="onColunaBChange(questao.uniqueKey)"
+                                  name="cor-b-{{ questao.id }}"
+                                  placeholder="Opção A&#10;Opção B&#10;Opção C"
+                                ></textarea>
+                                <div class="coluna-preview" *ngIf="editingFormData.coluna_b_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaBItemsForPreview(editingFormData.coluna_b_text); let i = index" class="preview-item">
+                                    {{ getLetterForIndex(i) }}) {{ item }}
+                                  </div>
+                                </div>
+                              </label>
+                            </div>
+                            
+                            <!-- Mapeamento de Resposta Correta -->
+                            <div class="correlacao-mapping" *ngIf="editingFormData.correlacao_mappings && editingFormData.correlacao_mappings.length > 0">
+                              <h4>Resposta Correta - Relacione cada item da Coluna A com um item da Coluna B:</h4>
+                              <div class="mapping-list">
+                                <div *ngFor="let mapping of editingFormData.correlacao_mappings; let i = index" class="mapping-item">
+                                  <div class="mapping-label">
+                                    <strong>{{ i + 1 }})</strong> {{ mapping.colunaA || '(vazio)' }}
+                                  </div>
+                                  <select 
+                                    [(ngModel)]="mapping.respostaIndex"
+                                    (ngModelChange)="updateCorrelacaoMapping(i, $event)"
+                                    [name]="'mapping-' + questao.id + '-' + i"
+                                    class="mapping-select"
+                                  >
+                                    <option [ngValue]="null">-- Não relacionar --</option>
+                                    <option *ngFor="let itemB of getColunaBItems(); let j = index" [ngValue]="j">
+                                      {{ getLetterForIndex(j) }}) {{ itemB }}
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-grid">
+                              <label>
+                                Justificativa
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                  name="just-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div *ngIf="editError" class="edit-error">
+                            {{ editError }}
+                          </div>
+
+                          <div class="edit-actions">
+                            <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                              {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                              Cancelar
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div *ngIf="tableData.length === 0" class="empty">
+            Nenhuma questão de múltipla escolha encontrada para as bibliografias selecionadas.
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Verdadeiro/Falso
+          <span class="tab-count" *ngIf="allTableData.length > 0">
+            ({{ getQuestoesCountByType('vf') }})
+          </span>
+        </ng-template>
+        <div class="tab-content">
+          <div *ngFor="let grupo of tableData" class="bibliografia-card">
+            <div class="grupo-header">
+              <div>
+                <h2>{{ grupo.bibliografiaTitulo }}</h2>
+                <p>{{ grupo.questoes.length }} {{ grupo.questoes.length === 1 ? 'questão' : 'questões' }}</p>
+              </div>
+            </div>
+
+            <div class="tabela-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Enunciado</th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/star.svg" alt="Caiu em prova" class="header-icon star-icon" />
+                        <span>Caiu em prova</span>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/danger.svg" alt="Caveira" class="header-icon danger-icon" />
+                        <span>Caveira</span>
+                      </div>
+                    </th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngFor="let questao of grupo.questoes">
+                    <tr [class.editing-row]="isEditing(questao)">
+                      <td>#{{ questao.id }}</td>
+                      <td>
+                        <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                        <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
+                          Justificativa: {{ questao.justificativa_resposta_certa }}
+                        </div>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input 
+                            type="checkbox" 
+                            [checked]="questao.caiu_em_prova"
+                            (change)="onToggleCaiuEmProva(questao, $event.target.checked)"
+                            [disabled]="togglingCaiuEmProva.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input 
+                            type="checkbox" 
+                            [checked]="questao.caveira"
+                            (change)="onToggleCaveira(questao, $event.target.checked)"
+                            [disabled]="togglingCaveira.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaveira.has(questao.uniqueKey) ? 'Atualizando...' : questao.caveira ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
+                      </td>
+                      <td class="actions-cell">
+                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                        </button>
+                      </td>
+                    </tr>
+                    <tr *ngIf="isEditing(questao)">
+                      <td colspan="5">
+                        <div class="edit-form">
+                          <!-- Formulário específico para Múltipla Escolha -->
+                          <div *ngIf="questao.tipo === 'multipla'">
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Enunciado
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.pergunta" 
+                                  name="pergunta-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                              <label>
+                                Páginas
+                                <input 
+                                  type="text" 
+                                  [(ngModel)]="editingFormData.paginas" 
+                                  name="paginas-{{ questao.id }}"
+                                  placeholder="Ex: 45-50"
+                                  maxlength="100"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-grid multipla-grid">
+                            <label>
+                              Alternativa A
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" name="mult-a-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa B
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" name="mult-b-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa C
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" name="mult-c-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa D
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" name="mult-d-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Resposta Correta
+                              <select [(ngModel)]="editingFormData.resposta_correta" name="resp-{{ questao.id }}">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                              </select>
+                            </label>
+                            </div>
+                            <div class="form-grid">
+                              <label>
+                                Justificativa
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                  name="just-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                            </div>
+                          </div>
+
+                          <!-- Formulário específico para V/F -->
+                          <div *ngIf="questao.tipo === 'vf'" class="form-grid vf-grid">
+                            <label>
+                              Enunciado
+                              <textarea 
+                                rows="3" 
+                                [(ngModel)]="editingFormData.pergunta" 
+                                name="pergunta-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                            <label>
+                              Páginas
+                              <input 
+                                type="text" 
+                                [(ngModel)]="editingFormData.paginas" 
+                                name="paginas-vf-{{ questao.id }}"
+                                placeholder="Ex: 45-50"
+                                maxlength="100"
+                              />
+                            </label>
+                            <label>
+                              Afirmação Verdadeira
+                              <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_verdadeira" name="vf-v-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Afirmação Falsa
+                              <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_falsa" name="vf-f-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Justificativa
+                              <textarea 
+                                rows="3" 
+                                [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                name="just-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                          </div>
+
+                          <!-- Formulário específico para Correlação -->
+                          <div *ngIf="questao.tipo === 'correlacao'">
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Enunciado
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.pergunta" 
+                                  name="pergunta-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                              <label>
+                                Páginas
+                                <input 
+                                  type="text" 
+                                  [(ngModel)]="editingFormData.paginas" 
+                                  name="paginas-cor-{{ questao.id }}"
+                                  placeholder="Ex: 45-50"
+                                  maxlength="100"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Coluna A (uma linha por item - será numerada automaticamente: 1), 2), 3)...)
+                                <textarea 
+                                  rows="4" 
+                                  [(ngModel)]="editingFormData.coluna_a_text" 
+                                  (input)="onColunaAChange(questao.uniqueKey)"
+                                  name="cor-a-{{ questao.id }}"
+                                  placeholder="Item 1&#10;Item 2&#10;Item 3"
+                                ></textarea>
+                                <div class="coluna-preview" *ngIf="editingFormData.coluna_a_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaAItemsForPreview(editingFormData.coluna_a_text); let i = index" class="preview-item">
+                                    {{ i + 1 }}) {{ item }}
+                                  </div>
+                                </div>
+                              </label>
+                              <label>
+                                Coluna B (uma linha por item - será letrada automaticamente: A), B), C)...)
+                                <textarea 
+                                  rows="4" 
+                                  [(ngModel)]="editingFormData.coluna_b_text" 
+                                  (input)="onColunaBChange(questao.uniqueKey)"
+                                  name="cor-b-{{ questao.id }}"
+                                  placeholder="Opção A&#10;Opção B&#10;Opção C"
+                                ></textarea>
+                                <div class="coluna-preview" *ngIf="editingFormData.coluna_b_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaBItemsForPreview(editingFormData.coluna_b_text); let i = index" class="preview-item">
+                                    {{ getLetterForIndex(i) }}) {{ item }}
+                                  </div>
+                                </div>
+                              </label>
+                            </div>
+                            
+                            <!-- Mapeamento de Resposta Correta -->
+                            <div class="correlacao-mapping" *ngIf="editingFormData.correlacao_mappings && editingFormData.correlacao_mappings.length > 0">
+                              <h4>Resposta Correta - Relacione cada item da Coluna A com um item da Coluna B:</h4>
+                              <div class="mapping-list">
+                                <div *ngFor="let mapping of editingFormData.correlacao_mappings; let i = index" class="mapping-item">
+                                  <div class="mapping-label">
+                                    <strong>{{ i + 1 }})</strong> {{ mapping.colunaA || '(vazio)' }}
+                                  </div>
+                                  <select 
+                                    [(ngModel)]="mapping.respostaIndex"
+                                    (ngModelChange)="updateCorrelacaoMapping(i, $event)"
+                                    [name]="'mapping-' + questao.id + '-' + i"
+                                    class="mapping-select"
+                                  >
+                                    <option [ngValue]="null">-- Não relacionar --</option>
+                                    <option *ngFor="let itemB of getColunaBItems(); let j = index" [ngValue]="j">
+                                      {{ getLetterForIndex(j) }}) {{ itemB }}
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-grid">
+                              <label>
+                                Justificativa
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                  name="just-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div *ngIf="editError" class="edit-error">
+                            {{ editError }}
+                          </div>
+
+                          <div class="edit-actions">
+                            <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                              {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                              Cancelar
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div *ngIf="tableData.length === 0" class="empty">
+            Nenhuma questão verdadeiro/falso encontrada para as bibliografias selecionadas.
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Correlação
+          <span class="tab-count" *ngIf="allTableData.length > 0">
+            ({{ getQuestoesCountByType('correlacao') }})
+          </span>
+        </ng-template>
+        <div class="tab-content">
+          <div *ngFor="let grupo of tableData" class="bibliografia-card">
+            <div class="grupo-header">
+              <div>
+                <h2>{{ grupo.bibliografiaTitulo }}</h2>
+                <p>{{ grupo.questoes.length }} {{ grupo.questoes.length === 1 ? 'questão' : 'questões' }}</p>
+              </div>
+            </div>
+
+            <div class="tabela-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Enunciado</th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/star.svg" alt="Caiu em prova" class="header-icon star-icon" />
+                        <span>Caiu em prova</span>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/danger.svg" alt="Caveira" class="header-icon danger-icon" />
+                        <span>Caveira</span>
+                      </div>
+                    </th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngFor="let questao of grupo.questoes">
+                    <tr [class.editing-row]="isEditing(questao)">
+                      <td>#{{ questao.id }}</td>
+                      <td>
+                        <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                        <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
+                          Justificativa: {{ questao.justificativa_resposta_certa }}
+                        </div>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input 
+                            type="checkbox" 
+                            [checked]="questao.caiu_em_prova"
+                            (change)="onToggleCaiuEmProva(questao, $event.target.checked)"
+                            [disabled]="togglingCaiuEmProva.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input 
+                            type="checkbox" 
+                            [checked]="questao.caveira"
+                            (change)="onToggleCaveira(questao, $event.target.checked)"
+                            [disabled]="togglingCaveira.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaveira.has(questao.uniqueKey) ? 'Atualizando...' : questao.caveira ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
+                      </td>
+                      <td class="actions-cell">
+                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                        </button>
+                      </td>
+                    </tr>
+                    <tr *ngIf="isEditing(questao)">
+                      <td colspan="5">
+                        <div class="edit-form">
+                          <!-- Formulário específico para Múltipla Escolha -->
+                          <div *ngIf="questao.tipo === 'multipla'">
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Enunciado
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.pergunta" 
+                                  name="pergunta-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                              <label>
+                                Páginas
+                                <input 
+                                  type="text" 
+                                  [(ngModel)]="editingFormData.paginas" 
+                                  name="paginas-{{ questao.id }}"
+                                  placeholder="Ex: 45-50"
+                                  maxlength="100"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-grid multipla-grid">
+                            <label>
+                              Alternativa A
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" name="mult-a-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa B
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" name="mult-b-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa C
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" name="mult-c-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Alternativa D
+                              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" name="mult-d-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Resposta Correta
+                              <select [(ngModel)]="editingFormData.resposta_correta" name="resp-{{ questao.id }}">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                              </select>
+                            </label>
+                            </div>
+                            <div class="form-grid">
+                              <label>
+                                Justificativa
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                  name="just-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                            </div>
+                          </div>
+
+                          <!-- Formulário específico para V/F -->
+                          <div *ngIf="questao.tipo === 'vf'" class="form-grid vf-grid">
+                            <label>
+                              Enunciado
+                              <textarea 
+                                rows="3" 
+                                [(ngModel)]="editingFormData.pergunta" 
+                                name="pergunta-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                            <label>
+                              Páginas
+                              <input 
+                                type="text" 
+                                [(ngModel)]="editingFormData.paginas" 
+                                name="paginas-vf-{{ questao.id }}"
+                                placeholder="Ex: 45-50"
+                                maxlength="100"
+                              />
+                            </label>
+                            <label>
+                              Afirmação Verdadeira
+                              <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_verdadeira" name="vf-v-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Afirmação Falsa
+                              <textarea rows="2" [(ngModel)]="editingFormData.afirmacao_falsa" name="vf-f-{{ questao.id }}"></textarea>
+                            </label>
+                            <label>
+                              Justificativa
+                              <textarea 
+                                rows="3" 
+                                [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                name="just-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                          </div>
+
+                          <!-- Formulário específico para Correlação -->
+                          <div *ngIf="questao.tipo === 'correlacao'">
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Enunciado
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.pergunta" 
+                                  name="pergunta-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                              <label>
+                                Páginas
+                                <input 
+                                  type="text" 
+                                  [(ngModel)]="editingFormData.paginas" 
+                                  name="paginas-cor-{{ questao.id }}"
+                                  placeholder="Ex: 45-50"
+                                  maxlength="100"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-grid form-grid-single">
+                              <label>
+                                Coluna A (uma linha por item - será numerada automaticamente: 1), 2), 3)...)
+                                <textarea 
+                                  rows="4" 
+                                  [(ngModel)]="editingFormData.coluna_a_text" 
+                                  (input)="onColunaAChange(questao.uniqueKey)"
+                                  name="cor-a-{{ questao.id }}"
+                                  placeholder="Item 1&#10;Item 2&#10;Item 3"
+                                ></textarea>
+                                <div class="coluna-preview" *ngIf="editingFormData.coluna_a_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaAItemsForPreview(editingFormData.coluna_a_text); let i = index" class="preview-item">
+                                    {{ i + 1 }}) {{ item }}
+                                  </div>
+                                </div>
+                              </label>
+                              <label>
+                                Coluna B (uma linha por item - será letrada automaticamente: A), B), C)...)
+                                <textarea 
+                                  rows="4" 
+                                  [(ngModel)]="editingFormData.coluna_b_text" 
+                                  (input)="onColunaBChange(questao.uniqueKey)"
+                                  name="cor-b-{{ questao.id }}"
+                                  placeholder="Opção A&#10;Opção B&#10;Opção C"
+                                ></textarea>
+                                <div class="coluna-preview" *ngIf="editingFormData.coluna_b_text">
+                                  <strong>Preview:</strong>
+                                  <div *ngFor="let item of getColunaBItemsForPreview(editingFormData.coluna_b_text); let i = index" class="preview-item">
+                                    {{ getLetterForIndex(i) }}) {{ item }}
+                                  </div>
+                                </div>
+                              </label>
+                            </div>
+                            
+                            <!-- Mapeamento de Resposta Correta -->
+                            <div class="correlacao-mapping" *ngIf="editingFormData.correlacao_mappings && editingFormData.correlacao_mappings.length > 0">
+                              <h4>Resposta Correta - Relacione cada item da Coluna A com um item da Coluna B:</h4>
+                              <div class="mapping-list">
+                                <div *ngFor="let mapping of editingFormData.correlacao_mappings; let i = index" class="mapping-item">
+                                  <div class="mapping-label">
+                                    <strong>{{ i + 1 }})</strong> {{ mapping.colunaA || '(vazio)' }}
+                                  </div>
+                                  <select 
+                                    [(ngModel)]="mapping.respostaIndex"
+                                    (ngModelChange)="updateCorrelacaoMapping(i, $event)"
+                                    [name]="'mapping-' + questao.id + '-' + i"
+                                    class="mapping-select"
+                                  >
+                                    <option [ngValue]="null">-- Não relacionar --</option>
+                                    <option *ngFor="let itemB of getColunaBItems(); let j = index" [ngValue]="j">
+                                      {{ getLetterForIndex(j) }}) {{ itemB }}
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-grid">
+                              <label>
+                                Justificativa
+                                <textarea 
+                                  rows="3" 
+                                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                                  name="just-{{ questao.id }}"
+                                ></textarea>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div *ngIf="editError" class="edit-error">
+                            {{ editError }}
+                          </div>
+
+                          <div class="edit-actions">
+                            <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                              {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                              Cancelar
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div *ngIf="tableData.length === 0" class="empty">
+            Nenhuma questão de correlação encontrada para as bibliografias selecionadas.
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
   </div>
 </div>

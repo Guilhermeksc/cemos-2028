@@ -95,6 +95,51 @@ body.flashcards-fullscreen-active {
   }
 }
 
+// Quando o PDF slides viewer está ativo, garantir que side-menu fique abaixo
+body.pdf-slides-viewer-active {
+  // Sidenav do Angular Material - todas as variações possíveis
+  .mat-sidenav,
+  .mat-drawer,
+  mat-sidenav,
+  mat-drawer,
+  .mat-sidenav-container,
+  .mat-drawer-container,
+  .mat-drawer-backdrop,
+  .mat-drawer-side,
+  [class*="mat-sidenav"],
+  [class*="mat-drawer"],
+  app-side-menu {
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  // Menu mobile no topo
+  .top-menu-container,
+  .menu-overlay {
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  // Header mobile
+  .top-header {
+    z-index: 1 !important;
+  }
+
+  // Side menu específico
+  app-side-menu,
+  .side-menu-container {
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  // Slides viewer overlay deve estar acima de tudo
+  .slides-viewer-overlay {
+    z-index: 999999 !important;
+    pointer-events: auto !important;
+    position: fixed !important;
+  }
+}
+
 
 // Estilo dos botões de navegação em tons de preto e branco
 .navigation-buttons {

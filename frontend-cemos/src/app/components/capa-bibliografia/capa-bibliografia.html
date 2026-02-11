@@ -47,6 +47,12 @@
           <span class="button-text">Check Abandono</span>
         </span>
       </button>
+      <button mat-stroked-button (click)="openSlidesViewer()" *ngIf="canShowSlidesButton()">
+        <span class="button-content">
+          <mat-icon class="button-icon">slideshow</mat-icon>
+          <span class="button-text">Slides</span>
+        </span>
+      </button>
     </div>
     
     <!-- MODO MÚLTIPLAS CAPAS: Grid de capas clicáveis -->
@@ -140,6 +146,14 @@
     [style.left.px]="tooltipX"
     [style.top.px]="tooltipY">
     Clique para acessar o conteúdo.
+  </div>
+
+  <!-- PDF Slides Viewer Overlay -->
+  <div class="slides-viewer-overlay" *ngIf="showSlidesViewer">
+    <app-pdf-slides-viewer
+      [pdfFolders]="pdfSlidesFolders"
+      (closeRequested)="closeSlidesViewer()">
+    </app-pdf-slides-viewer>
   </div>
 
 </div>

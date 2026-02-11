@@ -7,16 +7,19 @@ import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-app4-historia-bibliografia',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, CapaBibliografia],
+  imports: [
+    CommonModule, 
+    RouterOutlet, 
+    CapaBibliografia
+  ],
   templateUrl: './app4-historia-bibliografia.html',
   styleUrl: './app4-historia-bibliografia.scss'
 })
 export class App4HistoriaBibliografia implements OnInit {
-  public conceitosPath = '/home/app4-historia/conceitos';
   public flashcardsPath = '/home/app4-historia/flash-cards';
   public perguntasPath = '/home/app4-historia/perguntas';
   public simuladosPath = '/home/app4-historia/simulados';
-  public checkAbandonoPath = '/home/app4-historia/check-abandono';
+  public slidesPath = '/home/app4-historia/slides';
   // Configuração de múltiplas capas
   capas: CapaConfig[] = [
     {
@@ -55,6 +58,55 @@ export class App4HistoriaBibliografia implements OnInit {
 
   // Controla se deve mostrar a capa ou não
   showCapa = true;
+  
+  // Configuração para PDF Slides (passado para capa-bibliografia)
+  // Estrutura de subpastas para organizar os PDFs
+  pdfSlidesFolders: Array<{name: string, path: string, files: string[]}> = [
+    {
+      name: 'Breve História do Século XX',
+      path: 'historia/breve-historia/pdf',
+      files: [
+        'Cap1-AuroraResplandecente.pdf',
+        'Cap3-TempestadeMudancas.pdf',
+        'Cap4-GuerradasGuerras.pdf',
+        'Cap5-RevoltaPetrogrado.pdf',
+        'Cap6-UtopiaPesadelo.pdf',
+        'Cap7-VelhoSultao.pdf',
+        'Cap9-PercussionistaItaliano.pdf',
+        'Cap10-DepressaoMundial.pdf',
+        'Cap11-AscensaoHitler.pdf',
+        'Cap12-UmaSegundaGuerraMundial.pdf',
+        'Cap13-DePearlHarboraQuedadeBerlim.pdf',
+        'Cap14-UmaArmaMuitoSecreta.pdf',
+        'Cap15-CaioPano.pdf',
+        'Cap16-AFlechaFlamenjanteeosVentosdaMudanca.pdf',
+        'Cap18-AsNavesdaVinganca.pdf',
+        'Cap19-AIlhaeoNavioFantasma.pdf',
+        'Cap23-RaioseTrovoesemMoscoueVarsovia.pdf',
+        'Cap24-AQuedadosMuros.pdf',
+        'Cap26-LuadoIslaBrilhaoutraVez.pdf',
+      ]
+    },
+    {
+      name: 'Guerra no Mar',
+      path: 'historia/guerras-mar/pdf',
+      files: [] // Adicionar arquivos quando disponíveis
+    },
+    {
+      name: 'História das Guerras',
+      path: 'historia/historia-guerras/pdf',
+      files: [
+        'Cap1-Guerra_da_Indochina.pdf',
+        'Cap2-Guerras_Árabe_Israelenses.pdf',
+        'Cap3-Guerras_do_Golfo.pdf',
+      ] // Adicionar arquivos quando disponíveis
+    },
+    {
+      name: 'Síntese Histórica',
+      path: 'historia/sintese-historica/pdf',
+      files: [] // Adicionar arquivos quando disponíveis
+    }
+  ];
 
   constructor(private router: Router) {}
 

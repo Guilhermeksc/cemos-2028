@@ -580,11 +580,11 @@ export const MODULE_ROUTE_CONFIGS: ModuleRouteConfig[] = [
           import('../modules/app4-historia/app4-simulados/app4-simulados').then((m) => m.App4Simulados)
       },
       {
-        title: 'Check Abandono',
-        path: 'check-abandono',
+        title: 'Slides',
+        path: 'slides',
         loadComponent: () =>
-          import('../modules/app4-historia/app4-historia-check-abandono/app4-historia-check-abandono').then(
-            (m) => m.App4HistoriaCheckAbandono
+          import('../modules/app4-historia/app4-historia-slides/app4-historia-slides').then(
+            (m) => m.App4HistoriaSlides
           )
       },
       {

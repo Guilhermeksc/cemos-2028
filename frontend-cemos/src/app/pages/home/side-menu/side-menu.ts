@@ -129,8 +129,7 @@ export class SideMenu implements OnInit, OnDestroy {
         'Flash Cards',
         'Perguntas',
         'Simulados',
-        'Check Abandono',
-        'Conceitos',
+        'Slides',
         'Líderes Históricos',   
       ],
       expanded: false
@@ -639,8 +638,8 @@ export class SideMenu implements OnInit, OnDestroy {
             case 'Simulados':
               pathParts.push('simulados');
               break;
-            case 'Check Abandono':
-              pathParts.push('check-abandono');
+            case 'Slides':
+              pathParts.push('slides');
               break;
           }
         }

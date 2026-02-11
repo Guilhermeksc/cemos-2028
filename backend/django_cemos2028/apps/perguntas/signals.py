@@ -313,6 +313,30 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if justificativa is None or justificativa.strip() == '':
                                 justificativa = 'Justificativa não fornecida.'
                             
+                            # Converter caiu_em_prova para boolean
+                            caiu_em_prova_val = row.get('caiu_em_prova', False)
+                            if pd.isna(caiu_em_prova_val):
+                                caiu_em_prova_bool = False
+                            elif isinstance(caiu_em_prova_val, bool):
+                                caiu_em_prova_bool = caiu_em_prova_val
+                            elif isinstance(caiu_em_prova_val, (int, float)):
+                                caiu_em_prova_bool = bool(caiu_em_prova_val)
+                            else:
+                                caiu_em_prova_str = str(caiu_em_prova_val).lower().strip()
+                                caiu_em_prova_bool = caiu_em_prova_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
+                            # Converter caveira para boolean (aceita múltiplos formatos)
+                            caveira_val = row.get('caveira', False)
+                            if pd.isna(caveira_val):
+                                caveira_bool = False
+                            elif isinstance(caveira_val, bool):
+                                caveira_bool = caveira_val
+                            elif isinstance(caveira_val, (int, float)):
+                                caveira_bool = bool(caveira_val)
+                            else:
+                                caveira_str = str(caveira_val).lower().strip()
+                                caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
                             obj, created = PerguntaMultiplaModel.objects.update_or_create(
                                 id=pergunta_id,
                                 defaults={
@@ -326,8 +350,9 @@ def load_fixtures_perguntas(sender, **kwargs):
                                     'alternativa_d': _as_clean_str(row['alternativa_d']),
                                     'resposta_correta': _as_clean_str(row['resposta_correta']).lower(),
                                     'justificativa_resposta_certa': justificativa,
-                                    'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
-                                    'ano_prova': _as_int(row.get('ano_prova'))
+                                    'caiu_em_prova': caiu_em_prova_bool,
+                                    'ano_prova': _as_int(row.get('ano_prova')),
+                                    'caveira': caveira_bool
                                 }
                             )
                             if created:
@@ -395,6 +420,30 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if justificativa is None or justificativa.strip() == '':
                                 justificativa = 'Justificativa não fornecida.'
                             
+                            # Converter caiu_em_prova para boolean
+                            caiu_em_prova_val = row.get('caiu_em_prova', False)
+                            if pd.isna(caiu_em_prova_val):
+                                caiu_em_prova_bool = False
+                            elif isinstance(caiu_em_prova_val, bool):
+                                caiu_em_prova_bool = caiu_em_prova_val
+                            elif isinstance(caiu_em_prova_val, (int, float)):
+                                caiu_em_prova_bool = bool(caiu_em_prova_val)
+                            else:
+                                caiu_em_prova_str = str(caiu_em_prova_val).lower().strip()
+                                caiu_em_prova_bool = caiu_em_prova_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
+                            # Converter caveira para boolean (aceita múltiplos formatos)
+                            caveira_val = row.get('caveira', False)
+                            if pd.isna(caveira_val):
+                                caveira_bool = False
+                            elif isinstance(caveira_val, bool):
+                                caveira_bool = caveira_val
+                            elif isinstance(caveira_val, (int, float)):
+                                caveira_bool = bool(caveira_val)
+                            else:
+                                caveira_str = str(caveira_val).lower().strip()
+                                caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
                             obj, created = PerguntaVFModel.objects.update_or_create(
                                 id=pergunta_id,
                                 defaults={
@@ -405,8 +454,9 @@ def load_fixtures_perguntas(sender, **kwargs):
                                     'afirmacao_verdadeira': _as_clean_str(row['afirmacao_verdadeira']),
                                     'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),
                                     'justificativa_resposta_certa': justificativa,
-                                    'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
-                                    'ano_prova': _as_int(row.get('ano_prova'))
+                                    'caiu_em_prova': caiu_em_prova_bool,
+                                    'ano_prova': _as_int(row.get('ano_prova')),
+                                    'caveira': caveira_bool
                                 }
                             )
                             if created:
@@ -481,6 +531,30 @@ def load_fixtures_perguntas(sender, **kwargs):
                             if justificativa is None or justificativa.strip() == '':
                                 justificativa = 'Justificativa não fornecida.'
                             
+                            # Converter caiu_em_prova para boolean
+                            caiu_em_prova_val = row.get('caiu_em_prova', False)
+                            if pd.isna(caiu_em_prova_val):
+                                caiu_em_prova_bool = False
+                            elif isinstance(caiu_em_prova_val, bool):
+                                caiu_em_prova_bool = caiu_em_prova_val
+                            elif isinstance(caiu_em_prova_val, (int, float)):
+                                caiu_em_prova_bool = bool(caiu_em_prova_val)
+                            else:
+                                caiu_em_prova_str = str(caiu_em_prova_val).lower().strip()
+                                caiu_em_prova_bool = caiu_em_prova_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
+                            # Converter caveira para boolean (aceita múltiplos formatos)
+                            caveira_val = row.get('caveira', False)
+                            if pd.isna(caveira_val):
+                                caveira_bool = False
+                            elif isinstance(caveira_val, bool):
+                                caveira_bool = caveira_val
+                            elif isinstance(caveira_val, (int, float)):
+                                caveira_bool = bool(caveira_val)
+                            else:
+                                caveira_str = str(caveira_val).lower().strip()
+                                caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
+                            
                             obj, created = PerguntaCorrelacaoModel.objects.update_or_create(
                                 id=pergunta_id,
                                 defaults={
@@ -492,8 +566,9 @@ def load_fixtures_perguntas(sender, **kwargs):
                                     'coluna_b': coluna_b,
                                     'resposta_correta': resposta_correta,
                                     'justificativa_resposta_certa': justificativa,
-                                    'caiu_em_prova': bool(row.get('caiu_em_prova', False)),
-                                    'ano_prova': _as_int(row.get('ano_prova'))
+                                    'caiu_em_prova': caiu_em_prova_bool,
+                                    'ano_prova': _as_int(row.get('ano_prova')),
+                                    'caveira': caveira_bool
                                 }
                             )
                             if created:
