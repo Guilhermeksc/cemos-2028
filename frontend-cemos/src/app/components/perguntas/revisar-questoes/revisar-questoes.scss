@@ -67,6 +67,18 @@
     padding: 0.25rem 0.75rem;
   }
 
+  &.btn-icon {
+    padding: 0.35rem;
+    min-width: auto;
+    line-height: 1;
+
+    .btn-icon-img {
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+  }
+
   &.btn-save {
     border-color: #2563eb;
     color: #2563eb;
@@ -184,7 +196,7 @@ table {
     align-items: center;
   }
 
-  .ano-edit-inline {
+  .cell-edit-inline {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
@@ -200,8 +212,17 @@ table {
     border-radius: 6px;
   }
 
-  .btn-ano {
+  .paginas-input {
+    width: 90px;
+    padding: 0.25rem 0.4rem;
     font-size: 0.85rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+  }
+
+  .btn-paginas,
+  .btn-ano {
+    margin-top: 0.35rem;
   }
 
   // Quando a linha está em modo de edição, aumentar altura da coluna de ações
@@ -214,6 +235,14 @@ table {
 
   tr:last-child td {
     border-bottom: none;
+  }
+
+  tr.row-caiu-prova td {
+    background-color: #fefce8;
+  }
+
+  tr.row-caveira td {
+    background-color: #fef2f2;
   }
 }
 

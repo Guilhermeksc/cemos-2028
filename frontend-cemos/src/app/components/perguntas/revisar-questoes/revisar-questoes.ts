@@ -92,6 +92,9 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
   editingAnoKey: string | null = null;
   anoProvaInput: number | null = null;
   togglingAnoProva = new Set<string>();
+  editingPaginasKey: string | null = null;
+  paginasInput: string = '';
+  togglingPaginas = new Set<string>();
 
   // Formulário de adicionar questão
   showAddForm = false;
@@ -768,8 +771,26 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
 
     return Array.from(grupos.values()).map(grupo => ({
       ...grupo,
-      questoes: grupo.questoes.sort((a, b) => a.id - b.id)
+      questoes: grupo.questoes.sort((a, b) => {
+        const numA = RevisarQuestoes.extractFirstPageNumber(a.data?.paginas);
+        const numB = RevisarQuestoes.extractFirstPageNumber(b.data?.paginas);
+        if (numA !== numB) return numA - numB;
+        return a.id - b.id;
+      })
     }));
+  }
+
+  /**
+   * Extrai o primeiro número válido de uma string de páginas.
+   * Ex: "Pág. 1", "Pág 1", "Página 1", "Pág 12, 15 e 17" -> 1, 1, 1, 12
+   * Retorna Infinity se não encontrar número (para ordenar no final).
+   */
+  private static extractFirstPageNumber(paginas: string | null | undefined): number {
+    if (paginas == null || typeof paginas !== 'string') return Infinity;
+    const trimmed = paginas.trim();
+    if (!trimmed) return Infinity;
+    const match = trimmed.match(/\d+/);
+    return match ? parseInt(match[0], 10) : Infinity;
   }
 
   getQuestaoTipoDisplay(tipo: 'multipla' | 'vf' | 'correlacao'): string {
@@ -1248,6 +1269,40 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
   cancelEditingAno(): void {
     this.editingAnoKey = null;
     this.anoProvaInput = null;
+  }
+
+  isEditingPaginas(row: RevisarQuestaoRow): boolean {
+    return this.editingPaginasKey === row.uniqueKey;
+  }
+
+  startEditingPaginas(row: RevisarQuestaoRow): void {
+    if (!this.isAdmin) return;
+    this.editingPaginasKey = row.uniqueKey;
+    this.paginasInput = row.data?.paginas || '';
+  }
+
+  cancelEditingPaginas(): void {
+    this.editingPaginasKey = null;
+    this.paginasInput = '';
+  }
+
+  savePaginas(row: RevisarQuestaoRow): void {
+    if (!this.isAdmin || this.editingPaginasKey !== row.uniqueKey) return;
+    const paginas = this.paginasInput?.trim() || null;
+    this.togglingPaginas.add(row.uniqueKey);
+    this.updatePergunta(row, { paginas })
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (updated: Pergunta) => {
+          this.applyUpdatedRow(row, updated);
+          this.cancelEditingPaginas();
+          this.togglingPaginas.delete(row.uniqueKey);
+        },
+        error: (error: any) => {
+          console.error('❌ Erro ao salvar páginas:', error);
+          this.togglingPaginas.delete(row.uniqueKey);
+        }
+      });
   }
 
   saveAnoProva(row: RevisarQuestaoRow): void {

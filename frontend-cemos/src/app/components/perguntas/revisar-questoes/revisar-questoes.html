@@ -309,9 +309,34 @@
                 </thead>
                 <tbody>
                   <ng-container *ngFor="let questao of grupo.questoes">
-                    <tr [class.editing-row]="isEditing(questao)">
+                    <tr [class.editing-row]="isEditing(questao)" [class.row-caiu-prova]="questao.caiu_em_prova && !questao.caveira" [class.row-caveira]="questao.caveira">
                       <td>#{{ questao.id }}</td>
-                      <td>{{ questao.data.paginas || '–' }}</td>
+                      <td>
+                        <div>{{ questao.data.paginas || '–' }}</div>
+                        <ng-container *ngIf="isAdmin">
+                          <ng-container *ngIf="!isEditingPaginas(questao)">
+                            <button class="btn btn-icon btn-paginas" (click)="startEditingPaginas(questao)" title="Editar páginas">
+                              <img src="/assets/img/svg/pilha-de-livros.svg" alt="Páginas" class="btn-icon-img" />
+                            </button>
+                          </ng-container>
+                          <div class="cell-edit-inline" *ngIf="isEditingPaginas(questao)">
+                            <input 
+                              type="text" 
+                              [(ngModel)]="paginasInput" 
+                              [name]="'paginas-' + questao.id"
+                              placeholder="Ex: 45-50"
+                              maxlength="100"
+                              class="paginas-input"
+                            />
+                            <button class="btn btn-small btn-save" (click)="savePaginas(questao)" [disabled]="togglingPaginas.has(questao.uniqueKey)">
+                              {{ togglingPaginas.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" (click)="cancelEditingPaginas()" [disabled]="togglingPaginas.has(questao.uniqueKey)">
+                              Cancelar
+                            </button>
+                          </div>
+                        </ng-container>
+                      </td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
                         <ng-container *ngIf="questao.tipo === 'vf'">
@@ -366,6 +391,30 @@
                           <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
                         </label>
                         <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
+                          <ng-container *ngIf="!isEditingAno(questao)">
+                            <button class="btn btn-icon btn-ano" (click)="startEditingAno(questao)" [title]="'Editar ano' + (questao.ano_prova ? ' (' + questao.ano_prova + ')' : '')">
+                              <img src="/assets/img/svg/calendar.svg" alt="Ano" class="btn-icon-img" />
+                            </button>
+                          </ng-container>
+                          <div class="cell-edit-inline" *ngIf="isEditingAno(questao)">
+                            <input 
+                              type="number" 
+                              [(ngModel)]="anoProvaInput" 
+                              [name]="'ano-' + questao.id"
+                              placeholder="Ex: 2024"
+                              min="1900"
+                              max="2100"
+                              class="ano-input"
+                            />
+                            <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              Cancelar
+                            </button>
+                          </div>
+                        </ng-container>
                       </td>
                       <td>
                         <label class="toggle-label" *ngIf="isAdmin">
@@ -380,35 +429,9 @@
                         <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
                       </td>
                       <td class="actions-cell">
-                        <div class="actions-buttons">
-                          <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
-                            {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
-                          </button>
-                          <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
-                            <ng-container *ngIf="!isEditingAno(questao)">
-                              <button class="btn btn-small btn-ano" (click)="startEditingAno(questao)">
-                                Ano {{ questao.ano_prova ? '(' + questao.ano_prova + ')' : '' }}
-                              </button>
-                            </ng-container>
-                            <div class="ano-edit-inline" *ngIf="isEditingAno(questao)">
-                              <input 
-                                type="number" 
-                                [(ngModel)]="anoProvaInput" 
-                                [name]="'ano-' + questao.id"
-                                placeholder="Ex: 2024"
-                                min="1900"
-                                max="2100"
-                                class="ano-input"
-                              />
-                              <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
-                                {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
-                              </button>
-                              <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
-                                Cancelar
-                              </button>
-                            </div>
-                          </ng-container>
-                        </div>
+                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                        </button>
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
@@ -682,9 +705,34 @@
                 </thead>
                 <tbody>
                   <ng-container *ngFor="let questao of grupo.questoes">
-                    <tr [class.editing-row]="isEditing(questao)">
+                    <tr [class.editing-row]="isEditing(questao)" [class.row-caiu-prova]="questao.caiu_em_prova && !questao.caveira" [class.row-caveira]="questao.caveira">
                       <td>#{{ questao.id }}</td>
-                      <td>{{ questao.data.paginas || '–' }}</td>
+                      <td>
+                        <div>{{ questao.data.paginas || '–' }}</div>
+                        <ng-container *ngIf="isAdmin">
+                          <ng-container *ngIf="!isEditingPaginas(questao)">
+                            <button class="btn btn-icon btn-paginas" (click)="startEditingPaginas(questao)" title="Editar páginas">
+                              <img src="/assets/img/svg/pilha-de-livros.svg" alt="Páginas" class="btn-icon-img" />
+                            </button>
+                          </ng-container>
+                          <div class="cell-edit-inline" *ngIf="isEditingPaginas(questao)">
+                            <input 
+                              type="text" 
+                              [(ngModel)]="paginasInput" 
+                              [name]="'paginas-' + questao.id"
+                              placeholder="Ex: 45-50"
+                              maxlength="100"
+                              class="paginas-input"
+                            />
+                            <button class="btn btn-small btn-save" (click)="savePaginas(questao)" [disabled]="togglingPaginas.has(questao.uniqueKey)">
+                              {{ togglingPaginas.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" (click)="cancelEditingPaginas()" [disabled]="togglingPaginas.has(questao.uniqueKey)">
+                              Cancelar
+                            </button>
+                          </div>
+                        </ng-container>
+                      </td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
                         <ng-container *ngIf="questao.tipo === 'vf'">
@@ -739,6 +787,30 @@
                           <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
                         </label>
                         <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
+                          <ng-container *ngIf="!isEditingAno(questao)">
+                            <button class="btn btn-icon btn-ano" (click)="startEditingAno(questao)" [title]="'Editar ano' + (questao.ano_prova ? ' (' + questao.ano_prova + ')' : '')">
+                              <img src="/assets/img/svg/calendar.svg" alt="Ano" class="btn-icon-img" />
+                            </button>
+                          </ng-container>
+                          <div class="cell-edit-inline" *ngIf="isEditingAno(questao)">
+                            <input 
+                              type="number" 
+                              [(ngModel)]="anoProvaInput" 
+                              [name]="'ano-' + questao.id"
+                              placeholder="Ex: 2024"
+                              min="1900"
+                              max="2100"
+                              class="ano-input"
+                            />
+                            <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              Cancelar
+                            </button>
+                          </div>
+                        </ng-container>
                       </td>
                       <td>
                         <label class="toggle-label" *ngIf="isAdmin">
@@ -753,35 +825,9 @@
                         <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
                       </td>
                       <td class="actions-cell">
-                        <div class="actions-buttons">
-                          <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
-                            {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
-                          </button>
-                          <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
-                            <ng-container *ngIf="!isEditingAno(questao)">
-                              <button class="btn btn-small btn-ano" (click)="startEditingAno(questao)">
-                                Ano {{ questao.ano_prova ? '(' + questao.ano_prova + ')' : '' }}
-                              </button>
-                            </ng-container>
-                            <div class="ano-edit-inline" *ngIf="isEditingAno(questao)">
-                              <input 
-                                type="number" 
-                                [(ngModel)]="anoProvaInput" 
-                                [name]="'ano-' + questao.id"
-                                placeholder="Ex: 2024"
-                                min="1900"
-                                max="2100"
-                                class="ano-input"
-                              />
-                              <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
-                                {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
-                              </button>
-                              <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
-                                Cancelar
-                              </button>
-                            </div>
-                          </ng-container>
-                        </div>
+                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                        </button>
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
@@ -1055,9 +1101,34 @@
                 </thead>
                 <tbody>
                   <ng-container *ngFor="let questao of grupo.questoes">
-                    <tr [class.editing-row]="isEditing(questao)">
+                    <tr [class.editing-row]="isEditing(questao)" [class.row-caiu-prova]="questao.caiu_em_prova && !questao.caveira" [class.row-caveira]="questao.caveira">
                       <td>#{{ questao.id }}</td>
-                      <td>{{ questao.data.paginas || '–' }}</td>
+                      <td>
+                        <div>{{ questao.data.paginas || '–' }}</div>
+                        <ng-container *ngIf="isAdmin">
+                          <ng-container *ngIf="!isEditingPaginas(questao)">
+                            <button class="btn btn-icon btn-paginas" (click)="startEditingPaginas(questao)" title="Editar páginas">
+                              <img src="/assets/img/svg/pilha-de-livros.svg" alt="Páginas" class="btn-icon-img" />
+                            </button>
+                          </ng-container>
+                          <div class="cell-edit-inline" *ngIf="isEditingPaginas(questao)">
+                            <input 
+                              type="text" 
+                              [(ngModel)]="paginasInput" 
+                              [name]="'paginas-' + questao.id"
+                              placeholder="Ex: 45-50"
+                              maxlength="100"
+                              class="paginas-input"
+                            />
+                            <button class="btn btn-small btn-save" (click)="savePaginas(questao)" [disabled]="togglingPaginas.has(questao.uniqueKey)">
+                              {{ togglingPaginas.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" (click)="cancelEditingPaginas()" [disabled]="togglingPaginas.has(questao.uniqueKey)">
+                              Cancelar
+                            </button>
+                          </div>
+                        </ng-container>
+                      </td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
                         <ng-container *ngIf="questao.tipo === 'vf'">
@@ -1112,6 +1183,30 @@
                           <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
                         </label>
                         <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
+                          <ng-container *ngIf="!isEditingAno(questao)">
+                            <button class="btn btn-icon btn-ano" (click)="startEditingAno(questao)" [title]="'Editar ano' + (questao.ano_prova ? ' (' + questao.ano_prova + ')' : '')">
+                              <img src="/assets/img/svg/calendar.svg" alt="Ano" class="btn-icon-img" />
+                            </button>
+                          </ng-container>
+                          <div class="cell-edit-inline" *ngIf="isEditingAno(questao)">
+                            <input 
+                              type="number" 
+                              [(ngModel)]="anoProvaInput" 
+                              [name]="'ano-' + questao.id"
+                              placeholder="Ex: 2024"
+                              min="1900"
+                              max="2100"
+                              class="ano-input"
+                            />
+                            <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              Cancelar
+                            </button>
+                          </div>
+                        </ng-container>
                       </td>
                       <td>
                         <label class="toggle-label" *ngIf="isAdmin">
@@ -1126,35 +1221,9 @@
                         <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
                       </td>
                       <td class="actions-cell">
-                        <div class="actions-buttons">
-                          <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
-                            {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
-                          </button>
-                          <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
-                            <ng-container *ngIf="!isEditingAno(questao)">
-                              <button class="btn btn-small btn-ano" (click)="startEditingAno(questao)">
-                                Ano {{ questao.ano_prova ? '(' + questao.ano_prova + ')' : '' }}
-                              </button>
-                            </ng-container>
-                            <div class="ano-edit-inline" *ngIf="isEditingAno(questao)">
-                              <input 
-                                type="number" 
-                                [(ngModel)]="anoProvaInput" 
-                                [name]="'ano-' + questao.id"
-                                placeholder="Ex: 2024"
-                                min="1900"
-                                max="2100"
-                                class="ano-input"
-                              />
-                              <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
-                                {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
-                              </button>
-                              <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
-                                Cancelar
-                              </button>
-                            </div>
-                          </ng-container>
-                        </div>
+                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                        </button>
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
