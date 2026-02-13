@@ -170,13 +170,38 @@ table {
     }
   }
 
-  // Coluna de ações - largura fixa
+  // Coluna de ações
   th:last-child,
   td.actions-cell {
-    width: 120px;
     min-width: 120px;
-    max-width: 120px;
     white-space: nowrap;
+  }
+
+  .actions-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+  }
+
+  .ano-edit-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    margin-top: 0.35rem;
+  }
+
+  .ano-input {
+    width: 70px;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.85rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+  }
+
+  .btn-ano {
+    font-size: 0.85rem;
   }
 
   // Quando a linha está em modo de edição, aumentar altura da coluna de ações
@@ -196,6 +221,100 @@ table {
   font-weight: 600;
   color: #0f172a;
   margin-bottom: 0.35rem;
+}
+
+.pergunta-assertivas {
+  margin: 0.4rem 0 0.5rem;
+  padding: 0.35rem 0;
+  border-left: 2px solid #e2e8f0;
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
+  color: #64748b;
+
+  .assertiva {
+    margin-bottom: 0.2rem;
+    line-height: 1.35;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .assertiva-label {
+    font-weight: 600;
+    margin-right: 0.25rem;
+  }
+
+  .assertiva-verdadeira .assertiva-label {
+    color: #059669;
+  }
+
+  .assertiva-falsa .assertiva-label {
+    color: #b91c1c;
+  }
+}
+
+.pergunta-alternativas {
+  margin: 0.4rem 0 0.5rem;
+  padding: 0.35rem 0;
+  border-left: 2px solid #e2e8f0;
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
+  color: #64748b;
+
+  .alternativa {
+    margin-bottom: 0.2rem;
+    line-height: 1.35;
+  }
+
+  .resposta-certa {
+    margin-top: 0.4rem;
+    padding-top: 0.35rem;
+    border-top: 1px dashed #cbd5e1;
+    font-weight: 600;
+    color: #059669;
+  }
+}
+
+.pergunta-correlacao {
+  margin: 0.4rem 0 0.5rem;
+  padding: 0.35rem 0;
+  border-left: 2px solid #e2e8f0;
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
+  color: #64748b;
+
+  .correlacao-coluna,
+  .correlacao-resposta {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .correlacao-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #475569;
+  }
+
+  .correlacao-item,
+  .correlacao-mapping-item {
+    margin-bottom: 0.15rem;
+    line-height: 1.35;
+  }
+
+  .correlacao-resposta {
+    margin-top: 0.4rem;
+    padding-top: 0.35rem;
+    border-top: 1px dashed #cbd5e1;
+
+    .correlacao-mapping-item {
+      color: #059669;
+    }
+  }
 }
 
 .pergunta-justificativa {

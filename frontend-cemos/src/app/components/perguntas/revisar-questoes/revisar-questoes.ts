@@ -89,6 +89,9 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
   editError: string | null = null;
   togglingCaiuEmProva = new Set<string>();
   togglingCaveira = new Set<string>();
+  editingAnoKey: string | null = null;
+  anoProvaInput: number | null = null;
+  togglingAnoProva = new Set<string>();
 
   // Formulário de adicionar questão
   showAddForm = false;
@@ -919,6 +922,47 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     return String.fromCharCode(65 + index);
   }
 
+  getAlternativaByLetra(row: RevisarQuestaoRow, letra: 'a' | 'b' | 'c' | 'd' | string | null): string {
+    if (!letra || row.tipo !== 'multipla' || !row.data) return '';
+    const data = row.data as { alternativa_a?: string; alternativa_b?: string; alternativa_c?: string; alternativa_d?: string };
+    const l = String(letra).toLowerCase();
+    if (l === 'a') return data.alternativa_a || '';
+    if (l === 'b') return data.alternativa_b || '';
+    if (l === 'c') return data.alternativa_c || '';
+    if (l === 'd') return data.alternativa_d || '';
+    return '';
+  }
+
+  getColunaAFromRow(row: RevisarQuestaoRow): string[] {
+    if (row.tipo !== 'correlacao' || !row.data) return [];
+    const data = row.data as { coluna_a?: string[] };
+    return Array.isArray(data.coluna_a) ? data.coluna_a : [];
+  }
+
+  getColunaBFromRow(row: RevisarQuestaoRow): string[] {
+    if (row.tipo !== 'correlacao' || !row.data) return [];
+    const data = row.data as { coluna_b?: string[] };
+    return Array.isArray(data.coluna_b) ? data.coluna_b : [];
+  }
+
+  getCorrelacaoMappingsDisplay(row: RevisarQuestaoRow): string[] {
+    if (row.tipo !== 'correlacao' || !row.data) return [];
+    const data = row.data as { coluna_a?: string[]; coluna_b?: string[]; resposta_correta?: { [key: string]: string | number } };
+    const colunaA = Array.isArray(data.coluna_a) ? data.coluna_a : [];
+    const colunaB = Array.isArray(data.coluna_b) ? data.coluna_b : [];
+    const rc = data.resposta_correta || {};
+    return colunaA
+      .map((itemA: string, indexA: number) => {
+        const idxB = rc[indexA.toString()];
+        if (idxB === undefined || idxB === null) return null;
+        const numB = typeof idxB === 'string' ? parseInt(idxB, 10) : idxB;
+        if (isNaN(numB) || numB < 0 || numB >= colunaB.length) return null;
+        const letter = this.getLetterForIndex(numB);
+        return `${indexA + 1}) → ${letter}) ${colunaB[numB]}`;
+      })
+      .filter((m): m is string => m !== null);
+  }
+
   updateCorrelacaoMapping(indexA: number, indexB: number | null): void {
     if (!this.editingFormData || !this.editingFormData.correlacao_mappings) return;
     
@@ -1187,6 +1231,42 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
         error: (error: any) => {
           console.error('❌ Erro ao atualizar caiu_em_prova:', error);
           this.togglingCaiuEmProva.delete(key);
+        }
+      });
+  }
+
+  isEditingAno(row: RevisarQuestaoRow): boolean {
+    return this.editingAnoKey === row.uniqueKey;
+  }
+
+  startEditingAno(row: RevisarQuestaoRow): void {
+    if (!this.isAdmin || !row.caiu_em_prova) return;
+    this.editingAnoKey = row.uniqueKey;
+    this.anoProvaInput = row.ano_prova ?? null;
+  }
+
+  cancelEditingAno(): void {
+    this.editingAnoKey = null;
+    this.anoProvaInput = null;
+  }
+
+  saveAnoProva(row: RevisarQuestaoRow): void {
+    if (!this.isAdmin || this.editingAnoKey !== row.uniqueKey) return;
+    const ano = this.anoProvaInput;
+    const anoValido = ano != null && !isNaN(ano) && ano >= 1900 && ano <= 2100;
+    const payload = anoValido ? { ano_prova: ano } : { ano_prova: null };
+    this.togglingAnoProva.add(row.uniqueKey);
+    this.updatePergunta(row, payload)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (updated: Pergunta) => {
+          this.applyUpdatedRow(row, updated);
+          this.cancelEditingAno();
+          this.togglingAnoProva.delete(row.uniqueKey);
+        },
+        error: (error: any) => {
+          console.error('❌ Erro ao salvar ano da prova:', error);
+          this.togglingAnoProva.delete(row.uniqueKey);
         }
       });
   }

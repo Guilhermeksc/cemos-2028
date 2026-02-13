@@ -311,9 +311,46 @@
                   <ng-container *ngFor="let questao of grupo.questoes">
                     <tr [class.editing-row]="isEditing(questao)">
                       <td>#{{ questao.id }}</td>
-                      <td>{{ questao.data?.paginas || '–' }}</td>
+                      <td>{{ questao.data.paginas || '–' }}</td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                        <ng-container *ngIf="questao.tipo === 'vf'">
+                          <div class="pergunta-assertivas" *ngIf="$any(questao.data)?.afirmacao_verdadeira || $any(questao.data)?.afirmacao_falsa">
+                            <div class="assertiva assertiva-verdadeira" *ngIf="$any(questao.data)?.afirmacao_verdadeira">
+                              <span class="assertiva-label">V:</span> {{ $any(questao.data)?.afirmacao_verdadeira }}
+                            </div>
+                            <div class="assertiva assertiva-falsa" *ngIf="$any(questao.data)?.afirmacao_falsa">
+                              <span class="assertiva-label">F:</span> {{ $any(questao.data)?.afirmacao_falsa }}
+                            </div>
+                          </div>
+                        </ng-container>
+                        <ng-container *ngIf="questao.tipo === 'multipla'">
+                          <div class="pergunta-alternativas" *ngIf="$any(questao.data)?.alternativa_a || $any(questao.data)?.alternativa_b || $any(questao.data)?.alternativa_c || $any(questao.data)?.alternativa_d">
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_a">A) {{ $any(questao.data)?.alternativa_a }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_b">B) {{ $any(questao.data)?.alternativa_b }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_c">C) {{ $any(questao.data)?.alternativa_c }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_d">D) {{ $any(questao.data)?.alternativa_d }}</div>
+                            <div class="resposta-certa" *ngIf="$any(questao.data)?.resposta_correta">
+                              Resposta: {{ $any(questao.data)?.resposta_correta?.toUpperCase() }}) {{ getAlternativaByLetra(questao, $any(questao.data)?.resposta_correta) }}
+                            </div>
+                          </div>
+                        </ng-container>
+                        <ng-container *ngIf="questao.tipo === 'correlacao'">
+                          <div class="pergunta-correlacao" *ngIf="getColunaAFromRow(questao)?.length || getColunaBFromRow(questao)?.length">
+                            <div class="correlacao-coluna">
+                              <span class="correlacao-label">Coluna A:</span>
+                              <div class="correlacao-item" *ngFor="let item of getColunaAFromRow(questao); let i = index">{{ i + 1 }}) {{ item }}</div>
+                            </div>
+                            <div class="correlacao-coluna">
+                              <span class="correlacao-label">Coluna B:</span>
+                              <div class="correlacao-item" *ngFor="let item of getColunaBFromRow(questao); let i = index">{{ getLetterForIndex(i) }}) {{ item }}</div>
+                            </div>
+                            <div class="correlacao-resposta" *ngIf="getCorrelacaoMappingsDisplay(questao)?.length">
+                              <span class="correlacao-label">Resposta:</span>
+                              <div class="correlacao-mapping-item" *ngFor="let m of getCorrelacaoMappingsDisplay(questao)">{{ m }}</div>
+                            </div>
+                          </div>
+                        </ng-container>
                         <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
                           Justificativa: {{ questao.justificativa_resposta_certa }}
                         </div>
@@ -343,9 +380,35 @@
                         <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
                       </td>
                       <td class="actions-cell">
-                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
-                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
-                        </button>
+                        <div class="actions-buttons">
+                          <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                            {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                          </button>
+                          <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
+                            <ng-container *ngIf="!isEditingAno(questao)">
+                              <button class="btn btn-small btn-ano" (click)="startEditingAno(questao)">
+                                Ano {{ questao.ano_prova ? '(' + questao.ano_prova + ')' : '' }}
+                              </button>
+                            </ng-container>
+                            <div class="ano-edit-inline" *ngIf="isEditingAno(questao)">
+                              <input 
+                                type="number" 
+                                [(ngModel)]="anoProvaInput" 
+                                [name]="'ano-' + questao.id"
+                                placeholder="Ex: 2024"
+                                min="1900"
+                                max="2100"
+                                class="ano-input"
+                              />
+                              <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                                {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                              </button>
+                              <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                                Cancelar
+                              </button>
+                            </div>
+                          </ng-container>
+                        </div>
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
@@ -621,9 +684,46 @@
                   <ng-container *ngFor="let questao of grupo.questoes">
                     <tr [class.editing-row]="isEditing(questao)">
                       <td>#{{ questao.id }}</td>
-                      <td>{{ questao.data?.paginas || '–' }}</td>
+                      <td>{{ questao.data.paginas || '–' }}</td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                        <ng-container *ngIf="questao.tipo === 'vf'">
+                          <div class="pergunta-assertivas" *ngIf="$any(questao.data)?.afirmacao_verdadeira || $any(questao.data)?.afirmacao_falsa">
+                            <div class="assertiva assertiva-verdadeira" *ngIf="$any(questao.data)?.afirmacao_verdadeira">
+                              <span class="assertiva-label">V:</span> {{ $any(questao.data)?.afirmacao_verdadeira }}
+                            </div>
+                            <div class="assertiva assertiva-falsa" *ngIf="$any(questao.data)?.afirmacao_falsa">
+                              <span class="assertiva-label">F:</span> {{ $any(questao.data)?.afirmacao_falsa }}
+                            </div>
+                          </div>
+                        </ng-container>
+                        <ng-container *ngIf="questao.tipo === 'multipla'">
+                          <div class="pergunta-alternativas" *ngIf="$any(questao.data)?.alternativa_a || $any(questao.data)?.alternativa_b || $any(questao.data)?.alternativa_c || $any(questao.data)?.alternativa_d">
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_a">A) {{ $any(questao.data)?.alternativa_a }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_b">B) {{ $any(questao.data)?.alternativa_b }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_c">C) {{ $any(questao.data)?.alternativa_c }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_d">D) {{ $any(questao.data)?.alternativa_d }}</div>
+                            <div class="resposta-certa" *ngIf="$any(questao.data)?.resposta_correta">
+                              Resposta: {{ $any(questao.data)?.resposta_correta?.toUpperCase() }}) {{ getAlternativaByLetra(questao, $any(questao.data)?.resposta_correta) }}
+                            </div>
+                          </div>
+                        </ng-container>
+                        <ng-container *ngIf="questao.tipo === 'correlacao'">
+                          <div class="pergunta-correlacao" *ngIf="getColunaAFromRow(questao)?.length || getColunaBFromRow(questao)?.length">
+                            <div class="correlacao-coluna">
+                              <span class="correlacao-label">Coluna A:</span>
+                              <div class="correlacao-item" *ngFor="let item of getColunaAFromRow(questao); let i = index">{{ i + 1 }}) {{ item }}</div>
+                            </div>
+                            <div class="correlacao-coluna">
+                              <span class="correlacao-label">Coluna B:</span>
+                              <div class="correlacao-item" *ngFor="let item of getColunaBFromRow(questao); let i = index">{{ getLetterForIndex(i) }}) {{ item }}</div>
+                            </div>
+                            <div class="correlacao-resposta" *ngIf="getCorrelacaoMappingsDisplay(questao)?.length">
+                              <span class="correlacao-label">Resposta:</span>
+                              <div class="correlacao-mapping-item" *ngFor="let m of getCorrelacaoMappingsDisplay(questao)">{{ m }}</div>
+                            </div>
+                          </div>
+                        </ng-container>
                         <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
                           Justificativa: {{ questao.justificativa_resposta_certa }}
                         </div>
@@ -653,9 +753,35 @@
                         <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
                       </td>
                       <td class="actions-cell">
-                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
-                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
-                        </button>
+                        <div class="actions-buttons">
+                          <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                            {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                          </button>
+                          <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
+                            <ng-container *ngIf="!isEditingAno(questao)">
+                              <button class="btn btn-small btn-ano" (click)="startEditingAno(questao)">
+                                Ano {{ questao.ano_prova ? '(' + questao.ano_prova + ')' : '' }}
+                              </button>
+                            </ng-container>
+                            <div class="ano-edit-inline" *ngIf="isEditingAno(questao)">
+                              <input 
+                                type="number" 
+                                [(ngModel)]="anoProvaInput" 
+                                [name]="'ano-' + questao.id"
+                                placeholder="Ex: 2024"
+                                min="1900"
+                                max="2100"
+                                class="ano-input"
+                              />
+                              <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                                {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                              </button>
+                              <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                                Cancelar
+                              </button>
+                            </div>
+                          </ng-container>
+                        </div>
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
@@ -931,9 +1057,46 @@
                   <ng-container *ngFor="let questao of grupo.questoes">
                     <tr [class.editing-row]="isEditing(questao)">
                       <td>#{{ questao.id }}</td>
-                      <td>{{ questao.data?.paginas || '–' }}</td>
+                      <td>{{ questao.data.paginas || '–' }}</td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                        <ng-container *ngIf="questao.tipo === 'vf'">
+                          <div class="pergunta-assertivas" *ngIf="$any(questao.data)?.afirmacao_verdadeira || $any(questao.data)?.afirmacao_falsa">
+                            <div class="assertiva assertiva-verdadeira" *ngIf="$any(questao.data)?.afirmacao_verdadeira">
+                              <span class="assertiva-label">V:</span> {{ $any(questao.data)?.afirmacao_verdadeira }}
+                            </div>
+                            <div class="assertiva assertiva-falsa" *ngIf="$any(questao.data)?.afirmacao_falsa">
+                              <span class="assertiva-label">F:</span> {{ $any(questao.data)?.afirmacao_falsa }}
+                            </div>
+                          </div>
+                        </ng-container>
+                        <ng-container *ngIf="questao.tipo === 'multipla'">
+                          <div class="pergunta-alternativas" *ngIf="$any(questao.data)?.alternativa_a || $any(questao.data)?.alternativa_b || $any(questao.data)?.alternativa_c || $any(questao.data)?.alternativa_d">
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_a">A) {{ $any(questao.data)?.alternativa_a }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_b">B) {{ $any(questao.data)?.alternativa_b }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_c">C) {{ $any(questao.data)?.alternativa_c }}</div>
+                            <div class="alternativa" *ngIf="$any(questao.data)?.alternativa_d">D) {{ $any(questao.data)?.alternativa_d }}</div>
+                            <div class="resposta-certa" *ngIf="$any(questao.data)?.resposta_correta">
+                              Resposta: {{ $any(questao.data)?.resposta_correta?.toUpperCase() }}) {{ getAlternativaByLetra(questao, $any(questao.data)?.resposta_correta) }}
+                            </div>
+                          </div>
+                        </ng-container>
+                        <ng-container *ngIf="questao.tipo === 'correlacao'">
+                          <div class="pergunta-correlacao" *ngIf="getColunaAFromRow(questao)?.length || getColunaBFromRow(questao)?.length">
+                            <div class="correlacao-coluna">
+                              <span class="correlacao-label">Coluna A:</span>
+                              <div class="correlacao-item" *ngFor="let item of getColunaAFromRow(questao); let i = index">{{ i + 1 }}) {{ item }}</div>
+                            </div>
+                            <div class="correlacao-coluna">
+                              <span class="correlacao-label">Coluna B:</span>
+                              <div class="correlacao-item" *ngFor="let item of getColunaBFromRow(questao); let i = index">{{ getLetterForIndex(i) }}) {{ item }}</div>
+                            </div>
+                            <div class="correlacao-resposta" *ngIf="getCorrelacaoMappingsDisplay(questao)?.length">
+                              <span class="correlacao-label">Resposta:</span>
+                              <div class="correlacao-mapping-item" *ngFor="let m of getCorrelacaoMappingsDisplay(questao)">{{ m }}</div>
+                            </div>
+                          </div>
+                        </ng-container>
                         <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
                           Justificativa: {{ questao.justificativa_resposta_certa }}
                         </div>
@@ -963,9 +1126,35 @@
                         <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
                       </td>
                       <td class="actions-cell">
-                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
-                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
-                        </button>
+                        <div class="actions-buttons">
+                          <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                            {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                          </button>
+                          <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
+                            <ng-container *ngIf="!isEditingAno(questao)">
+                              <button class="btn btn-small btn-ano" (click)="startEditingAno(questao)">
+                                Ano {{ questao.ano_prova ? '(' + questao.ano_prova + ')' : '' }}
+                              </button>
+                            </ng-container>
+                            <div class="ano-edit-inline" *ngIf="isEditingAno(questao)">
+                              <input 
+                                type="number" 
+                                [(ngModel)]="anoProvaInput" 
+                                [name]="'ano-' + questao.id"
+                                placeholder="Ex: 2024"
+                                min="1900"
+                                max="2100"
+                                class="ano-input"
+                              />
+                              <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                                {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                              </button>
+                              <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                                Cancelar
+                              </button>
+                            </div>
+                          </ng-container>
+                        </div>
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
