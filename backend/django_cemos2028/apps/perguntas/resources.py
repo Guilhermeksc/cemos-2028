@@ -1,7 +1,8 @@
 # Recursos de import/export
 import json
+import re
 from import_export import resources, fields
-from import_export.widgets import ForeignKeyWidget, BooleanWidget, JSONWidget, IntegerWidget
+from import_export.widgets import ForeignKeyWidget, BooleanWidget, IntegerWidget, JSONWidget
 from .models import (
     FlashCardsModel,
     PerguntaMultiplaModel, 
@@ -13,6 +14,50 @@ from django_cemos2028.apps.bibliografia.models import (
     BibliografiaModel,
     CapitulosBibliografiaModel,
 )
+
+
+def _decode_unicode_escapes(s):
+    """Decodifica \\uXXXX em strings para caracteres corretos (é, ã, etc.)."""
+    if not isinstance(s, str) or not s:
+        return s
+
+    def replace_escape(m):
+        try:
+            return chr(int(m.group(1), 16))
+        except (ValueError, TypeError):
+            return m.group(0)
+
+    return re.sub(r'\\u([0-9a-fA-F]{4})', replace_escape, s)
+
+
+def _decode_json_value(obj):
+    """Decodifica recursivamente \\uXXXX em strings de listas/dicts."""
+    if isinstance(obj, str):
+        return _decode_unicode_escapes(obj)
+    if isinstance(obj, list):
+        return [_decode_json_value(item) for item in obj]
+    if isinstance(obj, dict):
+        return {_decode_json_value(k): _decode_json_value(v) for k, v in obj.items()}
+    return obj
+
+
+class UnicodeJSONWidget(JSONWidget):
+    """
+    JSONWidget que exporta com caracteres UTF-8 (é, ã) em vez de \\u00e9, \\u00e3.
+    Na importação, decodifica escapes literais que possam vir do Excel.
+    """
+
+    def render(self, value, obj=None, **kwargs):
+        if value:
+            return json.dumps(value, ensure_ascii=False)
+        return None
+
+    def clean(self, value, row=None, **kwargs):
+        result = super().clean(value, row, **kwargs)
+        if result is not None:
+            return _decode_json_value(result)
+        return result
+
 
 class FlashCardsResource(resources.ModelResource):
     id = fields.Field(
@@ -33,6 +78,11 @@ class FlashCardsResource(resources.ModelResource):
     prova = fields.Field(
         column_name='prova',
         attribute='prova',
+        widget=BooleanWidget()
+    )
+    caveira = fields.Field(
+        column_name='caveira',
+        attribute='caveira',
         widget=BooleanWidget()
     )
 
@@ -78,7 +128,7 @@ class PerguntaMultiplaResource(resources.ModelResource):
     markdown_highlights = fields.Field(
         column_name='markdown_highlights',
         attribute='markdown_highlights',
-        widget=JSONWidget()
+        widget=UnicodeJSONWidget()
     )
 
     class Meta:
@@ -134,7 +184,7 @@ class PerguntaVFResource(resources.ModelResource):
     markdown_highlights = fields.Field(
         column_name='markdown_highlights',
         attribute='markdown_highlights',
-        widget=JSONWidget()
+        widget=UnicodeJSONWidget()
     )
 
     class Meta:
@@ -178,17 +228,17 @@ class PerguntaCorrelacaoResource(resources.ModelResource):
     coluna_a = fields.Field(
         column_name='coluna_a',
         attribute='coluna_a',
-        widget=JSONWidget()
+        widget=UnicodeJSONWidget()
     )
     coluna_b = fields.Field(
         column_name='coluna_b',
         attribute='coluna_b',
-        widget=JSONWidget()
+        widget=UnicodeJSONWidget()
     )
     resposta_correta = fields.Field(
         column_name='resposta_correta',
         attribute='resposta_correta',
-        widget=JSONWidget()
+        widget=UnicodeJSONWidget()
     )
 
     markdown_file = fields.Field(
@@ -198,7 +248,7 @@ class PerguntaCorrelacaoResource(resources.ModelResource):
     markdown_highlights = fields.Field(
         column_name='markdown_highlights',
         attribute='markdown_highlights',
-        widget=JSONWidget()
+        widget=UnicodeJSONWidget()
     )
 
     class Meta:

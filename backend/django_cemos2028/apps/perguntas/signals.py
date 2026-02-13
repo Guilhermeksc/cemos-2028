@@ -1,4 +1,6 @@
+import json
 import os
+import re
 import logging
 import pandas as pd
 from django.conf import settings
@@ -54,6 +56,110 @@ def _as_clean_str(v):
             except Exception:
                 pass
         return s or None
+
+
+def _as_markdown_file(v):
+    """
+    Normaliza e retorna o caminho do arquivo markdown.
+    Remove prefixos comuns (frontend-cemos/public/assets/content/, etc).
+    Retorna None se vazio.
+    """
+    if pd.isna(v) or v is None or str(v).strip() == '':
+        return None
+    s = str(v).strip()
+    if not s:
+        return None
+    normalized = (
+        s.replace('\\', '/')
+        .replace('frontend-cemos/public/assets/content/', '')
+        .replace('public/assets/content/', '')
+        .lstrip('/')
+        .strip()
+    )
+    return normalized or None
+
+
+def _decode_unicode_escapes(s):
+    """
+    Decode \\uXXXX sequences in a string.
+    Útil quando coluna_a/coluna_b vêm do Excel com escapes literais (ex: Imp\\u00e9rio → Império).
+    """
+    if not isinstance(s, str) or not s:
+        return s
+
+    def replace_escape(m):
+        try:
+            return chr(int(m.group(1), 16))
+        except (ValueError, TypeError):
+            return m.group(0)
+
+    return re.sub(r'\\u([0-9a-fA-F]{4})', replace_escape, s)
+
+
+def _parse_json_list_with_unicode(s):
+    """
+    Parse string JSON como lista e decodifica \\uXXXX em cada item.
+    Aceita: ["Item 1", "Item 2"] ou "item1, item2"
+    """
+    if s is None or (isinstance(s, str) and not s.strip()):
+        return []
+    if isinstance(s, list):
+        return [_decode_unicode_escapes(str(item)) for item in s]
+    s = str(s).strip()
+    try:
+        if s.startswith('['):
+            parsed = json.loads(s)
+            if isinstance(parsed, list):
+                return [_decode_unicode_escapes(str(item)) for item in parsed]
+            return []
+        return [_decode_unicode_escapes(item.strip()) for item in s.split(',')]
+    except (json.JSONDecodeError, TypeError):
+        return [_decode_unicode_escapes(item.strip()) for item in s.split(',')]
+
+
+def _parse_json_dict_with_unicode(s):
+    """
+    Parse string JSON como dict e decodifica \\uXXXX nos valores.
+    """
+    if s is None or (isinstance(s, str) and not s.strip()):
+        return {}
+    if isinstance(s, dict):
+        return {
+            _decode_unicode_escapes(str(k)): _decode_unicode_escapes(str(v))
+            for k, v in s.items()
+        }
+    s = str(s).strip()
+    try:
+        if s.startswith('{'):
+            parsed = json.loads(s)
+            if isinstance(parsed, dict):
+                return {
+                    _decode_unicode_escapes(str(k)): _decode_unicode_escapes(str(v))
+                    for k, v in parsed.items()
+                }
+            return {}
+        return {}
+    except (json.JSONDecodeError, TypeError):
+        return {}
+
+
+def _as_markdown_highlights(v):
+    """
+    Converte valor da célula para lista de marcações (JSON).
+    Aceita string JSON. Retorna None se inválido ou vazio.
+    """
+    if pd.isna(v) or v is None or str(v).strip() == '':
+        return None
+    s = str(v).strip()
+    if not s:
+        return None
+    try:
+        parsed = json.loads(s)
+        if isinstance(parsed, list):
+            return parsed
+        return None
+    except (json.JSONDecodeError, TypeError):
+        return None
 
 
 
@@ -337,23 +443,29 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 caveira_str = str(caveira_val).lower().strip()
                                 caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
                             
+                            defaults_multipla = {
+                                'bibliografia': bibliografia,
+                                'pergunta': _as_clean_str(row['pergunta']),
+                                'paginas': _as_clean_str(row.get('paginas')),
+                                'assunto': assunto,
+                                'alternativa_a': _as_clean_str(row['alternativa_a']),
+                                'alternativa_b': _as_clean_str(row['alternativa_b']),
+                                'alternativa_c': _as_clean_str(row['alternativa_c']),
+                                'alternativa_d': _as_clean_str(row['alternativa_d']),
+                                'resposta_correta': _as_clean_str(row['resposta_correta']).lower(),
+                                'justificativa_resposta_certa': justificativa,
+                                'caiu_em_prova': caiu_em_prova_bool,
+                                'ano_prova': _as_int(row.get('ano_prova')),
+                                'caveira': caveira_bool,
+                            }
+                            if 'markdown_file' in df.columns:
+                                defaults_multipla['markdown_file'] = _as_markdown_file(row.get('markdown_file'))
+                            if 'markdown_highlights' in df.columns:
+                                defaults_multipla['markdown_highlights'] = _as_markdown_highlights(row.get('markdown_highlights'))
+                            
                             obj, created = PerguntaMultiplaModel.objects.update_or_create(
                                 id=pergunta_id,
-                                defaults={
-                                    'bibliografia': bibliografia,
-                                    'pergunta': _as_clean_str(row['pergunta']),
-                                    'paginas': _as_clean_str(row.get('paginas')),
-                                    'assunto': assunto,
-                                    'alternativa_a': _as_clean_str(row['alternativa_a']),
-                                    'alternativa_b': _as_clean_str(row['alternativa_b']),
-                                    'alternativa_c': _as_clean_str(row['alternativa_c']),
-                                    'alternativa_d': _as_clean_str(row['alternativa_d']),
-                                    'resposta_correta': _as_clean_str(row['resposta_correta']).lower(),
-                                    'justificativa_resposta_certa': justificativa,
-                                    'caiu_em_prova': caiu_em_prova_bool,
-                                    'ano_prova': _as_int(row.get('ano_prova')),
-                                    'caveira': caveira_bool
-                                }
+                                defaults=defaults_multipla
                             )
                             if created:
                                 loaded_count += 1
@@ -444,20 +556,26 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 caveira_str = str(caveira_val).lower().strip()
                                 caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
                             
+                            defaults_vf = {
+                                'bibliografia': bibliografia,
+                                'pergunta': pergunta_text,
+                                'paginas': _as_clean_str(row.get('paginas')),
+                                'assunto': assunto,
+                                'afirmacao_verdadeira': _as_clean_str(row['afirmacao_verdadeira']),
+                                'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),
+                                'justificativa_resposta_certa': justificativa,
+                                'caiu_em_prova': caiu_em_prova_bool,
+                                'ano_prova': _as_int(row.get('ano_prova')),
+                                'caveira': caveira_bool,
+                            }
+                            if 'markdown_file' in df.columns:
+                                defaults_vf['markdown_file'] = _as_markdown_file(row.get('markdown_file'))
+                            if 'markdown_highlights' in df.columns:
+                                defaults_vf['markdown_highlights'] = _as_markdown_highlights(row.get('markdown_highlights'))
+                            
                             obj, created = PerguntaVFModel.objects.update_or_create(
                                 id=pergunta_id,
-                                defaults={
-                                    'bibliografia': bibliografia,
-                                    'pergunta': pergunta_text,
-                                    'paginas': _as_clean_str(row.get('paginas')),
-                                    'assunto': assunto,
-                                    'afirmacao_verdadeira': _as_clean_str(row['afirmacao_verdadeira']),
-                                    'afirmacao_falsa': _as_clean_str(row['afirmacao_falsa']),
-                                    'justificativa_resposta_certa': justificativa,
-                                    'caiu_em_prova': caiu_em_prova_bool,
-                                    'ano_prova': _as_int(row.get('ano_prova')),
-                                    'caveira': caveira_bool
-                                }
+                                defaults=defaults_vf
                             )
                             if created:
                                 loaded_count += 1
@@ -510,21 +628,14 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 erros_assunto += 1
                                 logger.warning(f"⚠️ Pergunta correlação linha {idx} - Assunto '{assunto_valor}' não foi encontrado, mas será salva sem assunto")
                             
-                            # Processar colunas (assumindo que vêm como strings separadas por vírgula ou JSON)
+                            # Processar colunas (JSON ou vírgula); decodifica \\u00e9, \\u00e3, etc.
                             coluna_a_str = _as_clean_str(row['coluna_a'])
                             coluna_b_str = _as_clean_str(row['coluna_b'])
                             resposta_str = _as_clean_str(row['resposta_correta'])
-                            
-                            # Tentar parsear como JSON, senão separar por vírgula
-                            try:
-                                import json
-                                coluna_a = json.loads(coluna_a_str) if coluna_a_str.startswith('[') else coluna_a_str.split(',')
-                                coluna_b = json.loads(coluna_b_str) if coluna_b_str.startswith('[') else coluna_b_str.split(',')
-                                resposta_correta = json.loads(resposta_str) if resposta_str.startswith('{') else {}
-                            except:
-                                coluna_a = [item.strip() for item in coluna_a_str.split(',')]
-                                coluna_b = [item.strip() for item in coluna_b_str.split(',')]
-                                resposta_correta = {}
+
+                            coluna_a = _parse_json_list_with_unicode(coluna_a_str)
+                            coluna_b = _parse_json_list_with_unicode(coluna_b_str)
+                            resposta_correta = _parse_json_dict_with_unicode(resposta_str)
                             
                             # Garantir que justificativa_resposta_certa não seja None (campo obrigatório)
                             justificativa = _as_clean_str(row.get('justificativa_resposta_certa', ''))
@@ -555,21 +666,27 @@ def load_fixtures_perguntas(sender, **kwargs):
                                 caveira_str = str(caveira_val).lower().strip()
                                 caveira_bool = caveira_str in ['true', 'verdadeiro', 'v', '1', 'sim', 'yes']
                             
+                            defaults_corr = {
+                                'bibliografia': bibliografia,
+                                'pergunta': _as_clean_str(row['pergunta']),
+                                'paginas': _as_clean_str(row.get('paginas')),
+                                'assunto': assunto,
+                                'coluna_a': coluna_a,
+                                'coluna_b': coluna_b,
+                                'resposta_correta': resposta_correta,
+                                'justificativa_resposta_certa': justificativa,
+                                'caiu_em_prova': caiu_em_prova_bool,
+                                'ano_prova': _as_int(row.get('ano_prova')),
+                                'caveira': caveira_bool,
+                            }
+                            if 'markdown_file' in df.columns:
+                                defaults_corr['markdown_file'] = _as_markdown_file(row.get('markdown_file'))
+                            if 'markdown_highlights' in df.columns:
+                                defaults_corr['markdown_highlights'] = _as_markdown_highlights(row.get('markdown_highlights'))
+                            
                             obj, created = PerguntaCorrelacaoModel.objects.update_or_create(
                                 id=pergunta_id,
-                                defaults={
-                                    'bibliografia': bibliografia,
-                                    'pergunta': _as_clean_str(row['pergunta']),
-                                    'paginas': _as_clean_str(row.get('paginas')),
-                                    'assunto': assunto,
-                                    'coluna_a': coluna_a,
-                                    'coluna_b': coluna_b,
-                                    'resposta_correta': resposta_correta,
-                                    'justificativa_resposta_certa': justificativa,
-                                    'caiu_em_prova': caiu_em_prova_bool,
-                                    'ano_prova': _as_int(row.get('ano_prova')),
-                                    'caveira': caveira_bool
-                                }
+                                defaults=defaults_corr
                             )
                             if created:
                                 loaded_count += 1

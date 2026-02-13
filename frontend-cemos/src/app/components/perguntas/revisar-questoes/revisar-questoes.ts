@@ -14,6 +14,7 @@ import {
   PerguntaCorrelacao,
   Bibliografia
 } from '../../../interfaces/perguntas.interface';
+import { JanelaGenerica, BotaoJanela } from '../../janela-generica/janela-generica';
 
 interface RevisarQuestaoRow {
   id: number;
@@ -46,7 +47,7 @@ interface SavedFilters {
 @Component({
   selector: 'app-revisar-questoes',
   standalone: true,
-  imports: [CommonModule, FormsModule, MatTabsModule],
+  imports: [CommonModule, FormsModule, MatTabsModule, JanelaGenerica],
   templateUrl: './revisar-questoes.html',
   styleUrl: './revisar-questoes.scss'
 })
@@ -94,6 +95,10 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
   addFormData: any = null;
   isSavingAdd = false;
   addError: string | null = null;
+
+  // Janela de confirmação de exclusão
+  mostrarJanelaExcluir = false;
+  questaoParaExcluir: RevisarQuestaoRow | null = null;
 
   private readonly STORAGE_KEY = 'revisar-questoes-filtros';
 
@@ -1209,5 +1214,72 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
           this.togglingCaveira.delete(key);
         }
       });
+  }
+
+  confirmDeleteQuestion(row: RevisarQuestaoRow): void {
+    if (!this.isAdmin) {
+      return;
+    }
+    this.questaoParaExcluir = row;
+    this.mostrarJanelaExcluir = true;
+  }
+
+  fecharJanelaExcluir(): void {
+    if (!this.isSavingEdit) {
+      this.mostrarJanelaExcluir = false;
+      this.questaoParaExcluir = null;
+    }
+  }
+
+  executarExclusao(): void {
+    const row = this.questaoParaExcluir;
+    if (!row) return;
+
+    this.isSavingEdit = true;
+    this.editError = null;
+
+    this.perguntasService.deletePergunta(row.tipo, row.id)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: () => {
+          this.removeQuestaoFromTable(row);
+          this.cancelEditing();
+          this.isSavingEdit = false;
+          this.mostrarJanelaExcluir = false;
+          this.questaoParaExcluir = null;
+        },
+        error: (error: any) => {
+          console.error('❌ Erro ao excluir questão:', error);
+          this.editError = error?.error?.detail || error?.message || 'Erro ao excluir questão. Tente novamente.';
+          this.isSavingEdit = false;
+        }
+      });
+  }
+
+  get botoesJanelaExcluir(): BotaoJanela[] {
+    return [
+      {
+        texto: 'Cancelar',
+        tipo: 'secondary',
+        acao: () => this.fecharJanelaExcluir()
+      },
+      {
+        texto: 'Excluir',
+        tipo: 'danger',
+        disabled: this.isSavingEdit,
+        acao: () => this.executarExclusao()
+      }
+    ];
+  }
+
+  private removeQuestaoFromTable(row: RevisarQuestaoRow): void {
+    // Remover de allTableData (fonte de dados)
+    this.allTableData = this.allTableData.map(grupo => ({
+      ...grupo,
+      questoes: grupo.questoes.filter(q => q.uniqueKey !== row.uniqueKey)
+    })).filter(grupo => grupo.questoes.length > 0);
+
+    // Reaplicar filtro para atualizar tableData
+    this.filterTableDataByType();
   }
 }

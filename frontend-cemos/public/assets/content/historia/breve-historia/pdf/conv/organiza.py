@@ -6,17 +6,19 @@ START_DIR = Path(
     "/home/guilherme/Projetos/cemos-2028/cemos-2028/frontend-cemos/public/assets/content/historia/breve-historia/pdf/conv"
 )
 
-PDF_ORIGEM = "Cap5-RevoltaPetrogrado.pdf"
-PDF_DESTINO = "Revolução_Paz_e_o_Novo_Mundo.pdf"
-OUTPUT_NAME = "cap5_final.pdf"
+PDF_DESTINO = "Vengeance_Weapons_Moon_Race.pdf"
+PDF_ORIGEM = "Cap18-AsNavesdaVinganca.pdf" 
+OUTPUT_NAME = "Cap18-As_Naves_da_Vingança.pdf"
 
 
 RULES = [
-    {"pages": [3], "target": 2, "action": "inserir_apos"},    
-    {"pages": [7], "target": 6, "action": "trocar"},
-    {"pages": [5], "target": 7, "action": "trocar"},
-    {"pages": [12], "target": 13, "action": "trocar"},
-    {"pages": [14], "target": 13, "action": "inserir_apos"},
+    {"pages": [4], "target": 3, "action": "trocar"},    
+    {"pages": [6], "target": 6, "action": "trocar"},    
+    {"pages": [8], "target": 8, "action": "trocar"},
+    {"pages": [11], "target": 8, "action": "inserir_apos"},
+    {"pages": [9], "target": 9, "action": "trocar"},    
+    {"pages": [13], "target": 11, "action": "trocar"},
+    {"pages": [12], "target": 12, "action": "trocar"},
 ]
 
 # slides 1 trocar no lugar do slide 1

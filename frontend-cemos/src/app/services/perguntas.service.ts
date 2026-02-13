@@ -734,6 +734,43 @@ export class PerguntasService {
   }
 
   /**
+   * Exclui uma pergunta de múltipla escolha
+   */
+  deletePerguntaMultipla(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/perguntas-multipla/${id}/`);
+  }
+
+  /**
+   * Exclui uma pergunta de verdadeiro/falso
+   */
+  deletePerguntaVF(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/perguntas-vf/${id}/`);
+  }
+
+  /**
+   * Exclui uma pergunta de correlação
+   */
+  deletePerguntaCorrelacao(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/perguntas-correlacao/${id}/`);
+  }
+
+  /**
+   * Exclui uma pergunta conforme o tipo
+   */
+  deletePergunta(tipo: 'multipla' | 'vf' | 'correlacao', id: number): Observable<void> {
+    switch (tipo) {
+      case 'multipla':
+        return this.deletePerguntaMultipla(id);
+      case 'vf':
+        return this.deletePerguntaVF(id);
+      case 'correlacao':
+        return this.deletePerguntaCorrelacao(id);
+      default:
+        throw new Error(`Tipo de pergunta inválido: ${tipo}`);
+    }
+  }
+
+  /**
    * Atualiza apenas o campo caiu_em_prova conforme o tipo
    */
   updatePerguntaCaiuEmProva(

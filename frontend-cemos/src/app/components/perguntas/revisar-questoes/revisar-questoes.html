@@ -290,6 +290,7 @@
                 <thead>
                   <tr>
                     <th>ID</th>
+                    <th>Páginas</th>
                     <th>Enunciado</th>
                     <th>
                       <div class="header-with-icon">
@@ -310,6 +311,7 @@
                   <ng-container *ngFor="let questao of grupo.questoes">
                     <tr [class.editing-row]="isEditing(questao)">
                       <td>#{{ questao.id }}</td>
+                      <td>{{ questao.data?.paginas || '–' }}</td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
                         <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
@@ -347,8 +349,12 @@
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
-                      <td colspan="5">
+                      <td colspan="6">
                         <div class="edit-form">
+                          <div class="edit-form-header">
+                            <img src="/assets/img/svg/edit.svg" alt="Editar" class="edit-form-icon" />
+                            <span>Editando questão #{{ questao.id }}</span>
+                          </div>
                           <!-- Formulário específico para Múltipla Escolha -->
                           <div *ngIf="questao.tipo === 'multipla'">
                             <div class="form-grid form-grid-single">
@@ -544,12 +550,19 @@
                           </div>
 
                           <div class="edit-actions">
-                            <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
-                              {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
-                            </button>
-                            <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
-                              Cancelar
-                            </button>
+                            <div class="edit-actions-left">
+                              <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                                {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                              </button>
+                              <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                                Cancelar
+                              </button>
+                            </div>
+                            <div class="edit-actions-right">
+                              <button class="btn btn-small btn-delete" type="button" (click)="confirmDeleteQuestion(questao)" [disabled]="isSavingEdit">
+                                Excluir
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -587,6 +600,7 @@
                 <thead>
                   <tr>
                     <th>ID</th>
+                    <th>Páginas</th>
                     <th>Enunciado</th>
                     <th>
                       <div class="header-with-icon">
@@ -607,6 +621,7 @@
                   <ng-container *ngFor="let questao of grupo.questoes">
                     <tr [class.editing-row]="isEditing(questao)">
                       <td>#{{ questao.id }}</td>
+                      <td>{{ questao.data?.paginas || '–' }}</td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
                         <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
@@ -644,8 +659,12 @@
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
-                      <td colspan="5">
+                      <td colspan="6">
                         <div class="edit-form">
+                          <div class="edit-form-header">
+                            <img src="/assets/img/svg/edit.svg" alt="Editar" class="edit-form-icon" />
+                            <span>Editando questão #{{ questao.id }}</span>
+                          </div>
                           <!-- Formulário específico para Múltipla Escolha -->
                           <div *ngIf="questao.tipo === 'multipla'">
                             <div class="form-grid form-grid-single">
@@ -841,12 +860,19 @@
                           </div>
 
                           <div class="edit-actions">
-                            <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
-                              {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
-                            </button>
-                            <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
-                              Cancelar
-                            </button>
+                            <div class="edit-actions-left">
+                              <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                                {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                              </button>
+                              <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                                Cancelar
+                              </button>
+                            </div>
+                            <div class="edit-actions-right">
+                              <button class="btn btn-small btn-delete" type="button" (click)="confirmDeleteQuestion(questao)" [disabled]="isSavingEdit">
+                                Excluir
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -884,6 +910,7 @@
                 <thead>
                   <tr>
                     <th>ID</th>
+                    <th>Páginas</th>
                     <th>Enunciado</th>
                     <th>
                       <div class="header-with-icon">
@@ -904,6 +931,7 @@
                   <ng-container *ngFor="let questao of grupo.questoes">
                     <tr [class.editing-row]="isEditing(questao)">
                       <td>#{{ questao.id }}</td>
+                      <td>{{ questao.data?.paginas || '–' }}</td>
                       <td>
                         <div class="pergunta-texto">{{ questao.pergunta }}</div>
                         <div class="pergunta-justificativa" *ngIf="questao.justificativa_resposta_certa">
@@ -941,8 +969,12 @@
                       </td>
                     </tr>
                     <tr *ngIf="isEditing(questao)">
-                      <td colspan="5">
+                      <td colspan="6">
                         <div class="edit-form">
+                          <div class="edit-form-header">
+                            <img src="/assets/img/svg/edit.svg" alt="Editar" class="edit-form-icon" />
+                            <span>Editando questão #{{ questao.id }}</span>
+                          </div>
                           <!-- Formulário específico para Múltipla Escolha -->
                           <div *ngIf="questao.tipo === 'multipla'">
                             <div class="form-grid form-grid-single">
@@ -1138,12 +1170,19 @@
                           </div>
 
                           <div class="edit-actions">
-                            <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
-                              {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
-                            </button>
-                            <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
-                              Cancelar
-                            </button>
+                            <div class="edit-actions-left">
+                              <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                                {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                              </button>
+                              <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                                Cancelar
+                              </button>
+                            </div>
+                            <div class="edit-actions-right">
+                              <button class="btn btn-small btn-delete" type="button" (click)="confirmDeleteQuestion(questao)" [disabled]="isSavingEdit">
+                                Excluir
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -1161,4 +1200,33 @@
       </mat-tab>
     </mat-tab-group>
   </div>
+
+  <!-- Janela de confirmação de exclusão -->
+  <app-janela-generica
+    titulo="Excluir questão"
+    [mostrar]="mostrarJanelaExcluir"
+    [botoes]="botoesJanelaExcluir"
+    [isLoading]="isSavingEdit"
+    [maxWidth]="'440px'"
+    (fechar)="fecharJanelaExcluir()">
+    <div class="confirm-excluir-content">
+      <svg class="confirm-excluir-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Atenção">
+        <defs>
+          <linearGradient id="confirm-crisis-grad1" gradientUnits="userSpaceOnUse" x1="12.134" x2="42.027" y1="20.336" y2="41.389">
+            <stop offset="0" stop-color="#fed200"/>
+            <stop offset="1" stop-color="#f59815"/>
+          </linearGradient>
+          <linearGradient id="confirm-crisis-grad2" gradientUnits="userSpaceOnUse" x1="20.318" x2="27.55" y1="15.588" y2="26.115">
+            <stop offset="0" stop-color="#3e4154"/>
+            <stop offset="1" stop-color="#1b2129"/>
+          </linearGradient>
+          <linearGradient id="confirm-crisis-grad3" x1="21.779" x2="26.076" y1="32.279" y2="36.576" xlink:href="#confirm-crisis-grad2"/>
+        </defs>
+        <path d="m44.5 34.5-16.17-28a5 5 0 0 0 -8.66 0l-16.17 28a5 5 0 0 0 4.334 7.5h32.332a5 5 0 0 0 4.33-7.5z" fill="url(#confirm-crisis-grad1)"/>
+        <path d="m24 30a2.1 2.1 0 0 0 2.1-1.9l1.18-11.8a3 3 0 0 0 -2.99-3.3h-.58a3 3 0 0 0 -2.985 3.3l1.18 11.8a2.1 2.1 0 0 0 2.095 1.9z" fill="url(#confirm-crisis-grad2)"/>
+        <circle cx="24" cy="34.5" fill="url(#confirm-crisis-grad3)" r="3.5"/>
+      </svg>
+      <p class="confirm-excluir-mensagem">Tem certeza que deseja excluir esta questão? Esta decisão é irreversível.</p>
+    </div>
+  </app-janela-generica>
 </div>
