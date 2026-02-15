@@ -307,22 +307,32 @@
         >
           <h4>Edição da Questão</h4>
 
-          <div class="form-grid">
-            <label *ngIf="question.tipo !== 'vf'">
-              Enunciado
-              <textarea 
-                rows="3" 
-                [(ngModel)]="editingFormData.pergunta" 
-                [name]="'pergunta-' + question.uniqueKey"
-              ></textarea>
-            </label>
+          <!-- Verdadeiro/Falso: Páginas, Pergunta, Afirmação V, Afirmação F, Justificativa (um por linha) -->
+          <div *ngIf="question.tipo === 'vf'" class="form-grid form-grid-single vf-grid">
             <label>
               Páginas
               <input 
                 type="text" 
                 [(ngModel)]="editingFormData.paginas"
                 [name]="'paginas-' + question.uniqueKey"
+                placeholder="Ex: 45-50"
               />
+            </label>
+            <label>
+              Pergunta
+              <textarea 
+                rows="3" 
+                [(ngModel)]="editingFormData.pergunta" 
+                [name]="'vf-pergunta-' + question.uniqueKey"
+              ></textarea>
+            </label>
+            <label>
+              Afirmação Verdadeira
+              <textarea rows="3" [(ngModel)]="editingFormData.afirmacao_verdadeira" [name]="'vf-verdadeira-' + question.uniqueKey"></textarea>
+            </label>
+            <label>
+              Afirmação Falsa
+              <textarea rows="3" [(ngModel)]="editingFormData.afirmacao_falsa" [name]="'vf-falsa-' + question.uniqueKey"></textarea>
             </label>
             <label>
               Justificativa
@@ -334,62 +344,153 @@
             </label>
           </div>
 
-          <div *ngIf="question.tipo === 'multipla'" class="form-grid multipla-grid">
-            <label>
-              Alternativa A
-              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" [name]="'a-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Alternativa B
-              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" [name]="'b-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Alternativa C
-              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" [name]="'c-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Alternativa D
-              <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" [name]="'d-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Resposta Correta
-              <select [(ngModel)]="editingFormData.resposta_correta" [name]="'resposta-' + question.uniqueKey">
-                <option value="a">Alternativa A</option>
-                <option value="b">Alternativa B</option>
-                <option value="c">Alternativa C</option>
-                <option value="d">Alternativa D</option>
-              </select>
-            </label>
+          <!-- Múltipla Escolha: padrão revisar-questoes -->
+          <div *ngIf="question.tipo === 'multipla'">
+            <div class="form-grid form-grid-single">
+              <label>
+                Enunciado
+                <textarea 
+                  rows="3" 
+                  [(ngModel)]="editingFormData.pergunta" 
+                  [name]="'pergunta-' + question.uniqueKey"
+                ></textarea>
+              </label>
+              <label>
+                Páginas
+                <input 
+                  type="text" 
+                  [(ngModel)]="editingFormData.paginas"
+                  [name]="'paginas-' + question.uniqueKey"
+                  placeholder="Ex: 45-50"
+                />
+              </label>
+            </div>
+            <div class="form-grid form-grid-single multipla-grid">
+              <label>
+                Alternativa A
+                <textarea rows="2" [(ngModel)]="editingFormData.alternativa_a" [name]="'a-' + question.uniqueKey"></textarea>
+              </label>
+              <label>
+                Alternativa B
+                <textarea rows="2" [(ngModel)]="editingFormData.alternativa_b" [name]="'b-' + question.uniqueKey"></textarea>
+              </label>
+              <label>
+                Alternativa C
+                <textarea rows="2" [(ngModel)]="editingFormData.alternativa_c" [name]="'c-' + question.uniqueKey"></textarea>
+              </label>
+              <label>
+                Alternativa D
+                <textarea rows="2" [(ngModel)]="editingFormData.alternativa_d" [name]="'d-' + question.uniqueKey"></textarea>
+              </label>
+              <label>
+                Resposta Correta
+                <select [(ngModel)]="editingFormData.resposta_correta" [name]="'resposta-' + question.uniqueKey">
+                  <option value="a">Alternativa A</option>
+                  <option value="b">Alternativa B</option>
+                  <option value="c">Alternativa C</option>
+                  <option value="d">Alternativa D</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-grid form-grid-single">
+              <label>
+                Justificativa
+                <textarea 
+                  rows="3" 
+                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                  [name]="'justificativa-' + question.uniqueKey"
+                ></textarea>
+              </label>
+            </div>
           </div>
 
-          <div *ngIf="question.tipo === 'vf'" class="form-grid">
-            <label>
-              Pergunta
-              <textarea rows="3" [(ngModel)]="editingFormData.pergunta" [name]="'vf-pergunta-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Afirmação Verdadeira
-              <textarea rows="3" [(ngModel)]="editingFormData.afirmacao_verdadeira" [name]="'vf-verdadeira-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Afirmação Falsa
-              <textarea rows="3" [(ngModel)]="editingFormData.afirmacao_falsa" [name]="'vf-falsa-' + question.uniqueKey"></textarea>
-            </label>
-          </div>
-
-          <div *ngIf="question.tipo === 'correlacao'" class="form-grid">
-            <label>
-              Coluna A (uma entrada por linha)
-              <textarea rows="4" [(ngModel)]="editingFormData.coluna_a_text" [name]="'colA-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Coluna B (uma entrada por linha)
-              <textarea rows="4" [(ngModel)]="editingFormData.coluna_b_text" [name]="'colB-' + question.uniqueKey"></textarea>
-            </label>
-            <label>
-              Resposta Correta (JSON)
-              <textarea rows="4" [(ngModel)]="editingFormData.resposta_correta_text" [name]="'resp-' + question.uniqueKey"></textarea>
-            </label>
+          <!-- Correlação: padrão revisar-questoes (comboboxes em vez de JSON) -->
+          <div *ngIf="question.tipo === 'correlacao'">
+            <div class="form-grid form-grid-single">
+              <label>
+                Enunciado
+                <textarea 
+                  rows="3" 
+                  [(ngModel)]="editingFormData.pergunta" 
+                  [name]="'pergunta-' + question.uniqueKey"
+                ></textarea>
+              </label>
+              <label>
+                Páginas
+                <input 
+                  type="text" 
+                  [(ngModel)]="editingFormData.paginas"
+                  [name]="'paginas-' + question.uniqueKey"
+                  placeholder="Ex: 45-50"
+                />
+              </label>
+            </div>
+            <div class="form-grid form-grid-single vf-grid">
+              <label>
+                Coluna A (uma entrada por linha - será numerada automaticamente: 1), 2), 3)...)
+                <textarea 
+                  rows="4" 
+                  [(ngModel)]="editingFormData.coluna_a_text" 
+                  (input)="onEditColunaAChange()"
+                  [name]="'colA-' + question.uniqueKey"
+                  placeholder="Item 1&#10;Item 2&#10;Item 3"
+                ></textarea>
+                <div class="coluna-preview" *ngIf="editingFormData.coluna_a_text">
+                  <strong>Preview:</strong>
+                  <div *ngFor="let item of getColunaAItemsForPreview(editingFormData.coluna_a_text); let i = index" class="preview-item">
+                    {{ i + 1 }}) {{ item }}
+                  </div>
+                </div>
+              </label>
+              <label>
+                Coluna B (uma entrada por linha - será letrada automaticamente: A), B), C)...)
+                <textarea 
+                  rows="4" 
+                  [(ngModel)]="editingFormData.coluna_b_text" 
+                  (input)="onEditColunaBChange()"
+                  [name]="'colB-' + question.uniqueKey"
+                  placeholder="Opção A&#10;Opção B&#10;Opção C"
+                ></textarea>
+                <div class="coluna-preview" *ngIf="editingFormData.coluna_b_text">
+                  <strong>Preview:</strong>
+                  <div *ngFor="let item of getColunaBItemsForPreview(editingFormData.coluna_b_text); let i = index" class="preview-item">
+                    {{ getLetterForIndex(i) }}) {{ item }}
+                  </div>
+                </div>
+              </label>
+            </div>
+            <!-- Mapeamento de Resposta Correta -->
+            <div *ngIf="editingFormData.correlacao_mappings && editingFormData.correlacao_mappings.length > 0" class="correlacao-mapping">
+              <h4>Resposta Correta - Relacione cada item da Coluna A com um item da Coluna B:</h4>
+              <div class="mapping-list">
+                <div *ngFor="let mapping of editingFormData.correlacao_mappings; let i = index" class="mapping-item">
+                  <div class="mapping-label">
+                    <strong>{{ i + 1 }})</strong> {{ mapping.colunaA || '(vazio)' }}
+                  </div>
+                  <select 
+                    [(ngModel)]="mapping.respostaIndex"
+                    (ngModelChange)="updateEditCorrelacaoMapping(i, $event)"
+                    [name]="'mapping-' + question.uniqueKey + '-' + i"
+                    class="mapping-select"
+                  >
+                    <option [ngValue]="null">-- Não relacionar --</option>
+                    <option *ngFor="let itemB of getEditColunaBItems(); let j = index" [ngValue]="j">
+                      {{ getLetterForIndex(j) }}) {{ itemB }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-grid form-grid-single">
+              <label>
+                Justificativa
+                <textarea 
+                  rows="3" 
+                  [(ngModel)]="editingFormData.justificativa_resposta_certa" 
+                  [name]="'justificativa-correlacao-' + question.uniqueKey"
+                ></textarea>
+              </label>
+            </div>
           </div>
 
           <div *ngIf="editError" class="edit-error">

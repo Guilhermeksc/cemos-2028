@@ -1386,13 +1386,28 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
           afirmacao_verdadeira: data.afirmacao_verdadeira || '',
           afirmacao_falsa: data.afirmacao_falsa || ''
         };
-      case 'correlacao':
+      case 'correlacao': {
+        const colunaA = data.coluna_a || [];
+        const colunaB = data.coluna_b || [];
+        const respostaCorreta = data.resposta_correta || {};
+        const mappings: Array<{ colunaA: string; colunaB: string; respostaIndex: number | null }> = colunaA.map((itemA: string, indexA: number) => {
+          const respostaIndexStr = respostaCorreta[indexA.toString()];
+          const respostaIndex = respostaIndexStr !== undefined && respostaIndexStr !== null
+            ? parseInt(respostaIndexStr.toString())
+            : null;
+          return {
+            colunaA: itemA,
+            colunaB: respostaIndex !== null && respostaIndex < colunaB.length ? colunaB[respostaIndex] : '',
+            respostaIndex
+          };
+        });
         return {
           ...base,
-          coluna_a_text: (data.coluna_a || []).join('\n'),
-          coluna_b_text: (data.coluna_b || []).join('\n'),
-          resposta_correta_text: JSON.stringify(data.resposta_correta || {}, null, 2)
+          coluna_a_text: colunaA.join('\n'),
+          coluna_b_text: colunaB.join('\n'),
+          correlacao_mappings: mappings
         };
+      }
       default:
         return base;
     }
@@ -1417,32 +1432,95 @@ export class Perguntas implements OnInit, OnDestroy, OnChanges {
         payload.afirmacao_verdadeira = formData.afirmacao_verdadeira;
         payload.afirmacao_falsa = formData.afirmacao_falsa;
         return payload;
-      case 'correlacao':
+      case 'correlacao': {
         const colunaA = (formData.coluna_a_text || '')
           .split('\n')
           .map((item: string) => item.trim())
-          .filter((item: string) => item.length > 0);
+          .filter((item: string) => item.length > 0)
+          .map((item: string) => item.replace(/^\d+\)\s*/, ''));
         const colunaB = (formData.coluna_b_text || '')
           .split('\n')
           .map((item: string) => item.trim())
-          .filter((item: string) => item.length > 0);
+          .filter((item: string) => item.length > 0)
+          .map((item: string) => item.replace(/^[A-Z]\)\s*/, ''));
 
-        let respostaCorreta;
-        try {
-          respostaCorreta = formData.resposta_correta_text
-            ? JSON.parse(formData.resposta_correta_text)
-            : {};
-        } catch (error) {
-          throw new Error('Resposta correta inválida. Use um JSON válido.');
+        const respostaCorreta: { [key: string]: number } = {};
+        if (formData.correlacao_mappings && Array.isArray(formData.correlacao_mappings)) {
+          formData.correlacao_mappings.forEach((mapping: any, indexA: number) => {
+            if (mapping.respostaIndex !== null && mapping.respostaIndex !== undefined) {
+              respostaCorreta[indexA.toString()] = mapping.respostaIndex;
+            }
+          });
         }
 
         payload.coluna_a = colunaA;
         payload.coluna_b = colunaB;
         payload.resposta_correta = respostaCorreta;
         return payload;
+      }
       default:
         return payload;
     }
+  }
+
+  /** Métodos auxiliares para correlação (edição inline) */
+  onEditColunaAChange(): void {
+    if (!this.editingFormData) return;
+    const colunaAItems = (this.editingFormData.coluna_a_text || '')
+      .split('\n')
+      .map((item: string) => item.trim())
+      .filter((item: string) => item.length > 0)
+      .map((item: string) => item.replace(/^\d+\)\s*/, ''));
+    if (!this.editingFormData.correlacao_mappings) {
+      this.editingFormData.correlacao_mappings = [];
+    }
+    const existing = [...(this.editingFormData.correlacao_mappings || [])];
+    this.editingFormData.correlacao_mappings = colunaAItems.map((itemA: string, i: number) =>
+      i < existing.length ? { ...existing[i], colunaA: itemA } : { colunaA: itemA, colunaB: '', respostaIndex: null }
+    );
+  }
+
+  onEditColunaBChange(): void {
+    if (!this.editingFormData || !this.editingFormData.correlacao_mappings) return;
+    const colunaBItems = this.getEditColunaBItems();
+    this.editingFormData.correlacao_mappings.forEach((m: any) => {
+      if (m.respostaIndex !== null && m.respostaIndex >= colunaBItems.length) {
+        m.respostaIndex = null;
+        m.colunaB = '';
+      } else if (m.respostaIndex !== null && m.respostaIndex < colunaBItems.length) {
+        m.colunaB = colunaBItems[m.respostaIndex];
+      }
+    });
+  }
+
+  getEditColunaBItems(): string[] {
+    if (!this.editingFormData?.coluna_b_text) return [];
+    return (this.editingFormData.coluna_b_text || '')
+      .split('\n')
+      .map((item: string) => item.trim())
+      .filter((item: string) => item.length > 0)
+      .map((item: string) => item.replace(/^[A-Z]\)\s*/, ''));
+  }
+
+  updateEditCorrelacaoMapping(indexA: number, indexB: number | null): void {
+    if (!this.editingFormData?.correlacao_mappings || indexA >= this.editingFormData.correlacao_mappings.length) return;
+    this.editingFormData.correlacao_mappings[indexA].respostaIndex = indexB;
+    const items = this.getEditColunaBItems();
+    this.editingFormData.correlacao_mappings[indexA].colunaB = indexB !== null && indexB < items.length ? items[indexB] : '';
+  }
+
+  getColunaAItemsForPreview(text: string): string[] {
+    if (!text) return [];
+    return text.split('\n').map((s: string) => s.trim()).filter((s: string) => s.length > 0);
+  }
+
+  getColunaBItemsForPreview(text: string): string[] {
+    if (!text) return [];
+    return text.split('\n').map((s: string) => s.trim()).filter((s: string) => s.length > 0);
+  }
+
+  getLetterForIndex(index: number): string {
+    return String.fromCharCode(65 + index);
   }
 
   private applyUpdatedQuestion(question: SimuladoQuestion, updated: Pergunta) {

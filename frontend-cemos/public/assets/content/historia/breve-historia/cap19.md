@@ -78,8 +78,7 @@ Para milhões de pessoas, a corrida espacial tornava-se fascinante quando tinha 
 
 **Depois do passeio triunfal na Lua, restou na terra uma certa sensação de pesar e ao mesmo de desapontamento.**
 
-A tão aguardada oportunidade de inspecionar os misteriosos canais chegou em 1965, quando uma nave norte-americana não tripulada, a Mariner 4, voou perto de Marte. Seus instrumentos não detectaram sinal de vida. Tal resultado foi confirmado onze anos mais tarde, quando dois robôs desceram até a superfície do planeta. Milhares de fotografias e outras imagens transmitidas para
-a Terra revelaram um terreno frio e avermelhado, coberto de pedras e assolado por fortes ventos.
+A tão aguardada oportunidade de inspecionar os misteriosos canais chegou em 1965, quando uma nave norte-americana não tripulada, a Mariner 4, voou perto de Marte. Seus instrumentos não detectaram sinal de vida. Tal resultado foi confirmado onze anos mais tarde, quando dois robôs desceram até a superfície do planeta. Milhares de fotografias e outras imagens transmitidas para a Terra revelaram um terreno frio e avermelhado, coberto de pedras e assolado por fortes ventos.
 
 Os preparativos para o pouso na Lua continuaram à custa de muito dinheiro. Por fim, em 16 de julho de 1969, na Flórida, um grande foguete, o Saturno V, foi lançado, levando uma espaçonave tripulada por três norte-americanos. Cinco dias mais tarde, Neil Armstrong pisou na superfície da Lua, tendo seus vagarosos passos observados por milhões de pessoas pela televisão.
 

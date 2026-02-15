@@ -6,20 +6,21 @@ START_DIR = Path(
     "/home/guilherme/Projetos/cemos-2028/cemos-2028/frontend-cemos/public/assets/content/historia/breve-historia/pdf/conv"
 )
 
-PDF_DESTINO = "Vengeance_Weapons_Moon_Race.pdf"
-PDF_ORIGEM = "Cap18-AsNavesdaVinganca.pdf" 
-OUTPUT_NAME = "Cap18-As_Naves_da_Vingança.pdf"
+PDF_DESTINO = "Oil_Power_and_Holy_War.pdf" 
+PDF_ORIGEM = "Cap26-LuadoIslaBrilhaoutraVez.pdf"
+OUTPUT_NAME = "Cap26-A_Lua_do_Isla_brilha_outra_vez.pdf"
 
 
 RULES = [
-    {"pages": [4], "target": 3, "action": "trocar"},    
-    {"pages": [6], "target": 6, "action": "trocar"},    
-    {"pages": [8], "target": 8, "action": "trocar"},
-    {"pages": [11], "target": 8, "action": "inserir_apos"},
-    {"pages": [9], "target": 9, "action": "trocar"},    
-    {"pages": [13], "target": 11, "action": "trocar"},
-    {"pages": [12], "target": 12, "action": "trocar"},
+    {"pages": [2], "target": 2, "action": "trocar"},    
+    {"pages": [4], "target": 3, "action": "inserir_apos"},    
+    {"pages": [7], "target": 5, "action": "trocar"},    
+    {"pages": [8], "target": 6, "action": "trocar"},
+    {"pages": [11], "target": 12, "action": "trocar"},    
+    {"pages": [13], "target": 13, "action": "inserir_apos"},
+    {"pages": [14], "target": 14, "action": "trocar"},
 ]
+
 
 # slides 1 trocar no lugar do slide 1
 # slides 3 trocar no lugar do slide 3
