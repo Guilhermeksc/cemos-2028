@@ -4,3 +4,6 @@
 # Django migrations (keep __init__.py only)
 **/migrations/**
 !**/migrations/__init__.py
+
+# PowerPoint files
+*.pptx

@@ -102,7 +102,7 @@ Diante de evidentes sinais de que os argentinos preparavam a invasão, o governo
 
 Na noite desse mesmo dia teve *início a invasão das ilhas (Operação Rosário)*: às 21h15, partindo do Santíssima Trinidad, fundeado ao largo de Port Harriet, ao sul de Puerto Argentino, desembarcaram 80 fuzileiros navais argentinos com a missão de tomar os aquartelamentos ocupados pelos fuzileiros britânicos e a Casa de Governo.
 
-Às 02h do dia 2, 10 homens-rãs desembarcaram do submarino Santa Fe, na superfície, próximo à entrada da baía de Puerto Argentino; sua míssão era agir como grupo precursor, ocupando a praia onde se daria o desembarque principal. Cumprida essa missão, às 06h15 o Cabo San Antonio aproximou-se da baía de Puerto Argentino e lançou os 19 carros antibios na praia de York. Esses veículos, a caminho de Puerto Argentino, juntaram-se aos 80 comandos argentinos que haviam atacado os aquartelamentos britânicos, os quais encontraram vazios, e a Casa do Governo, onde foi morto um capitão de corveta fuzileiro naval argentino.
+Às 02h do dia 2, 10 homens-rãs desembarcaram do submarino Santa Fe, na superfície, próximo à entrada da baía de Puerto Argentino; sua míssão era agir como grupo precursor, ocupando a praia onde se daria o desembarque principal. Cumprida essa missão, às 06h15 o Cabo San Antonio aproximou-se da baía de Puerto Argentino e lançou os 19 carros anfíbios na praia de York. Esses veículos, a caminho de Puerto Argentino, juntaram-se aos 80 comandos argentinos que haviam atacado os aquartelamentos britânicos, os quais encontraram vazios, e a Casa do Governo, onde foi morto um capitão de corveta fuzileiro naval argentino.
 
 ## Página 7
 
@@ -115,6 +115,7 @@ Imediatamente os argentinos estabeleceram bases aéreas nas ilhas, dentro das li
 Tão logo chegaram ao Reino Unido as notícias da invasão, a primeira-ministra declarou que as ilhas seriam retomadas e anunciou a formação de uma força tarefa com essa missão *(Operação Corporate)*.
 
 Entrementes, os argentinos desencadearam a *segunda fase da operação. No dia 3, foi organizada a FT-60* com a tarefa de ocupar a Geórgia do Sul. Constituída pela *fragata tipo A-69 Guerrico e o navio-polar Bahia Paraíso*;
+
 O GT transportava dois pelotões de fuzileiros navais e dois helicópteros. Partindo do navio polar, um helicóptero Puma, transportando 15 homens de cada vez, deu início à operação aerotransportada; ao ser desembarcado o segundo lote, os fuzileiros britânicos, levados para a ilha pelo Endurance, abriram fogo, obrigando o helicóptero a decolar já envolto em densa fumaça, caindo pouco adiante. O outro helicóptero - um Alouette - veio para o resgate das vítimas.
 
 ## Página 8
@@ -203,7 +204,7 @@ As 23h30 desse mesmo dia, um avião S-2E do NAe obteve um contato pelo radar com
 
 Nesse ponto, as limitações do Veintecinco de Mayo iriam se mostrar decisivas: para que o ataque dos aviões fosse significativo, seria preciso usar todos os aviões de ataque disponíveis, cada um carregando três bombas de 500 libras, e com a quantidade de combustível necessária para realizar o ataque e regressar ao NAe; para a decolagem dos aviões é necessário ter no convoo (convés de voo) um vento relativo adequado, obtido aproando o navio ao vento real e aumentando a velocidade até onde necessário; segundo os relatos argentinos, a força argentina só conseguiu encurtar a distância para a força inimiga até 180 mimas e, nas condições de ventos reinantes - quase nenhum vento, fato muito raro na região -, o navio não tinha potência de máquinas suficiente para que os aviões decolassem com o combustível necessário, nas condições prevalecentes; o alcance máximo dos aviões era de 70 mimas, e o ataque, impossível.
 
-Quando o comandante da força argentina, contra-almirante Juan José Lom bardo, foi informado de que dois aviões Sea-Harrier sombreavam a suas força, afastou-se para águas mais seguras à espera de outra oportunidade.
+Quando o comandante da força argentina, contra-almirante Juan José Lombardo, foi informado de que dois aviões Sea-Harrier sombreavam a suas força, afastou-se para águas mais seguras à espera de outra oportunidade.
 
 ### As forças britânicas testam as defesas argentinas
 
@@ -237,9 +238,7 @@ O afundamento do navio CL Belgrano, com a perda de 323 homens de uma guarnição
 
 Segundo o relato do comandante do San Luís, ele teria feito, na noite do dia 1°, ataque contra navio britânico, mas o fio da guiagem do torpedo partiu e o submarino foi atacado por 20 horas por helicópteros. Como a tática britânica era atacar qualquer contato, mesmo antes de uma tentativa de avaliação, essa, possivelmente, foi uma das diversas ocasiões em que houve reação antissubmarino às cegas, já que os britânicos não acusaram nenhum ataque por submarino.
 
-Nos dias 2 e 3, consequência do quase absoluto domínio do mar exercido pelos britânicos, lanchas-patrulhas da prefeitura naval argentina - Rio Iguazú e Islas Malvinas - foram atacadas a canhão por helicópteros, sendo a primeira
-afundada e a segunda encalhada (posteriormente, foi capturada pelos britânicos); os navios-patrulhas oceânicos Comodoro Somellera e Alferez Sobral, de 800 toneladas de deslocamento, foram atacados por Lynxs britânicos armados com MAS
-Sea Skua. O primeiro escapou e o segundo foi avariado, mas conseguiu chegar a Puerto Deseado, no continente.
+Nos dias 2 e 3, consequência do quase absoluto domínio do mar exercido pelos britânicos, lanchas-patrulhas da prefeitura naval argentina - Rio Iguazú e Islas Malvinas - foram atacadas a canhão por helicópteros, sendo a primeira afundada e a segunda encalhada (posteriormente, foi capturada pelos britânicos); os navios-patrulhas oceânicos Comodoro Somellera e Alferez Sobral, de 800 toneladas de deslocamento, foram atacados por Lynxs britânicos armados com MAS Sea Skua. O primeiro escapou e o segundo foi avariado, mas conseguiu chegar a Puerto Deseado, no continente.
 
 Numa segunda tentativa - a primeira, realizada no dia 2 falhou por problemas de reabastecimento no ar - dois aviões da marinha argentina Super Etendards, armados com MSS Exocet, partiram de Rio Grande, logo detectando um alvo a 380 milhas, emitindo normalmente; depois de reabastecidos no ar e, quando à distância de 20 a 30 milhas, dispararam seus mísseis. Pelo menos um dos mísseis atingiu o HMS Sheffield, de piquete-radar a oeste das Falklands, uma tentativa de minimizar a falta de alarme aéreo antecipado na força. Os dois Super Etendards foram conduzidos até o alvo por um terceiro avião posto fora do alcance dos mísseis MAS Sea Dart dos navios britânicos.
 
