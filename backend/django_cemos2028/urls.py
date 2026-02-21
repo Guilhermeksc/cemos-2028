@@ -24,6 +24,9 @@ def metrics_example(request):
 urlpatterns = [
     path('admin/', admin.site.urls),  # Usa admin.site padrão com configurações customizadas
 
+    # Autenticação baseada em sessão (templates Django)
+    path('', include('django_cemos2028.apps.core.auth.web_urls')),
+
     # Health Check
     path('api/health/', health_check, name='health_check'),
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Autenticação{% endblock %}</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #1b2a41;
+    }
+    .container {
+      max-width: 460px;
+      margin: 56px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(17, 32, 70, 0.12);
+      padding: 28px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+    p {
+      line-height: 1.45;
+    }
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cfd7e3;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      color: #ffffff;
+      background: #0b5ed7;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    a {
+      color: #0b5ed7;
+      text-decoration: none;
+    }
+    .messages {
+      margin-bottom: 12px;
+      padding: 10px;
+      border-radius: 8px;
+      background: #eef3fc;
+    }
+    .help {
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+    ul.errorlist {
+      color: #b42318;
+      padding-left: 18px;
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="messages">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

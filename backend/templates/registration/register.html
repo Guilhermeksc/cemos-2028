@@ -1,0 +1,28 @@
+{% extends "registration/base_auth.html" %}
+{% block title %}Criar usuário{% endblock %}
+{% block content %}
+  <h1>Criar novo usuário</h1>
+  <p>Informe usuário, e-mail de recuperação e sua senha.</p>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <label for="id_username">Usuário</label>
+    {{ form.username }}
+    {% if form.username.errors %}{{ form.username.errors }}{% endif %}
+
+    <label for="id_email">E-mail de recuperação</label>
+    {{ form.email }}
+    {% if form.email.errors %}{{ form.email.errors }}{% endif %}
+
+    <label for="id_password1">Senha</label>
+    {{ form.password1 }}
+    {% if form.password1.errors %}{{ form.password1.errors }}{% endif %}
+
+    <label for="id_password2">Confirmar senha</label>
+    {{ form.password2 }}
+    {% if form.password2.errors %}{{ form.password2.errors }}{% endif %}
+
+    <button type="submit">Criar usuário</button>
+  </form>
+  <p class="help"><a href="/login/">Voltar para login</a></p>
+{% endblock %}

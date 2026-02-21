@@ -27,6 +27,7 @@ export interface LoginResponse {
 })
 export class AuthService {
   private apiUrl = `${environment.apiUrl}/auth`;
+  private webBaseUrl = environment.apiUrl.replace(/\/api$/, '');
   private currentUserSubject = new BehaviorSubject<User | null>(null);
   private tokenSubject = new BehaviorSubject<string | null>(null);
 
@@ -113,5 +114,19 @@ export class AuthService {
     return this.http.post<{ access: string }>(`${this.apiUrl}/token/refresh/`, {
       refresh: refreshToken
     });
+  }
+
+  /**
+   * URL da tela de recuperação de senha (Django server-side).
+   */
+  getPasswordResetUrl(): string {
+    return `${this.webBaseUrl}/password-reset/`;
+  }
+
+  /**
+   * URL da tela de cadastro público (Django server-side).
+   */
+  getRegisterUrl(): string {
+    return `${this.webBaseUrl}/register/`;
   }
 }

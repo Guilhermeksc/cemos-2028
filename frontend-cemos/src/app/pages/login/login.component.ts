@@ -30,6 +30,8 @@ export class LoginComponent {
   loginForm: FormGroup;
   isLoading = false;
   hidePassword = true;
+  readonly passwordResetUrl: string;
+  readonly registerUrl: string;
 
   constructor(
     private readonly router: Router,
@@ -38,6 +40,8 @@ export class LoginComponent {
     private readonly authService: AuthService,
     private readonly snackBar: MatSnackBar
   ) {
+    this.passwordResetUrl = this.authService.getPasswordResetUrl();
+    this.registerUrl = this.authService.getRegisterUrl();
     this.loginForm = this.formBuilder.group({
       username: ['', [Validators.required, Validators.minLength(3)]],
       password: ['', [Validators.required, Validators.minLength(6)]]

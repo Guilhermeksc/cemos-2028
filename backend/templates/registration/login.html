@@ -1,0 +1,16 @@
+{% extends "registration/base_auth.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+  <h1>Entrar</h1>
+  <p>Use seu usuário e senha para acessar o sistema.</p>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <label for="id_username">Usuário</label>
+    {{ form.username }}
+    <label for="id_password">Senha</label>
+    {{ form.password }}
+    <button type="submit">Entrar</button>
+  </form>
+  <p class="help"><a href="/password-reset/">Esqueci minha senha</a></p>
+{% endblock %}
