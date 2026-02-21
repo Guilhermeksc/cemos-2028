@@ -188,6 +188,46 @@
                                 </div>
           </label>
         </div>
+
+        <!-- Campos específicos para Objetivas/Flashcards -->
+        <div *ngIf="activeTabType === 'flashcard'" class="form-grid vf-grid">
+          <label>
+            Resposta *
+            <textarea
+              rows="4"
+              [(ngModel)]="addFormData.resposta"
+              name="add-flashcard-resposta"
+              placeholder="Digite a resposta do flashcard..."
+            ></textarea>
+          </label>
+          <label class="toggle-label">
+            <input
+              type="checkbox"
+              [(ngModel)]="addFormData.prova"
+              name="add-flashcard-prova"
+            />
+            <span>Caiu em prova</span>
+          </label>
+          <label class="toggle-label">
+            <input
+              type="checkbox"
+              [(ngModel)]="addFormData.caveira"
+              name="add-flashcard-caveira"
+            />
+            <span>Caveira</span>
+          </label>
+          <label>
+            Ano da prova (opcional)
+            <input
+              type="number"
+              [(ngModel)]="addFormData.ano"
+              name="add-flashcard-ano"
+              placeholder="Ex: 2024"
+              min="1900"
+              max="2100"
+            />
+          </label>
+        </div>
         
         <!-- Mapeamento de Resposta Correta para Adicionar -->
         <div *ngIf="activeTabType === 'correlacao' && addFormData.correlacao_mappings && addFormData.correlacao_mappings.length > 0" class="correlacao-mapping">
@@ -236,11 +276,6 @@
               placeholder="Explique por que a resposta está correta..."
             ></textarea>
           </label>
-        </div>
-
-        <div class="form-info">
-          <p><strong>Bibliografia:</strong> {{ getBibliografiaTitulo(selectedBibliografiaId) }}</p>
-          <p *ngIf="selectedAssuntoId"><strong>Assunto:</strong> {{ getAssuntoNome(selectedAssuntoId) }}</p>
         </div>
 
         <div *ngIf="addError" class="add-error">
@@ -312,7 +347,7 @@
                     <tr [class.editing-row]="isEditing(questao)" [class.row-caiu-prova]="questao.caiu_em_prova && !questao.caveira" [class.row-caveira]="questao.caveira">
                       <td>#{{ questao.id }}</td>
                       <td>
-                        <div>{{ questao.data.paginas || '–' }}</div>
+                        <div>{{ getPaginasDisplay(questao) }}</div>
                         <ng-container *ngIf="isAdmin">
                           <ng-container *ngIf="!isEditingPaginas(questao)">
                             <button class="btn btn-icon btn-paginas" (click)="startEditingPaginas(questao)" title="Editar páginas">
@@ -708,7 +743,7 @@
                     <tr [class.editing-row]="isEditing(questao)" [class.row-caiu-prova]="questao.caiu_em_prova && !questao.caveira" [class.row-caveira]="questao.caveira">
                       <td>#{{ questao.id }}</td>
                       <td>
-                        <div>{{ questao.data.paginas || '–' }}</div>
+                        <div>{{ getPaginasDisplay(questao) }}</div>
                         <ng-container *ngIf="isAdmin">
                           <ng-container *ngIf="!isEditingPaginas(questao)">
                             <button class="btn btn-icon btn-paginas" (click)="startEditingPaginas(questao)" title="Editar páginas">
@@ -1104,7 +1139,7 @@
                     <tr [class.editing-row]="isEditing(questao)" [class.row-caiu-prova]="questao.caiu_em_prova && !questao.caveira" [class.row-caveira]="questao.caveira">
                       <td>#{{ questao.id }}</td>
                       <td>
-                        <div>{{ questao.data.paginas || '–' }}</div>
+                        <div>{{ getPaginasDisplay(questao) }}</div>
                         <ng-container *ngIf="isAdmin">
                           <ng-container *ngIf="!isEditingPaginas(questao)">
                             <button class="btn btn-icon btn-paginas" (click)="startEditingPaginas(questao)" title="Editar páginas">
@@ -1453,6 +1488,168 @@
 
           <div *ngIf="tableData.length === 0" class="empty">
             Nenhuma questão de correlação encontrada para as bibliografias selecionadas.
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Objetivas/Flashcards
+          <span class="tab-count" *ngIf="allTableData.length > 0">
+            ({{ getQuestoesCountByType('flashcard') }})
+          </span>
+        </ng-template>
+        <div class="tab-content">
+          <div *ngFor="let grupo of tableData" class="bibliografia-card">
+            <div class="grupo-header">
+              <div>
+                <h2>{{ grupo.bibliografiaTitulo }}</h2>
+                <p>{{ grupo.questoes.length }} {{ grupo.questoes.length === 1 ? 'flashcard' : 'flashcards' }}</p>
+              </div>
+            </div>
+
+            <div class="tabela-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Pergunta / Resposta</th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/star.svg" alt="Caiu em prova" class="header-icon star-icon" />
+                        <span>Caiu em prova</span>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="header-with-icon">
+                        <img src="/assets/img/svg/danger.svg" alt="Caveira" class="header-icon danger-icon" />
+                        <span>Caveira</span>
+                      </div>
+                    </th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngFor="let questao of grupo.questoes">
+                    <tr [class.editing-row]="isEditing(questao)" [class.row-caiu-prova]="questao.caiu_em_prova && !questao.caveira" [class.row-caveira]="questao.caveira">
+                      <td>#{{ questao.id }}</td>
+                      <td>
+                        <div class="pergunta-texto">{{ questao.pergunta }}</div>
+                        <div class="pergunta-justificativa" *ngIf="$any(questao.data)?.resposta">
+                          Resposta: {{ $any(questao.data)?.resposta }}
+                        </div>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input
+                            type="checkbox"
+                            [checked]="questao.caiu_em_prova"
+                            (change)="onToggleCaiuEmProva(questao, $event.target.checked)"
+                            [disabled]="togglingCaiuEmProva.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaiuEmProva.has(questao.uniqueKey) ? 'Atualizando...' : questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caiu_em_prova ? 'Sim' : 'Não' }}</span>
+                        <ng-container *ngIf="isAdmin && questao.caiu_em_prova">
+                          <ng-container *ngIf="!isEditingAno(questao)">
+                            <button class="btn btn-icon btn-ano" (click)="startEditingAno(questao)" [title]="'Editar ano' + (questao.ano_prova ? ' (' + questao.ano_prova + ')' : '')">
+                              <img src="/assets/img/svg/calendar.svg" alt="Ano" class="btn-icon-img" />
+                            </button>
+                          </ng-container>
+                          <div class="cell-edit-inline" *ngIf="isEditingAno(questao)">
+                            <input
+                              type="number"
+                              [(ngModel)]="anoProvaInput"
+                              [name]="'ano-flash-' + questao.id"
+                              placeholder="Ex: 2024"
+                              min="1900"
+                              max="2100"
+                              class="ano-input"
+                            />
+                            <button class="btn btn-small btn-save" (click)="saveAnoProva(questao)" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              {{ togglingAnoProva.has(questao.uniqueKey) ? '...' : 'Salvar' }}
+                            </button>
+                            <button class="btn btn-small" (click)="cancelEditingAno()" [disabled]="togglingAnoProva.has(questao.uniqueKey)">
+                              Cancelar
+                            </button>
+                          </div>
+                        </ng-container>
+                      </td>
+                      <td>
+                        <label class="toggle-label" *ngIf="isAdmin">
+                          <input
+                            type="checkbox"
+                            [checked]="questao.caveira"
+                            (change)="onToggleCaveira(questao, $event.target.checked)"
+                            [disabled]="togglingCaveira.has(questao.uniqueKey)"
+                          />
+                          <span>{{ togglingCaveira.has(questao.uniqueKey) ? 'Atualizando...' : questao.caveira ? 'Sim' : 'Não' }}</span>
+                        </label>
+                        <span *ngIf="!isAdmin">{{ questao.caveira ? 'Sim' : 'Não' }}</span>
+                      </td>
+                      <td class="actions-cell">
+                        <button class="btn btn-small" *ngIf="isAdmin" (click)="startEditingRow(questao)">
+                          {{ isEditing(questao) ? 'Editando...' : 'Editar' }}
+                        </button>
+                      </td>
+                    </tr>
+                    <tr *ngIf="isEditing(questao)">
+                      <td colspan="5">
+                        <div class="edit-form">
+                          <div class="edit-form-header">
+                            <img src="/assets/img/svg/edit.svg" alt="Editar" class="edit-form-icon" />
+                            <span>Editando flashcard #{{ questao.id }}</span>
+                          </div>
+
+                          <div class="form-grid form-grid-single">
+                            <label>
+                              Pergunta
+                              <textarea
+                                rows="3"
+                                [(ngModel)]="editingFormData.pergunta"
+                                name="flash-pergunta-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                            <label>
+                              Resposta
+                              <textarea
+                                rows="4"
+                                [(ngModel)]="editingFormData.resposta"
+                                name="flash-resposta-{{ questao.id }}"
+                              ></textarea>
+                            </label>
+                          </div>
+
+                          <div *ngIf="editError" class="edit-error">
+                            {{ editError }}
+                          </div>
+
+                          <div class="edit-actions">
+                            <div class="edit-actions-left">
+                              <button class="btn btn-small btn-save" (click)="saveEditingRow(questao)" [disabled]="isSavingEdit">
+                                {{ isSavingEdit ? 'Salvando...' : 'Salvar' }}
+                              </button>
+                              <button class="btn btn-small" type="button" (click)="cancelEditing()" [disabled]="isSavingEdit">
+                                Cancelar
+                              </button>
+                            </div>
+                            <div class="edit-actions-right">
+                              <button class="btn btn-small btn-delete" type="button" (click)="confirmDeleteQuestion(questao)" [disabled]="isSavingEdit">
+                                Excluir
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div *ngIf="tableData.length === 0" class="empty">
+            Nenhum flashcard encontrado para as bibliografias selecionadas.
           </div>
         </div>
       </mat-tab>

@@ -12,13 +12,17 @@ import {
   PerguntaMultipla,
   PerguntaVF,
   PerguntaCorrelacao,
-  Bibliografia
+  Bibliografia,
+  FlashCards
 } from '../../../interfaces/perguntas.interface';
+import { FlashCardsService } from '../../../services/flashcards.service';
 import { JanelaGenerica, BotaoJanela } from '../../janela-generica/janela-generica';
+
+type QuestaoTipo = 'multipla' | 'vf' | 'correlacao' | 'flashcard';
 
 interface RevisarQuestaoRow {
   id: number;
-  tipo: 'multipla' | 'vf' | 'correlacao';
+  tipo: QuestaoTipo;
   pergunta: string;
   justificativa_resposta_certa: string;
   bibliografiaId: number;
@@ -27,7 +31,7 @@ interface RevisarQuestaoRow {
   caiu_em_prova: boolean;
   ano_prova?: number;
   caveira: boolean;
-  data: PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
+  data: PerguntaMultipla | PerguntaVF | PerguntaCorrelacao | FlashCards;
   uniqueKey: string;
 }
 
@@ -41,7 +45,7 @@ interface SavedFilters {
   materiaId: number | null;
   bibliografiaId: number | null;
   assuntoId: number | null;
-  activeTabType: 'multipla' | 'vf' | 'correlacao';
+  activeTabType: QuestaoTipo;
 }
 
 @Component({
@@ -53,6 +57,7 @@ interface SavedFilters {
 })
 export class RevisarQuestoes implements OnInit, OnDestroy {
   private perguntasService = inject(PerguntasService);
+  private flashCardsService = inject(FlashCardsService);
   private route = inject(ActivatedRoute);
   private router = inject(Router);
   private authService = inject(AuthService);
@@ -81,7 +86,7 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
 
   // Sistema de tabs
   activeTabIndex: number = 0;
-  activeTabType: 'multipla' | 'vf' | 'correlacao' = 'multipla';
+  activeTabType: QuestaoTipo = 'multipla';
 
   editingRowKey: string | null = null;
   editingFormData: any = null;
@@ -281,16 +286,18 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     const multiplaRequest = this.perguntasService.getAllPerguntasMultipla({ bibliografia: this.selectedBibliografiaId });
     const vfRequest = this.perguntasService.getAllPerguntasVF({ bibliografia: this.selectedBibliografiaId });
     const correlacaoRequest = this.perguntasService.getAllPerguntasCorrelacao({ bibliografia: this.selectedBibliografiaId });
+    const flashcardsRequest = this.perguntasService.getAllFlashCards({ bibliografia: this.selectedBibliografiaId });
 
-    forkJoin({ multiplas: multiplaRequest, vfs: vfRequest, correlacoes: correlacaoRequest })
+    forkJoin({ multiplas: multiplaRequest, vfs: vfRequest, correlacoes: correlacaoRequest, flashcards: flashcardsRequest })
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (results) => {
           const multiplas: PerguntaMultipla[] = Array.isArray(results.multiplas) ? results.multiplas : [];
           const vfs: PerguntaVF[] = Array.isArray(results.vfs) ? results.vfs : [];
           const correlacoes: PerguntaCorrelacao[] = Array.isArray(results.correlacoes) ? results.correlacoes : [];
+          const flashcards: FlashCards[] = Array.isArray(results.flashcards) ? results.flashcards : [];
           
-          const todasQuestoes = [...multiplas, ...vfs, ...correlacoes];
+          const todasQuestoes = [...multiplas, ...vfs, ...correlacoes, ...flashcards];
           
           // Extrair assuntos únicos
           const assuntosMap = new Map<number, { nome: string; bibliografiaId: number }>();
@@ -399,7 +406,7 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
                       }
                     }
                     if (savedFilters.activeTabType) {
-                      const tabs: ('multipla' | 'vf' | 'correlacao')[] = ['multipla', 'vf', 'correlacao'];
+                      const tabs: QuestaoTipo[] = ['multipla', 'vf', 'correlacao', 'flashcard'];
                       const tabIndex = tabs.indexOf(savedFilters.activeTabType);
                       if (tabIndex >= 0) {
                         this.activeTabIndex = tabIndex;
@@ -475,6 +482,14 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
           coluna_b_text: '',
           correlacao_mappings: [] // Estrutura amigável para edição
         };
+      case 'flashcard':
+        return {
+          ...base,
+          resposta: '',
+          prova: false,
+          ano: null,
+          caveira: false
+        };
       default:
         return base;
     }
@@ -538,6 +553,11 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
         this.addError = 'É necessário relacionar pelo menos um item da Coluna A com um item da Coluna B.';
         return;
       }
+    } else if (this.activeTabType === 'flashcard') {
+      if (!this.addFormData.resposta || this.addFormData.resposta.trim() === '') {
+        this.addError = 'A resposta do flashcard é obrigatória.';
+        return;
+      }
     }
 
     this.isSavingAdd = true;
@@ -555,6 +575,9 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
         break;
       case 'correlacao':
         createRequest = this.perguntasService.createPerguntaCorrelacao(payload) as unknown as Observable<Pergunta>;
+        break;
+      case 'flashcard':
+        createRequest = this.flashCardsService.createFlashCard(payload) as unknown as Observable<Pergunta>;
         break;
       default:
         this.addError = 'Tipo de pergunta inválido.';
@@ -626,6 +649,12 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
         payload.coluna_b = colunaBItems;
         payload.resposta_correta = respostaCorreta;
         break;
+      case 'flashcard':
+        payload.resposta = this.addFormData.resposta?.trim() || '';
+        payload.prova = !!this.addFormData.prova;
+        payload.ano = this.addFormData.ano ?? null;
+        payload.caveira = !!this.addFormData.caveira;
+        break;
     }
 
     return payload;
@@ -633,7 +662,7 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
 
   onTabChange(tabIndex: number): void {
     this.activeTabIndex = tabIndex;
-    const tabs: ('multipla' | 'vf' | 'correlacao')[] = ['multipla', 'vf', 'correlacao'];
+    const tabs: QuestaoTipo[] = ['multipla', 'vf', 'correlacao', 'flashcard'];
     this.activeTabType = tabs[tabIndex];
     this.filterTableDataByType();
     // Salvar aba ativa
@@ -644,7 +673,7 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     }
   }
 
-  getQuestoesCountByType(tipo: 'multipla' | 'vf' | 'correlacao'): number {
+  getQuestoesCountByType(tipo: QuestaoTipo): number {
     if (!this.allTableData.length) {
       return 0;
     }
@@ -709,12 +738,14 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     const multiplaRequests = [this.perguntasService.getAllPerguntasMultipla(filters)];
     const vfRequests = [this.perguntasService.getAllPerguntasVF(filters)];
     const correlacaoRequests = [this.perguntasService.getAllPerguntasCorrelacao(filters)];
+    const flashcardsRequests = [this.perguntasService.getAllFlashCards(filters)];
 
     const multiplas$ = multiplaRequests.length ? forkJoin(multiplaRequests) : of([]);
     const vfs$ = vfRequests.length ? forkJoin(vfRequests) : of([]);
     const correlacoes$ = correlacaoRequests.length ? forkJoin(correlacaoRequests) : of([]);
+    const flashcards$ = flashcardsRequests.length ? forkJoin(flashcardsRequests) : of([]);
 
-    forkJoin({ multiplas: multiplas$, vfs: vfs$, correlacoes: correlacoes$ })
+    forkJoin({ multiplas: multiplas$, vfs: vfs$, correlacoes: correlacoes$, flashcards: flashcards$ })
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (results) => {
@@ -727,8 +758,11 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
           const correlacoes: PerguntaCorrelacao[] = Array.isArray(results.correlacoes)
             ? (results.correlacoes as PerguntaCorrelacao[][]).flat()
             : [];
+          const flashcards: FlashCards[] = Array.isArray(results.flashcards)
+            ? (results.flashcards as FlashCards[][]).flat()
+            : [];
 
-          this.allTableData = this.buildTableData([...multiplas, ...vfs, ...correlacoes]);
+          this.allTableData = this.buildTableData([...multiplas, ...vfs, ...correlacoes, ...flashcards]);
           this.filterTableDataByType();
           this.isLoading = false;
         },
@@ -740,11 +774,13 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
       });
   }
 
-  private buildTableData(questoes: Array<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao>): RevisarQuestaoGrupo[] {
+  private buildTableData(questoes: Array<PerguntaMultipla | PerguntaVF | PerguntaCorrelacao | FlashCards>): RevisarQuestaoGrupo[] {
     const grupos = new Map<number, RevisarQuestaoGrupo>();
 
     questoes.forEach(questao => {
       const bibliografiaId = questao.bibliografia;
+      const isFlashcard = !('tipo' in questao);
+      const tipo: QuestaoTipo = isFlashcard ? 'flashcard' : questao.tipo;
       if (!grupos.has(bibliografiaId)) {
         grupos.set(bibliografiaId, {
           bibliografiaId,
@@ -755,29 +791,37 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
 
       grupos.get(bibliografiaId)!.questoes.push({
         id: questao.id,
-        tipo: questao.tipo,
+        tipo,
         pergunta: questao.pergunta,
-        justificativa_resposta_certa: questao.justificativa_resposta_certa,
+        justificativa_resposta_certa: isFlashcard ? '' : questao.justificativa_resposta_certa,
         bibliografiaId,
         bibliografiaTitulo: questao.bibliografia_titulo || `Bibliografia #${bibliografiaId}`,
         assunto_titulo: questao.assunto_titulo,
-        caiu_em_prova: questao.caiu_em_prova,
-        ano_prova: questao.ano_prova,
+        caiu_em_prova: isFlashcard ? questao.prova : questao.caiu_em_prova,
+        ano_prova: isFlashcard ? questao.ano : questao.ano_prova,
         caveira: questao.caveira,
-        data: questao,
-        uniqueKey: `${questao.tipo}-${questao.id}`
+        data: questao as PerguntaMultipla | PerguntaVF | PerguntaCorrelacao | FlashCards,
+        uniqueKey: `${tipo}-${questao.id}`
       });
     });
 
     return Array.from(grupos.values()).map(grupo => ({
       ...grupo,
       questoes: grupo.questoes.sort((a, b) => {
-        const numA = RevisarQuestoes.extractFirstPageNumber(a.data?.paginas);
-        const numB = RevisarQuestoes.extractFirstPageNumber(b.data?.paginas);
+        const numA = RevisarQuestoes.extractFirstPageNumber(this.getPaginasValue(a.data));
+        const numB = RevisarQuestoes.extractFirstPageNumber(this.getPaginasValue(b.data));
         if (numA !== numB) return numA - numB;
         return a.id - b.id;
       })
     }));
+  }
+
+  private getPaginasValue(data: RevisarQuestaoRow['data']): string | null | undefined {
+    return 'paginas' in data ? data.paginas : null;
+  }
+
+  getPaginasDisplay(row: RevisarQuestaoRow): string {
+    return this.getPaginasValue(row.data) || '–';
   }
 
   /**
@@ -793,7 +837,7 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     return match ? parseInt(match[0], 10) : Infinity;
   }
 
-  getQuestaoTipoDisplay(tipo: 'multipla' | 'vf' | 'correlacao'): string {
+  getQuestaoTipoDisplay(tipo: QuestaoTipo): string {
     switch (tipo) {
       case 'multipla':
         return 'Múltipla';
@@ -801,6 +845,8 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
         return 'V/F';
       case 'correlacao':
         return 'Correlação';
+      case 'flashcard':
+        return 'Objetiva/Flashcard';
       default:
         return tipo;
     }
@@ -1107,22 +1153,37 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
         return this.perguntasService.updatePerguntaVF(row.id, payload) as unknown as Observable<Pergunta>;
       case 'correlacao':
         return this.perguntasService.updatePerguntaCorrelacao(row.id, payload) as unknown as Observable<Pergunta>;
+      case 'flashcard':
+        return this.flashCardsService.patchFlashCard(row.id, payload) as unknown as Observable<Pergunta>;
       default:
         throw new Error('Tipo de pergunta inválido para edição.');
     }
   }
 
-  private applyUpdatedRow(row: RevisarQuestaoRow, updated: Pergunta): void {
+  private applyUpdatedRow(row: RevisarQuestaoRow, updated: Pergunta | FlashCards): void {
+    if (row.tipo === 'flashcard') {
+      const flash = updated as FlashCards;
+      row.pergunta = flash.pergunta;
+      row.justificativa_resposta_certa = '';
+      row.assunto_titulo = flash.assunto_titulo || row.assunto_titulo;
+      row.caiu_em_prova = flash.prova;
+      row.ano_prova = flash.ano;
+      row.caveira = flash.caveira;
+      row.data = flash;
+      return;
+    }
+
+    const perguntaAtualizada = updated as Pergunta;
     row.pergunta = updated.pergunta;
-    row.justificativa_resposta_certa = updated.justificativa_resposta_certa;
-    row.assunto_titulo = updated.assunto_titulo || row.assunto_titulo;
-    row.caiu_em_prova = updated.caiu_em_prova;
-    row.ano_prova = updated.ano_prova;
-    row.caveira = updated.caveira;
-    row.data = updated as PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
+    row.justificativa_resposta_certa = perguntaAtualizada.justificativa_resposta_certa;
+    row.assunto_titulo = perguntaAtualizada.assunto_titulo || row.assunto_titulo;
+    row.caiu_em_prova = perguntaAtualizada.caiu_em_prova;
+    row.ano_prova = perguntaAtualizada.ano_prova;
+    row.caveira = perguntaAtualizada.caveira;
+    row.data = perguntaAtualizada as PerguntaMultipla | PerguntaVF | PerguntaCorrelacao;
     // Atualizar paginas no objeto data
     if (row.data) {
-      (row.data as any).paginas = updated.paginas || null;
+      (row.data as any).paginas = perguntaAtualizada.paginas || null;
     }
   }
 
@@ -1135,6 +1196,11 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     };
 
     switch (row.tipo) {
+      case 'flashcard':
+        return {
+          pergunta: row.pergunta,
+          resposta: data.resposta || ''
+        };
       case 'multipla':
         return {
           ...base,
@@ -1181,6 +1247,13 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
   }
 
   private buildPayload(row: RevisarQuestaoRow, formData: any) {
+    if (row.tipo === 'flashcard') {
+      return {
+        pergunta: formData.pergunta,
+        resposta: formData.resposta
+      };
+    }
+
     const payload: any = {
       pergunta: formData.pergunta,
       justificativa_resposta_certa: formData.justificativa_resposta_certa,
@@ -1242,7 +1315,10 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     }
 
     this.togglingCaiuEmProva.add(key);
-    this.perguntasService.updatePerguntaCaiuEmProva(row.id, row.tipo, value)
+    const request$ = row.tipo === 'flashcard'
+      ? this.flashCardsService.patchFlashCard(row.id, { prova: value }) as unknown as Observable<Pergunta>
+      : this.perguntasService.updatePerguntaCaiuEmProva(row.id, row.tipo, value) as Observable<Pergunta>;
+    request$
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (updated: Pergunta) => {
@@ -1276,9 +1352,9 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
   }
 
   startEditingPaginas(row: RevisarQuestaoRow): void {
-    if (!this.isAdmin) return;
+    if (!this.isAdmin || row.tipo === 'flashcard') return;
     this.editingPaginasKey = row.uniqueKey;
-    this.paginasInput = row.data?.paginas || '';
+    this.paginasInput = this.getPaginasValue(row.data) || '';
   }
 
   cancelEditingPaginas(): void {
@@ -1287,7 +1363,7 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
   }
 
   savePaginas(row: RevisarQuestaoRow): void {
-    if (!this.isAdmin || this.editingPaginasKey !== row.uniqueKey) return;
+    if (!this.isAdmin || row.tipo === 'flashcard' || this.editingPaginasKey !== row.uniqueKey) return;
     const paginas = this.paginasInput?.trim() || null;
     this.togglingPaginas.add(row.uniqueKey);
     this.updatePergunta(row, { paginas })
@@ -1309,7 +1385,9 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     if (!this.isAdmin || this.editingAnoKey !== row.uniqueKey) return;
     const ano = this.anoProvaInput;
     const anoValido = ano != null && !isNaN(ano) && ano >= 1900 && ano <= 2100;
-    const payload = anoValido ? { ano_prova: ano } : { ano_prova: null };
+    const payload = row.tipo === 'flashcard'
+      ? (anoValido ? { ano } : { ano: null })
+      : (anoValido ? { ano_prova: ano } : { ano_prova: null });
     this.togglingAnoProva.add(row.uniqueKey);
     this.updatePergunta(row, payload)
       .pipe(takeUntil(this.destroy$))
@@ -1337,7 +1415,10 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     }
 
     this.togglingCaveira.add(key);
-    this.perguntasService.updatePerguntaCaveira(row.id, row.tipo, value)
+    const request$ = row.tipo === 'flashcard'
+      ? this.flashCardsService.patchFlashCard(row.id, { caveira: value }) as unknown as Observable<Pergunta>
+      : this.perguntasService.updatePerguntaCaveira(row.id, row.tipo, value) as Observable<Pergunta>;
+    request$
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (updated: Pergunta) => {
@@ -1373,7 +1454,10 @@ export class RevisarQuestoes implements OnInit, OnDestroy {
     this.isSavingEdit = true;
     this.editError = null;
 
-    this.perguntasService.deletePergunta(row.tipo, row.id)
+    const request$ = row.tipo === 'flashcard'
+      ? this.flashCardsService.deleteFlashCard(row.id)
+      : this.perguntasService.deletePergunta(row.tipo, row.id);
+    request$
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: () => {

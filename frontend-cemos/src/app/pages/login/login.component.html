@@ -24,9 +24,6 @@
               placeholder="Digite seu usuário"
               [class.mat-input-invalid]="username?.invalid && username?.touched">
             <mat-icon matSuffix>person</mat-icon>
-            <mat-error *ngIf="username?.errors?.['required'] && username?.touched">
-              Usuário é obrigatório
-            </mat-error>
             <mat-error *ngIf="username?.errors?.['minlength'] && username?.touched">
               Usuário deve ter pelo menos 3 caracteres
             </mat-error>
@@ -47,9 +44,6 @@
               class="password-toggle">
               {{ hidePassword ? 'visibility_off' : 'visibility' }}
             </mat-icon>
-            <mat-error *ngIf="password?.errors?.['required'] && password?.touched">
-              Senha é obrigatória
-            </mat-error>
             <mat-error *ngIf="password?.errors?.['minlength'] && password?.touched">
               Senha deve ter pelo menos 6 caracteres
             </mat-error>
