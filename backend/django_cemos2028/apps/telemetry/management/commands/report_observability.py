@@ -11,7 +11,7 @@ from django_cemos2028.apps.telemetry.models import (
 
 
 class Command(BaseCommand):
-    help = "Exibe contagens de logins e downloads de PDF (último dia e últimos 30 dias)."
+    help = "Exibe contagens e usuários de logins e downloads de PDF (último dia e últimos 30 dias)."
 
     def handle(self, *args, **options):
         now = timezone.now()
@@ -33,6 +33,7 @@ class Command(BaseCommand):
         by_status = qs.values("status").order_by("status").annotate(count=models.Count("id"))
         details = ", ".join(f"{item['status']}: {item['count']}" for item in by_status) or "sem registros"
         self.stdout.write(f"{label}: {total} logins ({details})")
+        self._print_user_breakdown(qs, event_label="logins")
 
     def _print_pdf_stats(self, label: str, since):
         qs = PdfDownloadEventLog.objects.filter(created_at__gte=since)
@@ -40,3 +41,20 @@ class Command(BaseCommand):
         by_origin = qs.values("origem").order_by("origem").annotate(count=models.Count("id"))
         details = ", ".join(f"{item['origem']}: {item['count']}" for item in by_origin) or "sem registros"
         self.stdout.write(f"{label}: {total} downloads ({details})")
+        self._print_user_breakdown(qs, event_label="downloads")
+
+    def _print_user_breakdown(self, qs, event_label: str):
+        by_username = (
+            qs.values("username")
+            .order_by("username")
+            .annotate(count=models.Count("id"))
+        )
+
+        if not by_username:
+            self.stdout.write(f"  Usuários ({event_label}): sem registros")
+            return
+
+        users = ", ".join(
+            f"{item['username'] or 'desconhecido'}: {item['count']}" for item in by_username
+        )
+        self.stdout.write(f"  Usuários ({event_label}): {users}")
